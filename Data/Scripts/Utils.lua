@@ -2,6 +2,8 @@ local FLY_UP_FONT = script:GetCustomProperty("FlyUpFont")
 
 local Utils = {}
 
+local powerDoublingRate = 5
+
 -- MY COLORS
 
 Utils.color = {
@@ -13,8 +15,44 @@ Utils.color = {
 
 -- UTILITY FUNCTIONS
 
+function Utils.throttleToServer(evtName, ...)
+  local result = Events.BroadcastToServer(evtName, ...)
+
+  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
+    Task.Wait(0.1)
+    Utils.throttleToServer(evtName, ...)
+  end
+end
+
+function Utils.throttleToAllPlayers(evtName, ...)
+  local result = Events.BroadcastToAllPlayers(evtName, ...)
+
+  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
+    Task.Wait(0.1)
+    Utils.throttleToAllPlayers(evtName, ...)
+  end
+end
+
+function Utils.throttleToPlayer(player, evtName, ...)
+  local result = Events.BroadcastToPlayer(player, evtName, ...)
+
+  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
+    Task.Wait(0.1)
+    Utils.throttleToPlayer(player, evtName, ...)
+  end
+end
+
+function Utils.throttleMessage(message)
+  local result = Chat.BroadcastMessage(message)
+
+  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
+    Task.Wait(0.1)
+    Utils.throttleToPlayer(message)
+  end
+end
+
 function Utils.magicNumber(x)
-  return (x*2^(x/10))/x
+  return (x*2^(x/powerDoublingRate))/x
 end
 
 function Utils.getStatsByLevel(level)
@@ -44,7 +82,7 @@ function Utils.rollDamage(min, max)
 end
 
 function Utils.groundBelowPoint(vec3)
-  local hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 500, {ignorePlayers = true})
+  local hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
   if hitResult then
     return hitResult:GetImpactPosition()
   else

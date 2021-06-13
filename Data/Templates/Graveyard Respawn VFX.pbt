@@ -22,6 +22,10 @@ Assets {
         ChildIds: 4287766427279135764
         ChildIds: 5136993894390711019
         ChildIds: 15693742060529201858
+        ChildIds: 9719055339954499357
+        ChildIds: 15627229527452213581
+        ChildIds: 8768549151680491714
+        ChildIds: 15391158867985585306
         Lifespan: 4
         WantsNetworking: true
         Collidable_v2 {
@@ -359,14 +363,17 @@ Assets {
         Name: "Decal Elven Symbols"
         Transform {
           Location {
+            X: 85.6386795
+            Y: 23.9003754
             Z: -100
           }
           Rotation {
+            Yaw: -75.1276245
           }
           Scale {
-            X: 0.7
-            Y: 0.7
-            Z: 0.7
+            X: 0.25
+            Y: 0.25
+            Z: 0.25
           }
         }
         ParentId: 13675872824029062953
@@ -441,6 +448,461 @@ Assets {
           }
         }
         ParentId: 15693742060529201858
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:MaxIndex"
+            Int: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12829206983758675477
+          }
+        }
+      }
+      Objects {
+        Id: 9719055339954499357
+        Name: "Decal Elven Symbols"
+        Transform {
+          Location {
+            X: -84.3613205
+            Y: 23.9004059
+            Z: -100
+          }
+          Rotation {
+            Yaw: 74.6840439
+          }
+          Scale {
+            X: 0.25
+            Y: 0.25
+            Z: 0.25
+          }
+        }
+        ParentId: 13675872824029062953
+        ChildIds: 2304401882759373130
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.743186712
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              G: 0.98
+              B: 0.490000248
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color Emissive"
+            Color {
+              G: 1
+              B: 0.666666746
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 0
+          }
+          Overrides {
+            Name: "bp:Fade Time"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5044857458837119257
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 2304401882759373130
+        Name: "Simple Random Shape Index"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9719055339954499357
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:MaxIndex"
+            Int: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12829206983758675477
+          }
+        }
+      }
+      Objects {
+        Id: 15627229527452213581
+        Name: "Decal Elven Symbols"
+        Transform {
+          Location {
+            X: 55.6386604
+            Y: -70.0000076
+            Z: -100
+          }
+          Rotation {
+            Yaw: -141.939423
+          }
+          Scale {
+            X: 0.25
+            Y: 0.25
+            Z: 0.25
+          }
+        }
+        ParentId: 13675872824029062953
+        ChildIds: 15644791722453756511
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.743186712
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              G: 0.98
+              B: 0.490000248
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color Emissive"
+            Color {
+              G: 1
+              B: 0.666666746
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 0
+          }
+          Overrides {
+            Name: "bp:Fade Time"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5044857458837119257
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 15644791722453756511
+        Name: "Simple Random Shape Index"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15627229527452213581
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:MaxIndex"
+            Int: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12829206983758675477
+          }
+        }
+      }
+      Objects {
+        Id: 8768549151680491714
+        Name: "Decal Elven Symbols"
+        Transform {
+          Location {
+            X: -54.3613396
+            Y: -69.9999924
+            Z: -100
+          }
+          Rotation {
+            Yaw: 142.092896
+          }
+          Scale {
+            X: 0.25
+            Y: 0.25
+            Z: 0.25
+          }
+        }
+        ParentId: 13675872824029062953
+        ChildIds: 12037063049958044186
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.743186712
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              G: 0.98
+              B: 0.490000248
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color Emissive"
+            Color {
+              G: 1
+              B: 0.666666746
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 0
+          }
+          Overrides {
+            Name: "bp:Fade Time"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5044857458837119257
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 12037063049958044186
+        Name: "Simple Random Shape Index"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8768549151680491714
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:MaxIndex"
+            Int: 15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12829206983758675477
+          }
+        }
+      }
+      Objects {
+        Id: 15391158867985585306
+        Name: "Decal Elven Symbols"
+        Transform {
+          Location {
+            X: 0.898453236
+            Y: 87.8964844
+            Z: -100
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.25
+            Y: 0.25
+            Z: 0.25
+          }
+        }
+        ParentId: 13675872824029062953
+        ChildIds: 9247164946216023006
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.743186712
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              G: 0.98
+              B: 0.490000248
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color Emissive"
+            Color {
+              G: 1
+              B: 0.666666746
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 0
+          }
+          Overrides {
+            Name: "bp:Fade Time"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5044857458837119257
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 9247164946216023006
+        Name: "Simple Random Shape Index"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15391158867985585306
         UnregisteredParameters {
           Overrides {
             Name: "cs:MaxIndex"

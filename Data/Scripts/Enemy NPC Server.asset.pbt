@@ -16,6 +16,15 @@ Assets {
           Id: 4048767687044730201
         }
       }
+      Overrides {
+        Name: "cs:Hitbox"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:Wander"
+        Bool: true
+      }
     }
   }
   SerializationVersion: 87

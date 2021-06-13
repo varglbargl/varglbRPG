@@ -7,6 +7,7 @@ local FONT = script:GetCustomProperty("Font")
 
 local DAMAGED_VFX = enemy:GetCustomProperty("DamagedVFX")
 local DEATH_VFX = enemy:GetCustomProperty("DeathVFX")
+local ATTACK_VFX = enemy:GetCustomProperty("AttackVFX")
 
 function onEnemyHit(id, damage)
   if not Object.IsValid(enemy) then return end
@@ -43,8 +44,25 @@ function onEnemyDied(id, damage)
   end
 end
 
+function onEnemyAttacked(id)
+  if not Object.IsValid(enemy) then return end
+
+  if id == enemy.id then
+    MESH:PlayAnimation("unarmed_claw")
+
+    if ATTACK_VFX then
+      local vfx = World.SpawnAsset(ATTACK_VFX, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
+      Task.Wait(5)
+      if Object.IsValid(vfx) then vfx:Destroy() end
+    end
+  end
+end
+
 -- handler params: String_id, Number_damage
 Events.Connect("eHit", onEnemyHit)
 
--- handler params: String_id
+-- handler params: String_id, Number_damage
 Events.Connect("eDie", onEnemyDied)
+
+-- handler params: String_id
+Events.Connect("eAtt", onEnemyAttacked)

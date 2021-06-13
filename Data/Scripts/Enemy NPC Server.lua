@@ -4,14 +4,14 @@ local enemy = script.parent
 
 local LEVEL = enemy:GetCustomProperty("Level")
 local SPAWN_VFX = script:GetCustomProperty("SpawnVFX")
+local WANDER = script:GetCustomProperty("Wander")
+local HITBOX = script:GetCustomProperty("Hitbox"):WaitForObject()
 
 local stats = Utils.getStatsByLevel(LEVEL)
 
 local isDead = false
 local isFighting = false
 local myTemplateId = script:FindTemplateRoot().sourceTemplateId
-
-local HITBOX = script:GetCustomProperty("Hitbox"):WaitForObject()
 
 HITBOX.serverUserData["Enemy"] = enemy
 
@@ -28,6 +28,17 @@ end
 enemy:SetWorldScale(Vector3.ONE * 0.25)
 enemy:ScaleTo(defaultScale, 0.2)
 
+function areTherePlayersNearby()
+  local players = Game.GetPlayers()
+
+  for _, player in ipairs(players) do
+    if Object.IsValid(player) and (Utils.groundBelowPoint(player:GetWorldPosition()) - spawnPoint).size < 8000 then
+      return true
+    end
+  end
+
+  return false
+end
 
 function startFighting(player)
   -- print("Oh ho ho you are so going down, "..player.name.."!")
@@ -95,14 +106,17 @@ function stopFighting()
 
   isFighting = false
   enemy.collision = Collision.INHERIT
-  wanderLoop()
+
+  if WANDER then
+    wanderLoop()
+  end
 end
 
 function attack(player)
   if isDead or not Object.IsValid(player) or not Object.IsValid(enemy) then return end
 
   local damage = Utils.rollDamage(stats)
-  Events.BroadcastToAllPlayers("eAtt", enemy.id, damage.amount)
+  Utils.throttleToAllPlayers("eAtt", enemy.id)
   player:ApplyDamage(damage)
   Task.Wait(1)
 end
@@ -115,7 +129,7 @@ function die(damage)
   enemy:StopRotate()
   enemy.collision = Collision.FORCE_OFF
   isDead = true
-  Events.BroadcastToAllPlayers("eDie", enemy.id, damage)
+  Utils.throttleToAllPlayers("eDie", enemy.id, damage)
   Events.Broadcast("PlayerGainedExp", isFighting, stats.xpValue)
 
   Task.Wait(3)
@@ -130,9 +144,27 @@ function die(damage)
   Task.Spawn(respawn)
 end
 
+function despawn()
+  print("K, well if nobody needs me I'll just go back to hell. See ya.")
+
+  isDead = true
+  enemy:Destroy()
+  Task.Spawn(respawn)
+end
+
 function respawn()
   Task.Wait(math.random(5, 10))
-  World.SpawnAsset(myTemplateId, {position = spawnPoint})
+
+  if areTherePlayersNearby() then
+    World.SpawnAsset(myTemplateId, {position = spawnPoint})
+    return
+  end
+
+  print("Guess I'll just wait here. Being dead.")
+
+  Task.Wait(10)
+
+  respawn()
 end
 
 function onWeaponHit(thisEnemy, weapon, damage)
@@ -146,7 +178,7 @@ function onWeaponHit(thisEnemy, weapon, damage)
   end
 
   if stats.hitPoints > 0 then
-    Events.BroadcastToAllPlayers("eHit", enemy.id, damage)
+    Utils.throttleToAllPlayers("eHit", enemy.id, damage)
   else
     stats.hitPoints = 0
     die(damage)
@@ -158,6 +190,11 @@ Events.Connect("WeaponHit", onWeaponHit)
 function wanderLoop()
   Task.Wait(math.random(100, 200) / 10)
   if isFighting or isDead or not Object.IsValid(enemy) then return end
+
+  if areTherePlayersNearby() == false then
+    despawn()
+    return
+  end
 
   local toVector = Utils.groundBelowPoint(enemy:GetWorldPosition() + Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 500)
   local fromVector = enemy:GetWorldPosition()
@@ -176,4 +213,6 @@ function wanderLoop()
   wanderLoop()
 end
 
-Task.Spawn(wanderLoop)
+if WANDER then
+  Task.Spawn(wanderLoop)
+end

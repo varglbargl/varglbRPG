@@ -1,19 +1,26 @@
 local trigger = script.parent
 
-local DAMAGE = script:GetCustomProperty("damage")
+local DAMAGE = script:GetCustomProperty("Damage")
 
-function onBeginOverlap(whichTrigger, other)
-	if other:IsA("Player") then
-    while whichTrigger:IsOverlapping(other) do
-      if DAMAGE > 0 then
-		    other:ApplyDamage(Damage.New(DAMAGE))
-      elseif DAMAGE < 0 and other.hitPoints ~= other.maxHitPoints then
-        other.hitPoints = math.min(other.hitPoints - DAMAGE, other.maxHitPoints)
-        Events.Broadcast("PlayerHealed", other, -DAMAGE)
+function onBeginOverlap(thisTrigger, thisOther)
+	if thisOther:IsA("Player") then
+    local damageTask = Task.Spawn(function()
+
+      while Task.Wait(1) do
+        if DAMAGE > 0 then
+          thisOther:ApplyDamage(Damage.New(DAMAGE))
+        elseif DAMAGE < 0 and thisOther.hitPoints ~= thisOther.maxHitPoints then
+          thisOther.hitPoints = math.min(thisOther.hitPoints - DAMAGE, thisOther.maxHitPoints)
+          Events.Broadcast("PlayerHealed", thisOther, -DAMAGE)
+        end
       end
+    end)
 
-      Task.Wait(0.5)
-    end
+    trigger.endOverlapEvent:Connect(function(thatTrigger, thatOther)
+      if damageTask and thatOther == thisOther then
+        damageTask:Cancel()
+      end
+    end)
 	end
 end
 

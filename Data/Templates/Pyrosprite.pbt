@@ -36,6 +36,12 @@ Assets {
               Id: 1832804711851380767
             }
           }
+          Overrides {
+            Name: "cs:AttackVFX"
+            AssetReference {
+              Id: 8718155860146548893
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -454,11 +460,10 @@ Assets {
           }
         }
         ParentId: 15089466173944845956
-        ChildIds: 11939507002889336017
+        ChildIds: 5078290776169132191
         ChildIds: 12046130561887249457
         ChildIds: 951113861200961909
         ChildIds: 12210565309108672227
-        ChildIds: 5078290776169132191
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -473,21 +478,18 @@ Assets {
         }
       }
       Objects {
-        Id: 11939507002889336017
-        Name: "Rock 03"
+        Id: 5078290776169132191
+        Name: "Sphere"
         Transform {
           Location {
-            X: 0.238129467
-            Y: -1.75976563
-            Z: 3.84836388
           }
           Rotation {
             Pitch: 31.1474304
           }
           Scale {
-            X: 0.0568688698
-            Y: 0.0568688698
-            Z: 0.0568688698
+            X: 0.280854642
+            Y: 0.280854642
+            Z: 0.280854642
           }
         }
         ParentId: 1494482017119174380
@@ -495,7 +497,16 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 16765772874680564664
+              Id: 13030140920664503080
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 50
+              G: 9.34535599
+              B: 1.67493522
+              A: 1
             }
           }
         }
@@ -513,7 +524,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 13710161915374590549
+            Id: 13164005449179335890
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -784,68 +795,6 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 5078290776169132191
-        Name: "Sphere"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Pitch: 31.1474304
-          }
-          Scale {
-            X: 0.280854642
-            Y: 0.280854642
-            Z: 0.280854642
-          }
-        }
-        ParentId: 1494482017119174380
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 13030140920664503080
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 50
-              G: 9.34535599
-              B: 1.67493522
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 13164005449179335890
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
     }
     Assets {
       Id: 4524004223631073795
@@ -875,21 +824,30 @@ Assets {
       }
     }
     Assets {
+      Id: 13164005449179335890
+      Name: "Sphere"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_sphere_002"
+      }
+    }
+    Assets {
+      Id: 13030140920664503080
+      Name: "Additive Soft Edge"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_additive_edgefade"
+      }
+    }
+    Assets {
       Id: 13710161915374590549
       Name: "Rock 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_rock_generic_003"
-      }
-    }
-    Assets {
-      Id: 16765772874680564664
-      Name: "Rock Obsidian 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_fresnel_rock_obsidian_001_uv"
       }
     }
     Assets {
@@ -908,24 +866,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "fxsm_candleflame"
-      }
-    }
-    Assets {
-      Id: 13164005449179335890
-      Name: "Sphere"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_sphere_002"
-      }
-    }
-    Assets {
-      Id: 13030140920664503080
-      Name: "Additive Soft Edge"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxma_additive_edgefade"
       }
     }
     PrimaryAssetId {

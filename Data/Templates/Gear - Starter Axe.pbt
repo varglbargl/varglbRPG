@@ -7,7 +7,7 @@ Assets {
       RootId: 13646150952846456020
       Objects {
         Id: 13646150952846456020
-        Name: "Gear - Starter Axe"
+        Name: "Starter Axe"
         Transform {
           Scale {
             X: 1
@@ -221,14 +221,11 @@ Assets {
         Name: "Hitbox"
         Transform {
           Location {
-            X: 3.97951365
-            Y: -1.67582703
-            Z: 36.2614822
+            X: 3.25906277
+            Y: -2.29889107
+            Z: 33.5442
           }
           Rotation {
-            Pitch: -11.5082397
-            Yaw: -14.2721252
-            Roll: 0.952681899
           }
           Scale {
             X: 1

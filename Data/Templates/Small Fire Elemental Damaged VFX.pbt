@@ -4,10 +4,10 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 4181532791122980411
+      RootId: 15575240028739686511
       Objects {
-        Id: 4181532791122980411
-        Name: "Fire Elemental Damaged VFX"
+        Id: 15575240028739686511
+        Name: "Small Fire Elemental Damaged VFX"
         Transform {
           Scale {
             X: 1
@@ -15,13 +15,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14723837863872514709
+        ParentId: 4781671109827199097
         ChildIds: 10581322194261818859
         ChildIds: 13263292009598560910
         ChildIds: 17158261968843937151
         Lifespan: 2
+        WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -32,8 +33,7 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Folder {
-          IsGroup: true
+        NetworkContext {
         }
       }
       Objects {
@@ -41,6 +41,7 @@ Assets {
         Name: "Impact Sparks VFX"
         Transform {
           Location {
+            Z: 20
           }
           Rotation {
           }
@@ -50,7 +51,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4181532791122980411
+        ParentId: 15575240028739686511
         UnregisteredParameters {
           Overrides {
             Name: "bp:Initial Velocity"
@@ -112,6 +113,7 @@ Assets {
         Name: "Magic Poof Creature Transform Spell 01 SFX"
         Transform {
           Location {
+            Z: 20
           }
           Rotation {
           }
@@ -121,7 +123,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4181532791122980411
+        ParentId: 15575240028739686511
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -141,8 +143,8 @@ Assets {
           AutoPlay: true
           Pitch: 500
           Volume: 1
-          Falloff: -1
-          Radius: 500
+          Falloff: 2000
+          Radius: 1000
           StartTime: 0.1
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
@@ -153,6 +155,7 @@ Assets {
         Name: "Fire Torch Ignite Ember 01 SFX"
         Transform {
           Location {
+            Z: 20
           }
           Rotation {
           }
@@ -162,7 +165,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4181532791122980411
+        ParentId: 15575240028739686511
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -180,10 +183,10 @@ Assets {
             Id: 2264805183727153562
           }
           AutoPlay: true
-          Pitch: 200
+          Pitch: 100
           Volume: 1
-          Falloff: -1
-          Radius: 500
+          Falloff: 2000
+          Radius: 1000
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }

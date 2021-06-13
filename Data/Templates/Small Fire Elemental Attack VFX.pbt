@@ -1,13 +1,13 @@
 Assets {
-  Id: 1832804711851380767
-  Name: "Small Fire Elemental Death VFX"
+  Id: 8718155860146548893
+  Name: "Small Fire Elemental Attack VFX"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 13312380640363569658
+      RootId: 8702578595019950290
       Objects {
-        Id: 13312380640363569658
-        Name: "Small Fire Elemental Death VFX"
+        Id: 8702578595019950290
+        Name: "Small Fire Elemental Attack VFX"
         Transform {
           Scale {
             X: 1
@@ -16,11 +16,9 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 7825200835736269346
-        ChildIds: 9443616494158792252
-        ChildIds: 11174074706174079379
-        ChildIds: 9816930863792835466
-        Lifespan: 3
+        ChildIds: 15100324564942605152
+        ChildIds: 8220391639598631619
+        ChildIds: 15624511877154176849
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -38,10 +36,11 @@ Assets {
         }
       }
       Objects {
-        Id: 7825200835736269346
-        Name: "Explosion Kit Spark Burst VFX"
+        Id: 15100324564942605152
+        Name: "Explosion Kit Airburst Fireball VFX"
         Transform {
           Location {
+            X: 50
             Z: 20
           }
           Rotation {
@@ -52,25 +51,30 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13312380640363569658
+        ParentId: 8702578595019950290
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
-            Float: 0.5
+            Float: 0.2
           }
           Overrides {
-            Name: "bp:Radius"
-            Float: 5
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 0.5
+            Name: "bp:Particle Scale"
+            Float: 0.2
           }
           Overrides {
             Name: "bp:Looping"
             Bool: false
           }
+          Overrides {
+            Name: "bp:Loop Duration"
+            Float: 0.2
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 2
+          }
         }
+        Lifespan: 0.6
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -85,7 +89,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 4233090198418833982
+            Id: 5044046289905085501
           }
           TeamSettings {
           }
@@ -98,52 +102,10 @@ Assets {
         }
       }
       Objects {
-        Id: 9443616494158792252
-        Name: "Magic Deep Heavy Poof Whoosh 01 SFX"
-        Transform {
-          Location {
-            Z: 20
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13312380640363569658
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 2818758157170387987
-          }
-          AutoPlay: true
-          Pitch: -500
-          Volume: 0.7
-          Falloff: 2000
-          Radius: 1000
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
-        }
-      }
-      Objects {
-        Id: 11174074706174079379
+        Id: 8220391639598631619
         Name: "Squeaky Toy 03 SFX"
         Transform {
           Location {
-            Z: 20
           }
           Rotation {
           }
@@ -153,7 +115,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13312380640363569658
+        ParentId: 8702578595019950290
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -171,19 +133,22 @@ Assets {
             Id: 4899923684842662943
           }
           AutoPlay: true
-          Pitch: 200
-          Volume: 1
-          Falloff: 2000
-          Radius: 1000
+          Pitch: -200
+          Volume: 0.7
+          Falloff: -1
+          Radius: -1
+          FadeOutTime: 0.2
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
+          StopTime: 0.15
         }
       }
       Objects {
-        Id: 9816930863792835466
-        Name: "Fire Match Ignite Swipe 01 SFX"
+        Id: 15624511877154176849
+        Name: "Magic Fireball Small Impact 01 SFX"
         Transform {
           Location {
+            X: 50
             Z: 20
           }
           Rotation {
@@ -194,7 +159,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13312380640363569658
+        ParentId: 8702578595019950290
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -209,10 +174,11 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 14447074498459678215
+            Id: 9517518412245604689
           }
           AutoPlay: true
-          Volume: 0.8
+          Pitch: 800
+          Volume: 1
           Falloff: 2000
           Radius: 1000
           IsSpatializationEnabled: true
@@ -221,21 +187,12 @@ Assets {
       }
     }
     Assets {
-      Id: 4233090198418833982
-      Name: "Explosion Kit Spark Burst VFX"
+      Id: 5044046289905085501
+      Name: "Explosion Kit Airburst Fireball VFX"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_mil_explokit_sparkBurst"
-      }
-    }
-    Assets {
-      Id: 2818758157170387987
-      Name: "Magic Deep Heavy Poof Whoosh 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_deep_heavy_magic_poof_whoosh_01_Cue_ref"
+        AssetId: "fxbp_mil_explokit_fireball"
       }
     }
     Assets {
@@ -248,12 +205,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14447074498459678215
-      Name: "Fire Match Ignite Swipe 01 SFX"
+      Id: 9517518412245604689
+      Name: "Magic Fireball Small Impact 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_fire_match_ignite_swipe_01a_Cue_ref"
+        AssetId: "sfx_magic_fireball_small_impact_01a_Cue_ref"
       }
     }
     PrimaryAssetId {

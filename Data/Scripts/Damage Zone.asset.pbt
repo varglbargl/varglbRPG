@@ -3,6 +3,12 @@ Assets {
   Name: "Damage Zone"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:Damage"
+        Int: 1
+      }
+    }
   }
   SerializationVersion: 87
 }

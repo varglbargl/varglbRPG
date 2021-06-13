@@ -70,8 +70,8 @@ Assets {
           AutoPlay: true
           Pitch: -100
           Volume: 0.5
-          Falloff: 800
-          Radius: 500
+          Falloff: 1600
+          Radius: 800
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }

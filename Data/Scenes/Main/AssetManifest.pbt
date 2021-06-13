@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16354317593366277883
+  Name: "Metal Old Beaten Gold 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_002"
+  }
+}
+Assets {
   Id: 16211011711561204509
   Name: "Flower Wild Lily 01"
   PlatformAssetType: 1
@@ -50,15 +59,6 @@ Assets {
   PrimaryAsset {
     AssetType: "SkinnedMeshAssetRef"
     AssetId: "npc_human_guy_hair_basic_002_ref"
-  }
-}
-Assets {
-  Id: 15228815124760266200
-  Name: "Electric Surface"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_electrical_surface"
   }
 }
 Assets {
@@ -95,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "SkinnedMeshAssetRef"
     AssetId: "npc_human_guy_lower_scifi_002_ref"
+  }
+}
+Assets {
+  Id: 12568056527589784687
+  Name: "Pyramid - 4-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_001"
   }
 }
 Assets {
@@ -143,12 +152,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6474768715633236406
-  Name: "Fire Volume VFX"
-  PlatformAssetType: 8
+  Id: 5944393796542654307
+  Name: "Capsule"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_fire_volume_vfx"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_capsule_001"
   }
 }
 Assets {
@@ -167,5 +176,14 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
+  }
+}
+Assets {
+  Id: 527763958605568440
+  Name: "Metal Steel Brushed"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stainless-steel_001_uv"
   }
 }

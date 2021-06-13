@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17045756577297287670
+  Name: "Bark Oak 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_oak_001_uv"
+  }
+}
+Assets {
   Id: 16751224094635422494
   Name: "Rock 01"
   PlatformAssetType: 1
@@ -35,24 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14212988502358508072
-  Name: "Metal Basic Steel"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "steel_001"
-  }
-}
-Assets {
-  Id: 14049784323644711005
-  Name: "Diamond - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_hq_001"
-  }
-}
-Assets {
   Id: 13649979035082162066
   Name: "Decal Wood Ends Variations"
   PlatformAssetType: 14
@@ -71,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12905923173550510229
-  Name: "Cylinder - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_test_001"
-  }
-}
-Assets {
   Id: 12848555794856992854
   Name: "Decals Wood Chips 01"
   PlatformAssetType: 14
@@ -89,12 +71,21 @@ Assets {
   }
 }
 Assets {
-  Id: 12446131267530965574
-  Name: "Wood Raw"
-  PlatformAssetType: 2
+  Id: 12844865120941685994
+  Name: "Large Round Wood Beam 8m"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_raw_001_uv"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_round_6m"
+  }
+}
+Assets {
+  Id: 12720608495097268992
+  Name: "Scorch Mark Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scorchmark"
   }
 }
 Assets {
@@ -116,12 +107,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10126871160743796714
-  Name: "Ring - Beveled Thick"
+  Id: 10835155324150586940
+  Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ring_faceted_003"
+    AssetId: "sm_rocks_small_001"
   }
 }
 Assets {
@@ -131,15 +122,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_leaves_001"
-  }
-}
-Assets {
-  Id: 9479604368258872123
-  Name: "Ring - Quarter Beveled Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_ring_faceted_thick_001_ref"
   }
 }
 Assets {
@@ -161,12 +143,30 @@ Assets {
   }
 }
 Assets {
-  Id: 6309583787737635300
-  Name: "Ring - Quarter Beveled "
+  Id: 6474768715633236406
+  Name: "Fire Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fire_volume_vfx"
+  }
+}
+Assets {
+  Id: 4717249238612002881
+  Name: "Rock Pile 002"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_ring_faceted_001_ref"
+    AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
+  Id: 2281099433633317851
+  Name: "Burning Wood"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_burning_erode"
   }
 }
 Assets {
@@ -176,23 +176,5 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
-  }
-}
-Assets {
-  Id: 820217430221713418
-  Name: "Fantasy Axe Grip 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_grip_axe_001"
-  }
-}
-Assets {
-  Id: 37163230915025257
-  Name: "Prism - 3-Sided Convex"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_triangle_convex_001"
   }
 }

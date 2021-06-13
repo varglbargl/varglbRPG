@@ -18,6 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 14783371578983202918
         ChildIds: 2937185711837171971
+        ChildIds: 14615497357069275095
         ChildIds: 1300586035363788089
         ChildIds: 483834085513596509
         ChildIds: 1654928282962188426
@@ -1302,7 +1303,7 @@ Assets {
         Name: "Spawn Point"
         Transform {
           Location {
-            Z: 117.498047
+            Z: 100
           }
           Rotation {
             Yaw: 90
@@ -1332,6 +1333,50 @@ Assets {
           SpawnKey: "Graveyard"
           SpawnEffectsTemplate {
             Id: 11526742702718315181
+          }
+        }
+      }
+      Objects {
+        Id: 14615497357069275095
+        Name: "Clover Patch 02"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
+          }
+        }
+        ParentId: 15375280011964039418
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10662362392661442599
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
           }
         }
       }
@@ -1547,6 +1592,15 @@ Assets {
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
         AssetId: "bp_decal_elven_symbols_001"
+      }
+    }
+    Assets {
+      Id: 10662362392661442599
+      Name: "Clover Patch 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_foliage_gen_clover_patch_002"
       }
     }
     Assets {
