@@ -7,7 +7,7 @@ Assets {
       RootId: 13646150952846456020
       Objects {
         Id: 13646150952846456020
-        Name: "Gear - Adventurer Axe"
+        Name: "Adventurer Axe"
         Transform {
           Scale {
             X: 1
@@ -22,6 +22,10 @@ Assets {
         ChildIds: 4201542011359055748
         ChildIds: 8317944665994324292
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:ItemLevel"
+            Float: 10
+          }
           Overrides {
             Name: "cs:MinDamage"
             Int: 5
@@ -51,7 +55,7 @@ Assets {
         Equipment {
           SocketName: "right_prop"
           PickupTrigger {
-            SelfId: 10543058584916754762
+            SelfId: 1053215931000923668
           }
         }
       }

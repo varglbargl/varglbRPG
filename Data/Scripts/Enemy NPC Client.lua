@@ -3,17 +3,49 @@ local Utils = require(script:GetCustomProperty("Utils"))
 local enemy = script.parent.parent
 
 local MESH = script:GetCustomProperty("AnimatedMesh"):WaitForObject()
-local FONT = script:GetCustomProperty("Font")
+
+local IDLE_ANIM = script:GetCustomProperty("IdleAnimation")
+local READY_ANIM = script:GetCustomProperty("ReadyAnimation")
+local WALK_ANIM = script:GetCustomProperty("WalkAnimation")
+local RUN_ANIM = script:GetCustomProperty("RunAnimation")
+local ATTACK_ANIM = script:GetCustomProperty("AttackAnimation")
+local DIE_ANIM = script:GetCustomProperty("DieAnimation")
+
+if IDLE_ANIM ~= "" then MESH.animationStance = IDLE_ANIM end
 
 local DAMAGED_VFX = enemy:GetCustomProperty("DamagedVFX")
 local DEATH_VFX = enemy:GetCustomProperty("DeathVFX")
 local ATTACK_VFX = enemy:GetCustomProperty("AttackVFX")
+
+local isDead = false
+local lastKnownPosition = MESH:GetWorldPosition()
+
+function movingAnimationCheckLoop()
+  if isDead or (WALK_ANIM == "" and RUN_ANIM == "") or not Object.IsValid(enemy) then return end
+
+  local currentPosition = MESH:GetWorldPosition()
+
+  if RUN_ANIM ~= "" and (currentPosition - lastKnownPosition).size > 40 then
+    MESH.animationStance = RUN_ANIM
+  elseif WALK_ANIM ~= "" and (currentPosition - lastKnownPosition).size > 1 then
+    MESH.animationStance = WALK_ANIM
+  else
+    MESH.animationStance = IDLE_ANIM
+  end
+
+  lastKnownPosition = currentPosition
+  Task.Wait(0.25)
+  movingAnimationCheckLoop()
+end
+
+Task.Spawn(movingAnimationCheckLoop)
 
 function onEnemyHit(id, damage)
   if not Object.IsValid(enemy) then return end
 
   if id == enemy.id then
     MESH:PlayAnimation("unarmed_react_damage")
+    if not isDead and READY_ANIM ~= "" then MESH.animationStance = READY_ANIM end
 
     Utils.showFlyupText(damage, enemy:GetWorldPosition(), Utils.color.attack)
 
@@ -31,7 +63,8 @@ function onEnemyDied(id, damage)
   if not Object.IsValid(enemy) then return end
 
   if id == enemy.id then
-    MESH:PlayAnimation("unarmed_death_impact", {shouldLoop = true})
+    isDead = true
+    if DIE_ANIM ~= "" then MESH:PlayAnimation(DIE_ANIM, {shouldLoop = true}) end
 
     Utils.showFlyupText(damage, enemy:GetWorldPosition(), Utils.color.attack)
 
@@ -48,7 +81,7 @@ function onEnemyAttacked(id, reflectedDamage, survived)
   if not Object.IsValid(enemy) then return end
 
   if id == enemy.id then
-    if survived then MESH:PlayAnimation("unarmed_claw") end
+    if survived and ATTACK_ANIM ~= "" then MESH:PlayAnimation(ATTACK_ANIM) end
 
     if reflectedDamage > 0 then Utils.showFlyupText(reflectedDamage, enemy:GetWorldPosition(), Utils.color.magic) end
 

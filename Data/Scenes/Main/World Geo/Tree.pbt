@@ -1,6 +1,72 @@
 Name: "World Geo"
 RootId: 18063060926829527243
 Objects {
+  Id: 5353558258852025316
+  Name: "Bush 02"
+  Transform {
+    Location {
+      X: -2587.96973
+      Y: -14597.6748
+      Z: -166.139648
+    }
+    Rotation {
+      Yaw: -73.1062927
+      Roll: -179.999985
+    }
+    Scale {
+      X: 2.401263
+      Y: -2.40126467
+      Z: -1.99500525
+    }
+  }
+  ParentId: 18063060926829527243
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1915461248412394696
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 1
+        G: 0.0878145695
+        B: 0.0299999714
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15921159469172490171
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 15818711089567505841
   Name: "Bush 02"
   Transform {
@@ -3077,391 +3143,6 @@ Objects {
   }
 }
 Objects {
-  Id: 5689717330426025464
-  Name: "Bell"
-  Transform {
-    Location {
-      X: -9857.40234
-      Y: -5285.91699
-      Z: 1572.83984
-    }
-    Rotation {
-      Yaw: -53.0051384
-    }
-    Scale {
-      X: 12.5027609
-      Y: 12.5027609
-      Z: 12.5027609
-    }
-  }
-  ParentId: 18063060926829527243
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bell"
-  }
-}
-Objects {
-  Id: 4287034634999844336
-  Name: "Bell"
-  Transform {
-    Location {
-      X: -10466.3193
-      Y: -5285.91699
-      Z: 1139.51782
-    }
-    Rotation {
-      Yaw: -53.0051384
-    }
-    Scale {
-      X: 12.5027609
-      Y: 12.5027609
-      Z: 12.5027609
-    }
-  }
-  ParentId: 18063060926829527243
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bell_1"
-  }
-}
-Objects {
-  Id: 7808258211029336692
-  Name: "Bell"
-  Transform {
-    Location {
-      X: -11182.3926
-      Y: -6165.06738
-      Z: 1106.71826
-    }
-    Rotation {
-      Yaw: -131.768433
-    }
-    Scale {
-      X: 14.9981985
-      Y: 14.9981985
-      Z: 14.9981985
-    }
-  }
-  ParentId: 18063060926829527243
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bell_2"
-  }
-}
-Objects {
-  Id: 7989218961534344578
-  Name: "Bell"
-  Transform {
-    Location {
-      X: -11767.5381
-      Y: -5745.01074
-      Z: 1297.08154
-    }
-    Rotation {
-      Yaw: 161.804794
-    }
-    Scale {
-      X: 12.6023617
-      Y: 12.6023617
-      Z: 12.6023617
-    }
-  }
-  ParentId: 18063060926829527243
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bell_3"
-  }
-}
-Objects {
-  Id: 1575886492600676932
-  Name: "Bell"
-  Transform {
-    Location {
-      X: -11718.4023
-      Y: -4709.42676
-      Z: 1583.70239
-    }
-    Rotation {
-      Yaw: 125.049393
-    }
-    Scale {
-      X: 8.85147381
-      Y: 8.85147381
-      Z: 8.85147381
-    }
-  }
-  ParentId: 18063060926829527243
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bell_4"
-  }
-}
-Objects {
-  Id: 3885797401043970136
-  Name: "Bell"
-  Transform {
-    Location {
-      X: -10631.4688
-      Y: -4554.13281
-      Z: 1201.92236
-    }
-    Rotation {
-    }
-    Scale {
-      X: 12.5027609
-      Y: 12.5027609
-      Z: 12.5027609
-    }
-  }
-  ParentId: 18063060926829527243
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bell_5"
-  }
-}
-Objects {
-  Id: 8378221745119353675
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: -10860.1807
-      Y: -5655.81836
-      Z: 3157.7334
-    }
-    Rotation {
-    }
-    Scale {
-      X: 10.8
-      Y: 10.8
-      Z: 6.79999781
-    }
-  }
-  ParentId: 18063060926829527243
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 9443959626424343067
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1915461248412394696
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15921159469172490171
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 2021753891748336830
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: -10860.1807
-      Y: -5655.81836
-      Z: 2807.7334
-    }
-    Rotation {
-      Pitch: -1.36603776e-05
-      Yaw: 180
-      Roll: 180
-    }
-    Scale {
-      X: 10.8
-      Y: 10.8
-      Z: 2.4
-    }
-  }
-  ParentId: 18063060926829527243
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 9443959626424343067
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1915461248412394696
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15921159469172490171
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 6787273172402305711
-  Name: "Tree Oak 01"
-  Transform {
-    Location {
-      X: -11040.627
-      Y: -5480.28809
-      Z: -135.857422
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.18993258
-      Y: 2.18993258
-      Z: 1.71811616
-    }
-  }
-  ParentId: 18063060926829527243
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 9443959626424343067
-      }
-    }
-    Overrides {
-      Name: "ma:Nature_Trunk:utile"
-      Float: 2
-    }
-    Overrides {
-      Name: "ma:Nature_Trunk:vtile"
-      Float: 2
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15810711929320238020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 14069311706729607667
   Name: "Lumbergrove 1"
   Transform {
@@ -5383,6 +5064,76 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+}
+Objects {
+  Id: 3755928285586410568
+  Name: "Middle Grove"
+  Transform {
+    Location {
+      X: -10875.4268
+      Y: -4930.68848
+      Z: -154.591309
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18063060926829527243
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Middle Grove"
+  }
+}
+Objects {
+  Id: 698596244488651087
+  Name: "Lumber Jackal Zone"
+  Transform {
+    Location {
+      X: -5264.51758
+      Y: -13802.6592
+      Z: -2905.52637
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18063060926829527243
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Lumber Jackal Zone"
   }
 }
 Objects {

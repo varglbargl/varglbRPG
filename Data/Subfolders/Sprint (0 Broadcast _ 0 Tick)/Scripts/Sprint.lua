@@ -13,7 +13,10 @@ if(IS_ENABLED) then
 
 	local sprintKeyPressed = {}
 	local playerCrouchingTable = {}
+
 	function OnBindingPressed(whichPlayer, binding)
+    if whichPlayer:GetResource("Stamina") == 0 then return end
+
 		if(IS_CROUCH_SPEED_ENABLED) then Task.Wait(.005) end --without the delay isCrouching won't be updated in-time on Core's side
 
 		--pressed sprint key
@@ -25,8 +28,6 @@ if(IS_ENABLED) then
 	end
 
 	function OnBindingReleased(whichPlayer, binding)
-    if whichPlayer:GetResource("Stamina") == 0 then return end
-
 		if(IS_CROUCH_SPEED_ENABLED) then Task.Wait(.005) end --without the delay isCrouching won't be updated in-time on Core's side
 
 		--released sprint key

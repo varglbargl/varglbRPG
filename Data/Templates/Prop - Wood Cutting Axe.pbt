@@ -10,9 +10,9 @@ Assets {
         Name: "Prop - Wood Cutting Axe"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.837264597
+            Y: 0.837264597
+            Z: 0.837264597
           }
         }
         ParentId: 9411117654816017424

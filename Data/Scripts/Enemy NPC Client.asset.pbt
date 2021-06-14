@@ -10,6 +10,30 @@ Assets {
           Id: 8431391566871556229
         }
       }
+      Overrides {
+        Name: "cs:IdleAnimation"
+        String: ""
+      }
+      Overrides {
+        Name: "cs:ReadyAnimation"
+        String: ""
+      }
+      Overrides {
+        Name: "cs:WalkAnimation"
+        String: ""
+      }
+      Overrides {
+        Name: "cs:RunAnimation"
+        String: ""
+      }
+      Overrides {
+        Name: "cs:AttackAnimation"
+        String: ""
+      }
+      Overrides {
+        Name: "cs:DieAnimation"
+        String: ""
+      }
     }
   }
   SerializationVersion: 87

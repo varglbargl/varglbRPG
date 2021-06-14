@@ -158,12 +158,12 @@ function resourceTicker(player)
   end
 
   if player.serverUserData["Gliding"] or (player.isAccelerating and player:IsBindingPressed("ability_feet")) then
+    player:RemoveResource("Stamina", 5)
+
     if player:GetResource("Stamina") == 0 then
       player.serverUserData["Gliding"] = false
       Events.Broadcast("ForceStopSprint", player)
     end
-
-    player:RemoveResource("Stamina", 5)
   else
     player:SetResource("Stamina", math.min(player:GetResource("MaxStamina"), player:GetResource("Stamina") + math.floor(player:GetResource("Spit") / 20 + 1.5)))
   end

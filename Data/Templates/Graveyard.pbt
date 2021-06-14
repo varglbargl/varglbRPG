@@ -1341,6 +1341,7 @@ Assets {
         Name: "Clover Patch 02"
         Transform {
           Location {
+            Z: 2.08935547
           }
           Rotation {
           }
