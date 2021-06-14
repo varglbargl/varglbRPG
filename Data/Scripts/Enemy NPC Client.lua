@@ -44,11 +44,13 @@ function onEnemyDied(id, damage)
   end
 end
 
-function onEnemyAttacked(id)
+function onEnemyAttacked(id, reflectedDamage, survived)
   if not Object.IsValid(enemy) then return end
 
   if id == enemy.id then
-    MESH:PlayAnimation("unarmed_claw")
+    if survived then MESH:PlayAnimation("unarmed_claw") end
+
+    if reflectedDamage > 0 then Utils.showFlyupText(reflectedDamage, enemy:GetWorldPosition(), Utils.color.magic) end
 
     if ATTACK_VFX then
       local vfx = World.SpawnAsset(ATTACK_VFX, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
@@ -58,11 +60,11 @@ function onEnemyAttacked(id)
   end
 end
 
--- handler params: String_id, Number_damage
+-- handler params: String_id, Integer_damage
 Events.Connect("eHit", onEnemyHit)
 
--- handler params: String_id, Number_damage
+-- handler params: String_id, Integer_damage
 Events.Connect("eDie", onEnemyDied)
 
--- handler params: String_id
+-- handler params: String_id, Integer_reflectedDamage, Bool_survived
 Events.Connect("eAtt", onEnemyAttacked)

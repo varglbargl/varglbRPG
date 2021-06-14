@@ -249,7 +249,6 @@ Assets {
             }
           }
           Animation: "2hand_staff_magic_up"
-          CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:extraaction_33"
           }

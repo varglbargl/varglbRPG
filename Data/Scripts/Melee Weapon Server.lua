@@ -1,7 +1,10 @@
+local Utils = require(script:GetCustomProperty("Utils"))
+
 local weapon = script.parent
 
 local MIN_DAMAGE = weapon:GetCustomProperty("MinDamage")
 local MAX_DAMAGE = weapon:GetCustomProperty("MaxDamage")
+local ITEM_LEVEL = weapon:GetCustomProperty("ItemLevel")
 local STANCE = weapon:GetCustomProperty("AnimationStance")
 
 local HITBOX = script:GetCustomProperty("Hitbox"):WaitForObject()
@@ -10,7 +13,7 @@ HITBOX.collision = Collision.FORCE_OFF
 local hitEnemies = {}
 
 function rollDamage()
-  return math.random(MIN_DAMAGE, MAX_DAMAGE)
+  return math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + weapon.owner:GetResource("Grit"))
 end
 
 function onAbilityExecute(thisAbility)

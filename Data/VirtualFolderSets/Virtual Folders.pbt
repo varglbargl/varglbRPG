@@ -4,5 +4,21 @@ Assets {
   PlatformAssetType: 30
   SerializationVersion: 87
   VirtualFolderSetAsset {
+    Folders {
+      VirtualFolderPath: "Gear"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "VFX"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Props"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Enemies"
+      PlatformAssetType: 5
+    }
   }
 }

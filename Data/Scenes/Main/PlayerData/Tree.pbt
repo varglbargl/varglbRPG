@@ -431,6 +431,8 @@ Objects {
   ChildIds: 17206114854839061309
   ChildIds: 16859667684939510374
   ChildIds: 15612174430633360953
+  ChildIds: 11893261808527648292
+  ChildIds: 16929277839578795264
   ChildIds: 15580555744818508573
   ChildIds: 13450538728344509175
   Collidable_v2 {
@@ -612,8 +614,159 @@ Objects {
   }
 }
 Objects {
+  Id: 16929277839578795264
+  Name: "Stamina Numbers"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11555434822210598125
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIY: 34
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "50/50"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 16
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      ClipTextToSize: true
+      Font {
+        Id: 2669520400936692783
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 2
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11893261808527648292
+  Name: "Health Numbers"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11555434822210598125
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "50/50"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 16
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      ClipTextToSize: true
+      Font {
+        Id: 2669520400936692783
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 2
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 15612174430633360953
-  Name: "Mana Bar"
+  Name: "Stamina Bar"
   Transform {
     Location {
     }
@@ -1057,7 +1210,6 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        X: 2
         Y: 3
       }
     }
@@ -1209,6 +1361,24 @@ Objects {
       Name: "cs:HealthBar"
       ObjectReference {
         SelfId: 16859667684939510374
+      }
+    }
+    Overrides {
+      Name: "cs:StaminaBar"
+      ObjectReference {
+        SelfId: 15612174430633360953
+      }
+    }
+    Overrides {
+      Name: "cs:HealthNumbers"
+      ObjectReference {
+        SelfId: 11893261808527648292
+      }
+    }
+    Overrides {
+      Name: "cs:StaminaNumbers"
+      ObjectReference {
+        SelfId: 16929277839578795264
       }
     }
   }

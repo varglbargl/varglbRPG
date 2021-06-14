@@ -10,72 +10,83 @@ if(IS_ENABLED) then
 	local IS_CROUCH_SPEED_ENABLED = ROOT:GetCustomProperty("isCrouchSpeedEnabled")
 	local MAX_CROUCH_WALK_SPEED = ROOT:GetCustomProperty("maxCrouchWalkSpeed")
 	local SPRINT_MAX_CROUCH_WALK_SPEED = ROOT:GetCustomProperty("sprintMaxCrouchSpeed")
-	
+
 	local sprintKeyPressed = {}
 	local playerCrouchingTable = {}
 	function OnBindingPressed(whichPlayer, binding)
 		if(IS_CROUCH_SPEED_ENABLED) then Task.Wait(.005) end --without the delay isCrouching won't be updated in-time on Core's side
-	
+
 		--pressed sprint key
 		if (binding == ABILITY_BINDING_KEY) then
 			sprintKeyPressed[whichPlayer] = true
 		end
-		
-		UpdatePlayerMovement(whichPlayer)	
+
+		UpdatePlayerMovement(whichPlayer)
 	end
-	
+
 	function OnBindingReleased(whichPlayer, binding)
-		
+    if whichPlayer:GetResource("Stamina") == 0 then return end
+
 		if(IS_CROUCH_SPEED_ENABLED) then Task.Wait(.005) end --without the delay isCrouching won't be updated in-time on Core's side
-		
+
 		--released sprint key
-		if (binding == ABILITY_BINDING_KEY) then 
+		if (binding == ABILITY_BINDING_KEY) then
 			sprintKeyPressed[whichPlayer] = nil
 		end
-		UpdatePlayerMovement(whichPlayer)	
+		UpdatePlayerMovement(whichPlayer)
 	end
-		
+
+  -- added by Vanessa uwu
+  function forceStopSprint(whichPlayer)
+    if not Object.IsValid(whichPlayer) then return end
+
+		sprintKeyPressed[whichPlayer] = nil
+		UpdatePlayerMovement(whichPlayer)
+  end
+
+  Events.Connect("ForceStopSprint", forceStopSprint)
+
 	function UpdatePlayerMovement(whichPlayer)
 		--setup crouch
 		local isCrouching = false
 		if(IS_CROUCH_SPEED_ENABLED) then
 			if(whichPlayer.isCrouching) then isCrouching = true end
 		end
-		
+
 		--if crouching
 		if(isCrouching) then
-			if(sprintKeyPressed[whichPlayer]) then 
+			if(sprintKeyPressed[whichPlayer]) then
 				whichPlayer.maxWalkSpeed = SPRINT_MAX_CROUCH_WALK_SPEED
-			else 
+			else
 				whichPlayer.maxWalkSpeed = MAX_CROUCH_WALK_SPEED
 			end
 		--not crouching
-		else 	
+		else
 			if(sprintKeyPressed[whichPlayer]) then
 				SetPlayerMovementToSprint(whichPlayer)
-			else 
-				ResetPlayerMovementToDefault(whichPlayer)		
+			else
+				ResetPlayerMovementToDefault(whichPlayer)
 			end
 		end
 	end
-	
+
 	function ResetPlayerMovementToDefault(whichPlayer)
 		whichPlayer.maxWalkSpeed = _G.defaultMaxWalkSpeed
 		whichPlayer.maxAcceleration = _G.defaultMaxAcceleration
-		whichPlayer.maxSwimSpeed = _G.defaultMaxSwimSpeed	
+		whichPlayer.maxSwimSpeed = _G.defaultMaxSwimSpeed
 	end
-	
-	function SetPlayerMovementToSprint(whichPlayer) 
+
+	function SetPlayerMovementToSprint(whichPlayer)
 		whichPlayer.maxWalkSpeed = SPRINT_MAX_WALK_SPEED
 		whichPlayer.maxAcceleration = SPRINT_MAX_ACCELERATION
 		whichPlayer.maxSwimSpeed = SPRINT_MAX_SWIM_SPEED
 	end
-	
+
 	function OnPlayerJoined(player)
 		player.bindingPressedEvent:Connect(OnBindingPressed)
 		player.bindingReleasedEvent:Connect(OnBindingReleased)
 	end
-		
+
 	-- on player joined/left functions need to be defined before calling event:Connect()
 	Game.playerJoinedEvent:Connect(OnPlayerJoined)
 end

@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2669520400936692783
+  Name: "Roboto Slab Black"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "RobotoSlabBlack_ref"
+  }
+}
+Assets {
   Id: 2624420226776937237
   Name: "Fantasy Ability Blue 019"
   PlatformAssetType: 9

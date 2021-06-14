@@ -1,6 +1,6 @@
 Assets {
   Id: 2878518331186870302
-  Name: "Gear - Toy Shield"
+  Name: "Toy Shield"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -474,4 +474,5 @@ Assets {
     }
   }
   SerializationVersion: 87
+  VirtualFolderPath: "Gear"
 }

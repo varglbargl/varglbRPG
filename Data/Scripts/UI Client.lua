@@ -1,6 +1,9 @@
 local PLAYER_PORTRAIT = script:GetCustomProperty("PlayerPortrait"):WaitForObject()
 local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
 local HEALTH_BAR = script:GetCustomProperty("HealthBar"):WaitForObject()
+local STAMINA_BAR = script:GetCustomProperty("StaminaBar"):WaitForObject()
+local HEALTH_NUMBERS = script:GetCustomProperty("HealthNumbers"):WaitForObject()
+local STAMINA_NUMBERS = script:GetCustomProperty("StaminaNumbers"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 
@@ -18,6 +21,14 @@ function onResourceChanged(player, resourceName, amount)
 		if maxHP == 0 then return end
 
 		HEALTH_BAR.width = math.floor(amount / maxHP * 274 + 0.5)
+    HEALTH_NUMBERS.text = amount.." / "..maxHP
+
+  elseif resourceName == "Stamina" then
+    local maxStam = player:GetResource("MaxStamina")
+    if maxStam == 0 then return end
+
+    STAMINA_BAR.width = math.floor(amount / maxStam * 274 + 0.5)
+    STAMINA_NUMBERS.text = amount.." / "..maxStam
 	end
 end
 

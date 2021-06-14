@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17588356818725180439
+  Name: "Tree Sakura Hero Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_sakura_hero_01_bare_ref"
+  }
+}
+Assets {
   Id: 17045756577297287670
   Name: "Bark Oak 01"
   PlatformAssetType: 2
@@ -161,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4628572682044187401
+  Name: "Tree Oak Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_002"
+  }
+}
+Assets {
   Id: 2281099433633317851
   Name: "Burning Wood"
   PlatformAssetType: 2
@@ -176,5 +194,14 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 253612213795914275
+  Name: "Tree Sakura Hero Bare 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_sakura_hero_02_bare_ref"
   }
 }

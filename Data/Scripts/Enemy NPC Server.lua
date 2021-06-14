@@ -116,7 +116,14 @@ function attack(player)
   if isDead or not Object.IsValid(player) or not Object.IsValid(enemy) then return end
 
   local damage = Utils.rollDamage(stats)
-  Utils.throttleToAllPlayers("eAtt", enemy.id)
+  local reflectedDamage = 0
+
+  if player:GetResource("Class") == 1 then
+    reflectedDamage = math.max(1, math.floor(damage.amount/10))
+    onWeaponHit(enemy, nil, reflectedDamage)
+  end
+
+  Utils.throttleToAllPlayers("eAtt", enemy.id, reflectedDamage, not isDead)
   player:ApplyDamage(damage)
   Task.Wait(1)
 end
@@ -130,18 +137,24 @@ function die(damage)
   enemy.collision = Collision.FORCE_OFF
   isDead = true
   Utils.throttleToAllPlayers("eDie", enemy.id, damage)
-  Events.Broadcast("PlayerGainedExp", isFighting, stats.xpValue)
+  Events.Broadcast("PlayerGainedXP", isFighting, stats.xpValue)
 
-  Task.Wait(3)
-  if not Object.IsValid(enemy) then return end
+  if math.random() > 0.5 then
+    Events.Broadcast("PlayerGainedGold", isFighting, math.random(0, stats.xpValue))
+  end
 
-  enemy:MoveTo(enemy:GetWorldPosition() - Vector3.UP * 500, 5)
+  Task.Spawn(function()
+    Task.Wait(3)
+    if not Object.IsValid(enemy) then return end
 
-  Task.Wait(5)
-  if not Object.IsValid(enemy) then return end
+    enemy:MoveTo(enemy:GetWorldPosition() - Vector3.UP * 500, 5)
 
-  enemy:Destroy()
-  Task.Spawn(respawn)
+    Task.Wait(5)
+    if not Object.IsValid(enemy) then return end
+
+    enemy:Destroy()
+    respawn()
+  end)
 end
 
 function despawn()
@@ -178,7 +191,7 @@ function onWeaponHit(thisEnemy, weapon, damage)
   end
 
   if stats.hitPoints > 0 then
-    Utils.throttleToAllPlayers("eHit", enemy.id, damage)
+    if weapon then Utils.throttleToAllPlayers("eHit", enemy.id, damage) end
   else
     stats.hitPoints = 0
     die(damage)

@@ -8,6 +8,10 @@ Assets {
         Name: "cs:Damage"
         Int: 1
       }
+      Overrides {
+        Name: "cs:Percent"
+        Bool: false
+      }
     }
   }
   SerializationVersion: 87

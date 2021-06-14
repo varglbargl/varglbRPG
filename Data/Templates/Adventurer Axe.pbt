@@ -1,6 +1,6 @@
 Assets {
   Id: 14646393791636301489
-  Name: "Gear - Adventurer Axe"
+  Name: "Adventurer Axe"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -1169,4 +1169,5 @@ Assets {
     }
   }
   SerializationVersion: 87
+  VirtualFolderPath: "Gear"
 }

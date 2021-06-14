@@ -95,12 +95,21 @@ Assets {
       Overrides {
         Name: "cmp:Material4_Sides"
         AssetReference {
-          Id: 15766914597045056814
+          Id: 1362460187382800376
         }
       }
       Overrides {
         Name: "material4_genmask"
         Float: 1
+      }
+      Overrides {
+        Name: "cmpc:Material4_Sides"
+        Color {
+          R: 1.485
+          G: 1.487
+          B: 1.5
+          A: 1
+        }
       }
     }
     Assets {
@@ -176,12 +185,12 @@ Assets {
       }
     }
     Assets {
-      Id: 15766914597045056814
-      Name: "Dirt 01"
+      Id: 1362460187382800376
+      Name: "Forest Floor 02"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "dirt_001"
+        AssetId: "forest-floor_002"
       }
     }
   }
