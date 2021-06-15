@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16857903969986321144
-  Name: "Faceted Basic"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "plastic_faceted_001"
-  }
-}
-Assets {
   Id: 16751224094635422494
   Name: "Rock 01"
   PlatformAssetType: 1
@@ -41,33 +32,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
-  }
-}
-Assets {
-  Id: 15838163543022219364
-  Name: "Humanoid 2 Crisis Armor"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_upper_scifi_003_ref"
-  }
-}
-Assets {
-  Id: 15765931344030223678
-  Name: "Humanoid 2 Minh Hair"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_hair_basic_002_ref"
-  }
-}
-Assets {
-  Id: 15376374145827134769
-  Name: "Metal Steel Brushed"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_stainless-steel_001_uv"
   }
 }
 Assets {
@@ -98,21 +62,21 @@ Assets {
   }
 }
 Assets {
-  Id: 14212988502358508072
-  Name: "Metal Basic Steel"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "steel_001"
-  }
-}
-Assets {
-  Id: 14049784323644711005
-  Name: "Diamond - Polished"
+  Id: 13427994847847353291
+  Name: "Waterfall Straight"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_hq_001"
+    AssetId: "fxsm_waterfall_straight"
+  }
+}
+Assets {
+  Id: 12848555794856992854
+  Name: "Decals Wood Chips 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_strand_board_001_ref"
   }
 }
 Assets {
@@ -125,57 +89,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12717345478921020184
-  Name: "Humanoid 2 Trooper Pants"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_lower_scifi_002_ref"
-  }
-}
-Assets {
-  Id: 12446131267530965574
-  Name: "Wood Raw"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_raw_001_uv"
-  }
-}
-Assets {
   Id: 11571843439522528832
   Name: "Grass Tall"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
-  }
-}
-Assets {
-  Id: 9479604368258872123
-  Name: "Ring - Quarter Beveled Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_ring_faceted_thick_001_ref"
-  }
-}
-Assets {
-  Id: 8794874451128956416
-  Name: "Ring - Beveled"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ring_faceted_001"
-  }
-}
-Assets {
-  Id: 7486717179277049740
-  Name: "Humanoid 2 Rig"
-  PlatformAssetType: 25
-  PrimaryAsset {
-    AssetType: "SkeletonAssetRef"
-    AssetId: "npc_guy_wireframe_001_ref"
   }
 }
 Assets {
@@ -197,30 +116,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6954370053071083141
-  Name: "Metal Iron 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_001"
-  }
-}
-Assets {
   Id: 6383374026429183763
   Name: "Ambience Nature Water Shore Lake Bank Set 01 SFX"
   PlatformAssetType: 10
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_lake_ref"
-  }
-}
-Assets {
-  Id: 6309583787737635300
-  Name: "Ring - Quarter Beveled "
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_ring_faceted_001_ref"
   }
 }
 Assets {
@@ -233,12 +134,21 @@ Assets {
   }
 }
 Assets {
-  Id: 4153726533103501844
-  Name: "Gem - Trillion Polished"
+  Id: 4542959667302136808
+  Name: "Portcullis"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gem_trillion_polished_001"
+    AssetId: "sm_portcullis_001"
+  }
+}
+Assets {
+  Id: 3880098600205641478
+  Name: "Evil Scary Haunted Wind Howling Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_evil_scary_haunted_wind_howling_loop_01_Cue_ref"
   }
 }
 Assets {
@@ -251,12 +161,12 @@ Assets {
   }
 }
 Assets {
-  Id: 3478839111006173153
-  Name: "Humanoid 2 Drahkzen"
-  PlatformAssetType: 26
+  Id: 3229985897220821303
+  Name: "Waterfall Large SFX"
+  PlatformAssetType: 7
   PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_head_fantasy_004_ref"
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_waterfall_big_Cue"
   }
 }
 Assets {
@@ -275,14 +185,5 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_windytrees_ref"
-  }
-}
-Assets {
-  Id: 820217430221713418
-  Name: "Fantasy Axe Grip 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_grip_axe_001"
   }
 }

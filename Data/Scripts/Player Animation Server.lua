@@ -23,7 +23,7 @@ function deathAnimation(player, damage)
   player.animationStance = "unarmed_death_spin"
 end
 
-function respawnAnimation(player, damage)
+function spawnAnimation(player, damage)
   player.animationStance = player.serverUserData["IdleAnimation"]
 end
 
@@ -39,7 +39,7 @@ function onPlayerJoined(player)
   player.diedEvent:Connect(deathAnimation)
 
   -- handler params: Player_player
-  player.respawnedEvent:Connect(respawnAnimation)
+  player.spawnedEvent:Connect(spawnAnimation)
 end
 
 

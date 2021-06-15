@@ -1,6 +1,6 @@
 Assets {
   Id: 7280139155463797347
-  Name: "Prop - Lumber Saw"
+  Name: "Lumber Saw"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -335,6 +335,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
   VirtualFolderPath: "Props"
 }

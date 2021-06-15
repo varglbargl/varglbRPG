@@ -5157,6 +5157,8 @@ Objects {
   ChildIds: 3504812974637560679
   ChildIds: 4375447533387512890
   ChildIds: 15636535165350275944
+  ChildIds: 9061207760652599927
+  ChildIds: 14246565894213602332
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -5170,6 +5172,121 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 14246565894213602332
+  Name: "Rain Volume VFX"
+  Transform {
+    Location {
+      X: 13421.459
+      Y: 3495.93359
+      Z: -4116.6
+    }
+    Rotation {
+    }
+    Scale {
+      X: 19.9138622
+      Y: 19.9138622
+      Z: 19.9138622
+    }
+  }
+  ParentId: 5220668303531152840
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Velocity"
+      Vector {
+        Z: -9.8
+      }
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 0.1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 181471246923661261
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 9061207760652599927
+  Name: "Waterfall Top Volume VFX"
+  Transform {
+    Location {
+      X: 14822.1807
+      Y: 4844.20898
+      Z: -5646.13867
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5220668303531152840
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.850116611
+        G: 1
+        B: 0.608999968
+        A: 0.110000007
+      }
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7376135922227885485
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {

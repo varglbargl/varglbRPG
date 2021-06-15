@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7376135922227885485
+  Name: "Waterfall Top Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_waterfall_top"
+  }
+}
+Assets {
   Id: 6954370053071083141
   Name: "Metal Iron 01"
   PlatformAssetType: 2
@@ -203,5 +212,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_sakura_hero_02_bare_ref"
+  }
+}
+Assets {
+  Id: 181471246923661261
+  Name: "Rain Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_rain_volume_vfx"
   }
 }

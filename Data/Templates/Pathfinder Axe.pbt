@@ -7,7 +7,7 @@ Assets {
       RootId: 17911044613383296491
       Objects {
         Id: 17911044613383296491
-        Name: "Gear - Pathfinder Axe"
+        Name: "Pathfinder Axe"
         Transform {
           Scale {
             X: 1
@@ -22,6 +22,16 @@ Assets {
         ChildIds: 13138521018226060197
         ChildIds: 9197400561452277817
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 841534158063459245
+            }
+          }
+          Overrides {
+            Name: "cs:ItemLevel"
+            Float: 10
+          }
           Overrides {
             Name: "cs:MinDamage"
             Int: 5
@@ -51,7 +61,6 @@ Assets {
         Equipment {
           SocketName: "right_prop"
           PickupTrigger {
-            SelfId: 10543058584916754762
           }
         }
       }
@@ -1333,6 +1342,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
   VirtualFolderPath: "Gear"
 }

@@ -16,8 +16,17 @@ local myTemplateId = script:FindTemplateRoot().sourceTemplateId
 HITBOX.serverUserData["Enemy"] = enemy
 
 local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition())
-enemy:SetWorldPosition(spawnPoint)
-enemy:SetRotation(Rotation.New(0, 0, math.random(360)))
+local spawnRotation = enemy:GetWorldRotation()
+
+if not spawnPoint then
+  spawnPoint = enemy:GetWorldPosition()
+else
+  enemy:SetWorldPosition(spawnPoint)
+end
+
+if WANDER then
+  enemy:SetRotation(Rotation.New(0, 0, math.random(360)))
+end
 
 local defaultScale = enemy:GetWorldScale()
 
@@ -33,6 +42,7 @@ function areTherePlayersNearby()
 
   for _, player in ipairs(players) do
     if Object.IsValid(player) and (Utils.groundBelowPoint(player:GetWorldPosition()) - spawnPoint).size < 8000 then
+      -- return "i hate players"
       return true
     end
   end
@@ -119,7 +129,10 @@ function attack(player)
   local reflectedDamage = 0
 
   if player:GetResource("Class") == 1 then
-    reflectedDamage = math.max(1, math.floor(damage.amount/10))
+    reflectedDamage = math.min(player.hitPoints, math.max(1, math.floor(damage.amount/10 + math.random())))
+
+    damage.amount = damage.amount - reflectedDamage
+
     onWeaponHit(enemy, nil, reflectedDamage)
   end
 
@@ -158,7 +171,7 @@ function die(damage)
 end
 
 function despawn()
-  print("K, well if nobody needs me I'll just go back to hell. See ya.")
+  -- print("K, well if nobody needs me imma head back to hell. Peace.")
 
   isDead = true
   enemy:Destroy()
@@ -169,13 +182,11 @@ function respawn()
   Task.Wait(math.random(5, 10))
 
   if areTherePlayersNearby() then
-    World.SpawnAsset(myTemplateId, {position = spawnPoint})
+    World.SpawnAsset(myTemplateId, {position = spawnPoint, rotation = spawnRotation})
     return
   end
 
-  print("Guess I'll just wait here. Being dead.")
-
-  Task.Wait(10)
+  -- print("Guess I'll just wait here. Being dead.")
 
   respawn()
 end
@@ -212,7 +223,7 @@ function wanderLoop()
   local toVector = Utils.groundBelowPoint(enemy:GetWorldPosition() + Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 500)
   local fromVector = enemy:GetWorldPosition()
 
-  if not toVector or (fromVector - spawnPoint).size > 1000 then
+  if not toVector or (spawnPoint - fromVector).size > 1000 then
     -- print("im scared and im going home.")
     toVector = Utils.groundBelowPoint(fromVector + (spawnPoint - fromVector):GetNormalized() * 300)
 

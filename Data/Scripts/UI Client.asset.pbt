@@ -3,6 +3,14 @@ Assets {
   Name: "UI Client"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:Utils"
+        AssetReference {
+          Id: 8431391566871556229
+        }
+      }
+    }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
 }

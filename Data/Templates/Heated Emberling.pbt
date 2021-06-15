@@ -206,6 +206,14 @@ Assets {
               SubObjectId: 9571594831139579309
             }
           }
+          Overrides {
+            Name: "cs:DieAnimation"
+            String: "unarmed_death_impact"
+          }
+          Overrides {
+            Name: "cs:AttackAnimation"
+            String: "unarmed_claw"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1645,6 +1653,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
   VirtualFolderPath: "Enemies"
 }

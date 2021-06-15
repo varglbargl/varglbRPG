@@ -38,6 +38,12 @@ Assets {
             Name: "cs:AnimationStance"
             String: "1hand_melee_stance"
           }
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 15115673977934808491
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -55,7 +61,6 @@ Assets {
         Equipment {
           SocketName: "right_prop"
           PickupTrigger {
-            SelfId: 10543058584916754762
           }
         }
       }
@@ -1028,6 +1033,15 @@ Assets {
       }
     }
     Assets {
+      Id: 15115673977934808491
+      Name: "Fantasy Axe 003"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Weapon_Axe_003"
+      }
+    }
+    Assets {
       Id: 820217430221713418
       Name: "Fantasy Axe Grip 01"
       PlatformAssetType: 1
@@ -1095,6 +1109,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
   VirtualFolderPath: "Gear"
 }

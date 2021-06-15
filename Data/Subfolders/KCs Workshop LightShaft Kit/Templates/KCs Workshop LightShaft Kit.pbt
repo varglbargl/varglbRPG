@@ -25,7 +25,7 @@ Assets {
         Folder {
           BundleDummy {
             ReferencedAssets {
-              Id: 8934851376551302577
+              Id: 841534158063459245
             }
           }
         }
@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "A ready to drag and drop Sky Pack this has focused on helping people with  lightshafts /GodRays \r\nInstall :just delete all your default sky and drag and drop your new asset into the scene done .enjoy"
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
 }

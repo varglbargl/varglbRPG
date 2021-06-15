@@ -2,7 +2,7 @@ local FLY_UP_FONT = script:GetCustomProperty("FlyUpFont")
 
 local Utils = {}
 
-local powerDoublingRate = 10
+local powerDoublingRate = 7
 
 -- MY COLORS
 
@@ -23,7 +23,7 @@ local classes = {
     grit = 15,
     wit  = 5,
     spit = 10
-    -- special: 10% of all damage taken is reflected to the attacker
+    -- special: 10% of all damage taken is reflected to the attacker instead.
   },
   {
     name = "Paragon",
@@ -37,7 +37,7 @@ local classes = {
     grit = 5,
     wit  = 15,
     spit = 10
-    -- special: Off-hand spell refreshes mana instead of depleating it
+    -- special: ???
   },
   {
     name = "???",
@@ -54,11 +54,11 @@ local classes = {
     -- special: "All weapons are ranged weapons if you throw them!"
   },
   {
-    name = "Stalker",
+    name = "Harrier",
     grit = 10,
     wit  = 5,
     spit = 15
-    -- special: ???
+    -- special: Sprinting or gliding into a fight makes your first melee attack deal tripple.
   }
 }
 
@@ -128,7 +128,7 @@ function Utils.getStatsByLevel(level)
 
   local multiplier = Utils.magicNumber(level)
 
-  stats.maxHitPoints = math.floor(35 * multiplier)
+  stats.maxHitPoints = math.floor(45 * multiplier)
   stats.hitPoints = stats.maxHitPoints
 
   stats.minDamage = math.floor(7.5 * multiplier)
@@ -140,7 +140,7 @@ function Utils.getStatsByLevel(level)
 end
 
 function Utils.experienceToNextLevel(level)
-  return math.ceil(Utils.magicNumber(level) * 65 ^ 1.01 / 5) * 5
+  return math.ceil(Utils.magicNumber(level) * 65 ^ 1.02 / 5) * 5
 end
 
 function Utils.rollDamage(min, max)

@@ -2654,6 +2654,6 @@ Assets {
   Marketplace {
     Description: "yall mind if i uwu in here?\r\n\r\nUpdate: Wands are now fully usable weapons against evil!"
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
   DirectlyPublished: true
 }

@@ -13,7 +13,7 @@ HITBOX.collision = Collision.FORCE_OFF
 local hitEnemies = {}
 
 function rollDamage()
-  return math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + weapon.owner:GetResource("Grit"))
+  return math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + math.floor(weapon.owner:GetResource("Grit")) / 5 + math.random())
 end
 
 function onAbilityExecute(thisAbility)

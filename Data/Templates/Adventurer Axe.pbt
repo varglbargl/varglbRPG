@@ -55,7 +55,6 @@ Assets {
         Equipment {
           SocketName: "right_prop"
           PickupTrigger {
-            SelfId: 1053215931000923668
           }
         }
       }
@@ -1172,6 +1171,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
   VirtualFolderPath: "Gear"
 }

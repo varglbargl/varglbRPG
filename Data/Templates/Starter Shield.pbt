@@ -7,7 +7,7 @@ Assets {
       RootId: 2953111769030281295
       Objects {
         Id: 2953111769030281295
-        Name: "Gear - Starter Shield"
+        Name: "Starter Shield"
         Transform {
           Scale {
             X: 1
@@ -15,12 +15,18 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 726923549902060663
+        ParentId: 4781671109827199097
         ChildIds: 7109948812332489522
         UnregisteredParameters {
           Overrides {
             Name: "cs:Health"
             Int: 10
+          }
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 16268917374562647466
+            }
           }
         }
         WantsNetworking: true
@@ -39,7 +45,6 @@ Assets {
         Equipment {
           SocketName: "left_prop"
           PickupTrigger {
-            SelfId: 10543058584916754762
           }
         }
       }
@@ -878,6 +883,15 @@ Assets {
       }
     }
     Assets {
+      Id: 16268917374562647466
+      Name: "Fantasy Shield 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Weapon_Shield_001"
+      }
+    }
+    Assets {
       Id: 9693133565758539692
       Name: "2D Basic Shapes Decal"
       PlatformAssetType: 14
@@ -897,7 +911,7 @@ Assets {
     }
     Assets {
       Id: 14517640770277275868
-      Name: "Antenna Base"
+      Name: "Sci-fi Antenna Base"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -927,6 +941,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
   VirtualFolderPath: "Gear"
 }

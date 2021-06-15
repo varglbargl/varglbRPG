@@ -16,10 +16,10 @@ function onResourceChanged(player, name, newTotal)
 
       if difference > 0 then
         if not player.isDead then
-          Utils.showFlyupText("+"..difference, clientPlayer:GetWorldPosition(), Utils.color.heal)
+          Utils.showFlyupText("+"..Utils.formatInt(difference), clientPlayer:GetWorldPosition(), Utils.color.heal)
         end
       elseif difference < 0 then
-        Utils.showFlyupText(math.abs(difference), clientPlayer:GetWorldPosition(), Utils.color.hurt)
+        Utils.showFlyupText(Utils.formatInt(math.abs(difference)), clientPlayer:GetWorldPosition(), Utils.color.hurt)
       end
     end
 
@@ -29,7 +29,7 @@ function onResourceChanged(player, name, newTotal)
     if myExerience ~= "nothin" then
       local difference = newTotal - myExerience
       if difference > 0 then
-        Utils.showFlyupText("+"..difference.."xp", clientPlayer:GetWorldPosition(), Utils.color.xp)
+        Utils.showFlyupText("+"..Utils.formatInt(difference).."xp", clientPlayer:GetWorldPosition(), Utils.color.xp)
       end
     end
 
@@ -45,9 +45,9 @@ function onResourceChanged(player, name, newTotal)
     if myGold ~= "nothin" then
       local difference = newTotal - myGold
       if difference > 0 then
-        Utils.showFlyupText("+"..difference.."gp", clientPlayer:GetWorldPosition(), Utils.color.gold)
+        Utils.showFlyupText("+"..Utils.formatInt(difference).."gp", clientPlayer:GetWorldPosition(), Utils.color.gold)
       elseif difference < 0 then
-        Utils.showFlyupText(difference.."gp", clientPlayer:GetWorldPosition(), Utils.color.gold)
+        Utils.showFlyupText(Utils.formatInt(difference).."gp", clientPlayer:GetWorldPosition(), Utils.color.gold)
       end
     end
 

@@ -1,5 +1,5 @@
 GameId: "0989541749E65B27CA41D99B9CAC6B19"
 DisplayName: "varglbRPG"
-GameSerializationVersion: 87
+GameSerializationVersion: 89
 Framework: "Empty Project"
 StorageVersion: 2

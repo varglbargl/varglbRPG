@@ -3,10 +3,10 @@ function playerDied(player, damage)
 
   Task.Wait(5)
 
-  player:Respawn({spawnKey = "Graveyard"})
+  player:Spawn({spawnKey = "Graveyard"})
 end
 
-function playerRespawned(player)
+function playerSpawned(player)
   player.isMovementEnabled = true
 end
 
@@ -17,7 +17,7 @@ function onPlayerJoined(player)
   player.diedEvent:Connect(playerDied)
 
   -- handler params: Player_player
-  player.respawnedEvent:Connect(playerRespawned)
+  player.spawnedEvent:Connect(playerSpawned)
 end
 
 

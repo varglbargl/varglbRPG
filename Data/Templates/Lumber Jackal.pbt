@@ -22,24 +22,24 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:Level"
-            Int: 1
+            Int: 5
           }
           Overrides {
             Name: "cs:DamagedVFX"
             AssetReference {
-              Id: 9943909250650777562
+              Id: 889165033150398724
             }
           }
           Overrides {
             Name: "cs:DeathVFX"
             AssetReference {
-              Id: 1832804711851380767
+              Id: 545232987937505250
             }
           }
           Overrides {
             Name: "cs:AttackVFX"
             AssetReference {
-              Id: 8718155860146548893
+              Id: 16731583031667469391
             }
           }
         }
@@ -81,6 +81,10 @@ Assets {
             ObjectReference {
               SubObjectId: 4412637597147236972
             }
+          }
+          Overrides {
+            Name: "cs:Wander"
+            Bool: true
           }
         }
         WantsNetworking: true
@@ -168,7 +172,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -198,6 +202,30 @@ Assets {
             ObjectReference {
               SubObjectId: 16538897968305636157
             }
+          }
+          Overrides {
+            Name: "cs:IdleAnimation"
+            String: "2hand_melee_idle_relaxed"
+          }
+          Overrides {
+            Name: "cs:ReadyAnimation"
+            String: "2hand_melee_idle_ready"
+          }
+          Overrides {
+            Name: "cs:WalkAnimation"
+            String: "2hand_melee_walk_forward"
+          }
+          Overrides {
+            Name: "cs:RunAnimation"
+            String: "2hand_melee_run_forward"
+          }
+          Overrides {
+            Name: "cs:AttackAnimation"
+            String: "2hand_melee_slash_vertical"
+          }
+          Overrides {
+            Name: "cs:DieAnimation"
+            String: "unarmed_death"
           }
         }
         Collidable_v2 {
@@ -445,6 +473,7 @@ Assets {
           }
         }
         ParentId: 16538897968305636157
+        ChildIds: 17520265438873897334
         ChildIds: 11210124917139905117
         ChildIds: 14388200292231026780
         UnregisteredParameters {
@@ -468,6 +497,200 @@ Assets {
         Script {
           ScriptAsset {
             Id: 14822898899899907295
+          }
+        }
+      }
+      Objects {
+        Id: 17520265438873897334
+        Name: "head"
+        Transform {
+          Location {
+            X: -3.82226539
+            Z: 82.7619629
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3455530441477453204
+        ChildIds: 12834156032786519712
+        ChildIds: 12233791822256175921
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 12834156032786519712
+        Name: "Urban Pipe Straight"
+        Transform {
+          Location {
+            X: 18.432127
+            Z: 3.49560547
+          }
+          Rotation {
+            Pitch: 60.3576126
+          }
+          Scale {
+            X: 0.289439559
+            Y: 0.233109668
+            Z: 0.289439499
+          }
+        }
+        ParentId: 17520265438873897334
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.3
+              G: 0.0235849861
+              B: 0.0188999902
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15897705887741699672
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 12233791822256175921
+        Name: "Urban Pipe Valve 01"
+        Transform {
+          Location {
+            X: 11.1909733
+            Y: 0.000114560113
+            Z: 1.25193918
+          }
+          Rotation {
+            Yaw: 90
+            Roll: -90
+          }
+          Scale {
+            X: 0.415532649
+            Y: 0.415532649
+            Z: 0.415532649
+          }
+        }
+        ParentId: 17520265438873897334
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.408000022
+              G: 0.0320755839
+              B: 0.0257039871
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.786
+              G: 0.71788
+              B: 0.622512
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 13913062282643868615
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
           }
         }
       }
@@ -512,14 +735,14 @@ Assets {
         Name: "Prop - Wood Cutting Axe"
         Transform {
           Location {
-            X: -52.7875137
-            Y: -0.721910715
-            Z: 0.351117134
+            X: -52.7875061
+            Y: -0.721916199
+            Z: 0.351115704
           }
           Rotation {
-            Pitch: 101.720039
-            Yaw: 179.357727
-            Roll: -0.324401855
+            Pitch: 101.720093
+            Yaw: 179.357361
+            Roll: 0.795379639
           }
           Scale {
             X: 0.812622666
@@ -2935,6 +3158,24 @@ Assets {
       }
     }
     Assets {
+      Id: 15897705887741699672
+      Name: "Urban Pipe Straight"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_straight_001_ref"
+      }
+    }
+    Assets {
+      Id: 13913062282643868615
+      Name: "Urban Pipe Valve 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_acc_valve_001_ref"
+      }
+    }
+    Assets {
       Id: 37163230915025257
       Name: "Prism - 3-Sided Convex"
       PlatformAssetType: 1
@@ -3119,5 +3360,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
+  VirtualFolderPath: "Enemies"
 }

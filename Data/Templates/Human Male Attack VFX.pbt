@@ -1,0 +1,242 @@
+Assets {
+  Id: 16731583031667469391
+  Name: "Human Male Attack VFX"
+  PlatformAssetType: 5
+  TemplateAsset {
+    ObjectBlock {
+      RootId: 8702578595019950290
+      Objects {
+        Id: 8702578595019950290
+        Name: "Human Male Attack VFX"
+        Transform {
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4781671109827199097
+        ChildIds: 5099445600513719371
+        ChildIds: 9186653437508637990
+        ChildIds: 17488705281419369480
+        Lifespan: 2
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 5099445600513719371
+        Name: "Impact Lines VFX"
+        Transform {
+          Location {
+            X: 50
+            Z: 50
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8702578595019950290
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Enable Secondary Lines"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Color B"
+            Color {
+              R: 1
+              G: 0.0610000044
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color C"
+            Color {
+              R: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 0.324
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Flash Scale Multiplier"
+            Float: 0.75
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Initial Start Delay"
+            Float: 0.25
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11577203855581973093
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 9186653437508637990
+        Name: "Huge Sword Blade Impact Attack Big 01 SFX"
+        Transform {
+          Location {
+            X: 50
+            Z: 20
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8702578595019950290
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 4368530965434673018
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 2000
+          Radius: 1000
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 17488705281419369480
+        Name: "VO Generic Male Quick Attack Grunt 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8702578595019950290
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 16873285319163372483
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 2000
+          Radius: 1000
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+    }
+    Assets {
+      Id: 11577203855581973093
+      Name: "Impact Lines VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_impact_lines"
+      }
+    }
+    Assets {
+      Id: 4368530965434673018
+      Name: "Huge Sword Blade Impact Attack Big 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_huge_sword_blade_impact_attack_big_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 16873285319163372483
+      Name: "VO Generic Male Quick Attack Grunt 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_vo_generic_male_quick_attack_grunt_01a_Cue_ref"
+      }
+    }
+    PrimaryAssetId {
+      AssetType: "None"
+      AssetId: "None"
+    }
+  }
+  SerializationVersion: 89
+  VirtualFolderPath: "VFX"
+}

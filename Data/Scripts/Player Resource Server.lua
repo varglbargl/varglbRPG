@@ -13,7 +13,7 @@ function onPlayerHealed(player, newTotal)
   player:SetResource("HitPoints", player.hitPoints)
 end
 
-function playerRespawned(player)
+function playerSpawned(player)
   player:SetResource("HitPoints", player.hitPoints)
 end
 
@@ -39,20 +39,29 @@ function onPlayerJoined(player)
   -- stamina and ranged damage
   player:SetResource("Spit", player.serverUserData["ClassStats"].spit)
 
-  player.maxHitPoints = math.floor(35 + player:GetResource("Grit"))
+  player.maxHitPoints = math.floor(35 + player:GetResource("Grit") * 2)
   player.hitPoints = player.maxHitPoints
 
   player:SetResource("MaxHitPoints", player.maxHitPoints)
   player:SetResource("HitPoints", player.hitPoints)
 
-  player:SetResource("MaxStamina", math.floor(25 + player:GetResource("Spit") / 4))
+  player:SetResource("MaxStamina", math.floor(45 + player:GetResource("Spit") / 12 + player:GetResource("Level") / 2))
   player:SetResource("Stamina", player:GetResource("MaxStamina"))
 
   -- handler params: Player_player, Damage_damage
   player.damagedEvent:Connect(onPlayerDamaged)
 
   -- handler params: Player_player
-  player.respawnedEvent:Connect(playerRespawned)
+  player.spawnedEvent:Connect(playerSpawned)
+
+  if Environment.IsPreview() then
+    player.bindingPressedEvent:Connect(function(thisPlayer, keyCode)
+      if keyCode == "ability_extra_38" then
+        player:SetResource("Level", 59)
+        Events.Broadcast("PlayerGainedXP", thisPlayer, Utils.experienceToNextLevel(player:GetResource("Level")))
+      end
+    end)
+  end
 
   Task.Spawn(function() resourceTicker(player) end)
 end
@@ -111,13 +120,13 @@ function onPlayerGainedXP(player, amount)
 
     player:AddResource("Level", levelsGained)
 
-    player.maxHitPoints = math.floor(35 + player:GetResource("Grit"))
+    player.maxHitPoints = math.floor(35 + player:GetResource("Grit") * 2)
     player.hitPoints = player.maxHitPoints
 
     player:SetResource("MaxHitPoints", player.maxHitPoints)
     player:SetResource("HitPoints", player.hitPoints)
 
-    player:SetResource("MaxStamina", math.floor(25 + player:GetResource("Spit") / 4))
+    player:SetResource("MaxStamina", math.floor(45 + player:GetResource("Spit") / 12 + player:GetResource("Level") / 2))
     player:SetResource("Stamina", player:GetResource("MaxStamina"))
 
     --("Grit:"..player:GetResource("Grit").."  Wit:"..player:GetResource("Wit").."  Spit:"..player:GetResource("Spit").."")
