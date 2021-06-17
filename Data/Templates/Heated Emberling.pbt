@@ -350,7 +350,7 @@ Assets {
           Overrides {
             Name: "bp:Type"
             Enum {
-              Value: "mc:esfx_fireloops_01:10"
+              Value: "mc:esfx_fireloops_01:13"
             }
           }
         }

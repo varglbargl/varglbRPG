@@ -27,6 +27,10 @@ Assets {
         ChildIds: 17094456874405512028
         ChildIds: 8564283852384313901
         ChildIds: 7094789172294277317
+        ChildIds: 6584207700981091230
+        ChildIds: 7018814452603033971
+        ChildIds: 18097673227358421180
+        ChildIds: 7788971697489782857
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -799,6 +803,330 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 6584207700981091230
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: -5.64536524
+            Y: -2.1758337
+            Z: -39.0136948
+          }
+          Rotation {
+            Pitch: -20.7335434
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 0.0658986
+            Y: 0.0658986
+            Z: 0.0658986
+          }
+        }
+        ParentId: 5226372905247118928
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Corner Rounding"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Slice Size"
+            Float: 160
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.16
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Blur"
+            Float: 0
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9693133565758539692
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 7018814452603033971
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: -0.316237301
+            Y: -2.1758337
+            Z: -48.4062462
+          }
+          Rotation {
+            Pitch: -20.7335434
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 0.0658986
+            Y: 0.0658986
+            Z: 0.0658986
+          }
+        }
+        ParentId: 5226372905247118928
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Corner Rounding"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Slice Size"
+            Float: 160
+          }
+          Overrides {
+            Name: "bp:Slice Offset"
+            Float: 120
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.16
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Blur"
+            Float: 0
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9693133565758539692
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 18097673227358421180
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: 5.16722631
+            Y: -2.1758337
+            Z: -39.1181
+          }
+          Rotation {
+            Pitch: -20.7335434
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 0.0658986
+            Y: 0.0658986
+            Z: 0.0658986
+          }
+        }
+        ParentId: 5226372905247118928
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Corner Rounding"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Slice Size"
+            Float: 160
+          }
+          Overrides {
+            Name: "bp:Slice Offset"
+            Float: 240
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.16
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Blur"
+            Float: 0
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9693133565758539692
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 7788971697489782857
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: -0.198215723
+            Y: -2.1758337
+            Z: -42.163208
+          }
+          Rotation {
+            Pitch: -20.7335434
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 0.0461290181
+            Y: 0.0461290181
+            Z: 0.0658986
+          }
+        }
+        ParentId: 5226372905247118928
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Corner Rounding"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.2
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Blur"
+            Float: 0
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9693133565758539692
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
     }
     Assets {
       Id: 4621604117357375380
@@ -870,6 +1198,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxma_opaque_emissive"
+      }
+    }
+    Assets {
+      Id: 9693133565758539692
+      Name: "2D Basic Shapes Decal"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "dcl_basicShapes"
       }
     }
     PrimaryAssetId {

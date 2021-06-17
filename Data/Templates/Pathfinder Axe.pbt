@@ -230,14 +230,11 @@ Assets {
         Name: "Hitbox"
         Transform {
           Location {
-            X: 3.97951365
-            Y: -1.67582703
-            Z: 36.2614822
+            X: 3.97949219
+            Y: -1.67578125
+            Z: 36.2617188
           }
           Rotation {
-            Pitch: -11.5082397
-            Yaw: -14.2721252
-            Roll: 0.952681899
           }
           Scale {
             X: 1

@@ -51,7 +51,7 @@ local classes = {
     grit = 5,
     wit  = 10,
     spit = 15
-    -- special: "All weapons are ranged weapons if you throw them!"
+    -- special: Melee attacks knock enemies away
   },
   {
     name = "Harrier",
@@ -82,43 +82,6 @@ function Utils.formatInt(amount)
   end
 
   return formatted
-end
-
-
-function Utils.throttleToServer(evtName, ...)
-  local result = Events.BroadcastToServer(evtName, ...)
-
-  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
-    Task.Wait(0.1)
-    Utils.throttleToServer(evtName, ...)
-  end
-end
-
-function Utils.throttleToAllPlayers(evtName, ...)
-  local result = Events.BroadcastToAllPlayers(evtName, ...)
-
-  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
-    Task.Wait(0.1)
-    Utils.throttleToAllPlayers(evtName, ...)
-  end
-end
-
-function Utils.throttleToPlayer(player, evtName, ...)
-  local result = Events.BroadcastToPlayer(player, evtName, ...)
-
-  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
-    Task.Wait(0.1)
-    Utils.throttleToPlayer(player, evtName, ...)
-  end
-end
-
-function Utils.throttleMessage(message)
-  local result = Chat.BroadcastMessage(message)
-
-  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
-    Task.Wait(0.1)
-    Utils.throttleToPlayer(message)
-  end
 end
 
 function Utils.getStatsByLevel(level)
@@ -170,7 +133,83 @@ function Utils.showFlyupText(text, pos, color)
     text = tostring(text)
   end
 
-  UI.ShowFlyUpText(text, pos + Vector3.New(math.random(-50, 50), math.random(-50, 50), math.random(50, 100)), {font = FLY_UP_FONT, isBig = true, duration = 2, color = color})
+  UI.ShowFlyUpText(text, pos + Vector3.New(math.random(-60, 60), math.random(-60, 60), math.random(50, 100)), {font = FLY_UP_FONT, isBig = true, duration = 2, color = color})
+end
+
+-- EVENT THROTTLING
+
+local attackEvents = {}
+local howMany = 2
+
+local function unleashAttacks(player)
+  if not Object.IsValid(player) or not attackEvents[player] then return end
+
+  local nowAttacking = 0
+
+  while #attackEvents[player] >= nowAttacking do
+    if not Object.IsValid(player) then return end
+
+    local whomst = {}
+
+    for i = 1, howMany do
+      if attackEvents[player][nowAttacking + i] and Object.IsValid(attackEvents[player][nowAttacking + i].enemy) then
+        table.insert(whomst, attackEvents[player][nowAttacking + i].enemy.id)
+        table.insert(whomst, attackEvents[player][nowAttacking + i].damage)
+      end
+    end
+
+    Utils.throttleToAllPlayers("eHit", player, table.unpack(whomst))
+
+    nowAttacking = nowAttacking + howMany
+  end
+
+  attackEvents[player] = nil
+end
+
+function Utils.throttlePlayerAttack(player, enemy, damage)
+  if attackEvents[player] == nil then
+    attackEvents[player] = {}
+
+    Task.Spawn(function() unleashAttacks(player) end)
+  end
+
+  table.insert(attackEvents[player], {enemy = enemy, damage = damage})
+end
+
+function Utils.throttleToServer(evtName, ...)
+  local result = Events.BroadcastToServer(evtName, ...)
+
+  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
+    Task.Wait(0.1)
+    Utils.throttleToServer(evtName, ...)
+  end
+end
+
+function Utils.throttleToAllPlayers(evtName, ...)
+  local result = Events.BroadcastToAllPlayers(evtName, ...)
+
+  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
+    Task.Wait(0.1)
+    Utils.throttleToAllPlayers(evtName, ...)
+  end
+end
+
+function Utils.throttleToPlayer(player, evtName, ...)
+  local result = Events.BroadcastToPlayer(player, evtName, ...)
+
+  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
+    Task.Wait(0.1)
+    Utils.throttleToPlayer(player, evtName, ...)
+  end
+end
+
+function Utils.throttleMessage(message)
+  local result = Chat.BroadcastMessage(message)
+
+  if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
+    Task.Wait(0.1)
+    Utils.throttleToPlayer(message)
+  end
 end
 
 return Utils

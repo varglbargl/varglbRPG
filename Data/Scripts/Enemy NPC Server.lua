@@ -17,6 +17,7 @@ HITBOX.serverUserData["Enemy"] = enemy
 
 local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition())
 local spawnRotation = enemy:GetWorldRotation()
+local spawnScale = HITBOX:GetWorldScale()
 
 if not spawnPoint then
   spawnPoint = enemy:GetWorldPosition()
@@ -29,10 +30,6 @@ if WANDER then
 end
 
 local defaultScale = enemy:GetWorldScale()
-
-if SPAWN_VFX then
-  World.SpawnAsset(SPAWN_VFX, {position = spawnPoint, scale = HITBOX:GetWorldScale()})
-end
 
 enemy:SetWorldScale(Vector3.ONE * 0.25)
 enemy:ScaleTo(defaultScale, 0.2)
@@ -114,6 +111,8 @@ function stopFighting()
 
   if isDead or not Object.IsValid(enemy) then return end
 
+  enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.25)
+
   isFighting = false
   enemy.collision = Collision.INHERIT
 
@@ -122,26 +121,26 @@ function stopFighting()
   end
 end
 
-function attack(player)
-  if isDead or not Object.IsValid(player) or not Object.IsValid(enemy) then return end
+function attack(target)
+  if isDead or not Object.IsValid(target) or not Object.IsValid(enemy) then return end
 
   local damage = Utils.rollDamage(stats)
   local reflectedDamage = 0
 
-  if player:GetResource("Class") == 1 then
-    reflectedDamage = math.min(player.hitPoints, math.max(1, math.floor(damage.amount/10 + math.random())))
+  if target:GetResource("Class") == 1 then
+    reflectedDamage = math.min(target.hitPoints, math.max(1, math.floor(damage.amount/10 + math.random())))
 
     damage.amount = damage.amount - reflectedDamage
 
     onWeaponHit(enemy, nil, reflectedDamage)
   end
 
-  Utils.throttleToAllPlayers("eAtt", enemy.id, reflectedDamage, not isDead)
-  player:ApplyDamage(damage)
+  Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamage, not isDead)
+  target:ApplyDamage(damage)
   Task.Wait(1)
 end
 
-function die(damage)
+function die(killer, damage)
   if not Object.IsValid(enemy) then return end
   -- print("I AM SLAIN!!!")
 
@@ -149,7 +148,7 @@ function die(damage)
   enemy:StopRotate()
   enemy.collision = Collision.FORCE_OFF
   isDead = true
-  Utils.throttleToAllPlayers("eDie", enemy.id, damage)
+  Utils.throttleToAllPlayers("eDie", killer, enemy.id, damage)
   Events.Broadcast("PlayerGainedXP", isFighting, stats.xpValue)
 
   if math.random() > 0.5 then
@@ -182,6 +181,10 @@ function respawn()
   Task.Wait(math.random(5, 10))
 
   if areTherePlayersNearby() then
+    if SPAWN_VFX then
+      World.SpawnAsset(SPAWN_VFX, {position = spawnPoint, scale = spawnScale})
+    end
+
     World.SpawnAsset(myTemplateId, {position = spawnPoint, rotation = spawnRotation})
     return
   end
@@ -197,22 +200,28 @@ function onWeaponHit(thisEnemy, weapon, damage)
   -- print("I, a humble "..enemy.name..", have just been assaulted by "..weapon.owner.name.." with a "..weapon.name.." for a truly uncalled for "..damage.." damage!")
   stats.hitPoints = stats.hitPoints - damage
 
+  local attacker = nil
+
+  if weapon then
+    attacker = weapon.owner
+  end
+
   if not isFighting then
-    startFighting(weapon.owner)
+    startFighting(attacker)
   end
 
   if stats.hitPoints > 0 then
-    if weapon then Utils.throttleToAllPlayers("eHit", enemy.id, damage) end
+    if weapon then Utils.throttlePlayerAttack(attacker, enemy, damage) end
   else
     stats.hitPoints = 0
-    die(damage)
+    die(attacker, damage)
   end
 end
 
 Events.Connect("WeaponHit", onWeaponHit)
 
 function wanderLoop()
-  Task.Wait(math.random(100, 200) / 10)
+  Task.Wait(math.random(50, 200) / 10)
   if isFighting or isDead or not Object.IsValid(enemy) then return end
 
   if areTherePlayersNearby() == false then
@@ -234,6 +243,12 @@ function wanderLoop()
 
   enemy:LookAt(toVector)
   enemy:MoveTo(toVector, 5)
+
+  Task.Wait(4.5)
+  if isFighting or isDead or not Object.IsValid(enemy) then return end
+
+  enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.75)
+
   wanderLoop()
 end
 

@@ -7,20 +7,19 @@ Assets {
       RootId: 11236710954395386942
       Objects {
         Id: 11236710954395386942
-        Name: "Group"
+        Name: "Red Tree Leaves"
         Transform {
-          Location {
-          }
-          Rotation {
-          }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.18841255
+            Y: 1.18841255
+            Z: 1.18841255
           }
         }
         ChildIds: 12974121763519161735
         ChildIds: 994182524607578012
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         Folder {
           IsGroup: true
         }

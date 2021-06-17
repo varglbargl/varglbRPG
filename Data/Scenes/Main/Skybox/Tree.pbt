@@ -5,9 +5,6 @@ Objects {
   Name: "Tonemapping Post Process"
   Transform {
     Location {
-      X: 15123.1914
-      Y: 20632.4141
-      Z: -4223.54541
     }
     Rotation {
     }

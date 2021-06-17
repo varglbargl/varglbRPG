@@ -10,6 +10,12 @@ Assets {
           Id: 8431391566871556229
         }
       }
+      Overrides {
+        Name: "cs:Inventory"
+        AssetReference {
+          Id: 15010716876593474644
+        }
+      }
     }
   }
   SerializationVersion: 89

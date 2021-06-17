@@ -7,7 +7,7 @@ Assets {
       RootId: 14332812707701694224
       Objects {
         Id: 14332812707701694224
-        Name: "Dastardly Dancing Fancy Pants"
+        Name: "Pantasm"
         Transform {
           Scale {
             X: 1
@@ -364,24 +364,8 @@ Assets {
           }
         }
         ParentId: 2087969391937668778
-        ChildIds: 6456600627746186
-        ChildIds: 11643417149691129655
-        ChildIds: 15468320555142843731
-        ChildIds: 3597477354876589501
-        ChildIds: 11022125750369938772
-        ChildIds: 9080568083480521786
-        ChildIds: 5988136875248755432
-        ChildIds: 442826041227051094
-        ChildIds: 13273095226911476510
-        ChildIds: 4570048111487312647
-        ChildIds: 12099828746433853664
-        ChildIds: 13715514253958950812
-        ChildIds: 14330064871316524969
         ChildIds: 15090743795590688831
-        ChildIds: 17195795065635506066
-        ChildIds: 10288755017737771750
         ChildIds: 5545054873108701746
-        ChildIds: 195540042694632922
         ChildIds: 785607349980973090
         ChildIds: 14522343255478253280
         UnregisteredParameters {
@@ -406,447 +390,6 @@ Assets {
           ScriptAsset {
             Id: 14822898899899907295
           }
-        }
-      }
-      Objects {
-        Id: 6456600627746186
-        Name: "root"
-        Transform {
-          Location {
-            Z: -108
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 11643417149691129655
-        Name: "head"
-        Transform {
-          Location {
-            X: -3.14118385
-            Y: 0.0625
-            Z: 82.0175781
-          }
-          Rotation {
-            Pitch: -9.93499756
-            Yaw: 0.000120403849
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 15468320555142843731
-        Name: "neck"
-        Transform {
-          Location {
-            X: -5.32714844
-            Z: 73.1071777
-          }
-          Rotation {
-            Pitch: -9.93500137
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 3597477354876589501
-        Name: "left_clavicle"
-        Transform {
-          Location {
-            X: -3.12304688
-            Y: -4.72265625
-            Z: 64.3330078
-          }
-          Rotation {
-            Yaw: -8.82603359
-            Roll: 79.6859512
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 11022125750369938772
-        Name: "left_elbow"
-        Transform {
-          Location {
-            X: -7.50976563
-            Y: -33.9492188
-            Z: 35.3349609
-          }
-          Rotation {
-            Pitch: 18.4200077
-            Yaw: 9.02802086
-            Roll: 31.9080296
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 9080568083480521786
-        Name: "left_shoulder"
-        Transform {
-          Location {
-            X: -6.05761719
-            Y: -23.6191406
-            Z: 60.6660156
-          }
-          Rotation {
-            Pitch: -1.64800847
-            Yaw: -3.05700707
-            Roll: 30.1110077
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 5988136875248755432
-        Name: "left_wrist"
-        Transform {
-          Location {
-            X: 3.09082031
-            Y: -47.6777344
-            Z: 14.5307617
-          }
-          Rotation {
-            Pitch: 13.9379902
-            Yaw: 10.1970139
-            Roll: 27.3249855
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 442826041227051094
-        Name: "right_clavicle"
-        Transform {
-          Location {
-            X: -3.12304688
-            Y: 4.72265625
-            Z: 64.3330078
-          }
-          Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 8.82601738
-            Roll: -79.6859665
-          }
-          Scale {
-            X: 0.8
-            Y: 0.8
-            Z: 0.8
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 13273095226911476510
-        Name: "right_shoulder"
-        Transform {
-          Location {
-            X: -6.05761719
-            Y: 23.6191406
-            Z: 60.6660156
-          }
-          Rotation {
-            Pitch: 1.64699757
-            Yaw: 3.0570004
-            Roll: -30.1109962
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 4570048111487312647
-        Name: "right_elbow"
-        Transform {
-          Location {
-            X: -7.6328125
-            Y: 34.9140625
-            Z: 34.7661133
-          }
-          Rotation {
-            Pitch: 19.3176117
-            Yaw: -6.82479858
-            Roll: -28.7649536
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 12099828746433853664
-        Name: "right_wrist"
-        Transform {
-          Location {
-            X: 2.60839844
-            Y: 47.9921875
-            Z: 14.3320313
-          }
-          Rotation {
-            Pitch: 13.9379902
-            Yaw: -10.196991
-            Roll: -27.3249817
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 13715514253958950812
-        Name: "upper_spine"
-        Transform {
-          Location {
-            X: -0.509765625
-            Z: 57.6254883
-          }
-          Rotation {
-            Pitch: 7.51320767e-05
-            Yaw: 7.17169532e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 14330064871316524969
-        Name: "lower_spine"
-        Transform {
-          Location {
-            X: -0.509765625
-            Z: 25.7290039
-          }
-          Rotation {
-            Pitch: 7.51320767e-05
-            Yaw: 7.17169532e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
         }
       }
       Objects {
@@ -951,13 +494,16 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
+            X: 4.95515951e-06
+            Y: -5.68434189e-14
+            Z: 3.77880859
           }
           Rotation {
           }
           Scale {
-            X: 0.119571917
-            Y: 0.191891879
-            Z: 0.11957173
+            X: 0.109405719
+            Y: 0.175576925
+            Z: 0.109405555
           }
         }
         ParentId: 15090743795590688831
@@ -994,7 +540,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 2
+            Float: 5
           }
         }
         Collidable_v2 {
@@ -1076,76 +622,6 @@ Assets {
             MaxDrawDistance: 5000
             MaxDistanceFadeRange: 1000
           }
-        }
-      }
-      Objects {
-        Id: 17195795065635506066
-        Name: "left_hip"
-        Transform {
-          Location {
-            X: -1.89648438
-            Y: -10.4902344
-            Z: 1.63476563
-          }
-          Rotation {
-            Pitch: 3.17944598
-            Yaw: 0.34948045
-            Roll: 4.47926426
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 10288755017737771750
-        Name: "left_knee"
-        Transform {
-          Location {
-            X: -1.51171875
-            Y: -16.8808594
-            Z: -48.3017578
-          }
-          Rotation {
-            Pitch: -3.90987325
-            Yaw: -3.62918377
-            Roll: 4.28336239
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
         }
       }
       Objects {
@@ -1571,41 +1047,6 @@ Assets {
             MaxDrawDistance: 5000
             MaxDistanceFadeRange: 1000
           }
-        }
-      }
-      Objects {
-        Id: 195540042694632922
-        Name: "right_hip"
-        Transform {
-          Location {
-            X: -1.89648438
-            Y: 10.4902344
-            Z: 1.63476563
-          }
-          Rotation {
-            Pitch: 3.17958951
-            Yaw: -0.349424213
-            Roll: -4.47895813
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1503094026931534624
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
         }
       }
       Objects {

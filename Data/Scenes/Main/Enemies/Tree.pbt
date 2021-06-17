@@ -1,6 +1,703 @@
 Name: "Enemies"
 RootId: 665534767918533260
 Objects {
+  Id: 9879384263503997244
+  Name: "Heated Emberling"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Heated Emberling"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -94.3701172
+            Y: 6138.80078
+            Z: 7.82714844
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3325562147020357872
+    }
+  }
+}
+Objects {
+  Id: 12521599332979671969
+  Name: "Heated Emberling"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Heated Emberling"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2039.04907
+            Y: 5571.99707
+            Z: 119.661133
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3325562147020357872
+    }
+  }
+}
+Objects {
+  Id: 1584789103733120544
+  Name: "Heated Emberling"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Heated Emberling"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2312.99194
+            Y: 7105.5957
+            Z: 19.3847656
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3325562147020357872
+    }
+  }
+}
+Objects {
+  Id: 5725605576325580026
+  Name: "Heated Emberling"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Heated Emberling"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2865.83765
+            Y: 5841.52539
+            Z: 96.7709961
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3325562147020357872
+    }
+  }
+}
+Objects {
+  Id: 480968429651481530
+  Name: "Heated Emberling"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Heated Emberling"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -875.12793
+            Y: 9489.14648
+            Z: 26.7929688
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3325562147020357872
+    }
+  }
+}
+Objects {
+  Id: 4128568865904172356
+  Name: "Pyrosprite"
+  Transform {
+    Location {
+      X: 4400.38232
+      Y: 13785.8867
+      Z: -4226.00439
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pyrosprite"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3199.7832
+            Y: 6889.78027
+            Z: 3.99560547
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5649399442759020752
+    }
+  }
+}
+Objects {
+  Id: 12265881248924389373
+  Name: "Pyrosprite"
+  Transform {
+    Location {
+      X: 5721.96875
+      Y: 15800.6279
+      Z: -4226.00439
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pyrosprite"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -939.617676
+            Y: 5435.88672
+            Z: 78.5566406
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5649399442759020752
+    }
+  }
+}
+Objects {
+  Id: 32620301556693116
+  Name: "Pyrosprite"
+  Transform {
+    Location {
+      X: 5589.354
+      Y: 17368.6074
+      Z: -4226.00439
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pyrosprite"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 381.96875
+            Y: 7450.62793
+            Z: -2.75488281
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5649399442759020752
+    }
+  }
+}
+Objects {
+  Id: 11389666279771757528
+  Name: "Pyrosprite"
+  Transform {
+    Location {
+      X: 5113.53955
+      Y: 18611.7715
+      Z: -4226.00439
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pyrosprite"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 249.354
+            Y: 9018.60742
+            Z: 3.99560547
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5649399442759020752
+    }
+  }
+}
+Objects {
+  Id: 10293500033375891159
+  Name: "Pyrosprite"
+  Transform {
+    Location {
+      X: 7232.9375
+      Y: 22561.3203
+      Z: -4226.00439
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pyrosprite"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -226.460449
+            Y: 10261.7715
+            Z: 3.99560547
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5649399442759020752
+    }
+  }
+}
+Objects {
+  Id: 12632941068056855
+  Name: "Pyrosprite"
+  Transform {
+    Location {
+      X: 7747.56885
+      Y: 21805.625
+      Z: -4226.00439
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9951396153306744005
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pyrosprite"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1892.9375
+            Y: 14211.3203
+            Z: 3.99560547
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5649399442759020752
+    }
+  }
+}
+Objects {
+  Id: 7279629626310572572
+  Name: "Lumber Jackal"
+  Transform {
+    Location {
+      X: 11136.4521
+      Y: 10644.8477
+      Z: -4176.90137
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 665534767918533260
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7362332196142943351
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Lumber Jackal"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6472.28027
+            Y: 3884.02637
+            Z: 76.6787109
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7224284035828852128
+    }
+  }
+}
+Objects {
   Id: 16605181303143960617
   Name: "Lumber Jackal"
   Transform {
@@ -897,8 +1594,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 5577.66895
-            Y: 3014.34082
+            X: 5796.45215
+            Y: 2294.84766
             Z: 53.0986328
           }
         }
@@ -958,8 +1655,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 6995.81445
-            Y: 1502.30273
+            X: 6734.92578
+            Y: 1554.41992
             Z: -15.0683594
           }
         }
@@ -2366,10 +3063,30 @@ Objects {
       key: 5415891546705750041
       value {
         Overrides {
+          Name: "ma:Flame_A:id"
+          AssetReference {
+            Id: 10198191898885576195
+          }
+        }
+        Overrides {
+          Name: "ma:Flame_B:id"
+          AssetReference {
+            Id: 2167398556047793086
+          }
+        }
+        Overrides {
           Name: "ma:Flame_A:color"
           Color {
-            G: 0.950000048
-            B: 0.931126237
+            G: 1
+            B: 0.666666746
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Flame_B:color"
+          Color {
+            G: 1
+            B: 0.666666746
             A: 1
           }
         }

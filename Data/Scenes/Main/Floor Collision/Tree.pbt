@@ -1,6 +1,147 @@
 Name: "Floor Collision"
 RootId: 7287421568843564609
 Objects {
+  Id: 5781726737319357253
+  Name: "Plane 1m - Two Sided"
+  Transform {
+    Location {
+      X: -702.420898
+      Y: -213.809326
+    }
+    Rotation {
+      Yaw: 139.002762
+    }
+    Scale {
+      X: 2.20580959
+      Y: 4.97241306
+      Z: 4.54252291
+    }
+  }
+  ParentId: 7287421568843564609
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 6052701461289247170
+  Name: "Plane 1m - Two Sided"
+  Transform {
+    Location {
+      X: -425.499023
+      Y: 33.0039063
+    }
+    Rotation {
+      Yaw: 49.0028954
+    }
+    Scale {
+      X: 2.20580959
+      Y: 4.97241306
+      Z: 4.54252291
+    }
+  }
+  ParentId: 7287421568843564609
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 4726452589566485991
+  Name: "Plane 1m - Two Sided"
+  Transform {
+    Location {
+      X: 155.387695
+      Y: 19.9047852
+    }
+    Rotation {
+      Yaw: -40.9970398
+    }
+    Scale {
+      X: 2.20580959
+      Y: 4.97241306
+      Z: 4.54252291
+    }
+  }
+  ParentId: 7287421568843564609
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 9836697639158022136
   Name: "Plane 1m - Two Sided"
   Transform {
@@ -249,7 +390,7 @@ Objects {
       Y: -159.790527
     }
     Rotation {
-      Yaw: -40.9970436
+      Yaw: -40.9970398
     }
     Scale {
       X: 6.63118076
@@ -296,11 +437,11 @@ Objects {
       Y: -529.871582
     }
     Rotation {
-      Yaw: -40.9970436
+      Yaw: -40.9970398
     }
     Scale {
-      X: 9.41629314
-      Y: 9.41629314
+      X: 9.85927391
+      Y: 9.4162941
       Z: 9.41629314
     }
   }
@@ -386,15 +527,15 @@ Objects {
   Name: "Plane 1m - Two Sided"
   Transform {
     Location {
-      X: -450.162109
-      Y: -779.24
+      X: -429.493164
+      Y: -755.460938
     }
     Rotation {
-      Yaw: -40.9970436
+      Yaw: -40.9970398
     }
     Scale {
-      X: 9.41629314
-      Y: 9.41629314
+      X: 9.41629124
+      Y: 9.78255463
       Z: 9.41629314
     }
   }

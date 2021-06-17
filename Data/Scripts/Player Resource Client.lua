@@ -5,6 +5,11 @@ local clientPlayer = Game.GetLocalPlayer()
 local myHitPoints = "nothin"
 local myExerience = "nothin"
 local myLevel = "nothin"
+
+local myGrit = 0
+local myWit = 0
+local mySpit = 0
+
 local myGold = "nothin"
 
 function onResourceChanged(player, name, newTotal)
@@ -35,6 +40,8 @@ function onResourceChanged(player, name, newTotal)
 
     myExerience = newTotal
   elseif player == clientPlayer and name == "Level" then
+
+
     if myLevel ~= "nothin" then
       Chat.LocalMessage("Grit:"..player:GetResource("Grit").."  Wit:"..player:GetResource("Wit").."  Spit:"..player:GetResource("Spit").."")
     end

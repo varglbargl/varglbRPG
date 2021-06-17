@@ -2,6 +2,8 @@ local Utils = require(script:GetCustomProperty("Utils"))
 
 local LEVEL_UP_VFX = script:GetCustomProperty("LevelUpVFX")
 
+local maxLevel = 60
+
 function onPlayerDamaged(player, damage)
   player:SetResource("HitPoints", player.hitPoints)
   player.serverUserData["RecentlyDamaged"] = Task.Spawn(function()
@@ -56,9 +58,12 @@ function onPlayerJoined(player)
 
   if Environment.IsPreview() then
     player.bindingPressedEvent:Connect(function(thisPlayer, keyCode)
-      if keyCode == "ability_extra_38" then
-        player:SetResource("Level", 59)
+      if keyCode == "ability_extra_38" and player:GetResource("Level") < maxLevel then
+        -- maxLevel = 120
+        player:SetResource("Level", maxLevel - 1)
         Events.Broadcast("PlayerGainedXP", thisPlayer, Utils.experienceToNextLevel(player:GetResource("Level")))
+        -- Task.Wait()
+        -- maxLevel = 60
       end
     end)
   end
@@ -73,9 +78,9 @@ function onPlayerGainedXP(player, amount)
   local currentXP = player:GetResource("Experience")
   local currentLevel = player:GetResource("Level")
 
-  print(currentXP + amount, Utils.experienceToNextLevel(currentLevel))
+  -- print(currentXP + amount, Utils.experienceToNextLevel(currentLevel))
 
-  if currentLevel == 60 then return end
+  if currentLevel == maxLevel then return end
 
   if currentXP + amount >= Utils.experienceToNextLevel(currentLevel) then
     local vfx = nil
@@ -104,8 +109,8 @@ function onPlayerGainedXP(player, amount)
       levelsGained = levelsGained + 1
     end
 
-    if player:GetResource("Level") + levelsGained > 60 then
-      levelsGained = 60 - player:GetResource("Level")
+    if player:GetResource("Level") + levelsGained > maxLevel then
+      levelsGained = maxLevel - player:GetResource("Level")
       player:SetResource("Experience", 0)
     else
       player:SetResource("Experience", currentXP)
@@ -166,10 +171,10 @@ function resourceTicker(player)
     player:SetResource("HitPoints", player.hitPoints)
   end
 
-  if player.serverUserData["Gliding"] or (player.isAccelerating and player:IsBindingPressed("ability_feet")) then
+  if player.serverUserData["Gliding"] or (player.isAccelerating and player:IsBindingPressed("ability_feet") and not player.isSwimming) then
     player:RemoveResource("Stamina", 5)
 
-    if player:GetResource("Stamina") == 0 then
+    if player:GetResource("Stamina") == 0 or player.isSwimming then
       player.serverUserData["Gliding"] = false
       Events.Broadcast("ForceStopSprint", player)
     end

@@ -7,7 +7,7 @@ Assets {
       RootId: 14005946595262354558
       Objects {
         Id: 14005946595262354558
-        Name: "NPC Base Human Female"
+        Name: "Royal Guard 02"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -37,9 +37,6 @@ Assets {
         Name: "Humanoid 1 Rig"
         Transform {
           Location {
-            X: 19.2822266
-            Y: 98.375
-            Z: -3.37988281
           }
           Rotation {
           }
@@ -2497,14 +2494,14 @@ Assets {
         Name: "Shield 03"
         Transform {
           Location {
-            X: 12.5784607
-            Y: -0.169293419
-            Z: 4.85762167
+            X: 12.497077
+            Y: -0.349625021
+            Z: 5.32786465
           }
           Rotation {
-            Pitch: -0.249969482
-            Yaw: -94.5408325
-            Roll: -38.4481812
+            Pitch: 1.48612618
+            Yaw: -92.5941467
+            Roll: -41.3356323
           }
           Scale {
             X: 0.185087815
@@ -2564,14 +2561,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: 16.0068398
-            Y: -0.488301277
-            Z: 3.62644386
+            X: 15.9902391
+            Y: -0.587910652
+            Z: 4.27366066
           }
           Rotation {
-            Pitch: 53.0077095
-            Yaw: -169.456512
-            Roll: 15.2852402
+            Pitch: 50.6085587
+            Yaw: -170.486938
+            Roll: 11.4591246
           }
           Scale {
             X: 0.0347961858
@@ -2641,14 +2638,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: 13.5214977
-            Y: 2.61521745
-            Z: 7.70799
+            X: 13.206069
+            Y: 2.55662417
+            Z: 8.12278557
           }
           Rotation {
-            Pitch: 53.0077095
-            Yaw: -169.456512
-            Roll: 15.2852402
+            Pitch: 50.6085587
+            Yaw: -170.486938
+            Roll: 11.4591246
           }
           Scale {
             X: 0.0347961858
@@ -2722,14 +2719,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: 12.7773495
-            Y: -3.01954722
-            Z: 7.59080362
+            X: 12.6582098
+            Y: -3.09962511
+            Z: 8.16331387
           }
           Rotation {
-            Pitch: 53.0077095
-            Yaw: -169.456512
-            Roll: 15.2852402
+            Pitch: 50.6085587
+            Yaw: -170.486938
+            Roll: 11.4591246
           }
           Scale {
             X: 0.0347961858
@@ -2803,14 +2800,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: 14.0820389
-            Y: -0.322283238
-            Z: 6.3268857
+            X: 13.9326258
+            Y: -0.404314309
+            Z: 6.87180805
           }
           Rotation {
-            Pitch: 53.0077095
-            Yaw: -169.456512
-            Roll: 15.2852402
+            Pitch: 50.6085587
+            Yaw: -170.486938
+            Roll: 11.4591246
           }
           Scale {
             X: 0.0243573282
@@ -3282,25 +3279,29 @@ Assets {
         }
         ParentId: 418609965197095525
         ChildIds: 4564491247048921559
-        ChildIds: 1223767399672680831
-        ChildIds: 12280557202288145531
-        ChildIds: 11170373904976280717
-        ChildIds: 3411359936905725256
-        ChildIds: 12680444009127991410
-        ChildIds: 14951647831738388749
-        ChildIds: 3086346468348538036
-        ChildIds: 4843708949085340507
-        ChildIds: 9623729430617676640
-        ChildIds: 1368289791778824278
-        ChildIds: 10506665507844790154
-        ChildIds: 9212845260665451234
-        ChildIds: 13496514675130092034
-        ChildIds: 45737283392413181
-        ChildIds: 5211038657148308260
-        ChildIds: 13616710160364969100
-        ChildIds: 7174582103509413944
-        ChildIds: 12663756700763981191
-        ChildIds: 15936836987012672120
+        ChildIds: 13406071882732578625
+        ChildIds: 14655229614806389978
+        ChildIds: 13656790486908396729
+        ChildIds: 13811612100196835611
+        ChildIds: 18444250591939869890
+        ChildIds: 7011966720826051921
+        ChildIds: 5542387302582458680
+        ChildIds: 9148464045893055084
+        ChildIds: 14118204858741160322
+        ChildIds: 2575458305266215939
+        ChildIds: 5028341438923579260
+        ChildIds: 17917026957658993431
+        ChildIds: 1729461715308081680
+        ChildIds: 13287273773651487313
+        ChildIds: 10115850406123438741
+        ChildIds: 7370701189529981215
+        ChildIds: 14602242101797419232
+        ChildIds: 14568288548448930867
+        ChildIds: 905889610760235785
+        ChildIds: 6259205622579096964
+        ChildIds: 6260385134023558897
+        ChildIds: 9184194398239124746
+        ChildIds: 11569975715762865833
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -3374,18 +3375,18 @@ Assets {
         }
       }
       Objects {
-        Id: 1223767399672680831
+        Id: 13406071882732578625
         Name: "Shield 01"
         Transform {
           Location {
-            X: -33.5595779
-            Y: 39.3926201
-            Z: -42.5981
+            X: -39.0400581
+            Y: 32.6680183
+            Z: -44.6713371
           }
           Rotation {
-            Pitch: -39.1912537
-            Yaw: -2.05038452
-            Roll: -7.5501709
+            Pitch: -39.6757813
+            Yaw: -4.68151855
+            Roll: 1.38326061
           }
           Scale {
             X: 0.168792173
@@ -3456,18 +3457,18 @@ Assets {
         }
       }
       Objects {
-        Id: 12280557202288145531
+        Id: 14655229614806389978
         Name: "Shield 01"
         Transform {
           Location {
-            X: -34.6074219
-            Y: 36.2519531
-            Z: -43.144043
+            X: -40.7900391
+            Y: 29.4511719
+            Z: -44.4692383
           }
           Rotation {
-            Pitch: -39.1913452
-            Yaw: -2.050354
-            Roll: -23.0374756
+            Pitch: -39.6757813
+            Yaw: -4.68151855
+            Roll: -14.1035767
           }
           Scale {
             X: 0.168792173
@@ -3538,18 +3539,18 @@ Assets {
         }
       }
       Objects {
-        Id: 11170373904976280717
+        Id: 13656790486908396729
         Name: "Cylinder"
         Transform {
           Location {
-            X: -14.7294817
-            Y: 28.5703316
-            Z: -19.0483208
+            X: -19.3749943
+            Y: 25.7187748
+            Z: -20.3583736
           }
           Rotation {
-            Pitch: -39.1914063
-            Yaw: -2.05047607
-            Roll: -15.2392273
+            Pitch: -39.6756287
+            Yaw: -4.68157959
+            Roll: -6.30667114
           }
           Scale {
             X: 0.124261066
@@ -3617,18 +3618,18 @@ Assets {
         }
       }
       Objects {
-        Id: 3411359936905725256
+        Id: 13811612100196835611
         Name: "Cylinder - Chamfered Polished"
         Transform {
           Location {
-            X: 4.44046
-            Y: 19.4941349
-            Z: 4.73290443
+            X: 0.549835682
+            Y: 20.5996094
+            Z: 3.97167897
           }
           Rotation {
-            Pitch: -39.1914063
-            Yaw: -2.05047607
-            Roll: -15.2392273
+            Pitch: -39.6756287
+            Yaw: -4.68157959
+            Roll: -6.30667114
           }
           Scale {
             X: 0.137345374
@@ -3687,18 +3688,18 @@ Assets {
         }
       }
       Objects {
-        Id: 12680444009127991410
+        Id: 18444250591939869890
         Name: "Urban Pipe Wrap 01"
         Transform {
           Location {
-            X: -3.11814141
-            Y: 23.0781288
-            Z: -4.68896055
+            X: -7.30954933
+            Y: 22.6367283
+            Z: -5.66698265
           }
           Rotation {
-            Pitch: -37.7461243
-            Yaw: -2.54782104
-            Roll: -14.9296875
+            Pitch: -38.1871338
+            Yaw: -4.890625
+            Roll: -6.17462158
           }
           Scale {
             X: 0.491305
@@ -3760,18 +3761,18 @@ Assets {
         }
       }
       Objects {
-        Id: 14951647831738388749
+        Id: 7011966720826051921
         Name: "Urban Pipe Wrap 01"
         Transform {
           Location {
-            X: -16.7666016
-            Y: 29.2871094
-            Z: -20.8374023
+            X: -22.3261719
+            Y: 26.1308594
+            Z: -21.828125
           }
           Rotation {
-            Pitch: -40.6344604
-            Yaw: -1.53204346
-            Roll: -15.5718384
+            Pitch: -41.1630859
+            Yaw: -4.4631958
+            Roll: -6.44763184
           }
           Scale {
             X: 0.491313338
@@ -3833,18 +3834,18 @@ Assets {
         }
       }
       Objects {
-        Id: 3086346468348538036
+        Id: 5542387302582458680
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: -26.6992207
-            Y: 34.2500343
-            Z: -33.9696922
+            X: -31.8203239
+            Y: 28.9355869
+            Z: -35.6239815
           }
           Rotation {
-            Pitch: -39.1914063
-            Yaw: -2.05047607
-            Roll: -15.2392273
+            Pitch: -39.6756287
+            Yaw: -4.68157959
+            Roll: -6.30667114
           }
           Scale {
             X: 0.14392601
@@ -3903,18 +3904,18 @@ Assets {
         }
       }
       Objects {
-        Id: 4843708949085340507
+        Id: 9148464045893055084
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: -3.74216533
-            Y: 23.3730507
-            Z: -5.46728039
+            X: -7.95798779
+            Y: 22.8027439
+            Z: -6.46288
           }
           Rotation {
-            Pitch: -39.1914063
-            Yaw: -2.05047607
-            Roll: -15.2392273
+            Pitch: -39.6756287
+            Yaw: -4.68157959
+            Roll: -6.30667114
           }
           Scale {
             X: 0.14392601
@@ -3973,18 +3974,18 @@ Assets {
         }
       }
       Objects {
-        Id: 9623729430617676640
+        Id: 14118204858741160322
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: 6.9863615
-            Y: 18.2871
-            Z: 7.90428782
+            X: 3.19144058
+            Y: 19.9199181
+            Z: 7.21825743
           }
           Rotation {
-            Pitch: -39.1914063
-            Yaw: -2.05047607
-            Roll: -15.2392273
+            Pitch: -39.6756287
+            Yaw: -4.68157959
+            Roll: -6.30667114
           }
           Scale {
             X: 0.152982175
@@ -4043,18 +4044,18 @@ Assets {
         }
       }
       Objects {
-        Id: 1368289791778824278
+        Id: 2575458305266215939
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: 1.94143426
-            Y: 20.6796856
-            Z: 1.61864984
+            X: -2.04977703
+            Y: 21.2773457
+            Z: 0.784670651
           }
           Rotation {
-            Pitch: -39.1914063
-            Yaw: -2.05047607
-            Roll: -15.2392273
+            Pitch: -39.6756287
+            Yaw: -4.68157959
+            Roll: -6.30667114
           }
           Scale {
             X: 0.152982175
@@ -4113,18 +4114,18 @@ Assets {
         }
       }
       Objects {
-        Id: 10506665507844790154
+        Id: 5028341438923579260
         Name: "Cylinder"
         Transform {
           Location {
-            X: 6.67679071
-            Y: 18.4335861
-            Z: 7.52147579
+            X: 2.87015128
+            Y: 19.9960899
+            Z: 6.82568
           }
           Rotation {
-            Pitch: -39.1914063
-            Yaw: -2.05047607
-            Roll: -15.2392273
+            Pitch: -39.6756287
+            Yaw: -4.68157959
+            Roll: -6.30667114
           }
           Scale {
             X: 0.127191141
@@ -4189,23 +4190,73 @@ Assets {
         }
       }
       Objects {
-        Id: 9212845260665451234
+        Id: 17917026957658993431
+        Name: "Fantasy Sword Blade 04"
+        Transform {
+          Location {
+            X: 12.7900867
+            Y: 17.6796722
+            Z: 19.251936
+          }
+          Rotation {
+            Pitch: 39.6755638
+            Yaw: 175.3181
+            Roll: -173.693268
+          }
+          Scale {
+            X: 1.06926274
+            Y: 0.920443177
+            Z: 0.80740732
+          }
+        }
+        ParentId: 14280574164461287494
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 13888119501670323283
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 1729461715308081680
         Name: "Fantasy Sword Grip 01"
         Transform {
           Location {
-            X: 24.2256374
-            Y: 10.1112976
-            Z: 29.3944988
+            X: 28.378973
+            Y: 13.644496
+            Z: 38.3803329
           }
           Rotation {
-            Pitch: 39.1914406
-            Yaw: 177.949326
-            Roll: -164.760468
+            Pitch: 39.6755638
+            Yaw: 175.3181
+            Roll: -173.693268
           }
           Scale {
-            X: 1.03258324
-            Y: 0.75569123
-            Z: 0.867795467
+            X: 1.0090102
+            Y: 0.7384395
+            Z: 0.847984493
           }
         }
         ParentId: 14280574164461287494
@@ -4266,23 +4317,23 @@ Assets {
         }
       }
       Objects {
-        Id: 13496514675130092034
+        Id: 13287273773651487313
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            X: 10.3193722
-            Y: 16.8535023
-            Z: 11.3764515
+            X: 14.240283
+            Y: 17.3515453
+            Z: 20.3730278
           }
           Rotation {
-            Pitch: 61.8792419
-            Yaw: -34.7333374
-            Roll: 64.3909
+            Pitch: 64.1929398
+            Yaw: -18.8204346
+            Roll: 78.8025589
           }
           Scale {
-            X: 0.281136185
-            Y: 0.281147212
-            Z: 0.318668216
+            X: 0.274718106
+            Y: 0.274728864
+            Z: 0.311393291
           }
         }
         ParentId: 14280574164461287494
@@ -4333,23 +4384,23 @@ Assets {
         }
       }
       Objects {
-        Id: 45737283392413181
+        Id: 10115850406123438741
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            X: 10.3193722
-            Y: 16.8535023
-            Z: 11.3764515
+            X: 14.240283
+            Y: 17.3515453
+            Z: 20.3730278
           }
           Rotation {
-            Pitch: 54.0045052
-            Yaw: -175.172928
-            Roll: -69.718689
+            Pitch: 55.081028
+            Yaw: 178.263046
+            Roll: -81.5063782
           }
           Scale {
-            X: 0.281136185
-            Y: 0.281147212
-            Z: 0.318668216
+            X: 0.274718106
+            Y: 0.274728864
+            Z: 0.311393291
           }
         }
         ParentId: 14280574164461287494
@@ -4400,23 +4451,23 @@ Assets {
         }
       }
       Objects {
-        Id: 5211038657148308260
+        Id: 7370701189529981215
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            X: 7.68752
-            Y: 20.820303
-            Z: -4.68995142
+            X: 11.2705374
+            Y: 19.1874866
+            Z: 4.37449694
           }
           Rotation {
-            Pitch: -54.5444946
-            Yaw: 5.17146
-            Roll: 69.4392548
+            Pitch: 4.03203106
+            Yaw: -9.05993652
+            Roll: 85.1378708
           }
           Scale {
-            X: 0.281136185
-            Y: 0.281147212
-            Z: 0.318668216
+            X: 0.274718106
+            Y: 0.274728864
+            Z: 0.311393291
           }
         }
         ParentId: 14280574164461287494
@@ -4467,23 +4518,23 @@ Assets {
         }
       }
       Objects {
-        Id: 13616710160364969100
+        Id: 14602242101797419232
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            X: -5.30074692
-            Y: 21.2421932
-            Z: 6.08350325
+            X: 11.2705374
+            Y: 19.1874866
+            Z: 4.37449694
           }
           Rotation {
-            Pitch: -61.2796936
-            Yaw: 145.863113
-            Roll: -64.9158325
+            Pitch: -55.6507568
+            Yaw: -1.58630371
+            Roll: 81.3831787
           }
           Scale {
-            X: 0.281136185
-            Y: 0.281147212
-            Z: 0.318668216
+            X: 0.274718106
+            Y: 0.274728864
+            Z: 0.311393291
           }
         }
         ParentId: 14280574164461287494
@@ -4534,23 +4585,157 @@ Assets {
         }
       }
       Objects {
-        Id: 7174582103509413944
+        Id: 14568288548448930867
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            X: 4.41897535
-            Y: 19.5703068
-            Z: 4.37792397
+            X: -1.29780662
+            Y: 20.1953144
+            Z: 15.0078144
           }
           Rotation {
-            Pitch: 37.4760818
-            Yaw: 177.36113
-            Roll: -75.1282349
+            Pitch: -63.5425415
+            Yaw: 161.468552
+            Roll: -79.0625305
           }
           Scale {
-            X: 0.191270486
-            Y: 0.191271201
-            Z: 0.31645605
+            X: 0.274718106
+            Y: 0.274728864
+            Z: 0.311393291
+          }
+        }
+        ParentId: 14280574164461287494
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.103999972
+              G: 0.262399852
+              B: 0.5
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6309583787737635300
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 905889610760235785
+        Name: "Ring - Quarter Beveled "
+        Transform {
+          Location {
+            X: -1.29780662
+            Y: 20.1953144
+            Z: 15.0078144
+          }
+          Rotation {
+            Pitch: -3.94525146
+            Yaw: 170.947128
+            Roll: -85.13797
+          }
+          Scale {
+            X: 0.274718106
+            Y: 0.274728864
+            Z: 0.311393291
+          }
+        }
+        ParentId: 14280574164461287494
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.103999972
+              G: 0.262399852
+              B: 0.5
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6309583787737635300
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 6259205622579096964
+        Name: "Ring - Beveled"
+        Transform {
+          Location {
+            X: 8.24808788
+            Y: 18.9101467
+            Z: 13.3764544
+          }
+          Rotation {
+            Pitch: 37.9097633
+            Yaw: 175.07106
+            Roll: -83.8519
+          }
+          Scale {
+            X: 0.186903954
+            Y: 0.186904654
+            Z: 0.309231639
           }
         }
         ParentId: 14280574164461287494
@@ -4601,23 +4786,23 @@ Assets {
         }
       }
       Objects {
-        Id: 12663756700763981191
+        Id: 6260385134023558897
         Name: "Diamond - Polished"
         Transform {
           Location {
-            X: -0.75093174
-            Y: 17.9628906
-            Z: 17.0341816
+            X: 3.44829941
+            Y: 18.5371056
+            Z: 25.930172
           }
           Rotation {
-            Pitch: -21.6201782
-            Yaw: 163.451202
-            Roll: -77.3417358
+            Pitch: -22.3754272
+            Yaw: 169.280823
+            Roll: -84.7540894
           }
           Scale {
-            X: 0.0660775453
-            Y: 0.0925276577
-            Z: 0.0591085702
+            X: 0.064569056
+            Y: 0.0904153287
+            Z: 0.0577591732
           }
         }
         ParentId: 14280574164461287494
@@ -4680,23 +4865,23 @@ Assets {
         }
       }
       Objects {
-        Id: 15936836987012672120
+        Id: 9184194398239124746
         Name: "Diamond - Polished"
         Transform {
           Location {
-            X: 17.8847904
-            Y: 17.3320084
-            Z: 1.68454683
+            X: 21.4795284
+            Y: 17.0722389
+            Z: 10.7773151
           }
           Rotation {
-            Pitch: 75.8721771
-            Yaw: -67.5827942
-            Roll: 33.4209557
+            Pitch: 81.04142
+            Yaw: -41.2822876
+            Roll: 57.1143684
           }
           Scale {
-            X: 0.0660775453
-            Y: 0.0925276577
-            Z: 0.0591085702
+            X: 0.064569056
+            Y: 0.0904153287
+            Z: 0.0577591732
           }
         }
         ParentId: 14280574164461287494
@@ -4744,6 +4929,84 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 14049784323644711005
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 11569975715762865833
+        Name: "Gem - Trillion Polished"
+        Transform {
+          Location {
+            X: 8.00687695
+            Y: 18.9101467
+            Z: 13.4370012
+          }
+          Rotation {
+            Pitch: 9.81119061
+            Yaw: 172.122971
+            Roll: 94.9213638
+          }
+          Scale {
+            X: 0.0525062419
+            Y: 0.0525163226
+            Z: 0.0706369951
+          }
+        }
+        ParentId: 14280574164461287494
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16857903969986321144
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 1
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              G: 3.99999619
+              B: 10
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4153726533103501844
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -5217,6 +5480,15 @@ Assets {
       }
     }
     Assets {
+      Id: 13888119501670323283
+      Name: "Fantasy Sword Blade 04"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_blade_sword_004_ref"
+      }
+    }
+    Assets {
       Id: 3682206342183528038
       Name: "Fantasy Sword Grip 01"
       PlatformAssetType: 1
@@ -5250,6 +5522,24 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_diamond_hq_001"
+      }
+    }
+    Assets {
+      Id: 4153726533103501844
+      Name: "Gem - Trillion Polished"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_gem_trillion_polished_001"
+      }
+    }
+    Assets {
+      Id: 16857903969986321144
+      Name: "Faceted Basic"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "plastic_faceted_001"
       }
     }
     PrimaryAssetId {

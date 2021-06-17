@@ -1,28 +1,19 @@
 Assets {
-  Id: 18393437648231545508
-  Name: "Urban Pipe Flange 01"
+  Id: 17984110408163466439
+  Name: "Tree Sakura Hero 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_flange_001_ref"
+    AssetId: "sm_tree_sakura_hero_02_ref"
   }
 }
 Assets {
-  Id: 18168668750411740765
-  Name: "Crescent - 02"
+  Id: 17680220715648473489
+  Name: "Rock Block 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_crescent_002"
-  }
-}
-Assets {
-  Id: 17699724119997623437
-  Name: "Wood 2x4 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_two-by-four_3m"
+    AssetId: "sm_rock_generic_006"
   }
 }
 Assets {
@@ -35,12 +26,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17045756577297287670
+  Name: "Bark Oak 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_oak_001_uv"
+  }
+}
+Assets {
   Id: 16751224094635422494
   Name: "Rock 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
+  Id: 15921159469172490171
+  Name: "Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
   }
 }
 Assets {
@@ -53,21 +62,21 @@ Assets {
   }
 }
 Assets {
-  Id: 15306163705787466310
-  Name: "Tree Redwood Bare Small"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_redwood_006"
-  }
-}
-Assets {
   Id: 14964967653464214432
   Name: "Decal Dirt Patch"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_dirt_patch_001"
+  }
+}
+Assets {
+  Id: 14778253517708781948
+  Name: "Bricks Layered Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_layered_001"
   }
 }
 Assets {
@@ -80,12 +89,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13913062282643868615
-  Name: "Urban Pipe Valve 01"
+  Id: 14265726385927418716
+  Name: "Fantasy Castle Trim - Battlement 01 4m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_valve_001_ref"
+    AssetId: "sm_ts_fan_cas_battlement_001_4m"
   }
 }
 Assets {
@@ -107,6 +116,24 @@ Assets {
   }
 }
 Assets {
+  Id: 13220644644099125207
+  Name: "Wooden Bucket"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bucket_001"
+  }
+}
+Assets {
+  Id: 13124120606090784252
+  Name: "Tree Sakura Hero 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_sakura_hero_01_ref"
+  }
+}
+Assets {
   Id: 13077918666047601431
   Name: "Branches Cluster Medium"
   PlatformAssetType: 1
@@ -116,30 +143,30 @@ Assets {
   }
 }
 Assets {
-  Id: 12829452281687968810
-  Name: "Small Open Crate"
-  PlatformAssetType: 1
+  Id: 12848555794856992854
+  Name: "Decals Wood Chips 01"
+  PlatformAssetType: 14
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_crate_narrow_open_simple_160cm_001"
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_strand_board_001_ref"
   }
 }
 Assets {
-  Id: 12610149741243116648
-  Name: "Urban Pipe Wrap 01"
+  Id: 12844865120941685994
+  Name: "Large Round Wood Beam 8m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_coupling_005_ref"
+    AssetId: "sm_large_beam_round_6m"
   }
 }
 Assets {
-  Id: 12375281943250166889
-  Name: "Urban Fence Cable Clamp"
-  PlatformAssetType: 1
+  Id: 12720608495097268992
+  Name: "Scorch Mark Decal"
+  PlatformAssetType: 14
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_mil_fence_wire_loop_01"
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scorchmark"
   }
 }
 Assets {
@@ -149,24 +176,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_1m_002"
-  }
-}
-Assets {
-  Id: 11785020265438300340
-  Name: "Ambient Dark Cave Dungeon Loop 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_ambience_dark_dungeon_cave_loop_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 11707774923797825348
-  Name: "Simple Crate 150cm"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_crate_simple_150cm_001"
   }
 }
 Assets {
@@ -197,12 +206,30 @@ Assets {
   }
 }
 Assets {
+  Id: 10835155324150586940
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
   Id: 10106029487649329481
   Name: "Decal Leaves 01"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_leaves_001"
+  }
+}
+Assets {
+  Id: 9289746935881421791
+  Name: "Japanese Temple Wall Large 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_wall_lrg_002_ref"
   }
 }
 Assets {
@@ -251,21 +278,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7084994494702499048
-  Name: "Mecha - Frame - Shoulder Joint 01"
+  Id: 8163783794097757193
+  Name: "Japanese Temple Wall Large 02 Gate 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_veh_jpn_mecha_frame_shldr_joint_001_ref"
-  }
-}
-Assets {
-  Id: 6975747460865280430
-  Name: "Chain Tile 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chain_001"
+    AssetId: "sm_ts_jpn_tem_wall_lrg_002_gate_01_ref"
   }
 }
 Assets {
@@ -278,66 +296,84 @@ Assets {
   }
 }
 Assets {
-  Id: 5500769011284434836
-  Name: "Underwater Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_water"
-  }
-}
-Assets {
-  Id: 5351666503559000822
-  Name: "Urban Stairs Fire Escape - 6m 02"
+  Id: 4980245015375490494
+  Name: "Rock Flat 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_stairs_firesc_002_ref"
+    AssetId: "sm_rock_generic_004"
   }
 }
 Assets {
-  Id: 4400190857026103365
-  Name: "Large Wood Board 8m"
+  Id: 4717249238612002881
+  Name: "Rock Pile 002"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_large_board_6m"
+    AssetId: "sm_rocks_small_002"
   }
 }
 Assets {
-  Id: 3722419759708884904
-  Name: "Metal Iron Rusted 02"
+  Id: 4628572682044187401
+  Name: "Tree Oak Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_002"
+  }
+}
+Assets {
+  Id: 4565574025644870814
+  Name: "Fantasy Castle Trim - Battlement 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_battlement_001"
+  }
+}
+Assets {
+  Id: 4542959667302136808
+  Name: "Portcullis"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_portcullis_001"
+  }
+}
+Assets {
+  Id: 4087330384502847673
+  Name: "Bush Leafy Low 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_bush_002"
+  }
+}
+Assets {
+  Id: 3189726128131317652
+  Name: "Ring - Quarter Beveled - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_ring_faceted_lg_001_ref"
+  }
+}
+Assets {
+  Id: 2281099433633317851
+  Name: "Burning Wood"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_003"
+    AssetId: "fxmi_burning_erode"
   }
 }
 Assets {
-  Id: 3374643611449432586
-  Name: "Waterfall Small SFX"
-  PlatformAssetType: 7
+  Id: 1915461248412394696
+  Name: "Invisible"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_waterfall_Cue"
-  }
-}
-Assets {
-  Id: 1451792733745612266
-  Name: "Advanced Color Grading Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_advanced_color_grading"
-  }
-}
-Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
   }
 }
 Assets {
@@ -356,5 +392,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_sakura_hero_02_bare_ref"
+  }
+}
+Assets {
+  Id: 103528912763711779
+  Name: "Stucco Tintable"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stucco_tint_001_uv"
   }
 }
