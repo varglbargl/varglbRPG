@@ -1,4 +1,13 @@
 Assets {
+  Id: 13105350100751157865
+  Name: "Steam Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_steam_volume_vfx"
+  }
+}
+Assets {
   Id: 11394843567174294236
   Name: "Falling Leaves Volume VFX"
   PlatformAssetType: 8

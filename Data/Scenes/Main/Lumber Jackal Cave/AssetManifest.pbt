@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17588356818725180439
+  Name: "Tree Sakura Hero Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_sakura_hero_01_bare_ref"
+  }
+}
+Assets {
   Id: 17569828963249235845
   Name: "Military Tank Historic Gear 01"
   PlatformAssetType: 1
@@ -77,6 +86,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
+  Id: 16155664377433493123
+  Name: "Ivy 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_005"
   }
 }
 Assets {
@@ -188,21 +206,30 @@ Assets {
   }
 }
 Assets {
-  Id: 13105350100751157865
-  Name: "Steam Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_steam_volume_vfx"
-  }
-}
-Assets {
   Id: 13077918666047601431
   Name: "Branches Cluster Medium"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_branches_medium_001"
+  }
+}
+Assets {
+  Id: 12968921755145238077
+  Name: "Snow Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_snow_volume"
+  }
+}
+Assets {
+  Id: 12848555794856992854
+  Name: "Decals Wood Chips 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_strand_board_001_ref"
   }
 }
 Assets {
@@ -266,6 +293,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_simple_150cm_001"
+  }
+}
+Assets {
+  Id: 11626399257559742104
+  Name: "Curtains Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curtain_02"
   }
 }
 Assets {
@@ -341,6 +377,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8298115711238114745
+  Name: "Vehicle Train Steam Engine Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vehicle_train_steam_engine_loop_01_Cue_ref"
+  }
+}
+Assets {
   Id: 8232552333120973729
   Name: "Mecha - Frame - Knee Joint 01"
   PlatformAssetType: 1
@@ -350,12 +395,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7130178060381049973
+  Name: "Level Up VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Level_Up"
+  }
+}
+Assets {
   Id: 7084994494702499048
   Name: "Mecha - Frame - Shoulder Joint 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_jpn_mecha_frame_shldr_joint_001_ref"
+  }
+}
+Assets {
+  Id: 7048898668437317405
+  Name: "Jungle Vine (end)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_liana-vine_end_001_uv"
   }
 }
 Assets {
@@ -374,15 +437,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_001"
-  }
-}
-Assets {
-  Id: 5500769011284434836
-  Name: "Underwater Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_water"
   }
 }
 Assets {
@@ -431,6 +485,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4254429559264463779
+  Name: "Ivy 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_004"
+  }
+}
+Assets {
   Id: 3722419759708884904
   Name: "Metal Iron Rusted 02"
   PlatformAssetType: 2
@@ -455,6 +518,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_waterfall_Cue"
+  }
+}
+Assets {
+  Id: 3243552733877297968
+  Name: "Vehicle Motor Boat Engine Loop 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_Vehicle_Motor_Boat_Engine_Loop_02_Cue_ref"
   }
 }
 Assets {
@@ -500,5 +572,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_branches_big_001"
+  }
+}
+Assets {
+  Id: 467067525109198318
+  Name: "Decal Ivy Big"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_ivy_001"
   }
 }

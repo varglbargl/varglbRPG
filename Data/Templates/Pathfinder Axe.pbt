@@ -25,7 +25,7 @@ Assets {
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 841534158063459245
+              Id: 14627855898358392838
             }
           }
           Overrides {
@@ -1242,6 +1242,15 @@ Assets {
             BoundsScale: 1
           }
         }
+      }
+    }
+    Assets {
+      Id: 14627855898358392838
+      Name: "Fantasy Axe 008"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Weapon_Axe_008"
       }
     }
     Assets {

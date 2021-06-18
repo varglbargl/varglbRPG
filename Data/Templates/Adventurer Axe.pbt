@@ -23,6 +23,12 @@ Assets {
         ChildIds: 8317944665994324292
         UnregisteredParameters {
           Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 15115673977934808491
+            }
+          }
+          Overrides {
             Name: "cs:ItemLevel"
             Float: 10
           }
@@ -1089,6 +1095,15 @@ Assets {
             BoundsScale: 1
           }
         }
+      }
+    }
+    Assets {
+      Id: 15115673977934808491
+      Name: "Fantasy Axe 003"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Weapon_Axe_003"
       }
     }
     Assets {

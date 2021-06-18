@@ -7,7 +7,7 @@ Assets {
       RootId: 11755668592685172298
       Objects {
         Id: 11755668592685172298
-        Name: "Practice Sword"
+        Name: "Toy Sword"
         Transform {
           Scale {
             X: 1
@@ -15,13 +15,23 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 726923549902060663
+        ParentId: 4781671109827199097
         ChildIds: 16111219183229024074
         ChildIds: 6459099347835659764
         ChildIds: 3207674107457141827
         ChildIds: 6802870398667194594
         ChildIds: 2188943672979447243
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 14944775585154019133
+            }
+          }
+          Overrides {
+            Name: "cs:ItemLevel"
+            Float: 60
+          }
           Overrides {
             Name: "cs:MinDamage"
             Int: 5
@@ -51,7 +61,6 @@ Assets {
         Equipment {
           SocketName: "right_prop"
           PickupTrigger {
-            SelfId: 10543058584916754762
           }
         }
       }
@@ -376,14 +385,9 @@ Assets {
         Name: "Katana Guard"
         Transform {
           Location {
-            X: -2.74609375
-            Y: 0.509765625
-            Z: 7.69262695
+            Z: 8.69824219
           }
           Rotation {
-            Pitch: -8.09805298
-            Yaw: -22.8438721
-            Roll: 3.39657855
           }
           Scale {
             X: 1
@@ -455,14 +459,9 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -4.11328125
-            Y: 0.506835938
-            Z: -1.18041992
+            Z: -0.263671875
           }
           Rotation {
-            Pitch: -8.09805298
-            Yaw: -22.8438721
-            Roll: 3.39657855
           }
           Scale {
             X: 0.0722976178
@@ -533,14 +532,9 @@ Assets {
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            X: -2.734375
-            Y: 0.504882813
-            Z: 7.80175781
+            Z: 8.80712891
           }
           Rotation {
-            Pitch: -8.09805298
-            Yaw: -22.8438721
-            Roll: 3.39657855
           }
           Scale {
             X: 1
@@ -607,14 +601,11 @@ Assets {
         Name: "Cylinder - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -4.9921875
-            Y: 2.74511719
-            Z: -12.940918
+            Y: -2.6640625
+            Z: -12.3222656
           }
           Rotation {
-            Pitch: -8.09805298
-            Yaw: -22.8438416
-            Roll: -84.0797119
+            Roll: 90
           }
           Scale {
             X: 0.103893422
@@ -680,6 +671,15 @@ Assets {
             BoundsScale: 1
           }
         }
+      }
+    }
+    Assets {
+      Id: 14944775585154019133
+      Name: "Fantasy Vegetable 019"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Food_Vegetable_019"
       }
     }
     Assets {

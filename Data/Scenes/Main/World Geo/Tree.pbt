@@ -1,6 +1,38 @@
 Name: "World Geo"
 RootId: 18063060926829527243
 Objects {
+  Id: 1487744337751821456
+  Name: "Onolano, Red Mountain"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18063060926829527243
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Onolano, Red Mountain"
+  }
+}
+Objects {
   Id: 698596244488651087
   Name: "Lumber Jackal Cave"
   Transform {
@@ -37,7 +69,7 @@ Objects {
 }
 Objects {
   Id: 3755928285586410568
-  Name: "Starter Zone"
+  Name: "Yunahai, Shady Valley"
   Transform {
     Location {
       X: -10875.4268
@@ -67,7 +99,42 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Starter Zone"
+    FilePartitionName: "Yunahai, Shady Valley"
+  }
+}
+Objects {
+  Id: 7287421568843564609
+  Name: "Floor Collision"
+  Transform {
+    Location {
+      X: -1286.2168
+      Y: -17405.1289
+      Z: -2368.02393
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18063060926829527243
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Floor Collision"
   }
 }
 Objects {
@@ -96,6 +163,10 @@ Objects {
   ChildIds: 9061207760652599927
   ChildIds: 14246565894213602332
   ChildIds: 2052702784834574708
+  ChildIds: 10449788568465012669
+  ChildIds: 6293471381595049650
+  ChildIds: 10025479634068584116
+  ChildIds: 1207874767463863084
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -109,6 +180,277 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 1207874767463863084
+  Name: "Waterfall Top Volume VFX"
+  Transform {
+    Location {
+      X: 16224.7451
+      Y: 3591.55
+      Z: -6744.09863
+    }
+    Rotation {
+      Yaw: -56.8469963
+    }
+    Scale {
+      X: 6.25858498
+      Y: 0.999999404
+      Z: 1
+    }
+  }
+  ParentId: 5220668303531152840
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Life"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Enable Waterfall"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Distortion"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7376135922227885485
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 10025479634068584116
+  Name: "Steam Volume VFX"
+  Transform {
+    Location {
+      X: 13429.0508
+      Y: 4229.7627
+      Z: -6396.42139
+    }
+    Rotation {
+      Pitch: 37.5328789
+      Yaw: -28.5096626
+      Roll: -2.15326463e-06
+    }
+    Scale {
+      X: 0.637689054
+      Y: 0.637689054
+      Z: 0.637689054
+    }
+  }
+  ParentId: 5220668303531152840
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Initial Velocity Low"
+      Vector {
+        Z: 100
+      }
+    }
+    Overrides {
+      Name: "bp:Initial Velocity High"
+      Vector {
+        Z: 200
+      }
+    }
+    Overrides {
+      Name: "bp:Local Space"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 5
+        G: 5
+        B: 5
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 3
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13105350100751157865
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 6293471381595049650
+  Name: "Steam Volume VFX"
+  Transform {
+    Location {
+      X: 13471.5898
+      Y: 4151.41748
+      Z: -6481.21631
+    }
+    Rotation {
+      Pitch: 32.8759117
+      Yaw: -25.6370106
+      Roll: 1.016581e-06
+    }
+    Scale {
+      X: 0.249611571
+      Y: 0.249611571
+      Z: 0.249611571
+    }
+  }
+  ParentId: 5220668303531152840
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 0.4
+    }
+    Overrides {
+      Name: "bp:Wind Speed"
+      Vector {
+      }
+    }
+    Overrides {
+      Name: "bp:Initial Velocity High"
+      Vector {
+        Z: 350
+      }
+    }
+    Overrides {
+      Name: "bp:Initial Velocity Low"
+      Vector {
+        Z: 300
+      }
+    }
+    Overrides {
+      Name: "bp:Local Space"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 5
+        G: 5
+        B: 5
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13105350100751157865
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 10449788568465012669
+  Name: "Underwater Post Process"
+  Transform {
+    Location {
+      X: 14471.749
+      Y: 3443.85107
+      Z: -6688.79688
+    }
+    Rotation {
+      Yaw: 44.6074295
+    }
+    Scale {
+      X: 32.6911087
+      Y: 29.9704628
+      Z: 5.56826591
+    }
+  }
+  ParentId: 5220668303531152840
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5500769011284434836
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {

@@ -7,7 +7,7 @@ Assets {
       RootId: 2097709997745396101
       Objects {
         Id: 2097709997745396101
-        Name: "Guard Sword"
+        Name: "Imilhoen Sword 01"
         Transform {
           Scale {
             X: 1
@@ -50,17 +50,52 @@ Assets {
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            Z: 10.8266602
+            Z: 17.3129883
           }
           Rotation {
           }
           Scale {
-            X: 1.32431638
+            X: 1.06554687
             Y: 1.13999856
-            Z: 0.91623044
+            Z: 1.91977334
           }
         }
         ParentId: 2097709997745396101
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 1
+              G: 0.285999954
+              B: 0.32169944
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 16115905030413172164
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.0447759926
+              G: 0.232000008
+              B: 0.091582
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.338564932
+              G: 0.352738917
+              B: 0.364000022
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -75,7 +110,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 13888119501670323283
+            Id: 14294883140120200377
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -95,7 +130,7 @@ Assets {
         Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            Z: -20.1416016
+            Z: -20.2998047
           }
           Rotation {
           }
@@ -138,6 +173,15 @@ Assets {
               R: 0.130208
               G: 0.045481652
               B: 0.0360676087
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.338564932
+              G: 0.352738917
+              B: 0.364000022
               A: 1
             }
           }
@@ -573,16 +617,16 @@ Assets {
         Transform {
           Location {
             X: 0.04296875
-            Z: 36.362793
+            Z: 36.3452148
           }
           Rotation {
             Yaw: 2.45659044e-06
             Roll: 89.9999924
           }
           Scale {
-            X: 0.0947131217
-            Y: 0.132625714
-            Z: 0.0737865716
+            X: 0.0870566666
+            Y: 0.121904418
+            Z: 0.0678217709
           }
         }
         ParentId: 2097709997745396101
@@ -720,13 +764,13 @@ Assets {
           }
           Rotation {
             Pitch: 62.3071327
-            Yaw: -2.57198717e-05
+            Yaw: -3.05175781e-05
             Roll: 89.9999619
           }
           Scale {
-            X: 0.079970859
-            Y: 0.111982301
-            Z: 0.0715366
+            X: 0.0706645772
+            Y: 0.0989507958
+            Z: 0.0632118
           }
         }
         ParentId: 2097709997745396101
@@ -797,13 +841,13 @@ Assets {
             Z: 12.0249023
           }
           Rotation {
-            Pitch: -57.6928444
+            Pitch: -57.6928406
             Roll: 89.9999695
           }
           Scale {
-            X: 0.079970859
-            Y: 0.111982301
-            Z: 0.0715366
+            X: 0.0706645772
+            Y: 0.0989507958
+            Z: 0.0632118
           }
         }
         ParentId: 2097709997745396101
@@ -944,12 +988,21 @@ Assets {
       }
     }
     Assets {
-      Id: 13888119501670323283
-      Name: "Fantasy Sword Blade 04"
+      Id: 14294883140120200377
+      Name: "Fantasy Sword Blade 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_blade_sword_004_ref"
+        AssetId: "sm_weap_fan_blade_sword_001"
+      }
+    }
+    Assets {
+      Id: 16115905030413172164
+      Name: "Metal Basic 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_basic_001"
       }
     }
     Assets {

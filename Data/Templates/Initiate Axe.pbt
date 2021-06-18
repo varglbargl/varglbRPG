@@ -7,7 +7,7 @@ Assets {
       RootId: 13646150952846456020
       Objects {
         Id: 13646150952846456020
-        Name: "Starter Axe"
+        Name: "Initiate Axe"
         Transform {
           Scale {
             X: 1
@@ -15,13 +15,19 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 726923549902060663
+        ParentId: 4781671109827199097
         ChildIds: 17678569940426306447
         ChildIds: 12319917319312245757
         ChildIds: 11633069655001271229
         ChildIds: 4201542011359055748
         ChildIds: 8317944665994324292
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 6504507740201726512
+            }
+          }
           Overrides {
             Name: "cs:ItemLevel"
             Float: 1
@@ -37,12 +43,6 @@ Assets {
           Overrides {
             Name: "cs:AnimationStance"
             String: "1hand_melee_stance"
-          }
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 15115673977934808491
-            }
           }
         }
         WantsNetworking: true
@@ -1033,12 +1033,12 @@ Assets {
       }
     }
     Assets {
-      Id: 15115673977934808491
-      Name: "Fantasy Axe 003"
+      Id: 6504507740201726512
+      Name: "Fantasy Axe 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Axe_003"
+        AssetId: "UI_Fantasy_Weapon_Axe_001"
       }
     }
     Assets {

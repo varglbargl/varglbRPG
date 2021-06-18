@@ -23,6 +23,12 @@ Assets {
         ChildIds: 8317944665994324292
         UnregisteredParameters {
           Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 4555254960654381337
+            }
+          }
+          Overrides {
             Name: "cs:ItemLevel"
             Float: 1
           }
@@ -37,12 +43,6 @@ Assets {
           Overrides {
             Name: "cs:AnimationStance"
             String: "1hand_melee_stance"
-          }
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 12225925101526253047
-            }
           }
         }
         WantsNetworking: true
@@ -800,12 +800,12 @@ Assets {
       }
     }
     Assets {
-      Id: 12225925101526253047
-      Name: "Fantasy Axe 007"
+      Id: 4555254960654381337
+      Name: "Fantasy Axe 004"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Axe_007"
+        AssetId: "UI_Fantasy_Weapon_Axe_004"
       }
     }
     Assets {

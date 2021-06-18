@@ -15,8 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12926336833217696435
-        ChildIds: 4390309255253794129
+        ParentId: 4781671109827199097
         ChildIds: 8357007325030977894
         ChildIds: 6560411368148142827
         ChildIds: 12078083937217746790
@@ -33,6 +32,7 @@ Assets {
         ChildIds: 4988082810445275809
         ChildIds: 15266168637372007016
         ChildIds: 12577758744986913879
+        ChildIds: 9301218385143415279
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -50,56 +50,11 @@ Assets {
         }
       }
       Objects {
-        Id: 4390309255253794129
-        Name: "Fantasy Sword Blade 04"
-        Transform {
-          Location {
-            Z: 11.675293
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.42809117
-            Y: 1.22933006
-            Z: 0.988027215
-          }
-        }
-        ParentId: 8317944665994324292
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 13888119501670323283
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 8357007325030977894
         Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            Z: -21.7197266
+            Z: -21.8764648
           }
           Rotation {
           }
@@ -139,9 +94,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:color"
             Color {
-              R: 0.130208
-              G: 0.045481652
-              B: 0.0360676087
+              R: 0.208
+              G: 0.0565759912
+              B: 0.0565759912
               A: 1
             }
           }
@@ -583,9 +538,9 @@ Assets {
             Roll: 89.9999847
           }
           Scale {
-            X: 0.0757086128
-            Y: 0.106013924
-            Z: 0.0677238777
+            X: 0.0939325243
+            Y: 0.131532654
+            Z: 0.0840257481
           }
         }
         ParentId: 8317944665994324292
@@ -1234,14 +1189,76 @@ Assets {
           }
         }
       }
-    }
-    Assets {
-      Id: 13888119501670323283
-      Name: "Fantasy Sword Blade 04"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_blade_sword_004_ref"
+      Objects {
+        Id: 9301218385143415279
+        Name: "Fantasy Sword Blade 04"
+        Transform {
+          Location {
+            Z: 18.515625
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.24017799
+            Y: 1.23826563
+            Z: 2.08525562
+          }
+        }
+        ParentId: 8317944665994324292
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 4
+              G: 1.14399981
+              B: 1.28679776
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 16115905030413172164
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.0447759926
+              G: 0.232000008
+              B: 0.091582
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14294883140120200377
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
       }
     }
     Assets {
@@ -1305,6 +1322,24 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_car-paint_advanced_001_uv_ref"
+      }
+    }
+    Assets {
+      Id: 14294883140120200377
+      Name: "Fantasy Sword Blade 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_blade_sword_001"
+      }
+    }
+    Assets {
+      Id: 16115905030413172164
+      Name: "Metal Basic 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_basic_001"
       }
     }
     PrimaryAssetId {

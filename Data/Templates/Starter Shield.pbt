@@ -19,14 +19,18 @@ Assets {
         ChildIds: 7109948812332489522
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Health"
-            Int: 10
-          }
-          Overrides {
             Name: "cs:Icon"
             AssetReference {
               Id: 16268917374562647466
             }
+          }
+          Overrides {
+            Name: "cs:ItemLevel"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:Health"
+            Int: 10
           }
         }
         WantsNetworking: true

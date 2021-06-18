@@ -22,43 +22,43 @@ local classes = {
     name = "Avenger",
     grit = 15,
     wit  = 5,
-    spit = 10
-    -- special: 10% of all damage taken is reflected to the attacker instead.
+    spit = 10,
+    special = "10% of all damage taken is reflected to the attacker instead."
   },
   {
     name = "Paragon",
     grit = 15,
     wit  = 10,
-    spit = 5
-    -- special: Melee attacks heal a nearby ally
+    spit = 5,
+    special = "Melee attacks heal a nearby ally"
   },
   {
     name = "Witch",
     grit = 5,
     wit  = 15,
-    spit = 10
-    -- special: ???
+    spit = 10,
+    special = "???"
   },
   {
     name = "???",
     grit = 10,
     wit  = 15,
-    spit = 5
-    -- special: ???
+    spit = 5,
+    special = "???"
   },
   {
     name = "Ranger",
     grit = 5,
     wit  = 10,
-    spit = 15
-    -- special: Melee attacks knock enemies away
+    spit = 15,
+    special = "Melee attacks knock enemies away"
   },
   {
     name = "Harrier",
     grit = 10,
     wit  = 5,
-    spit = 15
-    -- special: Sprinting or gliding into a fight makes your first melee attack deal tripple.
+    spit = 15,
+    special = "Sprinting or gliding into a fight makes your first melee attack deal tripple."
   }
 }
 
@@ -66,7 +66,7 @@ function Utils.classStats(num)
   return classes[num]
 end
 
--- UTILITY FUNCTIONS
+-- GAME MECHANICS
 
 function Utils.magicNumber(x)
   return (x*2^(x/powerDoublingRate))/x
@@ -112,15 +112,6 @@ function Utils.rollDamage(min, max)
   end
 
   return Damage.New(math.random(min, max))
-end
-
-function Utils.groundBelowPoint(vec3)
-  local hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
-  if hitResult then
-    return hitResult:GetImpactPosition()
-  else
-    return false
-  end
 end
 
 function Utils.showFlyupText(text, pos, color)
@@ -210,6 +201,42 @@ function Utils.throttleMessage(message)
     Task.Wait(0.1)
     Utils.throttleToPlayer(message)
   end
+end
+
+-- GENERAL UTILITY
+
+function Utils.groundBelowPoint(vec3)
+  local hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
+  if hitResult then
+    return hitResult:GetImpactPosition()
+  else
+    return false
+  end
+end
+
+function Utils.playSoundEffect(audio, volume, pitch, location)
+  volume = volume or 1
+  pitch = pitch or 0
+
+  local sfx = World.SpawnAsset(audio)
+
+  sfx.isTransient = true
+  sfx.volume = volume
+  sfx.pitch = pitch
+
+  if location then
+    -- whatever
+  else
+    sfx.isAttenuationEnabled = false
+    sfx.isOcclusionEnabled = false
+    sfx.isSpatializationEnabled = false
+  end
+
+  sfx:Play()
+end
+
+function Utils.vector2IsInside(vec2, x, y, w, h)
+  return vec2.x > x and vec2.y > y and vec2.x < x+w and vec2.y < y+h
 end
 
 return Utils

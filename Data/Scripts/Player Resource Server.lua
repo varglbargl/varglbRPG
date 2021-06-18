@@ -57,6 +57,8 @@ function onPlayerJoined(player)
   player.spawnedEvent:Connect(playerSpawned)
 
   if Environment.IsPreview() then
+
+    -- handler params: Player_player, string_keyCode
     player.bindingPressedEvent:Connect(function(thisPlayer, keyCode)
       if keyCode == "ability_extra_38" and player:GetResource("Level") < maxLevel then
         -- maxLevel = 120
@@ -64,6 +66,11 @@ function onPlayerJoined(player)
         Events.Broadcast("PlayerGainedXP", thisPlayer, Utils.experienceToNextLevel(player:GetResource("Level")))
         -- Task.Wait()
         -- maxLevel = 60
+      end
+
+      if keyCode == "ability_extra_29" then
+        Utils.throttleToPlayer(thisPlayer, "AddToInventory", 4)
+        -- Events.Broadcast("EquipToPlayer", thisPlayer, 6)
       end
     end)
   end
@@ -77,8 +84,6 @@ end
 function onPlayerGainedXP(player, amount)
   local currentXP = player:GetResource("Experience")
   local currentLevel = player:GetResource("Level")
-
-  -- print(currentXP + amount, Utils.experienceToNextLevel(currentLevel))
 
   if currentLevel == maxLevel then return end
 
@@ -134,8 +139,6 @@ function onPlayerGainedXP(player, amount)
     player:SetResource("MaxStamina", math.floor(45 + player:GetResource("Spit") / 12 + player:GetResource("Level") / 2))
     player:SetResource("Stamina", player:GetResource("MaxStamina"))
 
-    --("Grit:"..player:GetResource("Grit").."  Wit:"..player:GetResource("Wit").."  Spit:"..player:GetResource("Spit").."")
-
     if vfx then
       vfx:ScaleTo(Vector3.ONE, 0.2)
 
@@ -159,7 +162,6 @@ function onPlayerGainedGold(player, amount)
 end
 
 function onEquipmentChanged(player)
-
 end
 
 function resourceTicker(player)

@@ -13,10 +13,10 @@ HITBOX.collision = Collision.FORCE_OFF
 local hitEnemies = {}
 
 function rollDamage()
-  return math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + math.floor(weapon.owner:GetResource("Grit")) / 5 + math.random())
+  return math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + weapon.owner:GetResource("Grit") / 5 + math.random())
 end
 
-function onAbilityExecute(thisAbility)
+function onAbilityCast(thisAbility)
   hitEnemies = {}
   HITBOX.collision = Collision.INHERIT
 end
@@ -40,18 +40,26 @@ function onEquipped(thisEquipment, player)
   if STANCE then
     player.animationStance = STANCE
     Events.Broadcast("UpdateIdleStance", player, STANCE)
+    Events.Broadcast("EquipmentChanged", player)
   end
+end
+
+function onUnequipped(thisEquipment)
+  thisEquipment:Destroy()
 end
 
 -- handler params: Equipment_equipment, Player_player
 weapon.equippedEvent:Connect(onEquipped)
+
+-- handler params: Equipment_equipment, Player_player
+weapon.unequippedEvent:Connect(onUnequipped)
 
 -- handler params: Trigger_trigger, Object_other
 HITBOX.beginOverlapEvent:Connect(onHitboxOverlap)
 
 for i, abil in ipairs(weapon:GetAbilities()) do
   -- handler params: Ability_ability
-  abil.executeEvent:Connect(onAbilityExecute)
+  abil.castEvent:Connect(onAbilityCast)
 
   -- handler params: Ability_ability
   abil.recoveryEvent:Connect(onAbilityEnd)

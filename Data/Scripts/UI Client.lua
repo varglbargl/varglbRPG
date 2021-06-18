@@ -7,6 +7,8 @@ local XP_NUMBERS = script:GetCustomProperty("XPNumbers"):WaitForObject()
 local HEALTH_NUMBERS = script:GetCustomProperty("HealthNumbers"):WaitForObject()
 local STAMINA_NUMBERS = script:GetCustomProperty("StaminaNumbers"):WaitForObject()
 local LEVEL_NUMBER = script:GetCustomProperty("LevelNumber"):WaitForObject()
+local PRIMARY_ICON = script:GetCustomProperty("PrimaryIcon"):WaitForObject()
+local SECONDARY_ICON = script:GetCustomProperty("SecondaryIcon"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local barWidth = HEALTH_BAR.width

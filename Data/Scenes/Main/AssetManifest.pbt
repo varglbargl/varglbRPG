@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17588356818725180439
-  Name: "Tree Sakura Hero Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_sakura_hero_01_bare_ref"
-  }
-}
-Assets {
   Id: 17412017405944415257
   Name: "Flower Bellflower 02"
   PlatformAssetType: 1
@@ -35,39 +26,12 @@ Assets {
   }
 }
 Assets {
-  Id: 17044755260064219011
-  Name: "Mecha - Armor - Helm 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_veh_jpn_mecha_armor_helm_002_ref"
-  }
-}
-Assets {
-  Id: 17035938977884836872
-  Name: "Manticore Logo"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_logo_manticore_01"
-  }
-}
-Assets {
   Id: 16751224094635422494
   Name: "Rock 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
-  }
-}
-Assets {
-  Id: 16155664377433493123
-  Name: "Ivy 05"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ivy_generic_005"
   }
 }
 Assets {
@@ -86,15 +50,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_forestbirds_ref"
-  }
-}
-Assets {
-  Id: 15042601144786818910
-  Name: "Shield 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_shield_004"
   }
 }
 Assets {
@@ -125,84 +80,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14360998166931460595
-  Name: "Decal Spray Manticore 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_spray_manticore_001"
-  }
-}
-Assets {
   Id: 14233481070855848323
   Name: "Fern 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_003"
-  }
-}
-Assets {
-  Id: 14212988502358508072
-  Name: "Metal Basic Steel"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "steel_001"
-  }
-}
-Assets {
-  Id: 13913062282643868615
-  Name: "Urban Pipe Valve 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_valve_001_ref"
-  }
-}
-Assets {
-  Id: 13888119501670323283
-  Name: "Fantasy Sword Blade 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_blade_sword_004_ref"
-  }
-}
-Assets {
-  Id: 13467939812857306969
-  Name: "Urban Pipe Coupling 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_coupling_004_ref"
-  }
-}
-Assets {
-  Id: 12968921755145238077
-  Name: "Snow Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_snow_volume"
-  }
-}
-Assets {
-  Id: 12848555794856992854
-  Name: "Decals Wood Chips 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_strand_board_001_ref"
-  }
-}
-Assets {
-  Id: 12827530473249900764
-  Name: "Emissive Glow Opaque"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_opaque_emissive"
   }
 }
 Assets {
@@ -215,48 +98,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12632251234297570874
-  Name: "Urban Pipe Cap 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_cap_003_ref"
-  }
-}
-Assets {
-  Id: 12610149741243116648
-  Name: "Urban Pipe Wrap 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_coupling_005_ref"
-  }
-}
-Assets {
-  Id: 12152694598132833191
-  Name: "Plane 1m - Two Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_002"
-  }
-}
-Assets {
   Id: 11785020265438300340
   Name: "Ambient Dark Cave Dungeon Loop 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_ambience_dark_dungeon_cave_loop_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 11626399257559742104
-  Name: "Curtains Straight"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_curtain_02"
   }
 }
 Assets {
@@ -269,24 +116,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11479831682488938001
-  Name: "Metal Iron Rusted 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_002"
-  }
-}
-Assets {
-  Id: 11034279480632751641
-  Name: "Generic Water"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_parameter_driven_water_manual"
-  }
-}
-Assets {
   Id: 10835155324150586940
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -296,84 +125,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10255930053346940420
-  Name: "Humanoid 1 Rig"
-  PlatformAssetType: 25
-  PrimaryAsset {
-    AssetType: "SkeletonAssetRef"
-    AssetId: "npc_gal_wireframe_001_ref"
-  }
-}
-Assets {
-  Id: 10126871160743796714
-  Name: "Ring - Beveled Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ring_faceted_003"
-  }
-}
-Assets {
-  Id: 9693133565758539692
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
-  }
-}
-Assets {
-  Id: 9243070650073005170
-  Name: "Humanoid 1 Sonia"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_gal_head_sport_001_ref"
-  }
-}
-Assets {
   Id: 8658515238740057795
   Name: "Branches Cluster Small"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_branches_small_001"
-  }
-}
-Assets {
-  Id: 8298115711238114745
-  Name: "Vehicle Train Steam Engine Loop 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_vehicle_train_steam_engine_loop_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 7844837304244399601
-  Name: "Humanoid 1 Viper Armor"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_gal_upper_scifi_001_ref"
-  }
-}
-Assets {
-  Id: 7516257627012008757
-  Name: "Pipe - Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half-pipe_001"
-  }
-}
-Assets {
-  Id: 7376135922227885485
-  Name: "Waterfall Top Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_waterfall_top"
   }
 }
 Assets {
@@ -392,51 +149,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_military_logo_001_ref"
-  }
-}
-Assets {
-  Id: 7130178060381049973
-  Name: "Level Up VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_Level_Up"
-  }
-}
-Assets {
-  Id: 7048898668437317405
-  Name: "Jungle Vine (end)"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_liana-vine_end_001_uv"
-  }
-}
-Assets {
-  Id: 6974396148717418881
-  Name: "Cylinder - Chamfered Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_002"
-  }
-}
-Assets {
-  Id: 6954370053071083141
-  Name: "Metal Iron 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_001"
-  }
-}
-Assets {
-  Id: 6680195274934306432
-  Name: "Wood Planks"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_planks_dark_001_uv"
   }
 }
 Assets {
@@ -467,66 +179,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5259558535274679851
-  Name: "Mecha - Armor - Helm 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_veh_jpn_mecha_armor_helm_001_ref"
-  }
-}
-Assets {
-  Id: 5092665937078544436
-  Name: "Metal Grates 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_scf_grates_004_uv"
-  }
-}
-Assets {
   Id: 4980245015375490494
   Name: "Rock Flat 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_004"
-  }
-}
-Assets {
-  Id: 4949046684914789731
-  Name: "Humanoid 1 Yasmine Hair"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_gal_hair_basic_007_ref"
-  }
-}
-Assets {
-  Id: 4621604117357375380
-  Name: "Shield 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_shield_001"
-  }
-}
-Assets {
-  Id: 4254429559264463779
-  Name: "Ivy 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ivy_generic_004"
-  }
-}
-Assets {
-  Id: 3930716009593949522
-  Name: "Mecha - Armor - Helm 01 - Fin 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_veh_jpn_mecha_armor_helm_001_fin_001_ref"
   }
 }
 Assets {
@@ -548,15 +206,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3243552733877297968
-  Name: "Vehicle Motor Boat Engine Loop 02 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_Vehicle_Motor_Boat_Engine_Loop_02_Cue_ref"
-  }
-}
-Assets {
   Id: 3229985897220821303
   Name: "Waterfall Large SFX"
   PlatformAssetType: 7
@@ -566,48 +215,12 @@ Assets {
   }
 }
 Assets {
-  Id: 2858784811658955895
-  Name: "Pipe - Quarter Wedge Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_pipe_wedge_002"
-  }
-}
-Assets {
   Id: 2582620441980557288
   Name: "Fern 04"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_004"
-  }
-}
-Assets {
-  Id: 2561297505778815319
-  Name: "Shield 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_shield_003"
-  }
-}
-Assets {
-  Id: 1915461248412394696
-  Name: "Invisible"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_invisible_001"
-  }
-}
-Assets {
-  Id: 1679745791041877462
-  Name: "Humanoid 1 Hockey Gear Pants"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_gal_lower_sport_001a_ref"
   }
 }
 Assets {
@@ -638,15 +251,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
-  }
-}
-Assets {
   Id: 1073706528785212426
   Name: "Tree Redwood Medium"
   PlatformAssetType: 1
@@ -671,32 +275,5 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_windytrees_ref"
-  }
-}
-Assets {
-  Id: 467067525109198318
-  Name: "Decal Ivy Big"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_ivy_001"
-  }
-}
-Assets {
-  Id: 394066491586073241
-  Name: "Fabric Burlap New 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_002_uv"
-  }
-}
-Assets {
-  Id: 189212190271993885
-  Name: "Fantasy Shield Strap 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_strap_001"
   }
 }
