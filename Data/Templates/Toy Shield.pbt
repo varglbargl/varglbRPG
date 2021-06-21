@@ -15,8 +15,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 726923549902060663
+        ParentId: 3855702338875834365
         ChildIds: 5333309976524365778
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 7396729017169306594
+            }
+          }
+          Overrides {
+            Name: "cs:ItemLevel"
+            Float: 60
+          }
+          Overrides {
+            Name: "cs:Health"
+            Int: 20
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33,7 +49,6 @@ Assets {
         Equipment {
           SocketName: "left_prop"
           PickupTrigger {
-            SelfId: 10543058584916754762
           }
         }
       }
@@ -442,6 +457,15 @@ Assets {
       }
     }
     Assets {
+      Id: 7396729017169306594
+      Name: "Survival Plant 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Survival_Equip_Plant_001"
+      }
+    }
+    Assets {
       Id: 4621604117357375380
       Name: "Shield 01"
       PlatformAssetType: 1
@@ -475,4 +499,5 @@ Assets {
   }
   SerializationVersion: 89
   VirtualFolderPath: "Gear"
+  VirtualFolderPath: "Weapons, Shields"
 }

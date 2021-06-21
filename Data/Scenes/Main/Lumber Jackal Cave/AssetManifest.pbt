@@ -512,15 +512,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3374643611449432586
-  Name: "Waterfall Small SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_waterfall_Cue"
-  }
-}
-Assets {
   Id: 3243552733877297968
   Name: "Vehicle Motor Boat Engine Loop 02 SFX"
   PlatformAssetType: 7

@@ -10,10 +10,10 @@ for propName, item in pairs(lootFromProperties) do
     local spawnedItem = World.SpawnAsset(item, {position = Vector3.UP * -10000})
 
     local lootItem = {
-      equipment = item,
-      socket = spawnedItem.socket,
       name = spawnedItem.name,
-      id = #lootTable + 1,
+      equipment = item,
+      templateId = spawnedItem.sourceTemplateId,
+      socket = spawnedItem.socket,
       itemLevel = spawnedItem:GetCustomProperty("ItemLevel"),
       icon = spawnedItem:GetCustomProperty("Icon"),
       minDamage = spawnedItem:GetCustomProperty("MinDamage"),
@@ -42,10 +42,17 @@ for propName, item in pairs(lootFromProperties) do
 end
 
 table.sort(lootTable, function(a, b)
-  return a.itemLevel < b.itemLevel
+  if a.itemLevel == b.itemLevel then
+    return a.name < b.name
+  else
+    return a.itemLevel < b.itemLevel
+  end
 end)
 
-function Loot.getRandom(level, rarity)
+function generateRing(level)
+end
+
+function Loot.getRandom(level, socket)
   local startIndex = nil
   local stopIndex = nil
 
@@ -79,16 +86,12 @@ function Loot.getRandom(level, rarity)
   end
 end
 
-function getItemId(equipment)
+function Loot.findItemByTemplateId(templateId)
   for _, item in ipairs(lootTable) do
-    if item.equipment == equipment then
-      return item.id
+    if item.templateId == templateId then
+      return item
     end
   end
-end
-
-function Loot.findItemById(id)
-  return lootTable[id]
 end
 
 function Loot.findItemByName(name)
@@ -101,9 +104,9 @@ end
 
 function Loot.giveToPlayer(player, item)
   if Environment.IsServer() then
-    Events.BroadcastToPlayer(player, "AddToInventory", item.id)
+    Events.BroadcastToPlayer(player, "AddToInventory", item.templateId)
   else
-    Events.Broadcast("AddToInventory", item.id)
+    Events.Broadcast("AddToInventory", item.templateId)
   end
 end
 

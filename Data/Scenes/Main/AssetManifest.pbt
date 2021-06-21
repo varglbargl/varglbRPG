@@ -35,6 +35,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16217022108673138807
+  Name: "Fern 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_001"
+  }
+}
+Assets {
+  Id: 15335176327853375814
+  Name: "Bush Leafy Tall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_bush_001"
+  }
+}
+Assets {
   Id: 15306163705787466310
   Name: "Tree Redwood Bare Small"
   PlatformAssetType: 1
@@ -203,6 +221,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_ambience_underwaterbubbles_designed_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 3374643611449432586
+  Name: "Waterfall Small SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_waterfall_Cue"
   }
 }
 Assets {

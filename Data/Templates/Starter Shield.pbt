@@ -30,7 +30,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Health"
-            Int: 10
+            Int: 20
           }
         }
         WantsNetworking: true
@@ -947,4 +947,5 @@ Assets {
   }
   SerializationVersion: 89
   VirtualFolderPath: "Gear"
+  VirtualFolderPath: "Weapons, Shields"
 }

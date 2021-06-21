@@ -1070,12 +1070,12 @@ Objects {
   Name: "Curtains Straight"
   Transform {
     Location {
-      X: 2213.59668
+      X: 2208.33691
       Y: -5609.66113
-      Z: 901.490234
+      Z: 933.259766
     }
     Rotation {
-      Yaw: 75.5612946
+      Yaw: 53.561058
     }
     Scale {
       X: 5.79717779
@@ -6872,183 +6872,13 @@ Objects {
   }
 }
 Objects {
-  Id: 14210645167072279412
-  Name: "Mine Enterance"
-  Transform {
-    Location {
-      X: 2980.50977
-      Y: -1121.47253
-      Z: -4415.354
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 698596244488651087
-  ChildIds: 3283685121339584665
-  ChildIds: 1459062094269132714
-  ChildIds: 12481223854060791054
-  ChildIds: 206902058844727267
-  ChildIds: 3032915130368307075
-  ChildIds: 4820574647547704013
-  ChildIds: 9287938690124713118
-  ChildIds: 6274287112220396788
-  ChildIds: 12323009560002540963
-  ChildIds: 13607404160700778641
-  ChildIds: 202102534167226713
-  ChildIds: 17356388438578508559
-  ChildIds: 7792106312375026515
-  ChildIds: 15789297299924801181
-  ChildIds: 5973260915674268987
-  ChildIds: 7551119899210168110
-  ChildIds: 432038154043203565
-  ChildIds: 8094591564088114098
-  ChildIds: 3739309486949611793
-  ChildIds: 6551455405467756503
-  ChildIds: 4760997030050362273
-  ChildIds: 12704581078297542054
-  ChildIds: 6142066249909117953
-  ChildIds: 3059570201595117192
-  ChildIds: 17443235391080149896
-  ChildIds: 12876081861110050469
-  ChildIds: 18176255051691320530
-  ChildIds: 13966994097406892647
-  ChildIds: 4831900065420464184
-  ChildIds: 901282572109321024
-  ChildIds: 5472291275976367022
-  ChildIds: 6601225631053394255
-  ChildIds: 1162267801249062949
-  ChildIds: 12656831704547916927
-  ChildIds: 8844844757384861218
-  ChildIds: 15347425339543446423
-  ChildIds: 5650900378671728875
-  ChildIds: 5933535777909385499
-  ChildIds: 1028482808407289421
-  ChildIds: 10319098051409858802
-  ChildIds: 15484442094198852844
-  ChildIds: 2854027148582053962
-  ChildIds: 11133936674857873318
-  ChildIds: 10805272310704836379
-  ChildIds: 42109774657421092
-  ChildIds: 16912218950082009086
-  ChildIds: 18180444311626503644
-  ChildIds: 6028888910172421323
-  ChildIds: 4343559705291635165
-  ChildIds: 3520240933507255346
-  ChildIds: 6616127707207186399
-  ChildIds: 14771521160021512512
-  ChildIds: 14909903519534069391
-  ChildIds: 16858691892990494276
-  ChildIds: 7701743862990910006
-  ChildIds: 2650164387859654397
-  ChildIds: 3333529070532117920
-  ChildIds: 7008755308896205804
-  ChildIds: 6462826307009182293
-  ChildIds: 13486790965809460423
-  ChildIds: 16114871094533330571
-  ChildIds: 13646292979128164707
-  ChildIds: 16520146301328779291
-  ChildIds: 13033133789968069388
-  ChildIds: 3754300261494393043
-  ChildIds: 9565716699773817264
-  ChildIds: 6045755003219477104
-  ChildIds: 16336975137030480753
-  ChildIds: 2119992862759696787
-  ChildIds: 6394390938480328048
-  ChildIds: 15642146327263029609
-  ChildIds: 12659118406066971735
-  ChildIds: 13681877748201041755
-  ChildIds: 14246261606347038225
-  ChildIds: 16323295614987316583
-  ChildIds: 4983362239397239537
-  ChildIds: 6300377809895333504
-  ChildIds: 7440526398614192981
-  ChildIds: 7959538179939693474
-  ChildIds: 1663416336500482190
-  ChildIds: 4268889720267519910
-  ChildIds: 13303856875186229982
-  ChildIds: 4293491396507123772
-  ChildIds: 7110155480940439296
-  ChildIds: 2077628469595840751
-  ChildIds: 10072719587080776872
-  ChildIds: 14900334556254225297
-  ChildIds: 1448297228035256990
-  ChildIds: 7810839209387722049
-  ChildIds: 3903815679781925511
-  ChildIds: 10405760594265011659
-  ChildIds: 14297356325022672824
-  ChildIds: 6881098769582773000
-  ChildIds: 1822678135962345507
-  ChildIds: 5976174728695081899
-  ChildIds: 8888717416138923095
-  ChildIds: 10995278163595557445
-  ChildIds: 751580067886444140
-  ChildIds: 12583115055384995729
-  ChildIds: 1017141218463608079
-  ChildIds: 15775786090666163064
-  ChildIds: 826121403434386309
-  ChildIds: 13744032062715136010
-  ChildIds: 17901728202424466007
-  ChildIds: 7377752364328861416
-  ChildIds: 6818283973150880093
-  ChildIds: 10947707585879571712
-  ChildIds: 15541328666708238533
-  ChildIds: 3462278347463551716
-  ChildIds: 18001478557949435398
-  ChildIds: 15482424737373618283
-  ChildIds: 11570679060244315358
-  ChildIds: 7516871566486498232
-  ChildIds: 8824104669325109604
-  ChildIds: 17527646336805848762
-  ChildIds: 1323432808198053528
-  ChildIds: 7537606304511070422
-  ChildIds: 8265951088204730280
-  ChildIds: 6553545285133199674
-  ChildIds: 4523644093784082118
-  ChildIds: 11547151793958385989
-  ChildIds: 6792262813437013209
-  ChildIds: 13931697269030306289
-  ChildIds: 859211258132528001
-  ChildIds: 4541725709943569555
-  ChildIds: 10710046535759171962
-  ChildIds: 1420279947140754597
-  ChildIds: 5132855417290103256
-  ChildIds: 3335692258113846758
-  ChildIds: 11331821908590712060
-  ChildIds: 18063668224969999294
-  ChildIds: 12204975414037724320
-  ChildIds: 1562020461362855052
-  ChildIds: 17340312070916577278
-  ChildIds: 16786249092826196012
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    Model {
-    }
-  }
-}
-Objects {
   Id: 16786249092826196012
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 31.3925781
-      Y: -2841.5813
-      Z: 4894.16211
+      X: 3011.90234
+      Y: -3963.05396
+      Z: 478.808594
     }
     Rotation {
       Yaw: 49.4089661
@@ -7059,7 +6889,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -7106,14 +6936,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: -32.0634766
-      Y: -4127.58936
-      Z: 4831.48877
+      X: 2948.44629
+      Y: -5249.06201
+      Z: 416.135254
     }
     Rotation {
-      Pitch: 95.0333481
-      Yaw: 88.8207397
-      Roll: 39.526474
+      Pitch: 84.9666519
+      Yaw: -91.1793442
+      Roll: -140.473648
     }
     Scale {
       X: 1.41318202
@@ -7121,7 +6951,7 @@ Objects {
       Z: 1.00000024
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -7168,14 +6998,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: -351.974609
-      Y: -3761.73584
-      Z: 4863.125
+      X: 2628.53516
+      Y: -4883.2085
+      Z: 447.771484
     }
     Rotation {
-      Pitch: 83.5020599
-      Yaw: 139.408325
-      Roll: 90
+      Pitch: 83.5019913
+      Yaw: 139.40834
+      Roll: 89.9999695
     }
     Scale {
       X: 1.41318202
@@ -7183,7 +7013,7 @@ Objects {
       Z: 1.00000024
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -7230,12 +7060,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1118.13086
-      Y: -2431.93433
-      Z: 4946.24072
+      X: 4098.64063
+      Y: -3553.40698
+      Z: 530.887207
     }
     Rotation {
-      Yaw: -40.8261108
+      Yaw: -40.826107
     }
     Scale {
       X: 3.12789
@@ -7243,7 +7073,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -7289,9 +7119,9 @@ Objects {
   Name: "Chain Tile 01"
   Transform {
     Location {
-      X: 1678.88086
-      Y: -2527.70679
-      Z: 6449.6333
+      X: 4659.39063
+      Y: -3649.17944
+      Z: 2034.27979
     }
     Rotation {
     }
@@ -7301,7 +7131,7 @@ Objects {
       Z: 3.25242019
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7336,13 +7166,13 @@ Objects {
   Name: "Branches Cluster Big"
   Transform {
     Location {
-      X: 1734.92969
-      Y: -1093.51465
-      Z: 5968.81348
+      X: 4715.43945
+      Y: -2214.9873
+      Z: 1553.46
     }
     Rotation {
       Pitch: -1.66497469
-      Roll: -88.2420502
+      Roll: -88.2420349
     }
     Scale {
       X: 1
@@ -7350,7 +7180,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7385,9 +7215,9 @@ Objects {
   Name: "Urban Pipe Wrap 01"
   Transform {
     Location {
-      X: -45.1835938
-      Y: -2756.36523
-      Z: 6225.37891
+      X: 2935.32617
+      Y: -3877.83789
+      Z: 1810.02539
     }
     Rotation {
       Yaw: 138.956863
@@ -7398,7 +7228,7 @@ Objects {
       Z: 1.59727561
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7433,9 +7263,9 @@ Objects {
   Name: "Urban Pipe Wrap 01"
   Transform {
     Location {
-      X: -39.9013672
-      Y: -2789.60986
-      Z: 6225.37891
+      X: 2940.6084
+      Y: -3911.08252
+      Z: 1810.02539
     }
     Rotation {
       Yaw: 138.956863
@@ -7446,7 +7276,7 @@ Objects {
       Z: 1.59727561
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7481,9 +7311,9 @@ Objects {
   Name: "Urban Pipe Wrap 01"
   Transform {
     Location {
-      X: -11.5292969
-      Y: -2754.46924
-      Z: 6225.37891
+      X: 2968.98047
+      Y: -3875.94189
+      Z: 1810.02539
     }
     Rotation {
       Yaw: 138.956863
@@ -7494,7 +7324,7 @@ Objects {
       Z: 1.59727561
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7529,14 +7359,14 @@ Objects {
   Name: "Cylinder - Polished"
   Transform {
     Location {
-      X: 472.25293
-      Y: -2247.70361
-      Z: 7194.30322
+      X: 3452.7627
+      Y: -3369.17627
+      Z: 2778.94971
     }
     Rotation {
       Pitch: 14.4950266
-      Yaw: -21.7601719
-      Roll: -0.776458
+      Yaw: -21.7601585
+      Roll: -0.776458502
     }
     Scale {
       X: 1.41418934
@@ -7544,7 +7374,7 @@ Objects {
       Z: -1.30646896
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7608,9 +7438,9 @@ Objects {
   Name: "Chain Tile 01"
   Transform {
     Location {
-      X: 479.275391
-      Y: -2250.23535
-      Z: 6644.66357
+      X: 3459.78516
+      Y: -3371.70801
+      Z: 2229.31
     }
     Rotation {
     }
@@ -7620,7 +7450,7 @@ Objects {
       Z: 1.76211655
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7655,9 +7485,9 @@ Objects {
   Name: "Chain Tile 01"
   Transform {
     Location {
-      X: 479.275391
-      Y: -2250.23535
-      Z: 6115.57813
+      X: 3459.78516
+      Y: -3371.70801
+      Z: 1700.22461
     }
     Rotation {
     }
@@ -7667,7 +7497,7 @@ Objects {
       Z: 1.76211655
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7707,7 +7537,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7715,33 +7545,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 55430155327116683
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -14.725585
-            Y: 0.000668763823
-            Z: 48.7353325
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -14.6199036
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.416921824
-            Y: 0.416921824
-            Z: 0.495336711
-          }
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 2014862613104300196
       value {
@@ -7752,9 +7555,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 834.084961
-            Y: -1818.86768
-            Z: 6904.94482
+            X: 3814.59473
+            Y: -2940.34033
+            Z: 2489.59131
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 87.3587189
           }
         }
         Overrides {
@@ -7763,12 +7572,6 @@ Objects {
             X: 0.537611663
             Y: 0.537611663
             Z: 0.537611663
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 87.3587189
           }
         }
       }
@@ -7783,14 +7586,14 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: 464.042969
-      Y: -1511.66064
-      Z: 6789.77148
+      X: 3444.55273
+      Y: -2633.1333
+      Z: 2374.41797
     }
     Rotation {
       Pitch: -5.45107794
-      Yaw: -40.9888039
-      Roll: -68.1478424
+      Yaw: -40.9888077
+      Roll: -68.1478653
     }
     Scale {
       X: 1.75415647
@@ -7798,7 +7601,7 @@ Objects {
       Z: 0.715324461
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7833,14 +7636,14 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: 48.9394531
-      Y: -2007.37744
-      Z: 6233.86279
+      X: 3029.44922
+      Y: -3128.85
+      Z: 1818.50928
     }
     Rotation {
-      Pitch: -0.59310627
-      Yaw: -42.389267
-      Roll: 6.66836548
+      Pitch: -0.593099415
+      Yaw: -42.3892822
+      Roll: 6.66837072
     }
     Scale {
       X: 1.6650703
@@ -7848,7 +7651,7 @@ Objects {
       Z: 0.715324461
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7883,14 +7686,14 @@ Objects {
   Name: "Large Wood Board 8m"
   Transform {
     Location {
-      X: 20.3691406
-      Y: -2019.83667
-      Z: 6187.07275
+      X: 3000.87891
+      Y: -3141.30933
+      Z: 1771.71924
     }
     Rotation {
-      Pitch: 40.7109032
-      Yaw: 50.3038368
-      Roll: 85.0106049
+      Pitch: 40.7108917
+      Yaw: 50.3038521
+      Roll: 85.0106
     }
     Scale {
       X: 1.22220623
@@ -7898,7 +7701,7 @@ Objects {
       Z: 1.00000763
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -7944,9 +7747,9 @@ Objects {
   Name: "Urban Stairs Fire Escape - 6m 02"
   Transform {
     Location {
-      X: 882.098633
-      Y: -2863.7644
-      Z: 4938.74268
+      X: 3862.6084
+      Y: -3985.23706
+      Z: 523.38916
     }
     Rotation {
       Yaw: 139.433365
@@ -7957,7 +7760,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -8035,12 +7838,12 @@ Objects {
   Name: "Urban Stairs Fire Escape - 6m 02"
   Transform {
     Location {
-      X: 786.453125
-      Y: -1985.31836
-      Z: 5524.83447
+      X: 3766.96289
+      Y: -3106.79102
+      Z: 1109.48096
     }
     Rotation {
-      Yaw: -40.5666122
+      Yaw: -40.5666084
     }
     Scale {
       X: 1
@@ -8048,7 +7851,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -8126,14 +7929,14 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: 853.267578
-      Y: -1797.3623
-      Z: 6695.45752
+      X: 3833.77734
+      Y: -2918.83496
+      Z: 2280.104
     }
     Rotation {
       Pitch: -0.0826726
-      Yaw: 48.9700127
-      Roll: 67.5981598
+      Yaw: 48.97
+      Roll: 67.5981674
     }
     Scale {
       X: 2.50911379
@@ -8141,7 +7944,7 @@ Objects {
       Z: 0.715324402
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8176,13 +7979,13 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: 808.822266
-      Y: -1802.99561
-      Z: 6649.35303
+      X: 3789.33203
+      Y: -2924.46826
+      Z: 2233.99951
     }
     Rotation {
-      Yaw: -43.0106888
-      Roll: 85.2863159
+      Yaw: -43.0107
+      Roll: 85.2863235
     }
     Scale {
       X: 2.50911379
@@ -8190,7 +7993,7 @@ Objects {
       Z: 0.715324402
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8225,13 +8028,13 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: 1141.64844
-      Y: -1371.37695
-      Z: 6638.90527
+      X: 4122.1582
+      Y: -2492.84961
+      Z: 2223.55176
     }
     Rotation {
-      Yaw: -43.0108719
-      Roll: -44.5496
+      Yaw: -43.0108833
+      Roll: -44.5495758
     }
     Scale {
       X: 1.75415647
@@ -8239,7 +8042,7 @@ Objects {
       Z: 0.715324461
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8274,13 +8077,13 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: 825.240234
-      Y: -1810.71338
-      Z: 6489.58398
+      X: 3805.75
+      Y: -2932.18604
+      Z: 2074.23047
     }
     Rotation {
-      Yaw: -43.0106621
-      Roll: 30.3689861
+      Yaw: -43.0106773
+      Roll: 30.3689938
     }
     Scale {
       X: 1.6650703
@@ -8288,7 +8091,7 @@ Objects {
       Z: 0.715324461
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8323,14 +8126,14 @@ Objects {
   Name: "Large Wood Board 8m"
   Transform {
     Location {
-      X: 786.481445
-      Y: -1835.94678
-      Z: 6458.08643
+      X: 3766.99121
+      Y: -2957.41943
+      Z: 2042.73291
     }
     Rotation {
       Pitch: 15.676096
-      Yaw: 49.0457611
-      Roll: 91.2306671
+      Yaw: 49.0457573
+      Roll: 91.2306595
     }
     Scale {
       X: 1
@@ -8338,7 +8141,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -8399,7 +8202,7 @@ Objects {
       Z: 0.837264597
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8417,17 +8220,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 793.779297
-            Y: -1243.13574
-            Z: 6798.26904
+            X: 3774.28906
+            Y: -2364.6084
+            Z: 2382.91553
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -4.3462472
-            Yaw: 83.6952133
-            Roll: -121.151787
+            Yaw: 83.6952
+            Roll: -121.15181
           }
         }
         Overrides {
@@ -8465,7 +8268,7 @@ Objects {
       Z: 0.837264597
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8483,17 +8286,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 779.301758
-            Y: -1255.27051
-            Z: 6805.24219
+            X: 3759.81152
+            Y: -2376.74316
+            Z: 2389.88867
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -4.48379374
+            Pitch: -4.48378658
             Yaw: 95.7821655
-            Roll: -125.496727
+            Roll: -125.496712
           }
         }
         Overrides {
@@ -8521,7 +8324,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8539,17 +8342,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 769.057617
-            Y: -1242.27881
-            Z: 6805.24219
+            X: 3749.56738
+            Y: -2363.75146
+            Z: 2389.88867
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -4.48379374
+            Pitch: -4.48378658
             Yaw: 95.7821655
-            Roll: -125.496727
+            Roll: -125.496712
           }
         }
         Overrides {
@@ -8572,12 +8375,12 @@ Objects {
   Name: "Small Open Crate"
   Transform {
     Location {
-      X: 846.759766
-      Y: -1258.12402
-      Z: 6740.05078
+      X: 3827.26953
+      Y: -2379.59668
+      Z: 2324.69727
     }
     Rotation {
-      Yaw: 76.5906372
+      Yaw: 76.5906067
     }
     Scale {
       X: 1
@@ -8585,7 +8388,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8620,9 +8423,9 @@ Objects {
   Name: "Small Open Crate"
   Transform {
     Location {
-      X: 20.9873047
-      Y: -2632.02686
-      Z: 6129.9707
+      X: 3001.49707
+      Y: -3753.49951
+      Z: 1714.61719
     }
     Rotation {
       Yaw: 61.1606522
@@ -8633,7 +8436,7 @@ Objects {
       Z: 1.0752064
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8673,7 +8476,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8691,9 +8494,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -135.913086
-            Y: -2423.53809
-            Z: 6312.7334
+            X: 2844.59668
+            Y: -3545.01074
+            Z: 1897.37988
           }
         }
         Overrides {
@@ -8721,9 +8524,9 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: -164.980469
-      Y: -2449.04639
-      Z: 6128.44238
+      X: 2815.5293
+      Y: -3570.51904
+      Z: 1713.08887
     }
     Rotation {
     }
@@ -8733,7 +8536,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8768,9 +8571,9 @@ Objects {
   Name: "Urban Stairs Fire Escape - 6m 02"
   Transform {
     Location {
-      X: 271.924805
-      Y: -2085.81592
-      Z: 6124.23779
+      X: 3252.43457
+      Y: -3207.28857
+      Z: 1708.88428
     }
     Rotation {
       Yaw: 139.433365
@@ -8781,7 +8584,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -8859,12 +8662,12 @@ Objects {
   Name: "Branches Cluster Medium"
   Transform {
     Location {
-      X: 1881.42285
-      Y: -895.024902
-      Z: 5951.5376
+      X: 4861.93262
+      Y: -2016.49756
+      Z: 1536.18408
     }
     Rotation {
-      Roll: -83.9717331
+      Roll: -83.9717255
     }
     Scale {
       X: 1.72075987
@@ -8872,7 +8675,7 @@ Objects {
       Z: 1.72075987
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8907,9 +8710,9 @@ Objects {
   Name: "Urban Pipe Wrap 01"
   Transform {
     Location {
-      X: -8.3515625
-      Y: -2787.81494
-      Z: 6225.37891
+      X: 2972.1582
+      Y: -3909.2876
+      Z: 1810.02539
     }
     Rotation {
       Yaw: 138.956863
@@ -8920,7 +8723,7 @@ Objects {
       Z: 1.59727561
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8955,14 +8758,14 @@ Objects {
   Name: "Tree Redwood Bare Small"
   Transform {
     Location {
-      X: 1154.17871
-      Y: -3022.07373
-      Z: 6214.48633
+      X: 4134.68848
+      Y: -4143.54639
+      Z: 1799.13281
     }
     Rotation {
-      Pitch: -82.653595
-      Yaw: 111.573837
-      Roll: -66.5861816
+      Pitch: -82.6535797
+      Yaw: 111.573784
+      Roll: -66.5861435
     }
     Scale {
       X: 1.38805985
@@ -8970,7 +8773,7 @@ Objects {
       Z: 1.20378983
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9006,14 +8809,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: -695.495117
-      Y: -5109.97656
-      Z: 5030.06787
+      X: 2285.01465
+      Y: -6231.44922
+      Z: 614.714355
     }
     Rotation {
       Pitch: 2.10880041
-      Yaw: -2.22491455
-      Roll: 7.72788286
+      Yaw: -2.22491431
+      Roll: 7.72789097
     }
     Scale {
       X: 0.660115361
@@ -9021,7 +8824,7 @@ Objects {
       Z: 0.498324841
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9057,13 +8860,13 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: -698.34375
-      Y: -5067.0918
-      Z: 5028.76465
+      X: 2282.16602
+      Y: -6188.56445
+      Z: 613.411133
     }
     Rotation {
-      Yaw: -4.24813843
-      Roll: 5.34828377
+      Yaw: -4.24814034
+      Roll: 5.34828711
     }
     Scale {
       X: 0.837026
@@ -9071,7 +8874,7 @@ Objects {
       Z: 0.837026
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9107,12 +8910,12 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: 1043.11328
-      Y: -1679.57568
-      Z: 5687.83447
+      X: 4023.62305
+      Y: -2801.04834
+      Z: 1272.48096
     }
     Rotation {
-      Yaw: -15.533432
+      Yaw: -15.5334492
     }
     Scale {
       X: 1
@@ -9120,7 +8923,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9155,9 +8958,9 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: 1028.78711
-      Y: -1710.57129
-      Z: 5543.54199
+      X: 4009.29688
+      Y: -2832.04395
+      Z: 1128.18848
     }
     Rotation {
     }
@@ -9167,7 +8970,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9207,7 +9010,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9225,15 +9028,23 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1685.09082
-            Y: -1763.2334
-            Z: 5564.2124
+            X: 4665.60059
+            Y: -2884.70605
+            Z: 1148.85889
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 37.4867821
+            Yaw: 37.4867592
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
@@ -9241,50 +9052,6 @@ Objects {
     TemplateAsset {
       Id: 5389175127843550943
     }
-  }
-}
-Objects {
-  Id: 8888717416138923095
-  Name: "Waterfall Small SFX"
-  Transform {
-    Location {
-      X: 1826.93164
-      Y: -764.42627
-      Z: 5920.24365
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14210645167072279412
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 3374643611449432586
-    }
-    AutoPlay: true
-    Repeat: true
-    Volume: 0.5
-    Falloff: 3000
-    Radius: 500
-    EnableOcclusion: true
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
   }
 }
 Objects {
@@ -9297,7 +9064,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9315,9 +9082,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 745.858398
-            Y: -2660.15527
-            Z: 5231.71436
+            X: 3726.36816
+            Y: -3781.62793
+            Z: 816.36084
           }
         }
         Overrides {
@@ -9358,7 +9125,7 @@ Objects {
       Z: 0.4729321
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9376,9 +9143,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1762.78027
-            Y: -3415.67139
-            Z: 5100.82861
+            X: 4743.29
+            Y: -4537.14404
+            Z: 685.475098
           }
         }
         Overrides {
@@ -9412,7 +9179,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9430,9 +9197,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1729.82422
-            Y: -1960.2041
-            Z: 5718.78125
+            X: 4710.33398
+            Y: -3081.67676
+            Z: 1303.42773
           }
         }
         Overrides {
@@ -9461,13 +9228,13 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: 1711.06738
-      Y: -1935.7041
-      Z: 5507.95068
+      X: 4691.57715
+      Y: -3057.17676
+      Z: 1092.59717
     }
     Rotation {
       Pitch: 0.941589355
-      Yaw: -35.548645
+      Yaw: -35.5486412
       Roll: -117.564491
     }
     Scale {
@@ -9476,7 +9243,7 @@ Objects {
       Z: 0.765535653
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9511,14 +9278,14 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: 477.378906
-      Y: -2274.26147
-      Z: 6074.22461
+      X: 3457.88867
+      Y: -3395.73413
+      Z: 1658.87109
     }
     Rotation {
       Pitch: 0.941589355
       Yaw: -35.5486412
-      Roll: -19.4756489
+      Roll: -19.4756508
     }
     Scale {
       X: 1.78198743
@@ -9526,7 +9293,7 @@ Objects {
       Z: 0.765552819
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9561,9 +9328,9 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: 842.213867
-      Y: -1820.05566
-      Z: 5653.18799
+      X: 3822.72363
+      Y: -2941.52832
+      Z: 1237.83447
     }
     Rotation {
       Pitch: 0.941616654
@@ -9576,7 +9343,7 @@ Objects {
       Z: 0.765552819
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9611,13 +9378,13 @@ Objects {
   Name: "Large Wood Board 8m"
   Transform {
     Location {
-      X: 911.824219
-      Y: -1788.42969
-      Z: 5626.70215
+      X: 3892.33398
+      Y: -2909.90234
+      Z: 1211.34863
     }
     Rotation {
-      Pitch: 37.1136665
-      Yaw: -128.746841
+      Pitch: 37.1136703
+      Yaw: -128.746811
       Roll: -92.0072
     }
     Scale {
@@ -9626,7 +9393,7 @@ Objects {
       Z: 1.00000966
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -9672,12 +9439,12 @@ Objects {
   Name: "Urban Pipe Valve 01"
   Transform {
     Location {
-      X: -38.2275391
-      Y: -2768.40771
-      Z: 5355.93701
+      X: 2942.28223
+      Y: -3889.88037
+      Z: 940.583496
     }
     Rotation {
-      Yaw: -43.0108719
+      Yaw: -43.0108795
       Roll: -175.771011
     }
     Scale {
@@ -9686,7 +9453,7 @@ Objects {
       Z: 0.765552819
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9721,13 +9488,13 @@ Objects {
   Name: "Large Wood Board 8m"
   Transform {
     Location {
-      X: -30.0410156
-      Y: -2740.36646
-      Z: 5403.99365
+      X: 2950.46875
+      Y: -3861.83911
+      Z: 988.640137
     }
     Rotation {
-      Pitch: -41.7949448
-      Yaw: -135.667328
+      Pitch: -41.7949295
+      Yaw: -135.667358
       Roll: -87.5542679
     }
     Scale {
@@ -9736,7 +9503,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -9782,14 +9549,14 @@ Objects {
   Name: "Crescent - 02"
   Transform {
     Location {
-      X: 1713.54297
-      Y: -2528.14087
-      Z: 6249.16504
+      X: 4694.05273
+      Y: -3649.61353
+      Z: 1833.81152
     }
     Rotation {
-      Pitch: -23.8400879
-      Yaw: -53.5231
-      Roll: -89.9999695
+      Pitch: -23.8400764
+      Yaw: -53.5231056
+      Roll: -89.9999619
     }
     Scale {
       X: -1.27342975
@@ -9797,7 +9564,7 @@ Objects {
       Z: 0.213671669
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9853,9 +9620,9 @@ Objects {
   Name: "Crescent - 02"
   Transform {
     Location {
-      X: 1673.15332
-      Y: -2514.02417
-      Z: 6251.89941
+      X: 4653.66309
+      Y: -3635.49683
+      Z: 1836.5459
     }
     Rotation {
       Pitch: 19.3793221
@@ -9868,7 +9635,7 @@ Objects {
       Z: 0.213671669
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9924,13 +9691,13 @@ Objects {
   Name: "Mecha - Frame - Shoulder Joint 01"
   Transform {
     Location {
-      X: 1680.06934
-      Y: -2526.6709
-      Z: 6357.71436
+      X: 4660.5791
+      Y: -3648.14355
+      Z: 1942.36084
     }
     Rotation {
-      Yaw: 37.1285629
-      Roll: -179.999985
+      Yaw: 37.12854
+      Roll: -179.999969
     }
     Scale {
       X: 2.186059
@@ -9938,7 +9705,7 @@ Objects {
       Z: 1.63339531
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9973,14 +9740,14 @@ Objects {
   Name: "Crescent - 02"
   Transform {
     Location {
-      X: 1675.20703
-      Y: -2556.48364
-      Z: 6249.16504
+      X: 4655.7168
+      Y: -3677.9563
+      Z: 1833.81152
     }
     Rotation {
-      Pitch: -23.8400574
-      Yaw: -53.5231
-      Roll: -89.999939
+      Pitch: -23.8400288
+      Yaw: -53.5230942
+      Roll: -89.9999084
     }
     Scale {
       X: -1.27342975
@@ -9988,7 +9755,7 @@ Objects {
       Z: 0.213671669
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10044,14 +9811,14 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -544.515625
-      Y: -4823.88916
-      Z: 4993.48682
+      X: 2435.99414
+      Y: -5945.36182
+      Z: 578.133301
     }
     Rotation {
-      Pitch: 3.11574769
-      Yaw: 169.11908
-      Roll: -11.2646484
+      Pitch: 3.11574078
+      Yaw: 169.119049
+      Roll: -11.2646666
     }
     Scale {
       X: 3.12789
@@ -10059,7 +9826,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10106,14 +9873,14 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -421.080078
-      Y: -4363.21191
-      Z: 4908.48682
+      X: 2559.42969
+      Y: -5484.68457
+      Z: 493.133301
     }
     Rotation {
       Pitch: 1.65261877
-      Yaw: 161.876526
-      Roll: -5.38458252
+      Yaw: 161.876495
+      Roll: -5.3845849
     }
     Scale {
       X: 3.12789
@@ -10121,7 +9888,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10168,12 +9935,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -219.279297
-      Y: -4147.12402
-      Z: 4918.12354
+      X: 2761.23047
+      Y: -5268.59668
+      Z: 502.77002
     }
     Rotation {
-      Yaw: 139.725571
+      Yaw: 139.725586
     }
     Scale {
       X: 3.12789
@@ -10181,7 +9948,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10228,12 +9995,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 88.3945313
-      Y: -3769.99072
-      Z: 4934.59229
+      X: 3068.9043
+      Y: -4891.46338
+      Z: 519.23877
     }
     Rotation {
-      Yaw: 145.725403
+      Yaw: 145.725388
     }
     Scale {
       X: 3.12789
@@ -10241,7 +10008,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10287,14 +10054,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 741.626
-      Y: -2626.5271
-      Z: 4109.26172
+      X: 3722.13574
+      Y: -3747.99976
+      Z: -306.091797
     }
     Rotation {
       Pitch: 90
-      Yaw: -18.434967
-      Roll: -67.8433533
+      Yaw: 26.565033
+      Roll: -22.8433228
     }
     Scale {
       X: 1.35083163
@@ -10302,7 +10069,7 @@ Objects {
       Z: 1.00000048
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10358,14 +10125,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 1758.50195
-      Y: -3379.64111
-      Z: 3603.86816
+      X: 4739.01172
+      Y: -4501.11377
+      Z: -811.485352
     }
     Rotation {
       Pitch: 90
-      Yaw: -26.565033
-      Roll: -75.9735107
+      Yaw: 90
+      Roll: 40.591568
     }
     Scale {
       X: 1.82470846
@@ -10373,7 +10140,7 @@ Objects {
       Z: 1.00000048
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10429,14 +10196,14 @@ Objects {
   Name: "Urban Fence Cable Clamp"
   Transform {
     Location {
-      X: 647.248047
-      Y: -1634.39014
-      Z: 5804.13281
+      X: 3627.75781
+      Y: -2755.86279
+      Z: 1388.7793
     }
     Rotation {
-      Pitch: -89.2211609
-      Yaw: 27.7578678
-      Roll: 108.164047
+      Pitch: -89.2211533
+      Yaw: 27.7577038
+      Roll: 108.16407
     }
     Scale {
       X: 0.248370543
@@ -10444,7 +10211,7 @@ Objects {
       Z: 3.57701683
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:color"
@@ -10541,7 +10308,7 @@ Objects {
       Z: 0.4729321
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10559,9 +10326,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 870.084961
-            Y: -1850.21729
-            Z: 5767.3252
+            X: 3850.59473
+            Y: -2971.69
+            Z: 1351.97168
           }
         }
         Overrides {
@@ -10569,7 +10336,15 @@ Objects {
           Rotator {
             Pitch: 14.4950886
             Yaw: -44.9918823
-            Roll: -0.77645874
+            Roll: -0.776459098
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.537611663
+            Y: 0.537611663
+            Z: 0.537611663
           }
         }
       }
@@ -10584,14 +10359,14 @@ Objects {
   Name: "Urban Fence Cable Clamp"
   Transform {
     Location {
-      X: 856.401367
-      Y: -1836.93018
-      Z: 5805.36719
+      X: 3836.91113
+      Y: -2958.40283
+      Z: 1390.01367
     }
     Rotation {
-      Pitch: -0.242431641
+      Pitch: -0.242437556
       Yaw: 135.922623
-      Roll: 0.738920629
+      Roll: 0.73892045
     }
     Scale {
       X: 2.86734056
@@ -10599,7 +10374,7 @@ Objects {
       Z: 2.20019722
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:color"
@@ -10654,12 +10429,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1882.23242
-      Y: -2439.40576
-      Z: 4946.24072
+      X: 4862.74219
+      Y: -3560.87842
+      Z: 530.887207
     }
     Rotation {
-      Yaw: -40.8261108
+      Yaw: -40.826107
     }
     Scale {
       X: 3.12789
@@ -10667,7 +10442,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10713,9 +10488,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 2228.99512
-      Y: -2741.49
-      Z: 4946.24072
+      X: 5209.50488
+      Y: -3862.96265
+      Z: 530.887207
     }
     Rotation {
       Yaw: 139.173859
@@ -10726,7 +10501,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10772,12 +10547,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 2056.52832
-      Y: -2589.99292
-      Z: 4946.24072
+      X: 5037.03809
+      Y: -3711.46558
+      Z: 530.887207
     }
     Rotation {
-      Yaw: -40.8261108
+      Yaw: -40.826107
     }
     Scale {
       X: 3.12789
@@ -10785,7 +10560,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10831,12 +10606,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1304.88281
-      Y: -2593.28296
-      Z: 4946.24072
+      X: 4285.39258
+      Y: -3714.75562
+      Z: 530.887207
     }
     Rotation {
-      Yaw: -40.8261108
+      Yaw: -40.826107
     }
     Scale {
       X: 3.12789
@@ -10844,7 +10619,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10890,9 +10665,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 106.805664
-      Y: -3197.96
-      Z: 4946.24072
+      X: 3087.31543
+      Y: -4319.43262
+      Z: 530.887207
     }
     Rotation {
       Yaw: 139.173874
@@ -10903,7 +10678,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -10949,9 +10724,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 570.611328
-      Y: -2442.23584
-      Z: 4946.24072
+      X: 3551.12109
+      Y: -3563.7085
+      Z: 530.887207
     }
     Rotation {
       Yaw: 49.1738548
@@ -10962,7 +10737,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11008,9 +10783,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 299.141602
-      Y: -2695.95752
-      Z: 4946.24072
+      X: 3279.65137
+      Y: -3817.43018
+      Z: 530.887207
     }
     Rotation {
       Yaw: 139.173874
@@ -11021,7 +10796,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11067,9 +10842,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 475.285156
-      Y: -2848.14087
-      Z: 4946.24072
+      X: 3455.79492
+      Y: -3969.61353
+      Z: 530.887207
     }
     Rotation {
       Yaw: -40.8261414
@@ -11080,7 +10855,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11126,9 +10901,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 282.421875
-      Y: -3349.68774
-      Z: 4946.24072
+      X: 3262.93164
+      Y: -4471.16
+      Z: 530.887207
     }
     Rotation {
       Yaw: 139.173874
@@ -11139,7 +10914,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11185,9 +10960,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1094.78125
-      Y: -3765.93066
-      Z: 4946.24072
+      X: 4075.29102
+      Y: -4887.40332
+      Z: 530.887207
     }
     Rotation {
       Yaw: -130.826126
@@ -11198,7 +10973,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11244,9 +11019,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1243.49121
-      Y: -3593.80737
-      Z: 4946.24072
+      X: 4224.00098
+      Y: -4715.28027
+      Z: 530.887207
     }
     Rotation {
       Yaw: -130.826126
@@ -11257,7 +11032,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11303,12 +11078,12 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 1613.2937
-      Y: -4237.39453
-      Z: 4845.10889
+      X: 4593.80371
+      Y: -5358.86719
+      Z: 429.755371
     }
     Rotation {
-      Yaw: 137.615845
+      Yaw: 137.615814
     }
     Scale {
       X: 3.40272045
@@ -11316,7 +11091,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11363,9 +11138,9 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 2261.23535
-      Y: -3760.28687
-      Z: 4845.10889
+      X: 5241.74512
+      Y: -4881.76
+      Z: 429.755371
     }
     Rotation {
       Yaw: 143.309601
@@ -11376,7 +11151,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11423,12 +11198,12 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 2537.14355
-      Y: -3469.46411
-      Z: 4845.10889
+      X: 5517.65332
+      Y: -4590.93652
+      Z: 429.755371
     }
     Rotation {
-      Yaw: 137.615845
+      Yaw: 137.615814
     }
     Scale {
       X: 3.2110436
@@ -11436,7 +11211,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11483,9 +11258,9 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 534.34082
-      Y: -3943.16943
-      Z: 4895.21387
+      X: 3514.85059
+      Y: -5064.64209
+      Z: 479.860352
     }
     Rotation {
       Yaw: 49.4089661
@@ -11496,7 +11271,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11543,9 +11318,9 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 1046.48242
-      Y: -4132.88086
-      Z: 4895.21387
+      X: 4026.99219
+      Y: -5254.35352
+      Z: 479.860352
     }
     Rotation {
       Yaw: 49.4089661
@@ -11556,7 +11331,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11603,9 +11378,9 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 31.3925781
-      Y: -3535.40771
-      Z: 4895.21387
+      X: 3011.90234
+      Y: -4656.88037
+      Z: 479.860352
     }
     Rotation {
       Yaw: 49.4089661
@@ -11616,7 +11391,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11663,13 +11438,13 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 1725.5459
-      Y: -1924.17383
-      Z: 4221.8208
+      X: 4706.05566
+      Y: -3045.64648
+      Z: -193.532715
     }
     Rotation {
       Pitch: 90
-      Roll: -49.4085693
+      Roll: -49.4085083
     }
     Scale {
       X: 1.82470846
@@ -11677,7 +11452,7 @@ Objects {
       Z: 1.00000048
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11733,9 +11508,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 505.958984
-      Y: -3660.21191
-      Z: 4946.24072
+      X: 3486.46875
+      Y: -4781.68457
+      Z: 530.887207
     }
     Rotation {
       Yaw: 49.1738548
@@ -11746,7 +11521,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11792,9 +11567,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 655.824219
-      Y: -3486.75195
-      Z: 4946.24072
+      X: 3636.33398
+      Y: -4608.22461
+      Z: 530.887207
     }
     Rotation {
       Yaw: 49.1738548
@@ -11805,7 +11580,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11851,9 +11626,9 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 680.838867
-      Y: -2031.74365
-      Z: 5477.04248
+      X: 3661.34863
+      Y: -3153.21631
+      Z: 1061.68896
     }
     Rotation {
       Yaw: 49.4089661
@@ -11864,7 +11639,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11911,9 +11686,9 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 1255.60547
-      Y: -2392.51733
-      Z: 5477.04248
+      X: 4236.11523
+      Y: -3513.99
+      Z: 1061.68896
     }
     Rotation {
       Yaw: 49.4089661
@@ -11924,7 +11699,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -11971,9 +11746,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1649.38184
-      Y: -1600.7124
-      Z: 5530.31104
+      X: 4629.8916
+      Y: -2722.18506
+      Z: 1114.95752
     }
     Rotation {
       Yaw: 49.1738548
@@ -11984,7 +11759,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12030,14 +11805,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 422.301758
-      Y: -1420.06934
-      Z: 6042.52783
+      X: 3402.81152
+      Y: -2541.54199
+      Z: 1627.17432
     }
     Rotation {
-      Pitch: 84.0022278
-      Yaw: -60.041626
-      Roll: -113.460907
+      Pitch: 84.0021591
+      Yaw: -60.0415611
+      Roll: -113.460808
     }
     Scale {
       X: 1
@@ -12045,7 +11820,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12092,9 +11867,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1395.67578
-      Y: -3417.66211
-      Z: 4946.24072
+      X: 4376.18555
+      Y: -4539.13477
+      Z: 530.887207
     }
     Rotation {
       Yaw: -130.826126
@@ -12105,7 +11880,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12151,9 +11926,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1479.46582
-      Y: -2746.6084
-      Z: 4946.24072
+      X: 4459.97559
+      Y: -3868.08105
+      Z: 530.887207
     }
     Rotation {
       Yaw: 139.173859
@@ -12164,7 +11939,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12210,9 +11985,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1849.16113
-      Y: -2892.77783
-      Z: 4946.24072
+      X: 4829.6709
+      Y: -4014.25049
+      Z: 530.887207
     }
     Rotation {
       Yaw: 49.1738548
@@ -12223,7 +11998,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12269,9 +12044,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1544.5625
-      Y: -3245.3335
-      Z: 4946.24072
+      X: 4525.07227
+      Y: -4366.80615
+      Z: 530.887207
     }
     Rotation {
       Yaw: -130.826126
@@ -12282,7 +12057,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12328,9 +12103,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1696.97754
-      Y: -3068.92139
-      Z: 4946.24072
+      X: 4677.4873
+      Y: -4190.39404
+      Z: 530.887207
     }
     Rotation {
       Yaw: -130.826126
@@ -12341,7 +12116,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12387,9 +12162,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1144.97656
-      Y: -2938.47241
-      Z: 4946.24072
+      X: 4125.48633
+      Y: -4059.94507
+      Z: 530.887207
     }
     Rotation {
       Yaw: 49.1738548
@@ -12400,7 +12175,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12446,9 +12221,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1002.62598
-      Y: -3303.74805
-      Z: 4946.24072
+      X: 3983.13574
+      Y: -4425.2207
+      Z: 530.887207
     }
     Rotation {
       Yaw: -40.8261414
@@ -12459,7 +12234,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12505,9 +12280,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 826.482422
-      Y: -3151.5647
-      Z: 4946.24072
+      X: 3806.99219
+      Y: -4273.03711
+      Z: 530.887207
     }
     Rotation {
       Yaw: 139.173874
@@ -12518,7 +12293,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12564,9 +12339,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 650.070313
-      Y: -2999.14917
-      Z: 4946.24072
+      X: 3630.58
+      Y: -4120.62207
+      Z: 530.887207
     }
     Rotation {
       Yaw: 139.173874
@@ -12577,7 +12352,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12623,9 +12398,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1496.14941
-      Y: -1778.07031
-      Z: 5530.31104
+      X: 4476.65918
+      Y: -2899.54297
+      Z: 1114.95752
     }
     Rotation {
       Yaw: 49.1738548
@@ -12636,7 +12411,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12682,9 +12457,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1363.71094
-      Y: -2151.90942
-      Z: 5530.31104
+      X: 4344.2207
+      Y: -3273.38208
+      Z: 1114.95752
     }
     Rotation {
       Yaw: -40.8261414
@@ -12695,7 +12470,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12741,9 +12516,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1187.56738
-      Y: -1999.72607
-      Z: 5530.31104
+      X: 4168.07715
+      Y: -3121.19873
+      Z: 1114.95752
     }
     Rotation {
       Yaw: 139.173874
@@ -12754,7 +12529,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12800,9 +12575,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 1011.15527
-      Y: -1847.31055
-      Z: 5530.31104
+      X: 3991.66504
+      Y: -2968.7832
+      Z: 1114.95752
     }
     Rotation {
       Yaw: 139.173874
@@ -12813,7 +12588,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12859,9 +12634,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 304.46582
-      Y: -2688.99
-      Z: 6115.21338
+      X: 3284.97559
+      Y: -3810.46265
+      Z: 1699.85986
     }
     Rotation {
       Yaw: 139.173874
@@ -12872,7 +12647,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -12918,14 +12693,14 @@ Objects {
   Name: "Urban Fence Cable Clamp"
   Transform {
     Location {
-      X: -11.9697266
-      Y: -2745.1377
-      Z: 6438.11572
+      X: 2968.54
+      Y: -3866.61035
+      Z: 2022.76221
     }
     Rotation {
-      Pitch: -0.738922119
-      Yaw: -134.074158
-      Roll: -0.242462158
+      Pitch: -0.738917172
+      Yaw: -134.074127
+      Roll: -0.242462099
     }
     Scale {
       X: 2.86734056
@@ -12933,7 +12708,7 @@ Objects {
       Z: 2.20019722
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:color"
@@ -12988,14 +12763,14 @@ Objects {
   Name: "Urban Fence Cable Clamp"
   Transform {
     Location {
-      X: -247.3125
-      Y: -2988.19238
-      Z: 6433.74854
+      X: 2733.19727
+      Y: -4109.66504
+      Z: 2018.39502
     }
     Rotation {
-      Pitch: -89.2216492
-      Yaw: 27.8450909
-      Roll: -161.923218
+      Pitch: -89.2216568
+      Yaw: 27.8451443
+      Roll: -161.923157
     }
     Scale {
       X: 0.245423362
@@ -13003,7 +12778,7 @@ Objects {
       Z: 4.60922432
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:color"
@@ -13085,14 +12860,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 830.481445
-      Y: -1779.52441
-      Z: 4303.73242
+      X: 3810.99121
+      Y: -2900.99707
+      Z: -111.621094
     }
     Rotation {
       Pitch: 90
-      Yaw: 90
-      Roll: 40.5913658
+      Yaw: -7.12502289
+      Roll: -56.5336304
     }
     Scale {
       X: 3.20002842
@@ -13100,7 +12875,7 @@ Objects {
       Z: 1.00000048
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13156,12 +12931,12 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 1276.6748
-      Y: -1228.78857
-      Z: 6624.229
+      X: 4257.18457
+      Y: -2350.26123
+      Z: 2208.87549
     }
     Rotation {
-      Yaw: -129.241135
+      Yaw: -129.241119
     }
     Scale {
       X: 0.99950707
@@ -13169,7 +12944,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13216,12 +12991,12 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 240.911133
-      Y: -1231.92529
-      Z: 6673.65332
+      X: 3221.4209
+      Y: -2353.39795
+      Z: 2258.2998
     }
     Rotation {
-      Yaw: -39.2412109
+      Yaw: -39.241188
     }
     Scale {
       X: 1.10413218
@@ -13229,7 +13004,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13276,9 +13051,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 920.970703
-      Y: -1513.97021
-      Z: 6725.01416
+      X: 3901.48047
+      Y: -2635.44287
+      Z: 2309.66064
     }
     Rotation {
       Yaw: 141.017853
@@ -13289,7 +13064,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13335,14 +13110,14 @@ Objects {
   Name: "Urban Fence Cable Clamp"
   Transform {
     Location {
-      X: -84.4931641
-      Y: -1877.51465
-      Z: 6442.72754
+      X: 2896.0166
+      Y: -2998.9873
+      Z: 2027.37402
     }
     Rotation {
-      Pitch: -89.2206421
-      Yaw: 27.7574463
-      Roll: 108.163795
+      Pitch: -89.2209
+      Yaw: 27.7576981
+      Roll: 108.164169
     }
     Scale {
       X: 0.248368561
@@ -13350,7 +13125,7 @@ Objects {
       Z: 2.31221104
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:color"
@@ -13432,14 +13207,14 @@ Objects {
   Name: "Urban Fence Cable Clamp"
   Transform {
     Location {
-      X: 75.9414063
-      Y: -2032.87622
-      Z: 6443.67432
+      X: 3056.45117
+      Y: -3154.34888
+      Z: 2028.3208
     }
     Rotation {
-      Pitch: -0.242431641
-      Yaw: 135.922607
-      Roll: 0.738920808
+      Pitch: -0.242437556
+      Yaw: 135.922623
+      Roll: 0.738920748
     }
     Scale {
       X: 2.86734056
@@ -13447,7 +13222,7 @@ Objects {
       Z: 2.20019722
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:color"
@@ -13507,7 +13282,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13525,9 +13300,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 89.625
-            Y: -2046.16333
-            Z: 6405.63232
+            X: 3070.13477
+            Y: -3167.63599
+            Z: 1990.27881
           }
         }
         Overrides {
@@ -13535,7 +13310,15 @@ Objects {
           Rotator {
             Pitch: 14.4950886
             Yaw: -44.9918823
-            Roll: -0.77645874
+            Roll: -0.776459098
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.537611663
+            Y: 0.537611663
+            Z: 0.537611663
           }
         }
       }
@@ -13550,14 +13333,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 53.3818359
-      Y: -1975.32031
-      Z: 4303.73242
+      X: 3033.8916
+      Y: -3096.79297
+      Z: -111.621094
     }
     Rotation {
       Pitch: 90
-      Yaw: 135
-      Roll: 85.5912704
+      Yaw: -36.8698845
+      Roll: -86.2785645
     }
     Scale {
       X: 3.45819139
@@ -13565,7 +13348,7 @@ Objects {
       Z: 1.00000048
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13612,14 +13395,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: -29.2988281
-      Y: -2736.32886
-      Z: 4303.73291
+      X: 2951.21094
+      Y: -3857.80151
+      Z: -111.620605
     }
     Rotation {
       Pitch: 90
-      Yaw: 135
-      Roll: 85.5911942
+      Yaw: -26.565033
+      Roll: -75.9738159
     }
     Scale {
       X: 3.45819139
@@ -13627,7 +13410,7 @@ Objects {
       Z: 1.00000048
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13674,9 +13457,9 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: -739.107422
-      Y: -2974.56714
-      Z: 6061.6543
+      X: 2241.40234
+      Y: -4096.04
+      Z: 1646.30078
     }
     Rotation {
       Yaw: 49.4089661
@@ -13687,7 +13470,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13734,9 +13517,9 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: -410.547852
-      Y: -3256.0874
-      Z: 6061.6543
+      X: 2569.96191
+      Y: -4377.56
+      Z: 1646.30078
     }
     Rotation {
       Yaw: 49.4089661
@@ -13747,7 +13530,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13794,9 +13577,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -63.6826172
-      Y: -2553.41284
-      Z: 6115.21338
+      X: 2916.82715
+      Y: -3674.8855
+      Z: 1699.85986
     }
     Rotation {
       Yaw: 49.1738777
@@ -13807,7 +13590,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13853,12 +13636,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 86.9072266
-      Y: -2379.11353
-      Z: 6115.21338
+      X: 3067.41699
+      Y: -3500.58618
+      Z: 1699.85986
     }
     Rotation {
-      Yaw: 49.1738815
+      Yaw: 49.1738777
     }
     Scale {
       X: 3.12789
@@ -13866,7 +13649,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13912,12 +13695,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 232.481445
-      Y: -2199.57837
-      Z: 6115.21338
+      X: 3212.99121
+      Y: -3321.05103
+      Z: 1699.85986
     }
     Rotation {
-      Yaw: 49.173893
+      Yaw: 49.1738853
     }
     Scale {
       X: 3.12789
@@ -13925,7 +13708,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -13971,12 +13754,12 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 589.904297
-      Y: -920.928223
-      Z: 6673.65332
+      X: 3570.41406
+      Y: -2042.40088
+      Z: 2258.2998
     }
     Rotation {
-      Yaw: -39.2412415
+      Yaw: -39.2412186
     }
     Scale {
       X: 1
@@ -13984,7 +13767,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14031,12 +13814,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 742.15625
-      Y: -1369.26123
-      Z: 6725.01416
+      X: 3722.66602
+      Y: -2490.73389
+      Z: 2309.66064
     }
     Rotation {
-      Yaw: 141.017838
+      Yaw: 141.017853
     }
     Scale {
       X: 3.12789
@@ -14044,7 +13827,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14090,12 +13873,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 397.214844
-      Y: -1212.43896
-      Z: 6725.01416
+      X: 3377.72461
+      Y: -2333.91162
+      Z: 2309.66064
     }
     Rotation {
-      Yaw: 51.0177422
+      Yaw: 51.0177612
     }
     Scale {
       X: 3.12789
@@ -14103,7 +13886,7 @@ Objects {
       Z: 3.12788248
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14149,14 +13932,14 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 89.7294922
-      Y: -963.599609
-      Z: 6701.27
+      X: 3070.23926
+      Y: -2085.07227
+      Z: 2285.9165
     }
     Rotation {
       Pitch: -1.60846162
-      Yaw: 51.0177155
-      Roll: 12.387352
+      Yaw: 51.0177345
+      Roll: 12.3873701
     }
     Scale {
       X: 2.08115745
@@ -14164,7 +13947,7 @@ Objects {
       Z: 2.0811522
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14211,14 +13994,14 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 89.7294922
-      Y: -963.599609
-      Z: 6701.27
+      X: 3070.23926
+      Y: -2085.07227
+      Z: 2285.9165
     }
     Rotation {
-      Pitch: -1.60845947
-      Yaw: 51.0176811
-      Roll: 12.3873119
+      Pitch: -1.60846162
+      Yaw: 51.0176964
+      Roll: 12.3873329
     }
     Scale {
       X: 2.08115745
@@ -14226,7 +14009,7 @@ Objects {
       Z: 2.0811522
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14273,13 +14056,13 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -82.7412109
-      Y: -760.123535
-      Z: 6707.73047
+      X: 2897.76855
+      Y: -1881.59619
+      Z: 2292.37695
     }
     Rotation {
-      Yaw: 38.310833
-      Roll: -6.98696899
+      Yaw: 38.3108025
+      Roll: -6.98697519
     }
     Scale {
       X: 2.08115745
@@ -14287,7 +14070,7 @@ Objects {
       Z: 2.0811522
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14334,12 +14117,12 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -261.191406
-      Y: -520.259277
-      Z: 6734.71338
+      X: 2719.31836
+      Y: -1641.73193
+      Z: 2319.35986
     }
     Rotation {
-      Yaw: 38.3116188
+      Yaw: 38.3115959
       Roll: 1.13835955
     }
     Scale {
@@ -14348,7 +14131,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14395,14 +14178,14 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -423.899414
-      Y: -303.177246
-      Z: 6786.79
+      X: 2556.61035
+      Y: -1424.6499
+      Z: 2371.43652
     }
     Rotation {
       Pitch: 1.16892529
-      Yaw: 34.5906181
-      Roll: -27.7358742
+      Yaw: 34.5906258
+      Roll: -27.7358627
     }
     Scale {
       X: 2
@@ -14410,7 +14193,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14457,14 +14240,14 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -546.157227
-      Y: -116.688477
-      Z: 6916.80469
+      X: 2434.35254
+      Y: -1238.16113
+      Z: 2501.45117
     }
     Rotation {
       Pitch: -1.87240744
       Yaw: 28.8075542
-      Roll: -27.7004089
+      Roll: -27.7003956
     }
     Scale {
       X: 2
@@ -14472,7 +14255,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14519,14 +14302,14 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -678.647461
-      Y: 101.016113
-      Z: 7051.37207
+      X: 2301.8623
+      Y: -1020.45654
+      Z: 2636.01855
     }
     Rotation {
       Pitch: 2.11731076
-      Yaw: 33.7215462
-      Roll: -24.5550346
+      Yaw: 33.7215652
+      Roll: -24.5550098
     }
     Scale {
       X: 2
@@ -14534,7 +14317,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14581,14 +14364,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: -263.540039
-      Y: -356.398926
-      Z: 6614.37158
+      X: 2716.96973
+      Y: -1477.87158
+      Z: 2199.01807
     }
     Rotation {
-      Pitch: 82.8791
-      Yaw: 8.98140144
-      Roll: -109.042351
+      Pitch: 82.8790436
+      Yaw: 8.98139668
+      Roll: -109.042343
     }
     Scale {
       X: 1
@@ -14596,7 +14379,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14643,14 +14426,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 373.577148
-      Y: -1011.96045
-      Z: 6539.24512
+      X: 3354.08691
+      Y: -2133.43311
+      Z: 2123.8916
     }
     Rotation {
-      Pitch: 82.8791
-      Yaw: 8.98142719
-      Roll: -109.042336
+      Pitch: 82.8790665
+      Yaw: 8.9814415
+      Roll: -109.042343
     }
     Scale {
       X: 1
@@ -14658,7 +14441,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14705,13 +14488,13 @@ Objects {
   Name: "Urban Fence Cable Clamp"
   Transform {
     Location {
-      X: 434.488281
-      Y: -1027.70508
-      Z: 7004.89551
+      X: 3414.99805
+      Y: -2149.17773
+      Z: 2589.54199
     }
     Rotation {
       Pitch: 0.77767849
-      Yaw: 27.7586575
+      Yaw: 27.7586479
     }
     Scale {
       X: 2.86734056
@@ -14719,7 +14502,7 @@ Objects {
       Z: 2.20019722
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:color"
@@ -14789,7 +14572,7 @@ Objects {
       Z: 0.4729321
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14821,9 +14604,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 417.96875
-            Y: -1035.8125
-            Z: 6966.52344
+            X: 3398.47852
+            Y: -2157.28516
+            Z: 2551.17
           }
         }
         Overrides {
@@ -14853,14 +14636,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 70.6318359
-      Y: -1161.32422
-      Z: 6579.3623
+      X: 3051.1416
+      Y: -2282.79688
+      Z: 2164.00879
     }
     Rotation {
-      Pitch: 86.7629852
-      Yaw: -106.411293
-      Roll: -134.252747
+      Pitch: 86.7629242
+      Yaw: -106.411316
+      Roll: -134.252655
     }
     Scale {
       X: 1
@@ -14868,7 +14651,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14915,14 +14698,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 14.1083984
-      Y: -290.368652
-      Z: 7143.57422
+      X: 2994.61816
+      Y: -1411.84131
+      Z: 2728.2207
     }
     Rotation {
-      Pitch: 6.72935486
+      Pitch: 6.72934771
       Yaw: -155.711456
-      Roll: 92.3340378
+      Roll: 92.3340225
     }
     Scale {
       X: 1
@@ -14930,7 +14713,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -14977,9 +14760,9 @@ Objects {
   Name: "Urban Fence Cable Clamp"
   Transform {
     Location {
-      X: -498.212891
-      Y: -490.55957
-      Z: 7040.67676
+      X: 2482.29688
+      Y: -1612.03223
+      Z: 2625.32324
     }
     Rotation {
       Pitch: 0.77767849
@@ -14991,7 +14774,7 @@ Objects {
       Z: 2.21631241
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:color"
@@ -15046,14 +14829,14 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: -553.874
-      Y: -469.29834
-      Z: 6652.31152
+      X: 2426.63574
+      Y: -1590.771
+      Z: 2236.95801
     }
     Rotation {
-      Pitch: 86.7633514
-      Yaw: -106.411484
-      Roll: 135.746902
+      Pitch: 86.7632904
+      Yaw: -106.411476
+      Roll: 135.746857
     }
     Scale {
       X: 1
@@ -15061,7 +14844,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -15113,7 +14896,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14210645167072279412
+  ParentId: 698596244488651087
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -15145,17 +14928,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -484.099609
-            Y: -477.772461
-            Z: 7003.25928
+            X: 2496.41016
+            Y: -1599.24512
+            Z: 2587.90576
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: 13.4858322
-            Yaw: 39.323761
-            Roll: -8.7798162e-07
+            Yaw: 39.3237457
+            Roll: -4.3899081e-07
           }
         }
         Overrides {

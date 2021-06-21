@@ -10,9 +10,9 @@ Assets {
         Name: "Sprite Lantern"
         Transform {
           Scale {
-            X: 0.4729321
-            Y: 0.4729321
-            Z: 0.4729321
+            X: 0.537611663
+            Y: 0.537611663
+            Z: 0.537611663
           }
         }
         ParentId: 14210645167072279412
@@ -661,7 +661,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -728,7 +728,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -795,7 +795,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -862,7 +862,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -936,7 +936,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1003,7 +1003,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1070,7 +1070,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1137,7 +1137,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1204,7 +1204,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1271,7 +1271,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1337,7 +1337,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1404,7 +1404,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1471,7 +1471,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1538,7 +1538,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1604,7 +1604,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1671,7 +1671,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1738,7 +1738,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1747,17 +1747,17 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: -8.37244701
-            Y: 0.000490895181
-            Z: 57.2844887
+            X: -14.725585
+            Y: 0.000668763823
+            Z: 48.7353325
           }
           Rotation {
-            Pitch: -57.5503235
+            Pitch: -14.6199036
           }
           Scale {
-            X: 0.416921705
-            Y: 0.416921705
-            Z: 0.495336592
+            X: 0.416921824
+            Y: 0.416921824
+            Z: 0.495336711
           }
         }
         ParentId: 2014862613104300196
@@ -1806,7 +1806,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }
@@ -1882,7 +1882,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-            BoundsScale: 1
+            BoundsScale: 5
           }
         }
       }

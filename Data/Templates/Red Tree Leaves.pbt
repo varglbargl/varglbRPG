@@ -20,6 +20,9 @@ Assets {
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         Folder {
           IsGroup: true
         }

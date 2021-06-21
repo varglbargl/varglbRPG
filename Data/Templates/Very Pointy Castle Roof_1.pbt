@@ -34,9 +34,6 @@ Assets {
     }
   }
   Marketplace {
-    Id: "ad57d6a38c9b4a7a85243927e473db29"
-    OwnerAccountId: "21c0b4284eff4bb091ce80a75c984fd4"
-    OwnerName: "varglbargl"
     Description: "its pointy"
   }
   SerializationVersion: 89

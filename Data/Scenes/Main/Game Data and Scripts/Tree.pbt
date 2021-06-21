@@ -53,6 +53,8 @@ Objects {
   ParentId: 11638797133159733387
   ChildIds: 5019055891134600467
   ChildIds: 4106172608627692946
+  ChildIds: 2699524511764512775
+  ChildIds: 1481225579940226197
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -92,8 +94,553 @@ Objects {
   }
 }
 Objects {
+  Id: 1481225579940226197
+  Name: "UI Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8732530761349540603
+  ChildIds: 16373265307576371754
+  ChildIds: 6512788350309780027
+  ChildIds: 12510616345373049005
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 220
+    Height: 60
+    UIX: -100
+    UIY: -20
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12510616345373049005
+  Name: "UI Button"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1481225579940226197
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 60
+    Height: 60
+    UIX: 160
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 0.9
+        G: 0.809999943
+        B: 0.719999909
+        A: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        A: 0.4
+      }
+      Brush {
+        Id: 14669025476999387874
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+      Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6512788350309780027
+  Name: "UI Button"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1481225579940226197
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 60
+    Height: 60
+    UIX: 80
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 0.9
+        G: 0.809999943
+        B: 0.719999909
+        A: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        A: 0.4
+      }
+      Brush {
+        Id: 7959531961343117325
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+      Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16373265307576371754
+  Name: "UI Button"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1481225579940226197
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 60
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 0.9
+        G: 0.809999943
+        B: 0.719999909
+        A: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        A: 0.4
+      }
+      Brush {
+        Id: 5744205443850783890
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+      Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2699524511764512775
+  Name: "Cursor"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8732530761349540603
+  ChildIds: 9103341652919051427
+  ChildIds: 12528487204940600138
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 40
+    Height: 40
+    UIX: 500
+    UIY: 500
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12528487204940600138
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2699524511764512775
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 40
+    Height: 40
+    RotationAngle: 90
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 15307893252985727817
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 0.8
+      }
+      ShadowOffset {
+        X: 3
+      }
+      FlipHorizontal: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 9103341652919051427
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2699524511764512775
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 18
+    Height: 10
+    RotationAngle: -45
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 4254602141376566255
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 0.8
+      }
+      ShadowOffset {
+        Y: 4
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 4106172608627692946
-  Name: "Player Info"
+  Name: "Hud"
   Transform {
     Location {
     }
@@ -262,7 +809,7 @@ Objects {
       Color {
         R: 0.9
         G: 0.809999943
-        B: 0.719999969
+        B: 0.719999909
         A: 1
       }
       TeamSettings {
@@ -2154,7 +2701,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 16772474974562492758
+        Id: 12623631450833469653
       }
       Color {
         R: 1
@@ -2563,7 +3110,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 825193259111479443
+        Id: 12623631450833469653
       }
       Color {
         R: 1
@@ -2754,6 +3301,7 @@ Objects {
   ParentId: 8732530761349540603
   ChildIds: 3400386650306181115
   ChildIds: 5422125894631348581
+  ChildIds: 3805547169371237034
   ChildIds: 16688911673153212125
   ChildIds: 18389029616273692142
   ChildIds: 17206114854839061309
@@ -2767,7 +3315,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2777,7 +3325,7 @@ Objects {
   }
   Control {
     Width: 700
-    Height: -150
+    Height: -140
     UIX: -20
     UIY: 20
     RenderTransformPivot {
@@ -2964,9 +3512,9 @@ Objects {
   }
   Control {
     Width: -40
-    Height: 402
+    Height: 476
     UIX: 20
-    UIY: 510
+    UIY: 444
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3006,7 +3554,41 @@ Objects {
     }
   }
   ParentId: 9082438934664349746
-  ChildIds: 14330253318238510359
+  ChildIds: 7035511091835870270
+  ChildIds: 16483905823156258529
+  ChildIds: 760520401037794480
+  ChildIds: 204342338907081113
+  ChildIds: 585861333338248115
+  ChildIds: 12927212185710999682
+  ChildIds: 4899943793308829849
+  ChildIds: 8709230861552016144
+  ChildIds: 12164663662260152822
+  ChildIds: 10954483736236524028
+  ChildIds: 10030159761289851544
+  ChildIds: 17718188257138648193
+  ChildIds: 9093467204584525926
+  ChildIds: 6095477238590898197
+  ChildIds: 11546436572684344003
+  ChildIds: 7054065957550765419
+  ChildIds: 119648388878265624
+  ChildIds: 9436205047403256363
+  ChildIds: 16807079923792692869
+  ChildIds: 4478153636359596619
+  ChildIds: 14701970903174349174
+  ChildIds: 1304813585262480358
+  ChildIds: 5188668833240807117
+  ChildIds: 4754956438037717538
+  ChildIds: 12298028603459763894
+  ChildIds: 9135702271094396349
+  ChildIds: 14561858195823742273
+  ChildIds: 2636163382986464646
+  ChildIds: 3438424039644616964
+  ChildIds: 17315769689138834683
+  ChildIds: 13068708097241876245
+  ChildIds: 3530019015007256896
+  ChildIds: 17650748163916860826
+  ChildIds: 195338026977599626
+  ChildIds: 8355780905063001749
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3020,8 +3602,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: -36
-    Height: -36
+    Width: -50
+    Height: -46
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3048,8 +3630,8 @@ Objects {
   }
 }
 Objects {
-  Id: 14330253318238510359
-  Name: "UI Panel"
+  Id: 8355780905063001749
+  Name: "Inveotory Slot"
   Transform {
     Location {
     }
@@ -3062,51 +3644,56 @@ Objects {
     }
   }
   ParentId: 16304735260757465131
-  ChildIds: 15637199710186382006
-  ChildIds: 11196205483189974317
-  ChildIds: 9716373162894976049
-  ChildIds: 13830744476641797517
-  ChildIds: 11177424383460332091
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 80
-    Height: 80
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Panel {
-      Opacity: 1
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 540
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 360
         }
       }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
     }
   }
 }
 Objects {
-  Id: 11177424383460332091
-  Name: "UI Image"
+  Id: 195338026977599626
+  Name: "Inveotory Slot"
   Transform {
     Location {
     }
@@ -3118,63 +3705,57 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14330253318238510359
+  ParentId: 16304735260757465131
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 1248344310909113117
-      }
-      Color {
-        R: 0.9
-        G: 0.809999943
-        B: 0.719999909
-        A: 1
-      }
-      TeamSettings {
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 450
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 360
         }
       }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
     }
   }
 }
 Objects {
-  Id: 13830744476641797517
-  Name: "UI Image"
+  Id: 17650748163916860826
+  Name: "Inveotory Slot"
   Transform {
     Location {
     }
@@ -3186,62 +3767,57 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14330253318238510359
+  ParentId: 16304735260757465131
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: -6
-    Height: -6
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 1248344310909113117
-      }
-      Color {
-        A: 1
-      }
-      TeamSettings {
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 360
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 360
         }
       }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
     }
   }
 }
 Objects {
-  Id: 9716373162894976049
-  Name: "UI Button"
+  Id: 3530019015007256896
+  Name: "Inveotory Slot"
   Transform {
     Location {
     }
@@ -3253,91 +3829,57 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14330253318238510359
+  ParentId: 16304735260757465131
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Button {
-      FontColor {
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-      }
-      HoveredColor {
-        R: 0.9
-        G: 0.809999943
-        B: 0.719999909
-        A: 0.4
-      }
-      PressedColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 0.6
-      }
-      DisabledColor {
-        R: 0.2
-        G: 0.2
-        B: 0.2
-        A: 0.6
-      }
-      Brush {
-        Id: 11224923318960422480
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-      Font {
-      }
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 270
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 360
         }
       }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
     }
   }
 }
 Objects {
-  Id: 11196205483189974317
-  Name: "Icon"
+  Id: 13068708097241876245
+  Name: "Inveotory Slot"
   Transform {
     Location {
     }
@@ -3349,65 +3891,57 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14330253318238510359
+  ParentId: 16304735260757465131
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: -4
-    Height: -4
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 4030174837034643438
-      }
-      Color {
-        R: 0.9
-        G: 0.809999943
-        B: 0.719999909
-        A: 1
-      }
-      TeamSettings {
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 180
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 360
         }
       }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
     }
   }
 }
 Objects {
-  Id: 15637199710186382006
-  Name: "Background"
+  Id: 17315769689138834683
+  Name: "Inveotory Slot"
   Transform {
     Location {
     }
@@ -3419,56 +3953,1823 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14330253318238510359
+  ParentId: 16304735260757465131
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 90
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 360
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 3438424039644616964
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Control {
-    Width: -4
-    Height: -4
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 6737704758986320805
-      }
-      Color {
-        A: 0.4
-      }
-      TeamSettings {
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 360
         }
       }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 2636163382986464646
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 540
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 270
         }
       }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 14561858195823742273
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 450
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 270
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 9135702271094396349
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 360
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 270
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 12298028603459763894
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 270
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 270
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 4754956438037717538
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 180
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 270
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 5188668833240807117
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 90
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 270
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 1304813585262480358
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 270
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 14701970903174349174
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 540
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 180
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 4478153636359596619
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 450
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 180
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 16807079923792692869
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 360
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 180
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 9436205047403256363
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 270
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 180
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 119648388878265624
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 180
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 180
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 7054065957550765419
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 90
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 180
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 11546436572684344003
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 180
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 6095477238590898197
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 540
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 90
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 9093467204584525926
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 450
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 90
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 17718188257138648193
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 360
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 90
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 10030159761289851544
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 270
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 90
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 10954483736236524028
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 180
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 90
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 12164663662260152822
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 90
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 90
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 8709230861552016144
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 90
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 4899943793308829849
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 540
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 12927212185710999682
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 450
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 585861333338248115
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 360
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 204342338907081113
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 270
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 760520401037794480
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 180
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 16483905823156258529
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 90
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 7035511091835870270
+  Name: "Inveotory Slot"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
     }
   }
 }
@@ -3692,6 +5993,8 @@ Objects {
   }
   ParentId: 5019055891134600467
   ChildIds: 15236867223761177806
+  ChildIds: 13324613983998755378
+  ChildIds: 6473380124454554247
   ChildIds: 5028195841111723305
   ChildIds: 7132884655200619411
   Collidable_v2 {
@@ -3708,7 +6011,7 @@ Objects {
   }
   Control {
     Width: 480
-    Height: 440
+    Height: 376
     UIX: 200
     UIY: 60
     RenderTransformPivot {
@@ -3717,6 +6020,7 @@ Objects {
       }
     }
     Panel {
+      IsClipping: true
       Opacity: 1
     }
     AnchorLayout {
@@ -3871,8 +6175,1721 @@ Objects {
   }
 }
 Objects {
-  Id: 15236867223761177806
+  Id: 6473380124454554247
+  Name: "Gear Slots"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 815990300276554577
+  ChildIds: 17320028263373810417
+  ChildIds: 11262482986454735175
+  ChildIds: 7345122485608122080
+  ChildIds: 3777297081828025323
+  ChildIds: 11559008372679723853
+  ChildIds: 17455034752573959753
+  ChildIds: 452598788271205248
+  ChildIds: 10552069207895165218
+  ChildIds: 1273968227504257925
+  ChildIds: 14087134512789685718
+  ChildIds: 12749435735156671514
+  ChildIds: 1598553845396972016
+  ChildIds: 16632208313300764488
+  ChildIds: 71046079120418975
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 71046079120418975
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 133.233856
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 186.170883
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 18048939137701580115
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 16632208313300764488
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 160.878754
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 113.171631
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5105295625770175633
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 1598553845396972016
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 171.831329
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 36
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 4850716848666219123
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 12749435735156671514
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 93.5502548
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 15.5559692
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 17695103376294106055
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 14087134512789685718
+  Name: "Inveotory Slot"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 14.1947041
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 23
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 16484616357286133047
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 1273968227504257925
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 643651091254405532
+      value {
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 333.755859
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 289.705627
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 1951764977809190707
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 10552069207895165218
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 259
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 260.862854
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 263397477034152493
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 452598788271205248
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 248.658981
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 188.798477
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3929372467062246560
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 17455034752573959753
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 289.615417
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 114.819908
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 9491905288563371091
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 11559008372679723853
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Finger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 390.626434
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 85.5109863
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 770189364146078382
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 3777297081828025323
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Potion"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 80
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 274
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 80
+        }
+        Overrides {
+          Name: "Height"
+          Int: 80
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 6451587298495240638
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 7345122485608122080
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Glider"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 287.68634
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 17.3887787
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 90
+        }
+        Overrides {
+          Name: "Height"
+          Int: 90
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5550007441272372991
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 11262482986454735175
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Secondary"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 373.603119
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 187.603439
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 90
+        }
+        Overrides {
+          Name: "Height"
+          Int: 90
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 5053046271480486440
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 17320028263373810417
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6473380124454554247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Primary"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 15.1017952
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 142.667282
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 90
+        }
+        Overrides {
+          Name: "Height"
+          Int: 90
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 825193259111479443
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "FlipHorizontal"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 13324613983998755378
+  Name: "UI Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 815990300276554577
+  ChildIds: 4115087983099074549
+  ChildIds: 13529614951920430291
+  ChildIds: 3145902293947561268
+  ChildIds: 13303308708234901323
+  ChildIds: 13129095943937630498
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -12
+    Height: -12
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13129095943937630498
   Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13324613983998755378
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 140
+    Height: 140
+    UIX: 154.199142
+    UIY: 202.303024
+    RotationAngle: 58.8672943
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 4580931291840818112
+      }
+      Color {
+        A: 0.4
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      FlipHorizontal: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13303308708234901323
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13324613983998755378
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 60
+    Height: 80
+    UIX: 227.781235
+    UIY: 5.84489536
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 5649597641161709318
+      }
+      Color {
+        A: 0.4
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      FlipHorizontal: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3145902293947561268
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13324613983998755378
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 60
+    Height: 80
+    UIX: 364
+    UIY: 5.84489536
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 5649597641161709318
+      }
+      Color {
+        A: 0.4
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13529614951920430291
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13324613983998755378
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 305
+    Height: 307
+    UIX: -58.8000183
+    UIY: -70.6182327
+    RotationAngle: 91.2157822
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 11663837110343080261
+      }
+      Color {
+        A: 0.4
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      FlipVertical: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4115087983099074549
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13324613983998755378
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 296
+    Height: 306
+    UIX: 109.956795
+    UIY: -59.847187
+    RotationAngle: 64.7322388
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 11663837110343080261
+      }
+      Color {
+        A: 0.4
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15236867223761177806
+  Name: "Background"
   Transform {
     Location {
     }
@@ -3953,6 +7970,14 @@ Objects {
   }
   ParentId: 5019055891134600467
   ChildIds: 6963531398297855695
+  ChildIds: 14804703807080900921
+  ChildIds: 2960071563308264761
+  ChildIds: 7286789262021627781
+  ChildIds: 8868183040700570551
+  ChildIds: 13073677147827404241
+  ChildIds: 16385840115569150429
+  ChildIds: 6915119476574323667
+  ChildIds: 3707772946314482227
   ChildIds: 8768498310941260177
   ChildIds: 733532465274064873
   Collidable_v2 {
@@ -3969,7 +7994,7 @@ Objects {
   }
   Control {
     Width: 172
-    Height: 310
+    Height: 246
     UIX: 20
     UIY: 190
     RenderTransformPivot {
@@ -4115,6 +8140,661 @@ Objects {
         A: 1
       }
       ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3707772946314482227
+  Name: "Gold"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11525423576517923664
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -100
+    Height: 50
+    UIX: -20
+    UIY: 185
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "123,456,789"
+      Color {
+        R: 0.837
+        G: 0.652302742
+        B: 0.387531
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6915119476574323667
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11525423576517923664
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -100
+    Height: 50
+    UIX: 20
+    UIY: 150
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "Gold"
+      Color {
+        R: 0.837
+        G: 0.652302742
+        B: 0.387531
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16385840115569150429
+  Name: "Spit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11525423576517923664
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -100
+    Height: 50
+    UIX: -20
+    UIY: 85
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "10"
+      Color {
+        R: 0.57194984
+        G: 0.9
+        B: 0.462599933
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13073677147827404241
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11525423576517923664
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -100
+    Height: 50
+    UIX: 20
+    UIY: 85
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "Spit"
+      Color {
+        R: 0.57194984
+        G: 0.9
+        B: 0.462599933
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8868183040700570551
+  Name: "Wit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11525423576517923664
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -100
+    Height: 55
+    UIX: -20
+    UIY: 45
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "10"
+      Color {
+        R: 0.5373
+        G: 0.640064776
+        B: 0.9
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 7286789262021627781
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11525423576517923664
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -100
+    Height: 55
+    UIX: 20
+    UIY: 45
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "Wit"
+      Color {
+        R: 0.5373
+        G: 0.640064776
+        B: 0.9
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2960071563308264761
+  Name: "Grit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11525423576517923664
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -100
+    Height: 50
+    UIX: -20
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "10"
+      Color {
+        R: 0.9
+        G: 0.455310017
+        B: 0.405899972
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 14804703807080900921
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11525423576517923664
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -100
+    Height: 50
+    UIX: 20
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "Grit"
+      Color {
+        R: 0.9
+        G: 0.455310017
+        B: 0.405899972
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
       }
     }
     AnchorLayout {
@@ -4368,7 +9048,7 @@ Objects {
       }
       ShadowOffset {
         X: -2
-        Y: -1.5
+        Y: -2
       }
     }
     AnchorLayout {
@@ -4496,7 +9176,7 @@ Objects {
       }
       ShadowOffset {
         X: 2
-        Y: -1.5
+        Y: -2
       }
     }
     AnchorLayout {
@@ -5014,6 +9694,136 @@ Objects {
   }
 }
 Objects {
+  Id: 3805547169371237034
+  Name: "UI Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5019055891134600467
+  ChildIds: 17513584969670704840
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -8
+    Height: -8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17513584969670704840
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3805547169371237034
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 571
+    Height: 277
+    UIX: 27.351469
+    UIY: 58.6916885
+    RotationAngle: 5.02419376
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 14751324345008214201
+      }
+      Color {
+        R: 0.326
+        G: 0.297964
+        B: 0.269928038
+        A: 0.332000017
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 5422125894631348581
   Name: "Background"
   Transform {
@@ -5255,9 +10065,39 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Grit"
+      ObjectReference {
+        SelfId: 2960071563308264761
+      }
+    }
+    Overrides {
+      Name: "cs:Wit"
+      ObjectReference {
+        SelfId: 8868183040700570551
+      }
+    }
+    Overrides {
+      Name: "cs:Spit"
+      ObjectReference {
+        SelfId: 16385840115569150429
+      }
+    }
+    Overrides {
+      Name: "cs:Gold"
+      ObjectReference {
+        SelfId: 3707772946314482227
+      }
+    }
+    Overrides {
       Name: "cs:InventorySlots"
       ObjectReference {
         SelfId: 16304735260757465131
+      }
+    }
+    Overrides {
+      Name: "cs:GearSlots"
+      ObjectReference {
+        SelfId: 6473380124454554247
       }
     }
   }
@@ -5295,18 +10135,6 @@ Objects {
   }
   ParentId: 11638797133159733387
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:PlayerPortrait"
-      ObjectReference {
-        SelfId: 8457726401574926797
-      }
-    }
-    Overrides {
-      Name: "cs:PlayerName"
-      ObjectReference {
-        SelfId: 17206114854839061309
-      }
-    }
     Overrides {
       Name: "cs:HealthBar"
       ObjectReference {
@@ -5359,6 +10187,12 @@ Objects {
       Name: "cs:SecondaryIcon"
       ObjectReference {
         SelfId: 14317026687144544005
+      }
+    }
+    Overrides {
+      Name: "cs:Cursor"
+      ObjectReference {
+        SelfId: 2699524511764512775
       }
     }
   }
@@ -5532,47 +10366,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 17143608265961447241
-    }
-  }
-}
-Objects {
-  Id: 17530032437618454039
-  Name: "Equip Weapon On Join"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11421575165578890577
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:GliderToEquip"
-      AssetReference {
-        Id: 11645453655226915086
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 16449045394568394977
     }
   }
 }
@@ -5829,6 +10622,7 @@ Objects {
       EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
+          Value: "mc:echatmode:allonly"
         }
         ChatPosition {
           X: 20

@@ -9,16 +9,24 @@ local STAMINA_NUMBERS = script:GetCustomProperty("StaminaNumbers"):WaitForObject
 local LEVEL_NUMBER = script:GetCustomProperty("LevelNumber"):WaitForObject()
 local PRIMARY_ICON = script:GetCustomProperty("PrimaryIcon"):WaitForObject()
 local SECONDARY_ICON = script:GetCustomProperty("SecondaryIcon"):WaitForObject()
+local CURSOR = script:GetCustomProperty("Cursor"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local barWidth = HEALTH_BAR.width
 
-function onPlayerJoined(player)
-end
+CURSOR.visibility = Visibility.FORCE_OFF
+
+local cursorTask = nil
 
 function onResourceChanged(player, resourceName, newTotal)
-	if resourceName == "HitPoints" then
-		local maxHP = player:GetResource("MaxHitPoints")
+  if resourceName == "MaxHitPoints" and newTotal > 0 then
+    local hp = player.hitPoints
+
+		HEALTH_BAR.width = math.floor(hp / newTotal * barWidth + 0.5)
+    HEALTH_NUMBERS.text = Utils.formatInt(hp).." / "..Utils.formatInt(newTotal)
+
+	elseif resourceName == "HitPoints" then
+		local maxHP = player.maxHitPoints
 		if maxHP == 0 then return end
 
 		HEALTH_BAR.width = math.floor(newTotal / maxHP * barWidth + 0.5)
@@ -43,8 +51,73 @@ function onResourceChanged(player, resourceName, newTotal)
 	end
 end
 
--- on player joined/left functions need to be defined before calling event:Connect()
-Game.playerJoinedEvent:Connect(onPlayerJoined)
+function cursorLoop()
+  local cursorPos = UI.GetCursorPosition()
+
+  CURSOR.x = cursorPos.x
+  CURSOR.y = cursorPos.y
+
+  Task.Wait()
+  cursorLoop()
+end
+
+function showCursor()
+  CURSOR.visibility = Visibility.INHERIT
+
+  if cursorTask then cursorTask:Cancel() end
+  cursorTask = Task.Spawn(cursorLoop)
+end
+
+function hideCursor()
+  CURSOR.visibility = Visibility.FORCE_OFF
+
+  if cursorTask then cursorTask:Cancel() end
+end
+
+function redrawAbilities(gear)
+  if gear and gear.primary then
+    PRIMARY_ICON:SetImage(gear.primary.icon)
+    PRIMARY_ICON.parent.visibility = Visibility.INHERIT
+
+  else
+    PRIMARY_ICON.parent.visibility = Visibility.FORCE_OFF
+  end
+
+  if gear and gear.secondary then
+    SECONDARY_ICON:SetImage(gear.secondary.icon)
+    SECONDARY_ICON.parent.visibility = Visibility.INHERIT
+
+  else
+    SECONDARY_ICON.parent.visibility = Visibility.FORCE_OFF
+  end
+end
+
+redrawAbilities()
+
+function onBindingPressed(thisPlayer, keyCode)
+	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
+  if keyCode == "ability_secondary" or keyCode == "ability_primary" then
+    CURSOR.rotationAngle = -9
+  end
+end
+
+function onBindingReleased(thisPlayer, keyCode)
+	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
+  if keyCode == "ability_secondary" or keyCode == "ability_primary" then
+    CURSOR.rotationAngle = 0
+  end
+end
+
+-- handler params: Player_player, string_keyCode
+clientPlayer.bindingPressedEvent:Connect(onBindingPressed)
+
+-- handler params: Player_player, string_keyCode
+clientPlayer.bindingReleasedEvent:Connect(onBindingReleased)
 
 -- handler params: Player_player, string_resourceName, integer_newTotal
 clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
+
+Events.Connect("ShowCursor", showCursor)
+Events.Connect("HideCursor", hideCursor)
+Events.Connect("FlyupText", Utils.showFlyupText)
+Events.Connect("RedrawAbilities", redrawAbilities)

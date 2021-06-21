@@ -40,12 +40,11 @@ function onEquipped(thisEquipment, player)
   if STANCE then
     player.animationStance = STANCE
     Events.Broadcast("UpdateIdleStance", player, STANCE)
-    Events.Broadcast("EquipmentChanged", player)
   end
 end
 
 function onUnequipped(thisEquipment)
-  thisEquipment:Destroy()
+  -- thisEquipment:Destroy()
 end
 
 -- handler params: Equipment_equipment, Player_player

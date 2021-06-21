@@ -19,17 +19,17 @@ Assets {
       Overrides {
         Name: "cs:OpenCloseSFX"
         AssetReference {
-          Id: 10877027736297246112
+          Id: 16019871605902900811
         }
       }
     }
     Assets {
-      Id: 10877027736297246112
-      Name: "Gear Movement Cloth Fast 01 SFX"
+      Id: 16019871605902900811
+      Name: "Paper Book Open Close Page Heavy 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_gear_movement_cloth_fast_01a_Cue_ref"
+        AssetId: "sfx_paper_book_open_close_page_heavy_01a_Cue_ref"
       }
     }
   }

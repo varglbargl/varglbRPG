@@ -7,12 +7,34 @@ local CHARACTER_SCREEN = script:GetCustomProperty("CharacterScreen"):WaitForObje
 local PLAYER_PORTRAIT = script:GetCustomProperty("PlayerPortrait"):WaitForObject()
 local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
 local PLAYER_DESCRIPTION = script:GetCustomProperty("PlayerDescription"):WaitForObject()
+local GRIT = script:GetCustomProperty("Grit"):WaitForObject()
+local WIT = script:GetCustomProperty("Wit"):WaitForObject()
+local SPIT = script:GetCustomProperty("Spit"):WaitForObject()
+local GOLD = script:GetCustomProperty("Gold"):WaitForObject()
 local INVENTORY_SLOTS = script:GetCustomProperty("InventorySlots"):WaitForObject()
+local GEAR_SLOTS = script:GetCustomProperty("GearSlots"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 
 local inventory = {}
 local inventorySlots = INVENTORY_SLOTS:GetChildren()
+
+local gearSlots = {
+  primary = GEAR_SLOTS:FindChildByName("Primary"),
+  secondary = GEAR_SLOTS:FindChildByName("Secondary"),
+  glider = GEAR_SLOTS:FindChildByName("Glider"),
+  potion = GEAR_SLOTS:FindChildByName("Potion"),
+  fingers = GEAR_SLOTS:FindDescendantsByName("Finger")
+}
+
+local gear = {
+  primary = nil,
+  secondary = nil,
+  glider = nil,
+  potion = nil,
+  fingers = {}
+}
+
 local isOpen = false
 
 local myLevel = nil
@@ -24,6 +46,29 @@ local mySpit = nil
 
 local myMaxHealth = nil
 local myMaxStamina = nil
+
+local hoveredSlot = nil
+local hoveredGear = nil
+
+CHARACTER_SCREEN.visibility = Visibility.FORCE_OFF
+
+for i, slot in ipairs(inventorySlots) do
+  local button = slot:FindChildByType("UIButton")
+
+  button.hoveredEvent:Connect(function()
+    if inventory[i] then
+      hoveredSlot = i
+    end
+  end)
+
+  button.unhoveredEvent:Connect(function()
+    Task.Wait(0.5)
+
+    if hoveredSlot == i then
+      hoveredSlot = nil
+    end
+  end)
+end
 
 function onPlayerJoined(player)
 	PLAYER_PORTRAIT:SetPlayerProfile(player)
@@ -45,15 +90,17 @@ end
 
 function onResourceChanged(player, resourceName, newTotal)
 	if resourceName == "MaxHitPoints" then
-  myMaxHealth = newTotal
+    myMaxHealth = newTotal
   elseif resourceName == "MaxStamina" then
-  myMaxStamina = newTotal
+    myMaxStamina = newTotal
   elseif resourceName == "Grit" then
-    -- todo
+    GRIT.text = Utils.formatInt(newTotal)
   elseif resourceName == "Wit" then
-    -- todo
+    WIT.text = Utils.formatInt(newTotal)
   elseif resourceName == "Spit" then
-    -- todo
+    SPIT.text = Utils.formatInt(newTotal)
+  elseif resourceName == "Gold" then
+    GOLD.text = Utils.formatInt(newTotal)
   elseif resourceName == "Class" then
     myClass = newTotal
     if myLevel and myClass then
@@ -67,11 +114,58 @@ function onResourceChanged(player, resourceName, newTotal)
   end
 end
 
-function addedToInveotory(itemId)
-  local item = Loot.findItemById(itemId)
+function drawSlot(slot, item)
+  if item then
+    slot:FindChildByName("Icon"):SetImage(item.icon)
+    slot:FindChildByName("Icon"):SetColor(Color.WHITE)
+  else
+    slot:FindChildByName("Icon"):SetColor(Color.TRANSPARENT)
+  end
+end
 
-  table.insert(inventory, item)
-  inventorySlots[1]:FindChildByName("Icon"):SetImage(item.icon)
+function redrawInventory()
+  for i = 1, 35 do
+    drawSlot(inventorySlots[i], inventory[i])
+  end
+
+  for i = 1, 10 do
+    drawSlot(gearSlots.fingers[i], gear.fingers[i])
+  end
+
+  drawSlot(gearSlots.primary, gear.primary)
+  drawSlot(gearSlots.secondary, gear.secondary)
+  drawSlot(gearSlots.glider, gear.glider)
+  drawSlot(gearSlots.potion, gear.potion)
+end
+
+function throttleInventory()
+  for i, slot in ipairs(inventorySlots) do
+    slot:FindChildByType("UIButton").isInteractable = false
+  end
+
+  Task.Wait(0.5)
+
+  for i, slot in ipairs(inventorySlots) do
+    slot:FindChildByType("UIButton").isInteractable = true
+  end
+end
+
+function inventoryFull()
+  Utils.showFlyupText("Inventory full...")
+end
+
+function addedToInveotory(templateId)
+  local item = Loot.findItemByTemplateId(templateId)
+
+  for i = 1, 35 do
+    if not inventory[i] then
+      inventory[i] = item
+      redrawInventory()
+      return
+    end
+  end
+
+  inventoryFull()
 end
 
 -- handler params: Player_player
@@ -85,17 +179,18 @@ function closeCharacterScreen()
 
   CHARACTER_SCREEN.visibility = Visibility.FORCE_OFF
   UI.SetCanCursorInteractWithUI(false)
-  UI.SetCursorVisible(false)
+  Events.Broadcast("HideCursor")
 
   isOpen = false
 end
 
 function openCharacterScreen()
   Utils.playSoundEffect(OPEN_CLOSE_SFX)
+  redrawInventory()
 
   CHARACTER_SCREEN.visibility = Visibility.INHERIT
   UI.SetCanCursorInteractWithUI(true)
-  UI.SetCursorVisible(true)
+  Events.Broadcast("ShowCursor")
 
   isOpen = true
 end
@@ -117,13 +212,50 @@ function onBindingPressed(thisPlayer, keyCode)
 
   if isOpen and keyCode == "ability_secondary" then
     -- equip or use item
-    local cursorPosition = UI.GetCursorPosition()
+    if hoveredSlot then
+      if inventory[hoveredSlot] then
+        local equippedSlot = nil
+        local ringNo = nil
 
-    for i, slot in ipairs(inventorySlots) do
-      if Utils.vector2IsInside(cursorPosition, slot.x, slot.y, slot.width, slot.height) then
-        print("BADING!!")
-        Utils.throttleToServer("EquipToPlayer", inventory[i].id)
-        inventory[i] = nil
+        if inventory[hoveredSlot].socket == "right_prop" then
+          equippedSlot = "primary"
+          gear.primary = inventory[hoveredSlot]
+          Events.Broadcast("RedrawAbilities", gear)
+
+        elseif inventory[hoveredSlot].socket == "left_prop" then
+          equippedSlot = "secondary"
+          gear.secondary = inventory[hoveredSlot]
+          Events.Broadcast("RedrawAbilities", gear)
+
+        elseif inventory[hoveredSlot].socket == "upper_spine" then
+          equippedSlot = "glider"
+          gear.glider = inventory[hoveredSlot]
+
+        elseif inventory[hoveredSlot].socket == "pelvis" then
+          equippedSlot = "potion"
+          gear.potion = inventory[hoveredSlot]
+          Events.Broadcast("RedrawAbilities", gear)
+
+        elseif inventory[hoveredSlot].socket == "left_wrist" then
+          for i = 1, 10 do
+            if not gear.fingers[i] then
+              equippedSlot = "fingers"
+              ringNo = i
+              gear.fingers[i] = inventory[hoveredSlot]
+              break
+            end
+          end
+        end
+
+        if equippedSlot then
+          Utils.throttleToServer("EquipToPlayer", clientPlayer, inventory[hoveredSlot].templateId, equippedSlot, ringNo)
+
+          inventory[hoveredSlot] = nil
+          hoveredSlot = nil
+
+          redrawInventory()
+          throttleInventory()
+        end
       end
     end
   end

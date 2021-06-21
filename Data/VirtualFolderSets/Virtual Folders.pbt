@@ -5,10 +5,6 @@ Assets {
   SerializationVersion: 89
   VirtualFolderSetAsset {
     Folders {
-      VirtualFolderPath: "Gear"
-      PlatformAssetType: 5
-    }
-    Folders {
       VirtualFolderPath: "VFX"
       PlatformAssetType: 5
     }
@@ -18,6 +14,34 @@ Assets {
     }
     Folders {
       VirtualFolderPath: "Enemies"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "UI"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Rings"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Weapons, Shields"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Spells"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Gliders"
       PlatformAssetType: 5
     }
   }

@@ -20,35 +20,44 @@ function playerSpawned(player)
 end
 
 function onPlayerJoined(player)
-  player:SetResource("Gold", 50)
-  player:SetResource("Level", 1)
+  local yourLevel = player:SetResource("Level", 1)
   player:SetResource("Experience", 0)
+  player:SetResource("Gold", 0)
 
   local class = 1
 
   player:SetResource("Class", class)
 
-  player.serverUserData["ClassStats"] = Utils.classStats(class)
+  local classStats = Utils.classStats(class)
+  player.serverUserData["ClassStats"] = classStats
 
-  Utils.throttleMessage(player.name.." (Level "..player:GetResource("Level").." "..player.serverUserData["ClassStats"].name..") has joined the game!")
+  Utils.throttleMessage(player.name.." (Level "..yourLevel.." "..classStats.name..") has joined the game!")
+
+  local magicNumber = Utils.magicNumber(1)
 
   -- health and melee damage
-  player:SetResource("Grit", player.serverUserData["ClassStats"].grit)
+  local yourGrit = player:SetResource("Grit", math.floor(classStats.grit * magicNumber))
 
   -- healing power and spell damage
-  player:SetResource("Wit", player.serverUserData["ClassStats"].wit)
+  player:SetResource("Wit", math.floor(classStats.wit * magicNumber))
 
   -- stamina and ranged damage
-  player:SetResource("Spit", player.serverUserData["ClassStats"].spit)
+  local yourSpit = player:SetResource("Spit", math.floor(classStats.spit * magicNumber))
 
-  player.maxHitPoints = math.floor(35 + player:GetResource("Grit") * 2)
+  player.maxHitPoints = math.floor(35 + yourGrit * 2)
   player.hitPoints = player.maxHitPoints
 
   player:SetResource("MaxHitPoints", player.maxHitPoints)
   player:SetResource("HitPoints", player.hitPoints)
 
-  player:SetResource("MaxStamina", math.floor(45 + player:GetResource("Spit") / 12 + player:GetResource("Level") / 2))
-  player:SetResource("Stamina", player:GetResource("MaxStamina"))
+  local maxStam = player:SetResource("MaxStamina", math.floor(45 + yourSpit / 12 + yourLevel / 2))
+  player:SetResource("Stamina", maxStam)
+
+  player:SetResource("StoryProgress", 0)
+
+  player.serverUserData["RecentlyDamaged"] = Task.Spawn(function()
+    Task.Wait(1)
+  end)
 
   -- handler params: Player_player, Damage_damage
   player.damagedEvent:Connect(onPlayerDamaged)
@@ -56,21 +65,17 @@ function onPlayerJoined(player)
   -- handler params: Player_player
   player.spawnedEvent:Connect(playerSpawned)
 
-  if Environment.IsPreview() then
+  -- DEBUG!!
 
+  if Environment.IsPreview() then
     -- handler params: Player_player, string_keyCode
     player.bindingPressedEvent:Connect(function(thisPlayer, keyCode)
       if keyCode == "ability_extra_38" and player:GetResource("Level") < maxLevel then
-        -- maxLevel = 120
-        player:SetResource("Level", maxLevel - 1)
-        Events.Broadcast("PlayerGainedXP", thisPlayer, Utils.experienceToNextLevel(player:GetResource("Level")))
-        -- Task.Wait()
-        -- maxLevel = 60
-      end
+        if player:IsBindingPressed("ability_feet") then
+          player:SetResource("Level", maxLevel - 1)
+        end
 
-      if keyCode == "ability_extra_29" then
-        Utils.throttleToPlayer(thisPlayer, "AddToInventory", 4)
-        -- Events.Broadcast("EquipToPlayer", thisPlayer, 6)
+        Events.Broadcast("PlayerGainedXP", thisPlayer, Utils.experienceToNextLevel(player:GetResource("Level")))
       end
     end)
   end
@@ -124,20 +129,12 @@ function onPlayerGainedXP(player, amount)
 
     Utils.throttleMessage("DING! "..player.name.." is now Level "..player:GetResource("Level") + levelsGained.."!")
 
-    player:SetResource("Grit", math.floor(player.serverUserData["ClassStats"].grit * Utils.magicNumber(player:GetResource("Level") + levelsGained)))
-    player:SetResource("Wit", math.floor(player.serverUserData["ClassStats"].wit * Utils.magicNumber(player:GetResource("Level") + levelsGained)))
-    player:SetResource("Spit", math.floor(player.serverUserData["ClassStats"].spit * Utils.magicNumber(player:GetResource("Level") + levelsGained)))
+    local classStats = player.serverUserData["ClassStats"]
+    local magicNumber = Utils.magicNumber(player:GetResource("Level") + levelsGained)
 
     player:AddResource("Level", levelsGained)
 
-    player.maxHitPoints = math.floor(35 + player:GetResource("Grit") * 2)
-    player.hitPoints = player.maxHitPoints
-
-    player:SetResource("MaxHitPoints", player.maxHitPoints)
-    player:SetResource("HitPoints", player.hitPoints)
-
-    player:SetResource("MaxStamina", math.floor(45 + player:GetResource("Spit") / 12 + player:GetResource("Level") / 2))
-    player:SetResource("Stamina", player:GetResource("MaxStamina"))
+    calculateStatsFromGear(player)
 
     if vfx then
       vfx:ScaleTo(Vector3.ONE, 0.2)
@@ -161,7 +158,70 @@ function onPlayerGainedGold(player, amount)
   player:AddResource("Gold", amount)
 end
 
-function onEquipmentChanged(player)
+function applyStatsWithGear(player)
+  local playerGear = player.serverUserData["Gear"]
+
+  if not playerGear then return end
+
+  local magicNumber = Utils.magicNumber(player:GetResource("Level"))
+  local classStats = player.serverUserData["ClassStats"]
+
+  local baseStats = {
+    grit = math.floor(classStats.grit * magicNumber),
+    wit = math.floor(classStats.wit * magicNumber),
+    spit = math.floor(classStats.spit * magicNumber)
+  }
+
+  local bonusStats = {
+    health = 0,
+    stamina = 0,
+    grit = 0,
+    wit = 0,
+    spit = 0
+  }
+
+  local function addBonusStats(item)
+    if not item then return end
+
+    if item.health then
+      bonusStats.health = bonusStats.health + item.health
+    end
+
+    if item.stamina then
+      bonusStats.stamina = bonusStats.stamina + item.stamina
+    end
+
+    if item.grit then
+      bonusStats.grit = bonusStats.grit + item.grit
+    end
+
+    if item.wit then
+      bonusStats.wit = bonusStats.wit + item.wit
+    end
+
+    if item.spit then
+      bonusStats.spit = bonusStats.spit + item.spit
+    end
+  end
+
+  for i = 1, 10 do
+    addBonusStats(playerGear.fingers[i])
+  end
+
+  addBonusStats(playerGear.primary)
+  addBonusStats(playerGear.secondary)
+
+  local newGrit = player:SetResource("Grit", baseStats.grit + bonusStats.grit)
+  player:SetResource("Wit", baseStats.wit + bonusStats.wit)
+  player:SetResource("Spit", baseStats.spit + bonusStats.spit)
+
+  player.maxHitPoints = math.floor(35 + newGrit * 2) + bonusStats.health
+  player:SetResource("MaxHitPoints", player.maxHitPoints)
+  player:SetResource("HitPoints", math.min(player.maxHitPoints, player.hitPoints))
+
+  local maxStamina = math.floor(45 + (baseStats.spit + bonusStats.spit) / 12 + player:GetResource("Level") / 2) + bonusStats.stamina
+  player:SetResource("MaxStamina", maxStamina)
+  player:SetResource("Stamina", math.min(maxStamina, player:GetResource("Stamina")))
 end
 
 function resourceTicker(player)
@@ -202,4 +262,4 @@ Events.Connect("PlayerGainedXP", onPlayerGainedXP)
 Events.Connect("PlayerGainedGold", onPlayerGainedGold)
 
 -- handler params: Player_player
-Events.Connect("EquipmentChanged", onEquipmentChanged)
+Events.Connect("EquipmentChanged", applyStatsWithGear)

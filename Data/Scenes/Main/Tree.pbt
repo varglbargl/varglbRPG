@@ -881,6 +881,7 @@ Objects {
   ChildIds: 16468120393140387708
   ChildIds: 17064792543331127714
   ChildIds: 4274793632657622643
+  ChildIds: 8888717416138923095
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -894,6 +895,50 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 8888717416138923095
+  Name: "Waterfall Small SFX"
+  Transform {
+    Location {
+      X: 14913.1045
+      Y: 5347.26025
+      Z: -5498.36963
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15089913794428756082
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3374643611449432586
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 0.5
+    Falloff: 3000
+    Radius: 500
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
   }
 }
 Objects {
@@ -1018,9 +1063,9 @@ Objects {
     }
     AutoPlay: true
     Repeat: true
-    Volume: 1
-    Falloff: 2000
-    Radius: 400
+    Volume: 0.75
+    Falloff: 2500
+    Radius: 500
     EnableOcclusion: true
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
@@ -1737,7 +1782,7 @@ Objects {
       CastShadow: true
       ReceivesDecals: true
       GroundSlopeAngle {
-        Max: 45
+        Max: 60
       }
       Scaling {
         ScaleX {
@@ -2050,7 +2095,7 @@ Objects {
       Asset {
         Id: 14233481070855848323
       }
-      DistanceBetweenInstances: 600
+      DistanceBetweenInstances: 200
       MaterialChannel: 1
       SpawnDistance: 22400
       CullDistance {
@@ -2060,8 +2105,8 @@ Objects {
       CastShadow: true
       ReceivesDecals: true
       GroundSlopeAngle {
-        Min: 40
-        Max: 75
+        Min: 60
+        Max: 80
       }
       Scaling {
         ScaleX {
@@ -2077,8 +2122,9 @@ Objects {
           Max: 1
         }
       }
+      RotationAlignment: AlignToWorldUp
       RandomYaw: true
-      RandomPitchAngle: 6
+      RandomPitchAngle: 20
       Materials {
         key: "Nature_Leaves"
         value {
@@ -2086,7 +2132,7 @@ Objects {
         }
       }
       LocalPositionOffset {
-        Z: -20
+        Z: -30
       }
       LocalRotationOffset {
       }
@@ -2173,8 +2219,8 @@ Objects {
       CastShadow: true
       ReceivesDecals: true
       GroundSlopeAngle {
-        Min: 35
-        Max: 65
+        Min: 50
+        Max: 75
       }
       Scaling {
         ScaleX {
@@ -2190,6 +2236,7 @@ Objects {
           Max: 1
         }
       }
+      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -2215,9 +2262,9 @@ Objects {
       Asset {
         Id: 2582620441980557288
       }
-      DistanceBetweenInstances: 1000
+      DistanceBetweenInstances: 200
       MaterialChannel: 1
-      SpawnDistance: 20000
+      SpawnDistance: 22400
       CullDistance {
         Min: 10000
         Max: 20000
@@ -2225,8 +2272,8 @@ Objects {
       CastShadow: true
       ReceivesDecals: true
       GroundSlopeAngle {
-        Min: 35
-        Max: 75
+        Min: 70
+        Max: 85
       }
       Scaling {
         ScaleX {
@@ -2242,8 +2289,9 @@ Objects {
           Max: 1
         }
       }
+      RotationAlignment: AlignToWorldUp
       RandomYaw: true
-      RandomPitchAngle: 6
+      RandomPitchAngle: 20
       Materials {
         key: "Nature_Leaves"
         value {
@@ -2251,7 +2299,7 @@ Objects {
         }
       }
       LocalPositionOffset {
-        Z: -10
+        Z: -20
       }
       LocalRotationOffset {
       }
@@ -2352,7 +2400,7 @@ Objects {
       Materials {
         key: "Shared_BaseMaterial"
         value {
-          Id: 841534158063459245
+          Id: 15242669385791054826
         }
       }
       LocalPositionOffset {
@@ -2367,6 +2415,273 @@ Objects {
         Max: 102400
       }
       HeightFalloff: 500
+    }
+    Foliage {
+      Asset {
+        Id: 15335176327853375814
+      }
+      DistanceBetweenInstances: 600
+      MaterialChannel: 1
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      CastShadow: true
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Min: 35
+        Max: 80
+      }
+      Scaling {
+        ScaleX {
+          Min: 0.75
+          Max: 2
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Leaves"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: 5000
+        Max: 102400
+      }
+      HeightFalloff: 1500
+    }
+    Foliage {
+      Asset {
+        Id: 1035889113622252591
+      }
+      DistanceBetweenInstances: 200
+      MaterialChannel: 1
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      CastShadow: true
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Min: 70
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1.2
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Branch"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+        Z: -50
+      }
+      LocalRotationOffset {
+        Yaw: 22
+        Roll: 12
+      }
+      GlobalPositionOffset {
+        Z: -100
+      }
+      Height {
+        Min: 1000
+        Max: 102400
+      }
+      HeightFalloff: 5500
+    }
+    Foliage {
+      Asset {
+        Id: 16217022108673138807
+      }
+      DistanceBetweenInstances: 400
+      MaterialChannel: 1
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      CastShadow: true
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Min: 60
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 2.5
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 20
+      Materials {
+        key: "Nature_Leaves"
+        value {
+          Id: 16428818447224959958
+        }
+      }
+      LocalPositionOffset {
+        Z: -30
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: 5000
+        Max: 102400
+      }
+      HeightFalloff: 1000
+    }
+    Foliage {
+      Asset {
+        Id: 1035889113622252591
+      }
+      DistanceBetweenInstances: 400
+      MaterialChannel: 1
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      CastShadow: true
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Min: 65
+        Max: 80
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 2.5
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RandomPitchAngle: 16
+      Materials {
+        key: "Nature_Branch"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+        Roll: 8
+      }
+      GlobalPositionOffset {
+        Z: -300
+      }
+      Height {
+        Min: 5500
+        Max: 102400
+      }
+      HeightFalloff: 1500
+    }
+    Foliage {
+      Asset {
+        Id: 1035889113622252591
+      }
+      DistanceBetweenInstances: 600
+      MaterialChannel: 3
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      CastShadow: true
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Min: 150
+        Max: 180
+      }
+      Scaling {
+        ScaleX {
+          Min: 0.4
+          Max: 1.2
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 25
+      Materials {
+        key: "Nature_Branch"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+        Z: -100
+      }
+      LocalRotationOffset {
+        Pitch: -7
+        Roll: -90
+      }
+      GlobalPositionOffset {
+        Z: 150
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+      HeightFalloff: 5500
     }
   }
 }

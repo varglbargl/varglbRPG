@@ -30,7 +30,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ItemLevel"
-            Float: 1
+            Float: 5
           }
           Overrides {
             Name: "cs:MinDamage"
@@ -1111,4 +1111,5 @@ Assets {
   }
   SerializationVersion: 89
   VirtualFolderPath: "Gear"
+  VirtualFolderPath: "Weapons, Shields"
 }

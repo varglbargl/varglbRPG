@@ -23,42 +23,66 @@ local classes = {
     grit = 15,
     wit  = 5,
     spit = 10,
-    special = "10% of all damage taken is reflected to the attacker instead."
+    special = "Part of all damage taken is reflected back to the attacker instead.",
+    starterGear = {
+      primary = "Starter Axe",
+      glider = "Basic Glider"
+    }
   },
   {
     name = "Paragon",
     grit = 15,
     wit  = 10,
     spit = 5,
-    special = "Melee attacks heal a nearby ally"
+    special = "Melee attacks heal you or a nearby ally in need.",
+    starterGear = {
+      primary = "Starter Axe",
+      glider = "Basic Glider"
+    }
   },
   {
-    name = "Witch",
+    name = "Wizlord",
     grit = 5,
     wit  = 15,
     spit = 10,
-    special = "???"
+    special = "",
+    starterGear = {
+      primary = "Starter Axe",
+      glider = "Basic Glider"
+    }
   },
   {
-    name = "???",
+    name = "Wilderwitch",
     grit = 10,
     wit  = 15,
     spit = 5,
-    special = "???"
+    special = "Spells and melee attacks may have random extra effects. Who knows what could happen??",
+    starterGear = {
+      primary = "Starter Axe",
+      glider = "Basic Glider"
+    }
   },
   {
     name = "Ranger",
     grit = 5,
     wit  = 10,
     spit = 15,
-    special = "Melee attacks knock enemies away"
+    special = "Melee attacks knock enemies away, ranged attacks slow enemies.",
+    starterGear = {
+      primary = "Starter Axe",
+      glider = "Basic Glider"
+    }
   },
   {
     name = "Harrier",
     grit = 10,
     wit  = 5,
     spit = 15,
-    special = "Sprinting or gliding into a fight makes your first melee attack deal tripple."
+    special = "Sprinting or gliding into a fight makes your first melee attack deal tripple.",
+    starterGear = {
+      primary = "Starter Axe",
+      glider = "Basic Glider"
+    }
   }
 }
 
@@ -69,7 +93,11 @@ end
 -- GAME MECHANICS
 
 function Utils.magicNumber(x)
-  return (x*2^(x/powerDoublingRate))/x
+  if x == 1 then
+    return 1
+  else
+    return (x*2^(x/powerDoublingRate))/x
+  end
 end
 
 function Utils.formatInt(amount)
@@ -115,7 +143,13 @@ function Utils.rollDamage(min, max)
 end
 
 function Utils.showFlyupText(text, pos, color)
+  if Environment.IsServer() then
+    Utils.throttleToAllPlayers("FlyupText", text, pos, color)
+    return
+  end
+
   pos = pos or Game.GetLocalPlayer():GetWorldPosition()
+
   color = color or Color.New(0.7, 0.9, 1)
 
   if type(text) == "number" then
@@ -233,10 +267,6 @@ function Utils.playSoundEffect(audio, volume, pitch, location)
   end
 
   sfx:Play()
-end
-
-function Utils.vector2IsInside(vec2, x, y, w, h)
-  return vec2.x > x and vec2.y > y and vec2.x < x+w and vec2.y < y+h
 end
 
 return Utils
