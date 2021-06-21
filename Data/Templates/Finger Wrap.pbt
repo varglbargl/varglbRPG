@@ -25,7 +25,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ItemLevel"
-            Float: 5
+            Float: 7
           }
         }
         WantsNetworking: true

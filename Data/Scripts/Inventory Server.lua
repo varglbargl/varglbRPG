@@ -16,7 +16,9 @@ function onPlayerJoined(player)
     -- handler params: Player_player, string_keyCode
     player.bindingPressedEvent:Connect(function(thisPlayer, keyCode)
       if keyCode == "ability_extra_29" then
-        Loot.giveRandomToPlayer(thisPlayer)
+        -- Loot.giveRandomToPlayer(thisPlayer)
+        print(Loot.enchantItem(Loot.getRandom(), "orange").name)
+        -- Loot.giveToPlayer()
       end
     end)
   end

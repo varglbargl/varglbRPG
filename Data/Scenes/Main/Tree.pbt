@@ -1990,12 +1990,13 @@ Objects {
         Min: 5500
         Max: 102400
       }
+      HeightFalloff: 1000
     }
     Foliage {
       Asset {
         Id: 14555124232196571952
       }
-      DistanceBetweenInstances: 600
+      DistanceBetweenInstances: 300
       SpawnDistance: 22400
       CullDistance {
         Min: 10000
@@ -2004,8 +2005,8 @@ Objects {
       CastShadow: true
       ReceivesDecals: true
       GroundSlopeAngle {
-        Min: 12
-        Max: 24
+        Min: 16
+        Max: 20
       }
       Scaling {
         ScaleX {
@@ -2040,6 +2041,7 @@ Objects {
         Min: 5500
         Max: 102400
       }
+      HeightFalloff: 1000
     }
     Foliage {
       Asset {
@@ -2055,7 +2057,7 @@ Objects {
       ReceivesDecals: true
       GroundSlopeAngle {
         Min: 8
-        Max: 16
+        Max: 24
       }
       Scaling {
         ScaleX {
@@ -2090,6 +2092,7 @@ Objects {
         Min: 5500
         Max: 102400
       }
+      HeightFalloff: 1000
     }
     Foliage {
       Asset {
