@@ -17,8 +17,20 @@ function onPlayerJoined(player)
     player.bindingPressedEvent:Connect(function(thisPlayer, keyCode)
       if keyCode == "ability_extra_29" then
         -- Loot.giveRandomToPlayer(thisPlayer)
-        print(Loot.enchantItem(Loot.getRandom(), "orange").name)
+        local coolRing = Loot.enchantItem(Loot.getRandom(), 3)
+        print("")
+        print("> ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ >")
+        print(coolRing.name)
+        print(coolRing.enchant)
+        print("Level: "..math.floor(coolRing.itemLevel))
+        print("Grit: "..(coolRing.grit or 0))
+        print("Wit: "..(coolRing.wit or 0))
+        print("Spit: "..(coolRing.spit or 0))
+        print("Health: "..(coolRing.health or 0))
+        print("Stamina: "..(coolRing.stamina or 0))
+        print("> ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ >")
         -- Loot.giveToPlayer()
+        Loot.giveToPlayer(thisPlayer, coolRing)
       end
     end)
   end
@@ -41,8 +53,12 @@ function unequipFromPlayer(player, templateId)
   end
 end
 
-function equipToPlayer(player, templateId, slot, ringNo)
+function equipToPlayer(player, templateId, enchant, slot, ringNo)
   local item = Loot.findItemByTemplateId(templateId)
+
+  if enchant then
+    item = Loot.decodeEnchant(item, enchant)
+  end
 
   if not Object.IsValid(player) or not item then return end
 

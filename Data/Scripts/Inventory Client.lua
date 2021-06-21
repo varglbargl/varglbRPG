@@ -124,7 +124,7 @@ function drawSlot(slot, item)
 end
 
 function redrawInventory()
-  for i = 1, 35 do
+  for i = 1, 48 do
     drawSlot(inventorySlots[i], inventory[i])
   end
 
@@ -154,10 +154,25 @@ function inventoryFull()
   Utils.showFlyupText("Inventory full...")
 end
 
-function addedToInveotory(templateId)
+function addedToInveotory(templateId, enchant)
   local item = Loot.findItemByTemplateId(templateId)
 
-  for i = 1, 35 do
+  if enchant then
+    item = Loot.decodeEnchant(item, enchant)
+    print("")
+    print("< ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ <")
+    print(item.name)
+    print(item.enchant)
+    print("Level: "..math.floor(item.itemLevel))
+    print("Grit: "..(item.grit or 0))
+    print("Wit: "..(item.wit or 0))
+    print("Spit: "..(item.spit or 0))
+    print("Health: "..(item.health or 0))
+    print("Stamina: "..(item.stamina or 0))
+    print("< ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ <")
+  end
+
+  for i = 1, 48 do
     if not inventory[i] then
       inventory[i] = item
       redrawInventory()
@@ -248,7 +263,7 @@ function onBindingPressed(thisPlayer, keyCode)
         end
 
         if equippedSlot then
-          Utils.throttleToServer("EquipToPlayer", clientPlayer, inventory[hoveredSlot].templateId, equippedSlot, ringNo)
+          Utils.throttleToServer("EquipToPlayer", clientPlayer, inventory[hoveredSlot].templateId, inventory[hoveredSlot].enchant, equippedSlot, ringNo)
 
           inventory[hoveredSlot] = nil
           hoveredSlot = nil

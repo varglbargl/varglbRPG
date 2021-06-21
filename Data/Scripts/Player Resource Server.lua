@@ -134,7 +134,7 @@ function onPlayerGainedXP(player, amount)
 
     player:AddResource("Level", levelsGained)
 
-    calculateStatsFromGear(player)
+    applyStatsWithGear(player)
 
     if vfx then
       vfx:ScaleTo(Vector3.ONE, 0.2)
@@ -173,23 +173,15 @@ function applyStatsWithGear(player)
   }
 
   local bonusStats = {
-    health = 0,
-    stamina = 0,
     grit = 0,
     wit = 0,
-    spit = 0
+    spit = 0,
+    health = 0,
+    stamina = 0
   }
 
   local function addBonusStats(item)
     if not item then return end
-
-    if item.health then
-      bonusStats.health = bonusStats.health + item.health
-    end
-
-    if item.stamina then
-      bonusStats.stamina = bonusStats.stamina + item.stamina
-    end
 
     if item.grit then
       bonusStats.grit = bonusStats.grit + item.grit
@@ -201,6 +193,14 @@ function applyStatsWithGear(player)
 
     if item.spit then
       bonusStats.spit = bonusStats.spit + item.spit
+    end
+
+    if item.health then
+      bonusStats.health = bonusStats.health + item.health
+    end
+
+    if item.stamina then
+      bonusStats.stamina = bonusStats.stamina + item.stamina
     end
   end
 
