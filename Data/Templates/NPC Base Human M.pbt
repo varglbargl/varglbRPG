@@ -1,6 +1,6 @@
 Assets {
   Id: 15071988423594926472
-  Name: "NPC Base Human Male"
+  Name: "NPC Base Human M"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

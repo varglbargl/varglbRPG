@@ -1,13 +1,13 @@
 Assets {
-  Id: 7390353095753843831
-  Name: "Dubious \"Ring\""
+  Id: 17546877151812397494
+  Name: "Chitin Loop"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 2092930903527075786
+      RootId: 16465552380475538153
       Objects {
-        Id: 2092930903527075786
-        Name: "Dubious \"Ring\""
+        Id: 16465552380475538153
+        Name: "Chitin Loop"
         Transform {
           Scale {
             X: 1
@@ -20,12 +20,12 @@ Assets {
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 14783910342141339575
+              Id: 4763827411346508789
             }
           }
           Overrides {
             Name: "cs:ItemLevel"
-            Float: 39
+            Float: 60
           }
         }
         WantsNetworking: true
@@ -49,12 +49,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14783910342141339575
-      Name: "Fantasy Spell Ingredient 002"
+      Id: 4763827411346508789
+      Name: "Fantasy Spell Ingredient 014"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ingredient_002"
+        AssetId: "UI_Fantasy_Ingredient_014"
       }
     }
     PrimaryAssetId {

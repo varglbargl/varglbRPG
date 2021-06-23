@@ -1,13 +1,13 @@
 Assets {
   Id: 1125189666997816237
-  Name: "NPC Base Human Female"
+  Name: "NPC Base Human F"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 5822135032342826839
       Objects {
         Id: 5822135032342826839
-        Name: "NPC Base Human Female"
+        Name: "NPC Base Human F"
         Transform {
           Scale {
             X: 1
@@ -37,9 +37,7 @@ Assets {
         Name: "Humanoid 1 Rig"
         Transform {
           Location {
-            X: 19.2822266
-            Y: 98.375
-            Z: -3.37988281
+            Z: 108
           }
           Rotation {
           }

@@ -27,9 +27,9 @@ Assets {
       Overrides {
         Name: "sss"
         Color {
-          R: 1
-          G: 1
-          B: 0.548
+          R: 0.937000036
+          G: 0.666644275
+          B: 0.430083
           A: 1
         }
       }

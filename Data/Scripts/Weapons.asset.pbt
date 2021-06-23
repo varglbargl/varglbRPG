@@ -58,6 +58,12 @@ Assets {
           Id: 16387351589372846252
         }
       }
+      Overrides {
+        Name: "cs:StarterCrossbow"
+        AssetReference {
+          Id: 8416007021045060513
+        }
+      }
     }
   }
   SerializationVersion: 89

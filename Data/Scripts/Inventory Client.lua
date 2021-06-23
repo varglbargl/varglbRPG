@@ -159,17 +159,17 @@ function addedToInveotory(templateId, enchant)
 
   if enchant then
     item = Loot.decodeEnchant(item, enchant)
-    print("")
-    print("< ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ <")
-    print(item.name)
-    print(item.enchant)
-    print("Level: "..math.floor(item.itemLevel))
-    print("Grit: "..(item.grit or 0))
-    print("Wit: "..(item.wit or 0))
-    print("Spit: "..(item.spit or 0))
-    print("Health: "..(item.health or 0))
-    print("Stamina: "..(item.stamina or 0))
-    print("< ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ <")
+    -- print("")
+    -- print("< ~ ~ ~ ~ ~ ~ ~ ~ G O T ~ ~ ~ ~ ~ ~ ~ ~ <")
+    -- print(item.name)
+    -- print(item.enchant)
+    -- print("Level: "..math.floor(item.itemLevel))
+    -- print("Grit: "..(item.grit or 0))
+    -- print("Wit: "..(item.wit or 0))
+    -- print("Spit: "..(item.spit or 0))
+    -- print("Health: "..(item.health or 0))
+    -- print("Stamina: "..(item.stamina or 0))
+    -- print("< ~ ~ ~ ~ ~ ~ ~ ~ G O T ~ ~ ~ ~ ~ ~ ~ ~ <")
   end
 
   for i = 1, 48 do

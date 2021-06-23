@@ -1684,13 +1684,6 @@ Objects {
   Id: 16560081394479586313
   Name: "Lumber Jackal"
   Transform {
-    Location {
-      X: 10229.3545
-      Y: 8909.62891
-      Z: -4218.10938
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -1724,14 +1717,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -1806,13 +1791,6 @@ Objects {
   Id: 2311081042664328317
   Name: "Lumber Jackal"
   Transform {
-    Location {
-      X: 11905.5527
-      Y: 6806.58203
-      Z: -4218.10938
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -1846,14 +1824,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -2089,7 +2059,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -102.066154
+            Yaw: -102.066162
           }
         }
       }
@@ -3148,7 +3118,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -102.066154
+            Yaw: -102.066162
           }
         }
       }

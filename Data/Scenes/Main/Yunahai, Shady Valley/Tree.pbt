@@ -3652,11 +3652,10 @@ Objects {
     Location {
       X: 7368.63965
       Y: -10189.0576
-      Z: 2231.3645
+      Z: 2063.57056
     }
     Rotation {
-      Pitch: -1.36603776e-05
-      Yaw: -73.106308
+      Yaw: -73.1063232
       Roll: 180
     }
     Scale {
@@ -3680,6 +3679,12 @@ Objects {
         G: 0.0878145695
         B: 0.0299999714
         A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 2747788483144430206
       }
     }
   }
@@ -3749,6 +3754,12 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 2747788483144430206
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3813,6 +3824,12 @@ Objects {
         G: 0.0878145695
         B: 0.0299999714
         A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 2747788483144430206
       }
     }
   }
@@ -3881,6 +3898,12 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 2747788483144430206
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3918,7 +3941,7 @@ Objects {
     Location {
       X: 6234.59473
       Y: -10233.2158
-      Z: 3051.15625
+      Z: 2756.02832
     }
     Rotation {
       Yaw: 46.1108
@@ -3939,12 +3962,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        R: 1
-        G: 0.0878145695
-        B: 0.0299999714
-        A: 1
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 2747788483144430206
       }
     }
   }
@@ -4013,6 +4033,12 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 2747788483144430206
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4077,6 +4103,12 @@ Objects {
         G: 0.0878145695
         B: 0.0299999714
         A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 2747788483144430206
       }
     }
   }
@@ -4244,53 +4276,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.946417034
-            Y: 0.946417034
-            Z: 0.946417034
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -3.78979182
             Yaw: 2.81897163
             Roll: 2.69108391
           }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12974121763519161735
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 32.319191
-            Y: 182.650146
-            Z: -101.522392
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 0.343667775
-            Yaw: 88.6760483
-            Roll: -0.249908447
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.07582557
-            Y: 1.07582557
-            Z: 0.844041169
-          }
-        }
-        Overrides {
-          Name: "DisableReceiveDecals"
-          Bool: false
         }
       }
     }
@@ -4341,46 +4332,9 @@ Objects {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.29152691
-            Y: 1.29152691
-            Z: 1.29152691
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
             Yaw: 61.293457
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12974121763519161735
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 32.319191
-            Y: 182.650146
-            Z: -101.522392
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 0.343667775
-            Yaw: 88.6760483
-            Roll: -0.249908447
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.07582557
-            Y: 1.07582557
-            Z: 0.844041169
           }
         }
       }
@@ -4429,14 +4383,6 @@ Objects {
             X: 5046.89453
             Y: 4264.21777
             Z: 1301.58936
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.2358824
-            Y: 1.2358824
-            Z: 1.2358824
           }
         }
         Overrides {
@@ -4616,35 +4562,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9482.52051
-            Y: 8859.81
-            Z: 2307.41724
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.06341505
-            Y: 1.06341505
-            Z: 1.06341505
+            X: 9251.74316
+            Y: 9292.44238
+            Z: 2217.9314
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -8.85807323
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12974121763519161735
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -168.497147
-            Y: 602.043945
+            Yaw: 13.2360029
           }
         }
       }
@@ -4706,9 +4632,30 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 7.85990143
-            Yaw: -58.0497894
-            Roll: -5.70627165
+            Pitch: 5.98622322
+            Yaw: -46.5360107
+            Roll: -3.70672607
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12974121763519161735
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -81.1884384
+            Y: -9.94199
+            Z: 36.2514
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.05645585
+            Y: 1.05645585
+            Z: 0.828844547
           }
         }
       }
@@ -4754,25 +4701,25 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 62.234375
-            Y: 8466.95801
-            Z: 1137.19312
+            X: -305.785645
+            Y: 8547.67871
+            Z: 1183.14429
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 0.98732
-            Y: 0.98732
-            Z: 0.98732
+            X: 1.06284368
+            Y: 1.06284368
+            Z: 1.06284368
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 3.11799479
-            Yaw: 22.6110764
-            Roll: -12.2936325
+            Pitch: 1.25762904
+            Yaw: 22.7808876
+            Roll: -7.84475708
           }
         }
       }
@@ -6745,15 +6692,15 @@ Objects {
     Location {
       X: 7452.5
       Y: 3741.12
-      Z: 143.666504
+      Z: 149.89502
     }
     Rotation {
       Yaw: 73.1642227
     }
     Scale {
-      X: 0.364636272
-      Y: 0.439479709
-      Z: 0.500498891
+      X: 0.388214678
+      Y: 0.467897683
+      Z: 0.443043083
     }
   }
   ParentId: 3755928285586410568
@@ -7281,9 +7228,9 @@ Objects {
       Z: 1768.74561
     }
     Rotation {
-      Pitch: 7.96565294
-      Yaw: -15.2825718
-      Roll: -1.01168895
+      Pitch: -10.8108521
+      Yaw: -173.769562
+      Roll: -1.97296143
     }
     Scale {
       X: 0.952983
@@ -7764,8 +7711,8 @@ Objects {
   Transform {
     Location {
       X: 2485.13281
-      Y: 8733.32715
-      Z: 1333.46655
+      Y: 8754.51074
+      Z: 1375.82275
     }
     Rotation {
     }

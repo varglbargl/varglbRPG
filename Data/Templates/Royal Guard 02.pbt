@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4691554929457797093
         ChildIds: 8639071953604105084
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -2465,6 +2465,7 @@ Assets {
           }
         }
         ParentId: 418609965197095525
+        ChildIds: 848324067089423788
         ChildIds: 3320182218427950768
         ChildIds: 10962687259210429235
         ChildIds: 3313166416556290596
@@ -2481,6 +2482,56 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 848324067089423788
+        Name: "Fantasy Pommel 04"
+        Transform {
+          Location {
+            X: 24.3818436
+            Y: 14.3261414
+            Z: -8.43069649
+          }
+          Rotation {
+            Pitch: -4.85015869
+            Yaw: -98.7177734
+            Roll: -140.153458
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4423481638830272619
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12510064410993333055
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -4544,6 +4595,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_shield_003"
+      }
+    }
+    Assets {
+      Id: 12510064410993333055
+      Name: "Fantasy Pommel 04"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_pommel_004"
       }
     }
     Assets {

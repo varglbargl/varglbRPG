@@ -1,13 +1,13 @@
 Assets {
-  Id: 11539266917398025745
-  Name: "Bloodstone Ring"
+  Id: 12389155043803977078
+  Name: "Decoder Ring"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 2092930903527075786
+      RootId: 16465552380475538153
       Objects {
-        Id: 2092930903527075786
-        Name: "Bloodstone Ring"
+        Id: 16465552380475538153
+        Name: "Decoder Ring"
         Transform {
           Scale {
             X: 1
@@ -20,12 +20,12 @@ Assets {
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 16398179017529411995
+              Id: 5361243565669731562
             }
           }
           Overrides {
             Name: "cs:ItemLevel"
-            Float: 18
+            Float: 25
           }
         }
         WantsNetworking: true
@@ -49,12 +49,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16398179017529411995
-      Name: "Fantasy Jewelry 004"
+      Id: 5361243565669731562
+      Name: "Fantasy Crown 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Jewelry_004"
+        AssetId: "UI_Fantasy_Equip_Crown_001"
       }
     }
     PrimaryAssetId {

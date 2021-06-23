@@ -108,7 +108,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Light {
-          Intensity: 5
+          Intensity: 2
           Color {
             R: 0.404999971
             G: 1

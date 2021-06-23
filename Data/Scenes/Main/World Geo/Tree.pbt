@@ -433,6 +433,24 @@ Objects {
     }
   }
   ParentId: 5220668303531152840
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Fog Color"
+      Color {
+        R: 0.0669499785
+        G: 0.309000015
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Caustics Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Caustics Brightness"
+      Float: 50
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

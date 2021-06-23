@@ -46,7 +46,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6955185678222558296
+  Id: 16211681226626078718
   Name: "Royal Guard 01"
   Transform {
     Scale {

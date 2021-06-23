@@ -10,9 +10,9 @@ Assets {
         Name: "Red Tree Leaves"
         Transform {
           Scale {
-            X: 1.18841255
-            Y: 1.18841255
-            Z: 1.18841255
+            X: 1.29152691
+            Y: 1.29152691
+            Z: 1.29152691
           }
         }
         ChildIds: 12974121763519161735
@@ -32,16 +32,19 @@ Assets {
         Name: "Tree Oak 01"
         Transform {
           Location {
-            X: -71.0800781
-            Y: -23.0439453
+            X: 32.319191
+            Y: 182.650146
+            Z: -101.522392
           }
           Rotation {
-            Yaw: 178.774658
+            Pitch: 0.343667775
+            Yaw: 88.6760483
+            Roll: -0.249908447
           }
           Scale {
-            X: 1.05645585
-            Y: 1.05645585
-            Z: 0.828844607
+            X: 1.07582557
+            Y: 1.07582557
+            Z: 0.844041169
           }
         }
         ParentId: 11236710954395386942
@@ -67,6 +70,12 @@ Assets {
             Name: "ma:Nature_Trunk:id"
             AssetReference {
               Id: 1915461248412394696
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 2747788483144430206
             }
           }
         }
@@ -104,18 +113,18 @@ Assets {
         Name: "Bush 02"
         Transform {
           Location {
-            X: 71.0800781
-            Y: 23.0439453
-            Z: 1151.88086
+            X: -77.0612946
+            Y: 39.5505753
+            Z: 1194.50195
           }
           Rotation {
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
-            X: 3.42977977
-            Y: 3.42977977
-            Z: 1.13809907
+            X: 4.68901825
+            Y: 4.68901825
+            Z: 1.55595076
           }
         }
         ParentId: 11236710954395386942
@@ -133,6 +142,12 @@ Assets {
               G: 0.0878145695
               B: 0.0299999714
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 2747788483144430206
             }
           }
         }

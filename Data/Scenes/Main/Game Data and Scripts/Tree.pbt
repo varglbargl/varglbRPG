@@ -15,7 +15,6 @@ Objects {
     }
   }
   ParentId: 11421575165578890577
-  ChildIds: 2901263944222707457
   ChildIds: 3567959178173361743
   ChildIds: 10372428667076273218
   ChildIds: 8148637391485548635
@@ -3315,7 +3314,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3325,7 +3324,7 @@ Objects {
   }
   Control {
     Width: 700
-    Height: -140
+    Height: -118
     UIX: -20
     UIY: 20
     RenderTransformPivot {
@@ -3512,7 +3511,7 @@ Objects {
   }
   Control {
     Width: -40
-    Height: 476
+    Height: 500
     UIX: 20
     UIY: 444
     RenderTransformPivot {
@@ -3555,40 +3554,53 @@ Objects {
   }
   ParentId: 9082438934664349746
   ChildIds: 7035511091835870270
-  ChildIds: 16483905823156258529
-  ChildIds: 760520401037794480
-  ChildIds: 204342338907081113
-  ChildIds: 585861333338248115
-  ChildIds: 12927212185710999682
-  ChildIds: 4899943793308829849
-  ChildIds: 8709230861552016144
-  ChildIds: 12164663662260152822
-  ChildIds: 10954483736236524028
-  ChildIds: 10030159761289851544
-  ChildIds: 17718188257138648193
-  ChildIds: 9093467204584525926
-  ChildIds: 6095477238590898197
-  ChildIds: 11546436572684344003
-  ChildIds: 7054065957550765419
-  ChildIds: 119648388878265624
-  ChildIds: 9436205047403256363
-  ChildIds: 16807079923792692869
-  ChildIds: 4478153636359596619
-  ChildIds: 14701970903174349174
-  ChildIds: 1304813585262480358
-  ChildIds: 5188668833240807117
-  ChildIds: 4754956438037717538
-  ChildIds: 12298028603459763894
-  ChildIds: 9135702271094396349
-  ChildIds: 14561858195823742273
-  ChildIds: 2636163382986464646
-  ChildIds: 3438424039644616964
-  ChildIds: 17315769689138834683
-  ChildIds: 13068708097241876245
-  ChildIds: 3530019015007256896
-  ChildIds: 17650748163916860826
-  ChildIds: 195338026977599626
-  ChildIds: 8355780905063001749
+  ChildIds: 761903525848829583
+  ChildIds: 10249872980720182813
+  ChildIds: 9506246599554149117
+  ChildIds: 650099032432107648
+  ChildIds: 1762583348103938760
+  ChildIds: 15765938415905305551
+  ChildIds: 17176025340932573973
+  ChildIds: 4669135183684465401
+  ChildIds: 7257309424604374279
+  ChildIds: 9819648303990964800
+  ChildIds: 12191354152058832283
+  ChildIds: 14015114019856562371
+  ChildIds: 14568296600705676476
+  ChildIds: 8292428896453663276
+  ChildIds: 3888718904757724795
+  ChildIds: 13610036642970546165
+  ChildIds: 9888499583182369979
+  ChildIds: 12252751423268862173
+  ChildIds: 10989971419660650252
+  ChildIds: 9118473330935809143
+  ChildIds: 14924895510283981330
+  ChildIds: 637341403450974328
+  ChildIds: 1962957879950318510
+  ChildIds: 13540376976690147549
+  ChildIds: 4058500825923397540
+  ChildIds: 18309185440791370964
+  ChildIds: 5175873212281868119
+  ChildIds: 1160275212522632286
+  ChildIds: 8413840979040830689
+  ChildIds: 9111578346534162732
+  ChildIds: 6431385273441004399
+  ChildIds: 16645801748296363955
+  ChildIds: 7495464522475434456
+  ChildIds: 14301089837403901337
+  ChildIds: 10968298120798868392
+  ChildIds: 10732576324717050696
+  ChildIds: 13345084494531733944
+  ChildIds: 8792380319669804882
+  ChildIds: 10207976101749416935
+  ChildIds: 113057031267389147
+  ChildIds: 166620604575747473
+  ChildIds: 2494845771752414445
+  ChildIds: 3810661105067722488
+  ChildIds: 4435223058433088304
+  ChildIds: 8440091797338592396
+  ChildIds: 18339778816841678475
+  ChildIds: 208894503492196539
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3602,8 +3614,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: -50
-    Height: -46
+    Width: -44
+    Height: -44
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3630,7 +3642,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8355780905063001749
+  Id: 208894503492196539
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -3667,6 +3679,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -3678,11 +3698,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 540
+          Float: 546
         }
         Overrides {
           Name: "UIY"
-          Float: 360
+          Float: 390
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -3692,7 +3722,7 @@ Objects {
   }
 }
 Objects {
-  Id: 195338026977599626
+  Id: 18339778816841678475
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -3729,6 +3759,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -3740,11 +3778,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 450
+          Float: 468
         }
         Overrides {
           Name: "UIY"
-          Float: 360
+          Float: 390
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -3754,7 +3802,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17650748163916860826
+  Id: 8440091797338592396
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -3791,6 +3839,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -3802,11 +3858,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 360
+          Float: 390
         }
         Overrides {
           Name: "UIY"
-          Float: 360
+          Float: 390
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -3816,7 +3882,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3530019015007256896
+  Id: 4435223058433088304
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -3853,6 +3919,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -3864,11 +3938,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 270
+          Float: 312
         }
         Overrides {
           Name: "UIY"
-          Float: 360
+          Float: 390
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -3878,7 +3962,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13068708097241876245
+  Id: 3810661105067722488
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -3915,6 +3999,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -3926,11 +4018,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 180
+          Float: 234
         }
         Overrides {
           Name: "UIY"
-          Float: 360
+          Float: 390
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -3940,7 +4042,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17315769689138834683
+  Id: 2494845771752414445
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -3977,6 +4079,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -3988,11 +4098,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 156
         }
         Overrides {
           Name: "UIY"
-          Float: 360
+          Float: 390
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4002,7 +4122,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3438424039644616964
+  Id: 166620604575747473
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4041,62 +4161,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
+          Name: "Width"
+          Int: 70
         }
         Overrides {
-          Name: "UIY"
-          Float: 360
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16796109976143095477
-    }
-  }
-}
-Objects {
-  Id: 2636163382986464646
-  Name: "Inveotory Slot"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16304735260757465131
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6360462644908336145
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Inveotory Slot"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4108,11 +4178,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 540
+          Float: 78
         }
         Overrides {
           Name: "UIY"
-          Float: 270
+          Float: 390
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4122,7 +4202,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14561858195823742273
+  Id: 113057031267389147
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4159,6 +4239,90 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 390
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 10207976101749416935
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4170,11 +4334,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 450
+          Float: 546
         }
         Overrides {
           Name: "UIY"
-          Float: 270
+          Float: 312
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4184,7 +4358,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9135702271094396349
+  Id: 8792380319669804882
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4221,6 +4395,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4232,11 +4414,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 360
+          Float: 468
         }
         Overrides {
           Name: "UIY"
-          Float: 270
+          Float: 312
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4246,7 +4438,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12298028603459763894
+  Id: 13345084494531733944
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4283,6 +4475,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4294,11 +4494,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 270
+          Float: 390
         }
         Overrides {
           Name: "UIY"
-          Float: 270
+          Float: 312
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4308,7 +4518,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4754956438037717538
+  Id: 10732576324717050696
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4345,6 +4555,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4356,11 +4574,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 180
+          Float: 312
         }
         Overrides {
           Name: "UIY"
-          Float: 270
+          Float: 312
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4370,7 +4598,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5188668833240807117
+  Id: 10968298120798868392
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4407,6 +4635,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4418,11 +4654,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 234
         }
         Overrides {
           Name: "UIY"
-          Float: 270
+          Float: 312
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4432,7 +4678,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1304813585262480358
+  Id: 14301089837403901337
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4471,62 +4717,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
+          Name: "Width"
+          Int: 70
         }
         Overrides {
-          Name: "UIY"
-          Float: 270
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16796109976143095477
-    }
-  }
-}
-Objects {
-  Id: 14701970903174349174
-  Name: "Inveotory Slot"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16304735260757465131
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6360462644908336145
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Inveotory Slot"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4538,11 +4734,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 540
+          Float: 156
         }
         Overrides {
           Name: "UIY"
-          Float: 180
+          Float: 312
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4552,7 +4758,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4478153636359596619
+  Id: 7495464522475434456
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4589,6 +4795,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4600,11 +4814,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 450
+          Float: 78
         }
         Overrides {
           Name: "UIY"
-          Float: 180
+          Float: 312
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4614,7 +4838,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16807079923792692869
+  Id: 16645801748296363955
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4651,6 +4875,90 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 312
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 6431385273441004399
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4662,11 +4970,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 360
+          Float: 546
         }
         Overrides {
           Name: "UIY"
-          Float: 180
+          Float: 234
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4676,7 +4994,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9436205047403256363
+  Id: 9111578346534162732
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4713,6 +5031,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4724,11 +5050,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 270
+          Float: 468
         }
         Overrides {
           Name: "UIY"
-          Float: 180
+          Float: 234
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4738,7 +5074,7 @@ Objects {
   }
 }
 Objects {
-  Id: 119648388878265624
+  Id: 8413840979040830689
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4775,6 +5111,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4786,11 +5130,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 180
+          Float: 390
         }
         Overrides {
           Name: "UIY"
-          Float: 180
+          Float: 234
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4800,7 +5154,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7054065957550765419
+  Id: 1160275212522632286
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4837,6 +5191,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4848,11 +5210,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 312
         }
         Overrides {
           Name: "UIY"
-          Float: 180
+          Float: 234
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4862,7 +5234,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11546436572684344003
+  Id: 5175873212281868119
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -4901,62 +5273,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
+          Name: "Width"
+          Int: 70
         }
         Overrides {
-          Name: "UIY"
-          Float: 180
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16796109976143095477
-    }
-  }
-}
-Objects {
-  Id: 6095477238590898197
-  Name: "Inveotory Slot"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16304735260757465131
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6360462644908336145
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Inveotory Slot"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -4968,11 +5290,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 540
+          Float: 234
         }
         Overrides {
           Name: "UIY"
-          Float: 90
+          Float: 234
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -4982,7 +5314,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9093467204584525926
+  Id: 18309185440791370964
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5019,6 +5351,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -5030,11 +5370,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 450
+          Float: 156
         }
         Overrides {
           Name: "UIY"
-          Float: 90
+          Float: 234
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5044,7 +5394,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17718188257138648193
+  Id: 4058500825923397540
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5081,6 +5431,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -5092,11 +5450,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 360
+          Float: 78
         }
         Overrides {
           Name: "UIY"
-          Float: 90
+          Float: 234
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5106,7 +5474,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10030159761289851544
+  Id: 13540376976690147549
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5143,6 +5511,90 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 234
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 1962957879950318510
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -5154,11 +5606,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 270
+          Float: 546
         }
         Overrides {
           Name: "UIY"
-          Float: 90
+          Float: 156
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5168,7 +5630,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10954483736236524028
+  Id: 637341403450974328
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5205,6 +5667,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -5216,11 +5686,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 180
+          Float: 468
         }
         Overrides {
           Name: "UIY"
-          Float: 90
+          Float: 156
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5230,7 +5710,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12164663662260152822
+  Id: 14924895510283981330
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5267,6 +5747,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -5278,11 +5766,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 390
         }
         Overrides {
           Name: "UIY"
-          Float: 90
+          Float: 156
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5292,7 +5790,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8709230861552016144
+  Id: 9118473330935809143
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5331,62 +5829,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
+          Name: "Width"
+          Int: 70
         }
         Overrides {
-          Name: "UIY"
-          Float: 90
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16796109976143095477
-    }
-  }
-}
-Objects {
-  Id: 4899943793308829849
-  Name: "Inveotory Slot"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16304735260757465131
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6360462644908336145
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Inveotory Slot"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
+          Name: "Height"
+          Int: 70
         }
         Overrides {
           Name: "Scale"
@@ -5398,11 +5846,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 540
+          Float: 312
         }
         Overrides {
           Name: "UIY"
-          Float: 0
+          Float: 156
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5412,7 +5870,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12927212185710999682
+  Id: 10989971419660650252
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5451,6 +5909,14 @@ Objects {
           }
         }
         Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
           Name: "Scale"
           Vector {
             X: 1
@@ -5460,11 +5926,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 450
+          Float: 234
         }
         Overrides {
           Name: "UIY"
-          Float: 0
+          Float: 156
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5474,7 +5950,7 @@ Objects {
   }
 }
 Objects {
-  Id: 585861333338248115
+  Id: 12252751423268862173
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5513,6 +5989,14 @@ Objects {
           }
         }
         Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
           Name: "Scale"
           Vector {
             X: 1
@@ -5522,11 +6006,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 360
+          Float: 156
         }
         Overrides {
           Name: "UIY"
-          Float: 0
+          Float: 156
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5536,7 +6030,7 @@ Objects {
   }
 }
 Objects {
-  Id: 204342338907081113
+  Id: 9888499583182369979
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5575,6 +6069,14 @@ Objects {
           }
         }
         Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
           Name: "Scale"
           Vector {
             X: 1
@@ -5584,11 +6086,21 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 270
+          Float: 78
         }
         Overrides {
           Name: "UIY"
-          Float: 0
+          Float: 156
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5598,7 +6110,7 @@ Objects {
   }
 }
 Objects {
-  Id: 760520401037794480
+  Id: 13610036642970546165
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5637,6 +6149,14 @@ Objects {
           }
         }
         Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
           Name: "Scale"
           Vector {
             X: 1
@@ -5645,12 +6165,18 @@ Objects {
           }
         }
         Overrides {
-          Name: "UIX"
-          Float: 180
-        }
-        Overrides {
           Name: "UIY"
-          Float: 0
+          Float: 156
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5660,7 +6186,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16483905823156258529
+  Id: 3888718904757724795
   Name: "Inveotory Slot"
   Transform {
     Location {
@@ -5699,6 +6225,14 @@ Objects {
           }
         }
         Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
           Name: "Scale"
           Vector {
             X: 1
@@ -5708,11 +6242,1109 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 546
         }
         Overrides {
           Name: "UIY"
-          Float: 0
+          Float: 78
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 8292428896453663276
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 468
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 78
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 14568296600705676476
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 390
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 78
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 14015114019856562371
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 312
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 78
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 12191354152058832283
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 234
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 78
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 9819648303990964800
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 156
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 78
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 7257309424604374279
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 78
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 78
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 4669135183684465401
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 78
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 17176025340932573973
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 546
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 15765938415905305551
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 468
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 1762583348103938760
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 390
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 650099032432107648
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 312
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 9506246599554149117
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 234
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 10249872980720182813
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 156
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16796109976143095477
+    }
+  }
+}
+Objects {
+  Id: 761903525848829583
+  Name: "Inveotory Slot"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16304735260757465131
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6360462644908336145
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Inveotory Slot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 78
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16060011717310805568
+      value {
+        Overrides {
+          Name: "ShadowOffset"
+          Vector2 {
+          }
         }
       }
     }
@@ -5755,6 +7387,14 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 70
+        }
+        Overrides {
+          Name: "Height"
+          Int: 70
         }
       }
     }
@@ -7594,7 +9234,7 @@ Objects {
         Id: 4580931291840818112
       }
       Color {
-        A: 0.4
+        A: 0.5
       }
       TeamSettings {
       }
@@ -7661,7 +9301,7 @@ Objects {
         Id: 5649597641161709318
       }
       Color {
-        A: 0.4
+        A: 0.5
       }
       TeamSettings {
       }
@@ -7728,7 +9368,7 @@ Objects {
         Id: 5649597641161709318
       }
       Color {
-        A: 0.4
+        A: 0.5
       }
       TeamSettings {
       }
@@ -7795,7 +9435,7 @@ Objects {
         Id: 11663837110343080261
       }
       Color {
-        A: 0.4
+        A: 0.5
       }
       TeamSettings {
       }
@@ -7863,7 +9503,7 @@ Objects {
         Id: 11663837110343080261
       }
       Color {
-        A: 0.4
+        A: 0.5
       }
       TeamSettings {
       }
@@ -10264,8 +11904,8 @@ Objects {
   }
 }
 Objects {
-  Id: 2901263944222707457
-  Name: "Skybox"
+  Id: 5911767565409797501
+  Name: "Day Night Sky by Rasm (modified by varglbargl)"
   Transform {
     Scale {
       X: 1
@@ -10273,19 +11913,63 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11638797133159733387
+  ParentId: 11421575165578890577
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Skybox"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2687820722041061846
+      value {
+        Overrides {
+          Name: "cs:DegreesPerSecond"
+          Float: 10
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10050366097919261465
+      value {
+        Overrides {
+          Name: "bp:Shadow Cascade Count"
+          Int: 3
+        }
+        Overrides {
+          Name: "bp:Dynamic Shadow Distance"
+          Float: 5
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15353451395209644350
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Day Night Sky by Rasm (modified by varglbargl)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15823941823731023788
+      value {
+      }
+    }
+    TemplateAsset {
+      Id: 2730962379816390879
+    }
   }
 }
 Objects {

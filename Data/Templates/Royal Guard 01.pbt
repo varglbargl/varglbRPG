@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4691554929457797093
         ChildIds: 14372389616985081345
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -2540,6 +2540,7 @@ Assets {
         ParentId: 13043437336499227027
         ChildIds: 12966266434287715441
         ChildIds: 4004228842597197454
+        ChildIds: 17190226106253902019
         ChildIds: 16009896011027145848
         ChildIds: 6226080348804836391
         ChildIds: 16002746302661488152
@@ -2710,13 +2711,63 @@ Assets {
         }
       }
       Objects {
+        Id: 17190226106253902019
+        Name: "Fantasy Pommel 04"
+        Transform {
+          Location {
+            X: 27.8272038
+            Y: 8.19137096
+            Z: 34.39254
+          }
+          Rotation {
+            Pitch: -4.9198
+            Yaw: -109.906128
+            Roll: -142.323608
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9202343316673717796
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12510064410993333055
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 16009896011027145848
         Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            X: 29.1318932
-            Y: 7.04293251
-            Z: 36.415
+            X: 29.2402916
+            Y: 7.34176
+            Z: 36.4423447
           }
           Rotation {
             Pitch: 37.5136185
@@ -4287,6 +4338,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_blade_sword_004_ref"
+      }
+    }
+    Assets {
+      Id: 12510064410993333055
+      Name: "Fantasy Pommel 04"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_pommel_004"
       }
     }
     Assets {

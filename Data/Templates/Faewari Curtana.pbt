@@ -218,7 +218,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "1hand_melee_slash_left"
+          Animation: "dual_melee_right_hand_slash_left"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:primaryaction"
