@@ -29,6 +29,7 @@ Assets {
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -69,6 +70,7 @@ Assets {
         ChildIds: 12511185183702147158
         ChildIds: 16166714892806026538
         ChildIds: 2595880805745512117
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -555,6 +557,7 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
+          DisableAngularMotionBlur: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -617,6 +620,7 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
+          DisableAngularMotionBlur: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -759,6 +763,7 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
+          DisableAngularMotionBlur: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -826,6 +831,7 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
+          DisableAngularMotionBlur: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -973,6 +979,7 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
+          DisableAngularMotionBlur: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -1040,6 +1047,7 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
+          DisableAngularMotionBlur: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -1107,6 +1115,7 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
+          DisableAngularMotionBlur: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -1204,4 +1213,6 @@ Assets {
     }
   }
   SerializationVersion: 89
+  VirtualFolderPath: "Gear"
+  VirtualFolderPath: "Potions"
 }

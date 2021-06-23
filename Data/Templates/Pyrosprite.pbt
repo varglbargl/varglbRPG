@@ -160,7 +160,6 @@ Assets {
         ParentId: 9951396153306744005
         ChildIds: 3810707152439941841
         ChildIds: 8437071907676576254
-        ChildIds: 2015788379081974266
         ChildIds: 13390154060185515382
         ChildIds: 9571594831139579309
         ChildIds: 1494482017119174380
@@ -269,61 +268,6 @@ Assets {
         Script {
           ScriptAsset {
             Id: 13924186888309160458
-          }
-        }
-      }
-      Objects {
-        Id: 2015788379081974266
-        Name: "Point Light"
-        Transform {
-          Location {
-            Z: 80
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15089466173944845956
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Light {
-          Intensity: 10
-          Color {
-            R: 1
-            G: 0.6015
-            B: 0.202999949
-            A: 1
-          }
-          VolumetricIntensity: 5
-          TeamSettings {
-          }
-          Light {
-            Temperature: 6500
-            LocalLight {
-              AttenuationRadius: 250
-              PointLight {
-                SourceRadius: 20
-                SoftSourceRadius: 20
-                FallOffExponent: 8
-                UseFallOffExponent: true
-              }
-            }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
           }
         }
       }
@@ -468,6 +412,7 @@ Assets {
           }
         }
         ParentId: 15089466173944845956
+        ChildIds: 2015788379081974266
         ChildIds: 5078290776169132191
         ChildIds: 12046130561887249457
         ChildIds: 951113861200961909
@@ -483,6 +428,60 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 2015788379081974266
+        Name: "Point Light"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1494482017119174380
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Light {
+          Intensity: 5
+          Color {
+            R: 1
+            G: 0.6015
+            B: 0.202999949
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 400
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
         }
       }
       Objects {
@@ -691,8 +690,8 @@ Assets {
           }
         }
         ParentId: 1494482017119174380
-        ChildIds: 5415891546705750041
         ChildIds: 4295398622420137316
+        ChildIds: 5415891546705750041
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -707,6 +706,39 @@ Assets {
         }
         Folder {
           IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 4295398622420137316
+        Name: "Simple Keep Upright"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12210565309108672227
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 13901690737120962492
+          }
         }
       }
       Objects {
@@ -767,39 +799,6 @@ Assets {
               LinearDamping: 0.01
             }
             BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 4295398622420137316
-        Name: "Simple Keep Upright"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12210565309108672227
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 13901690737120962492
           }
         }
       }

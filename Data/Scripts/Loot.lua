@@ -62,14 +62,6 @@ readLootTable(Rings)
 readLootTable(Weapons)
 readLootTable(Potions)
 
-table.sort(lootTable, function(a, b)
-  if a.itemLevel == b.itemLevel then
-    return a.name < b.name
-  else
-    return a.itemLevel < b.itemLevel
-  end
-end)
-
 local superlatives = {
   g = {"Executioner's", "Blacksmith's", "Big Jim's", "Powerfully", "Aggressively", "Hella", "Unintentionally", "Bumblingly", "Brazenly", "Overpoweringly"},
   w = {"Necromancer's", "Philosopher's", "Alchemist's", "Impossibly", "Confusingly", "Inexplicably", "Mysteriously", "Puzzlingly", "Ambiguously", "Paradoxically", "Figuratively"},
@@ -94,7 +86,7 @@ local suffixes = {
   a = {"Ease", "the Fox", "the Eagle", "the Lion and the Unicorn", "the Swordfish", "the Stallion", "the Crown", "the Empire", "the Hummingbird", "Craftsmanship", "the Show", "the Big Game", "the Master", "Go Fast", "the Professional", "Attractiveness", "Gettin' It Done", "Bookin' It", "Leaving", "Running Away", "Sprinting and Gliding Slightly Better", "the Queen", "the King", "Royalty", "Grace", "Regicide", "Honor", "Nobility", "the Aristocracy", "the Royal Guard", "the Queen's Court"}
 }
 
-local unique = {"The Paid Vacation", "Bungo's Delite", ""}
+local uniqueNames = {"The Paid Vacation", "Bungo's Delite", "Herald of the Primatriarchy"}
 
 function assignStat(item, letter)
   local magicNumber = Utils.magicNumber(item.itemLevel)
@@ -221,49 +213,29 @@ function Loot.decodeEnchant(item, code)
 end
 
 function Loot.getRandom(level, rarity)
-  local startIndex = nil
-  local stopIndex = nil
-  local result = nil
+  rarity = rarity or 1
 
-  if not rarity then
-    local roll = math.random(1, 100)
+  local rollTable = {}
+  local roll = math.random(1, 100)
 
-    if roll <= lootRarity[4] then
-      rarity = 3
-    elseif roll <= lootRarity[3] then
-      rarity = 2
-    elseif roll <= lootRarity[2] then
-      rarity = 1
-    else
-      rarity = 0
-    end
+  if roll <= lootRarity[4] then
+    rarity = 3
+  elseif roll <= lootRarity[3] then
+    rarity = 2
+  elseif roll <= lootRarity[2] then
+    rarity = 1
+  else
+    rarity = 0
   end
 
   if level then
     for i, item in ipairs(lootTable) do
-      if item.itemLevel < level then
-        startIndex = i
-      end
-
-      if item.itemLevel > level then
-        stopIndex = i
-        break
+      if item.itemLevel >= level - 1 and item.itemLevel <= level + 1 then
+        table.insert(rollTable, item)
       end
     end
 
-    if stopIndex then
-      stopIndex = stopIndex
-    else
-      stopIndex = #lootTable
-    end
-
-    if startIndex then
-      startIndex = startIndex
-    else
-      startIndex = 1
-    end
-
-    result = lootTable[math.random(startIndex, stopIndex)]
+    result = rollTable[math.random(1, #rollTable)]
   else
     result = lootTable[math.random(1, #lootTable)]
   end
@@ -271,7 +243,7 @@ function Loot.getRandom(level, rarity)
   assert(result, "Loot.getRandom really should be able to find at least one item. Something's up...")
 
   if result.socket == "left_wrist" then
-    rarity = math.max(rarity, 1)
+    rarity = math.max(roll, 1)
   end
 
   return Loot.enchantItem(result, rarity)

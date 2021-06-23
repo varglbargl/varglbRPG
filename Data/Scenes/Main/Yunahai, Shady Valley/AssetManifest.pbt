@@ -197,15 +197,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10849591045502482049
-  Name: "Liquid Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_liquid"
-  }
-}
-Assets {
   Id: 10835155324150586940
   Name: "Rock Pile 001"
   PlatformAssetType: 1

@@ -22,6 +22,12 @@ Assets {
           Id: 11913309828716895881
         }
       }
+      Overrides {
+        Name: "cs:Potions"
+        AssetReference {
+          Id: 595108104446859637
+        }
+      }
     }
   }
   SerializationVersion: 89

@@ -2,7 +2,7 @@ Name: "Game Data and Scripts"
 RootId: 11421575165578890577
 Objects {
   Id: 11638797133159733387
-  Name: "ClientContext"
+  Name: "Client Scripts and UI"
   Transform {
     Location {
     }
@@ -11922,28 +11922,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 2687820722041061846
-      value {
-        Overrides {
-          Name: "cs:DegreesPerSecond"
-          Float: 10
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10050366097919261465
-      value {
-        Overrides {
-          Name: "bp:Shadow Cascade Count"
-          Int: 3
-        }
-        Overrides {
-          Name: "bp:Dynamic Shadow Distance"
-          Float: 5
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 15353451395209644350
       value {
         Overrides {
@@ -11960,11 +11938,6 @@ Objects {
           Rotator {
           }
         }
-      }
-    }
-    ParameterOverrideMap {
-      key: 15823941823731023788
-      value {
       }
     }
     TemplateAsset {

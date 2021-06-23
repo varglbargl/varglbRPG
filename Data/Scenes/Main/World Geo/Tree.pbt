@@ -2,7 +2,7 @@ Name: "World Geo"
 RootId: 18063060926829527243
 Objects {
   Id: 1487744337751821456
-  Name: "Onolano, Red Mountain"
+  Name: "Alunalorin, Elk Foothills"
   Transform {
     Location {
     }
@@ -29,7 +29,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Onolano, Red Mountain"
+    FilePartitionName: "Alunalorin, Elk Foothills"
   }
 }
 Objects {

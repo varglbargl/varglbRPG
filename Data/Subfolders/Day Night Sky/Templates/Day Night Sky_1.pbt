@@ -401,6 +401,14 @@ Assets {
               Value: "mc:esundiscshapes:0"
             }
           }
+          Overrides {
+            Name: "bp:Shadow Cascade Count"
+            Int: 3
+          }
+          Overrides {
+            Name: "bp:Dynamic Shadow Distance"
+            Float: 5
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

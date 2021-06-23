@@ -1843,8 +1843,8 @@ Objects {
   Name: "Decal Wood Ends Variations"
   Transform {
     Location {
-      X: 4071.86523
-      Y: 756.069336
+      X: 3556.57178
+      Y: 890.831055
       Z: 270.984131
     }
     Rotation {
@@ -2246,8 +2246,8 @@ Objects {
   Name: "Tree Oak Stump 01"
   Transform {
     Location {
-      X: 4087.04785
-      Y: 710.360352
+      X: 3571.75488
+      Y: 845.12207
       Z: 50.5854492
     }
     Rotation {
@@ -2950,14 +2950,14 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 9389.04688
-      Y: -4573.45801
-      Z: 1191.34082
+      X: 9413.54
+      Y: -4525.05664
+      Z: 1191.12207
     }
     Rotation {
-      Pitch: -1.81896126
-      Yaw: -19.5521545
-      Roll: -5.33877511e-08
+      Pitch: -2.9430542
+      Yaw: -26.8526917
+      Roll: -1.25726318
     }
     Scale {
       X: 1.83275425
@@ -3056,9 +3056,9 @@ Objects {
   Name: "Tree Sakura Hero Bare 02"
   Transform {
     Location {
-      X: 510.164063
-      Y: -4869.25391
-      Z: 990.321533
+      X: 636.531738
+      Y: -5531.17
+      Z: 1092.53931
     }
     Rotation {
       Yaw: 37.5309792
@@ -3153,8 +3153,8 @@ Objects {
   Name: "Tree Sakura Hero Bare 01"
   Transform {
     Location {
-      X: -1573.87256
-      Y: -10159.4053
+      X: -2075.43164
+      Y: -11396.5146
       Z: 48.8833
     }
     Rotation {
@@ -3200,11 +3200,12 @@ Objects {
   Name: "Tree Sakura Hero Bare 02"
   Transform {
     Location {
-      X: -767.662109
-      Y: -8573.82422
-      Z: 62.5561523
+      X: -264.753906
+      Y: -9257.13
+      Z: 91.324707
     }
     Rotation {
+      Yaw: 90
     }
     Scale {
       X: 0.907556593
@@ -3240,77 +3241,6 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-}
-Objects {
-  Id: 15231255773862477740
-  Name: "Liquid Decal"
-  Transform {
-    Location {
-      X: 6766.33887
-      Y: 4660.92285
-      Z: 69.9775391
-    }
-    Rotation {
-      Pitch: 0.077317737
-      Yaw: -15.5135698
-      Roll: 2.99536681
-    }
-    Scale {
-      X: 0.445474148
-      Y: 0.445474148
-      Z: 0.445474148
-    }
-  }
-  ParentId: 3755928285586410568
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Type"
-      Enum {
-        Value: "mc:eliquiddecaltype:1"
-      }
-    }
-    Overrides {
-      Name: "bp:Wet"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Stain"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1.14
-        G: 1.29599977
-        B: 1.5
-        A: 0.911000073
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10849591045502482049
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
@@ -4270,15 +4200,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 562.09082
-            Y: -4926.3584
-            Z: 918.362549
+            X: 688.458496
+            Y: -5588.27441
+            Z: 1020.58032
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -3.78979182
+            Pitch: -3.78979492
             Yaw: 2.81897163
             Roll: 2.69108391
           }
@@ -5424,7 +5354,7 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: -2293.24316
+      X: -2610.11206
       Y: -9394.70703
       Z: 81.534668
     }

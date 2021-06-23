@@ -44,5 +44,10 @@ Assets {
       VirtualFolderPath: "Gliders"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Potions"
+      PlatformAssetType: 5
+    }
   }
 }
