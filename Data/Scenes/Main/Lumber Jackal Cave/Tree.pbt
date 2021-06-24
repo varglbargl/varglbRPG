@@ -946,7 +946,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_7"
+    FilePartitionName: "NewFolder_10"
   }
 }
 Objects {
@@ -5136,7 +5136,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_1"
+    FilePartitionName: "NewFolder_11"
   }
 }
 Objects {
@@ -5172,7 +5172,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_3"
+    FilePartitionName: "NewFolder_12"
   }
 }
 Objects {
@@ -5208,7 +5208,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_4"
+    FilePartitionName: "NewFolder_13"
   }
 }
 Objects {
@@ -5244,7 +5244,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_5"
+    FilePartitionName: "NewFolder_14"
   }
 }
 Objects {
@@ -5279,7 +5279,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_6"
+    FilePartitionName: "NewFolder_15"
   }
 }
 Objects {

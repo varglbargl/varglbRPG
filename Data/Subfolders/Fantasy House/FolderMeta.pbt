@@ -1,0 +1,80 @@
+MetaVersion: 1
+MarketplaceDetails {
+  Id: "4b3eece5c74547eab80c31fcedd7f278"
+  OwnerAccountId: "9530580050f548278bc042cd3238d01e"
+  OwnerName: "Maverick0607"
+  Version: "1.0.0"
+}
+AssetIdsOriginalToNew {
+  key: 1045592982859918668
+  value: 2456814544121869910
+}
+AssetIdsOriginalToNew {
+  key: 2846727005186041096
+  value: 1317810233625588056
+}
+AssetIdsOriginalToNew {
+  key: 3589723574079450483
+  value: 14733195429933170752
+}
+AssetIdsOriginalToNew {
+  key: 3670146803652422501
+  value: 6407105838075585115
+}
+AssetIdsOriginalToNew {
+  key: 3899670866682910185
+  value: 10789258499900000043
+}
+AssetIdsOriginalToNew {
+  key: 5609986513537159573
+  value: 3917159491616406047
+}
+AssetIdsOriginalToNew {
+  key: 6656422926499599686
+  value: 3067488466130071185
+}
+AssetIdsOriginalToNew {
+  key: 8575855871125110364
+  value: 13865145785458148186
+}
+AssetIdsOriginalToNew {
+  key: 9904655071476230668
+  value: 4347294778719452250
+}
+AssetIdsOriginalToNew {
+  key: 9927069883892693350
+  value: 12016645754127264117
+}
+AssetIdsOriginalToNew {
+  key: 10686915671605956353
+  value: 14475113287294025554
+}
+AssetIdsOriginalToNew {
+  key: 11669917523569059798
+  value: 5709065879800863552
+}
+AssetIdsOriginalToNew {
+  key: 12076328738245737748
+  value: 17539606761400075581
+}
+AssetIdsOriginalToNew {
+  key: 13198430897714864254
+  value: 3858495391251172865
+}
+AssetIdsOriginalToNew {
+  key: 14951517212109298384
+  value: 5448821725046828882
+}
+AssetIdsOriginalToNew {
+  key: 15656073421664490809
+  value: 2184322286339871601
+}
+AssetIdsOriginalToNew {
+  key: 16383961824814816367
+  value: 5880291078175329673
+}
+AssetIdsOriginalToNew {
+  key: 17007201169060509029
+  value: 5043649165312317986
+}
+HasDirtyManifestAssets: true

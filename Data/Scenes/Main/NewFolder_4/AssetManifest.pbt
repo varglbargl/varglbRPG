@@ -1,36 +1,27 @@
 Assets {
-  Id: 17569828963249235845
-  Name: "Military Tank Historic Gear 01"
-  PlatformAssetType: 1
+  Id: 17245318809946547268
+  Name: "Decal Family Crest 01"
+  PlatformAssetType: 14
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_hst_gear_001_ref"
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_jpn_family_crest_001_ref"
   }
 }
 Assets {
-  Id: 3870378322947652714
-  Name: "Gear - generic small solid"
+  Id: 13751669645945998767
+  Name: "Ellipsoid - Truncated Wedge"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gen_gear_small_001"
+    AssetId: "sm_ellipsoid_truncated_wedge_001"
   }
 }
 Assets {
-  Id: 3722419759708884904
-  Name: "Metal Iron Rusted 02"
+  Id: 6298880568795808979
+  Name: "Advanced Material"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_003"
-  }
-}
-Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
+    AssetId: "universal_material_001"
   }
 }

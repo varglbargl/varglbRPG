@@ -1,6 +1,38 @@
 Name: "World Geo"
 RootId: 18063060926829527243
 Objects {
+  Id: 7260234758540512856
+  Name: "Itahara, Home of the Tree"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18063060926829527243
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Itahara, Home of the Tree"
+  }
+}
+Objects {
   Id: 1487744337751821456
   Name: "Alunalorin, Elk Foothills"
   Transform {
