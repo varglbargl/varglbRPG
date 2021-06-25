@@ -199,6 +199,14 @@ Assets {
           }
         }
         ParentId: 12892410405095297805
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7274492163688005214
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -246,6 +254,14 @@ Assets {
           }
         }
         ParentId: 12892410405095297805
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7274492163688005214
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -280,16 +296,16 @@ Assets {
         Name: "Cabinet Topper - Corner"
         Transform {
           Location {
-            X: -148.505859
-            Y: -40.8793945
+            X: -5.05859375
+            Y: -40.7915039
             Z: 159.520508
           }
           Rotation {
           }
           Scale {
-            X: 0.498875558
-            Y: 0.451386273
-            Z: 0.101635166
+            X: -0.4
+            Y: 0.3
+            Z: 0.1
           }
         }
         ParentId: 12892410405095297805
@@ -327,12 +343,12 @@ Assets {
         Name: "Cabinet Door - Upper Full"
         Transform {
           Location {
-            X: -6.99804688
-            Y: 43.109375
-            Z: 117.847168
+            X: -149.058578
+            Y: -17.9999981
+            Z: 117.847153
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: -90
           }
           Scale {
             X: 0.839999914
@@ -383,12 +399,12 @@ Assets {
         Name: "Cabinet Door - Upper Full"
         Transform {
           Location {
-            X: -6.99804688
-            Y: 3.89257813
-            Z: 193.484863
+            X: -149.058578
+            Y: 21.216795
+            Z: 193.484833
           }
           Rotation {
-            Yaw: 89.9999771
+            Yaw: -90
           }
           Scale {
             X: 0.633875906
@@ -445,9 +461,9 @@ Assets {
         Name: "Hiragana Font 1: \343\201\227 (SHI)"
         Transform {
           Location {
-            X: -51.7714844
-            Y: -42.203125
-            Z: 213.893555
+            X: -107.058578
+            Y: -42.2031212
+            Z: 213.893524
           }
           Rotation {
             Yaw: 89.9999847
@@ -754,4 +770,5 @@ Assets {
     }
   }
   SerializationVersion: 89
+  VirtualFolderPath: "Props"
 }

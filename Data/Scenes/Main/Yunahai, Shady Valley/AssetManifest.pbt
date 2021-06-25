@@ -350,6 +350,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3354050775558201899
+  Name: "Stone Arch (doorway) 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone_doorway_001"
+  }
+}
+Assets {
   Id: 3189726128131317652
   Name: "Ring - Quarter Beveled - Large"
   PlatformAssetType: 1

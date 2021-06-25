@@ -1,7 +1,7 @@
 Name: "Open Sign"
-RootId: 17188324691453173980
+RootId: 11069135748846384872
 Objects {
-  Id: 1333472547290727414
+  Id: 16141374147869212316
   Name: "Letters"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 0.129231051
     }
   }
-  ParentId: 17188324691453173980
+  ParentId: 11069135748846384872
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -43,15 +43,16 @@ Objects {
   }
 }
 Objects {
-  Id: 4484893363097545541
+  Id: 2260997378863764611
   Name: "Cabinet Door - Small"
   Transform {
     Location {
       X: -0.56640625
-      Y: -13.5322266
+      Y: -13.4130859
+      Z: -0.3203125
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -90
     }
     Scale {
       X: 0.900000036
@@ -59,7 +60,7 @@ Objects {
       Z: 0.900000036
     }
   }
-  ParentId: 17188324691453173980
+  ParentId: 11069135748846384872
   UnregisteredParameters {
     Overrides {
       Name: "ma:Prop_Handle:id"

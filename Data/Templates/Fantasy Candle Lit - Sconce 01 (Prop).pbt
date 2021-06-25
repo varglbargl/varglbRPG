@@ -7,7 +7,7 @@ Assets {
       RootId: 4079025086750496989
       Objects {
         Id: 4079025086750496989
-        Name: "tm_fan_candle_sconce_001_lit_01"
+        Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
         Transform {
           Scale {
             X: 1
@@ -145,7 +145,7 @@ Assets {
             UseTemperature: true
             Temperature: 2000
             LocalLight {
-              AttenuationRadius: 100
+              AttenuationRadius: 1000
               PointLight {
                 SourceRadius: 9.23469257
                 SoftSourceRadius: 100

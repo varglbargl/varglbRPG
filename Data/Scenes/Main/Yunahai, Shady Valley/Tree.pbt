@@ -1,6 +1,414 @@
 Name: "Yunahai, Shady Valley"
 RootId: 3755928285586410568
 Objects {
+  Id: 4064418432278963112
+  Name: "Well"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3755928285586410568
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 278286473046913268
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Well"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4983.42773
+            Y: 695.022461
+            Z: 84.4526367
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -122.199509
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.637335122
+            Y: 0.637335122
+            Z: 0.637335122
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13983805921578324917
+    }
+  }
+}
+Objects {
+  Id: 1666148220228399144
+  Name: "Stone Arch (doorway) 001"
+  Transform {
+    Location {
+      X: 3929.92
+      Y: -17486.6309
+      Z: -763.998047
+    }
+    Rotation {
+      Yaw: -59.5995979
+    }
+    Scale {
+      X: 8.57542801
+      Y: 4.31553
+      Z: 4.10074806
+    }
+  }
+  ParentId: 3755928285586410568
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1.5
+        G: 1.28325021
+        B: 1.11750007
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3354050775558201899
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3134670543752756060
+  Name: "Stone Arch (doorway) 001"
+  Transform {
+    Location {
+      X: 2883.84766
+      Y: -15889.6191
+      Z: -433.35498
+    }
+    Rotation {
+      Yaw: -55.1565437
+    }
+    Scale {
+      X: 2.24247861
+      Y: 3.98053932
+      Z: 3.24376631
+    }
+  }
+  ParentId: 3755928285586410568
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1.5
+        G: 1.28325021
+        B: 1.11750007
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3354050775558201899
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 14795017624937046724
+  Name: "Stone Arch (doorway) 001"
+  Transform {
+    Location {
+      X: 2007.27148
+      Y: -14685.9404
+      Z: -361.304199
+    }
+    Rotation {
+      Yaw: -55.1565437
+    }
+    Scale {
+      X: 2.24247861
+      Y: 3.98053932
+      Z: 3.24376631
+    }
+  }
+  ParentId: 3755928285586410568
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1.5
+        G: 1.28325021
+        B: 1.11750007
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3354050775558201899
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9085053232112270887
+  Name: "Stone Arch (doorway) 001"
+  Transform {
+    Location {
+      X: 1223.08643
+      Y: -13529.7549
+      Z: -459.578613
+    }
+    Rotation {
+      Yaw: -55.1565437
+    }
+    Scale {
+      X: 2.24247861
+      Y: 3.98053932
+      Z: 3.24376631
+    }
+  }
+  ParentId: 3755928285586410568
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1.5
+        G: 1.28325021
+        B: 1.11750007
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3354050775558201899
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10477562005426380622
+  Name: "Stone Arch (doorway) 001"
+  Transform {
+    Location {
+      X: -480.724121
+      Y: -10976.3809
+      Z: -644.65332
+    }
+    Rotation {
+      Yaw: -59.5995979
+    }
+    Scale {
+      X: 8.17927074
+      Y: 4.79969645
+      Z: 3.91130662
+    }
+  }
+  ParentId: 3755928285586410568
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1.5
+        G: 1.28325021
+        B: 1.11750007
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3354050775558201899
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 6589818401527845824
+  Name: "Stone Arch (doorway) 001"
+  Transform {
+    Location {
+      X: 338.453613
+      Y: -12334.1709
+      Z: -459.578613
+    }
+    Rotation {
+      Yaw: -55.1565437
+    }
+    Scale {
+      X: 2.24248052
+      Y: 4.41202784
+      Z: 3.24376631
+    }
+  }
+  ParentId: 3755928285586410568
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1.5
+        G: 1.28325021
+        B: 1.11750007
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3354050775558201899
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 6901752801772056236
   Name: "Tree Oak Stump 01"
   Transform {

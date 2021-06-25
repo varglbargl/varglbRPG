@@ -1,9 +1,18 @@
 Assets {
-  Id: 11689293133107574708
-  Name: "Sci-fi Gear Large 01"
+  Id: 13751669645945998767
+  Name: "Ellipsoid - Truncated Wedge"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sf_gen_gear_large_01"
+    AssetId: "sm_ellipsoid_truncated_wedge_001"
+  }
+}
+Assets {
+  Id: 6298880568795808979
+  Name: "Advanced Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "universal_material_001"
   }
 }

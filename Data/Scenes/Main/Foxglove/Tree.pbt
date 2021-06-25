@@ -1,75 +1,7 @@
 Name: "Foxglove"
-RootId: 16255142873045340339
+RootId: 7733928487241340326
 Objects {
-  Id: 17152374749114731818
-  Name: "NewFolder"
-  Transform {
-    Location {
-      X: 87.8980789
-      Z: -37.0979
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.506677508
-      Y: 0.506677508
-      Z: 0.506677508
-    }
-  }
-  ParentId: 16255142873045340339
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "NewFolder_1"
-  }
-}
-Objects {
-  Id: 14291768653670304803
-  Name: "NewFolder"
-  Transform {
-    Location {
-      X: 206.260422
-      Z: -45.7387772
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.999999523
-      Y: 0.999999523
-      Z: 0.999999523
-    }
-  }
-  ParentId: 16255142873045340339
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "NewFolder_2"
-  }
-}
-Objects {
-  Id: 4586374463254043769
+  Id: 12051925355036595762
   Name: "Text 05: E"
   Transform {
     Location {
@@ -85,7 +17,7 @@ Objects {
       Z: 0.900000036
     }
   }
-  ParentId: 16255142873045340339
+  ParentId: 7733928487241340326
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -163,7 +95,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9352339453017577058
+  Id: 17721895594544742069
   Name: "Text 05: V"
   Transform {
     Location {
@@ -179,7 +111,7 @@ Objects {
       Z: 1.1
     }
   }
-  ParentId: 16255142873045340339
+  ParentId: 7733928487241340326
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -257,7 +189,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14787872295564131307
+  Id: 6576555457692367043
   Name: "Text 05: O"
   Transform {
     Location {
@@ -273,7 +205,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16255142873045340339
+  ParentId: 7733928487241340326
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -351,7 +283,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15431392183574813799
+  Id: 1428828688082092267
   Name: "Text 05: L"
   Transform {
     Location {
@@ -367,7 +299,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16255142873045340339
+  ParentId: 7733928487241340326
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -445,7 +377,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6965242028589540311
+  Id: 14524076843750639128
   Name: "Text 05: G"
   Transform {
     Location {
@@ -461,7 +393,7 @@ Objects {
       Z: 1.3000021
     }
   }
-  ParentId: 16255142873045340339
+  ParentId: 7733928487241340326
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -539,7 +471,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3516064238258132138
+  Id: 13900595457788286342
   Name: "Text 05: X"
   Transform {
     Location {
@@ -554,7 +486,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16255142873045340339
+  ParentId: 7733928487241340326
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -632,7 +564,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8361874623188732454
+  Id: 1803539721683306024
   Name: "Text 05: O"
   Transform {
     Location {
@@ -648,7 +580,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16255142873045340339
+  ParentId: 7733928487241340326
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -726,7 +658,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9240608787340142504
+  Id: 13476237587902176364
   Name: "Text 05: F"
   Transform {
     Location {
@@ -742,7 +674,7 @@ Objects {
       Z: 1.6
     }
   }
-  ParentId: 16255142873045340339
+  ParentId: 7733928487241340326
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -816,6 +748,108 @@ Objects {
         LinearDamping: 0.01
       }
       BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 994414975082438964
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 65
+      Z: -30
+    }
+    Rotation {
+      Yaw: 89.9999847
+    }
+    Scale {
+      X: 1.93488109
+      Y: 1.635
+      Z: 1.93488145
+    }
+  }
+  ParentId: 7733928487241340326
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Text {
+    Text: "OF"
+    FontAsset {
+      Id: 829546216760346449
+    }
+    Color {
+      R: 0.5
+      G: 0.5
+      B: 0.5
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:left"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+}
+Objects {
+  Id: 11089058134612119319
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 118.067429
+      Z: -27.9215755
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 3.1358726
+      Y: 2.25317526
+      Z: 3.1358726
+    }
+  }
+  ParentId: 7733928487241340326
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Text {
+    Text: "IYAHARA"
+    FontAsset {
+      Id: 829546216760346449
+    }
+    Color {
+      R: 0.5
+      G: 0.5
+      B: 0.5
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:left"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
     }
   }
 }
