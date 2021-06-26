@@ -1,7 +1,7 @@
 Name: "Letters"
-RootId: 16141374147869212316
+RootId: 5317138588098440041
 Objects {
-  Id: 15986705204819966842
+  Id: 14448328292682760275
   Name: "Text 05: N"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 0.999999762
     }
   }
-  ParentId: 16141374147869212316
+  ParentId: 5317138588098440041
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -101,7 +101,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2395629394132739284
+  Id: 12122269288993377766
   Name: "Text 05: E"
   Transform {
     Location {
@@ -117,7 +117,7 @@ Objects {
       Z: 0.999999762
     }
   }
-  ParentId: 16141374147869212316
+  ParentId: 5317138588098440041
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -201,7 +201,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6505838381837931991
+  Id: 9415462265554709741
   Name: "Text 05: P"
   Transform {
     Location {
@@ -218,7 +218,7 @@ Objects {
       Z: 1.08864415
     }
   }
-  ParentId: 16141374147869212316
+  ParentId: 5317138588098440041
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -302,7 +302,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5139625336628781845
+  Id: 17268481815121835930
   Name: "Text 05: O"
   Transform {
     Location {
@@ -318,7 +318,7 @@ Objects {
       Z: 1.6
     }
   }
-  ParentId: 16141374147869212316
+  ParentId: 5317138588098440041
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"

@@ -248,7 +248,7 @@ function Utils.groundBelowPoint(vec3)
   end
 end
 
-function Utils.playSoundEffect(audio, volume, pitch, location)
+function Utils.playSoundEffect(audio, location, volume, pitch)
   volume = volume or 1
   pitch = pitch or 0
 
@@ -259,7 +259,7 @@ function Utils.playSoundEffect(audio, volume, pitch, location)
   sfx.pitch = pitch
 
   if location then
-    -- whatever
+    sfx:SetWorldPosition(location)
   else
     sfx.isAttenuationEnabled = false
     sfx.isOcclusionEnabled = false
@@ -267,6 +267,8 @@ function Utils.playSoundEffect(audio, volume, pitch, location)
   end
 
   sfx:Play()
+
+  return sfx
 end
 
 return Utils

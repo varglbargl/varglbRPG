@@ -7,7 +7,7 @@ Assets {
       RootId: 9923967772834252657
       Objects {
         Id: 9923967772834252657
-        Name: "NPC Base Human Male"
+        Name: "NPC Base Human M"
         Transform {
           Scale {
             X: 1
@@ -37,6 +37,7 @@ Assets {
         Name: "Mesh"
         Transform {
           Location {
+            Z: 108
           }
           Rotation {
           }

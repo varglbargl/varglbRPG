@@ -11922,6 +11922,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 2687820722041061846
+      value {
+        Overrides {
+          Name: "cs:DegreesPerSecond"
+          Float: 0.2
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 15353451395209644350
       value {
         Overrides {

@@ -7,7 +7,7 @@ Assets {
       RootId: 15839256792845667919
       Objects {
         Id: 15839256792845667919
-        Name: "tm_fan_candle_holder_003_lit_01"
+        Name: "Fantasy Candle Lit - Holder 03 (Prop)"
         Transform {
           Scale {
             X: 1
@@ -63,6 +63,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -153,8 +154,8 @@ Assets {
         Name: "Point Light"
         Transform {
           Location {
-            X: 0.234558105
-            Z: 0.593292236
+            X: 0.234375
+            Z: 15.5581055
           }
           Rotation {
           }
@@ -182,6 +183,7 @@ Assets {
             B: 0.477918148
             A: 1
           }
+          CastShadows: true
           VolumetricIntensity: 5
           TeamSettings {
           }
@@ -189,7 +191,7 @@ Assets {
             UseTemperature: true
             Temperature: 2000
             LocalLight {
-              AttenuationRadius: 130
+              AttenuationRadius: 1300
               PointLight {
                 SourceRadius: 55.3788338
                 SoftSourceRadius: 255.219727

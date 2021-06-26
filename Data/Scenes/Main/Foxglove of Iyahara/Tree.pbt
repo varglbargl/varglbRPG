@@ -1,6 +1,608 @@
 Name: "Foxglove of Iyahara"
 RootId: 15082682909960058732
 Objects {
+  Id: 358720052535181213
+  Name: "Main Street Door Shopfront 02"
+  Transform {
+    Location {
+      X: 221
+      Y: -5
+      Z: 30
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  ChildIds: 3469757590091926473
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11446105392780972536
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3469757590091926473
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 358720052535181213
+  ChildIds: 16501493676152968850
+  ChildIds: 17188324691453173980
+  ChildIds: 13060704124296871395
+  ChildIds: 13258979629772423163
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 13258979629772423163
+  Name: "Sci-fi Chest Hinge 01"
+  Transform {
+    Location {
+      X: -3
+      Y: 2
+      Z: 91.6181641
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 165.96373
+      Roll: 86.2518311
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3469757590091926473
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17611921055401184409
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 13060704124296871395
+  Name: "Sci-fi Chest Hinge 01"
+  Transform {
+    Location {
+      X: -3
+      Y: 2
+      Z: 239.348633
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 165.96373
+      Roll: 86.2518311
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3469757590091926473
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17611921055401184409
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17188324691453173980
+  Name: "Open Sign"
+  Transform {
+    Location {
+      X: 121.467773
+      Y: -0.850585938
+      Z: 176.320313
+    }
+    Rotation {
+      Yaw: 89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3469757590091926473
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Open Sign_2"
+  }
+  InstanceHistory {
+    SelfId: 17188324691453173980
+    SubobjectId: 17264867016708019832
+    InstanceId: 2817343119917323049
+    TemplateId: 12171199505724602280
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 16501493676152968850
+  Name: "Plane 1m - Two Sided"
+  Transform {
+    Location {
+      X: 95
+      Y: 1.04785156
+      Z: 170
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: 179.999954
+      Roll: 89.9999466
+    }
+    Scale {
+      X: -1.5999999
+      Y: 2.5
+      Z: 1
+    }
+  }
+  ParentId: 3469757590091926473
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10766975867019021707
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.1
+        G: 0.1
+        B: 0.1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9443981688958574969
+  Name: "Main Street Door Shopfront 02"
+  Transform {
+    Location {
+      X: 580
+      Y: -5
+      Z: 30
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  ChildIds: 10056823182623874952
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11446105392780972536
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10056823182623874952
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9443981688958574969
+  ChildIds: 15930556020542746207
+  ChildIds: 13626350510976116514
+  ChildIds: 11289936159329354108
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 11289936159329354108
+  Name: "Sci-fi Chest Hinge 01"
+  Transform {
+    Location {
+      X: -3.0546875
+      Y: 3.01171875
+      Z: 239.310547
+    }
+    Rotation {
+      Pitch: 90
+      Roll: -72.2154541
+    }
+    Scale {
+      X: -1
+      Y: -1
+      Z: 1
+    }
+  }
+  ParentId: 10056823182623874952
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17611921055401184409
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 13626350510976116514
+  Name: "Plane 1m - Two Sided"
+  Transform {
+    Location {
+      X: 95
+      Y: 1.17285156
+      Z: 169.999512
+    }
+    Rotation {
+      Pitch: -2.04905664e-05
+      Yaw: -4.09811255e-05
+      Roll: 89.9999466
+    }
+    Scale {
+      X: 1.5999999
+      Y: 2.5
+      Z: 1
+    }
+  }
+  ParentId: 10056823182623874952
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10766975867019021707
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.1
+        G: 0.1
+        B: 0.1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 15930556020542746207
+  Name: "Sci-fi Chest Hinge 01"
+  Transform {
+    Location {
+      X: -3.0546875
+      Y: 3.01171875
+      Z: 91.5800781
+    }
+    Rotation {
+      Pitch: 90
+      Roll: -72.2154541
+    }
+    Scale {
+      X: -1
+      Y: -1
+      Z: 1
+    }
+  }
+  ParentId: 10056823182623874952
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17611921055401184409
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 303457567336317012
+  Name: "Shop Door Chime"
+  Transform {
+    Location {
+      X: 15089
+      Y: -5823
+      Z: -3956
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3203589873715702113
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Shop Door Chime"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 498.764648
+            Y: -34.0136719
+            Z: 339.532471
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1914553267629977677
+    }
+  }
+}
+Objects {
   Id: 17114368029812650392
   Name: "Foxglove"
   Transform {
@@ -3189,484 +3791,6 @@ Objects {
   }
 }
 Objects {
-  Id: 358720052535181213
-  Name: "Main Street Door Shopfront 02"
-  Transform {
-    Location {
-      X: 221
-      Y: -5
-      Z: 30
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15082682909960058732
-  ChildIds: 16501493676152968850
-  ChildIds: 17188324691453173980
-  ChildIds: 13060704124296871395
-  ChildIds: 13258979629772423163
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11446105392780972536
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 13258979629772423163
-  Name: "Sci-fi Chest Hinge 01"
-  Transform {
-    Location {
-      X: -2.99999952
-      Y: 2.00000024
-      Z: 91.6181641
-    }
-    Rotation {
-      Pitch: -90
-      Yaw: -7.12503052
-      Roll: -100.659424
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 358720052535181213
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17611921055401184409
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 13060704124296871395
-  Name: "Sci-fi Chest Hinge 01"
-  Transform {
-    Location {
-      X: -2.99999952
-      Y: 2.00000024
-      Z: 239.348633
-    }
-    Rotation {
-      Pitch: -90
-      Yaw: -7.12503052
-      Roll: -100.659424
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 358720052535181213
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17611921055401184409
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 17188324691453173980
-  Name: "Open Sign"
-  Transform {
-    Location {
-      X: 121.467758
-      Y: -0.850585938
-      Z: 176.320313
-    }
-    Rotation {
-      Yaw: 89.9999924
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 358720052535181213
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Open Sign_1"
-  }
-  InstanceHistory {
-    SelfId: 17188324691453173980
-    SubobjectId: 17264867016708019832
-    InstanceId: 2817343119917323049
-    TemplateId: 12171199505724602280
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 16501493676152968850
-  Name: "Plane 1m - Two Sided"
-  Transform {
-    Location {
-      X: 94.9995117
-      Y: 1.04785156
-      Z: 170
-    }
-    Rotation {
-      Pitch: 4.09811328e-05
-      Yaw: 179.999954
-      Roll: 89.9999619
-    }
-    Scale {
-      X: -1.5999999
-      Y: 2.5
-      Z: 1
-    }
-  }
-  ParentId: 358720052535181213
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10766975867019021707
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.1
-        G: 0.1
-        B: 0.1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12152694598132833191
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 9443981688958574969
-  Name: "Main Street Door Shopfront 02"
-  Transform {
-    Location {
-      X: 580
-      Y: -5
-      Z: 30
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15082682909960058732
-  ChildIds: 13626350510976116514
-  ChildIds: 11289936159329354108
-  ChildIds: 15930556020542746207
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11446105392780972536
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 15930556020542746207
-  Name: "Sci-fi Chest Hinge 01"
-  Transform {
-    Location {
-      X: -3.05419922
-      Y: 3.01171875
-      Z: 91.5800781
-    }
-    Rotation {
-      Pitch: 90
-      Yaw: 126.027367
-      Roll: 53.8118744
-    }
-    Scale {
-      X: -1
-      Y: -1
-      Z: 1
-    }
-  }
-  ParentId: 9443981688958574969
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17611921055401184409
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 11289936159329354108
-  Name: "Sci-fi Chest Hinge 01"
-  Transform {
-    Location {
-      X: -3.05419922
-      Y: 3.01171875
-      Z: 239.310547
-    }
-    Rotation {
-      Pitch: 90
-      Yaw: 126.027367
-      Roll: 53.8118744
-    }
-    Scale {
-      X: -1
-      Y: -1
-      Z: 1
-    }
-  }
-  ParentId: 9443981688958574969
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17611921055401184409
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 13626350510976116514
-  Name: "Plane 1m - Two Sided"
-  Transform {
-    Location {
-      X: 95
-      Y: 1.17285156
-      Z: 169.999512
-    }
-    Rotation {
-      Pitch: -2.04905664e-05
-      Yaw: -4.09811328e-05
-      Roll: 89.9999619
-    }
-    Scale {
-      X: 1.5999999
-      Y: 2.5
-      Z: 1
-    }
-  }
-  ParentId: 9443981688958574969
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10766975867019021707
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.1
-        G: 0.1
-        B: 0.1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12152694598132833191
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 5987433248549170164
   Name: "Fantasy Candle Lit - Holder 04 (Prop)"
   Transform {
@@ -4436,6 +4560,48 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 9330969462912049111
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20.0147514
+            Y: 2.39516473
+            Z: 1.48272097
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.374361038
+            Y: 0.264440298
+            Z: 0.249296859
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10860180020184557280
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 15.6914063
+            Y: 2.43359375
+            Z: 0.00122070313
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -0.405862063
+            Y: 0.26444
+            Z: 0.249299034
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 15164060245458735312
       value {
         Overrides {
@@ -4481,6 +4647,27 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 10860180020184557280
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 15.6914063
+            Y: 2.43359375
+            Z: 0.00122070313
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -0.405862063
+            Y: 0.26444
+            Z: 0.249299034
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 15164060245458735312
       value {
@@ -11427,7 +11614,7 @@ Objects {
       Z: 72.1191406
     }
     Rotation {
-      Yaw: -3.05175763e-05
+      Yaw: -3.05175781e-05
       Roll: 89.9999771
     }
     Scale {

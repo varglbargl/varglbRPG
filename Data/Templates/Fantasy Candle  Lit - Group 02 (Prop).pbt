@@ -7,7 +7,7 @@ Assets {
       RootId: 2512677760193325878
       Objects {
         Id: 2512677760193325878
-        Name: "Candle Lit - Group 02 (Prop)"
+        Name: "Fantasy Candle  Lit - Group 02 (Prop)"
         Transform {
           Scale {
             X: 1
@@ -173,7 +173,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 1.5
+          Intensity: 1.25
           Color {
             R: 1
             G: 0.726868153
@@ -187,7 +187,7 @@ Assets {
             UseTemperature: true
             Temperature: 2000
             LocalLight {
-              AttenuationRadius: 100
+              AttenuationRadius: 1000
               PointLight {
                 SourceRadius: 9.23469257
                 SoftSourceRadius: 100
@@ -312,4 +312,5 @@ Assets {
     }
   }
   SerializationVersion: 89
+  VirtualFolderPath: "Props"
 }
