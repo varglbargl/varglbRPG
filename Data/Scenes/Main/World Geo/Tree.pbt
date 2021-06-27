@@ -2,7 +2,7 @@ Name: "World Geo"
 RootId: 18063060926829527243
 Objects {
   Id: 7260234758540512856
-  Name: "Itahara, Home of the Tree"
+  Name: "Iyahara, Home of the Tree"
   Transform {
     Location {
     }
@@ -29,7 +29,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Itahara, Home of the Tree"
+    FilePartitionName: "Iyahara, Home of the Tree"
   }
 }
 Objects {

@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16542590046639866815
+  Name: "Main Street Trim Roof 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_003_ref"
+  }
+}
+Assets {
   Id: 16475036621484057097
   Name: "Military Sandbag Wall 02"
   PlatformAssetType: 1
@@ -284,6 +293,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_collection_003_ref"
+  }
+}
+Assets {
+  Id: 11998078646685907456
+  Name: "Main Street Trim Roof 01 - Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_003_corner_ref"
   }
 }
 Assets {
@@ -491,6 +509,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_scf_details_001_ref"
+  }
+}
+Assets {
+  Id: 7364480474576366061
+  Name: "Main Street Trim 04 Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_004_corner_ref"
   }
 }
 Assets {

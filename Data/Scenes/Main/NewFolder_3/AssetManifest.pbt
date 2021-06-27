@@ -1,9 +1,9 @@
 Assets {
-  Id: 13751669645945998767
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 863280689963552132
+  Name: "Plane Triangle - One Sided Isosceles"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ellipsoid_truncated_wedge_001"
+    AssetId: "sm_plane_triangle_001"
   }
 }

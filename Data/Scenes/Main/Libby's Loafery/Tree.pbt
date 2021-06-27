@@ -1,6 +1,543 @@
 Name: "Libby\'s Loafery"
 RootId: 11189287738537648080
 Objects {
+  Id: 14597993755940396817
+  Name: "Main Street Building - Roof Template"
+  Transform {
+    Location {
+      X: 15275
+      Y: -4993.45313
+      Z: -3075
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 0.971830428
+      Y: 0.971830428
+      Z: 0.971830428
+    }
+  }
+  ParentId: 11189287738537648080
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 138886216922932035
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5.00052166
+            Y: -1234.78027
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.545
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 752843186746738172
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5.00052166
+            Y: -1234.78027
+            Z: 4.99997807
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1757952556763138438
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 799.999329
+            Y: -799.998962
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.00000012
+            Y: 0.566230357
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Building_Floor:smart"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 2023761159284593560
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 800
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3200078150229013768
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Main Street Building - Roof Template"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -780
+            Y: -50
+            Z: 1200
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.971830428
+            Y: 0.971830428
+            Z: 0.971830428
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7748646932321324056
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 804.962769
+            Y: -1239.78027
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8757869659871601348
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1604.99878
+            Y: -799.998901
+            Z: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.545
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8913750117155401580
+      value {
+      }
+    }
+    ParameterOverrideMap {
+      key: 9846081979742829596
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10423691989843490593
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1604.92664
+            Y: -1239.78015
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10854267754344307873
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1599.92639
+            Y: -1234.78015
+            Z: 4.99997807
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13404683215847847323
+      value {
+        Overrides {
+          Name: "ma:Building_Floor:smart"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13577562270270033572
+      value {
+        Overrides {
+          Name: "ma:Building_Floor:smart"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15244866853308520600
+      value {
+      }
+    }
+    ParameterOverrideMap {
+      key: 17545172591483400818
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.000190734718
+            Y: -799.999
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.00000012
+            Y: 0.566230357
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Building_Floor:smart"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4366247754157660955
+    }
+  }
+}
+Objects {
+  Id: 12038916857233941128
+  Name: "Main Street Wall 01 - Doorway 01"
+  Transform {
+    Location {
+      X: 800
+      Z: 600
+    }
+    Rotation {
+      Yaw: 89.9999619
+    }
+    Scale {
+      X: -1.125
+      Y: -1
+      Z: 1
+    }
+  }
+  ParentId: 11189287738537648080
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        R: 0.218813
+        G: 0.226
+        B: 0.082264
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 70674630196833729
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17904879810838805843
+  Name: "Main Street Wall 01 - Doorway 01"
+  Transform {
+    Location {
+      X: 800
+      Y: -900
+      Z: 600
+    }
+    Rotation {
+      Yaw: 89.9999619
+    }
+    Scale {
+      X: -1
+      Y: -1
+      Z: 1
+    }
+  }
+  ParentId: 11189287738537648080
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        R: 0.218813
+        G: 0.226
+        B: 0.082264
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 103528912763711779
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8081775035435034954
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 14084556743741776523
+  Name: "Main Street Wall 01 - Doorway 01"
+  Transform {
+    Location {
+      X: -800
+      Y: -1300
+      Z: 600
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11189287738537648080
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        R: 0.218813
+        G: 0.226
+        B: 0.082264
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 103528912763711779
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9376097807845940570
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 15488187927609121209
+  Name: "Main Street Wall 01 - Doorway 01"
+  Transform {
+    Location {
+      X: -800
+      Y: -900
+      Z: 600
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 1.125
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11189287738537648080
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        R: 0.218813
+        G: 0.226
+        B: 0.082264
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 103528912763711779
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17775019098342521252
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 9120741259676237028
   Name: "Shopfront Door 01"
   Transform {
@@ -3673,11 +4210,11 @@ Objects {
       X: -800
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -90
     }
     Scale {
       X: 1.657
-      Y: 1
+      Y: -1
       Z: 1
     }
   }
@@ -3710,6 +4247,29 @@ Objects {
         Id: 5508689182103031879
       }
     }
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 5508689182103031879
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:color"
+      Color {
+        R: 0.483
+        G: 0.154849797
+        B: 0.0251159649
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3725,7 +4285,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 11615716110344107020
+      Id: 70674630196833729
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -3803,6 +4363,10 @@ Objects {
         B: 0.244999945
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -3898,6 +4462,10 @@ Objects {
         B: 0.244999945
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -4186,11 +4754,11 @@ Objects {
       Y: -1325
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -90
     }
     Scale {
       X: 1
-      Y: 1
+      Y: -1
       Z: 1
     }
   }
@@ -4223,6 +4791,10 @@ Objects {
         Id: 183152300358340459
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4238,7 +4810,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 11615716110344107020
+      Id: 70674630196833729
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -34362,7 +34934,7 @@ Objects {
     Location {
       X: 39.0927734
       Y: -1710.44531
-      Z: 127.499023
+      Z: 117.215332
     }
     Rotation {
     }
@@ -34438,7 +35010,7 @@ Objects {
     Location {
       X: -10.5566406
       Y: -1728.77
-      Z: 127.499023
+      Z: 117.215332
     }
     Rotation {
     }
@@ -34514,7 +35086,7 @@ Objects {
     Location {
       X: -67.5771484
       Y: -1729.00195
-      Z: 127.499023
+      Z: 117.215332
     }
     Rotation {
     }
@@ -34646,7 +35218,7 @@ Objects {
     Location {
       X: -13.7285156
       Y: -1717.47949
-      Z: 117.992188
+      Z: 107.708496
     }
     Rotation {
       Yaw: 7.18188381
@@ -41451,7 +42023,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_3"
+    FilePartitionName: "NewFolder_18"
   }
   InstanceHistory {
     SelfId: 6169874004483662080
@@ -42771,7 +43343,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_4"
+    FilePartitionName: "NewFolder_19"
   }
 }
 Objects {
@@ -43281,7 +43853,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_5"
+    FilePartitionName: "NewFolder_20"
   }
 }
 Objects {
@@ -73552,7 +74124,6 @@ Objects {
   Name: "Main Street Wall 01 - Doorway 01"
   Transform {
     Location {
-      X: -400
       Z: 600
     }
     Rotation {
@@ -73756,6 +74327,10 @@ Objects {
       Name: "ma:Building_WallInner:vtile"
       Float: 1.48
     }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -73838,7 +74413,7 @@ Objects {
   Name: "Main Street Wall 01 - Doorway 01"
   Transform {
     Location {
-      X: 400
+      X: -400
       Z: 600
     }
     Rotation {
@@ -73997,6 +74572,10 @@ Objects {
       Name: "ma:Building_WallInner:vtile"
       Float: 1.48
     }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -74112,6 +74691,10 @@ Objects {
     Overrides {
       Name: "ma:Building_WallInner:vtile"
       Float: 1.48
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
     }
   }
   Collidable_v2 {

@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17775019098342521252
+  Name: "Main Street Wall 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_wall_002_ref"
+  }
+}
+Assets {
   Id: 17750978958204900038
   Name: "Office Book Pile 03"
   PlatformAssetType: 1
@@ -566,6 +575,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9376097807845940570
+  Name: "Main Street Wall 02 - Half Window 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_wall_002_half_window_02_ref"
+  }
+}
+Assets {
   Id: 9364533443650044160
   Name: "Fantasy Book Collection 05"
   PlatformAssetType: 1
@@ -689,6 +707,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_collection_05_ref"
+  }
+}
+Assets {
+  Id: 8081775035435034954
+  Name: "Main Street Wall 02 - Half Doorway 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_wall_002_half_doorway_ref"
   }
 }
 Assets {

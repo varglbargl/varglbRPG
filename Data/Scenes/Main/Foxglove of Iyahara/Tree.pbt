@@ -1,6 +1,429 @@
 Name: "Foxglove of Iyahara"
 RootId: 15082682909960058732
 Objects {
+  Id: 13305837843416999
+  Name: "Main Street Trim 04"
+  Transform {
+    Location {
+      Y: 63.8457031
+      Z: 469.529541
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.2
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.119515
+        G: 0.205
+        B: 0.120939769
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7364480474576366061
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 5545806587637927566
+  Name: "Main Street Trim 04"
+  Transform {
+    Location {
+      X: 1890
+      Y: 63.8457031
+      Z: 469.529541
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.2
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.119515
+        G: 0.205
+        B: 0.120939769
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7364480474576366061
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2249866345728460995
+  Name: "Urban Downtown Building Trim Roof 01"
+  Transform {
+    Location {
+      X: 305
+      Y: -1200
+      Z: 600
+    }
+    Rotation {
+      Yaw: -179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16542590046639866815
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 5107316403501790327
+  Name: "Urban Downtown Building Trim Roof Corner 01"
+  Transform {
+    Location {
+      X: 1900
+      Y: -1195
+      Z: 605
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11998078646685907456
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11009633097336177795
+  Name: "Urban Downtown Building Trim Roof 01"
+  Transform {
+    Location {
+      X: 1904.99805
+      Y: 55
+      Z: 600.000244
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16542590046639866815
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 18372108643779293147
+  Name: "Urban Downtown Building Trim Roof 01"
+  Transform {
+    Location {
+      X: 1905
+      Y: -395
+      Z: 600.000244
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16542590046639866815
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3044922436815976075
+  Name: "Urban Downtown Building Trim Roof 01"
+  Transform {
+    Location {
+      X: 1905
+      Y: -1200
+      Z: 600
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16542590046639866815
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7474977240147949729
+  Name: "Urban Downtown Building Trim Roof 01"
+  Transform {
+    Location {
+      X: 1105
+      Y: -1200
+      Z: 600
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15082682909960058732
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16542590046639866815
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 358720052535181213
   Name: "Main Street Door Shopfront 02"
   Transform {
@@ -3623,15 +4046,15 @@ Objects {
   Transform {
     Location {
       X: 1345
-      Y: -1.12304688
+      Y: 5
       Z: 25.8789063
     }
     Rotation {
       Yaw: -179.999954
     }
     Scale {
-      X: 2.449
-      Y: 0.299999982
+      X: 2.45
+      Y: 0.5
       Z: 1.9
     }
   }
@@ -3682,15 +4105,15 @@ Objects {
   Transform {
     Location {
       X: 1590
-      Y: -1.12304688
+      Y: 5
       Z: 25.8789063
     }
     Rotation {
       Yaw: -179.999969
     }
     Scale {
-      X: 2.449
-      Y: 0.299999982
+      X: 2.45
+      Y: 0.5
       Z: 1.9
     }
   }
@@ -7596,7 +8019,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_6"
+    FilePartitionName: "NewFolder_21"
   }
   InstanceHistory {
     SelfId: 6169874004483662080
@@ -8918,6 +9341,10 @@ Objects {
       Name: "ma:Building_WallInner:vtile"
       Float: 1.48
     }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9789,7 +10216,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_8"
+    FilePartitionName: "NewFolder_22"
   }
   InstanceHistory {
     SelfId: 9444120519638555188
@@ -10786,7 +11213,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_9"
+    FilePartitionName: "NewFolder_23"
   }
   InstanceHistory {
     SelfId: 9444120519638555188
@@ -11073,7 +11500,7 @@ Objects {
   Transform {
     Location {
       X: 1255
-      Y: 60
+      Y: 65
     }
     Rotation {
     }
@@ -11676,7 +12103,7 @@ Objects {
   Transform {
     Location {
       X: 314.294922
-      Y: 15.8447266
+      Y: 12.4414063
       Z: 153.973145
     }
     Rotation {
@@ -12035,6 +12462,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12092,6 +12523,10 @@ Objects {
         B: 0.120939769
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
     }
   }
   Collidable_v2 {

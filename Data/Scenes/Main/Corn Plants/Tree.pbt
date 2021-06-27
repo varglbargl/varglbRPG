@@ -125,14 +125,6 @@ Objects {
   ParentId: 14898912742905167490
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
-    Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
         Id: 16252259983827820200
@@ -190,14 +182,6 @@ Objects {
   }
   ParentId: 14898912742905167490
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -258,14 +242,6 @@ Objects {
   }
   ParentId: 14898912742905167490
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -328,7 +304,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0685430542
+        R: 0.164999962
         G: 0.450000048
         A: 1
       }
@@ -512,14 +488,6 @@ Objects {
   ParentId: 8548060993965315078
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
-    Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
         Id: 16252259983827820200
@@ -577,14 +545,6 @@ Objects {
   }
   ParentId: 8548060993965315078
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -645,14 +605,6 @@ Objects {
   }
   ParentId: 8548060993965315078
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -715,7 +667,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0685430542
+        R: 0.164999962
         G: 0.450000048
         A: 1
       }
@@ -899,14 +851,6 @@ Objects {
   ParentId: 10544257933972133703
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
-    Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
         Id: 16252259983827820200
@@ -964,14 +908,6 @@ Objects {
   }
   ParentId: 10544257933972133703
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1032,14 +968,6 @@ Objects {
   }
   ParentId: 10544257933972133703
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1102,7 +1030,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0685430542
+        R: 0.164999962
         G: 0.450000048
         A: 1
       }
@@ -1286,14 +1214,6 @@ Objects {
   ParentId: 12417129847834298268
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
-    Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
         Id: 16252259983827820200
@@ -1351,14 +1271,6 @@ Objects {
   }
   ParentId: 12417129847834298268
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1419,14 +1331,6 @@ Objects {
   }
   ParentId: 12417129847834298268
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1489,7 +1393,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0685430542
+        R: 0.164999962
         G: 0.450000048
         A: 1
       }
@@ -1673,14 +1577,6 @@ Objects {
   ParentId: 4179577947426349523
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
-    Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
         Id: 16252259983827820200
@@ -1738,14 +1634,6 @@ Objects {
   }
   ParentId: 4179577947426349523
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1806,14 +1694,6 @@ Objects {
   }
   ParentId: 4179577947426349523
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        G: 0.141
-        B: 0.000933813571
-        A: 1
-      }
-    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1876,7 +1756,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0685430542
+        R: 0.164999962
         G: 0.450000048
         A: 1
       }
