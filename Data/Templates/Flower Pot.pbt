@@ -10,9 +10,9 @@ Assets {
         Name: "Flower Pot"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.75804806
+            Y: 1.75804806
+            Z: 1.75804806
           }
         }
         ParentId: 4781671109827199097
@@ -73,7 +73,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -128,7 +128,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -183,7 +183,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -242,7 +242,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -307,7 +307,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -331,16 +331,16 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: -1.14330435
-            Y: -0.368375301
-            Z: 22.9975433
+            X: -1.14257813
+            Y: -0.368408203
+            Z: 22.9975586
           }
           Rotation {
           }
           Scale {
-            X: 0.312135905
-            Y: 0.312135905
-            Z: 0.270419568
+            X: 0.448088139
+            Y: 0.448088139
+            Z: 0.334320337
           }
         }
         ParentId: 5033184760075631004
@@ -348,7 +348,7 @@ Assets {
           Overrides {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
-              Id: 14434614547618671027
+              Id: 841534158063459245
             }
           }
         }
@@ -359,7 +359,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {

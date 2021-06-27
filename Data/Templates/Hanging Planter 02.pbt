@@ -1,26 +1,28 @@
 Assets {
-  Id: 112884100749184658
-  Name: "Pizza Peel"
+  Id: 12479496931679862088
+  Name: "Hanging Planter 02"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 2676216154321663807
+      RootId: 7309450583623541116
       Objects {
-        Id: 2676216154321663807
-        Name: "Pizza Peel"
+        Id: 7309450583623541116
+        Name: "Hanging Planter 02"
         Transform {
           Scale {
-            X: 0.758042514
-            Y: 0.758042514
-            Z: 0.758042514
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 11189287738537648080
-        ChildIds: 7202101704618102406
-        ChildIds: 4652842202572811989
-        ChildIds: 13328929132031774716
-        ChildIds: 4618344396608964042
-        ChildIds: 8151764878891499575
+        ParentId: 4781671109827199097
+        ChildIds: 638087634660011733
+        ChildIds: 18162047683130356631
+        ChildIds: 15150182172108158241
+        ChildIds: 12770684369127379627
+        ChildIds: 5133289344654112051
+        ChildIds: 14570785910613137502
+        ChildIds: 11840738680914722530
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38,45 +40,22 @@ Assets {
         }
       }
       Objects {
-        Id: 7202101704618102406
-        Name: "Cube - Arched"
+        Id: 638087634660011733
+        Name: "Chain Tile 01"
         Transform {
           Location {
-            X: 0.0893082321
-            Y: -0.000231485799
-            Z: 202.076263
+            Y: 9.95141602
+            Z: 4.37036133
           }
           Rotation {
-            Yaw: -4.26886743e-07
-            Roll: 1.59027725e-15
           }
           Scale {
-            X: 0.837421894
-            Y: 0.0500000045
-            Z: 0.49666509
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 2676216154321663807
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.44
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.33
-          }
-        }
+        ParentId: 7309450583623541116
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -91,13 +70,12 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 6549163326074649248
+            Id: 6975747460865280430
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -108,43 +86,24 @@ Assets {
         }
       }
       Objects {
-        Id: 4652842202572811989
-        Name: "Cube - Arched"
+        Id: 18162047683130356631
+        Name: "Wooden Bucket"
         Transform {
           Location {
-            X: 4.8984375
-            Y: -0.0009765625
-            Z: 202.098633
+            X: -0.958984375
+            Y: 10.1364746
+            Z: -16.0737305
           }
           Rotation {
-            Yaw: -90
           }
           Scale {
-            X: 0.0499999374
-            Y: 0.362507761
-            Z: -0.400004655
+            X: 2.2
+            Y: 2.2
+            Z: 2
           }
         }
-        ParentId: 2676216154321663807
+        ParentId: 7309450583623541116
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.43
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.189
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -160,13 +119,12 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10336366573707168347
+            Id: 13220644644099125207
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -177,29 +135,28 @@ Assets {
         }
       }
       Objects {
-        Id: 13328929132031774716
-        Name: "Cube - Arched"
+        Id: 15150182172108158241
+        Name: "Lens - Half"
         Transform {
           Location {
-            X: -4.90039063
-            Y: -0.0122070313
-            Z: 202.119141
+            X: -0.958984375
+            Y: 10.1364746
+            Z: 53.9262695
           }
           Rotation {
-            Yaw: -90
           }
           Scale {
-            X: 0.0499999374
-            Y: -0.362507761
-            Z: -0.400004655
+            X: 1
+            Y: 1
+            Z: 0.7
           }
         }
-        ParentId: 2676216154321663807
+        ParentId: 7309450583623541116
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12446131267530965574
+              Id: 20253322222348443
             }
           }
           Overrides {
@@ -207,12 +164,21 @@ Assets {
             Bool: false
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 1
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.204640418
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.5
+              G: 0.5
+              B: 0.5
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -229,13 +195,12 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10336366573707168347
+            Id: 16258530429147644632
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -246,46 +211,23 @@ Assets {
         }
       }
       Objects {
-        Id: 4618344396608964042
-        Name: "Cube - Arched"
+        Id: 12770684369127379627
+        Name: "Fern 03"
         Transform {
           Location {
-            X: 0.0890557915
-            Y: -0.000318489561
-            Z: -0.000238158886
+            X: -0.958984375
+            Y: 0.136474609
+            Z: 3.92626953
           }
           Rotation {
-            Pitch: 90
-            Yaw: 104.036263
-            Roll: 14.0362244
           }
           Scale {
-            X: 4.66848135
-            Y: 0.200000256
-            Z: 0.0500001274
+            X: 0.7
+            Y: 0.7
+            Z: 1.6
           }
         }
-        ParentId: 2676216154321663807
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.125
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5.17
-          }
-        }
+        ParentId: 7309450583623541116
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -300,13 +242,12 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 6457800903264693541
+            Id: 14233481070855848323
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -317,40 +258,77 @@ Assets {
         }
       }
       Objects {
-        Id: 8151764878891499575
-        Name: "Cube - Arched"
+        Id: 5133289344654112051
+        Name: "Fern 03"
         Transform {
           Location {
-            X: 0.0890557915
-            Y: -0.000318489561
-            Z: -0.000238158886
+            X: -0.958984375
+            Y: 10.1364746
+            Z: 13.9262695
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 179.999985
-            Roll: -179.999985
+            Yaw: -179.999985
           }
           Scale {
-            X: 0.200000018
-            Y: 0.0500000045
-            Z: 0.200000018
+            X: 0.7
+            Y: 0.7
+            Z: 1.6
           }
         }
-        ParentId: 2676216154321663807
+        ParentId: 7309450583623541116
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14233481070855848323
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 14570785910613137502
+        Name: "Fern 01"
+        Transform {
+          Location {
+            X: -0.958984375
+            Y: 20.1364746
+            Z: 33.9262695
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.8
+            Y: 0.8
+            Z: 1.2
+          }
+        }
+        ParentId: 7309450583623541116
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Nature_Leaves:id"
             AssetReference {
-              Id: 12446131267530965574
+              Id: 16428818447224959958
             }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.125
           }
         }
         Collidable_v2 {
@@ -367,13 +345,72 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4610220220731983871
+            Id: 16217022108673138807
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 11840738680914722530
+        Name: "Ivy 01"
+        Transform {
+          Location {
+            X: 4.78710938
+            Y: -50.6816406
+            Z: 21.0214844
+          }
+          Rotation {
+            Yaw: 180
+            Roll: 89.9999771
+          }
+          Scale {
+            X: 0.410255641
+            Y: 0.441857129
+            Z: 0.323888272
+          }
+        }
+        ParentId: 7309450583623541116
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Leaves:color"
+            Color {
+              R: 0.5412
+              G: 0.990000069
+              B: 0.198
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1374763268335115353
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
           StaticMesh {
             Physics {
               Mass: 100
@@ -385,48 +422,66 @@ Assets {
       }
     }
     Assets {
-      Id: 6549163326074649248
-      Name: "Cube - Arched"
+      Id: 6975747460865280430
+      Name: "Chain Tile 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_arched_001"
+        AssetId: "sm_chain_001"
       }
     }
     Assets {
-      Id: 12446131267530965574
-      Name: "Wood Raw"
+      Id: 13220644644099125207
+      Name: "Wooden Bucket"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bucket_001"
+      }
+    }
+    Assets {
+      Id: 16258530429147644632
+      Name: "Lens - Half"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_half_lense_001"
+      }
+    }
+    Assets {
+      Id: 20253322222348443
+      Name: "Dirt 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_001_uv"
+        AssetId: "dirt_001"
       }
     }
     Assets {
-      Id: 10336366573707168347
-      Name: "Wedge - Concave"
+      Id: 14233481070855848323
+      Name: "Fern 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_wedge_curved_concave_001"
+        AssetId: "sm_fern_generic_003"
       }
     }
     Assets {
-      Id: 6457800903264693541
-      Name: "Prism - 6-Sided Half"
+      Id: 16217022108673138807
+      Name: "Fern 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_half_hexagon_001"
+        AssetId: "sm_fern_generic_001"
       }
     }
     Assets {
-      Id: 4610220220731983871
-      Name: "O-Bracket"
+      Id: 1374763268335115353
+      Name: "Ivy 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_o_bracket_001"
+        AssetId: "sm_ivy_generic_001"
       }
     }
     PrimaryAssetId {

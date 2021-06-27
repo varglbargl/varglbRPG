@@ -1,6 +1,6 @@
 Assets {
   Id: 4301488679384963847
-  Name: "Hanging Planter"
+  Name: "Hanging Planter 01"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

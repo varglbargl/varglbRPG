@@ -53,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17611921055401184409
-  Name: "Sci-fi Chest Hinge 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_crate_hinge_001_ref"
-  }
-}
-Assets {
   Id: 17241186771114119414
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -446,15 +437,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_chair_dining_001"
-  }
-}
-Assets {
-  Id: 11446105392780972536
-  Name: "Main Street Door Shopfront 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_door_002_ref"
   }
 }
 Assets {
@@ -950,6 +932,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_asphault_001"
+  }
+}
+Assets {
+  Id: 2899842837741361229
+  Name: "Concrete Tiles 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_tiles_001"
   }
 }
 Assets {

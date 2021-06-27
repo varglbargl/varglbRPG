@@ -1,7 +1,7 @@
-Name: "NewFolder_3"
-RootId: 2804373606777478316
+Name: "NewFolder_6"
+RootId: 6169874004483662080
 Objects {
-  Id: 2208188468516997283
+  Id: 7470845102594068163
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -16,12 +16,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -30,11 +30,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -73,7 +81,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11024106506643355209
+  Id: 2021977980926725137
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -88,12 +96,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -102,11 +110,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -145,7 +161,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8940733638971113312
+  Id: 10077863079506430292
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -160,12 +176,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -174,11 +190,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -217,7 +241,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1398054291910260950
+  Id: 3630976430227980216
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -232,12 +256,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -246,11 +270,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -289,7 +321,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17380065486668721938
+  Id: 15240770716072817983
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -304,12 +336,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -318,11 +350,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -361,7 +401,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7051208572481192645
+  Id: 4210609703163695365
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -376,12 +416,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -390,11 +430,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -433,7 +481,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15325770382702056082
+  Id: 10432689712733365425
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -448,12 +496,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -462,11 +510,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -505,7 +561,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13705521827328237996
+  Id: 16951561951042819373
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -520,12 +576,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -534,11 +590,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -577,7 +641,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15139929283697726584
+  Id: 2717300754887845596
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -591,12 +655,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -605,11 +669,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -648,7 +720,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2753656528721046474
+  Id: 16383832291985441647
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -662,12 +734,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -676,11 +748,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -719,7 +799,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3258391694254189650
+  Id: 4269506289259494383
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -733,12 +813,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -747,11 +827,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -790,7 +878,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7505926826599802634
+  Id: 8994504907132997689
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -804,12 +892,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -818,11 +906,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -861,7 +957,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5468262711489420846
+  Id: 14464945850364766695
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -876,12 +972,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -890,11 +986,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -933,7 +1037,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6573264494292443965
+  Id: 13057229508469544248
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -948,12 +1052,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -962,11 +1066,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1005,7 +1117,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1637975222820478000
+  Id: 1346279861003334019
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -1020,12 +1132,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -1034,11 +1146,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1077,7 +1197,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6761265688418459359
+  Id: 16838046819274765457
   Name: "Ellipsoid - Truncated Wedge"
   Transform {
     Location {
@@ -1092,12 +1212,12 @@ Objects {
       Z: 0.448158085
     }
   }
-  ParentId: 2804373606777478316
+  ParentId: 6169874004483662080
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14424409417633912826
+        Id: 6298880568795808979
       }
     }
     Overrides {
@@ -1106,11 +1226,19 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.75
+      Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.373000026
+        B: 0.180283353
+        A: 1
+      }
     }
   }
   Collidable_v2 {

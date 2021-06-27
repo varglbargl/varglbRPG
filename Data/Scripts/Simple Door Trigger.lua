@@ -29,20 +29,23 @@ end
 
 function onBeginOverlap(thisTrigger, other)
 	if Object.IsValid(DOOR) and other:IsA("Player") then
-    DOOR.collision = Collision.FORCE_OFF
-    DOOR.cameraCollision = Collision.FORCE_OFF
-
-    if not isOpen and OPEN_SFX then Utils.playSoundEffect(OPEN_SFX, DOOR:GetWorldPosition()) end
     if autoCloseTask then autoCloseTask:Cancel() end
 
-    isOpen = true
+    if not isOpen then
+      DOOR.collision = Collision.FORCE_OFF
+      DOOR.cameraCollision = Collision.FORCE_OFF
 
-    DOOR:RotateTo(toRotation, DOOR_SPEED)
+      if not isOpen and OPEN_SFX then Utils.playSoundEffect(OPEN_SFX, DOOR:GetWorldPosition()) end
 
-    Task.Wait(DOOR_SPEED)
+      isOpen = true
 
-    DOOR.collision = Collision.INHERIT
-    DOOR.cameraCollision = Collision.INHERIT
+      DOOR:RotateTo(toRotation, DOOR_SPEED)
+
+      Task.Wait(DOOR_SPEED)
+
+      DOOR.collision = Collision.INHERIT
+      DOOR.cameraCollision = Collision.INHERIT
+    end
 	end
 end
 

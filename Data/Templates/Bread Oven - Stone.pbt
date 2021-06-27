@@ -1,6 +1,6 @@
 Assets {
   Id: 6686482387995405075
-  Name: "Bread Oven - Stone - Wall"
+  Name: "Bread Oven - Stone"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -2974,4 +2974,5 @@ Assets {
     }
   }
   SerializationVersion: 89
+  VirtualFolderPath: "Props"
 }

@@ -7596,7 +7596,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_3"
+    FilePartitionName: "NewFolder_6"
   }
   InstanceHistory {
     SelfId: 6169874004483662080
@@ -8987,6 +8987,12 @@ Objects {
         G: 1
         B: 0.308468461
         A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Floor:id"
+      AssetReference {
+        Id: 2899842837741361229
       }
     }
   }
