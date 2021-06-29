@@ -5,6 +5,7 @@ Objects {
   Name: "Main Street Trim 04"
   Transform {
     Location {
+      X: 85
       Y: 63.8457031
       Z: 469.529541
     }
@@ -66,7 +67,7 @@ Objects {
   Name: "Main Street Trim 04"
   Transform {
     Location {
-      X: 1890
+      X: 1810
       Y: 63.8457031
       Z: 469.529541
     }
@@ -136,7 +137,7 @@ Objects {
       Yaw: -179.999969
     }
     Scale {
-      X: 1
+      X: 0.384251654
       Y: 1
       Z: 1
     }
@@ -229,14 +230,14 @@ Objects {
   Transform {
     Location {
       X: 1904.99805
-      Y: 55
+      Y: 90
       Z: 600.000244
     }
     Rotation {
       Yaw: -90
     }
     Scale {
-      X: 1
+      X: 0.8
       Y: 1
       Z: 1
     }
@@ -279,14 +280,14 @@ Objects {
   Transform {
     Location {
       X: 1905
-      Y: -395
+      Y: -550
       Z: 600.000244
     }
     Rotation {
       Yaw: -90
     }
     Scale {
-      X: 1
+      X: 0.8
       Y: 1
       Z: 1
     }
@@ -8019,7 +8020,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_21"
+    FilePartitionName: "NewFolder_24"
   }
   InstanceHistory {
     SelfId: 6169874004483662080
@@ -9253,6 +9254,39 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Building_WallInner2:id"
+      AssetReference {
+        Id: 103528912763711779
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.119515
+        G: 0.205
+        B: 0.120939769
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner2:color"
+      Color {
+        R: 0.119515
+        G: 0.205
+        B: 0.120939769
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        R: 0.119515
+        G: 0.205
+        B: 0.120939769
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9268,7 +9302,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 11615716110344107020
+      Id: 17775019098342521252
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -9380,14 +9414,15 @@ Objects {
   Name: "Main Street Floor 01 - 8m x 8m"
   Transform {
     Location {
-      Y: 5
+      X: -25
+      Y: 80
       Z: 600
     }
     Rotation {
     }
     Scale {
       X: 2.4
-      Y: 1.49999988
+      Y: 1.60000026
       Z: 1
     }
   }
@@ -10216,7 +10251,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_22"
+    FilePartitionName: "NewFolder_25"
   }
   InstanceHistory {
     SelfId: 9444120519638555188
@@ -11213,7 +11248,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_23"
+    FilePartitionName: "NewFolder_26"
   }
   InstanceHistory {
     SelfId: 9444120519638555188
@@ -12440,13 +12475,14 @@ Objects {
   Name: "Main Street Trim 04"
   Transform {
     Location {
+      X: 85
       Y: 63.8457031
       Z: 469.529541
     }
     Rotation {
     }
     Scale {
-      X: 1.16254389
+      X: 1
       Y: 1
       Z: 1
     }
@@ -12501,14 +12537,14 @@ Objects {
   Name: "Main Street Trim 04"
   Transform {
     Location {
-      X: 930
+      X: 885
       Y: 63.8457031
       Z: 469.529541
     }
     Rotation {
     }
     Scale {
-      X: 1.2
+      X: 1.1562
       Y: 1
       Z: 1
     }

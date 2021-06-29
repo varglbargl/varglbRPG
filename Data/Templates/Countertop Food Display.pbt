@@ -157,6 +157,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -448,7 +449,7 @@ Assets {
         Transform {
           Location {
             X: 82.8271484
-            Y: -12.2553711
+            Y: -13.2553711
             Z: 9.11621094
           }
           Rotation {
@@ -504,6 +505,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -519,7 +521,7 @@ Assets {
         Transform {
           Location {
             X: -4.52539063
-            Y: -12.2553711
+            Y: -11.2553711
             Z: 9.11621094
           }
           Rotation {
@@ -584,6 +586,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -599,7 +602,7 @@ Assets {
         Transform {
           Location {
             X: 4.82324219
-            Y: -14.4101563
+            Y: -15.4101563
             Z: 66.7473145
           }
           Rotation {
@@ -654,7 +657,7 @@ Assets {
         Transform {
           Location {
             X: 4.82324219
-            Y: -14.4101563
+            Y: -15.4101563
             Z: 19.7451172
           }
           Rotation {

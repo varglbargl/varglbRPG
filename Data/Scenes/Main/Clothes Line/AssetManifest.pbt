@@ -71,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4747949313155733059
+  Name: "Military Tank Modern Gear 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_mil_tank_mod_gear_001_ref"
+  }
+}
+Assets {
   Id: 4709331953618019666
   Name: "Fabric Space Insulation 03"
   PlatformAssetType: 2

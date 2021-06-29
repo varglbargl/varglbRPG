@@ -69,7 +69,6 @@ Objects {
   }
   ParentId: 12148973949934149863
   ChildIds: 2598186012217970244
-  ChildIds: 4280788784111277234
   ChildIds: 13396875184523887725
   ChildIds: 5847878709950744023
   ChildIds: 709685642873229647
@@ -85,7 +84,6 @@ Objects {
   ChildIds: 16339140647512216424
   ChildIds: 10750852309931716050
   ChildIds: 3107404450760978021
-  ChildIds: 12291306051379057040
   ChildIds: 12488965106483736461
   ChildIds: 3643811156721358934
   ChildIds: 7888003788166730896
@@ -690,7 +688,8 @@ Objects {
   Transform {
     Location {
       X: 596.174316
-      Z: 46.1446495
+      Y: -1.94823751e-05
+      Z: 44.9366188
     }
     Rotation {
       Roll: 1.3660373e-05
@@ -734,78 +733,13 @@ Objects {
   }
 }
 Objects {
-  Id: 12291306051379057040
-  Name: "hole"
-  Transform {
-    Location {
-      X: 597.86908
-      Z: 59.9997635
-    }
-    Rotation {
-      Roll: 1.3660373e-05
-    }
-    Scale {
-      X: 0.100000009
-      Y: 0.100000009
-      Z: 0.0666666627
-    }
-  }
-  ParentId: 1663446130312456068
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:color"
-      Color {
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 32
-    }
-    Overrides {
-      Name: "bp:Blur"
-      Float: 0.685840309
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 9693133565758539692
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 4280788784111277234
-    SubobjectId: 17219645406025524660
-    InstanceId: 10609197621368066804
-    TemplateId: 1892577388429958021
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
   Id: 3107404450760978021
   Name: "Urban Pipe Straight"
   Transform {
     Location {
       X: 596.174316
-      Z: -13.5825825
+      Y: 2.32378934e-05
+      Z: -14.7906151
     }
     Rotation {
       Roll: 1.3660373e-05
@@ -855,39 +789,29 @@ Objects {
   Name: "Urban Pipe Elbow 01"
   Transform {
     Location {
-      X: 611.327393
-      Y: 0.000152108463
-      Z: -26.6613235
+      X: 596.778442
+      Y: 1.15481425e-05
+      Z: 2.15692163
     }
     Rotation {
-      Yaw: -90
-      Roll: -90
+      Roll: 180
     }
     Scale {
-      X: 0.31865561
-      Y: 0.31865561
-      Z: 0.31865561
+      X: 1.88519156
+      Y: 1.88519156
+      Z: 1.88519156
     }
   }
   ParentId: 1663446130312456068
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 8697636423960157756
-      }
-    }
-    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.505208
-        G: 0.187715
+        R: 0.548440635
+        G: 0.578614354
+        B: 0.65
         A: 1
       }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
     }
   }
   Collidable_v2 {
@@ -904,7 +828,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5798176062275974674
+      Id: 13913062282643868615
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -924,9 +848,9 @@ Objects {
   Name: "Urban Pipe Elbow 01"
   Transform {
     Location {
-      X: 581.007202
-      Y: 0.000144879567
-      Z: -26.6613235
+      X: 557.815613
+      Y: 4.29216107e-06
+      Z: -26.6613369
     }
     Rotation {
       Pitch: 104.683525
@@ -974,9 +898,9 @@ Objects {
   Name: "Urban Pipe Elbow 01"
   Transform {
     Location {
-      X: 621.006042
-      Y: 0.000154416033
-      Z: -26.6613235
+      X: 645.906433
+      Y: 6.72996684e-05
+      Z: -26.6613369
     }
     Rotation {
       Pitch: 95.1065826
@@ -1120,8 +1044,9 @@ Objects {
   Name: "Urban Pipe Elbow 01"
   Transform {
     Location {
-      X: 54.5515289
-      Z: -26.6613503
+      X: 56.1685028
+      Y: 5.92445322e-05
+      Z: -26.6613369
     }
     Rotation {
       Pitch: 101.040855
@@ -1169,7 +1094,8 @@ Objects {
   Name: "Urban Pipe Straight"
   Transform {
     Location {
-      X: 1.12971327e-06
+      X: 1.27437508
+      Y: -2.47763501e-06
       Z: 4.73835945
     }
     Rotation {
@@ -1220,8 +1146,9 @@ Objects {
   Name: "Urban Pipe Elbow 01"
   Transform {
     Location {
-      X: 45.3412666
-      Z: -26.6613483
+      X: 46.6156502
+      Y: 5.24118e-05
+      Z: -26.6613369
     }
     Rotation {
       Pitch: 90
@@ -1269,16 +1196,16 @@ Objects {
   Name: "Water Jet VFX"
   Transform {
     Location {
-      X: 0.621108711
-      Y: 0.634988606
-      Z: 95.7393341
+      X: 1.89501226
+      Y: 0.635052
+      Z: 95.73909
     }
     Rotation {
     }
     Scale {
-      X: 4.81650591
-      Y: 4.81650591
-      Z: 4.81650591
+      X: 4.81650543
+      Y: 4.81650543
+      Z: 4.81650543
     }
   }
   ParentId: 1663446130312456068
@@ -1359,7 +1286,9 @@ Objects {
   Name: "Urban Pipe Coupling 04"
   Transform {
     Location {
-      Z: 88.4479294
+      X: 1.27437508
+      Y: -6.23513406e-05
+      Z: 88.4478378
     }
     Rotation {
     }
@@ -1417,11 +1346,13 @@ Objects {
   Name: "Sci-fi Gear Small 02"
   Transform {
     Location {
-      Z: 80.2119675
+      X: 1.27437508
+      Y: -5.64606e-05
+      Z: 80.2120056
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -11.2502022
+      Yaw: -11.2502136
       Roll: 89.9999161
     }
     Scale {
@@ -1483,7 +1414,9 @@ Objects {
   Name: "Urban Pipe Flange 01"
   Transform {
     Location {
-      Z: 76.2640228
+      X: 1.27437508
+      Y: -5.36367152e-05
+      Z: 76.2639236
     }
     Rotation {
     }
@@ -1538,7 +1471,9 @@ Objects {
   Name: "Urban Pipe Straight"
   Transform {
     Location {
-      Z: 53.0348816
+      X: 1.27437508
+      Y: -3.70218804e-05
+      Z: 53.0347
     }
     Rotation {
     }
@@ -1585,7 +1520,8 @@ Objects {
   Name: "Urban Pipe Coupling 05"
   Transform {
     Location {
-      X: 1.10017809e-05
+      X: 1.27437508
+      Y: -3.20938343e-05
       Z: 46.1447906
     }
     Rotation {
@@ -1629,75 +1565,13 @@ Objects {
   }
 }
 Objects {
-  Id: 4280788784111277234
-  Name: "hole"
-  Transform {
-    Location {
-      Z: 60.0000114
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.100000009
-      Y: 0.100000009
-      Z: 0.0666666627
-    }
-  }
-  ParentId: 1663446130312456068
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:color"
-      Color {
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 32
-    }
-    Overrides {
-      Name: "bp:Blur"
-      Float: 0.685840309
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 9693133565758539692
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 4280788784111277234
-    SubobjectId: 17219645406025524660
-    InstanceId: 10609197621368066804
-    TemplateId: 1892577388429958021
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
   Id: 2598186012217970244
   Name: "Urban Pipe Straight"
   Transform {
     Location {
-      Z: 10.000001
+      X: 1.27437508
+      Y: -6.24114227e-06
+      Z: 10.000123
     }
     Rotation {
     }
@@ -1834,6 +1708,15 @@ Objects {
         Id: 841534158063459245
       }
     }
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.503
+        G: 0.0181079768
+        B: 0.0746783093
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1890,6 +1773,15 @@ Objects {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
         Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.503
+        G: 0.0181079768
+        B: 0.0746783093
+        A: 1
       }
     }
   }
@@ -2384,7 +2276,7 @@ Objects {
     Location {
       X: -274.807617
       Y: -492.921875
-      Z: 714.691895
+      Z: 659.304199
     }
     Rotation {
     }
@@ -2595,7 +2487,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"

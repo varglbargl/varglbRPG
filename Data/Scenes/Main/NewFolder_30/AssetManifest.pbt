@@ -1,36 +1,18 @@
 Assets {
-  Id: 17569828963249235845
-  Name: "Military Tank Historic Gear 01"
+  Id: 18302070369115552264
+  Name: "Cylinder - Chamfered Small Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_hst_gear_001_ref"
+    AssetId: "sm_cylinder_hq_003"
   }
 }
 Assets {
-  Id: 3870378322947652714
-  Name: "Gear - generic small solid"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gen_gear_small_001"
-  }
-}
-Assets {
-  Id: 3722419759708884904
-  Name: "Metal Iron Rusted 02"
+  Id: 6954370053071083141
+  Name: "Metal Iron 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_003"
-  }
-}
-Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
+    AssetId: "mi_metal_iron_001"
   }
 }

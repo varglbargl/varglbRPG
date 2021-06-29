@@ -59,7 +59,7 @@ Assets {
           }
           Overrides {
             Name: "cs:DegreesPerSecond"
-            Float: 0.2
+            Float: 0.4
           }
           Overrides {
             Name: "cs:Sun"

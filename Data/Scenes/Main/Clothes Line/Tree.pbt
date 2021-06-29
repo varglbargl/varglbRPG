@@ -1,18 +1,67 @@
 Name: "Clothes Line"
 RootId: 10221177652856603566
 Objects {
+  Id: 10199568009753622314
+  Name: "Military Tank Modern Gear 01"
+  Transform {
+    Location {
+      X: -189.261719
+      Y: -423.673096
+      Z: 351.806152
+    }
+    Rotation {
+      Pitch: 11.2598057
+      Yaw: -107.583298
+    }
+    Scale {
+      X: 0.29371506
+      Y: 0.609141111
+      Z: 0.293713212
+    }
+  }
+  ParentId: 10221177652856603566
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4747949313155733059
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 9541782554668583412
   Name: "Military Sandbag 02"
   Transform {
     Location {
-      X: 29.9179688
-      Y: 67.7788086
-      Z: 94.1481934
+      X: 18.9521484
+      Y: 22.9255371
+      Z: 199.787109
     }
     Rotation {
-      Pitch: 4.7632575
-      Yaw: -112.794678
-      Roll: 88.1723633
+      Pitch: -3.04168701
+      Yaw: -114.425735
+      Roll: 88.1008
     }
     Scale {
       X: 0.456718266
@@ -80,14 +129,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: 29.5556641
-      Y: 46.3552246
-      Z: 165.490479
+      X: 13.96875
+      Y: -7.09594727
+      Z: 267.777832
     }
     Rotation {
-      Pitch: 19.301363
-      Yaw: 155.385193
-      Roll: -175.13356
+      Pitch: 19.291111
+      Yaw: 156.491211
+      Roll: -166.860733
     }
     Scale {
       X: 0.0311044753
@@ -150,14 +199,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: 13.4052734
-      Y: 55.5224609
-      Z: 165.334229
+      X: -1.90820313
+      Y: 2.52978516
+      Z: 267.898438
     }
     Rotation {
-      Pitch: -15.6615276
-      Yaw: 154.544861
-      Roll: -176.935959
+      Pitch: -15.2223511
+      Yaw: 150.75647
+      Roll: -168.848572
     }
     Scale {
       X: 0.0311044753
@@ -220,14 +269,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: 48.6679688
-      Y: 88.154541
-      Z: 162.178467
+      X: 34.2695313
+      Y: 34.1625977
+      Z: 270.736084
     }
     Rotation {
-      Pitch: 13.2932205
-      Yaw: 149.864288
-      Roll: 170.00386
+      Pitch: 14.0926399
+      Yaw: 150.125671
+      Roll: 177.994583
     }
     Scale {
       X: 0.0311044753
@@ -290,14 +339,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: 30.7626953
-      Y: 97.1945801
-      Z: 160.442627
+      X: 16.7324219
+      Y: 43.9118652
+      Z: 269.181152
     }
     Rotation {
-      Pitch: -23.7049828
-      Yaw: 152.004547
-      Roll: 171.227219
+      Pitch: -22.8398743
+      Yaw: 147.029419
+      Roll: 179.672424
     }
     Scale {
       X: 0.0311044753
@@ -360,14 +409,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: 59.1591797
-      Y: 156.828613
-      Z: 157.978027
+      X: 46.7011719
+      Y: 102.461182
+      Z: 275.702637
     }
     Rotation {
-      Pitch: -22.4151573
-      Yaw: 151.732025
-      Roll: 172.876236
+      Pitch: -21.5270081
+      Yaw: 146.964615
+      Roll: -178.760849
     }
     Scale {
       X: 0.0311044753
@@ -430,14 +479,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: 44.9306641
-      Y: 121.475586
-      Z: 160.354248
+      X: 31.4775391
+      Y: 67.5571289
+      Z: 272.883789
     }
     Rotation {
-      Pitch: -14.4432878
-      Yaw: 154.494354
-      Roll: -175.305206
+      Pitch: -14.0093994
+      Yaw: 150.883179
+      Roll: -167.262894
     }
     Scale {
       X: 0.0311044753
@@ -500,14 +549,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: 77.1367188
-      Y: 147.854736
-      Z: 159.275391
+      X: 64.3388672
+      Y: 92.8300781
+      Z: 276.835938
     }
     Rotation {
-      Pitch: 14.6259203
-      Yaw: 150.60582
-      Roll: 171.528778
+      Pitch: 15.3117189
+      Yaw: 151.055237
+      Roll: 179.577179
     }
     Scale {
       X: 0.0311044753
@@ -570,14 +619,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: 61.1386719
-      Y: 112.416016
-      Z: 160.081543
+      X: 47.4492188
+      Y: 58.0891113
+      Z: 272.354248
     }
     Rotation {
-      Pitch: 20.4826775
-      Yaw: 156.338394
-      Roll: -173.429108
+      Pitch: 20.3307266
+      Yaw: 157.614655
+      Roll: -165.099548
     }
     Scale {
       X: 0.0311044753
@@ -640,14 +689,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -5.12109375
-      Y: 20.7077637
-      Z: 168.34375
+      X: -21.4394531
+      Y: -31.7849121
+      Z: 265.541504
     }
     Rotation {
-      Pitch: -19.2149868
-      Yaw: 152.682205
-      Roll: 166.974762
+      Pitch: -18.4881592
+      Yaw: 148.39064
+      Roll: 175.186218
     }
     Scale {
       X: 0.0311044753
@@ -710,14 +759,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -19.6679688
-      Y: -14.1137695
-      Z: 174.155518
+      X: -37.1582031
+      Y: -66.5766602
+      Z: 266.173828
     }
     Rotation {
-      Pitch: -11.0227299
-      Yaw: 154.562317
-      Roll: 179.176773
+      Pitch: -10.6314697
+      Yaw: 151.437164
+      Roll: -172.885391
     }
     Scale {
       X: 0.0311044753
@@ -780,14 +829,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: 12.7431641
-      Y: 11.4169922
-      Z: 168.490967
+      X: -3.84667969
+      Y: -41.5854492
+      Z: 265.487793
     }
     Rotation {
-      Pitch: 17.5332508
-      Yaw: 147.818512
-      Roll: 165.621979
+      Pitch: 18.5671177
+      Yaw: 148.70932
+      Roll: 173.758087
     }
     Scale {
       X: 0.0311044753
@@ -850,14 +899,14 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -3.71679688
-      Y: -23.5412598
-      Z: 172.912842
+      X: -21.4052734
+      Y: -76.2807617
+      Z: 264.624512
     }
     Rotation {
-      Pitch: 23.9167728
-      Yaw: 152.993
-      Roll: -179.23381
+      Pitch: 24.181921
+      Yaw: 154.848831
+      Roll: -170.688751
     }
     Scale {
       X: 0.0311044753
@@ -920,14 +969,14 @@ Objects {
   Name: "Hanging Dress"
   Transform {
     Location {
-      X: -10.6152344
-      Y: -15.5197754
-      Z: 60.3701172
+      X: -21.6445313
+      Y: -54.2490234
+      Z: 153.753662
     }
     Rotation {
-      Pitch: 8.45509052
-      Yaw: -116.095726
-      Roll: -2.10852051
+      Pitch: 0.658778548
+      Yaw: -117.695648
+      Roll: -1.73132324
     }
     Scale {
       X: 1
@@ -1512,14 +1561,14 @@ Objects {
   Name: "Hanging Dress"
   Transform {
     Location {
-      X: 60.7988281
-      Y: 132.001709
-      Z: 56.7148438
+      X: 53.5214844
+      Y: 90.2546387
+      Z: 172.37085
     }
     Rotation {
-      Pitch: 1.57068384
-      Yaw: -115.842598
-      Roll: -2.08642578
+      Pitch: -6.22702026
+      Yaw: -117.487061
+      Roll: -1.7416687
     }
     Scale {
       X: 0.907243371
@@ -2098,19 +2147,19 @@ Objects {
   Name: "Primitive Neon: Eighth-Circle"
   Transform {
     Location {
-      X: -32.2783203
-      Y: -104.486572
-      Z: 224.673096
+      X: -17.4609375
+      Y: -87.1655273
+      Z: 297.766357
     }
     Rotation {
-      Pitch: -14.7059631
-      Yaw: 64.5713
-      Roll: 179.777542
+      Pitch: -3.2651062
+      Yaw: 63.0653534
+      Roll: 179.644897
     }
     Scale {
-      X: 4.10755253
-      Y: -1.8581841
-      Z: 1.95661545
+      X: 4.02812815
+      Y: -1.85818851
+      Z: 1.95662367
     }
   }
   ParentId: 10221177652856603566

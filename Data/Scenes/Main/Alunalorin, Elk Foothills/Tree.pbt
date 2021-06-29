@@ -525,14 +525,6 @@ Objects {
             Yaw: -68.2716751
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -577,14 +569,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 82.98629
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -633,14 +617,6 @@ Objects {
             Yaw: 14.0087099
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -685,14 +661,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -165.901
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

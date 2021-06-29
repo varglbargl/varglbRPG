@@ -7,7 +7,7 @@ Assets {
       RootId: 5769361334134386234
       Objects {
         Id: 5769361334134386234
-        Name: "Goodie Bag - Waffleg\303\244ngers"
+        Name: "Goodie Bag - Philosopher\'s Scones"
         Transform {
           Scale {
             X: 1
@@ -106,6 +106,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100

@@ -70,6 +70,7 @@ local dayCloudSettings = {150,0.25,3,0.5}
 local nightCloudSettings = {40,0.25,1,1}
 
 local degrees = propStartingDegrees -- degrees in the sky from the horizon
+local isNight = false
 
 function Tick(deltaTime)
 	-- Check if network enabled
@@ -90,6 +91,7 @@ function Tick(deltaTime)
 	local daynightCycle = (math.cos(math.rad(degrees+90)) * 0.5) + 0.5 -- 0 day, 0.5 sunrise/sunset, 1 night
 	local quadrant = math.floor(degrees/90)
 	local quadPercent = ((degrees - (quadrant*90))/90) % 4
+
 	local nextQuadrant = (quadrant + 1) % 4
 	-- Save time of day for other scripts
 	_G.DayNightCycle = daynightCycle
@@ -114,6 +116,15 @@ function Tick(deltaTime)
 	elseif (quadrant == 1 or quadrant == 3) then
 		quadPercent = quadPercent * quadPercent * quadPercent * quadPercent
 	end
+
+  if quadrant == 0 and isNight then
+    isNight = false
+    Events.Broadcast("Sunrise")
+  elseif quadrant == 2 and not isNight then
+    isNight = true
+    Events.Broadcast("Sunset")
+  end
+
 	propSky:SetSmartProperty("Cloud Color", Color.Lerp(currentQuadColors[4],nextQuadColors[4], quadPercent))
 	propSky:SetSmartProperty("Cloud Rim Color", Color.Lerp(currentQuadColors[5],nextQuadColors[5], quadPercent))
 	propSky:SetSmartProperty("Cloud Ambient Color", Color.Lerp(currentQuadColors[6],nextQuadColors[6], quadPercent))

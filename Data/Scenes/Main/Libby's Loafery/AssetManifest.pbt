@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18260273647001115627
+  Name: "Japanese Temple Roof 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_002_ref"
+  }
+}
+Assets {
   Id: 18033297229984528543
   Name: "Wood Planks"
   PlatformAssetType: 2
@@ -44,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17701387410364783516
+  Name: "Japanese Temple Roof 01 Corner Out - Cap 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_001_co_01_cap_ref"
+  }
+}
+Assets {
   Id: 17699724119997623437
   Name: "Wood 2x4 4m"
   PlatformAssetType: 1
@@ -59,6 +77,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fresnel_rock_obsidian_001_uv"
+  }
+}
+Assets {
+  Id: 17654076070235932974
+  Name: "Pipe - Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_004"
   }
 }
 Assets {
@@ -188,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14518734330738166470
+  Name: "Roof Square Shingles 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_square_shingles_002_uv"
+  }
+}
+Assets {
   Id: 14212988502358508072
   Name: "Metal Basic Steel"
   PlatformAssetType: 2
@@ -203,6 +239,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_parchment_001_uv"
+  }
+}
+Assets {
+  Id: 13972110979182650321
+  Name: "Sconce 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_sconce_001"
   }
 }
 Assets {
@@ -239,6 +284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 13136636915376819201
+  Name: "Craftsman Roof 01 Corner Out"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_cornerOut"
   }
 }
 Assets {
@@ -440,6 +494,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11476426231281021703
+  Name: "Craftsman Roof 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001"
+  }
+}
+Assets {
   Id: 11452126672691922020
   Name: "Craftsman Dining Chair"
   PlatformAssetType: 1
@@ -467,6 +530,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11241146599138551813
+  Name: "Craftsman Roof 01 Eaves Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_eaves_001_corner"
+  }
+}
+Assets {
   Id: 11030959354262879808
   Name: "Rock 02"
   PlatformAssetType: 1
@@ -482,6 +554,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_sand_001_uv"
+  }
+}
+Assets {
+  Id: 10914354925542967262
+  Name: "Fantasy Castle Pillar 02 - Mid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_002_mid"
   }
 }
 Assets {
@@ -530,12 +611,30 @@ Assets {
   }
 }
 Assets {
+  Id: 10036552586788556878
+  Name: "Castle Part - Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_part_window_001_ref"
+  }
+}
+Assets {
   Id: 9951645655387550897
   Name: "Corner - Smoothed Thin - 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_corner_smooth_thin_001_ref"
+  }
+}
+Assets {
+  Id: 9910365847139388510
+  Name: "Smoke Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_smoke_volume_vfx"
   }
 }
 Assets {
@@ -620,6 +719,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9229199904602472614
+  Name: "Craftsman Roof 01 Cap"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_cap"
+  }
+}
+Assets {
   Id: 9199751096616988864
   Name: "Candle Flame VFX"
   PlatformAssetType: 1
@@ -701,6 +809,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8329339828071933523
+  Name: "Concrete Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_001"
+  }
+}
+Assets {
+  Id: 8177613953295784574
+  Name: "Craftsman Front Door 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_door_001"
+  }
+}
+Assets {
   Id: 8085229185430768913
   Name: "Fantasy Book Collection 02"
   PlatformAssetType: 1
@@ -719,12 +845,48 @@ Assets {
   }
 }
 Assets {
+  Id: 7648717670233836541
+  Name: "Craftsman Roof 01 Eaves"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_eaves_001"
+  }
+}
+Assets {
   Id: 7620464723632483463
   Name: "Bottle 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_002"
+  }
+}
+Assets {
+  Id: 7483758916639675124
+  Name: "Craftsman Part - Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_part_window_001"
+  }
+}
+Assets {
+  Id: 7471422181300526130
+  Name: "Japanese Temple Roof 01 - Wall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_001_wall_01_ref"
+  }
+}
+Assets {
+  Id: 7425250487304687016
+  Name: "Flower Wild Lily 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
   }
 }
 Assets {
@@ -827,6 +989,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5439646266583319854
+  Name: "Frosted Glass No Distortion"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass_nodistortion"
+  }
+}
+Assets {
   Id: 5199824919016904048
   Name: "Cube - Rounded Bottom-Aligned"
   PlatformAssetType: 1
@@ -869,6 +1040,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
+  Id: 4709690006431586345
+  Name: "Pipe - Half Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half-pipe_003"
   }
 }
 Assets {
@@ -944,12 +1124,30 @@ Assets {
   }
 }
 Assets {
+  Id: 3484570183640108553
+  Name: "Fantasy Castle Accessory Roof Window 01 "
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_acc_roof_win_001"
+  }
+}
+Assets {
   Id: 3408774492354866182
   Name: "Humanoid 1 Capri Pants"
   PlatformAssetType: 26
   PrimaryAsset {
     AssetType: "SkinnedMeshAssetRef"
     AssetId: "npc_human_gal_lower_clothing_003_ref"
+  }
+}
+Assets {
+  Id: 3264446479341465724
+  Name: "Roof Kawara 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_kawara_002_uv_ref"
   }
 }
 Assets {
@@ -1013,6 +1211,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bookshelf_middle_001_ref"
+  }
+}
+Assets {
+  Id: 1850792407725234645
+  Name: "Japanese Temple Roof 01 - Eaves 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_001_eaves_02_ref"
+  }
+}
+Assets {
+  Id: 1825002650330597814
+  Name: "Japanese Temple Pillar 01 - Top 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_pillar_001_top_01_ref"
   }
 }
 Assets {

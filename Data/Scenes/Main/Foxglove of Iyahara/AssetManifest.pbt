@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17775019098342521252
+  Name: "Main Street Wall 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_wall_002_ref"
+  }
+}
+Assets {
   Id: 17750978958204900038
   Name: "Office Book Pile 03"
   PlatformAssetType: 1

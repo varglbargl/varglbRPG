@@ -7,12 +7,8 @@ Assets {
       RootId: 2282893309394139492
       Objects {
         Id: 2282893309394139492
-        Name: "Group"
+        Name: "Celtic Knot Decal 01"
         Transform {
-          Location {
-          }
-          Rotation {
-          }
           Scale {
             X: 1
             Y: 1
@@ -85,7 +81,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:high"
         }
       }
       Objects {
@@ -150,7 +146,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:high"
         }
       }
       Objects {
@@ -215,7 +211,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:high"
         }
       }
       Objects {
@@ -272,7 +268,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:high"
         }
       }
     }

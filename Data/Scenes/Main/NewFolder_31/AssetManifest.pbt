@@ -1,19 +1,10 @@
 Assets {
-  Id: 14775225527493723590
-  Name: "Military Tank Modern Gear 02"
+  Id: 14568202142325336728
+  Name: "Sci-fi Gear Small 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_mod_gear_002_ref"
-  }
-}
-Assets {
-  Id: 6954370053071083141
-  Name: "Metal Iron 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_001"
+    AssetId: "sm_sf_gen_gear_small_02"
   }
 }
 Assets {
@@ -23,15 +14,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_003"
-  }
-}
-Assets {
-  Id: 1630607435793532884
-  Name: "Military Tank Historic Gear 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_hst_gear_003_ref"
   }
 }
 Assets {

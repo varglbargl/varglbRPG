@@ -512,12 +512,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7362232965091765999
-  Name: "Bricks Mortar Thick 01"
-  PlatformAssetType: 2
+  Id: 7425250487304687016
+  Name: "Flower Wild Lily 01"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_bricks_mortar_001_uv"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
   }
 }
 Assets {
@@ -563,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_pile_002_ref"
+  }
+}
+Assets {
+  Id: 6491134024218534628
+  Name: "Birch Leaves 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_leaves_birch_001"
   }
 }
 Assets {
@@ -698,15 +707,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_birch_002"
-  }
-}
-Assets {
-  Id: 3374330078197732504
-  Name: "Main Street Wall 02 - Window 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_wall_002_window_ref"
   }
 }
 Assets {

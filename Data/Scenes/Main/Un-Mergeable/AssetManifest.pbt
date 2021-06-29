@@ -71,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13913062282643868615
+  Name: "Urban Pipe Valve 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_pipes_acc_valve_001_ref"
+  }
+}
+Assets {
   Id: 13467939812857306969
   Name: "Urban Pipe Coupling 04"
   PlatformAssetType: 1
@@ -116,24 +125,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9693133565758539692
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
-  }
-}
-Assets {
-  Id: 8697636423960157756
-  Name: "Metal Painted 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_painted_new_001_uv"
-  }
-}
-Assets {
   Id: 8234710182260926314
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -176,15 +167,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_leafy_groundcover_002"
-  }
-}
-Assets {
-  Id: 5798176062275974674
-  Name: "Pipe - T-Intersection Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_T_intersection_003"
   }
 }
 Assets {

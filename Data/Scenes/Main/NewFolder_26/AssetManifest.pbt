@@ -1,4 +1,13 @@
 Assets {
+  Id: 17245318809946547268
+  Name: "Decal Family Crest 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_jpn_family_crest_001_ref"
+  }
+}
+Assets {
   Id: 13751669645945998767
   Name: "Ellipsoid - Truncated Wedge"
   PlatformAssetType: 1

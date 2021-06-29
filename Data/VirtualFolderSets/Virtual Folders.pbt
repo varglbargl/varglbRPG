@@ -49,5 +49,9 @@ Assets {
       VirtualFolderPath: "Potions"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Tilesets"
+      PlatformAssetType: 5
+    }
   }
 }

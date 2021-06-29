@@ -1,13 +1,13 @@
 Name: "NewFolder_11"
-RootId: 10605292765158770460
+RootId: 13101260893246279335
 Objects {
-  Id: 16110912745745456550
+  Id: 15521155113552285841
   Name: "Plane Triangle - One Sided Convex"
   Transform {
     Location {
-      X: 1.64766455
-      Y: -1.48057652
-      Z: -4.3433466
+      X: 2.69314432
+      Y: -1.53780568
+      Z: -4.55504417
     }
     Rotation {
       Yaw: -179.999985
@@ -16,10 +16,10 @@ Objects {
     Scale {
       X: 0.679885864
       Y: 1.06435287
-      Z: 0.989693761
+      Z: 0.989694
     }
   }
-  ParentId: 10605292765158770460
+  ParentId: 13101260893246279335
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -67,13 +67,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13276843924529124944
+  Id: 15522399929176574507
   Name: "Plane Triangle - One Sided Convex"
   Transform {
     Location {
-      X: 1.64766455
-      Y: -1.48057652
-      Z: -4.3433466
+      X: 2.69314432
+      Y: -1.53780568
+      Z: -4.55504417
     }
     Rotation {
       Roll: -90
@@ -81,10 +81,10 @@ Objects {
     Scale {
       X: 0.679885864
       Y: 1.06435287
-      Z: 0.989693761
+      Z: 0.989694
     }
   }
-  ParentId: 10605292765158770460
+  ParentId: 13101260893246279335
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16542590046639866815
+  Name: "Main Street Trim Roof 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_003_ref"
+  }
+}
+Assets {
   Id: 16442067914662662686
   Name: "Main Street Foundation 01"
   PlatformAssetType: 1
@@ -431,6 +440,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14534562062221128362
+  Name: "Castle Part - Window 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_part_window_002_ref"
+  }
+}
+Assets {
   Id: 14212988502358508072
   Name: "Metal Basic Steel"
   PlatformAssetType: 2
@@ -464,6 +482,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_pipes_acc_valve_001_ref"
+  }
+}
+Assets {
+  Id: 13894290607303059573
+  Name: "Brick Multicolor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_multicolor_old_001_uv"
   }
 }
 Assets {
@@ -710,15 +737,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11402441593685472770
-  Name: "Sconce 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_sconce_002"
-  }
-}
-Assets {
   Id: 11333095049857697952
   Name: "Urban Pipe Valve 02"
   PlatformAssetType: 1
@@ -743,15 +761,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_mismatch_001"
-  }
-}
-Assets {
-  Id: 10766975867019021707
-  Name: "Glass 01 (no distortion)"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_glass_001"
   }
 }
 Assets {
@@ -788,6 +797,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_fabric_burlap_001_uv"
+  }
+}
+Assets {
+  Id: 10075966838349787628
+  Name: "Decal Sci-fi Details 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scf_details_001_ref"
   }
 }
 Assets {
@@ -1340,12 +1358,30 @@ Assets {
   }
 }
 Assets {
+  Id: 2899842837741361229
+  Name: "Concrete Tiles 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_tiles_001"
+  }
+}
+Assets {
   Id: 1952643684241081677
   Name: "Bottle 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_003"
+  }
+}
+Assets {
+  Id: 1936447668697306516
+  Name: "Main Street Trim 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_002_ref"
   }
 }
 Assets {

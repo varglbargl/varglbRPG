@@ -491,4 +491,5 @@ Assets {
     Description: "Bell"
   }
   SerializationVersion: 89
+  VirtualFolderPath: "Props"
 }

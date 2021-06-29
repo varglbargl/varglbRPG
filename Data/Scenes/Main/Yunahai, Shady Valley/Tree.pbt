@@ -49,6 +49,250 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 3678117109930820537
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4317351501211561235
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4526774639014635809
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4922967557471091037
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6486057959039508200
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7810466045289027479
+      value {
+        Overrides {
+          Name: "ma:Shared_Trim:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Trim:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Trim:utile"
+          Float: 12
+        }
+        Overrides {
+          Name: "ma:Shared_Trim:vtile"
+          Float: 12
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9753021825321089718
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9757995905234152132
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14446850376688165427
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16349304493245004069
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.75
+            G: 0.75
+            B: 0.75
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 13983805921578324917
     }

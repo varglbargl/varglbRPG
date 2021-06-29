@@ -1,13 +1,13 @@
 Name: "NewFolder_14"
-RootId: 14180758342513842885
+RootId: 1259207832107924654
 Objects {
-  Id: 7661541343166254624
+  Id: 6546800912552861091
   Name: "Plane Triangle - One Sided Convex"
   Transform {
     Location {
-      X: 2.63729072
-      Y: -1.47988379
-      Z: -4.2149806
+      X: 1.19738936
+      Y: -1.47978282
+      Z: -4.3271594
     }
     Rotation {
       Yaw: -179.999985
@@ -19,7 +19,7 @@ Objects {
       Z: 0.989693761
     }
   }
-  ParentId: 14180758342513842885
+  ParentId: 1259207832107924654
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -30,9 +30,8 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.807000041
-        G: 0.277608
-        B: 0.595243216
+        G: 0.144000009
+        B: 0.0336000025
         A: 1
       }
     }
@@ -67,13 +66,13 @@ Objects {
   }
 }
 Objects {
-  Id: 518295900336319278
+  Id: 10533709236740360298
   Name: "Plane Triangle - One Sided Convex"
   Transform {
     Location {
-      X: 2.63729072
-      Y: -1.47988379
-      Z: -4.2149806
+      X: 1.19738936
+      Y: -1.47978282
+      Z: -4.3271594
     }
     Rotation {
       Roll: -90
@@ -84,7 +83,7 @@ Objects {
       Z: 0.989693761
     }
   }
-  ParentId: 14180758342513842885
+  ParentId: 1259207832107924654
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -95,9 +94,8 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.807000041
-        G: 0.277608
-        B: 0.595243216
+        G: 0.144000009
+        B: 0.0336000025
         A: 1
       }
     }

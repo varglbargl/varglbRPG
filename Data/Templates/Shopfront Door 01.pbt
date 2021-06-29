@@ -1118,4 +1118,5 @@ Assets {
     }
   }
   SerializationVersion: 89
+  VirtualFolderPath: "Tilesets"
 }
