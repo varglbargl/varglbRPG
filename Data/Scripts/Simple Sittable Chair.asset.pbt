@@ -8,7 +8,12 @@ Assets {
         Name: "cs:SittingStance"
         String: "unarmed_sit_chair_upright"
       }
+      Overrides {
+        Name: "cs:Trigger"
+        ObjectReference {
+        }
+      }
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
 }

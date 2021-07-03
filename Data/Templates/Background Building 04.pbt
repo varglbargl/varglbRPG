@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5310717997527857015
+        ParentId: 4781671109827199097
         ChildIds: 10257968017435958825
         ChildIds: 14451655111501749600
         ChildIds: 4799109385675054596
@@ -83,8 +83,8 @@ Assets {
         ChildIds: 18267498633449390357
         ChildIds: 11276628165032416059
         ChildIds: 12788424097893758188
-        ChildIds: 3753378342044059511
         ChildIds: 94783179402912883
+        ChildIds: 3753378342044059511
         ChildIds: 6380405303740590106
         ChildIds: 17420714538971841398
         ChildIds: 4416312777322293439
@@ -136,9 +136,9 @@ Assets {
         Name: "Bay Windows"
         Transform {
           Location {
-            X: 21168.6367
-            Y: -6522.72852
-            Z: -4203.11719
+            X: -754.029297
+            Y: 384.57373
+            Z: 144.540039
           }
           Rotation {
           }
@@ -280,7 +280,7 @@ Assets {
         Transform {
           Location {
             X: 458.689453
-            Y: 189.434082
+            Y: 201.089844
             Z: 292.400635
           }
           Rotation {
@@ -4332,7 +4332,7 @@ Assets {
           Location {
             X: -57.703125
             Y: 0.0615234375
-            Z: 1161.56738
+            Z: 1160.17334
           }
           Rotation {
             Yaw: -179.999954
@@ -4784,9 +4784,7 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
-            X: 21925
-            Y: -6907.30225
-            Z: -4222.65723
+            Z: 125
           }
           Rotation {
           }
@@ -5354,14 +5352,14 @@ Assets {
         Transform {
           Location {
             X: -812.380859
-            Y: -384.511475
+            Y: -384.51123
             Z: 372.532715
           }
           Rotation {
             Yaw: -179.999954
           }
           Scale {
-            X: 2.92611027
+            X: 2.8965888
             Y: 3.99901628
             Z: 5.07192278
           }
@@ -5952,16 +5950,16 @@ Assets {
         Transform {
           Location {
             X: -812.380859
-            Y: -384.511475
-            Z: 947.372803
+            Y: -384.51123
+            Z: 1522.65723
           }
           Rotation {
             Yaw: -179.999954
           }
           Scale {
-            X: 2.92611027
-            Y: 3.99901628
-            Z: 5.07192278
+            X: 2.87074208
+            Y: 4
+            Z: 4.3
           }
         }
         ParentId: 11129929978191527023
@@ -6016,9 +6014,9 @@ Assets {
         Name: "Tall Roof 2 x 1.5"
         Transform {
           Location {
-            X: 22725
-            Y: -6307.30225
-            Z: -2322.65723
+            X: 800
+            Y: 600
+            Z: 2025
           }
           Rotation {
           }
@@ -10489,9 +10487,8 @@ Assets {
         Name: "Main Street Exterior Stairs - Short Template"
         Transform {
           Location {
-            X: 21115
-            Y: -7112.30225
-            Z: -4347.65723
+            X: -810
+            Y: -205
           }
           Rotation {
             Yaw: -90
@@ -11206,9 +11203,7 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 21925
-            Y: -6907.30225
-            Z: -4182.65723
+            Z: 165
           }
           Rotation {
           }
@@ -11270,9 +11265,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22525
-            Y: -7507.30225
-            Z: -2861.94165
+            X: 600
+            Y: -600
+            Z: 1485.71558
           }
           Rotation {
           }
@@ -11328,9 +11323,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22525
-            Y: -6296.26172
-            Z: -3472.20068
+            X: 600
+            Y: 611.040527
+            Z: 875.456543
           }
           Rotation {
           }
@@ -11386,9 +11381,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22125
-            Y: -6296.26172
-            Z: -2867.20068
+            X: 200
+            Y: 611.040527
+            Z: 1480.45654
           }
           Rotation {
           }
@@ -11444,9 +11439,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22125
-            Y: -6296.26172
-            Z: -3472.20068
+            X: 200
+            Y: 611.040527
+            Z: 875.456543
           }
           Rotation {
           }
@@ -11502,9 +11497,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21725
-            Y: -6296.26172
-            Z: -3472.20068
+            X: -200
+            Y: 611.040527
+            Z: 875.456543
           }
           Rotation {
           }
@@ -11560,9 +11555,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21725
-            Y: -6296.26172
-            Z: -2867.20068
+            X: -200
+            Y: 611.040527
+            Z: 1480.45654
           }
           Rotation {
           }
@@ -11618,9 +11613,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21325
-            Y: -6296.26172
-            Z: -2867.20068
+            X: -600
+            Y: 611.040527
+            Z: 1480.45654
           }
           Rotation {
           }
@@ -11676,9 +11671,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21325
-            Y: -6296.26172
-            Z: -3472.20068
+            X: -600
+            Y: 611.040527
+            Z: 875.456543
           }
           Rotation {
           }
@@ -11734,9 +11729,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22525
-            Y: -6296.26172
-            Z: -2867.20068
+            X: 600
+            Y: 611.040527
+            Z: 1480.45654
           }
           Rotation {
           }
@@ -11792,9 +11787,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22525
-            Y: -7507.30225
-            Z: -3466.94165
+            X: 600
+            Y: -600
+            Z: 880.715576
           }
           Rotation {
           }
@@ -11850,9 +11845,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22125
-            Y: -7507.30225
-            Z: -2861.94165
+            X: 200
+            Y: -600
+            Z: 1485.71558
           }
           Rotation {
           }
@@ -11908,9 +11903,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22125
-            Y: -7507.30225
-            Z: -3466.94165
+            X: 200
+            Y: -600
+            Z: 880.715576
           }
           Rotation {
           }
@@ -11966,9 +11961,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21725
-            Y: -7507.30225
-            Z: -3466.94165
+            X: -200
+            Y: -600
+            Z: 880.715576
           }
           Rotation {
           }
@@ -12024,9 +12019,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21725
-            Y: -7507.30225
-            Z: -2861.94165
+            X: -200
+            Y: -600
+            Z: 1485.71558
           }
           Rotation {
           }
@@ -12082,9 +12077,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21325
-            Y: -7507.30225
-            Z: -2861.94165
+            X: -600
+            Y: -600
+            Z: 1485.71558
           }
           Rotation {
           }
@@ -12140,9 +12135,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21325
-            Y: -7507.30225
-            Z: -3466.94165
+            X: -600
+            Y: -600
+            Z: 880.715576
           }
           Rotation {
           }
@@ -12198,9 +12193,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22725
-            Y: -7307.30225
-            Z: -2861.94165
+            X: 800
+            Y: -400
+            Z: 1485.71558
           }
           Rotation {
             Yaw: -90
@@ -12257,9 +12252,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22725
-            Y: -6507.30225
-            Z: -2861.94165
+            X: 800
+            Y: 400
+            Z: 1485.71558
           }
           Rotation {
             Yaw: -90
@@ -12316,9 +12311,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22725
-            Y: -6507.30225
-            Z: -3466.94165
+            X: 800
+            Y: 400
+            Z: 880.715576
           }
           Rotation {
             Yaw: -90
@@ -12375,9 +12370,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 22725
-            Y: -7307.30225
-            Z: -3466.94165
+            X: 800
+            Y: -400
+            Z: 880.715576
           }
           Rotation {
             Yaw: -90
@@ -12434,12 +12429,12 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21125
-            Y: -7322.79102
-            Z: -2861.94165
+            X: -800
+            Y: -415.48877
+            Z: 1485.71558
           }
           Rotation {
-            Yaw: -89.9999695
+            Yaw: -89.999939
           }
           Scale {
             X: 1
@@ -12493,12 +12488,12 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21125
-            Y: -7322.79102
-            Z: -3466.94165
+            X: -800
+            Y: -415.48877
+            Z: 880.715576
           }
           Rotation {
-            Yaw: -89.9999695
+            Yaw: -89.999939
           }
           Scale {
             X: 1
@@ -12552,9 +12547,9 @@ Assets {
         Name: "Main Street Wall 02 - Window 01"
         Transform {
           Location {
-            X: 22725
-            Y: -6313.84863
-            Z: -3622.65723
+            X: 800
+            Y: 593.453613
+            Z: 725
           }
           Rotation {
             Yaw: 179.999954
@@ -12649,9 +12644,8 @@ Assets {
         Name: "Main Street Wall 02 - Window 01"
         Transform {
           Location {
-            X: 21925
-            Y: -6313.84863
-            Z: -3622.65723
+            Y: 593.453613
+            Z: 725
           }
           Rotation {
             Yaw: 179.999954
@@ -12746,9 +12740,8 @@ Assets {
         Name: "Main Street Wall 02 - Window 01"
         Transform {
           Location {
-            X: 21925
-            Y: -6313.84863
-            Z: -3022.65723
+            Y: 593.453613
+            Z: 1325
           }
           Rotation {
             Yaw: 179.999954
@@ -12843,9 +12836,9 @@ Assets {
         Name: "Main Street Wall 02 - Window 01"
         Transform {
           Location {
-            X: 22725
-            Y: -6313.84863
-            Z: -3022.65723
+            X: 800
+            Y: 593.453613
+            Z: 1325
           }
           Rotation {
             Yaw: 179.999954
@@ -12940,12 +12933,11 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 21925
-            Y: -6298.81787
-            Z: -3052.91626
+            Y: 608.484375
+            Z: 1294.74097
           }
           Rotation {
-            Roll: 89.9999847
+            Roll: 89.9999771
           }
           Scale {
             X: 15.1000013
@@ -13003,9 +12995,9 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: 21125
-            Y: -7507.30225
-            Z: -4222.65723
+            X: -800
+            Y: -600
+            Z: 125
           }
           Rotation {
           }
@@ -13090,12 +13082,12 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 22721.0078
-            Y: -7509.85742
-            Z: -3622.65649
+            X: 796.007813
+            Y: -602.555176
+            Z: 725.000732
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 1
@@ -13187,12 +13179,12 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: 22721.0098
-            Y: -7109.8584
-            Z: -3022.65747
+            X: 796.009766
+            Y: -202.556152
+            Z: 1324.99976
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 0.5
@@ -13284,12 +13276,12 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 22721.0078
-            Y: -7509.85742
-            Z: -3022.65723
+            X: 796.007813
+            Y: -602.555176
+            Z: 1325
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 1
@@ -13381,12 +13373,12 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 22721.0078
-            Y: -6709.85742
-            Z: -3022.65796
+            X: 796.007813
+            Y: 197.444824
+            Z: 1324.99927
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 1
@@ -13478,12 +13470,12 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 22721.0078
-            Y: -6709.85742
-            Z: -3622.65723
+            X: 796.007813
+            Y: 197.444824
+            Z: 725
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 1
@@ -13575,12 +13567,12 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: 22720.7461
-            Y: -7507.30225
-            Z: -4222.65723
+            X: 795.746094
+            Y: -600
+            Z: 125
           }
           Rotation {
-            Yaw: 89.9999542
+            Yaw: 89.9999466
           }
           Scale {
             X: 1.5
@@ -13663,12 +13655,12 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: 22721.0098
-            Y: -7109.8584
-            Z: -3622.65674
+            X: 796.009766
+            Y: -202.556152
+            Z: 725.000488
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 0.5
@@ -13760,9 +13752,8 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 21925
-            Y: -7507.30225
-            Z: -3047.65723
+            Y: -600
+            Z: 1300
           }
           Rotation {
             Yaw: 179.999954
@@ -13824,9 +13815,8 @@ Assets {
         Name: "Main Street Wall 02 - Window 01"
         Transform {
           Location {
-            X: 21925
-            Y: -7503.3125
-            Z: -3022.65723
+            Y: -596.010254
+            Z: 1325
           }
           Rotation {
           }
@@ -13920,14 +13910,14 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 22725
-            Y: -6909.8584
-            Z: -3022.65723
+            X: 800
+            Y: -2.55615234
+            Z: 1325
           }
           Rotation {
             Pitch: -3.05175781e-05
             Yaw: -89.999939
-            Roll: 89.9999771
+            Roll: 89.9999542
           }
           Scale {
             X: 11
@@ -13985,9 +13975,8 @@ Assets {
         Name: "Main Street Wall 02 - Window 01"
         Transform {
           Location {
-            X: 21925
-            Y: -7503.31348
-            Z: -3622.65723
+            Y: -596.01123
+            Z: 725
           }
           Rotation {
           }
@@ -14081,9 +14070,9 @@ Assets {
         Name: "Main Street Wall 02 - Window 01"
         Transform {
           Location {
-            X: 21125
-            Y: -7503.31299
-            Z: -3622.65723
+            X: -800
+            Y: -596.010742
+            Z: 725
           }
           Rotation {
           }
@@ -14177,9 +14166,9 @@ Assets {
         Name: "Main Street Wall 02 - Window 01"
         Transform {
           Location {
-            X: 21125
-            Y: -7503.31201
-            Z: -3022.65723
+            X: -800
+            Y: -596.009766
+            Z: 1325
           }
           Rotation {
           }
@@ -14273,9 +14262,9 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 21128.9922
-            Y: -7122.79102
-            Z: -3622.65723
+            X: -796.007813
+            Y: -215.48877
+            Z: 725
           }
           Rotation {
             Yaw: -89.999939
@@ -14370,9 +14359,9 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 21128.9922
-            Y: -7122.79102
-            Z: -3022.65723
+            X: -796.007813
+            Y: -215.48877
+            Z: 1325
           }
           Rotation {
             Yaw: -89.999939
@@ -14467,9 +14456,9 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: 21128.9922
-            Y: -6722.79102
-            Z: -3622.65723
+            X: -796.007813
+            Y: 184.51123
+            Z: 725
           }
           Rotation {
             Yaw: -89.999939
@@ -14564,9 +14553,9 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: 21128.9922
-            Y: -6722.79102
-            Z: -3022.65723
+            X: -796.007813
+            Y: 184.51123
+            Z: 1325
           }
           Rotation {
             Yaw: -89.999939
@@ -14661,14 +14650,14 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 21125
-            Y: -6922.0957
-            Z: -3243.07886
+            X: -800
+            Y: -14.793457
+            Z: 1104.57837
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: 89.9999847
-            Roll: 89.9999847
+            Pitch: 3.4150944e-05
+            Yaw: 89.9999619
+            Roll: 89.9999619
           }
           Scale {
             X: 11.7600727
@@ -14726,9 +14715,9 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: 21125
-            Y: -6307.30225
-            Z: -4222.65723
+            X: -800
+            Y: 593.477722
+            Z: 125
           }
           Rotation {
           }
@@ -14813,9 +14802,9 @@ Assets {
         Name: "Stone Wall End Corner 2m 001"
         Transform {
           Location {
-            X: 21125
-            Y: -6307.30225
-            Z: -4197.65723
+            X: -800
+            Y: 600
+            Z: 150
           }
           Rotation {
           }
@@ -14877,9 +14866,9 @@ Assets {
         Name: "Stone Wall End Corner 2m 001"
         Transform {
           Location {
-            X: 22725
-            Y: -7507.30225
-            Z: -4197.65723
+            X: 800
+            Y: -600
+            Z: 150
           }
           Rotation {
           }
@@ -14941,9 +14930,9 @@ Assets {
         Name: "Stone Wall End Corner 2m 001"
         Transform {
           Location {
-            X: 22725
-            Y: -6307.30225
-            Z: -4197.65723
+            X: 800
+            Y: 600
+            Z: 150
           }
           Rotation {
           }
@@ -15005,9 +14994,9 @@ Assets {
         Name: "Stone Wall End Corner 2m 001"
         Transform {
           Location {
-            X: 21125
-            Y: -7507.30225
-            Z: -4197.65723
+            X: -800
+            Y: -600
+            Z: 150
           }
           Rotation {
           }
@@ -15069,9 +15058,9 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 21128.9922
-            Y: -6722.79102
-            Z: -4222.65723
+            X: -796.007813
+            Y: 184.51123
+            Z: 125
           }
           Rotation {
             Yaw: -89.999939
@@ -15166,9 +15155,9 @@ Assets {
         Name: "Main Street Window Detail 01"
         Transform {
           Location {
-            X: 21115
-            Y: -6917.30225
-            Z: -3832.65723
+            X: -810
+            Y: -10
+            Z: 515
           }
           Rotation {
             Yaw: -89.999939
@@ -15225,12 +15214,12 @@ Assets {
         Name: "Craftsman Front Door 01"
         Transform {
           Location {
-            X: 21134.7441
-            Y: -7012.79102
-            Z: -4192.65723
+            X: -790.255859
+            Y: -105.48877
+            Z: 155
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 1
@@ -15290,9 +15279,9 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: 21128.9922
-            Y: -7118.70215
-            Z: -4222.65723
+            X: -796.007813
+            Y: -211.399902
+            Z: 125
           }
           Rotation {
             Yaw: -89.999939
@@ -15387,14 +15376,14 @@ Assets {
         Name: "Ivy 05"
         Transform {
           Location {
-            X: 21110
-            Y: -7278.70166
-            Z: -4162.65723
+            X: -815
+            Y: -371.399414
+            Z: 185
           }
           Rotation {
-            Pitch: 2.04905664e-05
-            Yaw: 89.9999847
-            Roll: 89.9999847
+            Pitch: 4.09811328e-05
+            Yaw: 89.9999619
+            Roll: 89.9999619
           }
           Scale {
             X: 1.2
@@ -15437,14 +15426,14 @@ Assets {
         Name: "Ivy 05"
         Transform {
           Location {
-            X: 21110
-            Y: -7136.87695
-            Z: -3809.14478
+            X: -815
+            Y: -229.574707
+            Z: 538.512451
           }
           Rotation {
             Pitch: 23.8946304
-            Yaw: -89.9999695
-            Roll: -89.9999695
+            Yaw: -89.999939
+            Roll: -89.999939
           }
           Scale {
             X: 1.30000007
@@ -15498,9 +15487,9 @@ Assets {
         Name: "Decal Ivy Big"
         Transform {
           Location {
-            X: 21108.9941
-            Y: -6982.57813
-            Z: -3600.88525
+            X: -816.005859
+            Y: -75.2758789
+            Z: 746.772
           }
           Rotation {
             Pitch: -34.483551
@@ -15544,9 +15533,9 @@ Assets {
         Name: "Decal Ivy Big"
         Transform {
           Location {
-            X: 21108.9941
-            Y: -7107.62402
-            Z: -4089.45044
+            X: -816.005859
+            Y: -200.321777
+            Z: 258.206787
           }
           Rotation {
             Pitch: 8.92275333
@@ -15590,14 +15579,14 @@ Assets {
         Name: "Decal Ivy Small (variations)"
         Transform {
           Location {
-            X: 21110
-            Y: -7088.83594
-            Z: -3918.53345
+            X: -815
+            Y: -181.533691
+            Z: 429.123779
           }
           Rotation {
             Pitch: 44.9999886
-            Yaw: 89.9999466
-            Roll: 89.9999466
+            Yaw: 89.9999084
+            Roll: 89.9999
           }
           Scale {
             X: 1.46962094
@@ -15642,9 +15631,8 @@ Assets {
         Name: "Main Street Foundation 01"
         Transform {
           Location {
-            X: 21164.7461
-            Y: -6318.70166
-            Z: -4347.65723
+            X: -760.253906
+            Y: 588.600586
           }
           Rotation {
             Yaw: -90
@@ -15690,12 +15678,11 @@ Assets {
         Name: "Main Street Foundation 01"
         Transform {
           Location {
-            X: 22724.7461
-            Y: -6343.70166
-            Z: -4347.65723
+            X: 799.746094
+            Y: 563.600586
           }
           Rotation {
-            Yaw: 179.999985
+            Yaw: 179.999954
           }
           Scale {
             X: 2
@@ -15734,61 +15721,12 @@ Assets {
         }
       }
       Objects {
-        Id: 3753378342044059511
-        Name: "Main Street Foundation 01"
-        Transform {
-          Location {
-            X: 22694.7461
-            Y: -7495.90283
-            Z: -4347.65723
-          }
-          Rotation {
-            Yaw: -89.999939
-          }
-          Scale {
-            X: -1.5
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16562910984651240293
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16442067914662662686
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 94783179402912883
         Name: "Main Street Foundation 01"
         Transform {
           Location {
-            X: 21125.2539
-            Y: -7470.90283
-            Z: -4347.65723
+            X: -799.746094
+            Y: -563.600586
           }
           Rotation {
             Yaw: 179.999954
@@ -15830,13 +15768,60 @@ Assets {
         }
       }
       Objects {
+        Id: 3753378342044059511
+        Name: "Main Street Foundation 01"
+        Transform {
+          Location {
+            X: 769.746094
+            Y: -588.600586
+          }
+          Rotation {
+            Yaw: -89.999939
+          }
+          Scale {
+            X: -1.5
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16562910984651240293
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16442067914662662686
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 6380405303740590106
         Name: "Main Street Foundation 01 - Corner"
         Transform {
           Location {
-            X: 22694.7461
-            Y: -7493.70166
-            Z: -4342.65723
+            X: 769.746094
+            Y: -586.399414
+            Z: 5
           }
           Rotation {
           }
@@ -15881,9 +15866,9 @@ Assets {
         Name: "Main Street Foundation 01 - Corner"
         Transform {
           Location {
-            X: 22694.7461
-            Y: -6323.70166
-            Z: -4342.65723
+            X: 769.746094
+            Y: 583.600586
+            Z: 5
           }
           Rotation {
           }
@@ -15928,9 +15913,9 @@ Assets {
         Name: "Main Street Foundation 01 - Corner"
         Transform {
           Location {
-            X: 21154.7461
-            Y: -6323.70166
-            Z: -4342.65723
+            X: -770.253906
+            Y: 583.600586
+            Z: 5
           }
           Rotation {
           }
@@ -15975,9 +15960,9 @@ Assets {
         Name: "Main Street Foundation 01 - Corner"
         Transform {
           Location {
-            X: 21154.7461
-            Y: -7493.70166
-            Z: -4342.65723
+            X: -770.253906
+            Y: -586.399414
+            Z: 5
           }
           Rotation {
           }
@@ -16022,9 +16007,8 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 20790
-            Y: -6307.30225
-            Z: -4347.65723
+            X: -1135
+            Y: 600
           }
           Rotation {
             Yaw: -6.10351563e-05
@@ -16077,9 +16061,9 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 20790
-            Y: -6307.30225
-            Z: -4327.65723
+            X: -1135
+            Y: 600
+            Z: 20
           }
           Rotation {
             Yaw: -6.10351563e-05
@@ -16132,9 +16116,9 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 20790
-            Y: -6307.30225
-            Z: -4327.65723
+            X: -1135
+            Y: 600
+            Z: 20
           }
           Rotation {
             Yaw: -90
@@ -16187,9 +16171,9 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 20790
-            Y: -6517.30225
-            Z: -4327.65723
+            X: -1135
+            Y: 390
+            Z: 20
           }
           Rotation {
             Yaw: -89.9999695
@@ -16242,9 +16226,8 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 21070
-            Y: -6307.30225
-            Z: -4347.65723
+            X: -855
+            Y: 600
           }
           Rotation {
             Yaw: -6.10351563e-05
@@ -16297,12 +16280,11 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 21070
-            Y: -7517.30225
-            Z: -4347.65723
+            X: -855
+            Y: -610
           }
           Rotation {
-            Yaw: 6.10351526e-05
+            Yaw: 6.10351453e-05
           }
           Scale {
             X: 1
@@ -16352,12 +16334,12 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 20790
-            Y: -7517.30225
-            Z: -4327.65723
+            X: -1135
+            Y: -610
+            Z: 20
           }
           Rotation {
-            Yaw: 6.10351526e-05
+            Yaw: 6.10351453e-05
           }
           Scale {
             X: 1.4
@@ -16407,12 +16389,12 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 20790
-            Y: -7517.30225
-            Z: -4327.65723
+            X: -1135
+            Y: -610
+            Z: 20
           }
           Rotation {
-            Yaw: 89.9999619
+            Yaw: 89.9999542
           }
           Scale {
             X: 1.05
@@ -16462,12 +16444,11 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 20790
-            Y: -7517.30225
-            Z: -4347.65723
+            X: -1135
+            Y: -610
           }
           Rotation {
-            Yaw: 6.10351526e-05
+            Yaw: 6.10351453e-05
           }
           Scale {
             X: 1
@@ -16517,9 +16498,9 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 20790
-            Y: -7307.30225
-            Z: -4327.65723
+            X: -1135
+            Y: -400
+            Z: 20
           }
           Rotation {
             Yaw: 89.999939
@@ -16572,12 +16553,12 @@ Assets {
         Name: "Landing 01 4m x 4m Mainstreet"
         Transform {
           Location {
-            X: 21115
-            Y: -6712.30225
-            Z: -4437.65723
+            X: -810
+            Y: 195
+            Z: -90
           }
           Rotation {
-            Yaw: 89.9999313
+            Yaw: 89.9999161
           }
           Scale {
             X: 1
@@ -16618,9 +16599,9 @@ Assets {
         Name: "Landing 01 4m x 4m Mainstreet"
         Transform {
           Location {
-            X: 21115
-            Y: -7112.30225
-            Z: -4437.65723
+            X: -810
+            Y: -205
+            Z: -90
           }
           Rotation {
             Yaw: -89.999939
@@ -16664,9 +16645,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21125
-            Y: -6922.79102
-            Z: -3466.94165
+            X: -800
+            Y: -15.4887695
+            Z: 880.715576
           }
           Rotation {
             Yaw: -89.999939
@@ -16723,9 +16704,9 @@ Assets {
         Name: "Main Street Window 02"
         Transform {
           Location {
-            X: 21125
-            Y: -6922.79102
-            Z: -2861.94165
+            X: -800
+            Y: -15.4887695
+            Z: 1485.71558
           }
           Rotation {
             Yaw: -89.999939
@@ -16782,12 +16763,12 @@ Assets {
         Name: "Bush 02"
         Transform {
           Location {
-            X: 20940
-            Y: -6502.3374
-            Z: -4292.65723
+            X: -985
+            Y: 404.964844
+            Z: 55
           }
           Rotation {
-            Yaw: 89.9998779
+            Yaw: 89.9998627
           }
           Scale {
             X: -1.1
@@ -16828,9 +16809,9 @@ Assets {
         Name: "Bush 02"
         Transform {
           Location {
-            X: 20940.0039
-            Y: -7302.3374
-            Z: -4292.65723
+            X: -984.996094
+            Y: -395.035156
+            Z: 55
           }
           Rotation {
             Yaw: -89.9998779
@@ -16874,9 +16855,9 @@ Assets {
         Name: "Flower Daisy Patch 01"
         Transform {
           Location {
-            X: 20920.002
-            Y: -6432.3374
-            Z: -4291.02344
+            X: -1004.99805
+            Y: 474.964844
+            Z: 56.6337891
           }
           Rotation {
             Pitch: 6.99434566
@@ -16924,14 +16905,14 @@ Assets {
         Name: "Flower Daisy Patch 01"
         Transform {
           Location {
-            X: 20920.002
-            Y: -6570.46631
-            Z: -4291.02344
+            X: -1004.99805
+            Y: 336.835938
+            Z: 56.6337891
           }
           Rotation {
-            Pitch: 12.4882212
-            Yaw: 138.788879
-            Roll: 26.6025486
+            Pitch: 12.4882145
+            Yaw: 138.788864
+            Roll: 26.60252
           }
           Scale {
             X: 1.30000007
@@ -16974,14 +16955,14 @@ Assets {
         Name: "Flower Daisy Patch 01"
         Transform {
           Location {
-            X: 20920
-            Y: -7361.55371
-            Z: -4256.9668
+            X: -1005
+            Y: -454.251465
+            Z: 90.6904297
           }
           Rotation {
             Pitch: 8.97714901
-            Yaw: 102.832123
-            Roll: 11.7729702
+            Yaw: 102.83213
+            Roll: 11.7729874
           }
           Scale {
             X: 1.30000007
@@ -17024,14 +17005,14 @@ Assets {
         Name: "Flower Daisy Patch 01"
         Transform {
           Location {
-            X: 20933.1738
-            Y: -7229.53467
-            Z: -4255.54395
+            X: -991.826172
+            Y: -322.232422
+            Z: 92.1132813
           }
           Rotation {
             Pitch: 6.99999428
             Yaw: -129.954498
-            Roll: -24.8418884
+            Roll: -24.8418579
           }
           Scale {
             X: -1.30000007
@@ -17074,9 +17055,9 @@ Assets {
         Name: "Cube - Rounded"
         Transform {
           Location {
-            X: 20940
-            Y: -6507.30225
-            Z: -4342.65723
+            X: -985
+            Y: 400
+            Z: 5
           }
           Rotation {
             Yaw: 89.999939
@@ -17126,9 +17107,9 @@ Assets {
         Name: "Cube - Rounded"
         Transform {
           Location {
-            X: 20940.0039
-            Y: -7307.30225
-            Z: -4342.65723
+            X: -984.996094
+            Y: -400
+            Z: 5
           }
           Rotation {
             Yaw: -89.999939
@@ -17178,9 +17159,7 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 21925
-            Y: -6907.30225
-            Z: -3612.65723
+            Z: 735
           }
           Rotation {
           }
@@ -17242,9 +17221,7 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 21925
-            Y: -6907.30225
-            Z: -3017.65723
+            Z: 1330
           }
           Rotation {
           }
@@ -17306,9 +17283,9 @@ Assets {
         Name: "Decal Ivy Small (variations)"
         Transform {
           Location {
-            X: 21110
-            Y: -7449.11328
-            Z: -4051.73486
+            X: -815
+            Y: -541.811035
+            Z: 295.922363
           }
           Rotation {
             Pitch: -25.1068115
@@ -18007,5 +17984,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
+  VirtualFolderPath: "Tilesets"
 }

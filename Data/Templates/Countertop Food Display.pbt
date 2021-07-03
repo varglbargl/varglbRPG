@@ -729,9 +729,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 2.376
-              G: 3.40706015
-              B: 8
+              R: 2.56050062
+              G: 1.51499987
+              B: 5
               A: 1
             }
           }
@@ -802,9 +802,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 2.376
-              G: 3.40706015
-              B: 8
+              R: 2.56050062
+              G: 1.51499987
+              B: 5
               A: 1
             }
           }
@@ -1021,6 +1021,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
   VirtualFolderPath: "Props"
 }

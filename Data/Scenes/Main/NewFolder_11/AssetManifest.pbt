@@ -1,9 +1,9 @@
 Assets {
-  Id: 863280689963552132
-  Name: "Plane Triangle - One Sided Isosceles"
-  PlatformAssetType: 1
+  Id: 10075966838349787628
+  Name: "Decal Sci-fi Details 01"
+  PlatformAssetType: 14
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_triangle_001"
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scf_details_001_ref"
   }
 }

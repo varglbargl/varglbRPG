@@ -2,7 +2,7 @@ Assets {
   Id: 9042075448561830260
   Name: "Custom Wallpaper Geometric 01"
   PlatformAssetType: 13
-  SerializationVersion: 89
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 2169970450415085127
     ParameterOverrides {

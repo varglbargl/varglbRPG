@@ -10,9 +10,9 @@ Assets {
         Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.39999986
+            Y: 1.39999986
+            Z: 1.39999986
           }
         }
         ParentId: 4781671109827199097
@@ -131,7 +131,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 1
+          Intensity: 1.25
           Color {
             R: 1
             G: 0.726868153
@@ -145,7 +145,7 @@ Assets {
             UseTemperature: true
             Temperature: 2000
             LocalLight {
-              AttenuationRadius: 1000
+              AttenuationRadius: 1200
               PointLight {
                 SourceRadius: 9.23469257
                 SoftSourceRadius: 100
@@ -221,6 +221,6 @@ Assets {
       AssetId: "tm_fan_candle_sconce_001_lit_01"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
   VirtualFolderPath: "Props"
 }

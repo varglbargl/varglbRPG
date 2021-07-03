@@ -438,6 +438,6 @@ Assets {
       AssetId: "Urban_Pipe_Straight_-_02__Prop_"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
   VirtualFolderPath: "Props"
 }

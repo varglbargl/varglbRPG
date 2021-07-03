@@ -111,8 +111,8 @@ Assets {
         ChildIds: 4476948786846946732
         ChildIds: 16003471512712336143
         ChildIds: 14309232724492169363
-        ChildIds: 16232240686437341765
-        ChildIds: 10419465937510446031
+        ChildIds: 16947805853334018369
+        ChildIds: 11085738548781050614
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -179,7 +179,6 @@ Assets {
         ChildIds: 18032308389378432693
         ChildIds: 15820442894633511278
         ChildIds: 8627325383384906157
-        ChildIds: 17237470792061662391
         ChildIds: 7660260747670933792
         ChildIds: 17520831968620298231
         ChildIds: 4922534962125698004
@@ -279,8 +278,8 @@ Assets {
         Transform {
           Location {
             X: 458.689453
-            Y: 189.434082
-            Z: 292.400635
+            Y: 189.433594
+            Z: 288.606445
           }
           Rotation {
             Pitch: 6.83018879e-06
@@ -4043,71 +4042,6 @@ Assets {
         }
       }
       Objects {
-        Id: 17237470792061662391
-        Name: "Prism - 6-Sided Half"
-        Transform {
-          Location {
-            X: -55.3789063
-            Y: 0.0615234375
-            Z: -5.57275391
-          }
-          Rotation {
-            Yaw: 89.9999542
-          }
-          Scale {
-            X: 4.34980345
-            Y: 3.26235247
-            Z: -0.88973254
-          }
-        }
-        ParentId: 11732156153372938780
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 103528912763711779
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.659344
-              G: 0.506688
-              B: 0.812000036
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 2646699554921255658
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 7660260747670933792
         Name: "Prism - 6-Sided Half"
         Transform {
@@ -4130,7 +4064,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12668580837364845201
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -4144,7 +4078,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -4207,7 +4141,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12668580837364845201
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -4221,7 +4155,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -4331,7 +4265,7 @@ Assets {
           Location {
             X: -57.703125
             Y: 0.0615234375
-            Z: 1161.56738
+            Z: 1159.2981
           }
           Rotation {
             Yaw: -179.999954
@@ -4347,7 +4281,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12668580837364845201
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -4361,7 +4295,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -10155,7 +10089,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -10204,9 +10138,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -10235,9 +10169,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail2:color"
             Color {
-              R: 0.7744
-              G: 0.623999953
-              B: 1
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -12564,7 +12498,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -12574,9 +12508,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -12660,7 +12594,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -12670,9 +12604,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -12756,7 +12690,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -12766,9 +12700,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -12853,7 +12787,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -12863,9 +12797,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -12995,7 +12929,7 @@ Assets {
         Transform {
           Location {
             X: -800
-            Y: 600
+            Y: 596.236755
           }
           Rotation {
           }
@@ -13010,7 +12944,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13020,9 +12954,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -13098,7 +13032,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13108,9 +13042,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -13195,7 +13129,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13205,9 +13139,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -13292,7 +13226,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13302,9 +13236,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -13389,7 +13323,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13399,9 +13333,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -13486,7 +13420,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13496,9 +13430,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -13582,7 +13516,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13592,9 +13526,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -13670,7 +13604,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13680,9 +13614,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -13828,7 +13762,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13838,9 +13772,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -13987,7 +13921,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -13997,9 +13931,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -14083,7 +14017,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -14093,9 +14027,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -14179,7 +14113,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -14189,9 +14123,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -14276,7 +14210,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -14286,9 +14220,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -14373,7 +14307,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -14383,9 +14317,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -14470,7 +14404,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -14480,9 +14414,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -14567,7 +14501,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -14577,9 +14511,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -14726,7 +14660,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -14736,9 +14670,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -15069,7 +15003,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -15079,9 +15013,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -15148,17 +15082,17 @@ Assets {
         Name: "Main Street Window Detail 01"
         Transform {
           Location {
-            X: -810
-            Y: 10
-            Z: 390
+            X: -817.646484
+            Y: 15
+            Z: 23.1464844
           }
           Rotation {
             Yaw: 89.9999542
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.19
+            Y: 0.7
+            Z: 1.19
           }
         }
         ParentId: 4010528839011677160
@@ -15187,7 +15121,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18045522745443426933
+            Id: 8385842335641504965
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -15289,7 +15223,7 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:id"
             AssetReference {
-              Id: 18163588478365254627
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -15299,9 +15233,9 @@ Assets {
           Overrides {
             Name: "ma:Building_WallOuter:color"
             Color {
-              R: 0.361644804
-              G: 0.291407973
-              B: 0.467
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -15718,7 +15652,7 @@ Assets {
         Name: "Main Street Foundation 01"
         Transform {
           Location {
-            X: 769.746094
+            X: 767.351563
             Y: 588.600586
             Z: -125
           }
@@ -17198,18 +17132,18 @@ Assets {
         }
       }
       Objects {
-        Id: 16232240686437341765
-        Name: "Cube"
+        Id: 16947805853334018369
+        Name: "Cube - Chamfered Small Polished"
         Transform {
           Location {
-            Z: 610
+            Z: 598.146484
           }
           Rotation {
           }
           Scale {
-            X: 15.654561
-            Y: 11.7899809
-            Z: 0.510773838
+            X: 16.8000011
+            Y: 12.6
+            Z: 0.3
           }
         }
         ParentId: 4010528839011677160
@@ -17217,15 +17151,15 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 9837031551250158292
+              Id: 103528912763711779
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.284
-              G: 0.17107445
-              B: 0.131492
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -17244,7 +17178,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12095835209017042614
+            Id: 11333947087182564846
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -17260,18 +17194,18 @@ Assets {
         }
       }
       Objects {
-        Id: 10419465937510446031
-        Name: "Cube"
+        Id: 11085738548781050614
+        Name: "Cube - Chamfered Small Polished"
         Transform {
           Location {
-            Z: 1205
+            Z: 1163.14648
           }
           Rotation {
           }
           Scale {
-            X: 15.654561
-            Y: 11.7899809
-            Z: 0.510773838
+            X: 16.8000011
+            Y: 12.6
+            Z: 0.3
           }
         }
         ParentId: 4010528839011677160
@@ -17279,15 +17213,15 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 9837031551250158292
+              Id: 103528912763711779
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.284
-              G: 0.17107445
-              B: 0.131492
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -17306,7 +17240,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12095835209017042614
+            Id: 11333947087182564846
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -17548,15 +17482,6 @@ Assets {
       }
     }
     Assets {
-      Id: 2646699554921255658
-      Name: "Pyramid - 6-Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_pyramid_sixsided_001"
-      }
-    }
-    Assets {
       Id: 13475595681279165505
       Name: "Fantasy Sack Laying"
       PlatformAssetType: 1
@@ -17728,15 +17653,6 @@ Assets {
       }
     }
     Assets {
-      Id: 18163588478365254627
-      Name: "Wood Siding White"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_siding_white_001_uv"
-      }
-    }
-    Assets {
       Id: 10036552586788556878
       Name: "Castle Part - Window 01"
       PlatformAssetType: 1
@@ -17854,12 +17770,12 @@ Assets {
       }
     }
     Assets {
-      Id: 18045522745443426933
-      Name: "Main Street Window Detail 01"
+      Id: 8385842335641504965
+      Name: "Main Street Window Frame 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_urb_dtn_mst_part_window_detail_001_ref"
+        AssetId: "sm_ts_urb_dtn_mst_part_windowframe_002_ref"
       }
     }
     Assets {
@@ -17979,10 +17895,20 @@ Assets {
         AssetId: "mi_grass_001_uv"
       }
     }
+    Assets {
+      Id: 11333947087182564846
+      Name: "Cube - Chamfered Small Polished"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_hq_003"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
+  VirtualFolderPath: "Tilesets"
 }

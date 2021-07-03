@@ -113,9 +113,9 @@ Assets {
         Name: "Text 04: }"
         Transform {
           Location {
-            X: -8.29691219
-            Y: -2.61816406
-            Z: -172.533142
+            X: -7.89800644
+            Y: -1.46912253
+            Z: -172.533203
           }
           Rotation {
             Pitch: -90
@@ -181,9 +181,9 @@ Assets {
         Name: "Text 04: {"
         Transform {
           Location {
-            X: -8.29691
-            Y: -2.61816406
-            Z: -164.557068
+            X: -7.89800692
+            Y: -1.46911979
+            Z: -164.557129
           }
           Rotation {
             Pitch: -90
@@ -696,6 +696,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
   VirtualFolderPath: "Props"
 }

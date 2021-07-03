@@ -7,7 +7,58 @@ Assets {
       RootId: 12742495389424480176
       Objects {
         Id: 12742495389424480176
-        Name: "Group"
+        Name: "Hanging Planter"
+        Transform {
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12016671473608753510
+        ChildIds: 13387028968136801942
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 13387028968136801942
+        Name: "ClientContext"
+        Transform {
+          Location {
+            X: 2.41128254
+            Y: -4.83045483
+            Z: 107.312012
+          }
+          Rotation {
+            Yaw: 113.90303
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12742495389424480176
+        ChildIds: 2317276815450632712
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 2317276815450632712
+        Name: "NewFolder"
         Transform {
           Location {
           }
@@ -19,6 +70,8 @@ Assets {
             Z: 1
           }
         }
+        ParentId: 13387028968136801942
+        ChildIds: 18416858469200203161
         ChildIds: 17373216432390438042
         ChildIds: 8976010671810129907
         ChildIds: 2500375700599973192
@@ -34,8 +87,69 @@ Assets {
         ChildIds: 10210621137360415772
         ChildIds: 18134776223411336595
         ChildIds: 2783196636902917948
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsGroup: true
+          IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 18416858469200203161
+        Name: "Simple Swing Parent"
+        Transform {
+          Location {
+            X: -0.000487928017
+            Y: 1.8569699e-05
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2317276815450632712
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:MaxAmplitude"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:MinAmplitude"
+            Float: 2
+          }
+          Overrides {
+            Name: "cs:Wavelength"
+            Float: 2.3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 4774256623264947271
+          }
         }
       }
       Objects {
@@ -43,11 +157,12 @@ Assets {
         Name: "Pyramid - 6-Sided Truncated Polished"
         Transform {
           Location {
-            X: 2.7578125
-            Y: -5.19140625
-            Z: 29.0957031
+            X: -0.471187443
+            Y: -0.170680404
+            Z: -78.2163086
           }
           Rotation {
+            Yaw: -113.903008
             Roll: -179.999985
           }
           Scale {
@@ -56,7 +171,7 @@ Assets {
             Z: 0.54816407
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -112,11 +227,13 @@ Assets {
         Name: "Pyramid - 6-Sided Truncated Polished"
         Transform {
           Location {
-            X: 2.7578125
-            Y: -5.19140625
+            X: -0.471187443
+            Y: -0.170680404
+            Z: -107.312012
           }
           Rotation {
-            Roll: -179.999969
+            Yaw: -113.903015
+            Roll: -179.999954
           }
           Scale {
             X: 0.583090484
@@ -124,7 +241,7 @@ Assets {
             Z: 0.0568921044
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -184,11 +301,12 @@ Assets {
         Name: "Lens - Half"
         Transform {
           Location {
-            X: 3.43457031
-            Y: -5.73144531
-            Z: 23.8520508
+            X: -1.2393887
+            Y: -0.570465326
+            Z: -83.4599609
           }
           Rotation {
+            Yaw: -113.903015
           }
           Scale {
             X: 0.786685407
@@ -196,7 +314,7 @@ Assets {
             Z: 0.578584135
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -251,11 +369,12 @@ Assets {
         Name: "Flower Bellflower Patch 01"
         Transform {
           Location {
-            X: 0.142578125
-            Y: 0.215332031
-            Z: 14.3291016
+            X: 5.53150558
+            Y: 0.0298886299
+            Z: -92.9829102
           }
           Rotation {
+            Yaw: -113.903015
           }
           Scale {
             X: 0.29028073
@@ -263,7 +382,7 @@ Assets {
             Z: 0.252927214
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:color"
@@ -309,12 +428,12 @@ Assets {
         Name: "Flower Bellflower Patch 01"
         Transform {
           Location {
-            X: -0.875
-            Y: -4.70166
-            Z: 11.6279297
+            X: 1.44827318
+            Y: 2.95193982
+            Z: -95.684082
           }
           Rotation {
-            Yaw: 40.3998451
+            Yaw: -73.5031891
           }
           Scale {
             X: 0.270378619
@@ -322,7 +441,7 @@ Assets {
             Z: 0.235586122
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:color"
@@ -368,11 +487,12 @@ Assets {
         Name: "Flower Wild Lily Patch 01"
         Transform {
           Location {
-            X: 1.60351563
-            Y: -0.321777344
-            Z: 25.7509766
+            X: 4.44817162
+            Y: -1.08792329
+            Z: -81.5610352
           }
           Rotation {
+            Yaw: -113.903015
           }
           Scale {
             X: 0.273283422
@@ -380,7 +500,7 @@ Assets {
             Z: 0.322095
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -415,11 +535,12 @@ Assets {
         Name: "Ivy 03"
         Transform {
           Location {
-            X: 2.81542969
-            Y: -4.17041
-            Z: 31.1118164
+            X: 0.438484311
+            Y: -0.637254119
+            Z: -76.2001953
           }
           Rotation {
+            Yaw: -113.903015
           }
           Scale {
             X: 0.500084281
@@ -427,7 +548,7 @@ Assets {
             Z: 0.827369273
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -462,12 +583,13 @@ Assets {
         Name: "Ivy 04"
         Transform {
           Location {
-            X: 1.45898438
-            Y: 35.578125
-            Z: 5.36523438
+            X: 37.3275833
+            Y: -15.5021
+            Z: -101.946777
           }
           Rotation {
-            Roll: 89.9999924
+            Yaw: -113.903
+            Roll: 89.9999847
           }
           Scale {
             X: 0.282289803
@@ -475,7 +597,7 @@ Assets {
             Z: 0.282289833
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -510,14 +632,14 @@ Assets {
         Name: "Ivy 02"
         Transform {
           Location {
-            X: -29.8759766
-            Y: 19.2104492
-            Z: 4.67724609
+            X: 35.0606918
+            Y: 19.7766266
+            Z: -102.634766
           }
           Rotation {
             Pitch: 23.5812874
-            Yaw: 59.7750397
-            Roll: 92.9258652
+            Yaw: -54.1279869
+            Roll: 92.9258728
           }
           Scale {
             X: 0.174806356
@@ -525,7 +647,7 @@ Assets {
             Z: 0.174806356
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -560,12 +682,12 @@ Assets {
         Name: "Chain Tile 01"
         Transform {
           Location {
-            X: 2.625
-            Y: -4.94824219
-            Z: 107.789063
+            X: -0.19522123
+            Y: -0.147956073
+            Z: 0.477050781
           }
           Rotation {
-            Yaw: 33.4104462
+            Yaw: -80.4925766
             Roll: 151.305206
           }
           Scale {
@@ -574,7 +696,7 @@ Assets {
             Z: 0.303709239
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -609,12 +731,13 @@ Assets {
         Name: "Chain Tile 01"
         Transform {
           Location {
-            X: 2.625
-            Y: -4.94824219
-            Z: 107.789063
+            X: -0.19522123
+            Y: -0.147956073
+            Z: 0.477050781
           }
           Rotation {
-            Yaw: 92.0977173
+            Pitch: 6.83018879e-06
+            Yaw: -21.8053017
             Roll: 151.305191
           }
           Scale {
@@ -623,7 +746,7 @@ Assets {
             Z: 0.303709239
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -658,12 +781,12 @@ Assets {
         Name: "Chain Tile 01"
         Transform {
           Location {
-            X: 2.625
-            Y: -4.94824219
-            Z: 107.789063
+            X: -0.19522123
+            Y: -0.147956073
+            Z: 0.477050781
           }
           Rotation {
-            Yaw: 156.954468
+            Yaw: 43.0514412
             Roll: 151.305191
           }
           Scale {
@@ -672,7 +795,7 @@ Assets {
             Z: 0.303709239
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -707,12 +830,13 @@ Assets {
         Name: "Chain Tile 01"
         Transform {
           Location {
-            X: 2.625
-            Y: -4.94824219
-            Z: 107.789063
+            X: -0.19522123
+            Y: -0.147956073
+            Z: 0.477050781
           }
           Rotation {
-            Yaw: -145.144562
+            Pitch: 6.83018879e-06
+            Yaw: 100.952415
             Roll: 151.305191
           }
           Scale {
@@ -721,7 +845,7 @@ Assets {
             Z: 0.303709239
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -756,12 +880,12 @@ Assets {
         Name: "Chain Tile 01"
         Transform {
           Location {
-            X: 2.625
-            Y: -4.94824219
-            Z: 107.789063
+            X: -0.19522123
+            Y: -0.147956073
+            Z: 0.477050781
           }
           Rotation {
-            Yaw: -89.541687
+            Yaw: 156.555298
             Roll: 151.305191
           }
           Scale {
@@ -770,7 +894,7 @@ Assets {
             Z: 0.303709239
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -805,12 +929,12 @@ Assets {
         Name: "Chain Tile 01"
         Transform {
           Location {
-            X: 2.625
-            Y: -4.94824219
-            Z: 107.789063
+            X: -0.19522123
+            Y: -0.147956073
+            Z: 0.477050781
           }
           Rotation {
-            Yaw: -31.7879448
+            Yaw: -145.690964
             Roll: 151.305191
           }
           Scale {
@@ -819,7 +943,7 @@ Assets {
             Z: 0.303709239
           }
         }
-        ParentId: 12742495389424480176
+        ParentId: 2317276815450632712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -954,6 +1078,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
   VirtualFolderPath: "Props"
 }

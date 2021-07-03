@@ -36,7 +36,7 @@ Assets {
 }
 Assets {
   Id: 15444321686824600781
-  Name: "Japan Corners 007"
+  Name: "Japanese Corners 007"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
@@ -81,7 +81,7 @@ Assets {
 }
 Assets {
   Id: 14130731722011628380
-  Name: "Japan Frame 001"
+  Name: "Japanese Frame 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
@@ -99,7 +99,7 @@ Assets {
 }
 Assets {
   Id: 12702576140963870814
-  Name: "Japan Corners 004"
+  Name: "Japanese Corners 004"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"

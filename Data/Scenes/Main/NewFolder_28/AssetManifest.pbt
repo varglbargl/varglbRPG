@@ -1,18 +1,18 @@
 Assets {
-  Id: 13751669645945998767
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 16048367406070731799
+  Name: "Plane 1m - One Sided"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ellipsoid_truncated_wedge_001"
+    AssetId: "sm_plane_1m_001"
   }
 }
 Assets {
-  Id: 6298880568795808979
-  Name: "Advanced Material"
+  Id: 12827530473249900764
+  Name: "Emissive Glow Opaque"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "universal_material_001"
+    AssetId: "fxma_opaque_emissive"
   }
 }

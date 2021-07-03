@@ -143,6 +143,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16155664377433493123
+  Name: "Ivy 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_005"
+  }
+}
+Assets {
+  Id: 16095451113085889863
+  Name: "Wallpaper Stripes 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_wallpaper_001"
+  }
+}
+Assets {
   Id: 16092869253742582086
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -206,15 +224,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14803841533992348173
-  Name: "Military Crate Hinge 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_mil_crate_hinge_002_ref"
-  }
-}
-Assets {
   Id: 14518734330738166470
   Name: "Roof Square Shingles 02"
   PlatformAssetType: 2
@@ -233,6 +242,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14162522025896861699
+  Name: "Stone Wall End Corner 2m 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone-edge_corner_2m_001"
+  }
+}
+Assets {
   Id: 14063351771684305097
   Name: "Parchment 01"
   PlatformAssetType: 2
@@ -248,6 +266,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_sconce_001"
+  }
+}
+Assets {
+  Id: 13894290607303059573
+  Name: "Brick Multicolor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_multicolor_old_001_uv"
   }
 }
 Assets {
@@ -338,6 +365,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_off_desktop_paper_stack_01_ref"
+  }
+}
+Assets {
+  Id: 12668580837364845201
+  Name: "Wood Raw White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_white_001_uv"
   }
 }
 Assets {
@@ -485,6 +521,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11663640042720700098
+  Name: "Japanese Common Chest Lid 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_chest_small_lid_001_ref"
+  }
+}
+Assets {
   Id: 11615716110344107020
   Name: "Craftsman Wall Interior 01"
   PlatformAssetType: 1
@@ -518,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_sconce_002"
+  }
+}
+Assets {
+  Id: 11296147333297412169
+  Name: "Stone Block Long"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_03"
   }
 }
 Assets {
@@ -746,6 +800,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9132574115108666769
+  Name: "Japanese Common Chest Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_chest_small_base_001_ref"
+  }
+}
+Assets {
   Id: 9109236139996472674
   Name: "Urban Cardboard Box 03"
   PlatformAssetType: 1
@@ -797,6 +860,15 @@ Assets {
   PrimaryAsset {
     AssetType: "SkinnedMeshAssetRef"
     AssetId: "npc_human_gal_upper_clothing_001_ref"
+  }
+}
+Assets {
+  Id: 8396846820208818685
+  Name: "Ivy 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_002"
   }
 }
 Assets {
@@ -863,6 +935,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7498784572429254610
+  Name: "Fantasy Castle Trim - Parapet 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_parapet_001"
+  }
+}
+Assets {
   Id: 7483758916639675124
   Name: "Craftsman Part - Window 01"
   PlatformAssetType: 1
@@ -923,6 +1004,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_001"
+  }
+}
+Assets {
+  Id: 6753491216021993641
+  Name: "Japanese Chest Hinge 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_chest_med_hinge_001"
   }
 }
 Assets {
@@ -1214,6 +1304,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1854918430747165024
+  Name: "Main Street Wall 01 - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_wall_001_half_ref"
+  }
+}
+Assets {
   Id: 1850792407725234645
   Name: "Japanese Temple Roof 01 - Eaves 02"
   PlatformAssetType: 1
@@ -1277,12 +1376,39 @@ Assets {
   }
 }
 Assets {
+  Id: 1374763268335115353
+  Name: "Ivy 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_001"
+  }
+}
+Assets {
+  Id: 1192918822044829194
+  Name: "Stone Basic"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "stone_001"
+  }
+}
+Assets {
   Id: 1168742253621117265
   Name: "Rubber Dot Panels 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_scf_rubber_panels_001_uv"
+  }
+}
+Assets {
+  Id: 1026770612723859066
+  Name: "Stone Block Standard"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_01"
   }
 }
 Assets {

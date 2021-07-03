@@ -1,63 +1,63 @@
 Assets {
-  Id: 17232094601870803194
-  Name: "Coral Spikes Big"
+  Id: 17857589108414499627
+  Name: "Text 02: T"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_coral_spike_big_01"
+    AssetId: "Text_019"
   }
 }
 Assets {
-  Id: 16258530429147644632
-  Name: "Lens - Half"
+  Id: 14254635761246241439
+  Name: "Text 02: I"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half_lense_001"
+    AssetId: "Text_008"
   }
 }
 Assets {
-  Id: 15377637131691563244
-  Name: "Ceramic Terracotta Pots 01"
+  Id: 11958936252527183619
+  Name: "Text 02: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_002"
+  }
+}
+Assets {
+  Id: 6954370053071083141
+  Name: "Metal Iron 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_terracotta_pots_001_uv"
+    AssetId: "mi_metal_iron_001"
   }
 }
 Assets {
-  Id: 13007773357133695425
-  Name: "Grass and Soil"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grass_003_uv"
-  }
-}
-Assets {
-  Id: 12374110896356245771
-  Name: "Food Citrus 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_citrus_001_uv"
-  }
-}
-Assets {
-  Id: 11165579009940906264
-  Name: "Pipe"
+  Id: 3444086358886325520
+  Name: "Text 02: R"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_001"
+    AssetId: "Text_017"
   }
 }
 Assets {
-  Id: 9177586487136342834
-  Name: "Cone - Truncated Hollow Wide"
+  Id: 2367204253233266792
+  Name: "Text 02: A"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_hollow_004"
+    AssetId: "Text_000"
+  }
+}
+Assets {
+  Id: 1860383128123552111
+  Name: "Text 02: L"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_011"
   }
 }

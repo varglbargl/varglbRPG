@@ -2,7 +2,7 @@ Assets {
   Id: 10010169792097736707
   Name: "Virtual Folders"
   PlatformAssetType: 30
-  SerializationVersion: 89
+  SerializationVersion: 91
   VirtualFolderSetAsset {
     Folders {
       VirtualFolderPath: "VFX"

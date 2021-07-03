@@ -2,7 +2,7 @@ Assets {
   Id: 16252259983827820200
   Name: "Corn Husk"
   PlatformAssetType: 13
-  SerializationVersion: 89
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 15243134632853998761
     ParameterOverrides {

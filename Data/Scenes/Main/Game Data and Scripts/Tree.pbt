@@ -11922,6 +11922,27 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 10050366097919261465
+      value {
+        Overrides {
+          Name: "bp:Soft Distance Shadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "bp:Cast Volumetric Shadows"
+          Bool: false
+        }
+        Overrides {
+          Name: "bp:Cast Shadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "bp:Dynamic Shadow Distance"
+          Float: 8
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 15353451395209644350
       value {
         Overrides {
@@ -12390,7 +12411,7 @@ Objects {
       }
       StartSpawned: true
       SpawnMode {
-        Value: "mc:erespawnmode:none"
+        Value: "mc:espawnmode:random"
       }
     }
   }

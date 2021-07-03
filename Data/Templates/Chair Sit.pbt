@@ -17,6 +17,9 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 5279262640078314684
+        ChildIds: 16618223390395670821
+        ChildIds: 16817052527058497004
+        ChildIds: 7527693431307760501
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -51,9 +54,7 @@ Assets {
           }
         }
         ParentId: 16223222015253590822
-        ChildIds: 16618223390395670821
-        ChildIds: 16817052527058497004
-        ChildIds: 7527693431307760501
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -83,9 +84,8 @@ Assets {
         Name: "Simple Sittable Chair"
         Transform {
           Location {
-            X: 49.9998
-            Y: 0.00049495697
-            Z: -110
+            X: 49.3886681
+            Y: 0.499023438
           }
           Rotation {
           }
@@ -95,7 +95,15 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5279262640078314684
+        ParentId: 16223222015253590822
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Trigger"
+            ObjectReference {
+              SubObjectId: 5279262640078314684
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -119,9 +127,8 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 50
-            Y: 0.00048828125
-            Z: -110
+            X: 49.3886681
+            Y: 0.498046875
           }
           Rotation {
           }
@@ -131,7 +138,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 5279262640078314684
+        ParentId: 16223222015253590822
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -166,6 +173,9 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
+            X: -0.611328125
+            Y: 0.498046815
+            Z: 110
           }
           Rotation {
           }
@@ -175,7 +185,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5279262640078314684
+        ParentId: 16223222015253590822
         ChildIds: 18362862709697281532
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -290,5 +300,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
 }

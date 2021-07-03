@@ -6825,6 +6825,6 @@ Assets {
   Marketplace {
     Description: "Three nice pieces of wall art to hang in your game - An apple tree painting, a big bee, and an ultramarine, gold, and rose poster in honor of my French Midcentury Art Nouveau idol Yves Klein. If you hang these anywhere interesting and wanna show me, post a screenshot to the Core Creator Discord Server and tag BlueClairey! I\'d love to see! I was sitting on these mostly finished for like ever until I finally published them now because I wanna get my name on the CC credits wall in Coffee Shop RPG by Slinkous :) \r\n\r\nI\'m calling this Vol. 1 to motivate myself to make more wall art someday. It\'s pretty fun to make. "
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
   DirectlyPublished: true
 }

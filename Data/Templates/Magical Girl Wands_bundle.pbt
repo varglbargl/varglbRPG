@@ -52,5 +52,5 @@ Assets {
     Version: "1.1.0"
     Description: "yall mind if i uwu in here?\r\n\r\nUpdate: Wands are now fully usable weapons against evil!"
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
 }

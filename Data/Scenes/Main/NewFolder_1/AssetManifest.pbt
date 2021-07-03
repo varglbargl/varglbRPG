@@ -1,18 +1,18 @@
 Assets {
-  Id: 16048367406070731799
-  Name: "Plane 1m - One Sided"
+  Id: 8318010931141529991
+  Name: "Fantasy Castle Wall 01 - Doorway 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_001"
+    AssetId: "sm_ts_fan_cas_wall_001_door_02"
   }
 }
 Assets {
-  Id: 12827530473249900764
-  Name: "Emissive Glow Opaque"
-  PlatformAssetType: 2
+  Id: 4927017302746496390
+  Name: "Fantasy Castle Wall 01"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_opaque_emissive"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001"
   }
 }

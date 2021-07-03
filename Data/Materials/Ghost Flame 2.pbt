@@ -2,7 +2,7 @@ Assets {
   Id: 2167398556047793086
   Name: "Ghost Flame 2"
   PlatformAssetType: 13
-  SerializationVersion: 89
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 7178533074771490214
     ParameterOverrides {

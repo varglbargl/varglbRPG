@@ -1,118 +1,100 @@
 Assets {
-  Id: 17241186771114119414
-  Name: "Metal Gold 01"
+  Id: 18033297229984528543
+  Name: "Wood Planks"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_001"
+    AssetId: "mi_wood_planks_dark_001_uv"
   }
 }
 Assets {
-  Id: 16542289431259589342
-  Name: "Frosted Glass"
+  Id: 16048367406070731799
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
+  Id: 15614674765095447048
+  Name: "Rope"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "fxma_frosted_glass"
+    AssetId: "mi_rope_001"
   }
 }
 Assets {
-  Id: 16115905030413172164
-  Name: "Metal Basic 01"
+  Id: 14432081217317981130
+  Name: "Hiragana Font 1: \343\200\202"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "meyiro_block_hiragana_115"
+  }
+}
+Assets {
+  Id: 13406387269294768400
+  Name: "Mechanical Gears Squeaky 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_mechanical_gears_squeaky_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 10793320870014566179
+  Name: "Basic Hologram"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
+    AssetId: "fxmi_basic_hologram"
   }
 }
 Assets {
-  Id: 16092869253742582086
-  Name: "Plastic Shiny"
+  Id: 8055813084033537277
+  Name: "Whitebox Floor 01 4m x 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_floor_001_4x4"
+  }
+}
+Assets {
+  Id: 7578904194929811264
+  Name: "Japanese Temple Foundation 02 Wedge"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_foundation_002_wedge_ref"
+  }
+}
+Assets {
+  Id: 6954370053071083141
+  Name: "Metal Iron 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "plastic_shiny_001"
+    AssetId: "mi_metal_iron_001"
   }
 }
 Assets {
-  Id: 14212988502358508072
-  Name: "Metal Basic Steel"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "steel_001"
-  }
-}
-Assets {
-  Id: 12625274918948579388
-  Name: "Bottle 01"
+  Id: 5626465369024768397
+  Name: "Military Tank Historic Gear 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_001"
-  }
-}
-Assets {
-  Id: 12152694598132833191
-  Name: "Plane 1m - Two Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_002"
-  }
-}
-Assets {
-  Id: 12151973210831699112
-  Name: "Bottle 05"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_005"
-  }
-}
-Assets {
-  Id: 10766975867019021707
-  Name: "Glass 01 (no distortion)"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_glass_001"
-  }
-}
-Assets {
-  Id: 9295663288063328394
-  Name: "Cylinder - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
-  }
-}
-Assets {
-  Id: 7620464723632483463
-  Name: "Bottle 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_002"
-  }
-}
-Assets {
-  Id: 6157711858907400962
-  Name: "Modern Weapon Accessory - Shell Clip"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_acc_shellclip_001"
-  }
-}
-Assets {
-  Id: 5829251124796146812
-  Name: "Bottle 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_004"
+    AssetId: "sm_mil_tank_hst_gear_002_ref"
   }
 }
 Assets {
@@ -125,47 +107,47 @@ Assets {
   }
 }
 Assets {
-  Id: 4709690006431586345
-  Name: "Pipe - Half Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half-pipe_003"
-  }
-}
-Assets {
-  Id: 2848437966608494040
-  Name: "Modern Weapon Ammo - Shell 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_ammo_shell_001"
-  }
-}
-Assets {
-  Id: 1952643684241081677
-  Name: "Bottle 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_003"
-  }
-}
-Assets {
-  Id: 1915461248412394696
-  Name: "Invisible"
+  Id: 5357777918645578075
+  Name: "Bricks Stone Floor Large 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_invisible_001"
+    AssetId: "mi_brick_stone_floor_large_001"
   }
 }
 Assets {
-  Id: 611830093716030491
-  Name: "Bottle 06"
+  Id: 4832010047877921553
+  Name: "Main Street Railing 01 - 2m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_006"
+    AssetId: "sm_ts_urb_dtn_mst_railing_001_ref"
+  }
+}
+Assets {
+  Id: 4519163911553529386
+  Name: "Main Street Railing 01 - Post"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_railing_001_post_ref"
+  }
+}
+Assets {
+  Id: 2954037056948186721
+  Name: "Pipe - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_003"
+  }
+}
+Assets {
+  Id: 1137112816547272582
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
   }
 }

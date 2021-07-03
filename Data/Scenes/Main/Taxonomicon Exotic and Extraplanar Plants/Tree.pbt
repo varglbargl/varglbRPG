@@ -25,7 +25,6 @@ Objects {
   ChildIds: 572702641805738322
   ChildIds: 5975166801402435508
   ChildIds: 10046903358131555075
-  ChildIds: 10289964501710586496
   ChildIds: 667039037184809585
   ChildIds: 3442652948561425653
   ChildIds: 14587391656292888376
@@ -215,6 +214,10 @@ Objects {
   ChildIds: 5170713077107931418
   ChildIds: 977413321249310160
   ChildIds: 7807314056053575557
+  ChildIds: 11915862802496272582
+  ChildIds: 17207483424435434792
+  ChildIds: 16013281767605544991
+  ChildIds: 6845983323419876630
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -229,6 +232,245 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 6845983323419876630
+  Name: "Small Crate Lid"
+  Transform {
+    Location {
+      X: 643.712891
+      Y: -5.36132813
+      Z: 702.604
+    }
+    Rotation {
+      Yaw: -89.9999847
+      Roll: -38.0315056
+    }
+    Scale {
+      X: 1.31617737
+      Y: 1.31617737
+      Z: 1.31617737
+    }
+  }
+  ParentId: 14092170796338012629
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.896
+        G: 0.606890678
+        B: 0.462336034
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13759174578102421826
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 16013281767605544991
+  Name: "Plane 1m - One Sided"
+  Transform {
+    Location {
+      X: 641.314453
+      Y: -5.36132813
+      Z: 705.671143
+    }
+    Rotation {
+      Yaw: -89.9999847
+      Roll: -38.0314751
+    }
+    Scale {
+      X: 1.11340404
+      Y: 1.93137395
+      Z: 1.31618237
+    }
+  }
+  ParentId: 14092170796338012629
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12446131267530965574
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16048367406070731799
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17207483424435434792
+  Name: "Chair Sit"
+  Transform {
+    Location {
+      X: 15620
+      Y: -4655
+      Z: -4297.28955
+    }
+    Rotation {
+      Yaw: 44.9999962
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14092170796338012629
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16223222015253590822
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Chair Sit"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -466.679688
+            Y: -284.964844
+            Z: 12.0146484
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 44.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7123922115875722576
+    }
+  }
+}
+Objects {
+  Id: 11915862802496272582
+  Name: "Urban Pipe Ground Attachment - 02 (Prop)"
+  Transform {
+    Location {
+      X: 16787.5664
+      Y: -3496.39087
+      Z: -4286.83301
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14092170796338012629
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 18058958206222660522
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Urban Pipe Ground Attachment - 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 700.886719
+            Y: 873.644287
+            Z: 22.4711914
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9479312645792344074
     }
   }
 }
@@ -1632,8 +1874,8 @@ Objects {
   Name: "Military Sandbag 01"
   Transform {
     Location {
-      X: -209.869141
-      Y: -177.003906
+      X: -217.254883
+      Y: -160.319336
       Z: 26.5327148
     }
     Rotation {
@@ -2307,7 +2549,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_17"
+    FilePartitionName: "NewFolder_32"
   }
 }
 Objects {
@@ -2342,7 +2584,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_18"
+    FilePartitionName: "NewFolder_33"
   }
 }
 Objects {
@@ -2408,8 +2650,8 @@ Objects {
   Name: "Floor Candle Holder 03"
   Transform {
     Location {
-      X: -193.908203
-      Y: -190.200684
+      X: -201.293945
+      Y: -173.516113
       Z: 120.003906
     }
     Rotation {
@@ -2439,6 +2681,10 @@ Objects {
       AssetReference {
         Id: 3722419759708884904
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.5
     }
   }
   Collidable_v2 {
@@ -3144,7 +3390,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_19"
+    FilePartitionName: "NewFolder_34"
   }
 }
 Objects {
@@ -6333,7 +6579,7 @@ Objects {
     Location {
       X: -500.466797
       Y: -317.479
-      Z: 16.0581055
+      Z: 8.76855469
     }
     Rotation {
       Yaw: -45
@@ -6397,6 +6643,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -8919,16 +9166,16 @@ Objects {
   Name: "Plane 1m - One Sided"
   Transform {
     Location {
-      X: 1513.32031
+      X: 1313.32031
       Y: 1126.58154
-      Z: 909.304199
+      Z: 1314.30444
     }
     Rotation {
-      Roll: -89.9999924
+      Roll: -90
     }
     Scale {
-      X: 15.1
-      Y: 4.9
+      X: 10.8
+      Y: 9.40000057
       Z: 1
     }
   }
@@ -23265,6 +23512,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23337,6 +23585,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23409,6 +23658,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23485,6 +23735,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23561,6 +23812,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23633,6 +23885,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23709,6 +23962,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23785,6 +24039,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23861,6 +24116,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23933,6 +24189,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24009,6 +24266,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24085,6 +24343,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24161,6 +24420,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24231,6 +24491,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24301,6 +24562,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24371,6 +24633,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24441,6 +24704,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24510,6 +24774,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24579,6 +24844,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24648,6 +24914,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25873,53 +26140,6 @@ Objects {
   }
 }
 Objects {
-  Id: 10289964501710586496
-  Name: "Cafe Table"
-  Transform {
-    Location {
-      X: -1618.67969
-      Y: 465.581543
-      Z: 98.3042
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.7
-      Y: 0.7
-      Z: 0.7
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13063291390146347343
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 10046903358131555075
   Name: "Piddle Pountain"
   Transform {
@@ -26710,6 +26930,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Un-Mergeable"
+    FilePartitionName: "Un-Mergeable_2"
   }
 }

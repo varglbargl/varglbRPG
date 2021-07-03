@@ -1109,7 +1109,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Weapons, Shields"
 }

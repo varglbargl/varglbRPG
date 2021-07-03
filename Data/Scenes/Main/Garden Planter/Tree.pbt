@@ -4348,6 +4348,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4630,6 +4631,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {

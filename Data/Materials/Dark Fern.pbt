@@ -2,7 +2,7 @@ Assets {
   Id: 16428818447224959958
   Name: "Dark Fern"
   PlatformAssetType: 13
-  SerializationVersion: 89
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 3848172820546158833
     ParameterOverrides {

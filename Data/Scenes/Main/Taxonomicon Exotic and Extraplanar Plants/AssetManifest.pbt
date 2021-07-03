@@ -242,15 +242,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13063291390146347343
-  Name: "Cafe Table"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_table_cafe_001"
-  }
-}
-Assets {
   Id: 13007773357133695425
   Name: "Grass and Soil"
   PlatformAssetType: 2

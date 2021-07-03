@@ -2891,6 +2891,6 @@ Assets {
       AssetId: "Urban_Pipe_Wall_6m__Prop_"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
   VirtualFolderPath: "Props"
 }

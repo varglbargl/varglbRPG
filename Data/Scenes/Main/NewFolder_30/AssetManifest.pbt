@@ -1,18 +1,18 @@
 Assets {
-  Id: 18302070369115552264
-  Name: "Cylinder - Chamfered Small Polished"
+  Id: 16048367406070731799
+  Name: "Plane 1m - One Sided"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_003"
+    AssetId: "sm_plane_1m_001"
   }
 }
 Assets {
-  Id: 6954370053071083141
-  Name: "Metal Iron 01"
+  Id: 12827530473249900764
+  Name: "Emissive Glow Opaque"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_001"
+    AssetId: "fxma_opaque_emissive"
   }
 }

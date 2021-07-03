@@ -19591,6 +19591,6 @@ Assets {
   Marketplace {
     Description: "This House is a building that you can\'t go inside.  The object count is 500 unmerged, and the trianlges count is low.  "
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
   DirectlyPublished: true
 }
