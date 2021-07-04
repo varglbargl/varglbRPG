@@ -44,6 +44,14 @@ Assets {
             Name: "cs:AnimationStance"
             String: "1hand_melee_stance"
           }
+          Overrides {
+            Name: "cs:Description"
+            String: "This is a test description. You\'re really not supposed to see this, okay? If you are, something has gone wrong."
+          }
+          Overrides {
+            Name: "cs:FlavorText"
+            String: "\"Through dangers untold and hardships unnumbered I have fought my way here to the castle beyond the Goblin City to take back the child you have stolen...\""
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -734,5 +742,5 @@ Assets {
   }
   SerializationVersion: 91
   VirtualFolderPath: "Gear"
-  VirtualFolderPath: "Weapons, Shields"
+  VirtualFolderPath: "Weapons"
 }

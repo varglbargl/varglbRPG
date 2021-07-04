@@ -1,6 +1,7 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 local Rings = require(script:GetCustomProperty("Rings"))
 local Weapons = require(script:GetCustomProperty("Weapons"))
+local Shields = require(script:GetCustomProperty("Shields"))
 local Potions = require(script:GetCustomProperty("Potions"))
 
 local Loot = {}
@@ -9,6 +10,7 @@ local lootFromProperties = script:GetCustomProperties()
 local lootTable = {}
 
 local statBalance = {
+
   grit = 0.31,
   wit = 0.37,
   spit = 0.23,
@@ -20,7 +22,7 @@ local lootRarity = {
   60, 30, 9, 1
 }
 
-function readLootTable(thisLootTable)
+function readLootTable(thisLootTable, itemType)
   for propName, item in pairs(thisLootTable) do
     local spawnedItem = World.SpawnAsset(item, {position = Vector3.UP * -10000})
 
@@ -29,6 +31,7 @@ function readLootTable(thisLootTable)
       equipment = item,
       templateId = spawnedItem.sourceTemplateId,
       socket = spawnedItem.socket,
+      itemType = itemType,
       itemLevel = spawnedItem:GetCustomProperty("ItemLevel"),
       icon = spawnedItem:GetCustomProperty("Icon"),
       minDamage = spawnedItem:GetCustomProperty("MinDamage"),
@@ -58,9 +61,10 @@ function readLootTable(thisLootTable)
   end
 end
 
-readLootTable(Rings)
-readLootTable(Weapons)
-readLootTable(Potions)
+readLootTable(Rings, "Ring")
+readLootTable(Weapons, "Weapon")
+readLootTable(Shields, "Shield")
+readLootTable(Potions, "Potion")
 
 local superlatives = {
   g = {"Executioner's", "Blacksmith's", "Big Jim's", "Powerfully", "Aggressively", "Hella", "Unintentionally", "Bumblingly", "Brazenly", "Overpoweringly"},
@@ -93,23 +97,23 @@ function assignStat(item, letter)
 
   if letter == "g" then
     item.grit = item.grit or 0
-    item.grit = math.floor(item.grit + 1 * magicNumber * statBalance.grit)
+    item.grit = math.ceil(item.grit + 1 * magicNumber * statBalance.grit)
 
   elseif letter == "w" then
     item.wit = item.wit or 0
-    item.wit = math.floor(item.wit + 1 * magicNumber * statBalance.wit)
+    item.wit = math.ceil(item.wit + 1 * magicNumber * statBalance.wit)
 
   elseif letter == "s" then
     item.spit = item.spit or 0
-    item.spit = math.floor(item.spit + 1 * magicNumber * statBalance.spit)
+    item.spit = math.ceil(item.spit + 1 * magicNumber * statBalance.spit)
 
   elseif letter == "h" then
     item.health = item.health or 0
-    item.health = math.floor(item.health + 1 * magicNumber * statBalance.health)
+    item.health = math.ceil(item.health + 1 * magicNumber * statBalance.health)
 
   elseif letter == "a" then
     item.stamina = item.stamina or 0
-    item.stamina = math.floor(item.stamina + 1 * magicNumber * statBalance.stamina)
+    item.stamina = math.ceil(item.stamina + 1 * magicNumber * statBalance.stamina)
   end
 end
 
@@ -213,19 +217,19 @@ function Loot.decodeEnchant(item, code)
 end
 
 function Loot.getRandom(level, rarity)
-  rarity = rarity or 1
+  rarity = rarity or 0
 
   local rollTable = {}
   local roll = math.random(1, 100)
 
   if roll <= lootRarity[4] then
-    rarity = 3
+    rarity = math.max(rarity, 3)
   elseif roll <= lootRarity[3] then
-    rarity = 2
+    rarity = math.max(rarity, 2)
   elseif roll <= lootRarity[2] then
-    rarity = 1
+    rarity = math.max(rarity, 1)
   else
-    rarity = 0
+    rarity = math.max(rarity, 0)
   end
 
   if level then
@@ -235,6 +239,10 @@ function Loot.getRandom(level, rarity)
       end
     end
 
+    if #rollTable == 0 then
+      return Loot.getRandom(level - 1, rarity)
+    end
+
     result = rollTable[math.random(1, #rollTable)]
   else
     result = lootTable[math.random(1, #lootTable)]
@@ -242,8 +250,8 @@ function Loot.getRandom(level, rarity)
 
   assert(result, "Loot.getRandom really should be able to find at least one item. Something's up...")
 
-  if result.socket == "left_wrist" then
-    rarity = math.max(roll, 1)
+  if result.itemType == "Ring" then
+    rarity = math.max(rarity, 1)
   end
 
   return Loot.enchantItem(result, rarity)
@@ -267,11 +275,11 @@ end
 
 function Loot.giveToPlayer(player, item)
   if Environment.IsServer() then
-    Events.BroadcastToPlayer(player, "AddToInventory", item.templateId, item.enchant)
+    Utils.throttleToPlayer(player, "AddToInventory", item.templateId, item.enchant)
   end
 end
 
-function Loot.giveRandomToPlayer(player, level)
+function Loot.giveRandomToPlayer(player, level, rarity)
   if not Object.IsValid(player) then return end
 
   level = level or player:GetResource("Level")

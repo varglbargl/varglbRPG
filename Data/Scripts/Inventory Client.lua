@@ -58,17 +58,44 @@ for i, slot in ipairs(inventorySlots) do
   button.hoveredEvent:Connect(function()
     if inventory[i] then
       hoveredSlot = i
+      Events.Broadcast("ShowTooltip", inventory[i])
     end
   end)
 
   button.unhoveredEvent:Connect(function()
-    Task.Wait(0.5)
+    Task.Wait()
+    if clientPlayer:IsBindingPressed("ability_secondary") then return end
 
     if hoveredSlot == i then
       hoveredSlot = nil
+      Events.Broadcast("HideTooltip")
     end
   end)
 end
+
+function mouseoverGear(slot, itemTable, index)
+  local button = slot:FindChildByType("UIButton")
+
+  button.hoveredEvent:Connect(function()
+    Events.Broadcast("ShowTooltip", itemTable[index])
+  end)
+
+  button.unhoveredEvent:Connect(function()
+    Task.Wait()
+    if clientPlayer:IsBindingPressed("ability_secondary") then return end
+
+    Events.Broadcast("HideTooltip")
+  end)
+end
+
+for i, slot in ipairs(gearSlots.fingers) do
+  mouseoverGear(slot, gear.fingers, i)
+end
+
+mouseoverGear(gearSlots.primary, gear, "primary")
+mouseoverGear(gearSlots.secondary, gear, "secondary")
+mouseoverGear(gearSlots.glider, gear, "glider")
+mouseoverGear(gearSlots.potion, gear, "potion")
 
 function onPlayerJoined(player)
 	PLAYER_PORTRAIT:SetPlayerProfile(player)
@@ -193,7 +220,6 @@ function closeCharacterScreen()
   Utils.playSoundEffect(OPEN_CLOSE_SFX)
 
   CHARACTER_SCREEN.visibility = Visibility.FORCE_OFF
-  UI.SetCanCursorInteractWithUI(false)
   Events.Broadcast("HideCursor")
 
   isOpen = false
@@ -204,11 +230,12 @@ function openCharacterScreen()
   redrawInventory()
 
   CHARACTER_SCREEN.visibility = Visibility.INHERIT
-  UI.SetCanCursorInteractWithUI(true)
   Events.Broadcast("ShowCursor")
 
   isOpen = true
 end
+
+Events.Connect("CloseUI", closeCharacterScreen)
 
 function onBindingPressed(thisPlayer, keyCode)
 	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
@@ -268,6 +295,7 @@ function onBindingPressed(thisPlayer, keyCode)
           inventory[hoveredSlot] = nil
           hoveredSlot = nil
 
+          Events.Broadcast("HideTooltip")
           redrawInventory()
           throttleInventory()
         end

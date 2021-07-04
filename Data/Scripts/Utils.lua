@@ -7,12 +7,21 @@ local powerDoublingRate = 7
 -- MY COLORS
 
 Utils.color = {
-  xp      = Color.New(0.4, 0.2, 0.95),
-  hurt    = Color.New(1, 0.1, 0.05),
-  heal    = Color.New(0.1, 1, 0.5),
-  attack  = Color.New(1, 0.95, 0.8),
-  magic   = Color.New(1, 0.95, 0.1),
-  gold    = Color.New(1, 0.7, 0.3)
+  xp       = Color.New(0.4, 0.2, 0.95),
+  hurt     = Color.New(1, 0.1, 0.05),
+  heal     = Color.New(0.1, 1, 0.5),
+  attack   = Color.New(1, 0.95, 0.8),
+  magic    = Color.New(1, 0.95, 0.1),
+  gold     = Color.New(1, 0.7, 0.3),
+
+  grit     = Color.New(1, 0.4, 0.55),
+  wit      = Color.New(0.45, 0.85, 1),
+  spit     = Color.New(0.85, 1, 0.5),
+
+  common   = Color.New(0.9, 0.8, 0.7),
+  rare     = Color.New(0.35, 1, 0.5),
+  epic     = Color.New(0.7, 0.45, 1),
+  unique   = Color.New(1, 0.38, 0.3)
 }
 
 -- GAME INFO
@@ -23,9 +32,9 @@ local classes = {
     grit = 15,
     wit  = 5,
     spit = 10,
-    special = "Part of all damage taken is reflected back to the attacker instead.",
+    special = "Part of all damage you take is reflected back to the attacker instead.",
     starterGear = {
-      primary = "Starter Axe",
+      primary = "Double-Edged Axe",
       glider = "Basic Glider"
     }
   },
@@ -34,20 +43,20 @@ local classes = {
     grit = 15,
     wit  = 10,
     spit = 5,
-    special = "Melee attacks heal you or a nearby ally in need.",
+    special = "Your melee attacks also heal you or a nearby ally in need.",
     starterGear = {
-      primary = "Starter Axe",
+      primary = "Heavy Gavel",
       glider = "Basic Glider"
     }
   },
   {
-    name = "Wizlord",
+    name = "Spellweaver",
     grit = 5,
     wit  = 15,
     spit = 10,
-    special = "",
+    special = "Your spells have their cooldown timers cut in half.",
     starterGear = {
-      primary = "Starter Axe",
+      primary = "Focussing Iris",
       glider = "Basic Glider"
     }
   },
@@ -56,9 +65,9 @@ local classes = {
     grit = 10,
     wit  = 15,
     spit = 5,
-    special = "Spells and melee attacks may have random extra effects. Who knows what could happen??",
+    special = "Your attacks, spells, and potions can trigger random extra effects. Who knows what could happen??",
     starterGear = {
-      primary = "Starter Axe",
+      primary = "Wilderstaff",
       glider = "Basic Glider"
     }
   },
@@ -67,9 +76,9 @@ local classes = {
     grit = 5,
     wit  = 10,
     spit = 15,
-    special = "Melee attacks knock enemies away, ranged attacks slow enemies.",
+    special = "Your melee attacks knock enemies away, ranged attacks slow enemies.",
     starterGear = {
-      primary = "Starter Axe",
+      primary = "Ranger Crossbow",
       glider = "Basic Glider"
     }
   },
@@ -80,10 +89,21 @@ local classes = {
     spit = 15,
     special = "Sprinting or gliding into a fight makes your first melee attack deal tripple.",
     starterGear = {
-      primary = "Starter Axe",
+      primary = "Concealed Blade",
       glider = "Basic Glider"
     }
-  }
+  },
+  -- {
+  --   name = "Explorer",
+  --   grit = 10,
+  --   wit  = 10,
+  --   spit = 10,
+  --   special = "",
+  --   starterGear = {
+  --     primary = "Trusty Machete",
+  --     glider = "Basic Glider"
+  --   }
+  -- }
 }
 
 function Utils.classStats(num)

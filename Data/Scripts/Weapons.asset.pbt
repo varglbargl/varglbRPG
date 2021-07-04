@@ -41,27 +41,9 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:StarterShield"
-        AssetReference {
-          Id: 6138661724463524963
-        }
-      }
-      Overrides {
-        Name: "cs:ToyShield"
-        AssetReference {
-          Id: 2878518331186870302
-        }
-      }
-      Overrides {
         Name: "cs:ToySword"
         AssetReference {
           Id: 16387351589372846252
-        }
-      }
-      Overrides {
-        Name: "cs:StarterCrossbow"
-        AssetReference {
-          Id: 8416007021045060513
         }
       }
     }

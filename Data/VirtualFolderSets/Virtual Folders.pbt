@@ -31,11 +31,6 @@ Assets {
     }
     Folders {
       VirtualFolderPath: "Gear"
-      VirtualFolderPath: "Weapons, Shields"
-      PlatformAssetType: 5
-    }
-    Folders {
-      VirtualFolderPath: "Gear"
       VirtualFolderPath: "Spells"
       PlatformAssetType: 5
     }
@@ -51,6 +46,16 @@ Assets {
     }
     Folders {
       VirtualFolderPath: "Tilesets"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Shields"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Weapons"
       PlatformAssetType: 5
     }
   }

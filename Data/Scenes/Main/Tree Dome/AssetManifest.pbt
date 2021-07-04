@@ -1,28 +1,10 @@
 Assets {
-  Id: 18160970902693399684
-  Name: "Cylinder - Large"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_lg_001_ref"
-  }
-}
-Assets {
   Id: 17984110408163466439
   Name: "Tree Sakura Hero 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_sakura_hero_02_ref"
-  }
-}
-Assets {
-  Id: 17588356818725180439
-  Name: "Tree Sakura Hero Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_sakura_hero_01_bare_ref"
   }
 }
 Assets {

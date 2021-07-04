@@ -38,7 +38,7 @@ function areTherePlayersNearby()
   local players = Game.GetPlayers()
 
   for _, player in ipairs(players) do
-    if Object.IsValid(player) and (Utils.groundBelowPoint(player:GetWorldPosition()) - spawnPoint).size < 8000 then
+    if Object.IsValid(player) and (player:GetWorldPosition() - spawnPoint).size < 8000 then
       -- return "i hate players"
       return true
     end
@@ -232,7 +232,7 @@ function wanderLoop()
   local toVector = Utils.groundBelowPoint(enemy:GetWorldPosition() + Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 500)
   local fromVector = enemy:GetWorldPosition()
 
-  if not toVector or (spawnPoint - fromVector).size > 1000 then
+  if not toVector or (spawnPoint - fromVector).size > 1000 and (spawnPoint - fromVector).size > 0 then
     -- print("im scared and im going home.")
     toVector = Utils.groundBelowPoint(fromVector + (spawnPoint - fromVector):GetNormalized() * 300)
 
@@ -241,8 +241,10 @@ function wanderLoop()
     end
   end
 
-  enemy:LookAt(toVector)
-  enemy:MoveTo(toVector, 5)
+  if toVector then
+    enemy:LookAt(toVector)
+    enemy:MoveTo(toVector, 5)
+  end
 
   Task.Wait(4.5)
   if isFighting or isDead or not Object.IsValid(enemy) then return end

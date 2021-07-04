@@ -63,6 +63,7 @@ end
 
 function showCursor()
   CURSOR.visibility = Visibility.INHERIT
+  UI.SetCanCursorInteractWithUI(true)
 
   if cursorTask then cursorTask:Cancel() end
   cursorTask = Task.Spawn(cursorLoop)
@@ -70,6 +71,7 @@ end
 
 function hideCursor()
   CURSOR.visibility = Visibility.FORCE_OFF
+  UI.SetCanCursorInteractWithUI(false)
 
   if cursorTask then cursorTask:Cancel() end
 end
@@ -98,6 +100,14 @@ function onBindingPressed(thisPlayer, keyCode)
 	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
   if keyCode == "ability_secondary" or keyCode == "ability_primary" then
     CURSOR.rotationAngle = -9
+  end
+
+  if keyCode == "ability_extra_19" then
+    if CURSOR.visibility == Visibility.FORCE_OFF then
+      showCursor()
+    else
+      hideCursor()
+    end
   end
 end
 

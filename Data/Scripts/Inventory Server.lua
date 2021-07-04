@@ -29,24 +29,30 @@ function onPlayerJoined(player)
         -- print("Stamina: "..(coolRing.stamina or 0))
         -- print("> ~ ~ ~ ~ ~ ~ ~ G A V E ~ ~ ~ ~ ~ ~ ~ ~ >")
         -- Loot.giveToPlayer()
-        Loot.giveRandomToPlayer(thisPlayer)
+        if player:IsBindingPressed("ability_feet") then
+          for i = 1, 5 do
+            Loot.giveRandomToPlayer(thisPlayer, math.random(1, 60), 3)
+          end
+        else
+          Loot.giveRandomToPlayer(thisPlayer)
+        end
       end
     end)
   end
 end
 
-function unequipFromPlayer(player, templateId)
+function unequipFromPlayer(player, item)
   if not Object.IsValid(player) then return end
 
-  for i, item in ipairs(player:GetEquipment()) do
-    if item.sourceTemplateId == templateId then
-      -- item:Unequip()
-      item:Destroy()
+  for i, gear in ipairs(player:GetEquipment()) do
+    if gear.id == item.equipmentId then
+
+      gear:Destroy()
 
       Task.Wait()
       if not Object.IsValid(player) then return end
 
-      Utils.throttleToPlayer(player, "AddToInventory", templateId)
+      Utils.throttleToPlayer(player, "AddToInventory", item.templateId, item.enchant)
       break
     end
   end
@@ -63,37 +69,39 @@ function equipToPlayer(player, templateId, enchant, slot, ringNo)
 
   local equipment = World.SpawnAsset(templateId, {position = Vector3.UP * -10000})
 
+  item.equipmentId = equipment.id
+
   if slot == "fingers" then
     if player.serverUserData["Gear"].fingers[ringNo] then
-      unequipFromPlayer(player, player.serverUserData["Gear"].fingers[ringNo].templateId)
+      unequipFromPlayer(player, player.serverUserData["Gear"].fingers[ringNo])
     end
 
     player.serverUserData["Gear"].fingers[ringNo] = item
 
   elseif slot == "primary" then
     if player.serverUserData["Gear"].primary then
-      unequipFromPlayer(player, player.serverUserData["Gear"].primary.templateId)
+      unequipFromPlayer(player, player.serverUserData["Gear"].primary)
     end
 
     player.serverUserData["Gear"].primary = item
 
   elseif slot == "secondary" then
     if player.serverUserData["Gear"].secondary then
-      unequipFromPlayer(player, player.serverUserData["Gear"].secondary.templateId)
+      unequipFromPlayer(player, player.serverUserData["Gear"].secondary)
     end
 
     player.serverUserData["Gear"].secondary = item
 
   elseif slot == "glider" then
     if player.serverUserData["Gear"].glider then
-      unequipFromPlayer(player, player.serverUserData["Gear"].glider.templateId)
+      unequipFromPlayer(player, player.serverUserData["Gear"].glider)
     end
 
     player.serverUserData["Gear"].glider = item
 
   elseif slot == "potion" then
     if player.serverUserData["Gear"].potion then
-      unequipFromPlayer(player, player.serverUserData["Gear"].potion.templateId)
+      unequipFromPlayer(player, player.serverUserData["Gear"].potion)
     end
 
     player.serverUserData["Gear"].potion = item

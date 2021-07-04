@@ -1,4 +1,13 @@
 Assets {
+  Id: 18245923875748289059
+  Name: "Japanese Corners 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Japan_Corners_003"
+  }
+}
+Assets {
   Id: 18048939137701580115
   Name: "Fantasy Jewelry 009"
   PlatformAssetType: 9
@@ -32,15 +41,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_019"
-  }
-}
-Assets {
-  Id: 15444321686824600781
-  Name: "Japanese Corners 007"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Japan_Corners_007"
   }
 }
 Assets {
@@ -95,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Icon_Shield"
+  }
+}
+Assets {
+  Id: 12968767803658668413
+  Name: "Market"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Market"
   }
 }
 Assets {
@@ -167,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_SciFi_Ability_Green_011"
+  }
+}
+Assets {
+  Id: 6874395798602587516
+  Name: "Fantasy Coins 008"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Coins_008"
   }
 }
 Assets {
@@ -257,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Potion"
+  }
+}
+Assets {
+  Id: 4489225536320255161
+  Name: "Roboto Black"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "RobotoBlack_ref"
   }
 }
 Assets {

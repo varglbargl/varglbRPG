@@ -23,6 +23,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Shields"
+        AssetReference {
+          Id: 10016492838028097323
+        }
+      }
+      Overrides {
         Name: "cs:Potions"
         AssetReference {
           Id: 595108104446859637

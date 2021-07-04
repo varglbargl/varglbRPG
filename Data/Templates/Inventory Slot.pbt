@@ -1,13 +1,13 @@
 Assets {
   Id: 16796109976143095477
-  Name: "Inveotory Slot"
+  Name: "Inventory Slot"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 6360462644908336145
       Objects {
         Id: 6360462644908336145
-        Name: "Inveotory Slot"
+        Name: "Inventory Slot"
         Transform {
           Scale {
             X: 1
@@ -292,7 +292,7 @@ Assets {
       }
       Objects {
         Id: 10253482904620853386
-        Name: "UI Image"
+        Name: "Frame Shadow"
         Transform {
           Location {
           }
@@ -359,7 +359,7 @@ Assets {
       }
       Objects {
         Id: 643651091254405532
-        Name: "UI Image"
+        Name: "Frame"
         Transform {
           Location {
           }

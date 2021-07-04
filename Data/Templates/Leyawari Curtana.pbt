@@ -1699,5 +1699,5 @@ Assets {
   }
   SerializationVersion: 91
   VirtualFolderPath: "Gear"
-  VirtualFolderPath: "Weapons, Shields"
+  VirtualFolderPath: "Weapons"
 }
