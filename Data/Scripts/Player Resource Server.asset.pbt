@@ -11,6 +11,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Wildermagic"
+        AssetReference {
+          Id: 3407783204308324765
+        }
+      }
+      Overrides {
         Name: "cs:LevelUpVFX"
         AssetReference {
           Id: 18143550433128528468

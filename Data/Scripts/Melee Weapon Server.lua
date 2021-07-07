@@ -1,4 +1,5 @@
 local Utils = require(script:GetCustomProperty("Utils"))
+local Wildermagic = require(script:GetCustomProperty("Wildermagic"))
 
 local weapon = script.parent
 
@@ -18,11 +19,21 @@ end
 
 function onAbilityCast(thisAbility)
   hitEnemies = {}
+
   HITBOX.collision = Collision.INHERIT
 end
 
 function onAbilityEnd(thisAbility)
+  for i, enemy in pairs(hitEnemies) do
+    if thisAbility.owner:GetResource("Class") == 4 then
+      if Wildermagic.roll(thisAbility.owner) then
+        break
+      end
+    end
+  end
+
   hitEnemies = {}
+
   HITBOX.collision = Collision.FORCE_OFF
 end
 

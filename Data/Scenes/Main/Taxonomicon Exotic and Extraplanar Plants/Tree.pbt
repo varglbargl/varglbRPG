@@ -26445,6 +26445,7 @@ Objects {
       IsEnemyCollisionEnabled: true
     }
     DisableCastShadows: true
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -26509,6 +26510,7 @@ Objects {
       IsEnemyCollisionEnabled: true
     }
     DisableCastShadows: true
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -26573,6 +26575,7 @@ Objects {
       IsEnemyCollisionEnabled: true
     }
     DisableCastShadows: true
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100

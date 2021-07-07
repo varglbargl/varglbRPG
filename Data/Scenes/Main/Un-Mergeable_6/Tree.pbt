@@ -1,6 +1,122 @@
 Name: "Un-Mergeable_6"
 RootId: 18208006847494356526
 Objects {
+  Id: 17014229127071773562
+  Name: "Carpet Tile 01"
+  Transform {
+    Location {
+      X: 404.625977
+      Y: -407.939941
+      Z: 18
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.413317353
+      Y: 0.80507952
+      Z: 0.413317353
+    }
+  }
+  ParentId: 18208006847494356526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.0249999948
+        G: 0.1
+        B: 0.0412499979
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15947809471842740053
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 13288390038393695936
+  Name: "Carpet Tile 01"
+  Transform {
+    Location {
+      X: 1355
+      Y: -475
+      Z: 18
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.413317353
+      Y: 0.80507952
+      Z: 0.413317353
+    }
+  }
+  ParentId: 18208006847494356526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.0249999948
+        G: 0.1
+        B: 0.0412499979
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15947809471842740053
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 3065076796508338337
   Name: "Chair Sit"
   Transform {

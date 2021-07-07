@@ -29,8 +29,10 @@ function onResourceChanged(player, resourceName, newTotal)
 		local maxHP = player.maxHitPoints
 		if maxHP == 0 then return end
 
-		HEALTH_BAR.width = math.floor(newTotal / maxHP * barWidth + 0.5)
-    HEALTH_NUMBERS.text = Utils.formatInt(newTotal).." / "..Utils.formatInt(maxHP)
+    local hitPoints = math.max(0, player.hitPoints)
+
+		HEALTH_BAR.width = math.floor(hitPoints / maxHP * barWidth + 0.5)
+    HEALTH_NUMBERS.text = Utils.formatInt(hitPoints).." / "..Utils.formatInt(maxHP)
 
   elseif resourceName == "Stamina" then
     local maxStam = player:GetResource("MaxStamina")
@@ -72,6 +74,7 @@ end
 function hideCursor()
   CURSOR.visibility = Visibility.FORCE_OFF
   UI.SetCanCursorInteractWithUI(false)
+  Events.Broadcast("HideTooltip")
 
   if cursorTask then cursorTask:Cancel() end
 end

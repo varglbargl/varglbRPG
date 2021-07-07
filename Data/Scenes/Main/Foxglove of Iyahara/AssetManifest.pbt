@@ -44,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17611921055401184409
-  Name: "Sci-fi Chest Hinge 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_crate_hinge_001_ref"
-  }
-}
-Assets {
   Id: 17609149353171719671
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -77,15 +68,6 @@ Assets {
   PrimaryAsset {
     AssetType: "SkinnedMeshAssetRef"
     AssetId: "npc_human_gal_lower_fantasy_000_ref"
-  }
-}
-Assets {
-  Id: 17245318809946547268
-  Name: "Decal Family Crest 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_jpn_family_crest_001_ref"
   }
 }
 Assets {
@@ -161,30 +143,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16048367406070731799
-  Name: "Plane 1m - One Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_001"
-  }
-}
-Assets {
   Id: 16042106027372342160
   Name: "Decal Ivy Small (variations)"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_ivy_002"
-  }
-}
-Assets {
-  Id: 15947809471842740053
-  Name: "Carpet Tile 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_carpet_tile_001"
   }
 }
 Assets {
@@ -251,15 +215,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13862615534872695429
-  Name: "Text 05: ~"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_036"
-  }
-}
-Assets {
   Id: 13759174578102421826
   Name: "Small Crate Lid"
   PlatformAssetType: 1
@@ -305,15 +260,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12827530473249900764
-  Name: "Emissive Glow Opaque"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_opaque_emissive"
-  }
-}
-Assets {
   Id: 12668580837364845201
   Name: "Wood Raw White"
   PlatformAssetType: 2
@@ -329,15 +275,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_pipes_acc_cap_003_ref"
-  }
-}
-Assets {
-  Id: 12536183462758892499
-  Name: "Cabin Bold"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "CabinBold_ref"
   }
 }
 Assets {
@@ -365,15 +302,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_collection_003_ref"
-  }
-}
-Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
   }
 }
 Assets {
@@ -455,15 +383,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_glass_001"
-  }
-}
-Assets {
-  Id: 10625829938780322800
-  Name: "Baloo 2 Extra Bold"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "Baloo2ExtraBold_ref"
   }
 }
 Assets {
@@ -554,15 +473,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_cabinet_topper_001"
-  }
-}
-Assets {
-  Id: 9491493439656300962
-  Name: "Cube - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_hq_test_001"
   }
 }
 Assets {
@@ -725,15 +635,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_pot_002"
-  }
-}
-Assets {
-  Id: 4519163911553529386
-  Name: "Main Street Railing 01 - Post"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_railing_001_post_ref"
   }
 }
 Assets {

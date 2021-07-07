@@ -10,6 +10,12 @@ Assets {
           Id: 8431391566871556229
         }
       }
+      Overrides {
+        Name: "cs:Wildermagic"
+        AssetReference {
+          Id: 3407783204308324765
+        }
+      }
     }
   }
   SerializationVersion: 91

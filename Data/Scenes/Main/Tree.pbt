@@ -518,6 +518,10 @@ Objects {
       Name: "cs:Damage"
       Int: -5
     }
+    Overrides {
+      Name: "cs:Percent"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

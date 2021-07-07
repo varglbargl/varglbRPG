@@ -28,7 +28,7 @@ function onResourceChanged(player, name, newTotal)
       end
     end
 
-    myHitPoints = newTotal
+    myHitPoints = player.hitPoints
   elseif name == "Experience" then
 
     if myExerience ~= "nothin" then

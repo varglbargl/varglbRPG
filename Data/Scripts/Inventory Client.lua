@@ -58,7 +58,7 @@ for i, slot in ipairs(inventorySlots) do
   button.hoveredEvent:Connect(function()
     if inventory[i] then
       hoveredSlot = i
-      Events.Broadcast("ShowTooltip", inventory[i])
+      Events.Broadcast("ShowTooltip", inventory[i], button)
     end
   end)
 
@@ -73,18 +73,22 @@ for i, slot in ipairs(inventorySlots) do
   end)
 end
 
+CHARACTER_SCREEN:FindChildByType("UIButton").unhoveredEvent:Connect(function()
+  Events.Broadcast("HideTooltip")
+end)
+
 function mouseoverGear(slot, itemTable, index)
   local button = slot:FindChildByType("UIButton")
 
   button.hoveredEvent:Connect(function()
-    Events.Broadcast("ShowTooltip", itemTable[index])
+    Events.Broadcast("ShowTooltip", itemTable[index], button)
   end)
 
   button.unhoveredEvent:Connect(function()
+    Events.Broadcast("HideTooltip")
+
     Task.Wait()
     if clientPlayer:IsBindingPressed("ability_secondary") then return end
-
-    Events.Broadcast("HideTooltip")
   end)
 end
 
@@ -221,6 +225,7 @@ function closeCharacterScreen()
 
   CHARACTER_SCREEN.visibility = Visibility.FORCE_OFF
   Events.Broadcast("HideCursor")
+  Events.Broadcast("HideTooltip")
 
   isOpen = false
 end

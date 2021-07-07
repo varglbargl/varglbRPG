@@ -87,7 +87,7 @@ local suffixes = {
   w = {"Brains", "the Owl", "the Frog", "the Moth", "Binding", "the Sage", "the Mind", "the Witch", "the Fae Whisperer", "the Arch-Magus", "the Swamp", "Doom", "Certain Doom", "the Hellscarred Tomes", "Omens and Portents", "the Stormlord", "the Anomolous and Superliminal Arts", "the Wizened", "the Rapacious Void", "Darkness", "the Goopwalker", "the Obelisk", "Catalytic Transmutation", "the Chimera", "the Strange and Unusual", "the Ecto-Biologist", "the Furthest Ring", "the World Tree", "Alethiometry"},
   s = {"Dexterity", "the Lynx", "the Rat", "the Shark", "the Hunt", "the Spider", "the Serpent", "the Coyote", "the Seagull", "the Sea", "Tracking", "Pure Skill", "the Long Con", "Swindin'", "Luck", "the Sniper", "the Daredevil", "the Streets", "the Smooth Criminal", "Getting Away With It", "Fraudulence", "Firearm Neglegence", "Spittin'", "Running with Scissors", "Shadows", "Assassination", "Absconding with the Biscuits", "the Imminently Deceased", "the Bullet", "Doin' Crimes", "Eye Gouging", "the Shinobi"},
   h = {"Punchability", "the Bear", "the Turtle", "the Dolphin", "the Whale", "Blocking", "the Mountain", "Halting", "Protection", "Order", "OSHA Compliance", "Hugging", "Pills and Good Advice", "Dying Less Often", "Feelin' Fine", "Just Vibin", "Good Times", "Whimzy", "Talking About Your Feelings", "Happy Trees", "ASMR", "Baking", "the Panda", "Cookie Dough", "Friendship", "Kindness", "Napping", "the Cuddlefish", "Accessibility", "Hope", "Life", "the Teddy Bear"},
-  a = {"Ease", "the Fox", "the Eagle", "the Lion and the Unicorn", "the Swordfish", "the Stallion", "the Crown", "the Empire", "the Hummingbird", "Craftsmanship", "the Show", "the Big Game", "the Master", "Go Fast", "the Professional", "Attractiveness", "Gettin' It Done", "Bookin' It", "Leaving", "Running Away", "Sprinting and Gliding Slightly Better", "the Queen", "the King", "Royalty", "Grace", "Regicide", "Honor", "Nobility", "the Aristocracy", "the Royal Guard", "the Queen's Court"}
+  a = {"Ease", "the Fox", "the Eagle", "the Lion and the Unicorn", "the Swordfish", "the Stallion", "the Crown", "the Empire", "the Hummingbird", "Craftsmanship", "the Show", "the Big Game", "the Master", "Go Fast", "the Professional", "Attractiveness", "Gettin' It Done", "Bookin' It", "Leaving", "Running Away", "Sprinting and Gliding Slightly Better", "the Queen", "the King", "Royalty", "Grace", "Honor", "Nobility", "the Aristocracy", "the Royal Guard", "the Queen's Court"}
 }
 
 local uniqueNames = {"The Paid Vacation", "Bungo's Delite", "Herald of the Primatriarchy"}
@@ -126,12 +126,13 @@ function Loot.enchantItem(item, rarity)
     dupe[i] = v
   end
 
-  local stats = {"g", "w", "s", "h", "a"}
+  -- local stats = {"g", "w", "s", "h", "a"}
+  local stats = {"g", "w", "s"}
 
-  if dupe.itemLevel < 5 then
-    -- too low level for other stats to scale
-    stats = {"h", "a"}
-  end
+  -- if dupe.itemLevel < 5 then
+  --   -- too low level for other stats to scale
+  --   stats = {"h", "a"}
+  -- end
 
   dupe.enchant = ""
   dupe.rarity = rarity

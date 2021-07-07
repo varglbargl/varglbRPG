@@ -15,10 +15,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 3755928285586410568
+        ChildIds: 8345773305191929013
         ChildIds: 14783371578983202918
         ChildIds: 2937185711837171971
-        ChildIds: 14615497357069275095
         ChildIds: 1300586035363788089
         ChildIds: 483834085513596509
         ChildIds: 1654928282962188426
@@ -39,6 +39,87 @@ Assets {
         }
       }
       Objects {
+        Id: 8345773305191929013
+        Name: "Trigger"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 4
+            Y: 4
+            Z: 4
+          }
+        }
+        ParentId: 15375280011964039418
+        ChildIds: 9166478209304408519
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:sphere"
+          }
+        }
+      }
+      Objects {
+        Id: 9166478209304408519
+        Name: "Damage Zone"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8345773305191929013
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Percent"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Damage"
+            Int: -1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14673038576022824141
+          }
+        }
+      }
+      Objects {
         Id: 14783371578983202918
         Name: "ClientContext"
         Transform {
@@ -53,6 +134,7 @@ Assets {
           }
         }
         ParentId: 15375280011964039418
+        ChildIds: 14615497357069275095
         ChildIds: 12388485763713097910
         ChildIds: 17302688999787051442
         ChildIds: 9810890579650873323
@@ -88,6 +170,51 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 14615497357069275095
+        Name: "Clover Patch 02"
+        Transform {
+          Location {
+            Z: 2.08935547
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
+          }
+        }
+        ParentId: 14783371578983202918
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10662362392661442599
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -196,9 +323,9 @@ Assets {
             Name: "bp:Color"
             Color {
               R: 0.7
-              G: 0.99999994
-              B: 1
-              A: 0.3
+              G: 1
+              B: 0.830000043
+              A: 0.5
             }
           }
           Overrides {
@@ -216,7 +343,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 0.4
+            Float: 0.5
           }
           Overrides {
             Name: "bp:Shape Visibility"
@@ -868,9 +995,9 @@ Assets {
           Overrides {
             Name: "bp:Stroke Color"
             Color {
-              G: 0.999999523
+              G: 0.999999046
               B: 1
-              A: 0.15
+              A: 0.25
             }
           }
           Overrides {
@@ -880,7 +1007,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Blur"
-            Float: 0.369006932
+            Float: 0.3
           }
         }
         Collidable_v2 {
@@ -1337,51 +1464,6 @@ Assets {
         }
       }
       Objects {
-        Id: 14615497357069275095
-        Name: "Clover Patch 02"
-        Transform {
-          Location {
-            Z: 2.08935547
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 15375280011964039418
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10662362392661442599
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 1300586035363788089
         Name: "Rock Block 02"
         Transform {
@@ -1533,6 +1615,15 @@ Assets {
       }
     }
     Assets {
+      Id: 10662362392661442599
+      Name: "Clover Patch 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_foliage_gen_clover_patch_002"
+      }
+    }
+    Assets {
       Id: 12342898984690279763
       Name: "Sci-fi Glowing Shiny Aura Beam Loop 01 SFX"
       PlatformAssetType: 7
@@ -1593,15 +1684,6 @@ Assets {
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
         AssetId: "bp_decal_elven_symbols_001"
-      }
-    }
-    Assets {
-      Id: 10662362392661442599
-      Name: "Clover Patch 02"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_foliage_gen_clover_patch_002"
       }
     }
     Assets {

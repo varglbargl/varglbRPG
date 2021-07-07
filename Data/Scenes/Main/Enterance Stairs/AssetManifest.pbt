@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9479604368258872123
+  Name: "Ring - Quarter Beveled Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_ring_faceted_thick_001_ref"
+  }
+}
+Assets {
   Id: 7900480577560620211
   Name: "Street Light Pole 02"
   PlatformAssetType: 1
@@ -149,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_candle_002"
+  }
+}
+Assets {
+  Id: 1192918822044829194
+  Name: "Stone Basic"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "stone_001"
   }
 }
 Assets {

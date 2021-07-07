@@ -6,7 +6,7 @@ function hurtAnimation(player, damage)
   if not Object.IsValid(player) then return end
 
   if player.hitPoints > 0 then
-    if math.random() > 0.5 then
+    if math.random(1, 2) == 1 then
       player.animationStance = "unarmed_stun_electric"
     else
       player.animationStance = "unarmed_stun_dizzy"

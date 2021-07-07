@@ -232,7 +232,7 @@ function wanderLoop()
   local toVector = Utils.groundBelowPoint(enemy:GetWorldPosition() + Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 500)
   local fromVector = enemy:GetWorldPosition()
 
-  if not toVector or (spawnPoint - fromVector).size > 1000 and (spawnPoint - fromVector).size > 0 then
+  if (not toVector or (spawnPoint - fromVector).size > 1000) and (spawnPoint - fromVector).size > 1 then
     -- print("im scared and im going home.")
     toVector = Utils.groundBelowPoint(fromVector + (spawnPoint - fromVector):GetNormalized() * 300)
 

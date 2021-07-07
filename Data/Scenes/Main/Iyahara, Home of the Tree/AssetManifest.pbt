@@ -2501,6 +2501,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1423268074024780909
+  Name: "Candle 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_candle_002"
+  }
+}
+Assets {
   Id: 1383772742094820961
   Name: "Fantasy Pommel 01"
   PlatformAssetType: 1

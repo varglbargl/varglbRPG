@@ -1,4 +1,13 @@
 Assets {
+  Id: 15947809471842740053
+  Name: "Carpet Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_carpet_tile_001"
+  }
+}
+Assets {
   Id: 12152694598132833191
   Name: "Plane 1m - Two Sided"
   PlatformAssetType: 1

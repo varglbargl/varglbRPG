@@ -1,6 +1,6 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 
-local TOOLTIP = script:GetCustomProperty("Tooltip"):WaitForObject()
+local ITEM_TOOLTIP = script:GetCustomProperty("ItemTooltip"):WaitForObject()
 local NAME = script:GetCustomProperty("Name"):WaitForObject()
 local DESCRIPTION = script:GetCustomProperty("Description"):WaitForObject()
 local DAMAGE = script:GetCustomProperty("Damage"):WaitForObject()
@@ -13,26 +13,62 @@ local TYPE = script:GetCustomProperty("Type"):WaitForObject()
 local PRICE = script:GetCustomProperty("Price"):WaitForObject()
 local FLAVOR_TEXT = script:GetCustomProperty("FlavorText"):WaitForObject()
 
+local LABEL_TOOLTIP = script:GetCustomProperty("LabelTooltip"):WaitForObject()
+local LABEL = script:GetCustomProperty("Label"):WaitForObject()
+
 local stats = {STAT1, STAT2, STAT3}
-local isVisible = false
+local currentTooltip = nil
+local currentButton = nil
 local followCursorTask = nil
 
-TOOLTIP.visibility = Visibility.FORCE_OFF
+ITEM_TOOLTIP.visibility = Visibility.FORCE_OFF
+LABEL_TOOLTIP.visibility = Visibility.FORCE_OFF
 
 function followCursorLoop(tooltip)
   local cursorPos = UI.GetCursorPosition()
 
   tooltip.x = math.max(40, cursorPos.x - tooltip.width)
-  tooltip.y = math.max(40, cursorPos.y - tooltip.height)
+  tooltip.y = math.max(40, cursorPos.y - tooltip.height + 50)
 
-  Task.Wait()
-  followCursorLoop(tooltip)
+  function easeLoop()
+    cursorPos = UI.GetCursorPosition()
+
+    cursorPos.x = math.max(20, cursorPos.x - tooltip.width)
+    cursorPos.y = math.max(20, cursorPos.y - tooltip.height)
+
+    tooltip.x = math.ceil(tooltip.x + (cursorPos.x - tooltip.x) * 0.15)
+    tooltip.y = math.ceil(tooltip.y + (cursorPos.y - tooltip.y) * 0.15)
+
+    Task.Wait()
+    easeLoop()
+  end
+
+  easeLoop()
 end
 
-function showTooltip(item)
-  if not item then return hideTooltip() end
+function showLabelTooltip(string, button)
+  LABEL.text = string
 
-  isVisible = true
+  local labelSize = LABEL:ComputeApproximateSize()
+
+  LABEL_TOOLTIP.width = labelSize.x + 48
+  LABEL_TOOLTIP.height = labelSize.y + 28
+
+  if followCursorTask then followCursorTask:Cancel() end
+  followCursorTask = Task.Spawn(function() followCursorLoop(LABEL_TOOLTIP) end)
+
+  currentButton = button
+
+  Task.Wait()
+
+  if currentButton == button then
+    currentTooltip = LABEL_TOOLTIP
+    LABEL_TOOLTIP.visibility = Visibility.INHERIT
+  end
+end
+
+function showItemTooltip(item, button)
+  if not item then return hideTooltip() end
 
   local contentHeight = 18
 
@@ -122,20 +158,39 @@ function showTooltip(item)
     FLAVOR_TEXT.text = ""
   end
 
-  TOOLTIP.height = contentHeight
+  ITEM_TOOLTIP.height = contentHeight
 
   if followCursorTask then followCursorTask:Cancel() end
-  followCursorTask = Task.Spawn(function() followCursorLoop(TOOLTIP) end)
+  followCursorTask = Task.Spawn(function() followCursorLoop(ITEM_TOOLTIP) end)
+
+  currentButton = button
 
   Task.Wait()
 
-  TOOLTIP.visibility = Visibility.INHERIT
+  if currentButton == button then
+    currentTooltip = ITEM_TOOLTIP
+    ITEM_TOOLTIP.visibility = Visibility.INHERIT
+  end
 end
 
 function hideTooltip()
-  TOOLTIP.visibility = Visibility.FORCE_OFF
+  if not currentTooltip then return end
+
+  currentTooltip.visibility = Visibility.FORCE_OFF
+  currentTooltip = nil
+  currentButton = nil
 
   if followCursorTask then followCursorTask:Cancel() end
+end
+
+function showTooltip(content, button)
+  if currentToolip then hideTooltip() end
+
+  if type(content) == "table" and content.itemLevel then
+    showItemTooltip(content, button)
+  elseif type(content) == "string" then
+    showLabelTooltip(content, button)
+  end
 end
 
 Events.Connect("ShowTooltip", showTooltip)

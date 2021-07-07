@@ -2,7 +2,7 @@ local FLY_UP_FONT = script:GetCustomProperty("FlyUpFont")
 
 local Utils = {}
 
-local powerDoublingRate = 7
+local powerDoublingRate = 7.5
 
 -- MY COLORS
 
@@ -34,7 +34,7 @@ local classes = {
     spit = 10,
     special = "Part of all damage you take is reflected back to the attacker instead.",
     starterGear = {
-      primary = "Double-Edged Axe",
+      primary = "Double-Edged Sword",
       glider = "Basic Glider"
     }
   },
@@ -43,14 +43,14 @@ local classes = {
     grit = 15,
     wit  = 10,
     spit = 5,
-    special = "Your melee attacks also heal you or a nearby ally in need.",
+    special = "Your melee attacks also heal you and a nearby ally in need.",
     starterGear = {
       primary = "Heavy Gavel",
       glider = "Basic Glider"
     }
   },
   {
-    name = "Spellweaver",
+    name = "???",
     grit = 5,
     wit  = 15,
     spit = 10,
@@ -159,7 +159,7 @@ function Utils.rollDamage(min, max)
     return Utils.rollDamage(min.minDamage, min.maxDamage)
   end
 
-  return Damage.New(math.random(min, max))
+  return Damage.New(math.random(math.ceil(min), math.ceil(max)))
 end
 
 function Utils.showFlyupText(text, pos, color)

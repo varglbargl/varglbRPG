@@ -59858,7 +59858,6 @@ Objects {
   ChildIds: 8226039268902193001
   ChildIds: 3329165533020222524
   ChildIds: 14923085684752838544
-  ChildIds: 13927083484814681100
   ChildIds: 2549124274684321039
   ChildIds: 4893771595413521483
   ChildIds: 8114236292004280359
@@ -59953,6 +59952,7 @@ Objects {
   ChildIds: 11902050485258245109
   ChildIds: 4003117690640697321
   ChildIds: 10239511838492601285
+  ChildIds: 413655686357968027
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -59967,6 +59967,134 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 413655686357968027
+  Name: "Sealed Scroll"
+  Transform {
+    Location {
+      X: 14148.4395
+      Y: -3869.63232
+      Z: -3971.9668
+    }
+    Rotation {
+      Yaw: -29.1639977
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3246644525052086036
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4287706561839041646
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.672461867
+            Y: -8.06942081
+            Z: 6.10961914
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 180
+            Roll: 52.1078568
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7762582345867277099
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sealed Scroll"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -351.560547
+            Y: 948.820801
+            Z: 453.033203
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -29.1639938
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10698398635422499106
+      value {
+        Overrides {
+          Name: "StaticMesh"
+          AssetReference {
+            Id: 1423268074024780909
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.623046875
+            Y: -8.15698242
+            Z: 5.16137695
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.522902071
+            Y: 0.52287823
+            Z: -0.828525126
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 180
+            Roll: 52.1078568
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12463226552153965338
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9.67133141
+            Y: -6.41942e-05
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8204893375734186442
     }
   }
 }
@@ -70351,6 +70479,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -72054,8 +72183,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -395.303711
-            Y: 956.729248
+            X: -411.135742
+            Y: 949.614258
             Z: 444.155762
           }
         }
@@ -75793,53 +75922,6 @@ Objects {
   }
 }
 Objects {
-  Id: 13927083484814681100
-  Name: "Coral Tubes Big"
-  Transform {
-    Location {
-      X: -347.40625
-      Y: 947.603
-      Z: 447.571045
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.250027359
-      Y: 0.250027359
-      Z: 0.250027359
-    }
-  }
-  ParentId: 3246644525052086036
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4070407193247911115
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 14923085684752838544
   Name: "Coral Branches Big"
   Transform {
@@ -76592,8 +76674,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -462.594727
-            Y: 949.081299
+            X: -468.415039
+            Y: 951.325684
             Z: 444.155762
           }
         }
@@ -76608,7 +76690,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -73.7474518
+            Yaw: -73.7474365
           }
         }
       }
@@ -77947,6 +78029,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -78028,6 +78111,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -78362,6 +78446,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79498,6 +79583,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -79576,6 +79662,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
         Mass: 100

@@ -7,33 +7,29 @@ Assets {
       RootId: 15652965593775978323
       Objects {
         Id: 15652965593775978323
-        Name: "Bread Oven"
+        Name: "Bread Oven - Stone - Wall"
         Transform {
           Scale {
-            X: 0.761971593
-            Y: 0.761971593
-            Z: 0.761971593
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 11189287738537648080
+        ParentId: 18037324666348523329
         ChildIds: 7825937332397193587
-        ChildIds: 3400335558698463337
         ChildIds: 17652277799750398120
-        ChildIds: 18003562357976901019
         ChildIds: 5492033288475131126
         ChildIds: 3505953031727593008
         ChildIds: 5292812565510598482
+        ChildIds: 18003562357976901019
         ChildIds: 18443052021813731994
-        ChildIds: 11030739656597296942
-        ChildIds: 4585046424357292600
         ChildIds: 2109068338159968162
         ChildIds: 14502462561790095758
         ChildIds: 7486938397922514323
         ChildIds: 10612512540673113081
+        ChildIds: 16352703158679333790
+        ChildIds: 15579789143484719832
         ChildIds: 2720782291568307253
-        ChildIds: 14479523932005329927
-        ChildIds: 13508789102555413403
-        ChildIds: 4546142545854084504
         ChildIds: 3786919220061489456
         ChildIds: 3574584579170495594
         ChildIds: 7404038256509008646
@@ -46,15 +42,19 @@ Assets {
         ChildIds: 3055560740606597699
         ChildIds: 4498510817644913617
         ChildIds: 17251489719736368901
-        ChildIds: 10336209878172031892
         ChildIds: 3762845590093304796
         ChildIds: 13467336200788469584
         ChildIds: 106823894497457754
         ChildIds: 11986599036736319189
         ChildIds: 11052410708740535934
-        ChildIds: 3732748516328057991
-        ChildIds: 5041235944376889922
         ChildIds: 8104027881177186550
+        ChildIds: 12327540409449147631
+        ChildIds: 7611777712896383954
+        ChildIds: 1511959247581078052
+        ChildIds: 10652588419737016205
+        ChildIds: 10106009701545027243
+        ChildIds: 4028942420634286294
+        ChildIds: 9170876768783183185
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -76,9 +76,6 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
-            X: -8.2109375
-            Y: 20.4316406
-            Z: 202.147949
           }
           Rotation {
           }
@@ -89,6 +86,9 @@ Assets {
           }
         }
         ParentId: 15652965593775978323
+        ChildIds: 5041235944376889922
+        ChildIds: 1491900538099784939
+        ChildIds: 1217503728486034209
         ChildIds: 15603546545457785204
         ChildIds: 15835590913344922403
         Collidable_v2 {
@@ -107,10 +107,201 @@ Assets {
         }
       }
       Objects {
+        Id: 5041235944376889922
+        Name: "Decal Stains Round 01"
+        Transform {
+          Location {
+            X: -5.109375
+            Y: 136.25
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.419357926
+            Y: 0.419357926
+            Z: 0.0335376561
+          }
+        }
+        ParentId: 7825937332397193587
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.041
+              G: 0.0386888608
+              B: 0.0271419976
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4742847245962031676
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 1491900538099784939
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: -6.6640625
+            Y: -87.6533203
+            Z: 939.501709
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.739652872
+            Y: 0.739652872
+            Z: 0.801940322
+          }
+        }
+        ParentId: 7825937332397193587
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Corner Rounding"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.163362682
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 0.0940000042
+              G: 0.0775970072
+              B: 0.0611940064
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Blur"
+            Float: 0.191477537
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9693133565758539692
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 1217503728486034209
+        Name: "Smoke Volume VFX"
+        Transform {
+          Location {
+            X: -6.6640625
+            Y: -87.6533203
+            Z: 946.274414
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.688602209
+            Y: 0.688602209
+            Z: 0.688602209
+          }
+        }
+        ParentId: 7825937332397193587
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.082
+              G: 0.082
+              B: 0.082
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9910365847139388510
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
         Id: 15603546545457785204
         Name: "Point Light"
         Transform {
           Location {
+            X: -6.25683594
+            Y: 15.5683594
+            Z: 154.030762
           }
           Rotation {
           }
@@ -166,6 +357,8 @@ Assets {
         Name: "Fire and Flame Burning Loop Set 01 SFX"
         Transform {
           Location {
+            Y: 39
+            Z: 154.030762
           }
           Rotation {
           }
@@ -215,81 +408,20 @@ Assets {
         }
       }
       Objects {
-        Id: 3400335558698463337
-        Name: "2D Basic Shapes Decal"
-        Transform {
-          Location {
-            X: -5.12109375
-            Y: -79.3662109
-            Z: 243.49707
-          }
-          Rotation {
-            Yaw: 4.09811182e-05
-            Roll: 89.9999619
-          }
-          Scale {
-            X: 0.999999821
-            Y: 0.999999881
-            Z: 0.362431675
-          }
-        }
-        ParentId: 15652965593775978323
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Corner Rounding"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Blur"
-            Float: 0.601954401
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9693133565758539692
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
         Id: 17652277799750398120
-        Name: "Sphere"
+        Name: "Bread"
         Transform {
           Location {
-            X: -53.171875
-            Y: -24.2470703
-            Z: 223.669189
+            X: -40.515625
+            Y: -37.2392578
+            Z: 170.429688
           }
           Rotation {
           }
           Scale {
-            X: 0.391249865
-            Y: 0.391249865
-            Z: 0.234749883
+            X: 0.298121274
+            Y: 0.298121274
+            Z: 0.178872749
           }
         }
         ParentId: 15652965593775978323
@@ -432,77 +564,20 @@ Assets {
         }
       }
       Objects {
-        Id: 18003562357976901019
-        Name: "Container - Hex- Rounded"
-        Transform {
-          Location {
-            X: -9.19921875
-            Y: -8.91650391
-            Z: 211.885742
-          }
-          Rotation {
-            Yaw: -0.255828828
-          }
-          Scale {
-            X: 0.118388206
-            Y: 0.161849692
-            Z: 0.0786033347
-          }
-        }
-        ParentId: 15652965593775978323
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4567162305515687077
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableCastShadows: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 5492033288475131126
-        Name: "Sphere"
+        Name: "Bread"
         Transform {
           Location {
-            X: -21.2578125
-            Y: 4.16748047
-            Z: 223.695068
+            X: -16.1982422
+            Y: -15.5878906
+            Z: 170.449219
           }
           Rotation {
           }
           Scale {
-            X: 0.391249865
-            Y: 0.391249865
-            Z: 0.234749883
+            X: 0.298121274
+            Y: 0.298121274
+            Z: 0.178872749
           }
         }
         ParentId: 15652965593775978323
@@ -646,19 +721,19 @@ Assets {
       }
       Objects {
         Id: 3505953031727593008
-        Name: "Sphere"
+        Name: "Bread"
         Transform {
           Location {
-            X: 10.9365234
-            Y: -28.4350586
-            Z: 223.695068
+            X: 8.33300781
+            Y: -40.4306641
+            Z: 170.449219
           }
           Rotation {
           }
           Scale {
-            X: 0.391249865
-            Y: 0.391249865
-            Z: 0.234749883
+            X: 0.298121274
+            Y: 0.298121274
+            Z: 0.178872749
           }
         }
         ParentId: 15652965593775978323
@@ -802,19 +877,19 @@ Assets {
       }
       Objects {
         Id: 5292812565510598482
-        Name: "Sphere"
+        Name: "Bread"
         Transform {
           Location {
-            X: 32.6533203
-            Y: 4.90478516
-            Z: 223.695068
+            X: 24.8808594
+            Y: -15.0263672
+            Z: 170.449219
           }
           Rotation {
           }
           Scale {
-            X: 0.391249865
-            Y: 0.391249865
-            Z: 0.234749883
+            X: 0.298121274
+            Y: 0.298121274
+            Z: 0.178872749
           }
         }
         ParentId: 15652965593775978323
@@ -957,21 +1032,78 @@ Assets {
         }
       }
       Objects {
+        Id: 18003562357976901019
+        Name: "Container - Hex- Rounded"
+        Transform {
+          Location {
+            X: -7.00976563
+            Y: -25.5576172
+            Z: 161.450684
+          }
+          Rotation {
+            Yaw: -0.255828857
+          }
+          Scale {
+            X: 0.0902084485
+            Y: 0.123324871
+            Z: 0.0598935075
+          }
+        }
+        ParentId: 15652965593775978323
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4567162305515687077
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 18443052021813731994
         Name: "Fantasy Castle Wall 01 - Curved Doorway"
         Transform {
           Location {
-            X: -123.573242
-            Y: -2.24707031
-            Z: 165
+            X: -94.1591797
+            Y: -1.71191406
+            Z: 125.725098
           }
           Rotation {
-            Yaw: 44.9999962
+            Yaw: 44.9999924
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.4
+            X: 0.304788649
+            Y: 0.304788649
+            Z: 0.304788649
           }
         }
         ParentId: 15652965593775978323
@@ -1019,115 +1151,21 @@ Assets {
         }
       }
       Objects {
-        Id: 11030739656597296942
-        Name: "Fantasy Castle Wall Foundation 01 - Curved"
-        Transform {
-          Location {
-            X: -7.57324219
-            Y: 51.7529297
-            Z: 14.6469727
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.377456456
-            Y: 0.365176648
-            Z: 0.166385055
-          }
-        }
-        ParentId: 15652965593775978323
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14267747156564835807
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 4585046424357292600
-        Name: "Fantasy Castle Wall Foundation 01 - Curved"
-        Transform {
-          Location {
-            X: -7.57324219
-            Y: 51.7529297
-            Z: 14.6469727
-          }
-          Rotation {
-          }
-          Scale {
-            X: -0.377456456
-            Y: 0.365176648
-            Z: 0.166385055
-          }
-        }
-        ParentId: 15652965593775978323
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14267747156564835807
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 2109068338159968162
         Name: "Fantasy Castle Wall 01 - Curved Doorway"
         Transform {
           Location {
-            X: -123.529297
-            Y: -228.355469
-            Z: 165
+            X: -94.1259766
+            Y: -174
+            Z: 125.725098
           }
           Rotation {
             Yaw: 135
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.4
+            X: 0.304788649
+            Y: 0.304788649
+            Z: 0.304788649
           }
         }
         ParentId: 15652965593775978323
@@ -1179,17 +1217,17 @@ Assets {
         Name: "Fantasy Castle Wall 01 - Curved Doorway"
         Transform {
           Location {
-            X: 102.607422
-            Y: -2.41357422
-            Z: 165
+            X: 78.1835938
+            Y: -1.83886719
+            Z: 125.725098
           }
           Rotation {
-            Yaw: -44.9999962
+            Yaw: -45
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.4
+            X: 0.304788649
+            Y: 0.304788649
+            Z: 0.304788649
           }
         }
         ParentId: 15652965593775978323
@@ -1241,16 +1279,17 @@ Assets {
         Name: "Fantasy Castle Wall Foundation 01 - Curved"
         Transform {
           Location {
-            X: -7.57324219
-            Y: -267.24707
+            X: 112
+            Y: -86
+            Z: 17
           }
           Rotation {
-            Yaw: -179.999985
+            Yaw: -89.9999924
           }
           Scale {
-            X: -0.374197841
-            Y: 0.374197841
-            Z: 0.187976837
+            X: 0.3
+            Y: 0.3
+            Z: 0.125
           }
         }
         ParentId: 15652965593775978323
@@ -1288,16 +1327,112 @@ Assets {
         Name: "Fantasy Castle Wall Foundation 01 - Curved"
         Transform {
           Location {
-            X: -7.57324219
-            Y: -267.24707
+            X: -8
+            Y: -206
+            Z: 17
           }
           Rotation {
-            Yaw: -179.999985
+            Yaw: -179.999954
           }
           Scale {
-            X: 0.374197841
-            Y: 0.374197841
-            Z: 0.187976837
+            X: 0.3
+            Y: 0.3
+            Z: 0.125
+          }
+        }
+        ParentId: 15652965593775978323
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14267747156564835807
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 16352703158679333790
+        Name: "Fantasy Castle Wall Foundation 01 - Curved"
+        Transform {
+          Location {
+            X: -128
+            Y: -86
+            Z: 17
+          }
+          Rotation {
+            Yaw: 89.9999619
+          }
+          Scale {
+            X: 0.3
+            Y: 0.3
+            Z: 0.125
+          }
+        }
+        ParentId: 15652965593775978323
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14267747156564835807
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 15579789143484719832
+        Name: "Fantasy Castle Wall Foundation 01 - Curved"
+        Transform {
+          Location {
+            X: -8
+            Y: 34
+            Z: 17
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.3
+            Y: 0.3
+            Z: 0.125
           }
         }
         ParentId: 15652965593775978323
@@ -1335,17 +1470,17 @@ Assets {
         Name: "Fantasy Castle Wall 01 - Curved Doorway"
         Transform {
           Location {
-            X: 102.092773
-            Y: -228.495605
-            Z: 165
+            X: 77.7919922
+            Y: -174.107422
+            Z: 125.725098
           }
           Rotation {
             Yaw: -135
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.4
+            X: 0.304788649
+            Y: 0.304788649
+            Z: 0.304788649
           }
         }
         ParentId: 15652965593775978323
@@ -1393,203 +1528,21 @@ Assets {
         }
       }
       Objects {
-        Id: 14479523932005329927
-        Name: "Fantasy Castle Wall Foundation 01 - Curved"
-        Transform {
-          Location {
-            X: -10.9179688
-            Y: -39.5507813
-            Z: 408
-          }
-          Rotation {
-          }
-          Scale {
-            X: -0.14343372
-            Y: 0.14343372
-            Z: 0.342473894
-          }
-        }
-        ParentId: 15652965593775978323
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Building_WallOuter:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Building_WallOuter:utile"
-            Float: 0.6
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14267747156564835807
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 13508789102555413403
-        Name: "Fantasy Castle Wall Foundation 01 - Curved"
-        Transform {
-          Location {
-            X: -10.9297047
-            Y: -39.550972
-            Z: 407.999817
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.14343372
-            Y: 0.14343372
-            Z: 0.342473894
-          }
-        }
-        ParentId: 15652965593775978323
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Building_WallOuter:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Building_WallOuter:utile"
-            Float: 0.6
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14267747156564835807
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 4546142545854084504
-        Name: "Pipe - Half Thick"
-        Transform {
-          Location {
-            X: -9.75829887
-            Y: -95.2478714
-            Z: 398.176147
-          }
-          Rotation {
-            Yaw: -179.999969
-          }
-          Scale {
-            X: -2.48212552
-            Y: 2.32979441
-            Z: 0.171181157
-          }
-        }
-        ParentId: 15652965593775978323
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14844672563279110931
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.72300005
-              G: 0.72300005
-              B: 0.72300005
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4709690006431586345
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 3786919220061489456
         Name: "Office Cubicle Cabinet Door 01"
         Transform {
           Location {
-            X: -71.5293
-            Y: 135.341797
-            Z: 34.4707031
+            X: -54.5029297
+            Y: 100.010742
+            Z: 26.265625
           }
           Rotation {
+            Roll: -2.81286621
           }
           Scale {
-            X: 1.32269943
-            Y: 1.32269943
-            Z: 1.32269943
+            X: 1.00785935
+            Y: 1.00785935
+            Z: 1.00785935
           }
         }
         ParentId: 15652965593775978323
@@ -1659,16 +1612,16 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: -68.0263672
-            Y: 113.731445
-            Z: 41.2270508
+            X: -51.8339844
+            Y: 82
+            Z: 31.4140625
           }
           Rotation {
           }
           Scale {
-            X: 0.173223302
-            Y: 0.284277976
-            Z: 0.220098302
+            X: 0.131991237
+            Y: 0.216611743
+            Z: 0.16770865
           }
         }
         ParentId: 15652965593775978323
@@ -1706,16 +1659,16 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: -76.4726563
-            Y: 112.919922
-            Z: 77.4814453
+            X: -58.2695313
+            Y: 81.3818359
+            Z: 59.0385742
           }
           Rotation {
           }
           Scale {
-            X: 0.173223302
-            Y: 0.284277976
-            Z: 0.197666705
+            X: 0.131991237
+            Y: 0.216611743
+            Z: 0.150616407
           }
         }
         ParentId: 15652965593775978323
@@ -1764,16 +1717,16 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: -62.9628906
-            Y: 111.793457
-            Z: 112.483887
+            X: -47.9755859
+            Y: 80.5234375
+            Z: 85.7094727
           }
           Rotation {
           }
           Scale {
-            X: 0.173223302
-            Y: 0.284277976
-            Z: 0.197666705
+            X: 0.131991237
+            Y: 0.216611743
+            Z: 0.150616407
           }
         }
         ParentId: 15652965593775978323
@@ -1811,16 +1764,16 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: -72.9697266
-            Y: 109.887695
-            Z: 145.976074
+            X: -55.6005859
+            Y: 79.0712891
+            Z: 111.229492
           }
           Rotation {
           }
           Scale {
-            X: 0.173223302
-            Y: 0.284277976
-            Z: 0.197666705
+            X: 0.131991237
+            Y: 0.216611743
+            Z: 0.150616407
           }
         }
         ParentId: 15652965593775978323
@@ -1869,16 +1822,16 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: 42.1572266
-            Y: 113.731445
-            Z: 42.7988281
+            X: 32.1230469
+            Y: 82
+            Z: 32.6113281
           }
           Rotation {
           }
           Scale {
-            X: 0.173223302
-            Y: 0.284277976
-            Z: 0.220098302
+            X: 0.131991237
+            Y: 0.216611743
+            Z: 0.16770865
           }
         }
         ParentId: 15652965593775978323
@@ -1927,17 +1880,17 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: 49.9716797
-            Y: 113.562988
-            Z: 80.1357422
+            X: 38.078125
+            Y: 81.8720703
+            Z: 61.0615234
           }
           Rotation {
-            Roll: -5.69125748
+            Roll: -5.69125366
           }
           Scale {
-            X: 0.173223302
-            Y: -0.25489381
-            Z: 0.209667206
+            X: 0.131991237
+            Y: -0.194221839
+            Z: 0.15976046
           }
         }
         ParentId: 15652965593775978323
@@ -1975,16 +1928,16 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: 42.6025391
-            Y: 110.650391
-            Z: 113.743164
+            X: 32.4619141
+            Y: 79.6523438
+            Z: 86.6689453
           }
           Rotation {
           }
           Scale {
-            X: 0.173223302
-            Y: 0.284277976
-            Z: 0.197666705
+            X: 0.131991237
+            Y: 0.216611743
+            Z: 0.150616407
           }
         }
         ParentId: 15652965593775978323
@@ -2033,16 +1986,16 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: 52.1113281
-            Y: 110.013184
-            Z: 145.415527
+            X: 39.7070313
+            Y: 79.1669922
+            Z: 110.802734
           }
           Rotation {
           }
           Scale {
-            X: 0.173223302
-            Y: 0.284277976
-            Z: 0.197666705
+            X: 0.131991237
+            Y: 0.216611743
+            Z: 0.150616407
           }
         }
         ParentId: 15652965593775978323
@@ -2080,16 +2033,16 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: -9.64355469
-            Y: 111.376953
-            Z: 147.759277
+            X: -7.34765625
+            Y: 80.2060547
+            Z: 112.588379
           }
           Rotation {
           }
           Scale {
-            X: 0.219082609
-            Y: 0.284277976
-            Z: 0.174414754
+            X: 0.166934729
+            Y: 0.216611743
+            Z: 0.132899091
           }
         }
         ParentId: 15652965593775978323
@@ -2138,16 +2091,16 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: -10.7558594
-            Y: 115.78418
-            Z: 41.2270508
+            X: -8.1953125
+            Y: 83.5644531
+            Z: 31.4140625
           }
           Rotation {
           }
           Scale {
-            X: 0.246758431
-            Y: 0.284277976
-            Z: 0.220098302
+            X: 0.188022912
+            Y: 0.216611743
+            Z: 0.16770865
           }
         }
         ParentId: 15652965593775978323
@@ -2185,19 +2138,19 @@ Assets {
         Name: "Stone Arch 3m"
         Transform {
           Location {
-            X: 208.505859
-            Y: -94.3413086
-            Z: 2.87792969
+            X: 171.491211
+            Y: -83
+            Z: 9.08984375
           }
           Rotation {
             Pitch: -90
-            Yaw: -14.0362635
-            Roll: 104.03627
+            Yaw: 90
+            Roll: 7.62939453e-06
           }
           Scale {
-            X: 0.408041209
-            Y: 0.715360165
-            Z: 0.71536
+            X: 0.283553809
+            Y: 0.5861938
+            Z: 0.586193442
           }
         }
         ParentId: 15652965593775978323
@@ -2242,82 +2195,21 @@ Assets {
         }
       }
       Objects {
-        Id: 10336209878172031892
-        Name: "Stone Arch 3m"
-        Transform {
-          Location {
-            X: 69.2283
-            Y: -94.3366318
-            Z: 724.827942
-          }
-          Rotation {
-            Pitch: -90
-            Yaw: 90
-            Roll: 7.62939453e-06
-          }
-          Scale {
-            X: 0.349717855
-            Y: 0.263991088
-            Z: 0.263991088
-          }
-        }
-        ParentId: 15652965593775978323
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.875673413
-              G: 0.864851
-              B: 0.937000036
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 548497782373074631
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 3762845590093304796
         Name: "Main Street Railing 01 - 2m"
         Transform {
           Location {
-            X: -143.337891
-            Y: 5.55957031
-            Z: 207.416992
+            X: -109.219727
+            Y: 4.33789063
+            Z: 158.045898
           }
           Rotation {
-            Roll: -89.9999924
+            Roll: -90
           }
           Scale {
-            X: 1.34624994
-            Y: 1.00000012
-            Z: 0.693408251
+            X: 1.02580416
+            Y: 0.761971712
+            Z: 0.528357387
           }
         }
         ParentId: 15652965593775978323
@@ -2367,17 +2259,17 @@ Assets {
         Name: "Main Street Railing 01 - 2m"
         Transform {
           Location {
-            X: -143.337891
-            Y: 5.55957031
-            Z: 262
+            X: -109.219727
+            Y: 4.33789063
+            Z: 199.636475
           }
           Rotation {
             Roll: -90
           }
           Scale {
-            X: 1.34624994
-            Y: 1.00000012
-            Z: 0.693408251
+            X: 1.02580416
+            Y: 0.761971712
+            Z: 0.528357387
           }
         }
         ParentId: 15652965593775978323
@@ -2427,17 +2319,17 @@ Assets {
         Name: "Urban Plank Debris 03"
         Transform {
           Location {
-            X: -15.5410156
-            Y: -25.2250977
-            Z: 177.357422
+            X: -11.8417969
+            Y: -81.0644531
+            Z: 94.7177734
           }
           Rotation {
-            Yaw: -128.688507
+            Yaw: -128.688492
           }
           Scale {
-            X: 0.5
-            Y: 0.900000036
-            Z: 0.999999821
+            X: 0.894453585
+            Y: 1.61001658
+            Z: 1.78890598
           }
         }
         ParentId: 15652965593775978323
@@ -2485,17 +2377,17 @@ Assets {
         Name: "Urban Plank Debris 03"
         Transform {
           Location {
-            X: -3.70898438
-            Y: -11.8193359
-            Z: 167.357422
+            X: -2.82617188
+            Y: -70.8496094
+            Z: 62.0825195
           }
           Rotation {
             Yaw: 174.585724
           }
           Scale {
-            X: 0.712548614
-            Y: 1.05456555
-            Z: 0.999999821
+            X: 1.27468324
+            Y: 1.88651955
+            Z: 1.78890598
           }
         }
         ParentId: 15652965593775978323
@@ -2543,17 +2435,17 @@ Assets {
         Name: "Urban Plank Debris 03"
         Transform {
           Location {
-            X: -3.99804688
-            Y: -48.2480469
-            Z: 167.357422
+            X: -3.046875
+            Y: -98.6074219
+            Z: 77.71875
           }
           Rotation {
-            Yaw: -21.1697884
+            Yaw: -21.1698
           }
           Scale {
-            X: 0.712548614
-            Y: 1.05456555
-            Z: 0.999999821
+            X: 1.27468324
+            Y: 1.88651955
+            Z: 1.78890598
           }
         }
         ParentId: 15652965593775978323
@@ -2597,21 +2489,151 @@ Assets {
         }
       }
       Objects {
-        Id: 3732748516328057991
+        Id: 8104027881177186550
+        Name: "Pipe - Half Thick"
+        Transform {
+          Location {
+            X: -7.43554688
+            Y: -87.9384766
+            Z: 293.820557
+          }
+          Rotation {
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 2.4835968
+            Y: 2.46720862
+            Z: 0.164328068
+          }
+        }
+        ParentId: 15652965593775978323
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14844672563279110931
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.72300005
+              G: 0.72300005
+              B: 0.72300005
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17654076070235932974
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 12327540409449147631
+        Name: "Stone Arch 3m"
+        Transform {
+          Location {
+            X: 171.492188
+            Y: -83.203125
+            Z: 9.09082
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: 56.3099136
+            Roll: 33.6900711
+          }
+          Scale {
+            X: 0.283553809
+            Y: 0.5861938
+            Z: -0.586193442
+          }
+        }
+        ParentId: 15652965593775978323
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.48088479
+              G: 0.471335024
+              B: 0.535
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 548497782373074631
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 7611777712896383954
         Name: "Main Street Railing 01 - 2m"
         Transform {
           Location {
-            X: -118.283203
-            Y: 0.53515625
-            Z: 163.368652
+            X: -109.219727
+            Y: -115.420898
+            Z: 158.045898
           }
           Rotation {
-            Roll: -89.9999924
+            Roll: -90
           }
           Scale {
-            X: 1.12327361
-            Y: 1.00000012
-            Z: 0.565769136
+            X: 1.02580416
+            Y: 0.761971712
+            Z: 0.528357387
           }
         }
         ParentId: 15652965593775978323
@@ -2657,94 +2679,31 @@ Assets {
         }
       }
       Objects {
-        Id: 5041235944376889922
-        Name: "Decal Stains Round 01"
+        Id: 1511959247581078052
+        Name: "Main Street Railing 01 - 2m"
         Transform {
           Location {
-            X: -6.70546627
-            Y: 178.812439
+            X: -109.219727
+            Y: -115.420898
+            Z: 199.636475
           }
           Rotation {
+            Roll: -90
           }
           Scale {
-            X: 0.550359
-            Y: 0.550359
-            Z: 0.0440143123
+            X: 1.02580416
+            Y: 0.761971712
+            Z: 0.528357387
           }
         }
         ParentId: 15652965593775978323
         UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.041
-              G: 0.0386888608
-              B: 0.0271419976
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 4742847245962031676
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
-        Id: 8104027881177186550
-        Name: "Pipe - Half Thick"
-        Transform {
-          Location {
-            X: -9.75829887
-            Y: -95.2478714
-            Z: 397.119141
-          }
-          Rotation {
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 3.2265265
-            Y: 2.89275098
-            Z: 0.127841562
-          }
-        }
-        ParentId: 15652965593775978323
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14844672563279110931
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.72300005
-              G: 0.72300005
-              B: 0.72300005
+              R: 0.078
+              G: 0.0596974567
+              B: 0.0498419963
               A: 1
             }
           }
@@ -2763,7 +2722,253 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4709690006431586345
+            Id: 4832010047877921553
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10652588419737016205
+        Name: "Main Street Railing 01 - 2m"
+        Transform {
+          Location {
+            X: -109.219727
+            Y: -115.420898
+            Z: 124.084473
+          }
+          Rotation {
+            Roll: -90
+          }
+          Scale {
+            X: 1.02580416
+            Y: 0.761971712
+            Z: 0.528357387
+          }
+        }
+        ParentId: 15652965593775978323
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.078
+              G: 0.0596974567
+              B: 0.0498419963
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4832010047877921553
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10106009701545027243
+        Name: "Main Street Railing 01 - 2m"
+        Transform {
+          Location {
+            X: -109.219727
+            Y: 4.33789063
+            Z: 124.084473
+          }
+          Rotation {
+            Roll: -90
+          }
+          Scale {
+            X: 1.02580416
+            Y: 0.761971712
+            Z: 0.528357387
+          }
+        }
+        ParentId: 15652965593775978323
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.078
+              G: 0.0596974567
+              B: 0.0498419963
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4832010047877921553
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4028942420634286294
+        Name: "Pipe - Thick"
+        Transform {
+          Location {
+            X: -6.6640625
+            Y: -87.6533203
+            Z: 946.274658
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.46270728
+            Y: 1.46270728
+            Z: 0.246180877
+          }
+        }
+        ParentId: 15652965593775978323
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6954370053071083141
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 4
+              G: 4
+              B: 4
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17654076070235932974
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9170876768783183185
+        Name: "Fantasy Castle Pillar 02 - Mid"
+        Transform {
+          Location {
+            X: -6.6640625
+            Y: -87.6533203
+            Z: 625.103
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.4
+            Y: 1.4
+            Z: 1.60396433
+          }
+        }
+        ParentId: 15652965593775978323
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 4
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10914354925542967262
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2780,12 +2985,12 @@ Assets {
       }
     }
     Assets {
-      Id: 3697271826593255962
-      Name: "Fire and Flame Burning Loop Set 01 SFX"
-      PlatformAssetType: 10
+      Id: 4742847245962031676
+      Name: "Decal Stains Round 01"
+      PlatformAssetType: 14
       PrimaryAsset {
-        AssetType: "AudioBlueprintAssetRef"
-        AssetId: "sfxabp_nature_fireloops_ref"
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_stain_round_001"
       }
     }
     Assets {
@@ -2795,6 +3000,24 @@ Assets {
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
         AssetId: "dcl_basicShapes"
+      }
+    }
+    Assets {
+      Id: 9910365847139388510
+      Name: "Smoke Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_smoke_volume_vfx"
+      }
+    }
+    Assets {
+      Id: 3697271826593255962
+      Name: "Fire and Flame Burning Loop Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_nature_fireloops_ref"
       }
     }
     Assets {
@@ -2861,15 +3084,6 @@ Assets {
       }
     }
     Assets {
-      Id: 14267747156564835807
-      Name: "Fantasy Castle Wall Foundation 01 - Curved"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
-      }
-    }
-    Assets {
       Id: 3577357595658140295
       Name: "Fantasy Castle Wall 01 - Curved"
       PlatformAssetType: 1
@@ -2879,21 +3093,12 @@ Assets {
       }
     }
     Assets {
-      Id: 4709690006431586345
-      Name: "Pipe - Half Thick"
+      Id: 14267747156564835807
+      Name: "Fantasy Castle Wall Foundation 01 - Curved"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_half-pipe_003"
-      }
-    }
-    Assets {
-      Id: 14844672563279110931
-      Name: "Bricks Worn Stone 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_brick_stone_worn_001"
+        AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
       }
     }
     Assets {
@@ -2960,12 +3165,30 @@ Assets {
       }
     }
     Assets {
-      Id: 4742847245962031676
-      Name: "Decal Stains Round 01"
-      PlatformAssetType: 14
+      Id: 17654076070235932974
+      Name: "Pipe - Thick"
+      PlatformAssetType: 1
       PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "bp_decal_stain_round_001"
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_pipe_004"
+      }
+    }
+    Assets {
+      Id: 14844672563279110931
+      Name: "Bricks Worn Stone 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_brick_stone_worn_001"
+      }
+    }
+    Assets {
+      Id: 10914354925542967262
+      Name: "Fantasy Castle Pillar 02 - Mid"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_fan_cas_pillar_002_mid"
       }
     }
     PrimaryAssetId {
@@ -2974,5 +3197,6 @@ Assets {
     }
   }
   SerializationVersion: 91
+  DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

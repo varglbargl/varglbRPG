@@ -1,6 +1,130 @@
 Name: "NewFolder_17"
 RootId: 10735981170271289527
 Objects {
+  Id: 10553816613413655184
+  Name: "Stone Wall End Corner 2m 001"
+  Transform {
+    Location {
+      X: -1212.80469
+      Y: 699.694092
+      Z: 408.808838
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.39938962
+      Y: 1.39938962
+      Z: 1.39938962
+    }
+  }
+  ParentId: 10735981170271289527
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1.2
+        G: 0.948
+        B: 0.768
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14162522025896861699
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 13729548823499234739
+  Name: "Stone Wall End Corner 2m 001"
+  Transform {
+    Location {
+      X: -1212.80469
+      Y: 699.694092
+      Z: 134.761963
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.39938962
+      Y: 1.39938962
+      Z: 1.39938962
+    }
+  }
+  ParentId: 10735981170271289527
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1.2
+        G: 0.948
+        B: 0.768
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14162522025896861699
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 6093046526032282991
   Name: "Craftsman Roof Arch 01"
   Transform {
@@ -1795,12 +1919,12 @@ Objects {
     Location {
       X: -1166.15796
       Y: 699.694763
-      Z: -80.9776535
+      Z: -139.285553
     }
     Rotation {
     }
     Scale {
-      X: 1.39938962
+      X: -1.39938962
       Y: 1.39938962
       Z: 1.39938962
     }
@@ -1857,12 +1981,12 @@ Objects {
     Location {
       X: -1166.15796
       Y: 699.694763
-      Z: -355.02478
+      Z: -413.332672
     }
     Rotation {
     }
     Scale {
-      X: 1.39938962
+      X: -1.39938962
       Y: 1.39938962
       Z: 1.39938962
     }
@@ -1919,12 +2043,12 @@ Objects {
     Location {
       X: -1166.15796
       Y: 699.694763
-      Z: -629.071899
+      Z: -687.379822
     }
     Rotation {
     }
     Scale {
-      X: 1.39938962
+      X: -1.39938962
       Y: 1.39938962
       Z: 1.39938962
     }

@@ -1,11 +1,18 @@
 local Utils = require(script:GetCustomProperty("Utils"))
+local Wildermagic = require(script:GetCustomProperty("Wildermagic"))
 
 local LEVEL_UP_VFX = script:GetCustomProperty("LevelUpVFX")
 
 local maxLevel = 60
 
 function onPlayerDamaged(player, damage)
-  player:SetResource("HitPoints", player.hitPoints)
+  player:SetResource("HitPoints", math.max(0, player.hitPoints))
+
+  if player.serverUserData["Gliding"] then
+    player.serverUserData["Gliding"] = false
+    player.animationStance = player.serverUserData["IdleAnimation"]
+  end
+
   player.serverUserData["RecentlyDamaged"] = Task.Spawn(function()
     Task.Wait(5)
   end)
@@ -76,6 +83,16 @@ function onPlayerJoined(player)
         end
 
         Events.Broadcast("PlayerGainedXP", thisPlayer, Utils.experienceToNextLevel(player:GetResource("Level")))
+      end
+
+      if keyCode == "ability_extra_37" then
+        if player:IsBindingPressed("ability_feet") then
+          for i=1, 25 do
+            Wildermagic.cast(thisPlayer)
+          end
+        else
+          Wildermagic.cast(thisPlayer)
+        end
       end
     end)
   end

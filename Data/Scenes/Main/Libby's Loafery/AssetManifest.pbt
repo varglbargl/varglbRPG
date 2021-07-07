@@ -341,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12905923173550510229
-  Name: "Cylinder - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_test_001"
-  }
-}
-Assets {
   Id: 12844865120941685994
   Name: "Large Round Wood Beam 8m"
   PlatformAssetType: 1
@@ -428,15 +419,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_001_uv"
-  }
-}
-Assets {
-  Id: 12158998524499380101
-  Name: "Fantasy Sack Open"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_sack_001_ref"
   }
 }
 Assets {
@@ -680,15 +662,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_corner_smooth_thin_001_ref"
-  }
-}
-Assets {
-  Id: 9910365847139388510
-  Name: "Smoke Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_smoke_volume_vfx"
   }
 }
 Assets {
@@ -1133,15 +1106,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4709690006431586345
-  Name: "Pipe - Half Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half-pipe_003"
-  }
-}
-Assets {
   Id: 4618300826954082494
   Name: "Counter - Sink"
   PlatformAssetType: 1
@@ -1166,15 +1130,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_bevel_raised_planks_white_001_uv"
-  }
-}
-Assets {
-  Id: 4400190857026103365
-  Name: "Large Wood Board 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_large_board_6m"
   }
 }
 Assets {
