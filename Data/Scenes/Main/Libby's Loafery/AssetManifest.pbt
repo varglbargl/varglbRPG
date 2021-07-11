@@ -476,15 +476,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11761871474221141479
-  Name: "Fantasy Castle Door 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_door_002"
-  }
-}
-Assets {
   Id: 11685822100117588160
   Name: "Fantasy Book 03"
   PlatformAssetType: 1

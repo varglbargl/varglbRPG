@@ -187,7 +187,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 264
+    Width: 260
     Height: 60
     RenderTransformPivot {
       Anchor {

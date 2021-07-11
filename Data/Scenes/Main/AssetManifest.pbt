@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17611921055401184409
+  Name: "Sci-fi Chest Hinge 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_crate_hinge_001_ref"
+  }
+}
+Assets {
   Id: 17412017405944415257
   Name: "Flower Bellflower 02"
   PlatformAssetType: 1
@@ -125,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11761871474221141479
+  Name: "Fantasy Castle Door 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_door_002"
+  }
+}
+Assets {
   Id: 11571843439522528832
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -152,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7619605757357837575
+  Name: "Gunshot Low Punch Sweetener 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_gunsweetener_lowpunch_01_Cue_ref"
+  }
+}
+Assets {
   Id: 7367596470333453948
   Name: "Kelp Tall Bush 01"
   PlatformAssetType: 1
@@ -176,6 +203,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_lake_ref"
+  }
+}
+Assets {
+  Id: 6301642118606503856
+  Name: "Whitebox Door 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_door_001"
   }
 }
 Assets {
@@ -248,6 +284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_004"
+  }
+}
+Assets {
+  Id: 1383403729876098168
+  Name: "Object Wood Door Creak 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_object_door_creak_01_Cue_ref"
   }
 }
 Assets {

@@ -22,6 +22,7 @@ Objects {
   ChildIds: 18063060926829527243
   ChildIds: 13370993803661781556
   ChildIds: 6371253864144575362
+  ChildIds: 13844471245689783079
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +35,747 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 13844471245689783079
+  Name: "Shopfront Door - Castle Double"
+  Transform {
+    Location {
+      X: 14912.3467
+      Y: -7098.92529
+      Z: -4228.25391
+    }
+    Scale {
+      X: 0.487565309
+      Y: 0.487565309
+      Z: 0.487565309
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 10958588883692350024
+  ChildIds: 2696050289196629684
+  ChildIds: 11329788484990681598
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 13844471245689783079
+    SubobjectId: 9448334746095232895
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 11329788484990681598
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 180.1241
+      Y: -33.7044182
+      Z: 119.951881
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.5
+      Y: 3.5
+      Z: 3.9
+    }
+  }
+  ParentId: 13844471245689783079
+  ChildIds: 7273296916701905635
+  ChildIds: 11181332424331838716
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 11329788484990681598
+    SubobjectId: 15998252359207740838
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 11181332424331838716
+  Name: "Simple Door Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 11329788484990681598
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Door"
+      ObjectReference {
+        SelfId: 2696050289196629684
+      }
+    }
+    Overrides {
+      Name: "cs:OpenRotation"
+      Rotator {
+        Yaw: 90
+      }
+    }
+    Overrides {
+      Name: "cs:AutoCloseAfter"
+      Float: 0.2
+    }
+    Overrides {
+      Name: "cs:OpenSFX"
+      AssetReference {
+        Id: 1383403729876098168
+      }
+    }
+    Overrides {
+      Name: "cs:DoorSpeed"
+      Float: 0.28
+    }
+    Overrides {
+      Name: "cs:CloseSFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5186520184143733253
+    }
+  }
+  InstanceHistory {
+    SelfId: 11181332424331838716
+    SubobjectId: 15569605551772197028
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 7273296916701905635
+  Name: "Simple Door Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 11329788484990681598
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Door"
+      ObjectReference {
+        SelfId: 10958588883692350024
+      }
+    }
+    Overrides {
+      Name: "cs:OpenRotation"
+      Rotator {
+        Yaw: -90
+      }
+    }
+    Overrides {
+      Name: "cs:AutoCloseAfter"
+      Float: 0.26
+    }
+    Overrides {
+      Name: "cs:CloseSFX"
+      AssetReference {
+        Id: 7619605757357837575
+      }
+    }
+    Overrides {
+      Name: "cs:OpenSFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:DoorSpeed"
+      Float: 0.23
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5186520184143733253
+    }
+  }
+  InstanceHistory {
+    SelfId: 7273296916701905635
+    SubobjectId: 2869279332591314619
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 2696050289196629684
+  Name: "Right Door"
+  Transform {
+    Location {
+      X: 360
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13844471245689783079
+  ChildIds: 12890592945415182327
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6301642118606503856
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 2696050289196629684
+    SubobjectId: 7373518693481372396
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 12890592945415182327
+  Name: "Geo"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2696050289196629684
+  ChildIds: 15456001719770985328
+  ChildIds: 1230787231395080868
+  ChildIds: 5813147163305454072
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 12890592945415182327
+    SubobjectId: 17427486520162349999
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 5813147163305454072
+  Name: "Shopfront Door 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12890592945415182327
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11761871474221141479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 5813147163305454072
+    SubobjectId: 1410253202635066784
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 1230787231395080868
+  Name: "Sci-fi Chest Hinge 01"
+  Transform {
+    Location {
+      X: -3.09765625
+      Y: 5
+      Z: 230
+    }
+    Rotation {
+      Pitch: -90
+      Roll: -62.7845459
+    }
+    Scale {
+      X: 1
+      Y: -1
+      Z: 1
+    }
+  }
+  ParentId: 12890592945415182327
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17611921055401184409
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 1230787231395080868
+    SubobjectId: 5920801035402366716
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 15456001719770985328
+  Name: "Sci-fi Chest Hinge 01"
+  Transform {
+    Location {
+      X: -3.09765625
+      Y: 5
+      Z: 60
+    }
+    Rotation {
+      Pitch: -90
+      Roll: -62.7845459
+    }
+    Scale {
+      X: 1
+      Y: -1
+      Z: 1
+    }
+  }
+  ParentId: 12890592945415182327
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17611921055401184409
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 15456001719770985328
+    SubobjectId: 10754865256003606312
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 10958588883692350024
+  Name: "Left Door"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13844471245689783079
+  ChildIds: 15614912217832345568
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6301642118606503856
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 10958588883692350024
+    SubobjectId: 15792700970951593488
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 15614912217832345568
+  Name: "Geo"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10958588883692350024
+  ChildIds: 17071333456422506839
+  ChildIds: 12521300345286664163
+  ChildIds: 12611378663637524129
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 15614912217832345568
+    SubobjectId: 11208620223219526584
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 12611378663637524129
+  Name: "Shopfront Door 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15614912217832345568
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11761871474221141479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 12611378663637524129
+    SubobjectId: 17022152250363067129
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 12521300345286664163
+  Name: "Sci-fi Chest Hinge 01"
+  Transform {
+    Location {
+      X: -3.09765625
+      Y: 5
+      Z: 230
+    }
+    Rotation {
+      Pitch: -90
+      Roll: -62.7845154
+    }
+    Scale {
+      X: 1
+      Y: -1
+      Z: 1
+    }
+  }
+  ParentId: 15614912217832345568
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17611921055401184409
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 12521300345286664163
+    SubobjectId: 17220308163149315003
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
+  }
+}
+Objects {
+  Id: 17071333456422506839
+  Name: "Sci-fi Chest Hinge 01"
+  Transform {
+    Location {
+      X: -3.09765625
+      Y: 5
+      Z: 60
+    }
+    Rotation {
+      Pitch: -90
+      Roll: -62.7845154
+    }
+    Scale {
+      X: 1
+      Y: -1
+      Z: 1
+    }
+  }
+  ParentId: 15614912217832345568
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17611921055401184409
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 17071333456422506839
+    SubobjectId: 12670811649591063823
+    InstanceId: 5588866361582308187
+    TemplateId: 393303855215183285
   }
 }
 Objects {
