@@ -15,22 +15,14 @@ Objects {
     }
   }
   ParentId: 15427266876529892607
-  ChildIds: 3002022029499065000
-  ChildIds: 2806285380371643799
   ChildIds: 13865405603204337781
-  ChildIds: 17720439607341861395
   ChildIds: 12608319774709920584
   ChildIds: 1463711357443006211
-  ChildIds: 14429499520619798950
   ChildIds: 7385504405874728679
   ChildIds: 8107232081048013141
   ChildIds: 13886919774147089088
   ChildIds: 14719534026073531817
   ChildIds: 3772402018028172198
-  ChildIds: 16256358559771604315
-  ChildIds: 11724658324622735093
-  ChildIds: 17810379918456176088
-  ChildIds: 9282297471804388637
   ChildIds: 7387744648156622441
   ChildIds: 5832738570093993567
   ChildIds: 17622163895191437381
@@ -41,6 +33,12 @@ Objects {
   ChildIds: 6419418635314085895
   ChildIds: 14547575521653919566
   ChildIds: 13713400023890320018
+  ChildIds: 18247540103983632565
+  ChildIds: 9163052742094236589
+  ChildIds: 9771352250086260454
+  ChildIds: 2194479561717188389
+  ChildIds: 1151636404427722198
+  ChildIds: 18336752572729890927
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -55,6 +53,420 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 18336752572729890927
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: -1034.81726
+      Y: 1795.19165
+      Z: 474.12262
+    }
+    Rotation {
+      Yaw: -149.999985
+    }
+    Scale {
+      X: 1.56407654
+      Y: 6.91193962
+      Z: 5.24642706
+    }
+  }
+  ParentId: 14965009199407568965
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16115905030413172164
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.368000031
+        G: 0.198499203
+        B: 0.151616
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12636973138906351386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 1151636404427722198
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: -1808.4801
+      Y: 1043.0769
+      Z: 474.12262
+    }
+    Rotation {
+      Yaw: -120
+    }
+    Scale {
+      X: 1.56407654
+      Y: 6.91193962
+      Z: 5.24642706
+    }
+  }
+  ParentId: 14965009199407568965
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16115905030413172164
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.368000031
+        G: 0.198499203
+        B: 0.151616
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12636973138906351386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2194479561717188389
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: -2091.18286
+      Y: 4.88082886
+      Z: 474.12262
+    }
+    Rotation {
+      Yaw: -89.9999847
+    }
+    Scale {
+      X: 1.56407654
+      Y: 6.91193962
+      Z: 5.24642706
+    }
+  }
+  ParentId: 14965009199407568965
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16115905030413172164
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.368000031
+        G: 0.198499203
+        B: 0.151616
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12636973138906351386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9771352250086260454
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: -1811.13037
+      Y: -1037.4281
+      Z: 474.12262
+    }
+    Rotation {
+      Yaw: -59.9999924
+    }
+    Scale {
+      X: 1.56407654
+      Y: 6.91193962
+      Z: 5.24642706
+    }
+  }
+  ParentId: 14965009199407568965
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16115905030413172164
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.368000031
+        G: 0.198499203
+        B: 0.151616
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12636973138906351386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9163052742094236589
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: -1057.73474
+      Y: -1808.41418
+      Z: 474.12262
+    }
+    Rotation {
+      Yaw: -30.0000057
+    }
+    Scale {
+      X: 1.56407654
+      Y: 6.91193962
+      Z: 5.24642706
+    }
+  }
+  ParentId: 14965009199407568965
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16115905030413172164
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.368000031
+        G: 0.198499203
+        B: 0.151616
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12636973138906351386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 18247540103983632565
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: -4.16940832
+      Y: -2076.68018
+      Z: 474.12262
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 1.56407654
+      Y: 6.91193962
+      Z: 5.24642706
+    }
+  }
+  ParentId: 14965009199407568965
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16115905030413172164
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.368000031
+        G: 0.198499203
+        B: 0.151616
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12636973138906351386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
     }
   }
 }
@@ -527,12 +939,12 @@ Objects {
   Name: "Rock Flat 02"
   Transform {
     Location {
-      X: -351.035156
-      Y: -605.346863
-      Z: -2017.49548
+      X: -403.328644
+      Y: -695.696838
+      Z: -1881.53162
     }
     Rotation {
-      Pitch: -52.4793053
+      Pitch: -52.4793091
       Yaw: 59.9381561
       Roll: 73.5464478
     }
@@ -635,222 +1047,6 @@ Objects {
         LinearDamping: 0.01
       }
       BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 9282297471804388637
-  Name: "Evil Scary Haunted Wind Howling Loop 01 SFX"
-  Transform {
-    Location {
-      X: -93.0841599
-      Y: 19.1816845
-      Z: -385.198639
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.454545438
-      Y: 0.454545438
-      Z: 0.454545438
-    }
-  }
-  ParentId: 14965009199407568965
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 12353085823307133273
-    }
-    AutoPlay: true
-    Repeat: true
-    Pitch: -1200
-    Volume: 0.4
-    Falloff: 1500
-    Radius: 2500
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 17810379918456176088
-  Name: "Evil Scary Haunted Wind Howling Loop 01 SFX"
-  Transform {
-    Location {
-      X: -93.0841599
-      Y: 19.1816845
-      Z: -123.859192
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.454545438
-      Y: 0.454545438
-      Z: 0.454545438
-    }
-  }
-  ParentId: 14965009199407568965
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 3880098600205641478
-    }
-    AutoPlay: true
-    Repeat: true
-    Pitch: -1000
-    Volume: 1
-    Falloff: 1500
-    Radius: 2500
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 11724658324622735093
-  Name: "Ambience Suburbs Night Crickets 01 SFX"
-  Transform {
-    Location {
-      X: 109.115761
-      Y: -14.9258699
-      Z: -96.1997223
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.454545438
-      Y: 0.454545438
-      Z: 0.454545438
-    }
-  }
-  ParentId: 14965009199407568965
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 3430948097086476759
-    }
-    AutoPlay: true
-    Repeat: true
-    Volume: 1
-    Falloff: 2000
-    Radius: 3000
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 16256358559771604315
-  Name: "Fog Adjustment Volume"
-  Transform {
-    Location {
-      X: -11.8714485
-      Y: 40.2570114
-      Z: -768.289673
-    }
-    Rotation {
-    }
-    Scale {
-      X: 44.8034592
-      Y: 44.8034592
-      Z: 59.1841469
-    }
-  }
-  ParentId: 14965009199407568965
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Layered Fog Density"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Start"
-      Float: 4000
-    }
-    Overrides {
-      Name: "bp:Fog Object"
-      ObjectReference {
-        SelfId: 11489689873137150294
-        SubObjectId: 18275274607650207761
-        InstanceId: 5911767565409797501
-        TemplateId: 2730962379816390879
-      }
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        G: 1
-        B: 0.582781553
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Fog Density"
-      Float: 1.38269484
-    }
-    Overrides {
-      Name: "bp:Falloff"
-      Float: 0.588322699
-    }
-    Overrides {
-      Name: "bp:Opacity"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Blend Duration"
-      Float: 5
-    }
-    Overrides {
-      Name: "bp:Volume Type"
-      Enum {
-        Value: "mc:evolumetype:2"
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 6629519930299944205
-    }
-    TeamSettings {
     }
   }
 }
@@ -14694,7 +14890,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_1"
+    FilePartitionName: "NewFolder_25"
   }
 }
 Objects {
@@ -14727,84 +14923,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_2"
-  }
-}
-Objects {
-  Id: 14429499520619798950
-  Name: "Sphere - Half Thin"
-  Transform {
-    Location {
-      Y: 0.00177556812
-      Z: 426.440643
-    }
-    Rotation {
-      Yaw: 7.50000811
-    }
-    Scale {
-      X: 45.45
-      Y: 45.45
-      Z: 34.116291
-    }
-  }
-  ParentId: 14965009199407568965
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10151348392058825738
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.87500006
-        G: 0.483787507
-        B: 0.41475
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11285278799348334020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+    FilePartitionName: "NewFolder_26"
   }
 }
 Objects {
@@ -14866,14 +14985,14 @@ Objects {
   Name: "Fantasy Castle Accessory Roof 02"
   Transform {
     Location {
-      Z: 1800
+      Z: 1790.93127
     }
     Rotation {
     }
     Scale {
-      X: 2.33260155
-      Y: 2.33260155
-      Z: 1.38357401
+      X: 2.3
+      Y: 2.3
+      Z: 1.90000033
     }
   }
   ParentId: 14965009199407568965
@@ -14893,6 +15012,21 @@ Objects {
     Overrides {
       Name: "ma:Building_WallOuter:smart"
       Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 16115905030413172164
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.368000031
+        G: 0.198499203
+        B: 0.151616
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14925,67 +15059,13 @@ Objects {
   }
 }
 Objects {
-  Id: 17720439607341861395
-  Name: "Point Light"
-  Transform {
-    Location {
-      Z: 1170.00012
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.80000007
-      Y: 1.80000007
-      Z: 1.80000007
-    }
-  }
-  ParentId: 14965009199407568965
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Light {
-    Intensity: 2
-    Color {
-      R: 1
-      G: 0.602649
-      B: 0.399999976
-      A: 1
-    }
-    VolumetricIntensity: 5
-    TeamSettings {
-    }
-    Light {
-      Temperature: 6500
-      LocalLight {
-        AttenuationRadius: 6000
-        PointLight {
-          SourceRadius: 20
-          SoftSourceRadius: 20
-          FallOffExponent: 8
-          UseFallOffExponent: true
-        }
-      }
-      MaxDrawDistance: 6000
-      MaxDistanceFadeRange: 2000
-    }
-  }
-}
-Objects {
   Id: 13865405603204337781
   Name: "Pipe Thin 01 - Large"
   Transform {
     Location {
-      Y: 0.00221946021
-      Z: 337.5
+      X: 0.000229913538
+      Y: 0.00217379
+      Z: 405
     }
     Rotation {
     }
@@ -15034,137 +15114,6 @@ Objects {
   }
 }
 Objects {
-  Id: 2806285380371643799
-  Name: "Sphere - Half Thin"
-  Transform {
-    Location {
-      Y: 0.00177556812
-      Z: 426.440643
-    }
-    Rotation {
-    }
-    Scale {
-      X: 44.64
-      Y: 44.64
-      Z: 33.5677643
-    }
-  }
-  ParentId: 14965009199407568965
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10151348392058825738
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.71846664
-        B: 0.58799994
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11285278799348334020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 3002022029499065000
-  Name: "Sphere - Half Thin"
-  Transform {
-    Location {
-      Y: 0.00177556812
-      Z: 426.440643
-    }
-    Rotation {
-    }
-    Scale {
-      X: 45.0539
-      Y: 45.0539
-      Z: 33.8733978
-    }
-  }
-  ParentId: 14965009199407568965
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 15467932640263561599
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11285278799348334020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 11377047656755163293
   Name: "Un-Mergeable"
   Transform {
@@ -15194,5 +15143,316 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Un-Mergeable"
+  }
+}
+Objects {
+  Id: 5467433566575907762
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15427266876529892607
+  ChildIds: 14425598626380087008
+  ChildIds: 2075683003750172191
+  ChildIds: 14682720614844408113
+  ChildIds: 3855575679093092463
+  ChildIds: 2103219180432594649
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 2103219180432594649
+  Name: "Fog Adjustment Volume"
+  Transform {
+    Location {
+      X: -11.8713093
+      Y: 40.2568245
+      Z: -768.289673
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 44.8034592
+      Y: 44.8034592
+      Z: 59.1841469
+    }
+  }
+  ParentId: 5467433566575907762
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Layered Fog Density"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Start"
+      Float: 4000
+    }
+    Overrides {
+      Name: "bp:Fog Object"
+      ObjectReference {
+        SelfId: 11489689873137150294
+        SubObjectId: 18275274607650207761
+        InstanceId: 5911767565409797501
+        TemplateId: 2730962379816390879
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        G: 1
+        B: 0.582781553
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Fog Density"
+      Float: 1.38269484
+    }
+    Overrides {
+      Name: "bp:Falloff"
+      Float: 0.588322699
+    }
+    Overrides {
+      Name: "bp:Opacity"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Blend Duration"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Volume Type"
+      Enum {
+        Value: "mc:evolumetype:2"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6629519930299944205
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 3855575679093092463
+  Name: "Evil Scary Haunted Wind Howling Loop 01 SFX"
+  Transform {
+    Location {
+      X: -93.0842667
+      Y: 19.1816883
+      Z: -123.859192
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 0.454545438
+      Y: 0.454545438
+      Z: 0.454545438
+    }
+  }
+  ParentId: 5467433566575907762
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3880098600205641478
+    }
+    AutoPlay: true
+    Repeat: true
+    Pitch: -1000
+    Volume: 1
+    Falloff: 1500
+    Radius: 2500
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 14682720614844408113
+  Name: "Ambience Suburbs Night Crickets 01 SFX"
+  Transform {
+    Location {
+      X: 109.11602
+      Y: -14.9259634
+      Z: -96.1997223
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 0.454545438
+      Y: 0.454545438
+      Z: 0.454545438
+    }
+  }
+  ParentId: 5467433566575907762
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3430948097086476759
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: 2000
+    Radius: 3000
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 2075683003750172191
+  Name: "Evil Scary Haunted Wind Howling Loop 01 SFX"
+  Transform {
+    Location {
+      X: -93.0842667
+      Y: 19.1816883
+      Z: -385.198639
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 0.454545438
+      Y: 0.454545438
+      Z: 0.454545438
+    }
+  }
+  ParentId: 5467433566575907762
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 12353085823307133273
+    }
+    AutoPlay: true
+    Repeat: true
+    Pitch: -1200
+    Volume: 0.4
+    Falloff: 1500
+    Radius: 2500
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 14425598626380087008
+  Name: "Point Light"
+  Transform {
+    Location {
+      Z: 1170.00012
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 1.80000007
+      Y: 1.80000007
+      Z: 1.80000007
+    }
+  }
+  ParentId: 5467433566575907762
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Light {
+    Intensity: 2
+    Color {
+      R: 1
+      G: 0.602649
+      B: 0.399999976
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 6000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 6000
+      MaxDistanceFadeRange: 2000
+    }
   }
 }

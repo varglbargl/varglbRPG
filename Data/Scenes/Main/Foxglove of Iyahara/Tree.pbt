@@ -96,7 +96,6 @@ Objects {
   ChildIds: 18037964846871475017
   ChildIds: 18192172990636593834
   ChildIds: 5987433248549170164
-  ChildIds: 16881825150643800599
   ChildIds: 14144551977689235760
   ChildIds: 17792602853077019920
   ChildIds: 11449857551165242874
@@ -4515,61 +4514,6 @@ Objects {
         LinearDamping: 0.01
       }
       BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16881825150643800599
-  Name: "World Music Score Set 01"
-  Transform {
-    Location {
-      X: 981.827148
-      Y: -606.44873
-      Z: 266.862061
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12016671473608753510
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Type"
-      Enum {
-        Value: "mc:emx_worldmusic:48"
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 14635328690762901672
-    }
-    TeamSettings {
-    }
-    AudioBP {
-      AutoPlay: true
-      Repeat: true
-      Volume: 1
-      Falloff: 1000
-      Radius: 400
-      EnableOcclusion: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -9041,7 +8985,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_39"
+    FilePartitionName: "NewFolder_51"
   }
   InstanceHistory {
     SelfId: 6169874004483662080
@@ -11260,7 +11204,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_40"
+    FilePartitionName: "NewFolder_52"
   }
   InstanceHistory {
     SelfId: 9444120519638555188
@@ -12257,7 +12201,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_41"
+    FilePartitionName: "NewFolder_53"
   }
   InstanceHistory {
     SelfId: 9444120519638555188

@@ -1,657 +1,260 @@
 Name: "Un-Mergeable_5"
 RootId: 9756262770175301073
 Objects {
-  Id: 10435086293571628638
-  Name: "Goodie Bag - Cookies"
+  Id: 2241346165955246619
+  Name: "Plane 1m - Two Sided"
   Transform {
     Location {
-      X: 14426.0234
-      Y: -6683.53809
-      Z: -4067.69385
+      X: 540.000305
+      Y: -1.52587891e-05
+      Z: 150
     }
     Rotation {
-      Pitch: 4.49189425
-      Yaw: 60.2471428
-      Roll: -0.774017632
+      Yaw: -1.20741765e-06
+      Roll: -89.9999466
     }
     Scale {
-      X: 1.15087485
-      Y: 1.15087485
-      Z: 1.15087485
+      X: 1
+      Y: 3.90000105
+      Z: 1
     }
   }
   ParentId: 9756262770175301073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16542289431259589342
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16720834451685021084
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Cookies"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -153.030273
-            Y: -865.966309
-            Z: 232.306152
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.15087485
-            Y: 1.15087485
-            Z: 1.15087485
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.49189425
-            Yaw: -35.9119873
-            Roll: -0.774017334
-          }
-        }
-      }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
     }
-    TemplateAsset {
-      Id: 10134330918167137267
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
     }
   }
 }
 Objects {
-  Id: 7582353334569392644
-  Name: "Goodie Bag - Cookies"
+  Id: 2464503090954714814
+  Name: "Plane 1m - Two Sided"
   Transform {
     Location {
-      X: 14401.0059
-      Y: -6671.12305
-      Z: -4067.69385
+      X: 255.000046
+      Y: 0.000328063965
+      Z: 150
     }
     Rotation {
-      Pitch: 4.49189425
-      Yaw: 60.2471428
-      Roll: -0.774017632
+      Yaw: -1.20741765e-06
+      Roll: -89.9999466
     }
     Scale {
-      X: 1.15087485
-      Y: 1.15087485
-      Z: 1.15087485
+      X: 1
+      Y: 3.90000105
+      Z: 1
     }
   }
   ParentId: 9756262770175301073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16542289431259589342
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16720834451685021084
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Cookies"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -173.976563
-            Y: -883.538086
-            Z: 232.306152
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.15087485
-            Y: 1.15087485
-            Z: 1.15087485
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.49189425
-            Yaw: -50.5412598
-            Roll: -0.774017334
-          }
-        }
-      }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
     }
-    TemplateAsset {
-      Id: 10134330918167137267
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
     }
   }
 }
 Objects {
-  Id: 9555794479800137573
-  Name: "Goodie Bag - Cookies"
+  Id: 5334028060530394402
+  Name: "Plane 1m - Two Sided"
   Transform {
     Location {
-      X: 14407.2842
-      Y: -6645.84033
-      Z: -4067.69385
+      X: 404.999908
+      Y: -0.000350952148
+      Z: 415
     }
     Rotation {
-      Pitch: 4.49189425
-      Yaw: 60.2471428
-      Roll: -0.774017632
+      Roll: -89.9999542
     }
     Scale {
-      X: 1.15087485
-      Y: 1.15087485
-      Z: 1.15087485
+      X: 4.00000048
+      Y: 1.70000017
+      Z: 1
     }
   }
   ParentId: 9756262770175301073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16542289431259589342
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16720834451685021084
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Cookies"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -198.994141
-            Y: -871.123047
-            Z: 232.306152
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.15087485
-            Y: 1.15087485
-            Z: 1.15087485
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.49189425
-            Yaw: -160.416214
-            Roll: -0.774017334
-          }
-        }
-      }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
     }
-    TemplateAsset {
-      Id: 10134330918167137267
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
     }
   }
 }
 Objects {
-  Id: 10638981455723726056
-  Name: "Goodie Bag - Cookies"
+  Id: 6771964505911866666
+  Name: "Plane 1m - Two Sided"
   Transform {
     Location {
-      X: 14436.3711
-      Y: -6639.2251
-      Z: -4067.69385
+      X: -397.999939
+      Y: -2.00011444
+      Z: 308
     }
     Rotation {
-      Pitch: 4.49189425
-      Yaw: 60.2471428
-      Roll: -0.774017632
+      Yaw: -1.20741765e-06
+      Roll: 89.9999466
     }
     Scale {
-      X: 1.15087485
-      Y: 1.15087485
-      Z: 1.15087485
+      X: 4.8
+      Y: 3.4
+      Z: 1
     }
   }
   ParentId: 9756262770175301073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10766975867019021707
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.1
+        G: 0.1
+        B: 0.1
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16720834451685021084
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Cookies"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -192.71582
-            Y: -845.840332
-            Z: 232.306152
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.15087485
-            Y: 1.15087485
-            Z: 1.15087485
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.49189425
-            Yaw: 136.014496
-            Roll: -0.774017334
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10134330918167137267
-    }
-  }
-}
-Objects {
-  Id: 16062995037311781183
-  Name: "Goodie Bag - Cookies"
-  Transform {
-    Location {
-      X: 13894.9092
-      Y: -6127.61523
-      Z: -4156.61133
-    }
-    Rotation {
-      Yaw: -9.75654411
-    }
-    Scale {
-      X: 1.334692
-      Y: 1.334692
-      Z: 1.334692
-    }
-  }
-  ParentId: 9756262770175301073
-  Collidable_v2 {
+  CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16720834451685021084
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Cookies"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -163.628906
-            Y: -839.225098
-            Z: 232.306152
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.15087485
-            Y: 1.15087485
-            Z: 1.15087485
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.49189425
-            Yaw: 60.2471428
-            Roll: -0.774017334
-          }
-        }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
       }
-    }
-    TemplateAsset {
-      Id: 10134330918167137267
-    }
-  }
-}
-Objects {
-  Id: 2632449256814592979
-  Name: "Goodie Bag - Waffleg\303\244ngers"
-  Transform {
-    Location {
-      X: 14779.5811
-      Y: -6278.22119
-      Z: -4169.84863
-    }
-    Rotation {
-      Pitch: 7.43090391
-      Yaw: -3.60644603
-      Roll: 8.61004708e-07
-    }
-    Scale {
-      X: 1.35537136
-      Y: 1.35537136
-      Z: 1.35537136
-    }
-  }
-  ParentId: 9756262770175301073
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5769361334134386234
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Waffleg\303\244ngers"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -149.875977
-            Y: -873.546387
-            Z: 193.700195
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 7.43090391
-            Yaw: -3.60644531
-            Roll: 8.61004708e-07
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.14699984
-            Y: 1.14699984
-            Z: 1.14699984
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12702375048344860613
-    }
-  }
-}
-Objects {
-  Id: 16672853196203561703
-  Name: "Goodie Bag - Waffleg\303\244ngers"
-  Transform {
-    Location {
-      X: 14732.9375
-      Y: -6308.95166
-      Z: -4169.84863
-    }
-    Rotation {
-      Pitch: 7.43090391
-      Yaw: -102.258522
-      Roll: -4.30502354e-07
-    }
-    Scale {
-      X: 1.35537136
-      Y: 1.35537136
-      Z: 1.35537136
-    }
-  }
-  ParentId: 9756262770175301073
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5769361334134386234
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Waffleg\303\244ngers"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -183.501953
-            Y: -895.285156
-            Z: 193.700195
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 7.43090391
-            Yaw: -102.258545
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.14699984
-            Y: 1.14699984
-            Z: 1.14699984
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12702375048344860613
-    }
-  }
-}
-Objects {
-  Id: 53703698714090354
-  Name: "Goodie Bag - Waffleg\303\244ngers"
-  Transform {
-    Location {
-      X: 14696.9893
-      Y: -6274.34229
-      Z: -4169.84863
-    }
-    Rotation {
-      Pitch: 7.43090391
-      Yaw: 170.870102
-    }
-    Scale {
-      X: 1.35537136
-      Y: 1.35537136
-      Z: 1.35537136
-    }
-  }
-  ParentId: 9756262770175301073
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5769361334134386234
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Waffleg\303\244ngers"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -209.327148
-            Y: -870.150879
-            Z: 193.700195
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 7.43090391
-            Yaw: 170.870102
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.14699984
-            Y: 1.14699984
-            Z: 1.14699984
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12702375048344860613
-    }
-  }
-}
-Objects {
-  Id: 65514514421573161
-  Name: "Goodie Bag - Waffleg\303\244ngers"
-  Transform {
-    Location {
-      X: 14765.1309
-      Y: -6226.54736
-      Z: -4169.84863
-    }
-    Rotation {
-      Pitch: 7.43090391
-      Yaw: 52.0609283
-      Roll: 6.45753516e-07
-    }
-    Scale {
-      X: 1.35537136
-      Y: 1.35537136
-      Z: 1.35537136
-    }
-  }
-  ParentId: 9756262770175301073
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5769361334134386234
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Waffleg\303\244ngers"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -157.609375
-            Y: -833.597168
-            Z: 193.700195
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 7.43090391
-            Yaw: 52.0609474
-            Roll: 6.45753516e-07
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.14699984
-            Y: 1.14699984
-            Z: 1.14699984
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12702375048344860613
-    }
-  }
-}
-Objects {
-  Id: 4395419110659369860
-  Name: "Goodie Bag - Waffleg\303\244ngers"
-  Transform {
-    Location {
-      X: 14713.9102
-      Y: -6226.46436
-      Z: -4169.84863
-    }
-    Rotation {
-      Pitch: 7.43090391
-      Yaw: 129.127045
-      Roll: 2.15251177e-07
-    }
-    Scale {
-      X: 1.35537136
-      Y: 1.35537136
-      Z: 1.35537136
-    }
-  }
-  ParentId: 9756262770175301073
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5769361334134386234
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Goodie Bag - Waffleg\303\244ngers"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -197.675781
-            Y: -835.099609
-            Z: 193.700195
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 7.43090391
-            Yaw: 129.127014
-            Roll: 2.15251177e-07
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.14699984
-            Y: 1.14699984
-            Z: 1.14699984
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12702375048344860613
+      BoundsScale: 1
     }
   }
 }

@@ -1829,7 +1829,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 3702191406046426907
+              Id: 132672053610873933
             }
           }
           Overrides {
@@ -1894,7 +1894,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 3702191406046426907
+              Id: 132672053610873933
             }
           }
           Overrides {
@@ -1959,7 +1959,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 3702191406046426907
+              Id: 132672053610873933
             }
           }
           Overrides {
@@ -2024,7 +2024,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 3702191406046426907
+              Id: 132672053610873933
             }
           }
           Overrides {
@@ -2988,12 +2988,12 @@ Assets {
       }
     }
     Assets {
-      Id: 3702191406046426907
-      Name: "Emissive Glow Transparent"
+      Id: 132672053610873933
+      Name: "Plastic Matte"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_emissive_001"
+        AssetId: "plastic_matte_001"
       }
     }
     Assets {

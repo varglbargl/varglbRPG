@@ -1,9 +1,9 @@
 Assets {
-  Id: 2121245170663321426
-  Name: "Candle Flame VFX"
-  PlatformAssetType: 1
+  Id: 10075966838349787628
+  Name: "Decal Sci-fi Details 01"
+  PlatformAssetType: 14
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "fxsm_candleflame"
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scf_details_001_ref"
   }
 }

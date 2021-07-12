@@ -28,8 +28,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3317
-            Y: -39.5908203
+            X: 3169.22705
+            Y: 658.640869
             Z: 3
           }
         }
@@ -89,15 +89,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3457
-            Y: -1458
+            X: 9710.35352
+            Y: 5713.32813
             Z: 13.2709961
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -89.9999924
+            Yaw: -45
           }
         }
         Overrides {
@@ -120,8 +120,8 @@ Objects {
   Name: "Urban Manhole Cover 01"
   Transform {
     Location {
-      X: 2348.63672
-      Y: 5.18457031
+      X: 2200.91577
+      Y: 703.417969
     }
     Rotation {
     }
@@ -192,8 +192,8 @@ Objects {
   Name: "Urban Manhole Cover 01"
   Transform {
     Location {
-      X: 2348.63672
-      Y: 5.18457031
+      X: 2200.91577
+      Y: 703.417969
     }
     Rotation {
     }
@@ -278,8 +278,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -3118
-            Y: 267
+            X: -3265.71875
+            Y: 965.234375
             Z: 10
           }
         }
@@ -339,15 +339,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1465.31641
-            Y: -245.140625
+            X: -1613.03711
+            Y: 453.09375
             Z: 10
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -89.9999924
+            Yaw: -90
           }
         }
         Overrides {
@@ -393,8 +393,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -43
-            Y: 342
+            X: -190.720703
+            Y: 1040.23425
             Z: 10
           }
         }
@@ -446,15 +446,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1642
-            Y: -318
+            X: 7464.42432
+            Y: 3582.37109
             Z: 10
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 89.9999924
+            Yaw: 45
           }
         }
         Overrides {
@@ -477,12 +477,11 @@ Objects {
   Name: "Fire Hydrant"
   Transform {
     Location {
-      X: 237
-      Y: -377.800293
-      Z: 8.08935547
+      X: 8387.05
+      Y: 4563.5
+      Z: 12.4414063
     }
     Rotation {
-      Yaw: 89.9999924
     }
     Scale {
       X: 1.09276509
@@ -558,8 +557,8 @@ Objects {
   Name: "Urban Manhole Cover 01"
   Transform {
     Location {
-      X: -2409.7627
-      Y: 5.18457031
+      X: -2557.48193
+      Y: 703.417725
       Z: 8.87890625
     }
     Rotation {
@@ -631,8 +630,8 @@ Objects {
   Name: "Urban Manhole Cover 01"
   Transform {
     Location {
-      X: -2409.7627
-      Y: 5.18457031
+      X: -2557.48193
+      Y: 703.417725
       Z: 8.87890625
     }
     Rotation {
@@ -695,11 +694,12 @@ Objects {
   Name: "Flags"
   Transform {
     Location {
-      X: -2318
-      Y: 17
+      X: 10490.8096
+      Y: 6098.32324
       Z: 715
     }
     Rotation {
+      Yaw: -135
     }
     Scale {
       X: 1
@@ -856,8 +856,8 @@ Objects {
   Name: "Flag Rope"
   Transform {
     Location {
-      X: -594.144531
-      Y: -20.1401367
+      X: -670.124512
+      Y: -35.6563568
       Z: 63.2668457
     }
     Rotation {
@@ -894,8 +894,8 @@ Objects {
   Name: "Clothes Line"
   Transform {
     Location {
-      X: -1587.04395
-      Y: 1794.85498
+      X: -1734.76367
+      Y: 2493.0835
       Z: 1562.76636
     }
     Rotation {

@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17611921055401184409
+  Name: "Sci-fi Chest Hinge 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_crate_hinge_001_ref"
+  }
+}
+Assets {
   Id: 17241186771114119414
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -476,6 +485,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11761871474221141479
+  Name: "Fantasy Castle Door 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_door_002"
+  }
+}
+Assets {
   Id: 11685822100117588160
   Name: "Fantasy Book 03"
   PlatformAssetType: 1
@@ -608,15 +626,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_001"
-  }
-}
-Assets {
-  Id: 10766975867019021707
-  Name: "Glass 01 (no distortion)"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_glass_001"
   }
 }
 Assets {
@@ -989,6 +998,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6301642118606503856
+  Name: "Whitebox Door 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_door_001"
+  }
+}
+Assets {
   Id: 6298880568795808979
   Name: "Advanced Material"
   PlatformAssetType: 2
@@ -1151,6 +1169,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3605030238014728915
+  Name: "Wood Planks"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_001_uv"
+  }
+}
+Assets {
   Id: 3512104159021442092
   Name: "Cauldron"
   PlatformAssetType: 1
@@ -1202,6 +1229,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_concrete_tiles_001"
+  }
+}
+Assets {
+  Id: 2728768601066867820
+  Name: "Footstep Wood 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_footstep_wood"
   }
 }
 Assets {
@@ -1313,12 +1349,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1516987487312316476
-  Name: "\"Cute Town\" Music Construction Kit (Sections) 01"
-  PlatformAssetType: 10
+  Id: 1383403729876098168
+  Name: "Object Wood Door Creak 01 SFX"
+  PlatformAssetType: 7
   PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_cute_town_sections_kit_ref"
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_object_door_creak_01_Cue_ref"
   }
 }
 Assets {
@@ -1400,15 +1436,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_rounded_001"
-  }
-}
-Assets {
-  Id: 70674630196833729
-  Name: "Main Street Wall 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_wall_001_ref"
   }
 }
 Assets {

@@ -3200,7 +3200,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 12668580837364845201
+              Id: 103528912763711779
             }
           }
           Overrides {
@@ -3210,9 +3210,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              R: 0.560880065
-              G: 0.47232002
-              B: 0.738000035
+              R: 0.659344
+              G: 0.506688
+              B: 0.812000036
               A: 1
             }
           }
@@ -3257,6 +3257,10 @@ Assets {
               B: 0.3123
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:smart"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -17428,6 +17432,15 @@ Assets {
       }
     }
     Assets {
+      Id: 103528912763711779
+      Name: "Stucco Tintable"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_stucco_tint_001_uv"
+      }
+    }
+    Assets {
       Id: 12668580837364845201
       Name: "Wood Raw White"
       PlatformAssetType: 2
@@ -17470,15 +17483,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxma_frosted_glass_nodistortion"
-      }
-    }
-    Assets {
-      Id: 103528912763711779
-      Name: "Stucco Tintable"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_stucco_tint_001_uv"
       }
     }
     Assets {

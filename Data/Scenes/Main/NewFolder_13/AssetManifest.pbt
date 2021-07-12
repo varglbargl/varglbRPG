@@ -1,9 +1,18 @@
 Assets {
-  Id: 10075966838349787628
-  Name: "Decal Sci-fi Details 01"
-  PlatformAssetType: 14
+  Id: 7822473577673662489
+  Name: "Fantasy Castle Pillar 01 Mid"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_scf_details_001_ref"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_mid"
+  }
+}
+Assets {
+  Id: 3078636257640080132
+  Name: "Fantasy Castle Pillar 01 Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_base"
   }
 }

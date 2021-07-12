@@ -1,19 +1,19 @@
 Assets {
+  Id: 17882896792933737184
+  Name: "Main Street Trim 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_001_ref"
+  }
+}
+Assets {
   Id: 17680220715648473489
   Name: "Rock Block 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_006"
-  }
-}
-Assets {
-  Id: 17611921055401184409
-  Name: "Sci-fi Chest Hinge 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_crate_hinge_001_ref"
   }
 }
 Assets {
@@ -41,6 +41,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
+  Id: 16666425430282760837
+  Name: "Fantasy Castle Wall 01 - Doorway 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_001_door_01"
   }
 }
 Assets {
@@ -116,12 +125,57 @@ Assets {
   }
 }
 Assets {
+  Id: 14212988502358508072
+  Name: "Metal Basic Steel"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "steel_001"
+  }
+}
+Assets {
+  Id: 13916285447826229961
+  Name: "Pipe - Quarter Wedge Thin - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_pipe_wedge_thin_lg_001_ref"
+  }
+}
+Assets {
+  Id: 12835105342757965251
+  Name: "Square Column Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_bottom_001"
+  }
+}
+Assets {
   Id: 12753022163461275842
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_flower_daisy_001"
+  }
+}
+Assets {
+  Id: 12136361298153455411
+  Name: "Pipe - Quarter Wedge - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_pipe_wedge_lg_001_ref"
+  }
+}
+Assets {
+  Id: 11987178347429091614
+  Name: "Stone Railing 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_railing_6m_001"
   }
 }
 Assets {
@@ -134,21 +188,21 @@ Assets {
   }
 }
 Assets {
-  Id: 11761871474221141479
-  Name: "Fantasy Castle Door 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_door_002"
-  }
-}
-Assets {
   Id: 11571843439522528832
   Name: "Grass Tall"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
+  Id: 11097681698683891383
+  Name: "Arch Fancy Peaked 6m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_fancy_ogive_6m_001"
   }
 }
 Assets {
@@ -161,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10211762008731431648
+  Name: "Main Street Trim 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_004_ref"
+  }
+}
+Assets {
   Id: 8658515238740057795
   Name: "Branches Cluster Small"
   PlatformAssetType: 1
@@ -170,12 +233,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7619605757357837575
-  Name: "Gunshot Low Punch Sweetener 01 SFX"
-  PlatformAssetType: 7
+  Id: 7375708258319111654
+  Name: "Japanese Temple Wall Large Roof 01"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_gunsweetener_lowpunch_01_Cue_ref"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_wall_lrg_roof_001_ref"
   }
 }
 Assets {
@@ -206,12 +269,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6301642118606503856
-  Name: "Whitebox Door 01"
+  Id: 5835872500318203810
+  Name: "Ring - Beveled - Large"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_door_001"
+    AssetId: "sm_ring_faceted_lg_001_ref"
   }
 }
 Assets {
@@ -278,6 +341,24 @@ Assets {
   }
 }
 Assets {
+  Id: 3189726128131317652
+  Name: "Ring - Quarter Beveled - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_ring_faceted_lg_001_ref"
+  }
+}
+Assets {
+  Id: 2899842837741361229
+  Name: "Concrete Tiles 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_tiles_001"
+  }
+}
+Assets {
   Id: 2582620441980557288
   Name: "Fern 04"
   PlatformAssetType: 1
@@ -287,12 +368,21 @@ Assets {
   }
 }
 Assets {
-  Id: 1383403729876098168
-  Name: "Object Wood Door Creak 01 SFX"
-  PlatformAssetType: 7
+  Id: 2115913270908487285
+  Name: "Roof Square Shingles 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_object_door_creak_01_Cue_ref"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_square_shingles_001_uv"
+  }
+}
+Assets {
+  Id: 1936447668697306516
+  Name: "Main Street Trim 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_002_ref"
   }
 }
 Assets {
@@ -332,6 +422,24 @@ Assets {
   }
 }
 Assets {
+  Id: 1050562759207971480
+  Name: "Prism - 3-Sided Convex"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_triangle_convex_001"
+  }
+}
+Assets {
+  Id: 1044749896523309167
+  Name: "Main Street Trim 05 Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_005_corner_ref"
+  }
+}
+Assets {
   Id: 1035889113622252591
   Name: "Branches Cluster Big"
   PlatformAssetType: 1
@@ -347,5 +455,32 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_windytrees_ref"
+  }
+}
+Assets {
+  Id: 583162886844584524
+  Name: "Japanese Temple Roof Ornament 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_001_orn_01_ref"
+  }
+}
+Assets {
+  Id: 183152300358340459
+  Name: "Bricks Concrete Cinder Block 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_concrete_001"
+  }
+}
+Assets {
+  Id: 103528912763711779
+  Name: "Stucco Tintable"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stucco_tint_001_uv"
   }
 }

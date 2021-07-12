@@ -188,15 +188,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14635328690762901672
-  Name: "World Music Score Set 01"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_WorldMusic_ref"
-  }
-}
-Assets {
   Id: 14555124232196571952
   Name: "Flower Bellflower 01"
   PlatformAssetType: 1

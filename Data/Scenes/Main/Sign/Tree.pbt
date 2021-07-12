@@ -1,7 +1,95 @@
 Name: "Sign"
-RootId: 9872334642621716232
+RootId: 8128320307006212597
 Objects {
-  Id: 9246306309788094024
+  Id: 13448809844052764309
+  Name: "Ball - Tennis 01"
+  Transform {
+    Location {
+      X: 244.774918
+      Y: -59.9037857
+      Z: -99.7558
+    }
+    Rotation {
+      Pitch: -52.8267899
+      Yaw: -8.45842266
+      Roll: -168.557617
+    }
+    Scale {
+      X: 6.14365959
+      Y: 3.04301953
+      Z: 6.14365864
+    }
+  }
+  ParentId: 8128320307006212597
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 103528912763711779
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 2
+        B: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 15614674765095447048
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 3
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:utile"
+      Float: 12
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:vtile"
+      Float: 12
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5738292753332599634
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17147298308413590455
   Name: "NewFolder"
   Transform {
     Location {
@@ -18,7 +106,7 @@ Objects {
       Z: 0.932926357
     }
   }
-  ParentId: 9872334642621716232
+  ParentId: 8128320307006212597
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,11 +121,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_18"
+    FilePartitionName: "NewFolder_35"
   }
 }
 Objects {
-  Id: 10920314686546859239
+  Id: 8523163814206198577
   Name: "NewFolder"
   Transform {
     Location {
@@ -54,7 +142,7 @@ Objects {
       Z: 0.932926357
     }
   }
-  ParentId: 9872334642621716232
+  ParentId: 8128320307006212597
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -69,11 +157,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_19"
+    FilePartitionName: "NewFolder_36"
   }
 }
 Objects {
-  Id: 681541355471397849
+  Id: 17765562130174501457
   Name: "Shield 03"
   Transform {
     Location {
@@ -88,7 +176,7 @@ Objects {
       Z: 4.5
     }
   }
-  ParentId: 9872334642621716232
+  ParentId: 8128320307006212597
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -172,7 +260,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3532598056509954681
+  Id: 4454186817475626959
   Name: "Fantasy Sword Guard 01"
   Transform {
     Location {
@@ -191,7 +279,7 @@ Objects {
       Z: 7.0461359
     }
   }
-  ParentId: 9872334642621716232
+  ParentId: 8128320307006212597
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -233,7 +321,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5997856885812142189
+  Id: 2511974880762942895
   Name: "Baseball Bat"
   Transform {
     Location {
@@ -252,7 +340,7 @@ Objects {
       Z: 7.07244205
     }
   }
-  ParentId: 9872334642621716232
+  ParentId: 8128320307006212597
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -312,7 +400,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2680055056003339839
+  Id: 8216021747156179425
   Name: "World Text"
   Transform {
     Location {
@@ -331,7 +419,7 @@ Objects {
       Z: 2.87229443
     }
   }
-  ParentId: 9872334642621716232
+  ParentId: 8128320307006212597
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

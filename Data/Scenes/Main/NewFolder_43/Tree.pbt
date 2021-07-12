@@ -1,47 +1,39 @@
 Name: "NewFolder_43"
-RootId: 8854787808006329742
+RootId: 1848397539835456340
 Objects {
-  Id: 17526391849200082408
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 6491509216022374822
+  Name: "Cabinet Door - Small"
   Transform {
     Location {
-      X: 11.3359375
-      Y: 65.2612305
-      Z: 54.0341797
+      X: 46.8242188
+      Y: 4.43505859
+      Z: -94.9335938
     }
     Rotation {
+      Pitch: 2.84475303
+      Yaw: 4.29278135
+      Roll: 1.7076931
     }
     Scale {
-      X: 0.32417205
-      Y: -0.567301095
-      Z: 0.801732302
+      X: 0.900032163
+      Y: 0.844082057
+      Z: 0.899998903
     }
   }
-  ParentId: 8854787808006329742
+  ParentId: 1848397539835456340
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Prop_Handle:id"
       AssetReference {
-        Id: 6298880568795808979
+        Id: 1915461248412394696
       }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 0.503
+        G: 0.208041206
+        B: 0.136312991
         A: 1
       }
     }
@@ -60,7 +52,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 8305318772336181939
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -73,58 +65,46 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 17526391849200082408
-    SubobjectId: 9072502120802899443
-    InstanceId: 8912632577019494427
-    TemplateId: 16916515643962449395
   }
 }
 Objects {
-  Id: 3877769217608464475
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 1315307480596602781
+  Name: "Decal Road Sign Symbols"
   Transform {
     Location {
-      X: 11.3359375
-      Y: 65.2612305
-      Z: 54.0341797
+      X: 4.75
+      Y: 4.59667969
+      Z: -67.7902832
     }
     Rotation {
+      Pitch: 0.168548569
+      Yaw: 4.213027
+      Roll: 91.7055435
     }
     Scale {
-      X: -0.291754782
-      Y: -0.567301095
-      Z: 0.801732302
+      X: 0.0517243594
+      Y: 0.0517144278
+      Z: 0.00713573396
     }
   }
-  ParentId: 8854787808006329742
+  ParentId: 1848397539835456340
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
+      Name: "bp:Shape Index"
+      Int: 4
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
+      Name: "bp:Color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 1
     }
   }
   Collidable_v2 {
@@ -139,73 +119,57 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
+  Blueprint {
+    BlueprintAsset {
+      Id: 12355314964874324021
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+    TeamSettings {
     }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
+    DecalBP {
     }
   }
-  InstanceHistory {
-    SelfId: 3877769217608464475
-    SubobjectId: 13475573371144974400
-    InstanceId: 8912632577019494427
-    TemplateId: 16916515643962449395
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 17136160837392220379
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 11459074736079969717
+  Name: "Decal Road Sign Symbols"
   Transform {
     Location {
-      X: 11.3359375
-      Y: 65.2612305
-      Z: 54.0341797
+      X: 4.75
+      Y: 4.59667969
+      Z: -67.7902832
     }
     Rotation {
+      Pitch: 0.168548569
+      Yaw: 4.21302605
+      Roll: 91.7055435
     }
     Scale {
-      X: -0.291754782
-      Y: 0.567301095
-      Z: 0.801732302
+      X: 0.0791275576
+      Y: 0.0791123584
+      Z: 0.0109161949
     }
   }
-  ParentId: 8854787808006329742
+  ParentId: 1848397539835456340
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
+      Name: "bp:Shape Index"
+      Int: 6
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
+      Name: "bp:Color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 1
+        G: 0.140999973
+        B: 0.140999973
         A: 1
       }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 2
     }
   }
   Collidable_v2 {
@@ -220,71 +184,45 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
+  Blueprint {
+    BlueprintAsset {
+      Id: 12355314964874324021
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+    TeamSettings {
     }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
+    DecalBP {
     }
   }
-  InstanceHistory {
-    SelfId: 17136160837392220379
-    SubobjectId: 7142039848760199360
-    InstanceId: 8912632577019494427
-    TemplateId: 16916515643962449395
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 12276087636934355725
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 692882678734361153
+  Name: "Japanese Temple Torii Gate Rope 01"
   Transform {
     Location {
-      X: 11.3359375
-      Y: 65.2612305
-      Z: 54.0341797
+      X: 0.24609375
+      Y: -0.491210938
+      Z: 0.0378417969
     }
     Rotation {
+      Roll: 2.77142715
     }
     Scale {
-      X: 0.32417205
-      Y: 0.567301095
-      Z: 0.801732302
+      X: 0.26978597
+      Y: 0.26978597
+      Z: 0.26978597
     }
   }
-  ParentId: 8854787808006329742
+  ParentId: 1848397539835456340
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 0.756000042
+        G: 0.0672839507
+        B: 0.0672839507
         A: 1
       }
     }
@@ -303,7 +241,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 420703101267336795
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -317,10 +255,51 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 12276087636934355725
-    SubobjectId: 2634373447714169622
-    InstanceId: 8912632577019494427
-    TemplateId: 16916515643962449395
+}
+Objects {
+  Id: 17706913162525747277
+  Name: "Simple Swing Parent"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1848397539835456340
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:MinAmplitude"
+      Float: 3
+    }
+    Overrides {
+      Name: "cs:MaxAmplitude"
+      Float: 8
+    }
+    Overrides {
+      Name: "cs:Wavelength"
+      Float: 2.5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4774256623264947271
+    }
   }
 }

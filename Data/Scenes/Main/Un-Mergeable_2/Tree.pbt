@@ -2321,9 +2321,9 @@ Objects {
   Name: "Leafy Patch 02"
   Transform {
     Location {
-      X: 455.029297
+      X: 455.029266
       Y: 117.257813
-      Z: 20.7021484
+      Z: 3.62548828
     }
     Rotation {
     }
@@ -2368,9 +2368,9 @@ Objects {
   Name: "Grass Short"
   Transform {
     Location {
-      X: 392.652344
-      Y: 389.359375
-      Z: 30.7700195
+      X: 392.652283
+      Y: 389.359406
+      Z: 4.96728516
     }
     Rotation {
       Yaw: 43.6051598
@@ -2416,9 +2416,9 @@ Objects {
   Name: "Leafy Patch 01"
   Transform {
     Location {
-      X: 401.064453
-      Y: 415.325195
-      Z: 22.7700195
+      X: 401.064392
+      Y: 415.324158
+      Z: 9.30419922
     }
     Rotation {
       Yaw: 43.6051598
@@ -2464,9 +2464,9 @@ Objects {
   Name: "Cylinder"
   Transform {
     Location {
-      X: 383.478516
-      Y: 419.290039
-      Z: 33.7700195
+      X: 383.478455
+      Y: 419.289093
+      Z: 20.3042
     }
     Rotation {
       Yaw: 43.6051598
@@ -2520,9 +2520,9 @@ Objects {
   Name: "Lily Pads 001"
   Transform {
     Location {
-      X: 391.064453
-      Y: 440.324707
-      Z: 53.7700195
+      X: 391.064392
+      Y: 440.324158
+      Z: 40.3042
     }
     Rotation {
       Yaw: 43.6051598
@@ -2662,9 +2662,9 @@ Objects {
   Name: "Grass Short"
   Transform {
     Location {
-      X: -436.679688
-      Y: -298.418457
-      Z: 9.30419922
+      X: -162.173813
+      Y: -148.156265
+      Z: 2.15429688
     }
     Rotation {
     }
@@ -2709,9 +2709,9 @@ Objects {
   Name: "Flower Daisy Patch 01"
   Transform {
     Location {
-      X: 340.005859
-      Y: -106.183594
-      Z: 3.29833984
+      X: 340.005798
+      Y: -106.183548
+      Z: -3.85107422
     }
     Rotation {
     }
@@ -3117,9 +3117,9 @@ Objects {
   Name: "Grass Tall"
   Transform {
     Location {
-      X: 256.044922
-      Y: 121.772461
-      Z: 15.5478516
+      X: 256.044891
+      Y: 121.771484
+      Z: -1.52880859
     }
     Rotation {
     }
@@ -3164,12 +3164,12 @@ Objects {
   Name: "Grass Short"
   Transform {
     Location {
-      X: -106.198242
-      Y: 137.464844
-      Z: 9.09521484
+      X: -106.19725
+      Y: 137.464813
+      Z: 4.32177734
     }
     Rotation {
-      Yaw: -12.8366785
+      Yaw: -12.8366699
     }
     Scale {
       X: 1
@@ -3212,9 +3212,9 @@ Objects {
   Name: "Grass Short"
   Transform {
     Location {
-      X: 349.193359
+      X: 349.193329
       Y: -85.75
-      Z: 10.8115234
+      Z: 2.18798828
     }
     Rotation {
     }

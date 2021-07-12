@@ -132,14 +132,14 @@ Objects {
   Name: "Fantasy Castle Accessory Roof 02"
   Transform {
     Location {
-      Z: 2290.39893
+      Z: 2457.1731
     }
     Rotation {
     }
     Scale {
       X: 1.05265093
       Y: 1.05265093
-      Z: 0.41417408
+      Z: 0.54879564
     }
   }
   ParentId: 11377047656755163293
@@ -197,12 +197,224 @@ Objects {
   }
 }
 Objects {
+  Id: 14429499520619798950
+  Name: "Sphere - Half Thin"
+  Transform {
+    Location {
+      X: 7.96745098e-06
+      Y: 0.00178936822
+      Z: 482.727264
+    }
+    Rotation {
+      Yaw: 7.50001526
+    }
+    Scale {
+      X: 45.45
+      Y: 45.45
+      Z: 34.116291
+    }
+  }
+  ParentId: 11377047656755163293
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10151348392058825738
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 24
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 24
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.87500006
+        G: 0.483787507
+        B: 0.41475
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11285278799348334020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2806285380371643799
+  Name: "Sphere - Half Thin"
+  Transform {
+    Location {
+      X: 7.96745098e-06
+      Y: 0.00178936822
+      Z: 482.727264
+    }
+    Rotation {
+    }
+    Scale {
+      X: 44.64
+      Y: 44.64
+      Z: 33.5677643
+    }
+  }
+  ParentId: 11377047656755163293
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10151348392058825738
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 24
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 24
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.71846664
+        B: 0.58799994
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11285278799348334020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3002022029499065000
+  Name: "Sphere - Half Thin"
+  Transform {
+    Location {
+      X: 7.96745098e-06
+      Y: 0.00178936822
+      Z: 482.727264
+    }
+    Rotation {
+    }
+    Scale {
+      X: 45.0539
+      Y: 45.0539
+      Z: 33.8733978
+    }
+  }
+  ParentId: 11377047656755163293
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15467932640263561599
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11285278799348334020
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 12432357791510958703
   Name: "Sphere - Half Thin"
   Transform {
     Location {
-      Y: 0.00177556812
-      Z: 426.440643
+      X: 7.96745098e-06
+      Y: 0.00178936822
+      Z: 482.727264
     }
     Rotation {
     }
@@ -277,8 +489,9 @@ Objects {
   Name: "Sphere - Half Thin"
   Transform {
     Location {
-      Y: 0.00177556812
-      Z: 426.440643
+      X: 7.96745098e-06
+      Y: 0.00178936822
+      Z: 482.727264
     }
     Rotation {
       Yaw: 7.50001526

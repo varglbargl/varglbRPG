@@ -17,6 +17,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16115905030413172164
+  Name: "Metal Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_basic_001"
+  }
+}
+Assets {
+  Id: 12636973138906351386
+  Name: "Arch Fancy 3m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_fancy_3m_001"
+  }
+}
+Assets {
   Id: 12353085823307133273
   Name: "Fantasy Dark Magic Bells Sparkle Loop 01 SFX"
   PlatformAssetType: 7
@@ -35,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11285278799348334020
-  Name: "Sphere - Half Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hemisphere_002"
-  }
-}
-Assets {
   Id: 11030959354262879808
   Name: "Rock 02"
   PlatformAssetType: 1
@@ -59,15 +68,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
-  Id: 10151348392058825738
-  Name: "Metal Frame 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_frames_001_uv"
   }
 }
 Assets {

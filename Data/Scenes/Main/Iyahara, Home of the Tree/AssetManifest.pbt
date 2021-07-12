@@ -440,15 +440,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15614674765095447048
-  Name: "Rope"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_rope_001"
-  }
-}
-Assets {
   Id: 15420619461682934966
   Name: "Main Street Wall 02 - Window 02"
   PlatformAssetType: 1
@@ -683,15 +674,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13872799461499289494
-  Name: "Grass Clumps"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grass_002_uv"
-  }
-}
-Assets {
   Id: 13870574964351997793
   Name: "Urban Damaged Floor 01 - Corner Outer 02"
   PlatformAssetType: 1
@@ -851,15 +833,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_table_cafe_001"
-  }
-}
-Assets {
-  Id: 13012288535001000311
-  Name: "Tree Birch 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_birch_001"
   }
 }
 Assets {
@@ -1232,6 +1205,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10787490534524368841
+  Name: "Tree Redwood Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_005"
+  }
+}
+Assets {
   Id: 10468252489560662033
   Name: "Prism - 8-Sided Polished"
   PlatformAssetType: 1
@@ -1601,15 +1583,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8037462047880471190
-  Name: "Tree Birch 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_birch_003"
-  }
-}
-Assets {
   Id: 7701731830381968966
   Name: "Craftsman Dining Table"
   PlatformAssetType: 1
@@ -1877,15 +1850,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_mantlet_001_ref"
-  }
-}
-Assets {
-  Id: 5738292753332599634
-  Name: "Ball - Tennis 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_ball_tennis_01_ref"
   }
 }
 Assets {
@@ -2678,15 +2642,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torch_001"
-  }
-}
-Assets {
-  Id: 183152300358340459
-  Name: "Bricks Concrete Cinder Block 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_concrete_001"
   }
 }
 Assets {

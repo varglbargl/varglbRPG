@@ -1,28 +1,10 @@
 Assets {
-  Id: 17984110408163466439
-  Name: "Tree Sakura Hero 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_sakura_hero_02_ref"
-  }
-}
-Assets {
   Id: 17680220715648473489
   Name: "Rock Block 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_006"
-  }
-}
-Assets {
-  Id: 17588356818725180439
-  Name: "Tree Sakura Hero Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_sakura_hero_01_bare_ref"
   }
 }
 Assets {
@@ -53,15 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15810711929320238020
-  Name: "Tree Oak 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_001"
-  }
-}
-Assets {
   Id: 14964967653464214432
   Name: "Decal Dirt Patch"
   PlatformAssetType: 14
@@ -77,15 +50,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_layered_001"
-  }
-}
-Assets {
-  Id: 14604562536876917099
-  Name: "Swimming Physics Volume"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_swimming_physics_volume"
   }
 }
 Assets {
@@ -125,12 +89,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13124120606090784252
-  Name: "Tree Sakura Hero 01"
-  PlatformAssetType: 1
+  Id: 13105350100751157865
+  Name: "Steam Volume VFX"
+  PlatformAssetType: 8
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_sakura_hero_01_ref"
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_steam_volume_vfx"
   }
 }
 Assets {
@@ -176,6 +140,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_1m_002"
+  }
+}
+Assets {
+  Id: 11394843567174294236
+  Name: "Falling Leaves Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_falling_leaves_volume_vfx"
   }
 }
 Assets {
@@ -287,12 +260,39 @@ Assets {
   }
 }
 Assets {
+  Id: 7376135922227885485
+  Name: "Waterfall Top Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_waterfall_top"
+  }
+}
+Assets {
   Id: 6954370053071083141
   Name: "Metal Iron 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_001"
+  }
+}
+Assets {
+  Id: 6474768715633236406
+  Name: "Fire Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fire_volume_vfx"
+  }
+}
+Assets {
+  Id: 5500769011284434836
+  Name: "Underwater Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_water"
   }
 }
 Assets {
@@ -311,15 +311,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
-  Id: 4628572682044187401
-  Name: "Tree Oak Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_002"
   }
 }
 Assets {
@@ -386,6 +377,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1451792733745612266
+  Name: "Advanced Color Grading Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_advanced_color_grading"
+  }
+}
+Assets {
   Id: 1035889113622252591
   Name: "Branches Cluster Big"
   PlatformAssetType: 1
@@ -395,12 +395,12 @@ Assets {
   }
 }
 Assets {
-  Id: 253612213795914275
-  Name: "Tree Sakura Hero Bare 02"
-  PlatformAssetType: 1
+  Id: 181471246923661261
+  Name: "Rain Volume VFX"
+  PlatformAssetType: 8
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_sakura_hero_02_bare_ref"
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_rain_volume_vfx"
   }
 }
 Assets {

@@ -47,6 +47,8 @@ function followCursorLoop(tooltip)
 end
 
 function showLabelTooltip(string, button)
+  if currentToolip then hideTooltip() end
+
   LABEL.text = string
 
   local labelSize = LABEL:ComputeApproximateSize()
@@ -68,7 +70,7 @@ function showLabelTooltip(string, button)
 end
 
 function showItemTooltip(item, button)
-  if not item then return hideTooltip() end
+  if currentToolip or not item then return hideTooltip() end
 
   local contentHeight = 18
 
@@ -173,8 +175,9 @@ function showItemTooltip(item, button)
   end
 end
 
-function hideTooltip()
+function hideTooltip(button)
   if not currentTooltip then return end
+  if button and button ~= currentButton then return end
 
   currentTooltip.visibility = Visibility.FORCE_OFF
   currentTooltip = nil

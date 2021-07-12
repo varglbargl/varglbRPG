@@ -449,9 +449,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 700.886719
-            Y: 873.644287
-            Z: 22.4711914
+            X: 700.886597
+            Y: 873.644409
+            Z: 9.28515625
           }
         }
         Overrides {
@@ -898,9 +898,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -56.6796875
-            Y: -494.964844
-            Z: 4.30419922
+            X: -56.679657
+            Y: -494.964783
+            Z: 11.3041992
           }
         }
         Overrides {
@@ -1989,9 +1989,9 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -9.5390625
-      Y: -251.008301
-      Z: -4.53955078
+      X: -9.53904724
+      Y: -251.007782
+      Z: -3.69580078
     }
     Rotation {
       Yaw: 34.8277588
@@ -2341,9 +2341,9 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 63.8417969
-      Y: 119.639648
-      Z: 2.57666016
+      X: 63.8417816
+      Y: 119.638657
+      Z: -0.695800781
     }
     Rotation {
       Yaw: 24.8892307
@@ -2402,8 +2402,8 @@ Objects {
   Transform {
     Location {
       X: 7.51171875
-      Y: 286.960205
-      Z: 7.73681641
+      Y: 286.960907
+      Z: 1.30419922
     }
     Rotation {
       Yaw: 31.2924595
@@ -2461,9 +2461,9 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 73.6455078
-      Y: 438.74707
-      Z: 9.79296875
+      X: 73.6464539
+      Y: 438.746033
+      Z: 1.30419922
     }
     Rotation {
       Yaw: 24.8892746
@@ -2549,7 +2549,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_32"
+    FilePartitionName: "NewFolder_44"
   }
 }
 Objects {
@@ -2584,7 +2584,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_33"
+    FilePartitionName: "NewFolder_45"
   }
 }
 Objects {
@@ -2916,9 +2916,9 @@ Objects {
   Name: "Tree Birch Bare 01"
   Transform {
     Location {
-      X: -216.69043
-      Y: 988.104492
-      Z: 93.2666
+      X: -216.689453
+      Y: 988.103394
+      Z: 71.3540039
     }
     Rotation {
       Pitch: 0.392271399
@@ -2982,9 +2982,9 @@ Objects {
   Name: "Fantasy Sack Tied"
   Transform {
     Location {
-      X: -216.639648
-      Y: 985.87085
-      Z: 27.0864258
+      X: -216.638672
+      Y: 985.871033
+      Z: 5.17382813
     }
     Rotation {
       Pitch: 2.71680331
@@ -3052,9 +3052,9 @@ Objects {
   Name: "Tree Birch Bare 01"
   Transform {
     Location {
-      X: -72.7246094
-      Y: 1019.0144
-      Z: 90.1176758
+      X: -72.7246704
+      Y: 1019.01355
+      Z: 68.2050781
     }
     Rotation {
       Pitch: -2
@@ -3118,9 +3118,9 @@ Objects {
   Name: "Fantasy Sack Tied"
   Transform {
     Location {
-      X: -71.5419922
-      Y: 1010.00415
-      Z: 24.2509766
+      X: -71.5410156
+      Y: 1010.00378
+      Z: 2.33837891
     }
     Rotation {
       Pitch: 2.71680331
@@ -3362,9 +3362,9 @@ Objects {
   Name: "NewFolder"
   Transform {
     Location {
-      X: 585.572266
-      Y: 921.134033
-      Z: 58.2299805
+      X: 585.572205
+      Y: 921.134705
+      Z: 39.487793
     }
     Rotation {
       Yaw: -130.593979
@@ -3390,7 +3390,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_34"
+    FilePartitionName: "NewFolder_46"
   }
 }
 Objects {
@@ -3398,9 +3398,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide"
   Transform {
     Location {
-      X: 444.203125
-      Y: 984.542236
-      Z: 234.907471
+      X: 444.203064
+      Y: 984.542847
+      Z: 214.706055
     }
     Rotation {
       Pitch: -6.02157593
@@ -3460,8 +3460,8 @@ Objects {
   Transform {
     Location {
       X: 443.625
-      Y: 984.542236
-      Z: 229.450684
+      Y: 984.542847
+      Z: 209.249023
     }
     Rotation {
       Pitch: -6.02157593
@@ -3519,9 +3519,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide"
   Transform {
     Location {
-      X: 441.291016
-      Y: 984.542236
-      Z: 195.140625
+      X: 441.290955
+      Y: 984.542847
+      Z: 174.939453
     }
     Rotation {
       Roll: -179.999954
@@ -3579,9 +3579,9 @@ Objects {
   Name: "Pipe"
   Transform {
     Location {
-      X: 441.291016
-      Y: 984.542236
-      Z: 189.65332
+      X: 441.290955
+      Y: 984.542847
+      Z: 169.452148
     }
     Rotation {
     }
@@ -3638,9 +3638,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide"
   Transform {
     Location {
-      X: 441.291016
-      Y: 984.542236
-      Z: 162.47998
+      X: 441.290955
+      Y: 984.542847
+      Z: 142.27832
     }
     Rotation {
       Roll: -179.999954
@@ -3698,9 +3698,9 @@ Objects {
   Name: "Pipe"
   Transform {
     Location {
-      X: 441.291016
-      Y: 984.542236
-      Z: 156.992676
+      X: 441.290955
+      Y: 984.542847
+      Z: 136.791016
     }
     Rotation {
     }
@@ -3757,9 +3757,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide"
   Transform {
     Location {
-      X: 441.291016
-      Y: 984.542236
-      Z: 127.385742
+      X: 441.290955
+      Y: 984.542847
+      Z: 107.18457
     }
     Rotation {
       Roll: -179.999954
@@ -3817,9 +3817,9 @@ Objects {
   Name: "Pipe"
   Transform {
     Location {
-      X: 441.291016
-      Y: 984.542236
-      Z: 121.898438
+      X: 441.290955
+      Y: 984.542847
+      Z: 101.697266
     }
     Rotation {
     }
@@ -3876,9 +3876,9 @@ Objects {
   Name: "Pipe"
   Transform {
     Location {
-      X: 441.291016
-      Y: 984.542236
-      Z: 88.4946289
+      X: 441.290955
+      Y: 984.542847
+      Z: 68.2929688
     }
     Rotation {
     }
@@ -3935,9 +3935,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide"
   Transform {
     Location {
-      X: 441.291016
-      Y: 984.542236
-      Z: 93.9819336
+      X: 441.290955
+      Y: 984.542847
+      Z: 73.7802734
     }
     Rotation {
       Roll: -179.999954
@@ -6658,9 +6658,9 @@ Objects {
   Name: "Leafy Patch 01"
   Transform {
     Location {
-      X: -352.143555
-      Y: 416.925049
-      Z: 56.0742188
+      X: -352.142548
+      Y: 416.92569
+      Z: 41.8364258
     }
     Rotation {
     }
@@ -9480,9 +9480,9 @@ Objects {
   Name: "Wooden Barrel"
   Transform {
     Location {
-      X: 594.076172
-      Y: 993.501953
-      Z: 138.652344
+      X: 594.076111
+      Y: 993.501831
+      Z: 117.855957
     }
     Rotation {
     }
@@ -9527,9 +9527,9 @@ Objects {
   Name: "Wooden Barrel"
   Transform {
     Location {
-      X: 544.128906
-      Y: 993.501953
-      Z: 30.7207031
+      X: 544.128845
+      Y: 993.501831
+      Z: 9.92431641
     }
     Rotation {
     }
@@ -9575,9 +9575,9 @@ Objects {
   Name: "Wooden Barrel"
   Transform {
     Location {
-      X: 646.220703
-      Y: 993.501953
-      Z: 30.7207031
+      X: 646.220581
+      Y: 993.501892
+      Z: 9.92431641
     }
     Rotation {
     }
@@ -9624,8 +9624,8 @@ Objects {
   Transform {
     Location {
       X: 41.0527344
-      Y: 430.203369
-      Z: 63.1005859
+      Y: 430.203094
+      Z: 46.9604492
     }
     Rotation {
     }
@@ -9927,9 +9927,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -479.441406
-            Y: 323.97583
-            Z: 56.074707
+            X: -479.441376
+            Y: 323.976501
+            Z: 43.7275391
           }
         }
         Overrides {
@@ -9943,7 +9943,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -78.9308243
+            Yaw: -78.9308167
           }
         }
         Overrides {
@@ -9987,9 +9987,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -149.201172
-            Y: 344.240479
-            Z: 56.074707
+            X: -149.201202
+            Y: 344.240204
+            Z: 41.8969727
           }
         }
         Overrides {
@@ -10873,9 +10873,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -466.254883
-            Y: 274.861572
-            Z: 65.6635742
+            X: -466.253845
+            Y: 274.861267
+            Z: 51.4858398
           }
         }
         Overrides {
@@ -11031,9 +11031,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -455.330078
-            Y: 250.393066
-            Z: 65.1928711
+            X: -455.330017
+            Y: 250.392517
+            Z: 51.0151367
           }
         }
         Overrides {
@@ -11190,8 +11190,8 @@ Objects {
           Name: "Position"
           Vector {
             X: -139.160156
-            Y: 286.799072
-            Z: 65.6635742
+            Y: 286.798767
+            Z: 51.4858398
           }
         }
         Overrides {
@@ -11348,8 +11348,8 @@ Objects {
           Name: "Position"
           Vector {
             X: -117.462891
-            Y: 284.162598
-            Z: 64.5444336
+            Y: 284.162079
+            Z: 50.3667
           }
         }
         Overrides {
@@ -11507,16 +11507,16 @@ Objects {
           Name: "Position"
           Vector {
             X: -181.521484
-            Y: 277.747559
-            Z: 65.6635742
+            Y: 277.748047
+            Z: 51.4858398
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: 1.36603776e-05
-            Yaw: -64.8550568
-            Roll: -54.9074593
+            Yaw: -64.8550415
+            Roll: -54.9074707
           }
         }
         Overrides {
@@ -11665,16 +11665,16 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -201.842773
-            Y: 285.380371
-            Z: 64.6474609
+            X: -201.841797
+            Y: 285.380859
+            Z: 50.4697266
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Yaw: 5.12311745
-            Roll: -54.907589
+            Roll: -54.9075928
           }
         }
         Overrides {
@@ -11823,9 +11823,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -268.514648
-            Y: 281.227051
-            Z: 65.6635742
+            X: -268.513672
+            Y: 281.226501
+            Z: 51.4858398
           }
         }
         Overrides {
@@ -11981,9 +11981,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -246.829102
-            Y: 280.417725
-            Z: 64.6474609
+            X: -246.828125
+            Y: 280.417938
+            Z: 50.4697266
           }
         }
         Overrides {
@@ -12139,9 +12139,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -331.40918
-            Y: 281.402344
-            Z: 65.6635742
+            X: -331.408203
+            Y: 281.402313
+            Z: 51.4858398
           }
         }
         Overrides {
@@ -12297,9 +12297,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -311.731445
-            Y: 272.234375
-            Z: 64.6474609
+            X: -311.730499
+            Y: 272.234344
+            Z: 50.4697266
           }
         }
         Overrides {
@@ -12455,16 +12455,16 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -407.726563
-            Y: 274.262451
-            Z: 65.6635742
+            X: -407.726532
+            Y: 274.261688
+            Z: 51.4858398
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: 0.471856773
-            Yaw: -103.013252
+            Yaw: -103.013245
             Roll: 56.9480133
           }
         }
@@ -12615,8 +12615,8 @@ Objects {
           Name: "Position"
           Vector {
             X: -388.136719
-            Y: 288.630859
-            Z: 62.215332
+            Y: 288.630829
+            Z: 48.0375977
           }
         }
         Overrides {
@@ -12773,9 +12773,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -444.775391
-            Y: 271.711914
-            Z: 64.6474609
+            X: -444.77533
+            Y: 271.710907
+            Z: 50.4697266
           }
         }
         Overrides {
@@ -12931,9 +12931,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -253.786133
-            Y: 256.082031
-            Z: 68.9072266
+            X: -253.785156
+            Y: 256.08197
+            Z: 54.7294922
           }
         }
         Overrides {
@@ -13089,9 +13089,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -331.835938
-            Y: 218.923828
-            Z: 68.9072266
+            X: -331.835876
+            Y: 218.923767
+            Z: 54.7294922
           }
         }
         Overrides {
@@ -13247,9 +13247,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -130.211914
-            Y: 218.923828
-            Z: 65.1928711
+            X: -130.210938
+            Y: 218.923798
+            Z: 51.0151367
           }
         }
         Overrides {
@@ -13405,9 +13405,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -450.564453
-            Y: 193.37207
-            Z: 65.6635742
+            X: -450.564392
+            Y: 193.373016
+            Z: 51.4858398
           }
         }
         Overrides {
@@ -13563,15 +13563,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -472.22168
-            Y: 194.792969
-            Z: 64.6474609
+            X: -472.220642
+            Y: 194.792938
+            Z: 50.4697266
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -21.9554901
+            Yaw: -21.9555054
             Roll: 54.9076576
           }
         }
@@ -13723,7 +13723,7 @@ Objects {
           Vector {
             X: -406.556641
             Y: 198.132813
-            Z: 66.7470703
+            Z: 52.5693359
           }
         }
         Overrides {
@@ -13731,7 +13731,7 @@ Objects {
           Rotator {
             Pitch: 2.59599757
             Yaw: 113.392639
-            Roll: -60.8848953
+            Roll: -60.8848877
           }
         }
         Overrides {
@@ -13880,16 +13880,16 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -384.586914
+            X: -384.585938
             Y: 191.103516
-            Z: 64.6474609
+            Z: 50.4697266
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Yaw: -176.493301
-            Roll: -54.9075851
+            Roll: -54.9075928
           }
         }
         Overrides {
@@ -14038,9 +14038,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -317.821289
-            Y: 193.37207
-            Z: 65.6635742
+            X: -317.820282
+            Y: 193.371063
+            Z: 51.4858398
           }
         }
         Overrides {
@@ -14197,14 +14197,14 @@ Objects {
           Name: "Position"
           Vector {
             X: -339.478516
-            Y: 194.792969
-            Z: 64.6474609
+            Y: 194.792938
+            Z: 50.4697266
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -21.9554901
+            Yaw: -21.9555054
             Roll: 54.9076576
           }
         }
@@ -14354,9 +14354,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -254.959961
-            Y: 191.421875
-            Z: 65.6635742
+            X: -254.958969
+            Y: 191.421829
+            Z: 51.4858398
           }
         }
         Overrides {
@@ -14512,15 +14512,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -274.365234
-            Y: 201.143555
-            Z: 64.6474609
+            X: -274.365204
+            Y: 201.144485
+            Z: 50.4697266
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -44.8108978
+            Yaw: -44.8109131
             Roll: 54.9079475
           }
         }
@@ -14670,9 +14670,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -176.836914
-            Y: 204.216797
-            Z: 65.6635742
+            X: -176.835922
+            Y: 204.216751
+            Z: 51.4858398
           }
         }
         Overrides {
@@ -14828,9 +14828,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -194.55957
-            Y: 191.683105
-            Z: 64.6474609
+            X: -194.558594
+            Y: 191.683578
+            Z: 50.4697266
           }
         }
         Overrides {
@@ -14987,14 +14987,14 @@ Objects {
           Name: "Position"
           Vector {
             X: -141.361328
-            Y: 197.911133
-            Z: 64.6474609
+            Y: 197.910141
+            Z: 50.4697266
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -28.158289
+            Yaw: -28.1582947
             Roll: 54.9086227
           }
         }
@@ -15136,8 +15136,8 @@ Objects {
           Name: "Position"
           Vector {
             X: -119.982422
-            Y: 194.157227
-            Z: 65.6635742
+            Y: 194.156235
+            Z: 51.4858398
           }
         }
         Overrides {
@@ -15483,12 +15483,12 @@ Objects {
   Name: "Garden Planter"
   Transform {
     Location {
-      X: -298.5625
-      Y: 365.223389
-      Z: 22.1679688
+      X: -298.562531
+      Y: 365.222595
+      Z: 7.99023438
     }
     Rotation {
-      Yaw: -89.9562607
+      Yaw: -89.9562683
     }
     Scale {
       X: 1.29447949
@@ -15919,9 +15919,9 @@ Objects {
   Name: "Fantasy Sack Tied"
   Transform {
     Location {
-      X: 321.035156
-      Y: 988.893311
-      Z: 27.0615234
+      X: 321.035095
+      Y: 988.892456
+      Z: 5.14892578
     }
     Rotation {
       Yaw: -97.3811
@@ -15987,9 +15987,9 @@ Objects {
   Name: "Tree Birch Bare 01"
   Transform {
     Location {
-      X: 320.076172
-      Y: 994.982422
-      Z: 93.2666
+      X: 320.076111
+      Y: 994.982178
+      Z: 71.3540039
     }
     Rotation {
       Yaw: 22.0858727
@@ -16051,9 +16051,9 @@ Objects {
   Name: "Fantasy Sack Tied"
   Transform {
     Location {
-      X: 37.4003906
-      Y: 988.893311
-      Z: 27.0615234
+      X: 37.4003296
+      Y: 988.892456
+      Z: 5.14892578
     }
     Rotation {
       Yaw: -97.3811
@@ -16120,8 +16120,8 @@ Objects {
   Transform {
     Location {
       X: 41.671875
-      Y: 988.104492
-      Z: 93.2666
+      Y: 988.103394
+      Z: 71.3540039
     }
     Rotation {
       Yaw: -124.171722
@@ -16422,8 +16422,8 @@ Objects {
   Transform {
     Location {
       X: 172.958984
-      Y: 988.104492
-      Z: 93.2666
+      Y: 988.103394
+      Z: 71.3540039
     }
     Rotation {
       Yaw: 164.933014
@@ -16485,9 +16485,9 @@ Objects {
   Name: "Fantasy Sack Tied"
   Transform {
     Location {
-      X: 173.917969
-      Y: 988.893311
-      Z: 27.0615234
+      X: 173.917908
+      Y: 988.892456
+      Z: 5.14892578
     }
     Rotation {
       Yaw: -97.3811
@@ -16697,9 +16697,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 538.320313
-            Y: -53.418457
-            Z: 15.6547852
+            X: 538.320251
+            Y: -53.4179688
+            Z: 9.39306641
           }
         }
         Overrides {
@@ -17200,9 +17200,9 @@ Objects {
   Name: "Fantasy Sack Open"
   Transform {
     Location {
-      X: 504.900391
-      Y: -164.747559
-      Z: 14.0566406
+      X: 504.90033
+      Y: -164.748047
+      Z: -0.221191406
     }
     Rotation {
       Pitch: -17.0166626
@@ -19582,13 +19582,11 @@ Objects {
   Transform {
     Location {
       X: -28.6796875
-      Y: 49.581543
-      Z: 13.8237305
+      Y: 49.5820274
+      Z: 4.30419922
     }
     Rotation {
-      Pitch: 0.301013261
-      Yaw: 171.303574
-      Roll: 1.27271187
+      Yaw: -54.5439758
     }
     Scale {
       X: 4.07675
@@ -26144,9 +26142,9 @@ Objects {
   Name: "Piddle Pountain"
   Transform {
     Location {
-      X: 435.865234
-      Y: 375.473633
-      Z: 22.7700195
+      X: 435.865173
+      Y: 375.472687
+      Z: 13.3041992
     }
     Rotation {
       Yaw: 43.6051598

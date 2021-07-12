@@ -7,12 +7,8 @@ Assets {
       RootId: 8361708247628645653
       Objects {
         Id: 8361708247628645653
-        Name: "Group"
+        Name: "Round Gate Wall"
         Transform {
-          Location {
-          }
-          Rotation {
-          }
           Scale {
             X: 1
             Y: 1
@@ -89,8 +85,8 @@ Assets {
         Name: "Japanese Temple Wall Large 02 Gate 01"
         Transform {
           Location {
-            X: -1646.18665
-            Y: 26.7724609
+            X: -1653.97546
+            Y: 26.7670898
           }
           Rotation {
           }
