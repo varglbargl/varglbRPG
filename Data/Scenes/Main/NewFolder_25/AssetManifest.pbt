@@ -1,18 +1,9 @@
 Assets {
-  Id: 8318010931141529991
-  Name: "Fantasy Castle Wall 01 - Doorway 02"
-  PlatformAssetType: 1
+  Id: 10075966838349787628
+  Name: "Decal Sci-fi Details 01"
+  PlatformAssetType: 14
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_001_door_02"
-  }
-}
-Assets {
-  Id: 4927017302746496390
-  Name: "Fantasy Castle Wall 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_001"
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scf_details_001_ref"
   }
 }

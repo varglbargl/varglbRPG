@@ -1043,7 +1043,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          Value: "mc:eproxyrelevance:high"
         }
       }
       Objects {
@@ -2157,9 +2157,9 @@ Assets {
             Id: 10625829938780322800
           }
           Color {
-            R: 0.25
-            G: 0.25
-            B: 0.25
+            R: 0.672000051
+            G: 0.672000051
+            B: 0.672000051
             A: 1
           }
           HorizontalSize: 1
@@ -2170,6 +2170,7 @@ Assets {
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
           }
+          IsLit: true
         }
       }
       Objects {
@@ -2211,9 +2212,9 @@ Assets {
             Id: 10625829938780322800
           }
           Color {
-            R: 0.25
-            G: 0.25
-            B: 0.25
+            R: 0.672000051
+            G: 0.672000051
+            B: 0.672000051
             A: 1
           }
           HorizontalSize: 1
@@ -2224,6 +2225,7 @@ Assets {
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
           }
+          IsLit: true
         }
       }
       Objects {
@@ -2265,9 +2267,9 @@ Assets {
             Id: 10625829938780322800
           }
           Color {
-            R: 0.25
-            G: 0.25
-            B: 0.25
+            R: 0.672000051
+            G: 0.672000051
+            B: 0.672000051
             A: 1
           }
           HorizontalSize: 1
@@ -2278,6 +2280,7 @@ Assets {
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
           }
+          IsLit: true
         }
       }
     }

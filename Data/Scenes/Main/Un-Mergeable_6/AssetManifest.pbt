@@ -1,10 +1,10 @@
 Assets {
-  Id: 15947809471842740053
-  Name: "Carpet Tile 01"
-  PlatformAssetType: 1
+  Id: 16542289431259589342
+  Name: "Frosted Glass"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_carpet_tile_001"
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass"
   }
 }
 Assets {
@@ -26,11 +26,11 @@ Assets {
   }
 }
 Assets {
-  Id: 6457800903264693541
-  Name: "Prism - 6-Sided Half"
-  PlatformAssetType: 1
+  Id: 5439646266583319854
+  Name: "Frosted Glass No Distortion"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half_hexagon_001"
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass_nodistortion"
   }
 }

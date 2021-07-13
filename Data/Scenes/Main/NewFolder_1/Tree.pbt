@@ -1,7 +1,7 @@
 Name: "NewFolder_1"
-RootId: 17691521912965455686
+RootId: 13058262427378902525
 Objects {
-  Id: 14861902953430215228
+  Id: 10497294989656315
   Name: "Pipe - Quarter Wedge Thin - Large"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 0.700005531
     }
   }
-  ParentId: 17691521912965455686
+  ParentId: 13058262427378902525
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -69,7 +69,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2960041265071934994
+  Id: 358324497347671455
   Name: "Pipe - Quarter Wedge Thin - Large"
   Transform {
     Location {
@@ -86,7 +86,7 @@ Objects {
       Z: 0.700005531
     }
   }
-  ParentId: 17691521912965455686
+  ParentId: 13058262427378902525
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -137,7 +137,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14740689662812629577
+  Id: 1308364986064009165
   Name: "Square Column Base 01"
   Transform {
     Location {
@@ -154,7 +154,7 @@ Objects {
       Z: 1.60000443
     }
   }
-  ParentId: 17691521912965455686
+  ParentId: 13058262427378902525
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

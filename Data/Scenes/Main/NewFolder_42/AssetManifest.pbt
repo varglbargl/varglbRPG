@@ -1,27 +1,36 @@
 Assets {
-  Id: 14267747156564835807
-  Name: "Fantasy Castle Wall Foundation 01 - Curved"
-  PlatformAssetType: 1
+  Id: 13803845293831016450
+  Name: "Bricks Chunky Stone 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_chunky_001"
   }
 }
 Assets {
-  Id: 13932029094155557983
-  Name: "Japanese Temple Foundation 01 Corner 01"
-  PlatformAssetType: 1
+  Id: 7362232965091765999
+  Name: "Bricks Mortar Thick 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_jpn_tem_foundation_001_corner_ref"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_bricks_mortar_001_uv"
   }
 }
 Assets {
-  Id: 1596888492663164670
-  Name: "Fantasy Castle Wall Foundation 01"
+  Id: 6998526292790663109
+  Name: "Fantasy Castle Wall 02 - Curved Window 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_found_001"
+    AssetId: "sm_ts_fan_cas_wall_curve_002_win_01"
+  }
+}
+Assets {
+  Id: 673906587798786921
+  Name: "Fantasy Castle Wall 02 - Curved"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_curve_002"
   }
 }

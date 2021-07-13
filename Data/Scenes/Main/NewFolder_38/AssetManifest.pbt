@@ -17,12 +17,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14103151946260239802
-  Name: "Text 02: F"
+  Id: 11958936252527183619
+  Name: "Text 02: C"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_005"
+    AssetId: "Text_002"
   }
 }
 Assets {
@@ -32,5 +32,32 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_001"
+  }
+}
+Assets {
+  Id: 3444086358886325520
+  Name: "Text 02: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_017"
+  }
+}
+Assets {
+  Id: 2367204253233266792
+  Name: "Text 02: A"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_000"
+  }
+}
+Assets {
+  Id: 1860383128123552111
+  Name: "Text 02: L"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_011"
   }
 }

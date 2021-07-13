@@ -1,39 +1,24 @@
 Name: "NewFolder_19"
-RootId: 7209611442242873493
+RootId: 5421113272924859619
 Objects {
-  Id: 124261415757017985
-  Name: "Decal Sci-fi Details 01"
+  Id: 11954462836170971735
+  Name: "Point Light"
   Transform {
     Location {
-      X: -47.4941406
-      Y: -1.99389648
+      X: 343.545898
+      Y: -367.686523
+      Z: 13.3520508
     }
     Rotation {
-      Yaw: 90.0000076
-      Roll: 89.9999924
+      Yaw: -45
     }
     Scale {
-      X: 0.52962172
-      Y: 0.215199828
-      Z: 0.0397557057
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 7209611442242873493
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 9
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.87500006
-        G: 0.773354232
-        B: 0.265125
-        A: 1
-      }
-    }
-  }
+  ParentId: 5421113272924859619
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -43,62 +28,59 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10075966838349787628
+  Light {
+    Intensity: 16
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
     }
+    CastShadows: true
+    VolumetricIntensity: 5
     TeamSettings {
     }
-    DecalBP {
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 1200
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
     }
   }
   InstanceHistory {
-    SelfId: 124261415757017985
-    SubobjectId: 17984978854356951338
-    InstanceId: 12366975475316035043
-    TemplateId: 4706065575094688236
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
+    SelfId: 15457578172532186266
+    SubobjectId: 14167297853132529762
+    InstanceId: 14304203140123591462
+    TemplateId: 14206156894871585212
   }
 }
 Objects {
-  Id: 11048669968394830090
-  Name: "Decal Sci-fi Details 01"
+  Id: 14167868952129207231
+  Name: "Point Light"
   Transform {
     Location {
-      X: 24.0410156
-      Y: -168.712402
+      X: -367.095703
+      Y: 347.905273
+      Z: -13.6479492
     }
     Rotation {
-      Yaw: 142.077881
-      Roll: 89.9999847
+      Yaw: -45
     }
     Scale {
-      X: 0.398425788
-      Y: 0.215199798
-      Z: 0.0397608206
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 7209611442242873493
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 9
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.87500006
-        G: 0.773354232
-        B: 0.265125
-        A: 1
-      }
-    }
-  }
+  ParentId: 5421113272924859619
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -108,63 +90,55 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10075966838349787628
+  Light {
+    Intensity: 16
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
     }
+    CastShadows: true
+    VolumetricIntensity: 5
     TeamSettings {
     }
-    DecalBP {
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 1200
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
     }
   }
   InstanceHistory {
-    SelfId: 11048669968394830090
-    SubobjectId: 7024154373518463905
-    InstanceId: 12366975475316035043
-    TemplateId: 4706065575094688236
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
+    SelfId: 15457578172532186266
+    SubobjectId: 14167297853132529762
+    InstanceId: 14304203140123591462
+    TemplateId: 14206156894871585212
   }
 }
 Objects {
-  Id: 11919992152961404641
-  Name: "Decal Sci-fi Details 01"
+  Id: 5230139202245995461
+  Name: "Visible at Night"
   Transform {
     Location {
-      X: 23.7421875
-      Y: 170.094971
     }
     Rotation {
-      Pitch: -6.83018879e-06
-      Yaw: -142.077896
-      Roll: -90.0000076
     }
     Scale {
-      X: 0.398425788
-      Y: -0.215199798
-      Z: 0.0397608206
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 7209611442242873493
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 9
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.87500006
-        G: 0.773354232
-        B: 0.265125
-        A: 1
-      }
-    }
-  }
+  ParentId: 5421113272924859619
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -177,218 +151,9 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10075966838349787628
+  Script {
+    ScriptAsset {
+      Id: 15755298952276024893
     }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 11919992152961404641
-    SubobjectId: 6720035122606054474
-    InstanceId: 12366975475316035043
-    TemplateId: 4706065575094688236
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 10119972663559496871
-  Name: "Decal Sci-fi Details 01"
-  Transform {
-    Location {
-      X: 23.7421875
-      Y: 170.094971
-    }
-    Rotation {
-      Pitch: -6.83018879e-06
-      Yaw: -142.077896
-      Roll: -90
-    }
-    Scale {
-      X: 0.468020529
-      Y: -0.275026798
-      Z: 0.0508145913
-    }
-  }
-  ParentId: 7209611442242873493
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 9
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.87500006
-        G: 0.773354232
-        B: 0.265125
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10075966838349787628
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 10119972663559496871
-    SubobjectId: 8385509433148503564
-    InstanceId: 12366975475316035043
-    TemplateId: 4706065575094688236
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 10681080698766087345
-  Name: "Decal Sci-fi Details 01"
-  Transform {
-    Location {
-      X: 24.0410156
-      Y: -168.712402
-    }
-    Rotation {
-      Yaw: 142.077866
-      Roll: 89.9999847
-    }
-    Scale {
-      X: 0.468020529
-      Y: 0.275026798
-      Z: 0.0508145913
-    }
-  }
-  ParentId: 7209611442242873493
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 9
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.87500006
-        G: 0.773354232
-        B: 0.265125
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10075966838349787628
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 10681080698766087345
-    SubobjectId: 7788095592581531162
-    InstanceId: 12366975475316035043
-    TemplateId: 4706065575094688236
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 12553208236005588390
-  Name: "Decal Sci-fi Details 01"
-  Transform {
-    Location {
-      X: -47.4941406
-      Y: -1.99389648
-    }
-    Rotation {
-      Yaw: 90.0000153
-      Roll: 89.9999924
-    }
-    Scale {
-      X: 0.622133
-      Y: 0.275026828
-      Z: 0.0508080572
-    }
-  }
-  ParentId: 7209611442242873493
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 9
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.87500006
-        G: 0.773354232
-        B: 0.265125
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10075966838349787628
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 12553208236005588390
-    SubobjectId: 6204827249066028813
-    InstanceId: 12366975475316035043
-    TemplateId: 4706065575094688236
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
   }
 }

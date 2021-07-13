@@ -1,46 +1,31 @@
 Name: "NewFolder_51"
-RootId: 6169874004483662080
+RootId: 8700105479647938713
 Objects {
-  Id: 7470845102594068163
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 17852596712193501790
+  Name: "Rock Pile 001"
   Transform {
     Location {
-      Z: 30.8798828
+      X: 4.60546875
+      Y: -9.70752
+      Z: 89.7851563
     }
     Rotation {
-      Yaw: 89.9999847
+      Yaw: 113.565353
     }
     Scale {
-      X: 0.32417205
-      Y: -0.453840911
-      Z: 0.448158085
+      X: 0.029072158
+      Y: 0.029072158
+      Z: 0.029072158
     }
   }
-  ParentId: 6169874004483662080
+  ParentId: 8700105479647938713
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 2
+        G: 1.02826667
+        B: 0.177999854
         A: 1
       }
     }
@@ -59,7 +44,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 10835155324150586940
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -72,55 +57,33 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 7470845102594068163
-    SubobjectId: 4607195846822657516
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
   }
 }
 Objects {
-  Id: 2021977980926725137
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 4938109617973725650
+  Name: "Rock Pile 001"
   Transform {
     Location {
-      Z: 30.8793945
+      X: 13.875
+      Y: 11.2470703
+      Z: 89.5126953
     }
     Rotation {
-      Yaw: 89.9999847
     }
     Scale {
-      X: -0.291754782
-      Y: -0.453840911
-      Z: 0.448158085
+      X: 0.0362267531
+      Y: 0.0362267531
+      Z: 0.0362267531
     }
   }
-  ParentId: 6169874004483662080
+  ParentId: 8700105479647938713
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 2
+        G: 1.02826667
+        B: 0.177999854
         A: 1
       }
     }
@@ -139,7 +102,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 10835155324150586940
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -152,56 +115,32 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 2021977980926725137
-    SubobjectId: 4923077045792964414
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
   }
 }
 Objects {
-  Id: 10077863079506430292
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 4136980584437797554
+  Name: "Corner - Smoothed Thin - 01"
   Transform {
     Location {
-      Z: 30.8793945
+      X: -4.41601563
+      Y: 36.0683594
+      Z: 92.7595215
     }
     Rotation {
-      Yaw: 89.9999847
+      Yaw: -44.9999924
     }
     Scale {
-      X: -0.291754782
-      Y: 0.453840911
-      Z: 0.448158085
+      X: 0.125800431
+      Y: 0.629002213
+      Z: 0.0629002154
     }
   }
-  ParentId: 6169874004483662080
+  ParentId: 8700105479647938713
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
+        Id: 14212988502358508072
       }
     }
   }
@@ -219,7 +158,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 9951645655387550897
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -232,36 +171,34 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 10077863079506430292
-    SubobjectId: 15241880077249788539
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
   }
 }
 Objects {
-  Id: 3630976430227980216
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 9048771675546215413
+  Name: "Coral Table 02"
   Transform {
     Location {
-      Z: 30.8447266
+      X: 3.01953125
+      Y: -25.4643555
+      Z: 93.0651855
     }
     Rotation {
-      Yaw: 89.9999847
+      Pitch: -6.76257324
+      Yaw: -0.152374268
+      Roll: -8.48495483
     }
     Scale {
-      X: 0.32417205
-      Y: 0.453840911
-      Z: 0.448158085
+      X: 0.0280638207
+      Y: 0.0831705779
+      Z: 0.0375456437
     }
   }
-  ParentId: 6169874004483662080
+  ParentId: 8700105479647938713
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6298880568795808979
+        Id: 7819600019591878414
       }
     }
     Overrides {
@@ -270,17 +207,18 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 2
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
+      Float: 2
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 0.807000041
+        G: 0.448476821
+        B: 0.134768948
         A: 1
       }
     }
@@ -299,7 +237,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 11030959354262879808
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -312,36 +250,34 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 3630976430227980216
-    SubobjectId: 7655587120276245655
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
   }
 }
 Objects {
-  Id: 15240770716072817983
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 5075919203056472572
+  Name: "Coral Table 02"
   Transform {
     Location {
-      Z: 30.8798828
+      X: 17.3242188
+      Y: -14.2304688
+      Z: 92.3908691
     }
     Rotation {
-      Yaw: 39.9999504
+      Pitch: 10.9999847
+      Yaw: 58.3083382
+      Roll: -10.2426147
     }
     Scale {
-      X: 0.27014339
-      Y: -0.510571122
-      Z: 0.448158085
+      X: 0.0280638207
+      Y: 0.0831705779
+      Z: 0.0375456437
     }
   }
-  ParentId: 6169874004483662080
+  ParentId: 8700105479647938713
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6298880568795808979
+        Id: 7819600019591878414
       }
     }
     Overrides {
@@ -350,17 +286,18 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 2
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
+      Float: 2
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 0.807000041
+        G: 0.448476821
+        B: 0.134768948
         A: 1
       }
     }
@@ -379,7 +316,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 11030959354262879808
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -392,36 +329,34 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 15240770716072817983
-    SubobjectId: 10079005423117059600
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
   }
 }
 Objects {
-  Id: 4210609703163695365
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 17498567463580902169
+  Name: "Coral Table 02"
   Transform {
     Location {
-      Z: 30.8798828
+      X: -10.0527344
+      Y: -15.65625
+      Z: 91.4621582
     }
     Rotation {
-      Yaw: 39.9999504
+      Pitch: 0.763389707
+      Yaw: 109.149788
+      Roll: -3.55432129
     }
     Scale {
-      X: -0.24312906
-      Y: -0.510571122
-      Z: 0.448158085
+      X: 0.0280638207
+      Y: 0.0831705779
+      Z: 0.0375456437
     }
   }
-  ParentId: 6169874004483662080
+  ParentId: 8700105479647938713
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6298880568795808979
+        Id: 7819600019591878414
       }
     }
     Overrides {
@@ -430,17 +365,18 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 2
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
+      Float: 2
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 0.807000041
+        G: 0.448476821
+        B: 0.134768948
         A: 1
       }
     }
@@ -459,7 +395,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 11030959354262879808
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -472,36 +408,34 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 4210609703163695365
-    SubobjectId: 7075960994344755754
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
   }
 }
 Objects {
-  Id: 10432689712733365425
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 13747047772421224498
+  Name: "Coral Table 02"
   Transform {
     Location {
-      Z: 30.8798828
+      X: 23.2177734
+      Y: 2.11181641
+      Z: 93.0651855
     }
     Rotation {
-      Yaw: 39.9999504
+      Pitch: -24.3404846
+      Yaw: 2.6832633
+      Roll: 3.88011765
     }
     Scale {
-      X: -0.24312906
-      Y: 0.510571122
-      Z: 0.448158085
+      X: 0.0280638207
+      Y: 0.0831705779
+      Z: 0.0375456437
     }
   }
-  ParentId: 6169874004483662080
+  ParentId: 8700105479647938713
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6298880568795808979
+        Id: 7819600019591878414
       }
     }
     Overrides {
@@ -514,13 +448,14 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.373000026
-        B: 0.180283353
+        R: 0.807000041
+        G: 0.448476821
+        B: 0.134768948
         A: 1
       }
     }
@@ -539,7 +474,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 11030959354262879808
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -552,455 +487,341 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 10432689712733365425
-    SubobjectId: 14453623760601405342
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
   }
 }
 Objects {
-  Id: 16951561951042819373
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 4952024383753167547
+  Name: "Goodie Bag - Philosopher\'s Scones"
   Transform {
     Location {
-      Z: 30.8447266
+      X: 14393.543
+      Y: -6250.45947
+      Z: -4118.34229
     }
     Rotation {
-      Yaw: 39.9999504
+      Pitch: 7.43090391
+      Yaw: -114.011505
     }
     Scale {
-      X: 0.27014339
-      Y: 0.510571122
-      Z: 0.448158085
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 6169874004483662080
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
-      }
-    }
-  }
+  ParentId: 8700105479647938713
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5769361334134386234
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Goodie Bag - Philosopher\'s Scones"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 23.8339844
+            Y: -22.4130859
+            Z: 47.6577148
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.43090391
+            Yaw: -49.3189087
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
-      BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 16951561951042819373
-    SubobjectId: 12906685379813156354
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
+    TemplateAsset {
+      Id: 15537906433424898142
+    }
   }
 }
 Objects {
-  Id: 2717300754887845596
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 14407900157340711403
+  Name: "Goodie Bag - Philosopher\'s Scones"
   Transform {
     Location {
-      Z: 30.8793945
+      X: 14393.543
+      Y: -6250.45947
+      Z: -4118.34229
     }
     Rotation {
+      Pitch: 7.43090391
+      Yaw: 158.83429
     }
     Scale {
-      X: 0.32417205
-      Y: -0.567301095
-      Z: 0.448158085
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 6169874004483662080
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
-      }
-    }
-  }
+  ParentId: 8700105479647938713
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5769361334134386234
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Goodie Bag - Philosopher\'s Scones"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13.1376953
+            Y: -27.3042
+            Z: 47.6577148
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.43090391
+            Yaw: -114.01149
+            Roll: -2.15251177e-07
+          }
+        }
       }
-      BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 2717300754887845596
-    SubobjectId: 9072502120802899443
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
+    TemplateAsset {
+      Id: 15537906433424898142
+    }
   }
 }
 Objects {
-  Id: 16383832291985441647
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 15940077797020612658
+  Name: "Goodie Bag - Philosopher\'s Scones"
   Transform {
     Location {
-      Z: 30.8793945
+      X: 14393.543
+      Y: -6250.45947
+      Z: -4118.34229
     }
     Rotation {
+      Pitch: 7.43090391
+      Yaw: 96.3604202
+      Roll: -4.30502354e-07
     }
     Scale {
-      X: -0.291754782
-      Y: -0.567301095
-      Z: 0.448158085
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 6169874004483662080
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
-      }
-    }
-  }
+  ParentId: 8700105479647938713
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5769361334134386234
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Goodie Bag - Philosopher\'s Scones"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -28.5537109
+            Y: 8.43359375
+            Z: 47.6577148
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.43090391
+            Yaw: 158.83429
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
-      BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 16383832291985441647
-    SubobjectId: 13475573371144974400
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
+    TemplateAsset {
+      Id: 15537906433424898142
+    }
   }
 }
 Objects {
-  Id: 4269506289259494383
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 11281717108905132550
+  Name: "Goodie Bag - Philosopher\'s Scones"
   Transform {
     Location {
-      Z: 30.8793945
+      X: 14393.543
+      Y: -6250.45947
+      Z: -4118.34229
     }
     Rotation {
+      Pitch: 7.43090391
+      Yaw: 28.7793255
     }
     Scale {
-      X: -0.291754782
-      Y: 0.567301095
-      Z: 0.448158085
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 6169874004483662080
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
-      }
-    }
-  }
+  ParentId: 8700105479647938713
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5769361334134386234
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Goodie Bag - Philosopher\'s Scones"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.360351563
+            Y: 30.9526367
+            Z: 47.6577148
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.43090391
+            Yaw: 96.3604202
+            Roll: -8.61004708e-07
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
-      BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 4269506289259494383
-    SubobjectId: 7142039848760199360
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
+    TemplateAsset {
+      Id: 15537906433424898142
+    }
   }
 }
 Objects {
-  Id: 8994504907132997689
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 11471781528386496829
+  Name: "Goodie Bag - Philosopher\'s Scones"
   Transform {
-    Location {
-      Z: 30.8447266
-    }
-    Rotation {
-    }
     Scale {
-      X: 0.32417205
-      Y: 0.567301095
-      Z: 0.448158085
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 6169874004483662080
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
-      }
-    }
-  }
+  ParentId: 8700105479647938713
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5769361334134386234
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Goodie Bag - Philosopher\'s Scones"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 30.3105469
+            Y: 14.5405273
+            Z: 47.6577148
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.43090391
+            Yaw: 28.7793179
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
-      BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 8994504907132997689
-    SubobjectId: 2634373447714169622
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
+    TemplateAsset {
+      Id: 15537906433424898142
+    }
   }
 }
 Objects {
-  Id: 14464945850364766695
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 5229772130932002756
+  Name: "2-Tiered Platter (with Label)"
   Transform {
     Location {
-      Z: 30.8793945
     }
     Rotation {
-      Yaw: 140
+      Yaw: -57.691967
     }
     Scale {
-      X: 0.27014339
-      Y: -0.510571122
-      Z: 0.448158085
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 6169874004483662080
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
-      }
-    }
-  }
+  ParentId: 8700105479647938713
+  ChildIds: 6883674172405718947
+  ChildIds: 8612169994474095513
+  ChildIds: 15941449781915523298
+  ChildIds: 1009858248884355325
+  ChildIds: 5690842190743811729
+  ChildIds: 906572990663183898
+  ChildIds: 4388248560390514471
+  ChildIds: 8457420071665699199
+  ChildIds: 13804104261049693731
+  ChildIds: 6132649397233366930
+  ChildIds: 6068390177905723165
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1013,74 +834,36 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  Folder {
+    IsGroup: true
   }
   InstanceHistory {
-    SelfId: 14464945850364766695
-    SubobjectId: 10439350135339244232
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
+    SelfId: 191642808795196743
+    SubobjectId: 4246788721594267239
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+    WasRoot: true
   }
 }
 Objects {
-  Id: 13057229508469544248
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 6068390177905723165
+  Name: "World Text"
   Transform {
     Location {
-      Z: 30.8798828
+      X: 0.0848340839
+      Y: 0.127757505
+      Z: 146.441406
     }
     Rotation {
-      Yaw: 140.000015
+      Yaw: 107.770393
     }
     Scale {
-      X: -0.24312906
-      Y: -0.510571122
-      Z: 0.448158085
+      X: 0.524085879
+      Y: 0.482651204
+      Z: 0.524086952
     }
   }
-  ParentId: 6169874004483662080
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
-      }
-    }
-  }
+  ParentId: 5229772130932002756
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1093,74 +876,50 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
+  Text {
+    Text: "Scones"
+    FontAsset {
+      Id: 10625829938780322800
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+    Color {
+      R: 0.0570000038
+      A: 1
     }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
     }
   }
   InstanceHistory {
-    SelfId: 13057229508469544248
-    SubobjectId: 17107296131064374807
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
+    SelfId: 15937168220104058048
+    SubobjectId: 16531438556792389600
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
   }
 }
 Objects {
-  Id: 1346279861003334019
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 6132649397233366930
+  Name: "World Text"
   Transform {
     Location {
-      Z: 30.8798828
+      X: 0.0442049205
+      Y: -0.136565223
+      Z: 146.441406
     }
     Rotation {
-      Yaw: 140.000015
+      Yaw: -72.2296753
     }
     Scale {
-      X: -0.24312906
-      Y: 0.510571122
-      Z: 0.448158085
+      X: 0.524085879
+      Y: 0.482651204
+      Z: 0.524086952
     }
   }
-  ParentId: 6169874004483662080
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
-      }
-    }
-  }
+  ParentId: 5229772130932002756
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1173,71 +932,54 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751669645945998767
+  Text {
+    Text: "Scones"
+    FontAsset {
+      Id: 10625829938780322800
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+    Color {
+      R: 0.0570000038
+      A: 1
     }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
     }
   }
   InstanceHistory {
-    SelfId: 1346279861003334019
-    SubobjectId: 5400722333181625004
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
+    SelfId: 11017870072033090288
+    SubobjectId: 11574272747358683600
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
   }
 }
 Objects {
-  Id: 16838046819274765457
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 13804104261049693731
+  Name: "Urban Pipe Cap 03"
   Transform {
     Location {
-      Z: 30.8447266
+      X: -0.4921875
+      Y: 0.464355469
+      Z: 86.0859375
     }
     Rotation {
-      Yaw: 140
     }
     Scale {
-      X: 0.27014339
-      Y: 0.510571122
-      Z: 0.448158085
+      X: 2.75
+      Y: 2.75
+      Z: 0.3
     }
   }
-  ParentId: 6169874004483662080
+  ParentId: 5229772130932002756
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6298880568795808979
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.373000026
-        B: 0.180283353
-        A: 1
+        Id: 16092869253742582086
       }
     }
   }
@@ -1255,7 +997,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751669645945998767
+      Id: 12632251234297570874
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1270,9 +1012,580 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16838046819274765457
-    SubobjectId: 12822038828329355198
-    InstanceId: 10705886648884644415
-    TemplateId: 16916515643962449395
+    SelfId: 7362568115131544808
+    SubobjectId: 6803352957983420360
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+  }
+}
+Objects {
+  Id: 8457420071665699199
+  Name: "Floor Candle Holder 01"
+  Transform {
+    Location {
+      Z: 85.2543945
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.460648328
+      Y: 0.460648358
+      Z: 0.268915206
+    }
+  }
+  ParentId: 5229772130932002756
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 1915461248412394696
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15122811339479650577
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 2719973529786403678
+    SubobjectId: 2159489536216682622
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+  }
+}
+Objects {
+  Id: 4388248560390514471
+  Name: "Urban Pipe Cap 03"
+  Transform {
+    Location {
+      X: -0.4921875
+      Y: 0.464355469
+      Z: 45.9750977
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.5
+      Y: 3.5
+      Z: 0.3
+    }
+  }
+  ParentId: 5229772130932002756
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16092869253742582086
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12632251234297570874
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 1447754896749619558
+    SubobjectId: 3193105605760643654
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+  }
+}
+Objects {
+  Id: 906572990663183898
+  Name: "Floor Candle Holder 01"
+  Transform {
+    Location {
+      Z: 45.1865234
+    }
+    Rotation {
+      Yaw: 17.7702332
+      Roll: 2.04905591e-05
+    }
+    Scale {
+      X: 0.481982648
+      Y: 0.481982678
+      Z: 0.268408537
+    }
+  }
+  ParentId: 5229772130932002756
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 1915461248412394696
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15122811339479650577
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 2953470390256030417
+    SubobjectId: 1205716080109308401
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+  }
+}
+Objects {
+  Id: 5690842190743811729
+  Name: "Plane 1m - Two Sided"
+  Transform {
+    Location {
+      Z: 149.882324
+    }
+    Rotation {
+      Yaw: -162.229721
+      Roll: -89.999939
+    }
+    Scale {
+      X: 0.579449117
+      Y: 0.244457528
+      Z: 0.488010317
+    }
+  }
+  ParentId: 5229772130932002756
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 132672053610873933
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12152694598132833191
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 11011551692737741810
+    SubobjectId: 11571900446339504338
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+  }
+}
+Objects {
+  Id: 1009858248884355325
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 0.0848340839
+      Y: 0.127757505
+      Z: 152.76123
+    }
+    Rotation {
+      Yaw: 107.770378
+    }
+    Scale {
+      X: 0.524085879
+      Y: 0.482651204
+      Z: 0.524086952
+    }
+  }
+  ParentId: 5229772130932002756
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Text {
+    Text: "Philosopher\'s"
+    FontAsset {
+      Id: 10625829938780322800
+    }
+    Color {
+      R: 0.0570000038
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+  InstanceHistory {
+    SelfId: 15937168220104058048
+    SubobjectId: 16531438556792389600
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+  }
+}
+Objects {
+  Id: 15941449781915523298
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 0.0442049205
+      Y: -0.136565223
+      Z: 152.76123
+    }
+    Rotation {
+      Yaw: -72.2297058
+    }
+    Scale {
+      X: 0.524085879
+      Y: 0.482651204
+      Z: 0.524086952
+    }
+  }
+  ParentId: 5229772130932002756
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Text {
+    Text: "Philosopher\'s"
+    FontAsset {
+      Id: 10625829938780322800
+    }
+    Color {
+      R: 0.0570000038
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+  InstanceHistory {
+    SelfId: 11017870072033090288
+    SubobjectId: 11574272747358683600
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+  }
+}
+Objects {
+  Id: 8612169994474095513
+  Name: "Text 04: {"
+  Transform {
+    Location {
+      X: 22.0732422
+      Y: 4.83056641
+      Z: 129.668701
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -33.2749023
+      Roll: -51.0452271
+    }
+    Scale {
+      X: 0.469383329
+      Y: 0.163756847
+      Z: 0.340263605
+    }
+  }
+  ParentId: 5229772130932002756
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8442616329512505070
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 14736661424859616646
+    SubobjectId: 17637334971969015462
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+  }
+}
+Objects {
+  Id: 6883674172405718947
+  Name: "Text 04: }"
+  Transform {
+    Location {
+      X: 22.0732422
+      Y: 4.83056641
+      Z: 150.159912
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -33.2749023
+      Roll: -51.0452271
+    }
+    Scale {
+      X: 0.368801
+      Y: 0.16375345
+      Z: 0.340925932
+    }
+  }
+  ParentId: 5229772130932002756
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 17241186771114119414
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2433053762912264209
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 17544844047978749584
+    SubobjectId: 14644733459308365232
+    InstanceId: 521321482065233353
+    TemplateId: 4546160170783949878
+  }
+}
+Objects {
+  Id: 2637920531440431659
+  Name: "Simple Rotate Parent"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8700105479647938713
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Speed"
+      Vector {
+        Z: -0.2
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5358125184516124331
+    }
   }
 }

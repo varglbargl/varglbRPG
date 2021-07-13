@@ -218,6 +218,29 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 1024634373926210683
+      value {
+        Overrides {
+          Name: "ma:Font.Bevel:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Font.Faces:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+        Overrides {
+          Name: "ma:Font.Sides:id"
+          AssetReference {
+            Id: 6954370053071083141
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 3678117109930820537
       value {
         Overrides {

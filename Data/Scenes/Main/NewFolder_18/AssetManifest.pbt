@@ -1,27 +1,27 @@
 Assets {
-  Id: 16048367406070731799
-  Name: "Plane 1m - One Sided"
+  Id: 12510064410993333055
+  Name: "Fantasy Pommel 04"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_001"
+    AssetId: "sm_weap_fan_pommel_004"
   }
 }
 Assets {
-  Id: 12827530473249900764
-  Name: "Emissive Glow Opaque"
+  Id: 8778178827977891145
+  Name: "Paper Lantern 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "fxma_opaque_emissive"
+    AssetId: "mi_jpn_paper_lantern_002_uv_ref"
   }
 }
 Assets {
-  Id: 4004888632411082600
-  Name: "Prism - 6-Sided Half"
+  Id: 262759489130702548
+  Name: "Japanese Paper Lantern Simple 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half_hexagon_001"
+    AssetId: "sm_prop_jpn_lantern_paper_simple_001_ref"
   }
 }

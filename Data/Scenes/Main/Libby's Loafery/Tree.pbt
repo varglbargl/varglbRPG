@@ -526,7 +526,7 @@ Objects {
   ChildIds: 2774487999673388894
   ChildIds: 8552138046623038138
   ChildIds: 15366849887804958580
-  ChildIds: 16324404738190219433
+  ChildIds: 7786300111256828785
   ChildIds: 14841766228961423720
   ChildIds: 1923474344692413834
   ChildIds: 6658586487642308985
@@ -1021,746 +1021,43 @@ Objects {
   }
 }
 Objects {
-  Id: 16324404738190219433
-  Name: "Saloon Doors"
+  Id: 7786300111256828785
+  Name: "Shopfront Door - Saloon"
   Transform {
-    Location {
-      X: -1677.65332
-      Y: 421.074707
-      Z: 4376.74609
-    }
-    Rotation {
-    }
     Scale {
-      X: 0.487565309
-      Y: 0.487565309
-      Z: 0.487565309
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 18037324666348523329
-  ChildIds: 9123048474869734363
-  ChildIds: 4974308657688663285
-  ChildIds: 2045087512702198040
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 13844471245689783079
-    SubobjectId: 9448334746095232895
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 2045087512702198040
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 180.1241
-      Y: -33.7044182
-      Z: 119.951881
-    }
-    Rotation {
-    }
-    Scale {
-      X: 3.5
-      Y: 3.5
-      Z: 3.9
-    }
-  }
-  ParentId: 16324404738190219433
-  ChildIds: 15985793672689743352
-  ChildIds: 1997565852670985619
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 11329788484990681598
-    SubobjectId: 15998252359207740838
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 1997565852670985619
-  Name: "Simple Door Trigger"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
-    }
-  }
-  ParentId: 2045087512702198040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Door"
-      ObjectReference {
-        SelfId: 4974308657688663285
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17691678098466173306
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Shopfront Door - Saloon"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1677.65405
+            Y: 421.075592
+            Z: 4376.74609
+          }
+        }
       }
     }
-    Overrides {
-      Name: "cs:OpenRotation"
-      Rotator {
-        Yaw: 90
-      }
+    TemplateAsset {
+      Id: 14051313614820320986
     }
-    Overrides {
-      Name: "cs:AutoCloseAfter"
-      Float: 0.2
-    }
-    Overrides {
-      Name: "cs:OpenSFX"
-      AssetReference {
-        Id: 1383403729876098168
-      }
-    }
-    Overrides {
-      Name: "cs:DoorSpeed"
-      Float: 0.28
-    }
-    Overrides {
-      Name: "cs:CloseSFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 5186520184143733253
-    }
-  }
-  InstanceHistory {
-    SelfId: 11181332424331838716
-    SubobjectId: 15569605551772197028
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 15985793672689743352
-  Name: "Simple Door Trigger"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
-    }
-  }
-  ParentId: 2045087512702198040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Door"
-      ObjectReference {
-        SelfId: 9123048474869734363
-      }
-    }
-    Overrides {
-      Name: "cs:OpenRotation"
-      Rotator {
-        Yaw: -90
-      }
-    }
-    Overrides {
-      Name: "cs:AutoCloseAfter"
-      Float: 0.26
-    }
-    Overrides {
-      Name: "cs:CloseSFX"
-      AssetReference {
-        Id: 2728768601066867820
-      }
-    }
-    Overrides {
-      Name: "cs:OpenSFX"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:DoorSpeed"
-      Float: 0.23
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 5186520184143733253
-    }
-  }
-  InstanceHistory {
-    SelfId: 7273296916701905635
-    SubobjectId: 2869279332591314619
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 4974308657688663285
-  Name: "Right Door"
-  Transform {
-    Location {
-      X: 360
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16324404738190219433
-  ChildIds: 13142598729431497906
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6301642118606503856
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 2696050289196629684
-    SubobjectId: 7373518693481372396
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 13142598729431497906
-  Name: "Geo"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4974308657688663285
-  ChildIds: 10303610946184466953
-  ChildIds: 14469109960680552990
-  ChildIds: 6971807315140238989
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 12890592945415182327
-    SubobjectId: 17427486520162349999
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 6971807315140238989
-  Name: "Shopfront Door 01"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13142598729431497906
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11761871474221141479
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 5813147163305454072
-    SubobjectId: 1410253202635066784
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 14469109960680552990
-  Name: "Sci-fi Chest Hinge 01"
-  Transform {
-    Location {
-      X: -3.09765625
-      Y: 5
-      Z: 230
-    }
-    Rotation {
-      Pitch: -90
-      Roll: -62.7845459
-    }
-    Scale {
-      X: 1
-      Y: -1
-      Z: 1
-    }
-  }
-  ParentId: 13142598729431497906
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17611921055401184409
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 1230787231395080868
-    SubobjectId: 5920801035402366716
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 10303610946184466953
-  Name: "Sci-fi Chest Hinge 01"
-  Transform {
-    Location {
-      X: -3.09765625
-      Y: 5
-      Z: 60
-    }
-    Rotation {
-      Pitch: -90
-      Roll: -62.7845459
-    }
-    Scale {
-      X: 1
-      Y: -1
-      Z: 1
-    }
-  }
-  ParentId: 13142598729431497906
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17611921055401184409
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 15456001719770985328
-    SubobjectId: 10754865256003606312
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 9123048474869734363
-  Name: "Left Door"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16324404738190219433
-  ChildIds: 4235530100516785504
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6301642118606503856
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 10958588883692350024
-    SubobjectId: 15792700970951593488
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 4235530100516785504
-  Name: "Geo"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9123048474869734363
-  ChildIds: 11785327791780271128
-  ChildIds: 8984040804124702262
-  ChildIds: 796963075438795756
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 15614912217832345568
-    SubobjectId: 11208620223219526584
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 796963075438795756
-  Name: "Shopfront Door 01"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4235530100516785504
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11761871474221141479
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 12611378663637524129
-    SubobjectId: 17022152250363067129
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 8984040804124702262
-  Name: "Sci-fi Chest Hinge 01"
-  Transform {
-    Location {
-      X: -3.09765625
-      Y: 5
-      Z: 230
-    }
-    Rotation {
-      Pitch: -90
-      Roll: -62.7845154
-    }
-    Scale {
-      X: 1
-      Y: -1
-      Z: 1
-    }
-  }
-  ParentId: 4235530100516785504
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17611921055401184409
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 12521300345286664163
-    SubobjectId: 17220308163149315003
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
-  }
-}
-Objects {
-  Id: 11785327791780271128
-  Name: "Sci-fi Chest Hinge 01"
-  Transform {
-    Location {
-      X: -3.09765625
-      Y: 5
-      Z: 60
-    }
-    Rotation {
-      Pitch: -90
-      Roll: -62.7845154
-    }
-    Scale {
-      X: 1
-      Y: -1
-      Z: 1
-    }
-  }
-  ParentId: 4235530100516785504
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17611921055401184409
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 17071333456422506839
-    SubobjectId: 12670811649591063823
-    InstanceId: 5588866361582308187
-    TemplateId: 393303855215183285
   }
 }
 Objects {
@@ -8875,7 +8172,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Shopfront Door 01"
+          String: "Shopfront Door - Metal"
         }
         Overrides {
           Name: "Position"
@@ -28994,16 +28291,24 @@ Objects {
   ParentId: 18037324666348523329
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail2:id"
       AssetReference {
         Id: 12688837519895093339
       }
     }
     Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 30
+        G: 6.50000095
+        A: 1
+      }
+    }
+    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.206000015
-        G: 0.0515000038
+        R: 1
+        G: 0.27
         A: 1
       }
     }
@@ -29058,16 +28363,24 @@ Objects {
   ParentId: 18037324666348523329
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail2:id"
       AssetReference {
         Id: 12688837519895093339
       }
     }
     Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 30
+        G: 6.50000095
+        A: 1
+      }
+    }
+    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.206000015
-        G: 0.0515000038
+        R: 1
+        G: 0.27
         A: 1
       }
     }
@@ -29122,16 +28435,24 @@ Objects {
   ParentId: 18037324666348523329
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail2:id"
       AssetReference {
         Id: 12688837519895093339
       }
     }
     Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 30
+        G: 6.50000095
+        A: 1
+      }
+    }
+    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.206000015
-        G: 0.0515000038
+        R: 1
+        G: 0.27
         A: 1
       }
     }
@@ -29186,16 +28507,24 @@ Objects {
   ParentId: 18037324666348523329
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail2:id"
       AssetReference {
         Id: 12688837519895093339
       }
     }
     Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 30
+        G: 6.50000095
+        A: 1
+      }
+    }
+    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.206000015
-        G: 0.0515000038
+        R: 1
+        G: 0.27
         A: 1
       }
     }
@@ -29250,16 +28579,24 @@ Objects {
   ParentId: 18037324666348523329
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail2:id"
       AssetReference {
         Id: 12688837519895093339
       }
     }
     Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 30
+        G: 6.50000095
+        A: 1
+      }
+    }
+    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.206000015
-        G: 0.0515000038
+        R: 1
+        G: 0.27
         A: 1
       }
     }
@@ -29314,16 +28651,24 @@ Objects {
   ParentId: 18037324666348523329
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail2:id"
       AssetReference {
         Id: 12688837519895093339
       }
     }
     Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 30
+        G: 6.50000095
+        A: 1
+      }
+    }
+    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.206000015
-        G: 0.0515000038
+        R: 1
+        G: 0.27
         A: 1
       }
     }
@@ -29378,16 +28723,24 @@ Objects {
   ParentId: 18037324666348523329
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail2:id"
       AssetReference {
         Id: 12688837519895093339
       }
     }
     Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 30
+        G: 6.50000095
+        A: 1
+      }
+    }
+    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.206000015
-        G: 0.0515000038
+        R: 1
+        G: 0.27
         A: 1
       }
     }
@@ -42313,7 +41666,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_47"
+    FilePartitionName: "NewFolder_50"
   }
   InstanceHistory {
     SelfId: 6169874004483662080
@@ -43314,7 +42667,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_48"
+    FilePartitionName: "NewFolder_51"
   }
 }
 Objects {
@@ -43484,7 +42837,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_49"
+    FilePartitionName: "NewFolder_52"
   }
 }
 Objects {
@@ -73535,7 +72888,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_50"
+    FilePartitionName: "NewFolder_53"
   }
 }
 Objects {
@@ -74498,7 +73851,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Un-Mergeable_5"
+    FilePartitionName: "Un-Mergeable_6"
   }
 }
 Objects {

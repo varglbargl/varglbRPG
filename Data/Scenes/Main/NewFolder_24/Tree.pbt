@@ -1,7 +1,7 @@
 Name: "NewFolder_24"
-RootId: 12276400346956089050
+RootId: 2057220260441821076
 Objects {
-  Id: 14793430944745073610
+  Id: 17879924636720312567
   Name: "Decal Sci-fi Details 01"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 0.0397557057
     }
   }
-  ParentId: 12276400346956089050
+  ParentId: 2057220260441821076
   UnregisteredParameters {
     Overrides {
       Name: "bp:Shape Index"
@@ -56,8 +56,8 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14793430944745073610
-    SubobjectId: 3846882167479957857
+    SelfId: 17879924636720312567
+    SubobjectId: 3462748895208028
     InstanceId: 12366975475316035043
     TemplateId: 4706065575094688236
   }
@@ -66,7 +66,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11347989347233578534
+  Id: 14317769820461989890
   Name: "Decal Sci-fi Details 01"
   Transform {
     Location {
@@ -83,7 +83,7 @@ Objects {
       Z: 0.0397608206
     }
   }
-  ParentId: 12276400346956089050
+  ParentId: 2057220260441821076
   UnregisteredParameters {
     Overrides {
       Name: "bp:Shape Index"
@@ -121,8 +121,8 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11347989347233578534
-    SubobjectId: 7300939505356663949
+    SelfId: 14317769820461989890
+    SubobjectId: 4511729593913332393
     InstanceId: 12366975475316035043
     TemplateId: 4706065575094688236
   }
@@ -131,7 +131,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11787833721891000715
+  Id: 11733575628137620270
   Name: "Decal Sci-fi Details 01"
   Transform {
     Location {
@@ -149,7 +149,7 @@ Objects {
       Z: 0.0397608206
     }
   }
-  ParentId: 12276400346956089050
+  ParentId: 2057220260441821076
   UnregisteredParameters {
     Overrides {
       Name: "bp:Shape Index"
@@ -187,8 +187,8 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11787833721891000715
-    SubobjectId: 6609245429505671968
+    SelfId: 11733575628137620270
+    SubobjectId: 6554995023496262021
     InstanceId: 12366975475316035043
     TemplateId: 4706065575094688236
   }
@@ -197,7 +197,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7149053420964900773
+  Id: 18356448532769718981
   Name: "Decal Sci-fi Details 01"
   Transform {
     Location {
@@ -215,7 +215,7 @@ Objects {
       Z: 0.0508145913
     }
   }
-  ParentId: 12276400346956089050
+  ParentId: 2057220260441821076
   UnregisteredParameters {
     Overrides {
       Name: "bp:Shape Index"
@@ -253,8 +253,8 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7149053420964900773
-    SubobjectId: 11175831829305834766
+    SelfId: 18356448532769718981
+    SubobjectId: 473222437632905326
     InstanceId: 12366975475316035043
     TemplateId: 4706065575094688236
   }
@@ -263,7 +263,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4304604317092006923
+  Id: 447838548443090457
   Name: "Decal Sci-fi Details 01"
   Transform {
     Location {
@@ -280,7 +280,7 @@ Objects {
       Z: 0.0508145913
     }
   }
-  ParentId: 12276400346956089050
+  ParentId: 2057220260441821076
   UnregisteredParameters {
     Overrides {
       Name: "bp:Shape Index"
@@ -318,8 +318,8 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4304604317092006923
-    SubobjectId: 14092619970383027872
+    SelfId: 447838548443090457
+    SubobjectId: 18309673640629443762
     InstanceId: 12366975475316035043
     TemplateId: 4706065575094688236
   }
@@ -328,7 +328,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4530477698660401886
+  Id: 1952134970928452168
   Name: "Decal Sci-fi Details 01"
   Transform {
     Location {
@@ -345,7 +345,7 @@ Objects {
       Z: 0.0508080572
     }
   }
-  ParentId: 12276400346956089050
+  ParentId: 2057220260441821076
   UnregisteredParameters {
     Overrides {
       Name: "bp:Shape Index"
@@ -383,8 +383,8 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4530477698660401886
-    SubobjectId: 14335362874298060917
+    SelfId: 1952134970928452168
+    SubobjectId: 16373238361574244579
     InstanceId: 12366975475316035043
     TemplateId: 4706065575094688236
   }

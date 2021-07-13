@@ -1627,7 +1627,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_32"
+    FilePartitionName: "NewFolder_35"
   }
   InstanceHistory {
     SelfId: 13749768678839352517
@@ -2326,7 +2326,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_33"
+    FilePartitionName: "NewFolder_36"
   }
   InstanceHistory {
     SelfId: 10355415873143624330

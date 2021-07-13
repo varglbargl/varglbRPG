@@ -1,27 +1,36 @@
 Assets {
-  Id: 15377637131691563244
-  Name: "Ceramic Terracotta Pots 01"
+  Id: 12355314964874324021
+  Name: "Decal Road Sign Symbols"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_roadsigns_001"
+  }
+}
+Assets {
+  Id: 8305318772336181939
+  Name: "Cabinet Door - Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_cabinet_door_002"
+  }
+}
+Assets {
+  Id: 1915461248412394696
+  Name: "Invisible"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_terracotta_pots_001_uv"
+    AssetId: "mi_invisible_001"
   }
 }
 Assets {
-  Id: 11165579009940906264
-  Name: "Pipe"
+  Id: 420703101267336795
+  Name: "Japanese Temple Torii Gate Rope 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_001"
-  }
-}
-Assets {
-  Id: 9177586487136342834
-  Name: "Cone - Truncated Hollow Wide"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_hollow_004"
+    AssetId: "sm_ts_jpn_tem_torii_rope_001_ref"
   }
 }

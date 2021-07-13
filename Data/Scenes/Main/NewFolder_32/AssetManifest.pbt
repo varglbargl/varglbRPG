@@ -1,9 +1,27 @@
 Assets {
-  Id: 2121245170663321426
-  Name: "Candle Flame VFX"
+  Id: 17724651308382855416
+  Name: "Fantasy Castle Wall 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "fxsm_candleflame"
+    AssetId: "sm_ts_fan_cas_wall_002"
+  }
+}
+Assets {
+  Id: 8318010931141529991
+  Name: "Fantasy Castle Wall 01 - Doorway 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001_door_02"
+  }
+}
+Assets {
+  Id: 4927017302746496390
+  Name: "Fantasy Castle Wall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001"
   }
 }

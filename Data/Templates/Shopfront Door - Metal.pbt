@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 3246644525052086036
         ChildIds: 16342217179753842866
         ChildIds: 10924866253683229589
         Collidable_v2 {
@@ -96,10 +96,10 @@ Assets {
         }
         ParentId: 16342217179753842866
         ChildIds: 13291743160751123511
-        ChildIds: 2873653662553263027
         ChildIds: 600732150875455961
+        ChildIds: 2873653662553263027
         ChildIds: 2810042077878629114
-        ChildIds: 9207934895165465426
+        ChildIds: 13663633205892157396
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -118,24 +118,26 @@ Assets {
       }
       Objects {
         Id: 13291743160751123511
-        Name: "Sci-fi Chest Hinge 01"
+        Name: "Japanese Chest Hinge 01"
         Transform {
           Location {
-            X: -3.09765625
-            Y: 5
-            Z: 91.6181641
+            X: 6.12890434
+            Y: -0.0253973
+            Z: 81.0004883
           }
           Rotation {
             Pitch: -90
-            Roll: -62.7844238
+            Roll: 180
           }
           Scale {
-            X: 1
-            Y: -1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 18052464738734272970
+        UnregisteredParameters {
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -150,7 +152,58 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17611921055401184409
+            Id: 6753491216021993641
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 600732150875455961
+        Name: "Japanese Chest Hinge 01"
+        Transform {
+          Location {
+            X: 5.96288919
+            Y: -0.185553074
+            Z: 223.605957
+          }
+          Rotation {
+            Pitch: -90
+            Roll: 180
+          }
+          Scale {
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
+          }
+        }
+        ParentId: 18052464738734272970
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6753491216021993641
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -170,12 +223,13 @@ Assets {
         Name: "Open Sign"
         Transform {
           Location {
-            X: 115.151367
-            Y: -2.62060547
-            Z: 176.320313
+            X: 120.121056
+            Y: -0.607551575
+            Z: 184.608643
           }
           Rotation {
-            Yaw: 89.9999771
+            Yaw: 90
+            Roll: 6
           }
           Scale {
             X: 1
@@ -227,15 +281,6 @@ Assets {
             Name: "ma:Prop_Handle:id"
             AssetReference {
               Id: 1915461248412394696
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.832
-              G: 0.312661111
-              B: 0.186367989
-              A: 1
             }
           }
         }
@@ -686,57 +731,8 @@ Assets {
         }
       }
       Objects {
-        Id: 600732150875455961
-        Name: "Sci-fi Chest Hinge 01"
-        Transform {
-          Location {
-            X: -3.09765625
-            Y: 5
-            Z: 239.348633
-          }
-          Rotation {
-            Pitch: -90
-            Roll: -62.7844238
-          }
-          Scale {
-            X: 1
-            Y: -1
-            Z: 1
-          }
-        }
-        ParentId: 18052464738734272970
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17611921055401184409
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 2810042077878629114
-        Name: "Shopfront Door 01"
+        Name: "Japanese Temple Door Shoji 01"
         Transform {
           Location {
           }
@@ -779,23 +775,21 @@ Assets {
         }
       }
       Objects {
-        Id: 9207934895165465426
+        Id: 13663633205892157396
         Name: "Plane 1m - Two Sided"
         Transform {
           Location {
-            X: 86.0766373
-            Y: 5.33841133
-            Z: 144.000031
+            X: 93.2870789
+            Y: 2.50380707
+            Z: 176.304443
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 9.65934669e-06
-            Roll: -89.999939
+            Roll: 90
           }
           Scale {
-            X: 1.60734582
-            Y: 2.91331482
-            Z: 1.00459135
+            X: 1.6613133
+            Y: 2.33348823
+            Z: 0.87437427
           }
         }
         ParentId: 18052464738734272970
@@ -805,6 +799,18 @@ Assets {
             AssetReference {
               Id: 10766975867019021707
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.204
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.155
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1003,12 +1009,12 @@ Assets {
       }
     }
     Assets {
-      Id: 17611921055401184409
-      Name: "Sci-fi Chest Hinge 01"
+      Id: 6753491216021993641
+      Name: "Japanese Chest Hinge 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_scf_crate_hinge_001_ref"
+        AssetId: "sm_prop_jpn_chest_med_hinge_001"
       }
     }
     Assets {

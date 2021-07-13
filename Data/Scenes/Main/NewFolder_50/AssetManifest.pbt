@@ -1,9 +1,9 @@
 Assets {
-  Id: 9199751096616988864
-  Name: "Candle Flame VFX"
+  Id: 13751669645945998767
+  Name: "Ellipsoid - Truncated Wedge"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "fxsm_candleflame"
+    AssetId: "sm_ellipsoid_truncated_wedge_001"
   }
 }

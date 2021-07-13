@@ -7,7 +7,7 @@ Assets {
       RootId: 10825258817189632726
       Objects {
         Id: 10825258817189632726
-        Name: "Imilhoen Sword 01"
+        Name: "Big Knot"
         Transform {
           Scale {
             X: 17.2435398
@@ -26,7 +26,6 @@ Assets {
         ChildIds: 931854428105450343
         ChildIds: 18247460105973470406
         ChildIds: 17290144875979739390
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }

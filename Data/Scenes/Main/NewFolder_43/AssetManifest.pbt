@@ -1,36 +1,27 @@
 Assets {
-  Id: 12355314964874324021
-  Name: "Decal Road Sign Symbols"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_roadsigns_001"
-  }
-}
-Assets {
-  Id: 8305318772336181939
-  Name: "Cabinet Door - Small"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_cabinet_door_002"
-  }
-}
-Assets {
-  Id: 1915461248412394696
-  Name: "Invisible"
+  Id: 13803845293831016450
+  Name: "Bricks Chunky Stone 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_invisible_001"
+    AssetId: "mi_brick_stone_chunky_001"
   }
 }
 Assets {
-  Id: 420703101267336795
-  Name: "Japanese Temple Torii Gate Rope 01"
+  Id: 7362232965091765999
+  Name: "Bricks Mortar Thick 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_bricks_mortar_001_uv"
+  }
+}
+Assets {
+  Id: 6998526292790663109
+  Name: "Fantasy Castle Wall 02 - Curved Window 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_jpn_tem_torii_rope_001_ref"
+    AssetId: "sm_ts_fan_cas_wall_curve_002_win_01"
   }
 }

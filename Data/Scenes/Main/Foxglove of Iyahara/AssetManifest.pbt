@@ -170,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15614674765095447048
+  Name: "Rope"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_rope_001"
+  }
+}
+Assets {
   Id: 14917912615158568206
   Name: "Text 04: J"
   PlatformAssetType: 1
@@ -680,6 +689,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_concrete_tiles_001"
+  }
+}
+Assets {
+  Id: 2726731225207759100
+  Name: "Wallpaper Damask 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_wallpaper_003"
   }
 }
 Assets {

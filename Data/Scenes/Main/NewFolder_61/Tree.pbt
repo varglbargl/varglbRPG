@@ -1,22 +1,24 @@
 Name: "NewFolder_61"
-RootId: 17359204850100377545
+RootId: 1884489688880957845
 Objects {
-  Id: 7521800255148325409
+  Id: 14192990120816685650
   Name: "Cylinder"
   Transform {
     Location {
-      X: -0.07421875
-      Y: 3.03808594
+      Y: 40.9629288
     }
     Rotation {
+      Pitch: 90
+      Yaw: 18.9704113
+      Roll: -162.410568
     }
     Scale {
-      X: 0.956591308
-      Y: 1.22039104
-      Z: 0.956600308
+      X: 0.79738158
+      Y: 1.01941514
+      Z: 0.797393501
     }
   }
-  ParentId: 17359204850100377545
+  ParentId: 1884489688880957845
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -31,7 +33,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 1630607435793532884
+      Id: 14568202142325336728
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -47,25 +49,24 @@ Objects {
   }
 }
 Objects {
-  Id: 15249748043633556316
+  Id: 12146240887426427213
   Name: "Cylinder"
   Transform {
     Location {
-      X: -0.98828125
-      Y: 40.9521484
+      Y: -0.818881869
     }
     Rotation {
-      Pitch: -3.05175781e-05
-      Yaw: 1.38130772
-      Roll: 89.9999619
+      Pitch: 90
+      Yaw: 90
+      Roll: 178.61882
     }
     Scale {
-      X: 0.276818
-      Y: 0.276821196
-      Z: 1.46716428
+      X: 0.096673429
+      Y: 0.096671313
+      Z: 0.79893
     }
   }
-  ParentId: 17359204850100377545
+  ParentId: 1884489688880957845
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -78,12 +79,12 @@ Objects {
       Bool: false
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.25
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
     }
   }
   Collidable_v2 {
@@ -116,38 +117,31 @@ Objects {
   }
 }
 Objects {
-  Id: 12505250265330794441
+  Id: 12279493840344497574
   Name: "Cylinder"
   Transform {
     Location {
-      X: 1.05957031
-      Y: -43.9882813
+      Y: -40.1403961
     }
     Rotation {
       Pitch: 90
-      Yaw: 54.2800446
-      Roll: -127.101318
+      Yaw: 34.8113823
+      Roll: -146.569641
     }
     Scale {
-      X: 1.137676
-      Y: 1.62451792
-      Z: 1.13767719
+      X: 1.0053376
+      Y: 1.28527713
+      Z: 1.00535262
     }
   }
-  ParentId: 17359204850100377545
+  ParentId: 1884489688880957845
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
+      Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.249000013
-        G: 0.150327787
-        B: 0.106572
+        R: 0.484000027
+        G: 0.364935905
+        B: 0.28556
         A: 1
       }
     }
@@ -166,7 +160,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 14775225527493723590
+      Id: 14568202142325336728
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -182,7 +176,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10614688246609764713
+  Id: 17401500125231044536
   Name: "Simple Rotate Parent"
   Transform {
     Location {
@@ -195,17 +189,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17359204850100377545
+  ParentId: 1884489688880957845
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:Speed"
-      Vector {
-        Y: -3.6
-      }
-    }
     Overrides {
       Name: "cs:IsLocal"
       Bool: true
+    }
+    Overrides {
+      Name: "cs:Speed"
+      Vector {
+        Y: 5
+      }
     }
   }
   Collidable_v2 {

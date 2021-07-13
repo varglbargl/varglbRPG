@@ -89,15 +89,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17611921055401184409
-  Name: "Sci-fi Chest Hinge 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_crate_hinge_001_ref"
-  }
-}
-Assets {
   Id: 17241186771114119414
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -482,15 +473,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_cabinet_topper_narrow_001"
-  }
-}
-Assets {
-  Id: 11761871474221141479
-  Name: "Fantasy Castle Door 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_door_002"
   }
 }
 Assets {
@@ -998,15 +980,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6301642118606503856
-  Name: "Whitebox Door 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_door_001"
-  }
-}
-Assets {
   Id: 6298880568795808979
   Name: "Advanced Material"
   PlatformAssetType: 2
@@ -1232,15 +1205,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2728768601066867820
-  Name: "Footstep Wood 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_footstep_wood"
-  }
-}
-Assets {
   Id: 2275260513309488867
   Name: "Sphere"
   PlatformAssetType: 1
@@ -1346,15 +1310,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_chest_003"
-  }
-}
-Assets {
-  Id: 1383403729876098168
-  Name: "Object Wood Door Creak 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_object_door_creak_01_Cue_ref"
   }
 }
 Assets {

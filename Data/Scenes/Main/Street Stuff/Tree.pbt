@@ -305,67 +305,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11956515194075489909
-  Name: "Street Lamp 01"
-  Transform {
-    Location {
-      X: 16850
-      Y: -5075
-      Z: -4305
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4959840978651587588
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7437967575158509858
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Street Lamp 01"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1613.03711
-            Y: 453.09375
-            Z: 10
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -90
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7664400772974101959
-    }
-  }
-}
-Objects {
   Id: 9430025163290167447
   Name: "Street Lamp 01"
   Transform {
@@ -856,19 +795,19 @@ Objects {
   Name: "Flag Rope"
   Transform {
     Location {
-      X: -670.124512
-      Y: -35.6563568
-      Z: 63.2668457
+      X: -640.773071
+      Y: -3.39289856
+      Z: 70.7658691
     }
     Rotation {
-      Pitch: 0.750555813
-      Yaw: 107.421059
-      Roll: -179.778076
+      Pitch: 0.766907275
+      Yaw: 103.092155
+      Roll: -179.843582
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.01964188
+      Y: 1.01964188
+      Z: 1.01964188
     }
   }
   ParentId: 8921491165481590171
@@ -921,6 +860,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Clothes Line"
+    FilePartitionName: "Clothes Line_1"
   }
 }

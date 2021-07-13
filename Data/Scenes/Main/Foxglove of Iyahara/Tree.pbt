@@ -4309,6 +4309,44 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 11686309125727820918
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 2726731225207759100
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:utile"
+          Float: 0.195236787
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:vtile"
+          Float: 1.00551558
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14410358259354041382
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 2726731225207759100
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:utile"
+          Float: 0.195236787
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:vtile"
+          Float: 1.00551558
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16334535623613656749
       value {
         Overrides {
@@ -4336,6 +4374,25 @@ Objects {
             Y: 0.7
             Z: 0.7
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18422654885293497029
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 14781885955149681198
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:utile"
+          Float: 0.75
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:vtile"
+          Float: 0.55
         }
       }
     }
@@ -7657,6 +7714,21 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 14578822265939327821
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 15614674765095447048
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:vtile"
+          Float: 4
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 17910364821204064429
       value {
         Overrides {
@@ -8985,7 +9057,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_51"
+    FilePartitionName: "NewFolder_54"
   }
   InstanceHistory {
     SelfId: 6169874004483662080
@@ -11204,7 +11276,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_52"
+    FilePartitionName: "NewFolder_55"
   }
   InstanceHistory {
     SelfId: 9444120519638555188
@@ -12201,7 +12273,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_53"
+    FilePartitionName: "NewFolder_56"
   }
   InstanceHistory {
     SelfId: 9444120519638555188
@@ -13656,6 +13728,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Un-Mergeable_6"
+    FilePartitionName: "Un-Mergeable_7"
   }
 }
