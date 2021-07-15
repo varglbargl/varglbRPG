@@ -2,16 +2,16 @@ Assets {
   Id: 16252259983827820200
   Name: "Corn Husk"
   PlatformAssetType: 13
-  SerializationVersion: 91
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 15243134632853998761
     ParameterOverrides {
       Overrides {
         Name: "color_accent"
         Color {
-          R: 0.354625
-          G: 0.625
-          B: 0.0456249714
+          R: 0.295615405
+          G: 0.521
+          B: 0.0380329788
           A: 1
         }
       }

@@ -1,59 +1,42 @@
 Name: "NewFolder_10"
-RootId: 10852072677144199162
+RootId: 13058262427378902525
 Objects {
-  Id: 6603595886387382249
-  Name: "Fantasy Castle Pillar 01 Base"
+  Id: 10497294989656315
+  Name: "Pipe - Quarter Wedge Thin - Large"
   Transform {
     Location {
-      X: 60.8671875
-      Y: 35.0361328
-      Z: 1800
+      X: 667.847656
+      Y: 613.722656
+      Z: -327.137207
     }
     Rotation {
+      Yaw: -179.999954
     }
     Scale {
-      X: 2
-      Y: 2.30000043
-      Z: -1
+      X: 1.50000072
+      Y: -2.00000024
+      Z: 0.700005531
     }
   }
-  ParentId: 10852072677144199162
+  ParentId: 13058262427378902525
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Building_LowerTrimOuter:color"
-      Color {
-        R: 0.724908
-        G: 0.755517781
-        B: 0.772
-        A: 1
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1192918822044829194
       }
     }
     Overrides {
-      Name: "ma:Shared_Trim:color"
-      Color {
-        R: 0.835332036
-        G: 0.901288807
-        B: 0.906
-        A: 1
-      }
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.921875417
-        G: 0.946615
-        B: 1
-        A: 1
-      }
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2
     }
     Overrides {
-      Name: "ma:Shared_Trim2:color"
-      Color {
-        R: 0.921875417
-        G: 0.946615
-        B: 1
-        A: 1
-      }
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2
     }
   }
   Collidable_v2 {
@@ -70,7 +53,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3078636257640080132
+      Id: 12136361298153455411
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -86,23 +69,44 @@ Objects {
   }
 }
 Objects {
-  Id: 5130150117820421894
-  Name: "Fantasy Castle Pillar 01 Base"
+  Id: 358324497347671455
+  Name: "Pipe - Quarter Wedge Thin - Large"
   Transform {
     Location {
-      X: 60.8771286
-      Y: 35.000885
-      Z: 600
+      X: 667.836121
+      Y: -617.364502
+      Z: -327.142883
     }
     Rotation {
+      Yaw: -179.999985
     }
     Scale {
-      X: 2
-      Y: 2.30000043
-      Z: 1
+      X: 1.50000072
+      Y: 2.00000024
+      Z: 0.700005531
     }
   }
-  ParentId: 10852072677144199162
+  ParentId: 13058262427378902525
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1192918822044829194
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -117,7 +121,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 7822473577673662489
+      Id: 12136361298153455411
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -133,22 +137,24 @@ Objects {
   }
 }
 Objects {
-  Id: 7394689786074957905
-  Name: "Fantasy Castle Pillar 01 Base"
+  Id: 1308364986064009165
+  Name: "Square Column Base 01"
   Transform {
     Location {
-      X: 60.8771286
-      Y: 35.000885
+      X: 167.690338
+      Y: -0.963682532
+      Z: 0.369698703
     }
     Rotation {
+      Yaw: -45.0000305
     }
     Scale {
-      X: 2
-      Y: 2.30000043
-      Z: 1
+      X: 2.80000567
+      Y: 2.80000567
+      Z: 1.60000443
     }
   }
-  ParentId: 10852072677144199162
+  ParentId: 13058262427378902525
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -163,7 +169,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3078636257640080132
+      Id: 12835105342757965251
     }
     Teams {
       IsTeamCollisionEnabled: true

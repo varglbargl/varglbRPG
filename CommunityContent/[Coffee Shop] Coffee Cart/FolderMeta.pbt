@@ -1,0 +1,83 @@
+MetaVersion: 1
+MarketplaceDetails {
+  Id: "14105b6210844276b44dcd5d81d12e56"
+  OwnerAccountId: "3d4151ca6c1f44ed80f67c77c7fe422f"
+  OwnerName: "disastronaut"
+  Version: "1.2.0"
+}
+AssetIdsOriginalToNew {
+  key: 107391221343417603
+  value: 3570647948055584927
+}
+AssetIdsOriginalToNew {
+  key: 849282484826773081
+  value: 17871164030545426053
+}
+AssetIdsOriginalToNew {
+  key: 3190802632768168743
+  value: 15739532005764387387
+}
+AssetIdsOriginalToNew {
+  key: 4095070265381090898
+  value: 108903914999172571
+}
+AssetIdsOriginalToNew {
+  key: 4358664115942290900
+  value: 15769032996218477721
+}
+AssetIdsOriginalToNew {
+  key: 4464230803920779990
+  value: 9036777648609856613
+}
+AssetIdsOriginalToNew {
+  key: 5457269763676624271
+  value: 11509253622378650069
+}
+AssetIdsOriginalToNew {
+  key: 5947649812799017109
+  value: 6625368906374576016
+}
+AssetIdsOriginalToNew {
+  key: 6584116093816565606
+  value: 16059375408941281208
+}
+AssetIdsOriginalToNew {
+  key: 7095121300193736226
+  value: 8532140059406350763
+}
+AssetIdsOriginalToNew {
+  key: 8814061987189019372
+  value: 1764324908376681697
+}
+AssetIdsOriginalToNew {
+  key: 9244733945186553595
+  value: 12632418951279282011
+}
+AssetIdsOriginalToNew {
+  key: 9622060727726908068
+  value: 10037309582843003036
+}
+AssetIdsOriginalToNew {
+  key: 10949041305146344706
+  value: 7092947269981274292
+}
+AssetIdsOriginalToNew {
+  key: 11679662948349884865
+  value: 14730042208600390382
+}
+AssetIdsOriginalToNew {
+  key: 13039838708654056087
+  value: 17001848604737634284
+}
+AssetIdsOriginalToNew {
+  key: 14372614480418494410
+  value: 8839797185270483206
+}
+AssetIdsOriginalToNew {
+  key: 15478735952172666550
+  value: 3548863398490936736
+}
+AssetIdsOriginalToNew {
+  key: 17081756313682621097
+  value: 13372646472722029070
+}

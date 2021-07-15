@@ -158,8 +158,8 @@ Objects {
   Name: "Fantasy Castle Pillar 02 - Top"
   Transform {
     Location {
-      X: 527.724609
-      Y: 424.015137
+      X: 527.724487
+      Y: 424.015564
       Z: 315
     }
     Rotation {
@@ -168,7 +168,7 @@ Objects {
     Scale {
       X: 0.4
       Y: 0.5
-      Z: 3.50000048
+      Z: 4.5
     }
   }
   ParentId: 12223926413495461031
@@ -1627,7 +1627,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_35"
+    FilePartitionName: "NewFolder_41"
   }
   InstanceHistory {
     SelfId: 13749768678839352517
@@ -2326,7 +2326,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_36"
+    FilePartitionName: "NewFolder_42"
   }
   InstanceHistory {
     SelfId: 10355415873143624330

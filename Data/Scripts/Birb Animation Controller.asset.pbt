@@ -14,6 +14,10 @@ Assets {
           Id: 16618455417557466611
         }
       }
+      Overrides {
+        Name: "cs:ChirpVolume"
+        Float: 0.5
+      }
     }
     Assets {
       Id: 16618455417557466611
@@ -25,5 +29,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }

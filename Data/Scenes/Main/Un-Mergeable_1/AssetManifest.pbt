@@ -1,45 +1,45 @@
 Assets {
-  Id: 18160970902693399684
-  Name: "Cylinder - Large"
+  Id: 17984110408163466439
+  Name: "Tree Sakura Hero 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_lg_001_ref"
+    AssetId: "sm_tree_sakura_hero_02_ref"
   }
 }
 Assets {
-  Id: 17588356818725180439
-  Name: "Tree Sakura Hero Bare 01"
+  Id: 16382980407385291817
+  Name: "Guardrail - Curve 45\302\260 - 16m Radius"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_sakura_hero_01_bare_ref"
+    AssetId: "sm_prop_urb_guardrail_001_curve45_r16m_ref"
   }
 }
 Assets {
-  Id: 11285278799348334020
-  Name: "Sphere - Half Thin"
+  Id: 13124120606090784252
+  Name: "Tree Sakura Hero 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hemisphere_002"
+    AssetId: "sm_tree_sakura_hero_01_ref"
   }
 }
 Assets {
-  Id: 10151348392058825738
-  Name: "Metal Frame 01"
+  Id: 1192918822044829194
+  Name: "Stone Basic"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_frames_001_uv"
+    AssetId: "stone_001"
   }
 }
 Assets {
-  Id: 183152300358340459
-  Name: "Bricks Concrete Cinder Block 01"
-  PlatformAssetType: 2
+  Id: 467067525109198318
+  Name: "Decal Ivy Big"
+  PlatformAssetType: 14
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_concrete_001"
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_ivy_001"
   }
 }

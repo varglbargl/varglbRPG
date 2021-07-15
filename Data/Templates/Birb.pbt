@@ -10,9 +10,9 @@ Assets {
         Name: "Birb"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
           }
         }
         ParentId: 4781671109827199097
@@ -73,7 +73,6 @@ Assets {
           Location {
           }
           Rotation {
-            Yaw: -15.0000734
           }
           Scale {
             X: 1
@@ -165,7 +164,6 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
-            Z: 8.06373215
           }
           Rotation {
           }
@@ -195,14 +193,14 @@ Assets {
         Name: "Animation Controller"
         Transform {
           Location {
+            Z: 8.06347656
           }
           Rotation {
-            Pitch: -18.0682373
           }
           Scale {
-            X: 0.2
-            Y: 0.2
-            Z: 0.2
+            X: 1.00000012
+            Y: 1.00000012
+            Z: 1.00000012
           }
         }
         ParentId: 7062971213659982494
@@ -266,9 +264,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.2
-            Y: 0.2
-            Z: 0.2
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 7062971213659982494
@@ -292,14 +290,15 @@ Assets {
         Name: "Body"
         Transform {
           Location {
+            Z: 8.06347656
           }
           Rotation {
             Pitch: -18.0682373
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.200000048
+            Y: 0.200000048
+            Z: 0.200000048
           }
         }
         ParentId: 15909127317111503671
@@ -422,8 +421,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -523,6 +523,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
+              R: 0.404
+              G: 0.262600034
               A: 1
             }
           }
@@ -582,6 +584,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
+              R: 0.404
+              G: 0.262600034
               A: 1
             }
           }
@@ -807,8 +811,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -881,8 +886,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -992,8 +998,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1066,8 +1073,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1140,8 +1148,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1214,8 +1223,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1288,8 +1298,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1362,8 +1373,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1473,8 +1485,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1547,8 +1560,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1621,8 +1635,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1695,8 +1710,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1769,8 +1785,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1843,8 +1860,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -1956,8 +1974,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -2026,8 +2045,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -2100,8 +2120,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -2174,8 +2195,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -2248,8 +2270,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -2322,8 +2345,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -2396,8 +2420,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 5
+              R: 0.964999795
+              G: 2.91524887
+              B: 5
               A: 1
             }
           }
@@ -2444,17 +2469,17 @@ Assets {
         Name: "Legs"
         Transform {
           Location {
-            X: 20.5761261
-            Y: -0.969726384
-            Z: -42.4275131
+            X: 4.1171875
+            Y: -0.1953125
+            Z: -0.422363281
           }
           Rotation {
             Pitch: -18.0682373
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.200000048
+            Y: 0.200000048
+            Z: 0.200000048
           }
         }
         ParentId: 15909127317111503671
@@ -3694,7 +3719,7 @@ Assets {
   Marketplace {
     Description: "It\'s a bird! Drag it into your project and it\'ll peck at the ground, hop in place, look side to side, and chirp all on its own!\r\n\r\n!!! ~ NO SCRIPTING REQUIRED ~ !!!\r\n\r\n\r\nFEATURES:\r\n\r\n - Four (4) animations that can be toggled on or off individually\r\n - Natural feeling randomized animation timing\r\n - Chirp animation can play (almost) any audio object\r\n - Easily editable into crows, chickens, or whatever!\r\n\r\nPLANNED FEATURES:\r\n\r\n - More animations like wing flapping\r\n - Maybe a version that follows players around\r\n - Maybe a version the flies away when you get too close like real birds\r\n\r\nBUG FIXES:\r\n\r\n - Chirp now works correctly with a much wider variety of audio objects\r\n - Fixed bug where everything was just totally broken!"
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

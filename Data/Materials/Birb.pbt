@@ -2,7 +2,7 @@ Assets {
   Id: 1932313399264533880
   Name: "Birb"
   PlatformAssetType: 13
-  SerializationVersion: 91
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 11361133390552032893
     ParameterOverrides {

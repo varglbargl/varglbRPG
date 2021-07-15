@@ -10,9 +10,9 @@ Assets {
         Name: "Shopfront Door - Japan"
         Transform {
           Scale {
-            X: 1.1
-            Y: 1.1
-            Z: 1.1
+            X: 1.11278439
+            Y: 1.11278439
+            Z: 1.11278439
           }
         }
         ParentId: 15569149822969819110
@@ -165,17 +165,17 @@ Assets {
         Name: "Plane 1m - Two Sided"
         Transform {
           Location {
-            X: 91.5009384
-            Y: 2.50284576
-            Z: 255.771973
+            X: 91.5010681
+            Y: 2.50303602
+            Z: 261.191803
           }
           Rotation {
             Roll: 90
           }
           Scale {
-            X: 1.6
-            Y: 0.7
-            Z: 0.900000036
+            X: 1.63019
+            Y: 0.71889174
+            Z: 0.9
           }
         }
         ParentId: 18052464738734272970
@@ -1139,6 +1139,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
   VirtualFolderPath: "Tilesets"
 }

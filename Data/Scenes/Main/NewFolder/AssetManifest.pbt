@@ -1,27 +1,18 @@
 Assets {
-  Id: 12510064410993333055
-  Name: "Fantasy Pommel 04"
+  Id: 7822473577673662489
+  Name: "Fantasy Castle Pillar 01 Mid"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_pommel_004"
+    AssetId: "sm_ts_fan_cas_pillar_001_mid"
   }
 }
 Assets {
-  Id: 8778178827977891145
-  Name: "Paper Lantern 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_jpn_paper_lantern_002_uv_ref"
-  }
-}
-Assets {
-  Id: 5220410744672452215
-  Name: "Japanese Paper Lantern Simple 02"
+  Id: 3078636257640080132
+  Name: "Fantasy Castle Pillar 01 Base"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_jpn_lantern_paper_simple_002_ref"
+    AssetId: "sm_ts_fan_cas_pillar_001_base"
   }
 }

@@ -1,63 +1,36 @@
 Assets {
-  Id: 17857589108414499627
-  Name: "Text 02: T"
+  Id: 17724651308382855416
+  Name: "Fantasy Castle Wall 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_019"
+    AssetId: "sm_ts_fan_cas_wall_002"
   }
 }
 Assets {
-  Id: 14254635761246241439
-  Name: "Text 02: I"
+  Id: 8318010931141529991
+  Name: "Fantasy Castle Wall 01 - Doorway 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_008"
+    AssetId: "sm_ts_fan_cas_wall_001_door_02"
   }
 }
 Assets {
-  Id: 11958936252527183619
-  Name: "Text 02: C"
+  Id: 4927017302746496390
+  Name: "Fantasy Castle Wall 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_002"
+    AssetId: "sm_ts_fan_cas_wall_001"
   }
 }
 Assets {
-  Id: 6954370053071083141
-  Name: "Metal Iron 01"
+  Id: 183152300358340459
+  Name: "Bricks Concrete Cinder Block 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_001"
-  }
-}
-Assets {
-  Id: 3444086358886325520
-  Name: "Text 02: R"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_017"
-  }
-}
-Assets {
-  Id: 2367204253233266792
-  Name: "Text 02: A"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_000"
-  }
-}
-Assets {
-  Id: 1860383128123552111
-  Name: "Text 02: L"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_011"
+    AssetId: "mi_brick_concrete_001"
   }
 }

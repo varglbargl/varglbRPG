@@ -1,18 +1,27 @@
 Assets {
-  Id: 13751669645945998767
-  Name: "Ellipsoid - Truncated Wedge"
+  Id: 12510064410993333055
+  Name: "Fantasy Pommel 04"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ellipsoid_truncated_wedge_001"
+    AssetId: "sm_weap_fan_pommel_004"
   }
 }
 Assets {
-  Id: 6298880568795808979
-  Name: "Advanced Material"
+  Id: 8778178827977891145
+  Name: "Paper Lantern 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "universal_material_001"
+    AssetId: "mi_jpn_paper_lantern_002_uv_ref"
+  }
+}
+Assets {
+  Id: 262759489130702548
+  Name: "Japanese Paper Lantern Simple 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_lantern_paper_simple_001_ref"
   }
 }

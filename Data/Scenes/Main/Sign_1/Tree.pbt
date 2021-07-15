@@ -121,7 +121,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_40"
+    FilePartitionName: "NewFolder_46"
   }
 }
 Objects {
@@ -157,7 +157,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_41"
+    FilePartitionName: "NewFolder_47"
   }
 }
 Objects {

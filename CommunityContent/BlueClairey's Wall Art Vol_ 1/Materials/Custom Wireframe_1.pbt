@@ -2,7 +2,7 @@ Assets {
   Id: 10692801143782934259
   Name: "Custom Wireframe_1"
   PlatformAssetType: 13
-  SerializationVersion: 91
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 4367680979899409124
     ParameterOverrides {

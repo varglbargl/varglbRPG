@@ -1,40 +1,57 @@
 Name: "NewFolder_18"
-RootId: 4458583521364112300
+RootId: 10525723181254208393
 Objects {
-  Id: 10002343839899487185
-  Name: "Japanese Paper Lantern Simple 01"
+  Id: 8817282188298211231
+  Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -0.00414320407
-      Y: -0.0110485423
-      Z: -81.1779785
+      X: 60.8671875
+      Y: 35.0361328
+      Z: 1800
     }
     Rotation {
-      Yaw: 89.9999847
     }
     Scale {
-      X: 1.53780437
-      Y: 1.53780437
-      Z: 1.53780437
+      X: 2
+      Y: 2.30000043
+      Z: -1
     }
   }
-  ParentId: 4458583521364112300
+  ParentId: 10525723181254208393
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 8778178827977891145
+      Name: "ma:Building_LowerTrimOuter:color"
+      Color {
+        R: 0.724908
+        G: 0.755517781
+        B: 0.772
+        A: 1
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.835332036
+        G: 0.901288807
+        B: 0.906
+        A: 1
+      }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 0.0666666627
+        R: 0.921875417
+        G: 0.946615
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim2:color"
+      Color {
+        R: 0.921875417
+        G: 0.946615
+        B: 1
         A: 1
       }
     }
@@ -53,13 +70,12 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 262759489130702548
+      Id: 3078636257640080132
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableCastShadows: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -70,23 +86,23 @@ Objects {
   }
 }
 Objects {
-  Id: 10616967642318249214
-  Name: "Fantasy Pommel 04"
+  Id: 424685674844748320
+  Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      Z: -19.1784668
+      X: 60.8771286
+      Y: 35.000885
+      Z: 600
     }
     Rotation {
-      Yaw: -89.9999619
-      Roll: -179.999954
     }
     Scale {
-      X: 3.70000052
-      Y: 3.70000052
-      Z: 3.70000052
+      X: 2
+      Y: 2.30000043
+      Z: 1
     }
   }
-  ParentId: 4458583521364112300
+  ParentId: 10525723181254208393
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -101,7 +117,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12510064410993333055
+      Id: 7822473577673662489
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -117,35 +133,22 @@ Objects {
   }
 }
 Objects {
-  Id: 2680409950237499040
-  Name: "Simple Swing Parent"
+  Id: 11046838582871818700
+  Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
+      X: 60.8771286
+      Y: 35.000885
     }
     Rotation {
-      Yaw: -6.83018879e-06
     }
     Scale {
-      X: 1
-      Y: 1
+      X: 2
+      Y: 2.30000043
       Z: 1
     }
   }
-  ParentId: 4458583521364112300
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:MinAmplitude"
-      Float: 3
-    }
-    Overrides {
-      Name: "cs:MaxAmplitude"
-      Float: 6
-    }
-    Overrides {
-      Name: "cs:StartTime"
-      Float: 0.6
-    }
-  }
+  ParentId: 10525723181254208393
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -158,9 +161,20 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Script {
-    ScriptAsset {
-      Id: 4774256623264947271
+  CoreMesh {
+    MeshAsset {
+      Id: 3078636257640080132
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
     }
   }
 }

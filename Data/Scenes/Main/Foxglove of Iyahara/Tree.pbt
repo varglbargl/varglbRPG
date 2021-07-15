@@ -417,7 +417,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:utile"
-      Float: 2
+      Float: 1.25
     }
     Overrides {
       Name: "ma:Building_WallInner:color"
@@ -445,7 +445,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -9057,7 +9057,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_54"
+    FilePartitionName: "NewFolder_59"
   }
   InstanceHistory {
     SelfId: 6169874004483662080
@@ -10224,7 +10224,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:utile"
-      Float: 2
+      Float: 1.25
     }
     Overrides {
       Name: "ma:Building_WallInner:color"
@@ -10252,7 +10252,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -10313,7 +10313,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:utile"
-      Float: 2.5
+      Float: 1.5
     }
     Overrides {
       Name: "ma:Building_WallInner:color"
@@ -10365,7 +10365,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -10417,15 +10417,15 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:utile"
-      Float: 2.5
+      Float: 1.5
     }
     Overrides {
       Name: "ma:Building_WallInner2:vtile"
-      Float: 2
+      Float: 1
     }
     Overrides {
       Name: "ma:Building_WallInner:utile"
-      Float: 2.5
+      Float: 1.5
     }
     Overrides {
       Name: "ma:Building_WallInner2:color"
@@ -10457,7 +10457,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -10467,7 +10467,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner2:smart"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -11276,7 +11276,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_55"
+    FilePartitionName: "NewFolder_60"
   }
   InstanceHistory {
     SelfId: 9444120519638555188
@@ -12273,7 +12273,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_56"
+    FilePartitionName: "NewFolder_61"
   }
   InstanceHistory {
     SelfId: 9444120519638555188
@@ -12513,7 +12513,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:utile"
-      Float: 2.445
+      Float: 1.25
     }
     Overrides {
       Name: "ma:Building_WallInner:color"
@@ -12532,7 +12532,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -13605,7 +13605,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -13728,6 +13728,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Un-Mergeable_7"
+    FilePartitionName: "Un-Mergeable_8"
   }
 }

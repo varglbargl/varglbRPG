@@ -1797,6 +1797,14 @@ Objects {
         Id: 11034279480632751641
       }
     }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.2
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.2
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1852,6 +1860,14 @@ Objects {
       AssetReference {
         Id: 11034279480632751641
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.25
     }
   }
   Collidable_v2 {

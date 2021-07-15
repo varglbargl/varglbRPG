@@ -1,7 +1,7 @@
 Name: "Corn Plants"
-RootId: 16558479521917370406
+RootId: 87547165508440130
 Objects {
-  Id: 14898912742905167490
+  Id: 1000490199992044947
   Name: "Corn Plant"
   Transform {
     Location {
@@ -20,12 +20,12 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 16558479521917370406
-  ChildIds: 1364132556456777406
-  ChildIds: 14914069867842753078
-  ChildIds: 7038602665957009570
-  ChildIds: 5582873419844351172
-  ChildIds: 7932272075120967595
+  ParentId: 87547165508440130
+  ChildIds: 10460650033063795686
+  ChildIds: 5609397190934693940
+  ChildIds: 10134057677516119987
+  ChildIds: 6073781177809187413
+  ChildIds: 3778716025042324511
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -39,14 +39,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 14898912742905167490
+    SelfId: 423698113214089746
     SubobjectId: 5109875491354246095
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 7932272075120967595
+  Id: 3778716025042324511
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
@@ -62,7 +62,7 @@ Objects {
       Z: 0.549533248
     }
   }
-  ParentId: 14898912742905167490
+  ParentId: 1000490199992044947
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:color"
@@ -80,7 +80,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -98,14 +98,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7932272075120967595
+    SelfId: 11905197922596408123
     SubobjectId: 16591096035721755366
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 5582873419844351172
+  Id: 6073781177809187413
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -122,8 +122,16 @@ Objects {
       Z: 2.04962659
     }
   }
-  ParentId: 14898912742905167490
+  ParentId: 1000490199992044947
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -138,7 +146,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -156,14 +164,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5582873419844351172
+    SelfId: 9680642189680230484
     SubobjectId: 14217907281697780105
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 7038602665957009570
+  Id: 10134057677516119987
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -180,8 +188,16 @@ Objects {
       Z: 1.60973537
     }
   }
-  ParentId: 14898912742905167490
+  ParentId: 1000490199992044947
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -196,7 +212,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -214,14 +230,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7038602665957009570
+    SelfId: 12289468886016465970
     SubobjectId: 16826676676611010031
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 14914069867842753078
+  Id: 5609397190934693940
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -240,8 +256,16 @@ Objects {
       Z: 1.33500016
     }
   }
-  ParentId: 14898912742905167490
+  ParentId: 1000490199992044947
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -256,7 +280,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -274,14 +298,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14914069867842753078
+    SelfId: 422140468837082790
     SubobjectId: 5103446007859648379
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 1364132556456777406
+  Id: 10460650033063795686
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -299,12 +323,12 @@ Objects {
       Z: 0.293844253
     }
   }
-  ParentId: 14898912742905167490
+  ParentId: 1000490199992044947
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.164999962
+        R: 0.0685430542
         G: 0.450000048
         A: 1
       }
@@ -339,7 +363,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -357,14 +381,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1364132556456777406
+    SelfId: 15694070907215602222
     SubobjectId: 11152075725235098611
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 8548060993965315078
+  Id: 7067858611863506708
   Name: "Corn Plant"
   Transform {
     Location {
@@ -383,12 +407,12 @@ Objects {
       Z: 1.20000017
     }
   }
-  ParentId: 16558479521917370406
-  ChildIds: 3596266085221405567
-  ChildIds: 7997389722725305227
-  ChildIds: 713157443977087158
-  ChildIds: 16379819144310719380
-  ChildIds: 4135465773326266881
+  ParentId: 87547165508440130
+  ChildIds: 2076591333963855911
+  ChildIds: 9901672816978362650
+  ChildIds: 6973871294282069061
+  ChildIds: 15142639995876247068
+  ChildIds: 3905031190059255836
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -402,14 +426,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 8548060993965315078
+    SelfId: 13655482710736167062
     SubobjectId: 18341664517306388811
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 4135465773326266881
+  Id: 3905031190059255836
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
@@ -425,7 +449,7 @@ Objects {
       Z: 0.549533248
     }
   }
-  ParentId: 8548060993965315078
+  ParentId: 7067858611863506708
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:color"
@@ -443,7 +467,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -461,14 +485,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4135465773326266881
+    SelfId: 17457910617987073681
     SubobjectId: 12776253276180330316
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 16379819144310719380
+  Id: 15142639995876247068
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -485,8 +509,16 @@ Objects {
       Z: 2.04962659
     }
   }
-  ParentId: 8548060993965315078
+  ParentId: 7067858611863506708
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -501,7 +533,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -519,14 +551,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16379819144310719380
+    SelfId: 2914422392586417924
     SubobjectId: 7744696187630601945
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 713157443977087158
+  Id: 6973871294282069061
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -543,8 +575,16 @@ Objects {
       Z: 1.60973537
     }
   }
-  ParentId: 8548060993965315078
+  ParentId: 7067858611863506708
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -559,7 +599,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -577,14 +617,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 713157443977087158
+    SelfId: 14035312011200969766
     SubobjectId: 9353935154599284219
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 7997389722725305227
+  Id: 9901672816978362650
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -603,8 +643,16 @@ Objects {
       Z: 1.33500016
     }
   }
-  ParentId: 8548060993965315078
+  ParentId: 7067858611863506708
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -619,7 +667,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -637,14 +685,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7997389722725305227
+    SelfId: 11952195620789354267
     SubobjectId: 16633501002911518406
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 3596266085221405567
+  Id: 2076591333963855911
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -662,12 +710,12 @@ Objects {
       Z: 0.293844253
     }
   }
-  ParentId: 8548060993965315078
+  ParentId: 7067858611863506708
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.164999962
+        R: 0.0685430542
         G: 0.450000048
         A: 1
       }
@@ -702,7 +750,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -720,14 +768,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3596266085221405567
+    SelfId: 18071350946627987439
     SubobjectId: 13385540796664239666
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 10544257933972133703
+  Id: 3124548519736619766
   Name: "Corn Plant"
   Transform {
     Location {
@@ -746,12 +794,12 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 16558479521917370406
-  ChildIds: 14365045092772720646
-  ChildIds: 13881879519856104527
-  ChildIds: 17433336902848969929
-  ChildIds: 286524429739597354
-  ChildIds: 6091861110650662772
+  ParentId: 87547165508440130
+  ChildIds: 1668888323706080747
+  ChildIds: 333045751569382324
+  ChildIds: 6793474556911133341
+  ChildIds: 2162300146986598229
+  ChildIds: 1160044638053753078
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -765,14 +813,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 10544257933972133703
+    SelfId: 6446462762771473367
     SubobjectId: 1909178957765480970
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 6091861110650662772
+  Id: 1160044638053753078
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
@@ -788,7 +836,7 @@ Objects {
       Z: 0.549533248
     }
   }
-  ParentId: 10544257933972133703
+  ParentId: 3124548519736619766
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:color"
@@ -806,7 +854,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -824,14 +872,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6091861110650662772
+    SelfId: 11504575423059024868
     SubobjectId: 15897950756764559929
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 286524429739597354
+  Id: 2162300146986598229
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -848,8 +896,16 @@ Objects {
       Z: 2.04962659
     }
   }
-  ParentId: 10544257933972133703
+  ParentId: 3124548519736619766
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -864,7 +920,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -882,14 +938,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 286524429739597354
+    SelfId: 14473202993142409914
     SubobjectId: 10075553950366063463
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 17433336902848969929
+  Id: 6793474556911133341
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -906,8 +962,16 @@ Objects {
       Z: 1.60973537
     }
   }
-  ParentId: 10544257933972133703
+  ParentId: 3124548519736619766
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -922,7 +986,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -940,14 +1004,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17433336902848969929
+    SelfId: 4237168786794563673
     SubobjectId: 8774658112428095876
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 13881879519856104527
+  Id: 333045751569382324
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -966,8 +1030,16 @@ Objects {
       Z: 1.33500016
     }
   }
-  ParentId: 10544257933972133703
+  ParentId: 3124548519736619766
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -982,7 +1054,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1000,14 +1072,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13881879519856104527
+    SelfId: 829932114853830879
     SubobjectId: 5227598638213550338
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 14365045092772720646
+  Id: 1668888323706080747
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -1025,12 +1097,12 @@ Objects {
       Z: 0.293844253
     }
   }
-  ParentId: 10544257933972133703
+  ParentId: 3124548519736619766
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.164999962
+        R: 0.0685430542
         G: 0.450000048
         A: 1
       }
@@ -1065,7 +1137,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1083,14 +1155,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14365045092772720646
+    SelfId: 898522434840921238
     SubobjectId: 5724245529650296139
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 12417129847834298268
+  Id: 3172182252544670070
   Name: "Corn Plant"
   Transform {
     Location {
@@ -1109,12 +1181,12 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 16558479521917370406
-  ChildIds: 944767623538881964
-  ChildIds: 13291148106221798622
-  ChildIds: 1417423641236709929
-  ChildIds: 7871940371980276400
-  ChildIds: 16342505093147640568
+  ParentId: 87547165508440130
+  ChildIds: 12445200986385059939
+  ChildIds: 17175215602958443409
+  ChildIds: 16196925817625542562
+  ChildIds: 14565609623779729873
+  ChildIds: 15822020734394005181
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1128,14 +1200,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 12417129847834298268
+    SelfId: 7453550622883083020
     SubobjectId: 2628131113558835921
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 16342505093147640568
+  Id: 15822020734394005181
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
@@ -1151,7 +1223,7 @@ Objects {
       Z: 0.549533248
     }
   }
-  ParentId: 12417129847834298268
+  ParentId: 3172182252544670070
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:color"
@@ -1169,7 +1241,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1187,14 +1259,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16342505093147640568
+    SelfId: 3021608345826358888
     SubobjectId: 7702918256990881717
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 7871940371980276400
+  Id: 14565609623779729873
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -1211,8 +1283,16 @@ Objects {
       Z: 2.04962659
     }
   }
-  ParentId: 12417129847834298268
+  ParentId: 3172182252544670070
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1227,7 +1307,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1245,14 +1325,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7871940371980276400
+    SelfId: 11969465052449662496
     SubobjectId: 16507028075275556861
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 1417423641236709929
+  Id: 16196925817625542562
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -1269,8 +1349,16 @@ Objects {
       Z: 1.60973537
     }
   }
-  ParentId: 12417129847834298268
+  ParentId: 3172182252544670070
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1285,7 +1373,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1303,14 +1391,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1417423641236709929
+    SelfId: 15603114849840764601
     SubobjectId: 11205463669848958820
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 13291148106221798622
+  Id: 17175215602958443409
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -1329,8 +1417,16 @@ Objects {
       Z: 1.33500016
     }
   }
-  ParentId: 12417129847834298268
+  ParentId: 3172182252544670070
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1345,7 +1441,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1363,14 +1459,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13291148106221798622
+    SelfId: 8309547907358584910
     SubobjectId: 3484055842950939027
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 944767623538881964
+  Id: 12445200986385059939
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -1388,12 +1484,12 @@ Objects {
       Z: 0.293844253
     }
   }
-  ParentId: 12417129847834298268
+  ParentId: 3172182252544670070
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.164999962
+        R: 0.0685430542
         G: 0.450000048
         A: 1
       }
@@ -1428,7 +1524,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1446,14 +1542,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 944767623538881964
+    SelfId: 14285039949799817532
     SubobjectId: 9598863752859545825
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 4179577947426349523
+  Id: 9977826893951392687
   Name: "Corn Plant"
   Transform {
     Location {
@@ -1472,12 +1568,12 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 16558479521917370406
-  ChildIds: 9155119223312656424
-  ChildIds: 1659041556058870941
-  ChildIds: 4706944682229687302
-  ChildIds: 9566432140164570878
-  ChildIds: 3865319619585588591
+  ParentId: 87547165508440130
+  ChildIds: 16826416077924489251
+  ChildIds: 14361336400486026090
+  ChildIds: 10402429545720967209
+  ChildIds: 12924774895073211714
+  ChildIds: 8402947110116780431
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1491,14 +1587,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 4179577947426349523
+    SelfId: 17375453595668927811
     SubobjectId: 12838259933588006046
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 3865319619585588591
+  Id: 8402947110116780431
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
@@ -1514,7 +1610,7 @@ Objects {
       Z: 0.549533248
     }
   }
-  ParentId: 4179577947426349523
+  ParentId: 9977826893951392687
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:color"
@@ -1532,7 +1628,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1550,14 +1646,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3865319619585588591
+    SelfId: 18340499043361819135
     SubobjectId: 13658891188369684514
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 9566432140164570878
+  Id: 12924774895073211714
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -1574,8 +1670,16 @@ Objects {
       Z: 2.04962659
     }
   }
-  ParentId: 4179577947426349523
+  ParentId: 9977826893951392687
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1590,7 +1694,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1608,14 +1712,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9566432140164570878
+    SelfId: 5755633701784758894
     SubobjectId: 930193179198643123
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 4706944682229687302
+  Id: 10402429545720967209
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -1632,8 +1736,16 @@ Objects {
       Z: 1.60973537
     }
   }
-  ParentId: 4179577947426349523
+  ParentId: 9977826893951392687
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1648,7 +1760,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1666,14 +1778,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4706944682229687302
+    SelfId: 9975675775882416278
     SubobjectId: 14517375234601197899
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 1659041556058870941
+  Id: 14361336400486026090
   Name: "Kelp Bush 01"
   Transform {
     Location {
@@ -1692,8 +1804,16 @@ Objects {
       Z: 1.33500016
     }
   }
-  ParentId: 4179577947426349523
+  ParentId: 9977826893951392687
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        G: 0.141
+        B: 0.000933813571
+        A: 1
+      }
+    }
     Overrides {
       Name: "ma:Nature_Leaves:id"
       AssetReference {
@@ -1708,7 +1828,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1726,14 +1846,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1659041556058870941
+    SelfId: 15863028648887328781
     SubobjectId: 11469655726604145104
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 9155119223312656424
+  Id: 16826416077924489251
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -1751,12 +1871,12 @@ Objects {
       Z: 0.293844253
     }
   }
-  ParentId: 4179577947426349523
+  ParentId: 9977826893951392687
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.164999962
+        R: 0.0685430542
         G: 0.450000048
         A: 1
       }
@@ -1791,7 +1911,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -1809,9 +1929,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9155119223312656424
+    SelfId: 12983685786768547000
     SubobjectId: 17809479166419365221
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }

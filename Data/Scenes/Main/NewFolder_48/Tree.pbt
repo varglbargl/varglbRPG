@@ -1,50 +1,43 @@
 Name: "NewFolder_48"
-RootId: 12564408815622797982
+RootId: 13765469026765092331
 Objects {
-  Id: 6037881528679878498
-  Name: "Coral Spikes Big"
+  Id: 2794087579234116949
+  Name: "Fantasy Castle Wall 02 - Curved"
   Transform {
     Location {
-      X: 0.72964555
-      Y: -0.755651236
-      Z: 10.729208
+      X: -400
+      Y: -0.000159740448
     }
     Rotation {
+      Yaw: 90
     }
     Scale {
-      X: 0.487545729
-      Y: 0.487545729
-      Z: 0.487545729
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 12564408815622797982
+  ParentId: 13765469026765092331
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_WallInner:id"
       AssetReference {
-        Id: 12374110896356245771
+        Id: 13803845293831016450
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.093744
-        G: 0.217000008
-        B: 0.106069617
-        A: 1
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 7362232965091765999
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 10
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 10
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -61,7 +54,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 17232094601870803194
+      Id: 673906587798786921
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -77,50 +70,42 @@ Objects {
   }
 }
 Objects {
-  Id: 18255894832932254525
-  Name: "Lens - Half"
+  Id: 7022598046779302735
+  Name: "Fantasy Castle Wall 02 - Curved"
   Transform {
     Location {
-      X: -0.866210938
-      Y: 0.044921875
-      Z: 6.04052734
+      Y: -400.000031
     }
     Rotation {
+      Yaw: 180
     }
     Scale {
-      X: 0.539315701
-      Y: 0.539315701
-      Z: 0.226554081
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 12564408815622797982
+  ParentId: 13765469026765092331
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_WallInner:id"
       AssetReference {
-        Id: 13007773357133695425
+        Id: 13803845293831016450
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.704861
-        G: 0.620278
-        B: 0.422917
-        A: 1
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 7362232965091765999
       }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -137,7 +122,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 16258530429147644632
+      Id: 6998526292790663109
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -153,45 +138,42 @@ Objects {
   }
 }
 Objects {
-  Id: 10977803241760746907
-  Name: "Pipe"
+  Id: 10963965091646747287
+  Name: "Fantasy Castle Wall 02 - Curved"
   Transform {
     Location {
-      X: 0.0673828125
-      Y: 0.355957031
+      X: 400
     }
     Rotation {
+      Yaw: -90
     }
     Scale {
-      X: 0.593652487
-      Y: 0.593652487
-      Z: 0.118730508
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 12564408815622797982
+  ParentId: 13765469026765092331
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_WallInner:id"
       AssetReference {
-        Id: 15377637131691563244
+        Id: 13803845293831016450
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.3
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 2
-        G: 1.4269
-        B: 0.957999945
-        A: 1
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 7362232965091765999
       }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -203,64 +185,62 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   CoreMesh {
     MeshAsset {
-      Id: 11165579009940906264
+      Id: 6998526292790663109
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
+        Mass: 100
+        LinearDamping: 0.01
       }
       BoundsScale: 1
     }
   }
 }
 Objects {
-  Id: 1426941177126462152
-  Name: "Cone - Truncated Hollow Wide"
+  Id: 1492192136780695538
+  Name: "Fantasy Castle Wall 02 - Curved"
   Transform {
     Location {
-      X: 0.0673828125
-      Y: 0.355957031
-      Z: 5.48730469
+      Y: 400
     }
     Rotation {
-      Roll: -179.999954
     }
     Scale {
-      X: 0.548749924
-      Y: 0.548750162
-      Z: 0.603222549
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 12564408815622797982
+  ParentId: 13765469026765092331
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_WallInner:id"
       AssetReference {
-        Id: 15377637131691563244
+        Id: 13803845293831016450
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.8
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 2
-        G: 1.4269
-        B: 0.957999945
-        A: 1
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 7362232965091765999
       }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -272,17 +252,21 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   CoreMesh {
     MeshAsset {
-      Id: 9177586487136342834
+      Id: 6998526292790663109
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
+        Mass: 100
+        LinearDamping: 0.01
       }
       BoundsScale: 1
     }

@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 15569149822969819110
         ChildIds: 5279262640078314684
         ChildIds: 16618223390395670821
         ChildIds: 16817052527058497004
@@ -84,8 +84,9 @@ Assets {
         Name: "Simple Sittable Chair"
         Transform {
           Location {
-            X: 49.3886681
-            Y: 0.499023438
+            X: 50
+            Y: 0.000942230225
+            Z: 75
           }
           Rotation {
           }
@@ -102,6 +103,10 @@ Assets {
             ObjectReference {
               SubObjectId: 5279262640078314684
             }
+          }
+          Overrides {
+            Name: "cs:SittingStance"
+            String: "unarmed_sit_chair_upright"
           }
         }
         Collidable_v2 {
@@ -127,10 +132,11 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 49.3886681
+            X: 49.3886719
             Y: 0.498046875
           }
           Rotation {
+            Pitch: -20
           }
           Scale {
             X: 0.5
@@ -139,6 +145,8 @@ Assets {
           }
         }
         ParentId: 16223222015253590822
+        UnregisteredParameters {
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -146,7 +154,7 @@ Assets {
           Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -187,6 +195,7 @@ Assets {
         }
         ParentId: 16223222015253590822
         ChildIds: 18362862709697281532
+        ChildIds: 7920218888925828369
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -267,6 +276,79 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 7920218888925828369
+        Name: "Military Sandbag 02"
+        Transform {
+          Location {
+            X: 45.3673782
+            Y: -0.911136627
+            Z: -130.816895
+          }
+          Rotation {
+            Yaw: -4.18780518
+          }
+          Scale {
+            X: 0.459666342
+            Y: 0.946180046
+            Z: 0.348138213
+          }
+        }
+        ParentId: 7527693431307760501
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10793320870014566179
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.333
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 0.3
+              A: 1
+            }
+          }
+        }
+        Lifespan: 0.001
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5906076877227777947
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
     }
     Assets {
       Id: 16048367406070731799
@@ -295,10 +377,19 @@ Assets {
         AssetId: "fxmi_basic_hologram"
       }
     }
+    Assets {
+      Id: 5906076877227777947
+      Name: "Military Sandbag 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_mil_sandbag_002"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }

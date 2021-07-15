@@ -2,7 +2,7 @@ Assets {
   Id: 7274492163688005214
   Name: "Custom Base Material from Curtains Tied"
   PlatformAssetType: 13
-  SerializationVersion: 91
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 15904884078352401867
     ParameterOverrides {
@@ -35,6 +35,10 @@ Assets {
           B: 0.0670201182
           A: 1
         }
+      }
+      Overrides {
+        Name: "roughness"
+        Float: 0.9
       }
     }
     Assets {

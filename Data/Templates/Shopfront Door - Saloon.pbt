@@ -7,7 +7,7 @@ Assets {
       RootId: 17691678098466173306
       Objects {
         Id: 17691678098466173306
-        Name: "Saloon Doors"
+        Name: "Shopfront Door - Saloon"
         Transform {
           Scale {
             X: 0.487565309
@@ -547,12 +547,12 @@ Assets {
           Overrides {
             Name: "cs:OpenRotation"
             Rotator {
-              Yaw: -90
+              Yaw: -80
             }
           }
           Overrides {
             Name: "cs:AutoCloseAfter"
-            Float: 0.26
+            Float: 0.2
           }
           Overrides {
             Name: "cs:CloseSFX"
@@ -568,7 +568,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DoorSpeed"
-            Float: 0.23
+            Float: 0.4
+          }
+          Overrides {
+            Name: "cs:OpenBothWays"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -614,12 +618,12 @@ Assets {
           Overrides {
             Name: "cs:OpenRotation"
             Rotator {
-              Yaw: 90
+              Yaw: 80
             }
           }
           Overrides {
             Name: "cs:AutoCloseAfter"
-            Float: 0.2
+            Float: 0.1
           }
           Overrides {
             Name: "cs:OpenSFX"
@@ -629,13 +633,17 @@ Assets {
           }
           Overrides {
             Name: "cs:DoorSpeed"
-            Float: 0.28
+            Float: 0.5
           }
           Overrides {
             Name: "cs:CloseSFX"
             AssetReference {
               Id: 841534158063459245
             }
+          }
+          Overrides {
+            Name: "cs:OpenBothWays"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -707,6 +715,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
   VirtualFolderPath: "Tilesets"
 }

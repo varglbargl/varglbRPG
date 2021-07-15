@@ -1,7 +1,7 @@
 Name: "Strawberry Bushes"
-RootId: 14195892711268649631
+RootId: 11383675348275182053
 Objects {
-  Id: 14940177134649206675
+  Id: 2441775537055609361
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -33,7 +33,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -51,14 +51,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14940177134649206675
+    SelfId: 321161785940628227
     SubobjectId: 5151086007305511646
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 14913886568529474623
+  Id: 12936791406813523271
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -74,7 +74,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -90,7 +90,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -108,14 +108,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14913886568529474623
+    SelfId: 421669112644436143
     SubobjectId: 5103346168334184818
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 13034102119648124447
+  Id: 18426521935668401213
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -131,7 +131,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -147,7 +147,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -165,14 +165,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13034102119648124447
+    SelfId: 9205564149794138767
     SubobjectId: 4379768564795120466
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 15321829511426046784
+  Id: 4627317038433571820
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -188,7 +188,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -204,7 +204,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -222,14 +222,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15321829511426046784
+    SelfId: 2270033843398594512
     SubobjectId: 6667698403891658253
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 18256781780038254123
+  Id: 10419616583449788398
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -245,7 +245,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -261,7 +261,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -279,14 +279,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18256781780038254123
+    SelfId: 3927080940845058747
     SubobjectId: 8464340475124595558
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 4333457160025852468
+  Id: 8798707225164171561
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -302,7 +302,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -318,7 +318,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -336,14 +336,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4333457160025852468
+    SelfId: 17798609800908570276
     SubobjectId: 12973171574167637881
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 4163423095502471770
+  Id: 14680821863600362801
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -358,7 +358,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -374,7 +374,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -392,14 +392,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4163423095502471770
+    SelfId: 17502578307354539722
     SubobjectId: 12820918708626442007
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 2025031106406273810
+  Id: 15303361929584930455
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -415,7 +415,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -431,7 +431,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -449,14 +449,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2025031106406273810
+    SelfId: 15508301499748870018
     SubobjectId: 10678076033622971999
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 504878705369058779
+  Id: 10191359708343815695
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -472,7 +472,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -488,7 +488,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -506,14 +506,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 504878705369058779
+    SelfId: 14709712417855158603
     SubobjectId: 10316565999547926678
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 11117080516614648709
+  Id: 15599372561101266743
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -529,7 +529,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -545,7 +545,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -563,14 +563,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11117080516614648709
+    SelfId: 5865121405619488533
     SubobjectId: 1327914587851896520
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 6091057701482471404
+  Id: 8961625498154387368
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -585,7 +585,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -601,7 +601,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -619,14 +619,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6091057701482471404
+    SelfId: 11503633494685461372
     SubobjectId: 15901566147121044129
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }
 Objects {
-  Id: 15958347542373452506
+  Id: 14620385595354044661
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
@@ -642,7 +642,7 @@ Objects {
       Z: 0.666666627
     }
   }
-  ParentId: 14195892711268649631
+  ParentId: 11383675348275182053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Nature_Leaves:id"
@@ -658,7 +658,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   CoreMesh {
     MeshAsset {
@@ -676,9 +676,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15958347542373452506
+    SelfId: 1609374454903995978
     SubobjectId: 6151088153603477399
-    InstanceId: 631565309549641372
+    InstanceId: 14881566476330380191
     TemplateId: 1892577388429958021
   }
 }

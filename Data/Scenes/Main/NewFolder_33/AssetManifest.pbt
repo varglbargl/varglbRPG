@@ -1,18 +1,18 @@
 Assets {
-  Id: 16666425430282760837
-  Name: "Fantasy Castle Wall 01 - Doorway 01 Half"
+  Id: 7822473577673662489
+  Name: "Fantasy Castle Pillar 01 Mid"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_half_001_door_01"
+    AssetId: "sm_ts_fan_cas_pillar_001_mid"
   }
 }
 Assets {
-  Id: 3167585272007878783
-  Name: "Fantasy Castle Wall 01 Half"
+  Id: 3078636257640080132
+  Name: "Fantasy Castle Pillar 01 Base"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_half_001"
+    AssetId: "sm_ts_fan_cas_pillar_001_base"
   }
 }

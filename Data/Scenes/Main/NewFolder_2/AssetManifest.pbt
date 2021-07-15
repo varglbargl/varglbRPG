@@ -1,27 +1,18 @@
 Assets {
-  Id: 12835105342757965251
-  Name: "Square Column Base 01"
+  Id: 7822473577673662489
+  Name: "Fantasy Castle Pillar 01 Mid"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_square_bottom_001"
+    AssetId: "sm_ts_fan_cas_pillar_001_mid"
   }
 }
 Assets {
-  Id: 12136361298153455411
-  Name: "Pipe - Quarter Wedge - Large"
+  Id: 3078636257640080132
+  Name: "Fantasy Castle Pillar 01 Base"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_pipe_wedge_lg_001_ref"
-  }
-}
-Assets {
-  Id: 1192918822044829194
-  Name: "Stone Basic"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "stone_001"
+    AssetId: "sm_ts_fan_cas_pillar_001_base"
   }
 }

@@ -1,118 +1,62 @@
 Name: "NewFolder_36"
-RootId: 10355415873143624330
+RootId: 12629899044553002328
 Objects {
-  Id: 14636238775703232948
-  Name: "Visible at Night"
+  Id: 4084111792064485471
+  Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
+      X: 5.2734375
+      Y: 2.91113281
+      Z: 2160
     }
     Rotation {
+      Yaw: 120.000008
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 2.39999843
+      Y: 2.94948936
+      Z: -1.2
     }
   }
-  ParentId: 10355415873143624330
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15755298952276024893
-    }
-  }
-  InstanceHistory {
-    SelfId: 14636238775703232948
-    SubobjectId: 10360305366897555511
-    InstanceId: 15498743956717006665
-    TemplateId: 7664400772974101959
-  }
-}
-Objects {
-  Id: 11490317609175439686
-  Name: "Point Light"
-  Transform {
-    Location {
-      Z: 20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10355415873143624330
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Light {
-    Intensity: 10
-    Color {
-      R: 1
-      G: 0.726868153
-      B: 0.477918148
-      A: 1
-    }
-    CastShadows: true
-    VolumetricIntensity: 5
-    TeamSettings {
-    }
-    Light {
-      UseTemperature: true
-      Temperature: 2600
-      LocalLight {
-        AttenuationRadius: 3000
-        PointLight {
-          SourceRadius: 9.23469257
-          SoftSourceRadius: 100
-          FallOffExponent: 8
-        }
+  ParentId: 12629899044553002328
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_LowerTrimOuter:color"
+      Color {
+        R: 0.724908
+        G: 0.755517781
+        B: 0.772
+        A: 1
       }
-      MaxDrawDistance: 5000
-      MaxDistanceFadeRange: 1000
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.835332036
+        G: 0.901288807
+        B: 0.906
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.921875417
+        G: 0.946615
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim2:color"
+      Color {
+        R: 0.921875417
+        G: 0.946615
+        B: 1
+        A: 1
+      }
     }
   }
-  InstanceHistory {
-    SelfId: 11490317609175439686
-    SubobjectId: 15829204590878245061
-    InstanceId: 15498743956717006665
-    TemplateId: 7664400772974101959
-  }
-}
-Objects {
-  Id: 14555887354758206460
-  Name: "Candle Flame VFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 4.50000048
-      Y: 4.50000048
-      Z: 4.50000048
-    }
-  }
-  ParentId: 10355415873143624330
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -127,7 +71,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 2121245170663321426
+      Id: 3078636257640080132
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -141,10 +85,99 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 14555887354758206460
-    SubobjectId: 10293409211410811519
-    InstanceId: 15498743956717006665
-    TemplateId: 7664400772974101959
+}
+Objects {
+  Id: 15120202250357228624
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 5.3046875
+      Y: 2.94238281
+      Z: 720
+    }
+    Rotation {
+      Yaw: 120.000008
+    }
+    Scale {
+      X: 2.39999843
+      Y: 2.94948936
+      Z: 1.2
+    }
+  }
+  ParentId: 12629899044553002328
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7822473577673662489
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 1331511211968441060
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 5.3046875
+      Y: 2.94238281
+    }
+    Rotation {
+      Yaw: 120.000008
+    }
+    Scale {
+      X: 2.39999843
+      Y: 2.94948936
+      Z: 1.2
+    }
+  }
+  ParentId: 12629899044553002328
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3078636257640080132
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }

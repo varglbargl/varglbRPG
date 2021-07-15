@@ -127,5 +127,5 @@ Assets {
       AssetId: "Object_Curve_Mover"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }

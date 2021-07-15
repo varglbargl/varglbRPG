@@ -7,7 +7,7 @@ Assets {
       RootId: 7437967575158509858
       Objects {
         Id: 7437967575158509858
-        Name: "Street Lamp 01"
+        Name: "Street Lamp Post - Scripted"
         Transform {
           Scale {
             X: 1
@@ -181,7 +181,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 10
+          Intensity: 12
           Color {
             R: 1
             G: 0.726868153
@@ -196,7 +196,7 @@ Assets {
             UseTemperature: true
             Temperature: 2600
             LocalLight {
-              AttenuationRadius: 3000
+              AttenuationRadius: 2000
               PointLight {
                 SourceRadius: 9.23469257
                 SoftSourceRadius: 100
@@ -1069,6 +1069,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
   VirtualFolderPath: "Props"
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 9443959626424343067
   Name: "Golden Sakura Flowers"
   PlatformAssetType: 13
-  SerializationVersion: 91
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 8177510401658087463
     ParameterOverrides {

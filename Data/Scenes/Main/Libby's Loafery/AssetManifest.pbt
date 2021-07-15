@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17333732756739782194
+  Name: "Humanoid 1 Street Wear"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_lower_casual_001_ref"
+  }
+}
+Assets {
   Id: 17241186771114119414
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -608,6 +617,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_001"
+  }
+}
+Assets {
+  Id: 10766975867019021707
+  Name: "Glass 01 (no distortion)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_001"
   }
 }
 Assets {
@@ -1166,15 +1184,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_acc_roof_win_001"
-  }
-}
-Assets {
-  Id: 3408774492354866182
-  Name: "Humanoid 1 Capri Pants"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_gal_lower_clothing_003_ref"
   }
 }
 Assets {

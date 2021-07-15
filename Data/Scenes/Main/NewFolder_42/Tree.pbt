@@ -1,15 +1,12 @@
 Name: "NewFolder_42"
-RootId: 13765469026765092331
+RootId: 10355415873143624330
 Objects {
-  Id: 2794087579234116949
-  Name: "Fantasy Castle Wall 02 - Curved"
+  Id: 14636238775703232948
+  Name: "Visible at Night"
   Transform {
     Location {
-      X: -400
-      Y: -0.000159740448
     }
     Rotation {
-      Yaw: 90
     }
     Scale {
       X: 1
@@ -17,29 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13765469026765092331
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallInner:id"
-      AssetReference {
-        Id: 13803845293831016450
-      }
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:id"
-      AssetReference {
-        Id: 7362232965091765999
-      }
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-  }
+  ParentId: 10355415873143624330
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -52,32 +27,26 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 673906587798786921
+  Script {
+    ScriptAsset {
+      Id: 15755298952276024893
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  }
+  InstanceHistory {
+    SelfId: 14636238775703232948
+    SubobjectId: 10360305366897555511
+    InstanceId: 15498743956717006665
+    TemplateId: 7664400772974101959
   }
 }
 Objects {
-  Id: 7022598046779302735
-  Name: "Fantasy Castle Wall 02 - Curved"
+  Id: 11490317609175439686
+  Name: "Point Light"
   Transform {
     Location {
-      Y: -400.000031
+      Z: 20
     }
     Rotation {
-      Yaw: 180
     }
     Scale {
       X: 1
@@ -85,29 +54,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13765469026765092331
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallInner:id"
-      AssetReference {
-        Id: 13803845293831016450
-      }
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:id"
-      AssetReference {
-        Id: 7362232965091765999
-      }
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-  }
+  ParentId: 10355415873143624330
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -117,65 +64,55 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6998526292790663109
+  Light {
+    Intensity: 10
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+    CastShadows: true
+    VolumetricIntensity: 5
+    TeamSettings {
     }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+    Light {
+      UseTemperature: true
+      Temperature: 2600
+      LocalLight {
+        AttenuationRadius: 3000
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
       }
-      BoundsScale: 1
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
     }
+  }
+  InstanceHistory {
+    SelfId: 11490317609175439686
+    SubobjectId: 15829204590878245061
+    InstanceId: 15498743956717006665
+    TemplateId: 7664400772974101959
   }
 }
 Objects {
-  Id: 10963965091646747287
-  Name: "Fantasy Castle Wall 02 - Curved"
+  Id: 14555887354758206460
+  Name: "Candle Flame VFX"
   Transform {
     Location {
-      X: 400
     }
     Rotation {
-      Yaw: -90
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 4.50000048
+      Y: 4.50000048
+      Z: 4.50000048
     }
   }
-  ParentId: 13765469026765092331
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallInner:id"
-      AssetReference {
-        Id: 13803845293831016450
-      }
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:id"
-      AssetReference {
-        Id: 7362232965091765999
-      }
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-  }
+  ParentId: 10355415873143624330
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -190,7 +127,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6998526292790663109
+      Id: 2121245170663321426
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -204,71 +141,10 @@ Objects {
       BoundsScale: 1
     }
   }
-}
-Objects {
-  Id: 1492192136780695538
-  Name: "Fantasy Castle Wall 02 - Curved"
-  Transform {
-    Location {
-      Y: 400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13765469026765092331
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallInner:id"
-      AssetReference {
-        Id: 13803845293831016450
-      }
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:id"
-      AssetReference {
-        Id: 7362232965091765999
-      }
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6998526292790663109
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  InstanceHistory {
+    SelfId: 14555887354758206460
+    SubobjectId: 10293409211410811519
+    InstanceId: 15498743956717006665
+    TemplateId: 7664400772974101959
   }
 }

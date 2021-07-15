@@ -173,6 +173,6 @@ Assets {
   Marketplace {
     Description: "Features:\r\n- Customize sprint speed, crouch (both regular and sprint), and more\r\n- Easily set the sprint key to whatever ability binding you want (defaults to shift)\r\n- 0 broadcast are used + 0 Tick functions = less lag and problems with going over the broadcast limit\r\n- Works out of the box. No ReadMe needed as everything you\'d need to change is in the \"Sprint\" groups properties panel.\r\n"
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
   DirectlyPublished: true
 }

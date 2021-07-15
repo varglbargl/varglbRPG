@@ -1,53 +1,20 @@
 Name: "NewFolder_41"
-RootId: 10920314686546859239
+RootId: 13749768678839352517
 Objects {
-  Id: 14438885016189654074
-  Name: "Text 02: T"
+  Id: 18049146935071133691
+  Name: "Visible at Night"
   Transform {
     Location {
-      X: -53
     }
     Rotation {
-      Pitch: -0.86831665
-      Yaw: 169.751053
-      Roll: 0.0774611682
     }
     Scale {
-      X: 1.6
-      Y: 0.8
-      Z: 1.6
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 10920314686546859239
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font.Bevel:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Faces:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Sides:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 1.5
-        G: 1.5
-        B: 1.5
-        A: 1
-      }
-    }
-  }
+  ParentId: 13749768678839352517
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -60,69 +27,34 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 17857589108414499627
+  Script {
+    ScriptAsset {
+      Id: 15755298952276024893
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  }
+  InstanceHistory {
+    SelfId: 18049146935071133691
+    SubobjectId: 10360305366897555511
+    InstanceId: 5566088278252994901
+    TemplateId: 7664400772974101959
   }
 }
 Objects {
-  Id: 6459622389277259013
-  Name: "Text 02: I"
+  Id: 12542772215465735945
+  Name: "Point Light"
   Transform {
     Location {
-      X: 3
+      Z: 20
     }
     Rotation {
-      Yaw: -179.999954
     }
     Scale {
-      X: 1.6
-      Y: 0.8
-      Z: 1.6
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 10920314686546859239
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font.Bevel:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Faces:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Sides:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 1.5
-        G: 1.5
-        B: 1.5
-        A: 1
-      }
-    }
-  }
+  ParentId: 13749768678839352517
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -132,76 +64,55 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14254635761246241439
+  Light {
+    Intensity: 10
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+    CastShadows: true
+    VolumetricIntensity: 5
+    TeamSettings {
     }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+    Light {
+      UseTemperature: true
+      Temperature: 2600
+      LocalLight {
+        AttenuationRadius: 3000
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
       }
-      BoundsScale: 1
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
     }
+  }
+  InstanceHistory {
+    SelfId: 12542772215465735945
+    SubobjectId: 15829204590878245061
+    InstanceId: 5566088278252994901
+    TemplateId: 7664400772974101959
   }
 }
 Objects {
-  Id: 9693025631565171873
-  Name: "Text 02: F"
+  Id: 18115105465315540403
+  Name: "Candle Flame VFX"
   Transform {
     Location {
-      X: 91.0009766
-      Y: 10.0344543
-      Z: -0.854849756
     }
     Rotation {
-      Pitch: 0.698810279
-      Yaw: -171.76915
-      Roll: 0.049864985
     }
     Scale {
-      X: 1.60000014
-      Y: 0.800000072
-      Z: 1.60000014
+      X: 4.50000048
+      Y: 4.50000048
+      Z: 4.50000048
     }
   }
-  ParentId: 10920314686546859239
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font.Bevel:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Faces:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Sides:id"
-      AssetReference {
-        Id: 6954370053071083141
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 1.5
-        G: 1.5
-        B: 1.5
-        A: 1
-      }
-    }
-  }
+  ParentId: 13749768678839352517
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -216,7 +127,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 14103151946260239802
+      Id: 2121245170663321426
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -229,5 +140,11 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 18115105465315540403
+    SubobjectId: 10293409211410811519
+    InstanceId: 5566088278252994901
+    TemplateId: 7664400772974101959
   }
 }

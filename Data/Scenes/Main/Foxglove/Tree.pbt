@@ -833,7 +833,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Text {
-    Text: "IYAHARA"
+    Text: "IMILHOEN"
     FontAsset {
       Id: 829546216760346449
     }

@@ -1,24 +1,23 @@
 Name: "NewFolder_17"
-RootId: 12629899044553002328
+RootId: 10852072677144199162
 Objects {
-  Id: 4084111792064485471
+  Id: 6603595886387382249
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 5.2734375
-      Y: 2.91113281
-      Z: 2160
+      X: 60.8671875
+      Y: 35.0361328
+      Z: 1800
     }
     Rotation {
-      Yaw: 120.000008
     }
     Scale {
-      X: 2.39999843
-      Y: 2.94948936
-      Z: -1.2
+      X: 2
+      Y: 2.30000043
+      Z: -1
     }
   }
-  ParentId: 12629899044553002328
+  ParentId: 10852072677144199162
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_LowerTrimOuter:color"
@@ -87,24 +86,23 @@ Objects {
   }
 }
 Objects {
-  Id: 15120202250357228624
+  Id: 5130150117820421894
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 5.3046875
-      Y: 2.94238281
-      Z: 720
+      X: 60.8771286
+      Y: 35.000885
+      Z: 600
     }
     Rotation {
-      Yaw: 120.000008
     }
     Scale {
-      X: 2.39999843
-      Y: 2.94948936
-      Z: 1.2
+      X: 2
+      Y: 2.30000043
+      Z: 1
     }
   }
-  ParentId: 12629899044553002328
+  ParentId: 10852072677144199162
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -135,23 +133,22 @@ Objects {
   }
 }
 Objects {
-  Id: 1331511211968441060
+  Id: 7394689786074957905
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 5.3046875
-      Y: 2.94238281
+      X: 60.8771286
+      Y: 35.000885
     }
     Rotation {
-      Yaw: 120.000008
     }
     Scale {
-      X: 2.39999843
-      Y: 2.94948936
-      Z: 1.2
+      X: 2
+      Y: 2.30000043
+      Z: 1
     }
   }
-  ParentId: 12629899044553002328
+  ParentId: 10852072677144199162
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

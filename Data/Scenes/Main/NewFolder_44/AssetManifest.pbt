@@ -1,36 +1,63 @@
 Assets {
-  Id: 14324138183023436972
-  Name: "Fantasy Castle Wall 01 - Curved Doorway"
+  Id: 17857589108414499627
+  Name: "Text 02: T"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_curve_001_door_01"
+    AssetId: "Text_019"
   }
 }
 Assets {
-  Id: 13803845293831016450
-  Name: "Bricks Chunky Stone 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_chunky_001"
-  }
-}
-Assets {
-  Id: 7362232965091765999
-  Name: "Bricks Mortar Thick 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_bricks_mortar_001_uv"
-  }
-}
-Assets {
-  Id: 3577357595658140295
-  Name: "Fantasy Castle Wall 01 - Curved"
+  Id: 14254635761246241439
+  Name: "Text 02: I"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_curve_001"
+    AssetId: "Text_008"
+  }
+}
+Assets {
+  Id: 11958936252527183619
+  Name: "Text 02: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_002"
+  }
+}
+Assets {
+  Id: 6954370053071083141
+  Name: "Metal Iron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_001"
+  }
+}
+Assets {
+  Id: 3444086358886325520
+  Name: "Text 02: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_017"
+  }
+}
+Assets {
+  Id: 2367204253233266792
+  Name: "Text 02: A"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_000"
+  }
+}
+Assets {
+  Id: 1860383128123552111
+  Name: "Text 02: L"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_011"
   }
 }

@@ -1041,6 +1041,6 @@ Assets {
       AssetId: "tm_fan_chandelier_001_lit_01"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
   VirtualFolderPath: "Props"
 }

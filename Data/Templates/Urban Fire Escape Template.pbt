@@ -1794,6 +1794,6 @@ Assets {
       AssetId: "Fire_Escape_Template"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
   VirtualFolderPath: "Tilesets"
 }

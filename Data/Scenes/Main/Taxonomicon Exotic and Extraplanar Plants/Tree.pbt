@@ -196,7 +196,6 @@ Objects {
   ChildIds: 18281823049406151030
   ChildIds: 12695421497714132825
   ChildIds: 4065064395350042342
-  ChildIds: 4683606171366791176
   ChildIds: 11137884943385833533
   ChildIds: 12360650234980405978
   ChildIds: 7057574485103901144
@@ -388,9 +387,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -466.679688
+            X: -466.679596
             Y: -284.964844
-            Z: 12.0146484
+            Z: 13.8398438
           }
         }
         Overrides {
@@ -1931,60 +1930,6 @@ Objects {
   }
 }
 Objects {
-  Id: 4683606171366791176
-  Name: "Elephant Watering Can - Turquoise"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5324055358079810310
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Elephant Watering Can - Turquoise"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -154.836914
-            Y: -111.982422
-            Z: 125.001953
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.25
-            Y: 0.25
-            Z: 0.25
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 54.9408417
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12341720482734617310
-    }
-  }
-}
-Objects {
   Id: 4065064395350042342
   Name: "Rock Hexagonal"
   Transform {
@@ -2549,7 +2494,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_47"
+    FilePartitionName: "NewFolder_53"
   }
 }
 Objects {
@@ -2584,7 +2529,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_48"
+    FilePartitionName: "NewFolder_54"
   }
 }
 Objects {
@@ -3390,7 +3335,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_49"
+    FilePartitionName: "NewFolder_55"
   }
 }
 Objects {
@@ -15508,7 +15453,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Garden Planter"
+    FilePartitionName: "Garden Planter_3"
   }
   InstanceHistory {
     SelfId: 10450701849288028453
@@ -26931,6 +26876,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Un-Mergeable_3"
+    FilePartitionName: "Un-Mergeable_4"
   }
 }

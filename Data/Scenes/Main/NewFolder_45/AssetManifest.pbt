@@ -1,27 +1,36 @@
 Assets {
-  Id: 14267747156564835807
-  Name: "Fantasy Castle Wall Foundation 01 - Curved"
+  Id: 17857589108414499627
+  Name: "Text 02: T"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
+    AssetId: "Text_019"
   }
 }
 Assets {
-  Id: 13932029094155557983
-  Name: "Japanese Temple Foundation 01 Corner 01"
+  Id: 14254635761246241439
+  Name: "Text 02: I"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_jpn_tem_foundation_001_corner_ref"
+    AssetId: "Text_008"
   }
 }
 Assets {
-  Id: 1596888492663164670
-  Name: "Fantasy Castle Wall Foundation 01"
+  Id: 14103151946260239802
+  Name: "Text 02: F"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_found_001"
+    AssetId: "Text_005"
+  }
+}
+Assets {
+  Id: 6954370053071083141
+  Name: "Metal Iron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_001"
   }
 }

@@ -1,147 +1,49 @@
 Name: "NewFolder_45"
-RootId: 17961041471379039227
+RootId: 8523163814206198577
 Objects {
-  Id: 14526371630739860015
-  Name: "Fantasy Castle Wall Foundation 01"
+  Id: 14143395306848528918
+  Name: "Text 02: T"
   Transform {
     Location {
-      X: -1710.00195
-      Y: 1710.00024
-      Z: -190
+      X: -53
     }
     Rotation {
-      Yaw: -90
+      Pitch: -0.86831665
+      Yaw: 169.751053
+      Roll: 0.0774611682
     }
     Scale {
-      X: 1
-      Y: 0.900000036
-      Z: 0.2
+      X: 1.6
+      Y: 0.8
+      Z: 1.6
     }
   }
-  ParentId: 17961041471379039227
+  ParentId: 8523163814206198577
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:utile"
-      Float: 2
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:vtile"
-      Float: 0.7
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:utile"
-      Float: 2
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:vtile"
-      Float: 0.7
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1596888492663164670
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 10513589452463525269
-  Name: "Fantasy Castle Wall Foundation 01"
-  Transform {
-    Location {
-      X: -1760
-      Y: 1685
-      Z: -243.422852
-    }
-    Rotation {
-      Yaw: 90
-    }
-    Scale {
-      X: 0.380945086
-      Y: 0.380945086
-      Z: 0.428031296
-    }
-  }
-  ParentId: 17961041471379039227
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:utile"
-      Float: 4
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:vtile"
-      Float: 0.7
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:utile"
-      Float: 6
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:vtile"
-      Float: 0.7
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:color"
-      Color {
-        R: 0.353000015
-        G: 0.353000015
-        B: 0.295488805
-        A: 1
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 6954370053071083141
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.434179097
-        G: 0.433944017
-        B: 0.441
-        A: 1
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 6954370053071083141
       }
     }
     Overrides {
-      Name: "ma:Shared_Detail1:color"
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 6954370053071083141
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Faces:color"
       Color {
-        R: 0.563
-        G: 0.532236636
-        B: 0.433607042
+        R: 1.5
+        G: 1.5
+        B: 1.5
         A: 1
       }
     }
@@ -160,7 +62,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13932029094155557983
+      Id: 17857589108414499627
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -176,288 +78,49 @@ Objects {
   }
 }
 Objects {
-  Id: 4694893206723242743
-  Name: "Fantasy Castle Wall Foundation 01"
+  Id: 14993098089262548500
+  Name: "Text 02: I"
   Transform {
     Location {
-      X: 157.371094
-      Y: 1682.63623
-      Z: -243.422852
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.380945086
-      Y: 0.380945086
-      Z: 0.428031296
-    }
-  }
-  ParentId: 17961041471379039227
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:utile"
-      Float: 4
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:vtile"
-      Float: 0.7
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:utile"
-      Float: 6
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:vtile"
-      Float: 0.7
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:color"
-      Color {
-        R: 0.353000015
-        G: 0.353000015
-        B: 0.295488805
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.434179097
-        G: 0.433944017
-        B: 0.441
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        R: 0.563
-        G: 0.532236636
-        B: 0.433607042
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13932029094155557983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 12576092940549775478
-  Name: "Fantasy Castle Wall Foundation 01"
-  Transform {
-    Location {
-      X: 185.867188
-      Y: 1635
-      Z: -190
-    }
-    Rotation {
-      Yaw: 180
-    }
-    Scale {
-      X: 2.46217823
-      Y: 0.900000036
-      Z: 0.2
-    }
-  }
-  ParentId: 17961041471379039227
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:utile"
-      Float: 4
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:vtile"
-      Float: 0.7
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:utile"
-      Float: 6
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:vtile"
-      Float: 0.7
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1596888492663164670
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 3953765958492620287
-  Name: "Fantasy Castle Wall Foundation 01"
-  Transform {
-    Location {
-      X: 109.107422
-      Y: 360
-      Z: -190
-    }
-    Rotation {
-      Yaw: 90
-    }
-    Scale {
-      X: 1.67256355
-      Y: 0.900000036
-      Z: 0.2
-    }
-  }
-  ParentId: 17961041471379039227
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:utile"
-      Float: 4
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:vtile"
-      Float: 0.7
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:utile"
-      Float: 4
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:vtile"
-      Float: 0.7
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1596888492663164670
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16823017512810991534
-  Name: "Fantasy Castle Wall Foundation 01"
-  Transform {
-    Location {
-      X: -350
-      Y: -85
-      Z: -185
+      X: 3
     }
     Rotation {
       Yaw: -179.999954
     }
     Scale {
-      X: 1.8
-      Y: 0.900000036
-      Z: 0.2
+      X: 1.6
+      Y: 0.8
+      Z: 1.6
     }
   }
-  ParentId: 17961041471379039227
+  ParentId: 8523163814206198577
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 6954370053071083141
+      }
     }
     Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 6954370053071083141
+      }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:utile"
-      Float: 3
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 6954370053071083141
+      }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:vtile"
-      Float: 0.7
+      Name: "ma:Font.Faces:color"
+      Color {
+        R: 1.5
+        G: 1.5
+        B: 1.5
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -474,7 +137,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 1596888492663164670
+      Id: 14254635761246241439
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -490,106 +153,53 @@ Objects {
   }
 }
 Objects {
-  Id: 13504307756207997957
-  Name: "Fantasy Castle Wall Foundation 01 - Curved"
+  Id: 1354800989565870769
+  Name: "Text 02: F"
   Transform {
     Location {
-      X: 115.300781
-      Y: -341.036133
-      Z: -185
+      X: 91.0009766
+      Y: 10.0344543
+      Z: -0.854849756
     }
     Rotation {
-      Yaw: -161.320023
+      Pitch: 0.698810279
+      Yaw: -171.76915
+      Roll: 0.049864985
     }
     Scale {
-      X: 0.900000036
-      Y: 0.900000036
-      Z: 0.2
+      X: 1.60000014
+      Y: 0.800000072
+      Z: 1.60000014
     }
   }
-  ParentId: 17961041471379039227
+  ParentId: 8523163814206198577
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:utile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:vtile"
-      Float: 0.7
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14267747156564835807
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 6954370053071083141
       }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 14637121451878000391
-  Name: "Fantasy Castle Wall Foundation 01 - Curved"
-  Transform {
-    Location {
-      X: 114.171875
-      Y: 341.416016
-      Z: -185
-    }
-    Rotation {
-      Yaw: -18.4902954
-    }
-    Scale {
-      X: 0.900000036
-      Y: 0.900000036
-      Z: 0.2
-    }
-  }
-  ParentId: 17961041471379039227
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
-      Bool: true
     }
     Overrides {
-      Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 6954370053071083141
+      }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:utile"
-      Float: 3
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 6954370053071083141
+      }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:vtile"
-      Float: 0.7
+      Name: "ma:Font.Faces:color"
+      Color {
+        R: 1.5
+        G: 1.5
+        B: 1.5
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -606,7 +216,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 14267747156564835807
+      Id: 14103151946260239802
     }
     Teams {
       IsTeamCollisionEnabled: true

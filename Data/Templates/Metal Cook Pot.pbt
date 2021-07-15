@@ -94,7 +94,7 @@ Assets {
         Name: "Ring - Thin"
         Transform {
           Location {
-            Z: 77.9438477
+            Z: 77.95
           }
           Rotation {
           }
@@ -151,9 +151,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.868199348
-            Y: 0.868199348
-            Z: 0.024691524
+            X: 0.81
+            Y: 0.81
+            Z: 0.025
           }
         }
         ParentId: 5135569947264506364
@@ -162,6 +162,15 @@ Assets {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.1
+              G: 0.1
+              B: 0.1
+              A: 1
             }
           }
         }
@@ -343,6 +352,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
   VirtualFolderPath: "Props"
 }

@@ -1053,6 +1053,11 @@ Objects {
             Z: 4376.74609
           }
         }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
     }
     TemplateAsset {
@@ -1065,16 +1070,16 @@ Objects {
   Name: "Fantasy Castle Trim - Parapet 01"
   Transform {
     Location {
-      X: -2790
-      Y: 325
+      X: -2789.99829
+      Y: 363.691223
       Z: 5535
     }
     Rotation {
       Yaw: 89.9999771
     }
     Scale {
-      X: 0.9
-      Y: 0.899999917
+      X: 0.861109078
+      Y: 0.899999857
       Z: 0.8
     }
   }
@@ -1763,16 +1768,16 @@ Objects {
   Name: "Fantasy Castle Trim - Parapet 01"
   Transform {
     Location {
-      X: -1185
-      Y: 1065
+      X: -1184.99963
+      Y: 1065.00024
       Z: 5535
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -90
     }
     Scale {
-      X: 0.9
-      Y: 0.899999857
+      X: 0.861109078
+      Y: 0.899999797
       Z: 0.8
     }
   }
@@ -3462,15 +3467,15 @@ Objects {
   Name: "Fantasy Castle Trim - Parapet 01"
   Transform {
     Location {
-      X: -2790
-      Y: 1045
+      X: -2789.9978
+      Y: 1052.57983
       Z: 5535
     }
     Rotation {
       Yaw: 89.9999847
     }
     Scale {
-      X: 0.9
+      X: 0.86
       Y: 0.899999917
       Z: 0.8
     }
@@ -3556,7 +3561,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:utile"
-      Float: 2.5
+      Float: 1.5
     }
     Overrides {
       Name: "ma:Building_WallInner2:color"
@@ -3590,7 +3595,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "ma:Building_WallOuter:smart"
@@ -8150,11 +8155,11 @@ Objects {
         }
         Overrides {
           Name: "ma:Shared_BaseMaterial:utile"
-          Float: 2
+          Float: 6
         }
         Overrides {
           Name: "ma:Shared_BaseMaterial:vtile"
-          Float: 3
+          Float: 6
         }
         Overrides {
           Name: "ma:Shared_BaseMaterial:color"
@@ -8206,6 +8211,17 @@ Objects {
             X: 90
             Y: 31
             Z: 150
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13663633205892157396
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 10766975867019021707
           }
         }
       }
@@ -9896,8 +9912,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1500.24414
-            Y: -271.259277
+            X: -1508.12817
+            Y: -278.135315
             Z: 4523.33
           }
         }
@@ -9906,7 +9922,7 @@ Objects {
           Rotator {
             Pitch: -1.12368774
             Yaw: 151.711456
-            Roll: -163.231628
+            Roll: -159.086334
           }
         }
         Overrides {
@@ -11750,7 +11766,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "ma:Building_WallOuter:smart"
@@ -11836,7 +11852,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:utile"
-      Float: 1.5
+      Float: 1.2
     }
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -11869,7 +11885,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "ma:Building_WallInner2:smart"
@@ -11940,7 +11956,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:utile"
-      Float: 1.5
+      Float: 1.2
     }
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -11973,7 +11989,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "ma:Building_WallInner2:smart"
@@ -12207,9 +12223,9 @@ Objects {
   Name: "Urban Cardboard Box 03"
   Transform {
     Location {
-      X: -1260
-      Y: 1285.35596
-      Z: 4660
+      X: -1259.99963
+      Y: 1285.3562
+      Z: 4590.83691
     }
     Rotation {
       Yaw: 87.8161469
@@ -12273,8 +12289,8 @@ Objects {
   Transform {
     Location {
       X: -1260
-      Y: 1203.35596
-      Z: 4660
+      Y: 1203.35559
+      Z: 4590.83691
     }
     Rotation {
       Yaw: 89.9999771
@@ -12338,11 +12354,11 @@ Objects {
   Transform {
     Location {
       X: -1260
-      Y: 1119.35596
-      Z: 4660
+      Y: 1119.3562
+      Z: 4590.83691
     }
     Rotation {
-      Yaw: -82.0053558
+      Yaw: -82.0053711
     }
     Scale {
       X: 0.7
@@ -41148,9 +41164,9 @@ Objects {
   Name: "NPC Base Human F"
   Transform {
     Location {
-      X: -2033.5
-      Y: 722.952637
-      Z: 4323
+      X: -2033.50024
+      Y: 722.952454
+      Z: 4321.62695
     }
     Rotation {
       Yaw: 75.556633
@@ -41163,6 +41179,7 @@ Objects {
   }
   ParentId: 18037324666348523329
   ChildIds: 9429975731685048117
+  ChildIds: 3150846530564832477
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -41183,6 +41200,113 @@ Objects {
     InstanceId: 5128956714025008996
     TemplateId: 1125189666997816237
     WasRoot: true
+  }
+}
+Objects {
+  Id: 3150846530564832477
+  Name: "Humanoid 1 Rig"
+  Transform {
+    Location {
+      X: -7.62806797
+      Y: 22.5620747
+      Z: 108
+    }
+    Rotation {
+      Yaw: 6.83018879e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3732491739757311294
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:2:Shared_Detail4:id"
+      AssetReference {
+        Id: 6954370053071083141
+      }
+    }
+    Overrides {
+      Name: "ma:2:Shared_Detail4:color"
+      Color {
+        R: 0.5
+        G: 0.5
+        B: 0.5
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:1:Shared_BaseMaterial:color"
+      Color {
+        R: 0.153000012
+        G: 0.0286109988
+        B: 0.0306841191
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:0:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1915461248412394696
+      }
+    }
+    Overrides {
+      Name: "ma:0:Shared_Detail1:id"
+      AssetReference {
+        Id: 1915461248412394696
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10255930053346940420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+      SkinnedMeshes {
+        Id: 17333732756739782194
+      }
+      SkinnedMeshes {
+        Id: 841534158063459245
+      }
+      SkinnedMeshes {
+        Id: 841534158063459245
+      }
+      SkinnedMeshes {
+        Id: 841534158063459245
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12719705904002571503
+    SubobjectId: 5716693301414767131
+    InstanceId: 5128956714025008996
+    TemplateId: 1125189666997816237
   }
 }
 Objects {
@@ -41268,7 +41392,7 @@ Objects {
         Id: 8405336413128567954
       }
       SkinnedMeshes {
-        Id: 3408774492354866182
+        Id: 841534158063459245
       }
     }
   }
@@ -41317,7 +41441,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:AnimationStance"
-      String: "1hand_melee_idle_relaxed"
+      String: "unarmed_idle_relaxed"
     }
   }
   Collidable_v2 {
@@ -41406,6 +41530,7 @@ Objects {
     }
   }
   ParentId: 14943699206490871405
+  ChildIds: 15410639710305756959
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41424,6 +41549,74 @@ Objects {
     SubobjectId: 1415270522617001751
     InstanceId: 5128956714025008996
     TemplateId: 1125189666997816237
+  }
+}
+Objects {
+  Id: 15410639710305756959
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: -4.42542744
+      Y: 3.9372468
+      Z: -18.0964012
+    }
+    Rotation {
+      Pitch: 82.9113235
+      Yaw: -24.3005066
+      Roll: -22.8050537
+    }
+    Scale {
+      X: 0.299999416
+      Y: 0.160624087
+      Z: 0.199998647
+    }
+  }
+  ParentId: 12011665289279214130
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.744
+        G: 0.686067224
+        B: 0.635376
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.676000059
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 9693133565758539692
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
@@ -41513,13 +41706,13 @@ Objects {
   Name: "left_knee"
   Transform {
     Location {
-      X: -1.51171875
-      Y: -16.8808594
-      Z: -48.3017578
+      X: -1.70224726
+      Y: -20.1598358
+      Z: -48.0561523
     }
     Rotation {
-      Pitch: -3.90987325
-      Yaw: -3.62918377
+      Pitch: -3.90988159
+      Yaw: -3.62918091
       Roll: 4.28336239
     }
     Scale {
@@ -41529,6 +41722,7 @@ Objects {
     }
   }
   ParentId: 14943699206490871405
+  ChildIds: 8874509941206657458
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41547,6 +41741,74 @@ Objects {
     SubobjectId: 8404012242596310256
     InstanceId: 5128956714025008996
     TemplateId: 1125189666997816237
+  }
+}
+Objects {
+  Id: 8874509941206657458
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: -4.83349609
+      Y: -1.87602067
+      Z: -17.8418713
+    }
+    Rotation {
+      Pitch: 80.1171875
+      Yaw: 44.1028061
+      Roll: 44.5310402
+    }
+    Scale {
+      X: 0.300006777
+      Y: 0.115555868
+      Z: 0.199995726
+    }
+  }
+  ParentId: 7812741196598227991
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.744
+        G: 0.686067224
+        B: 0.635376
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.676000059
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 9693133565758539692
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
@@ -41666,7 +41928,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_50"
+    FilePartitionName: "NewFolder_65"
   }
   InstanceHistory {
     SelfId: 6169874004483662080
@@ -42667,7 +42929,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_51"
+    FilePartitionName: "NewFolder_66"
   }
 }
 Objects {
@@ -42837,7 +43099,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_52"
+    FilePartitionName: "NewFolder_67"
   }
 }
 Objects {
@@ -72888,7 +73150,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_53"
+    FilePartitionName: "NewFolder_68"
   }
 }
 Objects {
@@ -73269,7 +73531,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "ma:Building_WallOuter:smart"
@@ -73745,7 +74007,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "ma:Building_WallOuter:color"
@@ -73851,7 +74113,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Un-Mergeable_6"
+    FilePartitionName: "Un-Mergeable_9"
   }
 }
 Objects {

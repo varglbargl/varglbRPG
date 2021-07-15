@@ -2,7 +2,7 @@ Assets {
   Id: 3917159491616406047
   Name: "Custom Brick Multicolor 01"
   PlatformAssetType: 13
-  SerializationVersion: 91
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 13894290607303059573
     ParameterOverrides {

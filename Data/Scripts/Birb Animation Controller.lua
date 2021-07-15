@@ -1,5 +1,6 @@
 local ANIM_FREQUENCY = script:GetCustomProperty("AnimationFrequency")
 local CHIRP_SOUND = script:GetCustomProperty("ChirpSound")
+local CHIRP_VOLUME = script:GetCustomProperty("ChirpVolume")
 
 local THE_WHOLE_BIRB = script:GetCustomProperty("TheWholeBirb"):WaitForObject()
 local UPPER_BODY = script:GetCustomProperty("UpperBody"):WaitForObject()
@@ -44,8 +45,12 @@ end
 
 function chirpAnimation()
   local chirp = World.SpawnAsset(CHIRP_SOUND, {position = HEAD:GetWorldPosition()})
+
   chirp.isTransient = true
   chirp.isAutoRepeatEnabled = false
+  chirp.volume = CHIRP_VOLUME
+  chirp.pitch = chirp.pitch + math.random(-1, 1) * 100
+
   UPPER_BEAK:SetRotation(Rotation.New(0, -30, 0), true)
   UPPER_BEAK:SetPosition(Vector3.New(-3, 0, -10), true)
   chirp:Play()

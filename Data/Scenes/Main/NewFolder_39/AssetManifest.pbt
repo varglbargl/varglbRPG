@@ -1,36 +1,18 @@
 Assets {
-  Id: 17857589108414499627
-  Name: "Text 02: T"
+  Id: 16666425430282760837
+  Name: "Fantasy Castle Wall 01 - Doorway 01 Half"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_019"
+    AssetId: "sm_ts_fan_cas_wall_half_001_door_01"
   }
 }
 Assets {
-  Id: 14254635761246241439
-  Name: "Text 02: I"
+  Id: 3167585272007878783
+  Name: "Fantasy Castle Wall 01 Half"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_008"
-  }
-}
-Assets {
-  Id: 14103151946260239802
-  Name: "Text 02: F"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_005"
-  }
-}
-Assets {
-  Id: 6954370053071083141
-  Name: "Metal Iron 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_001"
+    AssetId: "sm_ts_fan_cas_wall_half_001"
   }
 }

@@ -1,7 +1,7 @@
 Name: "Bowlstack"
-RootId: 2793742343867246929
+RootId: 15604720754880549966
 Objects {
-  Id: 90178516169992750
+  Id: 15731448824933080559
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -20,7 +20,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -63,7 +63,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9576894909652657658
+  Id: 13611998705147687317
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -82,7 +82,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -125,7 +125,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12614061025207064606
+  Id: 1931164152546583066
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -143,7 +143,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -186,7 +186,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15758678552138932830
+  Id: 5419314004252420884
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -204,7 +204,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -247,7 +247,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11972871445762039377
+  Id: 7878896004015750851
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -266,7 +266,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -309,7 +309,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4141956660794056441
+  Id: 7029535247653369774
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -328,7 +328,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -371,7 +371,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14991590268645587335
+  Id: 2128557211694267350
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -390,7 +390,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -433,7 +433,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9673733264173289904
+  Id: 14703815448771228970
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -452,7 +452,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -495,7 +495,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4823538696094462081
+  Id: 817100890327583973
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -514,7 +514,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -557,7 +557,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16020922407259731431
+  Id: 13443833681410622356
   Name: "Cone - Truncated Hollow Thin"
   Transform {
     Location {
@@ -573,7 +573,7 @@ Objects {
       Z: -0.581103504
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -616,7 +616,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15102501378108449343
+  Id: 8790722090738311415
   Name: "Cylinder - Polished"
   Transform {
     Location {
@@ -632,7 +632,7 @@ Objects {
       Z: 0.0553923808
     }
   }
-  ParentId: 2793742343867246929
+  ParentId: 15604720754880549966
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

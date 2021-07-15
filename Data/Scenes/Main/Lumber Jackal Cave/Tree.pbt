@@ -1,6 +1,41 @@
 Name: "Lumber Jackal Cave"
 RootId: 698596244488651087
 Objects {
+  Id: 7287421568843564609
+  Name: "Floor Collision"
+  Transform {
+    Location {
+      X: 3978.30078
+      Y: -3602.46973
+      Z: 537.502441
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 698596244488651087
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Floor Collision"
+  }
+}
+Objects {
   Id: 8303072058686348123
   Name: "Sprite Lantern"
   Transform {
@@ -946,7 +981,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_60"
+    FilePartitionName: "NewFolder_69"
   }
 }
 Objects {
@@ -5136,7 +5171,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_61"
+    FilePartitionName: "NewFolder_70"
   }
 }
 Objects {
@@ -5172,7 +5207,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_62"
+    FilePartitionName: "NewFolder_71"
   }
 }
 Objects {
@@ -5208,7 +5243,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_63"
+    FilePartitionName: "NewFolder_72"
   }
 }
 Objects {
@@ -5244,7 +5279,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_64"
+    FilePartitionName: "NewFolder_73"
   }
 }
 Objects {
@@ -5279,7 +5314,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_65"
+    FilePartitionName: "NewFolder_74"
   }
 }
 Objects {

@@ -39,6 +39,8 @@ Objects {
   ChildIds: 2194479561717188389
   ChildIds: 1151636404427722198
   ChildIds: 18336752572729890927
+  ChildIds: 7850419412765877182
+  ChildIds: 6756609776997251340
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -57,16 +59,116 @@ Objects {
   }
 }
 Objects {
+  Id: 6756609776997251340
+  Name: "Elephant Watering Can - Turquoise"
+  Transform {
+    Location {
+      X: 28269.168
+      Y: -5656.93164
+      Z: -8042.44531
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 90
+      Roll: 164.663361
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 14965009199407568965
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5324055358079810310
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Elephant Watering Can - Turquoise"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -56.5896645
+            Y: -65.4416046
+            Z: -1892.02051
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.13636364
+            Y: 0.13636364
+            Z: 0.13636364
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 90
+            Yaw: 180
+            Roll: -75.3365784
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12341720482734617310
+    }
+  }
+}
+Objects {
+  Id: 7850419412765877182
+  Name: "NewFolder"
+  Transform {
+    Location {
+      Z: -155.788345
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 0.683719397
+      Y: 0.683719397
+      Z: 0.683719397
+    }
+  }
+  ParentId: 14965009199407568965
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NewFolder_37"
+  }
+}
+Objects {
   Id: 18336752572729890927
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: -1034.81726
-      Y: 1795.19165
+      X: 537.666504
+      Y: 2001.11829
       Z: 474.12262
     }
     Rotation {
-      Yaw: -149.999985
+      Yaw: 165
     }
     Scale {
       X: 1.56407654
@@ -130,12 +232,12 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: -1808.4801
-      Y: 1043.0769
+      X: -541.220398
+      Y: 2016.35535
       Z: 474.12262
     }
     Rotation {
-      Yaw: -120
+      Yaw: -165
     }
     Scale {
       X: 1.56407654
@@ -199,12 +301,12 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: -2091.18286
-      Y: 4.88082886
+      X: -1475.23743
+      Y: 1482.14148
       Z: 474.12262
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -135
     }
     Scale {
       X: 1.56407654
@@ -268,12 +370,12 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: -1811.13037
-      Y: -1037.4281
+      X: -2014.23401
+      Y: 547.091125
       Z: 474.12262
     }
     Rotation {
-      Yaw: -59.9999924
+      Yaw: -105
     }
     Scale {
       X: 1.56407654
@@ -337,12 +439,12 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: -1057.73474
-      Y: -1808.41418
+      X: -2026.67334
+      Y: -530.809204
       Z: 474.12262
     }
     Rotation {
-      Yaw: -30.0000057
+      Yaw: -75
     }
     Scale {
       X: 1.56407654
@@ -406,12 +508,12 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: -4.16940832
-      Y: -2076.68018
+      X: -1471.38342
+      Y: -1465.48535
       Z: 474.12262
     }
     Rotation {
-      Yaw: 3.4150944e-06
+      Yaw: -45
     }
     Scale {
       X: 1.56407654
@@ -475,19 +577,19 @@ Objects {
   Name: "Rock Flat 02"
   Transform {
     Location {
-      X: 362.910156
-      Y: -116.97509
+      X: 362.910126
+      Y: -116.975189
       Z: -1926.23706
     }
     Rotation {
-      Pitch: -50.0478745
+      Pitch: -50.0478821
       Yaw: 166.685699
       Roll: -99.9190063
     }
     Scale {
-      X: 1.27522111
-      Y: 0.50257
-      Z: 0.570808113
+      X: 1.62377977
+      Y: 0.685985267
+      Z: 0.779161632
     }
   }
   ParentId: 14965009199407568965
@@ -9612,11 +9714,11 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 4
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 4
+      Float: 1
     }
   }
   Collidable_v2 {
@@ -9626,7 +9728,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -14890,7 +14992,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_32"
+    FilePartitionName: "NewFolder_38"
   }
 }
 Objects {
@@ -14923,7 +15025,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_33"
+    FilePartitionName: "NewFolder_39"
   }
 }
 Objects {
@@ -15142,7 +15244,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Un-Mergeable_1"
+    FilePartitionName: "Un-Mergeable_2"
   }
 }
 Objects {
@@ -15239,7 +15341,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Blend Duration"
-      Float: 4
+      Float: 2
     }
     Overrides {
       Name: "bp:Volume Type"

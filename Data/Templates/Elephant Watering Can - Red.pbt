@@ -1889,7 +1889,7 @@ Assets {
   Marketplace {
     Description: "I just think they\'re neat~!"
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

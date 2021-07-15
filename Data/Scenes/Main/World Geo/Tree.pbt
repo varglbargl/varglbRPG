@@ -134,38 +134,3 @@ Objects {
     FilePartitionName: "Yunahai, Shady Valley"
   }
 }
-Objects {
-  Id: 7287421568843564609
-  Name: "Floor Collision"
-  Transform {
-    Location {
-      X: -1286.2168
-      Y: -17405.1289
-      Z: -2368.02393
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18063060926829527243
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Floor Collision"
-  }
-}

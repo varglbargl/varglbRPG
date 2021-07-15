@@ -1,245 +1,41 @@
 Name: "Un-Mergeable_1"
-RootId: 11377047656755163293
+RootId: 9153728803588570775
 Objects {
-  Id: 6316437113821811263
-  Name: "Tree Oak 01"
+  Id: 473868887408834439
+  Name: "Guardrail - Curve 45\302\260 - 16m Radius"
   Transform {
     Location {
-      X: -104.545448
-      Y: -240.909088
-      Z: -2011.36353
+      X: -3900.62695
+      Y: -1048.55469
+      Z: -45.1508789
     }
     Rotation {
-      Yaw: -179.999969
+      Yaw: -75.3453369
     }
     Scale {
-      X: 0.954545379
-      Y: 0.954545379
-      Z: 1.63636351
+      X: 4
+      Y: -4.79999971
+      Z: 1.86294985
     }
   }
-  ParentId: 11377047656755163293
+  ParentId: 9153728803588570775
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Nature_Trunk:id"
+      Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 4063547036679581836
+        Id: 1192918822044829194
       }
     }
     Overrides {
-      Name: "ma:Nature_Trunk:utile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Nature_Trunk:vtile"
-      Float: 0.75
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17588356818725180439
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 5874275599926557453
-  Name: "Tree Oak 01"
-  Transform {
-    Location {
-      X: 2.27272725
-      Y: 143.181808
-      Z: -2011.36353
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.954545379
-      Y: 0.954545379
-      Z: 1.63636351
-    }
-  }
-  ParentId: 11377047656755163293
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Trunk:id"
-      AssetReference {
-        Id: 4063547036679581836
-      }
-    }
-    Overrides {
-      Name: "ma:Nature_Trunk:utile"
-      Float: 3
-    }
-    Overrides {
-      Name: "ma:Nature_Trunk:vtile"
-      Float: 0.75
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17588356818725180439
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 11962174121022059459
-  Name: "Fantasy Castle Accessory Roof 02"
-  Transform {
-    Location {
-      Z: 2457.1731
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.05265093
-      Y: 1.05265093
-      Z: 0.54879564
-    }
-  }
-  ParentId: 11377047656755163293
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_WallOuter:id"
-      AssetReference {
-        Id: 183152300358340459
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 183152300358340459
-      }
-    }
-    Overrides {
-      Name: "ma:Building_WallOuter:smart"
+      Name: "ma:Shared_BaseMaterial:smart"
       Bool: true
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 4654522402111330560
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 18160970902693399684
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 14429499520619798950
-  Name: "Sphere - Half Thin"
-  Transform {
-    Location {
-      X: 7.96745098e-06
-      Y: 0.00178936822
-      Z: 482.727264
-    }
-    Rotation {
-      Yaw: 7.50001526
-    }
-    Scale {
-      X: 45.45
-      Y: 45.45
-      Z: 34.116291
-    }
-  }
-  ParentId: 11377047656755163293
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10151348392058825738
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 24
-    }
-    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.87500006
-        G: 0.483787507
-        B: 0.41475
+        R: 1.2
+        G: 1.2
+        B: 1.2
         A: 1
       }
     }
@@ -258,13 +54,12 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 11285278799348334020
+      Id: 16382980407385291817
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableDistanceFieldLighting: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -275,259 +70,109 @@ Objects {
   }
 }
 Objects {
-  Id: 2806285380371643799
-  Name: "Sphere - Half Thin"
+  Id: 7558526671363280998
+  Name: "Guardrail - Curve 45\302\260 - 16m Radius"
   Transform {
     Location {
-      X: 7.96745098e-06
-      Y: 0.00178936822
-      Z: 482.727264
+      X: -3900.62842
+      Y: 1048.55396
+      Z: -45.1508789
     }
     Rotation {
+      Yaw: 75.3453598
     }
     Scale {
-      X: 44.64
-      Y: 44.64
-      Z: 33.5677643
+      X: 4
+      Y: 4.79999971
+      Z: 1.86294985
     }
   }
-  ParentId: 11377047656755163293
+  ParentId: 9153728803588570775
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10151348392058825738
+        Id: 1192918822044829194
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 24
+      Bool: true
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1.2
+        G: 1.2
+        B: 1.2
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16382980407385291817
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9019528034502990768
+  Name: "Tree Sakura Hero 01"
+  Transform {
+    Location {
+      X: -2545.67871
+      Y: -2036.36218
+      Z: 5.63232422
+    }
+    Rotation {
+      Yaw: 44.548027
+    }
+    Scale {
+      X: 0.8
+      Y: 1
+      Z: 0.900000036
+    }
+  }
+  ParentId: 9153728803588570775
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
       Color {
         R: 1
-        G: 0.71846664
-        B: 0.58799994
+        G: 0.638476849
+        B: 0.470000029
         A: 1
       }
     }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11285278799348334020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 3002022029499065000
-  Name: "Sphere - Half Thin"
-  Transform {
-    Location {
-      X: 7.96745098e-06
-      Y: 0.00178936822
-      Z: 482.727264
-    }
-    Rotation {
-    }
-    Scale {
-      X: 45.0539
-      Y: 45.0539
-      Z: 33.8733978
-    }
-  }
-  ParentId: 11377047656755163293
-  UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 15467932640263561599
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11285278799348334020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 12432357791510958703
-  Name: "Sphere - Half Thin"
-  Transform {
-    Location {
-      X: 7.96745098e-06
-      Y: 0.00178936822
-      Z: 482.727264
-    }
-    Rotation {
-    }
-    Scale {
-      X: 45.45
-      Y: 45.45
-      Z: 34.116291
-    }
-  }
-  ParentId: 11377047656755163293
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10151348392058825738
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.87500006
-        G: 0.483787507
-        B: 0.41475
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11285278799348334020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 9685407141145548818
-  Name: "Sphere - Half Thin"
-  Transform {
-    Location {
-      X: 7.96745098e-06
-      Y: 0.00178936822
-      Z: 482.727264
-    }
-    Rotation {
-      Yaw: 7.50001526
-    }
-    Scale {
-      X: 44.64
-      Y: 44.64
-      Z: 33.5677681
-    }
-  }
-  ParentId: 11377047656755163293
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10151348392058825738
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 24
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
+      Name: "ma:Nature_Flower:color"
       Color {
         R: 1
-        G: 0.71846664
-        B: 0.58799994
+        G: 0.638476849
+        B: 0.470000029
         A: 1
       }
     }
@@ -546,13 +191,12 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 11285278799348334020
+      Id: 13124120606090784252
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableDistanceFieldLighting: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -563,33 +207,42 @@ Objects {
   }
 }
 Objects {
-  Id: 6444487403598023648
-  Name: "Glider Gust Zone"
+  Id: 18297512412366483759
+  Name: "Tree Sakura Hero 02"
   Transform {
     Location {
-      X: 25
-      Y: -54.5454521
-      Z: -1500
+      X: -2473.19141
+      Y: 1972.42395
+      Z: 40.4086914
     }
     Rotation {
+      Yaw: 57.8259506
     }
     Scale {
-      X: 0.454545438
-      Y: 0.454545438
-      Z: 0.454545438
+      X: 0.7
+      Y: 0.7
+      Z: 0.7
     }
   }
-  ParentId: 11377047656755163293
-  ChildIds: 1575277936480466977
-  ChildIds: 2351935068597175234
+  ParentId: 9153728803588570775
   UnregisteredParameters {
     Overrides {
-      Name: "cs:WindForce"
-      Int: 600
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 1
+        G: 0.638476849
+        B: 0.470000029
+        A: 1
+      }
     }
     Overrides {
-      Name: "cs:WindForce:tooltip"
-      String: "How strong do you want your wind to blow players?"
+      Name: "ma:Nature_Flower:color"
+      Color {
+        R: 1
+        G: 0.638476849
+        B: 0.470000029
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -604,22 +257,276 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 6444487403598023648
-    SubobjectId: 2095846603102837999
-    InstanceId: 12346573364032870983
-    TemplateId: 9114248915753742840
-    WasRoot: true
+  CoreMesh {
+    MeshAsset {
+      Id: 17984110408163466439
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
-  Id: 2351935068597175234
-  Name: "Glider Updraft Server"
+  Id: 12001627533921806650
+  Name: "Working Clock Tower"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9153728803588570775
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 70545489855175091
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: 122.352539
+            Z: 0.000915527344
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -1.90215468
+            Y: 1.90215468
+            Z: 1.90215468
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 215871347019300552
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5
+            Y: 0.000813802064
+            Z: 105
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -101.040955
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4119136181314460030
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: -887.390503
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 11.699995
+            Y: 11.699995
+            Z: 11.699995
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4663557408171275890
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.037109375
+            Y: 127.351563
+            Z: 0.000671386719
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -1.90215468
+            Y: 1.90215468
+            Z: 1.90215468
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7276673347901756845
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0234375
+            Y: 117.367188
+            Z: -0.000366210938
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -1.90215468
+            Y: 1.90215468
+            Z: 1.90215468
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9647171796877625315
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: 122.335938
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -1.90215468
+            Y: 1.90215468
+            Z: 1.90215468
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12318930671543983744
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: -45.1911
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 2.24994707
+            Y: 2.24994707
+            Z: 2.34
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16852124370600658741
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Working Clock Tower"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 373.21875
+            Y: 7.37890625
+            Z: 2776
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 2.04905627e-05
+          }
+        }
+        Overrides {
+          Name: "cs:SunLight"
+          ObjectReference {
+            SelfId: 16832018661090912862
+            SubObjectId: 10050366097919261465
+            InstanceId: 5911767565409797501
+            TemplateId: 2730962379816390879
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8775514502534322494
+    }
+  }
+}
+Objects {
+  Id: 16121810201856584932
+  Name: "Decal Ivy Big"
   Transform {
     Location {
+      X: -4860.16
+      Y: 4550.16895
+      Z: 1207.25391
+    }
+    Rotation {
+      Yaw: -30.0000305
+    }
+    Scale {
+      X: 1.57322145
+      Y: 1.57322145
+      Z: 0.0111950636
+    }
+  }
+  ParentId: 9153728803588570775
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 467067525109198318
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 7482982804489687034
+  Name: "Birb"
+  Transform {
+    Location {
+      X: 19735
+      Y: -9463
+      Z: -4314
     }
     Rotation {
     }
@@ -629,126 +536,175 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6444487403598023648
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:WindZone"
-      ObjectReference {
-        SelfId: 1575277936480466977
+  ParentId: 9153728803588570775
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14477246386612179014
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Birb"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2772.39063
+            Y: 738.080078
+            Z: -7
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "cs:Chirp"
+          Bool: true
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
     }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4261603769239236331
+    TemplateAsset {
+      Id: 10812259114766642229
     }
-  }
-  InstanceHistory {
-    SelfId: 2351935068597175234
-    SubobjectId: 7266938689393202381
-    InstanceId: 12346573364032870983
-    TemplateId: 9114248915753742840
   }
 }
 Objects {
-  Id: 1575277936480466977
-  Name: "Wind Zone"
+  Id: 2279943783387012789
+  Name: "Birb"
   Transform {
-    Location {
-      Z: -320
-    }
-    Rotation {
-    }
     Scale {
-      X: 57.0000038
-      Y: 57.0000038
-      Z: 88.6
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 6444487403598023648
-  ChildIds: 5700817961623743238
+  ParentId: 9153728803588570775
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14477246386612179014
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Birb"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2666.01758
+            Y: 838.322266
+            Z: -7
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -30.0000305
+          }
+        }
+        Overrides {
+          Name: "cs:Chirp"
+          Bool: true
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
     }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:capsule"
+    TemplateAsset {
+      Id: 10812259114766642229
     }
-  }
-  InstanceHistory {
-    SelfId: 1575277936480466977
-    SubobjectId: 5883417074268270382
-    InstanceId: 12346573364032870983
-    TemplateId: 9114248915753742840
   }
 }
 Objects {
-  Id: 5700817961623743238
-  Name: "Damage Zone"
+  Id: 17222681961234737763
+  Name: "Birb"
   Transform {
     Location {
-      X: -2.11083243e-05
-      Y: 3.19700048e-05
+      X: 19693
+      Y: -9603
+      Z: -4314
     }
     Rotation {
+      Yaw: -59.9999924
     }
     Scale {
-      X: 0.0175438579
-      Y: 0.0175438579
-      Z: 0.0112866815
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 1575277936480466977
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Percent"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Damage"
-      Int: -5
-    }
-  }
+  ParentId: 9153728803588570775
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14673038576022824141
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14477246386612179014
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Birb"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2809.54297
+            Y: 864.433594
+            Z: -7
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -150.000015
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
+          }
+        }
+        Overrides {
+          Name: "cs:Chirp"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10812259114766642229
     }
   }
 }

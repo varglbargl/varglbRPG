@@ -22,6 +22,11 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:OpenPosition"
+        Vector {
+        }
+      }
+      Overrides {
         Name: "cs:OpenSFX"
         AssetReference {
           Id: 8460527150611185190
@@ -40,6 +45,10 @@ Assets {
       Overrides {
         Name: "cs:DoorSpeed"
         Float: 0.25
+      }
+      Overrides {
+        Name: "cs:OpenBothWays"
+        Bool: false
       }
       Overrides {
         Name: "cs:AutoCloseAfter:tooltip"
@@ -69,5 +78,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }
