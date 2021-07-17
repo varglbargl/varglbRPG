@@ -63,20 +63,13 @@ Objects {
   ChildIds: 18271423135842959368
   ChildIds: 5531007078745123973
   ChildIds: 2804796957855910986
-  ChildIds: 5777953802464305171
   ChildIds: 10359474772527853579
   ChildIds: 10921461254472603198
-  ChildIds: 18314024242602755429
   ChildIds: 18213258422041181026
   ChildIds: 15881117977937652085
   ChildIds: 7608885010931514306
   ChildIds: 12008877450209905760
   ChildIds: 45333114892421013
-  ChildIds: 2400900473529686015
-  ChildIds: 7082513419689249482
-  ChildIds: 14110792082066643751
-  ChildIds: 15445724867651080258
-  ChildIds: 5256731975448921893
   ChildIds: 1279985407307826975
   ChildIds: 5543883337713617672
   ChildIds: 1177206219433017176
@@ -95,14 +88,12 @@ Objects {
   ChildIds: 9099862517456115744
   ChildIds: 7875272876538777989
   ChildIds: 13226164317365786175
-  ChildIds: 2105583736524637224
   ChildIds: 1901639744855781516
   ChildIds: 2945615780800878332
   ChildIds: 3467593461937963054
   ChildIds: 18108772309515380944
   ChildIds: 9050446975340285758
   ChildIds: 17752132417075546583
-  ChildIds: 1382473147250044806
   ChildIds: 12635656982029106604
   ChildIds: 1607739091426445328
   ChildIds: 10450701849288028453
@@ -143,18 +134,12 @@ Objects {
   ChildIds: 6785828450807998359
   ChildIds: 13973967824096325364
   ChildIds: 4789978781657647701
-  ChildIds: 11586060358297132736
-  ChildIds: 8365735611451944850
-  ChildIds: 15212331779016263491
   ChildIds: 2302882081866851482
   ChildIds: 6111164480406450125
   ChildIds: 200459444382895985
   ChildIds: 8491387672323464051
   ChildIds: 828383829992958907
   ChildIds: 2975325667908332319
-  ChildIds: 2817733831015111658
-  ChildIds: 7795097175177238562
-  ChildIds: 10702531204849311733
   ChildIds: 4783239216781752538
   ChildIds: 8752959044457405191
   ChildIds: 3029886569826207936
@@ -6567,6 +6552,15 @@ Objects {
         Id: 3722419759708884904
       }
     }
+    Overrides {
+      Name: "ma:Prop_Cushion:color"
+      Color {
+        R: 0.919249952
+        G: 1
+        B: 0.745
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9107,156 +9101,6 @@ Objects {
   }
 }
 Objects {
-  Id: 10702531204849311733
-  Name: "Plane 1m - One Sided"
-  Transform {
-    Location {
-      X: 1313.32031
-      Y: 1126.58154
-      Z: 1314.30444
-    }
-    Rotation {
-      Roll: -90
-    }
-    Scale {
-      X: 10.8
-      Y: 9.40000057
-      Z: 1
-    }
-  }
-  ParentId: 14092170796338012629
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 5439646266583319854
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16048367406070731799
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 7795097175177238562
-  Name: "Ambience Underwater Bubbles Designed 01 SFX"
-  Transform {
-    Location {
-      X: -1675.31348
-      Y: 76.8720703
-      Z: 456.351074
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 3762657666521498928
-    }
-    AutoPlay: true
-    Repeat: true
-    Pitch: 500
-    Volume: 0.5
-    Falloff: 1000
-    Radius: 300
-    EnableOcclusion: true
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 2817733831015111658
-  Name: "Nature Pond Birds Ambience Loop 01 SFX"
-  Transform {
-    Location {
-      X: 28.6953125
-      Y: -27.4042969
-      Z: 453.678223
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 12067445598856612029
-    }
-    AutoPlay: true
-    Repeat: true
-    Volume: 1
-    Falloff: 2000
-    Radius: 500
-    EnableOcclusion: true
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
   Id: 2975325667908332319
   Name: "Military Sandbag Wall - End 01"
   Transform {
@@ -9560,158 +9404,6 @@ Objects {
         LinearDamping: 0.01
       }
       BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 15212331779016263491
-  Name: "Rain Splash Volume VFX"
-  Transform {
-    Location {
-      X: 41.0527344
-      Y: 430.203094
-      Z: 46.9604492
-    }
-    Rotation {
-    }
-    Scale {
-      X: 13.5568075
-      Y: 6.8180871
-      Z: 1
-    }
-  }
-  ParentId: 14092170796338012629
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.6
-        G: 0.6
-        B: 0.6
-        A: 0.0840000063
-      }
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 3
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 12130911451015942782
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 8365735611451944850
-  Name: "Material Rolling Movement Tire Wet Concrete 01 SFX"
-  Transform {
-    Location {
-      X: -1.29394531
-      Y: 410.86792
-      Z: 210.339355
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 15922011626415304059
-    }
-    AutoPlay: true
-    Repeat: true
-    Pitch: 700
-    Volume: 0.2
-    Falloff: 600
-    Radius: 300
-    EnableOcclusion: true
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 11586060358297132736
-  Name: "Ambience Nature Water Shore Lake Bank Set 01 SFX"
-  Transform {
-    Location {
-      X: 392.371094
-      Y: 416.037842
-      Z: 94.8100586
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 6383374026429183763
-    }
-    TeamSettings {
-    }
-    AudioBP {
-      AutoPlay: true
-      Repeat: true
-      Volume: 0.25
-      Falloff: 1500
-      Radius: 300
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -15731,87 +15423,6 @@ Objects {
   }
 }
 Objects {
-  Id: 1382473147250044806
-  Name: "Color Grading Post Process"
-  Transform {
-    Location {
-      X: -36.6796875
-      Y: -23.418457
-      Z: 284.304199
-    }
-    Rotation {
-    }
-    Scale {
-      X: 10.3
-      Y: 8.90000057
-      Z: 5.3
-    }
-  }
-  ParentId: 14092170796338012629
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Unbounded"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Color Offset"
-      Color {
-        G: 0.005
-        B: 0.0042500007
-      }
-    }
-    Overrides {
-      Name: "bp:Color Contrast"
-      Color {
-        R: 1
-        G: 0.958
-        B: 0.958
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Color Gain"
-      Color {
-        R: 1
-        G: 0.9916
-        B: 0.928
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Blend Radius"
-      Float: 1000
-    }
-    Overrides {
-      Name: "bp:White Tint"
-      Float: -0.1
-    }
-    Overrides {
-      Name: "bp:White Temperature"
-      Float: 6768.81836
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 14690929629184396019
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
   Id: 17752132417075546583
   Name: "Fantasy Book Pile 02"
   Transform {
@@ -16179,67 +15790,6 @@ Objects {
   }
 }
 Objects {
-  Id: 2105583736524637224
-  Name: "Decal Soil Cracks Big 01"
-  Transform {
-    Location {
-      X: 455.996094
-      Y: 895.240967
-      Z: 35.1279297
-    }
-    Rotation {
-      Pitch: 1.67968
-      Yaw: 113.247
-      Roll: -0.764129698
-    }
-    Scale {
-      X: 0.91655618
-      Y: 0.916557908
-      Z: 0.0550243147
-    }
-  }
-  ParentId: 14092170796338012629
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.291
-        G: 0.226441666
-        B: 0.157431
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Sort Order"
-      Int: 2
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 17445974688712457938
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
   Id: 13226164317365786175
   Name: "Tree Sakura Hero Bare 01"
   Transform {
@@ -16328,6 +15878,15 @@ Objects {
         R: 0.697
         G: 0.423776031
         B: 0.184705
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.81633997
+        G: 0.85
+        B: 0.62560004
         A: 1
       }
     }
@@ -18851,236 +18410,6 @@ Objects {
   }
 }
 Objects {
-  Id: 5256731975448921893
-  Name: "Decal Ivy Big"
-  Transform {
-    Location {
-      X: -352.116211
-      Y: 1081.58154
-      Z: 291.414795
-    }
-    Rotation {
-      Pitch: -2.8317554
-      Yaw: 1.06852177e-07
-      Roll: -89.9999924
-    }
-    Scale {
-      X: 1.39514947
-      Y: 1.39514923
-      Z: 0.0541010499
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 467067525109198318
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 15445724867651080258
-  Name: "Decal Ivy Big"
-  Transform {
-    Location {
-      X: 443.695313
-      Y: 1081.58179
-      Z: 360.933838
-    }
-    Rotation {
-      Pitch: -23.362299
-      Yaw: -179.999954
-      Roll: 89.9999542
-    }
-    Scale {
-      X: 1.39514947
-      Y: 1.39514923
-      Z: 0.0541010499
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 467067525109198318
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 14110792082066643751
-  Name: "Decal Ivy Big"
-  Transform {
-    Location {
-      X: 220.701172
-      Y: 1081.58154
-      Z: 360.933838
-    }
-    Rotation {
-      Pitch: 18.8499832
-      Yaw: -179.999954
-      Roll: 89.9999466
-    }
-    Scale {
-      X: 1.39514947
-      Y: 1.39514923
-      Z: 0.0541010499
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 467067525109198318
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 7082513419689249482
-  Name: "Decal Ivy Big"
-  Transform {
-    Location {
-      X: 743.320313
-      Y: 420.794678
-      Z: 402.495117
-    }
-    Rotation {
-      Pitch: -24.3896751
-      Yaw: -89.9999619
-      Roll: -89.9999619
-    }
-    Scale {
-      X: 1.70080054
-      Y: 1.70080054
-      Z: 0.0647094548
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 467067525109198318
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 2400900473529686015
-  Name: "Decal Ivy Big"
-  Transform {
-    Location {
-      X: 743.320313
-      Y: -13.7529297
-      Z: 412.053955
-    }
-    Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: 89.9999619
-      Roll: 89.9999619
-    }
-    Scale {
-      X: 1.70080054
-      Y: 1.70080054
-      Z: 0.0647094548
-    }
-  }
-  ParentId: 14092170796338012629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 467067525109198318
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
   Id: 45333114892421013
   Name: "Table Assembled"
   Transform {
@@ -19342,74 +18671,6 @@ Objects {
   }
 }
 Objects {
-  Id: 18314024242602755429
-  Name: "Wispy Fog Volume VFX"
-  Transform {
-    Location {
-      X: -72.2197266
-      Y: 195.041016
-      Z: 188.638672
-    }
-    Rotation {
-    }
-    Scale {
-      X: 12.5999994
-      Y: 11.6913443
-      Z: 1
-    }
-  }
-  ParentId: 14092170796338012629
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Life Max"
-      Float: 5
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 6
-    }
-    Overrides {
-      Name: "bp:Wind Speed"
-      Vector {
-      }
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.901
-        G: 1
-        B: 0.934
-        A: 0.28
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 15069529459658919937
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
   Id: 10921461254472603198
   Name: "Main Street Wall 03"
   Transform {
@@ -19519,65 +18780,6 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-}
-Objects {
-  Id: 5777953802464305171
-  Name: "Decal Moss Patch"
-  Transform {
-    Location {
-      X: -28.6796875
-      Y: 49.5820274
-      Z: 4.30419922
-    }
-    Rotation {
-      Yaw: -54.5439758
-    }
-    Scale {
-      X: 4.07675
-      Y: 4.07676935
-      Z: 0.0584277436
-    }
-  }
-  ParentId: 14092170796338012629
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.493708968
-        G: 0.557000041
-        B: 0.0145049552
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Sort Order"
-      Int: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 6960387703006759978
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
@@ -26700,6 +25902,17 @@ Objects {
     }
   }
   ParentId: 14092170796338012629
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.81633997
+        G: 0.85
+        B: 0.62560004
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -26877,5 +26090,430 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Un-Mergeable_4"
+  }
+}
+Objects {
+  Id: 2274661859891025650
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4976609822465897831
+  ChildIds: 11586060358297132736
+  ChildIds: 8365735611451944850
+  ChildIds: 15212331779016263491
+  ChildIds: 2817733831015111658
+  ChildIds: 7795097175177238562
+  ChildIds: 1382473147250044806
+  ChildIds: 18314024242602755429
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 18314024242602755429
+  Name: "Wispy Fog Volume VFX"
+  Transform {
+    Location {
+      X: -72.21875
+      Y: 195.041
+      Z: 188.638672
+    }
+    Rotation {
+    }
+    Scale {
+      X: 12.5999994
+      Y: 11.6913443
+      Z: 1
+    }
+  }
+  ParentId: 2274661859891025650
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Life Max"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:Wind Speed"
+      Vector {
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.901
+        G: 1
+        B: 0.934
+        A: 0.28
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 15069529459658919937
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 1382473147250044806
+  Name: "Color Grading Post Process"
+  Transform {
+    Location {
+      X: -36.6796799
+      Y: -23.4179688
+      Z: 284.304199
+    }
+    Rotation {
+    }
+    Scale {
+      X: 10.3
+      Y: 8.90000057
+      Z: 5.3
+    }
+  }
+  ParentId: 2274661859891025650
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Unbounded"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset"
+      Color {
+        G: 0.005
+        B: 0.0042500007
+      }
+    }
+    Overrides {
+      Name: "bp:Color Contrast"
+      Color {
+        R: 1
+        G: 0.958
+        B: 0.958
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Gain"
+      Color {
+        R: 1
+        G: 0.9916
+        B: 0.928
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Blend Radius"
+      Float: 1000
+    }
+    Overrides {
+      Name: "bp:White Tint"
+      Float: -0.1
+    }
+    Overrides {
+      Name: "bp:White Temperature"
+      Float: 6768.81836
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14690929629184396019
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 7795097175177238562
+  Name: "Ambience Underwater Bubbles Designed 01 SFX"
+  Transform {
+    Location {
+      X: -1675.31226
+      Y: 76.8729248
+      Z: 456.351074
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2274661859891025650
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3762657666521498928
+    }
+    AutoPlay: true
+    Repeat: true
+    Pitch: 500
+    Volume: 0.5
+    Falloff: 1000
+    Radius: 300
+    EnableOcclusion: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 2817733831015111658
+  Name: "Nature Pond Birds Ambience Loop 01 SFX"
+  Transform {
+    Location {
+      X: 28.6953106
+      Y: -27.4042912
+      Z: 453.678223
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2274661859891025650
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 12067445598856612029
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: 2000
+    Radius: 500
+    EnableOcclusion: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 15212331779016263491
+  Name: "Rain Splash Volume VFX"
+  Transform {
+    Location {
+      X: 41.0527344
+      Y: 430.203094
+      Z: 46.9604492
+    }
+    Rotation {
+    }
+    Scale {
+      X: 13.5568075
+      Y: 6.8180871
+      Z: 1
+    }
+  }
+  ParentId: 2274661859891025650
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.6
+        G: 0.6
+        B: 0.6
+        A: 0.0840000063
+      }
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 3
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12130911451015942782
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 8365735611451944850
+  Name: "Material Rolling Movement Tire Wet Concrete 01 SFX"
+  Transform {
+    Location {
+      X: -1.29492188
+      Y: 410.867157
+      Z: 210.339355
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2274661859891025650
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 15922011626415304059
+    }
+    AutoPlay: true
+    Repeat: true
+    Pitch: 700
+    Volume: 0.2
+    Falloff: 600
+    Radius: 300
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 11586060358297132736
+  Name: "Ambience Nature Water Shore Lake Bank Set 01 SFX"
+  Transform {
+    Location {
+      X: 392.371
+      Y: 416.037079
+      Z: 94.8100586
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2274661859891025650
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6383374026429183763
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      AutoPlay: true
+      Repeat: true
+      Volume: 0.25
+      Falloff: 1500
+      Radius: 300
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
+    }
   }
 }

@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16284773886050301487
+  Name: "Fantasy Castle Accessory Roof 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_acc_roof_002"
+  }
+}
+Assets {
   Id: 16048367406070731799
   Name: "Plane 1m - One Sided"
   PlatformAssetType: 1
@@ -23,6 +32,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_rope_001"
+  }
+}
+Assets {
+  Id: 14844672563279110931
+  Name: "Bricks Worn Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_worn_001"
   }
 }
 Assets {
@@ -62,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9661614122407060887
+  Name: "Roof Asphalt 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_asphalt_001_uv"
+  }
+}
+Assets {
   Id: 8055813084033537277
   Name: "Whitebox Floor 01 4m x 4m"
   PlatformAssetType: 1
@@ -77,6 +104,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_foundation_002_wedge_ref"
+  }
+}
+Assets {
+  Id: 7362232965091765999
+  Name: "Bricks Mortar Thick 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_bricks_mortar_001_uv"
   }
 }
 Assets {

@@ -7,7 +7,7 @@ Assets {
       RootId: 7430962135982537322
       Objects {
         Id: 7430962135982537322
-        Name: "Shopfront Door - Japan"
+        Name: "Shopfront Door - Japan (Sliding)"
         Transform {
           Scale {
             X: 1.11278439
@@ -39,6 +39,7 @@ Assets {
         Name: "Door"
         Transform {
           Location {
+            Z: 3.5722084
           }
           Rotation {
           }
@@ -96,9 +97,6 @@ Assets {
         }
         ParentId: 7691042512006079419
         ChildIds: 16921868997340653765
-        ChildIds: 12152375560656494341
-        ChildIds: 12986859685655914648
-        ChildIds: 11084720897088807396
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -126,7 +124,7 @@ Assets {
           Scale {
             X: 0.912322938
             Y: 1.00000679
-            Z: 0.748125136
+            Z: 0.744136393
           }
         }
         ParentId: 7386872242064005655
@@ -145,194 +143,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 17860513488428189516
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 12152375560656494341
-        Name: "Plane 1m - Two Sided"
-        Transform {
-          Location {
-            X: 91.5010681
-            Y: 2.50303602
-            Z: 261.191803
-          }
-          Rotation {
-            Roll: 90
-          }
-          Scale {
-            X: 1.63019
-            Y: 0.71889174
-            Z: 0.9
-          }
-        }
-        ParentId: 7386872242064005655
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14861107584052384565
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.204
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.155
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12152694598132833191
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 12986859685655914648
-        Name: "Sci-fi Chest Hinge 01"
-        Transform {
-          Location {
-            X: 6.31445313
-            Y: -0.0400390625
-            Z: 61.045166
-          }
-          Rotation {
-            Pitch: -90
-            Roll: 180
-          }
-          Scale {
-            X: 1.39999986
-            Y: -1.39999986
-            Z: 1.39999986
-          }
-        }
-        ParentId: 7386872242064005655
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.546
-              G: 0.298662
-              B: 0.216215983
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6753491216021993641
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 11084720897088807396
-        Name: "Sci-fi Chest Hinge 01"
-        Transform {
-          Location {
-            X: 6.31738281
-            Y: -0.033203125
-            Z: 235.810547
-          }
-          Rotation {
-            Pitch: -90
-            Roll: 180
-          }
-          Scale {
-            X: 1.39999986
-            Y: -1.39999986
-            Z: 1.39999986
-          }
-        }
-        ParentId: 7386872242064005655
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.546
-              G: 0.298662
-              B: 0.216215983
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6753491216021993641
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -398,9 +208,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 12204451539044510968
@@ -414,12 +224,23 @@ Assets {
           Overrides {
             Name: "cs:OpenRotation"
             Rotator {
-              Yaw: 80
             }
           }
           Overrides {
             Name: "cs:AutoCloseAfter"
             Float: 0.1
+          }
+          Overrides {
+            Name: "cs:OpenPosition"
+            Vector {
+              X: -180
+            }
+          }
+          Overrides {
+            Name: "cs:OpenSFX"
+            AssetReference {
+              Id: 14735410645000207512
+            }
           }
         }
         Collidable_v2 {
@@ -515,30 +336,12 @@ Assets {
       }
     }
     Assets {
-      Id: 12152694598132833191
-      Name: "Plane 1m - Two Sided"
-      PlatformAssetType: 1
+      Id: 14735410645000207512
+      Name: "Object On Carpet Floor Slide 02 SFX"
+      PlatformAssetType: 7
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_1m_002"
-      }
-    }
-    Assets {
-      Id: 14861107584052384565
-      Name: "Shoji Screen 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_jpn_wood_shoji_screen_001_uv"
-      }
-    }
-    Assets {
-      Id: 6753491216021993641
-      Name: "Japanese Chest Hinge 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_jpn_chest_med_hinge_001"
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_object_on_carpet_floor_slide_02_Cue_ref"
       }
     }
     Assets {

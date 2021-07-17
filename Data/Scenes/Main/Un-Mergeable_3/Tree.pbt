@@ -1,6 +1,434 @@
 Name: "Un-Mergeable_3"
 RootId: 17079232088293387708
 Objects {
+  Id: 18260356613449513362
+  Name: "Fantasy Castle Accessory Roof 02"
+  Transform {
+    Location {
+      X: 560
+      Y: -654.999939
+      Z: 1200
+    }
+    Rotation {
+      Yaw: -1.02452814e-05
+    }
+    Scale {
+      X: 1.9
+      Y: 1.9
+      Z: 1.70000017
+    }
+  }
+  ParentId: 17079232088293387708
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 7362232965091765999
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.730208
+        G: 0.690308
+        B: 0.562386
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.619
+        G: 0.619
+        B: 0.619
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:vtile"
+      Float: 2.022
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:utile"
+      Float: 1.5
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 9661614122407060887
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:color"
+      Color {
+        R: 0.146830991
+        G: 0.409
+        B: 0.199264809
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16284773886050301487
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 16817434752683228904
+  Name: "Fantasy Castle Accessory Roof 02"
+  Transform {
+    Location {
+      X: 709.999939
+      Y: 1014.99988
+      Z: 835
+    }
+    Rotation {
+      Yaw: -1.02452814e-05
+    }
+    Scale {
+      X: 1.30000007
+      Y: 1.30000007
+      Z: 1.39198244
+    }
+  }
+  ParentId: 17079232088293387708
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 7362232965091765999
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.730208
+        G: 0.690308
+        B: 0.562386
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.619
+        G: 0.619
+        B: 0.619
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:vtile"
+      Float: 2.022
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:utile"
+      Float: 1.5
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 9661614122407060887
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:color"
+      Color {
+        R: 0.146830991
+        G: 0.409
+        B: 0.199264809
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16284773886050301487
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 6789690881981744065
+  Name: "Fantasy Castle Accessory Roof 02"
+  Transform {
+    Location {
+      X: -1205
+      Y: 1014.99988
+      Z: 835
+    }
+    Rotation {
+      Yaw: -1.02452814e-05
+    }
+    Scale {
+      X: 1.30000007
+      Y: 1.30000007
+      Z: 1.39198244
+    }
+  }
+  ParentId: 17079232088293387708
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 7362232965091765999
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.730208
+        G: 0.690308
+        B: 0.562386
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.619
+        G: 0.619
+        B: 0.619
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:vtile"
+      Float: 2.022
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:utile"
+      Float: 1.5
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 9661614122407060887
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:color"
+      Color {
+        R: 0.146830991
+        G: 0.409
+        B: 0.199264809
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16284773886050301487
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17970056562797722233
+  Name: "Fantasy Castle Accessory Roof 02"
+  Transform {
+    Location {
+      X: -1204.99988
+      Y: -804.999878
+      Z: 835
+    }
+    Rotation {
+      Yaw: -1.02452814e-05
+    }
+    Scale {
+      X: 1.30000007
+      Y: 1.30000007
+      Z: 1.39198244
+    }
+  }
+  ParentId: 17079232088293387708
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 7362232965091765999
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.730208
+        G: 0.690308
+        B: 0.562386
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.619
+        G: 0.619
+        B: 0.619
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:vtile"
+      Float: 2.022
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:utile"
+      Float: 1.5
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 9661614122407060887
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:color"
+      Color {
+        R: 0.146830991
+        G: 0.409
+        B: 0.199264809
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16284773886050301487
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 649632864091661218
   Name: "Fantasy Candle Lit - 02 (Prop)"
   Transform {

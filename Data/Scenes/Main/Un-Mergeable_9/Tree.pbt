@@ -1,6 +1,129 @@
 Name: "Un-Mergeable_9"
 RootId: 9756262770175301073
 Objects {
+  Id: 8257825074714634632
+  Name: "Chimney Stack"
+  Transform {
+    Location {
+      X: 12190.0127
+      Y: -6801.6416
+      Z: -2990
+    }
+    Rotation {
+      Yaw: -44.9999962
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9756262770175301073
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6173567981239224377
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Chimney Stack"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -540.000366
+            Y: -1259.99927
+            Z: 1322
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 3.4150944e-06
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12995531210468380214
+    }
+  }
+}
+Objects {
+  Id: 265044975128787435
+  Name: "Chimney Stack with Smoke"
+  Transform {
+    Location {
+      X: 12355
+      Y: -6965
+      Z: -2990
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.2
+      Y: 1.2
+      Z: 1.2
+    }
+  }
+  ParentId: 9756262770175301073
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6532743103761856835
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Chimney Stack with Smoke"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -307.82486
+            Y: -1258.84753
+            Z: 1322
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 44.9999962
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17777879336997238865
+    }
+  }
+}
+Objects {
   Id: 2241346165955246619
   Name: "Plane 1m - Two Sided"
   Transform {

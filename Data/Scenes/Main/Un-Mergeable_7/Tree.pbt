@@ -1,6 +1,53 @@
 Name: "Un-Mergeable_7"
 RootId: 15569149822969819110
 Objects {
+  Id: 18268516844063543204
+  Name: "Japanese Temple Door Shoji 01 - Wide 01"
+  Transform {
+    Location {
+      X: 686.952148
+      Y: 637.634155
+      Z: 217
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.1
+      Y: 1.1
+      Z: 1
+    }
+  }
+  ParentId: 15569149822969819110
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16242655418615905005
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 2802018281324139578
   Name: "Humanoid 2 Rig"
   Transform {
@@ -890,7 +937,6 @@ Objects {
   }
   ParentId: 3907078952625544189
   ChildIds: 17036519871110334429
-  ChildIds: 15377520287768620163
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -915,67 +961,6 @@ Objects {
   InstanceHistory {
     SelfId: 17890060413300428143
     SubobjectId: 12204451539044510968
-    InstanceId: 5637206661112835882
-    TemplateId: 988739429197263811
-  }
-}
-Objects {
-  Id: 15377520287768620163
-  Name: "Simple SFX Trigger"
-  Transform {
-    Location {
-      Y: -7.16455078
-      Z: 71.0944824
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17890060413300428143
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SoundEffect"
-      AssetReference {
-        Id: 10835382102308412979
-      }
-    }
-    Overrides {
-      Name: "cs:Volume"
-      Float: 0.25
-    }
-    Overrides {
-      Name: "cs:OnlyPlayOncePer"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:DelayBeforePlay"
-      Float: 0.1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 12440940211500564427
-    }
-  }
-  InstanceHistory {
-    SelfId: 15377520287768620163
-    SubobjectId: 9547422372222782740
     InstanceId: 5637206661112835882
     TemplateId: 988739429197263811
   }
@@ -1014,7 +999,13 @@ Objects {
     Overrides {
       Name: "cs:OpenPosition"
       Vector {
-        X: -150
+        X: -180
+      }
+    }
+    Overrides {
+      Name: "cs:OpenSFX"
+      AssetReference {
+        Id: 14735410645000207512
       }
     }
   }
@@ -1111,6 +1102,7 @@ Objects {
   }
   ParentId: 4297768028046066220
   ChildIds: 13532790318131579218
+  ChildIds: 10334256549891196303
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -1131,6 +1123,172 @@ Objects {
     SubobjectId: 7386872242064005655
     InstanceId: 5637206661112835882
     TemplateId: 988739429197263811
+  }
+}
+Objects {
+  Id: 10334256549891196303
+  Name: "Restroom Sign"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4007040389273910144
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1646009755317701624
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.00959199388
+            G: 0.207579464
+            B: 0.21800001
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 2301536998866612783
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.00959199388
+            G: 0.207579464
+            B: 0.21800001
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3339507971544400251
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.00841799751
+            G: 0.058370892
+            B: 0.0610000044
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5735171248054737502
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Restroom Sign"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 92.4048767
+            Y: -4.58266497
+            Z: 196.733856
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6869120976248835906
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.00841799751
+            G: 0.058370892
+            B: 0.0610000044
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8525690942658176598
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.00841799751
+            G: 0.058370892
+            B: 0.0610000044
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12762888526917245826
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.00841799751
+            G: 0.058370892
+            B: 0.0610000044
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13570477277528550373
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.00841799751
+            G: 0.058370892
+            B: 0.0610000044
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14174110622921695148
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.00841799751
+            G: 0.058370892
+            B: 0.0610000044
+            A: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8850448760756276600
+    }
   }
 }
 Objects {
@@ -1181,60 +1339,6 @@ Objects {
     SubobjectId: 16921868997340653765
     InstanceId: 5637206661112835882
     TemplateId: 988739429197263811
-  }
-}
-Objects {
-  Id: 10334256549891196303
-  Name: "Restroom Sign"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15569149822969819110
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5735171248054737502
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Restroom Sign"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 819.879944
-            Y: -1.76293945
-            Z: 297.02832
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 89.9999619
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.951116
-            Y: 0.951116
-            Z: 0.951116
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8850448760756276600
-    }
   }
 }
 Objects {

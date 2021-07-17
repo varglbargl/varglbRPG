@@ -1,6 +1,356 @@
 Name: "Un-Mergeable_4"
 RootId: 12148973949934149863
 Objects {
+  Id: 5256731975448921893
+  Name: "Decal Ivy Big"
+  Transform {
+    Location {
+      X: -352.115356
+      Y: 1081.58191
+      Z: 291.414795
+    }
+    Rotation {
+      Pitch: -2.8317554
+      Yaw: 1.06852167e-06
+      Roll: -89.9999313
+    }
+    Scale {
+      X: 1.39514947
+      Y: 1.39514923
+      Z: 0.0541010499
+    }
+  }
+  ParentId: 12148973949934149863
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 467067525109198318
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 15445724867651080258
+  Name: "Decal Ivy Big"
+  Transform {
+    Location {
+      X: 443.695129
+      Y: 1081.58191
+      Z: 360.933838
+    }
+    Rotation {
+      Pitch: -23.3622723
+      Yaw: -179.999954
+      Roll: 89.9999
+    }
+    Scale {
+      X: 1.39514947
+      Y: 1.39514923
+      Z: 0.0541010499
+    }
+  }
+  ParentId: 12148973949934149863
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 467067525109198318
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 14110792082066643751
+  Name: "Decal Ivy Big"
+  Transform {
+    Location {
+      X: 220.70105
+      Y: 1081.58191
+      Z: 360.933838
+    }
+    Rotation {
+      Pitch: 18.8499413
+      Yaw: -179.999954
+      Roll: 89.999855
+    }
+    Scale {
+      X: 1.39514947
+      Y: 1.39514923
+      Z: 0.0541010499
+    }
+  }
+  ParentId: 12148973949934149863
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 467067525109198318
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 7082513419689249482
+  Name: "Decal Ivy Big"
+  Transform {
+    Location {
+      X: 743.32019
+      Y: 420.794983
+      Z: 402.495117
+    }
+    Rotation {
+      Pitch: -24.3896484
+      Yaw: -89.9998856
+      Roll: -89.9999084
+    }
+    Scale {
+      X: 1.70080054
+      Y: 1.70080054
+      Z: 0.0647094548
+    }
+  }
+  ParentId: 12148973949934149863
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 467067525109198318
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 2400900473529686015
+  Name: "Decal Ivy Big"
+  Transform {
+    Location {
+      X: 743.32019
+      Y: -13.7538452
+      Z: 412.053955
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 89.9999237
+      Roll: 89.9999
+    }
+    Scale {
+      X: 1.70080054
+      Y: 1.70080054
+      Z: 0.0647094548
+    }
+  }
+  ParentId: 12148973949934149863
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 467067525109198318
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 2105583736524637224
+  Name: "Decal Soil Cracks Big 01"
+  Transform {
+    Location {
+      X: 455.996033
+      Y: 895.240234
+      Z: 35.1279297
+    }
+    Rotation {
+      Pitch: 1.67968
+      Yaw: 113.246895
+      Roll: -0.764129639
+    }
+    Scale {
+      X: 0.91655618
+      Y: 0.916557908
+      Z: 0.0550243147
+    }
+  }
+  ParentId: 12148973949934149863
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.291
+        G: 0.226441666
+        B: 0.157431
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17445974688712457938
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 5777953802464305171
+  Name: "Decal Moss Patch"
+  Transform {
+    Location {
+      X: -28.6796875
+      Y: 49.5820274
+      Z: 4.30419922
+    }
+    Rotation {
+      Yaw: -54.5439377
+    }
+    Scale {
+      X: 4.07675
+      Y: 4.07676935
+      Z: 0.0584277436
+    }
+  }
+  ParentId: 12148973949934149863
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.493708968
+        G: 0.557000041
+        B: 0.0145049552
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6960387703006759978
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
   Id: 14596346715527606646
   Name: "\"Quirky Space Sprinkles\" Music Construction Kit (Sections) 01"
   Transform {

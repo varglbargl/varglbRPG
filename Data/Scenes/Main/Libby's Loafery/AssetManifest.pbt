@@ -80,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17654076070235932974
-  Name: "Pipe - Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_004"
-  }
-}
-Assets {
   Id: 17333732756739782194
   Name: "Humanoid 1 Street Wear"
   PlatformAssetType: 26
@@ -590,15 +581,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_sand_001_uv"
-  }
-}
-Assets {
-  Id: 10914354925542967262
-  Name: "Fantasy Castle Pillar 02 - Mid"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_pillar_002_mid"
   }
 }
 Assets {

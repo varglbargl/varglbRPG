@@ -13,6 +13,7 @@ local SPIT = script:GetCustomProperty("Spit"):WaitForObject()
 local GOLD = script:GetCustomProperty("Gold"):WaitForObject()
 local INVENTORY_SLOTS = script:GetCustomProperty("InventorySlots"):WaitForObject()
 local GEAR_SLOTS = script:GetCustomProperty("GearSlots"):WaitForObject()
+local PICKUP_SLOT = script:GetCustomProperty("PickupSlot"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 
@@ -47,65 +48,88 @@ local mySpit = nil
 local myMaxHealth = nil
 local myMaxStamina = nil
 
+local hoveredTable = nil
 local hoveredSlot = nil
-local hoveredGear = nil
+
+local moveFromTable = nil
+local moveFromSlot = nil
 
 CHARACTER_SCREEN.visibility = Visibility.FORCE_OFF
 
-for i, slot in ipairs(inventorySlots) do
-  local button = slot:FindChildByType("UIButton")
+function initCharacterScreen()
+  for i, slot in ipairs(inventorySlots) do
+    local button = slot:FindChildByType("UIButton")
 
-  button.hoveredEvent:Connect(function()
-    if inventory[i] then
-      hoveredSlot = i
-      Events.Broadcast("ShowTooltip", inventory[i], button)
-    end
-  end)
+    button.hoveredEvent:Connect(function()
+      if inventory[i] then
+        hoveredTable = inventory
+        hoveredSlot = i
+        Events.Broadcast("ShowTooltip", inventory[i], button)
+      end
+    end)
 
-  button.unhoveredEvent:Connect(function()
-    Task.Wait()
-    if clientPlayer:IsBindingPressed("ability_secondary") then return end
+    button.unhoveredEvent:Connect(function()
+      Task.Wait()
+      if clientPlayer:IsBindingPressed("ability_secondary") then return end
 
-    if hoveredSlot == i then
-      hoveredSlot = nil
+      if hoveredTable == inventory and hoveredSlot == i then
+        hoveredTable = nil
+        hoveredSlot = nil
+      end
+
+      Events.Broadcast("HideTooltip", button)
+    end)
+
+    button.clickedEvent:Connect(function()
       Events.Broadcast("HideTooltip")
-    end
-  end)
-end
 
-CHARACTER_SCREEN:FindChildByType("UIButton").unhoveredEvent:Connect(function()
-  Events.Broadcast("HideTooltip")
-end)
+      pickUpItem()
+    end)
+  end
 
-function mouseoverGear(slot, itemTable, index)
-  local button = slot:FindChildByType("UIButton")
-
-  button.hoveredEvent:Connect(function()
-    Events.Broadcast("ShowTooltip", itemTable[index], button)
-  end)
-
-  button.unhoveredEvent:Connect(function()
+  CHARACTER_SCREEN:FindChildByType("UIButton").unhoveredEvent:Connect(function()
     Events.Broadcast("HideTooltip")
-
-    Task.Wait()
-    if clientPlayer:IsBindingPressed("ability_secondary") then return end
   end)
-end
 
-for i, slot in ipairs(gearSlots.fingers) do
-  mouseoverGear(slot, gear.fingers, i)
-end
+  local function gearButtonEvents(slot, itemTable, index)
+    local button = slot:FindChildByType("UIButton")
 
-mouseoverGear(gearSlots.primary, gear, "primary")
-mouseoverGear(gearSlots.secondary, gear, "secondary")
-mouseoverGear(gearSlots.glider, gear, "glider")
-mouseoverGear(gearSlots.potion, gear, "potion")
+    button.hoveredEvent:Connect(function()
+      hoveredTable = itemTable
+      hoveredSlot = index
+      Events.Broadcast("ShowTooltip", itemTable[index], button)
+    end)
 
-function onPlayerJoined(player)
-	PLAYER_PORTRAIT:SetPlayerProfile(player)
-	PLAYER_NAME.text = player.name
+    button.unhoveredEvent:Connect(function()
+      Events.Broadcast("HideTooltip")
 
-  local resources = player:GetResources()
+      Task.Wait()
+
+      if clientPlayer:IsBindingPressed("ability_secondary") then return end
+
+      hoveredTable = nil
+    end)
+
+    button.clickedEvent:Connect(function()
+      Events.Broadcast("HideTooltip")
+
+      pickUpItem()
+    end)
+  end
+
+  for i, slot in ipairs(gearSlots.fingers) do
+    gearButtonEvents(slot, gear.fingers, i)
+  end
+
+  gearButtonEvents(gearSlots.primary, gear, "primary")
+  gearButtonEvents(gearSlots.secondary, gear, "secondary")
+  gearButtonEvents(gearSlots.glider, gear, "glider")
+  gearButtonEvents(gearSlots.potion, gear, "potion")
+
+	PLAYER_PORTRAIT:SetPlayerProfile(clientPlayer)
+	PLAYER_NAME.text = clientPlayer.name
+
+  local resources = clientPlayer:GetResources()
 
   myLevel = resources["Level"]
   myClass = resources["Class"]
@@ -120,6 +144,8 @@ function onPlayerJoined(player)
 end
 
 function onResourceChanged(player, resourceName, newTotal)
+  if player ~= clientPlayer then return end
+
 	if resourceName == "MaxHitPoints" then
     myMaxHealth = newTotal
   elseif resourceName == "MaxStamina" then
@@ -174,7 +200,7 @@ function throttleInventory()
     slot:FindChildByType("UIButton").isInteractable = false
   end
 
-  Task.Wait(0.5)
+  Task.Wait(0.25)
 
   for i, slot in ipairs(inventorySlots) do
     slot:FindChildByType("UIButton").isInteractable = true
@@ -198,8 +224,6 @@ function addedToInveotory(templateId, enchant)
     -- print("Grit: "..(item.grit or 0))
     -- print("Wit: "..(item.wit or 0))
     -- print("Spit: "..(item.spit or 0))
-    -- print("Health: "..(item.health or 0))
-    -- print("Stamina: "..(item.stamina or 0))
     -- print("< ~ ~ ~ ~ ~ ~ ~ ~ G O T ~ ~ ~ ~ ~ ~ ~ ~ <")
   end
 
@@ -214,12 +238,6 @@ function addedToInveotory(templateId, enchant)
   inventoryFull()
 end
 
--- handler params: Player_player
-Game.playerJoinedEvent:Connect(onPlayerJoined)
-
--- handler params: Player_player, string_resourceName, integer_newTotal
-clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
-
 function closeCharacterScreen()
   Utils.playSoundEffect(OPEN_CLOSE_SFX)
 
@@ -228,6 +246,12 @@ function closeCharacterScreen()
   Events.Broadcast("HideTooltip")
 
   isOpen = false
+
+  hoveredTable = nil
+  hoveredSlot = nil
+
+  moveFromTable = nil
+  moveFromSlot = nil
 end
 
 function openCharacterScreen()
@@ -240,71 +264,149 @@ function openCharacterScreen()
   isOpen = true
 end
 
-Events.Connect("CloseUI", closeCharacterScreen)
+function pickUpItem()
+  print("Clicked!")
+
+  if not hoveredTable or not hoveredSlot then return end
+
+  print(hoveredTable, hoveredSlot)
+
+  if hoveredTable[hoveredSlot] then
+
+    if moveFromTable and moveFromSlot then
+      if hoveredTable == gear and moveFromTable == inventory then
+        equipItem(moveFromSlot)
+      end
+
+      hoveredTable[hoveredSlot], moveFromTable[moveFromSlot] = moveFromTable[moveFromSlot], hoveredTable[hoveredSlot]
+    end
+
+    moveFromTable = hoveredTable
+    moveFromSlot = hoveredSlot
+
+    if moveFromTable[moveFromSlot] then
+      PICKUP_SLOT.visibility = Visibility.INHERIT
+      PICKUP_SLOT:FindChildByName("Icon"):SetImage(moveFromTable[moveFromSlot].icon)
+    else
+      PICKUP_SLOT.visibility = Visibility.FORCE_OFF
+    end
+
+    redrawInventory()
+  end
+end
+
+function equipItem(inventorySlot)
+  local equippedSlot = nil
+  local ringNo = nil
+
+  if inventory[inventorySlot].socket == "right_prop" then
+    equippedSlot = "primary"
+    gear.primary = inventory[inventorySlot]
+    Events.Broadcast("RedrawAbilities", gear)
+
+  elseif inventory[inventorySlot].socket == "left_prop" then
+    equippedSlot = "secondary"
+    gear.secondary = inventory[inventorySlot]
+    Events.Broadcast("RedrawAbilities", gear)
+
+  elseif inventory[inventorySlot].socket == "upper_spine" then
+    equippedSlot = "glider"
+    gear.glider = inventory[inventorySlot]
+
+  elseif inventory[inventorySlot].socket == "pelvis" then
+    equippedSlot = "potion"
+    gear.potion = inventory[inventorySlot]
+    Events.Broadcast("RedrawAbilities", gear)
+
+  elseif inventory[inventorySlot].socket == "left_wrist" then
+    for i = 1, 10 do
+      if not gear.fingers[i] then
+        equippedSlot = "fingers"
+        ringNo = i
+        gear.fingers[i] = hoveredTable[inventorySlot]
+        break
+      end
+    end
+  end
+
+  if equippedSlot then
+
+    print("shjould quipp "..equippedSlot.."!!")
+
+    Utils.throttleToServer("EquipToPlayer", clientPlayer, inventory[inventorySlot].templateId, inventory[inventorySlot].enchant, equippedSlot, ringNo)
+
+    inventory[inventorySlot] = nil
+    hoveredSlot = nil
+
+    Events.Broadcast("HideTooltip")
+    redrawInventory()
+    throttleInventory()
+  end
+end
+
+function unequipItem(gearSlot)
+  local equippedSlot = nil
+  local ringNo = nil
+
+  if type(gearSlot) == "string" then
+    if gear[gearSlot].socket == "right_prop" then
+      equippedSlot = "primary"
+      gear.primary = nil
+      Events.Broadcast("RedrawAbilities", gear)
+
+    elseif gear[gearSlot].socket == "left_prop" then
+      equippedSlot = "secondary"
+      gear.secondary = nil
+      Events.Broadcast("RedrawAbilities", gear)
+
+    elseif gear[gearSlot].socket == "upper_spine" then
+      equippedSlot = "glider"
+      gear.glider = nil
+
+    elseif gear[gearSlot].socket == "pelvis" then
+      equippedSlot = "potion"
+      gear.potion = nil
+      Events.Broadcast("RedrawAbilities", gear)
+    end
+  elseif type(gearSlot) == "number" then
+    if gear.fingers[gearSlot].socket == "left_wrist" then
+      equippedSlot = "fingers"
+      gear.fingers[gearSlot] = nil
+      ringNo = gearSlot
+    end
+  end
+
+  if not equippedSlot then return end
+  print("shjould un quipp "..equippedSlot.."!")
+
+  Utils.throttleToServer("UnequipFromPlayer", clientPlayer, equippedSlot, ringNo)
+  redrawInventory()
+  throttleInventory()
+end
 
 function onBindingPressed(thisPlayer, keyCode)
 	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
 
   if keyCode == "ability_extra_27" then
-    if isOpen == false then
-      openCharacterScreen()
-    else
+    if isOpen then
       closeCharacterScreen()
+    else
+      openCharacterScreen()
     end
   end
 
-  if isOpen and keyCode == "ability_primary" then
-    -- pick up the item
-  end
-
   if isOpen and keyCode == "ability_secondary" then
+    if not hoveredTable or not hoveredSlot or not hoveredTable[hoveredSlot] then return end
+
+    print("shjould quipp?")
     -- equip or use item
-    if hoveredSlot then
-      if inventory[hoveredSlot] then
-        local equippedSlot = nil
-        local ringNo = nil
+    if hoveredTable == inventory then
+      print("shjould quipp!")
+      equipItem(hoveredSlot)
+    elseif hoveredTable == gear or hoveredTable == gear.fingers then
+      print("NOo, shjould un quipp!")
 
-        if inventory[hoveredSlot].socket == "right_prop" then
-          equippedSlot = "primary"
-          gear.primary = inventory[hoveredSlot]
-          Events.Broadcast("RedrawAbilities", gear)
-
-        elseif inventory[hoveredSlot].socket == "left_prop" then
-          equippedSlot = "secondary"
-          gear.secondary = inventory[hoveredSlot]
-          Events.Broadcast("RedrawAbilities", gear)
-
-        elseif inventory[hoveredSlot].socket == "upper_spine" then
-          equippedSlot = "glider"
-          gear.glider = inventory[hoveredSlot]
-
-        elseif inventory[hoveredSlot].socket == "pelvis" then
-          equippedSlot = "potion"
-          gear.potion = inventory[hoveredSlot]
-          Events.Broadcast("RedrawAbilities", gear)
-
-        elseif inventory[hoveredSlot].socket == "left_wrist" then
-          for i = 1, 10 do
-            if not gear.fingers[i] then
-              equippedSlot = "fingers"
-              ringNo = i
-              gear.fingers[i] = inventory[hoveredSlot]
-              break
-            end
-          end
-        end
-
-        if equippedSlot then
-          Utils.throttleToServer("EquipToPlayer", clientPlayer, inventory[hoveredSlot].templateId, inventory[hoveredSlot].enchant, equippedSlot, ringNo)
-
-          inventory[hoveredSlot] = nil
-          hoveredSlot = nil
-
-          Events.Broadcast("HideTooltip")
-          redrawInventory()
-          throttleInventory()
-        end
-      end
+      unequipItem(hoveredSlot)
     end
   end
 end
@@ -312,4 +414,11 @@ end
 -- handler params: Player_player, string_keyCode
 clientPlayer.bindingPressedEvent:Connect(onBindingPressed)
 
+-- handler params: Player_player
+Game.playerJoinedEvent:Connect(initCharacterScreen)
+
+-- handler params: Player_player, string_resourceName, integer_newTotal
+clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
+
+Events.Connect("CloseUI", closeCharacterScreen)
 Events.Connect("AddToInventory", addedToInveotory)

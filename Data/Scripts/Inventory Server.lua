@@ -41,8 +41,20 @@ function onPlayerJoined(player)
   end
 end
 
-function unequipFromPlayer(player, item)
+function unequipFromPlayer(player, slot, ringNo)
   if not Object.IsValid(player) then return end
+
+  local item = nil
+
+  if ringNo and slot == "fingers" then
+    item = player.serverUserData["Gear"][slot][ringNo]
+    player.serverUserData["Gear"][slot][ringNo] = nil
+  else
+    item = player.serverUserData["Gear"][slot]
+    player.serverUserData["Gear"][slot] = nil
+  end
+
+  if not item then return end
 
   for i, gear in ipairs(player:GetEquipment()) do
     if gear.id == item.equipmentId then
@@ -56,6 +68,9 @@ function unequipFromPlayer(player, item)
       break
     end
   end
+
+  Events.Broadcast("EquipmentChanged", player)
+  return item
 end
 
 function equipToPlayer(player, templateId, enchant, slot, ringNo)
@@ -71,41 +86,17 @@ function equipToPlayer(player, templateId, enchant, slot, ringNo)
 
   item.equipmentId = equipment.id
 
-  if slot == "fingers" then
-    if player.serverUserData["Gear"].fingers[ringNo] then
-      unequipFromPlayer(player, player.serverUserData["Gear"].fingers[ringNo])
-    end
+  unequipFromPlayer(player, slot, ringNo)
 
-    player.serverUserData["Gear"].fingers[ringNo] = item
-
-  elseif slot == "primary" then
-    if player.serverUserData["Gear"].primary then
-      unequipFromPlayer(player, player.serverUserData["Gear"].primary)
-    end
-
-    player.serverUserData["Gear"].primary = item
-
-  elseif slot == "secondary" then
-    if player.serverUserData["Gear"].secondary then
-      unequipFromPlayer(player, player.serverUserData["Gear"].secondary)
-    end
-
-    player.serverUserData["Gear"].secondary = item
-
-  elseif slot == "glider" then
-    if player.serverUserData["Gear"].glider then
-      unequipFromPlayer(player, player.serverUserData["Gear"].glider)
-    end
-
-    player.serverUserData["Gear"].glider = item
-
-  elseif slot == "potion" then
-    if player.serverUserData["Gear"].potion then
-      unequipFromPlayer(player, player.serverUserData["Gear"].potion)
-    end
-
-    player.serverUserData["Gear"].potion = item
+  if ringNo then
+    player.serverUserData["Gear"][slot][ringNo] = item
+  else
+    player.serverUserData["Gear"][slot] = item
   end
+
+  Task.Wait()
+
+  if not Object.IsValid(player) then return end
 
   equipment:Equip(player)
   Events.Broadcast("EquipmentChanged", player)
@@ -114,3 +105,4 @@ end
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 
 Events.Connect("EquipToPlayer", equipToPlayer)
+Events.Connect("UnequipFromPlayer", unequipFromPlayer)

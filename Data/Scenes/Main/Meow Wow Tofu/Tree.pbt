@@ -372,7 +372,6 @@ Objects {
   ChildIds: 3757185095688577919
   ChildIds: 18314204448605774617
   ChildIds: 17559871872557936156
-  ChildIds: 10083148095225068398
   ChildIds: 14244683331016738901
   ChildIds: 12641038785786568262
   ChildIds: 12731906333155444140
@@ -743,8 +742,8 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.5
-        G: 0.666666627
+        R: 0.25
+        G: 0.49999994
         B: 1
         A: 1
       }
@@ -1589,54 +1588,6 @@ Objects {
   }
 }
 Objects {
-  Id: 10083148095225068398
-  Name: "Japanese Temple Door Shoji 01 - Wide 01"
-  Transform {
-    Location {
-      X: 936.711914
-      Y: -34.0775261
-      Z: 217
-    }
-    Rotation {
-      Yaw: -44.9999847
-    }
-    Scale {
-      X: 1.1
-      Y: 1.1
-      Z: 1
-    }
-  }
-  ParentId: 11732069531768207653
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16242655418615905005
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 17559871872557936156
   Name: "Counter - Sink"
   Transform {
@@ -1996,6 +1947,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2044,6 +1997,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2078,8 +2033,8 @@ Objects {
   Name: "Japanese Temple Wall Interior 01 - 150cm 01 Half"
   Transform {
     Location {
-      X: 937.422852
-      Y: -34.0760612
+      X: 937.334961
+      Y: -34.8714714
       Z: 75
     }
     Rotation {
@@ -2092,6 +2047,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -26946,6 +26903,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -27414,8 +27373,8 @@ Objects {
   Name: "Japanese Temple Pillar 01 - Mid 01"
   Transform {
     Location {
-      X: 461.452209
-      Y: -455.601
+      X: 461.44928
+      Y: -457.015564
       Z: 69.1635742
     }
     Rotation {
@@ -27473,8 +27432,8 @@ Objects {
   Name: "Japanese Temple Pillar 01 - Mid 01"
   Transform {
     Location {
-      X: 461.452209
-      Y: -455.601
+      X: 461.449219
+      Y: -457.015625
       Z: 669.163574
     }
     Rotation {
@@ -29839,6 +29798,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -29887,6 +29848,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30012,6 +29975,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33058,6 +33023,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33106,6 +33073,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33154,6 +33123,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33202,6 +33173,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33250,6 +33223,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33416,6 +33391,8 @@ Objects {
     }
   }
   ParentId: 11732069531768207653
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33616,6 +33593,7 @@ Objects {
   ChildIds: 16739374073932570442
   ChildIds: 10150586678970616042
   ChildIds: 3645057892789209128
+  ChildIds: 706755746936710081
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -33629,6 +33607,52 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 706755746936710081
+  Name: "Air Conditioned Room Tone Loop 01 SFX"
+  Transform {
+    Location {
+      X: -384.54248
+      Y: -136.394958
+      Z: 860
+    }
+    Rotation {
+      Yaw: 44.9999962
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9345058815287134796
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 18256731503582998385
+    }
+    AutoPlay: true
+    Repeat: true
+    Pitch: -600
+    Volume: 0.25
+    Falloff: 1000
+    Radius: 500
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
   }
 }
 Objects {

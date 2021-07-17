@@ -1170,16 +1170,16 @@ Objects {
   Name: "Stone Wall End Corner 2m 001"
   Transform {
     Location {
-      X: -1113.68311
-      Y: 1061.20398
+      X: -1137.58594
+      Y: 1061.20361
       Z: -769.010864
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -90
     }
     Scale {
       X: 1.16615796
-      Y: 1.16615796
+      Y: 1.97426295
       Z: 1.52017856
     }
   }
@@ -1229,16 +1229,16 @@ Objects {
   Name: "Stone Wall End Corner 2m 001"
   Transform {
     Location {
-      X: -1113.68311
-      Y: 1061.20398
+      X: -1137.58594
+      Y: 1061.20361
       Z: -1066.3811
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -90
     }
     Scale {
       X: 1.16615796
-      Y: 1.16615796
+      Y: 1.97426295
       Z: 1.52017856
     }
   }
@@ -1288,16 +1288,16 @@ Objects {
   Name: "Stone Wall End Corner 2m 001"
   Transform {
     Location {
-      X: -1125.34473
-      Y: 1072.8656
+      X: -1149.24744
+      Y: 1072.86511
       Z: -1369.58215
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -90
     }
     Scale {
       X: 1.16615796
-      Y: 1.16615796
+      Y: 1.97426295
       Z: 1.52017856
     }
   }

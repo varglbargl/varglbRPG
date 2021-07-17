@@ -53,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17445974688712457938
-  Name: "Decal Soil Cracks Big 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_soil_cracks_001"
-  }
-}
-Assets {
   Id: 16890205056291965690
   Name: "Sign Bracket - Round"
   PlatformAssetType: 1
@@ -530,15 +521,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6960387703006759978
-  Name: "Decal Moss Patch"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_moss_patch_001"
-  }
-}
-Assets {
   Id: 6954370053071083141
   Name: "Metal Iron 01"
   PlatformAssetType: 2
@@ -581,15 +563,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ivy_generic_003"
-  }
-}
-Assets {
-  Id: 5439646266583319854
-  Name: "Frosted Glass No Distortion"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_frosted_glass_nodistortion"
   }
 }
 Assets {

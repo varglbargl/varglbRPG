@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16242655418615905005
+  Name: "Japanese Temple Door Shoji 01 - Wide 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_door_shoji_01_wide_01_ref"
+  }
+}
+Assets {
   Id: 16048367406070731799
   Name: "Plane 1m - One Sided"
   PlatformAssetType: 1
@@ -62,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14735410645000207512
+  Name: "Object On Carpet Floor Slide 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_object_on_carpet_floor_slide_02_Cue_ref"
+  }
+}
+Assets {
   Id: 11452126672691922020
   Name: "Craftsman Dining Chair"
   PlatformAssetType: 1
@@ -77,15 +95,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_1m_002"
-  }
-}
-Assets {
-  Id: 10835382102308412979
-  Name: "Door Shop Bell Ring 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_door_shop_bell_ring_01a_Cue_ref"
   }
 }
 Assets {

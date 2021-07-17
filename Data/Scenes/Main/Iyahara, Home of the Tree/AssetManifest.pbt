@@ -629,15 +629,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14844672563279110931
-  Name: "Bricks Worn Stone 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_worn_001"
-  }
-}
-Assets {
   Id: 14814053667448214077
   Name: "Hay 01"
   PlatformAssetType: 2
@@ -1634,15 +1625,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_door_001"
-  }
-}
-Assets {
-  Id: 9661614122407060887
-  Name: "Roof Asphalt 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_roof_asphalt_001_uv"
   }
 }
 Assets {

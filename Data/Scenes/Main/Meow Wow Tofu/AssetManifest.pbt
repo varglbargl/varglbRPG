@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18256731503582998385
+  Name: "Air Conditioned Room Tone Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_air_condition_room_tone_loop_01_Cue_ref"
+  }
+}
+Assets {
   Id: 18238332311706380213
   Name: "Pipe - 90-Degree Short Thick"
   PlatformAssetType: 1
@@ -122,15 +131,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half_lense_001"
-  }
-}
-Assets {
-  Id: 16242655418615905005
-  Name: "Japanese Temple Door Shoji 01 - Wide 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_jpn_tem_door_shoji_01_wide_01_ref"
   }
 }
 Assets {

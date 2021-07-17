@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17062684122385260107
+        ParentId: 4781671109827199097
         ChildIds: 12632318600064149489
         ChildIds: 3083393812286174889
         ChildIds: 13112760310151804365
@@ -39,13 +39,11 @@ Assets {
         ChildIds: 11866734730990785400
         ChildIds: 565114535502780665
         ChildIds: 13969126813405381383
-        ChildIds: 5166011661656023097
         ChildIds: 3916318298081332929
         ChildIds: 14239276475314837242
-        ChildIds: 2777071284183574625
-        ChildIds: 2582072491310238630
         ChildIds: 1079795195621895487
         ChildIds: 11357049550361653056
+        ChildIds: 9148646957028956038
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -4790,75 +4788,6 @@ Assets {
         }
       }
       Objects {
-        Id: 5166011661656023097
-        Name: "Pipe - Thick"
-        Transform {
-          Location {
-            X: -1425
-            Y: 675
-            Z: 625
-          }
-          Rotation {
-            Yaw: 89.9999924
-          }
-          Scale {
-            X: 1.12645018
-            Y: 1.12645018
-            Z: 0.189587131
-          }
-        }
-        ParentId: 17469450136327630359
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 6954370053071083141
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: true
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 4
-              G: 4
-              B: 4
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17654076070235932974
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 3916318298081332929
         Name: "Pipe - Thick"
         Transform {
@@ -4998,152 +4927,6 @@ Assets {
             }
             BoundsScale: 1
           }
-        }
-      }
-      Objects {
-        Id: 2777071284183574625
-        Name: "Fantasy Castle Pillar 02 - Mid"
-        Transform {
-          Location {
-            X: -1425.4043
-            Y: 675.233643
-            Z: 387.821777
-          }
-          Rotation {
-            Yaw: 89.9999924
-          }
-          Scale {
-            X: 1.04667735
-            Y: 1.04667735
-            Z: 1.19544971
-          }
-        }
-        ParentId: 17469450136327630359
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7674031820282536874
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.4
-              G: 0.4
-              B: 0.4
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10914354925542967262
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 2582072491310238630
-        Name: "2D Basic Shapes Decal"
-        Transform {
-          Location {
-            X: -1425
-            Y: 675
-            Z: 625
-          }
-          Rotation {
-            Yaw: 89.9999924
-          }
-          Scale {
-            X: 0.569616377
-            Y: 0.569616377
-            Z: 0.617584765
-          }
-        }
-        ParentId: 17469450136327630359
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Corner Rounding"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Stroke Width"
-            Float: 0.163362682
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Stroke Color"
-            Color {
-              R: 0.0940000042
-              G: 0.0775970072
-              B: 0.0611940064
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Blur"
-            Float: 0.191477537
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9693133565758539692
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
         }
       }
       Objects {
@@ -5287,6 +5070,481 @@ Assets {
           InteractWithTriggers: true
           StaticMesh {
             Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9148646957028956038
+        Name: "Chimney Stack with Smoke"
+        Transform {
+          Location {
+            X: -1422
+            Y: 685
+            Z: 217
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.30000007
+            Y: 1.30000007
+            Z: 1.30000007
+          }
+        }
+        ParentId: 17469450136327630359
+        ChildIds: 15669722231399103291
+        ChildIds: 15044574876724735670
+        ChildIds: 4298979294118634478
+        ChildIds: 14390683997765910325
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 15669722231399103291
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9148646957028956038
+        ChildIds: 8025679708085304115
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 8025679708085304115
+        Name: "NewFolder"
+        Transform {
+          Location {
+            Z: 290
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15669722231399103291
+        ChildIds: 17057728387388164466
+        ChildIds: 11222680577164928771
+        ChildIds: 6922661885455920762
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 17057728387388164466
+        Name: "Smoke Volume VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: -44.9999924
+          }
+          Scale {
+            X: 0.710326314
+            Y: 0.710326314
+            Z: 0.710326314
+          }
+        }
+        ParentId: 8025679708085304115
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.08
+              G: 0.08
+              B: 0.08
+              A: 0.8
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9910365847139388510
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 11222680577164928771
+        Name: "Spotlight"
+        Transform {
+          Location {
+            Z: -20
+          }
+          Rotation {
+            Pitch: 90
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8025679708085304115
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Light {
+          Intensity: 50
+          Color {
+            R: 1
+            G: 0.726868153
+            B: 0.477918148
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            UseTemperature: true
+            Temperature: 2600
+            LocalLight {
+              AttenuationRadius: 400
+              SpotLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                InnerConeAngle: 30
+                OuterConeAngle: 40
+                Profile {
+                  Value: "mc:espotlightprofile:basicspotlight"
+                }
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
+        }
+      }
+      Objects {
+        Id: 6922661885455920762
+        Name: "Visible at Night"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8025679708085304115
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 15755298952276024893
+          }
+        }
+      }
+      Objects {
+        Id: 15044574876724735670
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: -0.341796875
+            Y: 0.330566406
+            Z: 265
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.569616377
+            Y: 0.569616377
+            Z: 0.617584765
+          }
+        }
+        ParentId: 9148646957028956038
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Corner Rounding"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.163362682
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 0.0940000042
+              G: 0.0775970072
+              B: 0.0611940064
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Blur"
+            Float: 0.191477537
+          }
+          Overrides {
+            Name: "bp:Sort Order"
+            Int: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9693133565758539692
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 4298979294118634478
+        Name: "Fantasy Castle Pillar 02 - Mid"
+        Transform {
+          Location {
+            X: 0.689453125
+            Y: 0.735351563
+            Z: 98.5322266
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.04667735
+            Y: 1.04667735
+            Z: 0.832095444
+          }
+        }
+        ParentId: 9148646957028956038
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 1
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.9
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7674031820282536874
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.4
+              G: 0.36724
+              B: 0.306400031
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10914354925542967262
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 14390683997765910325
+        Name: "Pipe - Thick"
+        Transform {
+          Location {
+            X: -0.341796875
+            Y: 0.330566406
+            Z: 265
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.12645018
+            Y: 1.12645018
+            Z: 0.189587131
+          }
+        }
+        ParentId: 9148646957028956038
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6954370053071083141
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 4
+              G: 4
+              B: 4
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17654076070235932974
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
             }
             BoundsScale: 1
           }
@@ -5480,6 +5738,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_gen_concrete_tiles_001"
+      }
+    }
+    Assets {
+      Id: 9910365847139388510
+      Name: "Smoke Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_smoke_volume_vfx"
       }
     }
     PrimaryAssetId {

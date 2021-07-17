@@ -8,24 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18256731503582998385
-  Name: "Air Conditioned Room Tone Loop 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_air_condition_room_tone_loop_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 18131936251569509837
-  Name: "Metal Vent Duct Square 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_urb_vent_duct_square_001_uv_ref"
-  }
-}
-Assets {
   Id: 18033297229984528543
   Name: "Wood Planks"
   PlatformAssetType: 2
@@ -122,15 +104,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_frosted_glass"
-  }
-}
-Assets {
-  Id: 16417116211763376902
-  Name: "Girder Medium Angled"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_angle_girder_001_ref"
   }
 }
 Assets {
@@ -239,15 +212,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_urb_office_carpet_004_uv_ref"
-  }
-}
-Assets {
-  Id: 14745239382337859486
-  Name: "Container - Square Thin 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_container_square_thin_ref"
   }
 }
 Assets {
@@ -491,15 +455,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_sand_001_uv"
-  }
-}
-Assets {
-  Id: 10906249897613043233
-  Name: "Wedge - Convex Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_wedge_curved_convex_hq_001"
   }
 }
 Assets {

@@ -134,3 +134,54 @@ Objects {
     FilePartitionName: "Yunahai, Shady Valley"
   }
 }
+Objects {
+  Id: 15541118371625024369
+  Name: "World Walls"
+  Transform {
+    Location {
+      X: -15370.1807
+      Y: -21035.8184
+      Z: 68922.2656
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1062.2
+      Y: 1062.2
+      Z: -1062.2
+    }
+  }
+  ParentId: 18063060926829527243
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14745239382337859486
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    DisableAngularMotionBlur: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}

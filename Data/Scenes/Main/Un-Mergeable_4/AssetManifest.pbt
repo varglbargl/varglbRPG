@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17445974688712457938
+  Name: "Decal Soil Cracks Big 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_soil_cracks_001"
+  }
+}
+Assets {
   Id: 16217022108673138807
   Name: "Fern 01"
   PlatformAssetType: 1
@@ -152,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6960387703006759978
+  Name: "Decal Moss Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_moss_patch_001"
+  }
+}
+Assets {
   Id: 6580181581630899162
   Name: "\"Quirky Space Sprinkles\" Music Construction Kit (Sections) 01"
   PlatformAssetType: 10
@@ -248,6 +266,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 467067525109198318
+  Name: "Decal Ivy Big"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_ivy_001"
   }
 }
 Assets {
