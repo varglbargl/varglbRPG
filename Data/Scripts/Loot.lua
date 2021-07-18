@@ -28,7 +28,6 @@ function readLootTable(thisLootTable, itemType)
 
     local lootItem = {
       name = spawnedItem.name,
-      equipment = item,
       templateId = spawnedItem.sourceTemplateId,
       socket = spawnedItem.socket,
       itemType = itemType,
@@ -36,8 +35,8 @@ function readLootTable(thisLootTable, itemType)
       icon = spawnedItem:GetCustomProperty("Icon"),
       minDamage = spawnedItem:GetCustomProperty("MinDamage"),
       maxDamage = spawnedItem:GetCustomProperty("MaxDamage"),
-      health = spawnedItem:GetCustomProperty("Health"),
-      stamina = spawnedItem:GetCustomProperty("Stamina"),
+      -- health = spawnedItem:GetCustomProperty("Health"),
+      -- stamina = spawnedItem:GetCustomProperty("Stamina"),
       grit = spawnedItem:GetCustomProperty("Grit"),
       wit = spawnedItem:GetCustomProperty("Wit"),
       spit = spawnedItem:GetCustomProperty("Spit"),
@@ -69,7 +68,7 @@ readLootTable(Potions, "Potion")
 local superlatives = {
   g = {"Executioner's", "Blacksmith's", "Big Jim's", "Powerfully", "Aggressively", "Hella", "Unintentionally", "Bumblingly", "Brazenly", "Overpoweringly"},
   w = {"Necromancer's", "Philosopher's", "Alchemist's", "Impossibly", "Confusingly", "Inexplicably", "Mysteriously", "Puzzlingly", "Ambiguously", "Paradoxically", "Figuratively"},
-  s = {"Thief's", "Gambler's", "Bard's", "The Prince's Missing", "Deceptively", "Suspiciously", "Conspicuously", "Counterintuitively", "Vaguely", "Dastardly", "Dangerously"},
+  s = {"Thief's", "Gambler's", "Bard's", "The Prince's Missing", "Deceptively", "Suspiciously", "Conspicuously", "Counterintuitively", "Vaguely", "Dangerously"},
   h = {"Therapist's", "Medic's", "Securely", "Safely", "Pleasantly", "Just A Big", "Wonderfully", "Mavelously", "Admirably", "Melody's"},
   a = {"Champion's", "Impressively", "Surprisingly", "Surpassingly", "Flawlessly", "Garishly", "Excellently", "Elegantly", "Fashionably", "Tastefully", "Classically"}
 }
@@ -77,7 +76,7 @@ local superlatives = {
 local prefixes = {
   g = {"Imposing", "Buff", "Spicy", "Angry", "Rough", "Intense", "Strong", "Loud", "Flavor Blasted", "Rad", "Burning", "Oafish", "Vulgar", "Bloody", "Coarse", "Rough", "Dumb", "Hardcore", "Hellacious", "Bulky"},
   w = {"Strange", "Illusory", "Amorphous", "Ancient", "Ensorceled", "Cursed", "Blessed", "Mysterious", "Obscure", "Otherworldly", "Circuitous", "Possessed", "Spooky", "Baleful", "Sinister", "Demifungal", "Twitching"},
-  s = {"Stolen", "Quick", "Fancy", "Intricate", "Ticking", "Booby Trapped", "Spring-Loaded", "Engineered", "Distracting", "Baroque", "Slippery", "Concealed", "Tactical", "Collapsible", "Shady", "Iffy", "Inconspicuous", "Sketcky", "Decoy"},
+  s = {"Stolen", "Quick", "Fancy", "Intricate", "Ticking", "Booby Trapped", "Spring-Loaded", "Engineered", "Distracting", "Baroque", "Slippery", "Concealed", "Tactical", "Collapsible", "Shady", "Iffy", "Inconspicuous", "Sketcky", "Dastardly"},
   h = {"Thick", "Padded", "Comfortable", "Ergonomic", "Warm", "Helpful", "Calming", "Snug", "Weighted", "Plush", "Soothing", "Welcoming", "Wholesome", "Edible", "Sanitary", "Scented", "Inflatable", "Bouncy"},
   a = {"Sleek", "Expensive", "Reversible", "Stylish", "Balanced", "Refined", "Compact", "Useful", "Light", "Bejeweled", "Designed", "Resplendent", "Bespoke", "Elite", "Filigreed", "Ornate"}
 }
@@ -85,7 +84,7 @@ local prefixes = {
 local suffixes = {
   g = {"Muscles", "the Wolf", "the Boar", "the Rhino", "Fang and Bone", "the Warrior", "the Gamer", "the Oaf", "the Bully", "Smashing", "Violence", "Extreme Violence", "Fightin'", "Bar Fights", "Broken Glass", "Punching Bricks", "Partying", "Breaking Things", "the Dinosaur", "Demolition", "Fist Punching", "Big Dumb Idiots", "Whatever", "the Mercinary", "the Blade", "the Brute", "Brutality", "Blunt Force", "Hog Wrasslin'", "the Dog", "the Slayer"},
   w = {"Brains", "the Owl", "the Frog", "the Moth", "Binding", "the Sage", "the Mind", "the Witch", "the Fae Whisperer", "the Arch-Magus", "the Swamp", "Doom", "Certain Doom", "the Hellscarred Tomes", "Omens and Portents", "the Stormlord", "the Anomolous and Superliminal Arts", "the Wizened", "the Rapacious Void", "Darkness", "the Goopwalker", "the Obelisk", "Catalytic Transmutation", "the Chimera", "the Strange and Unusual", "the Ecto-Biologist", "the Furthest Ring", "the World Tree", "Alethiometry"},
-  s = {"Dexterity", "the Lynx", "the Rat", "the Shark", "the Hunt", "the Spider", "the Serpent", "the Coyote", "the Seagull", "the Sea", "Tracking", "Pure Skill", "the Long Con", "Swindin'", "Luck", "the Sniper", "the Daredevil", "the Streets", "the Smooth Criminal", "Getting Away With It", "Fraudulence", "Firearm Neglegence", "Spittin'", "Running with Scissors", "Shadows", "Assassination", "Absconding with the Biscuits", "the Imminently Deceased", "the Bullet", "Doin' Crimes", "Eye Gouging", "the Shinobi"},
+  s = {"Dexterity", "the Lynx", "the Rat", "the Shark", "the Hunt", "the Spider", "the Serpent", "the Coyote", "the Seagull", "the Sea", "Tracking", "Pure Skill", "the Long Con", "Swindin'", "Luck", "the Sniper", "the Daredevil", "the Streets", "the Smooth Criminal", "Getting Away With It", "Fraudulence", "Firearm Neglegence", "Spittin'", "Running with Scissors", "Shadows", "Assassination", "Absconding with the Biscuits", "the Imminently Deceased", "the Bullet", "Doin' Crimes", "Eye Gouging", "the Shinobi", "Mustache Twirling"},
   h = {"Punchability", "the Bear", "the Turtle", "the Dolphin", "the Whale", "Blocking", "the Mountain", "Halting", "Protection", "Order", "OSHA Compliance", "Hugging", "Pills and Good Advice", "Dying Less Often", "Feelin' Fine", "Just Vibin", "Good Times", "Whimzy", "Talking About Your Feelings", "Happy Trees", "ASMR", "Baking", "the Panda", "Cookie Dough", "Friendship", "Kindness", "Napping", "the Cuddlefish", "Accessibility", "Hope", "Life", "the Teddy Bear"},
   a = {"Ease", "the Fox", "the Eagle", "the Lion and the Unicorn", "the Swordfish", "the Stallion", "the Crown", "the Empire", "the Hummingbird", "Craftsmanship", "the Show", "the Big Game", "the Master", "Go Fast", "the Professional", "Attractiveness", "Gettin' It Done", "Bookin' It", "Leaving", "Running Away", "Sprinting and Gliding Slightly Better", "the Queen", "the King", "Royalty", "Grace", "Honor", "Nobility", "the Aristocracy", "the Royal Guard", "the Queen's Court"}
 }
@@ -125,6 +124,7 @@ function Loot.enchantItem(item, rarity)
   for i, v in pairs(item) do
     dupe[i] = v
   end
+
 
   -- local stats = {"g", "w", "s", "h", "a"}
   local stats = {"g", "w", "s"}
@@ -255,7 +255,13 @@ function Loot.getRandom(level, rarity)
     rarity = math.max(rarity, 1)
   end
 
-  return Loot.enchantItem(result, rarity)
+  local dupe = {}
+
+  for i, v in pairs(result) do
+    dupe[i] = v
+  end
+
+  return Loot.enchantItem(dupe, rarity)
 end
 
 function Loot.findItemByTemplateId(templateId)
@@ -276,7 +282,7 @@ end
 
 function Loot.giveToPlayer(player, item)
   if Environment.IsServer() then
-    Utils.throttleToPlayer(player, "AddToInventory", item.templateId, item.enchant)
+    Events.Broadcast("AddToInventory", player, item)
   end
 end
 

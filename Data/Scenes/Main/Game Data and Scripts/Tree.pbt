@@ -11540,7 +11540,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger10"
         }
         Overrides {
           Name: "Position"
@@ -11626,7 +11626,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger9"
         }
         Overrides {
           Name: "Position"
@@ -11712,7 +11712,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger8"
         }
         Overrides {
           Name: "Position"
@@ -11798,7 +11798,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger7"
         }
         Overrides {
           Name: "Position"
@@ -11880,7 +11880,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger6"
         }
         Overrides {
           Name: "Scale"
@@ -11983,7 +11983,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger5"
         }
         Overrides {
           Name: "Position"
@@ -12069,7 +12069,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger4"
         }
         Overrides {
           Name: "Position"
@@ -12155,7 +12155,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger3"
         }
         Overrides {
           Name: "Position"
@@ -12241,7 +12241,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger2"
         }
         Overrides {
           Name: "Position"
@@ -12327,7 +12327,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Finger"
+          String: "Finger1"
         }
         Overrides {
           Name: "Position"

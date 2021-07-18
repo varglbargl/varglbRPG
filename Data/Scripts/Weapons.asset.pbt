@@ -46,6 +46,12 @@ Assets {
           Id: 16387351589372846252
         }
       }
+      Overrides {
+        Name: "cs:GameMastersSword"
+        AssetReference {
+          Id: 9953259522512333198
+        }
+      }
     }
   }
   SerializationVersion: 92

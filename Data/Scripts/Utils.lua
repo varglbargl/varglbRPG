@@ -181,7 +181,25 @@ function Utils.showFlyupText(text, pos, color)
   UI.ShowFlyUpText(text, pos + Vector3.New(math.random(-60, 60), math.random(-60, 60), math.random(50, 100)), {font = FLY_UP_FONT, isBig = true, duration = 2, color = color})
 end
 
--- EVENT THROTTLING
+-- NETWORKED DATA
+
+local function compressItems(items)
+  local results = {}
+
+  for slot, item in pairs(items) do
+    if item then
+      results[slot] = {templateId = item.templateId, enchant = item.enchant}
+    end
+  end
+
+  return results
+end
+
+function Utils.updatePrivateNetworkedData(player, key)
+  if not Object.IsValid(player) or Environment.IsClient() then return end
+
+  player:SetPrivateNetworkedData(key, compressItems(player.serverUserData[key]))
+end
 
 local attackEvents = {}
 local howMany = 2

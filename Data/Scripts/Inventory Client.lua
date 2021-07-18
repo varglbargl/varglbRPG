@@ -25,7 +25,16 @@ local gearSlots = {
   secondary = GEAR_SLOTS:FindChildByName("Secondary"),
   glider = GEAR_SLOTS:FindChildByName("Glider"),
   potion = GEAR_SLOTS:FindChildByName("Potion"),
-  fingers = GEAR_SLOTS:FindDescendantsByName("Finger")
+  f1 = GEAR_SLOTS:FindChildByName("Finger1"),
+  f2 = GEAR_SLOTS:FindChildByName("Finger2"),
+  f3 = GEAR_SLOTS:FindChildByName("Finger3"),
+  f4 = GEAR_SLOTS:FindChildByName("Finger4"),
+  f5 = GEAR_SLOTS:FindChildByName("Finger5"),
+  f6 = GEAR_SLOTS:FindChildByName("Finger6"),
+  f7 = GEAR_SLOTS:FindChildByName("Finger7"),
+  f8 = GEAR_SLOTS:FindChildByName("Finger8"),
+  f9 = GEAR_SLOTS:FindChildByName("Finger9"),
+  f10 = GEAR_SLOTS:FindChildByName("Finger10")
 }
 
 local gear = {
@@ -33,20 +42,24 @@ local gear = {
   secondary = nil,
   glider = nil,
   potion = nil,
-  fingers = {}
+  f1 = nil,
+  f2 = nil,
+  f3 = nil,
+  f4 = nil,
+  f5 = nil,
+  f6 = nil,
+  f7 = nil,
+  f8 = nil,
+  f9 = nil,
+  f10 = nil
 }
+
+local inventory = {}
 
 local isOpen = false
 
 local myLevel = nil
 local myClass = nil
-
-local myGrit = nil
-local myWit = nil
-local mySpit = nil
-
-local myMaxHealth = nil
-local myMaxStamina = nil
 
 local hoveredTable = nil
 local hoveredSlot = nil
@@ -117,14 +130,20 @@ function initCharacterScreen()
     end)
   end
 
-  for i, slot in ipairs(gearSlots.fingers) do
-    gearButtonEvents(slot, gear.fingers, i)
-  end
-
   gearButtonEvents(gearSlots.primary, gear, "primary")
   gearButtonEvents(gearSlots.secondary, gear, "secondary")
   gearButtonEvents(gearSlots.glider, gear, "glider")
   gearButtonEvents(gearSlots.potion, gear, "potion")
+  gearButtonEvents(gearSlots.f1, gear, "f1")
+  gearButtonEvents(gearSlots.f2, gear, "f2")
+  gearButtonEvents(gearSlots.f3, gear, "f3")
+  gearButtonEvents(gearSlots.f4, gear, "f4")
+  gearButtonEvents(gearSlots.f5, gear, "f5")
+  gearButtonEvents(gearSlots.f6, gear, "f6")
+  gearButtonEvents(gearSlots.f7, gear, "f7")
+  gearButtonEvents(gearSlots.f8, gear, "f8")
+  gearButtonEvents(gearSlots.f9, gear, "f9")
+  gearButtonEvents(gearSlots.f10, gear, "f10")
 
 	PLAYER_PORTRAIT:SetPlayerProfile(clientPlayer)
 	PLAYER_NAME.text = clientPlayer.name
@@ -137,10 +156,6 @@ function initCharacterScreen()
   if myLevel and myClass then
     PLAYER_DESCRIPTION.text = "Level "..myLevel.." "..Utils.classStats(myClass).name
   end
-
-  myGrit = resources["Grit"]
-  myWit = resources["Wit"]
-  mySpit = resources["Spit"]
 end
 
 function onResourceChanged(player, resourceName, newTotal)
@@ -185,14 +200,9 @@ function redrawInventory()
     drawSlot(inventorySlots[i], inventory[i])
   end
 
-  for i = 1, 10 do
-    drawSlot(gearSlots.fingers[i], gear.fingers[i])
+  for name, slot in pairs(gearSlots) do
+    drawSlot(gearSlots[name], gear[name])
   end
-
-  drawSlot(gearSlots.primary, gear.primary)
-  drawSlot(gearSlots.secondary, gear.secondary)
-  drawSlot(gearSlots.glider, gear.glider)
-  drawSlot(gearSlots.potion, gear.potion)
 end
 
 function throttleInventory()
@@ -205,37 +215,6 @@ function throttleInventory()
   for i, slot in ipairs(inventorySlots) do
     slot:FindChildByType("UIButton").isInteractable = true
   end
-end
-
-function inventoryFull()
-  Utils.showFlyupText("Inventory full...")
-end
-
-function addedToInveotory(templateId, enchant)
-  local item = Loot.findItemByTemplateId(templateId)
-
-  if enchant then
-    item = Loot.decodeEnchant(item, enchant)
-    -- print("")
-    -- print("< ~ ~ ~ ~ ~ ~ ~ ~ G O T ~ ~ ~ ~ ~ ~ ~ ~ <")
-    -- print(item.name)
-    -- print(item.enchant)
-    -- print("Level: "..math.floor(item.itemLevel))
-    -- print("Grit: "..(item.grit or 0))
-    -- print("Wit: "..(item.wit or 0))
-    -- print("Spit: "..(item.spit or 0))
-    -- print("< ~ ~ ~ ~ ~ ~ ~ ~ G O T ~ ~ ~ ~ ~ ~ ~ ~ <")
-  end
-
-  for i = 1, 48 do
-    if not inventory[i] then
-      inventory[i] = item
-      redrawInventory()
-      return
-    end
-  end
-
-  inventoryFull()
 end
 
 function closeCharacterScreen()
@@ -265,121 +244,82 @@ function openCharacterScreen()
 end
 
 function pickUpItem()
-  print("Clicked!")
-
   if not hoveredTable or not hoveredSlot then return end
 
-  print(hoveredTable, hoveredSlot)
+  if moveFromTable and moveFromSlot then
 
-  if hoveredTable[hoveredSlot] then
-
-    if moveFromTable and moveFromSlot then
-      if hoveredTable == gear and moveFromTable == inventory then
-        equipItem(moveFromSlot)
-      end
-
-      hoveredTable[hoveredSlot], moveFromTable[moveFromSlot] = moveFromTable[moveFromSlot], hoveredTable[hoveredSlot]
+    if moveFromTable == inventory and hoveredTable == gear then
+      equipItem(moveFromSlot, hoveredSlot)
     end
 
+    moveFromTable = nil
+    moveFromSlot = nil
+
+    PICKUP_SLOT.visibility = Visibility.FORCE_OFF
+  else
     moveFromTable = hoveredTable
     moveFromSlot = hoveredSlot
 
-    if moveFromTable[moveFromSlot] then
-      PICKUP_SLOT.visibility = Visibility.INHERIT
-      PICKUP_SLOT:FindChildByName("Icon"):SetImage(moveFromTable[moveFromSlot].icon)
-    else
-      PICKUP_SLOT.visibility = Visibility.FORCE_OFF
-    end
-
-    redrawInventory()
+    PICKUP_SLOT:FindChildByName("Icon"):SetImage(moveFromTable[moveFromSlot].icon)
+    PICKUP_SLOT.visibility = Visibility.INHERIT
   end
+
+  redrawInventory()
 end
 
-function equipItem(inventorySlot)
+function equipItem(inventorySlot, gearSlot)
   local equippedSlot = nil
-  local ringNo = nil
 
   if inventory[inventorySlot].socket == "right_prop" then
+    if gearSlot and gearSlot ~= "primary" then return end
+
     equippedSlot = "primary"
-    gear.primary = inventory[inventorySlot]
-    Events.Broadcast("RedrawAbilities", gear)
 
   elseif inventory[inventorySlot].socket == "left_prop" then
+    if gearSlot and gearSlot ~= "secondary" then return end
+
     equippedSlot = "secondary"
-    gear.secondary = inventory[inventorySlot]
-    Events.Broadcast("RedrawAbilities", gear)
 
   elseif inventory[inventorySlot].socket == "upper_spine" then
+    if gearSlot and gearSlot ~= "glider" then return end
+
     equippedSlot = "glider"
-    gear.glider = inventory[inventorySlot]
 
   elseif inventory[inventorySlot].socket == "pelvis" then
+    if gearSlot and gearSlot ~= "potion" then return end
+
     equippedSlot = "potion"
-    gear.potion = inventory[inventorySlot]
-    Events.Broadcast("RedrawAbilities", gear)
 
   elseif inventory[inventorySlot].socket == "left_wrist" then
-    for i = 1, 10 do
-      if not gear.fingers[i] then
-        equippedSlot = "fingers"
-        ringNo = i
-        gear.fingers[i] = hoveredTable[inventorySlot]
-        break
+    if gearSlot then
+      if string.sub(gearSlot, 1, 1) == "f" then
+        equippedSlot = gearSlot
+      else
+        return
+      end
+    else
+      for i = 1, 10 do
+        local finger = "f"..i
+
+        if not gear[finger] then
+          equippedSlot = finger
+          break
+        end
       end
     end
   end
 
   if equippedSlot then
+    Utils.throttleToServer("EquipToPlayer", clientPlayer, equippedSlot, inventorySlot)
 
-    print("shjould quipp "..equippedSlot.."!!")
-
-    Utils.throttleToServer("EquipToPlayer", clientPlayer, inventory[inventorySlot].templateId, inventory[inventorySlot].enchant, equippedSlot, ringNo)
-
-    inventory[inventorySlot] = nil
     hoveredSlot = nil
 
     Events.Broadcast("HideTooltip")
-    redrawInventory()
-    throttleInventory()
   end
 end
 
 function unequipItem(gearSlot)
-  local equippedSlot = nil
-  local ringNo = nil
-
-  if type(gearSlot) == "string" then
-    if gear[gearSlot].socket == "right_prop" then
-      equippedSlot = "primary"
-      gear.primary = nil
-      Events.Broadcast("RedrawAbilities", gear)
-
-    elseif gear[gearSlot].socket == "left_prop" then
-      equippedSlot = "secondary"
-      gear.secondary = nil
-      Events.Broadcast("RedrawAbilities", gear)
-
-    elseif gear[gearSlot].socket == "upper_spine" then
-      equippedSlot = "glider"
-      gear.glider = nil
-
-    elseif gear[gearSlot].socket == "pelvis" then
-      equippedSlot = "potion"
-      gear.potion = nil
-      Events.Broadcast("RedrawAbilities", gear)
-    end
-  elseif type(gearSlot) == "number" then
-    if gear.fingers[gearSlot].socket == "left_wrist" then
-      equippedSlot = "fingers"
-      gear.fingers[gearSlot] = nil
-      ringNo = gearSlot
-    end
-  end
-
-  if not equippedSlot then return end
-  print("shjould un quipp "..equippedSlot.."!")
-
-  Utils.throttleToServer("UnequipFromPlayer", clientPlayer, equippedSlot, ringNo)
+  Utils.throttleToServer("UnequipFromPlayer", clientPlayer, gearSlot)
   redrawInventory()
   throttleInventory()
 end
@@ -398,17 +338,44 @@ function onBindingPressed(thisPlayer, keyCode)
   if isOpen and keyCode == "ability_secondary" then
     if not hoveredTable or not hoveredSlot or not hoveredTable[hoveredSlot] then return end
 
-    print("shjould quipp?")
     -- equip or use item
     if hoveredTable == inventory then
-      print("shjould quipp!")
       equipItem(hoveredSlot)
-    elseif hoveredTable == gear or hoveredTable == gear.fingers then
-      print("NOo, shjould un quipp!")
-
+    elseif hoveredTable == gear then
       unequipItem(hoveredSlot)
     end
   end
+end
+
+function onPrivateNetworkedDataChanged(player, key)
+  local data = clientPlayer:GetPrivateNetworkedData(key)
+
+  if key == "Inventory" then
+    for slot = 1, 48 do
+      if data[slot] then
+        local item = Loot.findItemByTemplateId(data[slot].templateId)
+
+        inventory[slot] = Loot.decodeEnchant(item, data[slot].enchant)
+      else
+        inventory[slot] = nil
+      end
+    end
+  elseif key == "Gear" then
+    for name, _ in pairs(gearSlots) do
+      if data[name] then
+        local item = Loot.findItemByTemplateId(data[name].templateId)
+
+        gear[name] = Loot.decodeEnchant(item, data[name].enchant)
+      else
+        gear[name] = nil
+      end
+    end
+
+    Events.Broadcast("RedrawAbilities", gear)
+  end
+
+  redrawInventory()
+  throttleInventory()
 end
 
 -- handler params: Player_player, string_keyCode
@@ -421,4 +388,6 @@ Game.playerJoinedEvent:Connect(initCharacterScreen)
 clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
 
 Events.Connect("CloseUI", closeCharacterScreen)
-Events.Connect("AddToInventory", addedToInveotory)
+
+-- handler params: Player_player, string_key
+clientPlayer.privateNetworkedDataChangedEvent:Connect(onPrivateNetworkedDataChanged)

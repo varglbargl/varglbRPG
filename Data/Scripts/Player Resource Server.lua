@@ -221,12 +221,14 @@ function applyStatsWithGear(player)
     end
   end
 
-  for i = 1, 10 do
-    addBonusStats(playerGear.fingers[i])
-  end
-
   addBonusStats(playerGear.primary)
   addBonusStats(playerGear.secondary)
+  addBonusStats(playerGear.glider)
+  addBonusStats(playerGear.potion)
+
+  for i = 1, 10 do
+    addBonusStats(playerGear["f"..i])
+  end
 
   local newGrit = player:SetResource("Grit", baseStats.grit + bonusStats.grit)
   player:SetResource("Wit", baseStats.wit + bonusStats.wit)
