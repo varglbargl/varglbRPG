@@ -2672,7 +2672,7 @@ Objects {
   Transform {
     Location {
       X: 455.029266
-      Y: 117.257813
+      Y: 117.257812
       Z: 3.62548828
     }
     Rotation {
@@ -3204,9 +3204,9 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: -661.695313
+      X: -661.695312
       Y: -684.673828
-      Z: 93.9570313
+      Z: 93.9570312
     }
     Rotation {
       Pitch: -11.4619656
@@ -3400,7 +3400,7 @@ Objects {
   Name: "Bush 01"
   Transform {
     Location {
-      X: -684.289063
+      X: -684.289062
       Y: -454.793945
       Z: 12.574707
     }
@@ -4264,7 +4264,7 @@ Objects {
   Name: "Fern 01"
   Transform {
     Location {
-      X: 558.320313
+      X: 558.320312
       Y: -671.619629
       Z: 88.359375
     }

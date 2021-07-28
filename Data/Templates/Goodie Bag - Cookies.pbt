@@ -127,7 +127,7 @@ Assets {
         Transform {
           Location {
             X: 4.28125
-            Y: -0.118164063
+            Y: -0.118164062
             Z: 27.6625977
           }
           Rotation {
@@ -1078,7 +1078,7 @@ Assets {
           Location {
             X: -1.02441406
             Y: -1.38769531
-            Z: 6.15820313
+            Z: 6.15820312
           }
           Rotation {
             Pitch: -2.94232249
@@ -1154,7 +1154,7 @@ Assets {
         Name: "Rock Pile 002"
         Transform {
           Location {
-            X: 0.668945313
+            X: 0.668945312
             Y: 2.04394531
             Z: 9.55078125
           }
@@ -1469,7 +1469,7 @@ Assets {
         Transform {
           Location {
             X: 1.5703125
-            Y: 0.915039063
+            Y: 0.915039062
             Z: 15.7514648
           }
           Rotation {
@@ -1547,7 +1547,7 @@ Assets {
         Transform {
           Location {
             X: 1.43359375
-            Y: 0.918945313
+            Y: 0.918945312
             Z: 14.6777344
           }
           Rotation {
@@ -1882,7 +1882,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 1388452191879317891
   Name: "Light Striped Awning"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 15835174466289936261
     ParameterOverrides {

@@ -2,13 +2,13 @@ Assets {
   Id: 10261135194107989398
   Name: "Cat Flag"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 1299557404959273227
     ParameterOverrides {
       Overrides {
         Name: "i_index"
-        Int: 2
+        Int: 1
       }
       Overrides {
         Name: "color"

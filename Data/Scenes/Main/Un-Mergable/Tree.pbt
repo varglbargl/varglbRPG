@@ -1077,7 +1077,7 @@ Objects {
   Name: "Tree Sakura Hero 01"
   Transform {
     Location {
-      X: 13120.7813
+      X: 13120.7812
       Y: -2738.70703
       Z: 1171.08374
     }

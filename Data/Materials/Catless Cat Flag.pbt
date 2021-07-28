@@ -2,13 +2,13 @@ Assets {
   Id: 8981585545115533481
   Name: "Catless Cat Flag"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 1299557404959273227
     ParameterOverrides {
       Overrides {
         Name: "i_index"
-        Int: 0
+        Int: 3
       }
       Overrides {
         Name: "color"
@@ -85,6 +85,15 @@ Assets {
       }
       Overrides {
         Name: "color_tertiary"
+        Color {
+          R: 0.661
+          G: 0.0687439814
+          B: 0.0687439814
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "color_secondary"
         Color {
           R: 0.661
           G: 0.0687439814

@@ -91,7 +91,7 @@ Assets {
         Name: "Cone - Truncated Hollow Concave"
         Transform {
           Location {
-            Y: -8.22070313
+            Y: -8.22070312
             Z: -11.9821777
           }
           Rotation {
@@ -157,7 +157,7 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            Y: -8.22070313
+            Y: -8.22070312
             Z: -11.9821777
           }
           Rotation {
@@ -490,6 +490,6 @@ Assets {
   Marketplace {
     Description: "Bell"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

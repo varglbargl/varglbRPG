@@ -113,7 +113,7 @@ Assets {
         Transform {
           Location {
             X: 0.689453125
-            Y: 0.735351563
+            Y: 0.735351562
             Z: 98.5322266
           }
           Rotation {
@@ -298,5 +298,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
+  VirtualFolderPath: "Tilesets"
 }

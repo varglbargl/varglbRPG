@@ -371,7 +371,7 @@ Assets {
           }
           Rotation {
             Pitch: -2.82885742
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: -3.05175781e-05
           }
           Scale {
@@ -1027,8 +1027,8 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -0.309570313
-            Y: 9.93164063
+            X: -0.309570312
+            Y: 9.93164062
             Z: -9.96679688
           }
           Rotation {
@@ -1428,7 +1428,7 @@ Assets {
         Transform {
           Location {
             X: 1.9375
-            Y: -52.7226563
+            Y: -52.7226562
             Z: 10.9951172
           }
           Rotation {
@@ -1464,7 +1464,7 @@ Assets {
         Transform {
           Location {
             X: 1.32617188
-            Y: -6.72070313
+            Y: -6.72070312
             Z: -1.27758789
           }
           Rotation {
@@ -2327,7 +2327,7 @@ Assets {
         Transform {
           Location {
             X: 1.9375
-            Y: 52.7226563
+            Y: 52.7226562
             Z: 10.9956055
           }
           Rotation {
@@ -4718,7 +4718,7 @@ Assets {
           Location {
             X: -1.89648438
             Y: -10.4902344
-            Z: 1.63476563
+            Z: 1.63476562
           }
           Rotation {
             Pitch: 3.17944598
@@ -4895,7 +4895,7 @@ Assets {
           Location {
             X: -1.89648438
             Y: 10.4902344
-            Z: 1.63476563
+            Z: 1.63476562
           }
           Rotation {
             Pitch: 3.17958951
@@ -4964,7 +4964,7 @@ Assets {
         Name: "Shield 03"
         Transform {
           Location {
-            X: 9.58007813
+            X: 9.58007812
             Y: -0.359375
             Z: 5.34619141
           }
@@ -5323,5 +5323,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

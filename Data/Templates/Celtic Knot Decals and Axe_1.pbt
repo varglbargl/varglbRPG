@@ -45,5 +45,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "Simple little pack of some Celtic knot patterns as decals plus an axe."
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

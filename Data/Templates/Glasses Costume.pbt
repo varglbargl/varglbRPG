@@ -133,7 +133,7 @@ Assets {
         Transform {
           Location {
             X: 8.1953125
-            Y: 7.54882813
+            Y: 7.54882812
             Z: 9.72412109
           }
           Rotation {
@@ -496,7 +496,7 @@ Assets {
         Name: "Prism - 8-Sided Half"
         Transform {
           Location {
-            X: 8.68945313
+            X: 8.68945312
             Y: 4.12988281
             Z: 9.03418
           }
@@ -739,5 +739,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

@@ -5,7 +5,7 @@ Objects {
   Name: "Teardrop - Truncated"
   Transform {
     Location {
-      X: 0.000122070313
+      X: 0.000122070312
       Y: -91.2587585
     }
     Rotation {
@@ -54,7 +54,7 @@ Objects {
   Name: "Sphere"
   Transform {
     Location {
-      X: -6.10351563e-05
+      X: -6.10351562e-05
       Y: 91.2587585
       Z: 38.1401367
     }

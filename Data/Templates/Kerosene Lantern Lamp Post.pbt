@@ -707,7 +707,7 @@ Assets {
             Z: 32.6209717
           }
           Rotation {
-            Pitch: -30.1601563
+            Pitch: -30.1601562
           }
           Scale {
             X: 0.811377
@@ -1595,7 +1595,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

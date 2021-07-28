@@ -54,7 +54,7 @@ Assets {
         Name: "Main Street Railing 01 - Post"
         Transform {
           Location {
-            X: -34.6445313
+            X: -34.6445312
             Y: 40.8584
             Z: 2.07275391
           }
@@ -131,7 +131,7 @@ Assets {
         Name: "Main Street Railing 01 - Post"
         Transform {
           Location {
-            X: -34.6445313
+            X: -34.6445312
             Y: -72.765625
             Z: 2.07275391
           }
@@ -1725,7 +1725,7 @@ Assets {
         Transform {
           Location {
             X: -22.7910156
-            Y: 18.8007813
+            Y: 18.8007812
             Z: 66.8261719
           }
           Rotation {
@@ -1821,7 +1821,7 @@ Assets {
           Location {
             X: 26.1523438
             Y: 14.7919922
-            Z: 77.5195313
+            Z: 77.5195312
           }
           Rotation {
             Yaw: -3.05175781e-05
@@ -2406,7 +2406,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

@@ -7,7 +7,7 @@ Assets {
       RootId: 9595148035710540323
       Objects {
         Id: 9595148035710540323
-        Name: "Mini Glider (Military)"
+        Name: "Basic Glider (Military)"
         Transform {
           Scale {
             X: 1
@@ -292,6 +292,18 @@ Assets {
               SubObjectId: 10028120533342397505
             }
           }
+          Overrides {
+            Name: "cs:LeftHandAnchor"
+            ObjectReference {
+              SubObjectId: 9895277212626454434
+            }
+          }
+          Overrides {
+            Name: "cs:RightHandAnchor"
+            ObjectReference {
+              SubObjectId: 12723280335665715600
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -376,8 +388,9 @@ Assets {
         Name: "Parachute"
         Transform {
           Location {
-            X: 8.48661804
-            Z: -20.3520279
+            X: 3.56452942
+            Y: 1.1920929e-06
+            Z: -24.999939
           }
           Rotation {
             Pitch: 44.5796547
@@ -454,9 +467,9 @@ Assets {
         Name: "Ring - Quarter Thin"
         Transform {
           Location {
-            X: 17.6259365
-            Y: 0.000104904175
-            Z: -5.68706512
+            X: 12.7038412
+            Y: 0.000126838684
+            Z: -10.3349762
           }
           Rotation {
             Pitch: 44.5796204
@@ -525,9 +538,9 @@ Assets {
         Name: "Left Wing"
         Transform {
           Location {
-            X: -2.20456314
+            X: -7.12665558
             Y: -20
-            Z: -1.26708984
+            Z: -5.91500092
           }
           Rotation {
             Pitch: 6.95645189
@@ -539,6 +552,7 @@ Assets {
           }
         }
         ParentId: 13397643186250123498
+        ChildIds: 9895277212626454434
         ChildIds: 13193679538617443105
         ChildIds: 14382288530472036682
         ChildIds: 5399215828075896767
@@ -558,6 +572,52 @@ Assets {
         }
         Folder {
           IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 9895277212626454434
+        Name: "Left Hand Anchor"
+        Transform {
+          Location {
+            X: 20.1641102
+            Y: -3.91649628
+            Z: -6.22081852
+          }
+          Rotation {
+            Pitch: 74.9995041
+            Yaw: -179.999969
+            Roll: -179.999924
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7296101271991084681
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: -5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
         }
       }
       Objects {
@@ -833,9 +893,9 @@ Assets {
         Name: "Right Wing"
         Transform {
           Location {
-            X: -2.20456314
-            Y: 20
-            Z: -1.26708984
+            X: -7.12665558
+            Y: 19.9999962
+            Z: -5.91500092
           }
           Rotation {
             Pitch: 6.95645189
@@ -847,6 +907,7 @@ Assets {
           }
         }
         ParentId: 13397643186250123498
+        ChildIds: 12723280335665715600
         ChildIds: 680412122091817441
         ChildIds: 5111245595451224366
         ChildIds: 11638724982841326354
@@ -869,12 +930,58 @@ Assets {
         }
       }
       Objects {
+        Id: 12723280335665715600
+        Name: "Right Hand Anchor"
+        Transform {
+          Location {
+            X: 20.1641064
+            Y: 4.08350563
+            Z: -6.22081804
+          }
+          Rotation {
+            Pitch: 74.9998703
+            Yaw: -179.999908
+            Roll: -179.999985
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12463227395210695129
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: 5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:righthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
+        }
+      }
+      Objects {
         Id: 680412122091817441
         Name: "Handle"
         Transform {
           Location {
             X: 9.5241394
-            Y: 0.153320313
+            Y: 0.153320312
             Z: 3.15402222
           }
           Rotation {
@@ -1249,10 +1356,8 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3"
+    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3\r\n\r\nupdate 1.12\r\n - Added IK Anchors to all gliders! Most noticably, you now hold onto the \"Air\" glider correctly!\r\n\r\nupdate 1.10\r\n - Gliders now broadcast Events and set both clientUserData and serverUserData you can hook other scripts into\r\n - See the Glider Readme for more info :)\r\n - Fixed bug where I accidentally deleted the entire \"Air\" glider. At least I hope that was me and not the Manticore Legal Department.\r\n\r\nupdate 1.6:\r\n - Glide is now an Ability that prevents other abilities so it\'s easier to make sure players don\'t break out of\r\n - Refactored code to be much more reliable at syncing glider state between server and client\r\n - Fixed bug where you would get stuck with your arms in the air if using a weapon with no animation stance set"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
-  VirtualFolderPath: "Gear"
-  VirtualFolderPath: "Gliders"
 }

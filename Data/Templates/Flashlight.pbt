@@ -430,7 +430,7 @@ Assets {
           }
           Rotation {
             Pitch: -45
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: 0.000124179875
           }
           Scale {
@@ -484,7 +484,7 @@ Assets {
           }
           Rotation {
             Pitch: -45
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: 0.000124179845
           }
           Scale {
@@ -538,7 +538,7 @@ Assets {
           }
           Rotation {
             Pitch: -45
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: 0.000124179845
           }
           Scale {
@@ -592,7 +592,7 @@ Assets {
           }
           Rotation {
             Pitch: -45
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: 0.000124179816
           }
           Scale {
@@ -881,7 +881,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

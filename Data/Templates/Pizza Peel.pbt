@@ -181,8 +181,8 @@ Assets {
         Name: "Cube - Arched"
         Transform {
           Location {
-            X: -4.90039063
-            Y: -0.0122070313
+            X: -4.90039062
+            Y: -0.0122070312
             Z: 202.119141
           }
           Rotation {
@@ -434,7 +434,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

@@ -5,7 +5,7 @@
    __  ____  /___/   ________    _/___/
   /  |/  (_)__  (_) / ___/ (_)__/ /__ _______
  / /|_/ / / _ \/ / / (_ / / / _  / -_) __(_-<
-/_/  /_/_/_//_/_/  \___/_/_/\_,_/\__/_/ /___/ v1.5
+/_/  /_/_/_//_/_/  \___/_/_/\_,_/\__/_/ /___/ v1.10.0
 
   Thank you for downloading varglbargl's Mini Gider Pack!
 
@@ -34,11 +34,13 @@
   in the onBindingPressed function in "Glider Server.lua"
 
     If you want to customize any of these, you can replace
-  the model in the "Geo" folder with anything you'd like! The
-  handles should probably be left in the same place for now.
-  Manticore said they were gonna add a system for attaching
-  hands to points on a mesh but as of this writing I don't
-  see that functionality anywhere. Anyway...
+  the model in the "Geo" folder with anything you'd like! your
+  player's hands will automatically attach to the position and
+  rotation of the Left Hand Anchor and the Right Hand Anchor
+  objects inside the Left Wing and Right Wing folders respectively.
+  You can move those to wherever you want too! You could also just
+  remove them entirely and the player will still stretch their hands
+  roughly upwards towards the glider. They're optional.
 
     You can customize the sounds by replacing any of the custom
   properties on the root equipment object. There should be three
@@ -46,15 +48,24 @@
   you want, up to you. There's:
 
   DeploySFX - The sound effect that will play once when the Glider
-     is deployed.
+    is deployed.
 
   PackSFX - The sound effect that will play once when the Glider
-     is put away.
+    is put away.
 
   GlideSFXLoop - The sound effect that will play and loop while
-     the Glider is deployed.
+    the Glider is deployed.
 
-    And that's about it. This item doesn't use any Networked
+    And if you want anything else to happen when the glider is
+  deployed or put away, the scripts broadcast "GliderDeployed"
+  and "GliderPackedUp" events on both server and client that you
+  can Events.Connect to. They pass the gliding Player as their
+  only argument. There's also player.serverUserData["Gliding"]
+  and player.clientUserData["Gliding"] properties you can check
+  at any time that will equal true if the player is gliding and
+  false if they're not.
+
+    And that's about it! This item doesn't use any Networked
   Events to communicate between the client and server scripts so
   there shouldn't be any problems dragging and dropping it into
   a game. It always sets the player's gravityScale to 1/4th of

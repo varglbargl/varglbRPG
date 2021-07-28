@@ -2122,7 +2122,7 @@ Assets {
         Name: "Stone Block Small"
         Transform {
           Location {
-            X: -147.257813
+            X: -147.257812
             Y: 573.271
             Z: 342.85434
           }
@@ -3465,7 +3465,7 @@ Assets {
         Name: "Pyramid - 4-Sided Truncated"
         Transform {
           Location {
-            X: 618.539063
+            X: 618.539062
             Y: -522.416
             Z: 406.079
           }
@@ -4192,7 +4192,7 @@ Assets {
           }
           Rotation {
             Pitch: 3.05946684
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: 179.999954
           }
           Scale {
@@ -6779,7 +6779,7 @@ Assets {
           Location {
             X: 80.7373047
             Y: 524.542969
-            Z: 659.414063
+            Z: 659.414062
           }
           Rotation {
             Roll: 90.0000076
@@ -6835,7 +6835,7 @@ Assets {
           Location {
             X: -154.085938
             Y: 524.542969
-            Z: 659.414063
+            Z: 659.414062
           }
           Rotation {
             Roll: 90.0000076
@@ -6891,7 +6891,7 @@ Assets {
           Location {
             X: 306.06543
             Y: 524.542969
-            Z: 659.414063
+            Z: 659.414062
           }
           Rotation {
             Roll: 90.0000076
@@ -6947,7 +6947,7 @@ Assets {
           Location {
             X: 539.079102
             Y: 524.542969
-            Z: 659.414063
+            Z: 659.414062
           }
           Rotation {
             Roll: 90.0000076
@@ -7278,7 +7278,7 @@ Assets {
           Location {
             X: -377.437
             Y: -525.419922
-            Z: 659.414063
+            Z: 659.414062
           }
           Rotation {
             Yaw: -179.999985
@@ -7554,7 +7554,7 @@ Assets {
           Location {
             X: 315.537109
             Y: -473.627441
-            Z: 659.414063
+            Z: 659.414062
           }
           Rotation {
             Yaw: -179.999985
@@ -7695,7 +7695,7 @@ Assets {
           Location {
             X: 80.7148438
             Y: -502.089355
-            Z: 659.414063
+            Z: 659.414062
           }
           Rotation {
             Yaw: -179.999985
@@ -7752,7 +7752,7 @@ Assets {
           Location {
             X: -144.614258
             Y: -473.62793
-            Z: 659.414063
+            Z: 659.414062
           }
           Rotation {
             Yaw: -179.999985
@@ -11563,7 +11563,7 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 142.945313
+            X: 142.945312
             Y: -539.026367
             Z: 256.664978
           }
@@ -12970,7 +12970,7 @@ Assets {
         Transform {
           Location {
             X: 609.034668
-            Y: 0.801757813
+            Y: 0.801757812
             Z: 551.690857
           }
           Rotation {
@@ -20387,7 +20387,7 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 142.945313
+            X: 142.945312
             Y: -539.026367
             Z: 256.664978
           }
@@ -21794,7 +21794,7 @@ Assets {
         Transform {
           Location {
             X: 609.034668
-            Y: 0.801757813
+            Y: 0.801757812
             Z: 551.690857
           }
           Rotation {
@@ -27756,6 +27756,6 @@ Assets {
   Marketplace {
     Description: "This House is a building that you can\'t go inside.  The object count is 500 unmerged, and the trianlges count is low.  "
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

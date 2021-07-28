@@ -407,7 +407,19 @@ Assets {
           }
           Overrides {
             Name: "bp:Dynamic Shadow Distance"
-            Float: 5
+            Float: 8
+          }
+          Overrides {
+            Name: "bp:Soft Distance Shadows"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Cast Volumetric Shadows"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -525,6 +537,40 @@ Assets {
           Overrides {
             Name: "bp:Volumetric Fog"
             Bool: false
+          }
+          Overrides {
+            Name: "bp:Directional Inscattering Exponent"
+            Float: 52.0321083
+          }
+          Overrides {
+            Name: "bp:Directional Inscattering Color"
+            Color {
+              R: 0.220799983
+              G: 0.52992
+              B: 0.736000061
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Layered Fog Density"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Light Absorption Amount"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "bp:Albedo"
+            Color {
+              R: 0.495
+              G: 0.96633327
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Beam View Direction"
+            Float: 0.05
           }
         }
         Collidable_v2 {
@@ -662,6 +708,6 @@ Assets {
   Marketplace {
     Description: "A sky that cycles day and night at an user defined time and speed. Place in scene and delete any other skies. Select SkyLogic script in the hierarchy to configure.\r\n\r\nStartingDegrees:\r\nWhat angle to start the day at.\r\n0 is sunrise, 90 is midday, 180 is sunset, 270 is midnight\r\n\r\nDegreesPerSecond:\r\nHow fast the sun moves through the day\r\n2 minute day/night cycle = 120 seconds = 360 degrees/120 seconds = 3 degrees per second"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

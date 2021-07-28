@@ -249,7 +249,7 @@ Assets {
         Transform {
           Location {
             X: 0.295898438
-            Y: 0.668945313
+            Y: 0.668945312
             Z: 0.997558594
           }
           Rotation {
@@ -308,7 +308,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -6.83789063
+            X: -6.83789062
             Y: 6.84667969
             Z: 10.3129883
           }
@@ -542,7 +542,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: 4.94726563
+            X: 4.94726562
             Y: 10.5532227
             Z: 10.3129883
           }
@@ -933,7 +933,7 @@ Assets {
         Name: "Plane Ring - One Sided Thick"
         Transform {
           Location {
-            X: -3.86914063
+            X: -3.86914062
             Y: -9.45703125
             Z: 9.68017578
           }
@@ -2183,6 +2183,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

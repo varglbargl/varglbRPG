@@ -2,7 +2,7 @@ Assets {
   Id: 10037309582843003036
   Name: "Custom Rubber Tiles 01"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 12301318497833658621
     ParameterOverrides {

@@ -116,20 +116,8 @@ function Utils.magicNumber(x)
   if x == 1 then
     return 1
   else
-    return (x*2^(x/powerDoublingRate))/x
+    return (x * 2 ^ (x / powerDoublingRate)) / x
   end
-end
-
-function Utils.formatInt(amount)
-  local formatted = math.floor(amount)
-  while true do
-    formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
-    if (k==0) then
-      break
-    end
-  end
-
-  return formatted
 end
 
 function Utils.getStatsByLevel(level)
@@ -142,8 +130,8 @@ function Utils.getStatsByLevel(level)
   stats.maxHitPoints = math.floor(45 * multiplier)
   stats.hitPoints = stats.maxHitPoints
 
-  stats.minDamage = math.floor(7.5 * multiplier)
-  stats.maxDamage = math.floor(10 * multiplier)
+  stats.minDamage = math.floor(5 * multiplier)
+  stats.maxDamage = math.floor(7.5 * multiplier)
 
   stats.xpValue = math.floor(5 * multiplier) + math.random(0, level)
 
@@ -160,25 +148,6 @@ function Utils.rollDamage(min, max)
   end
 
   return Damage.New(math.random(math.ceil(min), math.ceil(max)))
-end
-
-function Utils.showFlyupText(text, pos, color)
-  if Environment.IsServer() then
-    Utils.throttleToAllPlayers("FlyupText", text, pos, color)
-    return
-  end
-
-  pos = pos or Game.GetLocalPlayer():GetWorldPosition()
-
-  color = color or Color.New(0.7, 0.9, 1)
-
-  if type(text) == "number" then
-    text = Utils.formatInt(text)
-  else
-    text = tostring(text)
-  end
-
-  UI.ShowFlyUpText(text, pos + Vector3.New(math.random(-60, 60), math.random(-60, 60), math.random(50, 100)), {font = FLY_UP_FONT, isBig = true, duration = 2, color = color})
 end
 
 -- NETWORKED DATA
@@ -277,6 +246,38 @@ end
 
 -- GENERAL UTILITY
 
+function Utils.formatInt(amount)
+  local formatted = math.floor(amount)
+
+  while true do
+    formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+    if k == 0 then
+      break
+    end
+  end
+
+  return formatted
+end
+
+function Utils.showFlyupText(text, pos, color)
+  if Environment.IsServer() then
+    Utils.throttleToAllPlayers("FlyupText", text, pos, color)
+    return
+  end
+
+  pos = pos or Game.GetLocalPlayer():GetWorldPosition()
+
+  color = color or Color.New(0.7, 0.9, 1)
+
+  if type(text) == "number" then
+    text = Utils.formatInt(text)
+  else
+    text = tostring(text)
+  end
+
+  UI.ShowFlyUpText(text, pos + Vector3.New(math.random(-60, 60), math.random(-60, 60), math.random(50, 100)), {font = FLY_UP_FONT, isBig = true, duration = 2, color = color})
+end
+
 function Utils.groundBelowPoint(vec3)
   local hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
   if hitResult then
@@ -287,6 +288,8 @@ function Utils.groundBelowPoint(vec3)
 end
 
 function Utils.playSoundEffect(audio, location, volume, pitch)
+  if not audio then return end
+
   volume = volume or 1
   pitch = pitch or 0
 

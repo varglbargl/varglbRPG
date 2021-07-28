@@ -854,7 +854,7 @@ Assets {
         Transform {
           Location {
             X: 64.7548752
-            Y: -4.79101563
+            Y: -4.79101562
             Z: -47.4384766
           }
           Rotation {
@@ -906,7 +906,7 @@ Assets {
         Transform {
           Location {
             X: 78.7548752
-            Y: -4.79101563
+            Y: -4.79101562
             Z: -62.4384766
           }
           Rotation {
@@ -958,7 +958,7 @@ Assets {
         Transform {
           Location {
             X: 78.7548752
-            Y: -4.79101563
+            Y: -4.79101562
             Z: -87.4384766
           }
           Rotation {
@@ -1010,7 +1010,7 @@ Assets {
         Transform {
           Location {
             X: 78.7548752
-            Y: -4.79101563
+            Y: -4.79101562
             Z: -112.438477
           }
           Rotation {
@@ -1215,7 +1215,7 @@ Assets {
           Location {
             X: -54.6279221
             Y: -3.81469727e-06
-            Z: -10.7851563
+            Z: -10.7851562
           }
           Rotation {
             Yaw: 90
@@ -1284,7 +1284,7 @@ Assets {
           Location {
             X: -54.6279221
             Y: -3.81469727e-06
-            Z: -40.7851563
+            Z: -40.7851562
           }
           Rotation {
             Yaw: 90
@@ -1353,7 +1353,7 @@ Assets {
           Location {
             X: -54.6279221
             Y: -3.81469727e-06
-            Z: -25.7851563
+            Z: -25.7851562
           }
           Rotation {
             Pitch: 6.83018879e-06
@@ -1423,7 +1423,7 @@ Assets {
           Location {
             X: 56.7431564
             Y: 3.81469727e-06
-            Z: -10.7851563
+            Z: -10.7851562
           }
           Rotation {
             Yaw: 90
@@ -1492,7 +1492,7 @@ Assets {
           Location {
             X: 56.7431564
             Y: 3.81469727e-06
-            Z: -40.7851563
+            Z: -40.7851562
           }
           Rotation {
             Pitch: 6.83018879e-06
@@ -1562,11 +1562,11 @@ Assets {
           Location {
             X: 56.7431564
             Y: 3.81469727e-06
-            Z: -25.7851563
+            Z: -25.7851562
           }
           Rotation {
             Pitch: 1.36603776e-05
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: 89.9999466
           }
           Scale {
@@ -1700,7 +1700,7 @@ Assets {
         Transform {
           Location {
             X: 9.29003906
-            Y: -87.1132813
+            Y: -87.1132812
             Z: -3.32641602
           }
           Rotation {
@@ -1964,6 +1964,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

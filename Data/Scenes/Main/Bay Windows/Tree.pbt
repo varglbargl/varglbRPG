@@ -5,9 +5,9 @@ Objects {
   Name: "Craftsman Part - Doorway"
   Transform {
     Location {
-      X: 1564.0293
-      Y: 719.572266
-      Z: -0.174316406
+      X: 1564.11133
+      Y: 728.658203
+      Z: -15.5454102
     }
     Rotation {
       Yaw: 89.9999619
@@ -70,9 +70,9 @@ Objects {
   Name: "Craftsman Interior Door 01"
   Transform {
     Location {
-      X: 1569.08643
-      Y: 630.599609
-      Z: 29.4882813
+      X: 1569.17334
+      Y: 639.689453
+      Z: 14.1171875
     }
     Rotation {
       Yaw: 89.9999619
@@ -141,7 +141,7 @@ Objects {
   Name: "Fantasy Sack Laying"
   Transform {
     Location {
-      X: -107.789063
+      X: -107.789062
       Y: 103.569824
       Z: 170.519043
     }
@@ -631,7 +631,7 @@ Objects {
   Name: "Prism - 6-Sided Half"
   Transform {
     Location {
-      X: -55.3789063
+      X: -55.3789062
       Y: 0.0615234375
       Z: 355.893066
     }
@@ -1010,7 +1010,7 @@ Objects {
     Location {
       X: -60.3222656
       Y: 0.0615234375
-      Z: 75.3945313
+      Z: 75.3945312
     }
     Rotation {
       Yaw: -179.999954
@@ -1079,7 +1079,7 @@ Objects {
   Name: "Prism - 6-Sided Half"
   Transform {
     Location {
-      X: -55.3789063
+      X: -55.3789062
       Y: 0.0615234375
       Z: 1502.65918
     }
@@ -1148,7 +1148,7 @@ Objects {
   Name: "Prism - 6-Sided Half"
   Transform {
     Location {
-      X: -55.3789063
+      X: -55.3789062
       Y: 0.0615234375
       Z: 929.276123
     }
@@ -2014,7 +2014,7 @@ Objects {
     Location {
       X: -164.386719
       Y: -0.139648438
-      Z: 15.3007813
+      Z: 15.3007812
     }
     Rotation {
     }

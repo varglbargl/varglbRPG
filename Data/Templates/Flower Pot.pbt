@@ -331,7 +331,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: -1.14257813
+            X: -1.14257812
             Y: -0.368408203
             Z: 22.9975586
           }
@@ -449,7 +449,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

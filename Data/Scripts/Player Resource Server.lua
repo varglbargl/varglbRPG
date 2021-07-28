@@ -31,7 +31,7 @@ function onPlayerJoined(player)
   player:SetResource("Experience", 0)
   player:SetResource("Gold", 0)
 
-  local class = 4
+  local class = 1
 
   player:SetResource("Class", class)
 
@@ -271,7 +271,7 @@ end
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
 
--- handler params: Player_player, integer_newTotal
+-- handler params: Player_player, integer_newTotal, Player_healer
 Events.Connect("PlayerHealed", onPlayerHealed)
 
 -- handler params: Player_player, integer_amount

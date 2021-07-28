@@ -443,7 +443,6 @@ Objects {
   ChildIds: 17345957317237588042
   ChildIds: 2065784805517113690
   ChildIds: 12638388953012368953
-  ChildIds: 16341999008606916194
   ChildIds: 4691902828804577112
   ChildIds: 4407616002444291944
   ChildIds: 5460912297609451442
@@ -2175,7 +2174,7 @@ Objects {
           Vector {
             X: -2575.83887
             Y: 847.771484
-            Z: 4495.89063
+            Z: 4495.89062
           }
         }
         Overrides {
@@ -4569,6 +4568,35 @@ Objects {
     }
   }
   ParentId: 11095886632957962701
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.896
+        G: 0.606890678
+        B: 0.462336034
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 5205269295050384110
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:utile"
+      Float: 4
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:vtile"
+      Float: 4
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5072,6 +5100,14 @@ Objects {
       Name: "ma:Building_Roof:smart"
       Bool: false
     }
+    Overrides {
+      Name: "ma:Building_Roof:utile"
+      Float: 1.2
+    }
+    Overrides {
+      Name: "ma:Building_Roof:vtile"
+      Float: 1.5
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5155,6 +5191,14 @@ Objects {
       Name: "ma:Building_Roof:smart"
       Bool: false
     }
+    Overrides {
+      Name: "ma:Building_Roof:utile"
+      Float: 1.2
+    }
+    Overrides {
+      Name: "ma:Building_Roof:vtile"
+      Float: 1.5
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5237,6 +5281,14 @@ Objects {
     Overrides {
       Name: "ma:Building_Roof:smart"
       Bool: false
+    }
+    Overrides {
+      Name: "ma:Building_Roof:utile"
+      Float: 1.2
+    }
+    Overrides {
+      Name: "ma:Building_Roof:vtile"
+      Float: 1.5
     }
   }
   Collidable_v2 {
@@ -5495,6 +5547,10 @@ Objects {
       Name: "ma:Building_Roof:smart"
       Bool: false
     }
+    Overrides {
+      Name: "ma:Building_Roof:utile"
+      Float: 1.75
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5577,6 +5633,10 @@ Objects {
     Overrides {
       Name: "ma:Building_Roof:smart"
       Bool: false
+    }
+    Overrides {
+      Name: "ma:Building_Roof:utile"
+      Float: 1.75
     }
   }
   Collidable_v2 {
@@ -6422,71 +6482,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Roof Railing"
-  }
-}
-Objects {
-  Id: 16341999008606916194
-  Name: "Plane 1m - Two Sided"
-  Transform {
-    Location {
-      X: -2069.99097
-      Y: -345.190308
-      Z: 5211.5249
-    }
-    Rotation {
-      Roll: -90
-    }
-    Scale {
-      X: 2.2
-      Y: 3.5
-      Z: 1.1
-    }
-  }
-  ParentId: 18037324666348523329
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 5439646266583319854
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.1
-        G: 0.1
-        B: 0.1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12152694598132833191
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
   }
 }
 Objects {
@@ -10687,7 +10682,7 @@ Objects {
   Name: "Fantasy Sack Laying"
   Transform {
     Location {
-      X: -2253.64063
+      X: -2253.64062
       Y: 332
       Z: 4400.76221
     }
@@ -13025,7 +13020,7 @@ Objects {
   Name: "Ring - Extra Thick"
   Transform {
     Location {
-      X: -2662.01563
+      X: -2662.01562
       Y: 480.543945
       Z: 4458
     }
@@ -13093,7 +13088,7 @@ Objects {
   Name: "Ring - Extra Thick"
   Transform {
     Location {
-      X: -2662.01563
+      X: -2662.01562
       Y: 480.543945
       Z: 4459.68311
     }
@@ -14151,7 +14146,7 @@ Objects {
   Name: "Ring - Extra Thick"
   Transform {
     Location {
-      X: -2539.76563
+      X: -2539.76562
       Y: 505
       Z: 4458.68311
     }
@@ -14227,7 +14222,7 @@ Objects {
   Name: "Ring - Extra Thick"
   Transform {
     Location {
-      X: -2539.76563
+      X: -2539.76562
       Y: 505
       Z: 4457
     }
@@ -14845,7 +14840,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -15268,7 +15263,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -15691,7 +15686,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -16115,7 +16110,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -16538,7 +16533,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -16961,7 +16956,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -17267,7 +17262,7 @@ Objects {
   Name: "Macaron"
   Transform {
     Location {
-      X: -2339.32813
+      X: -2339.32812
       Y: 863.747559
       Z: 4458.89844
     }
@@ -17384,7 +17379,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -17807,7 +17802,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -18230,7 +18225,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -18536,7 +18531,7 @@ Objects {
   Name: "Macaron"
   Transform {
     Location {
-      X: -2318.76563
+      X: -2318.76562
       Y: 837.84375
       Z: 4458.89844
     }
@@ -18653,7 +18648,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -19076,7 +19071,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -19544,7 +19539,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -19967,7 +19962,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -20390,7 +20385,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -20812,7 +20807,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -21234,7 +21229,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -21656,7 +21651,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -22078,7 +22073,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -22500,7 +22495,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -22922,7 +22917,7 @@ Objects {
   Transform {
     Location {
       X: 0.0029296875
-      Y: -0.352539063
+      Y: -0.352539062
       Z: 0.791992188
     }
     Rotation {
@@ -23608,7 +23603,7 @@ Objects {
   Name: "Cupcake"
   Transform {
     Location {
-      X: 14314.9063
+      X: 14314.9062
       Y: -6660.39893
       Z: -4109.17383
     }
@@ -35058,7 +35053,7 @@ Objects {
   Transform {
     Location {
       X: -1973.51074
-      Y: -18.1132813
+      Y: -18.1132812
       Z: 4534.54883
     }
     Rotation {
@@ -35514,7 +35509,7 @@ Objects {
   Transform {
     Location {
       X: -2057.57715
-      Y: -9.00195313
+      Y: -9.00195312
       Z: 4422.21533
     }
     Rotation {
@@ -38457,7 +38452,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -1326.67871
-            Y: 607.351563
+            Y: 607.351562
             Z: 4419.76611
           }
         }
@@ -41226,7 +41221,7 @@ Objects {
     Location {
       X: -1.89648438
       Y: 10.4902344
-      Z: 1.63476563
+      Z: 1.63476562
     }
     Rotation {
       Pitch: 3.17958951
@@ -41418,7 +41413,7 @@ Objects {
     Location {
       X: -1.89648438
       Y: -10.4902344
-      Z: 1.63476563
+      Z: 1.63476562
     }
     Rotation {
       Pitch: 3.17944598
@@ -41544,11 +41539,11 @@ Objects {
     Location {
       X: 0.509726763
       Y: 0.000186532736
-      Z: 8.75195313
+      Z: 8.75195312
     }
     Rotation {
-      Pitch: -6.10351563e-05
-      Yaw: -6.10351563e-05
+      Pitch: -6.10351562e-05
+      Yaw: -6.10351562e-05
       Roll: 8.71217473e-11
     }
     Scale {
@@ -41688,7 +41683,7 @@ Objects {
     Location {
       X: 2.60839844
       Y: 47.9921875
-      Z: 14.3320313
+      Z: 14.3320312
     }
     Rotation {
       Pitch: 13.9379902
@@ -41932,7 +41927,7 @@ Objects {
   Name: "left_elbow"
   Transform {
     Location {
-      X: -7.50976563
+      X: -7.50976562
       Y: -33.9492188
       Z: 35.3349609
     }
@@ -43565,8 +43560,8 @@ Objects {
   Transform {
     Location {
       X: 13.4267578
-      Y: 6.53320313
-      Z: 2.08007813
+      Y: 6.53320312
+      Z: 2.08007812
     }
     Rotation {
       Pitch: -5.280972
@@ -43880,7 +43875,7 @@ Objects {
     Location {
       X: 0.041015625
       Y: 7.88818359
-      Z: 1.53320313
+      Z: 1.53320312
     }
     Rotation {
       Yaw: -65.7491608
@@ -44190,7 +44185,7 @@ Objects {
     Location {
       X: -3.1484375
       Y: -10.081543
-      Z: 1.53320313
+      Z: 1.53320312
     }
     Rotation {
     }
@@ -45595,7 +45590,7 @@ Objects {
     Location {
       X: -30.6777344
       Y: -101.845215
-      Z: 61.3007813
+      Z: 61.3007812
     }
     Rotation {
       Pitch: 33.55056
@@ -45893,7 +45888,7 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -11.0039063
+      X: -11.0039062
       Y: -108.410767
       Z: 57.2614746
     }
@@ -46133,7 +46128,7 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: -96.7851563
+      X: -96.7851562
       Y: -33.1341553
       Z: 74.8035889
     }
@@ -46553,7 +46548,7 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: -99.3476563
+      X: -99.3476562
       Y: 9.04614258
       Z: 63.8848877
     }
@@ -48355,7 +48350,7 @@ Objects {
     Location {
       X: -86.9555664
       Y: -66.4448242
-      Z: 67.1757813
+      Z: 67.1757812
     }
     Rotation {
       Pitch: -16.2634983
@@ -49374,7 +49369,7 @@ Objects {
   Transform {
     Location {
       X: -75.3388672
-      Y: 60.7226563
+      Y: 60.7226562
       Z: 72.5408936
     }
     Rotation {
@@ -49795,7 +49790,7 @@ Objects {
     Location {
       X: -98.5253906
       Y: 25.8865967
-      Z: 52.0039063
+      Z: 52.0039062
     }
     Rotation {
       Pitch: -7.64172459
@@ -51173,7 +51168,7 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: -82.4882813
+      X: -82.4882812
       Y: 42.4954834
       Z: 90.6949463
     }
@@ -52253,7 +52248,7 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -42.1601563
+      X: -42.1601562
       Y: 92.0540771
       Z: 61.0723877
     }
@@ -53393,7 +53388,7 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -19.0820313
+      X: -19.0820312
       Y: 88.9899902
       Z: 63.7071533
     }
@@ -53453,7 +53448,7 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -0.735351563
+      X: -0.735351562
       Y: 94.8531494
       Z: 76.9075928
     }
@@ -53515,7 +53510,7 @@ Objects {
     Location {
       X: 6.33544922
       Y: 92.1304932
-      Z: 64.3164063
+      Z: 64.3164062
     }
     Rotation {
       Pitch: -46.4800377
@@ -56573,7 +56568,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 89.2070313
+      X: 89.2070312
       Y: 16.2524414
       Z: 26.147583
     }
@@ -57894,7 +57889,7 @@ Objects {
     Location {
       X: 66.8012695
       Y: 58.2319336
-      Z: 33.5664063
+      Z: 33.5664062
     }
     Rotation {
       Pitch: 20.3137264
@@ -60052,7 +60047,7 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: 97.7382813
+      X: 97.7382812
       Y: -41.5057373
       Z: 24.8414307
     }
@@ -60292,7 +60287,7 @@ Objects {
   Name: "Rock Block 02"
   Transform {
     Location {
-      X: 107.226563
+      X: 107.226562
       Y: 0.175048828
       Z: 76.2399902
     }
@@ -61012,7 +61007,7 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: 106.007813
+      X: 106.007812
       Y: 1.9230957
       Z: 52.2344971
     }
@@ -62212,7 +62207,7 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 83.9726563
+      X: 83.9726562
       Y: -76.2092285
       Z: 45.9447021
     }
@@ -62392,7 +62387,7 @@ Objects {
   Name: "Rock Block 02"
   Transform {
     Location {
-      X: 62.5507813
+      X: 62.5507812
       Y: -90.7443848
       Z: 36.8251953
     }
@@ -64252,7 +64247,7 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -15.2851563
+      X: -15.2851562
       Y: -108.859741
       Z: 56.434082
     }
@@ -64854,7 +64849,7 @@ Objects {
     Location {
       X: 18.7060547
       Y: -114.197388
-      Z: 37.8320313
+      Z: 37.8320312
     }
     Rotation {
       Pitch: 33.550457
@@ -64912,7 +64907,7 @@ Objects {
   Name: "Cherries"
   Transform {
     Location {
-      X: 6.55664063
+      X: 6.55664062
       Y: 0.334472656
       Z: 54.3006592
     }
@@ -66788,7 +66783,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -68.6689453
-            Y: -14.4101563
+            Y: -14.4101562
             Z: 66.7473145
           }
         }
@@ -66835,7 +66830,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -4.52539063
+            X: -4.52539062
             Y: -11.2553711
             Z: 9.11621094
           }
@@ -66849,7 +66844,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -68.6689453
-            Y: -14.4101563
+            Y: -14.4101562
             Z: 19.7451172
           }
         }

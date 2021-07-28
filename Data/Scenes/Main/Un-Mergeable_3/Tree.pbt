@@ -224,7 +224,6 @@ Objects {
       Z: 835
     }
     Rotation {
-      Yaw: -1.02452814e-05
     }
     Scale {
       X: 1.30000007
@@ -2441,7 +2440,7 @@ Objects {
   Name: "Fantasy Castle Floor 02"
   Transform {
     Location {
-      X: 2.17382813
+      X: 2.17382812
       Z: 0.03515625
     }
     Rotation {

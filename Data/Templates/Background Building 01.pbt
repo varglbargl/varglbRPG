@@ -9038,7 +9038,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 796.007813
+            X: 796.007812
             Y: 602.554932
             Z: 600.000732
           }
@@ -9212,7 +9212,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 796.007813
+            X: 796.007812
             Y: 602.554932
             Z: 1200
           }
@@ -9299,7 +9299,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 796.007813
+            X: 796.007812
             Y: -197.44458
             Z: 1199.99927
           }
@@ -9386,7 +9386,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 796.007813
+            X: 796.007812
             Y: -197.44458
             Z: 600
           }
@@ -10106,7 +10106,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: 200
             Z: 600
           }
@@ -10193,7 +10193,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: 200
             Z: 1200
           }
@@ -10280,7 +10280,7 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: -200
             Z: 600
           }
@@ -10367,7 +10367,7 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: -200
             Z: 1200
           }
@@ -10517,7 +10517,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: -600.000732
             Z: 1200
           }
@@ -10604,7 +10604,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: -600.000732
             Z: 600
           }
@@ -13071,7 +13071,7 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: -588.600098
           }
           Rotation {
@@ -13157,7 +13157,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: -188.600098
           }
           Rotation {
@@ -13299,7 +13299,7 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: 210
           }
           Rotation {
@@ -13724,7 +13724,7 @@ Assets {
         Name: "Main Street Foundation 01"
         Transform {
           Location {
-            X: 767.351563
+            X: 767.351562
             Y: 588.600586
             Z: -125
           }
@@ -14288,7 +14288,7 @@ Assets {
             Z: -125
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -14343,7 +14343,7 @@ Assets {
             Z: -105
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1.4
@@ -14453,7 +14453,7 @@ Assets {
             Z: -125
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -15662,6 +15662,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Tilesets"
 }

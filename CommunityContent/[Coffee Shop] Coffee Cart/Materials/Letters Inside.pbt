@@ -2,7 +2,7 @@ Assets {
   Id: 13372646472722029070
   Name: "Letters Inside"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 17738734797160346039
     ParameterOverrides {

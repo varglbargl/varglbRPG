@@ -1148,7 +1148,7 @@ Objects {
   Name: "Curtains Tied"
   Transform {
     Location {
-      X: 15.6914063
+      X: 15.6914062
       Y: -1.87597656
       Z: 0.000244140625
     }
@@ -1332,9 +1332,9 @@ Objects {
   Name: "Curtains Tied"
   Transform {
     Location {
-      X: 15.6914063
+      X: 15.6914062
       Y: 2.43359375
-      Z: 0.00122070313
+      Z: 0.00122070312
     }
     Rotation {
       Pitch: 2.37737703
@@ -1742,7 +1742,7 @@ Objects {
   Name: "Curtains Tied"
   Transform {
     Location {
-      X: 15.6914063
+      X: 15.6914062
       Y: -1.87597656
       Z: 0.000244140625
     }
@@ -1924,9 +1924,9 @@ Objects {
   Name: "Curtains Tied"
   Transform {
     Location {
-      X: 15.6914063
+      X: 15.6914062
       Y: 2.43359375
-      Z: 0.00122070313
+      Z: 0.00122070312
     }
     Rotation {
       Pitch: 2.37737703

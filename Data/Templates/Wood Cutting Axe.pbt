@@ -942,7 +942,7 @@ Assets {
           Rotation {
             Pitch: 1.36603776e-05
             Yaw: 89.9999771
-            Roll: -6.10351563e-05
+            Roll: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -1243,6 +1243,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

@@ -52,7 +52,7 @@ Assets {
           }
           Rotation {
             Pitch: -75.5303955
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: 90.0000229
           }
           Scale {
@@ -813,6 +813,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Tilesets"
 }

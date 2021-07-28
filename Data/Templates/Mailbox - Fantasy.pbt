@@ -1150,7 +1150,7 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: 51.6445313
+            X: 51.6445312
             Y: 18.0698242
             Z: -10.6806641
           }
@@ -1430,7 +1430,7 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: -52.1914063
+            X: -52.1914062
             Z: -21.4892578
           }
           Rotation {
@@ -1508,7 +1508,7 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: -52.1914063
+            X: -52.1914062
             Y: -20
             Z: -35.203125
           }
@@ -1585,7 +1585,7 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: -52.1914063
+            X: -52.1914062
             Z: -47.4052734
           }
           Rotation {
@@ -1662,7 +1662,7 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: -52.1914063
+            X: -52.1914062
             Y: 20
             Z: -35.203125
           }
@@ -2039,7 +2039,7 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: -51.6445313
+            X: -51.6445312
             Y: -18.0698242
             Z: -10.6806641
           }
@@ -2373,7 +2373,7 @@ Assets {
         Transform {
           Location {
             X: -53.5
-            Z: 167.039063
+            Z: 167.039062
           }
           Rotation {
             Pitch: -3.05175781e-05
@@ -2438,7 +2438,7 @@ Assets {
         Transform {
           Location {
             X: 53.5
-            Z: 167.039063
+            Z: 167.039062
           }
           Rotation {
             Yaw: -89.999939
@@ -2972,7 +2972,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            Y: 42.6757813
+            Y: 42.6757812
             Z: 167.646973
           }
           Rotation {
@@ -4560,7 +4560,7 @@ Assets {
         Transform {
           Location {
             X: 0.1875
-            Y: -17.1445313
+            Y: -17.1445312
             Z: 167.990234
           }
           Rotation {
@@ -5068,7 +5068,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

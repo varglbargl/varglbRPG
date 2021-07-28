@@ -19,7 +19,9 @@ function onPlayerJoined(player)
     f10 = nil
   }
 
-  player.serverUserData["Inventory"] = {}
+  player.serverUserData["Inventory"] = {
+    full = false
+  }
 
   -- DEBUG!!
 
@@ -59,8 +61,10 @@ function addToInventory(player, item, inventorySlot)
     end
 
     if inventoryFull then
+      player.serverUserData["Inventory"].full = true
       Utils.throttleToPlayer(player, "FlyupText", "Inventory Full...")
     else
+      player.serverUserData["Inventory"].full = false
       Utils.updatePrivateNetworkedData(player, "Inventory")
     end
   end

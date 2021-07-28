@@ -492,7 +492,7 @@ Assets {
         Name: "Decal Elven Symbols"
         Transform {
           Location {
-            X: -10.3632813
+            X: -10.3632812
             Y: 21.2509766
             Z: 34.2924805
           }
@@ -835,7 +835,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

@@ -7,7 +7,7 @@ Assets {
       RootId: 5866043828947498130
       Objects {
         Id: 5866043828947498130
-        Name: "Mini Glider (Fantasy)"
+        Name: "Basic Glider (Fantasy)"
         Transform {
           Scale {
             X: 1
@@ -304,6 +304,18 @@ Assets {
             Name: "cs:GlideAbility"
             ObjectReference {
               SubObjectId: 2195631614884955479
+            }
+          }
+          Overrides {
+            Name: "cs:LeftHandAnchor"
+            ObjectReference {
+              SubObjectId: 1315660755256691755
+            }
+          }
+          Overrides {
+            Name: "cs:RightHandAnchor"
+            ObjectReference {
+              SubObjectId: 7414450820878089874
             }
           }
         }
@@ -907,6 +919,7 @@ Assets {
           }
         }
         ParentId: 11215737965790632442
+        ChildIds: 1315660755256691755
         ChildIds: 4624888757884397495
         ChildIds: 17832648159513604431
         ChildIds: 3944686051153260521
@@ -928,12 +941,58 @@ Assets {
         }
       }
       Objects {
+        Id: 1315660755256691755
+        Name: "Left Hand Anchor"
+        Transform {
+          Location {
+            X: 6.77535
+            Y: -2.98608112
+            Z: -8.61687088
+          }
+          Rotation {
+            Pitch: 74.9996872
+            Yaw: 179.999954
+            Roll: -179.999969
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13395048808023752500
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: -5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
+        }
+      }
+      Objects {
         Id: 4624888757884397495
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
             X: -37.7327
-            Y: 43.0507813
+            Y: 43.0507812
             Z: 13.0714922
           }
           Rotation {
@@ -1179,6 +1238,7 @@ Assets {
           }
         }
         ParentId: 11215737965790632442
+        ChildIds: 7414450820878089874
         ChildIds: 17002903420243874417
         ChildIds: 16389235741543698845
         ChildIds: 10448910306214204000
@@ -1197,6 +1257,50 @@ Assets {
         }
         Folder {
           IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 7414450820878089874
+        Name: "Right Hand Anchor"
+        Transform {
+          Location {
+            X: 6.77531719
+            Y: 3.01391745
+            Z: -8.61687374
+          }
+          Rotation {
+            Pitch: 105
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4272530534901501306
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: 5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:righthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
         }
       }
       Objects {
@@ -1475,11 +1579,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.52
+            Float: 0.384774268
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.25
+            Float: 0.270934671
           }
         }
         Collidable_v2 {
@@ -1554,11 +1658,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.52
+            Float: 0.384774268
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.25
+            Float: 0.270934671
           }
         }
         Collidable_v2 {
@@ -2105,10 +2209,8 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3"
+    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3\r\n\r\nupdate 1.12\r\n - Added IK Anchors to all gliders! Most noticably, you now hold onto the \"Air\" glider correctly!\r\n\r\nupdate 1.10\r\n - Gliders now broadcast Events and set both clientUserData and serverUserData you can hook other scripts into\r\n - See the Glider Readme for more info :)\r\n - Fixed bug where I accidentally deleted the entire \"Air\" glider. At least I hope that was me and not the Manticore Legal Department.\r\n\r\nupdate 1.6:\r\n - Glide is now an Ability that prevents other abilities so it\'s easier to make sure players don\'t break out of\r\n - Refactored code to be much more reliable at syncing glider state between server and client\r\n - Fixed bug where you would get stuck with your arms in the air if using a weapon with no animation stance set"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
-  VirtualFolderPath: "Gear"
-  VirtualFolderPath: "Gliders"
 }

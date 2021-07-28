@@ -312,7 +312,7 @@ Assets {
         Name: "Railing 01 Post Mainstreet"
         Transform {
           Location {
-            X: 175.289063
+            X: 175.289062
             Y: 155
             Z: 150
           }
@@ -633,7 +633,7 @@ Assets {
         Name: "Stairs 01 1.5m Mainstreet"
         Transform {
           Location {
-            X: -5.00195313
+            X: -5.00195312
             Y: -127
           }
           Rotation {
@@ -803,6 +803,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Tilesets"
 }

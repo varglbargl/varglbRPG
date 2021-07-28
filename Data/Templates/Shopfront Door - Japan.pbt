@@ -754,7 +754,7 @@ Assets {
         Name: "Sci-fi Chest Hinge 01"
         Transform {
           Location {
-            X: 6.31445313
+            X: 6.31445312
             Y: -0.0400390625
             Z: 61.045166
           }
@@ -1139,6 +1139,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Tilesets"
 }

@@ -520,7 +520,7 @@ Assets {
         Name: "Office Cubicle Cabinet Door 01"
         Transform {
           Location {
-            X: -4.52539063
+            X: -4.52539062
             Y: -11.2553711
             Z: 9.11621094
           }
@@ -602,7 +602,7 @@ Assets {
         Transform {
           Location {
             X: 4.82324219
-            Y: -15.4101563
+            Y: -15.4101562
             Z: 66.7473145
           }
           Rotation {
@@ -657,7 +657,7 @@ Assets {
         Transform {
           Location {
             X: 4.82324219
-            Y: -15.4101563
+            Y: -15.4101562
             Z: 19.7451172
           }
           Rotation {
@@ -1021,7 +1021,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

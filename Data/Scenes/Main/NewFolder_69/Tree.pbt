@@ -141,7 +141,7 @@ Objects {
   Name: "Cylinder"
   Transform {
     Location {
-      X: 49.9726563
+      X: 49.9726562
       Y: -79.9008789
       Z: -99.5214844
     }

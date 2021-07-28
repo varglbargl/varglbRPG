@@ -893,7 +893,7 @@ Objects {
   Name: "Main Street Trim 01"
   Transform {
     Location {
-      X: 3788.20313
+      X: 3788.20312
       Y: 4934.17
       Z: 2160
     }
@@ -1751,7 +1751,7 @@ Objects {
   Name: "Main Street Trim 01"
   Transform {
     Location {
-      X: 3788.20313
+      X: 3788.20312
       Y: -4934.17
       Z: 2160
     }
@@ -3826,8 +3826,8 @@ Objects {
   Name: "Flower Bellflower Patch 01"
   Transform {
     Location {
-      X: -5741.3291
-      Y: 40.3202515
+      X: -5720.09668
+      Y: 37.724884
       Z: -11.7133789
     }
     Rotation {
@@ -3874,12 +3874,12 @@ Objects {
   Name: "Flower Bellflower 02"
   Transform {
     Location {
-      X: -5895.02148
-      Y: 69.2728271
-      Z: -3.22070313
+      X: -5881.53027
+      Y: 28.4692383
+      Z: 0.824707031
     }
     Rotation {
-      Pitch: -11.1940575
+      Pitch: -11.1940613
       Yaw: 169.857574
       Roll: 4.35165703e-07
     }
@@ -3891,7 +3891,7 @@ Objects {
   }
   ParentId: 7145664571949317624
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -3924,12 +3924,12 @@ Objects {
   Name: "Flower Bellflower Patch 01"
   Transform {
     Location {
-      X: -5457.1582
-      Y: 38.3587036
+      X: -5448.72559
+      Y: 22.4642639
       Z: -7.36279297
     }
     Rotation {
-      Yaw: 26.6052494
+      Yaw: 8.7430563
     }
     Scale {
       X: 1.07069588
@@ -3972,8 +3972,8 @@ Objects {
   Name: "Flower Bellflower Patch 01"
   Transform {
     Location {
-      X: -5222.4585
-      Y: 23.928894
+      X: -5209.60645
+      Y: 21.7326355
       Z: -7.37792969
     }
     Rotation {
@@ -4020,8 +4020,8 @@ Objects {
   Name: "Flower Bellflower Patch 01"
   Transform {
     Location {
-      X: -4980.75
-      Y: 40.0646057
+      X: -4944.94482
+      Y: 27.1040955
       Z: -11.7133789
     }
     Rotation {
@@ -4475,7 +4475,7 @@ Objects {
   Transform {
     Location {
       X: -603.597168
-      Y: 4808.51563
+      Y: 4808.51562
       Z: -11
     }
     Rotation {

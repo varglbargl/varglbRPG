@@ -498,7 +498,7 @@ Assets {
           }
           Rotation {
             Pitch: 9.93500137
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: -3.05175781e-05
           }
           Scale {
@@ -1014,7 +1014,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 0.180664063
+            X: 0.180664062
             Y: -5.01855469
             Z: -15.4082031
           }
@@ -1080,8 +1080,8 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -0.309570313
-            Y: 9.93164063
+            X: -0.309570312
+            Y: 9.93164062
             Z: -9.96679688
           }
           Rotation {
@@ -1147,7 +1147,7 @@ Assets {
         Transform {
           Location {
             X: 1.9375
-            Y: -52.7226563
+            Y: -52.7226562
             Z: 10.9951172
           }
           Rotation {
@@ -1183,7 +1183,7 @@ Assets {
         Transform {
           Location {
             X: 1.37402344
-            Y: -6.08007813
+            Y: -6.08007812
             Z: -3.62744141
           }
           Rotation {
@@ -1511,7 +1511,7 @@ Assets {
         Transform {
           Location {
             X: 1.9375
-            Y: 52.7226563
+            Y: 52.7226562
             Z: 10.9956055
           }
           Rotation {
@@ -1847,7 +1847,7 @@ Assets {
         Transform {
           Location {
             X: 60.4243164
-            Y: 72.4726563
+            Y: 72.4726562
           }
           Rotation {
           }
@@ -2560,7 +2560,7 @@ Assets {
         Transform {
           Location {
             X: 60.4243164
-            Y: 72.4726563
+            Y: 72.4726562
           }
           Rotation {
           }
@@ -3902,7 +3902,7 @@ Assets {
         Transform {
           Location {
             X: -31.0292969
-            Y: 34.5039063
+            Y: 34.5039062
             Z: -46.3754883
           }
           Rotation {
@@ -4777,7 +4777,7 @@ Assets {
         Name: "Shield 03"
         Transform {
           Location {
-            X: 9.58007813
+            X: 9.58007812
             Y: -0.359375
             Z: 5.34619141
           }
@@ -5137,5 +5137,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

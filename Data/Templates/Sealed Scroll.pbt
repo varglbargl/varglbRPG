@@ -224,7 +224,7 @@ Assets {
         Name: "Cylinder - Rounded"
         Transform {
           Location {
-            X: -1.11914063
+            X: -1.11914062
             Y: -2.88769531
             Z: 2.61743164
           }
@@ -288,7 +288,7 @@ Assets {
         Name: "Manticore Logo"
         Transform {
           Location {
-            X: -1.11914063
+            X: -1.11914062
             Y: -7.58203125
             Z: 7.31201172
           }
@@ -353,7 +353,7 @@ Assets {
         Transform {
           Location {
             X: 30.8232422
-            Y: -0.0317382813
+            Y: -0.0317382812
             Z: 0.235839844
           }
           Rotation {
@@ -496,7 +496,7 @@ Assets {
         Transform {
           Location {
             X: 30.8232422
-            Y: -0.0317382813
+            Y: -0.0317382812
             Z: -0.0544433594
           }
           Rotation {
@@ -854,7 +854,7 @@ Assets {
         Transform {
           Location {
             X: -30.8232422
-            Y: -0.0512695313
+            Y: -0.0512695312
             Z: 0.0236816406
           }
           Rotation {
@@ -1150,7 +1150,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

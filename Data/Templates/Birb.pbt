@@ -1906,12 +1906,12 @@ Assets {
         Transform {
           Location {
             X: 68.4458
-            Y: -0.559570313
+            Y: -0.559570312
             Z: 23.6884155
           }
           Rotation {
             Pitch: -8.25491333
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: -3.05175781e-05
           }
           Scale {
@@ -2020,7 +2020,7 @@ Assets {
         Transform {
           Location {
             X: 77.754425
-            Y: -2.33789063
+            Y: -2.33789062
             Z: 50.6974297
           }
           Rotation {
@@ -2505,7 +2505,7 @@ Assets {
           Location {
             X: 0.000244140625
             Y: -34.6533203
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Pitch: 18.0682259
@@ -3719,7 +3719,7 @@ Assets {
   Marketplace {
     Description: "It\'s a bird! Drag it into your project and it\'ll peck at the ground, hop in place, look side to side, and chirp all on its own!\r\n\r\n!!! ~ NO SCRIPTING REQUIRED ~ !!!\r\n\r\n\r\nFEATURES:\r\n\r\n - Four (4) animations that can be toggled on or off individually\r\n - Natural feeling randomized animation timing\r\n - Chirp animation can play (almost) any audio object\r\n - Easily editable into crows, chickens, or whatever!\r\n\r\nPLANNED FEATURES:\r\n\r\n - More animations like wing flapping\r\n - Maybe a version that follows players around\r\n - Maybe a version the flies away when you get too close like real birds\r\n\r\nBUG FIXES:\r\n\r\n - Chirp now works correctly with a much wider variety of audio objects\r\n - Fixed bug where everything was just totally broken!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

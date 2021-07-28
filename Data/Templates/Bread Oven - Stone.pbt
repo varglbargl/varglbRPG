@@ -1036,7 +1036,7 @@ Assets {
         Name: "Container - Hex- Rounded"
         Transform {
           Location {
-            X: -7.00976563
+            X: -7.00976562
             Y: -25.5576172
             Z: 161.450684
           }
@@ -1659,7 +1659,7 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: -58.2695313
+            X: -58.2695312
             Y: 81.3818359
             Z: 59.0385742
           }
@@ -1986,7 +1986,7 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: 39.7070313
+            X: 39.7070312
             Y: 79.1669922
             Z: 110.802734
           }
@@ -2200,7 +2200,7 @@ Assets {
         Transform {
           Location {
             X: -109.219727
-            Y: 4.33789063
+            Y: 4.33789062
             Z: 158.045898
           }
           Rotation {
@@ -2260,7 +2260,7 @@ Assets {
         Transform {
           Location {
             X: -109.219727
-            Y: 4.33789063
+            Y: 4.33789062
             Z: 199.636475
           }
           Rotation {
@@ -2804,7 +2804,7 @@ Assets {
         Transform {
           Location {
             X: -109.219727
-            Y: 4.33789063
+            Y: 4.33789062
             Z: 124.084473
           }
           Rotation {
@@ -3196,7 +3196,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

@@ -88,7 +88,7 @@ Assets {
         Name: "Cherries"
         Transform {
           Location {
-            X: 6.55664063
+            X: 6.55664062
             Y: 0.334472656
             Z: 54.3006592
           }
@@ -1792,7 +1792,7 @@ Assets {
           Location {
             X: 18.7060547
             Y: -114.197388
-            Z: 37.8320313
+            Z: 37.8320312
           }
           Rotation {
             Pitch: 33.550457
@@ -2330,7 +2330,7 @@ Assets {
         Name: "Rock Pile 001"
         Transform {
           Location {
-            X: -15.2851563
+            X: -15.2851562
             Y: -108.859741
             Z: 56.434082
           }
@@ -4004,7 +4004,7 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: 62.5507813
+            X: 62.5507812
             Y: -90.7443848
             Z: 36.8251953
           }
@@ -4166,7 +4166,7 @@ Assets {
         Name: "Rock Pile 002"
         Transform {
           Location {
-            X: 83.9726563
+            X: 83.9726562
             Y: -76.2092285
             Z: 45.9447021
           }
@@ -5246,7 +5246,7 @@ Assets {
         Name: "Rock Pile 001"
         Transform {
           Location {
-            X: 106.007813
+            X: 106.007812
             Y: 1.9230957
             Z: 52.2344971
           }
@@ -5894,7 +5894,7 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: 107.226563
+            X: 107.226562
             Y: 0.175048828
             Z: 76.2399902
           }
@@ -6110,7 +6110,7 @@ Assets {
         Name: "Rock Pile 001"
         Transform {
           Location {
-            X: 97.7382813
+            X: 97.7382812
             Y: -41.5057373
             Z: 24.8414307
           }
@@ -8056,7 +8056,7 @@ Assets {
           Location {
             X: 66.8012695
             Y: 58.2319336
-            Z: 33.5664063
+            Z: 33.5664062
           }
           Rotation {
             Pitch: 20.3137264
@@ -9241,7 +9241,7 @@ Assets {
         Name: "Rock Hexagonal"
         Transform {
           Location {
-            X: 89.2070313
+            X: 89.2070312
             Y: 16.2524414
             Z: 26.147583
           }
@@ -11997,7 +11997,7 @@ Assets {
           Location {
             X: 6.33544922
             Y: 92.1304932
-            Z: 64.3164063
+            Z: 64.3164062
           }
           Rotation {
             Pitch: -46.4800377
@@ -12049,7 +12049,7 @@ Assets {
         Name: "Rock Pile 001"
         Transform {
           Location {
-            X: -0.735351563
+            X: -0.735351562
             Y: 94.8531494
             Z: 76.9075928
           }
@@ -12103,7 +12103,7 @@ Assets {
         Name: "Rock Pile 002"
         Transform {
           Location {
-            X: -19.0820313
+            X: -19.0820312
             Y: 88.9899902
             Z: 63.7071533
           }
@@ -13129,7 +13129,7 @@ Assets {
         Name: "Rock Pile 002"
         Transform {
           Location {
-            X: -42.1601563
+            X: -42.1601562
             Y: 92.0540771
             Z: 61.0723877
           }
@@ -14101,7 +14101,7 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: -82.4882813
+            X: -82.4882812
             Y: 42.4954834
             Z: 90.6949463
           }
@@ -15345,7 +15345,7 @@ Assets {
           Location {
             X: -98.5253906
             Y: 25.8865967
-            Z: 52.0039063
+            Z: 52.0039062
           }
           Rotation {
             Pitch: -7.64172459
@@ -15722,7 +15722,7 @@ Assets {
         Transform {
           Location {
             X: -75.3388672
-            Y: 60.7226563
+            Y: 60.7226562
             Z: 72.5408936
           }
           Rotation {
@@ -16641,7 +16641,7 @@ Assets {
           Location {
             X: -86.9555664
             Y: -66.4448242
-            Z: 67.1757813
+            Z: 67.1757812
           }
           Rotation {
             Pitch: -16.2634983
@@ -18259,7 +18259,7 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: -99.3476563
+            X: -99.3476562
             Y: 9.04614258
             Z: 63.8848877
           }
@@ -18637,7 +18637,7 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: -96.7851563
+            X: -96.7851562
             Y: -33.1341553
             Z: 74.8035889
           }
@@ -18853,7 +18853,7 @@ Assets {
         Name: "Rock Pile 001"
         Transform {
           Location {
-            X: -11.0039063
+            X: -11.0039062
             Y: -108.410767
             Z: 57.2614746
           }
@@ -19125,7 +19125,7 @@ Assets {
           Location {
             X: -30.6777344
             Y: -101.845215
-            Z: 61.3007813
+            Z: 61.3007812
           }
           Rotation {
             Pitch: 33.55056
@@ -20099,6 +20099,6 @@ Assets {
   Marketplace {
     Description: "Based on the Portal_Cake_Is_A_Lie by RandalM."
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

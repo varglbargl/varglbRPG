@@ -59,8 +59,8 @@ Wildermagic.spells = {
   function(player)
     local howMuch = math.random(1, math.ceil(player.maxHitPoints / 5))
 
-    player.hitPoints = math.min(player.hitPoints - howMuch, player.maxHitPoints)
-    Events.Broadcast("PlayerHealed", player, -howMuch)
+    player.hitPoints = math.min(player.hitPoints + howMuch, player.maxHitPoints)
+    Events.Broadcast("PlayerHealed", player)
 
     return "Revival"
   end,

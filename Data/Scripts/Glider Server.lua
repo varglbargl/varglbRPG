@@ -27,7 +27,7 @@ function checkLanded(player, defaultGravity, defaultJumpVel, defaultStance)
     player.animationStance = defaultStance
   end
 
-  player:DisableRagdoll()
+  -- player:DisableRagdoll()
   player.serverUserData["Gliding"] = false
 
   for _, eq in ipairs(player:GetEquipment()) do

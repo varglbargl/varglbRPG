@@ -847,7 +847,7 @@ Assets {
         Name: "Throwing Axe"
         Transform {
           Location {
-            X: 16.5664063
+            X: 16.5664062
             Y: -52.1948242
             Z: 121.957275
           }
@@ -3064,7 +3064,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

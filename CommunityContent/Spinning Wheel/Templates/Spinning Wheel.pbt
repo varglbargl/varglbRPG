@@ -2462,7 +2462,7 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: 61.8632813
+            X: 61.8632812
             Y: 111.822266
             Z: 44.3469238
           }
@@ -2930,7 +2930,7 @@ Assets {
         Name: "Wedge"
         Transform {
           Location {
-            X: -39.2851563
+            X: -39.2851562
             Y: -31.796875
           }
           Rotation {
@@ -2990,7 +2990,7 @@ Assets {
         Transform {
           Location {
             X: -49.9433594
-            Y: 22.1601563
+            Y: 22.1601562
           }
           Rotation {
             Yaw: -78.8241425
@@ -3102,7 +3102,7 @@ Assets {
         Name: "Wedge"
         Transform {
           Location {
-            X: -39.2851563
+            X: -39.2851562
             Y: -31.796875
           }
           Rotation {
@@ -3162,7 +3162,7 @@ Assets {
         Transform {
           Location {
             X: -49.9433594
-            Y: 22.1601563
+            Y: 22.1601562
           }
           Rotation {
             Yaw: -78.8241196
@@ -3840,6 +3840,6 @@ Assets {
   Marketplace {
     Description: "A super-quick kitbash of a spinning wheel, for all your Rumpelstiltskin adventures... XD\r\n\r\nI needed one, so I made one for the community. Built off Anna\'s wagon wheel."
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

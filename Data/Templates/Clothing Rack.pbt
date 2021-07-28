@@ -672,7 +672,7 @@ Assets {
         Transform {
           Location {
             X: 15.1621094
-            Y: 126.882813
+            Y: 126.882812
             Z: 101.57373
           }
           Rotation {
@@ -1952,7 +1952,7 @@ Assets {
         Transform {
           Location {
             X: -21.2714844
-            Y: 92.1445313
+            Y: 92.1445312
             Z: 99.1987305
           }
           Rotation {
@@ -2805,7 +2805,7 @@ Assets {
         Name: "Arch Fancy 3m"
         Transform {
           Location {
-            X: 9.79101563
+            X: 9.79101562
             Y: -123.494629
             Z: 169.022949
           }
@@ -3149,7 +3149,7 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.2539063
+            X: -19.2539062
             Y: -103.760742
             Z: 109.532227
           }
@@ -3319,7 +3319,7 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.2539063
+            X: -19.2539062
             Y: -107.713867
             Z: 109.532227
           }
@@ -3918,7 +3918,7 @@ Assets {
         Transform {
           Location {
             X: 14.4746094
-            Y: -72.2851563
+            Y: -72.2851562
             Z: 101.574707
           }
           Rotation {
@@ -4001,7 +4001,7 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.8945313
+            X: -19.8945312
             Y: -82.8603516
             Z: 103.056152
           }
@@ -4511,7 +4511,7 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.3320313
+            X: -19.3320312
             Y: -27.2363281
             Z: 109.98877
           }
@@ -4681,7 +4681,7 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.3320313
+            X: -19.3320312
             Y: -31.2060547
             Z: 109.98877
           }
@@ -5093,7 +5093,7 @@ Assets {
         Name: "Hiragana Font 1: \343\201\227 (SHI)"
         Transform {
           Location {
-            X: 6.51757813
+            X: 6.51757812
             Y: -28.543457
             Z: 210.349609
           }
@@ -5195,7 +5195,7 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.6445313
+            X: -20.6445312
             Y: -17.7138672
             Z: 103.056152
           }
@@ -5771,7 +5771,7 @@ Assets {
         Name: "Hiragana Font 1: \343\201\227 (SHI)"
         Transform {
           Location {
-            X: 6.63476563
+            X: 6.63476562
             Y: -14.1411133
             Z: 209.881836
           }
@@ -5957,7 +5957,7 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.3476563
+            X: 15.3476562
             Y: 71.1748047
             Z: 101.574707
           }
@@ -6719,7 +6719,7 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -21.6132813
+            X: -21.6132812
             Y: 45.3388672
             Z: 95.3745117
           }
@@ -7399,7 +7399,7 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -21.8789063
+            X: -21.8789062
             Y: 147.361328
             Z: 96.3286133
           }
@@ -7485,7 +7485,7 @@ Assets {
         Transform {
           Location {
             X: 15.5058594
-            Y: 139.726563
+            Y: 139.726562
             Z: 94.7446289
           }
           Rotation {
@@ -7893,7 +7893,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

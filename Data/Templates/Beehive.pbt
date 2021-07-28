@@ -740,7 +740,7 @@ Assets {
         Name: "Sphere - Half Thin"
         Transform {
           Location {
-            X: 0.165039063
+            X: 0.165039062
             Y: 0.440918028
             Z: -39.3391113
           }
@@ -1153,7 +1153,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

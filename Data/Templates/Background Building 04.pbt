@@ -1170,7 +1170,7 @@ Assets {
           Location {
             X: -164.386719
             Y: -0.139648438
-            Z: 15.3007813
+            Z: 15.3007812
           }
           Rotation {
           }
@@ -3727,7 +3727,7 @@ Assets {
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: -55.3789063
+            X: -55.3789062
             Y: 0.0615234375
             Z: 929.276123
           }
@@ -3790,7 +3790,7 @@ Assets {
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: -55.3789063
+            X: -55.3789062
             Y: 0.0615234375
             Z: 1502.65918
           }
@@ -3855,7 +3855,7 @@ Assets {
           Location {
             X: -60.3222656
             Y: 0.0615234375
-            Z: 75.3945313
+            Z: 75.3945312
           }
           Rotation {
             Yaw: -179.999954
@@ -4048,7 +4048,7 @@ Assets {
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: -55.3789063
+            X: -55.3789062
             Y: 0.0615234375
             Z: -5.57275391
           }
@@ -4267,7 +4267,7 @@ Assets {
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: -55.3789063
+            X: -55.3789062
             Y: 0.0615234375
             Z: 355.893066
           }
@@ -4711,7 +4711,7 @@ Assets {
         Name: "Fantasy Sack Laying"
         Transform {
           Location {
-            X: -107.789063
+            X: -107.789062
             Y: 103.569824
             Z: 170.519043
           }
@@ -13082,7 +13082,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 796.007813
+            X: 796.007812
             Y: -602.555176
             Z: 725.000732
           }
@@ -13276,7 +13276,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 796.007813
+            X: 796.007812
             Y: -602.555176
             Z: 1325
           }
@@ -13373,7 +13373,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 796.007813
+            X: 796.007812
             Y: 197.444824
             Z: 1324.99927
           }
@@ -13470,7 +13470,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: 796.007813
+            X: 796.007812
             Y: 197.444824
             Z: 725
           }
@@ -14262,7 +14262,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: -215.48877
             Z: 725
           }
@@ -14359,7 +14359,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: -215.48877
             Z: 1325
           }
@@ -14456,7 +14456,7 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: 184.51123
             Z: 725
           }
@@ -14553,7 +14553,7 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: 184.51123
             Z: 1325
           }
@@ -15058,7 +15058,7 @@ Assets {
         Name: "Main Street Wall 02 - Half Window 01"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: 184.51123
             Z: 125
           }
@@ -15279,7 +15279,7 @@ Assets {
         Name: "Main Street Wall 02"
         Transform {
           Location {
-            X: -796.007813
+            X: -796.007812
             Y: -211.399902
             Z: 125
           }
@@ -16011,7 +16011,7 @@ Assets {
             Y: 600
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -16066,7 +16066,7 @@ Assets {
             Z: 20
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1.4
@@ -16230,7 +16230,7 @@ Assets {
             Y: 600
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -17007,7 +17007,7 @@ Assets {
           Location {
             X: -991.826172
             Y: -322.232422
-            Z: 92.1132813
+            Z: 92.1132812
           }
           Rotation {
             Pitch: 6.99999428
@@ -17984,6 +17984,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Tilesets"
 }

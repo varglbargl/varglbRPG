@@ -413,7 +413,7 @@ Assets {
         Name: "Urban Pipe Wrap 01"
         Transform {
           Location {
-            X: -0.0532226563
+            X: -0.0532226562
             Y: -0.01171875
             Z: -55.4587402
           }
@@ -1214,6 +1214,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

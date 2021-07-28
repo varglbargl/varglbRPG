@@ -2354,7 +2354,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -12.3632813
+      X: -12.3632812
       Y: -7.21630859
       Z: 46.890625
     }
@@ -2588,8 +2588,8 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -8.47851563
-      Y: -0.786132813
+      X: -8.47851562
+      Y: -0.786132812
       Z: 46.890625
     }
     Rotation {
@@ -2744,7 +2744,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -7.14257813
+      X: -7.14257812
       Y: 6.92041
       Z: 46.890625
     }
@@ -3159,7 +3159,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -12.3632813
+      X: -12.3632812
       Y: -7.21630859
       Z: 46.890625
     }
@@ -3393,8 +3393,8 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -8.47851563
-      Y: -0.786132813
+      X: -8.47851562
+      Y: -0.786132812
       Z: 46.890625
     }
     Rotation {
@@ -3549,7 +3549,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -7.14257813
+      X: -7.14257812
       Y: 6.92041
       Z: 46.890625
     }
@@ -3964,7 +3964,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -12.3632813
+      X: -12.3632812
       Y: -7.21630859
       Z: 46.890625
     }
@@ -4198,8 +4198,8 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -8.47851563
-      Y: -0.786132813
+      X: -8.47851562
+      Y: -0.786132812
       Z: 46.890625
     }
     Rotation {
@@ -4354,7 +4354,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -7.14257813
+      X: -7.14257812
       Y: 6.92041
       Z: 46.890625
     }
@@ -4769,7 +4769,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -12.3632813
+      X: -12.3632812
       Y: -7.21630859
       Z: 46.890625
     }
@@ -5003,8 +5003,8 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -8.47851563
-      Y: -0.786132813
+      X: -8.47851562
+      Y: -0.786132812
       Z: 46.890625
     }
     Rotation {
@@ -5159,7 +5159,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -7.14257813
+      X: -7.14257812
       Y: 6.92041
       Z: 46.890625
     }
@@ -5574,7 +5574,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -12.3632813
+      X: -12.3632812
       Y: -7.21630859
       Z: 46.890625
     }
@@ -5808,8 +5808,8 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -8.47851563
-      Y: -0.786132813
+      X: -8.47851562
+      Y: -0.786132812
       Z: 46.890625
     }
     Rotation {
@@ -5964,7 +5964,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -7.14257813
+      X: -7.14257812
       Y: 6.92041
       Z: 46.890625
     }
@@ -6300,7 +6300,7 @@ Objects {
   Name: "Urban Pipe Cap 03"
   Transform {
     Location {
-      X: 1335.64063
+      X: 1335.64062
       Y: -32.5332031
       Z: 146
     }
@@ -6559,7 +6559,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -12.3632813
+      X: -12.3632812
       Y: -7.21630859
       Z: 46.890625
     }
@@ -6793,8 +6793,8 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -8.47851563
-      Y: -0.786132813
+      X: -8.47851562
+      Y: -0.786132812
       Z: 46.890625
     }
     Rotation {
@@ -6949,7 +6949,7 @@ Objects {
   Name: "Pyramid - 4-Sided Truncated Polished"
   Transform {
     Location {
-      X: -7.14257813
+      X: -7.14257812
       Y: 6.92041
       Z: 46.890625
     }
@@ -9779,7 +9779,7 @@ Objects {
   Name: "Grass Tall"
   Transform {
     Location {
-      X: -50.9882813
+      X: -50.9882812
       Y: 511.229
       Z: 1310.85156
     }
@@ -12951,7 +12951,7 @@ Objects {
       Z: 235
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -179.999954
       Roll: 179.999939
     }
@@ -13243,7 +13243,7 @@ Objects {
       Z: 245
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -179.999954
       Roll: 179.999939
     }
@@ -13295,7 +13295,7 @@ Objects {
     }
     Rotation {
       Pitch: -90
-      Yaw: -6.10351563e-05
+      Yaw: -6.10351562e-05
       Roll: -179.999771
     }
     Scale {
@@ -19413,7 +19413,7 @@ Objects {
   Name: "Ivy 01"
   Transform {
     Location {
-      X: -554.664063
+      X: -554.664062
       Y: 170.186951
       Z: 1290
     }
@@ -20099,7 +20099,7 @@ Objects {
   Name: "Ivy 03"
   Transform {
     Location {
-      X: -815.945313
+      X: -815.945312
       Y: 229.933014
       Z: 1437.57861
     }
@@ -20187,7 +20187,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -20253,7 +20253,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -20704,7 +20704,7 @@ Objects {
   Name: "Japanese Temple Roof Peak 01 - End 01 Tip"
   Transform {
     Location {
-      X: 1277.45313
+      X: 1277.45312
       Y: 536.469727
       Z: 1882
     }
@@ -20867,7 +20867,7 @@ Objects {
   Name: "Japanese Temple Roof Peak 01 - End 01 Tip"
   Transform {
     Location {
-      X: 141.132813
+      X: 141.132812
       Y: 1672.79
       Z: 1882
     }
@@ -27669,7 +27669,7 @@ Objects {
     Location {
       X: 64.0585938
       Y: 569.704102
-      Z: 77.2539063
+      Z: 77.2539062
     }
     Rotation {
       Yaw: 45
@@ -27932,7 +27932,7 @@ Objects {
     Location {
       X: -443.650482
       Y: 733.043884
-      Z: 77.2539063
+      Z: 77.2539062
     }
     Rotation {
       Yaw: 45
@@ -28250,7 +28250,7 @@ Objects {
     Location {
       X: 234.541992
       Y: 746.049805
-      Z: 77.2539063
+      Z: 77.2539062
     }
     Rotation {
       Yaw: -135
@@ -30528,7 +30528,7 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: -286.039063
+      X: -286.039062
       Y: -94.6787109
       Z: 610.342773
     }
@@ -33899,7 +33899,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"

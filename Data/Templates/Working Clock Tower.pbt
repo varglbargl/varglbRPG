@@ -1000,7 +1000,7 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -12.3632813
+            X: -12.3632812
             Y: -0.001953125
             Z: -0.001953125
           }
@@ -1299,7 +1299,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -19.0375977
             Z: 77.1140137
           }
@@ -1385,7 +1385,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 4.25439453
             Z: 77.1140137
           }
@@ -1471,7 +1471,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 11.2050781
             Z: 77.1140137
           }
@@ -1557,7 +1557,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 85.8867188
             Z: -14.8859863
           }
@@ -1643,7 +1643,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 78.7319336
             Z: -14.8859863
           }
@@ -1729,7 +1729,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 92.9477539
             Z: -14.8859863
           }
@@ -1815,7 +1815,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -17.2260742
             Z: -103.885986
           }
@@ -1901,7 +1901,7 @@ Assets {
         Name: "Text 03: V"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -10.0219727
             Z: -103.885986
           }
@@ -1987,7 +1987,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -105.226074
             Z: -12.8859863
           }
@@ -2073,7 +2073,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -98.3642578
             Z: -12.8859863
           }
@@ -3705,7 +3705,7 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -12.3632813
+            X: -12.3632812
             Y: -0.001953125
             Z: -0.001953125
           }
@@ -4004,7 +4004,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -19.0375977
             Z: 77.1140137
           }
@@ -4090,7 +4090,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 4.25439453
             Z: 77.1140137
           }
@@ -4176,7 +4176,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 11.2050781
             Z: 77.1140137
           }
@@ -4262,7 +4262,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 85.8867188
             Z: -14.8859863
           }
@@ -4348,7 +4348,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 78.7319336
             Z: -14.8859863
           }
@@ -4434,7 +4434,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 92.9477539
             Z: -14.8859863
           }
@@ -4520,7 +4520,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -17.2260742
             Z: -103.885986
           }
@@ -4606,7 +4606,7 @@ Assets {
         Name: "Text 03: V"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -10.0219727
             Z: -103.885986
           }
@@ -4692,7 +4692,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -105.226074
             Z: -12.8859863
           }
@@ -4778,7 +4778,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -98.3642578
             Z: -12.8859863
           }
@@ -6412,7 +6412,7 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -12.3632813
+            X: -12.3632812
             Y: -0.001953125
             Z: -0.001953125
           }
@@ -6711,7 +6711,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -19.0375977
             Z: 77.1140137
           }
@@ -6797,7 +6797,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 4.25439453
             Z: 77.1140137
           }
@@ -6883,7 +6883,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 11.2050781
             Z: 77.1140137
           }
@@ -6969,7 +6969,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 85.8867188
             Z: -14.8859863
           }
@@ -7055,7 +7055,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 78.7319336
             Z: -14.8859863
           }
@@ -7141,7 +7141,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 92.9477539
             Z: -14.8859863
           }
@@ -7227,7 +7227,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -17.2260742
             Z: -103.885986
           }
@@ -7313,7 +7313,7 @@ Assets {
         Name: "Text 03: V"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -10.0219727
             Z: -103.885986
           }
@@ -7399,7 +7399,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -105.226074
             Z: -12.8859863
           }
@@ -7485,7 +7485,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -98.3642578
             Z: -12.8859863
           }
@@ -9119,7 +9119,7 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -12.3632813
+            X: -12.3632812
             Y: -0.001953125
             Z: -0.001953125
           }
@@ -9418,7 +9418,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -19.0375977
             Z: 77.1140137
           }
@@ -9504,7 +9504,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 4.25439453
             Z: 77.1140137
           }
@@ -9590,7 +9590,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 11.2050781
             Z: 77.1140137
           }
@@ -9676,7 +9676,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 85.8867188
             Z: -14.8859863
           }
@@ -9762,7 +9762,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 78.7319336
             Z: -14.8859863
           }
@@ -9848,7 +9848,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 92.9477539
             Z: -14.8859863
           }
@@ -9934,7 +9934,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -17.2260742
             Z: -103.885986
           }
@@ -10020,7 +10020,7 @@ Assets {
         Name: "Text 03: V"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -10.0219727
             Z: -103.885986
           }
@@ -10106,7 +10106,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -105.226074
             Z: -12.8859863
           }
@@ -10192,7 +10192,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -98.3642578
             Z: -12.8859863
           }
@@ -13024,7 +13024,7 @@ Assets {
         Name: "Urban Pipe Coupling 04"
         Transform {
           Location {
-            X: 0.129882813
+            X: 0.129882812
             Y: -108.984375
             Z: -0.00202941895
           }
@@ -17772,7 +17772,7 @@ Assets {
         Transform {
           Location {
             X: 746.775391
-            Y: -483.882813
+            Y: -483.882812
             Z: 23.6495361
           }
           Rotation {
@@ -19369,7 +19369,7 @@ Assets {
         Name: "Military Hazard Barrel"
         Transform {
           Location {
-            X: -270.132813
+            X: -270.132812
             Y: -237.092773
             Z: -65
           }
@@ -19441,7 +19441,7 @@ Assets {
         Name: "Military Hazard Barrel"
         Transform {
           Location {
-            X: -302.101563
+            X: -302.101562
             Y: -118
             Z: -65
           }
@@ -26878,6 +26878,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

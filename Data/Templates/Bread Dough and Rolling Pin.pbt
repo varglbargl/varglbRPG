@@ -305,7 +305,7 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -3.46289063
+            X: -3.46289062
             Y: -20.4394531
             Z: 20.0004883
           }
@@ -610,7 +610,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

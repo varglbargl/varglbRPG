@@ -2,7 +2,7 @@ Assets {
   Id: 15867482939829531372
   Name: "Katana Handle"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 10201647995611723936
     ParameterOverrides {

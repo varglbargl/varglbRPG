@@ -92,7 +92,7 @@ Assets {
         Name: "Shield 01"
         Transform {
           Location {
-            X: -7.17382813
+            X: -7.17382812
             Y: -11.7431641
             Z: -2
           }
@@ -497,7 +497,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Shields"
 }

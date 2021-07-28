@@ -308,7 +308,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -13.6832275
-            Y: 2.11914063
+            Y: 2.11914062
             Z: 1.04016113
           }
         }
@@ -388,7 +388,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 104.686646
-            Y: -7.38476563
+            Y: -7.38476562
             Z: 0.572021484
           }
         }
@@ -413,7 +413,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -13.6832275
-            Y: 2.11132813
+            Y: 2.11132812
             Z: 4.60888672
           }
         }
@@ -463,7 +463,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 104.685791
-            Y: -7.72851563
+            Y: -7.72851562
             Z: 2.22644043
           }
         }
@@ -1697,7 +1697,7 @@ Objects {
   Transform {
     Location {
       X: -11002.4717
-      Y: -37770.5313
+      Y: -37770.5312
       Z: 1198.33398
     }
     Rotation {
@@ -1777,7 +1777,7 @@ Objects {
   Transform {
     Location {
       X: -53234.6797
-      Y: -65635.1563
+      Y: -65635.1562
       Z: 9226.40137
     }
     Rotation {

@@ -390,7 +390,7 @@ Assets {
           Location {
             X: -1.09863281
             Y: -0.884765625
-            Z: -19.6132813
+            Z: -19.6132812
           }
           Rotation {
           }
@@ -964,7 +964,7 @@ Assets {
         Name: "Diamond - Polished"
         Transform {
           Location {
-            X: -9.34570313
+            X: -9.34570312
             Y: -0.888671875
             Z: 48.722168
           }
@@ -1183,7 +1183,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Weapons"
 }

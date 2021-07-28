@@ -108,7 +108,7 @@ Assets {
         Transform {
           Location {
             X: -2.19433594
-            Y: 1.75976563
+            Y: 1.75976562
             Z: 85.1015625
           }
           Rotation {
@@ -389,7 +389,7 @@ Assets {
         Transform {
           Location {
             X: -28.4472656
-            Y: 1.75976563
+            Y: 1.75976562
             Z: 72.5834961
           }
           Rotation {
@@ -1653,6 +1653,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Enemies"
 }

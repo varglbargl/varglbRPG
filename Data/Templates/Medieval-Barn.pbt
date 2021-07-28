@@ -184,7 +184,7 @@ Assets {
           Location {
             X: 33.784668
             Y: 1220.07031
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
           }
@@ -222,7 +222,7 @@ Assets {
         Name: "Decal Hay Patch 01"
         Transform {
           Location {
-            X: -659.507813
+            X: -659.507812
             Y: 831.74176
           }
           Rotation {
@@ -261,7 +261,7 @@ Assets {
         Name: "Decal Hay Patch 01"
         Transform {
           Location {
-            X: -659.507813
+            X: -659.507812
             Y: 279.226746
           }
           Rotation {
@@ -300,7 +300,7 @@ Assets {
         Name: "Decal Hay Patch 01"
         Transform {
           Location {
-            X: -659.507813
+            X: -659.507812
             Y: 10.4155884
           }
           Rotation {
@@ -339,7 +339,7 @@ Assets {
         Name: "Decal Hay Patch 01"
         Transform {
           Location {
-            X: -659.507813
+            X: -659.507812
             Y: -624.990662
           }
           Rotation {
@@ -380,7 +380,7 @@ Assets {
           Location {
             X: -708.817261
             Y: 580.281677
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
           }
@@ -420,7 +420,7 @@ Assets {
           Location {
             X: -708.817261
             Y: -292.233826
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
           }
@@ -460,7 +460,7 @@ Assets {
           Location {
             X: -708.817261
             Y: -926.546082
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: 89.9999924
@@ -501,7 +501,7 @@ Assets {
           Location {
             X: -708.817261
             Y: -1227.43579
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
           }
@@ -701,7 +701,7 @@ Assets {
           Location {
             X: 821.251953
             Y: -970.620056
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: -179.999985
@@ -742,7 +742,7 @@ Assets {
           Location {
             X: 821.251953
             Y: -98.1048
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: -179.999985
@@ -783,7 +783,7 @@ Assets {
           Location {
             X: 821.251709
             Y: 536.207458
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: -89.9999924
@@ -824,7 +824,7 @@ Assets {
           Location {
             X: 821.251953
             Y: 837.097107
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: -179.999985
@@ -1272,7 +1272,7 @@ Assets {
         Name: "Decal Vines End 01"
         Transform {
           Location {
-            X: 520.164063
+            X: 520.164062
             Y: -1549.26685
             Z: 327.747467
           }
@@ -6526,7 +6526,7 @@ Assets {
           Location {
             X: 705.307861
             Y: 1305.69836
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Pitch: 2.04905664e-05
@@ -31506,6 +31506,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

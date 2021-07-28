@@ -1,6 +1,156 @@
 Name: "Un-Mergeable_8"
 RootId: 18208006847494356526
 Objects {
+  Id: 10343542923953051309
+  Name: "Parkour Ledge"
+  Transform {
+    Location {
+      X: 13745.4473
+      Y: -8496.5957
+      Z: -3575
+    }
+    Rotation {
+      Yaw: -44.9999962
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18208006847494356526
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1743055794411788479
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 17.6
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8393069750000026357
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Parkour Ledge"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 958.371399
+            Y: -1253.65479
+            Z: 737
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 3.4150944e-06
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7206529509805093952
+    }
+  }
+}
+Objects {
+  Id: 11845095163660332755
+  Name: "Parkour Ledge"
+  Transform {
+    Location {
+      X: 14811.0596
+      Y: -7430.98438
+      Z: -3554
+    }
+    Rotation {
+      Yaw: 135
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18208006847494356526
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1743055794411788479
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 20
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8393069750000026357
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Parkour Ledge"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 958.37207
+            Y: 253.347916
+            Z: 758
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 180
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7206529509805093952
+    }
+  }
+}
+Objects {
   Id: 17014229127071773562
   Name: "Carpet Tile 01"
   Transform {

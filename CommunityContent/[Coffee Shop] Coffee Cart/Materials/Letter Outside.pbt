@@ -2,7 +2,7 @@ Assets {
   Id: 14730042208600390382
   Name: "Letter Outside"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 2502011191961427546
     ParameterOverrides {

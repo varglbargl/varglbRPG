@@ -11,6 +11,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Loot"
+        AssetReference {
+          Id: 10149346056993589588
+        }
+      }
+      Overrides {
         Name: "cs:SpawnVFX"
         AssetReference {
           Id: 4048767687044730201
@@ -27,5 +33,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

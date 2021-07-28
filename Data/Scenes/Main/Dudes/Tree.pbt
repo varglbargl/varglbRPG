@@ -5,7 +5,7 @@ Objects {
   Name: "Candle Flame VFX"
   Transform {
     Location {
-      X: -2.40820313
+      X: -2.40820312
       Y: -56.9536133
       Z: 123.90918
     }
@@ -156,7 +156,7 @@ Objects {
       Z: 123.244141
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -76.9699707
       Roll: 0.000306238071
     }
@@ -447,7 +447,7 @@ Objects {
       Z: 117.569336
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -2.56732178
       Roll: 0.0003062381
     }
@@ -733,12 +733,12 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: 57.8007813
+      X: 57.8007812
       Y: 40.2856445
       Z: 98.0131836
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: 52.9361725
       Roll: 0.0003062381
     }
@@ -1029,7 +1029,7 @@ Objects {
       Z: 136.703613
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: 80.2262955
       Roll: 0.000306238071
     }
@@ -1243,7 +1243,7 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: -29.8632813
+      X: -29.8632812
       Y: 76.109375
       Z: 81.9555664
     }
@@ -1316,11 +1316,11 @@ Objects {
   Transform {
     Location {
       X: -37.1396484
-      Y: 72.7851563
+      Y: 72.7851562
       Z: 81.9555664
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: 135.491379
       Roll: 0.0003062381
     }
@@ -1611,7 +1611,7 @@ Objects {
       Z: 71.2719727
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -143.668289
       Roll: 0.000306238158
     }
@@ -1902,7 +1902,7 @@ Objects {
       Z: 44.2983398
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: 87.6381454
       Roll: 0.000306238071
     }
@@ -2193,7 +2193,7 @@ Objects {
       Z: 61.8950195
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: 162.040771
       Roll: 0.000306238071
     }
@@ -2484,7 +2484,7 @@ Objects {
       Z: 127.209473
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -142.45575
       Roll: 0.000306238042
     }
@@ -2551,7 +2551,7 @@ Objects {
   Name: "Sphere"
   Transform {
     Location {
-      X: -54.5195313
+      X: -54.5195312
       Y: -16.2575684
       Z: 126.233398
     }
@@ -2775,7 +2775,7 @@ Objects {
       Z: 96.1225586
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -115.165527
       Roll: 0.000306238071
     }
@@ -3066,7 +3066,7 @@ Objects {
       Z: 39.9150391
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -59.9005127
       Roll: 0.0003062381
     }
@@ -3133,7 +3133,7 @@ Objects {
   Name: "Sphere"
   Transform {
     Location {
-      X: 9.05664063
+      X: 9.05664062
       Y: -56.1662598
       Z: 38.9389648
     }
@@ -3356,7 +3356,7 @@ Objects {
       Z: 75.8598633
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: 20.939785
       Roll: 0.000306238071
     }
@@ -3496,7 +3496,7 @@ Objects {
     Location {
       X: 57.6103516
       Y: 23.1606445
-      Z: 84.9257813
+      Z: 84.9257812
     }
     Rotation {
       Yaw: -97.90979
@@ -3625,7 +3625,7 @@ Objects {
   Transform {
     Location {
       X: -9.52734375
-      Y: -55.7851563
+      Y: -55.7851562
       Z: 112.57959
     }
     Rotation {

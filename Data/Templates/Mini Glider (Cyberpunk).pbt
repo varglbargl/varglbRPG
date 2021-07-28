@@ -291,6 +291,18 @@ Assets {
               SubObjectId: 74613537492444934
             }
           }
+          Overrides {
+            Name: "cs:LeftHandAnchor"
+            ObjectReference {
+              SubObjectId: 736577834844027109
+            }
+          }
+          Overrides {
+            Name: "cs:RightHandAnchor"
+            ObjectReference {
+              SubObjectId: 1016983575128330095
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -586,6 +598,7 @@ Assets {
           }
         }
         ParentId: 17956555711171865496
+        ChildIds: 736577834844027109
         ChildIds: 17318338759314200170
         ChildIds: 6463149293648403173
         ChildIds: 12564797957149093511
@@ -609,6 +622,52 @@ Assets {
         }
         Folder {
           IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 736577834844027109
+        Name: "Left Hand Anchor"
+        Transform {
+          Location {
+            X: 14.5022459
+            Y: -2.41575909
+            Z: -9.16663933
+          }
+          Rotation {
+            Pitch: 77.2327347
+            Yaw: -179.999878
+            Roll: -179.999863
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6900114259002519168
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: -5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
         }
       }
       Objects {
@@ -1584,6 +1643,7 @@ Assets {
           }
         }
         ParentId: 17956555711171865496
+        ChildIds: 1016983575128330095
         ChildIds: 7686620848878114626
         ChildIds: 17502089959494985369
         ChildIds: 9627706050317122847
@@ -1607,6 +1667,52 @@ Assets {
         }
         Folder {
           IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 1016983575128330095
+        Name: "Right Hand Anchor"
+        Transform {
+          Location {
+            X: 14.502243
+            Y: 2.58424091
+            Z: -9.16663837
+          }
+          Rotation {
+            Pitch: 77.2330627
+            Yaw: -179.99971
+            Roll: -179.999863
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6980154464055773857
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: 5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:righthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
         }
       }
       Objects {
@@ -2705,10 +2811,8 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3"
+    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3\r\n\r\nupdate 1.12\r\n - Added IK Anchors to all gliders! Most noticably, you now hold onto the \"Air\" glider correctly!\r\n\r\nupdate 1.10\r\n - Gliders now broadcast Events and set both clientUserData and serverUserData you can hook other scripts into\r\n - See the Glider Readme for more info :)\r\n - Fixed bug where I accidentally deleted the entire \"Air\" glider. At least I hope that was me and not the Manticore Legal Department.\r\n\r\nupdate 1.6:\r\n - Glide is now an Ability that prevents other abilities so it\'s easier to make sure players don\'t break out of\r\n - Refactored code to be much more reliable at syncing glider state between server and client\r\n - Fixed bug where you would get stuck with your arms in the air if using a weapon with no animation stance set"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
-  VirtualFolderPath: "Gear"
-  VirtualFolderPath: "Gliders"
 }

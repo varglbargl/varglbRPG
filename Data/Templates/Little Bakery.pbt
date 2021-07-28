@@ -10126,7 +10126,7 @@ Assets {
           Location {
             X: -89.8662109
             Y: 4.37084961
-            Z: 0.911132813
+            Z: 0.911132812
           }
           Rotation {
             Pitch: 0.00022539623
@@ -10273,7 +10273,7 @@ Assets {
           Location {
             X: -89.8662109
             Y: -4.7902832
-            Z: 0.911132813
+            Z: 0.911132812
           }
           Rotation {
             Pitch: 0.000191245286
@@ -12338,7 +12338,7 @@ Assets {
           Location {
             X: 86.4023438
             Y: -4.6730957
-            Z: 0.911132813
+            Z: 0.911132812
           }
           Rotation {
             Pitch: 0.00022539623
@@ -12483,7 +12483,7 @@ Assets {
           Location {
             X: 86.4023438
             Y: 4.48803711
-            Z: 0.911132813
+            Z: 0.911132812
           }
           Rotation {
             Pitch: 0.000191245286
@@ -14173,7 +14173,7 @@ Assets {
             Color {
               R: 0.536458313
               G: 0.382504523
-              B: 0.301757813
+              B: 0.301757812
               A: 1
             }
           }
@@ -14255,7 +14255,7 @@ Assets {
             Color {
               R: 0.536458313
               G: 0.382504523
-              B: 0.301757813
+              B: 0.301757812
               A: 1
             }
           }
@@ -14392,7 +14392,7 @@ Assets {
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: 1.36603812e-05
           }
           Scale {
@@ -14469,13 +14469,13 @@ Assets {
         Name: "Wheel_Cog"
         Transform {
           Location {
-            X: -79.5507813
+            X: -79.5507812
             Y: -35.2882
             Z: 12.6554098
           }
           Rotation {
             Pitch: 2.73207552e-05
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: -179.999893
           }
           Scale {
@@ -14632,7 +14632,7 @@ Assets {
           }
           Rotation {
             Pitch: 1.36603776e-05
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: 2.73207443e-05
           }
           Scale {
@@ -14709,13 +14709,13 @@ Assets {
         Name: "Wheel_Cog"
         Transform {
           Location {
-            X: -79.5507813
+            X: -79.5507812
             Y: -35.2881317
             Z: 2.45215631
           }
           Rotation {
             Pitch: 2.73207552e-05
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: -179.999863
           }
           Scale {
@@ -17244,7 +17244,7 @@ Assets {
           Location {
             X: 258.182861
             Y: -51.3354492
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Pitch: 20.4826374
@@ -18527,7 +18527,7 @@ Assets {
           }
           Rotation {
             Pitch: 5.26086426
-            Roll: -3.25976563
+            Roll: -3.25976562
           }
           Scale {
             X: 0.657669902
@@ -19008,7 +19008,7 @@ Assets {
           }
           Rotation {
             Pitch: 5.26087093
-            Roll: -3.25976563
+            Roll: -3.25976562
           }
           Scale {
             X: 0.657669961
@@ -19829,7 +19829,7 @@ Assets {
           Location {
             X: 725.798096
             Y: -170.305176
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Pitch: 20.4826374
@@ -20423,7 +20423,7 @@ Assets {
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 123.664063
+            X: 123.664062
             Y: 317.136719
           }
           Rotation {
@@ -23539,6 +23539,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

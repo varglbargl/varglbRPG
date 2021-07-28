@@ -231,7 +231,7 @@ Assets {
         Transform {
           Location {
             X: 3.25878906
-            Y: -2.29882813
+            Y: -2.29882812
             Z: 33.5444336
           }
           Rotation {
@@ -1109,7 +1109,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Weapons"
 }

@@ -1867,7 +1867,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 245.851563
+            X: 245.851562
             Y: 377.886719
             Z: 3973.40088
           }
@@ -2820,7 +2820,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -928.484375
-            Y: 381.507813
+            Y: 381.507812
             Z: 383.273438
           }
         }
@@ -3099,7 +3099,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 431.007813
+            X: 431.007812
             Y: -698.181152
             Z: 3457.61768
           }
@@ -4445,7 +4445,7 @@ Objects {
           Vector {
             X: -298.916016
             Y: 18.3681641
-            Z: 5429.01563
+            Z: 5429.01562
           }
         }
         Overrides {
@@ -4555,7 +4555,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -781.476563
+            X: -781.476562
             Y: 992.611328
             Z: 4728.19482
           }
@@ -4781,7 +4781,7 @@ Objects {
           Vector {
             X: 296.433594
             Y: 469.641113
-            Z: 4161.32813
+            Z: 4161.32812
           }
         }
         Overrides {
@@ -5955,7 +5955,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -761.914063
+            X: -761.914062
             Y: -898.062
             Z: 358.521
           }
@@ -6179,7 +6179,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 313.132813
+            X: 313.132812
             Y: 255.970215
             Z: 1142.77686
           }
@@ -6907,7 +6907,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -548.007813
+            X: -548.007812
             Y: 203.035156
             Z: 2440.46875
           }
@@ -7467,7 +7467,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -634.851563
+            X: -634.851562
             Y: -944.130371
             Z: 707.021484
           }
@@ -7915,7 +7915,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -124.882813
+            X: -124.882812
             Y: -641.045898
             Z: 1992.8584
           }
@@ -7973,7 +7973,7 @@ Objects {
           Vector {
             X: -849.302734
             Y: 687.01123
-            Z: 47.3632813
+            Z: 47.3632812
           }
         }
         Overrides {
@@ -8699,7 +8699,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -56.0820313
+            X: -56.0820312
             Y: 564.583
             Z: 1851.77148
           }
@@ -8811,7 +8811,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -872.601563
+            X: -872.601562
             Y: -388.733887
             Z: 4237.13379
           }
@@ -10125,7 +10125,7 @@ Objects {
   Name: "Decal Elven Symbols"
   Transform {
     Location {
-      X: -685.382813
+      X: -685.382812
       Y: 955.376465
       Z: 4351.60547
     }
@@ -10253,7 +10253,7 @@ Objects {
   Name: "Decal Elven Symbols"
   Transform {
     Location {
-      X: 570.664063
+      X: 570.664062
       Y: -299.246582
       Z: 2226.32715
     }
@@ -10751,7 +10751,7 @@ Objects {
     Location {
       X: -878.613281
       Y: 899.834961
-      Z: 525.476563
+      Z: 525.476562
     }
     Rotation {
       Pitch: -21.8900108
@@ -11501,7 +11501,7 @@ Objects {
   Name: "Decal Elven Symbols"
   Transform {
     Location {
-      X: -632.007813
+      X: -632.007812
       Y: 171.580566
       Z: 443.418945
     }
@@ -14222,7 +14222,7 @@ Objects {
   Transform {
     Location {
       X: -409.392578
-      Y: 983.476563
+      Y: 983.476562
       Z: 3518.2002
     }
     Rotation {
@@ -14281,7 +14281,7 @@ Objects {
   Name: "Decal Elven Symbols"
   Transform {
     Location {
-      X: -366.695313
+      X: -366.695312
       Y: 805.394043
       Z: 2897.18506
     }
@@ -14409,7 +14409,7 @@ Objects {
   Name: "Decal Elven Symbols"
   Transform {
     Location {
-      X: -282.914063
+      X: -282.914062
       Y: 398.249023
       Z: 2688.74561
     }

@@ -963,7 +963,7 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -12.3632813
+            X: -12.3632812
             Y: -0.001953125
             Z: -0.001953125
           }
@@ -1262,7 +1262,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -19.0375977
             Z: 77.1140137
           }
@@ -1348,7 +1348,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 4.25439453
             Z: 77.1140137
           }
@@ -1434,7 +1434,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 11.2050781
             Z: 77.1140137
           }
@@ -1520,7 +1520,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 85.8867188
             Z: -14.8859863
           }
@@ -1606,7 +1606,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 78.7319336
             Z: -14.8859863
           }
@@ -1692,7 +1692,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: 92.9477539
             Z: -14.8859863
           }
@@ -1778,7 +1778,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -17.2260742
             Z: -103.885986
           }
@@ -1864,7 +1864,7 @@ Assets {
         Name: "Text 03: V"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -10.0219727
             Z: -103.885986
           }
@@ -1950,7 +1950,7 @@ Assets {
         Name: "Text 03: I"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -105.226074
             Z: -12.8859863
           }
@@ -2036,7 +2036,7 @@ Assets {
         Name: "Text 03: X"
         Transform {
           Location {
-            X: -3.72851563
+            X: -3.72851562
             Y: -98.3642578
             Z: -12.8859863
           }
@@ -2902,6 +2902,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

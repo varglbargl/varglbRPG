@@ -173,7 +173,7 @@ Assets {
           Location {
             X: 115.151367
             Y: -2.62060547
-            Z: 176.320313
+            Z: 176.320312
           }
           Rotation {
             Yaw: 89.9999771
@@ -1472,6 +1472,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Tilesets"
 }

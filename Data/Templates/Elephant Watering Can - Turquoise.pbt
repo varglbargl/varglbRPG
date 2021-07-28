@@ -420,7 +420,7 @@ Assets {
             Z: 216.776611
           }
           Rotation {
-            Pitch: -6.10351563e-05
+            Pitch: -6.10351562e-05
             Yaw: 90.0000076
             Roll: -45.0000305
           }
@@ -483,7 +483,7 @@ Assets {
             Y: -2.5462889e-06
           }
           Rotation {
-            Pitch: -6.10351563e-05
+            Pitch: -6.10351562e-05
             Yaw: 90.0000076
             Roll: -179.999939
           }
@@ -1283,7 +1283,7 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            Y: -1.44726563
+            Y: -1.44726562
             Z: 4.78839111
           }
           Rotation {
@@ -1925,7 +1925,7 @@ Assets {
   Marketplace {
     Description: "I just think they\'re neat~!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

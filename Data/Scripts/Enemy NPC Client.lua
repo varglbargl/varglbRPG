@@ -58,7 +58,7 @@ function hitEnemy(player, damage)
   if DAMAGED_VFX then
     local vfx = World.SpawnAsset(DAMAGED_VFX, {position = script:GetWorldPosition()})
 
-    Task.Wait(5)
+    Task.Wait(3)
 
     if Object.IsValid(vfx) then vfx:Destroy() end
   end
@@ -90,7 +90,9 @@ function onEnemyDied(killingPlayer, id, damage)
 
     if DEATH_VFX then
       local vfx = World.SpawnAsset(DEATH_VFX, {position = script:GetWorldPosition()})
+
       Task.Wait(5)
+
       if Object.IsValid(vfx) then vfx:Destroy() end
     end
   end
@@ -108,7 +110,9 @@ function onEnemyAttacked(attackedPlayer, id, reflectedDamage, survived)
 
     if ATTACK_VFX then
       local vfx = World.SpawnAsset(ATTACK_VFX, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
-      Task.Wait(5)
+
+      Task.Wait(3)
+
       if Object.IsValid(vfx) then vfx:Destroy() end
     end
   end

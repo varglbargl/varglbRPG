@@ -264,7 +264,7 @@ Objects {
     Rotation {
       Pitch: 2.04905664e-05
       Yaw: 4.66532356e-06
-      Roll: -0.000122070313
+      Roll: -0.000122070312
     }
     Scale {
       X: 0.222523734
@@ -4122,7 +4122,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 458.445313
+            X: 458.445312
             Y: 753.988281
             Z: 13.652832
           }
@@ -4578,7 +4578,7 @@ Objects {
   Transform {
     Location {
       X: 109.099609
-      Y: 562.757813
+      Y: 562.757812
     }
     Rotation {
     }
@@ -5543,7 +5543,7 @@ Objects {
   Transform {
     Location {
       X: 76.0996094
-      Y: 529.757813
+      Y: 529.757812
       Z: 351
     }
     Rotation {
@@ -5664,7 +5664,7 @@ Objects {
   Transform {
     Location {
       X: 53.0996094
-      Y: 531.757813
+      Y: 531.757812
       Z: 409
     }
     Rotation {
@@ -5712,7 +5712,7 @@ Objects {
   Transform {
     Location {
       X: 97.0918
-      Y: 539.757813
+      Y: 539.757812
       Z: 407
     }
     Rotation {
@@ -5791,7 +5791,7 @@ Objects {
   Transform {
     Location {
       X: 151.099609
-      Y: 526.757813
+      Y: 526.757812
       Z: 409
     }
     Rotation {

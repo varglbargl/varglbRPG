@@ -45,7 +45,7 @@ Assets {
         Name: "Cauldron"
         Transform {
           Location {
-            X: 3.02539063
+            X: 3.02539062
             Y: 41.1113281
           }
           Rotation {
@@ -610,6 +610,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

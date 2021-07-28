@@ -450,17 +450,17 @@ Objects {
   Name: "Plane 1m - Two Sided"
   Transform {
     Location {
-      X: 644.016235
-      Y: -4.94909668
-      Z: 384.000488
+      X: 767.019
+      Y: -4.95391846
+      Z: 384.000244
     }
     Rotation {
       Pitch: -90
       Roll: 89.9998779
     }
     Scale {
-      X: 5.49999857
-      Y: 15.1
+      X: 5
+      Y: 14
       Z: 1
     }
   }

@@ -713,7 +713,7 @@ Assets {
           Location {
             X: 4.79492188
             Y: 8.10742188
-            Z: 9.61914063
+            Z: 9.61914062
           }
           Rotation {
             Pitch: 35.912117
@@ -1286,6 +1286,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

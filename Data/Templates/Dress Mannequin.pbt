@@ -191,7 +191,7 @@ Assets {
         Name: "NewFolder"
         Transform {
           Location {
-            X: -8.37695313
+            X: -8.37695312
             Y: -54.9794922
           }
           Rotation {
@@ -528,7 +528,7 @@ Assets {
         Name: "NewFolder"
         Transform {
           Location {
-            X: -8.37695313
+            X: -8.37695312
             Y: -54.9794922
           }
           Rotation {
@@ -866,7 +866,7 @@ Assets {
         Name: "NewFolder"
         Transform {
           Location {
-            X: -8.37695313
+            X: -8.37695312
             Y: -54.9794922
           }
           Rotation {
@@ -1534,7 +1534,7 @@ Assets {
         Name: "Ring - Beveled"
         Transform {
           Location {
-            X: 2.37695313
+            X: 2.37695312
             Y: 9.97705078
             Z: 126.291504
           }
@@ -2186,7 +2186,7 @@ Assets {
           Location {
             X: -5.9921875
             Y: 11.5546875
-            Z: 133.914063
+            Z: 133.914062
           }
           Rotation {
             Pitch: -30.8341293
@@ -2751,6 +2751,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

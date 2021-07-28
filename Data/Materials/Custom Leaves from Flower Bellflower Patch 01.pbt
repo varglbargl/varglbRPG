@@ -2,7 +2,7 @@ Assets {
   Id: 15260622148558377912
   Name: "Custom Leaves from Flower Bellflower Patch 01"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 6057563325876200665
     ParameterOverrides {

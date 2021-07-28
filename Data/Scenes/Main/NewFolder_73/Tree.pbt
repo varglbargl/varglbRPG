@@ -121,7 +121,7 @@ Objects {
   Transform {
     Location {
       X: 1.05957031
-      Y: -43.9882813
+      Y: -43.9882812
     }
     Rotation {
       Pitch: 90

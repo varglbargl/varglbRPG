@@ -1735,7 +1735,7 @@ Objects {
     Location {
       X: -1.89648438
       Y: 10.4902344
-      Z: 1.63476563
+      Z: 1.63476562
     }
     Rotation {
       Pitch: 3.17958951
@@ -1858,7 +1858,7 @@ Objects {
     Location {
       X: -1.89648438
       Y: -10.4902344
-      Z: 1.63476563
+      Z: 1.63476562
     }
     Rotation {
       Pitch: 3.17944598
@@ -2016,7 +2016,7 @@ Objects {
     Location {
       X: 2.60839844
       Y: 47.9921875
-      Z: 14.3320313
+      Z: 14.3320312
     }
     Rotation {
       Pitch: 13.9379902
@@ -2260,7 +2260,7 @@ Objects {
   Name: "left_elbow"
   Transform {
     Location {
-      X: -7.50976563
+      X: -7.50976562
       Y: -33.9492188
       Z: 35.3349609
     }
@@ -2823,7 +2823,7 @@ Objects {
   Name: "Ring - Quarter Thick"
   Transform {
     Location {
-      X: -1.81445313
+      X: -1.81445312
       Y: 0.965332031
       Z: 2.12939453
     }
@@ -4463,7 +4463,7 @@ Objects {
     Location {
       X: 1345
       Y: 5
-      Z: 25.8789063
+      Z: 25.8789062
     }
     Rotation {
       Yaw: -179.999954
@@ -4522,7 +4522,7 @@ Objects {
     Location {
       X: 1590
       Y: 5
-      Z: 25.8789063
+      Z: 25.8789062
     }
     Rotation {
       Yaw: -179.999954
@@ -4833,7 +4833,7 @@ Objects {
   Name: "Candle 03"
   Transform {
     Location {
-      X: 696.726563
+      X: 696.726562
       Y: -1126.10498
       Z: 350.345947
     }
@@ -6213,7 +6213,7 @@ Objects {
   Transform {
     Location {
       X: 473.427734
-      Y: -1059.14063
+      Y: -1059.14062
       Z: 18
     }
     Rotation {
@@ -6365,8 +6365,8 @@ Objects {
   Name: "Craftsman Chair 01"
   Transform {
     Location {
-      X: 311.820313
-      Y: -1059.14063
+      X: 311.820312
+      Y: -1059.14062
       Z: 18
     }
     Rotation {
@@ -7315,7 +7315,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 970.351563
+            X: 970.351562
             Y: -573.412598
             Z: 137
           }
@@ -8262,7 +8262,7 @@ Objects {
     Location {
       X: -5.9921875
       Y: 11.5546875
-      Z: 133.914063
+      Z: 133.914062
     }
     Rotation {
       Pitch: -30.8341293
@@ -8960,7 +8960,7 @@ Objects {
   Name: "Ring - Beveled"
   Transform {
     Location {
-      X: 2.37695313
+      X: 2.37695312
       Y: 9.97705078
       Z: 126.291504
     }
@@ -12176,7 +12176,7 @@ Objects {
   Name: "Ring - Beveled"
   Transform {
     Location {
-      X: 2.37695313
+      X: 2.37695312
       Y: 9.97705078
       Z: 126.291504
     }
@@ -13172,7 +13172,7 @@ Objects {
   Transform {
     Location {
       X: 314.294922
-      Y: 12.4414063
+      Y: 12.4414062
       Z: 153.973145
     }
     Rotation {

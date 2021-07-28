@@ -772,7 +772,7 @@ Objects {
   Name: "Fantasy Castle Wall 01 - Doorway 01 Half"
   Transform {
     Location {
-      X: -195.851563
+      X: -195.851562
       Y: -1993.40234
       Z: 2
     }

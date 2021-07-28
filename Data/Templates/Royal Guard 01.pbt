@@ -304,7 +304,7 @@ Assets {
           }
           Rotation {
             Pitch: -2.82885742
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: -3.05175781e-05
           }
           Scale {
@@ -393,7 +393,7 @@ Assets {
           }
           Rotation {
             Pitch: 9.93500137
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: -3.05175781e-05
           }
           Scale {
@@ -864,8 +864,8 @@ Assets {
         Transform {
           Location {
             X: -3.0234375
-            Y: -2.64257813
-            Z: -13.1445313
+            Y: -2.64257812
+            Z: -13.1445312
           }
           Rotation {
             Pitch: -69.4543762
@@ -1259,7 +1259,7 @@ Assets {
         Name: "left_elbow"
         Transform {
           Location {
-            X: -7.50976563
+            X: -7.50976562
             Y: -33.9492188
             Z: 35.3349609
           }
@@ -2346,7 +2346,7 @@ Assets {
           Location {
             X: 2.60839844
             Y: 47.9921875
-            Z: 14.3320313
+            Z: 14.3320312
           }
           Rotation {
             Pitch: 13.9379902
@@ -3433,7 +3433,7 @@ Assets {
             Z: -44.6713371
           }
           Rotation {
-            Pitch: -39.6757813
+            Pitch: -39.6757812
             Yaw: -4.68151855
             Roll: 1.38326061
           }
@@ -3515,7 +3515,7 @@ Assets {
             Z: -44.4692383
           }
           Rotation {
-            Pitch: -39.6757813
+            Pitch: -39.6757812
             Yaw: -4.68151855
             Roll: -14.1035767
           }
@@ -4386,7 +4386,7 @@ Assets {
         Name: "Shield 03"
         Transform {
           Location {
-            X: 9.58007813
+            X: 9.58007812
             Y: -0.359375
             Z: 5.34619141
           }
@@ -4773,5 +4773,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

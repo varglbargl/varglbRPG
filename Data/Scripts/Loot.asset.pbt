@@ -34,7 +34,13 @@ Assets {
           Id: 595108104446859637
         }
       }
+      Overrides {
+        Name: "cs:LootDrop"
+        AssetReference {
+          Id: 10101702818438590485
+        }
+      }
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

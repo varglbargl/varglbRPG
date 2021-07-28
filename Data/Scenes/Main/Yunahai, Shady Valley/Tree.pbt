@@ -2821,7 +2821,7 @@ Objects {
     Location {
       X: 2669.0874
       Y: -3207.9082
-      Z: 207.851563
+      Z: 207.851562
     }
     Rotation {
       Yaw: -141.824738
@@ -3519,7 +3519,7 @@ Objects {
     Location {
       X: 3796.53809
       Y: -4757.08594
-      Z: 5.04101563
+      Z: 5.04101562
     }
     Rotation {
       Pitch: 2.3907094
@@ -4746,7 +4746,7 @@ Objects {
   Transform {
     Location {
       X: 13646.8955
-      Y: 24705.5313
+      Y: 24705.5312
       Z: -1014.87476
     }
     Rotation {
@@ -5043,7 +5043,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -502.757813
+            X: -502.757812
             Y: 4103.67871
             Z: 1259.01831
           }
@@ -5869,7 +5869,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 6880.26563
+      X: 6880.26562
       Y: 3706.40723
       Z: 159.550049
     }

@@ -3596,7 +3596,7 @@ Objects {
     Rotation {
       Pitch: -90
       Yaw: -90
-      Roll: -6.10351563e-05
+      Roll: -6.10351562e-05
     }
     Scale {
       X: 1
@@ -5302,7 +5302,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -5312,6 +5312,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12295,15 +12296,16 @@ Objects {
   Name: "Urban Downtown Building Trim Roof 01"
   Transform {
     Location {
-      X: 5.98382568
-      Y: -374.039856
+      X: 5.98416138
+      Y: -425.841248
+      Z: -8.03735352
     }
     Rotation {
       Yaw: 89.9998245
     }
     Scale {
-      X: 0.5
-      Y: 1
+      X: 0.564751387
+      Y: 1.00000703
       Z: 1.5
     }
   }
@@ -12697,7 +12699,7 @@ Objects {
   Transform {
     Location {
       X: -9.01171875
-      Y: 0.977539063
+      Y: 0.977539062
       Z: 0.025390625
     }
     Rotation {
@@ -14397,7 +14399,7 @@ Objects {
   Name: "Craftsman Part - Inside Upper Trim 01"
   Transform {
     Location {
-      X: -6.10351563e-05
+      X: -6.10351562e-05
       Y: -1624.99976
       Z: 590
     }
@@ -15064,7 +15066,7 @@ Objects {
     Location {
       X: 1600
       Y: -5
-      Z: 0.000122070313
+      Z: 0.000122070312
     }
     Rotation {
       Yaw: -90.000061
@@ -15126,7 +15128,7 @@ Objects {
     Location {
       X: 1600
       Y: -805
-      Z: 0.000122070313
+      Z: 0.000122070312
     }
     Rotation {
       Yaw: -90.000061
@@ -16631,7 +16633,7 @@ Objects {
   Name: "Craftsman Part - Inside Upper Trim 01"
   Transform {
     Location {
-      X: -6.10351563e-05
+      X: -6.10351562e-05
       Y: -1619.99976
       Z: 590
     }
@@ -17288,7 +17290,7 @@ Objects {
     Location {
       X: 1600
       Y: -800
-      Z: 0.000122070313
+      Z: 0.000122070312
     }
     Rotation {
       Yaw: -90.000061
@@ -17353,7 +17355,7 @@ Objects {
   Transform {
     Location {
       X: 1600
-      Z: 0.000122070313
+      Z: 0.000122070312
     }
     Rotation {
       Yaw: -90.000061
@@ -19489,7 +19491,7 @@ Objects {
     Location {
       X: -991.826172
       Y: -322.232422
-      Z: 92.1132813
+      Z: 92.1132812
     }
     Rotation {
       Pitch: 6.99999428
@@ -20296,7 +20298,7 @@ Objects {
       Y: 600
     }
     Rotation {
-      Yaw: -6.10351563e-05
+      Yaw: -6.10351562e-05
     }
     Scale {
       X: 1
@@ -20479,7 +20481,7 @@ Objects {
       Z: 20
     }
     Rotation {
-      Yaw: -6.10351563e-05
+      Yaw: -6.10351562e-05
     }
     Scale {
       X: 1.4
@@ -20539,7 +20541,7 @@ Objects {
       Y: 600
     }
     Rotation {
-      Yaw: -6.10351563e-05
+      Yaw: -6.10351562e-05
     }
     Scale {
       X: 1
@@ -20597,7 +20599,7 @@ Objects {
     Location {
       X: -771.831543
       Y: -607.265625
-      Z: 10.3789063
+      Z: 10.3789062
     }
     Rotation {
     }
@@ -21251,7 +21253,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -211.399902
       Z: 125
     }
@@ -21490,7 +21492,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: 184.51123
       Z: 125
     }
@@ -21905,7 +21907,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: 184.51123
       Z: 1325
     }
@@ -22008,7 +22010,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: 184.51123
       Z: 725
     }
@@ -22111,7 +22113,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -215.48877
       Z: 1325
     }
@@ -22214,7 +22216,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -215.48877
       Z: 725
     }
@@ -22585,7 +22587,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: 796.007813
+      X: 796.007812
       Y: 197.444824
       Z: 725
     }
@@ -22688,7 +22690,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: 796.007813
+      X: 796.007812
       Y: 197.444824
       Z: 1324.99927
     }
@@ -22791,7 +22793,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: 796.007813
+      X: 796.007812
       Y: -602.555176
       Z: 1325
     }
@@ -22997,7 +22999,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: 796.007813
+      X: 796.007812
       Y: -602.555176
       Z: 725.000732
     }
@@ -24563,7 +24565,7 @@ Objects {
   ParentId: 2158713144890696142
   ChildIds: 13684369887261743311
   ChildIds: 6046036391696361461
-  ChildIds: 13321543442931198958
+  ChildIds: 2075782784390005017
   ChildIds: 1553409001592340255
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24637,9 +24639,15 @@ Objects {
   }
 }
 Objects {
-  Id: 13321543442931198958
+  Id: 2075782784390005017
   Name: "Accessible Stairs"
   Transform {
+    Location {
+      X: 140.000214
+      Y: -1795
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -24647,35 +24655,737 @@ Objects {
     }
   }
   ParentId: 13763730836520182876
-  Collidable_v2 {
+  ChildIds: 12915548349413518461
+  ChildIds: 11288435662202317964
+  ChildIds: 7259670807754243397
+  ChildIds: 11744830085588119657
+  ChildIds: 7523567873727247697
+  ChildIds: 9106933469684686743
+  ChildIds: 16683160351902797006
+  ChildIds: 2620890856427827922
+  ChildIds: 16362546422844331782
+  ChildIds: 15071252223503996901
+  ChildIds: 68077053906597716
+  ChildIds: 6836980177083635314
+  Folder {
+    IsGroup: true
   }
-  Visible_v2 {
+  InstanceHistory {
+    SelfId: 2075782784390005017
+    SubobjectId: 6563858603452637239
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+    WasRoot: true
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6563858603452637239
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Accessible Stairs"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 140.000214
-            Y: -1795
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
+}
+Objects {
+  Id: 6836980177083635314
+  Name: "Railing 01 Post Mainstreet"
+  Transform {
+    Location {
+      X: 179.130859
+      Y: -160.154297
+    }
+    Rotation {
+      Yaw: 90.0000153
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
       }
     }
-    TemplateAsset {
-      Id: 6711861812434988070
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4519163911553529386
     }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 12915548349413518461
+    SubobjectId: 17646252492611341651
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 68077053906597716
+  Name: "Railing 01 Angled Mainstreet"
+  Transform {
+    Location {
+      X: 179.060547
+      Y: -160.129395
+      Z: 15
+    }
+    Rotation {
+      Yaw: 90.0000153
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5945942976172211747
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 7523567873727247697
+    SubobjectId: 3436315716831286399
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 15071252223503996901
+  Name: "Railing 01 Post Mainstreet"
+  Transform {
+    Location {
+      X: 179.025391
+      Y: 44.8676758
+      Z: 150
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4519163911553529386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 11744830085588119657
+    SubobjectId: 16512218591602626887
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 16362546422844331782
+  Name: "Railing 01 1m Mainstreet"
+  Transform {
+    Location {
+      X: 179.322266
+      Y: 148.461426
+      Z: 165
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16225996946116169271
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 7259670807754243397
+    SubobjectId: 2550906337041669227
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 2620890856427827922
+  Name: "Railing 01 Post Mainstreet"
+  Transform {
+    Location {
+      X: 179.330078
+      Y: 153.477051
+      Z: 150
+    }
+    Rotation {
+      Yaw: 5.46415176e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4519163911553529386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 11288435662202317964
+    SubobjectId: 15812630338916847010
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 16683160351902797006
+  Name: "Stairs 01 1.5m Mainstreet"
+  Transform {
+    Location {
+      X: 195.126953
+      Y: -127.154297
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6023105047490337935
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 16683160351902797006
+    SubobjectId: 11556049848504659424
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 9106933469684686743
+  Name: "Landing 01 4m x 4m Mainstreet"
+  Transform {
+    Location {
+      X: -205.001953
+      Y: 165
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 0.23
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18379924532194096666
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 9106933469684686743
+    SubobjectId: 4160050982131367609
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 7523567873727247697
+  Name: "Railing 01 Angled Mainstreet"
+  Transform {
+    Location {
+      X: -190.056641
+      Y: -160.013672
+      Z: 15
+    }
+    Rotation {
+      Yaw: 90.0000229
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5945942976172211747
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 7523567873727247697
+    SubobjectId: 3436315716831286399
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 11744830085588119657
+  Name: "Railing 01 Post Mainstreet"
+  Transform {
+    Location {
+      X: -190.09375
+      Y: 44.9887695
+      Z: 150
+    }
+    Rotation {
+      Yaw: -89.9999466
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4519163911553529386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 11744830085588119657
+    SubobjectId: 16512218591602626887
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 7259670807754243397
+  Name: "Railing 01 1m Mainstreet"
+  Transform {
+    Location {
+      X: -189.800781
+      Y: 148.588867
+      Z: 165
+    }
+    Rotation {
+      Yaw: -89.9999466
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16225996946116169271
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 7259670807754243397
+    SubobjectId: 2550906337041669227
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 11288435662202317964
+  Name: "Railing 01 Post Mainstreet"
+  Transform {
+    Location {
+      X: -189.802734
+      Y: 153.590332
+      Z: 150
+    }
+    Rotation {
+      Yaw: 5.8056612e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4519163911553529386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 11288435662202317964
+    SubobjectId: 15812630338916847010
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
+  }
+}
+Objects {
+  Id: 12915548349413518461
+  Name: "Railing 01 Post Mainstreet"
+  Transform {
+    Location {
+      X: -189.992188
+      Y: -160.056641
+    }
+    Rotation {
+      Yaw: 90.0000229
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2075782784390005017
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.086
+        G: 0.067405656
+        B: 0.0608879961
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4519163911553529386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 12915548349413518461
+    SubobjectId: 17646252492611341651
+    InstanceId: 13321543442931198958
+    TemplateId: 6711861812434988070
   }
 }
 Objects {
@@ -31186,7 +31896,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: 211.399902
     }
     Rotation {
@@ -31340,7 +32050,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -188.600098
     }
     Rotation {
@@ -31432,7 +32142,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -588.600098
     }
     Rotation {
@@ -34044,7 +34754,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -600.000732
       Z: 600
     }
@@ -34137,7 +34847,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -600.000732
       Z: 1200
     }
@@ -34299,7 +35009,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -200
       Z: 1200
     }
@@ -34392,7 +35102,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -200
       Z: 600
     }
@@ -34485,7 +35195,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: 200
       Z: 1200
     }
@@ -34578,7 +35288,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: 200
       Z: 600
     }
@@ -44020,7 +44730,7 @@ Objects {
   Transform {
     Location {
       X: 765.006836
-      Y: 588.601563
+      Y: 588.601562
       Z: -125
     }
     Rotation {
@@ -44454,7 +45164,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: 210
     }
     Rotation {
@@ -44608,7 +45318,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -188.600098
     }
     Rotation {
@@ -44700,7 +45410,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -588.600098
     }
     Rotation {
@@ -47394,7 +48104,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -600.000732
       Z: 600
     }
@@ -47487,7 +48197,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -600.000732
       Z: 1200
     }
@@ -47649,7 +48359,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -200
       Z: 1200
     }
@@ -47742,7 +48452,7 @@ Objects {
   Name: "Main Street Wall 02"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: -200
       Z: 600
     }
@@ -47835,7 +48545,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: 200
       Z: 1200
     }
@@ -47928,7 +48638,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: -796.007813
+      X: -796.007812
       Y: 200
       Z: 600
     }
@@ -48267,7 +48977,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: 796.007813
+      X: 796.007812
       Y: -197.44458
       Z: 600
     }
@@ -48360,7 +49070,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: 796.007813
+      X: 796.007812
       Y: -197.44458
       Z: 1199.99927
     }
@@ -48453,7 +49163,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: 796.007813
+      X: 796.007812
       Y: 602.554932
       Z: 1200
     }
@@ -48639,7 +49349,7 @@ Objects {
   Name: "Main Street Wall 02 - Half Window 01"
   Transform {
     Location {
-      X: 796.007813
+      X: 796.007812
       Y: 602.554932
       Z: 600.000732
     }
@@ -59300,7 +60010,7 @@ Objects {
   Name: "Door Large"
   Transform {
     Location {
-      X: 861.539063
+      X: 861.539062
       Y: -177
       Z: 1340
     }
@@ -63570,7 +64280,7 @@ Objects {
     Location {
       X: -28.2103424
       Y: -44.1403885
-      Z: 197.945313
+      Z: 197.945312
     }
     Rotation {
       Pitch: -50.2126808
@@ -64605,7 +65315,7 @@ Objects {
   Transform {
     Location {
       X: -38.3242188
-      Y: -44.2695313
+      Y: -44.2695312
       Z: 194.939453
     }
     Rotation {
@@ -65805,7 +66515,7 @@ Objects {
     Rotation {
       Pitch: 36.6163101
       Yaw: 99.9653397
-      Roll: 11.8007813
+      Roll: 11.8007812
     }
     Scale {
       X: 0.301124901
@@ -66057,7 +66767,7 @@ Objects {
     Location {
       X: -0.45140034
       Y: 0.000181406736
-      Z: 144.726563
+      Z: 144.726562
     }
     Rotation {
       Pitch: 84.2166214
@@ -68994,7 +69704,7 @@ Objects {
   Name: "Primary"
   Transform {
     Location {
-      X: 4.87695313
+      X: 4.87695312
       Y: -21.3867188
       Z: 185.303467
     }
@@ -69913,7 +70623,7 @@ Objects {
   Transform {
     Location {
       X: 16.4921875
-      Y: -4.81445313
+      Y: -4.81445312
       Z: 195.426514
     }
     Rotation {
@@ -73555,7 +74265,7 @@ Objects {
   Transform {
     Location {
       X: -114.392578
-      Y: 1846.01563
+      Y: 1846.01562
       Z: 1239
     }
     Rotation {
@@ -76738,7 +77448,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351563e-05
+      Yaw: -6.10351562e-05
       Roll: -89.9999084
     }
     Scale {
@@ -76812,7 +77522,7 @@ Objects {
       Z: 38.5668945
     }
     Rotation {
-      Yaw: -6.10351563e-05
+      Yaw: -6.10351562e-05
       Roll: -89.999939
     }
     Scale {
@@ -77213,7 +77923,7 @@ Objects {
   Transform {
     Location {
       X: 121.738281
-      Y: 399.757813
+      Y: 399.757812
       Z: 1390
     }
     Rotation {
@@ -77343,8 +78053,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 16.7382813
-            Y: 669.757813
+            X: 16.7382812
+            Y: 669.757812
             Z: 1365
           }
         }
@@ -77770,7 +78480,7 @@ Objects {
   Transform {
     Location {
       X: 241.738281
-      Y: 444.757813
+      Y: 444.757812
       Z: 280
     }
     Rotation {
@@ -77835,7 +78545,7 @@ Objects {
   Transform {
     Location {
       X: 1042.41016
-      Y: 444.757813
+      Y: 444.757812
       Z: 280
     }
     Rotation {
@@ -77900,7 +78610,7 @@ Objects {
   Transform {
     Location {
       X: 1339.88281
-      Y: 444.757813
+      Y: 444.757812
       Z: 280
     }
     Rotation {
@@ -77965,7 +78675,7 @@ Objects {
   Transform {
     Location {
       X: 1516.73828
-      Y: 684.757813
+      Y: 684.757812
       Z: 1800
     }
     Rotation {
@@ -80599,7 +81309,7 @@ Objects {
   Transform {
     Location {
       X: 1291.73828
-      Y: -283.695313
+      Y: -283.695312
       Z: 200
     }
     Rotation {
@@ -80663,7 +81373,7 @@ Objects {
   Transform {
     Location {
       X: 1291.73828
-      Y: -283.695313
+      Y: -283.695312
       Z: 125
     }
     Rotation {
@@ -80727,7 +81437,7 @@ Objects {
   Transform {
     Location {
       X: 766.738281
-      Y: -183.695313
+      Y: -183.695312
       Z: 25
     }
     Rotation {
@@ -80782,7 +81492,7 @@ Objects {
   Transform {
     Location {
       X: 456.738281
-      Y: -983.695313
+      Y: -983.695312
       Z: 30
     }
     Rotation {
@@ -81079,7 +81789,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 1566.73828
-            Y: -983.695313
+            Y: -983.695312
             Z: 600
           }
         }
@@ -81199,7 +81909,7 @@ Objects {
   Transform {
     Location {
       X: 1566.73828
-      Y: -183.695313
+      Y: -183.695312
     }
     Rotation {
       Yaw: -90
@@ -81355,7 +82065,7 @@ Objects {
   Transform {
     Location {
       X: 1566.73828
-      Y: -983.695313
+      Y: -983.695312
     }
     Rotation {
       Yaw: -179.999954
@@ -81427,7 +82137,7 @@ Objects {
   Transform {
     Location {
       X: -33.2617188
-      Y: -183.695313
+      Y: -183.695312
     }
     Rotation {
       Yaw: 89.9999619
@@ -81499,7 +82209,7 @@ Objects {
   Transform {
     Location {
       X: 766.738281
-      Y: -983.695313
+      Y: -983.695312
     }
     Rotation {
       Yaw: -179.999954
@@ -81571,7 +82281,7 @@ Objects {
   Transform {
     Location {
       X: -33.2617188
-      Y: -983.695313
+      Y: -983.695312
     }
     Rotation {
       Yaw: 89.9999771
@@ -82379,7 +83089,7 @@ Objects {
   Transform {
     Location {
       X: 428
-      Y: 1033.45313
+      Y: 1033.45312
       Z: 300
     }
     Rotation {
@@ -82429,7 +83139,7 @@ Objects {
   Transform {
     Location {
       X: 428
-      Y: 1061.45313
+      Y: 1061.45312
       Z: 305
     }
     Rotation {
@@ -82500,7 +83210,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 428
-            Y: 1033.45313
+            Y: 1033.45312
             Z: 205
           }
         }
@@ -82585,7 +83295,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 428
-            Y: 1084.45313
+            Y: 1084.45312
             Z: 337
           }
         }
@@ -82903,7 +83613,7 @@ Objects {
   Transform {
     Location {
       X: 516.999939
-      Y: 1055.45313
+      Y: 1055.45312
       Z: 129.651367
     }
     Rotation {
@@ -85208,7 +85918,7 @@ Objects {
   Name: "Urban Pipe Flange 01"
   Transform {
     Location {
-      X: 6.10351563e-05
+      X: 6.10351562e-05
     }
     Rotation {
       Pitch: -3.05175781e-05
@@ -85747,7 +86457,7 @@ Objects {
       Z: 15
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -179.999954
       Roll: 179.999939
     }
@@ -86507,7 +87217,7 @@ Objects {
       Z: 235
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -179.999954
       Roll: 179.999939
     }
@@ -86558,7 +87268,7 @@ Objects {
       Z: 245
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -179.999954
       Roll: 179.999939
     }
@@ -86610,7 +87320,7 @@ Objects {
     }
     Rotation {
       Pitch: -90
-      Yaw: -6.10351563e-05
+      Yaw: -6.10351562e-05
       Roll: -179.999771
     }
     Scale {
@@ -90011,7 +90721,7 @@ Objects {
   Name: "Professor Spumonium"
   Transform {
     Location {
-      X: 61.2539063
+      X: 61.2539062
       Y: 878.488281
       Z: 180
     }
@@ -90409,7 +91119,7 @@ Objects {
     Location {
       X: -1.89648438
       Y: 10.4902344
-      Z: 1.63476563
+      Z: 1.63476562
     }
     Rotation {
       Pitch: 3.17958951
@@ -90605,7 +91315,7 @@ Objects {
     Location {
       X: -1.89648438
       Y: -10.4902344
-      Z: 1.63476563
+      Z: 1.63476562
     }
     Rotation {
       Pitch: 3.17944598
@@ -90908,7 +91618,7 @@ Objects {
   Transform {
     Location {
       X: 1.9375
-      Y: 52.7226563
+      Y: 52.7226562
       Z: 10.9956055
     }
     Rotation {
@@ -91071,7 +91781,7 @@ Objects {
   Transform {
     Location {
       X: 1.9375
-      Y: -52.7226563
+      Y: -52.7226562
       Z: 10.9951172
     }
     Rotation {
@@ -91559,7 +92269,7 @@ Objects {
   Name: "Liquid Decal"
   Transform {
     Location {
-      X: -459.695313
+      X: -459.695312
       Y: 469.967285
       Z: 189.460938
     }
@@ -91662,7 +92372,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -494.570313
+            X: -494.570312
             Y: 467.606934
             Z: 361.074463
           }
@@ -96909,7 +97619,7 @@ Objects {
   Name: "Sphere"
   Transform {
     Location {
-      Y: 9.61914063
+      Y: 9.61914062
       Z: 24.1803589
     }
     Rotation {
@@ -98212,7 +98922,7 @@ Objects {
   Name: "Diamond"
   Transform {
     Location {
-      X: -471.445313
+      X: -471.445312
       Y: 941.139648
       Z: 378.009521
     }

@@ -320,7 +320,7 @@ Assets {
           Location {
             X: -44.9996796
             Y: 15.000124
-            Z: 51.5039063
+            Z: 51.5039062
           }
           Rotation {
           }
@@ -741,6 +741,6 @@ Assets {
   Marketplace {
     Description: "Toilet prop. Non working. Please dont use. Lid is down for the ladies :)"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

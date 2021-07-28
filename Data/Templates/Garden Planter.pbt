@@ -192,7 +192,7 @@ Assets {
           }
           Rotation {
             Yaw: -179.999969
-            Roll: -6.10351563e-05
+            Roll: -6.10351562e-05
           }
           Scale {
             X: 1.38206804
@@ -710,7 +710,7 @@ Assets {
           }
           Rotation {
             Pitch: 75.780838
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: -179.999969
           }
           Scale {
@@ -1582,7 +1582,7 @@ Assets {
         Transform {
           Location {
             X: 79.0585861
-            Y: 238.007813
+            Y: 238.007812
           }
           Rotation {
             Yaw: 39.7675362
@@ -1886,7 +1886,7 @@ Assets {
         Transform {
           Location {
             X: -79.0590744
-            Y: 238.007813
+            Y: 238.007812
           }
           Rotation {
             Yaw: -106.862732
@@ -4888,7 +4888,7 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
           }
           Rotation {
@@ -5087,7 +5087,7 @@ Assets {
         Name: "Kelp Bush 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 54.3005524
           }
@@ -5147,7 +5147,7 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 523.873962
           }
@@ -5239,7 +5239,7 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
           }
           Rotation {
@@ -5438,7 +5438,7 @@ Assets {
         Name: "Kelp Bush 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 54.3005524
           }
@@ -5498,7 +5498,7 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 523.873962
           }
@@ -5590,7 +5590,7 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
           }
           Rotation {
@@ -5789,7 +5789,7 @@ Assets {
         Name: "Kelp Bush 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 54.3005524
           }
@@ -5849,7 +5849,7 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 523.873962
           }
@@ -5941,7 +5941,7 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
           }
           Rotation {
@@ -6140,7 +6140,7 @@ Assets {
         Name: "Kelp Bush 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 54.3005524
           }
@@ -6200,7 +6200,7 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 523.873962
           }
@@ -6292,7 +6292,7 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
           }
           Rotation {
@@ -6491,7 +6491,7 @@ Assets {
         Name: "Kelp Bush 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 54.3005524
           }
@@ -6551,7 +6551,7 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            X: -4.77539063
+            X: -4.77539062
             Y: 0.208496094
             Z: 523.873962
           }
@@ -7342,7 +7342,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

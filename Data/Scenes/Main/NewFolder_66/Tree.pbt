@@ -7,7 +7,7 @@ Objects {
     Location {
       X: 4.60546875
       Y: -9.70752
-      Z: 89.7851563
+      Z: 89.7851562
     }
     Rotation {
       Yaw: 113.565353
@@ -122,7 +122,7 @@ Objects {
   Name: "Corner - Smoothed Thin - 01"
   Transform {
     Location {
-      X: -4.41601563
+      X: -4.41601562
       Y: 36.0683594
       Z: 92.7595215
     }
@@ -712,7 +712,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -0.360351563
+            X: -0.360351562
             Y: 30.9526367
             Z: 47.6577148
           }

@@ -1812,7 +1812,7 @@ Assets {
         Transform {
           Location {
             X: -30.7526855
-            Y: -0.00122070313
+            Y: -0.00122070312
             Z: 67.5196686
           }
           Rotation {
@@ -2029,7 +2029,7 @@ Assets {
           }
           Rotation {
             Pitch: 38.9850426
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 0.25891
@@ -2654,6 +2654,6 @@ Assets {
   Marketplace {
     Description: "yall mind if i uwu in here?\r\n\r\nUpdate: Wands are now fully usable weapons against evil!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

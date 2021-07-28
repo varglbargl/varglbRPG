@@ -440,7 +440,7 @@ Assets {
         Transform {
           Location {
             X: -77.7304688
-            Y: 3.02539063
+            Y: 3.02539062
           }
           Rotation {
           }
@@ -3032,6 +3032,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Props"
 }

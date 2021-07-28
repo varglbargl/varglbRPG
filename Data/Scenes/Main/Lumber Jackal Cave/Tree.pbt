@@ -205,7 +205,7 @@ Objects {
   Name: "Urban Fence Cable Clamp"
   Transform {
     Location {
-      X: 2523.76563
+      X: 2523.76562
       Y: -4809.02539
       Z: 850.493164
     }
@@ -487,7 +487,7 @@ Objects {
   Name: "Sprite Lantern"
   Transform {
     Location {
-      X: 13832.0313
+      X: 13832.0312
       Y: 3451.53125
       Z: -6186.89893
     }
@@ -906,7 +906,7 @@ Objects {
     Location {
       X: 4242.47461
       Y: -4515.10449
-      Z: -83.0507813
+      Z: -83.0507812
     }
     Rotation {
       Pitch: 3.8263948
@@ -1506,7 +1506,7 @@ Objects {
   Transform {
     Location {
       X: 45.0908203
-      Y: 287.757813
+      Y: 287.757812
       Z: -186.102539
     }
     Rotation {
@@ -3593,7 +3593,7 @@ Objects {
   Transform {
     Location {
       X: 4406.40039
-      Y: -4568.89063
+      Y: -4568.89062
       Z: 2452.44531
     }
     Rotation {
@@ -4818,7 +4818,7 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 4055.20313
+      X: 4055.20312
       Y: -4997.86914
       Z: 544.8125
     }
@@ -5101,7 +5101,7 @@ Objects {
     Location {
       X: 141.727539
       Y: -198.980957
-      Z: 143.507813
+      Z: 143.507812
     }
     Rotation {
     }
@@ -5453,7 +5453,7 @@ Objects {
   Name: "Large Wood Beam 8m"
   Transform {
     Location {
-      X: 4176.70313
+      X: 4176.70312
       Y: -4733.12109
       Z: 597.522949
     }
@@ -5901,7 +5901,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -0.137207031
-            Y: -45.8007813
+            Y: -45.8007812
             Z: 39.4973145
           }
         }
@@ -7345,7 +7345,7 @@ Objects {
   Transform {
     Location {
       X: 1.38867188
-      Y: -61.6757813
+      Y: -61.6757812
       Z: 0.7578125
     }
     Rotation {
@@ -8025,7 +8025,7 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 4098.64063
+      X: 4098.64062
       Y: -3553.40698
       Z: 530.887207
     }
@@ -8084,7 +8084,7 @@ Objects {
   Name: "Chain Tile 01"
   Transform {
     Location {
-      X: 4659.39063
+      X: 4659.39062
       Y: -3649.17944
       Z: 2034.27979
     }
@@ -15546,6 +15546,33 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 55430155327116683
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7.21169376
+            Y: -0.153048381
+            Z: 58.4077911
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -59.6198425
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.416921616
+            Y: 0.416921616
+            Z: 0.495336354
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 475828383709240005
       value {
         Overrides {
@@ -15869,6 +15896,33 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 55430155327116683
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8.48084545
+            Y: 0.938195
+            Z: 57.1907082
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -59.619873
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.416921616
+            Y: 0.416921616
+            Z: 0.495336324
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 475828383709240005
       value {

@@ -2498,7 +2498,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: 1904.62109
             Z: 4690
           }
@@ -2551,7 +2551,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: 1329.62109
             Z: 4735
           }
@@ -2604,7 +2604,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: 714.621094
             Z: 4665
           }
@@ -2657,7 +2657,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -105.378906
             Z: 4585
           }
@@ -2710,7 +2710,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -720.378906
             Z: 4695
           }
@@ -2763,7 +2763,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -1540.37891
             Z: 4645
           }
@@ -2816,7 +2816,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -2085.37891
             Z: 4685
           }
@@ -2869,7 +2869,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -2755.37891
             Z: 4525
           }
@@ -2922,7 +2922,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -3480.37891
             Z: 4565
           }
@@ -2975,7 +2975,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -4145.37891
             Z: 4590
           }
@@ -3028,7 +3028,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -4143.98828
             Z: 339.146118
           }
@@ -3082,7 +3082,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: 1905.54395
             Z: 214.022217
           }
@@ -3136,7 +3136,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: 1332.61523
             Z: 280.380615
           }
@@ -3190,7 +3190,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: 715.435547
             Z: 233.306641
           }
@@ -3244,7 +3244,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -106.970703
             Z: 183.865234
           }
@@ -3298,7 +3298,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -717.454102
             Z: 316.666626
           }
@@ -3352,7 +3352,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -1538.74805
             Z: 297.204346
           }
@@ -3406,7 +3406,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -2081.88086
             Z: 357.450195
           }
@@ -3460,7 +3460,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -2757.36719
             Z: 222.484497
           }
@@ -3514,7 +3514,7 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -7.14257813
+            X: -7.14257812
             Y: -3480.37891
             Z: 289.426025
           }
@@ -3626,7 +3626,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

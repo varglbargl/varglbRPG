@@ -4,6 +4,8 @@ local Weapons = require(script:GetCustomProperty("Weapons"))
 local Shields = require(script:GetCustomProperty("Shields"))
 local Potions = require(script:GetCustomProperty("Potions"))
 
+local LOOT_DROP = script:GetCustomProperty("LootDrop")
+
 local Loot = {}
 
 local lootFromProperties = script:GetCustomProperties()
@@ -19,7 +21,7 @@ local statBalance = {
 }
 
 local lootRarity = {
-  60, 30, 9, 1
+  74, 20, 5, 1
 }
 
 function readLootTable(thisLootTable, itemType)
@@ -29,6 +31,7 @@ function readLootTable(thisLootTable, itemType)
     local lootItem = {
       name = spawnedItem.name,
       templateId = spawnedItem.sourceTemplateId,
+      sourceTemplate = item,
       socket = spawnedItem.socket,
       itemType = itemType,
       itemLevel = spawnedItem:GetCustomProperty("ItemLevel"),
@@ -106,13 +109,13 @@ function assignStat(item, letter)
     item.spit = item.spit or 0
     item.spit = math.ceil(item.spit + 1 * magicNumber * statBalance.spit)
 
-  elseif letter == "h" then
-    item.health = item.health or 0
-    item.health = math.ceil(item.health + 1 * magicNumber * statBalance.health)
+  -- elseif letter == "h" then
+  --   item.health = item.health or 0
+  --   item.health = math.ceil(item.health + 1 * magicNumber * statBalance.health)
 
-  elseif letter == "a" then
-    item.stamina = item.stamina or 0
-    item.stamina = math.ceil(item.stamina + 1 * magicNumber * statBalance.stamina)
+  -- elseif letter == "a" then
+  --   item.stamina = item.stamina or 0
+  --   item.stamina = math.ceil(item.stamina + 1 * magicNumber * statBalance.stamina)
   end
 end
 
@@ -124,7 +127,6 @@ function Loot.enchantItem(item, rarity)
   for i, v in pairs(item) do
     dupe[i] = v
   end
-
 
   -- local stats = {"g", "w", "s", "h", "a"}
   local stats = {"g", "w", "s"}
@@ -235,7 +237,7 @@ function Loot.getRandom(level, rarity)
 
   if level then
     for i, item in ipairs(lootTable) do
-      if item.itemLevel >= level - 1 and item.itemLevel <= level + 1 then
+      if item.itemLevel >= level - 5 and item.itemLevel <= level + 1 then
         table.insert(rollTable, item)
       end
     end
@@ -266,7 +268,7 @@ end
 
 function Loot.findItemByTemplateId(templateId)
   for _, item in ipairs(lootTable) do
-    if item.templateId == templateId then
+    if item.templateId == templateId or item.sourceTemplate == templateId then
       return item
     end
   end
@@ -292,6 +294,38 @@ function Loot.giveRandomToPlayer(player, level, rarity)
   level = level or player:GetResource("Level")
 
   Loot.giveToPlayer(player, Loot.getRandom(level, rarity))
+end
+
+function Loot.dropItem(position, loot)
+  local droppedLoot = World.SpawnAsset(LOOT_DROP, {position = position})
+
+  if droppedLoot.lifeSpan == 0 then
+    droppedLoot.lifeSpan = 30
+  end
+
+  droppedLoot.serverUserData["DroppedLoot"] = loot
+end
+
+function Loot.dropRandomItem(position, level, rarity)
+  local loot = Loot.getRandom(level, rarity)
+
+  Loot.dropItem(position, loot)
+end
+
+function Loot.dropGold(position, amount)
+  local droppedGold = World.SpawnAsset(GOLD_DROP, {position = position})
+
+  if droppedGold.lifeSpan == 0 then
+    droppedGold.lifeSpan = 30
+  end
+
+  droppedGold.serverUserData["DroppedGold"] = amount
+end
+
+function Loot.dropRandomGold(position, level)
+  local amount = math.random(1, level)
+
+  Loot.dropGold(position, amount)
 end
 
 return Loot

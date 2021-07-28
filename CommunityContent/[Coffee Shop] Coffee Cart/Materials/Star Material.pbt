@@ -2,7 +2,7 @@ Assets {
   Id: 8839797185270483206
   Name: "Star Material"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 2502011191961427546
     ParameterOverrides {

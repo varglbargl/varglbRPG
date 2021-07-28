@@ -112,7 +112,7 @@ Assets {
         Transform {
           Location {
             X: -2.19433594
-            Y: 1.75976563
+            Y: 1.75976562
             Z: 100
           }
           Rotation {
@@ -700,7 +700,7 @@ Assets {
         Transform {
           Location {
             X: 1.9375
-            Y: 52.7226563
+            Y: 52.7226562
             Z: 10.9956055
           }
           Rotation {
@@ -1095,7 +1095,7 @@ Assets {
           Rotation {
             Pitch: 1.36603776e-05
             Yaw: 89.9999771
-            Roll: -6.10351563e-05
+            Roll: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -2169,8 +2169,8 @@ Assets {
             Z: -24.4247684
           }
           Rotation {
-            Pitch: -6.10351563e-05
-            Yaw: -6.10351563e-05
+            Pitch: -6.10351562e-05
+            Yaw: -6.10351562e-05
             Roll: 9.40425862e-11
           }
           Scale {
@@ -2808,6 +2808,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Enemies"
 }

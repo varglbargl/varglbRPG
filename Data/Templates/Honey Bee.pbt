@@ -79,7 +79,7 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 91.2587585
             Z: 38.1401367
           }
@@ -144,7 +144,7 @@ Assets {
         Name: "Teardrop - Truncated"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: -91.2587585
           }
           Rotation {
@@ -1128,7 +1128,7 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            Y: 9.61914063
+            Y: 9.61914062
             Z: 24.1803589
           }
           Rotation {
@@ -3361,7 +3361,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

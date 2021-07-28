@@ -50,7 +50,7 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 523.873962
     }
@@ -109,7 +109,7 @@ Objects {
   Name: "Kelp Bush 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 54.3005524
     }
@@ -285,7 +285,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
     }
     Rotation {
@@ -413,7 +413,7 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 523.873962
     }
@@ -472,7 +472,7 @@ Objects {
   Name: "Kelp Bush 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 54.3005524
     }
@@ -648,7 +648,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
     }
     Rotation {
@@ -776,7 +776,7 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 523.873962
     }
@@ -835,7 +835,7 @@ Objects {
   Name: "Kelp Bush 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 54.3005524
     }
@@ -1011,7 +1011,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
     }
     Rotation {
@@ -1139,7 +1139,7 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 523.873962
     }
@@ -1198,7 +1198,7 @@ Objects {
   Name: "Kelp Bush 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 54.3005524
     }
@@ -1374,7 +1374,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
     }
     Rotation {
@@ -1502,7 +1502,7 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 523.873962
     }
@@ -1561,7 +1561,7 @@ Objects {
   Name: "Kelp Bush 01"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
       Z: 54.3005524
     }
@@ -1737,7 +1737,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -4.77539063
+      X: -4.77539062
       Y: 0.208496094
     }
     Rotation {

@@ -2,7 +2,7 @@ Assets {
   Id: 15769032996218477721
   Name: "Awning Material"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 9837031551250158292
     ParameterOverrides {

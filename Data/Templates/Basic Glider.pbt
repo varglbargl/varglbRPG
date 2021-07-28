@@ -7,7 +7,7 @@ Assets {
       RootId: 12626446851697889861
       Objects {
         Id: 12626446851697889861
-        Name: "Mini Glider (Fantasy)"
+        Name: "Basic Glider"
         Transform {
           Scale {
             X: 1
@@ -249,6 +249,8 @@ Assets {
         }
         ParentId: 12626446851697889861
         ChildIds: 16005713217154941052
+        ChildIds: 2425677302297334810
+        ChildIds: 9358251810816133656
         ChildIds: 16807132577869428983
         ChildIds: 10076344812342296755
         ChildIds: 16747306585183920289
@@ -265,8 +267,6 @@ Assets {
         ChildIds: 1808850451530847244
         ChildIds: 12394523064836808991
         ChildIds: 9458062290951660829
-        ChildIds: 2425677302297334810
-        ChildIds: 9358251810816133656
         ChildIds: 13659338649047250590
         ChildIds: 13735824021975643664
         ChildIds: 13317448316114493621
@@ -313,6 +313,18 @@ Assets {
               SubObjectId: 17903639115240619190
             }
           }
+          Overrides {
+            Name: "cs:LeftHandAnchor"
+            ObjectReference {
+              SubObjectId: 7742459778279268682
+            }
+          }
+          Overrides {
+            Name: "cs:RightHandAnchor"
+            ObjectReference {
+              SubObjectId: 2771436515689841786
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -330,6 +342,644 @@ Assets {
           ScriptAsset {
             Id: 9463019686170667698
           }
+        }
+      }
+      Objects {
+        Id: 2425677302297334810
+        Name: "Left Wing"
+        Transform {
+          Location {
+            X: -2.20456314
+            Y: -20
+            Z: -1.26708984
+          }
+          Rotation {
+            Pitch: 6.95645189
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1294961851121856180
+        ChildIds: 7742459778279268682
+        ChildIds: 1042999681855197309
+        ChildIds: 4408306181216337820
+        ChildIds: 4749640432439170897
+        ChildIds: 5466005612353735412
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 7742459778279268682
+        Name: "Left Hand Anchor"
+        Transform {
+          Location {
+            X: 6.77576494
+            Y: -2.98632812
+            Z: -8.61699
+          }
+          Rotation {
+            Pitch: 74.999588
+            Yaw: 179.999939
+            Roll: -179.999954
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2425677302297334810
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: -5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
+        }
+      }
+      Objects {
+        Id: 1042999681855197309
+        Name: "Decal Wood Ends Variations"
+        Transform {
+          Location {
+            X: -37.7327
+            Y: 43.0507812
+            Z: 13.0714922
+          }
+          Rotation {
+            Pitch: -4.60129309
+            Yaw: 85.3083344
+            Roll: 56.4639397
+          }
+          Scale {
+            X: 0.0712833926
+            Y: 0.0712696165
+            Z: 0.0515554026
+          }
+        }
+        ParentId: 2425677302297334810
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13649979035082162066
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 4408306181216337820
+        Name: "Decal Wood Ends Variations"
+        Transform {
+          Location {
+            X: 46.9497337
+            Y: 45.8964844
+            Z: 27.5565834
+          }
+          Rotation {
+            Pitch: -11.3948517
+            Yaw: 92.3842
+            Roll: -37.5976753
+          }
+          Scale {
+            X: 0.0674955174
+            Y: 0.0674824864
+            Z: 0.0488158464
+          }
+        }
+        ParentId: 2425677302297334810
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13649979035082162066
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 4749640432439170897
+        Name: "Handle"
+        Transform {
+          Location {
+            X: -2.23690319
+            Y: -14.4199219
+            Z: 60.1207275
+          }
+          Rotation {
+            Pitch: -34.5002136
+            Yaw: 9.16829777
+            Roll: -107.83078
+          }
+          Scale {
+            X: 1.27798247
+            Y: 1.27798247
+            Z: 1.27798247
+          }
+        }
+        ParentId: 2425677302297334810
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12446131267530965574
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.4
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 48
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.431000024
+              G: 0.255663663
+              B: 0.0504269972
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1819189828141961346
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 5466005612353735412
+        Name: "Basic Projectile Trail VFX"
+        Transform {
+          Location {
+            X: 8.91634
+            Y: -48.4341354
+            Z: 19.8447189
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2425677302297334810
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17977280587505271142
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 9358251810816133656
+        Name: "Right Wing"
+        Transform {
+          Location {
+            X: -2.20456314
+            Y: 20
+            Z: -1.26708984
+          }
+          Rotation {
+            Pitch: 6.95645189
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1294961851121856180
+        ChildIds: 2771436515689841786
+        ChildIds: 13648154248604911548
+        ChildIds: 17129027932846302621
+        ChildIds: 6426286680506513167
+        ChildIds: 5530928223307301622
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 2771436515689841786
+        Name: "Right Hand Anchor"
+        Transform {
+          Location {
+            X: 6.77576494
+            Y: 2.986
+            Z: -8.61699
+          }
+          Rotation {
+            Pitch: 74.9997177
+            Yaw: -179.999969
+            Roll: -179.999969
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9358251810816133656
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: 5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:righthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
+        }
+      }
+      Objects {
+        Id: 13648154248604911548
+        Name: "Decal Wood Ends Variations"
+        Transform {
+          Location {
+            X: -38.2235947
+            Y: -41.4550781
+            Z: 12.7895155
+          }
+          Rotation {
+            Pitch: 2.48023272
+            Yaw: 98.8578
+            Roll: 56.7083282
+          }
+          Scale {
+            X: 0.0690931827
+            Y: 0.0690798312
+            Z: 0.0499713458
+          }
+        }
+        ParentId: 9358251810816133656
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13649979035082162066
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 17129027932846302621
+        Name: "Decal Wood Ends Variations"
+        Transform {
+          Location {
+            X: 47.3194084
+            Y: -46.5527344
+            Z: 26.1193962
+          }
+          Rotation {
+            Pitch: 8.99419
+            Yaw: 75.9685516
+            Roll: -38.9977722
+          }
+          Scale {
+            X: 0.0712833926
+            Y: 0.0712696165
+            Z: 0.0515554026
+          }
+        }
+        ParentId: 9358251810816133656
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13649979035082162066
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 6426286680506513167
+        Name: "Handle"
+        Transform {
+          Location {
+            X: -2.66339636
+            Y: 15.9121094
+            Z: 61.0680275
+          }
+          Rotation {
+            Pitch: -33.2439575
+            Yaw: -11.3190308
+            Roll: -71.2928467
+          }
+          Scale {
+            X: 1.27798247
+            Y: 1.27798247
+            Z: 1.27798247
+          }
+        }
+        ParentId: 9358251810816133656
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12446131267530965574
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.4
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 48
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.431000024
+              G: 0.255663663
+              B: 0.0504269972
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1819189828141961346
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 5530928223307301622
+        Name: "Basic Projectile Trail VFX"
+        Transform {
+          Location {
+            X: 8.91640854
+            Y: 48.7778053
+            Z: 19.8447113
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9358251810816133656
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17977280587505271142
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
         }
       }
       Objects {
@@ -1491,550 +2141,6 @@ Assets {
         }
       }
       Objects {
-        Id: 2425677302297334810
-        Name: "Left Wing"
-        Transform {
-          Location {
-            X: -2.20456314
-            Y: -20
-            Z: -1.26708984
-          }
-          Rotation {
-            Pitch: 6.95645189
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1294961851121856180
-        ChildIds: 1042999681855197309
-        ChildIds: 4408306181216337820
-        ChildIds: 4749640432439170897
-        ChildIds: 5466005612353735412
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 1042999681855197309
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -37.7327
-            Y: 43.0507813
-            Z: 13.0714922
-          }
-          Rotation {
-            Pitch: -4.60129309
-            Yaw: 85.3083344
-            Roll: 56.4639397
-          }
-          Scale {
-            X: 0.0712833926
-            Y: 0.0712696165
-            Z: 0.0515554026
-          }
-        }
-        ParentId: 2425677302297334810
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
-        Id: 4408306181216337820
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 46.9497337
-            Y: 45.8964844
-            Z: 27.5565834
-          }
-          Rotation {
-            Pitch: -11.3948517
-            Yaw: 92.3842
-            Roll: -37.5976753
-          }
-          Scale {
-            X: 0.0674955174
-            Y: 0.0674824864
-            Z: 0.0488158464
-          }
-        }
-        ParentId: 2425677302297334810
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
-        Id: 4749640432439170897
-        Name: "Handle"
-        Transform {
-          Location {
-            X: -2.23690319
-            Y: -14.4199219
-            Z: 60.1207275
-          }
-          Rotation {
-            Pitch: -34.5002136
-            Yaw: 9.16829777
-            Roll: -107.83078
-          }
-          Scale {
-            X: 1.27798247
-            Y: 1.27798247
-            Z: 1.27798247
-          }
-        }
-        ParentId: 2425677302297334810
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.4
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 48
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.431000024
-              G: 0.255663663
-              B: 0.0504269972
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1819189828141961346
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 5466005612353735412
-        Name: "Basic Projectile Trail VFX"
-        Transform {
-          Location {
-            X: 8.91634
-            Y: -48.4341354
-            Z: 19.8447189
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2425677302297334810
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 17977280587505271142
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
-        Id: 9358251810816133656
-        Name: "Right Wing"
-        Transform {
-          Location {
-            X: -2.20456314
-            Y: 20
-            Z: -1.26708984
-          }
-          Rotation {
-            Pitch: 6.95645189
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1294961851121856180
-        ChildIds: 13648154248604911548
-        ChildIds: 17129027932846302621
-        ChildIds: 6426286680506513167
-        ChildIds: 5530928223307301622
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 13648154248604911548
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -38.2235947
-            Y: -41.4550781
-            Z: 12.7895155
-          }
-          Rotation {
-            Pitch: 2.48023272
-            Yaw: 98.8578
-            Roll: 56.7083282
-          }
-          Scale {
-            X: 0.0690931827
-            Y: 0.0690798312
-            Z: 0.0499713458
-          }
-        }
-        ParentId: 9358251810816133656
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
-        Id: 17129027932846302621
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 47.3194084
-            Y: -46.5527344
-            Z: 26.1193962
-          }
-          Rotation {
-            Pitch: 8.99419
-            Yaw: 75.9685516
-            Roll: -38.9977722
-          }
-          Scale {
-            X: 0.0712833926
-            Y: 0.0712696165
-            Z: 0.0515554026
-          }
-        }
-        ParentId: 9358251810816133656
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
-        Id: 6426286680506513167
-        Name: "Handle"
-        Transform {
-          Location {
-            X: -2.66339636
-            Y: 15.9121094
-            Z: 61.0680275
-          }
-          Rotation {
-            Pitch: -33.2439575
-            Yaw: -11.3190308
-            Roll: -71.2928467
-          }
-          Scale {
-            X: 1.27798247
-            Y: 1.27798247
-            Z: 1.27798247
-          }
-        }
-        ParentId: 9358251810816133656
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.4
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 48
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.431000024
-              G: 0.255663663
-              B: 0.0504269972
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1819189828141961346
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 5530928223307301622
-        Name: "Basic Projectile Trail VFX"
-        Transform {
-          Location {
-            X: 8.91640854
-            Y: 48.7778053
-            Z: 19.8447113
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9358251810816133656
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 17977280587505271142
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
         Id: 13659338649047250590
         Name: "Prism - 4-Sided Kite"
         Transform {
@@ -2621,33 +2727,6 @@ Assets {
       }
     }
     Assets {
-      Id: 9693133565758539692
-      Name: "2D Basic Shapes Decal"
-      PlatformAssetType: 14
-      PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "dcl_basicShapes"
-      }
-    }
-    Assets {
-      Id: 12844865120941685994
-      Name: "Large Round Wood Beam 8m"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_large_beam_round_6m"
-      }
-    }
-    Assets {
-      Id: 12610149741243116648
-      Name: "Urban Pipe Wrap 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urb_pipes_acc_coupling_005_ref"
-      }
-    }
-    Assets {
       Id: 13649979035082162066
       Name: "Decal Wood Ends Variations"
       PlatformAssetType: 14
@@ -2684,6 +2763,33 @@ Assets {
       }
     }
     Assets {
+      Id: 9693133565758539692
+      Name: "2D Basic Shapes Decal"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "dcl_basicShapes"
+      }
+    }
+    Assets {
+      Id: 12844865120941685994
+      Name: "Large Round Wood Beam 8m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_large_beam_round_6m"
+      }
+    }
+    Assets {
+      Id: 12610149741243116648
+      Name: "Urban Pipe Wrap 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_acc_coupling_005_ref"
+      }
+    }
+    Assets {
       Id: 2858784811658955895
       Name: "Pipe - Quarter Wedge Thin"
       PlatformAssetType: 1
@@ -2706,7 +2812,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Gliders"
 }

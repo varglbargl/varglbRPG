@@ -2,7 +2,7 @@ Assets {
   Id: 10057624346349945770
   Name: "Milk Tea"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 9899561308220459402
     ParameterOverrides {

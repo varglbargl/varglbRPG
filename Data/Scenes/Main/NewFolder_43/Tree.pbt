@@ -2781,7 +2781,7 @@ Objects {
   Name: "Craftsman Roof 01 Peak End"
   Transform {
     Location {
-      X: 127.507813
+      X: 127.507812
       Y: 1049.54199
       Z: 500
     }
@@ -3649,7 +3649,7 @@ Objects {
   Transform {
     Location {
       X: -1072.49634
-      Y: -1061.20313
+      Y: -1061.20312
       Z: 49.9998779
     }
     Rotation {

@@ -1,4 +1,5 @@
 local Utils = require(script:GetCustomProperty("Utils"))
+local Loot = require(script:GetCustomProperty("Loot"))
 
 local enemy = script.parent
 
@@ -11,6 +12,7 @@ local stats = Utils.getStatsByLevel(LEVEL)
 
 local isDead = false
 local isFighting = false
+local attackers = {}
 local myTemplateId = script:FindTemplateRoot().sourceTemplateId
 
 HITBOX.serverUserData["Enemy"] = enemy
@@ -50,7 +52,9 @@ end
 function startFighting(player)
   -- print("Oh ho ho you are so going down, "..player.name.."!")
 
-  isFighting = player
+  isFighting = true
+  attackers[player] = true
+
   enemy:LookAtContinuous(player, true, 500)
   enemy:StopMove()
 
@@ -73,8 +77,10 @@ function fight(player)
     local distanceToPlayer = (player:GetWorldPosition() - fromVector).size
 
     if distanceToPlayer < 500 and distanceToPlayer > 150 then
-      enemy:MoveTo(Utils.groundBelowPoint(player:GetWorldPosition() + (fromVector - player:GetWorldPosition()):GetNormalized() * 100), distanceToPlayer / 400)
-      Task.Wait(distanceToPlayer / 400)
+      enemy:MoveTo(Utils.groundBelowPoint(player:GetWorldPosition() + (fromVector - player:GetWorldPosition()):GetNormalized() * 100), distanceToPlayer / 700)
+
+      Task.Wait(distanceToPlayer / 800)
+
       attack(player)
     elseif distanceToPlayer > 150 then
 
@@ -89,15 +95,17 @@ function fight(player)
       attack(player)
     end
 
-    Task.Wait(1)
+    Task.Wait(0.4)
   end
 
-  -- something has gone wrong idk what but just reset safely okay?
+  -- something has gone wrong, it doesn't matter what, let's just reset safely okay?
   stopFighting()
 end
 
 function stopFighting()
   if isDead or not Object.IsValid(enemy) then return end
+
+  isFighting = false
 
   if (enemy:GetWorldPosition() - spawnPoint).size > 10 then
     enemy:LookAt(spawnPoint)
@@ -113,7 +121,7 @@ function stopFighting()
 
   enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.25)
 
-  isFighting = false
+  attackers = {}
   enemy.collision = Collision.INHERIT
 
   if WANDER then
@@ -149,10 +157,27 @@ function die(killer, damage)
   enemy.collision = Collision.FORCE_OFF
   isDead = true
   Utils.throttleToAllPlayers("eDie", killer, enemy.id, damage)
-  Events.Broadcast("PlayerGainedXP", isFighting, stats.xpValue)
 
-  if math.random() > 0.5 then
-    Events.Broadcast("PlayerGainedGold", isFighting, math.random(0, stats.xpValue))
+  for i, nearbyPlayer in ipairs(Game.FindPlayersInSphere(enemy:GetWorldPosition(), 1000)) do
+    attackers[nearbyPlayer] = true
+  end
+
+  for i, nearbyPlayer in ipairs(Game.FindPlayersInSphere(killer:GetWorldPosition(), 1000)) do
+    attackers[nearbyPlayer] = true
+  end
+
+  for otherPlayer in pairs(attackers) do
+    Events.Broadcast("PlayerGainedXP", otherPlayer, stats.xpValue)
+  end
+
+  attackers = {}
+
+  local lootRoll = math.random()
+
+  if lootRoll <= 0.2 then
+    Loot.dropRandomItem(enemy:GetWorldPosition(), stats.level)
+  elseif lootRoll <= 0.6 then
+    Loot.dropRandomGold(enemy:GetWorldPosition(), stats.level)
   end
 
   Task.Spawn(function()
@@ -194,8 +219,8 @@ function respawn()
   respawn()
 end
 
-function onWeaponHit(thisEnemy, weapon, damage)
-  if not Object.IsValid(enemy) or not Object.IsValid(thisEnemy) or enemy ~= thisEnemy or isDead then return end
+function onWeaponHit(enemyHit, weapon, damage)
+  if not Object.IsValid(enemy) or not Object.IsValid(enemyHit) or enemy ~= enemyHit or isDead then return end
 
   -- print("I, a humble "..enemy.name..", have just been assaulted by "..weapon.owner.name.." with a "..weapon.name.." for a truly uncalled for "..damage.." damage!")
   stats.hitPoints = stats.hitPoints - damage
@@ -218,7 +243,22 @@ function onWeaponHit(thisEnemy, weapon, damage)
   end
 end
 
+-- handler params: Object_enemyHit, Equipment_weapon, integer_damage
 Events.Connect("WeaponHit", onWeaponHit)
+
+function onPlayerHealed(player, newTotal, healer)
+  for otherPlayer in pairs(attackers) do
+    if otherPlayer == player then
+      attackers[healer] = true
+      break
+    elseif otherPlayer == healer then
+      break
+    end
+  end
+end
+
+-- handler params: Player_player, integer_newTotal, Player_healer
+Events.Connect("PlayerHealed", onPlayerHealed)
 
 function wanderLoop()
   Task.Wait(math.random(50, 200) / 10)

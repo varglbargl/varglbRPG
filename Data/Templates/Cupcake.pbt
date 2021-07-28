@@ -580,7 +580,7 @@ Assets {
         Name: "Prism - 8-Sided Polished"
         Transform {
           Location {
-            X: -3.68945313
+            X: -3.68945312
             Y: 9.75683594
             Z: 19.5427246
           }
@@ -906,7 +906,7 @@ Assets {
         Transform {
           Location {
             X: 10.8427734
-            Y: -3.19726563
+            Y: -3.19726562
             Z: 19.2800293
           }
           Rotation {
@@ -1167,7 +1167,7 @@ Assets {
           Location {
             X: 6.65429688
             Y: -1.71337891
-            Z: 22.5507813
+            Z: 22.5507812
           }
           Rotation {
             Pitch: -22.1717834
@@ -1555,7 +1555,7 @@ Assets {
         Name: "Prism - 8-Sided Polished"
         Transform {
           Location {
-            X: -5.53320313
+            X: -5.53320312
             Y: -1.94580078
             Z: 23.6013184
           }
@@ -1945,8 +1945,8 @@ Assets {
         Name: "Prism - 8-Sided Polished"
         Transform {
           Location {
-            X: -8.77539063
-            Y: 5.06445313
+            X: -8.77539062
+            Y: 5.06445312
             Z: 19.0522461
           }
           Rotation {
@@ -2572,7 +2572,7 @@ Assets {
         Transform {
           Location {
             X: 7.72363281
-            Y: -4.97070313
+            Y: -4.97070312
             Z: 21.517334
           }
           Rotation {
@@ -2695,7 +2695,7 @@ Assets {
         Name: "Icosahedron - Polished"
         Transform {
           Location {
-            X: 8.99414063
+            X: 8.99414062
             Y: -7.46777344
             Z: 17.0078125
           }
@@ -3067,7 +3067,7 @@ Assets {
         Name: "Icosahedron - Polished"
         Transform {
           Location {
-            X: -9.93945313
+            X: -9.93945312
             Y: 0.80859375
             Z: 18.9663086
           }
@@ -3246,7 +3246,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }
