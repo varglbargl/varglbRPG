@@ -17,9 +17,12 @@ local myTemplateId = script:FindTemplateRoot().sourceTemplateId
 
 HITBOX.serverUserData["Enemy"] = enemy
 
-local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition())
+local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition(), 50)
 local spawnRotation = enemy:GetWorldRotation()
 local spawnScale = HITBOX:GetWorldScale()
+
+local weaponHitEvent = nil
+local playerHealedEvent = nil
 
 if not spawnPoint then
   spawnPoint = enemy:GetWorldPosition()
@@ -77,14 +80,14 @@ function fight(player)
     local distanceToPlayer = (player:GetWorldPosition() - fromVector).size
 
     if distanceToPlayer < 500 and distanceToPlayer > 150 then
-      enemy:MoveTo(Utils.groundBelowPoint(player:GetWorldPosition() + (fromVector - player:GetWorldPosition()):GetNormalized() * 100), distanceToPlayer / 700)
+      enemy:MoveTo(Utils.groundBelowPoint(player:GetWorldPosition() + (fromVector - player:GetWorldPosition()):GetNormalized() * 100, 50), distanceToPlayer / 700)
 
       Task.Wait(distanceToPlayer / 800)
 
       attack(player)
     elseif distanceToPlayer > 150 then
 
-      local toVector = Utils.groundBelowPoint(fromVector + (player:GetWorldPosition() - fromVector):GetNormalized() * 400)
+      local toVector = Utils.groundBelowPoint(fromVector + (player:GetWorldPosition() - fromVector):GetNormalized() * 400, 50)
 
       if not toVector then
         -- print("Must have been nothing...")
@@ -135,17 +138,34 @@ function attack(target)
   local damage = Utils.rollDamage(stats)
   local reflectedDamage = 0
 
+  -- crushing blow
+  -- local targetLevel = target:GetResource("Level")
+
+  -- if targetLevel >= stats.level + 5 then
+  --   -- you are higher level by a lot
+  --   -- make number smaller
+  --   local difference = targetLevel - stats.level + 4
+
+  --   damage.amount = math.ceil(damage.amount / difference)
+  -- elseif stats.level >= targetLevel + 5 then
+  --   -- the enemy is higher level by a lot
+  --   -- make number larger
+  --   local difference = targetLevel - stats.level + 4
+
+  --   damage.amount = math.ceil(damage.amount + damage.amount * difference / 10)
+  -- end
+
   if target:GetResource("Class") == 1 then
     reflectedDamage = math.min(target.hitPoints, math.max(1, math.floor(damage.amount/10 + math.random())))
 
     damage.amount = damage.amount - reflectedDamage
 
-    onWeaponHit(enemy, nil, reflectedDamage)
+    takeDamage(target, reflectedDamage)
   end
 
   Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamage, not isDead)
   target:ApplyDamage(damage)
-  Task.Wait(1)
+  Task.Wait(1.5)
 end
 
 function die(killer, damage)
@@ -167,8 +187,30 @@ function die(killer, damage)
   end
 
   for otherPlayer in pairs(attackers) do
-    Events.Broadcast("PlayerGainedXP", otherPlayer, stats.xpValue)
+  --   local playerLevel = otherPlayer:GetResource("Level")
+  --   local xpAmount = nil
+
+  --   if playerLevel >= stats.level + 5 then
+  --     -- you are higher level by a lot
+  --     -- make number smaller
+  --     local difference = playerLevel - stats.level + 4
+
+  --     xpAmount = math.ceil(stats.xpValue / difference)
+  --   elseif stats.level >= playerLevel + 5 then
+  --     -- the enemy is higher level by a lot
+  --     -- make number larger
+  --     local difference = playerLevel - stats.level + 4
+
+  --     xpAmount = math.ceil(stats.xpValue + stats.xpValue * difference / 10)
+  --   else
+      xpAmount = stats.xpValue
+    -- end
+
+    Events.Broadcast("PlayerGainedXP", otherPlayer, xpAmount)
   end
+
+  weaponHitEvent:Disconnect()
+  playerHealedEvent:Disconnect()
 
   attackers = {}
 
@@ -219,34 +261,53 @@ function respawn()
   respawn()
 end
 
-function onWeaponHit(enemyHit, weapon, damage)
-  if not Object.IsValid(enemy) or not Object.IsValid(enemyHit) or enemy ~= enemyHit or isDead then return end
-
-  -- print("I, a humble "..enemy.name..", have just been assaulted by "..weapon.owner.name.." with a "..weapon.name.." for a truly uncalled for "..damage.." damage!")
+function takeDamage(attacker, damage)
   stats.hitPoints = stats.hitPoints - damage
 
-  local attacker = nil
-
-  if weapon then
-    attacker = weapon.owner
-  end
-
-  if not isFighting then
-    startFighting(attacker)
-  end
-
-  if stats.hitPoints > 0 then
-    if weapon then Utils.throttlePlayerAttack(attacker, enemy, damage) end
-  else
+  if stats.hitPoints <= 0 then
     stats.hitPoints = 0
     die(attacker, damage)
   end
 end
 
+function onWeaponHit(enemyHit, attacker, damage)
+  if not Object.IsValid(enemy) or not Object.IsValid(enemyHit) or enemy ~= enemyHit or isDead then return end
+
+  -- crushing blow
+  -- local attackerLevel = attacker:GetResource("Level")
+
+  -- if attackerLevel >= stats.level + 5 then
+  --   -- you are higher level by a lot
+  --   -- make number larger
+  --   local difference = attackerLevel - stats.level + 4
+
+  --   damage = math.ceil(damage + damage * difference / 10)
+  -- elseif stats.level >= attackerLevel + 5 then
+  --   -- the enemy is higher level by a lot
+  --   -- make number smaller
+  --   local difference = attackerLevel - stats.level + 4
+
+  --   damage = math.ceil(damage / difference)
+  -- end
+
+  -- print("I, a humble "..enemy.name..", have just been assaulted by "..attacker.name.." with a "..weapon.name.." for a truly uncalled for "..damage.." damage!")
+  takeDamage(attacker, damage)
+
+  if not isDead then
+    Utils.throttlePlayerAttack(attacker, enemy, damage)
+
+    if not isFighting then
+      startFighting(attacker)
+    end
+  end
+end
+
 -- handler params: Object_enemyHit, Equipment_weapon, integer_damage
-Events.Connect("WeaponHit", onWeaponHit)
+weaponHitEvent = Events.Connect("WeaponHit", onWeaponHit)
 
 function onPlayerHealed(player, newTotal, healer)
+  if not Object.IsValid(healer) then return end
+
   for otherPlayer in pairs(attackers) do
     if otherPlayer == player then
       attackers[healer] = true
@@ -258,7 +319,7 @@ function onPlayerHealed(player, newTotal, healer)
 end
 
 -- handler params: Player_player, integer_newTotal, Player_healer
-Events.Connect("PlayerHealed", onPlayerHealed)
+playerHealedEvent = Events.Connect("PlayerHealed", onPlayerHealed)
 
 function wanderLoop()
   Task.Wait(math.random(50, 200) / 10)
@@ -269,12 +330,12 @@ function wanderLoop()
     return
   end
 
-  local toVector = Utils.groundBelowPoint(enemy:GetWorldPosition() + Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 500)
+  local toVector = Utils.groundBelowPoint(enemy:GetWorldPosition() + Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 500, 50)
   local fromVector = enemy:GetWorldPosition()
 
   if (not toVector or (spawnPoint - fromVector).size > 1000) and (spawnPoint - fromVector).size > 1 then
     -- print("im scared and im going home.")
-    toVector = Utils.groundBelowPoint(fromVector + (spawnPoint - fromVector):GetNormalized() * 300)
+    toVector = Utils.groundBelowPoint(fromVector + (spawnPoint - fromVector):GetNormalized() * 300, 50)
 
     if not toVector then
       toVector = fromVector + (spawnPoint - fromVector):GetNormalized() * 300

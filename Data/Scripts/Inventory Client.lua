@@ -19,6 +19,7 @@ local clientPlayer = Game.GetLocalPlayer()
 
 local inventory = {}
 local inventorySlots = INVENTORY_SLOTS:GetChildren()
+local inventorySlotsOpen = 48
 
 local gearSlots = {
   primary = GEAR_SLOTS:FindChildByName("Primary"),
@@ -54,8 +55,6 @@ local gear = {
   f10 = nil
 }
 
-local inventory = {}
-
 local isOpen = false
 
 local myLevel = nil
@@ -74,9 +73,10 @@ function initCharacterScreen()
     local button = slot:FindChildByType("UIButton")
 
     button.hoveredEvent:Connect(function()
+      hoveredTable = inventory
+      hoveredSlot = i
+
       if inventory[i] then
-        hoveredTable = inventory
-        hoveredSlot = i
         Events.Broadcast("ShowTooltip", inventory[i], button)
       end
     end)
@@ -186,10 +186,15 @@ function onResourceChanged(player, resourceName, newTotal)
   end
 end
 
-function drawSlot(slot, item)
-  if item then
-    slot:FindChildByName("Icon"):SetImage(item.icon)
-    slot:FindChildByName("Icon"):SetColor(Color.WHITE)
+function drawSlot(slot, itemTable, index)
+  if itemTable[index] then
+    slot:FindChildByName("Icon"):SetImage(itemTable[index].icon)
+
+    if moveFromTable == itemTable and moveFromSlot == index then
+      slot:FindChildByName("Icon"):SetColor(Color.New(0.5, 0.5, 0.5, 0.5))
+    else
+      slot:FindChildByName("Icon"):SetColor(Color.WHITE)
+    end
   else
     slot:FindChildByName("Icon"):SetColor(Color.TRANSPARENT)
   end
@@ -197,11 +202,16 @@ end
 
 function redrawInventory()
   for i = 1, 48 do
-    drawSlot(inventorySlots[i], inventory[i])
+    drawSlot(inventorySlots[i], inventory, i)
   end
 
   for name, slot in pairs(gearSlots) do
-    drawSlot(gearSlots[name], gear[name])
+    drawSlot(slot, gear, name)
+  end
+
+  if moveFromTable and moveFromSlot and moveFromTable[moveFromSlot] then
+    PICKUP_SLOT:FindChildByName("Icon"):SetImage(moveFromTable[moveFromSlot].icon)
+    PICKUP_SLOT.visibility = Visibility.INHERIT
   end
 end
 
@@ -231,6 +241,10 @@ function closeCharacterScreen()
 
   moveFromTable = nil
   moveFromSlot = nil
+
+  PICKUP_SLOT.visibility = Visibility.FORCE_OFF
+
+  redrawInventory()
 end
 
 function openCharacterScreen()
@@ -248,8 +262,14 @@ function pickUpItem()
 
   if moveFromTable and moveFromSlot then
 
-    if moveFromTable == inventory and hoveredTable == gear then
+    if moveFromTable == inventory and hoveredTable == gear and not hoveredTable[hoveredSlot] then
       equipItem(moveFromSlot, hoveredSlot)
+    elseif moveFromTable == gear and hoveredTable == inventory and not hoveredTable[hoveredSlot] then
+      unequipItem(moveFromSlot, hoveredSlot)
+    elseif moveFromTable == inventory and hoveredTable == inventory and moveFromSlot ~= hoveredSlot then
+      swapInventorySlots(hoveredSlot, moveFromSlot)
+    elseif moveFromTable == gear and hoveredTable == gear and string.sub(moveFromSlot, 1, 1) == "f" and string.sub(hoveredSlot, 1, 1) == "f" then
+      swapGearSlots(hoveredSlot, moveFromSlot)
     end
 
     moveFromTable = nil
@@ -259,9 +279,6 @@ function pickUpItem()
   else
     moveFromTable = hoveredTable
     moveFromSlot = hoveredSlot
-
-    PICKUP_SLOT:FindChildByName("Icon"):SetImage(moveFromTable[moveFromSlot].icon)
-    PICKUP_SLOT.visibility = Visibility.INHERIT
   end
 
   redrawInventory()
@@ -318,10 +335,18 @@ function equipItem(inventorySlot, gearSlot)
   end
 end
 
-function unequipItem(gearSlot)
-  Utils.throttleToServer("UnequipFromPlayer", clientPlayer, gearSlot)
+function unequipItem(gearSlot, inventorySlot)
+  Utils.throttleToServer("UnequipFromPlayer", clientPlayer, gearSlot, inventorySlot)
   redrawInventory()
   throttleInventory()
+end
+
+function swapInventorySlots(slotA, slotB)
+  Utils.throttleToServer("SwapInventorySlots", clientPlayer, slotA, slotB)
+end
+
+function swapGearSlots(slotA, slotB)
+  Utils.throttleToServer("SwapGearSlots", clientPlayer, slotA, slotB)
 end
 
 function onBindingPressed(thisPlayer, keyCode)
@@ -351,14 +376,24 @@ function onPrivateNetworkedDataChanged(player, key)
   local data = clientPlayer:GetPrivateNetworkedData(key)
 
   if key == "Inventory" then
+    inventorySlotsOpen = 48
+
     for slot = 1, 48 do
       if data[slot] then
         local item = Loot.findItemByTemplateId(data[slot].templateId)
 
         inventory[slot] = Loot.decodeEnchant(item, data[slot].enchant)
+
+        inventorySlotsOpen = inventorySlotsOpen - 1
       else
         inventory[slot] = nil
       end
+    end
+
+    if inventorySlotsOpen == 0 then
+      clientPlayer.clientUserData["InventoryFull"] = true
+    else
+      clientPlayer.clientUserData["InventoryFull"] = false
     end
   elseif key == "Gear" then
     for name, _ in pairs(gearSlots) do

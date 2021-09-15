@@ -7,6 +7,7 @@ local OUTLINE = script:GetCustomProperty("Outline"):WaitForObject()
 
 local goldAmount = SERVER:GetCustomProperty("GoldAmount")
 local lootPosition = PICKUP_TRIGGER:GetWorldPosition()
+local pickupEvent = nil
 
 OUTLINE:SetSmartProperty("Color A", Utils.color.gold)
 
@@ -30,7 +31,8 @@ end
 function getYeGold(thisTrigger, other)
   if not Object.IsValid(other) or not other:IsA("Player") then return end
 
+  pickupEvent:Disconnect()
   Utils.playSoundEffect(PICKUP_SFX, {position = lootPosition})
 end
 
-PICKUP_TRIGGER.beginOverlapEvent:Connect(getYeGold)
+pickupEvent = PICKUP_TRIGGER.beginOverlapEvent:Connect(getYeGold)

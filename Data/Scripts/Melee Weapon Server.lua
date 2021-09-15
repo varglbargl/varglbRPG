@@ -13,6 +13,10 @@ HITBOX.collision = Collision.FORCE_OFF
 
 local hitEnemies = {}
 
+local equipEvent = nil
+local unequipEvent = nil
+local hitEvent = nil
+
 function rollDamage()
   return math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + weapon.owner:GetResource("Grit") / 5 + math.random())
 end
@@ -43,7 +47,7 @@ function onHitboxOverlap(thisTrigger, other)
   if enemy and not hitEnemies[enemy] then
     hitEnemies[enemy] = true
 
-    Events.Broadcast("WeaponHit", enemy, weapon, rollDamage())
+    Events.Broadcast("WeaponHit", enemy, weapon.owner, rollDamage())
   end
 end
 
@@ -52,20 +56,24 @@ function onEquipped(thisEquipment, player)
     player.animationStance = STANCE
     Events.Broadcast("UpdateIdleStance", player, STANCE)
   end
+
+  equipEvent:Disconnect()
 end
 
 function onUnequipped(thisEquipment)
+  unequipEvent:Disconnect()
+  hitEvent:Disconnect()
   -- thisEquipment:Destroy()
 end
 
 -- handler params: Equipment_equipment, Player_player
-weapon.equippedEvent:Connect(onEquipped)
+equipEvent = weapon.equippedEvent:Connect(onEquipped)
 
 -- handler params: Equipment_equipment, Player_player
-weapon.unequippedEvent:Connect(onUnequipped)
+unequipEvent = weapon.unequippedEvent:Connect(onUnequipped)
 
 -- handler params: Trigger_trigger, Object_other
-HITBOX.beginOverlapEvent:Connect(onHitboxOverlap)
+hitEvent = HITBOX.beginOverlapEvent:Connect(onHitboxOverlap)
 
 for i, abil in ipairs(weapon:GetAbilities()) do
   -- handler params: Ability_ability

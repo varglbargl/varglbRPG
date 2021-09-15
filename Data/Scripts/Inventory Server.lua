@@ -44,6 +44,7 @@ function onPlayerJoined(player)
 end
 
 function addToInventory(player, item, inventorySlot)
+  if not Object.IsValid(player) then return end
 
   if inventorySlot then
     player.serverUserData["Inventory"][inventorySlot] = item
@@ -55,18 +56,20 @@ function addToInventory(player, item, inventorySlot)
     for i = 1, 48 do
       if not player.serverUserData["Inventory"][i] then
         player.serverUserData["Inventory"][i] = item
+        break
+      end
+    end
+
+    for i = 1, 48 do
+      if not player.serverUserData["Inventory"][i] then
         inventoryFull = false
         break
       end
     end
 
-    if inventoryFull then
-      player.serverUserData["Inventory"].full = true
-      Utils.throttleToPlayer(player, "FlyupText", "Inventory Full...")
-    else
-      player.serverUserData["Inventory"].full = false
-      Utils.updatePrivateNetworkedData(player, "Inventory")
-    end
+    player.serverUserData["Inventory"].full = inventoryFull
+
+    Utils.updatePrivateNetworkedData(player, "Inventory")
   end
 end
 
@@ -98,6 +101,7 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
 
   Utils.updatePrivateNetworkedData(player, "Gear")
   Events.Broadcast("EquipmentChanged", player)
+
   return item
 end
 
@@ -131,7 +135,18 @@ function equipToPlayer(player, gearSlot, inventorySlot)
 
     -- print("EqID = "..equipment.id)
     Events.Broadcast("EquipmentChanged", player)
+    player.serverUserData["Inventory"].full = false
   end
+end
+
+function swapInventorySlots(player, slotA, slotB)
+  player.serverUserData["Inventory"][slotA], player.serverUserData["Inventory"][slotB] = player.serverUserData["Inventory"][slotB], player.serverUserData["Inventory"][slotA]
+  Utils.updatePrivateNetworkedData(player, "Inventory")
+end
+
+function swapGearSlots(player, slotA, slotB)
+  player.serverUserData["Gear"][slotA], player.serverUserData["Gear"][slotB] = player.serverUserData["Gear"][slotB], player.serverUserData["Gear"][slotA]
+  Utils.updatePrivateNetworkedData(player, "Gear")
 end
 
 Game.playerJoinedEvent:Connect(onPlayerJoined)
@@ -139,3 +154,5 @@ Game.playerJoinedEvent:Connect(onPlayerJoined)
 Events.Connect("EquipToPlayer", equipToPlayer)
 Events.Connect("AddToInventory", addToInventory)
 Events.Connect("UnequipFromPlayer", unequipFromPlayer)
+Events.Connect("SwapInventorySlots", swapInventorySlots)
+Events.Connect("SwapGearSlots", swapGearSlots)

@@ -10,16 +10,16 @@ Assets {
         Name: "Restroom Sign"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
           }
         }
-        ParentId: 15534312757544209620
+        ParentId: 6192845519597223248
         ChildIds: 2301536998866612783
         ChildIds: 1646009755317701624
         ChildIds: 10389372000153522742
-        ChildIds: 11976006592980153699
+        ChildIds: 8039532169034846632
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -69,8 +69,9 @@ Assets {
             Id: 841534158063459245
           }
           Color {
-            G: 0.213633046
-            B: 0.442000031
+            R: 0.00959199388
+            G: 0.207579464
+            B: 0.21800001
             A: 1
           }
           HorizontalSize: 1
@@ -113,8 +114,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              G: 0.170616433
-              B: 0.353000015
+              R: 0.00959199388
+              G: 0.207579464
+              B: 0.21800001
               A: 1
             }
           }
@@ -203,7 +205,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11976006592980153699
+        Id: 8039532169034846632
         Name: "Toilet Icon"
         Transform {
           Location {
@@ -214,9 +216,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1.16690063
-            Y: 1.16690063
-            Z: 1.16690063
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 5735171248054737502
@@ -236,9 +238,11 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsFilePartition: true
-          FilePartitionName: "Toilet Icon"
+          IsGroup: true
         }
       }
       Objects {
@@ -246,20 +250,20 @@ Assets {
         Name: "Sphere - Half Thick"
         Transform {
           Location {
-            X: -0.0133666992
-            Y: -4.00878906
-            Z: 8.68875122
+            X: -0.0158989895
+            Y: -4.67775297
+            Z: 10.1388445
           }
           Rotation {
-            Roll: -179.999985
+            Roll: -179.999969
           }
           Scale {
-            X: 0.00266936072
-            Y: 0.0933208
-            Z: 0.10687869
+            X: 0.0031148782
+            Y: 0.108896077
+            Z: 0.124716789
           }
         }
-        ParentId: 11976006592980153699
+        ParentId: 8039532169034846632
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -270,9 +274,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.0162839945
-              G: 0.0654467121
-              B: 0.118000008
+              R: 0.00841799751
+              G: 0.058370892
+              B: 0.0610000044
               A: 1
             }
           }
@@ -309,20 +313,21 @@ Assets {
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
-            X: 0.0205037016
-            Y: -3.95930648
+            X: 0.0244365446
+            Y: -4.62035227
           }
           Rotation {
-            Yaw: 89.9999847
-            Roll: 89.9999847
+            Pitch: 6.83018879e-06
+            Yaw: 89.9999466
+            Roll: 89.9999466
           }
           Scale {
-            X: 0.0912503153
-            Y: 0.129500687
-            Z: 3.49936857e-09
+            X: 0.106480032
+            Y: 0.151114404
+            Z: 4.0834145e-09
           }
         }
-        ParentId: 11976006592980153699
+        ParentId: 8039532169034846632
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -333,9 +338,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.0162839945
-              G: 0.0654467121
-              B: 0.118000008
+              R: 0.00841799751
+              G: 0.058370892
+              B: 0.0610000044
               A: 1
             }
           }
@@ -372,22 +377,22 @@ Assets {
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -0.0133666992
-            Y: 3.08007812
-            Z: 15.131897
+            X: -0.0159034096
+            Y: 3.59412479
+            Z: 17.6575508
           }
           Rotation {
             Pitch: -1.36603776e-05
-            Yaw: -89.9999771
-            Roll: 180
+            Yaw: -89.9999313
+            Roll: -179.999985
           }
           Scale {
-            X: 0.0709530935
-            Y: 0.00131975499
-            Z: 0.0902454853
+            X: 0.0827951953
+            Y: 0.00154002267
+            Z: 0.10530749
           }
         }
-        ParentId: 11976006592980153699
+        ParentId: 8039532169034846632
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -398,9 +403,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.0162839945
-              G: 0.0654467121
-              B: 0.118000008
+              R: 0.00841799751
+              G: 0.058370892
+              B: 0.0610000044
               A: 1
             }
           }
@@ -437,20 +442,20 @@ Assets {
         Name: "Ring"
         Transform {
           Location {
-            X: -0.0133666992
-            Y: -4.87255859
-            Z: 9.63638306
+            X: -0.0155107882
+            Y: -5.68575239
+            Z: 11.2446012
           }
           Rotation {
-            Roll: -179.999969
+            Roll: -179.999954
           }
           Scale {
-            X: 0.00227650721
-            Y: 0.0795866475
-            Z: 0.0911492
+            X: 0.00265645725
+            Y: 0.0928696916
+            Z: 0.106362052
           }
         }
-        ParentId: 11976006592980153699
+        ParentId: 8039532169034846632
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -461,9 +466,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.0162839945
-              G: 0.0654467121
-              B: 0.118000008
+              R: 0.00841799751
+              G: 0.058370892
+              B: 0.0610000044
               A: 1
             }
           }
@@ -500,20 +505,20 @@ Assets {
         Name: "Ring"
         Transform {
           Location {
-            X: -0.0133666992
-            Y: 3.03515625
-            Z: 16.0571289
+            X: -0.0155156087
+            Y: 3.54176641
+            Z: 18.7369804
           }
           Rotation {
             Roll: -179.999954
           }
           Scale {
-            X: 0.00198516808
-            Y: 0.0738029703
-            Z: 0.121471807
+            X: 0.00231649354
+            Y: 0.0861207172
+            Z: 0.141745508
           }
         }
-        ParentId: 11976006592980153699
+        ParentId: 8039532169034846632
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -524,9 +529,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.0162839945
-              G: 0.0654467121
-              B: 0.118000008
+              R: 0.00841799751
+              G: 0.058370892
+              B: 0.0610000044
               A: 1
             }
           }
@@ -563,22 +568,22 @@ Assets {
         Name: "Text 04: ,"
         Transform {
           Location {
-            X: 0.0805502534
-            Y: 4.43507624
-            Z: 12.3007565
+            X: 0.0942427292
+            Y: 5.17496586
+            Z: 14.3537188
           }
           Rotation {
-            Pitch: 72.8254242
-            Yaw: -90
-            Roll: 179.99646
+            Pitch: 72.8253174
+            Yaw: -89.9999
+            Roll: 179.996429
           }
           Scale {
-            X: 0.0681493133
-            Y: 0.00126760884
-            Z: 0.0651153401
+            X: 0.0795234665
+            Y: 0.00147917331
+            Z: 0.0759831145
           }
         }
-        ParentId: 11976006592980153699
+        ParentId: 8039532169034846632
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -646,21 +651,21 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -0.0133666992
-            Y: 2.91162109
-            Z: 6.30154419
+            X: -0.0155154755
+            Y: 3.39748931
+            Z: 7.35333633
           }
           Rotation {
-            Yaw: -89.9999542
-            Roll: -179.999985
+            Yaw: -89.9999161
+            Roll: -179.999969
           }
           Scale {
-            X: 0.0478197262
-            Y: 0.000889469171
-            Z: 0.0456908159
+            X: 0.0558008589
+            Y: 0.00103792199
+            Z: 0.0533166304
           }
         }
-        ParentId: 11976006592980153699
+        ParentId: 8039532169034846632
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -671,9 +676,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.0162839945
-              G: 0.0654467121
-              B: 0.118000008
+              R: 0.00841799751
+              G: 0.058370892
+              B: 0.0610000044
               A: 1
             }
           }

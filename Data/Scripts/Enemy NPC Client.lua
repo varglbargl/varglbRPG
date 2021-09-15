@@ -21,6 +21,11 @@ local isDead = false
 local lastKnownPosition = MESH:GetWorldPosition()
 local clientPlayer = Game.GetLocalPlayer()
 
+local hitEvent = nil
+local dieEvent = nil
+local attackEvent = nil
+local destroyEvent = nil
+
 function movingAnimationCheckLoop()
   if isDead or (WALK_ANIM == "" and RUN_ANIM == "") or not Object.IsValid(enemy) then return end
 
@@ -118,11 +123,22 @@ function onEnemyAttacked(attackedPlayer, id, reflectedDamage, survived)
   end
 end
 
+function onEnemyDestroyed(thisEnemy)
+  hitEvent:Disconnect()
+  dieEvent:Disconnect()
+  attackEvent:Disconnect()
+  destroyEvent:Disconnect()
+end
+
 -- handler params: Player_attackingPlayer, String_id, Integer_damage
-Events.Connect("eHit", onEnemiesHit)
+hitEvent = Events.Connect("eHit", onEnemiesHit)
 
 -- handler params: Player_killingPlayer, String_id, Integer_damage
-Events.Connect("eDie", onEnemyDied)
+dieEvent = Events.Connect("eDie", onEnemyDied)
 
 -- handler params: Player_attackedPlayer, String_id, Integer_reflectedDamage, Bool_survived
-Events.Connect("eAtt", onEnemyAttacked)
+attackEvent = Events.Connect("eAtt", onEnemyAttacked)
+
+-- handler params: CoreObject_coreObject
+destroyEvent = enemy.destroyEvent:Connect(onEnemyDestroyed)
+

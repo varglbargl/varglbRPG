@@ -2,8 +2,6 @@ local FLY_UP_FONT = script:GetCustomProperty("FlyUpFont")
 
 local Utils = {}
 
-local powerDoublingRate = 7.5
-
 -- MY COLORS
 
 Utils.color = {
@@ -25,6 +23,8 @@ Utils.color = {
 }
 
 -- GAME INFO
+
+local powerDoublingRate = 10
 
 local classes = {
   {
@@ -156,7 +156,7 @@ local function compressItems(items)
   local results = {}
 
   for slot, item in pairs(items) do
-    if item then
+    if slot ~= "full" and item then
       results[slot] = {templateId = item.templateId, enchant = item.enchant}
     end
   end
@@ -248,6 +248,7 @@ end
 
 function Utils.formatInt(amount)
   local formatted = math.floor(amount)
+  local k = nil
 
   while true do
     formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
@@ -278,8 +279,15 @@ function Utils.showFlyupText(text, pos, color)
   UI.ShowFlyUpText(text, pos + Vector3.New(math.random(-60, 60), math.random(-60, 60), math.random(50, 100)), {font = FLY_UP_FONT, isBig = true, duration = 2, color = color})
 end
 
-function Utils.groundBelowPoint(vec3)
-  local hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
+function Utils.groundBelowPoint(vec3, sphercaseRadius)
+  local hitResult = nil
+
+  if sphercaseRadius then
+    hitResult = World.Spherecast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, sphercaseRadius, {ignorePlayers = true})
+  else
+    hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
+  end
+
   if hitResult then
     return hitResult:GetImpactPosition()
   else

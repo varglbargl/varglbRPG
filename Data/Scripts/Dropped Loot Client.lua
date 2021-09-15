@@ -9,6 +9,7 @@ local OUTLINE = script:GetCustomProperty("Outline"):WaitForObject()
 
 local droppedLoot = SERVER:GetCustomProperty("DroppedLoot")
 local lootPosition = PICKUP_TRIGGER:GetWorldPosition()
+local pickupEvent = nil
 
 function onNetworkedPropertyChanged(object, propName)
 
@@ -57,11 +58,19 @@ end
 function getYeLoot(thisTrigger, other)
   if not Object.IsValid(other) or not other:IsA("Player") then return end
 
+  Task.Wait()
+
+  if other.clientUserData["InventoryFull"] then
+    Utils.showFlyupText("Inventory Full...")
+    return
+  end
+
+  pickupEvent:Disconnect()
   Utils.playSoundEffect(PICKUP_SFX, {position = lootPosition})
 end
 
 if PICKUP_TRIGGER.isInteractable then
-  PICKUP_TRIGGER.interactedEvent:Connect(getYeLoot)
+  pickupEvent = PICKUP_TRIGGER.interactedEvent:Connect(getYeLoot)
 else
-  PICKUP_TRIGGER.beginOverlapEvent:Connect(getYeLoot)
+  pickupEvent = PICKUP_TRIGGER.beginOverlapEvent:Connect(getYeLoot)
 end

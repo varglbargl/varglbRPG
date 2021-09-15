@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18228295456459024596
+  Name: "Text 06: /"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F8_Text_064"
+  }
+}
+Assets {
   Id: 18200200076012147990
   Name: "Fantasy Castle Pillar 02 - Top"
   PlatformAssetType: 1
@@ -827,6 +836,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16469235602445101834
+  Name: "Whitebox Window Insert - Rounded Top"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_winInsert_001_roundTop"
+  }
+}
+Assets {
   Id: 16442067914662662686
   Name: "Main Street Foundation 01"
   PlatformAssetType: 1
@@ -1040,6 +1058,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_shiny_001"
+  }
+}
+Assets {
+  Id: 16080961893477235224
+  Name: "Text 01: J"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_009"
   }
 }
 Assets {
@@ -1508,6 +1535,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_urb_office_carpet_004_uv_ref"
+  }
+}
+Assets {
+  Id: 14935391098747384483
+  Name: "Cone - Truncated Hollow Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_003"
   }
 }
 Assets {
@@ -2051,6 +2087,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13888847231434103656
+  Name: "Text 03: H"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_007"
+  }
+}
+Assets {
   Id: 13877856592080960583
   Name: "Urban Water Tower Base"
   PlatformAssetType: 1
@@ -2267,6 +2312,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13282259600726273799
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
   Id: 13274836654542401903
   Name: "Decal Numbers and Symbols 01"
   PlatformAssetType: 14
@@ -2438,6 +2492,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12937870305125355679
+  Name: "Arch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_001"
+  }
+}
+Assets {
   Id: 12934878772635447120
   Name: "Cube - Rounded"
   PlatformAssetType: 1
@@ -2588,6 +2651,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_white_001_uv"
+  }
+}
+Assets {
+  Id: 12657791796308583219
+  Name: "Pipe - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_003"
   }
 }
 Assets {
@@ -3254,6 +3326,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_jpn_table_001_ref"
+  }
+}
+Assets {
+  Id: 11213679703500291925
+  Name: "Text 01: F"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_005"
   }
 }
 Assets {
@@ -3974,6 +4055,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_counter_drawers_001"
+  }
+}
+Assets {
+  Id: 9295663288063328394
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
   }
 }
 Assets {
@@ -5525,6 +5615,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5768666289788807117
+  Name: "Gear - generic large five-spoked"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_gear_001_spoke5x"
+  }
+}
+Assets {
   Id: 5744322750354006122
   Name: "Japanese Temple Foundation Stair Railing 150cm"
   PlatformAssetType: 1
@@ -6026,6 +6125,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
+  Id: 4709690006431586345
+  Name: "Pipe - Half Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half-pipe_003"
   }
 }
 Assets {
@@ -6875,6 +6983,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3124463971949195498
+  Name: "Meta Retro Pickup 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_meta_retro_pickup_01_Cue_ref"
+  }
+}
+Assets {
   Id: 3121311959895985579
   Name: "Text 06: ?"
   PlatformAssetType: 1
@@ -6899,6 +7016,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_pillar_001_base"
+  }
+}
+Assets {
+  Id: 2998387454308050767
+  Name: "Text 03: Q"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_016"
   }
 }
 Assets {
@@ -6944,6 +7070,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_quarter_pipe_wedge_002"
+  }
+}
+Assets {
+  Id: 2848437966608494040
+  Name: "Modern Weapon Ammo - Shell 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_ammo_shell_001"
   }
 }
 Assets {
@@ -7190,6 +7325,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2036163675748106790
+  Name: "Frosted Glass No Distortion"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass_nodistortion"
+  }
+}
+Assets {
   Id: 2019926374753539178
   Name: "Fantasy Castle Wall 03"
   PlatformAssetType: 1
@@ -7367,6 +7511,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_ceramic_tile_square_002"
+  }
+}
+Assets {
+  Id: 1794493300960258535
+  Name: "Wedge - Convex"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_curved_convex_001"
   }
 }
 Assets {
@@ -7871,6 +8024,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fabric_tufted_001_uv_ref"
+  }
+}
+Assets {
+  Id: 597771666959624037
+  Name: "Text 01: U"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_020"
   }
 }
 Assets {

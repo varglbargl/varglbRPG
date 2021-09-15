@@ -298,7 +298,7 @@ function Loot.giveRandomToPlayer(player, level, rarity)
 end
 
 function Loot.dropItem(position, loot)
-  local droppedLoot = World.SpawnAsset(LOOT_DROP, {position = position})
+  local droppedLoot = World.SpawnAsset(LOOT_DROP, {position = Utils.groundBelowPoint(position)})
 
   if droppedLoot.lifeSpan == 0 then
     droppedLoot.lifeSpan = 30
@@ -310,11 +310,11 @@ end
 function Loot.dropRandomItem(position, level, rarity)
   local loot = Loot.getRandom(level, rarity)
 
-  Loot.dropItem(position, loot)
+  Loot.dropItem(position + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * math.random(50, 100), loot)
 end
 
 function Loot.dropGold(position, amount)
-  local droppedGold = World.SpawnAsset(GOLD_DROP, {position = position})
+  local droppedGold = World.SpawnAsset(GOLD_DROP, {position = Utils.groundBelowPoint(position)})
 
   if droppedGold.lifeSpan == 0 then
     droppedGold.lifeSpan = 30
@@ -326,7 +326,7 @@ end
 function Loot.dropRandomGold(position, level)
   local amount = math.random(1, level)
 
-  Loot.dropGold(position, amount)
+  Loot.dropGold(position + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * math.random(50, 100), amount)
 end
 
 return Loot
