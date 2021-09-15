@@ -21,4 +21,6 @@ script:SetNetworkedCustomProperty("GoldAmount", goldAmount)
 
 PICKUP_TRIGGER.beginOverlapEvent:Connect(getYeGold)
 
+Task.Wait(0.5)
+
 PICKUP_TRIGGER.collision = Collision.FORCE_ON

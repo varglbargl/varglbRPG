@@ -17,4 +17,5 @@ Assets {
     }
   }
   SerializationVersion: 98
+  DirectlyPublished: true
 }

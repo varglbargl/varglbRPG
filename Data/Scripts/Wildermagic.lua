@@ -79,7 +79,7 @@ function Wildermagic.cast(player)
 
   local spellName = spell(player)
 
-  print("Wilderwitch "..spellName.."!")
+  -- print("Wilderwitch "..spellName.."!")
 
   return spellName
 end

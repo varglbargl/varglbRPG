@@ -57,7 +57,7 @@ end
 function getYeLoot(thisTrigger, other)
   if not Object.IsValid(other) or not other:IsA("Player") then return end
 
-  Utils.playSoundEffect(PICKUP_SFX, lootPosition)
+  Utils.playSoundEffect(PICKUP_SFX, {position = lootPosition})
 end
 
 if PICKUP_TRIGGER.isInteractable then

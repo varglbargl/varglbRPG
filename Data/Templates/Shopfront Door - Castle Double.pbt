@@ -1016,16 +1016,16 @@ Assets {
         Name: "Simple SFX Trigger"
         Transform {
           Location {
-            X: 27.1428528
-            Y: -10
-            Z: 113
+            X: 27.1428547
+            Y: -9.99999905
+            Z: 73.2960281
           }
           Rotation {
           }
           Scale {
-            X: 0.571428478
-            Y: 1
-            Z: 1
+            X: 1
+            Y: 0.999999285
+            Z: 1.00000131
           }
         }
         ParentId: 15998252359207740838

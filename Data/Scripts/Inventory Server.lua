@@ -78,7 +78,7 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
 
   if not item then return end
 
-  print("I very much want to unequip "..item.name..".")
+  -- print("I very much want to unequip "..item.name..".")
 
   for i, gear in ipairs(player:GetEquipment()) do
     if gear.id == item.equipmentId then
@@ -89,7 +89,7 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
       Task.Wait()
       if not Object.IsValid(player) then return end
 
-      print("I would like to add "..item.name.." to my inventory")
+      -- print("I would like to add "..item.name.." to my inventory")
 
       addToInventory(player, item, inventorySlot)
       break
@@ -102,7 +102,7 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
 end
 
 function equipToPlayer(player, gearSlot, inventorySlot)
-  print(gearSlot, inventorySlot)
+  -- print(gearSlot, inventorySlot)
   if not Object.IsValid(player) then return end
 
   local item = player.serverUserData["Inventory"][inventorySlot]
@@ -116,7 +116,7 @@ function equipToPlayer(player, gearSlot, inventorySlot)
 
     item.equipmentId = equipment.id
 
-    print("EqID = "..equipment.id)
+    -- print("EqID = "..equipment.id)
 
     unequipFromPlayer(player, gearSlot, inventorySlot)
 
@@ -129,7 +129,7 @@ function equipToPlayer(player, gearSlot, inventorySlot)
 
     equipment:Equip(player)
 
-    print("EqID = "..equipment.id)
+    -- print("EqID = "..equipment.id)
     Events.Broadcast("EquipmentChanged", player)
   end
 end

@@ -33,7 +33,7 @@ function autoClose()
 
   Task.Wait(DOOR_SPEED)
 
-  if CLOSE_SFX then Utils.playSoundEffect(CLOSE_SFX, DOOR:GetWorldPosition(), 0.75) end
+  Utils.playSoundEffect(CLOSE_SFX, {position = DOOR:GetWorldPosition(), volume = 0.75})
 end
 
 function onBeginOverlap(thisTrigger, other)
@@ -44,7 +44,7 @@ function onBeginOverlap(thisTrigger, other)
       DOOR.collision = Collision.FORCE_OFF
       DOOR.cameraCollision = Collision.FORCE_OFF
 
-      if not isOpen and OPEN_SFX then sfx = Utils.playSoundEffect(OPEN_SFX, DOOR:GetWorldPosition(), 0.75) end
+      sfx = Utils.playSoundEffect(OPEN_SFX, {position = DOOR:GetWorldPosition(), volume = 0.75})
 
       isOpen = true
 

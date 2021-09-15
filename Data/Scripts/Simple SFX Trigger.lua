@@ -1,7 +1,7 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 
 local SFX = script:GetCustomProperty("SoundEffect")
-local VOULUME = script:GetCustomProperty("Volume")
+local VOLUME = script:GetCustomProperty("Volume")
 local PITCH = script:GetCustomProperty("Pitch")
 local PLAY_ON_END_OVERLAP = script:GetCustomProperty("PlayOnEndOverlap")
 local ONLY_PLAY_ONCE_PER = script:GetCustomProperty("OnlyPlayOncePer")
@@ -22,8 +22,8 @@ function playTheSound(thisTrigger, other)
 
     playable = false
 
-    if Object.IsValid(sfx) then sfx:Stop() end
-    sfx = Utils.playSoundEffect(SFX, trigger:GetWorldPosition(), VOULUME, PITCH)
+    if Object.IsValid(sfx) then sfx:Destroy() end
+    sfx = Utils.playSoundEffect(SFX, {position = script:GetWorldPosition(), volume = VOLUME, pitch = PITCH})
 
     if ONLY_PLAY_ONCE_PER then
       Task.Wait(ONLY_PLAY_ONCE_PER)

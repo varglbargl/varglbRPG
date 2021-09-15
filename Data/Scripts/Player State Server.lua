@@ -11,7 +11,7 @@ function playerSpawned(player)
 end
 
 function onPlayerJoined(player)
-	print("Assigning states to " .. player.name)
+	-- print("Assigning states to " .. player.name)
 
   -- handler params: Player_player, Damage_damage
   player.diedEvent:Connect(playerDied)

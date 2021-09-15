@@ -28,7 +28,7 @@ function spawnAnimation(player, damage)
 end
 
 function onPlayerJoined(player)
-	print("Assigning animations to " .. player.name)
+	-- print("Assigning animations to " .. player.name)
 
   player.serverUserData["IdleAnimation"] = "unarmed_stance"
 

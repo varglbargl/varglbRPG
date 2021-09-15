@@ -287,27 +287,59 @@ function Utils.groundBelowPoint(vec3)
   end
 end
 
-function Utils.playSoundEffect(audio, location, volume, pitch)
+function Utils.hasUniformScale(obj)
+  if Object.IsValid(obj) and obj:GetScale().x * Vector3.ONE == obj:GetScale() then
+    return true
+  else
+    return false
+  end
+end
+
+function Utils.playSoundEffect(audio, params)
   if not audio then return end
 
-  volume = volume or 1
-  pitch = pitch or 0
+  params = params or {}
 
   local sfx = World.SpawnAsset(audio)
 
-  sfx.isTransient = true
-  sfx.volume = volume
-  sfx.pitch = pitch
-
-  if location then
-    sfx:SetWorldPosition(location)
+  if params.isTransient == false or params.transient == false then
+    sfx.isTransient = false
   else
-    sfx.isAttenuationEnabled = false
-    sfx.isOcclusionEnabled = false
-    sfx.isSpatializationEnabled = false
+    sfx.isTransient = true
   end
 
-  sfx:Play()
+  sfx.volume = params.volume or 1
+  sfx.pitch = params.pitch or 0
+  sfx.fadeInTime = params.fadeInTime or 0
+  sfx.fadeOutTime = params.fadeOutTime or 0
+  sfx.startTime = params.startTime or 0
+  sfx.stopTime = params.stopTime or 0
+  sfx.isAutoRepeatEnabled = params.isAutoRepeatEnabled or params.loop or false
+
+  if params.parent then
+    sfx.parent = params.parent
+
+    params.position = params.position or params.parent:GetWorldPosition()
+    params.isOcclusionEnabled = params.isOcclusionEnabled or params.occlusion or false
+  end
+
+  sfx.isOcclusionEnabled = params.isOcclusionEnabled or params.occlusion or false
+
+  if params.position or params.parent then
+    sfx:SetWorldPosition(params.position)
+    sfx.radius = params.radius or 500
+    sfx.radius = sfx.radius * sfx.volume
+    sfx.falloff = params.falloff or 5000
+    sfx.falloff = sfx.falloff * sfx.volume
+  else
+    sfx.isAttenuationEnabled = params.isAttenuationEnabled or params.attenuation or false
+    sfx.isSpatializationEnabled = params.isSpatializationEnabled or params.spatialization or false
+  end
+
+
+  if params.isAutoPlayEnabled ~= false and params.autoPlay ~= false then
+    sfx:Play()
+  end
 
   return sfx
 end
