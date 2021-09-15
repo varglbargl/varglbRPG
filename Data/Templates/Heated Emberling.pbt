@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 665534767918533260
+        ParentId: 4781671109827199097
         ChildIds: 2308838290578760625
         ChildIds: 6155608346076283276
         ChildIds: 15089466173944845956
@@ -471,7 +471,7 @@ Assets {
         }
         ParentId: 15089466173944845956
         ChildIds: 14728729659958369058
-        ChildIds: 12210565309108672227
+        ChildIds: 7651109339696745945
         ChildIds: 1590844999717721549
         ChildIds: 16407842310998367289
         Collidable_v2 {
@@ -558,15 +558,14 @@ Assets {
         }
       }
       Objects {
-        Id: 12210565309108672227
-        Name: "NewFolder"
+        Id: 7651109339696745945
+        Name: "Group"
         Transform {
           Location {
             X: 6.12752056
             Z: -0.0124535561
           }
           Rotation {
-            Pitch: 55.1680336
           }
           Scale {
             X: 1
@@ -590,7 +589,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -600,7 +599,9 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: 177.523788
+            Pitch: -52.6918
+            Yaw: 180
+            Roll: 180
           }
           Scale {
             X: 5.74497604
@@ -608,7 +609,7 @@ Assets {
             Z: 5.74497604
           }
         }
-        ParentId: 12210565309108672227
+        ParentId: 7651109339696745945
         UnregisteredParameters {
           Overrides {
             Name: "ma:Flame_A:color"
@@ -661,6 +662,7 @@ Assets {
           Location {
           }
           Rotation {
+            Pitch: 55.1680145
           }
           Scale {
             X: 1
@@ -668,7 +670,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12210565309108672227
+        ParentId: 7651109339696745945
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1653,6 +1655,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderPath: "Enemies"
 }

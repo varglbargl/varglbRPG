@@ -7,21 +7,20 @@ Assets {
       RootId: 6860664088217397293
       Objects {
         Id: 6860664088217397293
-        Name: "Group"
+        Name: "Vase of Foxglove Flowers"
         Transform {
-          Location {
-          }
-          Rotation {
-          }
           Scale {
             X: 1
             Y: 1
             Z: 1
           }
         }
+        ParentId: 4781671109827199097
         ChildIds: 10046353097912933156
-        ChildIds: 4673165519458559412
-        ChildIds: 10643292869043357422
+        ChildIds: 9655783169765102372
+        ChildIds: 6838205800740605042
+        ChildIds: 11201558383208040835
+        ChildIds: 13394385109877460685
         Folder {
           IsGroup: true
         }
@@ -85,58 +84,23 @@ Assets {
         }
       }
       Objects {
-        Id: 4673165519458559412
-        Name: "NewFolder"
+        Id: 9655783169765102372
+        Name: "Flower Bellflower 01"
         Transform {
           Location {
-            X: 0.73828125
-            Y: -0.692382812
+            X: 0.147460938
+            Y: -2.2578125
             Z: 69.7509766
           }
           Rotation {
           }
           Scale {
-            X: 0.814724684
-            Y: 0.814724684
-            Z: 0.814724684
+            X: 0.542316496
+            Y: 0.542316496
+            Z: 0.418094844
           }
         }
         ParentId: 6860664088217397293
-        ChildIds: 9655783169765102372
-        ChildIds: 6838205800740605042
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 9655783169765102372
-        Name: "Flower Bellflower 01"
-        Transform {
-          Location {
-            X: -0.724609375
-            Y: -1.92138672
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.665643871
-            Y: 0.665643871
-            Z: 0.513173163
-          }
-        }
-        ParentId: 4673165519458559412
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:color"
@@ -182,21 +146,21 @@ Assets {
         Name: "Flower Bellflower 01"
         Transform {
           Location {
-            X: 0.72265625
-            Y: 1.92138672
-            Z: 61.7788086
+            X: 1.32714844
+            Y: 0.87109375
+            Z: 120.083496
           }
           Rotation {
-            Yaw: 78.8331833
-            Roll: -2.99078417
+            Yaw: 78.8331604
+            Roll: -2.99078465
           }
           Scale {
-            X: 0.381637394
-            Y: 0.381637394
-            Z: 0.294220477
+            X: 0.310929418
+            Y: 0.310929418
+            Z: 0.239708692
           }
         }
-        ParentId: 4673165519458559412
+        ParentId: 6860664088217397293
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:color"
@@ -238,59 +202,24 @@ Assets {
         }
       }
       Objects {
-        Id: 10643292869043357422
-        Name: "NewFolder"
+        Id: 11201558383208040835
+        Name: "Flower Bellflower 01"
         Transform {
           Location {
-            X: -0.185546875
-            Y: 0.0688476562
+            X: -1.54492188
+            Y: 0.5546875
             Z: 73.2836914
           }
           Rotation {
             Yaw: -89.030426
           }
           Scale {
-            X: 0.703095555
-            Y: 0.703095555
-            Z: 0.703095555
+            X: 0.46801126
+            Y: 0.46801126
+            Z: 0.360809773
           }
         }
         ParentId: 6860664088217397293
-        ChildIds: 11201558383208040835
-        ChildIds: 13394385109877460685
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 11201558383208040835
-        Name: "Flower Bellflower 01"
-        Transform {
-          Location {
-            X: -0.724609375
-            Y: -1.92138672
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.665643871
-            Y: 0.665643871
-            Z: 0.513173163
-          }
-        }
-        ParentId: 10643292869043357422
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:color"
@@ -336,21 +265,21 @@ Assets {
         Name: "Flower Bellflower 01"
         Transform {
           Location {
-            X: 0.72265625
-            Y: 1.92138672
-            Z: 61.7788086
+            X: 1.17382812
+            Y: -0.416015625
+            Z: 116.720215
           }
           Rotation {
-            Yaw: 78.8331833
-            Roll: -2.99078417
+            Yaw: -10.1972637
+            Roll: -2.99078441
           }
           Scale {
-            X: 0.381637394
-            Y: 0.381637394
-            Z: 0.294220477
+            X: 0.268327564
+            Y: 0.268327564
+            Z: 0.206865117
           }
         }
-        ParentId: 10643292869043357422
+        ParentId: 6860664088217397293
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:color"
@@ -415,6 +344,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderPath: "Props"
 }

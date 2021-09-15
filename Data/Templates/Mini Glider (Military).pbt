@@ -249,11 +249,21 @@ Assets {
         }
         ParentId: 9595148035710540323
         ChildIds: 13662541988879518647
+        ChildIds: 9895277212626454434
+        ChildIds: 12723280335665715600
         ChildIds: 3935204578353342977
         ChildIds: 9472921873005791061
         ChildIds: 11481960603483773213
-        ChildIds: 7296101271991084681
-        ChildIds: 12463227395210695129
+        ChildIds: 13193679538617443105
+        ChildIds: 14382288530472036682
+        ChildIds: 5399215828075896767
+        ChildIds: 5192093202505459100
+        ChildIds: 2509595059282860758
+        ChildIds: 680412122091817441
+        ChildIds: 5111245595451224366
+        ChildIds: 11638724982841326354
+        ChildIds: 13599184331313059269
+        ChildIds: 6178890184086655251
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -321,6 +331,98 @@ Assets {
           ScriptAsset {
             Id: 9463019686170667698
           }
+        }
+      }
+      Objects {
+        Id: 9895277212626454434
+        Name: "Left Hand Anchor"
+        Transform {
+          Location {
+            X: 13.6424503
+            Y: -23.9164963
+            Z: -9.64785
+          }
+          Rotation {
+            Pitch: 68.0430374
+            Yaw: -179.999954
+            Roll: -179.999924
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13397643186250123498
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: -5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
+        }
+      }
+      Objects {
+        Id: 12723280335665715600
+        Name: "Right Hand Anchor"
+        Transform {
+          Location {
+            X: 13.6424456
+            Y: 24.0835
+            Z: -9.64785
+          }
+          Rotation {
+            Pitch: 68.0433273
+            Yaw: -179.999924
+            Roll: 180
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13397643186250123498
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: 5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:righthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
         }
       }
       Objects {
@@ -534,105 +636,18 @@ Assets {
         }
       }
       Objects {
-        Id: 7296101271991084681
-        Name: "Left Wing"
-        Transform {
-          Location {
-            X: -7.12665558
-            Y: -20
-            Z: -5.91500092
-          }
-          Rotation {
-            Pitch: 6.95645189
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13397643186250123498
-        ChildIds: 9895277212626454434
-        ChildIds: 13193679538617443105
-        ChildIds: 14382288530472036682
-        ChildIds: 5399215828075896767
-        ChildIds: 5192093202505459100
-        ChildIds: 2509595059282860758
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 9895277212626454434
-        Name: "Left Hand Anchor"
-        Transform {
-          Location {
-            X: 20.1641102
-            Y: -3.91649628
-            Z: -6.22081852
-          }
-          Rotation {
-            Pitch: 74.9995041
-            Yaw: -179.999969
-            Roll: -179.999924
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7296101271991084681
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:alwaysvisible"
-        }
-        IKAnchor {
-          AimOffset {
-            X: -20
-            Y: -5
-          }
-          IKAnchorType {
-            Value: "mc:eikanchortype:lefthand"
-          }
-          BlendWeight: 1
-          BlendInTime: 0.2
-          BlendOutTime: 0.2
-        }
-      }
-      Objects {
         Id: 13193679538617443105
         Name: "Handle"
         Transform {
           Location {
-            X: 9.5241394
-            Y: -0.168502808
-            Z: 3.15402222
+            X: 1.94536591
+            Y: -20.1685181
+            Z: -1.6306839
           }
           Rotation {
-            Pitch: 55.0468674
+            Pitch: 48.0904
             Yaw: -179.999954
-            Roll: 2.84242747e-12
+            Roll: -7.18224055e-06
           }
           Scale {
             X: 0.149870545
@@ -640,7 +655,7 @@ Assets {
             Z: 0.149870545
           }
         }
-        ParentId: 7296101271991084681
+        ParentId: 13397643186250123498
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -675,14 +690,14 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: 8.88896942
-            Y: -26.9866676
-            Z: 22.6637497
+            X: -1.04803467
+            Y: -46.9866943
+            Z: 17.6585
           }
           Rotation {
-            Pitch: 1.02176893
-            Yaw: 179.350388
-            Roll: -178.406189
+            Pitch: -5.93423176
+            Yaw: 179.346985
+            Roll: -178.327087
           }
           Scale {
             X: 2.31811857
@@ -690,7 +705,7 @@ Assets {
             Z: 1.12857151
           }
         }
-        ParentId: 7296101271991084681
+        ParentId: 13397643186250123498
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -736,12 +751,14 @@ Assets {
         Name: "Sign Font 1 Bulbs: ."
         Transform {
           Location {
-            X: -16.9595108
-            Y: -22.9314651
-            Z: 17.2341194
+            X: -26.0486298
+            Y: -42.9314651
+            Z: 9.13819885
           }
           Rotation {
-            Yaw: 180
+            Pitch: -6.95645189
+            Yaw: -179.999985
+            Roll: -1.05544336e-06
           }
           Scale {
             X: 0.393404752
@@ -749,7 +766,7 @@ Assets {
             Z: 0.393404752
           }
         }
-        ParentId: 7296101271991084681
+        ParentId: 13397643186250123498
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Bulbs:color"
@@ -793,14 +810,14 @@ Assets {
         Name: "Barrier Triangle Base"
         Transform {
           Location {
-            X: 13.8366737
-            Y: -21.4748802
-            Z: 27.3564
+            X: 3.29489136
+            Y: -41.4748535
+            Z: 22.9158478
           }
           Rotation {
-            Pitch: 58.115078
-            Yaw: 89.8311768
-            Roll: -177.874207
+            Pitch: 57.4634361
+            Yaw: 100.855797
+            Roll: -164.86026
           }
           Scale {
             X: -0.179896295
@@ -808,7 +825,7 @@ Assets {
             Z: 0.179896295
           }
         }
-        ParentId: 7296101271991084681
+        ParentId: 13397643186250123498
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -843,11 +860,14 @@ Assets {
         Name: "Basic Projectile Trail VFX"
         Transform {
           Location {
-            X: -30.4502087
-            Y: -25.2750454
-            Z: 23.8186703
+            X: -40.2375031
+            Y: -45.2750397
+            Z: 14.0403519
           }
           Rotation {
+            Pitch: 6.95645189
+            Yaw: -1.30454776e-08
+            Roll: -2.14630205e-07
           }
           Scale {
             X: 1
@@ -855,7 +875,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7296101271991084681
+        ParentId: 13397643186250123498
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -889,104 +909,18 @@ Assets {
         }
       }
       Objects {
-        Id: 12463227395210695129
-        Name: "Right Wing"
-        Transform {
-          Location {
-            X: -7.12665558
-            Y: 19.9999962
-            Z: -5.91500092
-          }
-          Rotation {
-            Pitch: 6.95645189
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13397643186250123498
-        ChildIds: 12723280335665715600
-        ChildIds: 680412122091817441
-        ChildIds: 5111245595451224366
-        ChildIds: 11638724982841326354
-        ChildIds: 13599184331313059269
-        ChildIds: 6178890184086655251
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 12723280335665715600
-        Name: "Right Hand Anchor"
-        Transform {
-          Location {
-            X: 20.1641064
-            Y: 4.08350563
-            Z: -6.22081804
-          }
-          Rotation {
-            Pitch: 74.9998703
-            Yaw: -179.999908
-            Roll: -179.999985
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12463227395210695129
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:alwaysvisible"
-        }
-        IKAnchor {
-          AimOffset {
-            X: -20
-            Y: 5
-          }
-          IKAnchorType {
-            Value: "mc:eikanchortype:righthand"
-          }
-          BlendWeight: 1
-          BlendInTime: 0.2
-          BlendOutTime: 0.2
-        }
-      }
-      Objects {
         Id: 680412122091817441
         Name: "Handle"
         Transform {
           Location {
-            X: 9.5241394
-            Y: 0.153320312
-            Z: 3.15402222
+            X: 1.94536591
+            Y: 20.1533184
+            Z: -1.6306839
           }
           Rotation {
-            Pitch: 55.046875
-            Yaw: -179.999969
+            Pitch: 48.0904083
+            Yaw: -179.999954
+            Roll: -4.84769726e-06
           }
           Scale {
             X: 0.149870545
@@ -994,7 +928,7 @@ Assets {
             Z: 0.149870545
           }
         }
-        ParentId: 12463227395210695129
+        ParentId: 13397643186250123498
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1029,14 +963,14 @@ Assets {
         Name: "Military Crate Hinge 02"
         Transform {
           Location {
-            X: 8.88893318
-            Y: 27.7171059
-            Z: 22.6637344
+            X: -1.04806519
+            Y: 47.7171021
+            Z: 17.6584778
           }
           Rotation {
-            Pitch: 1.02176893
-            Yaw: 179.350388
-            Roll: -178.406189
+            Pitch: -5.93423176
+            Yaw: 179.34697
+            Roll: -178.327087
           }
           Scale {
             X: 2.31811857
@@ -1044,7 +978,7 @@ Assets {
             Z: 1.12857151
           }
         }
-        ParentId: 12463227395210695129
+        ParentId: 13397643186250123498
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1090,14 +1024,14 @@ Assets {
         Name: "Barrier Triangle Base"
         Transform {
           Location {
-            X: 13.8366623
-            Y: 20.4947853
-            Z: 27.3563843
+            X: 3.29489136
+            Y: 40.494751
+            Z: 22.9158249
           }
           Rotation {
-            Pitch: -58.1151123
-            Yaw: 90.1688461
-            Roll: -177.874252
+            Pitch: -57.4634514
+            Yaw: 79.1441879
+            Roll: -164.860291
           }
           Scale {
             X: 0.179896295
@@ -1105,7 +1039,7 @@ Assets {
             Z: 0.179896295
           }
         }
-        ParentId: 12463227395210695129
+        ParentId: 13397643186250123498
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1140,11 +1074,14 @@ Assets {
         Name: "Basic Projectile Trail VFX"
         Transform {
           Location {
-            X: -30.4501514
-            Y: 28.4238701
-            Z: 23.8186607
+            X: -40.2374458
+            Y: 48.4238701
+            Z: 14.0403519
           }
           Rotation {
+            Pitch: 6.95645189
+            Yaw: -1.30454776e-08
+            Roll: -2.14630205e-07
           }
           Scale {
             X: 1
@@ -1152,7 +1089,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12463227395210695129
+        ParentId: 13397643186250123498
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -1190,11 +1127,14 @@ Assets {
         Name: "Sign Font 1 Bulbs: ."
         Transform {
           Location {
-            X: -30.3227787
-            Y: 24.2559
-            Z: 17.2695427
+            X: -39.3178101
+            Y: 44.2559052
+            Z: 7.55487061
           }
           Rotation {
+            Pitch: 6.95645189
+            Yaw: -1.30454776e-08
+            Roll: -2.14630205e-07
           }
           Scale {
             X: 0.393404752
@@ -1202,7 +1142,7 @@ Assets {
             Z: 0.393404752
           }
         }
-        ParentId: 12463227395210695129
+        ParentId: 13397643186250123498
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Bulbs:color"
@@ -1356,8 +1296,8 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3\r\n\r\nupdate 1.12\r\n - Added IK Anchors to all gliders! Most noticably, you now hold onto the \"Air\" glider correctly!\r\n\r\nupdate 1.10\r\n - Gliders now broadcast Events and set both clientUserData and serverUserData you can hook other scripts into\r\n - See the Glider Readme for more info :)\r\n - Fixed bug where I accidentally deleted the entire \"Air\" glider. At least I hope that was me and not the Manticore Legal Department.\r\n\r\nupdate 1.6:\r\n - Glide is now an Ability that prevents other abilities so it\'s easier to make sure players don\'t break out of\r\n - Refactored code to be much more reliable at syncing glider state between server and client\r\n - Fixed bug where you would get stuck with your arms in the air if using a weapon with no animation stance set"
+    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3\r\n\r\nupdate 1.16\r\n - Refactored to not use any Folders inside the equipment objects.\r\n - Nobody ever told to me that was bad, okay!? Sorry! Jeez!\r\n\r\nupdate 1.12-1.15\r\n - Fixed bug where the Air glider sound effects were not playing\r\n - Added IK Anchors to all gliders! Most noticably, you now hold onto the \"Air\" glider correctly!\r\n\r\nupdate 1.10\r\n - Gliders now broadcast Events and set both clientUserData and serverUserData you can hook other scripts into\r\n - See the Glider Readme for more info :)\r\n - Fixed bug where I accidentally deleted the entire \"Air\" glider. At least I hope that was me and not the Manticore Legal Department.\r\n\r\nupdate 1.6:\r\n - Glide is now an Ability that prevents other abilities so it\'s easier to make sure players don\'t break out of\r\n - Refactored code to be much more reliable at syncing glider state between server and client\r\n - Fixed bug where you would get stuck with your arms in the air if using a weapon with no animation stance set"
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
 }

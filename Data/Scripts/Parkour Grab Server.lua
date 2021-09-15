@@ -32,7 +32,7 @@ end
 function onBeginOverlap(thisTrigger, other)
 	if other:IsA("Player") then
 
-    while Object.IsValid(other) and (other.isGrounded or other:GetWorldPosition().z > ledgeHeight - 50) do
+    while Object.IsValid(other) and (other.isGrounded or other:GetWorldPosition().z > ledgeHeight - 50) or other:GetVelocity().z > 0 do
       Task.Wait()
       if not thisTrigger:IsOverlapping(other) then return end
     end

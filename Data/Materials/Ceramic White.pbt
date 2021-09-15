@@ -2,7 +2,7 @@ Assets {
   Id: 17660357240134045843
   Name: "Ceramic Bowl"
   PlatformAssetType: 13
-  SerializationVersion: 94
+  SerializationVersion: 98
   CustomMaterialAsset {
     BaseMaterialId: 15377637131691563244
     ParameterOverrides {

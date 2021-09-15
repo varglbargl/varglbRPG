@@ -7,7 +7,7 @@ Assets {
       RootId: 7437967575158509858
       Objects {
         Id: 7437967575158509858
-        Name: "Street Lamp Post - Scripted"
+        Name: "Street Lamp 01"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4959840978651587588
         ChildIds: 12741214863337693170
         ChildIds: 413281231739137541
         ChildIds: 17698640223822448264
@@ -61,7 +61,7 @@ Assets {
           }
         }
         ParentId: 7437967575158509858
-        ChildIds: 14658298243293399817
+        ChildIds: 3296096908759380484
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -78,8 +78,8 @@ Assets {
         }
       }
       Objects {
-        Id: 14658298243293399817
-        Name: "NewFolder"
+        Id: 3296096908759380484
+        Name: "Group"
         Transform {
           Location {
           }
@@ -108,7 +108,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -125,7 +125,7 @@ Assets {
             Z: 4.50000048
           }
         }
-        ParentId: 14658298243293399817
+        ParentId: 3296096908759380484
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -170,7 +170,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14658298243293399817
+        ParentId: 3296096908759380484
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -222,7 +222,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14658298243293399817
+        ParentId: 3296096908759380484
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1069,6 +1069,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderPath: "Props"
 }

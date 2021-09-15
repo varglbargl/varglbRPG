@@ -11,25 +11,11 @@ Assets {
       }
       Overrides {
         Name: "cs:IKAnchors"
-        ObjectReference {
-        }
-      }
-      Overrides {
-        Name: "cs:LeftHandAnchor"
-        ObjectReference {
-        }
-      }
-      Overrides {
-        Name: "cs:RightHandAnchor"
-        ObjectReference {
-        }
-      }
-      Overrides {
-        Name: "cs:PelvisAnchor"
-        ObjectReference {
+        AssetReference {
+          Id: 11353871841913007236
         }
       }
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
 }

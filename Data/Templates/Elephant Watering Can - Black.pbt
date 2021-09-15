@@ -7,7 +7,7 @@ Assets {
       RootId: 3926798898412338191
       Objects {
         Id: 3926798898412338191
-        Name: "Elephant Watering Can - Green"
+        Name: "Elephant Watering Can - Black"
         Transform {
           Scale {
             X: 1
@@ -17,13 +17,29 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 17788951673709265300
-        ChildIds: 12064271393068150855
-        ChildIds: 16957403222025438228
-        ChildIds: 12109288927989778547
-        ChildIds: 8717842665114394910
-        ChildIds: 4389693963824878030
-        ChildIds: 4514126421217317431
-        ChildIds: 10545944321031536963
+        ChildIds: 5487244602011109258
+        ChildIds: 5870018863324455747
+        ChildIds: 3394479745167746957
+        ChildIds: 3711314467507748455
+        ChildIds: 16322860928333740453
+        ChildIds: 9816996142710574331
+        ChildIds: 4882826386195506211
+        ChildIds: 17907444262567597477
+        ChildIds: 9088991042753370732
+        ChildIds: 6289000983948984539
+        ChildIds: 2396452022598900601
+        ChildIds: 14227689635607614335
+        ChildIds: 9786016976632443907
+        ChildIds: 15422278494128201615
+        ChildIds: 17886634443876457870
+        ChildIds: 12639450069136442203
+        ChildIds: 1036401712957330814
+        ChildIds: 16904891104515058632
+        ChildIds: 13902800435084532172
+        ChildIds: 6805162525090945489
+        ChildIds: 8464508496798206570
+        ChildIds: 6146473016092100281
+        ChildIds: 3605247477331333156
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -39,7 +55,7 @@ Assets {
       }
       Objects {
         Id: 17788951673709265300
-        Name: "Body"
+        Name: "Cylinder - Rounded"
         Transform {
           Location {
             X: -0.0183105469
@@ -101,55 +117,24 @@ Assets {
         }
       }
       Objects {
-        Id: 12064271393068150855
-        Name: "Handle"
-        Transform {
-          Location {
-            X: -0.0183105469
-            Y: -7.9765625
-            Z: 92.5056915
-          }
-          Rotation {
-            Yaw: -89.9999924
-          }
-          Scale {
-            X: 0.2
-            Y: 0.2
-            Z: 0.2
-          }
-        }
-        ParentId: 3926798898412338191
-        ChildIds: 5487244602011109258
-        ChildIds: 5870018863324455747
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 5487244602011109258
         Name: "Pipe - 90-Degree Long Thick"
         Transform {
           Location {
-            X: -199.999985
+            X: -0.0185546875
+            Y: 32.0234375
+            Z: 92.5058594
           }
           Rotation {
+            Yaw: -89.9999847
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1.1
+            X: 0.2
+            Y: 0.2
+            Z: 0.220000014
           }
         }
-        ParentId: 12064271393068150855
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -199,18 +184,20 @@ Assets {
         Name: "Pipe - 90-Degree Long Thick"
         Transform {
           Location {
-            X: 199.999985
+            X: -0.0185546875
+            Y: -47.9765625
+            Z: 92.5058594
           }
           Rotation {
-            Yaw: 179.999954
+            Yaw: 89.9999542
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1.1
+            X: 0.2
+            Y: 0.2
+            Z: 0.220000014
           }
         }
-        ParentId: 12064271393068150855
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -256,18 +243,18 @@ Assets {
         }
       }
       Objects {
-        Id: 16957403222025438228
-        Name: "Spout"
+        Id: 3394479745167746957
+        Name: "Pipe - 45-Degree Long "
         Transform {
           Location {
-            X: -0.0183105469
+            X: -0.0185546875
             Y: 47.921875
-            Z: 39.5512695
+            Z: 28.3154297
           }
           Rotation {
             Pitch: 90
-            Yaw: 90
-            Roll: 179.999939
+            Yaw: -7.12502289
+            Roll: 82.8749161
           }
           Scale {
             X: 0.374535
@@ -276,39 +263,6 @@ Assets {
           }
         }
         ParentId: 3926798898412338191
-        ChildIds: 3394479745167746957
-        ChildIds: 3711314467507748455
-        ChildIds: 16322860928333740453
-        ChildIds: 9816996142710574331
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 3394479745167746957
-        Name: "Pipe - 45-Degree Long "
-        Transform {
-          Location {
-            X: -30
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16957403222025438228
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -358,19 +312,22 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 28.2873535
-            Z: 140.521729
+            X: -0.0185546875
+            Y: 100.552246
+            Z: 50.1459961
           }
           Rotation {
-            Pitch: -45
+            Pitch: 44.9999771
+            Yaw: -89.9999237
+            Roll: -2.41483599e-06
           }
           Scale {
-            X: 1.00948262
-            Y: 1.00000024
-            Z: 1.29816806
+            X: 0.378086567
+            Y: 0.374535084
+            Z: 0.486209363
           }
         }
-        ParentId: 16957403222025438228
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -420,22 +377,22 @@ Assets {
         Name: "Cylinder - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: 103.71006
-            Y: 0.000244443741
-            Z: 216.776611
+            X: -0.0185546875
+            Y: 129.112305
+            Z: 78.3945312
           }
           Rotation {
-            Pitch: -6.10351562e-05
-            Yaw: 90.0000076
-            Roll: -45.0000305
+            Pitch: -1.36603776e-05
+            Yaw: -2.72591046e-06
+            Roll: 44.999958
           }
           Scale {
-            X: 1.75
-            Y: 1.74998379
-            Z: 0.671640635
+            X: 0.655436218
+            Y: 0.655430198
+            Z: 0.25155291
           }
         }
-        ParentId: 16957403222025438228
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -485,21 +442,22 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: -29.973753
-            Y: -2.5462889e-06
+            X: -0.0185546875
+            Y: 47.921875
+            Z: 28.3251953
           }
           Rotation {
-            Pitch: -6.10351562e-05
-            Yaw: 90.0000076
-            Roll: -179.999939
+            Pitch: -6.83018879e-06
+            Yaw: -7.18562251e-06
+            Roll: -89.9999313
           }
           Scale {
-            X: 1.00124156
-            Y: 1.00124156
-            Z: 1.00124156
+            X: 0.375
+            Y: 0.375
+            Z: 0.375
           }
         }
-        ParentId: 16957403222025438228
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -545,18 +503,17 @@ Assets {
         }
       }
       Objects {
-        Id: 12109288927989778547
-        Name: "Ear"
+        Id: 4882826386195506211
+        Name: "Pipe - 90-Degree Long Thick"
         Transform {
           Location {
             X: 31.1269531
             Y: -15.6064453
-            Z: 54.5512695
+            Z: 92.2695312
           }
           Rotation {
             Pitch: -90
-            Yaw: 165.96373
-            Roll: 119.075363
+            Roll: -74.9608765
           }
           Scale {
             X: 0.188591093
@@ -565,37 +522,6 @@ Assets {
           }
         }
         ParentId: 3926798898412338191
-        ChildIds: 4882826386195506211
-        ChildIds: 17907444262567597477
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 4882826386195506211
-        Name: "Pipe - 90-Degree Long Thick"
-        Transform {
-          Location {
-            X: -200
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12109288927989778547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -645,18 +571,22 @@ Assets {
         Name: "Pipe - 90-Degree Long Thick"
         Transform {
           Location {
-            X: 200
+            X: 31.1269531
+            Y: -15.6064453
+            Z: 16.8330078
           }
           Rotation {
-            Yaw: 179.999969
+            Pitch: 90
+            Yaw: 14.0362635
+            Roll: -91.0028687
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.188591093
+            Y: 0.188591093
+            Z: 0.188591093
           }
         }
-        ParentId: 12109288927989778547
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -702,18 +632,18 @@ Assets {
         }
       }
       Objects {
-        Id: 8717842665114394910
-        Name: "Ear"
+        Id: 9088991042753370732
+        Name: "Pipe - 90-Degree Long Thick"
         Transform {
           Location {
             X: -31.0361328
             Y: -15.6064453
-            Z: 49.5512695
+            Z: 87.3510742
           }
           Rotation {
             Pitch: -90
-            Yaw: 90
-            Roll: 164.114655
+            Yaw: -26.565033
+            Roll: -79.3203125
           }
           Scale {
             X: 0.189
@@ -722,37 +652,6 @@ Assets {
           }
         }
         ParentId: 3926798898412338191
-        ChildIds: 9088991042753370732
-        ChildIds: 6289000983948984539
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 9088991042753370732
-        Name: "Pipe - 90-Degree Long Thick"
-        Transform {
-          Location {
-            X: -200
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8717842665114394910
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -802,18 +701,22 @@ Assets {
         Name: "Pipe - 90-Degree Long Thick"
         Transform {
           Location {
-            X: 200
+            X: -31.0361328
+            Y: -15.6064453
+            Z: 11.7514648
           }
           Rotation {
-            Yaw: 179.999969
+            Pitch: 90
+            Yaw: -1.68468428
+            Roll: -75.7993164
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.189
+            Y: 0.189
+            Z: 0.189
           }
         }
-        ParentId: 8717842665114394910
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -859,46 +762,12 @@ Assets {
         }
       }
       Objects {
-        Id: 4389693963824878030
-        Name: "Feet"
-        Transform {
-          Location {
-            X: -0.0183105469
-            Y: -9.578125
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3926798898412338191
-        ChildIds: 2396452022598900601
-        ChildIds: 14227689635607614335
-        ChildIds: 9786016976632443907
-        ChildIds: 15422278494128201615
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 2396452022598900601
         Name: "Cylinder - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: 20
-            Y: 37.5
+            X: 19.9814453
+            Y: 27.921875
           }
           Rotation {
           }
@@ -908,7 +777,7 @@ Assets {
             Z: 0.3
           }
         }
-        ParentId: 4389693963824878030
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -958,8 +827,8 @@ Assets {
         Name: "Cylinder - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: 20
-            Y: -37.5
+            X: 19.9814453
+            Y: -47.078125
           }
           Rotation {
           }
@@ -969,7 +838,7 @@ Assets {
             Z: 0.3
           }
         }
-        ParentId: 4389693963824878030
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1019,8 +888,8 @@ Assets {
         Name: "Cylinder - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -20
-            Y: -37.5
+            X: -20.0185547
+            Y: -47.078125
           }
           Rotation {
           }
@@ -1030,7 +899,7 @@ Assets {
             Z: 0.3
           }
         }
-        ParentId: 4389693963824878030
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1080,8 +949,8 @@ Assets {
         Name: "Cylinder - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -20
-            Y: 37.5
+            X: -20.0185547
+            Y: 27.921875
           }
           Rotation {
           }
@@ -1091,7 +960,7 @@ Assets {
             Z: 0.3
           }
         }
-        ParentId: 4389693963824878030
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1137,44 +1006,13 @@ Assets {
         }
       }
       Objects {
-        Id: 4514126421217317431
-        Name: "Eyes"
-        Transform {
-          Location {
-            X: -0.0183105469
-            Y: 7.921875
-            Z: 53.4218
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3926798898412338191
-        ChildIds: 17886634443876457870
-        ChildIds: 12639450069136442203
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 17886634443876457870
         Name: "Cylinder"
         Transform {
           Location {
-            Z: 1.12947083
+            X: -0.0185546875
+            Y: 7.921875
+            Z: 54.5512695
           }
           Rotation {
             Pitch: -90
@@ -1185,7 +1023,7 @@ Assets {
             Z: 0.80341357
           }
         }
-        ParentId: 4514126421217317431
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1235,11 +1073,14 @@ Assets {
         Name: "Crescent - 02"
         Transform {
           Location {
+            X: -0.0185546875
+            Y: 7.921875
+            Z: 53.421875
           }
           Rotation {
             Pitch: 90
-            Yaw: 169.974991
-            Roll: -10.0249634
+            Yaw: -14.8510962
+            Roll: 165.148956
           }
           Scale {
             X: 0.31253165
@@ -1247,7 +1088,7 @@ Assets {
             Z: 0.805858493
           }
         }
-        ParentId: 4514126421217317431
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1293,51 +1134,13 @@ Assets {
         }
       }
       Objects {
-        Id: 10545944321031536963
-        Name: "Holes"
-        Transform {
-          Location {
-            X: 0.419921875
-            Y: 146.227539
-            Z: 86.205368
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3926798898412338191
-        ChildIds: 1036401712957330814
-        ChildIds: 16904891104515058632
-        ChildIds: 13902800435084532172
-        ChildIds: 6805162525090945489
-        ChildIds: 8464508496798206570
-        ChildIds: 6146473016092100281
-        ChildIds: 3605247477331333156
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 1036401712957330814
-        Name: "Hole"
+        Name: "Cylinder"
         Transform {
           Location {
-            X: -10.2932129
-            Y: -9.68457
-            Z: 19.6127319
+            X: -9.87304688
+            Y: 136.542969
+            Z: 105.818359
           }
           Rotation {
             Roll: 44.9999924
@@ -1348,7 +1151,7 @@ Assets {
             Z: 0.013096557
           }
         }
-        ParentId: 10545944321031536963
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1390,12 +1193,12 @@ Assets {
       }
       Objects {
         Id: 16904891104515058632
-        Name: "Hole"
+        Name: "Cylinder"
         Transform {
           Location {
-            X: 9.796875
-            Y: -9.68457
-            Z: 19.6127319
+            X: 10.2167969
+            Y: 136.542969
+            Z: 105.818359
           }
           Rotation {
             Roll: 44.9999924
@@ -1406,7 +1209,7 @@ Assets {
             Z: 0.013096557
           }
         }
-        ParentId: 10545944321031536963
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1448,12 +1251,12 @@ Assets {
       }
       Objects {
         Id: 13902800435084532172
-        Name: "Hole"
+        Name: "Cylinder"
         Transform {
           Location {
-            X: 17.4055176
-            Y: -0.09375
-            Z: 9.96717834
+            X: 17.8251953
+            Y: 146.133789
+            Z: 96.1728516
           }
           Rotation {
             Roll: 44.9999924
@@ -1464,7 +1267,7 @@ Assets {
             Z: 0.013096557
           }
         }
-        ParentId: 10545944321031536963
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1506,12 +1309,12 @@ Assets {
       }
       Objects {
         Id: 6805162525090945489
-        Name: "Hole"
+        Name: "Cylinder"
         Transform {
           Location {
-            X: -0.433349609
-            Y: -0.09375
-            Z: 9.96717834
+            X: -0.013671875
+            Y: 146.133789
+            Z: 96.1728516
           }
           Rotation {
             Roll: 44.9999924
@@ -1522,7 +1325,7 @@ Assets {
             Z: 0.013096557
           }
         }
-        ParentId: 10545944321031536963
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1564,12 +1367,12 @@ Assets {
       }
       Objects {
         Id: 8464508496798206570
-        Name: "Hole"
+        Name: "Cylinder"
         Transform {
           Location {
-            X: -17.2895508
-            Y: -0.09375
-            Z: 9.96717834
+            X: -16.8691406
+            Y: 146.133789
+            Z: 96.1728516
           }
           Rotation {
             Roll: 44.9999924
@@ -1580,7 +1383,7 @@ Assets {
             Z: 0.013096557
           }
         }
-        ParentId: 10545944321031536963
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1622,11 +1425,12 @@ Assets {
       }
       Objects {
         Id: 6146473016092100281
-        Name: "Hole"
+        Name: "Cylinder"
         Transform {
           Location {
-            X: -8.52807617
-            Y: 9.82910156
+            X: -8.10839844
+            Y: 156.056641
+            Z: 86.2055664
           }
           Rotation {
             Roll: 44.9999924
@@ -1637,7 +1441,7 @@ Assets {
             Z: 0.013096557
           }
         }
-        ParentId: 10545944321031536963
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1679,11 +1483,12 @@ Assets {
       }
       Objects {
         Id: 3605247477331333156
-        Name: "Hole"
+        Name: "Cylinder"
         Transform {
           Location {
-            X: 9.34301758
-            Y: 9.82910156
+            X: 9.76269531
+            Y: 156.056641
+            Z: 86.2055664
           }
           Rotation {
             Roll: 44.9999924
@@ -1694,7 +1499,7 @@ Assets {
             Z: 0.013096557
           }
         }
-        ParentId: 10545944321031536963
+        ParentId: 3926798898412338191
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1824,7 +1629,7 @@ Assets {
   Marketplace {
     Description: "I just think they\'re neat~!"
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

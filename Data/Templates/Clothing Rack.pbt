@@ -419,14 +419,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.5449219
-            Y: 131.153809
-            Z: 103.056152
+            X: -18.6139526
+            Y: 131.18898
+            Z: 101.701172
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -179.937943
-            Roll: -178.504272
+            Pitch: 0.136945292
+            Yaw: -179.996368
+            Roll: -178.505569
           }
           Scale {
             X: 0.374361038
@@ -503,14 +503,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.1621094
-            Y: 131.192383
-            Z: 101.574707
+            X: 17.1464844
+            Y: 131.195801
+            Z: 101.616699
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -179.937943
-            Roll: -178.504272
+            Pitch: 0.136945292
+            Yaw: -179.996368
+            Roll: -178.505569
           }
           Scale {
             X: -0.405862063
@@ -587,14 +587,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.5429688
-            Y: 126.928223
-            Z: 103.056152
+            X: -18.5976562
+            Y: 126.967773
+            Z: 101.701172
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 179.926208
-            Roll: 178.221954
+            Pitch: 0.136610612
+            Yaw: 179.867874
+            Roll: 178.225967
           }
           Scale {
             X: 0.374360383
@@ -671,14 +671,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.1621094
-            Y: 126.882812
-            Z: 101.57373
+            X: 17.1347656
+            Y: 126.886719
+            Z: 101.615723
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 179.926208
-            Roll: 178.221954
+            Pitch: 0.136610612
+            Yaw: 179.867874
+            Roll: 178.225967
           }
           Scale {
             X: -0.405861408
@@ -1097,14 +1097,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.6699219
-            Y: 108.552246
-            Z: 103.193359
+            X: -18.7672729
+            Y: 108.587814
+            Z: 101.833008
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -175.468216
-            Roll: -178.504272
+            Pitch: 0.143857434
+            Yaw: -175.530487
+            Roll: -178.680115
           }
           Scale {
             X: 0.374361038
@@ -1182,14 +1182,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 14.9238281
-            Y: 111.373047
-            Z: 101.711426
+            X: 16.8828125
+            Y: 111.380371
+            Z: 101.744141
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -175.468216
-            Roll: -178.504272
+            Pitch: 0.143857434
+            Yaw: -175.530487
+            Roll: -178.680115
           }
           Scale {
             X: -0.405862063
@@ -1267,14 +1267,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.3398438
-            Y: 104.339355
-            Z: 103.192871
+            X: -18.4179688
+            Y: 104.381348
+            Z: 101.845215
           }
           Rotation {
-            Pitch: 2.37703538
-            Yaw: -175.604065
-            Roll: 178.221954
+            Pitch: 0.143099278
+            Yaw: -175.666214
+            Roll: 178.051392
           }
           Scale {
             X: 0.374360383
@@ -1352,14 +1352,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.2597656
-            Y: 107.07666
-            Z: 101.710449
+            X: 17.2158203
+            Y: 107.080078
+            Z: 101.755859
           }
           Rotation {
-            Pitch: 2.37703538
-            Yaw: -175.60405
-            Roll: 178.221954
+            Pitch: 0.143099278
+            Yaw: -175.666214
+            Roll: 178.051392
           }
           Scale {
             X: -0.405861408
@@ -1781,14 +1781,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -21.2714844
-            Y: 96.5239258
-            Z: 99.1987305
+            X: -19.2244034
+            Y: 96.5601044
+            Z: 97.8178711
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -179.937943
-            Roll: -178.504272
+            Pitch: 0.136945292
+            Yaw: -179.996368
+            Roll: -178.505569
           }
           Scale {
             X: 0.387984723
@@ -1866,14 +1866,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.7324219
-            Y: 96.5634766
-            Z: 97.6635742
+            X: 17.8320312
+            Y: 96.5683594
+            Z: 97.7304688
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -179.937943
-            Roll: -178.504272
+            Pitch: 0.136945292
+            Yaw: -179.996368
+            Roll: -178.505569
           }
           Scale {
             X: -0.420632124
@@ -1951,14 +1951,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -21.2714844
-            Y: 92.1445312
-            Z: 99.1987305
+            X: -19.2070312
+            Y: 92.1850586
+            Z: 97.8178711
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 179.926208
-            Roll: 178.221954
+            Pitch: 0.136610612
+            Yaw: 179.867874
+            Roll: 178.225967
           }
           Scale {
             X: 0.387984037
@@ -2036,14 +2036,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.7324219
-            Y: 92.097168
-            Z: 97.6626
+            X: 17.8271484
+            Y: 92.0976562
+            Z: 97.7294922
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 179.926208
-            Roll: 178.221954
+            Pitch: 0.136610612
+            Yaw: 179.867874
+            Roll: 178.225967
           }
           Scale {
             X: -0.420631468
@@ -2465,14 +2465,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.1367188
-            Y: -115.573242
-            Z: 103.056152
+            X: -18.4576874
+            Y: -115.537674
+            Z: 101.712402
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: 173.467819
-            Roll: -178.504272
+            Pitch: 0.151609704
+            Yaw: 173.415024
+            Roll: -178.248322
           }
           Scale {
             X: 0.374361038
@@ -2550,14 +2550,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.3378906
-            Y: -119.635254
-            Z: 101.574707
+            X: 17.0625
+            Y: -119.629395
+            Z: 101.619141
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: 173.467819
-            Roll: -178.504272
+            Pitch: 0.151609704
+            Yaw: 173.415024
+            Roll: -178.248322
           }
           Scale {
             X: -0.405862063
@@ -2635,14 +2635,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.6210938
-            Y: -119.770996
-            Z: 103.056152
+            X: -18.9267578
+            Y: -119.728516
+            Z: 101.693359
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 173.332
-            Roll: 178.221954
+            Pitch: 0.151889741
+            Yaw: 173.279343
+            Roll: 178.483154
           }
           Scale {
             X: 0.374360383
@@ -2720,14 +2720,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 14.84375
-            Y: -123.916504
-            Z: 101.57373
+            X: 16.5673828
+            Y: -123.911133
+            Z: 101.598633
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 173.332016
-            Roll: 178.221954
+            Pitch: 0.151889741
+            Yaw: 173.279343
+            Roll: 178.483154
           }
           Scale {
             X: -0.405861408
@@ -3149,14 +3149,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.2539062
-            Y: -103.760742
-            Z: 109.532227
+            X: -17.8165283
+            Y: -103.725754
+            Z: 108.218262
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -179.937943
-            Roll: -178.504272
+            Pitch: 0.136945292
+            Yaw: -179.996368
+            Roll: -178.505569
           }
           Scale {
             X: 0.350235343
@@ -3234,14 +3234,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 14.1503906
-            Y: -103.724609
-            Z: 108.145996
+            X: 15.6318359
+            Y: -103.716797
+            Z: 108.13916
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -179.937943
-            Roll: -178.504272
+            Pitch: 0.136945292
+            Yaw: -179.996368
+            Roll: -178.505569
           }
           Scale {
             X: -0.379706293
@@ -3319,14 +3319,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.2539062
-            Y: -107.713867
-            Z: 109.532227
+            X: -17.7998047
+            Y: -107.671875
+            Z: 108.218262
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 179.926208
-            Roll: 178.221954
+            Pitch: 0.136610612
+            Yaw: 179.867874
+            Roll: 178.225967
           }
           Scale {
             X: 0.350234747
@@ -3404,14 +3404,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 14.1503906
-            Y: -107.756348
-            Z: 108.14502
+            X: 15.6328125
+            Y: -107.750977
+            Z: 108.138184
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 179.926208
-            Roll: 178.221954
+            Pitch: 0.136610612
+            Yaw: 179.867874
+            Roll: 178.225967
           }
           Scale {
             X: -0.379705697
@@ -3833,14 +3833,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.6503906
-            Y: -78.703125
-            Z: 103.056152
+            X: -18.9344788
+            Y: -78.6683502
+            Z: 101.692871
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -169.645111
-            Roll: -178.504272
+            Pitch: 0.173199922
+            Yaw: -169.712402
+            Roll: -178.905762
           }
           Scale {
             X: 0.374361038
@@ -3917,14 +3917,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 14.4746094
-            Y: -72.2851562
-            Z: 101.574707
+            X: 16.2519531
+            Y: -72.2773438
+            Z: 101.585938
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -169.645111
-            Roll: -178.504272
+            Pitch: 0.173199922
+            Yaw: -169.712402
+            Roll: -178.905762
           }
           Scale {
             X: -0.405862063
@@ -4001,14 +4001,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.8945312
-            Y: -82.8603516
-            Z: 103.056152
+            X: -18.1630859
+            Y: -82.8193359
+            Z: 101.722656
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: -169.78096
-            Roll: 178.221954
+            Pitch: 0.171915859
+            Yaw: -169.848145
+            Roll: 177.825684
           }
           Scale {
             X: 0.374360383
@@ -4085,14 +4085,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.2441406
-            Y: -76.5253906
-            Z: 101.57373
+            X: 17.0175781
+            Y: -76.5219727
+            Z: 101.615234
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: -169.78096
-            Roll: 178.221954
+            Pitch: 0.171915859
+            Yaw: -169.848145
+            Roll: 177.825684
           }
           Scale {
             X: -0.405861408
@@ -4511,14 +4511,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.3320312
-            Y: -27.2363281
-            Z: 109.98877
+            X: -17.8344307
+            Y: -27.2021847
+            Z: 108.672852
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -179.937943
-            Roll: -178.504272
+            Pitch: 0.136945292
+            Yaw: -179.996368
+            Roll: -178.505569
           }
           Scale {
             X: 0.3517057
@@ -4596,14 +4596,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 14.2128906
-            Y: -27.2001953
-            Z: 108.59668
+            X: 15.7578125
+            Y: -27.1948242
+            Z: 108.593262
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -179.937943
-            Roll: -178.504272
+            Pitch: 0.136945292
+            Yaw: -179.996368
+            Roll: -178.505569
           }
           Scale {
             X: -0.38130036
@@ -4681,14 +4681,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.3320312
-            Y: -31.2060547
-            Z: 109.98877
+            X: -17.8222656
+            Y: -31.1655273
+            Z: 108.672852
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 179.926208
-            Roll: 178.221954
+            Pitch: 0.136610612
+            Yaw: 179.867874
+            Roll: 178.225967
           }
           Scale {
             X: 0.351705074
@@ -4766,14 +4766,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 14.2128906
-            Y: -31.2485352
-            Z: 108.595703
+            X: 15.7539062
+            Y: -31.2417
+            Z: 108.592285
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 179.926208
-            Roll: 178.221954
+            Pitch: 0.136610612
+            Yaw: 179.867874
+            Roll: 178.225967
           }
           Scale {
             X: -0.381299734
@@ -5195,14 +5195,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.6445312
-            Y: -17.7138672
-            Z: 103.056152
+            X: -18.8660831
+            Y: -17.6783447
+            Z: 101.694824
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -169.367859
-            Roll: -178.504272
+            Pitch: 0.175160185
+            Yaw: -169.43541
+            Roll: -178.916428
           }
           Scale {
             X: 0.374361038
@@ -5279,14 +5279,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 14.4492188
-            Y: -11.1264648
-            Z: 101.574707
+            X: 16.2871094
+            Y: -11.1225586
+            Z: 101.586426
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -169.367859
-            Roll: -178.504272
+            Pitch: 0.175160185
+            Yaw: -169.43541
+            Roll: -178.916428
           }
           Scale {
             X: -0.405862063
@@ -5363,14 +5363,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -19.8671875
-            Y: -21.8676758
-            Z: 103.056152
+            X: -18.0722656
+            Y: -21.8251953
+            Z: 101.724609
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: -169.503708
-            Roll: 178.221954
+            Pitch: 0.173862457
+            Yaw: -169.571152
+            Roll: 177.815018
           }
           Scale {
             X: 0.374360383
@@ -5447,14 +5447,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.2402344
-            Y: -15.362793
-            Z: 101.57373
+            X: 17.0703125
+            Y: -15.3554688
+            Z: 101.616211
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: -169.503708
-            Roll: 178.221954
+            Pitch: 0.173862457
+            Yaw: -169.571152
+            Roll: 177.815018
           }
           Scale {
             X: -0.405861408
@@ -5873,14 +5873,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.0253906
-            Y: 76.0361328
-            Z: 103.056152
+            X: -18.1520157
+            Y: 76.0712738
+            Z: 101.720703
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: 172.175247
-            Roll: -178.504272
+            Pitch: 0.157941282
+            Yaw: 172.123566
+            Roll: -178.198196
           }
           Scale {
             X: 0.374361038
@@ -5957,14 +5957,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.3476562
-            Y: 71.1748047
-            Z: 101.574707
+            X: 17.265625
+            Y: 71.1782227
+            Z: 101.623047
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: 172.175247
-            Roll: -178.504272
+            Pitch: 0.157941282
+            Yaw: 172.123566
+            Roll: -178.198196
           }
           Scale {
             X: -0.405862063
@@ -6041,14 +6041,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.6054688
-            Y: 71.8505859
-            Z: 103.056152
+            X: -18.7148438
+            Y: 71.8911133
+            Z: 101.697754
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 172.039429
-            Roll: 178.221954
+            Pitch: 0.158337444
+            Yaw: 171.987885
+            Roll: 178.533264
           }
           Scale {
             X: 0.374360383
@@ -6125,14 +6125,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 14.7558594
-            Y: 66.90625
-            Z: 101.57373
+            X: 16.671875
+            Y: 66.9140625
+            Z: 101.598633
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 172.039444
-            Roll: 178.221954
+            Pitch: 0.158337444
+            Yaw: 171.9879
+            Roll: 178.533264
           }
           Scale {
             X: -0.405861408
@@ -6551,14 +6551,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -22.1503906
-            Y: 49.8393555
-            Z: 95.3745117
+            X: -20.0005913
+            Y: 49.8758812
+            Z: 93.9609375
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -173.146774
-            Roll: -178.504272
+            Pitch: 0.152804986
+            Yaw: -173.211029
+            Roll: -178.770416
           }
           Scale {
             X: 0.401545733
@@ -6635,14 +6635,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.875
-            Y: 54.4091797
-            Z: 93.7856445
+            X: 18.0791016
+            Y: 54.4121094
+            Z: 93.8598633
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: -173.146774
-            Roll: -178.504272
+            Pitch: 0.152804986
+            Yaw: -173.211029
+            Roll: -178.770416
           }
           Scale {
             X: -0.435334235
@@ -6719,14 +6719,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -21.6132812
-            Y: 45.3388672
-            Z: 95.3745117
+            X: -19.4521484
+            Y: 45.3798828
+            Z: 93.9819336
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: -173.282608
-            Roll: 178.221954
+            Pitch: 0.151848763
+            Yaw: -173.346756
+            Roll: 177.961075
           }
           Scale {
             X: 0.401545018
@@ -6803,14 +6803,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 16.421875
-            Y: 49.8193359
-            Z: 93.784668
+            X: 18.6259766
+            Y: 49.8242188
+            Z: 93.8803711
           }
           Rotation {
-            Pitch: 2.37703538
-            Yaw: -173.282578
-            Roll: 178.221954
+            Pitch: 0.151848763
+            Yaw: -173.346741
+            Roll: 177.961075
           }
           Scale {
             X: -0.43533352
@@ -7229,14 +7229,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -20.9824219
-            Y: 151.787598
-            Z: 96.3286133
+            X: -18.7672577
+            Y: 151.823517
+            Z: 94.9624
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: 168.593
-            Roll: -178.504272
+            Pitch: 0.181382492
+            Yaw: 168.544464
+            Roll: -178.060181
           }
           Scale {
             X: 0.400074303
@@ -7314,14 +7314,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 16.421875
-            Y: 144.240234
-            Z: 94.7456055
+            X: 18.6855469
+            Y: 144.244141
+            Z: 94.8422852
           }
           Rotation {
-            Pitch: 2.37737703
-            Yaw: 168.593018
-            Roll: -178.504272
+            Pitch: 0.181382492
+            Yaw: 168.544495
+            Roll: -178.060181
           }
           Scale {
             X: -0.433739
@@ -7399,14 +7399,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: -21.8789062
-            Y: 147.361328
-            Z: 96.3286133
+            X: -19.6425781
+            Y: 147.404785
+            Z: 94.9272461
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 168.457184
-            Roll: 178.221954
+            Pitch: 0.18209967
+            Yaw: 168.408768
+            Roll: 178.671249
           }
           Scale {
             X: 0.400073618
@@ -7484,14 +7484,14 @@ Assets {
         Name: "Curtains Tied"
         Transform {
           Location {
-            X: 15.5058594
-            Y: 139.726562
-            Z: 94.7446289
+            X: 17.7636719
+            Y: 139.728027
+            Z: 94.8056641
           }
           Rotation {
-            Pitch: 2.37704229
-            Yaw: 168.457199
-            Roll: 178.221954
+            Pitch: 0.18209967
+            Yaw: 168.408798
+            Roll: 178.671249
           }
           Scale {
             X: -0.433738321
@@ -7893,7 +7893,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

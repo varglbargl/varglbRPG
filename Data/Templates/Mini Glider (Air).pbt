@@ -247,7 +247,26 @@ Assets {
           }
         }
         ParentId: 6618843033108534594
-        ChildIds: 14451634017575011075
+        ChildIds: 1742772829302691731
+        ChildIds: 17383364223627805160
+        ChildIds: 6948573868039255649
+        ChildIds: 13973294715054259953
+        ChildIds: 6561841645562003417
+        ChildIds: 13999885654384880739
+        ChildIds: 6392037261540002517
+        ChildIds: 5777715674427335462
+        ChildIds: 5434037058809410558
+        ChildIds: 1558714565671735037
+        ChildIds: 3005437079519183205
+        ChildIds: 10983113432976123184
+        ChildIds: 16034251112360845922
+        ChildIds: 17846264604388793484
+        ChildIds: 1415813055560605131
+        ChildIds: 16384839449320338839
+        ChildIds: 10586205465145404064
+        ChildIds: 4533032377761092305
+        ChildIds: 2381476978092595928
+        ChildIds: 10467997450078183995
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -265,8 +284,8 @@ Assets {
         }
       }
       Objects {
-        Id: 14451634017575011075
-        Name: "Geo"
+        Id: 1742772829302691731
+        Name: "Glider Client"
         Transform {
           Location {
             Z: 80
@@ -280,93 +299,6 @@ Assets {
           }
         }
         ParentId: 17956555711171865496
-        ChildIds: 13999885654384880739
-        ChildIds: 1742772829302691731
-        ChildIds: 7961842449047373339
-        ChildIds: 5864383094576734778
-        ChildIds: 10586205465145404064
-        ChildIds: 4533032377761092305
-        ChildIds: 2381476978092595928
-        ChildIds: 10467997450078183995
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 13999885654384880739
-        Name: "Japanese Temple Torii Gate Crossbeam 01"
-        Transform {
-          Location {
-            X: -27.5120239
-            Y: -1.52587891e-05
-            Z: -15
-          }
-          Rotation {
-            Pitch: 15.8626623
-            Roll: 90
-          }
-          Scale {
-            X: 0.135057524
-            Y: 0.111260854
-            Z: 0.0407291539
-          }
-        }
-        ParentId: 14451634017575011075
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 2895775809376870348
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 1742772829302691731
-        Name: "Glider Client"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14451634017575011075
         UnregisteredParameters {
           Overrides {
             Name: "cs:GlideAbility"
@@ -406,60 +338,18 @@ Assets {
         }
       }
       Objects {
-        Id: 7961842449047373339
-        Name: "Left Wing"
-        Transform {
-          Location {
-            X: -6.76024246
-            Y: -20.0000038
-            Z: -26.3738098
-          }
-          Rotation {
-            Pitch: 9.1897459
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14451634017575011075
-        ChildIds: 17383364223627805160
-        ChildIds: 13973294715054259953
-        ChildIds: 6392037261540002517
-        ChildIds: 5777715674427335462
-        ChildIds: 5434037058809410558
-        ChildIds: 1558714565671735037
-        ChildIds: 3005437079519183205
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 17383364223627805160
         Name: "Left Hand Anchor"
         Transform {
           Location {
-            X: 33.3430519
-            Y: -2.16453362
-            Z: 10.4371386
+            X: 24.4884148
+            Y: -22.1643543
+            Z: 69.2541885
           }
           Rotation {
-            Pitch: 59.0689735
-            Yaw: 40.5492287
-            Roll: 142.123932
+            Pitch: 65.3884201
+            Yaw: 53.356411
+            Roll: 156.559967
           }
           Scale {
             X: 1
@@ -467,7 +357,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7961842449047373339
+        ParentId: 17956555711171865496
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -494,15 +384,18 @@ Assets {
         }
       }
       Objects {
-        Id: 13973294715054259953
-        Name: "Basic Projectile Trail VFX"
+        Id: 6948573868039255649
+        Name: "Right Hand Anchor"
         Transform {
           Location {
-            X: 38.7095299
-            Y: -63.1657219
-            Z: 19.9524841
+            X: 24.4880848
+            Y: 21.8355865
+            Z: 69.2541885
           }
           Rotation {
+            Pitch: 65.3883209
+            Yaw: -53.3562241
+            Roll: -156.559952
           }
           Scale {
             X: 1
@@ -510,7 +403,51 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7961842449047373339
+        ParentId: 17956555711171865496
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: -5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:righthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
+        }
+      }
+      Objects {
+        Id: 13973294715054259953
+        Name: "Basic Projectile Trail VFX"
+        Transform {
+          Location {
+            X: 28.2663727
+            Y: -83.1655121
+            Z: 79.5044556
+          }
+          Rotation {
+            Pitch: 9.1897459
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -544,18 +481,119 @@ Assets {
         }
       }
       Objects {
+        Id: 6561841645562003417
+        Name: "Basic Projectile Trail VFX"
+        Transform {
+          Location {
+            X: 28.2658539
+            Y: 83.4337921
+            Z: 79.5044098
+          }
+          Rotation {
+            Pitch: 9.1897459
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17956555711171865496
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17977280587505271142
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 13999885654384880739
+        Name: "Japanese Temple Torii Gate Crossbeam 01"
+        Transform {
+          Location {
+            X: -27.5119839
+            Y: -0.000164717436
+            Z: 65
+          }
+          Rotation {
+            Pitch: 15.862649
+            Yaw: 8.87572639e-07
+            Roll: 90
+          }
+          Scale {
+            X: 0.135057524
+            Y: 0.111260854
+            Z: 0.0407291539
+          }
+        }
+        ParentId: 17956555711171865496
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 2895775809376870348
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 6392037261540002517
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 41.6127
-            Y: 19.9936523
-            Z: 22.5556622
+            X: 30.7165527
+            Y: -0.00622558594
+            Z: 82.5378723
           }
           Rotation {
-            Pitch: -6.16333
-            Yaw: -157.36203
-            Roll: 177.436279
+            Pitch: -14.6274643
+            Yaw: -156.702774
+            Roll: 173.793777
           }
           Scale {
             X: 0.0939961374
@@ -563,7 +601,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 7961842449047373339
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -609,14 +647,14 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 41.2279663
-            Y: 19.9935303
-            Z: 22.3159275
+            X: 30.3750305
+            Y: -0.00634765625
+            Z: 82.239769
           }
           Rotation {
-            Pitch: -4.71337891
-            Yaw: -134.805267
-            Roll: 175.270432
+            Pitch: -11.1442451
+            Yaw: -133.888
+            Roll: 168.63858
           }
           Scale {
             X: 0.0939961374
@@ -624,7 +662,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 7961842449047373339
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -670,14 +708,14 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 41.4367676
-            Y: 19.9934082
-            Z: 22.2850018
+            X: 30.5860901
+            Y: -0.00646972656
+            Z: 82.2425842
           }
           Rotation {
-            Pitch: -2.54876709
-            Yaw: -112.362488
-            Roll: 173.830353
+            Pitch: -6.00415945
+            Yaw: -111.724136
+            Roll: 165.28981
           }
           Scale {
             X: 0.0939961374
@@ -685,7 +723,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 7961842449047373339
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -731,14 +769,14 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -40.5296097
-            Y: 18.589447
-            Z: 13.292099
+            X: -48.8920288
+            Y: -1.41046143
+            Z: 60.2747078
           }
           Rotation {
-            Pitch: -4.71337891
-            Yaw: -134.805252
-            Roll: 175.270401
+            Pitch: -11.1442385
+            Yaw: -133.887955
+            Roll: 168.638535
           }
           Scale {
             X: 0.0641734898
@@ -746,7 +784,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 7961842449047373339
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -792,14 +830,14 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -39.2071381
-            Y: 19.336792
-            Z: 13.0233154
+            X: -47.5436096
+            Y: -0.663147
+            Z: 60.2205811
           }
           Rotation {
-            Pitch: -6.16333
-            Yaw: -157.362045
-            Roll: 177.436264
+            Pitch: -14.6274643
+            Yaw: -156.702789
+            Roll: 173.793777
           }
           Scale {
             X: 0.0641734898
@@ -807,7 +845,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 7961842449047373339
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -849,156 +887,18 @@ Assets {
         }
       }
       Objects {
-        Id: 5864383094576734778
-        Name: "Right Wing"
-        Transform {
-          Location {
-            X: -6.76023483
-            Y: 19.9999962
-            Z: -26.3738098
-          }
-          Rotation {
-            Pitch: 9.1897459
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14451634017575011075
-        ChildIds: 6948573868039255649
-        ChildIds: 6561841645562003417
-        ChildIds: 10983113432976123184
-        ChildIds: 16034251112360845922
-        ChildIds: 17846264604388793484
-        ChildIds: 1415813055560605131
-        ChildIds: 16384839449320338839
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 6948573868039255649
-        Name: "Right Hand Anchor"
-        Transform {
-          Location {
-            X: 33.3430519
-            Y: 1.83546448
-            Z: 10.4371386
-          }
-          Rotation {
-            Pitch: 59.0688782
-            Yaw: -40.5491333
-            Roll: -142.123978
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5864383094576734778
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:alwaysvisible"
-        }
-        IKAnchor {
-          AimOffset {
-            X: -20
-            Y: -5
-          }
-          IKAnchorType {
-            Value: "mc:eikanchortype:righthand"
-          }
-          BlendWeight: 1
-          BlendInTime: 0.2
-          BlendOutTime: 0.2
-        }
-      }
-      Objects {
-        Id: 6561841645562003417
-        Name: "Basic Projectile Trail VFX"
-        Transform {
-          Location {
-            X: 38.709343
-            Y: 63.4337
-            Z: 19.9524689
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5864383094576734778
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 17977280587505271142
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
         Id: 10983113432976123184
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 41.4350853
-            Y: -19.999979
-            Z: 22.2838268
+            X: 30.5842876
+            Y: 0.00013923645
+            Z: 82.2411575
           }
           Rotation {
-            Pitch: -2.54876709
-            Yaw: 112.362534
-            Roll: -173.830719
+            Pitch: -6.00417328
+            Yaw: 111.724197
+            Roll: -165.290192
           }
           Scale {
             X: 0.0939961374
@@ -1006,7 +906,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 5864383094576734778
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1052,14 +952,14 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 41.2264404
-            Y: -19.9999752
-            Z: 22.3147907
+            X: 30.3733807
+            Y: 0.00013923645
+            Z: 82.2384
           }
           Rotation {
-            Pitch: -4.71328735
-            Yaw: 134.805038
-            Roll: -175.270569
+            Pitch: -11.1441221
+            Yaw: 133.887772
+            Roll: -168.638687
           }
           Scale {
             X: 0.0939961374
@@ -1067,7 +967,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 5864383094576734778
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1113,14 +1013,14 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 41.6112785
-            Y: -19.999979
-            Z: 22.5544968
+            X: 30.7149963
+            Y: 0.000137329102
+            Z: 82.5364914
           }
           Rotation {
-            Pitch: -6.16320801
-            Yaw: 157.361786
-            Roll: -177.436188
+            Pitch: -14.6273203
+            Yaw: 156.70253
+            Roll: -173.793655
           }
           Scale {
             X: 0.0939961374
@@ -1128,7 +1028,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 5864383094576734778
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1174,14 +1074,14 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -39.3790741
-            Y: -19.2631416
-            Z: 12.9981461
+            X: -47.7096558
+            Y: 0.736976624
+            Z: 60.1682739
           }
           Rotation {
-            Pitch: -6.16320801
-            Yaw: 157.361816
-            Roll: -177.436172
+            Pitch: -14.6273203
+            Yaw: 156.702576
+            Roll: -173.793655
           }
           Scale {
             X: 0.0641734898
@@ -1189,7 +1089,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 5864383094576734778
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1235,14 +1135,14 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -40.42379
-            Y: -18.6989594
-            Z: 13.2995205
+            X: -48.7890625
+            Y: 1.30118561
+            Z: 60.2989349
           }
           Rotation {
-            Pitch: -4.71328735
-            Yaw: 134.805008
-            Roll: -175.270523
+            Pitch: -11.1441154
+            Yaw: 133.887741
+            Roll: -168.638641
           }
           Scale {
             X: 0.0641734898
@@ -1250,7 +1150,7 @@ Assets {
             Z: 0.0881197676
           }
         }
-        ParentId: 5864383094576734778
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1296,13 +1196,13 @@ Assets {
         Name: "Japanese Temple Torii Gate Crossbeam 01"
         Transform {
           Location {
-            X: 30.4562378
-            Y: 1.52587891e-05
-            Z: 1.47188568
+            X: 30.4558601
+            Y: -0.000164091587
+            Z: 81.4716797
           }
           Rotation {
-            Yaw: 90
-            Roll: 105.862671
+            Yaw: 89.9999847
+            Roll: 105.862679
           }
           Scale {
             X: 0.135130122
@@ -1310,7 +1210,7 @@ Assets {
             Z: 0.0407291129
           }
         }
-        ParentId: 14451634017575011075
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
@@ -1351,13 +1251,13 @@ Assets {
         Name: "Pipe - Half Thick"
         Transform {
           Location {
-            X: 30.3833618
-            Y: 1.52587891e-05
-            Z: 1.72832489
+            X: 30.3832722
+            Y: -0.000111281872
+            Z: 81.7285156
           }
           Rotation {
-            Yaw: 90
-            Roll: -164.137253
+            Yaw: 89.9999924
+            Roll: -164.137222
           }
           Scale {
             X: 1.41329682
@@ -1365,7 +1265,7 @@ Assets {
             Z: 0.00658806274
           }
         }
-        ParentId: 14451634017575011075
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1428,13 +1328,13 @@ Assets {
         Name: "Pipe - Half Thick"
         Transform {
           Location {
-            X: 30.3833618
-            Y: 1.52587891e-05
-            Z: 1.72832489
+            X: 30.3832722
+            Y: -0.000111281872
+            Z: 81.7285156
           }
           Rotation {
-            Yaw: 89.9999924
-            Roll: -164.137192
+            Yaw: 89.9999771
+            Roll: -164.137161
           }
           Scale {
             X: 0.849188805
@@ -1442,7 +1342,7 @@ Assets {
             Z: 0.0039584809
           }
         }
-        ParentId: 14451634017575011075
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1505,13 +1405,13 @@ Assets {
         Name: "Pipe - Half Thick"
         Transform {
           Location {
-            X: -49.079071
-            Y: -2.28881836e-05
-            Z: -20.8420334
+            X: -49.0792046
+            Y: -0.000231325626
+            Z: 59.1582031
           }
           Rotation {
-            Pitch: 11.1441021
-            Yaw: 46.1119881
+            Pitch: 11.1440954
+            Yaw: 46.1119957
             Roll: -168.63887
           }
           Scale {
@@ -1520,7 +1420,7 @@ Assets {
             Z: 0.00632175431
           }
         }
-        ParentId: 14451634017575011075
+        ParentId: 17956555711171865496
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1607,21 +1507,21 @@ Assets {
       }
     }
     Assets {
-      Id: 2895775809376870348
-      Name: "Japanese Temple Torii Gate Crossbeam 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_jpn_tem_torii_crossbeam_001_ref"
-      }
-    }
-    Assets {
       Id: 17977280587505271142
       Name: "Basic Projectile Trail VFX"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_basic_projectile_trail"
+      }
+    }
+    Assets {
+      Id: 2895775809376870348
+      Name: "Japanese Temple Torii Gate Crossbeam 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_jpn_tem_torii_crossbeam_001_ref"
       }
     }
     Assets {
@@ -1657,8 +1557,8 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3\r\n\r\nupdate 1.12\r\n - Added IK Anchors to all gliders! Most noticably, you now hold onto the \"Air\" glider correctly!\r\n\r\nupdate 1.10\r\n - Gliders now broadcast Events and set both clientUserData and serverUserData you can hook other scripts into\r\n - See the Glider Readme for more info :)\r\n - Fixed bug where I accidentally deleted the entire \"Air\" glider. At least I hope that was me and not the Manticore Legal Department.\r\n\r\nupdate 1.6:\r\n - Glide is now an Ability that prevents other abilities so it\'s easier to make sure players don\'t break out of\r\n - Refactored code to be much more reliable at syncing glider state between server and client\r\n - Fixed bug where you would get stuck with your arms in the air if using a weapon with no animation stance set"
+    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3\r\n\r\nupdate 1.16\r\n - Refactored to not use any Folders inside the equipment objects.\r\n - Nobody ever told to me that was bad, okay!? Sorry! Jeez!\r\n\r\nupdate 1.12-1.15\r\n - Fixed bug where the Air glider sound effects were not playing\r\n - Added IK Anchors to all gliders! Most noticably, you now hold onto the \"Air\" glider correctly!\r\n\r\nupdate 1.10\r\n - Gliders now broadcast Events and set both clientUserData and serverUserData you can hook other scripts into\r\n - See the Glider Readme for more info :)\r\n - Fixed bug where I accidentally deleted the entire \"Air\" glider. At least I hope that was me and not the Manticore Legal Department.\r\n\r\nupdate 1.6:\r\n - Glide is now an Ability that prevents other abilities so it\'s easier to make sure players don\'t break out of\r\n - Refactored code to be much more reliable at syncing glider state between server and client\r\n - Fixed bug where you would get stuck with your arms in the air if using a weapon with no animation stance set"
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
 }

@@ -4,9 +4,9 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1811053337392936040
+      RootId: 11902878672518719939
       Objects {
-        Id: 1811053337392936040
+        Id: 11902878672518719939
         Name: "Garden Planter"
         Transform {
           Scale {
@@ -21,9 +21,9 @@ Assets {
         ChildIds: 13021892298116091627
         ChildIds: 614525296955114883
         ChildIds: 12029454728754551520
-        ChildIds: 5560696121945903058
+        ChildIds: 17918133174120954547
         ChildIds: 353726586843495949
-        ChildIds: 7917882268926133611
+        ChildIds: 14856828466646607316
         ChildIds: 14016800204812899970
         ChildIds: 12017732663431093545
         Collidable_v2 {
@@ -35,8 +35,11 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -53,37 +56,7 @@ Assets {
             Z: 0.325952142
           }
         }
-        ParentId: 1811053337392936040
-        ChildIds: 14981397013769544424
-        ChildIds: 14639866905061815281
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 14981397013769544424
-        Name: "Walls"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 918555424174149380
+        ParentId: 11902878672518719939
         ChildIds: 4732582001307190749
         ChildIds: 12039688990051595610
         ChildIds: 586369142015898955
@@ -102,6 +75,7 @@ Assets {
         ChildIds: 9514409211449669425
         ChildIds: 791735437630194176
         ChildIds: 8668303385250190059
+        ChildIds: 14639866905061815281
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -120,22 +94,22 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 532.960144
-            Y: -529.87915
-            Z: 1.73669708
+            X: 532.960876
+            Y: -529.87793
+            Z: 1.73619962
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -179.999969
+            Yaw: -179.999954
             Roll: 89.9999313
           }
           Scale {
-            X: 1.38206804
-            Y: 1.38206804
-            Z: 1.36806703
+            X: 1.38206816
+            Y: 1.38206816
+            Z: 1.36806715
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -186,21 +160,21 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 584.787537
-            Y: -577.388
-            Z: 70.1400528
+            X: 584.786194
+            Y: -577.389
+            Z: 70.1400681
           }
           Rotation {
-            Yaw: -179.999969
-            Roll: -6.10351562e-05
+            Yaw: -179.999954
+            Roll: -6.10351526e-05
           }
           Scale {
-            X: 1.38206804
-            Y: 1.38206804
-            Z: 1.36806703
+            X: 1.38206816
+            Y: 1.38206816
+            Z: 1.36806715
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -251,21 +225,21 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 527.776489
-            Y: 541.222412
-            Z: 1.73669708
+            X: 527.77771
+            Y: 541.220947
+            Z: 1.73619962
           }
           Rotation {
-            Yaw: -90.0000305
+            Yaw: -90.0000229
             Roll: 89.9998703
           }
           Scale {
-            X: 1.38206804
-            Y: 1.38206804
-            Z: 1.36806703
+            X: 1.38206816
+            Y: 1.38206816
+            Z: 1.36806715
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -316,20 +290,20 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 507.046234
-            Y: -512.60376
-            Z: 70.1400528
+            X: 507.045197
+            Y: -512.602844
+            Z: 70.1400681
           }
           Rotation {
-            Yaw: 89.9999924
+            Yaw: 89.9999847
           }
           Scale {
             X: 1.36479223
-            Y: 1.38206804
-            Z: 1.36806703
+            Y: 1.38206816
+            Z: 1.36806715
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -380,21 +354,21 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -542.462
-            Y: 532.584473
-            Z: 1.73669708
+            X: -542.461304
+            Y: 532.586365
+            Z: 1.73619962
           }
           Rotation {
-            Yaw: 5.55412371e-05
-            Roll: 89.9998474
+            Yaw: 5.55412335e-05
+            Roll: 89.9998398
           }
           Scale {
-            X: 1.38206804
-            Y: 1.38206804
-            Z: 1.36806703
+            X: 1.38206816
+            Y: 1.38206816
+            Z: 1.36806715
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -445,20 +419,20 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -598.608215
-            Y: 580.092651
-            Z: 70.1400528
+            X: -598.606873
+            Y: 580.091431
+            Z: 70.1400681
           }
           Rotation {
-            Yaw: -3.05175781e-05
+            Yaw: -3.05175763e-05
           }
           Scale {
-            X: 1.38206804
-            Y: 1.38206804
-            Z: 1.36806703
+            X: 1.38206816
+            Y: 1.38206816
+            Z: 1.36806715
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -509,21 +483,21 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -564.056396
-            Y: 562.816895
-            Z: 1.73669708
+            X: -564.056641
+            Y: 562.816284
+            Z: 1.73619962
           }
           Rotation {
-            Yaw: -90.0000305
+            Yaw: -90.0000229
             Roll: 89.9998093
           }
           Scale {
-            X: 1.38206804
-            Y: 1.38206804
-            Z: 1.36806703
+            X: 1.38206816
+            Y: 1.38206816
+            Z: 1.36806715
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -574,20 +548,20 @@ Assets {
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -516.548
-            Y: 510.98938
-            Z: 70.1400528
+            X: -516.548584
+            Y: 510.990967
+            Z: 70.1400681
           }
           Rotation {
-            Yaw: -89.9999695
+            Yaw: -89.9999619
           }
           Scale {
             X: 1.36479223
-            Y: 1.38206804
-            Z: 1.36806703
+            Y: 1.38206816
+            Z: 1.36806715
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -638,22 +612,22 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: 555.418457
-            Y: -538.517578
-            Z: 53.0392494
+            X: 555.419128
+            Y: -538.518494
+            Z: 53.0387268
           }
           Rotation {
             Pitch: 90
-            Yaw: 54.7356
-            Roll: -125.26442
+            Yaw: -35.2643967
+            Roll: 144.735596
           }
           Scale {
             X: 0.0548547
-            Y: 0.0548546948
+            Y: 0.0548547
             Z: 0.0135747502
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -704,22 +678,22 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: 558.947571
-            Y: -542.836243
-            Z: 14.762639
+            X: 558.948425
+            Y: -542.838806
+            Z: 14.7629404
           }
           Rotation {
             Pitch: 75.780838
             Yaw: -6.10351562e-05
-            Roll: -179.999969
+            Roll: -179.999954
           }
           Scale {
-            X: 0.0548546724
-            Y: 0.0548546948
-            Z: 0.00838796888
+            X: 0.0548546761
+            Y: 0.0548547
+            Z: 0.00838797
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -770,22 +744,22 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: -548.507629
-            Y: -557.52179
-            Z: 53.0392494
+            X: -548.507263
+            Y: -557.519348
+            Z: 53.0387268
           }
           Rotation {
             Pitch: 90
-            Yaw: 18.4349556
-            Roll: -71.565033
+            Yaw: -90
+            Roll: -179.999985
           }
           Scale {
             X: 0.0548547
-            Y: 0.0548546948
+            Y: 0.0548547
             Z: 0.0135747502
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -836,22 +810,22 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: -552.826599
-            Y: -557.521851
-            Z: 14.562335
+            X: -552.827576
+            Y: -557.519348
+            Z: 14.5622063
           }
           Rotation {
             Pitch: 90
-            Yaw: 18.4349556
-            Roll: -71.565033
+            Yaw: -90
+            Roll: -179.999985
           }
           Scale {
             X: 0.0548547
-            Y: 0.0548546948
+            Y: 0.0548547
             Z: 0.0135747502
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -902,21 +876,22 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: 539.006
-            Y: 560.225952
-            Z: 53.0392494
+            X: 539.006836
+            Y: 560.227722
+            Z: 53.0387268
           }
           Rotation {
             Pitch: 90
-            Roll: 89.9998932
+            Yaw: -26.565033
+            Roll: 63.4348526
           }
           Scale {
             X: 0.0548547
-            Y: 0.0548546948
+            Y: 0.0548547
             Z: 0.0135747502
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -967,21 +942,22 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: 543.324951
-            Y: 560.225891
-            Z: 14.562335
+            X: 543.324158
+            Y: 560.227722
+            Z: 14.5622063
           }
           Rotation {
             Pitch: 90
-            Roll: 89.9998932
+            Yaw: -26.565033
+            Roll: 63.4348526
           }
           Scale {
             X: 0.0548547
-            Y: 0.0548546948
+            Y: 0.0548547
             Z: 0.0135747502
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1032,9 +1008,9 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: -564.056396
-            Y: 539.494751
-            Z: 53.0392494
+            X: -564.056641
+            Y: 539.495239
+            Z: 53.0387268
           }
           Rotation {
             Pitch: 90
@@ -1042,11 +1018,11 @@ Assets {
           }
           Scale {
             X: 0.0548547
-            Y: 0.0548546948
+            Y: 0.0548547
             Z: 0.0135747502
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1097,9 +1073,9 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: -564.056396
-            Y: 543.813416
-            Z: 14.562335
+            X: -564.056641
+            Y: 543.815491
+            Z: 14.5622063
           }
           Rotation {
             Pitch: 90
@@ -1107,11 +1083,11 @@ Assets {
           }
           Scale {
             X: 0.0548547
-            Y: 0.0548546948
+            Y: 0.0548547
             Z: 0.0135747502
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1162,13 +1138,13 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: 556.411438
-            Y: -542.836792
-            Z: 15.4852428
+            X: 556.410828
+            Y: -542.838806
+            Z: 15.4849834
           }
           Rotation {
-            Pitch: 69.4629745
-            Yaw: -45.5516357
+            Pitch: 69.4629669
+            Yaw: -45.551651
             Roll: 132.57016
           }
           Scale {
@@ -1177,7 +1153,7 @@ Assets {
             Z: 0.0433581918
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1228,9 +1204,9 @@ Assets {
         Name: "Decal Bullet Damage Wood"
         Transform {
           Location {
-            X: 554.842773
-            Y: -542.657776
-            Z: 16.1069565
+            X: 554.843872
+            Y: -542.659
+            Z: 16.1066608
           }
           Rotation {
             Yaw: -89.0264053
@@ -1242,7 +1218,7 @@ Assets {
             Z: 0.000496440276
           }
         }
-        ParentId: 14981397013769544424
+        ParentId: 918555424174149380
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
@@ -1354,14 +1330,14 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -27.2357864
-            Y: -132.55394
-            Z: 13.0380869
+            X: -27.2353516
+            Y: -132.554688
+            Z: 13.0380859
           }
           Rotation {
-            Pitch: 83.8825531
-            Yaw: -60.162384
-            Roll: -179.999969
+            Pitch: 83.8826141
+            Yaw: -60.162468
+            Roll: -179.999985
           }
           Scale {
             X: 0.218103305
@@ -1369,7 +1345,7 @@ Assets {
             Z: 0.124630466
           }
         }
-        ParentId: 1811053337392936040
+        ParentId: 11902878672518719939
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1400,13 +1376,13 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -25.2488785
-            Y: 134.912949
-            Z: 14.7930517
+            X: -25.2490234
+            Y: 134.912109
+            Z: 14.7929688
           }
           Rotation {
-            Pitch: 85.3511734
-            Yaw: 52.3618736
+            Pitch: 85.3512573
+            Yaw: 52.3619766
             Roll: -179.999802
           }
           Scale {
@@ -1415,7 +1391,7 @@ Assets {
             Z: 0.124630466
           }
         }
-        ParentId: 1811053337392936040
+        ParentId: 11902878672518719939
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1446,14 +1422,14 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -29.5949097
-            Y: 55.6074715
-            Z: 8.2977314
+            X: -29.5947266
+            Y: 55.6074219
+            Z: 8.29785156
           }
           Rotation {
             Pitch: 87.3684845
-            Yaw: 38.6420326
-            Roll: -179.999649
+            Yaw: 38.6419907
+            Roll: -179.999695
           }
           Scale {
             X: 0.218103305
@@ -1461,7 +1437,7 @@ Assets {
             Z: 0.124630466
           }
         }
-        ParentId: 1811053337392936040
+        ParentId: 11902878672518719939
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1492,9 +1468,9 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -23.976265
-            Y: -53.6494827
-            Z: 8.2977314
+            X: -23.9765625
+            Y: -53.6503906
+            Z: 8.29785156
           }
           Rotation {
             Pitch: 87.3710175
@@ -1507,7 +1483,7 @@ Assets {
             Z: 0.124630466
           }
         }
-        ParentId: 1811053337392936040
+        ParentId: 11902878672518719939
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1534,23 +1510,23 @@ Assets {
         }
       }
       Objects {
-        Id: 5560696121945903058
+        Id: 17918133174120954547
         Name: "Strawberry Bushes"
         Transform {
           Location {
-            X: 96.8083344
-            Y: 3.24233294
+            X: 96.8085938
+            Y: 3.2421875
             Z: 26.0761719
           }
           Rotation {
           }
           Scale {
-            X: 0.325952172
-            Y: 0.325952172
-            Z: 0.325952172
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 1811053337392936040
+        ParentId: 11902878672518719939
         ChildIds: 6151088153603477399
         ChildIds: 15901566147121044129
         ChildIds: 1327914587851896520
@@ -1572,8 +1548,11 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -1581,19 +1560,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: 79.0585861
-            Y: 238.007812
+            X: 25.7695312
+            Y: 77.5800781
           }
           Rotation {
-            Yaw: 39.7675362
+            Yaw: 39.7675247
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -1632,18 +1611,18 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: 79.0585861
-            Y: 81.4298401
+            X: 25.7695312
+            Y: 26.5429688
           }
           Rotation {
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -1682,19 +1661,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: 79.0585861
-            Y: -79.5029373
+            X: 25.7695312
+            Y: -25.9140625
           }
           Rotation {
-            Yaw: -79.2496796
+            Yaw: -79.2496567
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -1733,19 +1712,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: 79.0585861
-            Y: -229.56282
+            X: 25.7695312
+            Y: -74.8261719
           }
           Rotation {
-            Yaw: 147.59433
+            Yaw: 147.594284
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -1784,19 +1763,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: 79.0585861
-            Y: -393.757
+            X: 25.7695312
+            Y: -128.345703
           }
           Rotation {
-            Yaw: -30.0587215
+            Yaw: -30.0587254
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -1835,18 +1814,18 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: 79.0585861
-            Y: 383.386017
+            X: 25.7695312
+            Y: 124.964844
           }
           Rotation {
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -1885,19 +1864,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: -79.0590744
-            Y: 238.007812
+            X: -25.7695312
+            Y: 77.5800781
           }
           Rotation {
-            Yaw: -106.862732
+            Yaw: -106.86274
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -1936,19 +1915,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: -79.0590744
-            Y: 81.4298553
+            X: -25.7695312
+            Y: 26.5429688
           }
           Rotation {
-            Yaw: 33.3661346
+            Yaw: 33.3661537
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -1987,19 +1966,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: -79.0590744
-            Y: -79.5029373
+            X: -25.7695312
+            Y: -25.9140625
           }
           Rotation {
-            Yaw: 9.07121
+            Yaw: 9.07122231
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -2038,19 +2017,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: -79.0590744
-            Y: -229.56282
+            X: -25.7695312
+            Y: -74.8261719
           }
           Rotation {
             Yaw: 83.1035309
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -2089,19 +2068,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: -79.0590744
-            Y: -393.757
+            X: -25.7695312
+            Y: -128.345703
           }
           Rotation {
-            Yaw: 26.560009
+            Yaw: 26.5599918
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -2140,19 +2119,19 @@ Assets {
         Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            X: -79.0590744
-            Y: 383.386078
+            X: -25.7695312
+            Y: 124.964844
           }
           Rotation {
-            Yaw: 137.043884
+            Yaw: 137.043854
           }
           Scale {
-            X: 0.666666627
-            Y: 0.666666627
-            Z: 0.666666627
+            X: 0.217301428
+            Y: 0.217301428
+            Z: 0.217301428
           }
         }
-        ParentId: 5560696121945903058
+        ParentId: 17918133174120954547
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -2191,8 +2170,8 @@ Assets {
         Name: "Bean Stalks"
         Transform {
           Location {
-            X: -60.0638
-            Z: 24.4464073
+            X: -60.0634766
+            Z: 24.4462891
           }
           Rotation {
           }
@@ -2202,7 +2181,7 @@ Assets {
             Z: 0.325952142
           }
         }
-        ParentId: 1811053337392936040
+        ParentId: 11902878672518719939
         ChildIds: 3426081944999812828
         ChildIds: 9345109553753234940
         ChildIds: 1062090084732911278
@@ -2239,39 +2218,15 @@ Assets {
           }
         }
         ParentId: 353726586843495949
-        ChildIds: 8994251915579791245
-        ChildIds: 11256861347864823501
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 8994251915579791245
-        Name: "Bushstack"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3426081944999812828
         ChildIds: 11094478378946075332
         ChildIds: 6467064020300520503
         ChildIds: 1521295425951785687
+        ChildIds: 2532606770592982526
+        ChildIds: 12240092538103975994
+        ChildIds: 14596131894414762821
+        ChildIds: 4492583901527253730
+        ChildIds: 3711620895305343217
+        ChildIds: 11163206956532476230
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2296,10 +2251,10 @@ Assets {
           Scale {
             X: 1
             Y: 1
-            Z: 2.1
+            Z: 2.10000014
           }
         }
-        ParentId: 8994251915579791245
+        ParentId: 3426081944999812828
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -2338,10 +2293,10 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            Z: 175
+            Z: 175.000137
           }
           Rotation {
-            Yaw: 44.9999924
+            Yaw: 44.9999733
           }
           Scale {
             X: 1
@@ -2349,7 +2304,7 @@ Assets {
             Z: 1.80000007
           }
         }
-        ParentId: 8994251915579791245
+        ParentId: 3426081944999812828
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -2388,18 +2343,18 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            Z: 325
+            Z: 324.999817
           }
           Rotation {
-            Yaw: 89.9999542
+            Yaw: 89.9999466
           }
           Scale {
             X: 0.963146389
             Y: 0.963146389
-            Z: 0.834470809
+            Z: 0.834470868
           }
         }
-        ParentId: 8994251915579791245
+        ParentId: 3426081944999812828
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -2434,82 +2389,21 @@ Assets {
         }
       }
       Objects {
-        Id: 11256861347864823501
-        Name: "Double Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: -44.9999962
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3426081944999812828
-        ChildIds: 15287195783899169549
-        ChildIds: 2021622676331818806
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 15287195783899169549
-        Name: "Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.1
-            Y: 1.1
-            Z: 1.1
-          }
-        }
-        ParentId: 11256861347864823501
-        ChildIds: 2532606770592982526
-        ChildIds: 12240092538103975994
-        ChildIds: 14596131894414762821
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 2532606770592982526
         Name: "Pipe - Spiral"
         Transform {
           Location {
           }
           Rotation {
+            Yaw: -44.9999695
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1.99999976
+            X: 0.440000087
+            Y: 0.440000087
+            Z: 2.20000029
           }
         }
-        ParentId: 15287195783899169549
+        ParentId: 3426081944999812828
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2556,17 +2450,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 200
+            Z: 220.000351
           }
           Rotation {
+            Yaw: -44.9999695
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1
+            X: 0.440000087
+            Y: 0.440000087
+            Z: 1.10000014
           }
         }
-        ParentId: 15287195783899169549
+        ParentId: 3426081944999812828
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2613,17 +2508,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 300
+            Z: 330.000519
           }
           Rotation {
+            Yaw: -44.9999695
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.5
+            X: 0.440000087
+            Y: 0.440000087
+            Z: 0.550000072
           }
         }
-        ParentId: 15287195783899169549
+        ParentId: 3426081944999812828
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2666,53 +2562,22 @@ Assets {
         }
       }
       Objects {
-        Id: 2021622676331818806
-        Name: "Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: 179.999985
-          }
-          Scale {
-            X: 0.8
-            Y: 0.8
-            Z: 0.8
-          }
-        }
-        ParentId: 11256861347864823501
-        ChildIds: 4492583901527253730
-        ChildIds: 3711620895305343217
-        ChildIds: 11163206956532476230
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 4492583901527253730
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 200
+            Z: 159.999542
           }
           Rotation {
+            Yaw: 134.999954
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1
+            X: 0.320000023
+            Y: 0.320000023
+            Z: 0.8
           }
         }
-        ParentId: 2021622676331818806
+        ParentId: 3426081944999812828
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2759,17 +2624,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 300
+            Z: 240.000092
           }
           Rotation {
+            Yaw: 134.999954
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.5
+            X: 0.320000023
+            Y: 0.320000023
+            Z: 0.4
           }
         }
-        ParentId: 2021622676331818806
+        ParentId: 3426081944999812828
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2818,14 +2684,15 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 134.999954
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1.99999976
+            X: 0.320000023
+            Y: 0.320000023
+            Z: 1.5999999
           }
         }
-        ParentId: 2021622676331818806
+        ParentId: 3426081944999812828
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2886,39 +2753,15 @@ Assets {
           }
         }
         ParentId: 353726586843495949
-        ChildIds: 13332335565609612752
-        ChildIds: 2947646906455629172
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 13332335565609612752
-        Name: "Bushstack"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9345109553753234940
         ChildIds: 6248546664859546868
         ChildIds: 7064744229351417231
         ChildIds: 18337332920142211723
+        ChildIds: 14002186836635836322
+        ChildIds: 1838282692629119769
+        ChildIds: 10960716382328489401
+        ChildIds: 7804474144188230049
+        ChildIds: 12830170308796048352
+        ChildIds: 16346963852258990445
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2943,10 +2786,10 @@ Assets {
           Scale {
             X: 1
             Y: 1
-            Z: 2.1
+            Z: 2.10000014
           }
         }
-        ParentId: 13332335565609612752
+        ParentId: 9345109553753234940
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -2985,10 +2828,10 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            Z: 175
+            Z: 175.000137
           }
           Rotation {
-            Yaw: 44.9999924
+            Yaw: 45.0000114
           }
           Scale {
             X: 1
@@ -2996,7 +2839,7 @@ Assets {
             Z: 1.80000007
           }
         }
-        ParentId: 13332335565609612752
+        ParentId: 9345109553753234940
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -3035,18 +2878,18 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            Z: 325
+            Z: 324.999817
           }
           Rotation {
-            Yaw: 89.9999542
+            Yaw: 89.9999695
           }
           Scale {
             X: 0.963146389
             Y: 0.963146389
-            Z: 0.834470809
+            Z: 0.834470868
           }
         }
-        ParentId: 13332335565609612752
+        ParentId: 9345109553753234940
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -3081,8 +2924,8 @@ Assets {
         }
       }
       Objects {
-        Id: 2947646906455629172
-        Name: "Double Vine"
+        Id: 14002186836635836322
+        Name: "Pipe - Spiral"
         Transform {
           Location {
           }
@@ -3090,73 +2933,12 @@ Assets {
             Yaw: -44.9999962
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.440000087
+            Y: 0.440000087
+            Z: 2.20000029
           }
         }
         ParentId: 9345109553753234940
-        ChildIds: 17373784068282904586
-        ChildIds: 5023495234583471511
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 17373784068282904586
-        Name: "Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.1
-            Y: 1.1
-            Z: 1.1
-          }
-        }
-        ParentId: 2947646906455629172
-        ChildIds: 14002186836635836322
-        ChildIds: 1838282692629119769
-        ChildIds: 10960716382328489401
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 14002186836635836322
-        Name: "Pipe - Spiral"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1.99999976
-          }
-        }
-        ParentId: 17373784068282904586
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3203,17 +2985,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 200
+            Z: 220.000351
           }
           Rotation {
+            Yaw: -44.9999962
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1
+            X: 0.440000087
+            Y: 0.440000087
+            Z: 1.10000014
           }
         }
-        ParentId: 17373784068282904586
+        ParentId: 9345109553753234940
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3260,17 +3043,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 300
+            Z: 330.000519
           }
           Rotation {
+            Yaw: -44.9999962
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.5
+            X: 0.440000087
+            Y: 0.440000087
+            Z: 0.550000072
           }
         }
-        ParentId: 17373784068282904586
+        ParentId: 9345109553753234940
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3313,53 +3097,22 @@ Assets {
         }
       }
       Objects {
-        Id: 5023495234583471511
-        Name: "Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: 179.999985
-          }
-          Scale {
-            X: 0.8
-            Y: 0.8
-            Z: 0.8
-          }
-        }
-        ParentId: 2947646906455629172
-        ChildIds: 7804474144188230049
-        ChildIds: 12830170308796048352
-        ChildIds: 16346963852258990445
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 7804474144188230049
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 200
+            Z: 159.999542
           }
           Rotation {
+            Yaw: 135
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1
+            X: 0.320000023
+            Y: 0.320000023
+            Z: 0.8
           }
         }
-        ParentId: 5023495234583471511
+        ParentId: 9345109553753234940
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3406,17 +3159,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 300
+            Z: 240.000092
           }
           Rotation {
+            Yaw: 135
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.5
+            X: 0.320000023
+            Y: 0.320000023
+            Z: 0.4
           }
         }
-        ParentId: 5023495234583471511
+        ParentId: 9345109553753234940
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3465,14 +3219,15 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 135
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1.99999976
+            X: 0.320000023
+            Y: 0.320000023
+            Z: 1.5999999
           }
         }
-        ParentId: 5023495234583471511
+        ParentId: 9345109553753234940
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3532,39 +3287,15 @@ Assets {
           }
         }
         ParentId: 353726586843495949
-        ChildIds: 10304487320014101595
-        ChildIds: 1034705748224714121
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 10304487320014101595
-        Name: "Bushstack"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1062090084732911278
         ChildIds: 11031545017141855671
         ChildIds: 10834736637495887388
         ChildIds: 4833243053241302193
+        ChildIds: 11379707422012927076
+        ChildIds: 16513769347768142167
+        ChildIds: 424685885493320931
+        ChildIds: 15901670494627390721
+        ChildIds: 12955843908446647791
+        ChildIds: 17790743463144964914
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3589,10 +3320,10 @@ Assets {
           Scale {
             X: 1
             Y: 1
-            Z: 2.1
+            Z: 2.10000014
           }
         }
-        ParentId: 10304487320014101595
+        ParentId: 1062090084732911278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -3631,7 +3362,7 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            Z: 175
+            Z: 175.000137
           }
           Rotation {
             Yaw: 44.9999924
@@ -3642,7 +3373,7 @@ Assets {
             Z: 1.80000007
           }
         }
-        ParentId: 10304487320014101595
+        ParentId: 1062090084732911278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -3681,7 +3412,7 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            Z: 325
+            Z: 324.999817
           }
           Rotation {
             Yaw: 89.9999542
@@ -3689,10 +3420,10 @@ Assets {
           Scale {
             X: 0.963146389
             Y: 0.963146389
-            Z: 0.834470809
+            Z: 0.834470868
           }
         }
-        ParentId: 10304487320014101595
+        ParentId: 1062090084732911278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -3727,82 +3458,21 @@ Assets {
         }
       }
       Objects {
-        Id: 1034705748224714121
-        Name: "Double Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: -44.9999962
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1062090084732911278
-        ChildIds: 5709601080267723045
-        ChildIds: 7519692842760707329
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 5709601080267723045
-        Name: "Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.1
-            Y: 1.1
-            Z: 1.1
-          }
-        }
-        ParentId: 1034705748224714121
-        ChildIds: 11379707422012927076
-        ChildIds: 16513769347768142167
-        ChildIds: 424685885493320931
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 11379707422012927076
         Name: "Pipe - Spiral"
         Transform {
           Location {
           }
           Rotation {
+            Yaw: -44.9999924
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1.99999976
+            X: 0.440000087
+            Y: 0.440000087
+            Z: 2.20000029
           }
         }
-        ParentId: 5709601080267723045
+        ParentId: 1062090084732911278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3849,17 +3519,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 200
+            Z: 220.000351
           }
           Rotation {
+            Yaw: -44.9999924
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1
+            X: 0.440000087
+            Y: 0.440000087
+            Z: 1.10000014
           }
         }
-        ParentId: 5709601080267723045
+        ParentId: 1062090084732911278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3906,17 +3577,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 300
+            Z: 330.000519
           }
           Rotation {
+            Yaw: -44.9999924
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.5
+            X: 0.440000087
+            Y: 0.440000087
+            Z: 0.550000072
           }
         }
-        ParentId: 5709601080267723045
+        ParentId: 1062090084732911278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3959,53 +3631,22 @@ Assets {
         }
       }
       Objects {
-        Id: 7519692842760707329
-        Name: "Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: 179.999985
-          }
-          Scale {
-            X: 0.8
-            Y: 0.8
-            Z: 0.8
-          }
-        }
-        ParentId: 1034705748224714121
-        ChildIds: 15901670494627390721
-        ChildIds: 12955843908446647791
-        ChildIds: 17790743463144964914
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 15901670494627390721
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 200
+            Z: 159.999542
           }
           Rotation {
+            Yaw: 134.999985
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1
+            X: 0.320000023
+            Y: 0.320000023
+            Z: 0.8
           }
         }
-        ParentId: 7519692842760707329
+        ParentId: 1062090084732911278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4052,17 +3693,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 300
+            Z: 240.000092
           }
           Rotation {
+            Yaw: 134.999985
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.5
+            X: 0.320000023
+            Y: 0.320000023
+            Z: 0.4
           }
         }
-        ParentId: 7519692842760707329
+        ParentId: 1062090084732911278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4111,14 +3753,15 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 134.999985
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1.99999976
+            X: 0.320000023
+            Y: 0.320000023
+            Z: 1.5999999
           }
         }
-        ParentId: 7519692842760707329
+        ParentId: 1062090084732911278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4179,39 +3822,15 @@ Assets {
           }
         }
         ParentId: 353726586843495949
-        ChildIds: 18350991800478633358
-        ChildIds: 5855007376786277624
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 18350991800478633358
-        Name: "Bushstack"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12869330906718568163
         ChildIds: 9977751092383608563
         ChildIds: 12540690444430500360
         ChildIds: 9738481186018894316
+        ChildIds: 4920040941971885060
+        ChildIds: 8341891294996027489
+        ChildIds: 12297004991392957581
+        ChildIds: 10099913632420029196
+        ChildIds: 293998618447495893
+        ChildIds: 1105013462803888500
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -4236,10 +3855,10 @@ Assets {
           Scale {
             X: 1
             Y: 1
-            Z: 2.1
+            Z: 2.10000014
           }
         }
-        ParentId: 18350991800478633358
+        ParentId: 12869330906718568163
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -4278,10 +3897,10 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            Z: 175
+            Z: 175.000137
           }
           Rotation {
-            Yaw: 44.9999924
+            Yaw: 44.9999771
           }
           Scale {
             X: 1
@@ -4289,7 +3908,7 @@ Assets {
             Z: 1.80000007
           }
         }
-        ParentId: 18350991800478633358
+        ParentId: 12869330906718568163
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -4328,18 +3947,18 @@ Assets {
         Name: "Bush Leafy Tall 01"
         Transform {
           Location {
-            Z: 325
+            Z: 324.999817
           }
           Rotation {
-            Yaw: 89.9999542
+            Yaw: 89.999939
           }
           Scale {
             X: 0.963146389
             Y: 0.963146389
-            Z: 0.834470809
+            Z: 0.834470868
           }
         }
-        ParentId: 18350991800478633358
+        ParentId: 12869330906718568163
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -4374,82 +3993,21 @@ Assets {
         }
       }
       Objects {
-        Id: 5855007376786277624
-        Name: "Double Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: -44.9999962
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12869330906718568163
-        ChildIds: 11032509334168632693
-        ChildIds: 4822036583807819350
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 11032509334168632693
-        Name: "Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.1
-            Y: 1.1
-            Z: 1.1
-          }
-        }
-        ParentId: 5855007376786277624
-        ChildIds: 4920040941971885060
-        ChildIds: 8341891294996027489
-        ChildIds: 12297004991392957581
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 4920040941971885060
         Name: "Pipe - Spiral"
         Transform {
           Location {
           }
           Rotation {
+            Yaw: -44.9999771
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1.99999976
+            X: 0.440000027
+            Y: 0.440000027
+            Z: 2.20000029
           }
         }
-        ParentId: 11032509334168632693
+        ParentId: 12869330906718568163
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4496,17 +4054,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 200
+            Z: 220.000351
           }
           Rotation {
+            Yaw: -44.9999771
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1
+            X: 0.440000027
+            Y: 0.440000027
+            Z: 1.10000014
           }
         }
-        ParentId: 11032509334168632693
+        ParentId: 12869330906718568163
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4553,17 +4112,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 300
+            Z: 330.000519
           }
           Rotation {
+            Yaw: -44.9999771
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.5
+            X: 0.440000027
+            Y: 0.440000027
+            Z: 0.550000072
           }
         }
-        ParentId: 11032509334168632693
+        ParentId: 12869330906718568163
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4606,53 +4166,22 @@ Assets {
         }
       }
       Objects {
-        Id: 4822036583807819350
-        Name: "Vine"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: 179.999985
-          }
-          Scale {
-            X: 0.8
-            Y: 0.8
-            Z: 0.8
-          }
-        }
-        ParentId: 5855007376786277624
-        ChildIds: 10099913632420029196
-        ChildIds: 293998618447495893
-        ChildIds: 1105013462803888500
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 10099913632420029196
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 200
+            Z: 159.999542
           }
           Rotation {
+            Yaw: 134.999954
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1
+            X: 0.320000052
+            Y: 0.320000052
+            Z: 0.8
           }
         }
-        ParentId: 4822036583807819350
+        ParentId: 12869330906718568163
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4699,17 +4228,18 @@ Assets {
         Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 300
+            Z: 240.000092
           }
           Rotation {
+            Yaw: 134.999954
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.5
+            X: 0.320000052
+            Y: 0.320000052
+            Z: 0.4
           }
         }
-        ParentId: 4822036583807819350
+        ParentId: 12869330906718568163
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4758,14 +4288,15 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 134.999954
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 1.99999976
+            X: 0.320000052
+            Y: 0.320000052
+            Z: 1.6
           }
         }
-        ParentId: 4822036583807819350
+        ParentId: 12869330906718568163
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4808,23 +4339,23 @@ Assets {
         }
       }
       Objects {
-        Id: 7917882268926133611
+        Id: 14856828466646607316
         Name: "Corn Plants"
         Transform {
           Location {
-            X: -124.549919
-            Y: -3.31734872
-            Z: 12.1134062
+            X: -124.549805
+            Y: -3.31640625
+            Z: 12.1132812
           }
           Rotation {
           }
           Scale {
-            X: 0.325952083
-            Y: 0.325952083
-            Z: 0.325952083
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 1811053337392936040
+        ParentId: 11902878672518719939
         ChildIds: 12838259933588006046
         ChildIds: 2628131113558835921
         ChildIds: 1909178957765480970
@@ -4839,9 +4370,11 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsFilePartition: true
-          FilePartitionName: "Corn Plants"
+          IsGroup: true
         }
       }
       Objects {
@@ -4849,22 +4382,22 @@ Assets {
         Name: "Corn Plant"
         Transform {
           Location {
-            X: 0.199218795
-            Y: -399.961823
-            Z: 25.6168365
+            X: 0.064453125
+            Y: -130.369141
+            Z: 8.35009766
           }
           Rotation {
             Pitch: 10.2687931
-            Yaw: 11.9262047
-            Roll: -4.69311523
+            Yaw: 11.9262247
+            Roll: -4.6931181
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 0.391142517
+            Y: 0.391142517
+            Z: 0.391142517
           }
         }
-        ParentId: 7917882268926133611
+        ParentId: 14856828466646607316
         ChildIds: 17809479166419365221
         ChildIds: 11469655726604145104
         ChildIds: 14517375234601197899
@@ -5200,22 +4733,22 @@ Assets {
         Name: "Corn Plant"
         Transform {
           Location {
-            X: -4.90364742
-            Y: -207.096741
-            Z: 7.45175409
+            X: -1.59863281
+            Y: -67.5039062
+            Z: 2.42871094
           }
           Rotation {
-            Pitch: -3.41790771
-            Yaw: -65.6727295
+            Pitch: -3.41790152
+            Yaw: -65.6727448
             Roll: -2.56863403
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 0.391142517
+            Y: 0.391142517
+            Z: 0.391142517
           }
         }
-        ParentId: 7917882268926133611
+        ParentId: 14856828466646607316
         ChildIds: 9598863752859545825
         ChildIds: 3484055842950939027
         ChildIds: 11205463669848958820
@@ -5551,22 +5084,22 @@ Assets {
         Name: "Corn Plant"
         Transform {
           Location {
-            X: -8.61816597
-            Y: -13.7252636
-            Z: 18.2453747
+            X: -2.80957031
+            Y: -4.47460938
+            Z: 5.94726562
           }
           Rotation {
-            Pitch: -6.44702148
+            Pitch: -6.44701529
             Yaw: -172.680908
-            Roll: -2.02035522
+            Roll: -2.02035546
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 0.391142517
+            Y: 0.391142517
+            Z: 0.391142517
           }
         }
-        ParentId: 7917882268926133611
+        ParentId: 14856828466646607316
         ChildIds: 5724245529650296139
         ChildIds: 5227598638213550338
         ChildIds: 8774658112428095876
@@ -5902,22 +5435,21 @@ Assets {
         Name: "Corn Plant"
         Transform {
           Location {
-            X: -10.2470722
-            Y: 204.717163
-            Z: 1.01725282e-05
+            X: -3.33984375
+            Y: 66.7285156
           }
           Rotation {
             Pitch: 1.42735231
             Yaw: 35.3339729
-            Roll: 6.69196177
+            Roll: 6.69196749
           }
           Scale {
-            X: 1.20000017
-            Y: 1.20000017
-            Z: 1.20000017
+            X: 0.391142547
+            Y: 0.391142547
+            Z: 0.391142547
           }
         }
-        ParentId: 7917882268926133611
+        ParentId: 14856828466646607316
         ChildIds: 13385540796664239666
         ChildIds: 16633501002911518406
         ChildIds: 9353935154599284219
@@ -6253,22 +5785,22 @@ Assets {
         Name: "Corn Plant"
         Transform {
           Location {
-            X: 14.3525419
-            Y: 406.272369
-            Z: 7.45163107
+            X: 4.67871094
+            Y: 132.425781
+            Z: 2.42871094
           }
           Rotation {
             Pitch: 4.92884874
-            Yaw: -61.3502197
+            Yaw: -61.3502312
             Roll: 0.168700516
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 0.391142517
+            Y: 0.391142517
+            Z: 0.391142517
           }
         }
-        ParentId: 7917882268926133611
+        ParentId: 14856828466646607316
         ChildIds: 11152075725235098611
         ChildIds: 5103446007859648379
         ChildIds: 16826676676611010031
@@ -6604,8 +6136,8 @@ Assets {
         Name: "Sprinkler"
         Transform {
           Location {
-            X: 16.2976093
-            Z: 16.2976055
+            X: 16.2978516
+            Z: 16.2973633
           }
           Rotation {
           }
@@ -6615,7 +6147,7 @@ Assets {
             Z: 0.325952142
           }
         }
-        ParentId: 1811053337392936040
+        ParentId: 11902878672518719939
         ChildIds: 17410510014918917954
         ChildIds: 17219645406025524660
         ChildIds: 7816931689781900651
@@ -7070,9 +6602,9 @@ Assets {
         Name: "Liquid Decal"
         Transform {
           Location {
-            X: 16.7989502
-            Y: 18.7510567
-            Z: 26.1933384
+            X: 16.7988281
+            Y: 18.7519531
+            Z: 26.1933594
           }
           Rotation {
           }
@@ -7082,7 +6614,7 @@ Assets {
             Z: 0.303305387
           }
         }
-        ParentId: 1811053337392936040
+        ParentId: 11902878672518719939
         UnregisteredParameters {
           Overrides {
             Name: "bp:Type"
@@ -7342,7 +6874,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 850002609444595025
   Name: "Custom Basic Outline"
   PlatformAssetType: 13
-  SerializationVersion: 94
+  SerializationVersion: 98
   CustomMaterialAsset {
     BaseMaterialId: 4488449008490516537
     ParameterOverrides {

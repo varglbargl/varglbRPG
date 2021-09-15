@@ -3705,6 +3705,6 @@ Assets {
   Marketplace {
     Description: "Retro Oven"
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
 }

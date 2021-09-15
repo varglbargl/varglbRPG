@@ -1,27 +1,24 @@
 Assets {
-  Id: 10010169792097736707
+  Id: 5056165458151714023
   Name: "Virtual Folders"
   PlatformAssetType: 30
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderSetAsset {
-    Folders {
-      VirtualFolderPath: "VFX"
-      PlatformAssetType: 5
-    }
     Folders {
       VirtualFolderPath: "Props"
       PlatformAssetType: 5
     }
     Folders {
-      VirtualFolderPath: "Enemies"
-      PlatformAssetType: 5
-    }
-    Folders {
-      VirtualFolderPath: "UI"
+      VirtualFolderPath: "Tilesets"
       PlatformAssetType: 5
     }
     Folders {
       VirtualFolderPath: "Gear"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Weapons"
       PlatformAssetType: 5
     }
     Folders {
@@ -30,8 +27,7 @@ Assets {
       PlatformAssetType: 5
     }
     Folders {
-      VirtualFolderPath: "Gear"
-      VirtualFolderPath: "Spells"
+      VirtualFolderPath: "VFX"
       PlatformAssetType: 5
     }
     Folders {
@@ -45,7 +41,19 @@ Assets {
       PlatformAssetType: 5
     }
     Folders {
-      VirtualFolderPath: "Tilesets"
+      VirtualFolderPath: "Destructibles"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Enemies"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "UI"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Consumables"
       PlatformAssetType: 5
     }
     Folders {
@@ -55,15 +63,7 @@ Assets {
     }
     Folders {
       VirtualFolderPath: "Gear"
-      VirtualFolderPath: "Weapons"
-      PlatformAssetType: 5
-    }
-    Folders {
-      VirtualFolderPath: "Destructibles"
-      PlatformAssetType: 5
-    }
-    Folders {
-      VirtualFolderPath: "Consumables"
+      VirtualFolderPath: "Spells"
       PlatformAssetType: 5
     }
     Folders {

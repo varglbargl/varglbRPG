@@ -30544,6 +30544,6 @@ Assets {
   Marketplace {
     Description: "This pack contains various fantasy \\ medieval  interiors.\r\n\r\n- 2 Storages\r\n- 3 Houses\r\n- 4 Shops\r\n- Barracks\r\n- Tavern\r\n- Also you can find various interior objects: plates, mugs, coins, pans, bottles etc."
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 12688837519895093339
   Name: "Emissive Liquid - Tintable"
   PlatformAssetType: 13
-  SerializationVersion: 94
+  SerializationVersion: 98
   CustomMaterialAsset {
     BaseMaterialId: 13890932455237165617
     ParameterOverrides {

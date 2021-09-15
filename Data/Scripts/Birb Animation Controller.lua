@@ -1,18 +1,19 @@
+local BIRB = script:GetCustomProperty("TemplateRoot"):WaitForObject()
 local ANIM_FREQUENCY = script:GetCustomProperty("AnimationFrequency")
 local CHIRP_SOUND = script:GetCustomProperty("ChirpSound")
-local CHIRP_VOLUME = script:GetCustomProperty("ChirpVolume")
 
 local THE_WHOLE_BIRB = script:GetCustomProperty("TheWholeBirb"):WaitForObject()
 local UPPER_BODY = script:GetCustomProperty("UpperBody"):WaitForObject()
 local HEAD = script:GetCustomProperty("Head"):WaitForObject()
 local UPPER_BEAK = script:GetCustomProperty("UpperBeak"):WaitForObject()
 
-local birb = script:FindTemplateRoot()
+local defaultUpperBeakRotation = UPPER_BEAK:GetRotation()
+local chirpSFX = nil
 
-local PECK = birb:GetCustomProperty("Peck")
-local HOP = birb:GetCustomProperty("Hop")
-local LOOK = birb:GetCustomProperty("Look")
-local CHIRP = birb:GetCustomProperty("Chirp")
+local PECK = BIRB:GetCustomProperty("Peck")
+local HOP = BIRB:GetCustomProperty("Hop")
+local LOOK = BIRB:GetCustomProperty("Look")
+local CHIRP = BIRB:GetCustomProperty("Chirp")
 
 function peckAnimation()
   UPPER_BODY:RotateTo(Rotation.New(0, 90, 0), 0.05, true)
@@ -36,35 +37,26 @@ end
 function lookAnimation()
   local direction = math.random(0, 1) * 2 - 1
 
-  HEAD:RotateTo(Rotation.New(-30 * direction, 30, -40 * direction), 0.03, true)
+  HEAD:RotateTo(Rotation.New(-13 * direction, 23, -38 * direction), 0.03, true)
   Task.Wait(math.random(1, 5) / 3)
-  HEAD:RotateTo(Rotation.New(30 * direction, 30, 40 * direction), 0.04, true)
+  HEAD:RotateTo(Rotation.New(13 * direction, 23, 38 * direction), 0.04, true)
   Task.Wait(math.random(1, 5) / 3)
-  HEAD:RotateTo(Rotation.New(0, 42, 0), 0.03, true)
+  HEAD:RotateTo(Rotation.New(0, 23, 0), 0.03, true)
 end
 
 function chirpAnimation()
-  local chirp = World.SpawnAsset(CHIRP_SOUND, {position = HEAD:GetWorldPosition()})
+  UPPER_BEAK:SetRotation(defaultUpperBeakRotation + Rotation.New(0, -30, 0), true)
+  chirpSFX:Play()
 
-  chirp.isTransient = true
-  chirp.isAutoRepeatEnabled = false
-  chirp.volume = CHIRP_VOLUME
-  chirp.pitch = chirp.pitch + math.random(-1, 1) * 100
-
-  UPPER_BEAK:SetRotation(Rotation.New(0, -30, 0), true)
-  UPPER_BEAK:SetPosition(Vector3.New(-3, 0, -10), true)
-  chirp:Play()
-
-  if chirp.length and chirp.length > 0 then
-    Task.Wait(chirp.length * 0.75)
+  if chirpSFX.length and chirpSFX.length > 0 then
+    Task.Wait(chirpSFX.length * 0.75)
   else
-    while Object.IsValid(chirp) and chirp.isPlaying do
+    while Object.IsValid(chirpSFX) and chirpSFX.isPlaying do
       Task.Wait(0.25)
     end
   end
 
-  UPPER_BEAK:SetRotation(Rotation.ZERO, true)
-  UPPER_BEAK:SetPosition(Vector3.ZERO, true)
+  UPPER_BEAK:SetRotation(defaultUpperBeakRotation, true)
 end
 
 local animations = {}
@@ -82,6 +74,7 @@ if LOOK then
 end
 
 if CHIRP then
+  chirpSFX = World.SpawnAsset(CHIRP_SOUND, {parent = HEAD})
   table.insert(animations, chirpAnimation)
 end
 

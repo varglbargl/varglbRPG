@@ -2,7 +2,7 @@ Assets {
   Id: 8981585545115533481
   Name: "Catless Cat Flag"
   PlatformAssetType: 13
-  SerializationVersion: 94
+  SerializationVersion: 98
   CustomMaterialAsset {
     BaseMaterialId: 1299557404959273227
     ParameterOverrides {

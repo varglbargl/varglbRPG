@@ -51,7 +51,7 @@ Assets {
           }
         }
         ParentId: 6532743103761856835
-        ChildIds: 5421916128560338422
+        ChildIds: 11194020578496062494
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -68,8 +68,8 @@ Assets {
         }
       }
       Objects {
-        Id: 5421916128560338422
-        Name: "NewFolder"
+        Id: 11194020578496062494
+        Name: "Group"
         Transform {
           Location {
             Z: 290
@@ -99,7 +99,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -117,7 +117,7 @@ Assets {
             Z: 0.710326314
           }
         }
-        ParentId: 5421916128560338422
+        ParentId: 11194020578496062494
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -179,7 +179,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5421916128560338422
+        ParentId: 11194020578496062494
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -238,7 +238,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5421916128560338422
+        ParentId: 11194020578496062494
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -533,6 +533,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderPath: "Tilesets"
 }

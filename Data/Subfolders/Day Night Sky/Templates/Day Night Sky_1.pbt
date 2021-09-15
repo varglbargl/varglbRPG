@@ -21,6 +21,7 @@ Assets {
         ChildIds: 15823941823731023788
         ChildIds: 10050366097919261465
         ChildIds: 5850246755653294951
+        ChildIds: 1395820369303713959
         ChildIds: 18275274607650207761
         ChildIds: 2687679590216837220
         UnregisteredParameters {
@@ -498,6 +499,55 @@ Assets {
         }
       }
       Objects {
+        Id: 1395820369303713959
+        Name: "AutoExposure Post Process"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15353451395209644350
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Speed Down"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Min Brightness"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Max Brightness"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 8258029249780464074
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
         Id: 18275274607650207761
         Name: "Environment Fog Default VFX"
         Transform {
@@ -683,6 +733,15 @@ Assets {
       }
     }
     Assets {
+      Id: 8258029249780464074
+      Name: "AutoExposure Post Process"
+      PlatformAssetType: 20
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_post_process_auto_exposure"
+      }
+    }
+    Assets {
       Id: 2224571462023946700
       Name: "Environment Fog Default VFX"
       PlatformAssetType: 6
@@ -708,6 +767,6 @@ Assets {
   Marketplace {
     Description: "A sky that cycles day and night at an user defined time and speed. Place in scene and delete any other skies. Select SkyLogic script in the hierarchy to configure.\r\n\r\nStartingDegrees:\r\nWhat angle to start the day at.\r\n0 is sunrise, 90 is midday, 180 is sunset, 270 is midnight\r\n\r\nDegreesPerSecond:\r\nHow fast the sun moves through the day\r\n2 minute day/night cycle = 120 seconds = 360 degrees/120 seconds = 3 degrees per second"
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
 }

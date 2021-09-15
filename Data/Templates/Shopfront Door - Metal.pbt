@@ -15,8 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3246644525052086036
-        ChildIds: 16342217179753842866
+        ParentId: 4781671109827199097
+        ChildIds: 1129445383790140618
         ChildIds: 10924866253683229589
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35,7 +35,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16342217179753842866
+        Id: 1129445383790140618
         Name: "Door"
         Transform {
           Location {
@@ -49,63 +49,21 @@ Assets {
           }
         }
         ParentId: 10524904463671933776
-        ChildIds: 18052464738734272970
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6301642118606503856
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 18052464738734272970
-        Name: "Geo"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16342217179753842866
         ChildIds: 13291743160751123511
         ChildIds: 600732150875455961
-        ChildIds: 2873653662553263027
+        ChildIds: 3614345119602365227
+        ChildIds: 3383750863821421364
+        ChildIds: 11169519955467852667
+        ChildIds: 10078906791724592698
+        ChildIds: 17202960696289456473
         ChildIds: 2810042077878629114
         ChildIds: 13663633205892157396
         WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -114,6 +72,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+          Type: RuntimeStatic
         }
       }
       Objects {
@@ -121,13 +80,13 @@ Assets {
         Name: "Japanese Chest Hinge 01"
         Transform {
           Location {
-            X: 6.12890434
-            Y: -0.0253973
+            X: 6.12890625
+            Y: -0.025390625
             Z: 81.0004883
           }
           Rotation {
             Pitch: -90
-            Roll: 180
+            Roll: -179.999985
           }
           Scale {
             X: 1.2
@@ -135,7 +94,7 @@ Assets {
             Z: 1.2
           }
         }
-        ParentId: 18052464738734272970
+        ParentId: 1129445383790140618
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -172,13 +131,13 @@ Assets {
         Name: "Japanese Chest Hinge 01"
         Transform {
           Location {
-            X: 5.96288919
-            Y: -0.185553074
+            X: 5.96289062
+            Y: -0.185546875
             Z: 223.605957
           }
           Rotation {
             Pitch: -90
-            Roll: 180
+            Roll: -179.999985
           }
           Scale {
             X: 1.2
@@ -186,7 +145,7 @@ Assets {
             Z: 1.2
           }
         }
-        ParentId: 18052464738734272970
+        ParentId: 1129445383790140618
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -219,55 +178,18 @@ Assets {
         }
       }
       Objects {
-        Id: 2873653662553263027
-        Name: "Open Sign"
-        Transform {
-          Location {
-            X: 120.121056
-            Y: -0.607551575
-            Z: 184.608643
-          }
-          Rotation {
-            Yaw: 90
-            Roll: 6
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 18052464738734272970
-        ChildIds: 3614345119602365227
-        ChildIds: 12886898674872989579
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-          FilePartitionName: "Open Sign"
-        }
-      }
-      Objects {
         Id: 3614345119602365227
         Name: "Cabinet Door - Small"
         Transform {
           Location {
-            X: -0.56640625
-            Y: -13.4130859
-            Z: -0.3203125
+            X: 133.494141
+            Y: -1.17382812
+            Z: 185.691895
           }
           Rotation {
-            Yaw: -90
+            Pitch: 6
+            Yaw: -3.36968853e-08
+            Roll: -6.42974669e-07
           }
           Scale {
             X: 0.900000036
@@ -275,7 +197,7 @@ Assets {
             Z: 0.900000036
           }
         }
-        ParentId: 2873653662553263027
+        ParentId: 1129445383790140618
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Handle:id"
@@ -314,63 +236,26 @@ Assets {
         }
       }
       Objects {
-        Id: 12886898674872989579
-        Name: "Letters"
-        Transform {
-          Location {
-            X: 0.565429688
-            Y: 13.5317383
-            Z: 17.1057129
-          }
-          Rotation {
-            Yaw: -89.9999924
-          }
-          Scale {
-            X: 0.129231051
-            Y: 0.129231051
-            Z: 0.129231051
-          }
-        }
-        ParentId: 2873653662553263027
-        ChildIds: 3383750863821421364
-        ChildIds: 11169519955467852667
-        ChildIds: 10078906791724592698
-        ChildIds: 17202960696289456473
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-          FilePartitionName: "Letters"
-        }
-      }
-      Objects {
         Id: 3383750863821421364
         Name: "Text 05: O"
         Transform {
           Location {
-            X: -331.56604
-            Z: 35.7621613
+            X: 61.7783203
+            Y: -0.0419921875
+            Z: 200.323242
           }
           Rotation {
-            Pitch: -15
+            Pitch: -8.99998283
+            Yaw: 4.76476744e-05
+            Roll: 3.95777352e-06
           }
           Scale {
-            X: 1.3999989
-            Y: 0.05
-            Z: 1.6
+            X: 0.180923328
+            Y: 0.00646155281
+            Z: 0.20676969
           }
         }
-        ParentId: 12886898674872989579
+        ParentId: 1129445383790140618
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -452,20 +337,22 @@ Assets {
         Name: "Text 05: P"
         Transform {
           Location {
-            X: -214.599396
-            Y: 1.47592127e-05
-            Z: 8.33883667
+            X: 77.1816406
+            Y: -0.0419921875
+            Z: 198.378906
           }
           Rotation {
-            Pitch: -1.3526001
+            Pitch: 4.64740372
+            Yaw: 4.80402887e-05
+            Roll: 4.67304471e-06
           }
           Scale {
-            X: 1.08864415
-            Y: 0.054432191
-            Z: 1.08864415
+            X: 0.140686631
+            Y: 0.00703432923
+            Z: 0.140686631
           }
         }
-        ParentId: 12886898674872989579
+        ParentId: 1129445383790140618
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -547,19 +434,22 @@ Assets {
         Name: "Text 05: E"
         Transform {
           Location {
-            X: -108.200836
-            Y: 7.37960636e-06
-            Z: 25.7608471
+            X: 90.6210938
+            Y: -0.0419921875
+            Z: 202.055176
           }
           Rotation {
+            Pitch: 6
+            Yaw: 4.81126699e-05
+            Roll: 4.49839263e-06
           }
           Scale {
-            X: 0.999999762
-            Y: 0.05
-            Z: 0.999999762
+            X: 0.129231021
+            Y: 0.00646155281
+            Z: 0.129231021
           }
         }
-        ParentId: 12886898674872989579
+        ParentId: 1129445383790140618
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -641,19 +531,22 @@ Assets {
         Name: "Text 05: N"
         Transform {
           Location {
-            X: -9.77083397
-            Z: 25.7608471
+            X: 103.271484
+            Y: -0.0419921875
+            Z: 203.384766
           }
           Rotation {
-            Yaw: 1.02452814e-05
+            Pitch: 6
+            Yaw: 5.49814067e-05
+            Roll: 5.05504204e-06
           }
           Scale {
-            X: 0.999999762
-            Y: 0.05
-            Z: 0.999999762
+            X: 0.129231021
+            Y: 0.00646155281
+            Z: 0.129231021
           }
         }
-        ParentId: 12886898674872989579
+        ParentId: 1129445383790140618
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -744,7 +637,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18052464738734272970
+        ParentId: 1129445383790140618
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -779,12 +672,12 @@ Assets {
         Name: "Plane 1m - Two Sided"
         Transform {
           Location {
-            X: 93.2870789
-            Y: 2.50380707
-            Z: 176.304443
+            X: 93.2871094
+            Y: 2.50390625
+            Z: 176.304688
           }
           Rotation {
-            Roll: 90
+            Roll: 89.9999924
           }
           Scale {
             X: 1.6613133
@@ -792,7 +685,7 @@ Assets {
             Z: 0.87437427
           }
         }
-        ParentId: 18052464738734272970
+        ParentId: 1129445383790140618
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -909,12 +802,6 @@ Assets {
         ParentId: 10924866253683229589
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Door"
-            ObjectReference {
-              SubObjectId: 16342217179753842866
-            }
-          }
-          Overrides {
             Name: "cs:OpenRotation"
             Rotator {
               Yaw: 90
@@ -923,6 +810,12 @@ Assets {
           Overrides {
             Name: "cs:AutoCloseAfter"
             Float: 3
+          }
+          Overrides {
+            Name: "cs:Door"
+            ObjectReference {
+              SubObjectId: 1129445383790140618
+            }
           }
         }
         Collidable_v2 {
@@ -997,15 +890,6 @@ Assets {
             Id: 12440940211500564427
           }
         }
-      }
-    }
-    Assets {
-      Id: 6301642118606503856
-      Name: "Whitebox Door 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_gen_whitebox_door_001"
       }
     }
     Assets {
@@ -1121,6 +1005,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderPath: "Tilesets"
 }

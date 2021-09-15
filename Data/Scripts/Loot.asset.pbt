@@ -40,7 +40,13 @@ Assets {
           Id: 10101702818438590485
         }
       }
+      Overrides {
+        Name: "cs:GoldDrop"
+        AssetReference {
+          Id: 3843000524464151411
+        }
+      }
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
 }

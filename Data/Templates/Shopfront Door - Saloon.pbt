@@ -10,14 +10,14 @@ Assets {
         Name: "Shopfront Door - Saloon"
         Transform {
           Scale {
-            X: 0.487565309
-            Y: 0.487565309
-            Z: 0.487565309
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 18037324666348523329
-        ChildIds: 4688436729067540019
-        ChildIds: 17346443767098837339
+        ParentId: 4781671109827199097
+        ChildIds: 13690769290584028588
+        ChildIds: 13774916834086768030
         ChildIds: 11059908153251412039
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36,7 +36,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4688436729067540019
+        Id: 13690769290584028588
         Name: "Left Door"
         Transform {
           Location {
@@ -50,61 +50,15 @@ Assets {
           }
         }
         ParentId: 17691678098466173306
-        ChildIds: 7431196822441350313
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6301642118606503856
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 7431196822441350313
-        Name: "Geo"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4688436729067540019
         ChildIds: 17095912279130027203
         ChildIds: 13734485818266659266
         ChildIds: 15233807209238264000
         WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -113,6 +67,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+          Type: RuntimeStatic
         }
       }
       Objects {
@@ -120,21 +75,19 @@ Assets {
         Name: "Sci-fi Chest Hinge 01"
         Transform {
           Location {
-            X: -3.09765625
-            Y: 5
-            Z: 60
+            X: 4
+            Z: 29.2539062
           }
           Rotation {
-            Pitch: -90
-            Roll: -62.7845154
+            Pitch: 90
           }
           Scale {
-            X: 1
-            Y: -1
-            Z: 1
+            X: 0.6
+            Y: -0.6
+            Z: 0.6
           }
         }
-        ParentId: 7431196822441350313
+        ParentId: 13690769290584028588
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -149,7 +102,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17611921055401184409
+            Id: 6753491216021993641
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -169,21 +122,19 @@ Assets {
         Name: "Sci-fi Chest Hinge 01"
         Transform {
           Location {
-            X: -3.09765625
-            Y: 5
-            Z: 230
+            X: 4
+            Z: 112.140137
           }
           Rotation {
-            Pitch: -90
-            Roll: -62.7845154
+            Pitch: 90
           }
           Scale {
-            X: 1
-            Y: -1
-            Z: 1
+            X: 0.6
+            Y: -0.6
+            Z: 0.6
           }
         }
-        ParentId: 7431196822441350313
+        ParentId: 13690769290584028588
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -198,7 +149,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17611921055401184409
+            Id: 6753491216021993641
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -222,12 +173,12 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.487565309
+            Y: 0.487565309
+            Z: 0.487565309
           }
         }
-        ParentId: 7431196822441350313
+        ParentId: 13690769290584028588
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -258,57 +209,12 @@ Assets {
         }
       }
       Objects {
-        Id: 17346443767098837339
+        Id: 13774916834086768030
         Name: "Right Door"
         Transform {
           Location {
-            X: 360
-          }
-          Rotation {
-          }
-          Scale {
-            X: -1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17691678098466173306
-        ChildIds: 459101295727433034
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6301642118606503856
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 459101295727433034
-        Name: "Geo"
-        Transform {
-          Location {
+            X: 175.523438
+            Z: 0.00048828125
           }
           Rotation {
           }
@@ -318,16 +224,16 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17346443767098837339
+        ParentId: 17691678098466173306
         ChildIds: 12269304045125571883
         ChildIds: 18409160962206465872
         ChildIds: 6593068817409421545
         WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -336,6 +242,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+          Type: RuntimeStatic
         }
       }
       Objects {
@@ -343,21 +250,19 @@ Assets {
         Name: "Sci-fi Chest Hinge 01"
         Transform {
           Location {
-            X: -3.09765625
-            Y: 5
-            Z: 60
+            X: 4
+            Z: 29.2539062
           }
           Rotation {
-            Pitch: -90
-            Roll: -62.7845459
+            Pitch: 90
           }
           Scale {
-            X: 1
-            Y: -1
-            Z: 1
+            X: -0.6
+            Y: -0.6
+            Z: 0.6
           }
         }
-        ParentId: 459101295727433034
+        ParentId: 13774916834086768030
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -372,7 +277,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17611921055401184409
+            Id: 6753491216021993641
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -392,21 +297,19 @@ Assets {
         Name: "Sci-fi Chest Hinge 01"
         Transform {
           Location {
-            X: -3.09765625
-            Y: 5
-            Z: 230
+            X: 4
+            Z: 112.140137
           }
           Rotation {
-            Pitch: -90
-            Roll: -62.7845459
+            Pitch: 90
           }
           Scale {
-            X: 1
-            Y: -1
-            Z: 1
+            X: -0.6
+            Y: -0.6
+            Z: 0.6
           }
         }
-        ParentId: 459101295727433034
+        ParentId: 13774916834086768030
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -421,7 +324,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17611921055401184409
+            Id: 6753491216021993641
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -445,12 +348,12 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: -0.487565309
+            Y: 0.487565309
+            Z: 0.487565309
           }
         }
-        ParentId: 459101295727433034
+        ParentId: 13774916834086768030
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -485,16 +388,16 @@ Assets {
         Name: "Trigger"
         Transform {
           Location {
-            X: 180.1241
-            Y: -33.7044182
-            Z: 119.951881
+            X: 87.8222656
+            Y: -16.4331055
+            Z: 58.484375
           }
           Rotation {
           }
           Scale {
-            X: 3.5
-            Y: 3.5
-            Z: 3.9
+            X: 1.49999988
+            Y: 1.49999988
+            Z: 1.49999988
           }
         }
         ParentId: 17691678098466173306
@@ -531,19 +434,13 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 11059908153251412039
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Door"
-            ObjectReference {
-              SubObjectId: 4688436729067540019
-            }
-          }
           Overrides {
             Name: "cs:OpenRotation"
             Rotator {
@@ -574,6 +471,12 @@ Assets {
             Name: "cs:OpenBothWays"
             Bool: true
           }
+          Overrides {
+            Name: "cs:Door"
+            ObjectReference {
+              SubObjectId: 13690769290584028588
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -602,19 +505,13 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 11059908153251412039
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Door"
-            ObjectReference {
-              SubObjectId: 17346443767098837339
-            }
-          }
           Overrides {
             Name: "cs:OpenRotation"
             Rotator {
@@ -645,6 +542,12 @@ Assets {
             Name: "cs:OpenBothWays"
             Bool: true
           }
+          Overrides {
+            Name: "cs:Door"
+            ObjectReference {
+              SubObjectId: 13774916834086768030
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -666,21 +569,12 @@ Assets {
       }
     }
     Assets {
-      Id: 6301642118606503856
-      Name: "Whitebox Door 01"
+      Id: 6753491216021993641
+      Name: "Japanese Chest Hinge 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_gen_whitebox_door_001"
-      }
-    }
-    Assets {
-      Id: 17611921055401184409
-      Name: "Sci-fi Chest Hinge 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_scf_crate_hinge_001_ref"
+        AssetId: "sm_prop_jpn_chest_med_hinge_001"
       }
     }
     Assets {
@@ -715,6 +609,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderPath: "Tilesets"
 }

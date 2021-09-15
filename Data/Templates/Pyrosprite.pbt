@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 665534767918533260
+        ParentId: 4781671109827199097
         ChildIds: 2308838290578760625
         ChildIds: 6155608346076283276
         ChildIds: 15089466173944845956
@@ -416,7 +416,7 @@ Assets {
         ChildIds: 5078290776169132191
         ChildIds: 12046130561887249457
         ChildIds: 951113861200961909
-        ChildIds: 12210565309108672227
+        ChildIds: 16669726530649517036
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -675,13 +675,13 @@ Assets {
         }
       }
       Objects {
-        Id: 12210565309108672227
-        Name: "NewFolder"
+        Id: 16669726530649517036
+        Name: "Group"
         Transform {
           Location {
           }
           Rotation {
-            Pitch: 32.5565529
+            Pitch: 32.5565338
           }
           Scale {
             X: 1
@@ -705,7 +705,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -715,6 +715,7 @@ Assets {
           Location {
           }
           Rotation {
+            Pitch: 6.83018879e-06
           }
           Scale {
             X: 1
@@ -722,7 +723,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12210565309108672227
+        ParentId: 16669726530649517036
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -746,9 +747,11 @@ Assets {
         Name: "Candle Flame VFX"
         Transform {
           Location {
+            X: 0.000377511489
             Z: 6.05162525
           }
           Rotation {
+            Pitch: 6.83018879e-06
           }
           Scale {
             X: 5.74497604
@@ -756,7 +759,7 @@ Assets {
             Z: 5.74497604
           }
         }
-        ParentId: 12210565309108672227
+        ParentId: 16669726530649517036
         UnregisteredParameters {
           Overrides {
             Name: "ma:Flame_A:color"
@@ -880,6 +883,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderPath: "Enemies"
 }

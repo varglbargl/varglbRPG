@@ -250,9 +250,19 @@ Assets {
         }
         ParentId: 5866043828947498130
         ChildIds: 812353133274092937
+        ChildIds: 1669577980537924981
+        ChildIds: 16053690211950042873
         ChildIds: 11711114184400107893
-        ChildIds: 13395048808023752500
-        ChildIds: 4272530534901501306
+        ChildIds: 9937928381093518846
+        ChildIds: 8478896038526267960
+        ChildIds: 390619593398619029
+        ChildIds: 3944686051153260521
+        ChildIds: 8329272102358722411
+        ChildIds: 7588633792780401466
+        ChildIds: 2556383542379742175
+        ChildIds: 9018860606507686680
+        ChildIds: 10448910306214204000
+        ChildIds: 3313607812470346497
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -320,6 +330,98 @@ Assets {
           ScriptAsset {
             Id: 9463019686170667698
           }
+        }
+      }
+      Objects {
+        Id: 1669577980537924981
+        Name: "Left Hand Anchor"
+        Transform {
+          Location {
+            X: 16.0752468
+            Y: -22.7345524
+            Z: -6.99993896
+          }
+          Rotation {
+            Pitch: 68.0428772
+            Yaw: -179.999939
+            Roll: -179.999893
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11215737965790632442
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: -5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
+        }
+      }
+      Objects {
+        Id: 16053690211950042873
+        Name: "Right Hand Anchor"
+        Transform {
+          Location {
+            X: 16.0752525
+            Y: 22.2654457
+            Z: -6.99993896
+          }
+          Rotation {
+            Pitch: 68.0431442
+            Yaw: -179.999893
+            Roll: 179.999969
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11215737965790632442
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: 5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:righthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.2
+          BlendOutTime: 0.2
         }
       }
       Objects {
@@ -401,100 +503,18 @@ Assets {
         }
       }
       Objects {
-        Id: 13395048808023752500
-        Name: "Left Wing"
-        Transform {
-          Location {
-            X: -2.20456314
-            Y: -20
-            Z: -1.26708984
-          }
-          Rotation {
-            Pitch: 6.95645189
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11215737965790632442
-        ChildIds: 1669577980537924981
-        ChildIds: 9937928381093518846
-        ChildIds: 8478896038526267960
-        ChildIds: 390619593398619029
-        ChildIds: 3944686051153260521
-        ChildIds: 8329272102358722411
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 1669577980537924981
-        Name: "Left Hand Anchor"
-        Transform {
-          Location {
-            X: 17.4509144
-            Y: -2.73455334
-            Z: -7.90460539
-          }
-          Rotation {
-            Pitch: 74.9994049
-            Yaw: -179.999908
-            Roll: -179.999878
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13395048808023752500
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:alwaysvisible"
-        }
-        IKAnchor {
-          AimOffset {
-            X: -20
-            Y: -5
-          }
-          IKAnchorType {
-            Value: "mc:eikanchortype:lefthand"
-          }
-          BlendWeight: 1
-          BlendInTime: 0.2
-          BlendOutTime: 0.2
-        }
-      }
-      Objects {
         Id: 9937928381093518846
         Name: "Sci-fi Ship Engine 02"
         Transform {
           Location {
+            X: -2.20457077
+            Y: -19.9999981
+            Z: -1.26708984
           }
           Rotation {
+            Pitch: -6.95645189
             Yaw: -179.999954
+            Roll: -4.44230591e-06
           }
           Scale {
             X: 0.126838416
@@ -502,7 +522,7 @@ Assets {
             Z: 0.214496464
           }
         }
-        ParentId: 13395048808023752500
+        ParentId: 11215737965790632442
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -537,12 +557,14 @@ Assets {
         Name: "Sci-fi Ship Wing Large 01"
         Transform {
           Location {
-            X: 5.48822
-            Y: -14.9464569
-            Z: 11.3240814
+            X: 1.87173462
+            Y: -34.9465027
+            Z: 10.6383438
           }
           Rotation {
-            Roll: -11.2501154
+            Pitch: 6.95645189
+            Yaw: -3.54793428e-06
+            Roll: -11.2501335
           }
           Scale {
             X: 0.211650297
@@ -550,7 +572,7 @@ Assets {
             Z: 0.0831458494
           }
         }
-        ParentId: 13395048808023752500
+        ParentId: 11215737965790632442
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -585,12 +607,14 @@ Assets {
         Name: "Sci-fi Ship Wing Small 01"
         Transform {
           Location {
-            X: 1.16671753
-            Y: -5.22164917
-            Z: 29.0978851
+            X: -4.57062912
+            Y: -25.2216492
+            Z: 27.7578964
           }
           Rotation {
-            Roll: -36.9773827
+            Pitch: 6.95645189
+            Yaw: 1.07513165e-06
+            Roll: -36.9773674
           }
           Scale {
             X: 0.104281642
@@ -598,7 +622,7 @@ Assets {
             Z: 0.104281664
           }
         }
-        ParentId: 13395048808023752500
+        ParentId: 11215737965790632442
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -633,14 +657,14 @@ Assets {
         Name: "Handle"
         Transform {
           Location {
-            X: 9.5241394
-            Y: -0.168502808
-            Z: 3.15402222
+            X: 6.86745071
+            Y: -20.1685162
+            Z: 3.01722717
           }
           Rotation {
-            Pitch: 55.0468674
+            Pitch: 48.0904
             Yaw: -179.999954
-            Roll: 2.84242747e-12
+            Roll: -2.76447349e-06
           }
           Scale {
             X: 0.149870545
@@ -648,7 +672,7 @@ Assets {
             Z: 0.149870545
           }
         }
-        ParentId: 13395048808023752500
+        ParentId: 11215737965790632442
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -683,11 +707,14 @@ Assets {
         Name: "Basic Projectile Trail VFX"
         Transform {
           Location {
-            X: -13.0309563
-            Y: -48.4341736
-            Z: 3.95847297
+            X: -15.6190186
+            Y: -68.4341736
+            Z: 1.08399963
           }
           Rotation {
+            Pitch: 6.95645189
+            Yaw: -1.30454776e-08
+            Roll: -2.14630205e-07
           }
           Scale {
             X: 1
@@ -695,7 +722,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13395048808023752500
+        ParentId: 11215737965790632442
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -729,100 +756,18 @@ Assets {
         }
       }
       Objects {
-        Id: 4272530534901501306
-        Name: "Right Wing"
-        Transform {
-          Location {
-            X: -2.20456314
-            Y: 20
-            Z: -1.26708984
-          }
-          Rotation {
-            Pitch: 6.95645189
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11215737965790632442
-        ChildIds: 16053690211950042873
-        ChildIds: 7588633792780401466
-        ChildIds: 2556383542379742175
-        ChildIds: 9018860606507686680
-        ChildIds: 10448910306214204000
-        ChildIds: 3313607812470346497
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 16053690211950042873
-        Name: "Right Hand Anchor"
-        Transform {
-          Location {
-            X: 17.4509144
-            Y: 2.26544762
-            Z: -7.90460491
-          }
-          Rotation {
-            Pitch: 74.9996567
-            Yaw: -179.999832
-            Roll: -179.999954
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4272530534901501306
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:alwaysvisible"
-        }
-        IKAnchor {
-          AimOffset {
-            X: -20
-            Y: 5
-          }
-          IKAnchorType {
-            Value: "mc:eikanchortype:righthand"
-          }
-          BlendWeight: 1
-          BlendInTime: 0.2
-          BlendOutTime: 0.2
-        }
-      }
-      Objects {
         Id: 7588633792780401466
         Name: "Sci-fi Ship Engine 02"
         Transform {
           Location {
+            X: -2.20455933
+            Y: 19.9999695
+            Z: -1.26708221
           }
           Rotation {
+            Pitch: -6.95645189
             Yaw: 179.999954
+            Roll: 6.03363242e-06
           }
           Scale {
             X: 0.126838416
@@ -830,7 +775,7 @@ Assets {
             Z: 0.214496464
           }
         }
-        ParentId: 4272530534901501306
+        ParentId: 11215737965790632442
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -865,12 +810,14 @@ Assets {
         Name: "Sci-fi Ship Wing Large 01"
         Transform {
           Location {
-            X: 5.48822
-            Y: 14.9464569
-            Z: 11.3240814
+            X: 1.87174225
+            Y: 34.9464684
+            Z: 10.6383362
           }
           Rotation {
-            Roll: 11.2501163
+            Pitch: 6.95645189
+            Yaw: 2.09650671e-06
+            Roll: 11.2501326
           }
           Scale {
             X: 0.211650297
@@ -878,7 +825,7 @@ Assets {
             Z: 0.0831458494
           }
         }
-        ParentId: 4272530534901501306
+        ParentId: 11215737965790632442
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -913,12 +860,14 @@ Assets {
         Name: "Sci-fi Ship Wing Small 01"
         Transform {
           Location {
-            X: 1.16671753
-            Y: 5.22164917
-            Z: 29.0978851
+            X: -4.57061768
+            Y: 25.2216187
+            Z: 27.7579041
           }
           Rotation {
-            Roll: 36.977375
+            Pitch: 6.95645189
+            Yaw: 4.30052637e-07
+            Roll: 36.9773598
           }
           Scale {
             X: 0.104281642
@@ -926,7 +875,7 @@ Assets {
             Z: 0.104281664
           }
         }
-        ParentId: 4272530534901501306
+        ParentId: 11215737965790632442
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -961,13 +910,14 @@ Assets {
         Name: "Handle"
         Transform {
           Location {
-            X: 9.5241394
-            Y: 0.153320312
-            Z: 3.15402222
+            X: 6.8674736
+            Y: 20.1533203
+            Z: 3.01722717
           }
           Rotation {
-            Pitch: 55.046875
-            Yaw: -179.999969
+            Pitch: 48.0904121
+            Yaw: -179.999954
+            Roll: -2.76446895e-06
           }
           Scale {
             X: 0.149870545
@@ -975,7 +925,7 @@ Assets {
             Z: 0.149870545
           }
         }
-        ParentId: 4272530534901501306
+        ParentId: 11215737965790632442
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1010,11 +960,14 @@ Assets {
         Name: "Basic Projectile Trail VFX"
         Transform {
           Location {
-            X: -13.0309563
-            Y: 48.7778168
-            Z: 3.95847297
+            X: -15.6190186
+            Y: 68.777832
+            Z: 1.08399963
           }
           Rotation {
+            Pitch: 6.95645189
+            Yaw: -1.30454776e-08
+            Roll: -2.14630205e-07
           }
           Scale {
             X: 1
@@ -1022,7 +975,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4272530534901501306
+        ParentId: 11215737965790632442
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -1152,8 +1105,8 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3\r\n\r\nupdate 1.12\r\n - Added IK Anchors to all gliders! Most noticably, you now hold onto the \"Air\" glider correctly!\r\n\r\nupdate 1.10\r\n - Gliders now broadcast Events and set both clientUserData and serverUserData you can hook other scripts into\r\n - See the Glider Readme for more info :)\r\n - Fixed bug where I accidentally deleted the entire \"Air\" glider. At least I hope that was me and not the Manticore Legal Department.\r\n\r\nupdate 1.6:\r\n - Glide is now an Ability that prevents other abilities so it\'s easier to make sure players don\'t break out of\r\n - Refactored code to be much more reliable at syncing glider state between server and client\r\n - Fixed bug where you would get stuck with your arms in the air if using a weapon with no animation stance set"
+    Description: "Varglbargl\'s back with a pack of fully scripted equippable mini gliders! Just equip a gilder and jump twice to activate! Perfect for open world and exploration in any setting.\r\n\r\nThis pack includes:\r\n\r\n - SIX mini gliders for SciFi, Military, Fantasy and more!\r\n - An optional script for your game to auto-equip gliders to players when they join\r\n - Instructions for how to fully customize your own mini glider\r\n - A scripted wind zone trigger for creating updrafts or gusts of wind you can ride with your glider!\r\n\r\nHit me up on the Core Creator Discord if you have any questions (or find any bugs!) <3\r\n\r\nupdate 1.16\r\n - Refactored to not use any Folders inside the equipment objects.\r\n - Nobody ever told to me that was bad, okay!? Sorry! Jeez!\r\n\r\nupdate 1.12-1.15\r\n - Fixed bug where the Air glider sound effects were not playing\r\n - Added IK Anchors to all gliders! Most noticably, you now hold onto the \"Air\" glider correctly!\r\n\r\nupdate 1.10\r\n - Gliders now broadcast Events and set both clientUserData and serverUserData you can hook other scripts into\r\n - See the Glider Readme for more info :)\r\n - Fixed bug where I accidentally deleted the entire \"Air\" glider. At least I hope that was me and not the Manticore Legal Department.\r\n\r\nupdate 1.6:\r\n - Glide is now an Ability that prevents other abilities so it\'s easier to make sure players don\'t break out of\r\n - Refactored code to be much more reliable at syncing glider state between server and client\r\n - Fixed bug where you would get stuck with your arms in the air if using a weapon with no animation stance set"
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
 }

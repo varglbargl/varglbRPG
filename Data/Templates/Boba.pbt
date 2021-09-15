@@ -16,11 +16,11 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 4138200491960846212
+        ChildIds: 7144783010114032598
         ChildIds: 17355102047440045142
         ChildIds: 8374809149014315701
         ChildIds: 8636615295147007732
-        ChildIds: 4701017361216816225
+        ChildIds: 9455305357484257255
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -35,7 +35,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4138200491960846212
+        Id: 7144783010114032598
         Name: "Lid"
         Transform {
           Location {
@@ -66,8 +66,11 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -75,9 +78,6 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -1.90734863e-06
-            Y: 7.62939453e-06
-            Z: 3.81469727e-06
           }
           Rotation {
             Yaw: -179.999954
@@ -89,7 +89,7 @@ Assets {
             Z: -0.000989532797
           }
         }
-        ParentId: 4138200491960846212
+        ParentId: 7144783010114032598
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -138,9 +138,7 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -2.0980835e-05
-            Y: 7.62939453e-06
-            Z: 0.0989532471
+            Z: 0.0988769531
           }
           Rotation {
           }
@@ -150,7 +148,7 @@ Assets {
             Z: 0.001
           }
         }
-        ParentId: 4138200491960846212
+        ParentId: 7144783010114032598
         UnregisteredParameters {
           Overrides {
             Name: "bp:Corner Rounding"
@@ -206,9 +204,7 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -1.90734863e-05
-            Y: 7.62939453e-06
-            Z: 0.0989532471
+            Z: 0.0988769531
           }
           Rotation {
           }
@@ -218,7 +214,7 @@ Assets {
             Z: 0.001
           }
         }
-        ParentId: 4138200491960846212
+        ParentId: 7144783010114032598
         UnregisteredParameters {
           Overrides {
             Name: "bp:Corner Rounding"
@@ -286,9 +282,7 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -1.90734863e-05
-            Y: 7.62939453e-06
-            Z: 0.0989532471
+            Z: 0.0988769531
           }
           Rotation {
           }
@@ -298,7 +292,7 @@ Assets {
             Z: 0.001
           }
         }
-        ParentId: 4138200491960846212
+        ParentId: 7144783010114032598
         UnregisteredParameters {
           Overrides {
             Name: "bp:Corner Rounding"
@@ -366,9 +360,7 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -1.90734863e-05
-            Y: 7.62939453e-06
-            Z: 0.0989532471
+            Z: 0.0988769531
           }
           Rotation {
           }
@@ -378,7 +370,7 @@ Assets {
             Z: 0.001
           }
         }
-        ParentId: 4138200491960846212
+        ParentId: 7144783010114032598
         UnregisteredParameters {
           Overrides {
             Name: "bp:Corner Rounding"
@@ -625,7 +617,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4701017361216816225
+        Id: 9455305357484257255
         Name: "Fish Eyes"
         Transform {
           Location {
@@ -683,8 +675,11 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -692,9 +687,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -2.6367569
-            Y: -4.49790955
-            Z: 5.23011208
+            X: -2.63671875
+            Y: -4.49804688
+            Z: 5.23022461
           }
           Rotation {
           }
@@ -704,7 +699,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -764,9 +759,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -5.27516556
-            Y: -0.91418457
-            Z: 4.72144127
+            X: -5.27539062
+            Y: -0.9140625
+            Z: 4.72143555
           }
           Rotation {
           }
@@ -776,7 +771,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -836,9 +831,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -2.34750557
-            Y: 5.07260132
-            Z: 4.33267975
+            X: -2.34765625
+            Y: 5.07275391
+            Z: 4.33276367
           }
           Rotation {
           }
@@ -848,7 +843,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -908,9 +903,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 1.60536575
-            Y: 5.48066711
-            Z: 4.72144127
+            X: 1.60546875
+            Y: 5.48046875
+            Z: 4.72143555
           }
           Rotation {
           }
@@ -920,7 +915,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -980,9 +975,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 5.16743851
-            Y: 2.49356079
-            Z: 5.31394
+            X: 5.16796875
+            Y: 2.49365234
+            Z: 5.31396484
           }
           Rotation {
           }
@@ -992,7 +987,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1052,9 +1047,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 4.32452
-            Y: -3.28544617
-            Z: 4.72144127
+            X: 4.32421875
+            Y: -3.28564453
+            Z: 4.72143555
           }
           Rotation {
           }
@@ -1064,7 +1059,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1124,9 +1119,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 0.877594
-            Y: -5.14318085
-            Z: 5.47364235
+            X: 0.876953125
+            Y: -5.14306641
+            Z: 5.47363281
           }
           Rotation {
           }
@@ -1136,7 +1131,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1196,9 +1191,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -0.942457199
-            Y: 2.11590576
-            Z: 4.72144127
+            X: -0.943359375
+            Y: 2.11572266
+            Z: 4.72143555
           }
           Rotation {
           }
@@ -1208,7 +1203,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1268,9 +1263,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 2.68239212
-            Y: -0.0123291016
-            Z: 4.72144127
+            X: 2.68164062
+            Y: -0.0122070312
+            Z: 4.72143555
           }
           Rotation {
           }
@@ -1280,7 +1275,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1340,9 +1335,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -2.19172096
-            Y: -1.33113098
-            Z: 4.72144127
+            X: -2.19140625
+            Y: -1.33105469
+            Z: 4.72143555
           }
           Rotation {
           }
@@ -1352,7 +1347,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1412,9 +1407,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -1.65224266
-            Y: -0.943939209
-            Z: 0.0502033234
+            X: -1.65234375
+            Y: -0.943847656
+            Z: 0.0502929688
           }
           Rotation {
           }
@@ -1424,7 +1419,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1484,9 +1479,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -1.79244041
-            Y: -0.073349
-            Z: 2.32931137
+            X: -1.79296875
+            Y: -0.0732421875
+            Z: 2.3293457
           }
           Rotation {
           }
@@ -1496,7 +1491,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1556,9 +1551,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 1.66466141
-            Y: -0.776161194
-            Z: 2.32931137
+            X: 1.6640625
+            Y: -0.776367188
+            Z: 2.3293457
           }
           Rotation {
           }
@@ -1568,7 +1563,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1628,9 +1623,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -4.06888199
-            Y: 3.58650208
-            Z: 2.60380173
+            X: -4.06835938
+            Y: 3.58642578
+            Z: 2.60375977
           }
           Rotation {
             Yaw: -97.5528564
@@ -1641,7 +1636,7 @@ Assets {
             Z: 0.0249135401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1701,9 +1696,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -0.147203445
-            Y: 5.69596863
-            Z: 2.60380173
+            X: -0.146484375
+            Y: 5.69580078
+            Z: 2.60375977
           }
           Rotation {
             Yaw: -97.5528564
@@ -1714,7 +1709,7 @@ Assets {
             Z: 0.0249135401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1774,9 +1769,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 4.67800617
-            Y: 3.30418396
-            Z: 2.75883865
+            X: 4.67773438
+            Y: 3.30419922
+            Z: 2.75878906
           }
           Rotation {
             Yaw: -97.5528564
@@ -1787,7 +1782,7 @@ Assets {
             Z: 0.0249135401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1847,9 +1842,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 5.17948341
-            Y: -1.8731842
-            Z: 2.60380173
+            X: 5.1796875
+            Y: -1.87304688
+            Z: 2.60375977
           }
           Rotation {
             Yaw: -97.5528564
@@ -1860,7 +1855,7 @@ Assets {
             Z: 0.0249135401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1920,9 +1915,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 1.85159683
-            Y: -4.84313965
-            Z: 2.94525337
+            X: 1.8515625
+            Y: -4.84326172
+            Z: 2.9453125
           }
           Rotation {
             Yaw: -97.5528564
@@ -1933,7 +1928,7 @@ Assets {
             Z: 0.0249135401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1993,9 +1988,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -3.6714325
-            Y: -3.55754852
-            Z: 3.25164413
+            X: -3.671875
+            Y: -3.55761719
+            Z: 3.25170898
           }
           Rotation {
             Yaw: -97.5528564
@@ -2006,7 +2001,7 @@ Assets {
             Z: 0.0249135401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2066,9 +2061,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -5.0880127
-            Y: 0.219200134
-            Z: 2.60380173
+            X: -5.08789062
+            Y: 0.219238281
+            Z: 2.60375977
           }
           Rotation {
             Yaw: -97.5528564
@@ -2079,7 +2074,7 @@ Assets {
             Z: 0.0249135401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2139,8 +2134,8 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -2.27148247
-            Y: -4.2820816
+            X: -2.27148438
+            Y: -4.28222656
           }
           Rotation {
             Yaw: 1.88164449
@@ -2151,7 +2146,7 @@ Assets {
             Z: 0.0236521084
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2211,8 +2206,8 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -4.85736656
-            Y: -0.937599182
+            X: -4.85742188
+            Y: -0.9375
           }
           Rotation {
             Yaw: 1.88164449
@@ -2223,7 +2218,7 @@ Assets {
             Z: 0.0236521084
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2283,8 +2278,8 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -3.36828804
-            Y: 3.95355225
+            X: -3.36914062
+            Y: 3.95361328
           }
           Rotation {
             Yaw: 1.88164449
@@ -2295,7 +2290,7 @@ Assets {
             Z: 0.0236521084
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2355,8 +2350,8 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 1.39571953
-            Y: 5.26902771
+            X: 1.39648438
+            Y: 5.26904297
           }
           Rotation {
             Yaw: 1.88164449
@@ -2367,7 +2362,7 @@ Assets {
             Z: 0.0236521084
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2427,8 +2422,8 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 4.70174026
-            Y: 2.57443237
+            X: 4.70117188
+            Y: 2.57421875
           }
           Rotation {
             Yaw: 1.88164449
@@ -2439,7 +2434,7 @@ Assets {
             Z: 0.0236521084
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2499,8 +2494,8 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 4.2147274
-            Y: -2.86485291
+            X: 4.21484375
+            Y: -2.86474609
           }
           Rotation {
             Yaw: 1.88164449
@@ -2511,7 +2506,7 @@ Assets {
             Z: 0.0236521084
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2571,8 +2566,8 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 1.04067802
-            Y: -4.71250916
+            X: 1.04101562
+            Y: -4.71240234
           }
           Rotation {
             Yaw: 1.88164449
@@ -2583,7 +2578,7 @@ Assets {
             Z: 0.0236521084
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2643,9 +2638,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -1.33728981
-            Y: -4.85408
-            Z: 2.33941841
+            X: -1.33789062
+            Y: -4.85400391
+            Z: 2.33935547
           }
           Rotation {
             Yaw: -97.5528564
@@ -2656,7 +2651,7 @@ Assets {
             Z: 0.0249135401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2716,9 +2711,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -4.87397575
-            Y: 2.25534821
-            Z: 5.86676407
+            X: -4.87304688
+            Y: 2.25537109
+            Z: 5.86669922
           }
           Rotation {
           }
@@ -2728,7 +2723,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2788,9 +2783,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 1.85134125
-            Y: -2.22026825
-            Z: 0.1073246
+            X: 1.8515625
+            Y: -2.22021484
+            Z: 0.107421875
           }
           Rotation {
           }
@@ -2800,7 +2795,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2860,9 +2855,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 2.10483551
-            Y: 1.358284
-            Z: -0.0528297424
+            X: 2.10546875
+            Y: 1.35839844
+            Z: -0.052734375
           }
           Rotation {
           }
@@ -2872,7 +2867,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2932,9 +2927,9 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -0.669599533
-            Y: 2.45591736
-            Z: -0.101953506
+            X: -0.669921875
+            Y: 2.45605469
+            Z: -0.102050781
           }
           Rotation {
           }
@@ -2944,7 +2939,7 @@ Assets {
             Z: 0.0252171401
           }
         }
-        ParentId: 4701017361216816225
+        ParentId: 9455305357484257255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3071,6 +3066,6 @@ Assets {
   Marketplace {
     Description: "A plastic cup of milk tea with boba AKA bubble tea AKA pearl milk tea. I\'m not sure if this is a regional thing or what but this stuff has a lot of names.\r\n\r\nAnyway, ENJOY ~ <3"
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
 }

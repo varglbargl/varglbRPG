@@ -1,19 +1,55 @@
 Assets {
-  Id: 17860513488428189516
-  Name: "Japanese Temple Door Shoji 01"
+  Id: 18228295456459024596
+  Name: "Text 06: /"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_jpn_tem_door_shoji_01_ref"
+    AssetId: "F8_Text_064"
   }
 }
 Assets {
-  Id: 17072601727332030346
-  Name: "Toilet Flush 03 SFX"
-  PlatformAssetType: 7
+  Id: 17696028925126879651
+  Name: "Text 01: I"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_toilet_flush_03_Cue_ref"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_008"
+  }
+}
+Assets {
+  Id: 17654076070235932974
+  Name: "Pipe - Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_004"
+  }
+}
+Assets {
+  Id: 17609149353171719671
+  Name: "Cube - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 17485881147669499682
+  Name: "Cube - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_001"
+  }
+}
+Assets {
+  Id: 17241186771114119414
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
   }
 }
 Assets {
@@ -26,70 +62,115 @@ Assets {
   }
 }
 Assets {
-  Id: 16242655418615905005
-  Name: "Japanese Temple Door Shoji 01 - Wide 01"
+  Id: 16469235602445101834
+  Name: "Whitebox Window Insert - Rounded Top"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_jpn_tem_door_shoji_01_wide_01_ref"
+    AssetId: "sm_ts_gen_whitebox_winInsert_001_roundTop"
   }
 }
 Assets {
-  Id: 16048367406070731799
-  Name: "Plane 1m - One Sided"
+  Id: 16115905030413172164
+  Name: "Metal Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_basic_001"
+  }
+}
+Assets {
+  Id: 16092869253742582086
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
+  }
+}
+Assets {
+  Id: 16080961893477235224
+  Name: "Text 01: J"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_001"
+    AssetId: "F1_Text_009"
   }
 }
 Assets {
-  Id: 15173515393277160389
-  Name: "Racing Flag - Square - Edge"
+  Id: 15376374145827134769
+  Name: "Metal Steel Brushed"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stainless-steel_001_uv"
+  }
+}
+Assets {
+  Id: 14212988502358508072
+  Name: "Metal Basic Steel"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "steel_001"
+  }
+}
+Assets {
+  Id: 13888847231434103656
+  Name: "Text 03: H"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_flags_racing_sqr_001_ref"
+    AssetId: "F5_Text_007"
   }
 }
 Assets {
-  Id: 15112773119979141147
-  Name: "Humanoid 2 Minh Hair"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_hair_basic_002_ref"
-  }
-}
-Assets {
-  Id: 14812604055435115206
-  Name: "Humanoid 2 Kava"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_head_sport_001_ref"
-  }
-}
-Assets {
-  Id: 14735410645000207512
-  Name: "Object On Carpet Floor Slide 02 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_object_on_carpet_floor_slide_02_Cue_ref"
-  }
-}
-Assets {
-  Id: 11452126672691922020
-  Name: "Craftsman Dining Chair"
+  Id: 13282259600726273799
+  Name: "Cylinder"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_chair_dining_001"
+    AssetId: "sm_cylinder_002"
   }
 }
 Assets {
-  Id: 10850769815684373087
+  Id: 12937870305125355679
+  Name: "Arch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_001"
+  }
+}
+Assets {
+  Id: 12827530473249900764
+  Name: "Emissive Glow Opaque"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_opaque_emissive"
+  }
+}
+Assets {
+  Id: 12657791796308583219
+  Name: "Pipe - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_003"
+  }
+}
+Assets {
+  Id: 12625274918948579388
+  Name: "Bottle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_001"
+  }
+}
+Assets {
+  Id: 12152694598132833191
   Name: "Plane 1m - Two Sided"
   PlatformAssetType: 1
   PrimaryAsset {
@@ -98,21 +179,48 @@ Assets {
   }
 }
 Assets {
-  Id: 10793320870014566179
-  Name: "Basic Hologram"
-  PlatformAssetType: 2
+  Id: 12151973210831699112
+  Name: "Bottle 05"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_basic_hologram"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_005"
   }
 }
 Assets {
-  Id: 10122692129510152174
-  Name: "Decal Letters 01"
-  PlatformAssetType: 14
+  Id: 11213679703500291925
+  Name: "Text 01: F"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_letters_001"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_005"
+  }
+}
+Assets {
+  Id: 11165579009940906264
+  Name: "Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_001"
+  }
+}
+Assets {
+  Id: 10766975867019021707
+  Name: "Glass 01 (no distortion)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_001"
+  }
+}
+Assets {
+  Id: 9295663288063328394
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
   }
 }
 Assets {
@@ -125,92 +233,173 @@ Assets {
   }
 }
 Assets {
-  Id: 7486717179277049740
-  Name: "Humanoid 2 Rig"
-  PlatformAssetType: 25
-  PrimaryAsset {
-    AssetType: "SkeletonAssetRef"
-    AssetId: "npc_guy_wireframe_001_ref"
-  }
-}
-Assets {
-  Id: 6769354086483016627
-  Name: "Decal Graffiti Bubbles 01 (Variants)"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_urb_graffiti_bubbles_001"
-  }
-}
-Assets {
-  Id: 6301642118606503856
-  Name: "Whitebox Door 01"
+  Id: 7620464723632483463
+  Name: "Bottle 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_door_001"
+    AssetId: "sm_prop_fantasy_bottle_002"
   }
 }
 Assets {
-  Id: 5906076877227777947
-  Name: "Military Sandbag 02"
+  Id: 6157711858907400962
+  Name: "Modern Weapon Accessory - Shell Clip"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_mil_sandbag_002"
+    AssetId: "sm_weap_modern_acc_shellclip_001"
   }
 }
 Assets {
-  Id: 5727167564609836815
-  Name: "Humanoid 2 Peasant Pants"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_lower_fantasy_000_ref"
-  }
-}
-Assets {
-  Id: 4575689650196664600
-  Name: "Humanoid 2 Leather Jacket"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_upper_casual_004_ref"
-  }
-}
-Assets {
-  Id: 4200222473405800564
-  Name: "Racing Flag - Banner Vertical 01"
+  Id: 5829251124796146812
+  Name: "Bottle 04"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_flags_racing_banner_ds_003_ref"
+    AssetId: "sm_prop_fantasy_bottle_004"
   }
 }
 Assets {
-  Id: 4111290751645925647
-  Name: "Vehicle Checker Decals 002"
-  PlatformAssetType: 14
+  Id: 5768666289788807117
+  Name: "Gear - generic large five-spoked"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_urb_veh_checkers_002"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_gear_001_spoke5x"
   }
 }
 Assets {
-  Id: 836990409274958597
-  Name: "Magic Water Protection Aura Spell Cast 01 SFX"
+  Id: 5439646266583319854
+  Name: "Frosted Glass No Distortion"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass_nodistortion"
+  }
+}
+Assets {
+  Id: 5316566844806949417
+  Name: "Container - Rectangle Thin 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_rectangle_thin_ref"
+  }
+}
+Assets {
+  Id: 5085647377708815828
+  Name: "Cube - Arched"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_arched_001"
+  }
+}
+Assets {
+  Id: 5051730193900457259
+  Name: "Sci-fi Gear Small 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sf_gen_gear_small_02"
+  }
+}
+Assets {
+  Id: 4709690006431586345
+  Name: "Pipe - Half Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half-pipe_003"
+  }
+}
+Assets {
+  Id: 3124463971949195498
+  Name: "Meta Retro Pickup 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
-    AssetId: "sfx_magic_water_protection_aura_spell_cast_01_Cue_ref"
+    AssetId: "sfx_meta_retro_pickup_01_Cue_ref"
   }
 }
 Assets {
-  Id: 467067525109198318
-  Name: "Decal Ivy Big"
-  PlatformAssetType: 14
+  Id: 2998387454308050767
+  Name: "Text 03: Q"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_ivy_001"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_016"
+  }
+}
+Assets {
+  Id: 2848437966608494040
+  Name: "Modern Weapon Ammo - Shell 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_ammo_shell_001"
+  }
+}
+Assets {
+  Id: 2036163675748106790
+  Name: "Frosted Glass No Distortion"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass_nodistortion"
+  }
+}
+Assets {
+  Id: 1952643684241081677
+  Name: "Bottle 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_003"
+  }
+}
+Assets {
+  Id: 1915461248412394696
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 1794493300960258535
+  Name: "Wedge - Convex"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_curved_convex_001"
+  }
+}
+Assets {
+  Id: 611830093716030491
+  Name: "Bottle 06"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_006"
+  }
+}
+Assets {
+  Id: 597771666959624037
+  Name: "Text 01: U"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_020"
+  }
+}
+Assets {
+  Id: 132672053610873933
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
   }
 }

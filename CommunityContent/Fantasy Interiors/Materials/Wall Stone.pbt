@@ -2,7 +2,7 @@ Assets {
   Id: 3281864976550643624
   Name: "Wall Stone"
   PlatformAssetType: 13
-  SerializationVersion: 94
+  SerializationVersion: 98
   CustomMaterialAsset {
     BaseMaterialId: 7285497288544324655
     ParameterOverrides {

@@ -17,7 +17,7 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 6064134349591582131
-        ChildIds: 8577820756639064319
+        ChildIds: 6472619226057287151
         ChildIds: 10142844318321747471
         ChildIds: 11077923578378136977
         ChildIds: 10044837819708840309
@@ -117,34 +117,27 @@ Assets {
         }
       }
       Objects {
-        Id: 8577820756639064319
+        Id: 6472619226057287151
         Name: "Bow"
         Transform {
           Location {
-            X: 4.28150797
-            Y: -0.118215322
-            Z: 25.8547363
           }
           Rotation {
-            Yaw: -94.6967773
-            Roll: -38.0166626
           }
           Scale {
-            X: 0.322632283
-            Y: 0.322632283
-            Z: 0.322632283
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 5769361334134386234
-        ChildIds: 4121198124235288642
-        ChildIds: 14984917594653059059
-        ChildIds: 2241648174806687041
-        ChildIds: 6152601048066477600
-        ChildIds: 1684885138750330601
-        ChildIds: 11757814474565944880
-        ChildIds: 10259313205885251310
-        ChildIds: 15013668972529376518
-        ChildIds: 5010540983897320547
+        ChildIds: 1644256290982134158
+        ChildIds: 9014160198345467333
+        ChildIds: 4929276474350658638
+        ChildIds: 12201914668745011379
+        ChildIds: 2083859039774360729
+        ChildIds: 11670790990287581555
+        ChildIds: 8625440042434654041
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -153,32 +146,35 @@ Assets {
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
-        Id: 4121198124235288642
+        Id: 1644256290982134158
         Name: "Text 05: O"
         Transform {
           Location {
-            X: -15.594841
-            Y: 9.57416153
-            Z: 1.95219421
+            X: 7.15527344
+            Y: 0.899414062
+            Z: 25.2128906
           }
           Rotation {
-            Pitch: -6.00631714
-            Yaw: -105.478821
-            Roll: -58.7259827
+            Pitch: 57.6964493
+            Yaw: 175.303207
+            Roll: 4.11386245e-05
           }
           Scale {
-            X: 0.0291227195
-            Y: 0.381457895
-            Z: -0.124159902
+            X: 0.0473951735
+            Y: 0.0991170779
+            Z: -0.00712553831
           }
         }
-        ParentId: 8577820756639064319
+        ParentId: 6472619226057287151
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -254,26 +250,26 @@ Assets {
         }
       }
       Objects {
-        Id: 14984917594653059059
-        Name: "Text 05: O"
+        Id: 9014160198345467333
+        Name: "Basic Pepper 02"
         Transform {
           Location {
-            X: -3.98082089
-            Y: 5.98827362
-            Z: -7.52387619
+            X: 4.79256821
+            Y: 2.70600653
+            Z: 27.6509743
           }
           Rotation {
-            Pitch: 84.2869
-            Yaw: 90.0000687
-            Roll: -179.999863
+            Pitch: -45.6856384
+            Yaw: 155.420868
+            Roll: -46.3078308
           }
           Scale {
-            X: 0.146901518
-            Y: 0.307213753
-            Z: -0.0220856331
+            X: 0.0117242839
+            Y: 0.0441226214
+            Z: 0.0489324257
           }
         }
-        ParentId: 8577820756639064319
+        ParentId: 6472619226057287151
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -320,6 +316,21 @@ Assets {
               A: 1
             }
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6298880568795808979
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.897
+              G: 0.224249944
+              B: 0.482137412
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -332,7 +343,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14062880625879406391
+            Id: 15624676060717398659
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -349,26 +360,26 @@ Assets {
         }
       }
       Objects {
-        Id: 2241648174806687041
-        Name: "Text 05: O"
+        Id: 4929276474350658638
+        Name: "Basic Pepper 02"
         Transform {
           Location {
-            X: 15.1773939
-            Y: 9.57416153
-            Z: 1.95219421
+            X: 6.73144531
+            Y: 2.48730469
+            Z: 25.8193359
           }
           Rotation {
-            Pitch: 6.00628376
-            Yaw: 105.478851
-            Roll: -58.7259216
+            Pitch: -43.6507263
+            Yaw: 155.475327
+            Roll: 74.1081619
           }
           Scale {
-            X: -0.0291227195
-            Y: 0.381457895
-            Z: -0.124159902
+            X: 0.00742251053
+            Y: 0.0315762497
+            Z: -0.0371373259
           }
         }
-        ParentId: 8577820756639064319
+        ParentId: 6472619226057287151
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -415,94 +426,14 @@ Assets {
               A: 1
             }
           }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14062880625879406391
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 6152601048066477600
-        Name: "Text 05: O"
-        Transform {
-          Location {
-            X: 15.3244371
-            Y: 9.57416153
-            Z: -6.16976166
-          }
-          Rotation {
-            Pitch: -2.57617188
-            Yaw: 105.407845
-            Roll: 59.6758804
-          }
-          Scale {
-            X: -0.0184372645
-            Y: 0.27298969
-            Z: 0.0942313
-          }
-        }
-        ParentId: 8577820756639064319
-        UnregisteredParameters {
           Overrides {
-            Name: "ma:Font.Bevel:id"
+            Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 6298880568795808979
             }
           }
           Overrides {
-            Name: "ma:Font.Faces:id"
-            AssetReference {
-              Id: 6298880568795808979
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Sides:id"
-            AssetReference {
-              Id: 6298880568795808979
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Faces:color"
-            Color {
-              R: 0.897
-              G: 0.224249944
-              B: 0.482137412
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Sides:color"
-            Color {
-              R: 0.897
-              G: 0.224249944
-              B: 0.482137412
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Bevel:color"
+            Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 0.897
               G: 0.224249944
@@ -522,7 +453,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14062880625879406391
+            Id: 15624676060717398659
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -539,119 +470,25 @@ Assets {
         }
       }
       Objects {
-        Id: 1684885138750330601
-        Name: "Text 05: O"
-        Transform {
-          Location {
-            X: -15.4465418
-            Y: 9.57416534
-            Z: -6.16976929
-          }
-          Rotation {
-            Pitch: 2.57620382
-            Yaw: -105.407776
-            Roll: 59.6759415
-          }
-          Scale {
-            X: 0.0184372645
-            Y: 0.27298969
-            Z: 0.0942313
-          }
-        }
-        ParentId: 8577820756639064319
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Font.Bevel:id"
-            AssetReference {
-              Id: 6298880568795808979
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Faces:id"
-            AssetReference {
-              Id: 6298880568795808979
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Sides:id"
-            AssetReference {
-              Id: 6298880568795808979
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Faces:color"
-            Color {
-              R: 0.897
-              G: 0.224249944
-              B: 0.482137412
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Sides:color"
-            Color {
-              R: 0.897
-              G: 0.224249944
-              B: 0.482137412
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Bevel:color"
-            Color {
-              R: 0.897
-              G: 0.224249944
-              B: 0.482137412
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14062880625879406391
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 11757814474565944880
+        Id: 12201914668745011379
         Name: "Star - Rounded"
         Transform {
           Location {
-            X: 1.31130219e-06
-            Y: 7.67676926
-            Z: -1.14440918e-05
+            X: 6.00001287
+            Y: -0.277835131
+            Z: 27.4575462
           }
           Rotation {
-            Roll: -3.05175781e-05
+            Yaw: -94.6967773
+            Roll: -38.0166321
           }
           Scale {
-            X: 0.18783541
-            Y: 0.0854287446
-            Z: 0.187835291
+            X: 0.0606017672
+            Y: 0.0275620706
+            Z: 0.0606017299
           }
         }
-        ParentId: 8577820756639064319
+        ParentId: 6472619226057287151
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -701,25 +538,25 @@ Assets {
         }
       }
       Objects {
-        Id: 10259313205885251310
+        Id: 2083859039774360729
         Name: "Gem - Round Polished"
         Transform {
           Location {
-            X: 1.57952309e-06
-            Y: 9.25269318
-            Z: -7.62939453e-06
+            X: 6.39938545
+            Y: -0.310677409
+            Z: 27.7708302
           }
           Rotation {
-            Yaw: 2.30296815e-12
-            Roll: 89.9999313
+            Yaw: -94.6967468
+            Roll: 51.9833
           }
           Scale {
-            X: 0.0663904324
-            Y: 0.0663904399
-            Z: 0.0748953298
+            X: 0.0214196965
+            Y: 0.0214196984
+            Z: 0.0241636503
           }
         }
-        ParentId: 8577820756639064319
+        ParentId: 6472619226057287151
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -768,26 +605,26 @@ Assets {
         }
       }
       Objects {
-        Id: 15013668972529376518
-        Name: "Heart - Polished"
+        Id: 11670790990287581555
+        Name: "Basic Pepper 02"
         Transform {
           Location {
-            X: -10.2148552
-            Y: 7.20983887
-            Z: -1.62240219
+            X: 4.77539062
+            Y: -3.49609375
+            Z: 27.7290039
           }
           Rotation {
-            Pitch: 85.0595627
-            Yaw: -167.581741
-            Roll: -153.36705
+            Pitch: -45.6856384
+            Yaw: -155.420837
+            Roll: 46.3077393
           }
           Scale {
-            X: 0.11612577
-            Y: 0.0305649601
-            Z: 0.134024546
+            X: 0.0117242839
+            Y: -0.0441226214
+            Z: 0.0489324257
           }
         }
-        ParentId: 8577820756639064319
+        ParentId: 6472619226057287151
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -810,27 +647,27 @@ Assets {
           Overrides {
             Name: "ma:Font.Faces:color"
             Color {
-              R: 0.812000036
-              G: 0.102000006
-              B: 0.3
+              R: 0.897
+              G: 0.224249944
+              B: 0.482137412
               A: 1
             }
           }
           Overrides {
             Name: "ma:Font.Sides:color"
             Color {
-              R: 0.812000036
-              G: 0.102000006
-              B: 0.3
+              R: 0.897
+              G: 0.224249944
+              B: 0.482137412
               A: 1
             }
           }
           Overrides {
             Name: "ma:Font.Bevel:color"
             Color {
-              R: 0.812000036
-              G: 0.102000006
-              B: 0.3
+              R: 0.897
+              G: 0.224249944
+              B: 0.482137412
               A: 1
             }
           }
@@ -861,7 +698,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 11079179292347378394
+            Id: 15624676060717398659
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -878,26 +715,26 @@ Assets {
         }
       }
       Objects {
-        Id: 5010540983897320547
-        Name: "Heart - Polished"
+        Id: 8625440042434654041
+        Name: "Basic Pepper 02"
         Transform {
           Location {
-            X: 9.98015881
-            Y: 7.20982742
-            Z: -1.62170792
+            X: 6.72265625
+            Y: -3.24707031
+            Z: 25.8959961
           }
           Rotation {
-            Pitch: -85.059845
-            Yaw: 167.581665
-            Roll: -153.367203
+            Pitch: -43.6506348
+            Yaw: -155.475311
+            Roll: -74.1080933
           }
           Scale {
-            X: -0.11612577
-            Y: 0.0305649601
-            Z: 0.13402456
+            X: 0.00742251053
+            Y: -0.0315762497
+            Z: -0.0371373259
           }
         }
-        ParentId: 8577820756639064319
+        ParentId: 6472619226057287151
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -920,27 +757,27 @@ Assets {
           Overrides {
             Name: "ma:Font.Faces:color"
             Color {
-              R: 0.812000036
-              G: 0.102000006
-              B: 0.3
+              R: 0.897
+              G: 0.224249944
+              B: 0.482137412
               A: 1
             }
           }
           Overrides {
             Name: "ma:Font.Sides:color"
             Color {
-              R: 0.812000036
-              G: 0.102000006
-              B: 0.3
+              R: 0.897
+              G: 0.224249944
+              B: 0.482137412
               A: 1
             }
           }
           Overrides {
             Name: "ma:Font.Bevel:color"
             Color {
-              R: 0.812000036
-              G: 0.102000006
-              B: 0.3
+              R: 0.897
+              G: 0.224249944
+              B: 0.482137412
               A: 1
             }
           }
@@ -971,7 +808,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 11079179292347378394
+            Id: 15624676060717398659
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1418,6 +1255,15 @@ Assets {
       }
     }
     Assets {
+      Id: 15624676060717398659
+      Name: "Basic Pepper 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prim_org_pepper_002_ref"
+      }
+    }
+    Assets {
       Id: 11079179292347378394
       Name: "Heart - Polished"
       PlatformAssetType: 1
@@ -1467,7 +1313,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

@@ -1,8 +1,5 @@
 local GRAB_TRIGGER = script:GetCustomProperty("GrabTrigger"):WaitForObject()
-local IK_ANCHORS = script:GetCustomProperty("IKAnchors"):WaitForObject()
-local LEFT_HAND_ANCHOR = script:GetCustomProperty("LeftHandAnchor"):WaitForObject()
-local RIGHT_HAND_ANCHOR = script:GetCustomProperty("RightHandAnchor"):WaitForObject()
-local PELVIS_ANCHOR = script:GetCustomProperty("PelvisAnchor"):WaitForObject()
+local IK_ANCHORS = script:GetCustomProperty("IKAnchors")
 
 local ledgeHeight = GRAB_TRIGGER:GetWorldPosition().z
 
@@ -15,29 +12,37 @@ function grabLedge(player)
     end
   end
 
-  IK_ANCHORS:SetWorldPosition(player:GetWorldPosition())
-  IK_ANCHORS:SetPosition(Vector3.New(IK_ANCHORS:GetPosition().x, 0, 0))
+  local ikAnchors = World.SpawnAsset(IK_ANCHORS, {parent = script.parent})
 
-  LEFT_HAND_ANCHOR:Activate(player)
-  RIGHT_HAND_ANCHOR:Activate(player)
-  PELVIS_ANCHOR:Activate(player)
+  ikAnchors:SetWorldPosition(player:GetWorldPosition())
+  ikAnchors:SetPosition(Vector3.New(ikAnchors:GetPosition().x, 0, 0))
 
-  local jumpEvent = nil
+  local leftHand = ikAnchors:FindDescendantByName("Left Hand")
+  local rightHand = ikAnchors:FindDescendantByName("Right Hand")
+  local pelvis = ikAnchors:FindDescendantByName("Pelvis")
 
-  jumpEvent = player.bindingPressedEvent:Connect(function(thisPlayer, keyCode)
-    if keyCode == "ability_extra_17" then
-      LEFT_HAND_ANCHOR:Deactivate()
-      RIGHT_HAND_ANCHOR:Deactivate()
-      PELVIS_ANCHOR:Deactivate()
+  leftHand:Activate(player)
+  rightHand:Activate(player)
+  pelvis:Activate(player)
 
-      jumpEvent:Disconnect()
-    end
-  end)
+  while player:GetVelocity().size > 0 do
+    Task.Wait()
+  end
+
+  while player:GetVelocity().size == 0 do
+    Task.Wait()
+  end
+
+  leftHand:Deactivate()
+  rightHand:Deactivate()
+  pelvis:Deactivate()
+
+  ikAnchors:Destroy()
 end
 
 function onBeginOverlap(thisTrigger, other)
 	if other:IsA("Player") then
-    while Object.IsValid(other) and (other.isGrounded or other:GetWorldPosition().z > ledgeHeight - 50) do
+    while Object.IsValid(other) and (other.isGrounded or other:GetWorldPosition().z > ledgeHeight - 50) or other:GetVelocity().z > 0 do
       Task.Wait()
       if not thisTrigger:IsOverlapping(other) then return end
     end

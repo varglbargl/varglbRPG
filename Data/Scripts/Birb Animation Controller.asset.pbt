@@ -15,8 +15,21 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:ChirpVolume"
-        Float: 0.5
+        Name: "cs:TemplateRoot"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:TemplateRoot:tooltip"
+        String: "This just points to the root of the Birb so it knows where to find the checkbox properties for toggling animations on and off."
+      }
+      Overrides {
+        Name: "cs:AnimationFrequency:tooltip"
+        String: "How long the Birb waits between animations, in seconds. The actual wait time will be randomized by plus or minus half this attribute so the birbs don\'t all sync up unnaturally. For example, if the AnimationFrequency is 2, the Burb will wait anywhere from 1-3 seconds between animations."
+      }
+      Overrides {
+        Name: "cs:ChirpSound:tooltip"
+        String: "The sound the Birb makes when playing the Chirp animation,"
       }
     }
     Assets {
@@ -29,5 +42,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
 }

@@ -3,7 +3,7 @@
 --   | |_) || | | |__) | |_) |
 --   |  _ < | | |  _  /|  _ <
 --   | |_) || |_| | \ \| |_) |
---   |____/_____|_|  \_\____/  v.1
+--   |____/_____|_|  \_\____/  v.2
 
 --         by Vanessa A.
 --  varglbargl#6023 on Discord
@@ -26,7 +26,7 @@
 -- Chirp animation (ANY audio object will work) and AnimationFrequency
 -- for changing roughly how often one of the 4 animations will play.
 
--- This Birb can easily be edited into many other types of bird by
+-- This Birb can be edited into many other types of bird by
 -- just editing the colors and the chirp sound. Core has loads of
 -- different bird sounds build in so play around a little!
 

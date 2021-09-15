@@ -15,11 +15,6 @@ Assets {
         Int: 0
       }
       Overrides {
-        Name: "cs:PickupTrigger"
-        ObjectReference {
-        }
-      }
-      Overrides {
         Name: "cs:DroppedLoot:isrep"
         Bool: true
       }
@@ -29,5 +24,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
 }

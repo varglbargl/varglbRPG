@@ -48,9 +48,9 @@ Assets {
           }
         }
         ParentId: 9623587659784779608
-        ChildIds: 12096188353352160423
-        ChildIds: 9611982929411101592
-        ChildIds: 16162880306433202420
+        ChildIds: 2349917543341245329
+        ChildIds: 7528590755286220874
+        ChildIds: 225136681164521194
         ChildIds: 9518688187207697856
         ChildIds: 11164349795331953114
         ChildIds: 16732501258627837817
@@ -90,13 +90,13 @@ Assets {
         }
       }
       Objects {
-        Id: 12096188353352160423
+        Id: 2349917543341245329
         Name: "Foam Sword"
         Transform {
           Location {
             X: 82.8691406
             Y: -19.3908691
-            Z: 149.301025
+            Z: 149.300781
           }
           Rotation {
             Pitch: -29.5382042
@@ -125,7 +125,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -133,8 +133,8 @@ Assets {
         Name: "Katana Guard"
         Transform {
           Location {
-            X: 0.000731706619
-            Z: 8.69856548
+            X: 0.000611305237
+            Z: 8.69877815
           }
           Rotation {
           }
@@ -144,7 +144,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12096188353352160423
+        ParentId: 2349917543341245329
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -220,7 +220,7 @@ Assets {
             Z: 0.189251482
           }
         }
-        ParentId: 12096188353352160423
+        ParentId: 2349917543341245329
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -284,8 +284,8 @@ Assets {
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            X: -8.83936882e-05
-            Z: 8.80697727
+            X: 3.17692757e-05
+            Z: 8.80676556
           }
           Rotation {
           }
@@ -295,7 +295,7 @@ Assets {
             Z: 0.626738369
           }
         }
-        ParentId: 12096188353352160423
+        ParentId: 2349917543341245329
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -360,7 +360,7 @@ Assets {
             Z: -12.3219166
           }
           Rotation {
-            Roll: 89.9999771
+            Roll: 89.9999619
           }
           Scale {
             X: 0.103893422
@@ -368,7 +368,7 @@ Assets {
             Z: 0.0532417335
           }
         }
-        ParentId: 12096188353352160423
+        ParentId: 2349917543341245329
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -429,7 +429,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9611982929411101592
+        Id: 7528590755286220874
         Name: "Foam Shield"
         Transform {
           Location {
@@ -439,8 +439,8 @@ Assets {
           }
           Rotation {
             Pitch: 24.2111
-            Yaw: -33.3400955
-            Roll: 29.7725296
+            Yaw: -33.3401146
+            Roll: 29.7725372
           }
           Scale {
             X: 1
@@ -466,7 +466,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -474,14 +474,14 @@ Assets {
         Name: "Shield 01"
         Transform {
           Location {
-            X: -7.17422867
-            Y: -11.7434549
-            Z: -1.99994826
+            X: -7.17422199
+            Y: -11.7434568
+            Z: -1.99995542
           }
           Rotation {
-            Pitch: -1.00845683
-            Yaw: -162.792145
-            Roll: 9.52154827
+            Pitch: -1.00846374
+            Yaw: -162.792114
+            Roll: 9.52157402
           }
           Scale {
             X: 0.577993095
@@ -489,7 +489,7 @@ Assets {
             Z: 0.577993095
           }
         }
-        ParentId: 9611982929411101592
+        ParentId: 7528590755286220874
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -607,14 +607,14 @@ Assets {
         Name: "Heart"
         Transform {
           Location {
-            X: -6.02993298
-            Y: -14.5900726
-            Z: -12.2831926
+            X: -6.02992153
+            Y: -14.5900688
+            Z: -12.2832012
           }
           Rotation {
-            Pitch: -1.00844324
-            Yaw: -162.792145
-            Roll: 12.9505348
+            Pitch: -1.00845
+            Yaw: -162.792114
+            Roll: 12.9505672
           }
           Scale {
             X: 0.143779576
@@ -622,7 +622,7 @@ Assets {
             Z: 0.143734455
           }
         }
-        ParentId: 9611982929411101592
+        ParentId: 7528590755286220874
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -687,14 +687,14 @@ Assets {
         Name: "Heart"
         Transform {
           Location {
-            X: 2.48609924
-            Y: -14.0266905
-            Z: 2.95237255
+            X: 2.48620558
+            Y: -14.0268
+            Z: 2.95256042
           }
           Rotation {
-            Pitch: -2.40270329
-            Yaw: -151.993393
-            Roll: 2.62735868
+            Pitch: -2.40271688
+            Yaw: -151.993378
+            Roll: 2.62737322
           }
           Scale {
             X: 0.143779576
@@ -702,7 +702,7 @@ Assets {
             Z: 0.143734455
           }
         }
-        ParentId: 9611982929411101592
+        ParentId: 7528590755286220874
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -767,14 +767,14 @@ Assets {
         Name: "Heart"
         Transform {
           Location {
-            X: -13.8228474
-            Y: -19.1696148
-            Z: 2.67393398
+            X: -13.8227367
+            Y: -19.169735
+            Z: 2.67411423
           }
           Rotation {
-            Pitch: 0.571584344
-            Yaw: -172.906342
-            Roll: 1.76945448
+            Pitch: 0.571570694
+            Yaw: -172.906296
+            Roll: 1.76946974
           }
           Scale {
             X: 0.143779576
@@ -782,7 +782,7 @@ Assets {
             Z: 0.143734455
           }
         }
-        ParentId: 9611982929411101592
+        ParentId: 7528590755286220874
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -843,17 +843,18 @@ Assets {
         }
       }
       Objects {
-        Id: 16162880306433202420
+        Id: 225136681164521194
         Name: "Throwing Axe"
         Transform {
           Location {
             X: 16.5664062
             Y: -52.1948242
-            Z: 121.957275
+            Z: 121.957031
           }
           Rotation {
-            Pitch: -34.6516914
-            Yaw: 106.738571
+            Pitch: -34.6516838
+            Yaw: 106.738594
+            Roll: -2.07573294e-06
           }
           Scale {
             X: 0.914265573
@@ -879,7 +880,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -887,14 +888,14 @@ Assets {
         Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            X: -0.999630034
-            Y: -0.79948777
-            Z: -11.5550928
+            X: -0.999632597
+            Y: -0.799484134
+            Z: -11.5550919
           }
           Rotation {
-            Pitch: -1.36603776e-05
-            Yaw: -6.83018879e-06
-            Roll: -5.1226416e-06
+            Pitch: -2.04905664e-05
+            Yaw: -2.73207515e-05
+            Roll: -1.3660373e-05
           }
           Scale {
             X: 1.13608205
@@ -902,7 +903,7 @@ Assets {
             Z: 0.656786084
           }
         }
-        ParentId: 16162880306433202420
+        ParentId: 225136681164521194
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -995,12 +996,12 @@ Assets {
         Transform {
           Location {
             X: 14.2275391
-            Y: -0.80078125
-            Z: 31.1591797
+            Y: -0.801757812
+            Z: 31.1586914
           }
           Rotation {
             Pitch: -2.04905664e-05
-            Yaw: -1.60269985e-06
+            Yaw: -1.9586636e-05
             Roll: -89.9999924
           }
           Scale {
@@ -1009,7 +1010,7 @@ Assets {
             Z: 0.0242361017
           }
         }
-        ParentId: 16162880306433202420
+        ParentId: 225136681164521194
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -1101,13 +1102,13 @@ Assets {
         Name: "Ring - Quarter Beveled Thick"
         Transform {
           Location {
-            X: 3.14804697
-            Y: -0.799180567
-            Z: 35.2897034
+            X: 3.14805222
+            Y: -0.799188912
+            Z: 35.2897
           }
           Rotation {
-            Pitch: 82.2276611
-            Yaw: -179.999924
+            Pitch: 82.2275314
+            Yaw: -179.999786
             Roll: 89.9999695
           }
           Scale {
@@ -1116,7 +1117,7 @@ Assets {
             Z: 0.145374358
           }
         }
-        ParentId: 16162880306433202420
+        ParentId: 225136681164521194
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -1208,14 +1209,14 @@ Assets {
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: -5.03027344
-            Y: -0.80078125
+            X: -5.0300293
+            Y: -0.802734375
             Z: 31.1591797
           }
           Rotation {
             Pitch: -2.73207552e-05
-            Yaw: -1.21311059e-05
-            Roll: -89.9999924
+            Yaw: -2.06210498e-05
+            Roll: -90.0000076
           }
           Scale {
             X: -0.0773245469
@@ -1223,7 +1224,7 @@ Assets {
             Z: 0.0325425975
           }
         }
-        ParentId: 16162880306433202420
+        ParentId: 225136681164521194
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -2148,7 +2149,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 1356658022350146753
+              Id: 3137726081452165342
             }
           }
           Overrides {
@@ -2162,7 +2163,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              G: 2
+              R: 0.0625
+              G: 0.25
+              B: 0.0625
               A: 1
             }
           }
@@ -2221,7 +2224,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 1356658022350146753
+              Id: 3137726081452165342
             }
           }
           Overrides {
@@ -2235,7 +2238,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              G: 2
+              R: 0.0625
+              G: 0.25
+              B: 0.0625
               A: 1
             }
           }
@@ -2294,7 +2299,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 1356658022350146753
+              Id: 3137726081452165342
             }
           }
           Overrides {
@@ -2308,7 +2313,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              G: 2
+              R: 0.0625
+              G: 0.25
+              B: 0.0625
               A: 1
             }
           }
@@ -2367,7 +2374,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 1356658022350146753
+              Id: 3137726081452165342
             }
           }
           Overrides {
@@ -2381,7 +2388,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              G: 2
+              R: 0.0625
+              G: 0.25
+              B: 0.0625
               A: 1
             }
           }
@@ -3015,12 +3024,12 @@ Assets {
       }
     }
     Assets {
-      Id: 1356658022350146753
-      Name: "Bark Pine 01"
+      Id: 3137726081452165342
+      Name: "Bark Birch 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_bark_pine_001_uv"
+        AssetId: "mi_bark_birch_001_uv"
       }
     }
     Assets {
@@ -3039,6 +3048,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_pyramid_sixsided_001"
+      }
+    }
+    Assets {
+      Id: 1356658022350146753
+      Name: "Bark Pine 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_bark_pine_001_uv"
       }
     }
     Assets {
@@ -3064,7 +3082,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

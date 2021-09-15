@@ -5,6 +5,7 @@ local Shields = require(script:GetCustomProperty("Shields"))
 local Potions = require(script:GetCustomProperty("Potions"))
 
 local LOOT_DROP = script:GetCustomProperty("LootDrop")
+local GOLD_DROP = script:GetCustomProperty("GoldDrop")
 
 local Loot = {}
 
@@ -319,7 +320,7 @@ function Loot.dropGold(position, amount)
     droppedGold.lifeSpan = 30
   end
 
-  droppedGold.serverUserData["DroppedGold"] = amount
+  droppedGold.serverUserData["GoldAmount"] = amount
 end
 
 function Loot.dropRandomGold(position, level)

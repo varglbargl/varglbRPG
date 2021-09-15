@@ -85,7 +85,7 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 11
+            X: 10
             Y: 1
             Z: 1
           }
@@ -129,7 +129,8 @@ Assets {
         }
         ParentId: 8393069750000026357
         ChildIds: 14548779269929813858
-        ChildIds: 1743635573264805150
+        ChildIds: 17410390303657842262
+        ChildIds: 12131062517113563767
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -162,36 +163,6 @@ Assets {
         ParentId: 14137865469516802192
         UnregisteredParameters {
           Overrides {
-            Name: "cs:LeftHandAnchor"
-            ObjectReference {
-              SubObjectId: 9347979961547691324
-            }
-          }
-          Overrides {
-            Name: "cs:RightHandAnchor"
-            ObjectReference {
-              SubObjectId: 7314662844061177262
-            }
-          }
-          Overrides {
-            Name: "cs:PelvisAnchor"
-            ObjectReference {
-              SubObjectId: 17419625156438218800
-            }
-          }
-          Overrides {
-            Name: "cs:GrabSFX"
-            AssetReference {
-              Id: 2505141407731989446
-            }
-          }
-          Overrides {
-            Name: "cs:IKAnchors"
-            ObjectReference {
-              SubObjectId: 1743635573264805150
-            }
-          }
-          Overrides {
             Name: "cs:GrabTrigger"
             ObjectReference {
               SubObjectId: 1743055794411788479
@@ -217,12 +188,15 @@ Assets {
         }
       }
       Objects {
-        Id: 1743635573264805150
-        Name: "IK Anchors"
+        Id: 17410390303657842262
+        Name: "IK Anchor"
         Transform {
           Location {
+            X: 25
+            Z: -10
           }
           Rotation {
+            Pitch: 90
           }
           Scale {
             X: 1
@@ -231,47 +205,6 @@ Assets {
           }
         }
         ParentId: 14137865469516802192
-        ChildIds: 9347979961547691324
-        ChildIds: 7314662844061177262
-        ChildIds: 17419625156438218800
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-          FilePartitionName: "IK Anchors"
-        }
-      }
-      Objects {
-        Id: 9347979961547691324
-        Name: "Left Hand Anchor"
-        Transform {
-          Location {
-            X: 24.9997444
-            Y: 0.000345230103
-            Z: -9
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -3.05175781e-05
-            Roll: -6.10351562e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1743635573264805150
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -286,30 +219,24 @@ Assets {
         }
         IKAnchor {
           AimOffset {
-            X: -20
-            Y: -5
-            Z: -5
           }
           IKAnchorType {
             Value: "mc:eikanchortype:lefthand"
           }
           BlendWeight: 1
-          BlendInTime: 0.1
-          BlendOutTime: 1
         }
       }
       Objects {
-        Id: 7314662844061177262
-        Name: "Right Hand Anchor"
+        Id: 12131062517113563767
+        Name: "IK Anchor"
         Transform {
           Location {
-            X: -25.0000916
-            Z: -9
+            X: -25
+            Z: -10
           }
           Rotation {
             Pitch: 90
-            Yaw: 2.27672967e-06
-            Roll: -179.999985
+            Roll: 180
           }
           Scale {
             X: 1
@@ -317,7 +244,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1743635573264805150
+        ParentId: 14137865469516802192
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -332,68 +259,12 @@ Assets {
         }
         IKAnchor {
           AimOffset {
-            X: -20
-            Y: 5
-            Z: -5
           }
           IKAnchorType {
             Value: "mc:eikanchortype:righthand"
           }
           BlendWeight: 1
-          BlendInTime: 0.1
-          BlendOutTime: 1
         }
-      }
-      Objects {
-        Id: 17419625156438218800
-        Name: "Pelvis Anchor"
-        Transform {
-          Location {
-            X: -0.00034570694
-            Y: -9.99996758
-            Z: -120
-          }
-          Rotation {
-            Yaw: 90
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1743635573264805150
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:alwaysvisible"
-        }
-        IKAnchor {
-          AimOffset {
-          }
-          IKAnchorType {
-            Value: "mc:eikanchortype:hip"
-          }
-          BlendWeight: 0.75
-          BlendInTime: 0.35
-          BlendOutTime: 0.5
-        }
-      }
-    }
-    Assets {
-      Id: 2505141407731989446
-      Name: "Gear Equipment Cloth Military Grab Movement 02 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_gear_equipment_cloth_military_grab_movement_02a_Cue_ref"
       }
     }
     PrimaryAssetId {
@@ -401,6 +272,9 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  Marketplace {
+    Description: "Includes a simple drag-and-drop trigger to make any ledge climbable. Just line the little hands up with the ledge and scale the trigger along the x-axis to the width of the ledge.\r\n\r\nYou\'ll be able to snap to any ledge and hang on it as long as you want. Just jump to vault upward to the top of the ledge OR to another parkour trigger.\r\n\r\n - Zero networked objects\r\n - Zero networked events\r\n - Zero scripting required\r\n\r\nv1.4.0 - 1.6.0\r\n - Changed the timing to make the grabbing animation look and work more naturally when jumping vertically from one ledge to another. You will no longer instantly snap to any ledge you aproach from the bottom but instead will wait until you start dropping then grab the highest one you can reach. So now when multiple grab points are arranged vertically, like for example on rungs of a ladder, you\'ll be able to climb them much more smoothly.\r\n\r\nv1.3.0\r\n - FIXED IT! Any number of players can now grab onto any ledge!\r\n\r\nv1.2.0\r\n - For the time being, only one player can grab onto each ledge at a time. I will be patching this as soon as possible, I\'m sure it\'s not an unsolvable problem, I just have not solved it yet :(\r\n\r\nv1.1.0\r\n - Updated to automatically support rotating for grabbing onto angled ledges like sloped roofs. If you\'ve already rotated the pelvis IK in any of your triggers and this breaks them, resetting them to the template and then just re-scaling them to the size you need should fix it."
+  }
+  SerializationVersion: 98
   DirectlyPublished: true
 }

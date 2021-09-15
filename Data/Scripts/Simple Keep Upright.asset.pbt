@@ -3,7 +3,13 @@ Assets {
   Name: "Simple Keep Upright"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:ConstantLoop"
+        Bool: true
+      }
+    }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
 }

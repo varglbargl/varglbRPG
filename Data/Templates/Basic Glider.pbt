@@ -249,8 +249,16 @@ Assets {
         }
         ParentId: 12626446851697889861
         ChildIds: 16005713217154941052
-        ChildIds: 2425677302297334810
-        ChildIds: 9358251810816133656
+        ChildIds: 7742459778279268682
+        ChildIds: 1042999681855197309
+        ChildIds: 4408306181216337820
+        ChildIds: 4749640432439170897
+        ChildIds: 5466005612353735412
+        ChildIds: 2771436515689841786
+        ChildIds: 13648154248604911548
+        ChildIds: 17129027932846302621
+        ChildIds: 6426286680506513167
+        ChildIds: 5530928223307301622
         ChildIds: 16807132577869428983
         ChildIds: 10076344812342296755
         ChildIds: 16747306585183920289
@@ -345,16 +353,18 @@ Assets {
         }
       }
       Objects {
-        Id: 2425677302297334810
-        Name: "Left Wing"
+        Id: 7742459778279268682
+        Name: "Left Hand Anchor"
         Transform {
           Location {
-            X: -2.20456314
-            Y: -20
-            Z: -1.26708984
+            X: 5.56542969
+            Y: -22.9863281
+            Z: -9
           }
           Rotation {
-            Pitch: 6.95645189
+            Pitch: 68.0430908
+            Yaw: 179.999954
+            Roll: -179.999939
           }
           Scale {
             X: 1
@@ -363,48 +373,6 @@ Assets {
           }
         }
         ParentId: 1294961851121856180
-        ChildIds: 7742459778279268682
-        ChildIds: 1042999681855197309
-        ChildIds: 4408306181216337820
-        ChildIds: 4749640432439170897
-        ChildIds: 5466005612353735412
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 7742459778279268682
-        Name: "Left Hand Anchor"
-        Transform {
-          Location {
-            X: 6.77576494
-            Y: -2.98632812
-            Z: -8.61699
-          }
-          Rotation {
-            Pitch: 74.999588
-            Yaw: 179.999939
-            Roll: -179.999954
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2425677302297334810
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -435,14 +403,14 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: -37.7327
-            Y: 43.0507812
-            Z: 13.0714922
+            X: -41.2421875
+            Y: 23.0507812
+            Z: 7.13818359
           }
           Rotation {
-            Pitch: -4.60129309
-            Yaw: 85.3083344
-            Roll: 56.4639397
+            Pitch: -3.9999907
+            Yaw: 84.7864914
+            Roll: 63.4139862
           }
           Scale {
             X: 0.0712833926
@@ -450,7 +418,7 @@ Assets {
             Z: 0.0515554026
           }
         }
-        ParentId: 2425677302297334810
+        ParentId: 1294961851121856180
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -487,14 +455,14 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: 46.9497337
-            Y: 45.8964844
-            Z: 27.5565834
+            X: 41.0625
+            Y: 25.8964844
+            Z: 31.7729492
           }
           Rotation {
-            Pitch: -11.3948517
-            Yaw: 92.3842
-            Roll: -37.5976753
+            Pitch: -11.5985966
+            Yaw: 90.9681244
+            Roll: -30.5016594
           }
           Scale {
             X: 0.0674955174
@@ -502,7 +470,7 @@ Assets {
             Z: 0.0488158464
           }
         }
-        ParentId: 2425677302297334810
+        ParentId: 1294961851121856180
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -539,14 +507,14 @@ Assets {
         Name: "Handle"
         Transform {
           Location {
-            X: -2.23690319
-            Y: -14.4199219
-            Z: 60.1207275
+            X: -11.7060547
+            Y: -34.4199219
+            Z: 58.1401367
           }
           Rotation {
-            Pitch: -34.5002136
-            Yaw: 9.16829777
-            Roll: -107.83078
+            Pitch: -27.626194
+            Yaw: 8.52314949
+            Roll: -106.582733
           }
           Scale {
             X: 1.27798247
@@ -554,7 +522,7 @@ Assets {
             Z: 1.27798247
           }
         }
-        ParentId: 2425677302297334810
+        ParentId: 1294961851121856180
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -618,11 +586,12 @@ Assets {
         Name: "Basic Projectile Trail VFX"
         Transform {
           Location {
-            X: 8.91634
-            Y: -48.4341354
-            Z: 19.8447189
+            X: 4.24316406
+            Y: -68.4335938
+            Z: 19.5114746
           }
           Rotation {
+            Pitch: 6.95645189
           }
           Scale {
             X: 1
@@ -630,7 +599,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2425677302297334810
+        ParentId: 1294961851121856180
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -664,56 +633,16 @@ Assets {
         }
       }
       Objects {
-        Id: 9358251810816133656
-        Name: "Right Wing"
-        Transform {
-          Location {
-            X: -2.20456314
-            Y: 20
-            Z: -1.26708984
-          }
-          Rotation {
-            Pitch: 6.95645189
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1294961851121856180
-        ChildIds: 2771436515689841786
-        ChildIds: 13648154248604911548
-        ChildIds: 17129027932846302621
-        ChildIds: 6426286680506513167
-        ChildIds: 5530928223307301622
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 2771436515689841786
         Name: "Right Hand Anchor"
         Transform {
           Location {
-            X: 6.77576494
-            Y: 2.986
-            Z: -8.61699
+            X: 5.56542969
+            Y: 22.9863281
+            Z: -9
           }
           Rotation {
-            Pitch: 74.9997177
+            Pitch: 68.0432358
             Yaw: -179.999969
             Roll: -179.999969
           }
@@ -723,7 +652,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9358251810816133656
+        ParentId: 1294961851121856180
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -754,14 +683,14 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: -38.2235947
-            Y: -41.4550781
-            Z: 12.7895155
+            X: -41.6953125
+            Y: -21.4550781
+            Z: 6.79882812
           }
           Rotation {
-            Pitch: 2.48023272
-            Yaw: 98.8578
-            Roll: 56.7083282
+            Pitch: 1.39379561
+            Yaw: 99.0904922
+            Roll: 63.583477
           }
           Scale {
             X: 0.0690931827
@@ -769,7 +698,7 @@ Assets {
             Z: 0.0499713458
           }
         }
-        ParentId: 9358251810816133656
+        ParentId: 1294961851121856180
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -806,14 +735,14 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: 47.3194084
-            Y: -46.5527344
-            Z: 26.1193962
+            X: 41.6035156
+            Y: -26.5527344
+            Z: 30.3911133
           }
           Rotation {
-            Pitch: 8.99419
-            Yaw: 75.9685516
-            Roll: -38.9977722
+            Pitch: 10.6137447
+            Yaw: 77.1391144
+            Roll: -32.131855
           }
           Scale {
             X: 0.0712833926
@@ -821,7 +750,7 @@ Assets {
             Z: 0.0515554026
           }
         }
-        ParentId: 9358251810816133656
+        ParentId: 1294961851121856180
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -858,14 +787,14 @@ Assets {
         Name: "Handle"
         Transform {
           Location {
-            X: -2.66339636
-            Y: 15.9121094
-            Z: 61.0680275
+            X: -12.2441406
+            Y: 35.9121094
+            Z: 59.0288086
           }
           Rotation {
-            Pitch: -33.2439575
-            Yaw: -11.3190308
-            Roll: -71.2928467
+            Pitch: -26.4134808
+            Yaw: -10.5611382
+            Roll: -72.8137741
           }
           Scale {
             X: 1.27798247
@@ -873,7 +802,7 @@ Assets {
             Z: 1.27798247
           }
         }
-        ParentId: 9358251810816133656
+        ParentId: 1294961851121856180
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -937,11 +866,12 @@ Assets {
         Name: "Basic Projectile Trail VFX"
         Transform {
           Location {
-            X: 8.91640854
-            Y: 48.7778053
-            Z: 19.8447113
+            X: 4.24316406
+            Y: 68.7773438
+            Z: 19.5114746
           }
           Rotation {
+            Pitch: 6.95645189
           }
           Scale {
             X: 1
@@ -949,7 +879,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9358251810816133656
+        ParentId: 1294961851121856180
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -2812,7 +2742,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Gliders"
 }

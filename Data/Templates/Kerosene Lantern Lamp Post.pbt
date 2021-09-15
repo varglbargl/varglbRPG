@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1487744337751821456
+        ParentId: 4781671109827199097
         ChildIds: 3881923239823679075
         ChildIds: 2830086037402128766
         ChildIds: 3897834025143298833
@@ -59,7 +59,7 @@ Assets {
         ChildIds: 4169794574644948507
         ChildIds: 14086353127653535288
         ChildIds: 7764385261880163614
-        ChildIds: 12849435729697193147
+        ChildIds: 16924469988140046613
         ChildIds: 1683170093326363607
         ChildIds: 4948673494319117553
         ChildIds: 15801132648617134184
@@ -300,8 +300,8 @@ Assets {
         }
       }
       Objects {
-        Id: 12849435729697193147
-        Name: "NewFolder"
+        Id: 16924469988140046613
+        Name: "Group"
         Transform {
           Location {
             X: -0.0127648208
@@ -333,7 +333,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -341,8 +341,8 @@ Assets {
         Name: "Visible at Night"
         Transform {
           Location {
-            X: 0.00567622576
-            Y: 0.000801640039
+            X: 0.00836333074
+            Y: 0.0020538622
             Z: -0.000357586861
           }
           Rotation {
@@ -353,7 +353,7 @@ Assets {
             Z: 2.92935157
           }
         }
-        ParentId: 12849435729697193147
+        ParentId: 16924469988140046613
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -377,8 +377,8 @@ Assets {
         Name: "Point Light"
         Transform {
           Location {
-            X: -8.34631137e-05
-            Y: 0.00106950873
+            X: 0.00225658668
+            Y: 0.00226655765
             Z: 0.451274633
           }
           Rotation {
@@ -389,7 +389,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12849435729697193147
+        ParentId: 16924469988140046613
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -435,8 +435,8 @@ Assets {
         Name: "Capsule"
         Transform {
           Location {
-            X: -8.34631137e-05
-            Y: 0.00106950873
+            X: 0.00225658668
+            Y: 0.00226655765
           }
           Rotation {
           }
@@ -446,7 +446,7 @@ Assets {
             Z: 0.136961132
           }
         }
-        ParentId: 12849435729697193147
+        ParentId: 16924469988140046613
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -1595,7 +1595,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

@@ -17,7 +17,7 @@ Assets {
       Overrides {
         Name: "cs:ExplodeVFX"
         AssetReference {
-          Id: 15449809418692107465
+          Id: 841534158063459245
         }
       }
       Overrides {
@@ -52,5 +52,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
 }

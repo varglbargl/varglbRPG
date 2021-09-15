@@ -7,23 +7,17 @@ Assets {
       RootId: 7630883439536380636
       Objects {
         Id: 7630883439536380636
-        Name: "Group"
+        Name: "Dress Mannequin"
         Transform {
-          Location {
-          }
-          Rotation {
-          }
           Scale {
             X: 1
             Y: 1
             Z: 1
           }
         }
+        ParentId: 12016671473608753510
         ChildIds: 2227438672129973443
-        ChildIds: 17595782013202029973
-        ChildIds: 12137828763051318851
-        ChildIds: 1419842611435747241
-        ChildIds: 991356552385958447
+        ChildIds: 15329684684419186511
         ChildIds: 15784634468123997303
         ChildIds: 9552376285199207413
         ChildIds: 4823598017158046383
@@ -187,12 +181,12 @@ Assets {
         }
       }
       Objects {
-        Id: 17595782013202029973
-        Name: "NewFolder"
+        Id: 15329684684419186511
+        Name: "Group"
         Transform {
           Location {
-            X: -8.37695312
-            Y: -54.9794922
+            X: -5.67773438
+            Y: -38.6881104
           }
           Rotation {
           }
@@ -207,6 +201,18 @@ Assets {
         ChildIds: 7142039848760199360
         ChildIds: 13475573371144974400
         ChildIds: 9072502120802899443
+        ChildIds: 12906685379813156354
+        ChildIds: 14453623760601405342
+        ChildIds: 7075960994344755754
+        ChildIds: 10079005423117059600
+        ChildIds: 12822038828329355198
+        ChildIds: 5400722333181625004
+        ChildIds: 17107296131064374807
+        ChildIds: 10439350135339244232
+        ChildIds: 7655587120276245655
+        ChildIds: 15241880077249788539
+        ChildIds: 4923077045792964414
+        ChildIds: 4607195846822657516
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -220,7 +226,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -228,8 +234,8 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 11.3359375
-            Y: 65.2612305
+            X: 8.63659573
+            Y: 48.9698257
             Z: 54.0341797
           }
           Rotation {
@@ -240,7 +246,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 17595782013202029973
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -303,11 +309,12 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 11.3359375
-            Y: 65.2612305
+            X: 8.63623
+            Y: 48.9697266
             Z: 54.0341797
           }
           Rotation {
+            Yaw: -1.46316984e-06
           }
           Scale {
             X: -0.291754782
@@ -315,7 +322,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 17595782013202029973
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -378,11 +385,12 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 11.3359375
-            Y: 65.2612305
+            X: 8.63623
+            Y: 48.9697266
             Z: 54.0341797
           }
           Rotation {
+            Yaw: -1.46316984e-06
           }
           Scale {
             X: -0.291754782
@@ -390,7 +398,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 17595782013202029973
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -453,8 +461,8 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 11.3359375
-            Y: 65.2612305
+            X: 8.63623
+            Y: 48.9697266
             Z: 54.0341797
           }
           Rotation {
@@ -465,7 +473,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 17595782013202029973
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -524,53 +532,16 @@ Assets {
         }
       }
       Objects {
-        Id: 12137828763051318851
-        Name: "NewFolder"
-        Transform {
-          Location {
-            X: -8.37695312
-            Y: -54.9794922
-          }
-          Rotation {
-            Yaw: 39.9999847
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7630883439536380636
-        ChildIds: 12906685379813156354
-        ChildIds: 14453623760601405342
-        ChildIds: 7075960994344755754
-        ChildIds: 10079005423117059600
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 12906685379813156354
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 50.6329422
-            Y: 42.7064056
+            X: 8.63659573
+            Y: 48.9698257
             Z: 54.0341797
           }
           Rotation {
+            Yaw: 39.9999847
           }
           Scale {
             X: 0.27014339
@@ -578,7 +549,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 12137828763051318851
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -641,11 +612,12 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 50.6435547
-            Y: 42.71875
+            X: 8.63671875
+            Y: 48.9863281
             Z: 54.0883789
           }
           Rotation {
+            Yaw: 39.9999619
           }
           Scale {
             X: -0.24312906
@@ -653,7 +625,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 12137828763051318851
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -716,11 +688,12 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 50.6435547
-            Y: 42.71875
+            X: 8.63671875
+            Y: 48.9863281
             Z: 54.0883789
           }
           Rotation {
+            Yaw: 39.9999619
           }
           Scale {
             X: -0.24312906
@@ -728,7 +701,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 12137828763051318851
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -791,11 +764,12 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 50.6435547
-            Y: 42.71875
+            X: 8.63671875
+            Y: 48.9863281
             Z: 54.0883789
           }
           Rotation {
+            Yaw: 39.9999619
           }
           Scale {
             X: 0.27014339
@@ -803,7 +777,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 12137828763051318851
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -862,53 +836,16 @@ Assets {
         }
       }
       Objects {
-        Id: 1419842611435747241
-        Name: "NewFolder"
-        Transform {
-          Location {
-            X: -8.37695312
-            Y: -54.9794922
-          }
-          Rotation {
-            Yaw: 140
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7630883439536380636
-        ChildIds: 12822038828329355198
-        ChildIds: 5400722333181625004
-        ChildIds: 17107296131064374807
-        ChildIds: 10439350135339244232
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 12822038828329355198
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 33.265274
-            Y: -57.2796021
+            X: 8.63659573
+            Y: 48.9698257
             Z: 54.0341797
           }
           Rotation {
+            Yaw: 140.000046
           }
           Scale {
             X: 0.27014339
@@ -916,7 +853,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 1419842611435747241
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -979,11 +916,12 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 33.2578125
-            Y: -57.2709961
+            X: 8.63623
+            Y: 48.9589844
             Z: 54.0341797
           }
           Rotation {
+            Yaw: 140.000015
           }
           Scale {
             X: -0.24312906
@@ -991,7 +929,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 1419842611435747241
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1054,11 +992,12 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 33.2578125
-            Y: -57.2709961
+            X: 8.63623
+            Y: 48.9589844
             Z: 54.0341797
           }
           Rotation {
+            Yaw: 140.000015
           }
           Scale {
             X: -0.24312906
@@ -1066,7 +1005,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 1419842611435747241
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1129,11 +1068,12 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
-            X: 33.2578125
-            Y: -57.2709961
+            X: 8.63623
+            Y: 48.9589844
             Z: 54.0341797
           }
           Rotation {
+            Yaw: 140.000015
           }
           Scale {
             X: 0.27014339
@@ -1141,7 +1081,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 1419842611435747241
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1200,51 +1140,16 @@ Assets {
         }
       }
       Objects {
-        Id: 991356552385958447
-        Name: "NewFolder"
-        Transform {
-          Location {
-            X: 2.41992188
-            Y: 10.1860352
-            Z: 54.0341797
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7630883439536380636
-        ChildIds: 7655587120276245655
-        ChildIds: 15241880077249788539
-        ChildIds: 4923077045792964414
-        ChildIds: 4607195846822657516
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 7655587120276245655
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
+            X: 8.0979
+            Y: 48.8729935
+            Z: 54.0341797
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 90
           }
           Scale {
             X: 0.32417205
@@ -1252,7 +1157,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 991356552385958447
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1315,6 +1220,9 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
+            X: 8.09765625
+            Y: 48.8730469
+            Z: 54.0341797
           }
           Rotation {
             Yaw: 89.9999847
@@ -1325,7 +1233,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 991356552385958447
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1388,6 +1296,9 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
+            X: 8.09765625
+            Y: 48.8730469
+            Z: 54.0341797
           }
           Rotation {
             Yaw: 89.9999847
@@ -1398,7 +1309,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 991356552385958447
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1461,9 +1372,12 @@ Assets {
         Name: "Ellipsoid - Truncated Wedge"
         Transform {
           Location {
+            X: 8.09765625
+            Y: 48.8730469
+            Z: 54.0341797
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999771
           }
           Scale {
             X: 0.32417205
@@ -1471,7 +1385,7 @@ Assets {
             Z: 0.801732302
           }
         }
-        ParentId: 991356552385958447
+        ParentId: 15329684684419186511
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2751,6 +2665,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   VirtualFolderPath: "Props"
 }

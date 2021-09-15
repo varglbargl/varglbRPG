@@ -7,7 +7,7 @@ Assets {
       Overrides {
         Name: "cs:Speed"
         Vector {
-          Z: 50
+          Z: 5
         }
       }
       Overrides {
@@ -16,6 +16,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 94
-  DirectlyPublished: true
+  SerializationVersion: 98
 }

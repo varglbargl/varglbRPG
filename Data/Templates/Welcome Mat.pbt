@@ -18,7 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 7939743162816311026
         ChildIds: 5031311692724876812
-        ChildIds: 15199839141380855135
+        ChildIds: 12522154932953434319
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -175,22 +175,17 @@ Assets {
         }
       }
       Objects {
-        Id: 15199839141380855135
-        Name: "Welcome"
+        Id: 12522154932953434319
+        Name: "Letters"
         Transform {
           Location {
-            X: 9.97442627
-            Y: 9.58306789
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -89.999939
-            Roll: -89.9999695
           }
           Scale {
-            X: 0.152848855
-            Y: 0.152848855
-            Z: 0.152848855
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 18067035209037195875
@@ -202,17 +197,19 @@ Assets {
         ChildIds: 18169226359150833979
         ChildIds: 3711015682594103119
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
-          FilePartitionName: "Welcome"
+          IsGroup: true
         }
       }
       Objects {
@@ -220,18 +217,21 @@ Assets {
         Name: "Text 05: W"
         Transform {
           Location {
-            X: -334.289825
-            Y: -0.000244140625
+            X: 9.97460938
+            Y: 60.678833
           }
           Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.999939
+            Roll: -89.9999695
           }
           Scale {
-            X: 1.2
-            Y: 1.31276822
-            Z: 1.25000012
+            X: 0.183418632
+            Y: 0.200655118
+            Z: 0.19106108
           }
         }
-        ParentId: 15199839141380855135
+        ParentId: 12522154932953434319
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -302,18 +302,21 @@ Assets {
         Name: "Text 03: E"
         Transform {
           Location {
-            X: -162.82074
-            Z: 2.41873169
+            X: 9.60449219
+            Y: 34.4699707
           }
           Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.999939
+            Roll: -89.9999695
           }
           Scale {
-            X: 1
-            Y: 1.31276822
-            Z: 1.00000012
+            X: 0.152848855
+            Y: 0.200655118
+            Z: 0.15284887
           }
         }
-        ParentId: 15199839141380855135
+        ParentId: 12522154932953434319
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -384,18 +387,21 @@ Assets {
         Name: "Text 03: L"
         Transform {
           Location {
-            X: -78.8334351
-            Z: 2.41873169
+            X: 9.60449219
+            Y: 21.6325684
           }
           Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.999939
+            Roll: -89.9999695
           }
           Scale {
-            X: 1
-            Y: 1.31276822
-            Z: 1.00000012
+            X: 0.152848855
+            Y: 0.200655118
+            Z: 0.15284887
           }
         }
-        ParentId: 15199839141380855135
+        ParentId: 12522154932953434319
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -466,18 +472,21 @@ Assets {
         Name: "Text 03: C"
         Transform {
           Location {
-            X: -5.38652802
-            Z: 2.41873169
+            X: 9.60449219
+            Y: 10.4063721
           }
           Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.999939
+            Roll: -89.9999695
           }
           Scale {
-            X: 1
-            Y: 1.31276822
-            Z: 1.00000012
+            X: 0.152848855
+            Y: 0.200655118
+            Z: 0.15284887
           }
         }
-        ParentId: 15199839141380855135
+        ParentId: 12522154932953434319
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -548,18 +557,21 @@ Assets {
         Name: "Text 03: O"
         Transform {
           Location {
-            X: 87.2337875
-            Z: 2.41873169
+            X: 9.60449219
+            Y: -3.75061035
           }
           Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.999939
+            Roll: -89.9999695
           }
           Scale {
-            X: 1
-            Y: 1.31276822
-            Z: 1.00000012
+            X: 0.152848855
+            Y: 0.200655118
+            Z: 0.15284887
           }
         }
-        ParentId: 15199839141380855135
+        ParentId: 12522154932953434319
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -630,18 +642,21 @@ Assets {
         Name: "Text 03: M"
         Transform {
           Location {
-            X: 189.856842
-            Z: 2.41873169
+            X: 9.60449219
+            Y: -19.4364014
           }
           Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.999939
+            Roll: -89.9999695
           }
           Scale {
-            X: 1
-            Y: 1.31276822
-            Z: 1.00000012
+            X: 0.152848855
+            Y: 0.200655118
+            Z: 0.15284887
           }
         }
-        ParentId: 15199839141380855135
+        ParentId: 12522154932953434319
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -712,18 +727,21 @@ Assets {
         Name: "Text 03: E"
         Transform {
           Location {
-            X: 304.239807
-            Z: 2.41873169
+            X: 9.60449219
+            Y: -36.9198
           }
           Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -89.999939
+            Roll: -89.9999695
           }
           Scale {
-            X: 1
-            Y: 1.31276822
-            Z: 1.00000012
+            X: 0.152848855
+            Y: 0.200655118
+            Z: 0.15284887
           }
         }
-        ParentId: 15199839141380855135
+        ParentId: 12522154932953434319
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -897,7 +915,7 @@ Assets {
   Marketplace {
     Description: "Just a prop, but a nice and useful one for storefronts or homes. A thing I made a while ago and realized I may as well share.\r\n\r\nNo easter eggs in this one. Yet ~ <3"
   }
-  SerializationVersion: 94
+  SerializationVersion: 98
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }
