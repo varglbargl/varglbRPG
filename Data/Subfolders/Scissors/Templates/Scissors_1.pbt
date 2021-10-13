@@ -563,6 +563,6 @@ Assets {
   Marketplace {
     Description: "Scissors. The two blades can be rotated at the centre rivet to make them open and close scissor-fashioned!"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
 }

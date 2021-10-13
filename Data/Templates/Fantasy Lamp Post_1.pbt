@@ -39,5 +39,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "Simple little candle lit street lamp prop with a light source."
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

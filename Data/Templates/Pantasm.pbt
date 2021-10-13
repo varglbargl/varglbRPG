@@ -22,7 +22,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:Level"
-            Int: 3
+            Int: 10
           }
           Overrides {
             Name: "cs:DamagedVFX"
@@ -1615,6 +1615,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Enemies"
 }

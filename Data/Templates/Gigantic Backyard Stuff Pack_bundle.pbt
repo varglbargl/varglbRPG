@@ -49,16 +49,16 @@ Assets {
               Id: 2511337052234903376
             }
             ReferencedAssets {
-              Id: 15809560388079233546
+              Id: 841534158063459245
             }
             ReferencedAssets {
-              Id: 13627054644157769251
+              Id: 841534158063459245
             }
             ReferencedAssets {
-              Id: 4870703731922952409
+              Id: 841534158063459245
             }
             ReferencedAssets {
-              Id: 11834231573820483336
+              Id: 841534158063459245
             }
             ReferencedAssets {
               Id: 11292950856964108271
@@ -82,13 +82,13 @@ Assets {
               Id: 123913405603969831
             }
             ReferencedAssets {
-              Id: 5752792807088316573
+              Id: 841534158063459245
             }
             ReferencedAssets {
               Id: 10982204972862718781
             }
             ReferencedAssets {
-              Id: 12007116985402910439
+              Id: 841534158063459245
             }
             ReferencedAssets {
               Id: 748012494602405974
@@ -97,19 +97,19 @@ Assets {
               Id: 11264055352434487117
             }
             ReferencedAssets {
-              Id: 2979921497049182247
+              Id: 841534158063459245
             }
             ReferencedAssets {
               Id: 10181445808402836134
             }
             ReferencedAssets {
-              Id: 5166932375176078934
+              Id: 841534158063459245
             }
             ReferencedAssets {
-              Id: 2806777782023258598
+              Id: 841534158063459245
             }
             ReferencedAssets {
-              Id: 9466070462826725431
+              Id: 841534158063459245
             }
             ReferencedAssets {
               Id: 2611143520747657921
@@ -130,5 +130,5 @@ Assets {
     Version: "1.1.0"
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

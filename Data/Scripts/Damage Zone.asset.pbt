@@ -9,10 +9,14 @@ Assets {
         Int: 1
       }
       Overrides {
+        Name: "cs:Frequency"
+        Float: 1
+      }
+      Overrides {
         Name: "cs:Percent"
         Bool: false
       }
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

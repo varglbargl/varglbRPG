@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 9428506576452225428
+        ChildIds: 7716459350968629724
         ChildIds: 10736186029381582192
         UnregisteredParameters {
           Overrides {
@@ -42,25 +42,23 @@ Assets {
         }
       }
       Objects {
-        Id: 9428506576452225428
-        Name: "Collision"
+        Id: 7716459350968629724
+        Name: "Teardrop - Truncated"
         Transform {
           Location {
-            X: -9.15527344e-05
-            Y: -29.3294315
-            Z: 82.4083252
+            Y: -120.589569
+            Z: 82.407486
           }
           Rotation {
+            Roll: 76.2738647
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.16875529
+            Y: 1.16875529
+            Z: 1.27980077
           }
         }
         ParentId: 15150143337005922378
-        ChildIds: 7330775728825636879
-        ChildIds: 7716459350968629724
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -69,102 +67,6 @@ Assets {
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 7330775728825636879
-        Name: "Sphere"
-        Transform {
-          Location {
-            X: -6.10351562e-05
-            Y: 91.2587585
-            Z: 38.1401367
-          }
-          Rotation {
-            Roll: 26.0282021
-          }
-          Scale {
-            X: 0.542065799
-            Y: 0.62859869
-            Z: 0.542065799
-          }
-        }
-        ParentId: 9428506576452225428
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15320790947018959030
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.0825835913
-              G: 0.0569399931
-              B: 0.13
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17938528237073520770
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 7716459350968629724
-        Name: "Teardrop - Truncated"
-        Transform {
-          Location {
-            X: 0.000122070312
-            Y: -91.2587585
-          }
-          Rotation {
-            Roll: 76.2738876
-          }
-          Scale {
-            X: 1.16875529
-            Y: 1.16875529
-            Z: 1.27980077
-          }
-        }
-        ParentId: 9428506576452225428
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
         }
         CoreMesh {
           MeshAsset {
@@ -224,16 +126,13 @@ Assets {
         Name: "Animation - Wing Flap"
         Transform {
           Location {
-            X: 8665.21191
-            Y: 14381.0889
-            Z: -815.12
           }
           Rotation {
           }
           Scale {
-            X: 3.33333325
-            Y: 3.33333325
-            Z: 3.33333325
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 10736186029381582192
@@ -261,9 +160,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 4.86654472
-            Y: 4.86654472
-            Z: 4.86654472
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 10736186029381582192
@@ -322,7 +221,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -360,10 +259,14 @@ Assets {
         }
         ParentId: 10736186029381582192
         ChildIds: 3588183073184421511
-        ChildIds: 7985063884699707944
-        ChildIds: 3314925149957922877
-        ChildIds: 9289896330637654764
-        ChildIds: 10046585699962652094
+        ChildIds: 774513686968548556
+        ChildIds: 16033186568736627299
+        ChildIds: 2655963461837453883
+        ChildIds: 15957046253256142104
+        ChildIds: 6681007146242099603
+        ChildIds: 13727144682951392252
+        ChildIds: 10274554318472293458
+        ChildIds: 1772625710390044825
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -421,7 +324,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -440,52 +343,23 @@ Assets {
         }
       }
       Objects {
-        Id: 7985063884699707944
-        Name: "Eyes"
-        Transform {
-          Location {
-            Y: 10
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15057629502648964084
-        ChildIds: 774513686968548556
-        ChildIds: 16033186568736627299
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 774513686968548556
         Name: "Icosahedron"
         Transform {
           Location {
-            X: -40
+            X: -40.043335
+            Y: 10.0050631
+            Z: 0.00592698669
           }
           Rotation {
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 0.49999997
+            Y: 0.49999997
+            Z: 0.49999997
           }
         }
-        ParentId: 7985063884699707944
+        ParentId: 15057629502648964084
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -511,7 +385,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -535,16 +409,18 @@ Assets {
         Transform {
           Location {
             X: 40
+            Y: 10.03125
           }
           Rotation {
+            Roll: -4.268868e-07
           }
           Scale {
-            X: -0.5
-            Y: 0.5
-            Z: 0.5
+            X: -0.49999997
+            Y: 0.49999997
+            Z: 0.49999997
           }
         }
-        ParentId: 7985063884699707944
+        ParentId: 15057629502648964084
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -570,7 +446,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -589,54 +465,24 @@ Assets {
         }
       }
       Objects {
-        Id: 3314925149957922877
-        Name: "Mandables"
-        Transform {
-          Location {
-            Y: 40
-            Z: -20
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15057629502648964084
-        ChildIds: 2655963461837453883
-        ChildIds: 15957046253256142104
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 2655963461837453883
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: 0.971191406
+            X: 1.01026762
+            Y: 39.9863739
+            Z: -19.9905567
           }
           Rotation {
             Roll: 30.0000191
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.2
+            X: 0.399999976
+            Y: 0.399999976
+            Z: 0.199999988
           }
         }
-        ParentId: 3314925149957922877
+        ParentId: 15057629502648964084
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -665,7 +511,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -688,18 +534,20 @@ Assets {
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: -4.57177734
+            X: -4.625
+            Y: 40
+            Z: -19.984375
           }
           Rotation {
-            Roll: 30.0000401
+            Roll: 30.0000324
           }
           Scale {
-            X: -0.4
-            Y: 0.4
-            Z: 0.2
+            X: -0.399999976
+            Y: 0.399999976
+            Z: 0.199999988
           }
         }
-        ParentId: 3314925149957922877
+        ParentId: 15057629502648964084
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -728,7 +576,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -747,62 +595,26 @@ Assets {
         }
       }
       Objects {
-        Id: 9289896330637654764
-        Name: "Antenna"
-        Transform {
-          Location {
-            X: -15
-            Y: 20
-            Z: 30
-          }
-          Rotation {
-            Pitch: -28.0241966
-            Yaw: -67.2035446
-            Roll: -11.1705923
-          }
-          Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 15057629502648964084
-        ChildIds: 6681007146242099603
-        ChildIds: 13727144682951392252
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 6681007146242099603
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -85.4360199
-            Y: -0.828296661
-            Z: -60
+            X: -29.9406586
+            Y: 69.6636658
+            Z: 24.0305195
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: 89.9998474
-            Roll: -22.499939
+            Pitch: 9.84681702
+            Yaw: 17.4955368
+            Roll: -50.9811134
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 1.69999993
+            X: 0.149999991
+            Y: 0.149999991
+            Z: 0.849999905
           }
         }
-        ParentId: 9289896330637654764
+        ParentId: 15057629502648964084
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -831,7 +643,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -854,22 +666,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -62.089817
-            Y: 1.69668818
-            Z: 22.2222214
+            X: -24.7974777
+            Y: 39.9925461
+            Z: 54.3603745
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9996796
-            Roll: -112.499786
+            Pitch: 9.84672832
+            Yaw: 17.4953957
+            Roll: -140.981
           }
           Scale {
-            X: 0.299999952
-            Y: 0.299999952
-            Z: 1.29999971
+            X: 0.149999976
+            Y: 0.149999976
+            Z: 0.649999797
           }
         }
-        ParentId: 9289896330637654764
+        ParentId: 15057629502648964084
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -898,7 +710,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -917,62 +729,26 @@ Assets {
         }
       }
       Objects {
-        Id: 10046585699962652094
-        Name: "Antenna"
-        Transform {
-          Location {
-            X: 15
-            Y: 20
-            Z: 30
-          }
-          Rotation {
-            Pitch: -28.024435
-            Yaw: -112.794861
-            Roll: 11.1699553
-          }
-          Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 15057629502648964084
-        ChildIds: 10274554318472293458
-        ChildIds: 1772625710390044825
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 10274554318472293458
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -85.4359894
-            Y: 0.83026886
-            Z: -60
+            X: 29.9406586
+            Y: 69.6636658
+            Z: 24.0305195
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: 89.9998474
-            Roll: -22.499939
+            Pitch: -9.84635925
+            Yaw: -17.4944954
+            Roll: -50.981266
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 1.69999993
+            X: 0.149999991
+            Y: 0.149999991
+            Z: 0.849999905
           }
         }
-        ParentId: 10046585699962652094
+        ParentId: 15057629502648964084
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1001,7 +777,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1024,22 +800,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -62.089817
-            Y: 1.69668818
-            Z: 22.2222214
+            X: 26.3588
+            Y: 39.4664841
+            Z: 54.0591812
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9996796
-            Roll: -112.499786
+            Pitch: -9.84645462
+            Yaw: -17.4946327
+            Roll: -140.981094
           }
           Scale {
-            X: 0.299999952
-            Y: 0.299999952
-            Z: 1.29999971
+            X: 0.149999976
+            Y: 0.149999976
+            Z: 0.649999797
           }
         }
-        ParentId: 10046585699962652094
+        ParentId: 15057629502648964084
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1068,7 +844,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1160,7 +936,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1218,7 +994,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1273,7 +1049,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1335,7 +1111,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1400,7 +1176,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1458,7 +1234,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1523,7 +1299,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1574,7 +1350,7 @@ Assets {
       }
       Objects {
         Id: 13246071942459380538
-        Name: "Plane Kite - One Sided"
+        Name: "Prism - 3-Sided Convex"
         Transform {
           Location {
             X: 217.450195
@@ -1629,7 +1405,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1649,7 +1425,7 @@ Assets {
       }
       Objects {
         Id: 9524076004663627725
-        Name: "Plane Kite - One Sided"
+        Name: "Prism - 3-Sided Convex"
         Transform {
           Location {
             X: -206.364502
@@ -1704,7 +1480,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1741,43 +1517,12 @@ Assets {
           }
         }
         ParentId: 10736186029381582192
-        ChildIds: 4152217215027212166
-        ChildIds: 16799764162904436987
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 4152217215027212166
-        Name: "Leg"
-        Transform {
-          Location {
-            X: -25
-          }
-          Rotation {
-            Pitch: 22.4523544
-            Yaw: -27.2103882
-            Roll: -11.1101685
-          }
-          Scale {
-            X: 0.900000215
-            Y: 0.900000215
-            Z: 0.900000215
-          }
-        }
-        ParentId: 3409322984177232160
         ChildIds: 1264300229946779555
         ChildIds: 2907331380138297884
         ChildIds: 8226659288910753573
+        ChildIds: 8582972687049812162
+        ChildIds: 839148010060958333
+        ChildIds: 12918045132458197985
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1796,22 +1541,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -72.0903473
-            Y: 1.69666255
-            Z: -57.7777672
+            X: -55.8367424
+            Y: 28.8097343
+            Z: -71.6549377
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9998779
-            Roll: -7.5
+            Pitch: 10.2585402
+            Yaw: 67.0786285
+            Roll: 15.337532
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 1.69999993
+            X: 0.2700001
+            Y: 0.2700001
+            Z: 1.53000045
           }
         }
-        ParentId: 4152217215027212166
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1840,7 +1585,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1863,21 +1608,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -132.090103
-            Y: 1.69691026
-            Z: -77.777771
+            X: -92.587471
+            Y: 51.617321
+            Z: -108.616135
           }
           Rotation {
-            Yaw: 89.9997711
-            Roll: -67.4998779
+            Pitch: 10.2585745
+            Yaw: 67.0785217
+            Roll: -44.6623573
           }
           Scale {
-            X: 0.24000001
-            Y: 0.24000001
-            Z: 1.25263155
+            X: 0.216000095
+            Y: 0.216000095
+            Z: 1.12736881
           }
         }
-        ParentId: 4152217215027212166
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1906,7 +1652,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1929,22 +1675,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -62.089817
-            Y: 1.69668818
-            Z: 22.2222214
+            X: -78.780571
+            Y: 24.976717
+            Z: -2.93468904
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9996796
-            Roll: -112.499786
+            Pitch: 10.2586155
+            Yaw: 67.0784378
+            Roll: -89.6623077
           }
           Scale {
-            X: 0.299999952
-            Y: 0.299999952
-            Z: 1.29999971
+            X: 0.270000041
+            Y: 0.270000041
+            Z: 1.17000008
           }
         }
-        ParentId: 4152217215027212166
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1973,7 +1719,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1992,61 +1738,26 @@ Assets {
         }
       }
       Objects {
-        Id: 16799764162904436987
-        Name: "Leg"
-        Transform {
-          Location {
-            X: 25
-          }
-          Rotation {
-            Pitch: 25.104229
-            Yaw: -146.483704
-            Roll: 15.6949282
-          }
-          Scale {
-            X: 0.900000215
-            Y: 0.900000215
-            Z: 0.900000215
-          }
-        }
-        ParentId: 3409322984177232160
-        ChildIds: 8582972687049812162
-        ChildIds: 839148010060958333
-        ChildIds: 12918045132458197985
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 8582972687049812162
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -72.0903473
-            Y: 1.69666255
-            Z: -57.7777672
+            X: 49.1363335
+            Y: 31.0916729
+            Z: -73.2375488
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9998779
-            Roll: -7.5
+            Pitch: -14.179513
+            Yaw: -63.2823
+            Roll: 18.4508038
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 1.69999993
+            X: 0.2700001
+            Y: 0.2700001
+            Z: 1.53000045
           }
         }
-        ParentId: 16799764162904436987
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2075,7 +1786,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2098,21 +1809,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -132.090103
-            Y: 1.69691026
-            Z: -77.777771
+            X: 81.1155624
+            Y: 58.126049
+            Z: -111.832794
           }
           Rotation {
-            Yaw: 89.9997711
-            Roll: -67.4998779
+            Pitch: -14.1794653
+            Yaw: -63.2823944
+            Roll: -41.5490799
           }
           Scale {
-            X: 0.24000001
-            Y: 0.24000001
-            Z: 1.25263155
+            X: 0.216000095
+            Y: 0.216000095
+            Z: 1.12736881
           }
         }
-        ParentId: 16799764162904436987
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2141,7 +1853,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2164,22 +1876,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -62.089817
-            Y: 1.69668818
-            Z: 22.2222214
+            X: 77.6638336
+            Y: 26.6191216
+            Z: -6.6572485
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9996796
-            Roll: -112.499786
+            Pitch: -14.1794243
+            Yaw: -63.2824783
+            Roll: -86.5489655
           }
           Scale {
-            X: 0.299999952
-            Y: 0.299999952
-            Z: 1.29999971
+            X: 0.270000041
+            Y: 0.270000041
+            Z: 1.17000008
           }
         }
-        ParentId: 16799764162904436987
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2208,7 +1920,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2245,44 +1957,12 @@ Assets {
           }
         }
         ParentId: 10736186029381582192
-        ChildIds: 14342575588298397664
-        ChildIds: 5837456736854561054
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 14342575588298397664
-        Name: "Leg"
-        Transform {
-          Location {
-            X: -25
-            Y: -5
-          }
-          Rotation {
-            Pitch: 29.3342743
-            Yaw: 0.000566520088
-            Roll: 0.000276243722
-          }
-          Scale {
-            X: 0.900000215
-            Y: 0.900000215
-            Z: 0.900000215
-          }
-        }
-        ParentId: 15325232214000138127
         ChildIds: 6902662599779254215
         ChildIds: 5890378400939994708
         ChildIds: 12835681763368769947
+        ChildIds: 7864487564896627661
+        ChildIds: 11107486325506559905
+        ChildIds: 15571248655605506258
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2301,22 +1981,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -72.0903473
-            Y: 1.69666255
-            Z: -57.7777672
+            X: -56.0747261
+            Y: -3.43145466
+            Z: -77.1142502
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9998779
-            Roll: -7.5
+            Pitch: -0.000177584909
+            Yaw: 90.0003357
+            Roll: 21.8342571
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 1.69999993
+            X: 0.27000007
+            Y: 0.27000007
+            Z: 1.53000033
           }
         }
-        ParentId: 14342575588298397664
+        ParentId: 15325232214000138127
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2345,7 +2025,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2368,21 +2048,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -132.090103
-            Y: 1.69691026
-            Z: -77.777771
+            X: -94.372139
+            Y: -3.46011972
+            Z: -119.250259
           }
           Rotation {
-            Yaw: 89.9997711
-            Roll: -67.4998779
+            Pitch: -0.000129773587
+            Yaw: 90.0002365
+            Roll: -38.1655884
           }
           Scale {
-            X: 0.24000001
-            Y: 0.24000001
-            Z: 1.25263155
+            X: 0.216000065
+            Y: 0.216000065
+            Z: 1.12736869
           }
         }
-        ParentId: 14342575588298397664
+        ParentId: 15325232214000138127
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2411,7 +2092,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2434,22 +2115,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -62.089817
-            Y: 1.69668818
-            Z: 22.2222214
+            X: -83.5025864
+            Y: -3.44857693
+            Z: -9.94287395
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9996796
-            Roll: -112.499786
+            Pitch: -7.51320767e-05
+            Yaw: 90.0001602
+            Roll: -83.1655197
           }
           Scale {
-            X: 0.299999952
-            Y: 0.299999952
-            Z: 1.29999971
+            X: 0.270000041
+            Y: 0.270000041
+            Z: 1.17000008
           }
         }
-        ParentId: 14342575588298397664
+        ParentId: 15325232214000138127
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2478,7 +2159,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2497,61 +2178,26 @@ Assets {
         }
       }
       Objects {
-        Id: 5837456736854561054
-        Name: "Leg"
-        Transform {
-          Location {
-            X: 25
-          }
-          Rotation {
-            Pitch: 24.9226551
-            Yaw: -179.9991
-            Roll: 0.000356301054
-          }
-          Scale {
-            X: 0.900000215
-            Y: 0.900000215
-            Z: 0.900000215
-          }
-        }
-        ParentId: 15325232214000138127
-        ChildIds: 7864487564896627661
-        ChildIds: 11107486325506559905
-        ChildIds: 15571248655605506258
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 7864487564896627661
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -72.0903473
-            Y: 1.69666255
-            Z: -57.7777672
+            X: 61.9666367
+            Y: -1.53684449
+            Z: -74.4997406
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9998779
-            Roll: -7.5
+            Pitch: -0.000266377348
+            Yaw: -89.9993591
+            Roll: 17.4226646
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 1.69999993
+            X: 0.27000007
+            Y: 0.27000007
+            Z: 1.53000033
           }
         }
-        ParentId: 5837456736854561054
+        ParentId: 15325232214000138127
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2580,7 +2226,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2603,21 +2249,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -132.090103
-            Y: 1.69691026
-            Z: -77.777771
+            X: 103.311592
+            Y: -1.50061369
+            Z: -113.58046
           }
           Rotation {
-            Yaw: 89.9997711
-            Roll: -67.4998779
+            Pitch: -0.00022539623
+            Yaw: -89.9994354
+            Roll: -42.57724
           }
           Scale {
-            X: 0.24000001
-            Y: 0.24000001
-            Z: 1.25263155
+            X: 0.216000065
+            Y: 0.216000065
+            Z: 1.12736869
           }
         }
-        ParentId: 5837456736854561054
+        ParentId: 15325232214000138127
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2646,7 +2293,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2669,22 +2316,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -62.089817
-            Y: 1.69668818
-            Z: 22.2222214
+            X: 84.1120911
+            Y: -1.50976968
+            Z: -5.40663052
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9996796
-            Roll: -112.499786
+            Pitch: -0.000184415097
+            Yaw: -89.9995422
+            Roll: -87.5771255
           }
           Scale {
-            X: 0.299999952
-            Y: 0.299999952
-            Z: 1.29999971
+            X: 0.270000041
+            Y: 0.270000041
+            Z: 1.17000008
           }
         }
-        ParentId: 5837456736854561054
+        ParentId: 15325232214000138127
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2713,7 +2360,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2750,43 +2397,12 @@ Assets {
           }
         }
         ParentId: 10736186029381582192
-        ChildIds: 18021791547683143215
-        ChildIds: 12417088701614798209
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 18021791547683143215
-        Name: "Leg"
-        Transform {
-          Location {
-            X: -25
-          }
-          Rotation {
-            Pitch: 17.3356609
-            Yaw: 47.795887
-            Roll: 18.1894093
-          }
-          Scale {
-            X: 0.900000215
-            Y: 0.900000215
-            Z: 0.900000215
-          }
-        }
-        ParentId: 5513417614251839280
         ChildIds: 5842755909847712981
         ChildIds: 9440196399255468685
         ChildIds: 3360628069500475277
+        ChildIds: 9400383052909993294
+        ChildIds: 2924342544334310977
+        ChildIds: 5259088660067348224
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2805,22 +2421,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -72.0903473
-            Y: 1.69666255
-            Z: -57.7777672
+            X: -45.6846085
+            Y: -44.8033638
+            Z: -66.9530106
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9998779
-            Roll: -7.5
+            Pitch: -17.3362484
+            Yaw: 132.204
+            Roll: 10.6888571
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 1.69999993
+            X: 0.2700001
+            Y: 0.2700001
+            Z: 1.53000045
           }
         }
-        ParentId: 18021791547683143215
+        ParentId: 5513417614251839280
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2849,7 +2465,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2872,21 +2488,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -132.090103
-            Y: 1.69691026
-            Z: -77.777771
+            X: -72.6892853
+            Y: -82.989418
+            Z: -99.3545914
           }
           Rotation {
-            Yaw: 89.9997711
-            Roll: -67.4998779
+            Pitch: -17.3362274
+            Yaw: 132.203873
+            Roll: -49.3110085
           }
           Scale {
-            X: 0.24000001
-            Y: 0.24000001
-            Z: 1.25263155
+            X: 0.216000095
+            Y: 0.216000095
+            Z: 1.12736881
           }
         }
-        ParentId: 18021791547683143215
+        ParentId: 5513417614251839280
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2915,7 +2532,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2938,22 +2555,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -62.089817
-            Y: 1.69668818
-            Z: 22.2222214
+            X: -70.2527771
+            Y: -38.4229774
+            Z: 1.01950932
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9996796
-            Roll: -112.499786
+            Pitch: -17.3361931
+            Yaw: 132.203796
+            Roll: -94.3109
           }
           Scale {
-            X: 0.299999952
-            Y: 0.299999952
-            Z: 1.29999971
+            X: 0.270000041
+            Y: 0.270000041
+            Z: 1.17000008
           }
         }
-        ParentId: 18021791547683143215
+        ParentId: 5513417614251839280
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2982,7 +2599,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -3001,61 +2618,26 @@ Assets {
         }
       }
       Objects {
-        Id: 12417088701614798209
-        Name: "Leg"
-        Transform {
-          Location {
-            X: 25
-          }
-          Rotation {
-            Pitch: 22.0423717
-            Yaw: 136.094635
-            Roll: -19.8607788
-          }
-          Scale {
-            X: 0.900000215
-            Y: 0.900000215
-            Z: 0.900000215
-          }
-        }
-        ParentId: 5513417614251839280
-        ChildIds: 9400383052909993294
-        ChildIds: 2924342544334310977
-        ChildIds: 5259088660067348224
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 9400383052909993294
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -72.0903473
-            Y: 1.69666255
-            Z: -57.7777672
+            X: 41.928318
+            Y: -42.8780861
+            Z: -69.1972198
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9998779
-            Roll: -7.5
+            Pitch: 18.3550262
+            Yaw: -126.185333
+            Roll: 15.7914734
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 1.69999993
+            X: 0.2700001
+            Y: 0.2700001
+            Z: 1.53000045
           }
         }
-        ParentId: 12417088701614798209
+        ParentId: 5513417614251839280
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3084,7 +2666,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -3107,21 +2689,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -132.090103
-            Y: 1.69691026
-            Z: -77.777771
+            X: 69.2375641
+            Y: -77.5719223
+            Z: -105.158981
           }
           Rotation {
-            Yaw: 89.9997711
-            Roll: -67.4998779
+            Pitch: 18.3550606
+            Yaw: -126.185432
+            Roll: -44.2084312
           }
           Scale {
-            X: 0.24000001
-            Y: 0.24000001
-            Z: 1.25263155
+            X: 0.216000095
+            Y: 0.216000095
+            Z: 1.12736881
           }
         }
-        ParentId: 12417088701614798209
+        ParentId: 5513417614251839280
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3150,7 +2733,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -3173,22 +2756,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -62.089817
-            Y: 1.69668818
-            Z: 22.2222214
+            X: 71.2679901
+            Y: -37.0986557
+            Z: -3.05831122
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9996796
-            Roll: -112.499786
+            Pitch: 18.3551
+            Yaw: -126.185524
+            Roll: -89.2083893
           }
           Scale {
-            X: 0.299999952
-            Y: 0.299999952
-            Z: 1.29999971
+            X: 0.270000041
+            Y: 0.270000041
+            Z: 1.17000008
           }
         }
-        ParentId: 12417088701614798209
+        ParentId: 5513417614251839280
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3217,7 +2800,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -3234,24 +2817,6 @@ Assets {
             BoundsScale: 1
           }
         }
-      }
-    }
-    Assets {
-      Id: 17938528237073520770
-      Name: "Sphere"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_sphere_002"
-      }
-    }
-    Assets {
-      Id: 15320790947018959030
-      Name: "Rubber Basic 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_scf_rubber_panels_004_uv"
       }
     }
     Assets {
@@ -3279,6 +2844,24 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "plastic_shiny_001"
+      }
+    }
+    Assets {
+      Id: 17938528237073520770
+      Name: "Sphere"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_sphere_002"
+      }
+    }
+    Assets {
+      Id: 15320790947018959030
+      Name: "Rubber Basic 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_scf_rubber_panels_004_uv"
       }
     }
     Assets {
@@ -3361,7 +2944,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

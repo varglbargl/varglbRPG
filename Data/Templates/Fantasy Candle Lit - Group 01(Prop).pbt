@@ -310,6 +310,6 @@ Assets {
       AssetId: "tm_fan_candle_grp_001_lit_01"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Props"
 }

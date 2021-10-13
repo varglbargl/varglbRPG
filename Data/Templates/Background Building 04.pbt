@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 10257968017435958825
+        ChildIds: 15846171347082012609
         ChildIds: 14451655111501749600
         ChildIds: 4799109385675054596
         ChildIds: 5128638616221808375
@@ -132,19 +132,19 @@ Assets {
         }
       }
       Objects {
-        Id: 10257968017435958825
+        Id: 15846171347082012609
         Name: "Bay Windows"
         Transform {
           Location {
             X: -754.029297
-            Y: 384.57373
+            Y: 384.574219
             Z: 144.540039
           }
           Rotation {
           }
           Scale {
             X: 1
-            Y: -1
+            Y: 1
             Z: 1
           }
         }
@@ -159,12 +159,42 @@ Assets {
         ChildIds: 5467648967888612066
         ChildIds: 10539885322605297669
         ChildIds: 16291493456710029344
-        ChildIds: 5940394079717987441
-        ChildIds: 1078700699030855839
-        ChildIds: 5371354098791320259
-        ChildIds: 16474936059101142335
-        ChildIds: 4949302309421834975
-        ChildIds: 11251015013006719550
+        ChildIds: 14335362874298060917
+        ChildIds: 14092619970383027872
+        ChildIds: 11175831829305834766
+        ChildIds: 6609245429505671968
+        ChildIds: 7300939505356663949
+        ChildIds: 3846882167479957857
+        ChildIds: 8416627587499518423
+        ChildIds: 4603502277965258214
+        ChildIds: 6211835719815336774
+        ChildIds: 5361818111581840000
+        ChildIds: 17514564553771506040
+        ChildIds: 2681019454080264583
+        ChildIds: 4692064113025065624
+        ChildIds: 6167699106419818801
+        ChildIds: 14674994711850742469
+        ChildIds: 4795291494518011648
+        ChildIds: 2760439703845118271
+        ChildIds: 12034273937258340049
+        ChildIds: 16373238361574244579
+        ChildIds: 18309673640629443762
+        ChildIds: 473222437632905326
+        ChildIds: 6554995023496262021
+        ChildIds: 4511729593913332393
+        ChildIds: 3462748895208028
+        ChildIds: 17926932403455627353
+        ChildIds: 12172905759858897235
+        ChildIds: 1256247110970643997
+        ChildIds: 9375775179005907493
+        ChildIds: 18020965019403330938
+        ChildIds: 14483497520105276658
+        ChildIds: 6204827249066028813
+        ChildIds: 7788095592581531162
+        ChildIds: 8385509433148503564
+        ChildIds: 6720035122606054474
+        ChildIds: 7024154373518463905
+        ChildIds: 17984978854356951338
         ChildIds: 11494013408665089953
         ChildIds: 6482901545426430488
         ChildIds: 15794689244920354258
@@ -203,7 +233,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -212,19 +242,19 @@ Assets {
         Transform {
           Location {
             X: 302.492188
-            Y: -82.9799805
+            Y: 82.9804688
             Z: 214.524414
           }
           Rotation {
-            Roll: 89.9999771
+            Roll: -89.9999619
           }
           Scale {
             X: 1.38402832
-            Y: 2.86691594
+            Y: -2.86691594
             Z: 0.988591671
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -280,21 +310,21 @@ Assets {
         Transform {
           Location {
             X: 458.689453
-            Y: 201.089844
+            Y: -201.089844
             Z: 292.400635
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9999619
-            Roll: 89.9999619
+            Pitch: 1.36603776e-05
+            Yaw: -89.9999466
+            Roll: -89.9999466
           }
           Scale {
             X: 8.38444
-            Y: 3.01654339
+            Y: -3.01654339
             Z: 5.04181767
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -338,19 +368,19 @@ Assets {
         Transform {
           Location {
             X: 107.738281
-            Y: 153.293213
+            Y: -153.292969
             Z: 19.7719727
           }
           Rotation {
-            Yaw: -135
+            Yaw: 135
           }
           Scale {
             X: 0.988591671
-            Y: 0.988591671
+            Y: -0.988591671
             Z: 0.988591671
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Cushion:id"
@@ -403,18 +433,18 @@ Assets {
         Transform {
           Location {
             X: 18.765625
-            Y: -128.455078
+            Y: 128.455078
             Z: 93.916748
           }
           Rotation {
           }
           Scale {
             X: 0.988591671
-            Y: 0.988591671
+            Y: -0.988591671
             Z: -1.58174658
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -462,18 +492,18 @@ Assets {
         Transform {
           Location {
             X: 23.7089844
-            Y: -118.569336
+            Y: 118.569336
             Z: 93.9162598
           }
           Rotation {
           }
           Scale {
             X: 0.692014158
-            Y: 0.692014158
+            Y: -0.692014158
             Z: 0.988591671
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -509,18 +539,18 @@ Assets {
         Transform {
           Location {
             X: 8.88085938
-            Y: -69.1398926
+            Y: 69.1396484
             Z: 158.174561
           }
           Rotation {
           }
           Scale {
             X: 0.296577513
-            Y: 0.296577513
+            Y: -0.296577513
             Z: 0.593155
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -556,19 +586,19 @@ Assets {
         Transform {
           Location {
             X: 443.857422
-            Y: 175.046875
+            Y: -175.046875
             Z: 29.6577148
           }
           Rotation {
-            Yaw: 89.9999771
+            Yaw: -89.9999619
           }
           Scale {
             X: 0.988591671
-            Y: 0.988591671
+            Y: -0.988591671
             Z: 0.988591671
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -604,18 +634,18 @@ Assets {
         Transform {
           Location {
             X: 448.800781
-            Y: 264.02002
+            Y: -264.019531
           }
           Rotation {
-            Yaw: 89.9999771
+            Yaw: -89.9999619
           }
           Scale {
             X: 0.988591671
-            Y: 0.988591671
+            Y: -0.988591671
             Z: 0.988591671
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:color"
@@ -662,19 +692,19 @@ Assets {
         Transform {
           Location {
             X: 193.058594
-            Y: 569.619873
+            Y: -569.620117
             Z: 217.490234
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 1.28516924
-            Y: 1.28516924
+            Y: -1.28516924
             Z: 1.28516924
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -710,18 +740,18 @@ Assets {
         Transform {
           Location {
             X: 305.457031
-            Y: -128.455322
+            Y: 128.455078
             Z: 197.718262
           }
           Rotation {
           }
           Scale {
             X: 1.68060589
-            Y: 0.88973254
+            Y: -0.88973254
             Z: 3.46007085
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -768,64 +798,26 @@ Assets {
         }
       }
       Objects {
-        Id: 5940394079717987441
-        Name: "NewFolder"
-        Transform {
-          Location {
-            X: -156.472656
-            Y: -0.139648438
-            Z: 96.1081543
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.988591671
-            Y: 0.988591671
-            Z: 0.988591671
-          }
-        }
-        ParentId: 10257968017435958825
-        ChildIds: 14335362874298060917
-        ChildIds: 14092619970383027872
-        ChildIds: 11175831829305834766
-        ChildIds: 6609245429505671968
-        ChildIds: 7300939505356663949
-        ChildIds: 3846882167479957857
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 14335362874298060917
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4941406
-            Y: -1.99389648
+            X: -203.425781
+            Y: 2.11035156
+            Z: 96.1081543
           }
           Rotation {
-            Yaw: 90.0000153
-            Roll: 89.9999924
+            Pitch: 6.83018879e-06
+            Yaw: -90.0000076
+            Roll: -89.9999771
           }
           Scale {
-            X: 0.622133
-            Y: 0.275026828
-            Z: 0.0508080572
+            X: 0.615035534
+            Y: -0.27188924
+            Z: 0.0502284206
           }
         }
-        ParentId: 5940394079717987441
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -871,20 +863,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410156
-            Y: -168.712402
+            X: -132.705078
+            Y: 166.927734
+            Z: 96.1081543
           }
           Rotation {
-            Yaw: 142.077866
-            Roll: 89.9999847
+            Pitch: -1.36603776e-05
+            Yaw: -142.077896
+            Roll: -89.999939
           }
           Scale {
-            X: 0.468020529
-            Y: 0.275026798
-            Z: 0.0508145913
+            X: 0.462681204
+            Y: -0.27188921
+            Z: 0.0502348803
           }
         }
-        ParentId: 5940394079717987441
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -930,21 +924,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7421875
-            Y: 170.094971
+            X: -133.001953
+            Y: -168.014648
+            Z: 96.1081543
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -142.077896
-            Roll: -90
+            Yaw: 142.077911
+            Roll: 90.0000153
           }
           Scale {
-            X: 0.468020529
-            Y: -0.275026798
-            Z: 0.0508145913
+            X: 0.462681204
+            Y: 0.27188921
+            Z: 0.0502348803
           }
         }
-        ParentId: 5940394079717987441
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -990,21 +985,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7421875
-            Y: 170.094971
+            X: -133.001953
+            Y: -168.014648
+            Z: 96.1081543
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -142.077896
-            Roll: -90.0000076
+            Yaw: 142.077927
+            Roll: 90.0000153
           }
           Scale {
-            X: 0.398425788
-            Y: -0.215199798
-            Z: 0.0397608206
+            X: 0.393880427
+            Y: 0.212744728
+            Z: 0.0393072143
           }
         }
-        ParentId: 5940394079717987441
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1050,20 +1046,21 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410156
-            Y: -168.712402
+            X: -132.705078
+            Y: 166.927734
+            Z: 96.1081543
           }
           Rotation {
-            Yaw: 142.077881
-            Roll: 89.9999847
+            Yaw: -142.077896
+            Roll: -89.9999619
           }
           Scale {
-            X: 0.398425788
-            Y: 0.215199798
-            Z: 0.0397608206
+            X: 0.393880427
+            Y: -0.212744728
+            Z: 0.0393072143
           }
         }
-        ParentId: 5940394079717987441
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1109,20 +1106,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4941406
-            Y: -1.99389648
+            X: -203.425781
+            Y: 2.11035156
+            Z: 96.1081543
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: 89.9999924
+            Pitch: 3.4150944e-05
+            Yaw: -89.9999619
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.52962172
-            Y: 0.215199828
-            Z: 0.0397557057
+            X: 0.523579597
+            Y: -0.212744758
+            Z: 0.0393021591
           }
         }
-        ParentId: 5940394079717987441
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1164,65 +1163,26 @@ Assets {
         }
       }
       Objects {
-        Id: 1078700699030855839
-        Name: "NewFolder"
-        Transform {
-          Location {
-            X: -164.386719
-            Y: -0.139648438
-            Z: 15.3007812
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.01348913
-            Y: 1.01348913
-            Z: 1.01348913
-          }
-        }
-        ParentId: 10257968017435958825
-        ChildIds: 8416627587499518423
-        ChildIds: 4603502277965258214
-        ChildIds: 6211835719815336774
-        ChildIds: 5361818111581840000
-        ChildIds: 17514564553771506040
-        ChildIds: 2681019454080264583
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 8416627587499518423
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4933472
-            Y: -1.99397182
-            Z: 4.72332954
+            X: -212.521484
+            Y: 2.16015625
+            Z: 20.0878906
           }
           Rotation {
-            Yaw: 90.0000153
-            Roll: 89.9999924
+            Pitch: 6.83018879e-06
+            Yaw: -90
+            Roll: -89.9999771
           }
           Scale {
-            X: 0.622133076
-            Y: 0.124174625
-            Z: 0.0508080274
+            X: 0.630525112
+            Y: -0.125849634
+            Z: 0.0514933839
           }
         }
-        ParentId: 1078700699030855839
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1268,21 +1228,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410175
-            Y: -168.712448
-            Z: 4.72332954
+            X: -140.021484
+            Y: 171.12793
+            Z: 20.0878906
           }
           Rotation {
-            Yaw: 142.077866
-            Roll: 89.9999847
+            Pitch: -1.36603776e-05
+            Yaw: -142.077896
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.468020588
-            Y: 0.124174625
-            Z: 0.0508145615
+            X: 0.474333763
+            Y: -0.125849634
+            Z: 0.0515000038
           }
         }
-        ParentId: 1078700699030855839
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1328,21 +1289,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7402344
-            Y: 170.089111
-            Z: 4.71704102
+            X: -140.326172
+            Y: -172.244141
+            Z: 20.081543
           }
           Rotation {
-            Yaw: -142.077896
-            Roll: -90
+            Pitch: -1.36603776e-05
+            Yaw: 142.077896
+            Roll: 90.0000076
           }
           Scale {
-            X: 0.468020588
-            Y: -0.124174625
-            Z: 0.0508145615
+            X: 0.474333763
+            Y: 0.125849634
+            Z: 0.0515000038
           }
         }
-        ParentId: 1078700699030855839
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1388,21 +1350,21 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7402344
-            Y: 170.089111
-            Z: 4.71704102
+            X: -140.326172
+            Y: -172.244141
+            Z: 20.081543
           }
           Rotation {
-            Yaw: -142.077896
-            Roll: -90
+            Yaw: 142.077896
+            Roll: 90.0000076
           }
           Scale {
-            X: 0.461227596
-            Y: -0.0929440483
-            Z: 0.0397608019
+            X: 0.467449158
+            Y: 0.0941977799
+            Z: 0.0402971394
           }
         }
-        ParentId: 1078700699030855839
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1448,21 +1410,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410175
-            Y: -168.712448
-            Z: 4.72332954
+            X: -140.021484
+            Y: 171.12793
+            Z: 20.0878906
           }
           Rotation {
-            Yaw: 142.077881
-            Roll: 89.9999847
+            Pitch: -1.36603776e-05
+            Yaw: -142.077911
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.461227596
-            Y: 0.0929440483
-            Z: 0.0397608019
+            X: 0.467449158
+            Y: -0.0941977799
+            Z: 0.0402971394
           }
         }
-        ParentId: 1078700699030855839
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1508,21 +1471,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4933472
-            Y: -1.99397182
-            Z: 4.72332954
+            X: -212.521484
+            Y: 2.16015625
+            Z: 20.0878906
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: 89.9999924
+            Pitch: 3.4150944e-05
+            Yaw: -89.9999542
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.613103211
-            Y: 0.0929440781
-            Z: 0.0397556908
+            X: 0.621373415
+            Y: -0.0941978097
+            Z: 0.0402919613
           }
         }
-        ParentId: 1078700699030855839
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1564,65 +1528,26 @@ Assets {
         }
       }
       Objects {
-        Id: 5371354098791320259
-        Name: "NewFolder"
-        Transform {
-          Location {
-            X: -164.386719
-            Y: -0.139648438
-            Z: 587.224365
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.01348913
-            Y: 1.01348913
-            Z: 1.01348913
-          }
-        }
-        ParentId: 10257968017435958825
-        ChildIds: 4692064113025065624
-        ChildIds: 6167699106419818801
-        ChildIds: 14674994711850742469
-        ChildIds: 4795291494518011648
-        ChildIds: 2760439703845118271
-        ChildIds: 12034273937258340049
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 4692064113025065624
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4933472
-            Y: -1.99397182
-            Z: 4.72332954
+            X: -212.521484
+            Y: 2.16015625
+            Z: 592.011475
           }
           Rotation {
-            Yaw: 90.0000153
-            Roll: 89.9999924
+            Pitch: 6.83018879e-06
+            Yaw: -90
+            Roll: -89.9999771
           }
           Scale {
-            X: 0.622133076
-            Y: 0.124174625
-            Z: 0.0508080274
+            X: 0.630525112
+            Y: -0.125849634
+            Z: 0.0514933839
           }
         }
-        ParentId: 5371354098791320259
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1668,21 +1593,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410175
-            Y: -168.712448
-            Z: 4.72332954
+            X: -140.021484
+            Y: 171.12793
+            Z: 592.011475
           }
           Rotation {
-            Yaw: 142.077866
-            Roll: 89.9999847
+            Pitch: -1.36603776e-05
+            Yaw: -142.077896
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.468020588
-            Y: 0.124174625
-            Z: 0.0508145615
+            X: 0.474333763
+            Y: -0.125849634
+            Z: 0.0515000038
           }
         }
-        ParentId: 5371354098791320259
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1728,21 +1654,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7402344
-            Y: 170.089111
-            Z: 4.71704102
+            X: -140.326172
+            Y: -172.244141
+            Z: 592.005127
           }
           Rotation {
-            Yaw: -142.077896
-            Roll: -90
+            Pitch: -1.36603776e-05
+            Yaw: 142.077896
+            Roll: 90.0000076
           }
           Scale {
-            X: 0.468020588
-            Y: -0.124174625
-            Z: 0.0508145615
+            X: 0.474333763
+            Y: 0.125849634
+            Z: 0.0515000038
           }
         }
-        ParentId: 5371354098791320259
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1788,21 +1715,21 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7402344
-            Y: 170.089111
-            Z: 4.71704102
+            X: -140.326172
+            Y: -172.244141
+            Z: 592.005127
           }
           Rotation {
-            Yaw: -142.077896
-            Roll: -90
+            Yaw: 142.077896
+            Roll: 90.0000076
           }
           Scale {
-            X: 0.461227596
-            Y: -0.0929440483
-            Z: 0.0397608019
+            X: 0.467449158
+            Y: 0.0941977799
+            Z: 0.0402971394
           }
         }
-        ParentId: 5371354098791320259
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1848,21 +1775,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410175
-            Y: -168.712448
-            Z: 4.72332954
+            X: -140.021484
+            Y: 171.12793
+            Z: 592.011475
           }
           Rotation {
-            Yaw: 142.077881
-            Roll: 89.9999847
+            Pitch: -1.36603776e-05
+            Yaw: -142.077911
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.461227596
-            Y: 0.0929440483
-            Z: 0.0397608019
+            X: 0.467449158
+            Y: -0.0941977799
+            Z: 0.0402971394
           }
         }
-        ParentId: 5371354098791320259
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1908,21 +1836,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4933472
-            Y: -1.99397182
-            Z: 4.72332954
+            X: -212.521484
+            Y: 2.16015625
+            Z: 592.011475
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: 89.9999924
+            Pitch: 3.4150944e-05
+            Yaw: -89.9999542
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.613103211
-            Y: 0.0929440781
-            Z: 0.0397556908
+            X: 0.621373415
+            Y: -0.0941978097
+            Z: 0.0402919613
           }
         }
-        ParentId: 5371354098791320259
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -1964,64 +1893,26 @@ Assets {
         }
       }
       Objects {
-        Id: 16474936059101142335
-        Name: "NewFolder"
-        Transform {
-          Location {
-            X: -156.472656
-            Y: -0.139648438
-            Z: 668.032
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.988591671
-            Y: 0.988591671
-            Z: 0.988591671
-          }
-        }
-        ParentId: 10257968017435958825
-        ChildIds: 16373238361574244579
-        ChildIds: 18309673640629443762
-        ChildIds: 473222437632905326
-        ChildIds: 6554995023496262021
-        ChildIds: 4511729593913332393
-        ChildIds: 3462748895208028
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 16373238361574244579
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4941406
-            Y: -1.99389648
+            X: -203.425781
+            Y: 2.11035156
+            Z: 668.032
           }
           Rotation {
-            Yaw: 90.0000153
-            Roll: 89.9999924
+            Pitch: 6.83018879e-06
+            Yaw: -90.0000076
+            Roll: -89.9999771
           }
           Scale {
-            X: 0.622133
-            Y: 0.275026828
-            Z: 0.0508080572
+            X: 0.615035534
+            Y: -0.27188924
+            Z: 0.0502284206
           }
         }
-        ParentId: 16474936059101142335
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2067,20 +1958,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410156
-            Y: -168.712402
+            X: -132.705078
+            Y: 166.927734
+            Z: 668.032
           }
           Rotation {
-            Yaw: 142.077866
-            Roll: 89.9999847
+            Pitch: -1.36603776e-05
+            Yaw: -142.077896
+            Roll: -89.999939
           }
           Scale {
-            X: 0.468020529
-            Y: 0.275026798
-            Z: 0.0508145913
+            X: 0.462681204
+            Y: -0.27188921
+            Z: 0.0502348803
           }
         }
-        ParentId: 16474936059101142335
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2126,21 +2019,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7421875
-            Y: 170.094971
+            X: -133.001953
+            Y: -168.014648
+            Z: 668.032
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -142.077896
-            Roll: -90
+            Yaw: 142.077911
+            Roll: 90.0000153
           }
           Scale {
-            X: 0.468020529
-            Y: -0.275026798
-            Z: 0.0508145913
+            X: 0.462681204
+            Y: 0.27188921
+            Z: 0.0502348803
           }
         }
-        ParentId: 16474936059101142335
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2186,21 +2080,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7421875
-            Y: 170.094971
+            X: -133.001953
+            Y: -168.014648
+            Z: 668.032
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -142.077896
-            Roll: -90.0000076
+            Yaw: 142.077927
+            Roll: 90.0000153
           }
           Scale {
-            X: 0.398425788
-            Y: -0.215199798
-            Z: 0.0397608206
+            X: 0.393880427
+            Y: 0.212744728
+            Z: 0.0393072143
           }
         }
-        ParentId: 16474936059101142335
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2246,20 +2141,21 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410156
-            Y: -168.712402
+            X: -132.705078
+            Y: 166.927734
+            Z: 668.032
           }
           Rotation {
-            Yaw: 142.077881
-            Roll: 89.9999847
+            Yaw: -142.077896
+            Roll: -89.9999619
           }
           Scale {
-            X: 0.398425788
-            Y: 0.215199798
-            Z: 0.0397608206
+            X: 0.393880427
+            Y: -0.212744728
+            Z: 0.0393072143
           }
         }
-        ParentId: 16474936059101142335
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2305,20 +2201,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4941406
-            Y: -1.99389648
+            X: -203.425781
+            Y: 2.11035156
+            Z: 668.032
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: 89.9999924
+            Pitch: 3.4150944e-05
+            Yaw: -89.9999619
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.52962172
-            Y: 0.215199828
-            Z: 0.0397557057
+            X: 0.523579597
+            Y: -0.212744758
+            Z: 0.0393021591
           }
         }
-        ParentId: 16474936059101142335
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2360,65 +2258,26 @@ Assets {
         }
       }
       Objects {
-        Id: 4949302309421834975
-        Name: "NewFolder"
-        Transform {
-          Location {
-            X: -164.386719
-            Y: -0.139648438
-            Z: 1155.875
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.01348913
-            Y: 1.01348913
-            Z: 1.01348913
-          }
-        }
-        ParentId: 10257968017435958825
-        ChildIds: 17926932403455627353
-        ChildIds: 12172905759858897235
-        ChildIds: 1256247110970643997
-        ChildIds: 9375775179005907493
-        ChildIds: 18020965019403330938
-        ChildIds: 14483497520105276658
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 17926932403455627353
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4933472
-            Y: -1.99397182
-            Z: 4.72332954
+            X: -212.521484
+            Y: 2.16015625
+            Z: 1160.66211
           }
           Rotation {
-            Yaw: 90.0000153
-            Roll: 89.9999924
+            Pitch: 6.83018879e-06
+            Yaw: -90
+            Roll: -89.9999771
           }
           Scale {
-            X: 0.622133076
-            Y: 0.124174625
-            Z: 0.0508080274
+            X: 0.630525112
+            Y: -0.125849634
+            Z: 0.0514933839
           }
         }
-        ParentId: 4949302309421834975
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2464,21 +2323,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410175
-            Y: -168.712448
-            Z: 4.72332954
+            X: -140.021484
+            Y: 171.12793
+            Z: 1160.66211
           }
           Rotation {
-            Yaw: 142.077866
-            Roll: 89.9999847
+            Pitch: -1.36603776e-05
+            Yaw: -142.077896
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.468020588
-            Y: 0.124174625
-            Z: 0.0508145615
+            X: 0.474333763
+            Y: -0.125849634
+            Z: 0.0515000038
           }
         }
-        ParentId: 4949302309421834975
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2524,21 +2384,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7402344
-            Y: 170.089111
-            Z: 4.71704102
+            X: -140.326172
+            Y: -172.244141
+            Z: 1160.65576
           }
           Rotation {
-            Yaw: -142.077896
-            Roll: -90
+            Pitch: -1.36603776e-05
+            Yaw: 142.077896
+            Roll: 90.0000076
           }
           Scale {
-            X: 0.468020588
-            Y: -0.124174625
-            Z: 0.0508145615
+            X: 0.474333763
+            Y: 0.125849634
+            Z: 0.0515000038
           }
         }
-        ParentId: 4949302309421834975
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2584,21 +2445,21 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7402344
-            Y: 170.089111
-            Z: 4.71704102
+            X: -140.326172
+            Y: -172.244141
+            Z: 1160.65576
           }
           Rotation {
-            Yaw: -142.077896
-            Roll: -90
+            Yaw: 142.077896
+            Roll: 90.0000076
           }
           Scale {
-            X: 0.461227596
-            Y: -0.0929440483
-            Z: 0.0397608019
+            X: 0.467449158
+            Y: 0.0941977799
+            Z: 0.0402971394
           }
         }
-        ParentId: 4949302309421834975
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2644,21 +2505,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410175
-            Y: -168.712448
-            Z: 4.72332954
+            X: -140.021484
+            Y: 171.12793
+            Z: 1160.66211
           }
           Rotation {
-            Yaw: 142.077881
-            Roll: 89.9999847
+            Pitch: -1.36603776e-05
+            Yaw: -142.077911
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.461227596
-            Y: 0.0929440483
-            Z: 0.0397608019
+            X: 0.467449158
+            Y: -0.0941977799
+            Z: 0.0402971394
           }
         }
-        ParentId: 4949302309421834975
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2704,21 +2566,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4933472
-            Y: -1.99397182
-            Z: 4.72332954
+            X: -212.521484
+            Y: 2.16015625
+            Z: 1160.66211
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: 89.9999924
+            Pitch: 3.4150944e-05
+            Yaw: -89.9999542
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.613103211
-            Y: 0.0929440781
-            Z: 0.0397556908
+            X: 0.621373415
+            Y: -0.0941978097
+            Z: 0.0402919613
           }
         }
-        ParentId: 4949302309421834975
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2760,64 +2623,26 @@ Assets {
         }
       }
       Objects {
-        Id: 11251015013006719550
-        Name: "NewFolder"
-        Transform {
-          Location {
-            X: -156.472656
-            Y: -0.139648438
-            Z: 1236.68262
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.988591671
-            Y: 0.988591671
-            Z: 0.988591671
-          }
-        }
-        ParentId: 10257968017435958825
-        ChildIds: 6204827249066028813
-        ChildIds: 7788095592581531162
-        ChildIds: 8385509433148503564
-        ChildIds: 6720035122606054474
-        ChildIds: 7024154373518463905
-        ChildIds: 17984978854356951338
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsFilePartition: true
-        }
-      }
-      Objects {
         Id: 6204827249066028813
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4941406
-            Y: -1.99389648
+            X: -203.425781
+            Y: 2.11035156
+            Z: 1236.68262
           }
           Rotation {
-            Yaw: 90.0000153
-            Roll: 89.9999924
+            Pitch: 6.83018879e-06
+            Yaw: -90.0000076
+            Roll: -89.9999771
           }
           Scale {
-            X: 0.622133
-            Y: 0.275026828
-            Z: 0.0508080572
+            X: 0.615035534
+            Y: -0.27188924
+            Z: 0.0502284206
           }
         }
-        ParentId: 11251015013006719550
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2863,20 +2688,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410156
-            Y: -168.712402
+            X: -132.705078
+            Y: 166.927734
+            Z: 1236.68262
           }
           Rotation {
-            Yaw: 142.077866
-            Roll: 89.9999847
+            Pitch: -1.36603776e-05
+            Yaw: -142.077896
+            Roll: -89.999939
           }
           Scale {
-            X: 0.468020529
-            Y: 0.275026798
-            Z: 0.0508145913
+            X: 0.462681204
+            Y: -0.27188921
+            Z: 0.0502348803
           }
         }
-        ParentId: 11251015013006719550
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2922,21 +2749,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7421875
-            Y: 170.094971
+            X: -133.001953
+            Y: -168.014648
+            Z: 1236.68262
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -142.077896
-            Roll: -90
+            Yaw: 142.077911
+            Roll: 90.0000153
           }
           Scale {
-            X: 0.468020529
-            Y: -0.275026798
-            Z: 0.0508145913
+            X: 0.462681204
+            Y: 0.27188921
+            Z: 0.0502348803
           }
         }
-        ParentId: 11251015013006719550
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2982,21 +2810,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 23.7421875
-            Y: 170.094971
+            X: -133.001953
+            Y: -168.014648
+            Z: 1236.68262
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -142.077896
-            Roll: -90.0000076
+            Yaw: 142.077927
+            Roll: 90.0000153
           }
           Scale {
-            X: 0.398425788
-            Y: -0.215199798
-            Z: 0.0397608206
+            X: 0.393880427
+            Y: 0.212744728
+            Z: 0.0393072143
           }
         }
-        ParentId: 11251015013006719550
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -3042,20 +2871,21 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: 24.0410156
-            Y: -168.712402
+            X: -132.705078
+            Y: 166.927734
+            Z: 1236.68262
           }
           Rotation {
-            Yaw: 142.077881
-            Roll: 89.9999847
+            Yaw: -142.077896
+            Roll: -89.9999619
           }
           Scale {
-            X: 0.398425788
-            Y: 0.215199798
-            Z: 0.0397608206
+            X: 0.393880427
+            Y: -0.212744728
+            Z: 0.0393072143
           }
         }
-        ParentId: 11251015013006719550
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -3101,20 +2931,22 @@ Assets {
         Name: "Decal Sci-fi Details 01"
         Transform {
           Location {
-            X: -47.4941406
-            Y: -1.99389648
+            X: -203.425781
+            Y: 2.11035156
+            Z: 1236.68262
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: 89.9999924
+            Pitch: 3.4150944e-05
+            Yaw: -89.9999619
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.52962172
-            Y: 0.215199828
-            Z: 0.0397557057
+            X: 0.523579597
+            Y: -0.212744758
+            Z: 0.0393021591
           }
         }
-        ParentId: 11251015013006719550
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -3161,18 +2993,18 @@ Assets {
         Transform {
           Location {
             X: 75.8457
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 1441.48242
           }
           Rotation {
           }
           Scale {
             X: 0.702541232
-            Y: 0.602178216
+            Y: -0.602178216
             Z: 0.903267384
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -3296,19 +3128,19 @@ Assets {
         Transform {
           Location {
             X: -187.505859
-            Y: 1.74780273
+            Y: -1.74804688
             Z: 174.02002
           }
           Rotation {
-            Yaw: -90
+            Yaw: 89.9999924
           }
           Scale {
             X: 1.00147069
-            Y: 0.593155
+            Y: -0.593155
             Z: 1.06200743
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3344,19 +3176,19 @@ Assets {
         Transform {
           Location {
             X: -123.011719
-            Y: 152.131836
+            Y: -152.131836
             Z: 171.963623
           }
           Rotation {
-            Yaw: 38.5074654
+            Yaw: -38.5074425
           }
           Scale {
             X: 0.890537262
-            Y: -0.494293392
+            Y: 0.494293392
             Z: 1.06200743
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3392,19 +3224,19 @@ Assets {
         Transform {
           Location {
             X: -122.765625
-            Y: -150.417725
+            Y: 150.417969
             Z: 171.963623
           }
           Rotation {
-            Yaw: -38.5073853
+            Yaw: 38.5073471
           }
           Scale {
             X: -0.890537262
-            Y: 0.494293392
+            Y: -0.494293392
             Z: 1.06200743
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3440,19 +3272,19 @@ Assets {
         Transform {
           Location {
             X: -122.765625
-            Y: -150.417725
+            Y: 150.417969
             Z: 739.990723
           }
           Rotation {
-            Yaw: -38.5073547
+            Yaw: 38.5073242
           }
           Scale {
             X: -0.890537262
-            Y: 0.494293392
+            Y: -0.494293392
             Z: 1.06200743
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3488,19 +3320,19 @@ Assets {
         Transform {
           Location {
             X: -187.505859
-            Y: 1.74780273
+            Y: -1.74804688
             Z: 739.990479
           }
           Rotation {
-            Yaw: -90
+            Yaw: 89.9999924
           }
           Scale {
             X: 1.00147069
-            Y: 0.593155
+            Y: -0.593155
             Z: 1.06200743
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3536,19 +3368,19 @@ Assets {
         Transform {
           Location {
             X: -123.011719
-            Y: 152.131836
+            Y: -152.131836
             Z: 739.990723
           }
           Rotation {
-            Yaw: 38.5074348
+            Yaw: -38.507412
           }
           Scale {
             X: 0.890537262
-            Y: -0.494293392
+            Y: 0.494293392
             Z: 1.06200743
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3584,19 +3416,19 @@ Assets {
         Transform {
           Location {
             X: -122.765625
-            Y: -150.417725
+            Y: 150.417969
             Z: 1307.08521
           }
           Rotation {
-            Yaw: -38.5073547
+            Yaw: 38.5073242
           }
           Scale {
             X: -0.890537262
-            Y: 0.494293392
+            Y: -0.494293392
             Z: 1.06200743
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3632,19 +3464,19 @@ Assets {
         Transform {
           Location {
             X: -187.505859
-            Y: 1.74780273
+            Y: -1.74804688
             Z: 1307.08496
           }
           Rotation {
-            Yaw: -90
+            Yaw: 89.9999924
           }
           Scale {
             X: 1.00147069
-            Y: 0.593155
+            Y: -0.593155
             Z: 1.06200743
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3680,19 +3512,19 @@ Assets {
         Transform {
           Location {
             X: -123.011719
-            Y: 152.131836
+            Y: -152.131836
             Z: 1307.08521
           }
           Rotation {
-            Yaw: 38.507412
+            Yaw: -38.5073853
           }
           Scale {
             X: 0.890537262
-            Y: -0.494293392
+            Y: 0.494293392
             Z: 1.06200743
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3728,19 +3560,19 @@ Assets {
         Transform {
           Location {
             X: -55.3789062
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 929.276123
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 2.96577501
-            Y: 4.05322599
+            Y: -4.05322599
             Z: 5.14067698
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3791,19 +3623,19 @@ Assets {
         Transform {
           Location {
             X: -55.3789062
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 1502.65918
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 2.96577501
-            Y: 4.05322599
+            Y: -4.05322599
             Z: 5.14067698
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3854,19 +3686,19 @@ Assets {
         Transform {
           Location {
             X: -60.3222656
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 75.3945312
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 3.30484319
-            Y: 4.48219156
+            Y: -4.48219156
             Z: 1.61653304
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3919,19 +3751,19 @@ Assets {
         Transform {
           Location {
             X: -60.3222656
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 641.088379
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 3.30484319
-            Y: 4.48219156
+            Y: -4.48219156
             Z: 1.61653304
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3984,19 +3816,19 @@ Assets {
         Transform {
           Location {
             X: -60.3222656
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 1215.34473
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 3.30484319
-            Y: 4.48219156
+            Y: -4.48219156
             Z: 1.61653304
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4049,19 +3881,19 @@ Assets {
         Transform {
           Location {
             X: -55.3789062
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: -5.57275391
           }
           Rotation {
-            Yaw: 89.9999542
+            Yaw: -89.9999542
           }
           Scale {
             X: 4.34980345
-            Y: 3.26235247
+            Y: -3.26235247
             Z: -0.88973254
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4114,19 +3946,19 @@ Assets {
         Transform {
           Location {
             X: -57.703125
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 18.9301758
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 3.64087272
-            Y: 4.64423084
+            Y: -4.64423084
             Z: 0.561870694
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4191,19 +4023,19 @@ Assets {
         Transform {
           Location {
             X: -57.703125
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 591.366211
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 3.64087272
-            Y: 4.64423084
+            Y: -4.64423084
             Z: 0.561870694
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4268,19 +4100,19 @@ Assets {
         Transform {
           Location {
             X: -55.3789062
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 355.893066
           }
           Rotation {
-            Yaw: -179.999969
+            Yaw: 179.999954
           }
           Scale {
             X: 2.96577501
-            Y: 4.05322599
+            Y: -4.05322599
             Z: 5.14067698
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4331,19 +4163,19 @@ Assets {
         Transform {
           Location {
             X: -57.703125
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 1160.17334
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 3.64087272
-            Y: 4.64423084
+            Y: -4.64423084
             Z: 0.561870694
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4408,19 +4240,19 @@ Assets {
         Transform {
           Location {
             X: -57.703125
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 161.980469
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 3.64087272
-            Y: 4.64423084
+            Y: -4.64423084
             Z: 0.170768693
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4485,19 +4317,19 @@ Assets {
         Transform {
           Location {
             X: -57.703125
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 727.675293
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 3.64087272
-            Y: 4.64423084
+            Y: -4.64423084
             Z: 0.170768693
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4562,19 +4394,19 @@ Assets {
         Transform {
           Location {
             X: -57.703125
-            Y: 0.0615234375
+            Y: -0.0615234375
             Z: 1301.93164
           }
           Rotation {
-            Yaw: -179.999954
+            Yaw: 179.999954
           }
           Scale {
             X: 3.64087272
-            Y: 4.64423084
+            Y: -4.64423084
             Z: 0.170768693
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4639,19 +4471,19 @@ Assets {
         Transform {
           Location {
             X: -109.199219
-            Y: -101.564697
+            Y: 101.564453
             Z: 170.519043
           }
           Rotation {
-            Yaw: 46.8903046
+            Yaw: -46.8902893
           }
           Scale {
             X: 0.606915474
-            Y: 0.606915474
+            Y: -0.606915474
             Z: 0.606915474
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4712,19 +4544,19 @@ Assets {
         Transform {
           Location {
             X: -107.789062
-            Y: 103.569824
+            Y: -103.570312
             Z: 170.519043
           }
           Rotation {
-            Yaw: 127.660873
+            Yaw: -127.660843
           }
           Scale {
             X: 0.606915474
-            Y: 0.606915474
+            Y: -0.606915474
             Z: 0.606915474
           }
         }
-        ParentId: 10257968017435958825
+        ParentId: 15846171347082012609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4795,8 +4627,8 @@ Assets {
           }
         }
         ParentId: 16562910984651240293
-        ChildIds: 18300507171487838242
-        ChildIds: 11129929978191527023
+        ChildIds: 2352655998053470230
+        ChildIds: 15673932093690369852
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -4813,8 +4645,8 @@ Assets {
         }
       }
       Objects {
-        Id: 18300507171487838242
-        Name: "NewFolder"
+        Id: 2352655998053470230
+        Name: "Group"
         Transform {
           Location {
           }
@@ -4849,7 +4681,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -4860,7 +4692,7 @@ Assets {
           }
           Rotation {
             Yaw: 89.9998779
-            Roll: -89.9999771
+            Roll: -89.9999695
           }
           Scale {
             X: 4.70000076
@@ -4868,7 +4700,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 18300507171487838242
+        ParentId: 2352655998053470230
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -4897,8 +4729,9 @@ Assets {
             Z: 1530
           }
           Rotation {
-            Yaw: 89.9998856
-            Roll: -89.9999924
+            Pitch: -2.04905664e-05
+            Yaw: 89.9998627
+            Roll: -89.9999619
           }
           Scale {
             X: 4.70000076
@@ -4906,7 +4739,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 18300507171487838242
+        ParentId: 2352655998053470230
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4959,11 +4792,11 @@ Assets {
         Transform {
           Location {
             X: 555
-            Y: -606.040771
+            Y: -606.041
             Z: 1524.74097
           }
           Rotation {
-            Roll: -90
+            Roll: -89.9999847
           }
           Scale {
             X: 4.70000076
@@ -4971,7 +4804,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 18300507171487838242
+        ParentId: 2352655998053470230
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5024,11 +4857,11 @@ Assets {
         Transform {
           Location {
             X: -200
-            Y: -606.040771
+            Y: -606.041
             Z: 939.740967
           }
           Rotation {
-            Roll: -90
+            Roll: -89.9999847
           }
           Scale {
             X: 4.70000076
@@ -5036,7 +4869,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 18300507171487838242
+        ParentId: 2352655998053470230
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5089,12 +4922,13 @@ Assets {
         Transform {
           Location {
             X: -794.998047
-            Y: 417.345825
+            Y: 417.345703
             Z: 891.305176
           }
           Rotation {
-            Yaw: 89.9998703
-            Roll: 90
+            Pitch: 1.36603776e-05
+            Yaw: 89.9998398
+            Roll: 89.9999695
           }
           Scale {
             X: -2.83006024
@@ -5102,7 +4936,7 @@ Assets {
             Z: 4.69996071
           }
         }
-        ParentId: 18300507171487838242
+        ParentId: 2352655998053470230
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5159,7 +4993,7 @@ Assets {
             Z: 1530
           }
           Rotation {
-            Roll: 89.9999924
+            Roll: 89.9999847
           }
           Scale {
             X: -4.70000076
@@ -5167,7 +5001,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 18300507171487838242
+        ParentId: 2352655998053470230
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5224,7 +5058,7 @@ Assets {
             Z: 945
           }
           Rotation {
-            Roll: 89.9999924
+            Roll: 89.9999847
           }
           Scale {
             X: -4.70000076
@@ -5232,7 +5066,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 18300507171487838242
+        ParentId: 2352655998053470230
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5289,9 +5123,9 @@ Assets {
             Z: 285
           }
           Rotation {
-            Pitch: 2.04905664e-05
-            Yaw: 89.9998398
-            Roll: 89.9999695
+            Pitch: 2.73207552e-05
+            Yaw: 89.9998169
+            Roll: 89.9999542
           }
           Scale {
             X: -2.00000024
@@ -5299,7 +5133,7 @@ Assets {
             Z: 1.30000007
           }
         }
-        ParentId: 18300507171487838242
+        ParentId: 2352655998053470230
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5352,19 +5186,19 @@ Assets {
         Transform {
           Location {
             X: -812.380859
-            Y: -384.51123
+            Y: -384.511719
             Z: 372.532715
           }
           Rotation {
             Yaw: -179.999954
           }
           Scale {
-            X: 2.8965888
-            Y: 3.99901628
-            Z: 5.07192278
+            X: 2.88536644
+            Y: 3.98352265
+            Z: 5.05227184
           }
         }
-        ParentId: 18300507171487838242
+        ParentId: 2352655998053470230
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5412,8 +5246,8 @@ Assets {
         }
       }
       Objects {
-        Id: 11129929978191527023
-        Name: "NewFolder"
+        Id: 15673932093690369852
+        Name: "Group"
         Transform {
           Location {
           }
@@ -5448,7 +5282,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -5459,7 +5293,7 @@ Assets {
           }
           Rotation {
             Yaw: 89.9998779
-            Roll: -89.9999771
+            Roll: -89.9999695
           }
           Scale {
             X: 4.70000076
@@ -5467,7 +5301,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 11129929978191527023
+        ParentId: 15673932093690369852
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -5496,8 +5330,9 @@ Assets {
             Z: 1530
           }
           Rotation {
-            Yaw: 89.9998856
-            Roll: -90
+            Pitch: -6.83018879e-06
+            Yaw: 89.9998779
+            Roll: -89.9999924
           }
           Scale {
             X: 4.70000076
@@ -5505,7 +5340,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 11129929978191527023
+        ParentId: 15673932093690369852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5558,11 +5393,11 @@ Assets {
         Transform {
           Location {
             X: 410
-            Y: -606.040771
+            Y: -606.041
             Z: 889.740967
           }
           Rotation {
-            Roll: -90
+            Roll: -89.9999847
           }
           Scale {
             X: 6.19999838
@@ -5570,7 +5405,7 @@ Assets {
             Z: 6.19999838
           }
         }
-        ParentId: 11129929978191527023
+        ParentId: 15673932093690369852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5623,11 +5458,11 @@ Assets {
         Transform {
           Location {
             X: -530
-            Y: -606.040771
+            Y: -606.041
             Z: 1509.74097
           }
           Rotation {
-            Roll: -90
+            Roll: -89.9999847
           }
           Scale {
             X: 4.70000076
@@ -5635,7 +5470,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 11129929978191527023
+        ParentId: 15673932093690369852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5688,12 +5523,13 @@ Assets {
         Transform {
           Location {
             X: -795
-            Y: 46.0241699
+            Y: 46.0244141
             Z: 1210.66333
           }
           Rotation {
-            Yaw: 89.9998703
-            Roll: 90
+            Pitch: 2.04905664e-05
+            Yaw: 89.999855
+            Roll: 89.9999771
           }
           Scale {
             X: -3.15191412
@@ -5701,7 +5537,7 @@ Assets {
             Z: 4.69996071
           }
         }
-        ParentId: 11129929978191527023
+        ParentId: 15673932093690369852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5758,7 +5594,7 @@ Assets {
             Z: 920
           }
           Rotation {
-            Roll: 89.9999924
+            Roll: 89.9999847
           }
           Scale {
             X: -4.70000076
@@ -5766,7 +5602,7 @@ Assets {
             Z: 4.70000076
           }
         }
-        ParentId: 11129929978191527023
+        ParentId: 15673932093690369852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5823,7 +5659,7 @@ Assets {
             Z: 1500
           }
           Rotation {
-            Roll: 89.9999924
+            Roll: 89.9999847
           }
           Scale {
             X: -5.99999809
@@ -5831,7 +5667,7 @@ Assets {
             Z: 5.99999809
           }
         }
-        ParentId: 11129929978191527023
+        ParentId: 15673932093690369852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5888,8 +5724,9 @@ Assets {
             Z: 2160
           }
           Rotation {
-            Yaw: 89.9999619
-            Roll: -89.9999695
+            Pitch: -2.04905664e-05
+            Yaw: 89.999939
+            Roll: -89.9999466
           }
           Scale {
             X: -2.5
@@ -5897,7 +5734,7 @@ Assets {
             Z: 2.5
           }
         }
-        ParentId: 11129929978191527023
+        ParentId: 15673932093690369852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5950,7 +5787,7 @@ Assets {
         Transform {
           Location {
             X: -812.380859
-            Y: -384.51123
+            Y: -384.511719
             Z: 1522.65723
           }
           Rotation {
@@ -5962,7 +5799,7 @@ Assets {
             Z: 4.3
           }
         }
-        ParentId: 11129929978191527023
+        ParentId: 15673932093690369852
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -17984,6 +17821,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Tilesets"
 }

@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18337830126536560089
+  Name: "Craftsman Part - Window 01 2x"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_part_window_001_2x"
+  }
+}
+Assets {
   Id: 18302070369115552264
   Name: "Cylinder - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -152,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18107392932016691132
+  Name: "Ambience Water Hot Spring Bath Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_water_hot_spring_bath_loop_01_Cue_ref"
+  }
+}
+Assets {
   Id: 18091304461552969899
   Name: "Prism - 7-Sided"
   PlatformAssetType: 1
@@ -221,6 +239,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_sakura_hero_02_ref"
+  }
+}
+Assets {
+  Id: 17974380994265029291
+  Name: "Wallpaper Fleur De Lis 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wallpaper_fleurdelis_001_uv"
   }
 }
 Assets {
@@ -365,6 +392,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_curtain_01"
+  }
+}
+Assets {
+  Id: 17713444884118919250
+  Name: "Metal Old Beaten Gold 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_002"
   }
 }
 Assets {
@@ -674,15 +710,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16939971480815329395
-  Name: "Counter - Combined"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_counter_combined_001"
-  }
-}
-Assets {
   Id: 16936266167818954403
   Name: "Cylinder - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -944,6 +971,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16334251506236293019
+  Name: "Fantasy Dish Set - Chalice 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_dish_set_chalice_001_ref"
+  }
+}
+Assets {
   Id: 16284773886050301487
   Name: "Fantasy Castle Accessory Roof 02"
   PlatformAssetType: 1
@@ -998,6 +1034,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16186302453518632186
+  Name: "Sign Font 4 Hiragana: ("
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "meyirobold_01_Text_097"
+  }
+}
+Assets {
   Id: 16163665952175281032
   Name: "Urban Pipe Coupling 02"
   PlatformAssetType: 1
@@ -1034,21 +1079,21 @@ Assets {
   }
 }
 Assets {
+  Id: 16105019287393083392
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
   Id: 16104667655440633833
   Name: "Ring - Quarter"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_quarter_torus_002"
-  }
-}
-Assets {
-  Id: 16095451113085889863
-  Name: "Wallpaper Stripes 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_wallpaper_001"
   }
 }
 Assets {
@@ -1196,6 +1241,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15744908842130492752
+  Name: "Craftsman Roof 01 Bracket"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_bracket"
+  }
+}
+Assets {
   Id: 15732777065278343437
   Name: "Urban Pipe Clamp 01"
   PlatformAssetType: 1
@@ -1241,6 +1295,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15624676060717398659
+  Name: "Basic Pepper 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_org_pepper_002_ref"
+  }
+}
+Assets {
   Id: 15623445257236215190
   Name: "BG Highlighted 002"
   PlatformAssetType: 9
@@ -1268,12 +1331,30 @@ Assets {
   }
 }
 Assets {
+  Id: 15571624632554574870
+  Name: "Craftsman Wall 01 Half "
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_001_half"
+  }
+}
+Assets {
   Id: 15570575185203344304
   Name: "Cube - Chamfered Large"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_chamfer"
+  }
+}
+Assets {
+  Id: 15552213270345070786
+  Name: "Japanese Temple Window Frame 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_window_frame_002_ref"
   }
 }
 Assets {
@@ -1292,6 +1373,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_window_02_ref"
+  }
+}
+Assets {
+  Id: 15402296587404581505
+  Name: "Main Street Trim 02 - Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_002_corner_ref"
   }
 }
 Assets {
@@ -1409,6 +1499,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_jpn_katana_handle_001"
+  }
+}
+Assets {
+  Id: 15240646233324917545
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_sm"
   }
 }
 Assets {
@@ -1556,6 +1655,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14875586818065257626
+  Name: "Japanese Stone Lantern Roof Medium 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_lantern_stone_medium_roof_001_ref"
+  }
+}
+Assets {
   Id: 14844672563279110931
   Name: "Bricks Worn Stone 01"
   PlatformAssetType: 2
@@ -1673,12 +1781,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14730681770734824449
+  Name: "Creature Bird Crow Caw 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_bird_crow_caw_02a_Cue_ref"
+  }
+}
+Assets {
   Id: 14712575001797801634
   Name: "Vehicle Tank Robot Squeaky Tread Gears Movement Loop 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_vehicle_tank_robot_squeaky_tread_gears_movement_loop_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 14706812211894318190
+  Name: "Cylinder - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_002"
   }
 }
 Assets {
@@ -1733,15 +1859,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_012"
-  }
-}
-Assets {
-  Id: 14604562536876917099
-  Name: "Swimming Physics Volume"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_swimming_physics_volume"
   }
 }
 Assets {
@@ -1880,6 +1997,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14238180182139860790
+  Name: "Humanoid 1 Zoe Hair"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_hair_basic_005_ref"
+  }
+}
+Assets {
   Id: 14233481070855848323
   Name: "Fern 03"
   PlatformAssetType: 1
@@ -1913,6 +2039,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_HVAC_001"
+  }
+}
+Assets {
+  Id: 14167894031540219039
+  Name: "Whitebox Wall 01 Triangle Top"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_wall_001_triTop"
   }
 }
 Assets {
@@ -2123,21 +2258,30 @@ Assets {
   }
 }
 Assets {
+  Id: 13862615534872695429
+  Name: "Text 05: ~"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_036"
+  }
+}
+Assets {
+  Id: 13860509023076572387
+  Name: "Japanese Futon - Blanket 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_futon_blanket_001_ref"
+  }
+}
+Assets {
   Id: 13840443032411406179
   Name: "Large Wood Beam 8m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_beam_6m"
-  }
-}
-Assets {
-  Id: 13826936342557065734
-  Name: "Office Cubicle Cabinet Door 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_off_cubicle_cabinet_003_door_01_ref"
   }
 }
 Assets {
@@ -2213,6 +2357,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13608311118731858567
+  Name: "Food Corn 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_corn_001_uv"
+  }
+}
+Assets {
   Id: 13598330929179674245
   Name: "Shoji Screen 02"
   PlatformAssetType: 2
@@ -2237,6 +2390,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_018"
+  }
+}
+Assets {
+  Id: 13564667279161392078
+  Name: "Japanese Stone Lantern Pedestal Small 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_lantern_stone_small_pedestal_001_ref"
+  }
+}
+Assets {
+  Id: 13492321430178660931
+  Name: "Sign Font 4 Hiragana: \343\202\234"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "meyirobold_01_Text_115"
   }
 }
 Assets {
@@ -2285,12 +2456,39 @@ Assets {
   }
 }
 Assets {
+  Id: 13405450940038911275
+  Name: "Fantasy Castle Stairs Spiral 01 - Small 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_001_sm_150cm"
+  }
+}
+Assets {
   Id: 13391775554964781496
   Name: "Baseball Bat"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_bat_001"
+  }
+}
+Assets {
+  Id: 13385452079565467522
+  Name: "Japanese Temple Wall 01 - Doorway 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_wall_001_door_01_half_ref"
+  }
+}
+Assets {
+  Id: 13374410281685219744
+  Name: "Decal Sand Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_sand_patch_001"
   }
 }
 Assets {
@@ -2309,6 +2507,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_hatch_001_lid_ref"
+  }
+}
+Assets {
+  Id: 13282974061527872031
+  Name: "Wallpaper Imperial Trellis 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wallpaper_abstract_004_uv"
   }
 }
 Assets {
@@ -2399,15 +2606,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_roof_001_cornerOut"
-  }
-}
-Assets {
-  Id: 13126714149747800397
-  Name: "Animated Neon Sign - Sun"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "fxsm_NeonSign_Sun"
   }
 }
 Assets {
@@ -2519,6 +2717,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12904300339425915438
+  Name: "Column Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_bottom_001"
+  }
+}
+Assets {
   Id: 12864645378898084263
   Name: "Craftsman Wall 01 Doorway"
   PlatformAssetType: 1
@@ -2582,12 +2789,30 @@ Assets {
   }
 }
 Assets {
+  Id: 12803668607020925604
+  Name: "Clear Coat Reflector Hex 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_reflector_hex_002"
+  }
+}
+Assets {
   Id: 12793060997350586228
   Name: "Military Hesco Barrier"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_mil_hesco_001"
+  }
+}
+Assets {
+  Id: 12782940202352343062
+  Name: "Wallpaper Chevron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_wallpaper_004"
   }
 }
 Assets {
@@ -2789,6 +3014,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12486300713937328293
+  Name: "Prism - 4-Sided Trapezoid Right"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_trapezoid_001"
+  }
+}
+Assets {
   Id: 12459049926006716321
   Name: "Ring - Extra Thick"
   PlatformAssetType: 1
@@ -2798,12 +3032,39 @@ Assets {
   }
 }
 Assets {
+  Id: 12452208889409420440
+  Name: "Prism - 3-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_hq_001"
+  }
+}
+Assets {
   Id: 12446131267530965574
   Name: "Wood Raw"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_001_uv"
+  }
+}
+Assets {
+  Id: 12440284093230519324
+  Name: "Frame Medium Corner - Neon"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_Neon3_Corner"
+  }
+}
+Assets {
+  Id: 12427581460194854872
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
   }
 }
 Assets {
@@ -3050,12 +3311,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11781109065322500623
+  Name: "Japanese Temple Wall 01 - Half 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_wall_001_half_01_ref"
+  }
+}
+Assets {
   Id: 11730308934333352162
   Name: "Main Street Window 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_part_window_001_ref"
+  }
+}
+Assets {
+  Id: 11715429313087918252
+  Name: "Fantasy Castle Stairs Spiral Wall 01 - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_wall_002_lg_ref"
   }
 }
 Assets {
@@ -3185,6 +3464,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11481595140953595247
+  Name: "Hay 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_hay_002_uv"
+  }
+}
+Assets {
   Id: 11479831682488938001
   Name: "Metal Iron Rusted 01"
   PlatformAssetType: 2
@@ -3266,6 +3554,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11335312196223470667
+  Name: "Japanese Tea Set - Cup 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_tea_set_tea_cup_001_ref"
+  }
+}
+Assets {
   Id: 11333947087182564846
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -3302,12 +3599,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11278476667469290009
+  Name: "Wedge - Corner-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_002"
+  }
+}
+Assets {
   Id: 11267528446476164903
   Name: "Main Street Pillar 02 Base"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_pillar_002_base_ref"
+  }
+}
+Assets {
+  Id: 11251994733772007315
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
   }
 }
 Assets {
@@ -3335,6 +3650,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_005"
+  }
+}
+Assets {
+  Id: 11180821767795272231
+  Name: "Main Street Wall 01 - Half Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_wall_001_half_window_ref"
   }
 }
 Assets {
@@ -3563,6 +3887,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10765755745114426173
+  Name: "Wallpaper Japanese Rings 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_jpn_wallpaper_rings_001_uv_ref"
+  }
+}
+Assets {
   Id: 10718538370904281203
   Name: "Fantasy Clay Pot Debris 01"
   PlatformAssetType: 1
@@ -3635,6 +3968,24 @@ Assets {
   }
 }
 Assets {
+  Id: 10447342554861957697
+  Name: "Japanese Futon - Mattress 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_futon_mattress_001_ref"
+  }
+}
+Assets {
+  Id: 10434603932289161982
+  Name: "Wallpaper Japanese Triangles 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_jpn_wallpaper_triangles_001_uv_ref"
+  }
+}
+Assets {
   Id: 10421727205339884007
   Name: "Modern Weapon - Scope 01"
   PlatformAssetType: 1
@@ -3668,6 +4019,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_books_shelf_001_uv"
+  }
+}
+Assets {
+  Id: 10347131361735048836
+  Name: "Wallpaper Japanese Hex 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_jpn_wallpaper_hex_001_uv_ref"
   }
 }
 Assets {
@@ -3824,6 +4184,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9969976670374515967
+  Name: "Bannister Single Post"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bannister_post_001"
+  }
+}
+Assets {
   Id: 9951645655387550897
   Name: "Corner - Smoothed Thin - 01"
   PlatformAssetType: 1
@@ -3848,6 +4217,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_ice_opaque_ground"
+  }
+}
+Assets {
+  Id: 9841534029762078156
+  Name: "Lens"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_lense_001"
   }
 }
 Assets {
@@ -4049,6 +4427,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9338831693998861960
+  Name: "Fantasy Castle Wall 03 Half - Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_003_win_01"
+  }
+}
+Assets {
   Id: 9328651077494638428
   Name: "Counter - Drawers"
   PlatformAssetType: 1
@@ -4100,6 +4487,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_oak_stump_001"
+  }
+}
+Assets {
+  Id: 9258812049024871290
+  Name: "Cone - Truncated Hollow Wide Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_006"
   }
 }
 Assets {
@@ -4256,6 +4652,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8957892098213628793
+  Name: "Frame Medium Outside Corner - Neon"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_Neon3_OutsideCorner"
+  }
+}
+Assets {
   Id: 8951656163491092600
   Name: "Fabric Tatami Mat Frame 04"
   PlatformAssetType: 2
@@ -4307,6 +4712,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_003_half_window_01_ref"
+  }
+}
+Assets {
+  Id: 8850185211238575070
+  Name: "Teardrop - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_truncated_teardrop_001"
   }
 }
 Assets {
@@ -4436,6 +4850,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8588053707005770663
+  Name: "Bricks Stone Block 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bricks_stone_block_001"
+  }
+}
+Assets {
   Id: 8556281639390552608
   Name: "Large Round Wood Beam 8m"
   PlatformAssetType: 1
@@ -4460,6 +4883,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_mil_hescoe_grid_001_uv_ref"
+  }
+}
+Assets {
+  Id: 8514489305332193221
+  Name: "Waterfall 90 Outer Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "waterfall_90oc"
   }
 }
 Assets {
@@ -4517,6 +4949,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8384271535726202235
+  Name: "Stone Railing Curved 6m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_railing_6m_bend_001"
+  }
+}
+Assets {
   Id: 8365618414659776727
   Name: "Office Clipboard"
   PlatformAssetType: 1
@@ -4541,6 +4982,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_scf_details_001_ref"
+  }
+}
+Assets {
+  Id: 8337264591385201487
+  Name: "Frame Medium Straight - Neon"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_Neon2_Straight"
   }
 }
 Assets {
@@ -4616,6 +5066,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8207743229108716856
+  Name: "Fishing Net 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_net_001_uv_ref"
+  }
+}
+Assets {
   Id: 8177613953295784574
   Name: "Craftsman Front Door 01"
   PlatformAssetType: 1
@@ -4667,6 +5126,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_half_doorway_ref"
+  }
+}
+Assets {
+  Id: 8063868133702323256
+  Name: "Sphere - Half Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_002"
   }
 }
 Assets {
@@ -4751,12 +5219,39 @@ Assets {
   }
 }
 Assets {
+  Id: 7843191208143204994
+  Name: "Sphere - Half Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_003"
+  }
+}
+Assets {
+  Id: 7831684094888074516
+  Name: "Bone Human Ulna 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_ulna_01_ref"
+  }
+}
+Assets {
   Id: 7822473577673662489
   Name: "Fantasy Castle Pillar 01 Mid"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_pillar_001_mid"
+  }
+}
+Assets {
+  Id: 7820774133789254153
+  Name: "Japanese Temple Pillar 02 - Top 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_pillar_002_top_01_ref_ref"
   }
 }
 Assets {
@@ -4805,6 +5300,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7656437923783466839
+  Name: "Japanese - Stand Katana - Holder 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_stand_katana_holder_001_ref"
+  }
+}
+Assets {
   Id: 7648717670233836541
   Name: "Craftsman Roof 01 Eaves"
   PlatformAssetType: 1
@@ -4838,6 +5342,15 @@ Assets {
   PrimaryAsset {
     AssetType: "SkinnedMeshAssetRef"
     AssetId: "npc_human_guy_lower_military_001_ref"
+  }
+}
+Assets {
+  Id: 7580874109556864156
+  Name: "Frame Small Straight - Neon 2 Sided Ending"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_Neon1_Ender_2s"
   }
 }
 Assets {
@@ -5084,6 +5597,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7147827219450126651
+  Name: "Japanese Tea Set - Whisk 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_tea_set_whisk_001_ref"
+  }
+}
+Assets {
   Id: 7130178060381049973
   Name: "Level Up VFX"
   PlatformAssetType: 8
@@ -5183,12 +5705,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6940157690925102242
+  Name: "Pyramid - 3-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_threesided_001"
+  }
+}
+Assets {
   Id: 6924854565974149406
   Name: "Japanese Frame 004"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Japan_Frame_004"
+  }
+}
+Assets {
+  Id: 6915733303218359378
+  Name: "Fantasy Music Score Set 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_FantasyMusic_ref"
   }
 }
 Assets {
@@ -5246,12 +5786,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6729186258246543420
+  Name: "Lens - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_lense_001"
+  }
+}
+Assets {
   Id: 6715946614941556189
   Name: "Text 06: C"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_002"
+  }
+}
+Assets {
+  Id: 6643758699994281865
+  Name: "Ring 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_002"
   }
 }
 Assets {
@@ -5318,6 +5876,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6453316353416985731
+  Name: "Trash Can"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_trash_can_base_001"
+  }
+}
+Assets {
   Id: 6451587298495240638
   Name: "Survival Food Bottle 006"
   PlatformAssetType: 9
@@ -5333,6 +5900,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_magic_glass"
+  }
+}
+Assets {
+  Id: 6435480062966765599
+  Name: "Wallpaper Japanese Stars 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_jpn_wallpaper_stars_001_uv_ref"
   }
 }
 Assets {
@@ -5432,6 +6008,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_acc_shellclip_001"
+  }
+}
+Assets {
+  Id: 6122143969906766259
+  Name: "Japanese Stone Lantern Roof Large 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_lantern_stone_large_roof_001_ref"
   }
 }
 Assets {
@@ -5552,6 +6137,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5894469527967220055
+  Name: "Cone"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_001"
+  }
+}
+Assets {
   Id: 5886611034140500769
   Name: "Fantasy Bookshelf Top"
   PlatformAssetType: 1
@@ -5594,6 +6188,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_flower_bell_patch_001_ref"
+  }
+}
+Assets {
+  Id: 5783719702605736075
+  Name: "Stone Basic"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "stone_001"
   }
 }
 Assets {
@@ -5687,12 +6290,30 @@ Assets {
   }
 }
 Assets {
+  Id: 5686330327956273281
+  Name: "Wallpaper Japanese Flowers 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_jpn_wallpaper_flowers_001_uv_ref"
+  }
+}
+Assets {
   Id: 5649597641161709318
   Name: "Emblem Wing"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Icon_065"
+  }
+}
+Assets {
+  Id: 5639026972926458573
+  Name: "Fantasy Dish Set - Bowl 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_dish_set_bowl_001_ref"
   }
 }
 Assets {
@@ -5741,6 +6362,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5542271144090282253
+  Name: "Japanese Futon - Blanket Fold 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_futon_blanket_fold_001_ref"
+  }
+}
+Assets {
   Id: 5517650793586535881
   Name: "Main Street Wall 01 - Doorway 01"
   PlatformAssetType: 1
@@ -5756,6 +6386,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_water"
+  }
+}
+Assets {
+  Id: 5486531446198715825
+  Name: "Craftsman Wall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_001"
   }
 }
 Assets {
@@ -5849,6 +6488,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5290493942492485524
+  Name: "Japanese Futon - Pillow 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_futon_pillow_001_ref"
+  }
+}
+Assets {
   Id: 5281313813794808073
   Name: "Japanese Temple Railing 01 - Straight 01"
   PlatformAssetType: 1
@@ -5900,6 +6548,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_rounded_001"
+  }
+}
+Assets {
+  Id: 5185078727960403232
+  Name: "Craftsman Roof 01 Corner In"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_cornerIn"
+  }
+}
+Assets {
+  Id: 5135865328806509887
+  Name: "Cone - Hollow"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone-hollow_001"
   }
 }
 Assets {
@@ -6089,6 +6755,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_pipes_acc_clamp_003_ref"
+  }
+}
+Assets {
+  Id: 4767843787663997598
+  Name: "Sign Font 1 Bulbs: 0"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "CollegeBulb_01_Text_026"
   }
 }
 Assets {
@@ -6314,6 +6989,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_curve45_002"
+  }
+}
+Assets {
+  Id: 4402513570114159322
+  Name: "Humanoid 1 Nancy"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_head_basic_002_ref"
   }
 }
 Assets {
@@ -6596,6 +7280,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3875694042942826724
+  Name: "Cardboard Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_cardboard_001_uv_ref"
+  }
+}
+Assets {
   Id: 3870378322947652714
   Name: "Gear - generic small solid"
   PlatformAssetType: 1
@@ -6650,6 +7343,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3756895598351645313
+  Name: "Text 05: B"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_001"
+  }
+}
+Assets {
   Id: 3748610461465622115
   Name: "Text 06: F"
   PlatformAssetType: 1
@@ -6701,6 +7403,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_scroll_open_001_ref"
+  }
+}
+Assets {
+  Id: 3702191406046426907
+  Name: "Emissive Glow Transparent"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_emissive_001"
   }
 }
 Assets {
@@ -6875,6 +7586,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3342409998136024992
+  Name: "Primitive Neon: Circle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "NeonPrimitives_01_004"
+  }
+}
+Assets {
   Id: 3337256621200851928
   Name: "Fantasy Crossbow Bolt 01"
   PlatformAssetType: 1
@@ -6935,6 +7655,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_003"
+  }
+}
+Assets {
+  Id: 3194024878855587094
+  Name: "Sign Font 4 Katakana: \343\203\216 (NO)"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "meyirobold_katakana_01_Text_024"
   }
 }
 Assets {
@@ -7019,6 +7748,24 @@ Assets {
   }
 }
 Assets {
+  Id: 3067387741451606790
+  Name: "Hay 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_hay_001_uv"
+  }
+}
+Assets {
+  Id: 3033392269738934740
+  Name: "Craftsman Wall 03 Triangle Top"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_003_triTop"
+  }
+}
+Assets {
   Id: 2998387454308050767
   Name: "Text 03: Q"
   PlatformAssetType: 1
@@ -7082,6 +7829,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2744707848252892648
+  Name: "Japanese Bamboo Hat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_hat_bamboo_01_ref"
+  }
+}
+Assets {
   Id: 2726731225207759100
   Name: "Wallpaper Damask 01"
   PlatformAssetType: 2
@@ -7091,12 +7847,30 @@ Assets {
   }
 }
 Assets {
+  Id: 2693052019491928479
+  Name: "Bark Pine 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_pine_001_uv"
+  }
+}
+Assets {
   Id: 2669520400936692783
   Name: "Roboto Slab Black"
   PlatformAssetType: 28
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "RobotoSlabBlack_ref"
+  }
+}
+Assets {
+  Id: 2647360211923135682
+  Name: "Frame Large Straight - Neon 2 Sided Ending"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_Neon3_Ender_2s"
   }
 }
 Assets {
@@ -7244,12 +8018,39 @@ Assets {
   }
 }
 Assets {
+  Id: 2389571102119008910
+  Name: "Frame Large Straight - Neon 1 Sided Ending"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_Neon3_Ender_1s"
+  }
+}
+Assets {
+  Id: 2384694750552185734
+  Name: "Text 05: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_002"
+  }
+}
+Assets {
   Id: 2367204253233266792
   Name: "Text 02: A"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "Text_000"
+  }
+}
+Assets {
+  Id: 2364051318523908784
+  Name: "Cone - Truncated Hollow Wide Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_005"
   }
 }
 Assets {
@@ -7277,6 +8078,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 2264041107168619230
+  Name: "Cone - Bullet"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bullet_001"
   }
 }
 Assets {
@@ -7424,15 +8234,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1884519533488252023
-  Name: "Office Cubicle Cabinet Door 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_off_cubicle_cabinet_001_door_01_ref"
-  }
-}
-Assets {
   Id: 1879514560164431261
   Name: "Japanese Temple Door Large 01"
   PlatformAssetType: 1
@@ -7475,15 +8276,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_roof_001_eaves_02_ref"
-  }
-}
-Assets {
-  Id: 1832835815134957303
-  Name: "Urban Rooftop Fan 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_rooftop_fan_001"
   }
 }
 Assets {
@@ -7541,6 +8333,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1707412841758709738
+  Name: "Frame Medium Straight - Neon 1 Sided Ending"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_Neon2_Ender_1s"
+  }
+}
+Assets {
   Id: 1690127167256591677
   Name: "Cabinet - Upper Narrow"
   PlatformAssetType: 1
@@ -7565,6 +8366,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_collection_001_ref"
+  }
+}
+Assets {
+  Id: 1667729590806278953
+  Name: "Crescent - 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crescent_001"
   }
 }
 Assets {
@@ -7613,6 +8423,24 @@ Assets {
   }
 }
 Assets {
+  Id: 1576712366275350301
+  Name: "Pyramid - 4-Sided Truncated Hollow"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_4_sided_truncated_hollow_001"
+  }
+}
+Assets {
+  Id: 1550943640885000065
+  Name: "Lens - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_lense_001"
+  }
+}
+Assets {
   Id: 1527224994251334627
   Name: "Urban Pipe Flange 02"
   PlatformAssetType: 1
@@ -7631,6 +8459,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1524315304216118140
+  Name: "Japanese Water Lantern 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_lantern_water_001_ref"
+  }
+}
+Assets {
   Id: 1479263073181491044
   Name: "Text 01: H"
   PlatformAssetType: 1
@@ -7646,6 +8483,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_advanced_color_grading"
+  }
+}
+Assets {
+  Id: 1437418745064900679
+  Name: "Sign Font 1 Bulbs: *"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "CollegeBulb_01_Text_044"
   }
 }
 Assets {
@@ -7775,12 +8621,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1248344310909113117
-  Name: "Fantasy Frame 007"
-  PlatformAssetType: 9
+  Id: 1200572492163984593
+  Name: "Sand Waves 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_007"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_sand_waves_001_uv_ref"
   }
 }
 Assets {
@@ -7808,6 +8654,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_scf_rubber_panels_001_uv"
+  }
+}
+Assets {
+  Id: 1167832512212244073
+  Name: "Decal Stains Bottom 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_bottom_001"
   }
 }
 Assets {
@@ -7964,6 +8819,15 @@ Assets {
   }
 }
 Assets {
+  Id: 782984896231878441
+  Name: "Trash Can Lid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_trash_can_lid_001"
+  }
+}
+Assets {
   Id: 770189364146078382
   Name: "Fantasy Jewelry 016"
   PlatformAssetType: 9
@@ -8009,6 +8873,15 @@ Assets {
   }
 }
 Assets {
+  Id: 640822615509399128
+  Name: "Shipping Pallet - Rectangular"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_shipping_pallet_001"
+  }
+}
+Assets {
   Id: 611830093716030491
   Name: "Bottle 06"
   PlatformAssetType: 1
@@ -8042,6 +8915,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_roof_001_orn_01_ref"
+  }
+}
+Assets {
+  Id: 559960959604540199
+  Name: "Car Paint 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_car-paint_001"
   }
 }
 Assets {
@@ -8114,15 +8996,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_torii_rope_001_ref"
-  }
-}
-Assets {
-  Id: 410043227069988381
-  Name: "Thruster Flame VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_thruster_flame"
   }
 }
 Assets {

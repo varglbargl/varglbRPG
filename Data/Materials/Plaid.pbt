@@ -2,7 +2,7 @@ Assets {
   Id: 14424409417633912826
   Name: "Plaid"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   CustomMaterialAsset {
     BaseMaterialId: 58782386755905128
     ParameterOverrides {

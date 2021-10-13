@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16319131326719486832
+        ParentId: 4781671109827199097
         ChildIds: 5148998871357452540
         ChildIds: 3811521569953190377
         ChildIds: 9316721189424089045
@@ -193,7 +193,7 @@ Assets {
           }
         }
         ParentId: 1338509687435281294
-        ChildIds: 10044668455207237482
+        ChildIds: 1426273513544342108
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -210,15 +210,15 @@ Assets {
         }
       }
       Objects {
-        Id: 10044668455207237482
+        Id: 1426273513544342108
         Name: "Chains"
         Transform {
           Location {
-            Y: -0.00048828125
+            Y: -0.001953125
             Z: -0.0266113281
           }
           Rotation {
-            Yaw: 90
+            Yaw: 89.9999924
           }
           Scale {
             X: 1
@@ -228,7 +228,7 @@ Assets {
         }
         ParentId: 9316721189424089045
         ChildIds: 3885833236243412390
-        ChildIds: 16872471737186866243
+        ChildIds: 8480442302454441231
         ChildIds: 9686467387498512369
         ChildIds: 1555829550338224405
         ChildIds: 6770746764985923821
@@ -248,7 +248,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -256,10 +256,11 @@ Assets {
         Name: "Simple Swing Parent"
         Transform {
           Location {
-            X: -0.000976562384
-            Y: -5.82076609e-11
+            X: 0.00195312488
+            Y: 3.49245965e-10
           }
           Rotation {
+            Yaw: 6.83018834e-06
           }
           Scale {
             X: 1
@@ -267,7 +268,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10044668455207237482
+        ParentId: 1426273513544342108
         UnregisteredParameters {
           Overrides {
             Name: "cs:Wavelength"
@@ -305,13 +306,16 @@ Assets {
         }
       }
       Objects {
-        Id: 16872471737186866243
+        Id: 8480442302454441231
         Name: "Sign"
         Transform {
           Location {
-            Z: -46.3466797
+            X: 0.00195312488
+            Y: 3.49245965e-10
+            Z: -46
           }
           Rotation {
+            Yaw: 6.83018834e-06
           }
           Scale {
             X: 1
@@ -319,7 +323,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10044668455207237482
+        ParentId: 1426273513544342108
         ChildIds: 711967713892059136
         ChildIds: 3698704456182797222
         ChildIds: 14665820473854079918
@@ -347,7 +351,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -355,8 +359,7 @@ Assets {
         Name: "Simple Swing Parent"
         Transform {
           Location {
-            X: -0.000976562384
-            Y: -5.82076609e-11
+            Z: -0.346679688
           }
           Rotation {
           }
@@ -366,7 +369,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         UnregisteredParameters {
           Overrides {
             Name: "cs:StartTime"
@@ -410,12 +413,12 @@ Assets {
           Location {
             X: 56.7431564
             Y: 3.81469727e-06
-            Z: -9.43823242
+            Z: -9.78491211
           }
           Rotation {
             Pitch: 1.36603776e-05
-            Yaw: -5.79560729e-05
-            Roll: 89.9999084
+            Yaw: -5.3126405e-05
+            Roll: 89.9998932
           }
           Scale {
             X: 0.167627722
@@ -423,7 +426,7 @@ Assets {
             Z: 0.251441568
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -478,14 +481,14 @@ Assets {
         Name: "Pipe - 6-Sided Thick"
         Transform {
           Location {
-            X: -54.6279221
+            X: -54.6269455
             Y: -3.81469727e-06
-            Z: -9.43823242
+            Z: -9.78491211
           }
           Rotation {
             Pitch: 1.36603776e-05
-            Yaw: -6.52005765e-05
-            Roll: 89.9999313
+            Yaw: -6.52005838e-05
+            Roll: 89.9999084
           }
           Scale {
             X: 0.167627722
@@ -493,7 +496,7 @@ Assets {
             Z: 0.251441568
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -550,11 +553,11 @@ Assets {
           Location {
             X: 93.7792816
             Y: 6.927742
-            Z: -9.25610352
+            Z: -9.6027832
           }
           Rotation {
             Yaw: -179.999954
-            Roll: -179.999969
+            Roll: -179.999954
           }
           Scale {
             X: 0.603730202
@@ -562,7 +565,7 @@ Assets {
             Z: 0.971279502
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -646,11 +649,11 @@ Assets {
         Transform {
           Location {
             X: -60.1230392
-            Y: 6.7001915
-            Z: -47.4384766
+            Y: 6.69921494
+            Z: -47.7851562
           }
           Rotation {
-            Yaw: 90.0000229
+            Yaw: 90.0000076
           }
           Scale {
             X: 0.6
@@ -658,7 +661,7 @@ Assets {
             Z: 0.6
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -698,11 +701,11 @@ Assets {
         Transform {
           Location {
             X: -74.1230392
-            Y: 6.70018768
-            Z: -62.4384766
+            Y: 6.69921112
+            Z: -62.7851562
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 1
@@ -710,7 +713,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -750,11 +753,11 @@ Assets {
         Transform {
           Location {
             X: -74.1230392
-            Y: 6.70018768
-            Z: -87.4384766
+            Y: 6.69921112
+            Z: -87.7851562
           }
           Rotation {
-            Yaw: 90.0000229
+            Yaw: 90.0000076
           }
           Scale {
             X: 1
@@ -762,7 +765,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -802,11 +805,11 @@ Assets {
         Transform {
           Location {
             X: -74.1230392
-            Y: 6.70018768
-            Z: -112.438477
+            Y: 6.69921112
+            Z: -112.785156
           }
           Rotation {
-            Yaw: 90.0000153
+            Yaw: 89.9999924
           }
           Scale {
             X: 1
@@ -814,7 +817,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -855,10 +858,10 @@ Assets {
           Location {
             X: 64.7548752
             Y: -4.79101562
-            Z: -47.4384766
+            Z: -47.7851562
           }
           Rotation {
-            Yaw: -89.9999924
+            Yaw: -89.9999771
           }
           Scale {
             X: 0.6
@@ -866,7 +869,7 @@ Assets {
             Z: 0.6
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -907,10 +910,10 @@ Assets {
           Location {
             X: 78.7548752
             Y: -4.79101562
-            Z: -62.4384766
+            Z: -62.7851562
           }
           Rotation {
-            Yaw: -89.9999924
+            Yaw: -89.9999771
           }
           Scale {
             X: 1
@@ -918,7 +921,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -959,10 +962,10 @@ Assets {
           Location {
             X: 78.7548752
             Y: -4.79101562
-            Z: -87.4384766
+            Z: -87.7851562
           }
           Rotation {
-            Yaw: -89.9999924
+            Yaw: -89.9999771
           }
           Scale {
             X: 1
@@ -970,7 +973,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1011,10 +1014,10 @@ Assets {
           Location {
             X: 78.7548752
             Y: -4.79101562
-            Z: -112.438477
+            Z: -112.785156
           }
           Rotation {
-            Yaw: -89.9999924
+            Yaw: -89.9999771
           }
           Scale {
             X: 1
@@ -1022,7 +1025,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1063,12 +1066,12 @@ Assets {
           Location {
             X: 3.21679664
             Y: 1
-            Z: -22.4384766
+            Z: -22.7851562
           }
           Rotation {
             Pitch: -1.36603776e-05
-            Yaw: -179.999969
-            Roll: -179.999985
+            Yaw: -179.999954
+            Roll: -179.999969
           }
           Scale {
             X: 1.76431632
@@ -1076,7 +1079,7 @@ Assets {
             Z: 1.20000017
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1140,14 +1143,14 @@ Assets {
         Name: "Decal Elven Symbols"
         Transform {
           Location {
-            X: 1.50097609
+            X: 1.49999952
             Y: 5.99999905
-            Z: -160.011719
+            Z: -160.358398
           }
           Rotation {
             Pitch: 9.70807552
-            Yaw: 4.33088786e-07
-            Roll: 89.9999847
+            Yaw: 3.46471029e-06
+            Roll: 89.9999619
           }
           Scale {
             X: 0.6
@@ -1155,7 +1158,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 16872471737186866243
+        ParentId: 8480442302454441231
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1213,13 +1216,14 @@ Assets {
         Name: "Pipe - 6-Sided Thick"
         Transform {
           Location {
-            X: -54.6279221
-            Y: -3.81469727e-06
+            X: -54.625
+            Y: -7.62939453e-06
             Z: -10.7851562
           }
           Rotation {
-            Yaw: 90
-            Roll: 90
+            Pitch: -6.83018879e-06
+            Yaw: 89.9999924
+            Roll: 89.9999847
           }
           Scale {
             X: 0.167627722
@@ -1227,7 +1231,7 @@ Assets {
             Z: 0.251441568
           }
         }
-        ParentId: 10044668455207237482
+        ParentId: 1426273513544342108
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1282,13 +1286,14 @@ Assets {
         Name: "Pipe - 6-Sided Thick"
         Transform {
           Location {
-            X: -54.6279221
-            Y: -3.81469727e-06
+            X: -54.625
+            Y: -7.62939453e-06
             Z: -40.7851562
           }
           Rotation {
+            Pitch: 6.83018879e-06
             Yaw: 90
-            Roll: 89.9999542
+            Roll: 89.9999466
           }
           Scale {
             X: 0.167627722
@@ -1296,7 +1301,7 @@ Assets {
             Z: 0.251441568
           }
         }
-        ParentId: 10044668455207237482
+        ParentId: 1426273513544342108
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1351,14 +1356,14 @@ Assets {
         Name: "Pipe - 6-Sided Thick"
         Transform {
           Location {
-            X: -54.6279221
-            Y: -3.81469727e-06
+            X: -54.625
+            Y: -7.62939453e-06
             Z: -25.7851562
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -3.05175781e-05
-            Roll: 89.9999619
+            Pitch: 1.36603776e-05
+            Yaw: -1.93186934e-05
+            Roll: 89.9999542
           }
           Scale {
             X: 0.167627722
@@ -1366,7 +1371,7 @@ Assets {
             Z: 0.251441568
           }
         }
-        ParentId: 10044668455207237482
+        ParentId: 1426273513544342108
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1421,13 +1426,14 @@ Assets {
         Name: "Pipe - 6-Sided Thick"
         Transform {
           Location {
-            X: 56.7431564
-            Y: 3.81469727e-06
+            X: 56.7451134
+            Y: 1.52587891e-05
             Z: -10.7851562
           }
           Rotation {
+            Pitch: 6.83018879e-06
             Yaw: 90
-            Roll: 89.9999542
+            Roll: 89.9999466
           }
           Scale {
             X: 0.167627722
@@ -1435,7 +1441,7 @@ Assets {
             Z: 0.251441568
           }
         }
-        ParentId: 10044668455207237482
+        ParentId: 1426273513544342108
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1490,14 +1496,14 @@ Assets {
         Name: "Pipe - 6-Sided Thick"
         Transform {
           Location {
-            X: 56.7431564
-            Y: 3.81469727e-06
+            X: 56.7451134
+            Y: 1.52587891e-05
             Z: -40.7851562
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: 90
-            Roll: 89.9999313
+            Yaw: 90.0000076
+            Roll: 89.9999237
           }
           Scale {
             X: 0.167627722
@@ -1505,7 +1511,7 @@ Assets {
             Z: 0.251441568
           }
         }
-        ParentId: 10044668455207237482
+        ParentId: 1426273513544342108
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1560,14 +1566,14 @@ Assets {
         Name: "Pipe - 6-Sided Thick"
         Transform {
           Location {
-            X: 56.7431564
-            Y: 3.81469727e-06
+            X: 56.7451134
+            Y: 1.52587891e-05
             Z: -25.7851562
           }
           Rotation {
             Pitch: 1.36603776e-05
-            Yaw: -6.10351562e-05
-            Roll: 89.9999466
+            Yaw: -5.07115619e-05
+            Roll: 89.999939
           }
           Scale {
             X: 0.167627722
@@ -1575,7 +1581,7 @@ Assets {
             Z: 0.251441568
           }
         }
-        ParentId: 10044668455207237482
+        ParentId: 1426273513544342108
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1964,6 +1970,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Props"
 }

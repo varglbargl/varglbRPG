@@ -2,7 +2,7 @@ Assets {
   Id: 5056165458151714023
   Name: "Virtual Folders"
   PlatformAssetType: 30
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderSetAsset {
     Folders {
       VirtualFolderPath: "Props"
@@ -69,6 +69,10 @@ Assets {
     Folders {
       VirtualFolderPath: "Weapons"
       PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Item Tables"
+      PlatformAssetType: 3
     }
   }
 }

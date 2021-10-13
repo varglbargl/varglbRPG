@@ -16,7 +16,7 @@ Utils.color = {
   wit      = Color.New(0.45, 0.85, 1),
   spit     = Color.New(0.85, 1, 0.5),
 
-  common   = Color.New(0.9, 0.8, 0.7),
+  common   = Color.New(1, 0.9, 0.7),
   rare     = Color.New(0.35, 1, 0.5),
   epic     = Color.New(0.7, 0.45, 1),
   unique   = Color.New(1, 0.38, 0.3)
@@ -279,11 +279,11 @@ function Utils.showFlyupText(text, pos, color)
   UI.ShowFlyUpText(text, pos + Vector3.New(math.random(-60, 60), math.random(-60, 60), math.random(50, 100)), {font = FLY_UP_FONT, isBig = true, duration = 2, color = color})
 end
 
-function Utils.groundBelowPoint(vec3, sphercaseRadius)
+function Utils.groundBelowPoint(vec3, sphercastRadius)
   local hitResult = nil
 
-  if sphercaseRadius then
-    hitResult = World.Spherecast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, sphercaseRadius, {ignorePlayers = true})
+  if sphercastRadius then
+    hitResult = World.Spherecast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, sphercastRadius, {ignorePlayers = true})
   else
     hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
   end

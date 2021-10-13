@@ -192,7 +192,7 @@ Assets {
           Overrides {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
-              Id: 15699210453782238668
+              Id: 841534158063459245
             }
           }
           Overrides {
@@ -264,7 +264,7 @@ Assets {
           Overrides {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
-              Id: 15699210453782238668
+              Id: 841534158063459245
             }
           }
           Overrides {
@@ -347,7 +347,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

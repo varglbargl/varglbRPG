@@ -2,7 +2,7 @@ Assets {
   Id: 10402599338093754113
   Name: "Paper Cup"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   CustomMaterialAsset {
     BaseMaterialId: 4077938580079188609
     ParameterOverrides {

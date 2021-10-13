@@ -94,7 +94,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 2364051318523908784
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -156,7 +156,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 2364051318523908784
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -495,9 +495,9 @@ Assets {
         Name: "Cone - Truncated Hollow Wide"
         Transform {
           Location {
-            X: 30.8232422
-            Y: -0.0317382812
-            Z: -0.0544433594
+            X: 30.8224106
+            Y: -0.0316529274
+            Z: -0.0544897318
           }
           Rotation {
             Pitch: 58.5525246
@@ -505,9 +505,9 @@ Assets {
             Roll: 61.2182503
           }
           Scale {
-            X: 0.107158385
-            Y: 0.10714706
-            Z: 0.0896144509
+            X: 0.110917374
+            Y: 0.110905677
+            Z: 0.0927580222
           }
         }
         ParentId: 7762582345867277099
@@ -638,19 +638,19 @@ Assets {
         Name: "Cone - Truncated Hollow Wide"
         Transform {
           Location {
-            X: 32.1884766
-            Y: -0.04296875
-            Z: -0.015625
+            X: 32.1888
+            Y: 0.3149786
+            Z: 0.360168695
           }
           Rotation {
-            Pitch: -76.8884
-            Yaw: -42.7850952
-            Roll: -128.386353
+            Pitch: -79.1394653
+            Yaw: -62.2702332
+            Roll: -109.314484
           }
           Scale {
-            X: 0.0728814155
-            Y: 0.0728646517
-            Z: 0.12005005
+            X: 0.0798677355
+            Y: 0.0798579603
+            Z: 0.312821716
           }
         }
         ParentId: 7762582345867277099
@@ -690,7 +690,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 9177586487136342834
+            Id: 5135865328806509887
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -853,9 +853,9 @@ Assets {
         Name: "Cone - Truncated Hollow Wide"
         Transform {
           Location {
-            X: -30.8232422
-            Y: -0.0512695312
-            Z: 0.0236816406
+            X: -30.8242188
+            Y: -0.05078125
+            Z: 0.0234375
           }
           Rotation {
             Pitch: 55.0307426
@@ -863,9 +863,9 @@ Assets {
             Roll: -115.433228
           }
           Scale {
-            X: -0.102090538
-            Y: 0.102079749
-            Z: 0.0853763074
+            X: -0.104896322
+            Y: 0.104885221
+            Z: 0.0877227113
           }
         }
         ParentId: 7762582345867277099
@@ -996,19 +996,19 @@ Assets {
         Name: "Cone - Truncated Hollow Wide"
         Transform {
           Location {
-            X: -32.1884766
-            Y: -0.04296875
-            Z: -0.015625
+            X: -32.1875
+            Y: -0.0390625
+            Z: -0.01171875
           }
           Rotation {
-            Pitch: -104.673523
-            Yaw: 120.846375
-            Roll: -107.84729
+            Pitch: -101.252747
+            Yaw: 77.4613953
+            Roll: -71.6520386
           }
           Scale {
-            X: -0.0728814155
-            Y: 0.0728646517
-            Z: 0.12005005
+            X: -0.0801495
+            Y: 0.0801375732
+            Z: 0.283932656
           }
         }
         ParentId: 7762582345867277099
@@ -1048,7 +1048,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 9177586487136342834
+            Id: 5135865328806509887
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1065,12 +1065,12 @@ Assets {
       }
     }
     Assets {
-      Id: 4914027778279010537
-      Name: "Cone - Truncated Wide"
+      Id: 2364051318523908784
+      Name: "Cone - Truncated Hollow Wide Thick"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cone_truncated_003"
+        AssetId: "sm_cone_truncated_hollow_005"
       }
     }
     Assets {
@@ -1145,12 +1145,21 @@ Assets {
         AssetId: "sm_cone_truncated_hollow_004"
       }
     }
+    Assets {
+      Id: 5135865328806509887
+      Name: "Cone - Hollow"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cone-hollow_001"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

@@ -7,7 +7,7 @@ Assets {
       RootId: 11500117178595357088
       Objects {
         Id: 11500117178595357088
-        Name: "Elevator"
+        Name: "Generic Elevator"
         Transform {
           Scale {
             X: 1
@@ -15,11 +15,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17079232088293387708
+        ParentId: 8367225086664713368
         ChildIds: 769915483370882734
         ChildIds: 4408968465753608552
         ChildIds: 6395935372347618879
-        ChildIds: 15806469663021339222
+        ChildIds: 3831285836790544826
         ChildIds: 5818976266323519252
         ChildIds: 1044973610194717705
         ChildIds: 9863796893361290403
@@ -333,7 +333,7 @@ Assets {
           Overrides {
             Name: "cs:Platform"
             ObjectReference {
-              SubObjectId: 15806469663021339222
+              SubObjectId: 3831285836790544826
             }
           }
           Overrides {
@@ -481,7 +481,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15806469663021339222
+        Id: 3831285836790544826
         Name: "Platform"
         Transform {
           Location {
@@ -497,7 +497,13 @@ Assets {
         }
         ParentId: 11500117178595357088
         ChildIds: 6299109000459234549
-        ChildIds: 14661618250771373292
+        ChildIds: 15109415067129793333
+        ChildIds: 14794018041112229790
+        ChildIds: 7204150558991249057
+        ChildIds: 11668037896258528340
+        ChildIds: 4327599006162237187
+        ChildIds: 15101270656160660851
+        ChildIds: 14279362084223095277
         ChildIds: 3012378572196117035
         WantsNetworking: true
         Collidable_v2 {
@@ -512,8 +518,8 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Folder {
-          IsGroup: true
+        NetworkContext {
+          Type: RuntimeStatic
         }
       }
       Objects {
@@ -521,8 +527,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 154.999908
-            Y: -149.999969
+            X: 154.999863
+            Y: -150.000076
             Z: -251
           }
           Rotation {
@@ -533,8 +539,7 @@ Assets {
             Z: 5.4
           }
         }
-        ParentId: 15806469663021339222
-        WantsNetworking: true
+        ParentId: 3831285836790544826
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -565,55 +570,18 @@ Assets {
         }
       }
       Objects {
-        Id: 14661618250771373292
-        Name: "ClientContext"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15806469663021339222
-        ChildIds: 15109415067129793333
-        ChildIds: 14794018041112229790
-        ChildIds: 7204150558991249057
-        ChildIds: 11668037896258528340
-        ChildIds: 4327599006162237187
-        ChildIds: 15101270656160660851
-        ChildIds: 14279362084223095277
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
         Id: 15109415067129793333
         Name: "Hiragana Font 1: \343\200\202"
         Transform {
           Location {
-            X: 80
-            Y: -9.99902344
+            X: 79.9999771
+            Y: -9.9981
             Z: 20
           }
           Rotation {
-            Yaw: 1.02452796e-05
-            Roll: -90
+            Pitch: -6.83018879e-06
+            Yaw: 2.41483417e-06
+            Roll: -89.9999466
           }
           Scale {
             X: 0.4
@@ -621,7 +589,7 @@ Assets {
             Z: 0.4
           }
         }
-        ParentId: 14661618250771373292
+        ParentId: 3831285836790544826
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Bevel:id"
@@ -688,13 +656,14 @@ Assets {
         Name: "Hiragana Font 1: \343\200\202"
         Transform {
           Location {
-            X: 185
-            Y: -9.99902344
+            X: 184.999969
+            Y: -9.99816895
             Z: 20
           }
           Rotation {
-            Yaw: 1.02452796e-05
-            Roll: -90
+            Pitch: -6.83018879e-06
+            Yaw: 2.41483417e-06
+            Roll: -89.9999466
           }
           Scale {
             X: 0.4
@@ -702,7 +671,7 @@ Assets {
             Z: 0.4
           }
         }
-        ParentId: 14661618250771373292
+        ParentId: 3831285836790544826
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Bevel:id"
@@ -769,13 +738,14 @@ Assets {
         Name: "Hiragana Font 1: \343\200\202"
         Transform {
           Location {
-            X: 80
-            Y: -9.99900913
+            X: 79.9999771
+            Y: -9.9981
             Z: -25
           }
           Rotation {
-            Yaw: 1.02452786e-05
-            Roll: -89.9999771
+            Pitch: 1.36603776e-05
+            Yaw: 4.82967562e-06
+            Roll: -89.9999313
           }
           Scale {
             X: 0.4
@@ -783,7 +753,7 @@ Assets {
             Z: 0.4
           }
         }
-        ParentId: 14661618250771373292
+        ParentId: 3831285836790544826
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Bevel:id"
@@ -850,13 +820,14 @@ Assets {
         Name: "Hiragana Font 1: \343\200\202"
         Transform {
           Location {
-            X: 185
-            Y: -9.99899
+            X: 184.999969
+            Y: -9.99816895
             Z: -25
           }
           Rotation {
-            Yaw: 1.02452786e-05
-            Roll: -89.9999771
+            Pitch: 1.36603776e-05
+            Yaw: 4.82967562e-06
+            Roll: -89.9999313
           }
           Scale {
             X: 0.4
@@ -864,7 +835,7 @@ Assets {
             Z: 0.4
           }
         }
-        ParentId: 14661618250771373292
+        ParentId: 3831285836790544826
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Bevel:id"
@@ -931,9 +902,9 @@ Assets {
         Name: "Main Street Railing 01 - Post"
         Transform {
           Location {
-            X: 10.0019531
+            X: 10
             Y: -9.92773438
-            Z: 20
+            Z: 19.9990234
           }
           Rotation {
             Yaw: 89.9999313
@@ -944,7 +915,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14661618250771373292
+        ParentId: 3831285836790544826
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -986,9 +957,9 @@ Assets {
         Name: "Main Street Railing 01 - Post"
         Transform {
           Location {
-            X: 10.0019531
-            Y: -290.000488
-            Z: 20
+            X: 9.99804688
+            Y: -290
+            Z: 19.9990234
           }
           Rotation {
             Yaw: 89.9999313
@@ -999,7 +970,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14661618250771373292
+        ParentId: 3831285836790544826
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1041,8 +1012,8 @@ Assets {
         Name: "Fantasy Castle Floor 02"
         Transform {
           Location {
-            X: 2.17382717
-            Y: -5.18280956e-07
+            X: 2.17382765
+            Y: -1.43051147e-06
           }
           Rotation {
           }
@@ -1052,7 +1023,7 @@ Assets {
             Z: 0.75
           }
         }
-        ParentId: 14661618250771373292
+        ParentId: 3831285836790544826
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:smart"
@@ -1113,9 +1084,9 @@ Assets {
         Name: "Main Street Railing 01 - 2m"
         Transform {
           Location {
-            X: 10.0019531
-            Y: -290.000488
-            Z: 40
+            X: 10
+            Y: -290
+            Z: 39.9995117
           }
           Rotation {
             Yaw: 89.9999313
@@ -1126,7 +1097,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15806469663021339222
+        ParentId: 3831285836790544826
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1138,7 +1109,6 @@ Assets {
             }
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2183,5 +2153,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

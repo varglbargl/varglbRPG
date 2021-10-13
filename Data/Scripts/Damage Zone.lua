@@ -1,6 +1,7 @@
 local trigger = script.parent
 
 local DAMAGE = script:GetCustomProperty("Damage")
+local FREQUENCY = script:GetCustomProperty("Frequency")
 local PERCENT = script:GetCustomProperty("Percent")
 
 function Tick()
@@ -21,5 +22,5 @@ function Tick()
     end
   end
 
-  Task.Wait(1)
+  Task.Wait(FREQUENCY)
 end

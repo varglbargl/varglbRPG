@@ -64,5 +64,5 @@ Assets {
     Version: "1.0.0"
     Description: "I just think they\'re neat~!"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }
