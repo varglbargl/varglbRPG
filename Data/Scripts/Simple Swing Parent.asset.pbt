@@ -26,6 +26,6 @@ Assets {
       }
     }
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
   DirectlyPublished: true
 }

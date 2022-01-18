@@ -32,6 +32,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -45,5 +48,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "Simple little pack of some Celtic knot patterns as decals plus an axe."
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

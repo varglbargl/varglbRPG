@@ -19,7 +19,7 @@ while not goldAmount do
   goldAmount = script.parent.serverUserData["GoldAmount"]
 end
 
-script:SetNetworkedCustomProperty("GoldAmount", goldAmount)
+script:SetCustomProperty("GoldAmount", goldAmount)
 
 pickupEvent = PICKUP_TRIGGER.beginOverlapEvent:Connect(getYeGold)
 

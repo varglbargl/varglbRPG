@@ -37,6 +37,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -51,5 +54,5 @@ Assets {
     Version: "1.1.0"
     Description: "This is to help in creating costumes that will need to conform somewhat to the player shape.  You can create geometry and tuck it under nodes coresponding to certain parts of the skeleton.\r\n\r\n*new version fixes type-o"
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

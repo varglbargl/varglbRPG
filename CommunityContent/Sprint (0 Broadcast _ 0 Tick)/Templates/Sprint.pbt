@@ -63,6 +63,9 @@ Assets {
         Folder {
           IsGroup: true
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 16672069378657798367
@@ -92,6 +95,9 @@ Assets {
         }
         NetworkContext {
           Type: Server
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -124,6 +130,9 @@ Assets {
           ScriptAsset {
             Id: 7903769881457430357
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -163,6 +172,9 @@ Assets {
             Id: 4498641578702797787
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -173,6 +185,6 @@ Assets {
   Marketplace {
     Description: "Features:\r\n- Customize sprint speed, crouch (both regular and sprint), and more\r\n- Easily set the sprint key to whatever ability binding you want (defaults to shift)\r\n- 0 broadcast are used + 0 Tick functions = less lag and problems with going over the broadcast limit\r\n- Works out of the box. No ReadMe needed as everything you\'d need to change is in the \"Sprint\" groups properties panel.\r\n"
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
   DirectlyPublished: true
 }

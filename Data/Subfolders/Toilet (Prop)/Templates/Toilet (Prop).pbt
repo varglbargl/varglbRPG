@@ -29,6 +29,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -43,5 +46,5 @@ Assets {
     Version: "1.0.0"
     Description: "Toilet prop. Non working. Please dont use. Lid is down for the ladies :)"
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

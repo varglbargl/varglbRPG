@@ -29,6 +29,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -43,5 +46,5 @@ Assets {
     Version: "1.1.0"
     Description: "Dragon model with all the sockets added as child folders for easy character creation based on the animated dragon model"
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

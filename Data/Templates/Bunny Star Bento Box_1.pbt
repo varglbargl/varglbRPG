@@ -26,6 +26,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -39,5 +42,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "It\'s a bento box! It\'s cute!\r\n\r\nBoba not included, but is also on the CC."
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

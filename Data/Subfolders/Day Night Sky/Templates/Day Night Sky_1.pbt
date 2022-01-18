@@ -37,6 +37,9 @@ Assets {
         }
         NetworkContext {
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 2687820722041061846
@@ -100,6 +103,9 @@ Assets {
           ScriptAsset {
             Id: 14461836472132095855
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -236,6 +242,9 @@ Assets {
             Id: 7887238662729938253
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 15823941823731023788
@@ -317,6 +326,9 @@ Assets {
           BlueprintAsset {
             Id: 11515840070784317904
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -437,6 +449,9 @@ Assets {
             Id: 16910278292812118833
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 5850246755653294951
@@ -497,6 +512,9 @@ Assets {
             Id: 12344193518355455075
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 1395820369303713959
@@ -545,6 +563,9 @@ Assets {
           }
           TeamSettings {
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -637,6 +658,9 @@ Assets {
             Id: 2224571462023946700
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 2687679590216837220
@@ -693,6 +717,9 @@ Assets {
           }
           TeamSettings {
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
     }
@@ -767,6 +794,6 @@ Assets {
   Marketplace {
     Description: "A sky that cycles day and night at an user defined time and speed. Place in scene and delete any other skies. Select SkyLogic script in the hierarchy to configure.\r\n\r\nStartingDegrees:\r\nWhat angle to start the day at.\r\n0 is sunrise, 90 is midday, 180 is sunset, 270 is midnight\r\n\r\nDegreesPerSecond:\r\nHow fast the sun moves through the day\r\n2 minute day/night cycle = 120 seconds = 360 degrees/120 seconds = 3 degrees per second"
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
   DirectlyPublished: true
 }

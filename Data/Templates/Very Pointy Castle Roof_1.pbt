@@ -26,6 +26,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -36,5 +39,5 @@ Assets {
   Marketplace {
     Description: "its pointy"
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

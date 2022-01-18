@@ -3,6 +3,8 @@ Assets {
   Name: "Dialog Trigger Client"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

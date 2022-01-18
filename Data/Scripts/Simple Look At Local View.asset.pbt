@@ -3,6 +3,8 @@ Assets {
   Name: "Simple Look At Local View"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

@@ -74,6 +74,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -87,5 +90,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "Welcome to Libby\'s Loafery! We specialize in magically enhanced baked goods! What can we bake for you today? ~ <3"
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

@@ -59,7 +59,7 @@ function attackLoop(attackingEnemy, stats)
   local attackDir = attackRot * Vector3.FORWARD
 
   decal = World.SpawnAsset(BROADCAST_DECAL, {position = Utils.groundBelowPoint(attackPos), rotation = attackRot, scale = Vector3.ONE * RANGE / 130})
-  decal:SetNetworkedCustomProperty("StartTime", time())
+  decal:SetCustomProperty("StartTime", time())
 
   Task.Spawn(function()
     if not attackTask then return end

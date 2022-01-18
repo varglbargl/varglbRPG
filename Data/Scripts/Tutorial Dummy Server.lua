@@ -37,25 +37,40 @@ function closestPlayerInRange(range, lineOfSight)
   local closestRange = range
 
   for _, player in ipairs(players) do
-    local distanceToPlayer = (player:GetWorldPosition() - enemy:GetWorldPosition()).size
+    if Object.IsValid(player) and not player.isDead then
+      local distanceToPlayer = (player:GetWorldPosition() - enemy:GetWorldPosition()).size
 
-    if Object.IsValid(player) and distanceToPlayer < closestRange then
-      -- return "i hate players"
-      if lineOfSight then
-        local hitResult = World.Raycast(HITBOX:GetWorldPosition(), player:GetWorldPosition())
+      if Object.IsValid(player) and distanceToPlayer < closestRange then
+        if lineOfSight then
+          local hitResult = World.Raycast(HITBOX:GetWorldPosition(), player:GetWorldPosition())
 
-        if hitResult and hitResult.other == player then
+          if hitResult and hitResult.other == player then
+            closestRange = distanceToPlayer
+            closestPlayer = player
+          end
+        else
           closestRange = distanceToPlayer
           closestPlayer = player
         end
-      else
-        closestRange = distanceToPlayer
-        closestPlayer = player
       end
     end
   end
 
   return closestPlayer
+end
+
+function spawn()
+  World.SpawnAsset(myTemplateId, {position = spawnPoint, rotation = spawnRotation, scale = spawnScale})
+end
+
+function despawn()
+  enemy:Destroy()
+
+  while not closestPlayerInRange(8000) do
+    Task.Wait(5 + math.random() * 5)
+  end
+
+  spawn()
 end
 
 function startAttcking(player)

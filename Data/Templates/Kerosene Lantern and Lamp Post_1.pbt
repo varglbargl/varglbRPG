@@ -29,6 +29,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -42,5 +45,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "Two simple little props, perfect for any camping or foresty setting.\r\n\r\nThis pack includes the lantern itself and there\'s a wooden lamp post with one attached."
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

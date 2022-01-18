@@ -48,6 +48,9 @@ Assets {
             SelfId: 841534158063459245
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 18324455099832422689
@@ -69,7 +72,7 @@ Assets {
         ChildIds: 13381650022007481405
         ChildIds: 12511185183702147158
         ChildIds: 16166714892806026538
-        ChildIds: 2595880805745512117
+        ChildIds: 7080825496446015096
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -84,6 +87,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -145,6 +151,9 @@ Assets {
             MaxDistanceFadeRange: 1000
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 1621767465035820108
@@ -195,6 +204,9 @@ Assets {
             IsAttenuationEnabled: true
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 13381650022007481405
@@ -239,6 +251,21 @@ Assets {
               A: 1
             }
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10766975867019021707
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.5
+              G: 0.5
+              B: 0.5
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -268,6 +295,9 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -340,6 +370,9 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -419,9 +452,12 @@ Assets {
             BoundsScale: 1
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
-        Id: 2595880805745512117
+        Id: 7080825496446015096
         Name: "Bugs"
         Transform {
           Location {
@@ -441,7 +477,7 @@ Assets {
         ChildIds: 16592444950044273713
         ChildIds: 12037382866716062416
         ChildIds: 439190974555461574
-        ChildIds: 14177092734702868270
+        ChildIds: 17700818226804008859
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -455,7 +491,10 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -472,7 +511,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595880805745512117
+        ParentId: 7080825496446015096
         UnregisteredParameters {
           Overrides {
             Name: "cs:Speed"
@@ -499,19 +538,22 @@ Assets {
             Id: 5358125184516124331
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 12037382866716062416
         Name: "Icosahedron - Polished"
         Transform {
           Location {
-            X: -6.35540771
-            Y: -1.07753122
-            Z: 4.15291595
+            X: -6.35542917
+            Y: -1.07701063
+            Z: 4.15253353
           }
           Rotation {
-            Yaw: -80.3759155
-            Roll: 32.7916222
+            Yaw: -80.3759079
+            Roll: 32.7916451
           }
           Scale {
             X: 0.0372521952
@@ -519,7 +561,7 @@ Assets {
             Z: 0.0372521952
           }
         }
-        ParentId: 2595880805745512117
+        ParentId: 7080825496446015096
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -565,6 +607,9 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -572,7 +617,7 @@ Assets {
         Name: "Icosahedron - Polished"
         Transform {
           Location {
-            Y: -11.84
+            Y: -11.8400087
           }
           Rotation {
           }
@@ -582,7 +627,7 @@ Assets {
             Z: 0.0372521952
           }
         }
-        ParentId: 2595880805745512117
+        ParentId: 7080825496446015096
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -629,17 +674,20 @@ Assets {
             BoundsScale: 1
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
-        Id: 14177092734702868270
-        Name: "NewFolder"
+        Id: 17700818226804008859
+        Name: "Group"
         Transform {
           Location {
           }
           Rotation {
-            Pitch: -5.13061523
-            Yaw: -176.209396
-            Roll: -82.0805054
+            Pitch: -5.1306057
+            Yaw: -176.209412
+            Roll: -82.080452
           }
           Scale {
             X: 1
@@ -647,11 +695,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595880805745512117
+        ParentId: 7080825496446015096
         ChildIds: 13002028924381845721
         ChildIds: 7346665685653216321
         ChildIds: 1025762641115784869
-        ChildIds: 13166395968428057753
+        ChildIds: 5697940199225874112
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -665,7 +713,10 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -675,6 +726,8 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 1.06721679e-07
+            Roll: -1.02452814e-05
           }
           Scale {
             X: 1
@@ -682,7 +735,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14177092734702868270
+        ParentId: 17700818226804008859
         UnregisteredParameters {
           Overrides {
             Name: "cs:Speed"
@@ -709,15 +762,22 @@ Assets {
             Id: 5358125184516124331
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 7346665685653216321
         Name: "Icosahedron - Polished"
         Transform {
           Location {
-            Y: 7.66796875
+            X: -0.000118074437
+            Y: 7.66828775
+            Z: 0.000813124469
           }
           Rotation {
+            Yaw: 1.06721679e-07
+            Roll: -1.02452814e-05
           }
           Scale {
             X: 0.0372521952
@@ -725,7 +785,7 @@ Assets {
             Z: 0.0372521952
           }
         }
-        ParentId: 14177092734702868270
+        ParentId: 17700818226804008859
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -771,6 +831,9 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -778,22 +841,22 @@ Assets {
         Name: "Icosahedron - Polished"
         Transform {
           Location {
-            X: 8.57199287
-            Y: -6.663
-            Z: 4.72129202
+            X: 8.57225132
+            Y: -6.66287088
+            Z: 4.72301674
           }
           Rotation {
-            Pitch: 53.1761932
-            Yaw: -163.361816
-            Roll: 138.29689
+            Pitch: 53.1761665
+            Yaw: -163.361786
+            Roll: 138.296875
           }
           Scale {
-            X: 0.0372521877
-            Y: 0.0372521877
-            Z: 0.0372521877
+            X: 0.037252184
+            Y: 0.037252184
+            Z: 0.037252184
           }
         }
-        ParentId: 14177092734702868270
+        ParentId: 17700818226804008859
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -840,16 +903,19 @@ Assets {
             BoundsScale: 1
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
-        Id: 13166395968428057753
-        Name: "NewFolder"
+        Id: 5697940199225874112
+        Name: "Group"
         Transform {
           Location {
           }
           Rotation {
-            Pitch: -10.346405
-            Yaw: -11.6727295
+            Pitch: -10.3463974
+            Yaw: -11.6727552
             Roll: -41.0028687
           }
           Scale {
@@ -858,7 +924,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14177092734702868270
+        ParentId: 17700818226804008859
         ChildIds: 7624757307714291139
         ChildIds: 14998546145023937830
         ChildIds: 11494892382094280510
@@ -876,7 +942,10 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -886,6 +955,9 @@ Assets {
           Location {
           }
           Rotation {
+            Pitch: -1.36603776e-05
+            Yaw: 2.98820692e-06
+            Roll: -3.56222105e-13
           }
           Scale {
             X: 1
@@ -893,7 +965,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13166395968428057753
+        ParentId: 5697940199225874112
         UnregisteredParameters {
           Overrides {
             Name: "cs:Speed"
@@ -920,20 +992,23 @@ Assets {
             Id: 5358125184516124331
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 14998546145023937830
         Name: "Icosahedron - Polished"
         Transform {
           Location {
-            X: 0.886965215
-            Y: 3.52906346
-            Z: -0.000348662667
+            X: 0.886906803
+            Y: 3.52789021
+            Z: -0.00148371351
           }
           Rotation {
-            Pitch: -0.00056007551
-            Yaw: -14.1067572
-            Roll: -0.000435461232
+            Pitch: -0.000573735859
+            Yaw: -14.1067667
+            Roll: -0.000434687623
           }
           Scale {
             X: 0.0372521915
@@ -941,7 +1016,7 @@ Assets {
             Z: 0.0372521915
           }
         }
-        ParentId: 13166395968428057753
+        ParentId: 5697940199225874112
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -987,6 +1062,9 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -994,14 +1072,14 @@ Assets {
         Name: "Icosahedron - Polished"
         Transform {
           Location {
-            X: -11.1106386
-            Y: -4.07857084
-            Z: -0.318701744
+            X: -11.1107073
+            Y: -4.07785463
+            Z: -0.317876756
           }
           Rotation {
-            Pitch: -9.14070511
-            Yaw: 109.908012
-            Roll: 1.5633719
+            Pitch: -9.14069843
+            Yaw: 109.90799
+            Roll: 1.56335902
           }
           Scale {
             X: 0.0372521952
@@ -1009,7 +1087,7 @@ Assets {
             Z: 0.0372521952
           }
         }
-        ParentId: 13166395968428057753
+        ParentId: 5697940199225874112
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1055,6 +1133,9 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -1062,14 +1143,14 @@ Assets {
         Name: "Icosahedron - Polished"
         Transform {
           Location {
-            X: 1.70941699
-            Y: -11.4597654
-            Z: -2.4368372
+            X: 1.70989251
+            Y: -11.4597664
+            Z: -2.43712831
           }
           Rotation {
-            Pitch: 56.9332237
-            Yaw: -152.670807
-            Roll: 22.1590347
+            Pitch: 56.9331741
+            Yaw: -152.670761
+            Roll: 22.1590157
           }
           Scale {
             X: 0.037252184
@@ -1077,7 +1158,7 @@ Assets {
             Z: 0.037252184
           }
         }
-        ParentId: 13166395968428057753
+        ParentId: 5697940199225874112
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1123,6 +1204,9 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
     }
@@ -1160,6 +1244,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_invisible_001"
+      }
+    }
+    Assets {
+      Id: 10766975867019021707
+      Name: "Glass 01 (no distortion)"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_basic_glass_001"
       }
     }
     Assets {
@@ -1212,7 +1305,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Potions"
 }

@@ -26,6 +26,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -39,5 +42,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "Simple little candle lit street lamp prop with a light source."
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

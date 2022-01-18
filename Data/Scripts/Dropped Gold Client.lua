@@ -14,7 +14,7 @@ OUTLINE:SetSmartProperty("Color A", Utils.color.gold)
 function showGold()
 end
 
-function onNetworkedPropertyChanged(obj, propName)
+function onCustomPropertyChanged(obj, propName)
   if propName == "GoldAmount" then
     goldAmount = SERVER:GetCustomProperty("GoldAmount")
     showGold()
@@ -25,7 +25,7 @@ if goldAmount then
   showGold()
 else
   -- handler params: CoreObject_owner, string_propertyName
-  SERVER.networkedPropertyChangedEvent:Connect(onNetworkedPropertyChanged)
+  SERVER.customPropertyChangedEvent:Connect(onCustomPropertyChanged)
 end
 
 function getYeGold(thisTrigger, other)

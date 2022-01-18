@@ -11,7 +11,7 @@ local droppedLoot = SERVER:GetCustomProperty("DroppedLoot")
 local lootPosition = PICKUP_TRIGGER:GetWorldPosition()
 local pickupEvent = nil
 
-function onNetworkedPropertyChanged(object, propName)
+function onCustomPropertyChanged(object, propName)
 
   if propName == "DroppedLoot" then
     droppedLoot = SERVER:GetCustomProperty("DroppedLoot")
@@ -52,7 +52,7 @@ if droppedLoot then
   showItem()
 else
   -- handler params: CoreObject_owner, string_propertyName
-  SERVER.networkedPropertyChangedEvent:Connect(onNetworkedPropertyChanged)
+  SERVER.customPropertyChangedEvent:Connect(onCustomPropertyChanged)
 end
 
 function getYeLoot(thisTrigger, other)

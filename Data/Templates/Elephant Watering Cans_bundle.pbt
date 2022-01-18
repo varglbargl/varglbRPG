@@ -50,6 +50,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -64,5 +67,5 @@ Assets {
     Version: "1.0.0"
     Description: "I just think they\'re neat~!"
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }

@@ -368,6 +368,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17744341504768844955
+  Name: "Horn Curved Double - Vertical"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_horn_v_curve_double_001_ref"
+  }
+}
+Assets {
   Id: 17738734797160346039
   Name: "Plastic Matte"
   PlatformAssetType: 2
@@ -414,7 +423,7 @@ Assets {
 }
 Assets {
   Id: 17701387410364783516
-  Name: "Japanese Temple Roof 01 Corner Out - Cap 01"
+  Name: "Japanese Temple Roof 01 - Corner Out 01 Cap"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -2178,7 +2187,7 @@ Assets {
 }
 Assets {
   Id: 13932029094155557983
-  Name: "Japanese Temple Foundation 01 Corner 01"
+  Name: "Japanese Temple Foundation 01 - Corner 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -3518,6 +3527,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11418723233702228847
+  Name: "Basic Apple"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_org_apple_001_ref"
+  }
+}
+Assets {
   Id: 11402441593685472770
   Name: "Sconce 02"
   PlatformAssetType: 1
@@ -3821,15 +3839,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "dcl_liquid"
-  }
-}
-Assets {
-  Id: 10835382102308412979
-  Name: "Door Shop Bell Ring 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_door_shop_bell_ring_01a_Cue_ref"
   }
 }
 Assets {
@@ -4235,6 +4244,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
+  Id: 9808584520389485887
+  Name: "Londrina Solid Black"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "LondrinaSolidBlack_ref"
   }
 }
 Assets {
@@ -4886,6 +4904,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8528307821472280684
+  Name: "Urban Cardboard Box Damaged 01 - Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_cardboard_box_damaged_001_base_01_ref"
+  }
+}
+Assets {
   Id: 8514489305332193221
   Name: "Waterfall 90 Outer Corner"
   PlatformAssetType: 1
@@ -5085,7 +5112,7 @@ Assets {
 }
 Assets {
   Id: 8163783794097757193
-  Name: "Japanese Temple Wall Large 02 Gate 01"
+  Name: "Japanese Temple Wall Large 02 - Gate 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -5364,7 +5391,7 @@ Assets {
 }
 Assets {
   Id: 7578904194929811264
-  Name: "Japanese Temple Foundation 02 Wedge"
+  Name: "Japanese Temple Foundation 02 - Wedge"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -5819,6 +5846,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_fog_adjustment"
+  }
+}
+Assets {
+  Id: 6609170247112378593
+  Name: "Basic Pepper 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_org_pepper_001_ref"
   }
 }
 Assets {
@@ -7307,6 +7343,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3852031999575408820
+  Name: "Food Strawberry 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_strawberry_001_uv"
+  }
+}
+Assets {
   Id: 3811602796151382450
   Name: "Carpet Tile 02"
   PlatformAssetType: 1
@@ -7793,6 +7838,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2924043701443382429
+  Name: "Bark Bamboo 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_jpn_bamboo_bark_001_uv_ref"
+  }
+}
+Assets {
   Id: 2899842837741361229
   Name: "Concrete Tiles 01"
   PlatformAssetType: 2
@@ -7844,6 +7898,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_wallpaper_003"
+  }
+}
+Assets {
+  Id: 2706761020859682454
+  Name: "Urban Interior - Oil Lantern 02 - Handle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_lantern_oil_handle_002_ref"
   }
 }
 Assets {
@@ -8621,6 +8684,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1227539998602669490
+  Name: "Urban Interior - Oil Lantern 02 - Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_lantern_oil_base_002_ref"
+  }
+}
+Assets {
   Id: 1200572492163984593
   Name: "Sand Waves 01"
   PlatformAssetType: 2
@@ -8915,6 +8987,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_roof_001_orn_01_ref"
+  }
+}
+Assets {
+  Id: 580598750136033605
+  Name: "Pyramid - 8-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_eighsided_hq_001"
   }
 }
 Assets {

@@ -26,6 +26,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     PrimaryAssetId {
@@ -39,5 +42,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "A simple little clothing rack full or dresses of different colors. Good for your cute little shops or dress-up game setting ~ <3"
   }
-  SerializationVersion: 100
+  SerializationVersion: 103
 }
