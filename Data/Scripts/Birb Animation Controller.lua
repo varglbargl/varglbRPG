@@ -75,6 +75,9 @@ end
 
 if CHIRP then
   chirpSFX = World.SpawnAsset(CHIRP_SOUND, {parent = HEAD})
+  chirpSFX.volume = 0.5
+  chirpSFX.radius = 1000
+  chirpSFX.falloff = 3000
   table.insert(animations, chirpAnimation)
 end
 

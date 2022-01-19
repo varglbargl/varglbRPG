@@ -266,6 +266,15 @@ Assets {
           Overrides {
             Name: "ma:Font.Faces:color"
             Color {
+              R: 0.06
+              G: 0.06
+              B: 0.06
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Bevel:color"
+            Color {
               R: 5
               G: 5
               B: 5
@@ -273,7 +282,7 @@ Assets {
             }
           }
           Overrides {
-            Name: "ma:Font.Bevel:color"
+            Name: "ma:Font.Sides:color"
             Color {
               R: 5
               G: 5
@@ -948,7 +957,7 @@ Assets {
   Marketplace {
     Description: "Just a prop, but a nice and useful one for storefronts or homes. A thing I made a while ago and realized I may as well share.\r\n\r\nNo easter eggs in this one. Yet ~ <3"
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

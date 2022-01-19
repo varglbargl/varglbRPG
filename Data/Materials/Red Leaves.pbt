@@ -2,7 +2,7 @@ Assets {
   Id: 1480310566318195062
   Name: "Red Leaves"
   PlatformAssetType: 13
-  SerializationVersion: 103
+  SerializationVersion: 104
   CustomMaterialAsset {
     BaseMaterialId: 5146567597158908098
     ParameterOverrides {

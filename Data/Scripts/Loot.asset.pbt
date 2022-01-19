@@ -17,9 +17,21 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Weapons"
+        Name: "cs:Melee"
         AssetReference {
           Id: 11913309828716895881
+        }
+      }
+      Overrides {
+        Name: "cs:Ranged"
+        AssetReference {
+          Id: 17063846590340772639
+        }
+      }
+      Overrides {
+        Name: "cs:Spells"
+        AssetReference {
+          Id: 11109401477760354859
         }
       }
       Overrides {
@@ -48,5 +60,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
 }

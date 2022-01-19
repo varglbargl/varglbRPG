@@ -2,7 +2,7 @@ Assets {
   Id: 5056165458151714023
   Name: "Virtual Folders"
   PlatformAssetType: 30
-  SerializationVersion: 103
+  SerializationVersion: 104
   VirtualFolderSetAsset {
     Folders {
       VirtualFolderPath: "Props"
@@ -18,16 +18,7 @@ Assets {
     }
     Folders {
       VirtualFolderPath: "Gear"
-      VirtualFolderPath: "Weapons"
-      PlatformAssetType: 5
-    }
-    Folders {
-      VirtualFolderPath: "Gear"
       VirtualFolderPath: "Rings"
-      PlatformAssetType: 5
-    }
-    Folders {
-      VirtualFolderPath: "VFX"
       PlatformAssetType: 5
     }
     Folders {
@@ -67,12 +58,52 @@ Assets {
       PlatformAssetType: 5
     }
     Folders {
-      VirtualFolderPath: "Weapons"
+      VirtualFolderPath: "Item Tables"
+      PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "Effects"
       PlatformAssetType: 5
     }
     Folders {
-      VirtualFolderPath: "Item Tables"
-      PlatformAssetType: 3
+      VirtualFolderPath: "Effects"
+      VirtualFolderPath: "Projectiles"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Effects"
+      VirtualFolderPath: "Trails"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Effects"
+      VirtualFolderPath: "Enemy VFX"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Effects"
+      VirtualFolderPath: "Impact VFX"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Effects"
+      VirtualFolderPath: "Other VFX"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Effects"
+      VirtualFolderPath: "Muzzle Flashes"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Melee Weapons"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Gear"
+      VirtualFolderPath: "Ranged Weapons"
+      PlatformAssetType: 5
     }
   }
 }

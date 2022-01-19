@@ -4563,5 +4563,5 @@ Assets {
       AssetId: "Main_Street_Building_-_Ground_Level_Template"
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
 }

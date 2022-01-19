@@ -18,7 +18,7 @@ Assets {
         ParentId: 8367225086664713368
         ChildIds: 769915483370882734
         ChildIds: 4408968465753608552
-        ChildIds: 6395935372347618879
+        ChildIds: 8058329030881667901
         ChildIds: 3831285836790544826
         ChildIds: 5818976266323519252
         ChildIds: 1044973610194717705
@@ -360,7 +360,7 @@ Assets {
           Overrides {
             Name: "cs:Destination"
             ObjectReference {
-              SubObjectId: 6395935372347618879
+              SubObjectId: 8058329030881667901
             }
           }
         }
@@ -386,10 +386,12 @@ Assets {
         }
       }
       Objects {
-        Id: 6395935372347618879
+        Id: 8058329030881667901
         Name: "Destination"
         Transform {
           Location {
+            X: 150
+            Y: -150.000076
             Z: 585
           }
           Rotation {
@@ -401,83 +403,26 @@ Assets {
           }
         }
         ParentId: 11500117178595357088
-        ChildIds: 6959945788568588754
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 6959945788568588754
-        Name: "Fantasy Castle Floor 02"
-        Transform {
-          Location {
-            X: 2.17382812
-            Z: 0.03515625
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.75
-            Y: 0.75
-            Z: 0.75
-          }
-        }
-        ParentId: 6395935372347618879
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_Detail1:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Building_Floor:id"
-            AssetReference {
-              Id: 10793320870014566179
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:evolumetype:0"
             }
           }
           Overrides {
-            Name: "ma:Building_Floor:smart"
-            Bool: true
+            Name: "bp:Y Scale"
+            Float: 3
           }
           Overrides {
-            Name: "ma:Building_Ceiling:id"
-            AssetReference {
-              Id: 10793320870014566179
-            }
+            Name: "bp:Z Scale"
+            Float: 0.4
           }
           Overrides {
-            Name: "ma:Building_Ceiling:color"
-            Color {
-              R: 0.692000031
-              G: 0.288333356
-              B: 0.0864999592
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Building_Floor:color"
-            Color {
-              R: 0.692000031
-              G: 0.288333356
-              B: 0.0864999592
-              A: 1
-            }
+            Name: "bp:X Scale"
+            Float: 3
           }
         }
-        Lifespan: 0.01
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -490,24 +435,12 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 8055813084033537277
+        Blueprint {
+          BlueprintAsset {
+            Id: 13107491920842082186
           }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
+          TeamSettings {
           }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -515,9 +448,12 @@ Assets {
         Name: "Platform"
         Transform {
           Location {
+            X: 149.999863
+            Y: -150.000076
             Z: 20
           }
           Rotation {
+            Yaw: 1.02452805e-05
           }
           Scale {
             X: 1
@@ -560,8 +496,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 154.999863
-            Y: -150.000076
+            X: 5
+            Y: -0.001953125
             Z: -251
           }
           Rotation {
@@ -610,14 +546,13 @@ Assets {
         Name: "Hiragana Font 1: \343\200\202"
         Transform {
           Location {
-            X: 79.9999771
-            Y: -9.9981
+            X: -69.9980469
+            Y: 140.001953
             Z: 20
           }
           Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 2.41483417e-06
-            Roll: -89.9999466
+            Pitch: 6.83018879e-06
+            Roll: -89.9999084
           }
           Scale {
             X: 0.4
@@ -695,14 +630,13 @@ Assets {
         Name: "Hiragana Font 1: \343\200\202"
         Transform {
           Location {
-            X: 184.999969
-            Y: -9.99816895
+            X: 35
+            Y: 140.001953
             Z: 20
           }
           Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 2.41483417e-06
-            Roll: -89.9999466
+            Pitch: 6.83018879e-06
+            Roll: -89.9999084
           }
           Scale {
             X: 0.4
@@ -780,14 +714,14 @@ Assets {
         Name: "Hiragana Font 1: \343\200\202"
         Transform {
           Location {
-            X: 79.9999771
-            Y: -9.9981
+            X: -69.9980469
+            Y: 140.001953
             Z: -25
           }
           Rotation {
             Pitch: 1.36603776e-05
-            Yaw: 4.82967562e-06
-            Roll: -89.9999313
+            Yaw: 7.24451365e-06
+            Roll: -89.9999084
           }
           Scale {
             X: 0.4
@@ -865,14 +799,14 @@ Assets {
         Name: "Hiragana Font 1: \343\200\202"
         Transform {
           Location {
-            X: 184.999969
-            Y: -9.99816895
+            X: 35
+            Y: 140.001953
             Z: -25
           }
           Rotation {
             Pitch: 1.36603776e-05
-            Yaw: 4.82967562e-06
-            Roll: -89.9999313
+            Yaw: 7.24451365e-06
+            Roll: -89.9999084
           }
           Scale {
             X: 0.4
@@ -950,9 +884,9 @@ Assets {
         Name: "Main Street Railing 01 - Post"
         Transform {
           Location {
-            X: 10
-            Y: -9.92773438
-            Z: 19.9990234
+            X: -140
+            Y: 140.072266
+            Z: 19.9975586
           }
           Rotation {
             Yaw: 89.9999313
@@ -1008,9 +942,9 @@ Assets {
         Name: "Main Street Railing 01 - Post"
         Transform {
           Location {
-            X: 9.99804688
-            Y: -290
-            Z: 19.9990234
+            X: -140.004883
+            Y: -140
+            Z: 19.9975586
           }
           Rotation {
             Yaw: 89.9999313
@@ -1066,8 +1000,8 @@ Assets {
         Name: "Fantasy Castle Floor 02"
         Transform {
           Location {
-            X: 2.17382765
-            Y: -1.43051147e-06
+            X: -147.824219
+            Y: 149.998047
           }
           Rotation {
           }
@@ -1141,9 +1075,9 @@ Assets {
         Name: "Main Street Railing 01 - 2m"
         Transform {
           Location {
-            X: 10
-            Y: -290
-            Z: 39.9995117
+            X: -140.00293
+            Y: -140
+            Z: 39.9980469
           }
           Rotation {
             Yaw: 89.9999313
@@ -2131,21 +2065,12 @@ Assets {
       }
     }
     Assets {
-      Id: 8055813084033537277
-      Name: "Whitebox Floor 01 4m x 4m"
-      PlatformAssetType: 1
+      Id: 13107491920842082186
+      Name: "Dummy Object"
+      PlatformAssetType: 6
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_gen_whitebox_floor_001_4x4"
-      }
-    }
-    Assets {
-      Id: 10793320870014566179
-      Name: "Basic Hologram"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_basic_hologram"
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_dummy_pivot"
       }
     }
     Assets {
@@ -2182,6 +2107,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ts_urb_dtn_mst_railing_001_post_ref"
+      }
+    }
+    Assets {
+      Id: 8055813084033537277
+      Name: "Whitebox Floor 01 4m x 4m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_gen_whitebox_floor_001_4x4"
       }
     }
     Assets {
@@ -2252,5 +2186,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
 }

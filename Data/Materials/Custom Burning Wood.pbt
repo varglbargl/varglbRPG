@@ -2,7 +2,7 @@ Assets {
   Id: 7819600019591878414
   Name: "Philosopher\'s Scone"
   PlatformAssetType: 13
-  SerializationVersion: 103
+  SerializationVersion: 104
   CustomMaterialAsset {
     BaseMaterialId: 2281099433633317851
     ParameterOverrides {

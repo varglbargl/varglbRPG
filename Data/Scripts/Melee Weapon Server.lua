@@ -10,6 +10,8 @@ local STANCE = weapon:GetCustomProperty("AnimationStance")
 
 local HITBOX = script:GetCustomProperty("Hitbox"):WaitForObject()
 HITBOX.collision = Collision.FORCE_OFF
+HITBOX.team = 1
+HITBOX.isEnemyCollisionEnabled = false
 
 local hitEnemies = {}
 

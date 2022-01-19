@@ -4020,6 +4020,6 @@ Assets {
   Marketplace {
     Description: "A super-quick kitbash of a spinning wheel, for all your Rumpelstiltskin adventures... XD\r\n\r\nI needed one, so I made one for the community. Built off Anna\'s wagon wheel."
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
   DirectlyPublished: true
 }

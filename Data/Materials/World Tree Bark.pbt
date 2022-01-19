@@ -2,7 +2,7 @@ Assets {
   Id: 4063547036679581836
   Name: "World Tree Bark"
   PlatformAssetType: 13
-  SerializationVersion: 103
+  SerializationVersion: 104
   CustomMaterialAsset {
     BaseMaterialId: 7210998986192987884
     ParameterOverrides {

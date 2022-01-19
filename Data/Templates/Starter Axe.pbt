@@ -23,10 +23,6 @@ Assets {
         ChildIds: 8317944665994324292
         UnregisteredParameters {
           Overrides {
-            Name: "cs:id"
-            Int: 1
-          }
-          Overrides {
             Name: "cs:Icon"
             AssetReference {
               Id: 4555254960654381337
@@ -895,7 +891,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
   VirtualFolderPath: "Gear"
-  VirtualFolderPath: "Weapons"
+  VirtualFolderPath: "Melee Weapons"
 }

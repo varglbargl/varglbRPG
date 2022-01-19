@@ -2,7 +2,7 @@ Assets {
   Id: 4771343974045745572
   Name: "Dark Green Grass"
   PlatformAssetType: 13
-  SerializationVersion: 103
+  SerializationVersion: 104
   CustomMaterialAsset {
     BaseMaterialId: 7863226240706827597
     ParameterOverrides {

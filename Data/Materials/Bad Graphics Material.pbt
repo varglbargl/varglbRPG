@@ -2,7 +2,7 @@ Assets {
   Id: 2555807082249945326
   Name: "Bad Graphics Material"
   PlatformAssetType: 13
-  SerializationVersion: 103
+  SerializationVersion: 104
   CustomMaterialAsset {
     BaseMaterialId: 6298880568795808979
     ParameterOverrides {

@@ -42,5 +42,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "A simple scroll with a fancy wax seal. Maybe it\'s a spell. Maybe it\'s a crafting recipe. Could be anything!"
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
 }

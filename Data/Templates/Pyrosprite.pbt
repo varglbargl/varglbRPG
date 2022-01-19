@@ -15,9 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 3652361587053159857
         ChildIds: 2308838290578760625
-        ChildIds: 6155608346076283276
+        ChildIds: 1148462199004364702
         ChildIds: 15089466173944845956
         UnregisteredParameters {
           Overrides {
@@ -82,7 +82,7 @@ Assets {
           Overrides {
             Name: "cs:Hitbox"
             ObjectReference {
-              SubObjectId: 6155608346076283276
+              SubObjectId: 1148462199004364702
             }
           }
         }
@@ -109,7 +109,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6155608346076283276
+        Id: 1148462199004364702
         Name: "Hitbox"
         Transform {
           Location {
@@ -131,21 +131,29 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
+        CoreMesh {
+          MeshAsset {
+            Id: 17938528237073520770
+          }
+          Teams {
+            TeamInt: 1
             IsEnemyCollisionEnabled: true
           }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
           }
         }
         NetworkRelevanceDistance {
@@ -419,7 +427,7 @@ Assets {
       }
       Objects {
         Id: 1494482017119174380
-        Name: "head"
+        Name: "Head"
         Transform {
           Location {
             X: -2.19433594
@@ -855,6 +863,15 @@ Assets {
       }
     }
     Assets {
+      Id: 17938528237073520770
+      Name: "Sphere"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_sphere_002"
+      }
+    }
+    Assets {
       Id: 4524004223631073795
       Name: "Fire and Flame Burning Loop Set 01 SFX"
       PlatformAssetType: 10
@@ -931,6 +948,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
   VirtualFolderPath: "Enemies"
 }

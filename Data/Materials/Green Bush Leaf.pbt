@@ -2,7 +2,7 @@ Assets {
   Id: 17534328568152039668
   Name: "Green Bush Leaf"
   PlatformAssetType: 13
-  SerializationVersion: 103
+  SerializationVersion: 104
   CustomMaterialAsset {
     BaseMaterialId: 17615749677573215430
     ParameterOverrides {

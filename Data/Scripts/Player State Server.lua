@@ -12,6 +12,7 @@ end
 
 function onPlayerJoined(player)
 	-- print("Assigning states to " .. player.name)
+  player.team = 1
 
   -- handler params: Player_player, Damage_damage
   player.diedEvent:Connect(playerDied)

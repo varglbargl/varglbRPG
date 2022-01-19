@@ -1,6 +1,6 @@
 Assets {
   Id: 11913309828716895881
-  Name: "Weapons"
+  Name: "Melee Weapons"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
@@ -54,6 +54,6 @@ Assets {
       }
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
   VirtualFolderPath: "Item Tables"
 }

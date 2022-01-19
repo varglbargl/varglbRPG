@@ -1,6 +1,8 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 local Rings = require(script:GetCustomProperty("Rings"))
-local Weapons = require(script:GetCustomProperty("Weapons"))
+local Melee = require(script:GetCustomProperty("Melee"))
+local Ranged = require(script:GetCustomProperty("Ranged"))
+local Spells = require(script:GetCustomProperty("Spells"))
 local Shields = require(script:GetCustomProperty("Shields"))
 local Potions = require(script:GetCustomProperty("Potions"))
 
@@ -9,11 +11,9 @@ local GOLD_DROP = script:GetCustomProperty("GoldDrop")
 
 local Loot = {}
 
-local lootFromProperties = script:GetCustomProperties()
 local lootTable = {}
 
 local statBalance = {
-
   grit = 0.31,
   wit = 0.37,
   spit = 0.23,
@@ -65,7 +65,9 @@ function readLootTable(thisLootTable, itemType)
 end
 
 readLootTable(Rings, "Ring")
-readLootTable(Weapons, "Weapon")
+readLootTable(Melee, "Melee")
+readLootTable(Ranged, "Ranged")
+readLootTable(Spells, "Spell")
 readLootTable(Shields, "Shield")
 readLootTable(Potions, "Potion")
 
@@ -93,7 +95,7 @@ local suffixes = {
   a = {"Ease", "the Fox", "the Eagle", "the Lion and the Unicorn", "the Swordfish", "the Stallion", "the Crown", "the Empire", "the Hummingbird", "Craftsmanship", "the Show", "the Big Game", "the Master", "Go Fast", "the Professional", "Attractiveness", "Gettin' It Done", "Bookin' It", "Leaving", "Running Away", "Sprinting and Gliding Slightly Better", "the Queen", "the King", "Royalty", "Grace", "Honor", "Nobility", "the Aristocracy", "the Royal Guard", "the Queen's Court"}
 }
 
-local uniqueNames = {"The Paid Vacation", "Bungo's Delite", "Herald of the Primatriarchy"}
+local uniqueNames = {"The Paid Vacation", "Bungo's Delite", "Herald of the Primatriarch", "Dunston's Checksum", "Gavel of the Infinite", "Eye of the Wicked Lord"}
 
 function assignStat(item, letter)
   local magicNumber = Utils.magicNumber(item.itemLevel)

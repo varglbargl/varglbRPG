@@ -2,7 +2,7 @@ Assets {
   Id: 705335400861497613
   Name: "Stalag"
   PlatformAssetType: 13
-  SerializationVersion: 103
+  SerializationVersion: 104
   CustomMaterialAsset {
     BaseMaterialId: 8289361674337120823
     ParameterOverrides {

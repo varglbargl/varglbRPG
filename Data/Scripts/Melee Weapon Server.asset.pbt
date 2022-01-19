@@ -16,7 +16,20 @@ Assets {
           Id: 3407783204308324765
         }
       }
+      Overrides {
+        Name: "cs:Hitbox"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:Wildermagic:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
+      }
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
 }

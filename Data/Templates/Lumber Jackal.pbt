@@ -15,9 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 3652361587053159857
         ChildIds: 8676987850178840315
-        ChildIds: 4412637597147236972
+        ChildIds: 13607970633386660017
         ChildIds: 1350693796638697668
         UnregisteredParameters {
           Overrides {
@@ -80,14 +80,14 @@ Assets {
         ParentId: 7362332196142943351
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Hitbox"
-            ObjectReference {
-              SubObjectId: 4412637597147236972
-            }
-          }
-          Overrides {
             Name: "cs:Wander"
             Bool: true
+          }
+          Overrides {
+            Name: "cs:Hitbox"
+            ObjectReference {
+              SubObjectId: 13607970633386660017
+            }
           }
         }
         WantsNetworking: true
@@ -113,20 +113,18 @@ Assets {
         }
       }
       Objects {
-        Id: 4412637597147236972
+        Id: 13607970633386660017
         Name: "Hitbox"
         Transform {
           Location {
-            X: -2.19433594
-            Y: 1.75976562
             Z: 100
           }
           Rotation {
           }
           Scale {
-            X: 0.75
-            Y: 0.75
-            Z: 2.1
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 7362332196142943351
@@ -135,21 +133,29 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Trigger {
-          TeamSettings {
+        CoreMesh {
+          MeshAsset {
+            Id: 5944393796542654307
+          }
+          Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:capsule"
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
           }
         }
         NetworkRelevanceDistance {
@@ -2586,6 +2592,15 @@ Assets {
       }
     }
     Assets {
+      Id: 5944393796542654307
+      Name: "Capsule"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_capsule_001"
+      }
+    }
+    Assets {
       Id: 7486717179277049740
       Name: "Humanoid 2 Rig"
       PlatformAssetType: 25
@@ -2860,6 +2875,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
   VirtualFolderPath: "Enemies"
 }

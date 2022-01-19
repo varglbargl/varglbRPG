@@ -17,7 +17,7 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 8536240258143393076
-        ChildIds: 5940176314835016252
+        ChildIds: 17884708591250252108
         ChildIds: 14048762216965321666
         UnregisteredParameters {
           Overrides {
@@ -80,14 +80,14 @@ Assets {
         ParentId: 14332812707701694224
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Hitbox"
-            ObjectReference {
-              SubObjectId: 5940176314835016252
-            }
-          }
-          Overrides {
             Name: "cs:Wander"
             Bool: false
+          }
+          Overrides {
+            Name: "cs:Hitbox"
+            ObjectReference {
+              SubObjectId: 17884708591250252108
+            }
           }
         }
         WantsNetworking: true
@@ -113,20 +113,18 @@ Assets {
         }
       }
       Objects {
-        Id: 5940176314835016252
+        Id: 17884708591250252108
         Name: "Hitbox"
         Transform {
           Location {
-            X: -2.19433594
-            Y: 1.75976562
             Z: 100
           }
           Rotation {
           }
           Scale {
-            X: 0.75
-            Y: 0.75
-            Z: 2.1
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 14332812707701694224
@@ -135,21 +133,29 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
+        CoreMesh {
+          MeshAsset {
+            Id: 5944393796542654307
+          }
+          Teams {
+            TeamInt: 1
             IsEnemyCollisionEnabled: true
           }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:capsule"
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
           }
         }
         NetworkRelevanceDistance {
@@ -1644,6 +1650,15 @@ Assets {
       }
     }
     Assets {
+      Id: 5944393796542654307
+      Name: "Capsule"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_capsule_001"
+      }
+    }
+    Assets {
       Id: 12229284531888515750
       Name: "\"Mega Spooky EDM Party\" Music Construction Kit (Sections) 01"
       PlatformAssetType: 10
@@ -1693,6 +1708,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
   VirtualFolderPath: "Enemies"
 }

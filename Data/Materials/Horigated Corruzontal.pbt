@@ -2,7 +2,7 @@ Assets {
   Id: 16942072427917773766
   Name: "Horigated Corruzontal"
   PlatformAssetType: 13
-  SerializationVersion: 103
+  SerializationVersion: 104
   CustomMaterialAsset {
     BaseMaterialId: 887612434965164701
     ParameterOverrides {

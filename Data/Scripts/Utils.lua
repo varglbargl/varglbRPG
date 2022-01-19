@@ -283,9 +283,9 @@ function Utils.groundBelowPoint(vec3, sphercastRadius)
   local hitResult = nil
 
   if sphercastRadius then
-    hitResult = World.Spherecast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, sphercastRadius, {ignorePlayers = true})
+    hitResult = World.Spherecast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, sphercastRadius, {ignorePlayers = true, ignoreTeams = {1, 2, 3, 4, 5}})
   else
-    hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
+    hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true, ignoreTeams = {1, 2, 3, 4, 5}})
   end
 
   if hitResult then

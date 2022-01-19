@@ -16,6 +16,14 @@ Assets {
           Id: 10764266923683459435
         }
       }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:SwooshSFX:category"
+        String: "Optional"
+      }
     }
     Assets {
       Id: 10764266923683459435
@@ -27,5 +35,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
 }

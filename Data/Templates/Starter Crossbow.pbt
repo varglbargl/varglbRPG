@@ -41,7 +41,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Equipment {
-          SocketName: "left_prop"
+          SocketName: "right_prop"
           PickupTrigger {
             SelfId: 841534158063459245
           }
@@ -188,9 +188,9 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "dual_melee_left_hand_slash_left"
+          Animation: "1hand_pistol_shoot"
           KeyBinding_v2 {
-            Value: "mc:egameaction:secondaryaction"
+            Value: "mc:egameaction:primaryaction"
           }
         }
         NetworkRelevanceDistance {
@@ -1456,7 +1456,7 @@ Assets {
       AssetId: "Basic_Pistol"
     }
   }
-  SerializationVersion: 103
+  SerializationVersion: 104
   VirtualFolderPath: "Gear"
-  VirtualFolderPath: "Weapons"
+  VirtualFolderPath: "Ranged Weapons"
 }

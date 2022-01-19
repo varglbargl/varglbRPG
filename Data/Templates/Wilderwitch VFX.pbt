@@ -312,6 +312,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 103
-  VirtualFolderPath: "VFX"
+  SerializationVersion: 104
+  VirtualFolderPath: "Effects"
+  VirtualFolderPath: "Other VFX"
 }

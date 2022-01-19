@@ -7,6 +7,8 @@ local LEVEL = enemy:GetCustomProperty("Level")
 local SPAWN_VFX = script:GetCustomProperty("SpawnVFX")
 local WANDER = script:GetCustomProperty("Wander")
 local HITBOX = script:GetCustomProperty("Hitbox"):WaitForObject()
+HITBOX.team = 1
+HITBOX.isTeamCollisionEnabled = false
 
 local stats = Utils.getStatsByLevel(LEVEL)
 
