@@ -43,7 +43,7 @@ function getWeaponSpeed(weapon)
 end
 
 function readLootTable(thisLootTable, itemType)
-  for propName, item in pairs(thisLootTable) do
+  for _, item in pairs(thisLootTable) do
     local spawnedItem = World.SpawnAsset(item, {position = Vector3.UP * -10000})
 
     local lootItem = {

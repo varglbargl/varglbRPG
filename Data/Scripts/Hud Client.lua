@@ -146,6 +146,8 @@ function initCooldownOverlay(item)
     updateAbilitiesWithBinding("ability_primary")
     equipment = primaryAbilities[1].parent
 
+    thisOverlay = PRIMARY_COOLDOWN
+
     for _, abil in ipairs(primaryAbilities) do
       table.insert(castEvents, abil.castEvent:Connect(function()
         if primaryTickTask then primaryTickTask:Cancel() end
@@ -159,6 +161,8 @@ function initCooldownOverlay(item)
   elseif item.socket == "left_prop" then
     updateAbilitiesWithBinding("ability_secondary")
     equipment = secondaryAbilities[1].parent
+
+    thisOverlay = SECONDARY_COOLDOWN
 
     for _, abil in ipairs(secondaryAbilities) do
       table.insert(castEvents, abil.castEvent:Connect(function()
@@ -183,8 +187,6 @@ function initCooldownOverlay(item)
     if secondaryTickTask then secondaryTickTask:Cancel() end
 
     thisOverlay.visibility = Visibility.FORCE_OFF
-
-    print("Correctly cleaned up cooldown events and tasks on unequip uwu")
   end)
 end
 
