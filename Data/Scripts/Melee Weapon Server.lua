@@ -14,6 +14,7 @@ HITBOX.team = 1
 HITBOX.isEnemyCollisionEnabled = false
 
 local hitEnemies = {}
+local lastUsedAbility = nil
 
 local equipEvent = nil
 local unequipEvent = nil
@@ -23,12 +24,16 @@ local executeEvent = nil
 local interruptedEvent = nil
 
 function rollDamage()
-  return math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + weapon.owner:GetResource("Grit") / 5 + math.random())
+  local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + weapon.owner:GetResource("Grit") / 5 + math.random()))
+  damage.sourcePlayer = weapon.owner
+  damage.sourceAbility = lastUsedAbility
+
+  return damage
 end
 
-function onAbilityCast()
+function onAbilityCast(thisAbility)
   hitEnemies = {}
-
+  lastUsedAbility = thisAbility
   HITBOX.collision = Collision.INHERIT
 end
 
@@ -52,7 +57,7 @@ function onHitboxOverlap(thisTrigger, other)
   if enemy and not hitEnemies[enemy] then
     hitEnemies[enemy] = true
 
-    Events.Broadcast("WeaponHit", enemy, weapon.owner, rollDamage())
+    enemy:ApplyDamage(rollDamage())
   end
 end
 

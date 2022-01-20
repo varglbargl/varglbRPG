@@ -10,9 +10,11 @@ local HITBOX = script:GetCustomProperty("Hitbox"):WaitForObject()
 HITBOX.team = 1
 HITBOX.isTeamCollisionEnabled = false
 
-local stats = Utils.getStatsByLevel(LEVEL)
+local stats = Utils.getNPCStatsByLevel(math.max(1, LEVEL + math.random(-1, 1) + math.random(-1, 1)))
+enemy:SetCustomProperty("Level", stats.level)
+enemy.maxHitPoints = stats.maxHitPoints
+enemy.hitPoints = stats.maxHitPoints
 
-local isDead = false
 local isFighting = false
 local attackers = {}
 local myTemplateId = script:FindTemplateRoot().sourceTemplateId
@@ -23,7 +25,8 @@ local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition(), 50)
 local spawnRotation = enemy:GetWorldRotation()
 local spawnScale = HITBOX:GetWorldScale()
 
-local weaponHitEvent = nil
+local damagedEvent = nil
+local diedEvent = nil
 local playerHealedEvent = nil
 
 if not spawnPoint then
@@ -71,7 +74,7 @@ function fight(player)
 
   Task.Wait(0.25)
 
-  while Object.IsValid(player) and Object.IsValid(enemy) and not isDead and isFighting do
+  while Object.IsValid(player) and Object.IsValid(enemy) and not enemy.isDead and isFighting do
     fromVector = enemy:GetWorldPosition()
 
     if player.isDead or (fromVector - spawnPoint).size > 3000 then
@@ -108,7 +111,7 @@ function fight(player)
 end
 
 function stopFighting()
-  if isDead or not Object.IsValid(enemy) then return end
+  if enemy.isDead or not Object.IsValid(enemy) then return end
 
   isFighting = false
 
@@ -118,11 +121,11 @@ function stopFighting()
 
   enemy:MoveTo(spawnPoint, 2)
   enemy.collision = Collision.FORCE_OFF
-  stats.hitPoints = stats.maxHitPoints
+  enemy.hitPoints = stats.maxHitPoints
 
   Task.Wait(2)
 
-  if isDead or not Object.IsValid(enemy) then return end
+  if enemy.isDead or not Object.IsValid(enemy) then return end
 
   enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.25)
 
@@ -135,57 +138,41 @@ function stopFighting()
 end
 
 function attack(target)
-  if isDead or not Object.IsValid(target) or not Object.IsValid(enemy) then return end
+  if enemy.isDead or not Object.IsValid(target) or not Object.IsValid(enemy) then return end
 
   local damage = Utils.rollDamage(stats)
   local reflectedDamage = 0
 
-  -- crushing blow
-  -- local targetLevel = target:GetResource("Level")
-
-  -- if targetLevel >= stats.level + 5 then
-  --   -- you are higher level by a lot
-  --   -- make number smaller
-  --   local difference = targetLevel - stats.level + 4
-
-  --   damage.amount = math.ceil(damage.amount / difference)
-  -- elseif stats.level >= targetLevel + 5 then
-  --   -- the enemy is higher level by a lot
-  --   -- make number larger
-  --   local difference = targetLevel - stats.level + 4
-
-  --   damage.amount = math.ceil(damage.amount + damage.amount * difference / 10)
-  -- end
-
   if target:GetResource("Class") == 1 then
-    reflectedDamage = math.min(target.hitPoints, math.max(1, math.floor(damage.amount/10 + math.random())))
+    reflectedDamage = Damage.New(math.min(target.hitPoints, math.max(1, math.floor(damage.amount/10 + math.random()))))
+    reflectedDamage.sourcePlayer = target
 
-    damage.amount = damage.amount - reflectedDamage
+    damage.amount = damage.amount - reflectedDamage.amount
 
-    takeDamage(target, reflectedDamage)
+    enemy:ApplyDamage(reflectedDamage)
   end
 
-  Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamage, not isDead)
+  Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamage, not enemy.isDead)
   target:ApplyDamage(damage)
   Task.Wait(1.5)
 end
 
-function die(killer, damage)
+function die(thisEnemy, damage)
   if not Object.IsValid(enemy) then return end
   -- print("I AM SLAIN!!!")
 
   enemy:StopMove()
   enemy:StopRotate()
   enemy.collision = Collision.FORCE_OFF
-  isDead = true
-  Utils.throttleToAllPlayers("eDie", killer, enemy.id, damage)
 
   for i, nearbyPlayer in ipairs(Game.FindPlayersInSphere(enemy:GetWorldPosition(), 1000)) do
     attackers[nearbyPlayer] = true
   end
 
-  for i, nearbyPlayer in ipairs(Game.FindPlayersInSphere(killer:GetWorldPosition(), 1000)) do
-    attackers[nearbyPlayer] = true
+  if damage.sourcePlayer then
+    for i, nearbyPlayer in ipairs(Game.FindPlayersInSphere(damage.sourcePlayer:GetWorldPosition(), 1000)) do
+      attackers[nearbyPlayer] = true
+    end
   end
 
   for otherPlayer in pairs(attackers) do
@@ -211,10 +198,9 @@ function die(killer, damage)
     Events.Broadcast("PlayerGainedXP", otherPlayer, xpAmount)
   end
 
-  weaponHitEvent:Disconnect()
+  diedEvent:Disconnect()
+  damagedEvent:Disconnect()
   playerHealedEvent:Disconnect()
-
-  attackers = {}
 
   local lootRoll = math.random()
 
@@ -230,23 +216,21 @@ function die(killer, damage)
 
     enemy:MoveTo(enemy:GetWorldPosition() - Vector3.UP * 500, 5)
 
-    Task.Wait(5)
-    if not Object.IsValid(enemy) then return end
+    Task.Wait(20 / #Game.GetPlayers() * #attackers)
+    attackers = {}
 
-    enemy:Destroy()
-    respawn()
+    attemptRespawn()
   end)
 end
 
 function despawn()
   -- print("K, well if nobody needs me imma head back to hell. Peace.")
 
-  isDead = true
   enemy:Destroy()
-  Task.Spawn(respawn)
+  Task.Spawn(attemptRespawn)
 end
 
-function respawn()
+function attemptRespawn()
   Task.Wait(math.random(5, 10))
 
   if areTherePlayersNearby() then
@@ -255,57 +239,22 @@ function respawn()
     end
 
     World.SpawnAsset(myTemplateId, {position = spawnPoint, rotation = spawnRotation})
-    return
-  end
+  else
+    -- print("Guess I'll just wait here. Being dead.")
 
-  -- print("Guess I'll just wait here. Being dead.")
-
-  respawn()
-end
-
-function takeDamage(attacker, damage)
-  stats.hitPoints = stats.hitPoints - damage
-
-  if stats.hitPoints <= 0 then
-    stats.hitPoints = 0
-    die(attacker, damage)
+    attemptRespawn()
   end
 end
 
-function onWeaponHit(enemyHit, attacker, damage)
-  if not Object.IsValid(enemy) or not Object.IsValid(enemyHit) or enemy ~= enemyHit or isDead then return end
+function onDamaged(thisEnemy, damage)
+  if not Object.IsValid(enemy) or enemy ~= thisEnemy or enemy.isDead then return end
 
-  -- crushing blow
-  -- local attackerLevel = attacker:GetResource("Level")
+  -- print("I, a humble "..enemy.name..", have just been assaulted by "..damage.sourcePlayer.name.." for a truly uncalled for "..damage.amount.." damage! I now have a scant "..enemy.hitPoints.." hit points remaining! I expect compensation for my damages!")
 
-  -- if attackerLevel >= stats.level + 5 then
-  --   -- you are higher level by a lot
-  --   -- make number larger
-  --   local difference = attackerLevel - stats.level + 4
-
-  --   damage = math.ceil(damage + damage * difference / 10)
-  -- elseif stats.level >= attackerLevel + 5 then
-  --   -- the enemy is higher level by a lot
-  --   -- make number smaller
-  --   local difference = attackerLevel - stats.level + 4
-
-  --   damage = math.ceil(damage / difference)
-  -- end
-
-  -- print("I, a humble "..enemy.name..", have just been assaulted by "..attacker.name.." with a "..weapon.name.." for a truly uncalled for "..damage.." damage!")
-  takeDamage(attacker, damage)
-
-  if not isDead then
-    Utils.throttlePlayerAttack(attacker, enemy, damage)
-
-    if not isFighting then
-      startFighting(attacker)
-    end
+  if damage.sourcePlayer and not isFighting then
+    startFighting(damage.sourcePlayer)
   end
 end
-
--- handler params: Object_enemyHit, Equipment_weapon, integer_damage
-weaponHitEvent = Events.Connect("WeaponHit", onWeaponHit)
 
 function onPlayerHealed(player, newTotal, healer)
   if not Object.IsValid(healer) then return end
@@ -320,12 +269,9 @@ function onPlayerHealed(player, newTotal, healer)
   end
 end
 
--- handler params: Player_player, integer_newTotal, Player_healer
-playerHealedEvent = Events.Connect("PlayerHealed", onPlayerHealed)
-
 function wanderLoop()
   Task.Wait(math.random(50, 200) / 10)
-  if isFighting or isDead or not Object.IsValid(enemy) then return end
+  if isFighting or enemy.isDead or not Object.IsValid(enemy) then return end
 
   if areTherePlayersNearby() == false then
     despawn()
@@ -350,7 +296,7 @@ function wanderLoop()
   end
 
   Task.Wait(4.5)
-  if isFighting or isDead or not Object.IsValid(enemy) then return end
+  if isFighting or enemy.isDead or not Object.IsValid(enemy) then return end
 
   enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.75)
 
@@ -360,3 +306,12 @@ end
 if WANDER then
   Task.Spawn(wanderLoop)
 end
+
+-- handler params: DamageableObject_object, Damage_damage
+damagedEvent = enemy.damagedEvent:Connect(onDamaged)
+
+-- handler params: DamageableObject_object, Damage_damage
+diedEvent = enemy.diedEvent:Connect(die)
+
+-- handler params: Player_player, integer_newTotal, Player_healer
+playerHealedEvent = Events.Connect("PlayerHealed", onPlayerHealed)

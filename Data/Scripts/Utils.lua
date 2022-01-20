@@ -120,12 +120,12 @@ function Utils.magicNumber(x)
   end
 end
 
-function Utils.getStatsByLevel(level)
+function Utils.getNPCStatsByLevel(level)
   local stats = {}
 
   stats.level = level
 
-  local multiplier = Utils.magicNumber(level)
+  local multiplier = Utils.magicNumber(stats.level)
 
   stats.maxHitPoints = math.floor(45 * multiplier)
   stats.hitPoints = stats.maxHitPoints
@@ -133,7 +133,7 @@ function Utils.getStatsByLevel(level)
   stats.minDamage = math.floor(5 * multiplier)
   stats.maxDamage = math.floor(7.5 * multiplier)
 
-  stats.xpValue = math.floor(5 * multiplier) + math.random(0, level)
+  stats.xpValue = math.floor(5 * multiplier) + math.random(0, stats.level)
 
   return stats
 end
@@ -168,44 +168,6 @@ function Utils.updatePrivateNetworkedData(player, key)
   if not Object.IsValid(player) or Environment.IsClient() then return end
 
   player:SetPrivateNetworkedData(key, compressItems(player.serverUserData[key]))
-end
-
-local attackEvents = {}
-local howMany = 2
-
-local function unleashAttacks(player)
-  if not Object.IsValid(player) or not attackEvents[player] then return end
-
-  local nowAttacking = 0
-
-  while #attackEvents[player] >= nowAttacking do
-    if not Object.IsValid(player) then return end
-
-    local whomst = {}
-
-    for i = 1, howMany do
-      if attackEvents[player][nowAttacking + i] and Object.IsValid(attackEvents[player][nowAttacking + i].enemy) then
-        table.insert(whomst, attackEvents[player][nowAttacking + i].enemy.id)
-        table.insert(whomst, attackEvents[player][nowAttacking + i].damage)
-      end
-    end
-
-    Utils.throttleToAllPlayers("eHit", player, table.unpack(whomst))
-
-    nowAttacking = nowAttacking + howMany
-  end
-
-  attackEvents[player] = nil
-end
-
-function Utils.throttlePlayerAttack(player, enemy, damage)
-  if attackEvents[player] == nil then
-    attackEvents[player] = {}
-
-    Task.Spawn(function() unleashAttacks(player) end)
-  end
-
-  table.insert(attackEvents[player], {enemy = enemy, damage = damage})
 end
 
 function Utils.throttleToServer(evtName, ...)

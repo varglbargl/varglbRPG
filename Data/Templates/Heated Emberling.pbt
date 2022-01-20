@@ -4,9 +4,9 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 9951396153306744005
+      RootId: 11195882526015054709
       Objects {
-        Id: 9951396153306744005
+        Id: 11195882526015054709
         Name: "Heated Emberling"
         Transform {
           Scale {
@@ -42,6 +42,38 @@ Assets {
               Id: 8718155860146548893
             }
           }
+          Overrides {
+            Name: "cs:Level:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Level:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DamagedVFX:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DamagedVFX:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DeathVFX:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DeathVFX:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:AttackVFX:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:AttackVFX:ml"
+            Bool: false
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -56,8 +88,18 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Folder {
-          IsGroup: true
+        DamageableObject {
+          DamageSettings {
+            MaxHitpoints: 100
+            StartingHitpoints: 100
+            DestroyOnDeath: true
+            DestroyOnDeathClientTemplateId {
+              Id: 841534158063459245
+            }
+            DestroyOnDeathNetworkedTemplateId {
+              Id: 841534158063459245
+            }
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -77,7 +119,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9951396153306744005
+        ParentId: 11195882526015054709
         UnregisteredParameters {
           Overrides {
             Name: "cs:Hitbox"
@@ -123,7 +165,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9951396153306744005
+        ParentId: 11195882526015054709
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -172,7 +214,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9951396153306744005
+        ParentId: 11195882526015054709
         ChildIds: 3810707152439941841
         ChildIds: 8437071907676576254
         ChildIds: 2015788379081974266

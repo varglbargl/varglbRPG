@@ -4,9 +4,9 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 9951396153306744005
+      RootId: 15013125014285076587
       Objects {
-        Id: 9951396153306744005
+        Id: 15013125014285076587
         Name: "Pyrosprite"
         Transform {
           Scale {
@@ -42,6 +42,38 @@ Assets {
               Id: 8718155860146548893
             }
           }
+          Overrides {
+            Name: "cs:Level:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Level:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DamagedVFX:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DamagedVFX:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DeathVFX:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DeathVFX:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:AttackVFX:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:AttackVFX:ml"
+            Bool: false
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -56,8 +88,19 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Folder {
-          IsGroup: true
+        DamageableObject {
+          DamageSettings {
+            MaxHitpoints: 100
+            StartingHitpoints: 100
+            DestroyOnDeath: true
+            DestroyOnDeathDelay: 5
+            DestroyOnDeathClientTemplateId {
+              Id: 841534158063459245
+            }
+            DestroyOnDeathNetworkedTemplateId {
+              Id: 841534158063459245
+            }
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -77,7 +120,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9951396153306744005
+        ParentId: 15013125014285076587
         UnregisteredParameters {
           Overrides {
             Name: "cs:Hitbox"
@@ -125,7 +168,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9951396153306744005
+        ParentId: 15013125014285076587
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -174,7 +217,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9951396153306744005
+        ParentId: 15013125014285076587
         ChildIds: 3810707152439941841
         ChildIds: 8437071907676576254
         ChildIds: 13390154060185515382

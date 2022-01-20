@@ -22,13 +22,19 @@ local TRAIL = script:GetCustomProperty("Trail")
 local IMPACT_VFX = script:GetCustomProperty("Impact")
 local MUZZLE_FLASH = script:GetCustomProperty("MuzzleFlash")
 
+local lastUsedAbility = nil
+
 local equipEvent = nil
 local unequipEvent = nil
 local executeEvent = nil
 local interruptedEvent = nil
 
 function rollDamage()
-  return math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) / (0.75 + SPLASH_RADIUS / 4) + weapon.owner:GetResource(damageStat) / 5 + math.random())
+  local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) / (0.75 + SPLASH_RADIUS / 4) + weapon.owner:GetResource(damageStat) / 5 + math.random()))
+  damage.sourcePlayer = weapon.owner
+  damage.sourceAbility = lastUsedAbility
+
+  return damage
 end
 
 function onAbilityExecute(thisAbility)
@@ -37,6 +43,8 @@ function onAbilityExecute(thisAbility)
   local possibleTarget = World.Spherecast(weapon.owner:GetViewWorldPosition(), attackDirection, 50, {ignorePlayers = true})
   local target = nil
   local directHit = nil
+
+  lastUsedAbility = thisAbility
 
   if possibleTarget and possibleTarget.other then
     if possibleTarget.other.serverUserData["Enemy"] then
@@ -85,12 +93,12 @@ function onAbilityExecute(thisAbility)
     end
   end
 
-  for enemy, _ in pairs(hitEnemies) do
+  for enemy in pairs(hitEnemies) do
     if wild and Wildermagic.roll(weapon.owner) then
       wild = false
     end
 
-    Events.Broadcast("WeaponHit", enemy, weapon.owner, rollDamage())
+    enemy:ApplyDamage(rollDamage())
 
     Task.Wait()
   end

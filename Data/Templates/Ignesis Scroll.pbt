@@ -154,6 +154,12 @@ Assets {
           }
         }
         ParentId: 9693666416420425052
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:IsMagic"
+            Bool: true
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

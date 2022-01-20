@@ -4,10 +4,10 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 7362332196142943351
+      RootId: 17907744864267602923
       Objects {
-        Id: 7362332196142943351
-        Name: "Lumber Jackal"
+        Id: 17907744864267602923
+        Name: "Damageable Object"
         Transform {
           Scale {
             X: 1
@@ -42,6 +42,38 @@ Assets {
               Id: 16731583031667469391
             }
           }
+          Overrides {
+            Name: "cs:Level:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Level:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DamagedVFX:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DamagedVFX:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DeathVFX:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:DeathVFX:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:AttackVFX:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:AttackVFX:ml"
+            Bool: false
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -56,8 +88,18 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Folder {
-          IsGroup: true
+        DamageableObject {
+          DamageSettings {
+            MaxHitpoints: 100
+            StartingHitpoints: 100
+            DestroyOnDeath: true
+            DestroyOnDeathClientTemplateId {
+              Id: 841534158063459245
+            }
+            DestroyOnDeathNetworkedTemplateId {
+              Id: 841534158063459245
+            }
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -77,7 +119,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7362332196142943351
+        ParentId: 17907744864267602923
         UnregisteredParameters {
           Overrides {
             Name: "cs:Wander"
@@ -127,7 +169,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7362332196142943351
+        ParentId: 17907744864267602923
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -176,7 +218,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7362332196142943351
+        ParentId: 17907744864267602923
         ChildIds: 12914263376968372127
         ChildIds: 16538897968305636157
         WantsNetworking: true
