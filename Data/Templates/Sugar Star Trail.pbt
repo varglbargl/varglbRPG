@@ -20,6 +20,7 @@ Assets {
         ChildIds: 14779542343541763503
         ChildIds: 13141204423798287604
         Lifespan: 10
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -249,4 +250,6 @@ Assets {
     }
   }
   SerializationVersion: 104
+  VirtualFolderPath: "Effects"
+  VirtualFolderPath: "Trails"
 }

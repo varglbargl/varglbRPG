@@ -74,7 +74,7 @@ function fight(player)
   while Object.IsValid(player) and Object.IsValid(enemy) and not isDead and isFighting do
     fromVector = enemy:GetWorldPosition()
 
-    if player.isDead or (fromVector - spawnPoint).size > 2000 then
+    if player.isDead or (fromVector - spawnPoint).size > 3000 then
       stopFighting()
       return
     end

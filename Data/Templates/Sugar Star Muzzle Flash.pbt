@@ -208,4 +208,6 @@ Assets {
     }
   }
   SerializationVersion: 104
+  VirtualFolderPath: "Effects"
+  VirtualFolderPath: "Muzzle Flashes"
 }

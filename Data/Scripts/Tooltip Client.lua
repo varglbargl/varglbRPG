@@ -5,9 +5,7 @@ local NAME = script:GetCustomProperty("Name"):WaitForObject()
 local DESCRIPTION = script:GetCustomProperty("Description"):WaitForObject()
 local DAMAGE = script:GetCustomProperty("Damage"):WaitForObject()
 local STATS_PANEL = script:GetCustomProperty("StatsPanel"):WaitForObject()
-local STAT1 = script:GetCustomProperty("Stat1"):WaitForObject()
-local STAT2 = script:GetCustomProperty("Stat2"):WaitForObject()
-local STAT3 = script:GetCustomProperty("Stat3"):WaitForObject()
+local STATS = script:GetCustomProperty("Stats"):WaitForObject()
 local RARITY = script:GetCustomProperty("Rarity"):WaitForObject()
 local TYPE = script:GetCustomProperty("Type"):WaitForObject()
 local PRICE = script:GetCustomProperty("Price"):WaitForObject()
@@ -16,7 +14,6 @@ local FLAVOR_TEXT = script:GetCustomProperty("FlavorText"):WaitForObject()
 local LABEL_TOOLTIP = script:GetCustomProperty("LabelTooltip"):WaitForObject()
 local LABEL = script:GetCustomProperty("Label"):WaitForObject()
 
-local stats = {STAT1, STAT2, STAT3}
 local currentTooltip = nil
 local currentButton = nil
 local followCursorTask = nil
@@ -118,49 +115,46 @@ function showItemTooltip(item, button)
   PRICE.text = Utils.formatInt(math.floor(item.itemLevel/2 * (item.rarity+1) + 5))
 
   local itemStats = 0
-
-  for i = 1, #stats do
-    stats[i].text = ""
-  end
-
-  if item.health then
-    itemStats = itemStats + 1
-    stats[itemStats].text = "+ "..Utils.formatInt(item.health).." Health"
-  end
-
-  if item.stamina then
-    itemStats = itemStats + 1
-    stats[itemStats].text = "+ "..Utils.formatInt(item.stamina).." Stamina"
-  end
+  STATS.text = ""
 
   if item.grit then
     itemStats = itemStats + 1
-    stats[itemStats].text = "+ "..Utils.formatInt(item.grit).." Grit"
+    STATS.text = STATS.text.."+ "..Utils.formatInt(item.grit).." Grit"
   end
 
   if item.wit then
     itemStats = itemStats + 1
-    stats[itemStats].text = "+ "..Utils.formatInt(item.wit).." Wit"
+    if STATS.text ~= "" then STATS.text = STATS.text.."\n" end
+    STATS.text = STATS.text.."+ "..Utils.formatInt(item.wit).." Wit"
   end
 
   if item.spit then
     itemStats = itemStats + 1
-    stats[itemStats].text = "+ "..Utils.formatInt(item.spit).." Spit"
+    if STATS.text ~= "" then STATS.text = STATS.text.."\n" end
+    STATS.text = STATS.text.."+ "..Utils.formatInt(item.spit).." Spit"
   end
 
+  -- if item.splash then
+  --   itemStats = itemStats + 1
+  --   if STATS.text ~= "" then STATS.text = STATS.text.."\n" end
+  --   STATS.text = STATS.text.." "..Utils.formatInt(item.splash).."m Blast Radius"
+  -- end
+
+  STATS.height = itemStats * 40
   STATS_PANEL.y = contentHeight
+  STATS_PANEL.height = math.max(120, STATS.height)
   contentHeight = contentHeight + STATS_PANEL.height + 10
 
   if item.flavorText then
     FLAVOR_TEXT.text = item.flavorText
 
     FLAVOR_TEXT.y = contentHeight
-    contentHeight = contentHeight + FLAVOR_TEXT:ComputeApproximateSize().y + 18
+    contentHeight = contentHeight + FLAVOR_TEXT:ComputeApproximateSize().y + 10
   else
     FLAVOR_TEXT.text = ""
   end
 
-  ITEM_TOOLTIP.height = contentHeight
+  ITEM_TOOLTIP.height = contentHeight + 8
 
   if followCursorTask then followCursorTask:Cancel() end
   followCursorTask = Task.Spawn(function() followCursorLoop(ITEM_TOOLTIP) end)

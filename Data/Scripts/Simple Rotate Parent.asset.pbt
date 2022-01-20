@@ -7,7 +7,7 @@ Assets {
       Overrides {
         Name: "cs:Speed"
         Vector {
-          Z: 5
+          Z: 50
         }
       }
       Overrides {

@@ -105,5 +105,13 @@ Assets {
       VirtualFolderPath: "Ranged Weapons"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Game Components"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "APIs"
+      PlatformAssetType: 3
+    }
   }
 }

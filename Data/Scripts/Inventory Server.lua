@@ -33,10 +33,12 @@ function onPlayerJoined(player)
           Loot.giveRandomToPlayer(thisPlayer, 69, 3)
 
           for i = 1, 47 do
-            Loot.giveRandomToPlayer(thisPlayer, math.random(1, 60), math.random(0, 3))
+            -- Loot.giveRandomToPlayer(thisPlayer, math.random(1, 60), math.random(0, 3))
+            Loot.giveRandomToPlayer(thisPlayer, nil, math.random(0, 3))
           end
         else
           Loot.giveRandomToPlayer(thisPlayer)
+          -- Loot.giveRandomToPlayer(thisPlayer, nil, 3)
         end
       end
     end)

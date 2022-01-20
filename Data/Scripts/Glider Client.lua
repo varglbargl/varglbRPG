@@ -61,7 +61,7 @@ function onGliderPackedUp(thisAbility)
   if RIGHT_HAND_ANCHOR then RIGHT_HAND_ANCHOR:Deactivate() end
 
   if packSfx then packSfx:Play() end
-  if glideSfxLoop then glideSfxLoop:FadeOut(0.2) end
+  if glideSfxLoop then glideSfxLoop:Stop() end
 
   Events.Broadcast("GliderPackedUp", thisAbility.owner)
   thisAbility.owner.clientUserData["Gliding"] = false

@@ -18,6 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 15997383533180182102
         ChildIds: 10696176334114528912
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -217,4 +218,6 @@ Assets {
     }
   }
   SerializationVersion: 104
+  VirtualFolderPath: "Effects"
+  VirtualFolderPath: "Projectiles"
 }

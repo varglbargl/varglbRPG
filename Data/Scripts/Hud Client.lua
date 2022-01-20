@@ -8,11 +8,16 @@ local HEALTH_NUMBERS = script:GetCustomProperty("HealthNumbers"):WaitForObject()
 local STAMINA_NUMBERS = script:GetCustomProperty("StaminaNumbers"):WaitForObject()
 local LEVEL_NUMBER = script:GetCustomProperty("LevelNumber"):WaitForObject()
 local PRIMARY_ICON = script:GetCustomProperty("PrimaryIcon"):WaitForObject()
+local PRIMARY_COOLDOWN = script:GetCustomProperty("PrimaryCooldown"):WaitForObject()
 local SECONDARY_ICON = script:GetCustomProperty("SecondaryIcon"):WaitForObject()
+local SECONDARY_COOLDOWN = script:GetCustomProperty("SecondaryCooldown"):WaitForObject()
 local CURSOR = script:GetCustomProperty("Cursor"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local barWidth = HEALTH_BAR.width
+
+local primaryAbilities = {}
+local secondaryAbilities = {}
 
 CURSOR.visibility = Visibility.FORCE_OFF
 
@@ -79,11 +84,137 @@ function hideCursor()
   if cursorTask then cursorTask:Cancel() end
 end
 
+function checkAbilitiesChanged(oldAbils, newAbils)
+  if #oldAbils ~= #newAbils then return true end
+
+  local matches = 0
+
+  for _, oAbil in ipairs(oldAbils) do
+    for _, nAbil in ipairs(newAbils) do
+      if oAbil == nAbil then
+        matches = matches + 1
+      end
+    end
+  end
+
+  return (matches ~= #oldAbils)
+end
+
+function updateAbilitiesWithBinding(binding)
+  local abilities = nil
+
+  if binding == "ability_primary" then
+    primaryAbilities = {}
+
+    while #primaryAbilities == 0 do
+      abilities = clientPlayer:GetAbilities()
+      for _, abil in ipairs(abilities) do
+        if abil.actionBinding == binding then
+          table.insert(primaryAbilities, abil)
+        end
+      end
+
+      Task.Wait()
+    end
+  elseif binding == "ability_secondary" then
+    secondaryAbilities = {}
+
+    while #secondaryAbilities == 0 do
+      abilities = clientPlayer:GetAbilities()
+      for _, abil in ipairs(abilities) do
+        if abil.actionBinding == binding then
+          table.insert(secondaryAbilities, abil)
+        end
+      end
+
+      Task.Wait()
+    end
+  end
+end
+
+local primaryTickTask = nil
+local secondaryTickTask = nil
+
+function initCooldownOverlay(item)
+
+  local castEvents = {}
+  local unequippedEvent = nil
+  local thisOverlay = nil
+  local equipment = nil
+
+  if item.socket == "right_prop" then
+    updateAbilitiesWithBinding("ability_primary")
+    equipment = primaryAbilities[1].parent
+
+    for _, abil in ipairs(primaryAbilities) do
+      table.insert(castEvents, abil.castEvent:Connect(function()
+        if primaryTickTask then primaryTickTask:Cancel() end
+
+        primaryTickTask = Task.Spawn(function()
+          tickCooldownOverlay(PRIMARY_COOLDOWN, item.speed)
+        end)
+      end))
+    end
+
+  elseif item.socket == "left_prop" then
+    updateAbilitiesWithBinding("ability_secondary")
+    equipment = secondaryAbilities[1].parent
+
+    for _, abil in ipairs(secondaryAbilities) do
+      table.insert(castEvents, abil.castEvent:Connect(function()
+        if secondaryTickTask then secondaryTickTask:Cancel() end
+
+        secondaryTickTask = Task.Spawn(function()
+          tickCooldownOverlay(SECONDARY_COOLDOWN, item.speed)
+        end)
+      end))
+    end
+
+  end
+
+  unequippedEvent = equipment.unequippedEvent:Connect(function()
+    for _, evt in ipairs(castEvents) do
+      evt:Disconnect()
+    end
+
+    unequippedEvent:Disconnect()
+
+    if primaryTickTask then primaryTickTask:Cancel() end
+    if secondaryTickTask then secondaryTickTask:Cancel() end
+
+    thisOverlay.visibility = Visibility.FORCE_OFF
+
+    print("Correctly cleaned up cooldown events and tasks on unequip uwu")
+  end)
+end
+
+function tickCooldownOverlay(thisOverlay, duration)
+  local startTime = time()
+
+  thisOverlay.width = 98
+  thisOverlay.visibility = Visibility.INHERIT
+
+  local function updateOverlayLoop()
+    if time() > startTime + duration then return end
+
+    thisOverlay.width = 98 - math.floor((time() - startTime) / duration * 98)
+
+    Task.Wait()
+
+    updateOverlayLoop()
+  end
+
+  updateOverlayLoop()
+
+  thisOverlay.visibility = Visibility.FORCE_OFF
+end
+
 function redrawAbilities(gear)
   if gear and gear.primary then
     PRIMARY_ICON:SetImage(gear.primary.icon)
     PRIMARY_ICON.parent.visibility = Visibility.INHERIT
 
+    initCooldownOverlay(gear.primary)
   else
     PRIMARY_ICON.parent.visibility = Visibility.FORCE_OFF
   end
@@ -92,6 +223,7 @@ function redrawAbilities(gear)
     SECONDARY_ICON:SetImage(gear.secondary.icon)
     SECONDARY_ICON.parent.visibility = Visibility.INHERIT
 
+    initCooldownOverlay(gear.secondary)
   else
     SECONDARY_ICON.parent.visibility = Visibility.FORCE_OFF
   end

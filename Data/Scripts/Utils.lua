@@ -280,12 +280,20 @@ function Utils.showFlyupText(text, pos, color)
 end
 
 function Utils.groundBelowPoint(vec3, sphercastRadius)
-  local hitResult = nil
+  local hitResult
+  local hitResults = nil
 
   if sphercastRadius then
-    hitResult = World.Spherecast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, sphercastRadius, {ignorePlayers = true, ignoreTeams = {1, 2, 3, 4, 5}})
+    hitResults = World.SpherecastAll(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, sphercastRadius, {ignorePlayers = true})
   else
-    hitResult = World.Raycast(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true, ignoreTeams = {1, 2, 3, 4, 5}})
+    hitResults = World.RaycastAll(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
+  end
+
+  for _, hR in ipairs(hitResults) do
+    if Object.IsValid(hR.other) and hR.other.team ~= 1 then
+      hitResult = hR
+      break
+    end
   end
 
   if hitResult then

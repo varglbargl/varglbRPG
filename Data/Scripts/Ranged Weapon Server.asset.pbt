@@ -23,19 +23,25 @@ Assets {
       Overrides {
         Name: "cs:Projectile"
         AssetReference {
-          Id: 841534158063459245
+          Id: 17931710397840415144
         }
       }
       Overrides {
         Name: "cs:Trail"
         AssetReference {
-          Id: 841534158063459245
+          Id: 9023864673320310867
         }
       }
       Overrides {
         Name: "cs:Impact"
         AssetReference {
-          Id: 841534158063459245
+          Id: 12639137286179406530
+        }
+      }
+      Overrides {
+        Name: "cs:MuzzleFlash"
+        AssetReference {
+          Id: 916945152673291183
         }
       }
       Overrides {
@@ -76,6 +82,14 @@ Assets {
       }
       Overrides {
         Name: "cs:Impact:subcategory"
+        String: "VFX"
+      }
+      Overrides {
+        Name: "cs:MuzzleFlash:category"
+        String: "Optional"
+      }
+      Overrides {
+        Name: "cs:MuzzleFlash:subcategory"
         String: "VFX"
       }
     }

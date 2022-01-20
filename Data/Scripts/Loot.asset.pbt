@@ -11,12 +11,6 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Rings"
-        AssetReference {
-          Id: 7107110231298021753
-        }
-      }
-      Overrides {
         Name: "cs:Melee"
         AssetReference {
           Id: 11913309828716895881
@@ -41,9 +35,21 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Rings"
+        AssetReference {
+          Id: 7107110231298021753
+        }
+      }
+      Overrides {
         Name: "cs:Potions"
         AssetReference {
           Id: 595108104446859637
+        }
+      }
+      Overrides {
+        Name: "cs:Gliders"
+        AssetReference {
+          Id: 16298573218166523060
         }
       }
       Overrides {
@@ -58,7 +64,40 @@ Assets {
           Id: 3843000524464151411
         }
       }
+      Overrides {
+        Name: "cs:Potions:category"
+        String: "LootTables"
+      }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Rings:category"
+        String: "LootTables"
+      }
+      Overrides {
+        Name: "cs:Melee:category"
+        String: "LootTables"
+      }
+      Overrides {
+        Name: "cs:Ranged:category"
+        String: "LootTables"
+      }
+      Overrides {
+        Name: "cs:Spells:category"
+        String: "LootTables"
+      }
+      Overrides {
+        Name: "cs:Shields:category"
+        String: "LootTables"
+      }
+      Overrides {
+        Name: "cs:Gliders:category"
+        String: "LootTables"
+      }
     }
   }
   SerializationVersion: 104
+  VirtualFolderPath: "APIs"
 }

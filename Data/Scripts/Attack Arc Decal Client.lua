@@ -25,6 +25,6 @@ function fadeStrokeWidth()
 end
 
 -- handler params: CoreObject_owner, string_propertyName
-script.parent.networkedPropertyChangedEvent:Connect(syncStartTime)
+script.parent.customPropertyChangedEvent:Connect(syncStartTime)
 
 fadeStrokeWidth()

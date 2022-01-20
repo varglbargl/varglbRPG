@@ -23,7 +23,7 @@ Assets {
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 3189551015305331101
+              Id: 1844715321853390897
             }
           }
           Overrides {
@@ -31,8 +31,20 @@ Assets {
             Int: 1
           }
           Overrides {
-            Name: "cs:AnimationStance"
-            String: ""
+            Name: "cs:Description"
+            String: "Hurls a ball of fire that explodes in a 2m radius on impact."
+          }
+          Overrides {
+            Name: "cs:MinDamage"
+            Int: 4
+          }
+          Overrides {
+            Name: "cs:MaxDamage"
+            Int: 11
+          }
+          Overrides {
+            Name: "cs:SplashRadius"
+            Float: 2
           }
         }
         WantsNetworking: true
@@ -62,6 +74,9 @@ Assets {
         Name: "Ranged Weapon Server"
         Transform {
           Location {
+            X: -1
+            Y: 1
+            Z: 5
           }
           Rotation {
           }
@@ -93,6 +108,12 @@ Assets {
             Name: "cs:Impact"
             AssetReference {
               Id: 6204320167560570242
+            }
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash"
+            AssetReference {
+              Id: 18429609609750601751
             }
           }
         }
@@ -182,7 +203,7 @@ Assets {
             }
           }
           CooldownPhaseSettings {
-            Duration: 0.1
+            Duration: 0.5
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -1200,12 +1221,12 @@ Assets {
       }
     }
     Assets {
-      Id: 3189551015305331101
-      Name: "Japanese Ability Fire Ball"
+      Id: 1844715321853390897
+      Name: "Fantasy Scroll 008"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "IllustratedIcons_Japan_Abilities_FireBall"
+        AssetId: "UI_Fantasy_Equip_Scroll_008"
       }
     }
     Assets {

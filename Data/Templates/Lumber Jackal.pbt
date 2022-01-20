@@ -146,7 +146,7 @@ Assets {
             Id: 5944393796542654307
           }
           Teams {
-            IsTeamCollisionEnabled: true
+            TeamInt: 1
             IsEnemyCollisionEnabled: true
           }
           InteractWithTriggers: true

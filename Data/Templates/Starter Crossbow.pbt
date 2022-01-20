@@ -4,9 +4,9 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 14156651541393010698
+      RootId: 8803041335972847287
       Objects {
-        Id: 14156651541393010698
+        Id: 8803041335972847287
         Name: "Starter Crossbow"
         Transform {
           Scale {
@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 12124994833093404667
         ChildIds: 5047134629311476418
         ChildIds: 1535635915468763124
         UnregisteredParameters {
@@ -26,7 +27,85 @@ Assets {
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 1654218647417379344
+              Id: 8113725130580792141
+            }
+          }
+          Overrides {
+            Name: "cs:MinDamage"
+            Int: 3
+          }
+          Overrides {
+            Name: "cs:MaxDamage"
+            Int: 12
+          }
+          Overrides {
+            Name: "cs:ItemLevel:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:ItemLevel:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Icon:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Icon:ml"
+            Bool: false
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Equipment {
+          SocketName: "left_prop"
+          PickupTrigger {
+            SelfId: 841534158063459245
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 12124994833093404667
+        Name: "Ranged Weapon Server"
+        Transform {
+          Location {
+            X: 15
+            Z: 12
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8803041335972847287
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Projectile"
+            AssetReference {
+              Id: 17931710397840415144
+            }
+          }
+          Overrides {
+            Name: "cs:Impact"
+            AssetReference {
+              Id: 12639137286179406530
             }
           }
         }
@@ -40,77 +119,12 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
-        Equipment {
-          SocketName: "right_prop"
-          PickupTrigger {
-            SelfId: 841534158063459245
-          }
-          Weapon {
-            ProjectileAssetRef {
-              Id: 3337256621200851928
-            }
-            MuzzleFlashAssetRef {
-              Id: 841534158063459245
-            }
-            TrailAssetRef {
-              Id: 9023864673320310867
-            }
-            ImpactAssetRef {
-              Id: 15728676179772725900
-            }
-            UseReticle: true
-            Muzzle {
-              Location {
-                X: 45
-                Z: 15
-              }
-            }
-            AnimationSet: "dual_melee_stance"
-            OutOfAmmoSfxAssetRef {
-              Id: 841534158063459245
-            }
-            ReloadSfxAssetRef {
-              Id: 841534158063459245
-            }
-            ShootAnimation: "2hand_rifle_shoot"
-            ImpactProjectileAssetRef {
-              Id: 841534158063459245
-            }
-            BeamAssetRef {
-              Id: 841534158063459245
-            }
-            BurstCount: 1
-            BurstDuration: 1
-            AttackCooldown: 0.25
-            Range: 3000
-            ImpactPlayerAssetRef {
-              Id: 841534158063459245
-            }
-            ReticleType {
-              Value: "mc:ereticletype:crosshair"
-            }
-            AttackSfxAssetRef {
-            }
-            MaxAmmo: -1
-            MultiShot: 1
-            ProjectileSpeed: 4500
-            ProjectileLifeSpan: 8
-            ProjectileGravity: 0.1
-            ProjectileLength: 50
-            ProjectileRadius: 5
-            SpreadMax: 2
-            SpreadDecreaseSpeed: 8
-            SpreadIncreasePerShot: 1
-            SpreadPenaltyPerShot: 0.5
-            DefaultAbility {
-              SubObjectId: 5047134629311476418
-            }
-            ReloadAbility {
-              SelfId: 841534158063459245
-            }
-            WeaponTrajectoryMode {
-              Value: "mc:eweapontrajectorymode:muzzletolooktarget"
-            }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 17091320215828890348
           }
         }
         NetworkRelevanceDistance {
@@ -131,7 +145,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14156651541393010698
+        ParentId: 8803041335972847287
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -188,9 +202,9 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "1hand_pistol_shoot"
+          Animation: "dual_melee_left_hand_thrust"
           KeyBinding_v2 {
-            Value: "mc:egameaction:primaryaction"
+            Value: "mc:egameaction:secondaryaction"
           }
         }
         NetworkRelevanceDistance {
@@ -202,6 +216,9 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
+            X: 0.14
+            Y: -1.33984375
+            Z: 0.108886719
           }
           Rotation {
           }
@@ -211,20 +228,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14156651541393010698
-        ChildIds: 12254262509024438395
-        ChildIds: 10017007202957042956
-        ChildIds: 15218743726294992639
-        ChildIds: 9096261456452773768
-        ChildIds: 6205108700770063789
-        ChildIds: 289674722525427192
-        ChildIds: 10750870364096157391
-        ChildIds: 10407270299574499069
-        ChildIds: 471927116764481550
-        ChildIds: 9913014371473389668
-        ChildIds: 12596124310047305060
-        ChildIds: 3777219524648928845
-        ChildIds: 5667619571188831387
+        ParentId: 8803041335972847287
+        ChildIds: 17626163376967052114
+        ChildIds: 8397896403013515296
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -245,17 +251,108 @@ Assets {
         }
       }
       Objects {
+        Id: 17626163376967052114
+        Name: "Ranged Weapon Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1535635915468763124
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Geo"
+            ObjectReference {
+              SubObjectId: 8397896403013515296
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 363298956242194552
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 8397896403013515296
+        Name: "Geo"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: 14.9999962
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1535635915468763124
+        ChildIds: 12254262509024438395
+        ChildIds: 10017007202957042956
+        ChildIds: 15218743726294992639
+        ChildIds: 9096261456452773768
+        ChildIds: 6205108700770063789
+        ChildIds: 289674722525427192
+        ChildIds: 10750870364096157391
+        ChildIds: 10407270299574499069
+        ChildIds: 471927116764481550
+        ChildIds: 9913014371473389668
+        ChildIds: 12596124310047305060
+        ChildIds: 3777219524648928845
+        ChildIds: 5667619571188831387
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 12254262509024438395
         Name: "Sai Blade"
         Transform {
           Location {
-            X: 37.203125
-            Z: 14.0556641
+            X: 39.5722656
+            Z: 3.94775391
           }
           Rotation {
-            Pitch: 6.83018879e-06
             Yaw: -89.9999695
-            Roll: -102.180359
+            Roll: -87.1803589
           }
           Scale {
             X: 1.37046754
@@ -263,7 +360,7 @@ Assets {
             Z: 0.723320127
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -312,13 +409,13 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 11.3837891
-            Z: 12.8491211
+            X: 14.3212891
+            Z: 9.46484375
           }
           Rotation {
-            Pitch: 6.43456364
-            Yaw: -31.9116516
-            Roll: 94.4680176
+            Pitch: -6.3192749
+            Yaw: -31.9036865
+            Roll: 102.37999
           }
           Scale {
             X: 0.004
@@ -326,7 +423,7 @@ Assets {
             Z: 0.23681663
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -389,13 +486,13 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 11.3837891
-            Z: 12.8491211
+            X: 14.3212891
+            Z: 9.46484375
           }
           Rotation {
-            Pitch: 6.43456364
-            Yaw: 31.9115772
-            Roll: -94.4680176
+            Pitch: -6.3192749
+            Yaw: 31.9036179
+            Roll: -102.379974
           }
           Scale {
             X: 0.004
@@ -403,7 +500,7 @@ Assets {
             Z: 0.23681663
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -466,11 +563,12 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: 8.75293
-            Z: 2.91650391
+            X: 9.20898438
+            Z: 0.551269531
           }
           Rotation {
-            Pitch: 23.8771381
+            Pitch: 8.87714195
+            Yaw: 8.64124502e-07
             Roll: -89.9999695
           }
           Scale {
@@ -479,7 +577,7 @@ Assets {
             Z: 0.135027111
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -534,12 +632,13 @@ Assets {
         Name: "Modern Weapon - Foregrip 02"
         Transform {
           Location {
-            X: 14.8046875
-            Z: 13.7358398
+            X: 17.8554688
+            Z: 9.43603516
           }
           Rotation {
-            Pitch: -12.1803589
+            Pitch: 2.81963849
             Yaw: -179.999954
+            Roll: 1.06195557e-05
           }
           Scale {
             X: 0.332290888
@@ -547,7 +646,7 @@ Assets {
             Z: 0.30951187
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:color"
@@ -637,11 +736,11 @@ Assets {
         Name: "Fantasy Crossbow Bolt 01"
         Transform {
           Location {
-            X: 14.6972656
-            Z: 12.2919922
+            X: 17.3779297
+            Z: 8.06933594
           }
           Rotation {
-            Pitch: 12.1803579
+            Pitch: -2.81964111
           }
           Scale {
             X: 0.42884165
@@ -649,7 +748,7 @@ Assets {
             Z: 0.516409338
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -708,11 +807,11 @@ Assets {
         Name: "Fantasy Crossbow Foregrip 01"
         Transform {
           Location {
-            X: 38.4248047
-            Z: 14.7133789
+            X: 40.9238281
+            Z: 4.26709
           }
           Rotation {
-            Pitch: 12.1803579
+            Pitch: -2.81964111
           }
           Scale {
             X: -0.584749639
@@ -720,7 +819,7 @@ Assets {
             Z: 0.302396715
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -794,11 +893,13 @@ Assets {
         Name: "Pyramid - 6-Sided"
         Transform {
           Location {
-            X: 39.1982422
-            Z: 17.5805664
+            X: 42.4130859
+            Z: 6.83642578
           }
           Rotation {
-            Pitch: -77.8195496
+            Pitch: -87.1806
+            Yaw: 180
+            Roll: 180
           }
           Scale {
             X: 0.0601039641
@@ -806,7 +907,7 @@ Assets {
             Z: 0.0564336851
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -871,13 +972,12 @@ Assets {
         Name: "Pyramid - 6-Sided"
         Transform {
           Location {
-            X: 39.1982422
-            Z: 17.5805664
+            X: 42.4130859
+            Z: 6.83642578
           }
           Rotation {
-            Pitch: 6.83018879e-06
             Yaw: 89.9999466
-            Roll: -77.8195801
+            Roll: -92.819519
           }
           Scale {
             X: 0.0601039641
@@ -885,7 +985,7 @@ Assets {
             Z: 0.0564336851
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -950,13 +1050,12 @@ Assets {
         Name: "Kunai Handle"
         Transform {
           Location {
-            X: 14.8330078
-            Z: 12.8388672
+            X: 17.6503906
+            Z: 8.5625
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -89.9999695
-            Roll: 77.8195572
+            Yaw: -89.999939
+            Roll: 92.8195
           }
           Scale {
             X: 0.934719443
@@ -964,7 +1063,7 @@ Assets {
             Z: 0.588744462
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -1019,12 +1118,13 @@ Assets {
         Name: "Katana Scabbard"
         Transform {
           Location {
-            X: -6.19140625
-            Z: -8.95800781
+            X: -8.29882812
+            Z: -7.05029297
           }
           Rotation {
-            Pitch: 18.0848446
+            Pitch: 33.0848274
             Yaw: -179.999954
+            Roll: 1.26592231e-05
           }
           Scale {
             X: 1.02076077
@@ -1032,7 +1132,7 @@ Assets {
             Z: 0.170338303
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -1116,12 +1216,13 @@ Assets {
         Name: "Lens - Half"
         Transform {
           Location {
-            X: -6.19140625
-            Z: -8.95800781
+            X: -8.29882812
+            Z: -7.05029297
           }
           Rotation {
-            Pitch: 18.0848312
+            Pitch: 33.0848351
             Yaw: -179.999954
+            Roll: 1.26592431e-05
           }
           Scale {
             X: 0.0822128728
@@ -1129,7 +1230,7 @@ Assets {
             Z: -0.0673209578
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -1225,11 +1326,11 @@ Assets {
         Name: "Crescent - 02"
         Transform {
           Location {
-            X: 8.81054688
-            Z: 3.04589844
+            X: 9.29882812
+            Z: 0.661621094
           }
           Rotation {
-            Pitch: -3.2444458
+            Pitch: -18.2444458
             Roll: -90
           }
           Scale {
@@ -1238,7 +1339,7 @@ Assets {
             Z: 0.00791299157
           }
         }
-        ParentId: 1535635915468763124
+        ParentId: 8397896403013515296
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1290,21 +1391,12 @@ Assets {
       }
     }
     Assets {
-      Id: 3337256621200851928
-      Name: "Fantasy Crossbow Bolt 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_bolt_cross_001"
-      }
-    }
-    Assets {
-      Id: 1654218647417379344
-      Name: "Fantasy Crossbow 001"
+      Id: 8113725130580792141
+      Name: "Fantasy Crossbow 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Crossbow_001"
+        AssetId: "UI_Fantasy_Weapon_Crossbow_002"
       }
     }
     Assets {
@@ -1368,6 +1460,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_metal_iron_001"
+      }
+    }
+    Assets {
+      Id: 3337256621200851928
+      Name: "Fantasy Crossbow Bolt 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_bolt_cross_001"
       }
     }
     Assets {

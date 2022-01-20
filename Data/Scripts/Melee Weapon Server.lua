@@ -18,12 +18,15 @@ local hitEnemies = {}
 local equipEvent = nil
 local unequipEvent = nil
 local hitEvent = nil
+local castEvent = nil
+local executeEvent = nil
+local interruptedEvent = nil
 
 function rollDamage()
   return math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + weapon.owner:GetResource("Grit") / 5 + math.random())
 end
 
-function onAbilityCast(thisAbility)
+function onAbilityCast()
   hitEnemies = {}
 
   HITBOX.collision = Collision.INHERIT
@@ -62,10 +65,12 @@ function onEquipped(thisEquipment, player)
   equipEvent:Disconnect()
 end
 
-function onUnequipped(thisEquipment)
+function onUnequipped()
   unequipEvent:Disconnect()
   hitEvent:Disconnect()
-  -- thisEquipment:Destroy()
+  castEvent:Disconnect()
+  executeEvent:Disconnect()
+  interruptedEvent:Disconnect()
 end
 
 -- handler params: Equipment_equipment, Player_player
@@ -79,11 +84,11 @@ hitEvent = HITBOX.beginOverlapEvent:Connect(onHitboxOverlap)
 
 for i, abil in ipairs(weapon:GetAbilities()) do
   -- handler params: Ability_ability
-  abil.castEvent:Connect(onAbilityCast)
+  castEvent = abil.castEvent:Connect(onAbilityCast)
 
   -- handler params: Ability_ability
-  abil.recoveryEvent:Connect(onAbilityEnd)
+  executeEvent = abil.recoveryEvent:Connect(onAbilityEnd)
 
   -- handler params: Ability_ability
-  abil.interruptedEvent:Connect(onAbilityEnd)
+  interruptedEvent = abil.interruptedEvent:Connect(onAbilityEnd)
 end

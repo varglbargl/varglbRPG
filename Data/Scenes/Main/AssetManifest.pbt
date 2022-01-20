@@ -368,15 +368,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17744341504768844955
-  Name: "Horn Curved Double - Vertical"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prim_horn_v_curve_double_001_ref"
-  }
-}
-Assets {
   Id: 17738734797160346039
   Name: "Plastic Matte"
   PlatformAssetType: 2
@@ -1301,15 +1292,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_003"
-  }
-}
-Assets {
-  Id: 15624676060717398659
-  Name: "Basic Pepper 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prim_org_pepper_002_ref"
   }
 }
 Assets {
@@ -3956,6 +3938,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_gear_001_spoke4x"
+  }
+}
+Assets {
+  Id: 10500544464763991894
+  Name: "Organic - Food - Pumpkin 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_org_food_pumpkin_001_ref"
   }
 }
 Assets {
@@ -7358,6 +7349,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_carpet_tile_002"
+  }
+}
+Assets {
+  Id: 3795493181657908289
+  Name: "Organic - Food - Pumpkin 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_org_food_pumpkin_002_ref"
   }
 }
 Assets {

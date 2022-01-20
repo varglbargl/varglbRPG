@@ -3907,4 +3907,6 @@ Assets {
     }
   }
   SerializationVersion: 104
+  VirtualFolderPath: "Effects"
+  VirtualFolderPath: "Other VFX"
 }

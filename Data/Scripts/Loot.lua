@@ -1,10 +1,12 @@
 local Utils = require(script:GetCustomProperty("Utils"))
-local Rings = require(script:GetCustomProperty("Rings"))
+
 local Melee = require(script:GetCustomProperty("Melee"))
 local Ranged = require(script:GetCustomProperty("Ranged"))
 local Spells = require(script:GetCustomProperty("Spells"))
 local Shields = require(script:GetCustomProperty("Shields"))
+local Rings = require(script:GetCustomProperty("Rings"))
 local Potions = require(script:GetCustomProperty("Potions"))
+local Gliders = require(script:GetCustomProperty("Gliders"))
 
 local LOOT_DROP = script:GetCustomProperty("LootDrop")
 local GOLD_DROP = script:GetCustomProperty("GoldDrop")
@@ -25,6 +27,21 @@ local lootRarity = {
   74, 20, 5, 1
 }
 
+function getWeaponSpeed(weapon)
+  local abilities = weapon:GetAbilities()
+
+  if #abilities == 0 then return end
+
+  local totalCooldown = (
+    abilities[1].castPhaseSettings.duration +
+    abilities[1].executePhaseSettings.duration +
+    abilities[1].recoveryPhaseSettings.duration +
+    abilities[1].cooldownPhaseSettings.duration
+  ) / #abilities
+
+  return totalCooldown
+end
+
 function readLootTable(thisLootTable, itemType)
   for propName, item in pairs(thisLootTable) do
     local spawnedItem = World.SpawnAsset(item, {position = Vector3.UP * -10000})
@@ -39,6 +56,8 @@ function readLootTable(thisLootTable, itemType)
       icon = spawnedItem:GetCustomProperty("Icon"),
       minDamage = spawnedItem:GetCustomProperty("MinDamage"),
       maxDamage = spawnedItem:GetCustomProperty("MaxDamage"),
+      speed = getWeaponSpeed(spawnedItem),
+      splash = spawnedItem:GetCustomProperty("SplashRadius"),
       -- health = spawnedItem:GetCustomProperty("Health"),
       -- stamina = spawnedItem:GetCustomProperty("Stamina"),
       grit = spawnedItem:GetCustomProperty("Grit"),
@@ -52,10 +71,18 @@ function readLootTable(thisLootTable, itemType)
 
     if lootItem.minDamage then
       lootItem.minDamage = math.floor(lootItem.minDamage * Utils.magicNumber(lootItem.itemLevel))
+
+      if lootItem.splash then
+        lootItem.minDamage = math.floor(lootItem.minDamage / (0.75 + lootItem.splash / 4))
+      end
     end
 
     if lootItem.maxDamage then
       lootItem.maxDamage = math.floor(lootItem.maxDamage * Utils.magicNumber(lootItem.itemLevel))
+
+      if lootItem.splash then
+        lootItem.maxDamage = math.floor(lootItem.maxDamage / (0.75 + lootItem.splash / 4))
+      end
     end
 
     table.insert(lootTable, lootItem)
@@ -70,6 +97,7 @@ readLootTable(Ranged, "Ranged")
 readLootTable(Spells, "Spell")
 readLootTable(Shields, "Shield")
 readLootTable(Potions, "Potion")
+readLootTable(Gliders, "Glider")
 
 local superlatives = {
   g = {"Executioner's", "Blacksmith's", "Big Jim's", "Powerfully", "Aggressively", "Hella", "Unintentionally", "Bumblingly", "Brazenly", "Overpoweringly"},
@@ -299,20 +327,20 @@ function Loot.giveRandomToPlayer(player, level, rarity)
   Loot.giveToPlayer(player, Loot.getRandom(level, rarity))
 end
 
-function Loot.dropItem(position, loot)
+function Loot.dropItem(position, item)
   local droppedLoot = World.SpawnAsset(LOOT_DROP, {position = Utils.groundBelowPoint(position)})
 
   if droppedLoot.lifeSpan == 0 then
     droppedLoot.lifeSpan = 30
   end
 
-  droppedLoot.serverUserData["DroppedLoot"] = loot
+  droppedLoot.serverUserData["DroppedLoot"] = item
 end
 
 function Loot.dropRandomItem(position, level, rarity)
-  local loot = Loot.getRandom(level, rarity)
+  local item = Loot.getRandom(level, rarity)
 
-  Loot.dropItem(position + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * math.random(50, 100), loot)
+  Loot.dropItem(position + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * math.random(50, 100), item)
 end
 
 function Loot.dropGold(position, amount)

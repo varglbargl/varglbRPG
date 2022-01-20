@@ -7,14 +7,6 @@ DebuggerSettings {
       LineNumber: 100
     }
   }
-  ScriptSettings {
-    Script {
-      Id: 1915166362147716977
-    }
-    Breakpoints {
-      LineNumber: 19
-    }
-  }
 }
 ObjectSettings {
   ObjectStates {
@@ -5975,7 +5967,6 @@ ObjectSettings {
     key: 4094669900174888478
     value {
       IsLocked: true
-      IsHidden: true
     }
   }
   ObjectStates {
@@ -10574,6 +10565,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 7311307740817693509
+    value {
+    }
+  }
+  ObjectStates {
+    key: 7312738911764553212
     value {
     }
   }
@@ -17968,6 +17964,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 12516469302281024870
+    value {
+    }
+  }
+  ObjectStates {
+    key: 12520224204870972623
     value {
     }
   }
@@ -25847,7 +25848,6 @@ ObjectSettings {
     key: 18016985088791250948
     value {
       IsLocked: true
-      IsHidden: true
     }
   }
   ObjectStates {

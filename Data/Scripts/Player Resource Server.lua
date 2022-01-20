@@ -31,7 +31,7 @@ function onPlayerJoined(player)
   player:SetResource("Experience", 0)
   player:SetResource("Gold", 0)
 
-  local class = 1
+  local class = 4
 
   player:SetResource("Class", class)
 
