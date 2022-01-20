@@ -7,7 +7,7 @@ Assets {
       RootId: 2123190639582474161
       Objects {
         Id: 2123190639582474161
-        Name: "Wooden Retaining Wall"
+        Name: "Wooden Retaining Wall (Small)"
         Transform {
           Scale {
             X: 0.87904793
@@ -15,7 +15,7 @@ Assets {
             Z: 0.87904793
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 10556523551069437569
         ChildIds: 8368675986786247606
         ChildIds: 18338144505522702229
         ChildIds: 2211740605276857780
@@ -37,6 +37,7 @@ Assets {
         ChildIds: 2865867407182683115
         ChildIds: 3711069365505178181
         ChildIds: 13331986347065781348
+        ChildIds: 1367894155412658588
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -289,19 +290,19 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: 224.812134
-            Y: -107.914062
-            Z: 359.355713
+            X: 224.811752
+            Y: -107.913712
+            Z: 359.355743
           }
           Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051252
-            Roll: -9.1307621
+            Pitch: -1.54443359
+            Yaw: -13.8051147
+            Roll: -9.13076782
           }
           Scale {
-            X: 1.1039871
-            Y: 1.1039871
-            Z: 0.0343280025
+            X: 1.13786066
+            Y: 1.13786066
+            Z: 0.0353812873
           }
         }
         ParentId: 2123190639582474161
@@ -909,19 +910,19 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: 50.4604492
-            Y: -50.0683594
-            Z: 342.813599
+            X: 49.6325531
+            Y: -48.8402252
+            Z: 342.917053
           }
           Rotation {
-            Pitch: -2.51580453
-            Yaw: -27.5551796
-            Roll: -3.77935863
+            Pitch: -2.51580811
+            Yaw: -27.5551758
+            Roll: -3.77935791
           }
           Scale {
-            X: 1.1039871
-            Y: 1.1039871
-            Z: 0.0343280025
+            X: 1.13788962
+            Y: 1.13788962
+            Z: 0.0353821963
           }
         }
         ParentId: 2123190639582474161
@@ -1511,9 +1512,9 @@ Assets {
         Name: "Cone - Truncated Wide"
         Transform {
           Location {
-            X: 307.301056
-            Y: -130.414871
-            Z: 182.210388
+            X: 306.872681
+            Y: -134.531418
+            Z: 181.570206
           }
           Rotation {
             Pitch: 9.08314
@@ -1521,9 +1522,9 @@ Assets {
             Roll: 5.17952
           }
           Scale {
-            X: 1.02818787
-            Y: 1.02818787
-            Z: 1.02818787
+            X: 1.04397213
+            Y: 1.04397213
+            Z: 1.04397213
           }
         }
         ParentId: 2123190639582474161
@@ -1670,6 +1671,63 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
+      Objects {
+        Id: 1367894155412658588
+        Name: "Decal Stains Top 01"
+        Transform {
+          Location {
+            X: 156.268799
+            Y: -92.7647476
+            Z: 269.048767
+          }
+          Rotation {
+            Pitch: -4.39196777
+            Yaw: -21.3508911
+            Roll: -89.6442261
+          }
+          Scale {
+            X: 0.497077346
+            Y: 0.912325382
+            Z: 0.394838274
+          }
+        }
+        ParentId: 2123190639582474161
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.0310000014
+              G: 0.020435201
+              B: 0.013392
+              A: 0.691000044
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17914158856327214616
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
     }
     Assets {
       Id: 4914027778279010537
@@ -1714,6 +1772,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_rope_001"
+      }
+    }
+    Assets {
+      Id: 17914158856327214616
+      Name: "Decal Stains Top 01"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_stain_top_001"
       }
     }
     PrimaryAssetId {

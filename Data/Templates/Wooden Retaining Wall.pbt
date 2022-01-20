@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 10556523551069437569
         ChildIds: 16117343052927802236
         ChildIds: 18332416981239448560
         ChildIds: 296144624009825845
@@ -50,6 +50,7 @@ Assets {
         ChildIds: 2754081393305680897
         ChildIds: 5022327696870976752
         ChildIds: 16812604147835484323
+        ChildIds: 5093903821119668239
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -302,19 +303,19 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: 224.812134
-            Y: -107.914062
-            Z: 359.355713
+            X: 223.916504
+            Y: -108.046875
+            Z: 359.239258
           }
           Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051252
-            Roll: -9.1307621
+            Pitch: -1.54443359
+            Yaw: -13.8051147
+            Roll: -9.13076782
           }
           Scale {
-            X: 1.1039871
-            Y: 1.1039871
-            Z: 0.0343280025
+            X: 1.13301
+            Y: 1.13302588
+            Z: 0.0505854115
           }
         }
         ParentId: 16676229800660727712
@@ -776,19 +777,19 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: -33.7672119
-            Y: -3.79492188
-            Z: 322.208984
+            X: -32.9007568
+            Y: -4.359375
+            Z: 322.043579
           }
           Rotation {
-            Pitch: -2.51580453
-            Yaw: -27.5551796
-            Roll: -3.77935863
+            Pitch: -2.51580811
+            Yaw: -27.5551758
+            Roll: -3.77935791
           }
           Scale {
-            X: 0.913404346
-            Y: 0.913404346
-            Z: 0.0284019187
+            X: 0.937417328
+            Y: 0.937430322
+            Z: 0.0418528
           }
         }
         ParentId: 16676229800660727712
@@ -922,19 +923,19 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: 50.4604492
-            Y: -50.0683594
-            Z: 342.813599
+            X: 49.019043
+            Y: -49.4296875
+            Z: 342.762573
           }
           Rotation {
-            Pitch: -2.51580453
-            Yaw: -27.5551796
-            Roll: -3.77935863
+            Pitch: -2.51580811
+            Yaw: -27.5551758
+            Roll: -3.77935791
           }
           Scale {
-            X: 1.1039871
-            Y: 1.1039871
-            Z: 0.0343280025
+            X: 1.13301
+            Y: 1.13302588
+            Z: 0.0505854115
           }
         }
         ParentId: 16676229800660727712
@@ -1314,9 +1315,9 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: -114.860229
-            Y: 7.41015625
-            Z: 333.060059
+            X: -117.051025
+            Y: 7.94726562
+            Z: 333.290405
           }
           Rotation {
             Pitch: 7.49834538
@@ -1324,9 +1325,9 @@ Assets {
             Roll: 2.77344179
           }
           Scale {
-            X: 0.913404346
-            Y: 0.913404346
-            Z: 0.0284019187
+            X: 0.955223918
+            Y: 0.955237329
+            Z: 0.0426478274
           }
         }
         ParentId: 16676229800660727712
@@ -1460,9 +1461,9 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: -204.261597
-            Y: 50.0722656
-            Z: 370.872314
+            X: -203.395142
+            Y: 49.5078125
+            Z: 370.706909
           }
           Rotation {
             Pitch: 3.47119761
@@ -1470,9 +1471,9 @@ Assets {
             Roll: 5.03830051
           }
           Scale {
-            X: 1.13496721
-            Y: 1.13492584
-            Z: 0.048074346
+            X: 1.16480362
+            Y: 1.16478
+            Z: 0.0708418861
           }
         }
         ParentId: 16676229800660727712
@@ -1852,19 +1853,19 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: -388.712524
-            Y: 117.519531
-            Z: 300.081055
+            X: -387.846069
+            Y: 116.955078
+            Z: 299.915649
           }
           Rotation {
             Pitch: 1.56418836
-            Yaw: -20.5800304
-            Roll: -4.82333755
+            Yaw: -20.5800171
+            Roll: -4.82333374
           }
           Scale {
-            X: 0.913404346
-            Y: 0.913404346
-            Z: 0.0284019187
+            X: 0.937417328
+            Y: 0.937430322
+            Z: 0.0418528
           }
         }
         ParentId: 16676229800660727712
@@ -1998,19 +1999,19 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: -301.24707
-            Y: 81.9960938
-            Z: 327.427856
+            X: -301.942139
+            Y: 82.0175781
+            Z: 327.216919
           }
           Rotation {
             Pitch: 1.56418836
-            Yaw: -20.5800304
-            Roll: -4.82333755
+            Yaw: -20.5800171
+            Roll: -4.82333374
           }
           Scale {
-            X: 1.1039871
-            Y: 1.1039871
-            Z: 0.0343280025
+            X: 1.13301
+            Y: 1.13302588
+            Z: 0.0505854115
           }
         }
         ParentId: 16676229800660727712
@@ -2308,9 +2309,9 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: 391.346802
-            Y: -203.492188
-            Z: 270.031372
+            X: 392.213135
+            Y: -204.056641
+            Z: 269.865967
           }
           Rotation {
             Pitch: 9.08314
@@ -2318,9 +2319,9 @@ Assets {
             Roll: 5.17951679
           }
           Scale {
-            X: 0.913404346
-            Y: 0.913404346
-            Z: 0.0284019187
+            X: 0.937417328
+            Y: 0.937430322
+            Z: 0.0418528
           }
         }
         ParentId: 16676229800660727712
@@ -2454,9 +2455,9 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: 314.967896
-            Y: -155.90625
-            Z: 309.550781
+            X: 315.834229
+            Y: -156.470703
+            Z: 309.385376
           }
           Rotation {
             Pitch: 9.08314
@@ -2464,9 +2465,9 @@ Assets {
             Roll: 5.17951679
           }
           Scale {
-            X: 1.1039871
-            Y: 1.1039871
-            Z: 0.0343280025
+            X: 1.13301
+            Y: 1.13302588
+            Z: 0.0505854115
           }
         }
         ParentId: 16676229800660727712
@@ -2518,9 +2519,9 @@ Assets {
         Name: "Cone - Truncated Wide"
         Transform {
           Location {
-            X: 307.301056
-            Y: -130.414871
-            Z: 182.210388
+            X: 306.580811
+            Y: -131.484375
+            Z: 182.094971
           }
           Rotation {
             Pitch: 9.08314
@@ -2528,9 +2529,9 @@ Assets {
             Roll: 5.17952
           }
           Scale {
-            X: 1.02818787
-            Y: 1.02818787
-            Z: 1.02818787
+            X: 1.0558511
+            Y: 1.0558511
+            Z: 1.0558511
           }
         }
         ParentId: 16676229800660727712
@@ -2677,6 +2678,67 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
+      Objects {
+        Id: 5093903821119668239
+        Name: "Decal Stains Bottom 01"
+        Transform {
+          Location {
+            X: 8.06267548
+            Y: -3.32785034
+            Z: 327.947083
+          }
+          Rotation {
+            Pitch: -2.53414917
+            Yaw: -22.3816223
+            Roll: 87.1114197
+          }
+          Scale {
+            X: 1.00000656
+            Y: 1.4136349
+            Z: 0.99998641
+          }
+        }
+        ParentId: 16676229800660727712
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.067
+              G: 0.0293393
+              B: 0.0131989978
+              A: 0.60800004
+            }
+          }
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 1167832512212244073
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
     }
     Assets {
       Id: 4914027778279010537
@@ -2721,6 +2783,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_rope_001"
+      }
+    }
+    Assets {
+      Id: 1167832512212244073
+      Name: "Decal Stains Bottom 01"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_stain_bottom_001"
       }
     }
     PrimaryAssetId {

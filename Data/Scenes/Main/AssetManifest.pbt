@@ -3896,6 +3896,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10662362392661442599
+  Name: "Clover Patch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_clover_patch_002"
+  }
+}
+Assets {
   Id: 10625829938780322800
   Name: "Baloo 2 Extra Bold"
   PlatformAssetType: 28
