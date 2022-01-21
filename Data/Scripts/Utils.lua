@@ -266,28 +266,6 @@ function Utils.hasUniformScale(obj)
   end
 end
 
-function Utils.decodeDamageReason(code)
-  code = tonumber(code) - 200
-
-  local results = {}
-
-  local reasons = {
-    "stunned",     -- 1
-    "taunted",     -- 2
-    "slowed",      -- 4
-    "knockedBack"  -- 8
-  }
-
-  for i, reason in ipairs(reasons) do
-    if code >= 1 and code % 2 ^ (i-1) == 0 then
-      code = code - 2 ^ (i-1)
-      table.insert(results, reason)
-    end
-  end
-
-  return results
-end
-
 function Utils.playSoundEffect(audio, params)
   if not audio then return end
 

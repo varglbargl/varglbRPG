@@ -14,7 +14,10 @@ function Tick()
       end
 
       if DAMAGE > 0 then
-        other:ApplyDamage(Damage.New(howMuch))
+        local damage = Damage.New(howMuch)
+        damage.reason = DamageReason.MAP
+
+        other:ApplyDamage(damage)
       elseif DAMAGE < 0 and other.hitPoints ~= other.maxHitPoints then
         other.hitPoints = math.min(other.hitPoints - howMuch, other.maxHitPoints)
         Events.Broadcast("PlayerHealed", other, -howMuch)

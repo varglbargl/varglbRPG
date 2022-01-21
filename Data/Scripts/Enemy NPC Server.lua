@@ -16,9 +16,11 @@ enemy.maxHitPoints = stats.maxHitPoints
 enemy.hitPoints = stats.maxHitPoints
 
 local fightTarget = nil
-local stunned = false
 local attackers = {}
 local myTemplateId = script:FindTemplateRoot().sourceTemplateId
+
+local stunned = false
+local moveSpeed = 1
 
 HITBOX.serverUserData["Enemy"] = enemy
 
@@ -97,10 +99,10 @@ function fight()
         if not toVector then
           -- print("Must have been nothing...")
         else
-          enemy:MoveTo(toVector, 1)
+          enemy:MoveTo(toVector, 1 / moveSpeed)
         end
       elseif distanceToPlayer < 500 and distanceToPlayer >= 150 then
-        enemy:MoveTo(Utils.groundBelowPoint(fightTarget:GetWorldPosition() + (fromVector - fightTarget:GetWorldPosition()):GetNormalized() * 100, 50), distanceToPlayer / 700)
+        enemy:MoveTo(Utils.groundBelowPoint(fightTarget:GetWorldPosition() + (fromVector - fightTarget:GetWorldPosition()):GetNormalized() * 100, 50), distanceToPlayer / 700 / moveSpeed)
 
         Task.Wait(distanceToPlayer / 800)
 
@@ -277,6 +279,7 @@ function onStunned(player)
   stunned = true
 
   Task.Wait(2)
+
   stunned = false
 end
 
@@ -286,22 +289,50 @@ function onTaunted(player)
   fightTarget = player
 end
 
-local damageEffects = {
-  stunned = onStunned,
-  taunted = onTaunted,
-  -- slowed = onSlowed,
-  -- knockedBack = onKnockBack
+local slowTask = nil
+
+function onSlowed(player)
+  if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
+
+  moveSpeed = 0.75
+
+  if slowTask then slowTask:Cancel() end
+
+  slowTask = Task.Spawn(function()
+    Task.Wait(2)
+
+    moveSpeed = 1
+  end)
+end
+
+local statusEffects = {
+  stun = onStunned,
+  taunt = onTaunted,
+  slow = onSlowed,
+  -- knockback = onKnockback,
+  -- burn = onBurned,
+  -- weaken = onWeakened,
+  -- polymorph = onPolymorphed
 }
 
 function onDamaged(thisEnemy, damage)
   if not Object.IsValid(enemy) or enemy ~= thisEnemy or enemy.isDead then return end
 
-  if damage.amount < 0.001 then
-    local reasons = Utils.decodeDamageReason(damage.reason)
+  if damage.sourceAbility then
+    local effects = damage.sourceAbility:GetCustomProperty("statusEffects")
 
-    for _, reason in ipairs(reasons) do
-      local callback = damageEffects[reason]
-      Task.Spawn(function() callback(damage.sourcePlayer) end)
+    if effects then
+      effects = {CoreString.Split(string.lower(effects), ",")}
+
+      for _, effect in ipairs(effects) do
+        local callback = statusEffects[CoreString.Trim(effect)]
+
+        if callback then
+          Task.Spawn(function() callback(damage.sourcePlayer) end)
+        else
+          warn("Unknown status effect: \""..CoreString.Trim(effect).."\".")
+        end
+      end
     end
   end
 

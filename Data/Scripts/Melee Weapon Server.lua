@@ -27,6 +27,7 @@ function rollDamage()
   local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + weapon.owner:GetResource("Grit") / 5 + math.random()))
   damage.sourcePlayer = weapon.owner
   damage.sourceAbility = lastUsedAbility
+  damage.reason = DamageReason.COMBAT
 
   return damage
 end

@@ -39,9 +39,9 @@ function onAbilityExecute(thisAbility)
     end
 
     local damage = Damage.New(0.0001)
-    sourceAbility = lastUsedAbility
+    damage.sourceAbility = lastUsedAbility
     damage.sourcePlayer = shield.owner
-    damage.reason = 203 -- stunned + taunted
+    damage.reason = DamageReason.COMBAT
 
     enemy:ApplyDamage(damage)
 

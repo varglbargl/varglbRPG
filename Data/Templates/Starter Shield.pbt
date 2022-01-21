@@ -109,6 +109,12 @@ Assets {
           }
         }
         ParentId: 2953111769030281295
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:statusEffects"
+            String: "stun, taunt"
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

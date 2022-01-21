@@ -10,6 +10,12 @@ Assets {
           Id: 11246205008028391075
         }
       }
+      Overrides {
+        Name: "cs:IceShardScroll"
+        AssetReference {
+          Id: 15332695546210873396
+        }
+      }
     }
   }
   SerializationVersion: 104
