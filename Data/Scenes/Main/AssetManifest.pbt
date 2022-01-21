@@ -1655,6 +1655,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14861107584052384565
+  Name: "Shoji Screen 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_jpn_wood_shoji_screen_001_uv"
+  }
+}
+Assets {
   Id: 14844672563279110931
   Name: "Bricks Worn Stone 01"
   PlatformAssetType: 2
@@ -3761,6 +3770,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10995193757661392908
+  Name: "Urban Interior - Oil Lantern 01 - Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_lantern_oil_base_001_ref"
+  }
+}
+Assets {
   Id: 10914354925542967262
   Name: "Fantasy Castle Pillar 02 - Mid"
   PlatformAssetType: 1
@@ -5747,6 +5765,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Japan_Frame_004"
+  }
+}
+Assets {
+  Id: 6918710273059145556
+  Name: "Urban Interior - Oil Lantern 01 - Shade 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_lantern_oil_shade_001_ref"
   }
 }
 Assets {

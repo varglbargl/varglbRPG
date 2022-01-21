@@ -1,6 +1,7 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 
 local enemy = script.parent.parent
+enemy:FindChildByType("CoreMesh").clientUserData["Enemy"] = enemy
 
 local MESH = script:GetCustomProperty("AnimatedMesh"):WaitForObject()
 
@@ -59,6 +60,8 @@ function onEnemyDamaged(thisEnemy, damage)
       else
         Utils.showFlyupText(damage.amount, enemy:GetWorldPosition(), Utils.color.magic)
       end
+
+      Events.Broadcast("ShowNameplate", enemy)
     end
 
     if DAMAGED_VFX then
@@ -89,6 +92,10 @@ function onEnemyAttacked(attackedPlayer, id)
     if ATTACK_VFX then
       local vfx = World.SpawnAsset(ATTACK_VFX, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
       if vfx.lifeSpan == 0 then vfx.lifeSpan = 3 end
+    end
+
+    if attackedPlayer == clientPlayer then
+      Events.Broadcast("ShowNameplate", enemy)
     end
   end
 end

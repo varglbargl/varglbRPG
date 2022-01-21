@@ -181,6 +181,8 @@ function initCooldownOverlay(item)
       evt:Disconnect()
     end
 
+    castEvents = {}
+
     unequippedEvent:Disconnect()
 
     if primaryTickTask then primaryTickTask:Cancel() end

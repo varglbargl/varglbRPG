@@ -7,7 +7,7 @@ Assets {
       RootId: 17907744864267602923
       Objects {
         Id: 17907744864267602923
-        Name: "Damageable Object"
+        Name: "Lumber Jackal"
         Transform {
           Scale {
             X: 1
@@ -93,6 +93,7 @@ Assets {
             MaxHitpoints: 100
             StartingHitpoints: 100
             DestroyOnDeath: true
+            DestroyOnDeathDelay: 5
             DestroyOnDeathClientTemplateId {
               Id: 841534158063459245
             }

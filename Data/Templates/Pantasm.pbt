@@ -93,6 +93,7 @@ Assets {
             MaxHitpoints: 100
             StartingHitpoints: 100
             DestroyOnDeath: true
+            DestroyOnDeathDelay: 5
             DestroyOnDeathClientTemplateId {
               Id: 841534158063459245
             }

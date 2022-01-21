@@ -32,10 +32,9 @@ local classes = {
     grit = 15,
     wit  = 5,
     spit = 10,
-    special = "Part of all damage you take is reflected back to the attacker instead.",
+    special = "Part of any damage you would take is reflected back to the attacker instead.",
     starterGear = {
-      primary = "Double-Edged Sword",
-      glider = "Basic Glider"
+      primary = "Double-Edged Sword"
     }
   },
   {
@@ -45,8 +44,7 @@ local classes = {
     spit = 5,
     special = "Your melee attacks also heal you and a nearby ally in need.",
     starterGear = {
-      primary = "Heavy Gavel",
-      glider = "Basic Glider"
+      primary = "Heavy Gavel"
     }
   },
   {
@@ -54,10 +52,9 @@ local classes = {
     grit = 5,
     wit  = 15,
     spit = 10,
-    special = "Your spells have their cooldown timers cut in half.",
+    special = "???",
     starterGear = {
-      primary = "Focussing Iris",
-      glider = "Basic Glider"
+      secondary = "Focussing Iris"
     }
   },
   {
@@ -67,8 +64,7 @@ local classes = {
     spit = 5,
     special = "Your attacks, spells, and potions can trigger random extra effects. Who knows what could happen??",
     starterGear = {
-      primary = "Wilderstaff",
-      glider = "Basic Glider"
+      primary = "Gnarled Branch"
     }
   },
   {
@@ -78,8 +74,7 @@ local classes = {
     spit = 15,
     special = "Your melee attacks knock enemies away, ranged attacks slow enemies.",
     starterGear = {
-      primary = "Ranger Crossbow",
-      glider = "Basic Glider"
+      secondary = "Ranger Crossbow"
     }
   },
   {
@@ -89,8 +84,7 @@ local classes = {
     spit = 15,
     special = "Sprinting or gliding into a fight makes your first melee attack deal tripple.",
     starterGear = {
-      primary = "Concealed Blade",
-      glider = "Basic Glider"
+      primary = "Concealed Blade"
     }
   },
   -- {
@@ -100,8 +94,7 @@ local classes = {
   --   spit = 10,
   --   special = "",
   --   starterGear = {
-  --     primary = "Trusty Machete",
-  --     glider = "Basic Glider"
+  --     primary = "Trusty Machete"
   --   }
   -- }
 }

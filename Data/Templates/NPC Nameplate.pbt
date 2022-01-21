@@ -51,7 +51,7 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:bottomcenter"
               }
             }
             TargetAnchor {
@@ -544,7 +544,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1318,7 +1318,7 @@ Assets {
       }
       Objects {
         Id: 7860718489195711549
-        Name: "Number"
+        Name: "Level Number"
         Transform {
           Location {
           }

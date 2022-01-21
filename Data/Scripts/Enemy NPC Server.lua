@@ -111,7 +111,7 @@ function fight(player)
 end
 
 function stopFighting()
-  if enemy.isDead or not Object.IsValid(enemy) then return end
+  if not Object.IsValid(enemy) or enemy.isDead then return end
 
   isFighting = false
 
@@ -125,7 +125,7 @@ function stopFighting()
 
   Task.Wait(2)
 
-  if enemy.isDead or not Object.IsValid(enemy) then return end
+  if not Object.IsValid(enemy) or enemy.isDead then return end
 
   enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.25)
 
@@ -138,7 +138,7 @@ function stopFighting()
 end
 
 function attack(target)
-  if enemy.isDead or not Object.IsValid(target) or not Object.IsValid(enemy) then return end
+  if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(target) then return end
 
   local damage = Utils.rollDamage(stats)
   local reflectedDamage = 0
@@ -271,7 +271,7 @@ end
 
 function wanderLoop()
   Task.Wait(math.random(50, 200) / 10)
-  if isFighting or enemy.isDead or not Object.IsValid(enemy) then return end
+  if not Object.IsValid(enemy) or isFighting or enemy.isDead then return end
 
   if areTherePlayersNearby() == false then
     despawn()
@@ -296,7 +296,7 @@ function wanderLoop()
   end
 
   Task.Wait(4.5)
-  if isFighting or enemy.isDead or not Object.IsValid(enemy) then return end
+  if not Object.IsValid(enemy) or isFighting or enemy.isDead then return end
 
   enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.75)
 
