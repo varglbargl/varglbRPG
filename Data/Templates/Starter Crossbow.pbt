@@ -69,7 +69,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "left_prop"
+          SocketName: "right_prop"
           PickupTrigger {
             SelfId: 841534158063459245
           }
@@ -202,7 +202,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "dual_melee_left_hand_thrust"
+          Animation: "1hand_pistol_shoot"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:secondaryaction"
@@ -230,7 +230,6 @@ Assets {
           }
         }
         ParentId: 8803041335972847287
-        ChildIds: 17626163376967052114
         ChildIds: 8397896403013515296
         WantsNetworking: true
         Collidable_v2 {
@@ -246,50 +245,6 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 17626163376967052114
-        Name: "Ranged Weapon Client"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1535635915468763124
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Geo"
-            ObjectReference {
-              SubObjectId: 8397896403013515296
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 363298956242194552
-          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"

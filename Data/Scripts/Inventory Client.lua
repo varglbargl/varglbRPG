@@ -287,12 +287,12 @@ end
 function equipItem(inventorySlot, gearSlot)
   local equippedSlot = nil
 
-  if inventory[inventorySlot].socket == "right_prop" then
+  if inventory[inventorySlot].socket == "left_prop" then
     if gearSlot and gearSlot ~= "primary" then return end
 
     equippedSlot = "primary"
 
-  elseif inventory[inventorySlot].socket == "left_prop" then
+  elseif inventory[inventorySlot].socket == "right_prop" then
     if gearSlot and gearSlot ~= "secondary" then return end
 
     equippedSlot = "secondary"
