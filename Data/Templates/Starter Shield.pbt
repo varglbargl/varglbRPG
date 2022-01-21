@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 15962505114319533395
         ChildIds: 17868867493792811897
         ChildIds: 7109948812332489522
         UnregisteredParameters {
@@ -28,6 +29,10 @@ Assets {
           Overrides {
             Name: "cs:ItemLevel"
             Float: 1
+          }
+          Overrides {
+            Name: "cs:Description"
+            String: "Shield bash enemies to stun them and taunt them into attacking you."
           }
         }
         WantsNetworking: true
@@ -53,12 +58,47 @@ Assets {
         }
       }
       Objects {
-        Id: 17868867493792811897
-        Name: "Ability"
+        Id: 15962505114319533395
+        Name: "Shield Bash Server"
         Transform {
           Location {
-            X: 10
-            Y: -80
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2953111769030281295
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6238396409796008566
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 17868867493792811897
+        Name: "Bash"
+        Transform {
+          Location {
           }
           Rotation {
           }
@@ -85,7 +125,7 @@ Assets {
         Ability {
           IsEnabled: true
           CastPhaseSettings {
-            Duration: 0.25
+            Duration: 0.15
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -96,7 +136,7 @@ Assets {
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.1
+            Duration: 0.15
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -107,7 +147,7 @@ Assets {
             }
           }
           RecoveryPhaseSettings {
-            Duration: 0.2
+            Duration: 0.5
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -118,7 +158,7 @@ Assets {
             }
           }
           CooldownPhaseSettings {
-            Duration: 3
+            Duration: 4.2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -126,7 +166,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "1hand_melee_shield_bash"
+          Animation: "2hand_sword_slash_left"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:secondaryaction"
@@ -185,14 +225,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -5.40555048
-            Y: -9.72317219
-            Z: -15.7227802
+            X: 1.47753906
+            Y: 19.9433594
+            Z: -12.8979492
           }
           Rotation {
-            Pitch: 74.7899933
-            Yaw: -116.82933
-            Roll: 136.543961
+            Pitch: 73.8985138
+            Yaw: -46.2132568
+            Roll: 48.4355392
           }
           Scale {
             X: 0.159645244
@@ -269,14 +309,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: 7.93113756
-            Y: -9.95175743
-            Z: 6.24313784
+            X: -10.8945312
+            Y: 16.9941406
+            Z: 9.43261719
           }
           Rotation {
-            Pitch: 74.7899933
-            Yaw: -116.82933
-            Roll: 136.543961
+            Pitch: 73.8985138
+            Yaw: -46.2132568
+            Roll: 48.4355392
           }
           Scale {
             X: 0.158099592
@@ -357,14 +397,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -16.745594
-            Y: -17.7327614
-            Z: 5.90074444
+            X: 14.8486328
+            Y: 14.5839844
+            Z: 8.38183594
           }
           Rotation {
-            Pitch: 74.7899933
-            Yaw: -116.82933
-            Roll: 136.543961
+            Pitch: 73.8985138
+            Yaw: -46.2132568
+            Roll: 48.4355392
           }
           Scale {
             X: 0.158099592
@@ -445,14 +485,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -4.836689
-            Y: -12.5061092
-            Z: -1.16496098
+            X: 1.9140625
+            Y: 17.1582031
+            Z: 1.6640625
           }
           Rotation {
-            Pitch: 74.7899933
-            Yaw: -116.82933
-            Roll: 136.543961
+            Pitch: 73.8985138
+            Yaw: -46.2132568
+            Roll: 48.4355392
           }
           Scale {
             X: 0.11066971
@@ -525,14 +565,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -5.46370888
-            Y: -9.82209682
-            Z: -15.3295012
+            X: 1.56640625
+            Y: 19.8613281
+            Z: -12.5068359
           }
           Rotation {
-            Pitch: 74.7899933
-            Yaw: -116.82933
-            Roll: 136.543961
+            Pitch: 73.8985138
+            Yaw: -46.2132568
+            Roll: 48.4355392
           }
           Scale {
             X: 0.152014703
@@ -609,14 +649,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: 7.54425764
-            Y: -10.0282574
-            Z: 6.01435375
+            X: -10.5068359
+            Y: 17
+            Z: 9.19287109
           }
           Rotation {
-            Pitch: 74.7899933
-            Yaw: -116.82933
-            Roll: 136.543961
+            Pitch: 73.8985138
+            Yaw: -46.2132568
+            Roll: 48.4355392
           }
           Scale {
             X: 0.152014703
@@ -697,14 +737,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -16.4294243
-            Y: -17.6103134
-            Z: 5.79320812
+            X: 14.5107422
+            Y: 14.6367188
+            Z: 8.28320312
           }
           Rotation {
-            Pitch: 74.7899933
-            Yaw: -116.82933
-            Roll: 136.543961
+            Pitch: 73.8985138
+            Yaw: -46.2132568
+            Roll: 48.4355392
           }
           Scale {
             X: 0.151330128
@@ -785,14 +825,14 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -4.83484697
-            Y: -12.5045614
-            Z: -1.16753054
+            X: 1.91113281
+            Y: 17.1582031
+            Z: 1.66162109
           }
           Rotation {
-            Pitch: 74.7899933
-            Yaw: -116.82933
-            Roll: 136.543961
+            Pitch: 73.8985138
+            Yaw: -46.2132568
+            Roll: 48.4355392
           }
           Scale {
             X: 0.106418774
@@ -865,14 +905,14 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -6.2858
-            Y: -7.646945
-            Z: -0.269097924
+            X: 1.31152344
+            Y: 12.1503906
+            Z: 0.634765625
           }
           Rotation {
-            Pitch: 0.579937696
-            Yaw: 17.5329819
-            Roll: -10.9793234
+            Pitch: 2.14967203
+            Yaw: 174.616516
+            Roll: 10.6106091
           }
           Scale {
             X: 0.785981
@@ -919,14 +959,14 @@ Assets {
         Name: "Shield 01"
         Transform {
           Location {
-            X: -6.2858
-            Y: -7.646945
-            Z: -0.269097924
+            X: 1.31152344
+            Y: 12.1503906
+            Z: 0.634765625
           }
           Rotation {
-            Pitch: -79.0433
-            Yaw: 104.608078
-            Roll: -177.057144
+            Pitch: -79.1426086
+            Yaw: 95.8284607
+            Roll: -11.4525452
           }
           Scale {
             X: 0.153874174

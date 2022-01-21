@@ -23,7 +23,7 @@ local clientPlayer = Game.GetLocalPlayer()
 
 local damagedEvent = nil
 local diedEvent = nil
-local attackedEvent = nil
+local attackEvent = nil
 local destroyEvent = nil
 
 function movingAnimationCheckLoop()
@@ -49,16 +49,18 @@ Task.Spawn(movingAnimationCheckLoop)
 function onEnemyDamaged(thisEnemy, damage)
   if not Object.IsValid(enemy) or thisEnemy ~= enemy then return end
 
-  if damage.sourcePlayer and damage.sourceAbility then
+  if damage.sourcePlayer then
     MESH:PlayAnimation("unarmed_react_damage")
 
     if not enemy.isDead and READY_ANIM ~= "" then MESH.animationStance = READY_ANIM end
 
     if damage.sourcePlayer == clientPlayer then
-      if damage.sourceAbility and not damage.sourceAbility:GetCustomProperty("IsMagic") then
-        Utils.showFlyupText(damage.amount, enemy:GetWorldPosition(), Utils.color.attack)
-      else
-        Utils.showFlyupText(damage.amount, enemy:GetWorldPosition(), Utils.color.magic)
+      if damage.amount >= 1 then
+        if damage.sourceAbility and not damage.sourceAbility:GetCustomProperty("IsMagic") then
+          Utils.showFlyupText(damage.amount, enemy:GetWorldPosition(), Utils.color.attack)
+        else
+          Utils.showFlyupText(damage.amount, enemy:GetWorldPosition(), Utils.color.magic)
+        end
       end
 
       Events.Broadcast("ShowNameplate", enemy)
@@ -75,15 +77,15 @@ end
 function onEnemyDied(thisEnemy)
   if not Object.IsValid(enemy) or thisEnemy ~= enemy then return end
 
-    if DIE_ANIM ~= "" then MESH:PlayAnimation(DIE_ANIM, {shouldLoop = true}) end
+  if DIE_ANIM ~= "" then MESH:PlayAnimation(DIE_ANIM, {shouldLoop = true}) end
 
-    if DEATH_VFX then
-      local vfx = World.SpawnAsset(DEATH_VFX, {position = script:GetWorldPosition()})
-      if vfx.lifeSpan == 0 then vfx.lifeSpan = 5 end
-    end
+  if DEATH_VFX then
+    local vfx = World.SpawnAsset(DEATH_VFX, {position = script:GetWorldPosition()})
+    if vfx.lifeSpan == 0 then vfx.lifeSpan = 5 end
+  end
 end
 
-function onEnemyAttacked(attackedPlayer, id)
+function onEnemyAttack(attackedPlayer, id)
   if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(attackedPlayer) then return end
 
   if id == enemy.id then
@@ -103,7 +105,7 @@ end
 function onEnemyDestroyed(thisEnemy)
   damagedEvent:Disconnect()
   diedEvent:Disconnect()
-  attackedEvent:Disconnect()
+  attackEvent:Disconnect()
   destroyEvent:Disconnect()
 end
 
@@ -114,7 +116,7 @@ damagedEvent = enemy.damagedEvent:Connect(onEnemyDamaged)
 diedEvent = enemy.diedEvent:Connect(onEnemyDied)
 
 -- handler params: Player_attackedPlayer, String_id, Integer_reflectedDamage, Bool_survived
-attackedEvent = Events.Connect("eAtt", onEnemyAttacked)
+attackEvent = Events.Connect("eAtt", onEnemyAttack)
 
 -- handler params: CoreObject_coreObject
 destroyEvent = enemy.destroyEvent:Connect(onEnemyDestroyed)

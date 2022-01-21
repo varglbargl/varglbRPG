@@ -138,7 +138,7 @@ Assets {
           AutoPlay: true
           Pitch: -500
           Volume: 0.7
-          Falloff: 2000
+          Falloff: 3000
           Radius: 1000
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
@@ -182,7 +182,7 @@ Assets {
           AutoPlay: true
           Pitch: 200
           Volume: 1
-          Falloff: 2000
+          Falloff: 3000
           Radius: 1000
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
@@ -225,7 +225,7 @@ Assets {
           }
           AutoPlay: true
           Volume: 0.8
-          Falloff: 2000
+          Falloff: 3000
           Radius: 1000
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true

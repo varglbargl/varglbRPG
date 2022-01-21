@@ -15,7 +15,8 @@ enemy:SetCustomProperty("Level", stats.level)
 enemy.maxHitPoints = stats.maxHitPoints
 enemy.hitPoints = stats.maxHitPoints
 
-local isFighting = false
+local fightTarget = nil
+local stunned = false
 local attackers = {}
 local myTemplateId = script:FindTemplateRoot().sourceTemplateId
 
@@ -28,6 +29,8 @@ local spawnScale = HITBOX:GetWorldScale()
 local damagedEvent = nil
 local diedEvent = nil
 local playerHealedEvent = nil
+
+local fightTask = nil
 
 if not spawnPoint then
   spawnPoint = enemy:GetWorldPosition()
@@ -60,47 +63,51 @@ end
 function startFighting(player)
   -- print("Oh ho ho you are so going down, "..player.name.."!")
 
-  isFighting = true
+  fightTarget = player
   attackers[player] = true
 
   enemy:LookAtContinuous(player, true, 500)
   enemy:StopMove()
 
-  Task.Spawn(function() fight(player) end)
+  if not fightTask then
+    fightTask = Task.Spawn(fight)
+  end
 end
 
-function fight(player)
+function fight()
   local fromVector = nil
 
   Task.Wait(0.25)
 
-  while Object.IsValid(player) and Object.IsValid(enemy) and not enemy.isDead and isFighting do
+  while Object.IsValid(fightTarget) and Object.IsValid(enemy) and not enemy.isDead do
     fromVector = enemy:GetWorldPosition()
 
-    if player.isDead or (fromVector - spawnPoint).size > 3000 then
+    if fightTarget.isDead or (fromVector - spawnPoint).size > 3000 then
       stopFighting()
       return
     end
 
-    local distanceToPlayer = (player:GetWorldPosition() - fromVector).size
+    if not stunned then
+      local distanceToPlayer = (fightTarget:GetWorldPosition() - fromVector).size
 
-    if distanceToPlayer < 500 and distanceToPlayer > 150 then
-      enemy:MoveTo(Utils.groundBelowPoint(player:GetWorldPosition() + (fromVector - player:GetWorldPosition()):GetNormalized() * 100, 50), distanceToPlayer / 700)
+      if distanceToPlayer >= 500 then
 
-      Task.Wait(distanceToPlayer / 800)
+        local toVector = Utils.groundBelowPoint(fromVector + (fightTarget:GetWorldPosition() - fromVector):GetNormalized() * 400, 50)
 
-      attack(player)
-    elseif distanceToPlayer > 150 then
+        if not toVector then
+          -- print("Must have been nothing...")
+        else
+          enemy:MoveTo(toVector, 1)
+        end
+      elseif distanceToPlayer < 500 and distanceToPlayer >= 150 then
+        enemy:MoveTo(Utils.groundBelowPoint(fightTarget:GetWorldPosition() + (fromVector - fightTarget:GetWorldPosition()):GetNormalized() * 100, 50), distanceToPlayer / 700)
 
-      local toVector = Utils.groundBelowPoint(fromVector + (player:GetWorldPosition() - fromVector):GetNormalized() * 400, 50)
+        Task.Wait(distanceToPlayer / 800)
 
-      if not toVector then
-        -- print("Must have been nothing...")
+        attack(fightTarget)
       else
-        enemy:MoveTo(toVector, 1)
+        attack(fightTarget)
       end
-    else
-      attack(player)
     end
 
     Task.Wait(0.4)
@@ -113,7 +120,7 @@ end
 function stopFighting()
   if not Object.IsValid(enemy) or enemy.isDead then return end
 
-  isFighting = false
+  fightTarget = nil
 
   if (enemy:GetWorldPosition() - spawnPoint).size > 10 then
     enemy:LookAt(spawnPoint)
@@ -202,6 +209,8 @@ function die(thisEnemy, damage)
   damagedEvent:Disconnect()
   playerHealedEvent:Disconnect()
 
+  if fightTask then fightTask:Cancel() end
+
   local lootRoll = math.random()
 
   if lootRoll <= 0.2 then
@@ -246,16 +255,6 @@ function attemptRespawn()
   end
 end
 
-function onDamaged(thisEnemy, damage)
-  if not Object.IsValid(enemy) or enemy ~= thisEnemy or enemy.isDead then return end
-
-  -- print("I, a humble "..enemy.name..", have just been assaulted by "..damage.sourcePlayer.name.." for a truly uncalled for "..damage.amount.." damage! I now have a scant "..enemy.hitPoints.." hit points remaining! I expect compensation for my damages!")
-
-  if damage.sourcePlayer and not isFighting then
-    startFighting(damage.sourcePlayer)
-  end
-end
-
 function onPlayerHealed(player, newTotal, healer)
   if not Object.IsValid(healer) then return end
 
@@ -269,9 +268,53 @@ function onPlayerHealed(player, newTotal, healer)
   end
 end
 
+function onStunned(player)
+  if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
+
+  enemy:StopMove()
+  enemy:StopRotate()
+
+  stunned = true
+
+  Task.Wait(2)
+  stunned = false
+end
+
+function onTaunted(player)
+  if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
+
+  fightTarget = player
+end
+
+local damageEffects = {
+  stunned = onStunned,
+  taunted = onTaunted,
+  -- slowed = onSlowed,
+  -- knockedBack = onKnockBack
+}
+
+function onDamaged(thisEnemy, damage)
+  if not Object.IsValid(enemy) or enemy ~= thisEnemy or enemy.isDead then return end
+
+  if damage.amount < 0.001 then
+    local reasons = Utils.decodeDamageReason(damage.reason)
+
+    for _, reason in ipairs(reasons) do
+      local callback = damageEffects[reason]
+      Task.Spawn(function() callback(damage.sourcePlayer) end)
+    end
+  end
+
+  -- print("I, a humble "..enemy.name..", have just been assaulted by "..damage.sourcePlayer.name.." for a truly uncalled for "..damage.amount.." damage! I now have a scant "..enemy.hitPoints.." hit points remaining! I expect compensation for my damages!")
+
+  if damage.sourcePlayer and not fightTarget then
+    startFighting(damage.sourcePlayer)
+  end
+end
+
 function wanderLoop()
   Task.Wait(math.random(50, 200) / 10)
-  if not Object.IsValid(enemy) or isFighting or enemy.isDead then return end
+  if not Object.IsValid(enemy) or fightTarget or enemy.isDead then return end
 
   if areTherePlayersNearby() == false then
     despawn()
@@ -296,7 +339,7 @@ function wanderLoop()
   end
 
   Task.Wait(4.5)
-  if not Object.IsValid(enemy) or isFighting or enemy.isDead then return end
+  if not Object.IsValid(enemy) or fightTarget or enemy.isDead then return end
 
   enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.75)
 
