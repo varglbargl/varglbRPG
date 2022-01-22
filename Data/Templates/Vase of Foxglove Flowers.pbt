@@ -117,6 +117,12 @@ Assets {
               A: 1
             }
           }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 14434614547618671027
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -178,6 +184,12 @@ Assets {
               G: 0.123854093
               B: 0.34482789
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 14434614547618671027
             }
           }
         }
@@ -242,6 +254,12 @@ Assets {
               A: 1
             }
           }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 14434614547618671027
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -303,6 +321,12 @@ Assets {
               G: 0.123854093
               B: 0.34482789
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 14434614547618671027
             }
           }
         }

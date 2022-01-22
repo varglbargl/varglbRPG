@@ -521,6 +521,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17598001875443373071
+  Name: "Crosshair 018"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_018"
+  }
+}
+Assets {
   Id: 17588356818725180439
   Name: "Tree Sakura Hero Bare 01"
   PlatformAssetType: 1
@@ -563,6 +572,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_rounded_001"
+  }
+}
+Assets {
+  Id: 17482323496431171047
+  Name: "Japanese Temple Roof 01 - Eaves 02 End"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_001_eaves_02_end_ref"
   }
 }
 Assets {
@@ -752,6 +770,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_signbracket_round_001"
+  }
+}
+Assets {
+  Id: 16757675604571197622
+  Name: "Fantasy Castle Wall 01 - Doorway 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001_door_01"
   }
 }
 Assets {
@@ -1943,6 +1970,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14395099989355284379
+  Name: "Fantasy Castle Wall 01 - Window 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001_win_02"
+  }
+}
+Assets {
   Id: 14335950073606978576
   Name: "Text 01: R"
   PlatformAssetType: 1
@@ -2906,6 +2942,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12633459125040765871
+  Name: "Craftsman Roof 01 Eaves End"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_eaves_001_end"
+  }
+}
+Assets {
   Id: 12632251234297570874
   Name: "Urban Pipe Cap 03"
   PlatformAssetType: 1
@@ -3299,6 +3344,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_cabinet_topper_narrow_001"
+  }
+}
+Assets {
+  Id: 11830036424878203792
+  Name: "Organic - Food - Pumpkin 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_org_food_pumpkin_003_ref"
   }
 }
 Assets {
@@ -3779,6 +3833,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10946983691052253828
+  Name: "Japanese Temple Roof 01 - Eaves 02 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_001_eaves_02_half_ref"
+  }
+}
+Assets {
   Id: 10914354925542967262
   Name: "Fantasy Castle Pillar 02 - Mid"
   PlatformAssetType: 1
@@ -4166,6 +4229,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10107062091948111687
+  Name: "Fantasy Castle Wall 01 - Cellar"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001_grate_01"
+  }
+}
+Assets {
   Id: 10106029487649329481
   Name: "Decal Leaves 01"
   PlatformAssetType: 14
@@ -4388,6 +4460,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_coral_branch_big_01"
+  }
+}
+Assets {
+  Id: 9504253698970184112
+  Name: "Pipe - 4-Sided Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_4_sided_thin_001"
   }
 }
 Assets {
@@ -4742,6 +4823,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8854304444657851750
+  Name: "Fantasy Castle Wall 01 - Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001_win_01"
+  }
+}
+Assets {
   Id: 8852743137199317502
   Name: "Main Street Wall 03 - Half Window 01"
   PlatformAssetType: 1
@@ -4895,6 +4985,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8585108491796389269
+  Name: "Japanese Temple Roof 01 - End"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_001_end_01_ref"
+  }
+}
+Assets {
   Id: 8556281639390552608
   Name: "Large Round Wood Beam 8m"
   PlatformAssetType: 1
@@ -5045,6 +5144,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_concrete_001"
+  }
+}
+Assets {
+  Id: 8327363158313021188
+  Name: "Plane Triangle - One Sided Right"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_triangle_002"
   }
 }
 Assets {
@@ -5477,6 +5585,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_roof_001_wall_01_ref"
+  }
+}
+Assets {
+  Id: 7438756951221684118
+  Name: "Fantasy Castle Wall 02 - Doorway 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_002_door_01"
   }
 }
 Assets {
@@ -7757,6 +7874,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3185485305637589850
+  Name: "Japanese Temple Roof 01 "
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_001_ref"
+  }
+}
+Assets {
   Id: 3167585272007878783
   Name: "Fantasy Castle Wall 01 Half"
   PlatformAssetType: 1
@@ -8069,6 +8195,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_guard_sword_001"
+  }
+}
+Assets {
+  Id: 2476115459978982440
+  Name: "Wallpaper Stripes 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wallpaper_stripes_002_uv_ref"
   }
 }
 Assets {
@@ -8978,6 +9113,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_curve_002"
+  }
+}
+Assets {
+  Id: 659628615446075165
+  Name: "Carpet 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_carpets_001_uv"
   }
 }
 Assets {

@@ -1,4 +1,3 @@
--- APIs
 local Utils = require(script:GetCustomProperty("Utils"))
 local Wildermagic = require(script:GetCustomProperty("Wildermagic"))
 
@@ -29,6 +28,8 @@ local unequipEvent = nil
 local executeEvent = nil
 local interruptedEvent = nil
 
+local weaponSpeed = Utils.getWeaponSpeed(weapon)
+
 function rollDamage()
   local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) / (0.75 + SPLASH_RADIUS / 4) + weapon.owner:GetResource(damageStat) / 5 + math.random()))
   damage.sourcePlayer = weapon.owner
@@ -38,45 +39,38 @@ function rollDamage()
   return damage
 end
 
-function onAbilityExecute(thisAbility)
-  local attackRotation = weapon.owner:GetLookWorldRotation()
-  local attackDirection = script:GetWorldPosition() + attackRotation * Vector3.FORWARD * 2500
-  local possibleTarget = World.Spherecast(weapon.owner:GetViewWorldPosition(), attackDirection, 50, {ignorePlayers = true})
-  local target = nil
-  local directHit = nil
+function fireProjectile(target, directHit)
+  local attackRotation = Rotation.New(target - script:GetWorldPosition(), Vector3.UP)
 
-  lastUsedAbility = thisAbility
-
-  if possibleTarget and possibleTarget.other then
-    if possibleTarget.other.serverUserData["Enemy"] then
-      target = possibleTarget.other:GetWorldPosition()
-      directHit = possibleTarget.other.serverUserData["Enemy"]
-    else
-      target = possibleTarget:GetImpactPosition()
-    end
-  else
-    target = attackDirection
+  if MUZZLE_FLASH then
+    World.SpawnAsset(MUZZLE_FLASH, {position = script:GetWorldPosition(), rotation = attackRotation})
   end
 
   local distance = (script:GetWorldPosition() - target).size
-  World.SpawnAsset(MUZZLE_FLASH, {position = script:GetWorldPosition(), rotation = attackRotation})
 
-  if distance > 100 then
-    local projectile = World.SpawnAsset(PROJECTILE, {position = script:GetWorldPosition()})
-    local trail = World.SpawnAsset(TRAIL, {position = projectile:GetWorldPosition()})
+  if distance > 100 and PROJECTILE then
     local travelTime = distance / 5000
+    local trail = nil
+
+    local projectile = World.SpawnAsset(PROJECTILE, {position = script:GetWorldPosition()})
 
     projectile:LookAt(target)
     projectile:MoveTo(target, travelTime)
-    trail:Follow(projectile)
+    projectile.lifeSpan = travelTime
+
+    if TRAIL then
+      trail = World.SpawnAsset(TRAIL, {position = projectile:GetWorldPosition()})
+
+      trail:MoveTo(target, travelTime)
+      trail.lifeSpan = travelTime + 2
+    end
 
     Task.Wait(travelTime)
-
-    projectile:Destroy()
-    trail.lifeSpan = 2
   end
 
-  World.SpawnAsset(IMPACT_VFX, {position = target, rotation = attackRotation, scale = Vector3.ONE * SPLASH_RADIUS})
+  if IMPACT_VFX then
+    World.SpawnAsset(IMPACT_VFX, {position = target, rotation = attackRotation, scale = Vector3.ONE * SPLASH_RADIUS})
+  end
 
   local wild = weapon.owner:GetResource("Class") == 4
   local hitObjects = World.FindObjectsOverlappingSphere(target, 100 * SPLASH_RADIUS, {ignorePlayers = true})
@@ -103,6 +97,62 @@ function onAbilityExecute(thisAbility)
 
     Task.Wait()
   end
+end
+
+function channel(target, directHit)
+  local player = weapon.owner
+  local directHitbox = nil
+
+  if directHit then
+    directHitbox = directHit:FindChildByType("CoreMesh")
+  end
+
+  local bonusSpeed = 1.1
+  local startingPoint = player:GetWorldPosition()
+
+  Task.Wait(weaponSpeed * bonusSpeed)
+
+  while Object.IsValid(weapon) and Object.IsValid(player) do
+    if player.isDead or (player:GetWorldPosition() - startingPoint).size > 5 then break end
+
+    bonusSpeed = math.max(bonusSpeed * 0.95, 0.75)
+
+    if directHit then
+      if not Object.IsValid(directHit) or directHit.isDead then break end
+
+      Task.Spawn(function() fireProjectile(directHitbox:GetWorldPosition(), directHit) end)
+    else
+      Task.Spawn(function() fireProjectile(target) end)
+    end
+  end
+end
+
+function onAbilityExecute(thisAbility)
+  local attackRotation = weapon.owner:GetLookWorldRotation()
+  local attackDirection = script:GetWorldPosition() + attackRotation * Vector3.FORWARD * 2500
+  local possibleTarget = World.Spherecast(weapon.owner:GetViewWorldPosition(), attackDirection, 50, {ignorePlayers = true})
+  local target = nil
+  local directHit = nil
+
+  lastUsedAbility = thisAbility
+
+  if possibleTarget and possibleTarget.other then
+    if possibleTarget.other.serverUserData["Enemy"] then
+      target = possibleTarget.other:GetWorldPosition()
+      directHit = possibleTarget.other.serverUserData["Enemy"]
+    else
+      target = possibleTarget:GetImpactPosition()
+    end
+  else
+    target = attackDirection
+  end
+
+  -- nevermind this kinda sucks...
+  -- if IS_SPELL and weapon.owner:GetResource("Class") == 3 and not weapon.owner.isAccelerating then
+  --   Task.Spawn(function() channel(target, directHit) end)
+  -- end
+
+  fireProjectile(target, directHit)
 end
 
 function onAbilityInterrupted()

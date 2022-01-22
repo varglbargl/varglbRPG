@@ -27,21 +27,6 @@ local lootRarity = {
   74, 20, 5, 1
 }
 
-function getWeaponSpeed(weapon)
-  local abilities = weapon:GetAbilities()
-
-  if #abilities == 0 then return end
-
-  local totalCooldown = (
-    abilities[1].castPhaseSettings.duration +
-    abilities[1].executePhaseSettings.duration +
-    abilities[1].recoveryPhaseSettings.duration +
-    abilities[1].cooldownPhaseSettings.duration
-  ) / #abilities
-
-  return totalCooldown
-end
-
 function readLootTable(thisLootTable, itemType)
   for _, item in pairs(thisLootTable) do
     local spawnedItem = World.SpawnAsset(item, {position = Vector3.UP * -10000})
@@ -56,7 +41,7 @@ function readLootTable(thisLootTable, itemType)
       icon = spawnedItem:GetCustomProperty("Icon"),
       minDamage = spawnedItem:GetCustomProperty("MinDamage"),
       maxDamage = spawnedItem:GetCustomProperty("MaxDamage"),
-      speed = getWeaponSpeed(spawnedItem),
+      speed = Utils.getWeaponSpeed(spawnedItem),
       splash = spawnedItem:GetCustomProperty("SplashRadius"),
       -- health = spawnedItem:GetCustomProperty("Health"),
       -- stamina = spawnedItem:GetCustomProperty("Stamina"),

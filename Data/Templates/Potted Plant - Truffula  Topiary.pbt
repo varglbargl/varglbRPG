@@ -201,7 +201,7 @@ Assets {
           Overrides {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
-              Id: 841534158063459245
+              Id: 15260622148558377912
             }
           }
           Overrides {
@@ -276,7 +276,7 @@ Assets {
           Overrides {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
-              Id: 841534158063459245
+              Id: 15260622148558377912
             }
           }
           Overrides {

@@ -41,7 +41,7 @@ Assets {
             Vector {
               X: -200
               Y: -200
-              Z: 200
+              Z: 300
             }
           }
           Overrides {
@@ -57,6 +57,7 @@ Assets {
             Bool: false
           }
         }
+        Lifespan: 1
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

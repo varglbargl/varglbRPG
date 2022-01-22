@@ -16,6 +16,7 @@ enemy.maxHitPoints = stats.maxHitPoints
 enemy.hitPoints = stats.maxHitPoints
 
 local fightTarget = nil
+local fightLocation = nil
 local attackers = {}
 local myTemplateId = script:FindTemplateRoot().sourceTemplateId
 
@@ -31,8 +32,6 @@ local spawnScale = HITBOX:GetWorldScale()
 local damagedEvent = nil
 local diedEvent = nil
 local playerHealedEvent = nil
-
-local fightTask = nil
 
 if not spawnPoint then
   spawnPoint = enemy:GetWorldPosition()
@@ -65,14 +64,15 @@ end
 function startFighting(player)
   -- print("Oh ho ho you are so going down, "..player.name.."!")
 
-  fightTarget = player
   attackers[player] = true
 
-  enemy:LookAtContinuous(player, true, 500)
-  enemy:StopMove()
+  if not fightTarget then
+    fightTarget = player
 
-  if not fightTask then
-    fightTask = Task.Spawn(fight)
+    enemy:LookAtContinuous(player, true, 500)
+    enemy:StopMove()
+
+    fight()
   end
 end
 
@@ -84,27 +84,43 @@ function fight()
   while Object.IsValid(fightTarget) and Object.IsValid(enemy) and not enemy.isDead do
     fromVector = enemy:GetWorldPosition()
 
-    if fightTarget.isDead or (fromVector - spawnPoint).size > 3000 then
+    if (fromVector - spawnPoint).size > 3000 and (fromVector - fightLocation).size > 3000 then
       stopFighting()
+      return
+    elseif fightTarget.isDead then
+      attemptSwitchTargets()
       return
     end
 
     if not stunned then
+
+      -- print("Imma getcha, "..fightTarget.name.."! Imma getcha good!")
       local distanceToPlayer = (fightTarget:GetWorldPosition() - fromVector).size
 
       if distanceToPlayer >= 500 then
 
         local toVector = Utils.groundBelowPoint(fromVector + (fightTarget:GetWorldPosition() - fromVector):GetNormalized() * 400, 50)
 
-        if not toVector then
-          -- print("Must have been nothing...")
-        else
+        if toVector then
+          enemy:LookAtContinuous(fightTarget, true, 500)
           enemy:MoveTo(toVector, 1 / moveSpeed)
-        end
-      elseif distanceToPlayer < 500 and distanceToPlayer >= 150 then
-        enemy:MoveTo(Utils.groundBelowPoint(fightTarget:GetWorldPosition() + (fromVector - fightTarget:GetWorldPosition()):GetNormalized() * 100, 50), distanceToPlayer / 700 / moveSpeed)
 
-        Task.Wait(distanceToPlayer / 800)
+          Task.Wait(0.25)
+        else
+          -- print("Bweemp bwomp! I can't build there!")
+        end
+      elseif distanceToPlayer >= 150 then
+
+        local toVector = Utils.groundBelowPoint(fightTarget:GetWorldPosition() + (fromVector - fightTarget:GetWorldPosition()):GetNormalized() * 100, 50)
+
+        if toVector then
+          enemy:LookAtContinuous(fightTarget, true, 500)
+          enemy:MoveTo(toVector, distanceToPlayer / 700 / moveSpeed)
+
+          Task.Wait(distanceToPlayer / 800)
+        else
+          -- print("Bweemp bwomp! I can't build there!")
+        end
 
         attack(fightTarget)
       else
@@ -119,18 +135,31 @@ function fight()
   stopFighting()
 end
 
+function attemptSwitchTargets()
+  for otherPlayer in pairs(attackers) do
+    if otherPlayer ~= fightTarget then
+      fightTarget = otherPlayer
+
+      return
+    end
+  end
+
+  stopFighting()
+end
+
 function stopFighting()
   if not Object.IsValid(enemy) or enemy.isDead then return end
 
   fightTarget = nil
+  attackers = {}
 
   if (enemy:GetWorldPosition() - spawnPoint).size > 10 then
     enemy:LookAt(spawnPoint)
   end
 
-  enemy:MoveTo(spawnPoint, 2)
   enemy.collision = Collision.FORCE_OFF
   enemy.hitPoints = stats.maxHitPoints
+  enemy:MoveTo(spawnPoint, 2)
 
   Task.Wait(2)
 
@@ -138,11 +167,10 @@ function stopFighting()
 
   enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.25)
 
-  attackers = {}
   enemy.collision = Collision.INHERIT
 
   if WANDER then
-    wanderLoop()
+    Task.Spawn(wanderLoop)
   end
 end
 
@@ -169,6 +197,8 @@ end
 function die(thisEnemy, damage)
   if not Object.IsValid(enemy) then return end
   -- print("I AM SLAIN!!!")
+
+  local totalAttackers = 0
 
   enemy:StopMove()
   enemy:StopRotate()
@@ -201,17 +231,18 @@ function die(thisEnemy, damage)
 
   --     xpAmount = math.ceil(stats.xpValue + stats.xpValue * difference / 10)
   --   else
-      xpAmount = stats.xpValue
+    xpAmount = stats.xpValue
     -- end
 
+    totalAttackers = totalAttackers + 1
     Events.Broadcast("PlayerGainedXP", otherPlayer, xpAmount)
   end
+
+  attackers = {}
 
   diedEvent:Disconnect()
   damagedEvent:Disconnect()
   playerHealedEvent:Disconnect()
-
-  if fightTask then fightTask:Cancel() end
 
   local lootRoll = math.random()
 
@@ -227,8 +258,7 @@ function die(thisEnemy, damage)
 
     enemy:MoveTo(enemy:GetWorldPosition() - Vector3.UP * 500, 5)
 
-    Task.Wait(20 / #Game.GetPlayers() * #attackers)
-    attackers = {}
+    Task.Wait(60 / #Game.GetPlayers() * totalAttackers)
 
     attemptRespawn()
   end)
@@ -270,6 +300,8 @@ function onPlayerHealed(player, newTotal, healer)
   end
 end
 
+local stunTask = nil
+
 function onStunned(player)
   if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
 
@@ -278,9 +310,13 @@ function onStunned(player)
 
   stunned = true
 
-  Task.Wait(2)
+  if stunTask then stunTask:Cancel() end
 
-  stunned = false
+  stunTask = Task.Spawn(function()
+    Task.Wait(2)
+
+    moveSpeed = 1
+  end)
 end
 
 function onTaunted(player)
@@ -338,8 +374,14 @@ function onDamaged(thisEnemy, damage)
 
   -- print("I, a humble "..enemy.name..", have just been assaulted by "..damage.sourcePlayer.name.." for a truly uncalled for "..damage.amount.." damage! I now have a scant "..enemy.hitPoints.." hit points remaining! I expect compensation for my damages!")
 
-  if damage.sourcePlayer and not fightTarget then
-    startFighting(damage.sourcePlayer)
+  if damage.sourcePlayer then
+    fightLocation = damage.sourcePlayer:GetWorldPosition()
+
+    if fightTarget then
+      attackers[damage.sourcePlayer] = true
+    else
+      startFighting(damage.sourcePlayer)
+    end
   end
 end
 

@@ -115,7 +115,7 @@ Assets {
           }
           Light {
             UseTemperature: true
-            Temperature: 2000
+            Temperature: 4000
             LocalLight {
               AttenuationRadius: 1000
               PointLight {

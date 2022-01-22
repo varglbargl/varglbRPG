@@ -24,7 +24,7 @@ Utils.color = {
 
 -- GAME INFO
 
-local powerDoublingRate = 10
+local powerDoublingRate = 7.5
 
 local classes = {
   {
@@ -48,11 +48,11 @@ local classes = {
     }
   },
   {
-    name = "???",
+    name = "Harmonaut",
     grit = 5,
     wit  = 15,
     spit = 10,
-    special = "???",
+    special = "Your spells become dances that grow in power at the cost of stamina as long as you don't move.",
     starterGear = {
       secondary = "Focussing Iris"
     }
@@ -72,7 +72,7 @@ local classes = {
     grit = 5,
     wit  = 10,
     spit = 15,
-    special = "Your melee attacks knock enemies away, ranged attacks slow enemies.",
+    special = "Your melee attacks sometimes knock enemies away, and ranged attacks sometimes slow enemies.",
     starterGear = {
       secondary = "Ranger Crossbow"
     }
@@ -141,6 +141,25 @@ function Utils.rollDamage(min, max)
   end
 
   return Damage.New(math.random(math.ceil(min), math.ceil(max)))
+end
+
+function Utils.getWeaponSpeed(weapon)
+  local abilities = weapon:GetAbilities()
+
+  if #abilities == 0 then return end
+
+  local totalCooldown = 0
+
+  for _, ability in ipairs(abilities) do
+    totalCooldown = totalCooldown + (
+      ability.castPhaseSettings.duration +
+      ability.executePhaseSettings.duration +
+      ability.recoveryPhaseSettings.duration +
+      ability.cooldownPhaseSettings.duration
+    )
+  end
+
+  return totalCooldown / (#abilities) ^ 2
 end
 
 -- NETWORKED DATA

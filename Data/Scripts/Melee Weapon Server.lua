@@ -39,7 +39,7 @@ function onAbilityCast(thisAbility)
 end
 
 function onAbilityEnd(thisAbility)
-  for i, enemy in pairs(hitEnemies) do
+  for enemy in pairs(hitEnemies) do
     if thisAbility.owner:GetResource("Class") == 4 then
       if Wildermagic.roll(thisAbility.owner) then
         break
