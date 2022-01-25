@@ -21,11 +21,12 @@ function dealDamage(player, stats)
   local damage = Utils.rollDamage(stats)
 
   if damage.amount > 0 then
-    player:ApplyDamage(damage)
-  elseif damage.amount < 0 and player.hitPoints ~= player.maxHitPoints then
-    player.hitPoints = math.min(player.hitPoints - damage.amount, player.maxHitPoints)
-    Events.Broadcast("PlayerHealed", player, -damage.amount)
+    damage.reason = DamageReason.COMBAT
+  elseif damage.amount < 0 then
+    damage.reason = DamageReason.FRIENDLY_FIRE
   end
+
+  player:ApplyDamage(damage)
 end
 
 function onEnemyAttacks(attackingEnemy, stats)

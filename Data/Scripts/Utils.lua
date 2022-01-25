@@ -34,7 +34,8 @@ local classes = {
     spit = 10,
     special = "Part of any damage you would take is reflected back to the attacker instead.",
     starterGear = {
-      primary = "Double-Edged Sword"
+      "Starter Axe",
+      "Starter Shield"
     }
   },
   {
@@ -42,19 +43,21 @@ local classes = {
     grit = 15,
     wit  = 10,
     spit = 5,
-    special = "Your melee attacks also heal you and a nearby ally in need.",
+    special = "Your melee attacks also heal you AND a nearby ally in need.",
     starterGear = {
-      primary = "Heavy Gavel"
+      "Starter Mace",
+      "Restoration Scroll"
     }
   },
   {
-    name = "Harmonaut",
+    name = "Orbliterator",
     grit = 5,
     wit  = 15,
     spit = 10,
-    special = "Your spells become dances that grow in power at the cost of stamina as long as you don't move.",
+    special = "Your spells generate shield orbs that are consumed to block damage or empower melee attacks.",
     starterGear = {
-      secondary = "Focussing Iris"
+      "Starter Mace",
+      "Witchbolt Tome"
     }
   },
   {
@@ -64,7 +67,8 @@ local classes = {
     spit = 5,
     special = "Your attacks, spells, and potions can trigger random extra effects. Who knows what could happen??",
     starterGear = {
-      primary = "Gnarled Branch"
+      "Starter Axe",
+      "Witchbolt Tome"
     }
   },
   {
@@ -72,9 +76,10 @@ local classes = {
     grit = 5,
     wit  = 10,
     spit = 15,
-    special = "Your melee attacks sometimes knock enemies away, and ranged attacks sometimes slow enemies.",
+    special = "Your first ranged attack against an enemy slows them and your first melee attack knocks them away.",
     starterGear = {
-      secondary = "Ranger Crossbow"
+      "Starter Axe",
+      "Starter Crossbow"
     }
   },
   {
@@ -84,7 +89,8 @@ local classes = {
     spit = 15,
     special = "Sprinting or gliding into a fight makes your first melee attack deal tripple.",
     starterGear = {
-      primary = "Concealed Blade"
+      "Starter Axe",
+      "Starter Crossbow"
     }
   },
   -- {
@@ -94,7 +100,8 @@ local classes = {
   --   spit = 10,
   --   special = "",
   --   starterGear = {
-  --     primary = "Trusty Machete"
+  --     "Starter Axe",
+  --     "Starter Shield"
   --   }
   -- }
 }

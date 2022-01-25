@@ -2767,4 +2767,5 @@ Assets {
     }
   }
   SerializationVersion: 104
+  VirtualFolderPath: "Props"
 }

@@ -16,12 +16,11 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 15486721426312444021
         ChildIds: 3124648700365726698
         ChildIds: 3425813571799517545
         ChildIds: 3493695725980245451
         ChildIds: 16605522840895931509
-        Lifespan: 3
+        Lifespan: 2
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -36,49 +35,6 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 15486721426312444021
-        Name: "Sharp Rezzer Impact Hit 01 SFX"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1583431223593527698
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 14136110618949902259
-          }
-          AutoPlay: true
-          Pitch: 1200
-          Volume: 0.8
-          Falloff: -1
-          Radius: -1
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -159,13 +115,13 @@ Assets {
           }
           AutoPlay: true
           Pitch: 300
-          Volume: 1
+          Volume: 0.8
           Falloff: -1
           Radius: -1
-          FadeOutTime: 2
+          FadeOutTime: 1.25
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
-          StopTime: 1
+          StopTime: 0.75
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -366,15 +322,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-      }
-    }
-    Assets {
-      Id: 14136110618949902259
-      Name: "Sharp Rezzer Impact Hit 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_designer_sharp_rezzer_impact_01_Cue_ref"
       }
     }
     Assets {

@@ -15,6 +15,7 @@ HITBOX.isEnemyCollisionEnabled = false
 
 local hitEnemies = {}
 local lastUsedAbility = nil
+local magicNumber = Utils.magicNumber(ITEM_LEVEL)
 
 local equipEvent = nil
 local unequipEvent = nil
@@ -24,7 +25,7 @@ local executeEvent = nil
 local interruptedEvent = nil
 
 function rollDamage()
-  local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) + weapon.owner:GetResource("Grit") / 5 + math.random()))
+  local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * magicNumber + weapon.owner:GetResource("Grit") / 5 + math.random()))
   damage.sourcePlayer = weapon.owner
   damage.sourceAbility = lastUsedAbility
   damage.reason = DamageReason.COMBAT
@@ -41,9 +42,12 @@ end
 function onAbilityEnd(thisAbility)
   for enemy in pairs(hitEnemies) do
     if thisAbility.owner:GetResource("Class") == 4 then
+
       if Wildermagic.roll(thisAbility.owner) then
         break
       end
+    elseif thisAbility.owner:GetResource("Class") == 3 then
+      thisAbility.owner:SetResource("Orbs", 0)
     end
   end
 
@@ -59,7 +63,16 @@ function onHitboxOverlap(thisTrigger, other)
     hitEnemies[enemy] = true
 
     enemy:ApplyDamage(rollDamage())
+
+    if weapon.owner:GetResource("Class") == 3 and weapon.owner:GetResource("Orbs") > 0 then
+      local orbDamage = Damage.New(math.floor(weapon.owner:GetResource("Orbs") * magicNumber + weapon.owner:GetResource("Wit") / 10 + math.random()))
+      orbDamage.sourcePlayer = weapon.owner
+      orbDamage.reason = DamageReason.COMBAT
+
+      enemy:ApplyDamage(orbDamage)
+    end
   end
+
 end
 
 function onEquipped(thisEquipment, player)

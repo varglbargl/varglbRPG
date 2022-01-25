@@ -156,9 +156,7 @@ Assets {
         Name: "Hitbox"
         Transform {
           Location {
-            X: -2.19433594
-            Y: 1.75976562
-            Z: 85.1015625
+            Z: 85
           }
           Rotation {
           }

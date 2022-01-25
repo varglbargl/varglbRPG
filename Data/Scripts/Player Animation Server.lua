@@ -4,6 +4,7 @@ end
 
 function hurtAnimation(player, damage)
   if not Object.IsValid(player) then return end
+  if damage.amount <= 0 then return end
 
   if player.hitPoints > 0 then
     if math.random(1, 2) == 1 then

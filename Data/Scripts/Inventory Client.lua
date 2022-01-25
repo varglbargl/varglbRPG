@@ -56,6 +56,7 @@ local gear = {
 }
 
 local isOpen = false
+local lastClicked = 0
 
 local myLevel = nil
 local myClass = nil
@@ -82,9 +83,6 @@ function initCharacterScreen()
     end)
 
     button.unhoveredEvent:Connect(function()
-      Task.Wait()
-      if clientPlayer:IsBindingPressed("ability_secondary") then return end
-
       if hoveredTable == inventory and hoveredSlot == i then
         hoveredTable = nil
         hoveredSlot = nil
@@ -94,9 +92,23 @@ function initCharacterScreen()
     end)
 
     button.clickedEvent:Connect(function()
-      Events.Broadcast("HideTooltip")
+      -- double-click
+      if moveFromSlot and moveFromSlot == hoveredSlot and moveFromTable == hoveredTable and inventory[hoveredSlot] and time() - lastClicked < 0.3 then
 
-      pickUpItem()
+        -- equip or use item
+        equipItem(hoveredSlot)
+
+        moveFromTable = nil
+        moveFromSlot = nil
+
+        PICKUP_SLOT.visibility = Visibility.FORCE_OFF
+      else
+        Events.Broadcast("HideTooltip")
+
+        pickUpItem()
+      end
+
+      lastClicked = time()
     end)
   end
 
@@ -115,18 +127,27 @@ function initCharacterScreen()
 
     button.unhoveredEvent:Connect(function()
       Events.Broadcast("HideTooltip")
-
-      Task.Wait()
-
-      if clientPlayer:IsBindingPressed("ability_secondary") then return end
-
       hoveredTable = nil
     end)
 
     button.clickedEvent:Connect(function()
-      Events.Broadcast("HideTooltip")
+      -- double-click
+      if moveFromSlot and moveFromSlot == hoveredSlot and moveFromTable == hoveredTable and gear[hoveredSlot] and time() - lastClicked < 0.3 then
 
-      pickUpItem()
+        -- equip or use item
+        unequipItem(hoveredSlot)
+
+        moveFromTable = nil
+        moveFromSlot = nil
+
+        PICKUP_SLOT.visibility = Visibility.FORCE_OFF
+      else
+        Events.Broadcast("HideTooltip")
+
+        pickUpItem()
+      end
+
+      lastClicked = time()
     end)
   end
 
@@ -161,11 +182,7 @@ end
 function onResourceChanged(player, resourceName, newTotal)
   if player ~= clientPlayer then return end
 
-	if resourceName == "MaxHitPoints" then
-    myMaxHealth = newTotal
-  elseif resourceName == "MaxStamina" then
-    myMaxStamina = newTotal
-  elseif resourceName == "Grit" then
+	if resourceName == "Grit" then
     GRIT.text = Utils.formatInt(newTotal)
   elseif resourceName == "Wit" then
     WIT.text = Utils.formatInt(newTotal)
@@ -258,7 +275,7 @@ function openCharacterScreen()
 end
 
 function pickUpItem()
-  if not hoveredTable or not hoveredSlot then return end
+  if not hoveredTable or not hoveredSlot or not hoveredTable[hoveredSlot] then return end
 
   if moveFromTable and moveFromSlot then
 
@@ -327,7 +344,7 @@ function equipItem(inventorySlot, gearSlot)
   end
 
   if equippedSlot then
-    Utils.throttleToServer("EquipToPlayer", clientPlayer, equippedSlot, inventorySlot)
+    Utils.throttleToServer("EquipToPlayer", equippedSlot, inventorySlot)
 
     hoveredSlot = nil
 
@@ -336,17 +353,17 @@ function equipItem(inventorySlot, gearSlot)
 end
 
 function unequipItem(gearSlot, inventorySlot)
-  Utils.throttleToServer("UnequipFromPlayer", clientPlayer, gearSlot, inventorySlot)
+  Utils.throttleToServer("UnequipFromPlayer", gearSlot, inventorySlot)
   redrawInventory()
   throttleInventory()
 end
 
 function swapInventorySlots(slotA, slotB)
-  Utils.throttleToServer("SwapInventorySlots", clientPlayer, slotA, slotB)
+  Utils.throttleToServer("SwapInventorySlots", slotA, slotB)
 end
 
 function swapGearSlots(slotA, slotB)
-  Utils.throttleToServer("SwapGearSlots", clientPlayer, slotA, slotB)
+  Utils.throttleToServer("SwapGearSlots", slotA, slotB)
 end
 
 function onBindingPressed(thisPlayer, keyCode)
@@ -360,14 +377,11 @@ function onBindingPressed(thisPlayer, keyCode)
     end
   end
 
-  if isOpen and keyCode == "ability_secondary" then
-    if not hoveredTable or not hoveredSlot or not hoveredTable[hoveredSlot] then return end
-
-    -- equip or use item
-    if hoveredTable == inventory then
-      equipItem(hoveredSlot)
-    elseif hoveredTable == gear then
-      unequipItem(hoveredSlot)
+  if keyCode == "ability_primary" then
+    -- drop item on the ground
+    if moveFromTable and moveFromSlot then
+      Utils.throttleToServer("DropItem", moveFromSlot, moveFromTable == inventory)
+      throttleInventory()
     end
   end
 end
@@ -406,7 +420,7 @@ function onPrivateNetworkedDataChanged(player, key)
       end
     end
 
-    Events.Broadcast("RedrawAbilities", gear)
+    Events.Broadcast("RedrawHUD", gear)
   end
 
   redrawInventory()

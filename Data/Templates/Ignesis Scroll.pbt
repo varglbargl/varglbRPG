@@ -28,7 +28,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ItemLevel"
-            Int: 1
+            Int: 8
           }
           Overrides {
             Name: "cs:Description"

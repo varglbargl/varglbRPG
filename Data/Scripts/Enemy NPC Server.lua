@@ -179,14 +179,23 @@ function attack(target)
 
   local damage = Utils.rollDamage(stats)
   local reflectedDamage = 0
+  local targetClass = target:GetResource("Class")
 
-  if target:GetResource("Class") == 1 then
+  damage.reason = DamageReason.COMBAT
+
+  if targetClass == 1 then
     reflectedDamage = Damage.New(math.min(target.hitPoints, math.max(1, math.floor(damage.amount/10 + math.random()))))
     reflectedDamage.sourcePlayer = target
+    reflectedDamage.reason = DamageReason.COMBAT
 
     damage.amount = damage.amount - reflectedDamage.amount
 
     enemy:ApplyDamage(reflectedDamage)
+  elseif targetClass == 3 then
+    if target:GetResource("Orbs") > 0 then
+      target:RemoveResource("Orbs", 1)
+      damage.amount = math.ceil(damage.amount * 0.75)
+    end
   end
 
   Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamage, not enemy.isDead)
@@ -287,7 +296,7 @@ function attemptRespawn()
   end
 end
 
-function onPlayerHealed(player, newTotal, healer)
+function onPlayerHealed(player, amount, healer)
   if not Object.IsValid(healer) then return end
 
   for otherPlayer in pairs(attackers) do
@@ -315,7 +324,7 @@ function onStunned(player)
   stunTask = Task.Spawn(function()
     Task.Wait(2)
 
-    moveSpeed = 1
+    stunned = false
   end)
 end
 
@@ -429,5 +438,5 @@ damagedEvent = enemy.damagedEvent:Connect(onDamaged)
 -- handler params: DamageableObject_object, Damage_damage
 diedEvent = enemy.diedEvent:Connect(die)
 
--- handler params: Player_player, integer_newTotal, Player_healer
+-- handler params: Player_player, integer_amount, Player_healer
 playerHealedEvent = Events.Connect("PlayerHealed", onPlayerHealed)

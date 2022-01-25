@@ -49,7 +49,7 @@ function updateNameplates()
       return
     end
 
-    local targetScreenPos = UI.GetScreenPosition(data.hitbox:GetWorldPosition() + Vector3.UP * 50 * data.hitbox:GetWorldScale().size)
+    local targetScreenPos = UI.GetScreenPosition(data.hitbox:GetWorldPosition() + Vector3.UP * 75 * data.hitbox:GetWorldScale().size)
 
     if targetScreenPos then
       data.nameplate.x = targetScreenPos.x
@@ -72,9 +72,10 @@ function Tick()
   local lookForward = lookRotation * Vector3.FORWARD
   local cameraPivotPosition = clientPlayer:GetWorldPosition() - lookForward + lookRotation * cameraOffset + Vector3.UP * 74
   local targetPosition = cameraPivotPosition + lookForward * 5000
-  local hitResults = World.SpherecastAll(cameraPivotPosition, targetPosition, 100, {ignorePlayers = true})
+  -- local hitResults = World.SpherecastAll(cameraPivotPosition, targetPosition, 100, {ignorePlayers = true})
+  local hitResult = World.Spherecast(cameraPivotPosition, targetPosition, 100, {ignorePlayers = true})
 
-  for _, hitResult in ipairs(hitResults) do
+  -- for _, hitResult in ipairs(hitResults) do
     if hitResult and hitResult.other and hitResult.other.clientUserData["Enemy"] then
       local target = hitResult.other.clientUserData["Enemy"]
 
@@ -84,7 +85,7 @@ function Tick()
         initNameplate(target, hitResult.other)
       end
     end
-  end
+  -- end
 
   updateNameplates()
 end

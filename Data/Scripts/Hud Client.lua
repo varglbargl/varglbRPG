@@ -24,22 +24,7 @@ CURSOR.visibility = Visibility.FORCE_OFF
 local cursorTask = nil
 
 function onResourceChanged(player, resourceName, newTotal)
-  if resourceName == "MaxHitPoints" and newTotal > 0 then
-    local hp = player.hitPoints
-
-		HEALTH_BAR.width = math.floor(hp / newTotal * barWidth + 0.5)
-    HEALTH_NUMBERS.text = Utils.formatInt(hp).." / "..Utils.formatInt(newTotal)
-
-	elseif resourceName == "HitPoints" then
-		local maxHP = player.maxHitPoints
-		if maxHP == 0 then return end
-
-    local hitPoints = math.max(0, player.hitPoints)
-
-		HEALTH_BAR.width = math.floor(hitPoints / maxHP * barWidth + 0.5)
-    HEALTH_NUMBERS.text = Utils.formatInt(hitPoints).." / "..Utils.formatInt(maxHP)
-
-  elseif resourceName == "Stamina" then
+  if resourceName == "Stamina" then
     local maxStam = player:GetResource("MaxStamina")
     if maxStam == 0 then return end
 
@@ -55,6 +40,7 @@ function onResourceChanged(player, resourceName, newTotal)
     XP_NUMBERS.text = Utils.formatInt(newTotal).." / "..Utils.formatInt(nextLevel)
 	elseif resourceName == "Level" then
     LEVEL_NUMBER.text = Utils.formatInt(newTotal)
+    updateHitPoints()
 	end
 end
 
@@ -213,7 +199,7 @@ function tickCooldownOverlay(thisOverlay, duration)
   thisOverlay.visibility = Visibility.FORCE_OFF
 end
 
-function redrawAbilities(gear)
+function redrawHUD(gear)
   if gear and gear.primary then
     PRIMARY_ICON:SetImage(gear.primary.icon)
     PRIMARY_ICON.parent.visibility = Visibility.INHERIT
@@ -231,9 +217,9 @@ function redrawAbilities(gear)
   else
     SECONDARY_ICON.parent.visibility = Visibility.FORCE_OFF
   end
-end
 
-redrawAbilities()
+  updateHitPoints()
+end
 
 function onBindingPressed(thisPlayer, keyCode)
 	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
@@ -257,6 +243,11 @@ function onBindingReleased(thisPlayer, keyCode)
   end
 end
 
+function updateHitPoints()
+  HEALTH_BAR.width = math.floor(clientPlayer.hitPoints / clientPlayer.maxHitPoints * barWidth + 0.5)
+  HEALTH_NUMBERS.text = Utils.formatInt(clientPlayer.hitPoints).." / "..Utils.formatInt(clientPlayer.maxHitPoints)
+end
+
 -- handler params: Player_player, string_keyCode
 clientPlayer.bindingPressedEvent:Connect(onBindingPressed)
 
@@ -266,7 +257,12 @@ clientPlayer.bindingReleasedEvent:Connect(onBindingReleased)
 -- handler params: Player_player, string_resourceName, integer_newTotal
 clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
 
+-- handler params: Player_player, Damage_damage
+clientPlayer.damagedEvent:Connect(updateHitPoints)
+
 Events.Connect("ShowCursor", showCursor)
 Events.Connect("HideCursor", hideCursor)
 Events.Connect("FlyupText", Utils.showFlyupText)
-Events.Connect("RedrawAbilities", redrawAbilities)
+Events.Connect("RedrawHUD", redrawHUD)
+
+redrawHUD()

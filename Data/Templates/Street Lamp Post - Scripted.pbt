@@ -4,10 +4,10 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 7437967575158509858
+      RootId: 11749674218327366263
       Objects {
-        Id: 7437967575158509858
-        Name: "Street Lamp 01"
+        Id: 11749674218327366263
+        Name: "Street Lamp Post - Scripted"
         Transform {
           Scale {
             X: 1
@@ -15,19 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4959840978651587588
+        ParentId: 12036997866928007900
         ChildIds: 12741214863337693170
-        ChildIds: 413281231739137541
-        ChildIds: 17698640223822448264
-        ChildIds: 15652700942441430363
-        ChildIds: 11380341874497241965
-        ChildIds: 17654822584904205282
-        ChildIds: 18411701132746629857
-        ChildIds: 1273172125235372785
-        ChildIds: 7838812939558218341
-        ChildIds: 7018894791981016169
-        ChildIds: 3382970342185531740
-        ChildIds: 1821208388292208601
+        ChildIds: 2173295228455866368
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -41,8 +31,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          Model {
-          }
+          IsGroup: true
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -56,6 +45,7 @@ Assets {
             Z: 515
           }
           Rotation {
+            Yaw: 2.5613208e-05
           }
           Scale {
             X: 1
@@ -63,7 +53,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 11749674218327366263
         ChildIds: 3296096908759380484
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -200,7 +190,6 @@ Assets {
             B: 0.477918148
             A: 1
           }
-          CastShadows: true
           VolumetricIntensity: 5
           TeamSettings {
           }
@@ -260,6 +249,53 @@ Assets {
         }
       }
       Objects {
+        Id: 2173295228455866368
+        Name: "MergedModel"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: 2.5613208e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11749674218327366263
+        ChildIds: 413281231739137541
+        ChildIds: 17698640223822448264
+        ChildIds: 15652700942441430363
+        ChildIds: 11380341874497241965
+        ChildIds: 17654822584904205282
+        ChildIds: 18411701132746629857
+        ChildIds: 1273172125235372785
+        ChildIds: 7838812939558218341
+        ChildIds: 7018894791981016169
+        ChildIds: 3382970342185531740
+        ChildIds: 1821208388292208601
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          Model {
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 413281231739137541
         Name: "Street Light Pole Base 01"
         Transform {
@@ -273,7 +309,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -342,7 +378,7 @@ Assets {
             Z: 0.6
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -401,7 +437,7 @@ Assets {
         Name: "Bottle 05"
         Transform {
           Location {
-            Z: 455.001
+            Z: 455.000977
           }
           Rotation {
             Yaw: -89.9999924
@@ -412,7 +448,7 @@ Assets {
             Z: 1.9
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -459,7 +495,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -487,7 +522,7 @@ Assets {
             Z: 1.9
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -531,7 +566,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -559,7 +593,7 @@ Assets {
             Z: 0.950989842
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -591,7 +625,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -619,7 +652,7 @@ Assets {
             Z: 1.98125958
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -640,7 +673,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -668,7 +700,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -710,7 +742,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -738,7 +769,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -780,7 +811,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -801,7 +831,7 @@ Assets {
             Z: 540
           }
           Rotation {
-            Yaw: -112.499916
+            Yaw: -112.499901
           }
           Scale {
             X: 1
@@ -809,7 +839,7 @@ Assets {
             Z: 0.4
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:id"
@@ -862,7 +892,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -890,7 +919,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -932,7 +961,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -960,7 +988,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 7437967575158509858
+        ParentId: 2173295228455866368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1002,7 +1030,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100

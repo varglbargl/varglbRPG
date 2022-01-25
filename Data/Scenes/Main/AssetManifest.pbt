@@ -494,6 +494,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17649686668852304217
+  Name: "Torch Fire VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_torch_fire"
+  }
+}
+Assets {
   Id: 17639121280094987147
   Name: "Humanoid 1 Aparna"
   PlatformAssetType: 26
@@ -563,6 +572,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_coral_spike_small_01"
+  }
+}
+Assets {
+  Id: 17502512456991497692
+  Name: "Teko Bold"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoBold_ref"
   }
 }
 Assets {
@@ -698,6 +716,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_toilet_flush_03_Cue_ref"
+  }
+}
+Assets {
+  Id: 17046685336850726887
+  Name: "Porcelain Vase 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_vase_porcelain_002"
   }
 }
 Assets {
@@ -1619,6 +1646,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15093667905941985129
+  Name: "Japanese Tea Set - Kettle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_tea_set_kettle_001_ref"
+  }
+}
+Assets {
   Id: 15069529459658919937
   Name: "Wispy Fog Volume VFX"
   PlatformAssetType: 8
@@ -2456,6 +2492,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13474504114409813977
+  Name: "Japanese Temple Roof Peak 03 - End 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_peak_003_end_01_ref"
+  }
+}
+Assets {
   Id: 13467939812857306969
   Name: "Urban Pipe Coupling 04"
   PlatformAssetType: 1
@@ -2615,6 +2660,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_off_desktop_pen_01_ref"
+  }
+}
+Assets {
+  Id: 13154620830654852554
+  Name: "Road Lines (1:10)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_road_lines_003_ref"
   }
 }
 Assets {
@@ -3293,6 +3347,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11956623862735147535
+  Name: "Japanese Temple Roof 03 - Cap 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_003_cap_01_ref"
+  }
+}
+Assets {
   Id: 11940814192530419230
   Name: "Cone"
   PlatformAssetType: 1
@@ -3443,6 +3506,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_jpn_chest_small_lid_001_ref"
+  }
+}
+Assets {
+  Id: 11655989834364123078
+  Name: "Japanese Futon - Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_futon_base_001_ref"
   }
 }
 Assets {
@@ -3650,6 +3722,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_03"
+  }
+}
+Assets {
+  Id: 11292394934840136893
+  Name: "Castle Part - Grate 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_part_grate_001_ref"
   }
 }
 Assets {
@@ -4697,6 +4778,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9138368865645767840
+  Name: "Japanese Temple Railing 01 - Turn 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_railing_turn_001_ref"
+  }
+}
+Assets {
   Id: 9132707260073730027
   Name: "Rock Block 02"
   PlatformAssetType: 1
@@ -4931,21 +5021,21 @@ Assets {
   }
 }
 Assets {
-  Id: 8665828182607499305
-  Name: "Humanoid 2 Wukong Hair"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_hair_fantasy_008_ref"
-  }
-}
-Assets {
   Id: 8658515238740057795
   Name: "Branches Cluster Small"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_branches_small_001"
+  }
+}
+Assets {
+  Id: 8641324590493905538
+  Name: "Japanese Temple Roof 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_003_ref"
   }
 }
 Assets {
@@ -5036,6 +5126,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "waterfall_90oc"
+  }
+}
+Assets {
+  Id: 8467555139572119311
+  Name: "Japanese Temple Railing Stringer 01 - Angled 2m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_railing_stringer_angled_002_ref"
   }
 }
 Assets {
@@ -5183,15 +5282,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8289361674337120823
-  Name: "Rocks River Bed 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "puddle_river_bed_001"
-  }
-}
-Assets {
   Id: 8267709521698496689
   Name: "Pipe Thin 01 - Large"
   PlatformAssetType: 1
@@ -5216,15 +5306,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_jpn_mecha_frame_hinge_knee_001_ref"
-  }
-}
-Assets {
-  Id: 8207743229108716856
-  Name: "Fishing Net 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_net_001_uv_ref"
   }
 }
 Assets {
@@ -5777,6 +5858,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7100154911750546343
+  Name: "Humanoid 1 Cassidy Hair"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_hair_basic_001_ref"
+  }
+}
+Assets {
   Id: 7084994494702499048
   Name: "Mecha - Frame - Shoulder Joint 01"
   PlatformAssetType: 1
@@ -6101,6 +6191,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6358471158957620124
+  Name: "Craftsman Stairs 01 Railing Post"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001_post"
+  }
+}
+Assets {
   Id: 6358034599651012933
   Name: "Fantasy Book Collection 03"
   PlatformAssetType: 1
@@ -6422,15 +6521,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Icon_Chest"
-  }
-}
-Assets {
-  Id: 5742380196808337687
-  Name: "Office Carpet Geometric 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_office_carpet_002_uv_ref"
   }
 }
 Assets {
@@ -7424,6 +7514,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3955798069459774791
+  Name: "Modern Stairs Steps 01 - 2m 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_mod_stairs_steps_003_ref"
+  }
+}
+Assets {
   Id: 3951634741642929759
   Name: "Decal Bullet Damage Wood"
   PlatformAssetType: 14
@@ -7703,6 +7802,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3519623667432416876
+  Name: "Humanoid 2 Wukong Hair"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_hair_fantasy_008_ref"
+  }
+}
+Assets {
   Id: 3512104159021442092
   Name: "Cauldron"
   PlatformAssetType: 1
@@ -7745,6 +7853,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "Text_017"
+  }
+}
+Assets {
+  Id: 3433416882178080463
+  Name: "Street Sign - Rectangle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_street-sign_rectangle_001"
   }
 }
 Assets {
@@ -8342,12 +8459,30 @@ Assets {
   }
 }
 Assets {
+  Id: 2129791138812581255
+  Name: "Japanese Temple Railing 01 - Angled 2m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_railing_angled_002_ref"
+  }
+}
+Assets {
   Id: 2121245170663321426
   Name: "Candle Flame VFX"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_candleflame"
+  }
+}
+Assets {
+  Id: 2118535459691263680
+  Name: "Japanese Temple Roof 03 - Wall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_003_wall_01_ref"
   }
 }
 Assets {
@@ -8375,6 +8510,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_frosted_glass_nodistortion"
+  }
+}
+Assets {
+  Id: 2027335757333287114
+  Name: "Gravel Raked 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gravel_001_uv"
   }
 }
 Assets {
@@ -8411,15 +8555,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_007"
-  }
-}
-Assets {
-  Id: 1956918330844944007
-  Name: "Humanoid 1 Sonia Hair"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_gal_hair_sport_001_ref"
   }
 }
 Assets {

@@ -28,8 +28,6 @@ local unequipEvent = nil
 local executeEvent = nil
 local interruptedEvent = nil
 
-local weaponSpeed = Utils.getWeaponSpeed(weapon)
-
 function rollDamage()
   local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) / (0.75 + SPLASH_RADIUS / 4) + weapon.owner:GetResource(damageStat) / 5 + math.random()))
   damage.sourcePlayer = weapon.owner
@@ -73,6 +71,7 @@ function fireProjectile(target, directHit)
   end
 
   local wild = weapon.owner:GetResource("Class") == 4
+  local orbliterate = IS_SPELL and weapon.owner:GetResource("Class") == 3
   local hitObjects = World.FindObjectsOverlappingSphere(target, 100 * SPLASH_RADIUS, {ignorePlayers = true})
   local hitEnemies = {}
 
@@ -89,8 +88,15 @@ function fireProjectile(target, directHit)
   end
 
   for enemy in pairs(hitEnemies) do
+    if not Object.IsValid(weapon) or not Object.IsValid(weapon.owner) or weapon.owner.isDead then return end
+
     if wild and Wildermagic.roll(weapon.owner) then
       wild = false
+    end
+
+    if orbliterate and weapon.owner:GetResource("Orbs") < 5 then
+      weapon.owner:AddResource("Orbs", 1)
+      orbliterate = false
     end
 
     enemy:ApplyDamage(rollDamage())
@@ -99,38 +105,10 @@ function fireProjectile(target, directHit)
   end
 end
 
-function channel(target, directHit)
-  local player = weapon.owner
-  local directHitbox = nil
-
-  if directHit then
-    directHitbox = directHit:FindChildByType("CoreMesh")
-  end
-
-  local bonusSpeed = 1.1
-  local startingPoint = player:GetWorldPosition()
-
-  Task.Wait(weaponSpeed * bonusSpeed)
-
-  while Object.IsValid(weapon) and Object.IsValid(player) do
-    if player.isDead or (player:GetWorldPosition() - startingPoint).size > 5 then break end
-
-    bonusSpeed = math.max(bonusSpeed * 0.95, 0.75)
-
-    if directHit then
-      if not Object.IsValid(directHit) or directHit.isDead then break end
-
-      Task.Spawn(function() fireProjectile(directHitbox:GetWorldPosition(), directHit) end)
-    else
-      Task.Spawn(function() fireProjectile(target) end)
-    end
-  end
-end
-
 function onAbilityExecute(thisAbility)
   local attackRotation = weapon.owner:GetLookWorldRotation()
   local attackDirection = script:GetWorldPosition() + attackRotation * Vector3.FORWARD * 2500
-  local possibleTarget = World.Spherecast(weapon.owner:GetViewWorldPosition(), attackDirection, 50, {ignorePlayers = true})
+  local possibleTarget = World.Spherecast(weapon.owner:GetViewWorldPosition(), attackDirection, 25, {ignorePlayers = true})
   local target = nil
   local directHit = nil
 
@@ -146,11 +124,6 @@ function onAbilityExecute(thisAbility)
   else
     target = attackDirection
   end
-
-  -- nevermind this kinda sucks...
-  -- if IS_SPELL and weapon.owner:GetResource("Class") == 3 and not weapon.owner.isAccelerating then
-  --   Task.Spawn(function() channel(target, directHit) end)
-  -- end
 
   fireProjectile(target, directHit)
 end

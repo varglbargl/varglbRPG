@@ -35,6 +35,7 @@ Wildermagic.spells = {
   -- Pain
   function(player)
     local damage = Utils.rollDamage(1, player.maxHitPoints / 10)
+    damage.reason = DamageReason.COMBAT
 
     player:ApplyDamage(damage)
 
@@ -51,16 +52,16 @@ Wildermagic.spells = {
   -- Travels
   function(player)
 
-    player:AddImpulse(Vector3.UP * 150000)
+    player:AddImpulse(Vector3.UP * 120000)
     return "Travels"
   end,
 
   -- Revival
   function(player)
-    local howMuch = math.random(1, math.ceil(player.maxHitPoints / 5))
+    local healing = Damage.New(math.random(1, math.ceil(player.maxHitPoints / 5)))
+    healing.reason = DamageReason.FRIENDLY_FIRE
 
-    player.hitPoints = math.min(player.hitPoints + howMuch, player.maxHitPoints)
-    Events.Broadcast("PlayerHealed", player)
+    player:ApplyDamage(healing)
 
     return "Revival"
   end,

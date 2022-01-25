@@ -7,7 +7,7 @@ local previousStance = nil
 
 function standUp()
 	while Object.IsValid(sittingPlayer) and not sittingPlayer.isAccelerating and not sittingPlayer.isJumping do
-    Task.Wait(0.25)
+    Task.Wait(0.2)
 	end
 
   TRIGGER.collision = Collision.INHERIT
@@ -20,7 +20,7 @@ end
 
 function sitDown(thisTrigger, other)
 	if other:IsA("Player") and not Object.IsValid(sittingPlayer) and not other.serverUserData["Gliding"] then
-    previousStance = other.animationStance
+    previousStance = other.serverUserData["IdleAnimation"] or other.animationStance
 
     if previousStance == "" then
       previousStance = "unarmed_idle_relaxed_look_around"

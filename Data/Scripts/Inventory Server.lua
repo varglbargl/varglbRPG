@@ -28,6 +28,7 @@ function onPlayerJoined(player)
   if Environment.IsPreview() then
     -- handler params: Player_player, string_keyCode
     player.bindingPressedEvent:Connect(function(thisPlayer, keyCode)
+      -- P
       if keyCode == "ability_extra_29" then
         if player:IsBindingPressed("ability_feet") then
           Loot.giveRandomToPlayer(thisPlayer, 69, 3)
@@ -151,10 +152,26 @@ function swapGearSlots(player, slotA, slotB)
   Utils.updatePrivateNetworkedData(player, "Gear")
 end
 
+function dropItem(player, slot, fromInventory)
+  local item = nil
+
+  if fromInventory then
+    item = player.serverUserData["Inventory"][slot]
+    player.serverUserData["Inventory"][slot] = nil
+  else
+    item = player.serverUserData["Gear"][slot]
+    player.serverUserData["Gear"][slot] = nil
+  end
+
+  Loot.dropItem(player:GetWorldPosition(), item)
+end
+
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 
-Events.Connect("EquipToPlayer", equipToPlayer)
 Events.Connect("AddToInventory", addToInventory)
-Events.Connect("UnequipFromPlayer", unequipFromPlayer)
-Events.Connect("SwapInventorySlots", swapInventorySlots)
-Events.Connect("SwapGearSlots", swapGearSlots)
+
+Events.ConnectForPlayer("EquipToPlayer", equipToPlayer)
+Events.ConnectForPlayer("UnequipFromPlayer", unequipFromPlayer)
+Events.ConnectForPlayer("SwapInventorySlots", swapInventorySlots)
+Events.ConnectForPlayer("SwapGearSlots", swapGearSlots)
+Events.ConnectForPlayer("DropItem", dropItem)

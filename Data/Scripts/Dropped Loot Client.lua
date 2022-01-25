@@ -58,8 +58,6 @@ end
 function getYeLoot(thisTrigger, other)
   if not Object.IsValid(other) or not other:IsA("Player") then return end
 
-  Task.Wait()
-
   if other.clientUserData["InventoryFull"] then
     Utils.showFlyupText("Inventory Full...")
     return

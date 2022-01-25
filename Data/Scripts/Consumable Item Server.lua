@@ -11,21 +11,18 @@ function onPickup(thisLoot, owner)
   if not Object.IsValid(owner) then return end
 
   if RESOURCE == "HP" or RESOURCE == "Health" or RESOURCE == "HitPoints" then
-    owner.hitPoints = math.min(owner.hitPoints + amount, owner.maxHitPoints)
-    Events.Broadcast("PlayerHealed", owner)
-  elseif RESOURCE == "Gear" then
-    Utils.throttleToPlayer(owner, "NewGear")
-  elseif RESOURCE == "RP" or RESOURCE == "RewardPoints" then
-    amount = amount * math.ceil(owner.serverUserData["Level"] / 50)
+    local healing = Damage.New(amount)
+    damage.reason = DamageReason.FRIENDLY_FIRE
 
+    owner:ApplyDamage(healing)
+
+  elseif RESOURCE == "RP" or RESOURCE == "RewardPoints" then
     owner:GrantRewardPoints(amount, "Consumable")
     owner:AddResource("RP", amount)
-  elseif RESOURCE == "Grip" then
-    local currentGrip = owner:GetResource("Grip")
 
-    if currentGrip > 0 and currentGrip < 25 then
-      owner:SetResource("Grip", math.min(currentGrip + amount, 25))
-    end
+  elseif RESOURCE == "XP" or RESOURCE == "Experience" then
+    Events.Broadcast("PlayerGainedXP", owner, amount)
+
   else
     owner:AddResource(RESOURCE, amount)
   end

@@ -1,12 +1,15 @@
 local Utils = require(script:GetCustomProperty("Utils"))
+local Loot = require(script:GetCustomProperty("Loot"))
 local Wildermagic = require(script:GetCustomProperty("Wildermagic"))
 
 local LEVEL_UP_VFX = script:GetCustomProperty("LevelUpVFX")
 
 local maxLevel = 60
+local damagedEvents = {}
+local diedEvents = {}
 
 function onPlayerDamaged(player, damage)
-  player:SetResource("HitPoints", math.max(0, player.hitPoints))
+  if damage.amount <= 0 then return end
 
   if player.serverUserData["Gliding"] then
     player.serverUserData["Gliding"] = false
@@ -18,12 +21,14 @@ function onPlayerDamaged(player, damage)
   end)
 end
 
-function onPlayerHealed(player, newTotal)
-  player:SetResource("HitPoints", player.hitPoints)
-end
+function onPlayerDied(player)
+  Task.Wait(0.5)
 
-function playerSpawned(player)
-  player:SetResource("HitPoints", player.hitPoints)
+  if not Object.IsValid(player) then return end
+
+  if player:GetResource("Class") == 3 then
+    player:SetResource("Orbs", 0)
+  end
 end
 
 function onPlayerJoined(player)
@@ -34,6 +39,10 @@ function onPlayerJoined(player)
   local class = 3
 
   player:SetResource("Class", class)
+
+  if class == 3 then
+    player:SetResource("Orbs", 0)
+  end
 
   local classStats = Utils.classStats(class)
   player.serverUserData["ClassStats"] = classStats
@@ -54,10 +63,7 @@ function onPlayerJoined(player)
   player.maxHitPoints = math.floor(35 + yourGrit * 2)
   player.hitPoints = player.maxHitPoints
 
-  player:SetResource("MaxHitPoints", player.maxHitPoints)
-  player:SetResource("HitPoints", player.hitPoints)
-
-  local maxStam = player:SetResource("MaxStamina", math.floor(45 + yourSpit / 12 + yourLevel / 2))
+  local maxStam = player:SetResource("MaxStamina", math.floor(35 + yourSpit / 12 + yourLevel / 2))
   player:SetResource("Stamina", maxStam)
 
   player:SetResource("StoryProgress", 0)
@@ -67,10 +73,10 @@ function onPlayerJoined(player)
   end)
 
   -- handler params: Player_player, Damage_damage
-  player.damagedEvent:Connect(onPlayerDamaged)
+  damagedEvents[player] = player.damagedEvent:Connect(onPlayerDamaged)
 
-  -- handler params: Player_player
-  player.spawnedEvent:Connect(playerSpawned)
+  -- handler params: Player_player, Damage_damage
+  damagedEvents[player] = player.diedEvent:Connect(onPlayerDied)
 
   -- DEBUG!!
 
@@ -98,9 +104,20 @@ function onPlayerJoined(player)
   end
 
   Task.Spawn(function() resourceTicker(player) end)
+
+  Task.Wait()
+
+  for _, itemName in ipairs(classStats.starterGear) do
+    local item = Loot.findItemByName(itemName)
+
+    if item then
+      Events.Broadcast("AddToInventory", player, item)
+    end
+  end
 end
 
 function onPlayerLeft(player)
+  damagedEvents[player]:Disconnect()
 end
 
 function onPlayerGainedXP(player, amount)
@@ -145,9 +162,6 @@ function onPlayerGainedXP(player, amount)
     end
 
     Utils.throttleMessage("DING! "..player.name.." is now Level "..player:GetResource("Level") + levelsGained.."!")
-
-    local classStats = player.serverUserData["ClassStats"]
-    local magicNumber = Utils.magicNumber(player:GetResource("Level") + levelsGained)
 
     player:AddResource("Level", levelsGained)
 
@@ -235,8 +249,6 @@ function applyStatsWithGear(player)
   player:SetResource("Spit", baseStats.spit + bonusStats.spit)
 
   player.maxHitPoints = math.floor(35 + newGrit * 2) + bonusStats.health
-  player:SetResource("MaxHitPoints", player.maxHitPoints)
-  player:SetResource("HitPoints", math.min(player.maxHitPoints, player.hitPoints))
 
   local maxStamina = math.floor(45 + (baseStats.spit + bonusStats.spit) / 12 + player:GetResource("Level") / 2) + bonusStats.stamina
   player:SetResource("MaxStamina", maxStamina)
@@ -247,9 +259,8 @@ function resourceTicker(player)
   if not Object.IsValid(player) then return end
 
   if player.hitPoints < player.maxHitPoints and player.serverUserData["RecentlyDamaged"] and player.serverUserData["RecentlyDamaged"]:GetStatus() == TaskStatus.UNINITIALIZED then
-
-    player.hitPoints = math.min(player.maxHitPoints, player:GetResource("HitPoints") + math.floor(player:GetResource("Grit") / 5 + 1.5))
-    player:SetResource("HitPoints", player.hitPoints)
+    local regen = Damage.New(-math.floor(player:GetResource("Grit") / 5 + 1.5))
+    player:ApplyDamage(regen)
   end
 
   if player.serverUserData["Gliding"] or (player.isAccelerating and player:IsBindingPressed("ability_feet") and not player.isSwimming) then
@@ -270,9 +281,6 @@ end
 -- on player joined/left functions need to be defined before calling event:Connect()
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
-
--- handler params: Player_player, integer_newTotal, Player_healer
-Events.Connect("PlayerHealed", onPlayerHealed)
 
 -- handler params: Player_player, integer_amount
 Events.Connect("PlayerGainedXP", onPlayerGainedXP)

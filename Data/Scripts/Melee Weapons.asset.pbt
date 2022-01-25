@@ -52,6 +52,18 @@ Assets {
           Id: 9953259522512333198
         }
       }
+      Overrides {
+        Name: "cs:StarterMace"
+        AssetReference {
+          Id: 1901156453153679450
+        }
+      }
+      Overrides {
+        Name: "cs:LeyFocusCandle"
+        AssetReference {
+          Id: 15242669685724021479
+        }
+      }
     }
   }
   SerializationVersion: 104

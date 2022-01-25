@@ -10,6 +10,22 @@ Assets {
           Id: 8431391566871556229
         }
       }
+      Overrides {
+        Name: "cs:OrbliteratorOrbs"
+        AssetReference {
+          Id: 2377589143941769
+        }
+      }
+      Overrides {
+        Name: "cs:OrbliterateVFX"
+        AssetReference {
+          Id: 7995953008737648928
+        }
+      }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
+      }
     }
   }
   SerializationVersion: 104
