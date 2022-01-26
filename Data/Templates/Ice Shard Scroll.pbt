@@ -27,6 +27,12 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:IconBackground"
+            AssetReference {
+              Id: 15179006868839576007
+            }
+          }
+          Overrides {
             Name: "cs:ItemLevel"
             Int: 5
           }
@@ -41,6 +47,10 @@ Assets {
           Overrides {
             Name: "cs:MaxDamage"
             Int: 9
+          }
+          Overrides {
+            Name: "cs:StatusEffects"
+            String: "slow"
           }
         }
         WantsNetworking: true
@@ -155,10 +165,6 @@ Assets {
             Name: "cs:IsMagic"
             Bool: true
           }
-          Overrides {
-            Name: "cs:statusEffects"
-            String: "slow"
-          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -242,6 +248,7 @@ Assets {
           }
         }
         ParentId: 4787474700494429112
+        ChildIds: 14945439404394677768
         ChildIds: 13628268012088005400
         ChildIds: 6746066170671985691
         ChildIds: 6397954219469244428
@@ -271,6 +278,42 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14945439404394677768
+        Name: "Ranged Weapon Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4834817042131178623
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 363298956242194552
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1492,6 +1535,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Equip_Scroll_003"
+      }
+    }
+    Assets {
+      Id: 15179006868839576007
+      Name: "Fantasy Ability Blue 021"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Ability_Blue_021"
       }
     }
     Assets {

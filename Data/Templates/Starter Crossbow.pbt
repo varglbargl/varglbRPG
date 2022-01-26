@@ -39,6 +39,10 @@ Assets {
             Int: 12
           }
           Overrides {
+            Name: "cs:Stance"
+            String: "1hand_pistol_stance"
+          }
+          Overrides {
             Name: "cs:ItemLevel:isrep"
             Bool: false
           }
@@ -217,9 +221,6 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
-            X: 0.14
-            Y: -1.33984375
-            Z: 0.108886719
           }
           Rotation {
           }
@@ -230,6 +231,7 @@ Assets {
           }
         }
         ParentId: 8803041335972847287
+        ChildIds: 1759817999168023617
         ChildIds: 8397896403013515296
         WantsNetworking: true
         Collidable_v2 {
@@ -251,13 +253,48 @@ Assets {
         }
       }
       Objects {
+        Id: 1759817999168023617
+        Name: "Ranged Weapon Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1535635915468763124
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 363298956242194552
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 8397896403013515296
         Name: "Geo"
         Transform {
           Location {
           }
           Rotation {
-            Pitch: 14.9999962
           }
           Scale {
             X: 1
@@ -303,12 +340,13 @@ Assets {
         Name: "Sai Blade"
         Transform {
           Location {
-            X: 39.5722656
-            Z: 3.94775391
+            X: 39.4492188
+            Z: 12.9833984
           }
           Rotation {
+            Pitch: 6.83018879e-06
             Yaw: -89.9999695
-            Roll: -87.1803589
+            Roll: -97.1803589
           }
           Scale {
             X: 1.37046754
@@ -365,13 +403,13 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 14.3212891
-            Z: 9.46484375
+            X: 13.6240234
+            Z: 14.0322266
           }
           Rotation {
-            Pitch: -6.3192749
-            Yaw: -31.9036865
-            Roll: 102.37999
+            Pitch: 2.1848886
+            Yaw: -31.7129822
+            Roll: 97.1106
           }
           Scale {
             X: 0.004
@@ -442,13 +480,13 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 14.3212891
-            Z: 9.46484375
+            X: 13.6240234
+            Z: 14.0322266
           }
           Rotation {
-            Pitch: -6.3192749
-            Yaw: 31.9036179
-            Roll: -102.379974
+            Pitch: 2.18489552
+            Yaw: 31.712904
+            Roll: -97.1105957
           }
           Scale {
             X: 0.004
@@ -519,12 +557,11 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: 9.20898438
-            Z: 0.551269531
+            X: 10.1376953
+            Z: 4.36621094
           }
           Rotation {
-            Pitch: 8.87714195
-            Yaw: 8.64124502e-07
+            Pitch: 18.8771324
             Roll: -89.9999695
           }
           Scale {
@@ -588,13 +625,13 @@ Assets {
         Name: "Modern Weapon - Foregrip 02"
         Transform {
           Location {
-            X: 17.8554688
-            Z: 9.43603516
+            X: 17.109375
+            Z: 14.6171875
           }
           Rotation {
-            Pitch: 2.81963849
+            Pitch: -7.18035889
             Yaw: -179.999954
-            Roll: 1.06195557e-05
+            Roll: 3.44700697e-06
           }
           Scale {
             X: 0.332290888
@@ -692,11 +729,11 @@ Assets {
         Name: "Fantasy Crossbow Bolt 01"
         Transform {
           Location {
-            X: 17.3779297
-            Z: 8.06933594
+            X: 16.8769531
+            Z: 13.1884766
           }
           Rotation {
-            Pitch: -2.81964111
+            Pitch: 7.18035221
           }
           Scale {
             X: 0.42884165
@@ -763,11 +800,12 @@ Assets {
         Name: "Fantasy Crossbow Foregrip 01"
         Transform {
           Location {
-            X: 40.9238281
-            Z: 4.26709
+            X: 40.7236328
+            Y: -0.00390625
+            Z: 13.5327148
           }
           Rotation {
-            Pitch: -2.81964111
+            Pitch: 7.18035221
           }
           Scale {
             X: -0.584749639
@@ -849,13 +887,12 @@ Assets {
         Name: "Pyramid - 6-Sided"
         Transform {
           Location {
-            X: 42.4130859
-            Z: 6.83642578
+            X: 41.7451172
+            Z: 16.3212891
           }
           Rotation {
-            Pitch: -87.1806
-            Yaw: 180
-            Roll: 180
+            Pitch: -82.819458
+            Roll: 4.89568738e-05
           }
           Scale {
             X: 0.0601039641
@@ -928,12 +965,13 @@ Assets {
         Name: "Pyramid - 6-Sided"
         Transform {
           Location {
-            X: 42.4130859
-            Z: 6.83642578
+            X: 41.7451172
+            Z: 16.3212891
           }
           Rotation {
+            Pitch: 1.36603776e-05
             Yaw: 89.9999466
-            Roll: -92.819519
+            Roll: -82.819519
           }
           Scale {
             X: 0.0601039641
@@ -1006,12 +1044,13 @@ Assets {
         Name: "Kunai Handle"
         Transform {
           Location {
-            X: 17.6503906
-            Z: 8.5625
+            X: 17.0595703
+            Z: 13.7211914
           }
           Rotation {
+            Pitch: 1.36603776e-05
             Yaw: -89.999939
-            Roll: 92.8195
+            Roll: 82.8194962
           }
           Scale {
             X: 0.934719443
@@ -1074,13 +1113,13 @@ Assets {
         Name: "Katana Scabbard"
         Transform {
           Location {
-            X: -8.29882812
-            Z: -7.05029297
+            X: -5.78417969
+            Z: -6.16015625
           }
           Rotation {
-            Pitch: 33.0848274
+            Pitch: 23.0848217
             Yaw: -179.999954
-            Roll: 1.26592231e-05
+            Roll: 4.92348818e-06
           }
           Scale {
             X: 1.02076077
@@ -1172,13 +1211,14 @@ Assets {
         Name: "Lens - Half"
         Transform {
           Location {
-            X: -8.29882812
-            Z: -7.05029297
+            X: -5.78515625
+            Y: -0.005859375
+            Z: -6.15869141
           }
           Rotation {
-            Pitch: 33.0848351
+            Pitch: 23.084837
             Yaw: -179.999954
-            Roll: 1.26592431e-05
+            Roll: 4.92351091e-06
           }
           Scale {
             X: 0.0822128728
@@ -1282,11 +1322,11 @@ Assets {
         Name: "Crescent - 02"
         Transform {
           Location {
-            X: 9.29882812
-            Z: 0.661621094
+            X: 10.2070312
+            Z: 4.49072266
           }
           Rotation {
-            Pitch: -18.2444458
+            Pitch: -8.2444458
             Roll: -90
           }
           Scale {

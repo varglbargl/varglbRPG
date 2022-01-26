@@ -1,12 +1,25 @@
-local GEO = script:GetCustomProperty("Geo"):WaitForObject()
+local weapon = script:FindAncestorByType("Equipment")
 
-local weapon = script.parent.parent
-local defaultRot = GEO:GetRotation()
+local equipEvent = nil
+local destroyEvent = nil
 
-weapon:GetAbilities()[1].castEvent:Connect(function()
-  GEO:RotateTo(Rotation.New(0, 90, 0), 0.25, true)
-end)
+function onEquipped()
+  Task.Wait(0.25)
 
-weapon:GetAbilities()[1].cooldownEvent:Connect(function()
-  GEO:RotateTo(defaultRot, 0.25, true)
-end)
+  Events.Broadcast("EnableCrosshair")
+
+  equipEvent:Disconnect()
+end
+
+function onWeaponDestroyed()
+  Events.Broadcast("DisableCrosshair")
+
+  equipEvent:Disconnect()
+  destroyEvent:Disconnect()
+end
+
+-- handler params: Equipment_equipment, Player_player
+equipEvent = weapon.equippedEvent:Connect(onEquipped)
+
+-- handler params: CoreObject_coreObject
+destroyEvent = weapon.destroyEvent:Connect(onWeaponDestroyed)

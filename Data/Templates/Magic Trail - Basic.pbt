@@ -55,17 +55,16 @@ Assets {
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 5
-              G: 1.66499972
-              B: 2.3319993
+              R: 0.150000095
+              B: 1
               A: 1
             }
           }
           Overrides {
             Name: "bp:Secondary Color"
             Color {
-              G: 5
-              B: 2.6666677
+              R: 0.750000477
+              B: 1
               A: 1
             }
           }
@@ -76,6 +75,10 @@ Assets {
           Overrides {
             Name: "bp:Density"
             Float: 5
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 10
           }
         }
         Collidable_v2 {

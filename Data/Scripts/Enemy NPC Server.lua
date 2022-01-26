@@ -23,8 +23,6 @@ local myTemplateId = script:FindTemplateRoot().sourceTemplateId
 local stunned = false
 local moveSpeed = 1
 
-HITBOX.serverUserData["Enemy"] = enemy
-
 local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition(), 50)
 local spawnRotation = enemy:GetWorldRotation()
 local spawnScale = HITBOX:GetWorldScale()
@@ -45,16 +43,20 @@ end
 
 local defaultScale = enemy:GetWorldScale()
 
-enemy:SetWorldScale(Vector3.ONE * 0.25)
+enemy:SetWorldScale(Vector3.ONE * 0.2)
 enemy:ScaleTo(defaultScale, 0.2)
 
 function areTherePlayersNearby()
   local players = Game.GetPlayers()
 
   for _, player in ipairs(players) do
-    if Object.IsValid(player) and (player:GetWorldPosition() - spawnPoint).size < 8000 then
-      -- return "i hate players"
-      return true
+    if Object.IsValid(player) then
+      local distance = (player:GetWorldPosition() - spawnPoint).size
+
+      if distance < 7500 and distance > 250 then
+        -- return "i hate players"
+        return true
+      end
     end
   end
 
@@ -93,7 +95,6 @@ function fight()
     end
 
     if not stunned then
-
       -- print("Imma getcha, "..fightTarget.name.."! Imma getcha good!")
       local distanceToPlayer = (fightTarget:GetWorldPosition() - fromVector).size
 
@@ -103,9 +104,7 @@ function fight()
 
         if toVector then
           enemy:LookAtContinuous(fightTarget, true, 500)
-          enemy:MoveTo(toVector, 1 / moveSpeed)
-
-          Task.Wait(0.25)
+          enemy:MoveTo(toVector, 0.5 / moveSpeed)
         else
           -- print("Bweemp bwomp! I can't build there!")
         end
@@ -115,9 +114,9 @@ function fight()
 
         if toVector then
           enemy:LookAtContinuous(fightTarget, true, 500)
-          enemy:MoveTo(toVector, distanceToPlayer / 700 / moveSpeed)
+          enemy:MoveTo(toVector, distanceToPlayer / 800 / moveSpeed)
 
-          Task.Wait(distanceToPlayer / 800)
+          Task.Wait(distanceToPlayer / 800 / moveSpeed - 0.5)
         else
           -- print("Bweemp bwomp! I can't build there!")
         end
@@ -198,7 +197,7 @@ function attack(target)
     end
   end
 
-  Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamage, not enemy.isDead)
+  Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamage.amount, not enemy.isDead)
   target:ApplyDamage(damage)
   Task.Wait(1.5)
 end
@@ -256,8 +255,10 @@ function die(thisEnemy, damage)
   local lootRoll = math.random()
 
   if lootRoll <= 0.2 then
+    Task.Wait()
     Loot.dropRandomItem(enemy:GetWorldPosition(), stats.level)
   elseif lootRoll <= 0.6 then
+    Task.Wait()
     Loot.dropRandomGold(enemy:GetWorldPosition(), stats.level)
   end
 
@@ -363,8 +364,8 @@ local statusEffects = {
 function onDamaged(thisEnemy, damage)
   if not Object.IsValid(enemy) or enemy ~= thisEnemy or enemy.isDead then return end
 
-  if damage.sourceAbility then
-    local effects = damage.sourceAbility:GetCustomProperty("statusEffects")
+  if damage.sourceAbility and Object.IsValid(damage.sourceAbility.parent) then
+    local effects = damage.sourceAbility.parent:GetCustomProperty("StatusEffects")
 
     if effects then
       effects = {CoreString.Split(string.lower(effects), ",")}
@@ -395,41 +396,39 @@ function onDamaged(thisEnemy, damage)
 end
 
 function wanderLoop()
-  Task.Wait(math.random(50, 200) / 10)
-  if not Object.IsValid(enemy) or fightTarget or enemy.isDead then return end
-
   if areTherePlayersNearby() == false then
     despawn()
     return
   end
 
-  local toVector = Utils.groundBelowPoint(enemy:GetWorldPosition() + Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 500, 50)
-  local fromVector = enemy:GetWorldPosition()
-
-  if (not toVector or (spawnPoint - fromVector).size > 1000) and (spawnPoint - fromVector).size > 1 then
-    -- print("im scared and im going home.")
-    toVector = Utils.groundBelowPoint(fromVector + (spawnPoint - fromVector):GetNormalized() * 300, 50)
-
-    if not toVector then
-      toVector = fromVector + (spawnPoint - fromVector):GetNormalized() * 300
-    end
-  end
-
-  if toVector then
-    enemy:LookAt(toVector)
-    enemy:MoveTo(toVector, 5)
-  end
-
-  Task.Wait(4.5)
+  Task.Wait(math.random(50, 200) / 10)
   if not Object.IsValid(enemy) or fightTarget or enemy.isDead then return end
 
-  enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.75)
+  if WANDER then
+    local toVector = Utils.groundBelowPoint(enemy:GetWorldPosition() + Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 500, 50)
+    local fromVector = enemy:GetWorldPosition()
+
+    if (not toVector or (spawnPoint - fromVector).size > 1000) and (spawnPoint - fromVector).size > 1 then
+      -- print("im scared and im going home.")
+      toVector = Utils.groundBelowPoint(fromVector + (spawnPoint - fromVector):GetNormalized() * 300, 50)
+
+      if not toVector then
+        toVector = fromVector + (spawnPoint - fromVector):GetNormalized() * 300
+      end
+    end
+
+    if toVector then
+      enemy:LookAt(toVector)
+      enemy:MoveTo(toVector, 5)
+    end
+
+    Task.Wait(4.5)
+    if not Object.IsValid(enemy) or fightTarget or enemy.isDead then return end
+
+    enemy:RotateTo(Rotation.New(0, 0, enemy:GetWorldRotation().z), 0.75)
+  end
 
   wanderLoop()
-end
-
-if WANDER then
-  Task.Spawn(wanderLoop)
 end
 
 -- handler params: DamageableObject_object, Damage_damage
@@ -440,3 +439,5 @@ diedEvent = enemy.diedEvent:Connect(die)
 
 -- handler params: Player_player, integer_amount, Player_healer
 playerHealedEvent = Events.Connect("PlayerHealed", onPlayerHealed)
+
+Task.Spawn(wanderLoop)

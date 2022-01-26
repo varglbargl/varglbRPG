@@ -39,6 +39,7 @@ function readLootTable(thisLootTable, itemType)
       itemType = itemType,
       itemLevel = spawnedItem:GetCustomProperty("ItemLevel"),
       icon = spawnedItem:GetCustomProperty("Icon"),
+      iconBg = spawnedItem:GetCustomProperty("IconBackground"),
       minDamage = spawnedItem:GetCustomProperty("MinDamage"),
       maxDamage = spawnedItem:GetCustomProperty("MaxDamage"),
       speed = Utils.getWeaponSpeed(spawnedItem),
@@ -55,18 +56,18 @@ function readLootTable(thisLootTable, itemType)
     }
 
     if lootItem.minDamage then
-      lootItem.minDamage = math.floor(lootItem.minDamage * Utils.magicNumber(lootItem.itemLevel))
+      lootItem.minDamage = math.floor(lootItem.minDamage * Utils.magicNumber(lootItem.itemLevel) + 0.5)
 
       if lootItem.splash then
-        lootItem.minDamage = math.floor(lootItem.minDamage / (0.75 + lootItem.splash / 4))
+        lootItem.minDamage = math.floor(lootItem.minDamage / (0.75 + lootItem.splash / 4) + 0.5)
       end
     end
 
     if lootItem.maxDamage then
-      lootItem.maxDamage = math.floor(lootItem.maxDamage * Utils.magicNumber(lootItem.itemLevel))
+      lootItem.maxDamage = math.floor(lootItem.maxDamage * Utils.magicNumber(lootItem.itemLevel) + 0.5)
 
       if lootItem.splash then
-        lootItem.maxDamage = math.floor(lootItem.maxDamage / (0.75 + lootItem.splash / 4))
+        lootItem.maxDamage = math.floor(lootItem.maxDamage / (0.75 + lootItem.splash / 4) + 0.5)
       end
     end
 
@@ -156,6 +157,11 @@ function Loot.enchantItem(item, rarity)
   dupe.rarity = rarity
 
   if rarity >= 1 then
+    if dupe.minDamage and dupe.maxDamage then
+      dupe.minDamage = math.floor(dupe.minDamage * (1 + rarity / 10) + 0.5)
+      dupe.maxDamage = math.floor(dupe.maxDamage * (1 + rarity / 10) + 0.5)
+    end
+
     local stat = stats[math.random(1, #stats)]
     local num = math.random(1, #prefixes[stat])
     local pref = prefixes[stat][num]
@@ -205,28 +211,33 @@ function Loot.decodeEnchant(item, code)
   if code == "" then return item end
 
   local dupe = {}
-  local stats = {g = "grit", w = "wit", s = "spit", h = "health", a = "stamina"}
+  local rarity = #code/3
 
   for i, v in pairs(item) do
     dupe[i] = v
   end
 
   dupe.enchant = code
-  dupe.rarity = #code/3
+  dupe.rarity = rarity
 
-  if #code >= 3 then
+  if rarity >= 1 then
+    if dupe.minDamage and dupe.maxDamage then
+      dupe.minDamage = math.floor(dupe.minDamage * (1 + rarity / 10) + 0.5)
+      dupe.maxDamage = math.floor(dupe.maxDamage * (1 + rarity / 10) + 0.5)
+    end
+
     local pref = prefixes[string.sub(code, 1, 1)][tonumber(string.sub(code, 2, 3))]
     assignStat(dupe, string.sub(code, 1, 1))
     dupe.name = pref.." "..dupe.name
   end
 
-  if #code >= 6 then
+  if rarity >= 2 then
     local suff = suffixes[string.sub(code, 4, 4)][tonumber(string.sub(code, 5, 6))]
     assignStat(dupe, string.sub(code, 4, 4))
     dupe.name = dupe.name.." of "..suff
   end
 
-  if #code >= 9 then
+  if rarity >= 3 then
     local supe = superlatives[string.sub(code, 7, 7)][tonumber(string.sub(code, 8, 9))]
     assignStat(dupe, string.sub(code, 7, 7))
     dupe.name = supe.." "..dupe.name

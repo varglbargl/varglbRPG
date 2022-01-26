@@ -100,7 +100,6 @@ Assets {
         Name: "Group"
         Transform {
           Location {
-            X: -8.27539062
           }
           Rotation {
           }
@@ -187,13 +186,13 @@ Assets {
           Location {
           }
           Rotation {
-            Yaw: -89.9999847
-            Roll: -89.9999847
+            Yaw: -90
+            Roll: -90
           }
           Scale {
-            X: 0.0867853612
-            Y: 0.143021613
-            Z: 0.301476091
+            X: 0.2
+            Y: 0.2
+            Z: 0.5
           }
         }
         ParentId: 14239963294496415034

@@ -16,16 +16,17 @@ HITBOX.isEnemyCollisionEnabled = false
 local hitEnemies = {}
 local lastUsedAbility = nil
 local magicNumber = Utils.magicNumber(ITEM_LEVEL)
+local rarity = 0
 
 local equipEvent = nil
 local unequipEvent = nil
 local hitEvent = nil
-local castEvent = nil
-local executeEvent = nil
-local interruptedEvent = nil
+local castEvents = {}
+local recoveryEvents = {}
+local interruptedEvents = {}
 
 function rollDamage()
-  local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * magicNumber + weapon.owner:GetResource("Grit") / 5 + math.random()))
+  local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * magicNumber * (1 + rarity / 10) + weapon.owner:GetResource("Grit") / 5 + math.random()))
   damage.sourcePlayer = weapon.owner
   damage.sourceAbility = lastUsedAbility
   damage.reason = DamageReason.COMBAT
@@ -57,19 +58,21 @@ function onAbilityEnd(thisAbility)
 end
 
 function onHitboxOverlap(thisTrigger, other)
-  local enemy = other.serverUserData["Enemy"]
+  local target = other.parent
 
-  if enemy and not hitEnemies[enemy] then
-    hitEnemies[enemy] = true
+  if not Object.IsValid(target) then return end
 
-    enemy:ApplyDamage(rollDamage())
+  if target:IsA("DamageableObject") and not hitEnemies[target] then
+    hitEnemies[target] = true
 
-    if weapon.owner:GetResource("Class") == 3 and weapon.owner:GetResource("Orbs") > 0 then
+    target:ApplyDamage(rollDamage())
+
+    if Object.IsValid(target) and not target.isDead and weapon.owner:GetResource("Class") == 3 and weapon.owner:GetResource("Orbs") > 0 then
       local orbDamage = Damage.New(math.floor(weapon.owner:GetResource("Orbs") * magicNumber + weapon.owner:GetResource("Wit") / 10 + math.random()))
       orbDamage.sourcePlayer = weapon.owner
       orbDamage.reason = DamageReason.COMBAT
 
-      enemy:ApplyDamage(orbDamage)
+      target:ApplyDamage(orbDamage)
     end
   end
 
@@ -81,15 +84,31 @@ function onEquipped(thisEquipment, player)
     Events.Broadcast("UpdateIdleStance", player, STANCE)
   end
 
+  rarity = player.serverUserData["Gear"].primary.rarity
+
   equipEvent:Disconnect()
 end
 
-function onUnequipped()
+function onUnequipped(thisEquipment, player)
+  if player.animationStance == STANCE then
+    player.animationStance = "unarmed_stance"
+    Events.Broadcast("UpdateIdleStance", player, "unarmed_stance")
+  end
+
   unequipEvent:Disconnect()
   hitEvent:Disconnect()
-  castEvent:Disconnect()
-  executeEvent:Disconnect()
-  interruptedEvent:Disconnect()
+
+  for _, cEvt in ipairs(castEvents) do
+    cEvt:Disconnect()
+  end
+
+  for _, rEvt in ipairs(recoveryEvents) do
+    rEvt:Disconnect()
+  end
+
+  for _, iEvt in ipairs(interruptedEvents) do
+    iEvt:Disconnect()
+  end
 end
 
 -- handler params: Equipment_equipment, Player_player
@@ -101,13 +120,28 @@ unequipEvent = weapon.unequippedEvent:Connect(onUnequipped)
 -- handler params: Trigger_trigger, Object_other
 hitEvent = HITBOX.beginOverlapEvent:Connect(onHitboxOverlap)
 
-for i, abil in ipairs(weapon:GetAbilities()) do
+for _, abil in ipairs(weapon:GetAbilities()) do
   -- handler params: Ability_ability
-  castEvent = abil.castEvent:Connect(onAbilityCast)
+  table.insert(castEvents, abil.castEvent:Connect(onAbilityCast))
 
   -- handler params: Ability_ability
-  executeEvent = abil.recoveryEvent:Connect(onAbilityEnd)
+  table.insert(recoveryEvents, abil.recoveryEvent:Connect(onAbilityEnd))
 
   -- handler params: Ability_ability
-  interruptedEvent = abil.interruptedEvent:Connect(onAbilityEnd)
+  table.insert(interruptedEvents, abil.interruptedEvent:Connect(onAbilityEnd))
+end
+
+Task.Wait(1)
+
+if not Object.IsValid(weapon) then
+  equipEvent:Disconnect()
+  unequipEvent:Disconnect()
+
+  for _, eEvt in ipairs(executeEvents) do
+    eEvt:Disconnect()
+  end
+
+  for _, iEvt in ipairs(interruptedEvents) do
+    iEvt:Disconnect()
+  end
 end

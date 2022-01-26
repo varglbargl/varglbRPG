@@ -11,14 +11,9 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Hitbox"
-        ObjectReference {
-        }
-      }
-      Overrides {
-        Name: "cs:DestroyVFX"
+        Name: "cs:LootDrop"
         AssetReference {
-          Id: 841534158063459245
+          Id: 10101702818438590485
         }
       }
       Overrides {
@@ -26,10 +21,24 @@ Assets {
         Float: 0.75
       }
       Overrides {
-        Name: "cs:LootDrop"
-        AssetReference {
-          Id: 10101702818438590485
-        }
+        Name: "cs:LootDropRarity"
+        Int: 0
+      }
+      Overrides {
+        Name: "cs:Loot:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:LootDrop:category"
+        String: "Required"
+      }
+      Overrides {
+        Name: "cs:LootDropChance:category"
+        String: "Optional"
+      }
+      Overrides {
+        Name: "cs:LootDropRarity:category"
+        String: "Optional"
       }
     }
   }

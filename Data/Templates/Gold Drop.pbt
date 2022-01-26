@@ -140,9 +140,12 @@ Assets {
           }
         }
         ParentId: 13864021615413989644
-        ChildIds: 11207961526595637706
+        ChildIds: 2357707800906343268
+        ChildIds: 5484169296244111630
         ChildIds: 15412757941486796469
         ChildIds: 4766324245277314358
+        ChildIds: 16075533341277382024
+        ChildIds: 6375026587519046107
         ChildIds: 1317361188639162825
         WantsNetworking: true
         Collidable_v2 {
@@ -164,11 +167,10 @@ Assets {
         }
       }
       Objects {
-        Id: 11207961526595637706
-        Name: "Dropped Gold Client"
+        Id: 2357707800906343268
+        Name: "Game Coin Win 05 SFX"
         Transform {
           Location {
-            Z: 25
           }
           Rotation {
           }
@@ -179,32 +181,6 @@ Assets {
           }
         }
         ParentId: 163531244476439349
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:PickupSFX"
-            AssetReference {
-              Id: 926186915372306085
-            }
-          }
-          Overrides {
-            Name: "cs:DroppedLootServer"
-            ObjectReference {
-              SubObjectId: 7969696232486895060
-            }
-          }
-          Overrides {
-            Name: "cs:PickupTrigger"
-            ObjectReference {
-              SubObjectId: 11077180081789910146
-            }
-          }
-          Overrides {
-            Name: "cs:Outline"
-            ObjectReference {
-              SubObjectId: 4766324245277314358
-            }
-          }
-        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -217,10 +193,66 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Script {
-          ScriptAsset {
-            Id: 16928642922681133920
+        AudioInstance {
+          AudioAsset {
+            Id: 9480334871701353343
           }
+          AutoPlay: true
+          Transient: true
+          Pitch: -200
+          Volume: 0.5
+          Falloff: 3000
+          Radius: 1000
+          FadeOutTime: 0.75
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+          StopTime: 0.25
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 5484169296244111630
+        Name: "Meta Coins Shuffling Purchase 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 163531244476439349
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 6605178997272116582
+          }
+          AutoPlay: true
+          Transient: true
+          Pitch: -300
+          Volume: 0.75
+          Falloff: 3000
+          Radius: 1000
+          FadeOutTime: 0.5
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+          StopTime: 0.25
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -317,8 +349,8 @@ Assets {
             Name: "bp:Color A"
             Color {
               R: 1
-              G: 1
-              B: 1
+              G: 0.7
+              B: 0.3
               A: 1
             }
           }
@@ -331,6 +363,26 @@ Assets {
             ObjectReference {
               SubObjectId: 1317361188639162825
             }
+          }
+          Overrides {
+            Name: "bp:Multi-Color"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Color Offset B"
+            Float: 0.57965529
+          }
+          Overrides {
+            Name: "bp:Color Offset C"
+            Float: 0.65943104
+          }
+          Overrides {
+            Name: "bp:Color Offset A"
+            Float: 0.479935676
+          }
+          Overrides {
+            Name: "bp:Dynamic Thickness"
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -357,8 +409,149 @@ Assets {
         }
       }
       Objects {
+        Id: 16075533341277382024
+        Name: "Point Light"
+        Transform {
+          Location {
+            Z: 5
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 163531244476439349
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Light {
+          Intensity: 1
+          Color {
+            R: 1
+            G: 0.7
+            B: 0.3
+            A: 1
+          }
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 100
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 6375026587519046107
+        Name: "Tracer VFX"
+        Transform {
+          Location {
+            Z: 10
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 2
+            Y: 2
+            Z: 2
+          }
+        }
+        ParentId: 163531244476439349
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color C"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color B"
+            Color {
+              R: 1
+              G: 0.7
+              B: 0.3
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color A"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color Offset C"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Color Offset B"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Camera Depth Fade Offset"
+            Float: 750
+          }
+          Overrides {
+            Name: "bp:Hot Spot"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Depth Fade Distance"
+            Float: 0.1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 7613763888339199722
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
         Id: 1317361188639162825
-        Name: "Group"
+        Name: "Gold Container"
         Transform {
           Location {
             Z: 25
@@ -372,6 +565,10 @@ Assets {
           }
         }
         ParentId: 163531244476439349
+        ChildIds: 11207961526595637706
+        ChildIds: 12526448758311894780
+        ChildIds: 5259908446308875665
+        ChildIds: 6726032798546615980
         ChildIds: 10493468997461929820
         ChildIds: 315580521377214378
         ChildIds: 18150086785518682453
@@ -397,9 +594,6 @@ Assets {
         ChildIds: 14114732639957612054
         ChildIds: 16480574847731314474
         ChildIds: 9440329431746882213
-        ChildIds: 12526448758311894780
-        ChildIds: 5259908446308875665
-        ChildIds: 6726032798546615980
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -414,6 +608,208 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 11207961526595637706
+        Name: "Dropped Gold Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1317361188639162825
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:PickupSFX"
+            AssetReference {
+              Id: 926186915372306085
+            }
+          }
+          Overrides {
+            Name: "cs:DroppedLootServer"
+            ObjectReference {
+              SubObjectId: 7969696232486895060
+            }
+          }
+          Overrides {
+            Name: "cs:PickupTrigger"
+            ObjectReference {
+              SubObjectId: 11077180081789910146
+            }
+          }
+          Overrides {
+            Name: "cs:Outline"
+            ObjectReference {
+              SubObjectId: 4766324245277314358
+            }
+          }
+          Overrides {
+            Name: "cs:Tracer"
+            ObjectReference {
+              SubObjectId: 6375026587519046107
+            }
+          }
+          Overrides {
+            Name: "cs:Light"
+            ObjectReference {
+              SubObjectId: 16075533341277382024
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16928642922681133920
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 12526448758311894780
+        Name: "Simple Bounce Parent"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1317361188639162825
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:BounceHeight"
+            Float: 100
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 7416574305272920542
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 5259908446308875665
+        Name: "Simple Rotate Parent"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1317361188639162825
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Speed"
+            Vector {
+              Z: 2
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5358125184516124331
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 6726032798546615980
+        Name: "Simple Blink Parent"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1317361188639162825
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:OffTime"
+            Float: 0.61
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 10467598296277478962
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2111,142 +2507,23 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
-      Objects {
-        Id: 12526448758311894780
-        Name: "Simple Bounce Parent"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1317361188639162825
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:BounceHeight"
-            Float: 100
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 7416574305272920542
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 5259908446308875665
-        Name: "Simple Rotate Parent"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1317361188639162825
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Speed"
-            Vector {
-              Z: 2
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 5358125184516124331
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 6726032798546615980
-        Name: "Simple Blink Parent"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1317361188639162825
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:OffTime"
-            Float: 0.61
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 10467598296277478962
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
     }
     Assets {
-      Id: 926186915372306085
-      Name: "Coins Marimba Scale 01 SFX"
+      Id: 9480334871701353343
+      Name: "Game Coin Win 05 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_coins_marimba_scale_01_Cue_ref"
+        AssetId: "sfx_game_coin_win_05_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 6605178997272116582
+      Name: "Meta Coins Shuffling Purchase 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_meta_coins_purchase_01_cue_ref"
       }
     }
     Assets {
@@ -2265,6 +2542,24 @@ Assets {
       PrimaryAsset {
         AssetType: "BlueprintAssetRef"
         AssetId: "fxbp_local_outline"
+      }
+    }
+    Assets {
+      Id: 7613763888339199722
+      Name: "Tracer VFX"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_tracer"
+      }
+    }
+    Assets {
+      Id: 926186915372306085
+      Name: "Coins Marimba Scale 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_coins_marimba_scale_01_Cue_ref"
       }
     }
     Assets {

@@ -16,8 +16,6 @@ local wornOut = false
 local attackers = {}
 local myTemplateId = script:FindTemplateRoot().sourceTemplateId
 
-HITBOX.serverUserData["Enemy"] = enemy
-
 local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition(), 50)
 local spawnRotation = enemy:GetWorldRotation()
 local spawnScale = HITBOX:GetWorldScale()

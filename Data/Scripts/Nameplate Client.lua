@@ -3,10 +3,13 @@ local Utils = require(script:GetCustomProperty("Utils"))
 local NPC_NAMEPLATE = script:GetCustomProperty("NPCNameplate")
 local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
 
+local CROSSHAIR = script:GetCustomProperty("Crosshair"):WaitForObject()
+
 local clientPlayer = Game.GetLocalPlayer()
 
 local targetData = {}
 local barWidth = 237
+local halfWhite = Color.New(1, 1, 1, 0.25)
 
 function initNameplate(target, hitbox)
   local nameplate = World.SpawnAsset(NPC_NAMEPLATE, {parent = UI_CONTAINER})
@@ -41,7 +44,7 @@ end
 
 function updateNameplates()
   for dude, data in pairs(targetData) do
-    if time() > data.lastSeen + 1 then
+    if not Object.IsValid(data.hitbox) or time() > data.lastSeen + 1 then
       -- print("I should really be destroying that nameplate, huh!!!")
       data.nameplate:Destroy()
       targetData[dude] = nil
@@ -79,11 +82,15 @@ function Tick()
     if hitResult and hitResult.other and hitResult.other.clientUserData["Enemy"] then
       local target = hitResult.other.clientUserData["Enemy"]
 
+      CROSSHAIR:SetColor(Color.RED)
+
       if targetData[target] then
         targetData[target].lastSeen = math.max(time(), targetData[target].lastSeen)
       else
         initNameplate(target, hitResult.other)
       end
+    else
+      CROSSHAIR:SetColor(halfWhite)
     end
   -- end
 
@@ -98,5 +105,19 @@ function showNameplate(target)
   end
 end
 
+function enableCrosshair()
+  CROSSHAIR.visibility = Visibility.FORCE_ON
+end
+
+function disableCrosshair()
+  CROSSHAIR.visibility = Visibility.FORCE_OFF
+end
+
 -- handler params: DamageableObject_target
 Events.Connect("ShowNameplate", showNameplate)
+
+-- handler params: none
+Events.Connect("EnableCrosshair", enableCrosshair)
+
+-- handler params: none
+Events.Connect("DisableCrosshair", disableCrosshair)

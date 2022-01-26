@@ -127,11 +127,11 @@ function Utils.getNPCStatsByLevel(level)
 
   local multiplier = Utils.magicNumber(stats.level)
 
-  stats.maxHitPoints = math.floor(45 * multiplier)
+  stats.maxHitPoints = math.floor(55 * multiplier)
   stats.hitPoints = stats.maxHitPoints
 
-  stats.minDamage = math.floor(5 * multiplier)
-  stats.maxDamage = math.floor(7.5 * multiplier)
+  stats.minDamage = math.floor(7.5 * multiplier)
+  stats.maxDamage = math.floor(10 * multiplier)
 
   stats.xpValue = math.floor(5 * multiplier) + math.random(0, stats.level)
 
@@ -139,7 +139,7 @@ function Utils.getNPCStatsByLevel(level)
 end
 
 function Utils.experienceToNextLevel(level)
-  return math.ceil(Utils.magicNumber(level) * 65 ^ 1.02 / 5) * 5
+  return math.ceil(Utils.magicNumber(level) * 75 ^ 1.02 / 5) * 5
 end
 
 function Utils.rollDamage(min, max)

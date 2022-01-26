@@ -51,8 +51,6 @@ function addToInventory(player, item, inventorySlot)
 
   if inventorySlot then
     player.serverUserData["Inventory"][inventorySlot] = item
-
-    Utils.updatePrivateNetworkedData(player, "Inventory")
   else
     local inventoryFull = true
 
@@ -71,9 +69,9 @@ function addToInventory(player, item, inventorySlot)
     end
 
     player.serverUserData["Inventory"].full = inventoryFull
-
-    Utils.updatePrivateNetworkedData(player, "Inventory")
   end
+
+  Utils.updatePrivateNetworkedData(player, "Inventory")
 end
 
 function unequipFromPlayer(player, gearSlot, inventorySlot)
@@ -158,12 +156,22 @@ function dropItem(player, slot, fromInventory)
   if fromInventory then
     item = player.serverUserData["Inventory"][slot]
     player.serverUserData["Inventory"][slot] = nil
+    Utils.updatePrivateNetworkedData(player, "Inventory")
   else
     item = player.serverUserData["Gear"][slot]
     player.serverUserData["Gear"][slot] = nil
+
+    for i, gear in ipairs(player:GetEquipment()) do
+      if gear.id == item.equipmentId then
+        gear:Destroy()
+        item.equipmentId = nil
+      end
+    end
+
+    Utils.updatePrivateNetworkedData(player, "Gear")
   end
 
-  Loot.dropItem(player:GetWorldPosition(), item)
+  Loot.dropItem(player:GetWorldPosition() + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * math.random(50, 100), item)
 end
 
 Game.playerJoinedEvent:Connect(onPlayerJoined)

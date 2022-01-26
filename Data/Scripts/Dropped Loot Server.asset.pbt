@@ -12,7 +12,7 @@ Assets {
       }
       Overrides {
         Name: "cs:DroppedRarity"
-        Int: 0
+        Int: -1
       }
       Overrides {
         Name: "cs:DroppedLoot:isrep"

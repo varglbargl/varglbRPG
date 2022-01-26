@@ -40,7 +40,9 @@ function movingAnimationCheckLoop()
   end
 
   lastKnownPosition = currentPosition
+
   Task.Wait(0.1)
+
   movingAnimationCheckLoop()
 end
 
@@ -50,7 +52,6 @@ function onEnemyDamaged(thisEnemy, damage)
   if not Object.IsValid(enemy) or thisEnemy ~= enemy then return end
 
   if damage.sourcePlayer then
-    MESH:PlayAnimation("unarmed_react_damage")
 
     if not enemy.isDead and READY_ANIM ~= "" then MESH.animationStance = READY_ANIM end
 
@@ -66,12 +67,15 @@ function onEnemyDamaged(thisEnemy, damage)
       Events.Broadcast("ShowNameplate", enemy)
     end
 
-    if DAMAGED_VFX then
-      local vfx = World.SpawnAsset(DAMAGED_VFX, {position = script:GetWorldPosition()})
-      if vfx.lifeSpan == 0 then vfx.lifeSpan = 5 end
+    if damage.sourceAbility and not enemy.isDead then
+      MESH:PlayAnimation("unarmed_react_damage")
+
+      if DAMAGED_VFX then
+        local vfx = World.SpawnAsset(DAMAGED_VFX, {position = script:GetWorldPosition()})
+        if vfx.lifeSpan == 0 then vfx.lifeSpan = 5 end
+      end
     end
   end
-
 end
 
 function onEnemyDied(thisEnemy)

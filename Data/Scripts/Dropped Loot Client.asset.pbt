@@ -17,6 +17,36 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:PickupSFX"
+        AssetReference {
+          Id: 12941926364162601142
+        }
+      }
+      Overrides {
+        Name: "cs:UniqueDropVFX"
+        AssetReference {
+          Id: 1082673362141371648
+        }
+      }
+      Overrides {
+        Name: "cs:EpicDropVFX"
+        AssetReference {
+          Id: 2604616667413858313
+        }
+      }
+      Overrides {
+        Name: "cs:RareDropVFX"
+        AssetReference {
+          Id: 17976096882406018615
+        }
+      }
+      Overrides {
+        Name: "cs:CommonDropVFX"
+        AssetReference {
+          Id: 17004763920291192766
+        }
+      }
+      Overrides {
         Name: "cs:DroppedLootServer"
         ObjectReference {
         }
@@ -27,25 +57,62 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:PickupSFX"
-        AssetReference {
-          Id: 11845872425414986470
-        }
-      }
-      Overrides {
         Name: "cs:RingModel"
         AssetReference {
           Id: 7065490582765248945
         }
       }
+      Overrides {
+        Name: "cs:Outline"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:Tracer"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:Light"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:UniqueDropVFX:category"
+        String: "VFX"
+      }
+      Overrides {
+        Name: "cs:Loot:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:PickupSFX:category"
+        String: "VFX"
+      }
+      Overrides {
+        Name: "cs:EpicDropVFX:category"
+        String: "VFX"
+      }
+      Overrides {
+        Name: "cs:RareDropVFX:category"
+        String: "VFX"
+      }
+      Overrides {
+        Name: "cs:CommonDropVFX:category"
+        String: "VFX"
+      }
     }
     Assets {
-      Id: 11845872425414986470
-      Name: "UI Retro Arcade Squeak Select 01 SFX"
+      Id: 12941926364162601142
+      Name: "Metal Gear Clothing Heavy Light Movement 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_ui_retro_arcade_squeak_select_01_Cue_ref"
+        AssetId: "sfx_metal_gear_clothing_heavy_light_movement_01a_Cue_ref"
       }
     }
   }

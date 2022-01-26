@@ -34,6 +34,18 @@ Assets {
             Name: "cs:Description"
             String: "Shield bash enemies to stun them and taunt them into attacking you."
           }
+          Overrides {
+            Name: "cs:MinDamage"
+            Int: 7
+          }
+          Overrides {
+            Name: "cs:MaxDamage"
+            Int: 8
+          }
+          Overrides {
+            Name: "cs:StatusEffects"
+            String: "stun, taunt"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -110,10 +122,6 @@ Assets {
         }
         ParentId: 2953111769030281295
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:statusEffects"
-            String: "stun, taunt"
-          }
         }
         WantsNetworking: true
         Collidable_v2 {

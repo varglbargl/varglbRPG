@@ -233,13 +233,21 @@ function redrawInventory()
 end
 
 function throttleInventory()
-  for i, slot in ipairs(inventorySlots) do
+  for _, slot in ipairs(inventorySlots) do
+    slot:FindChildByType("UIButton").isInteractable = false
+  end
+
+  for _, slot in pairs(gearSlots) do
     slot:FindChildByType("UIButton").isInteractable = false
   end
 
   Task.Wait(0.25)
 
-  for i, slot in ipairs(inventorySlots) do
+  for _, slot in ipairs(inventorySlots) do
+    slot:FindChildByType("UIButton").isInteractable = true
+  end
+
+  for _, slot in pairs(gearSlots) do
     slot:FindChildByType("UIButton").isInteractable = true
   end
 end
@@ -275,7 +283,7 @@ function openCharacterScreen()
 end
 
 function pickUpItem()
-  if not hoveredTable or not hoveredSlot or not hoveredTable[hoveredSlot] then return end
+  if not hoveredTable or not hoveredSlot then return end
 
   if moveFromTable and moveFromSlot then
 
@@ -366,6 +374,17 @@ function swapGearSlots(slotA, slotB)
   Utils.throttleToServer("SwapGearSlots", slotA, slotB)
 end
 
+function dropItem()
+  Utils.throttleToServer("DropItem", moveFromSlot, moveFromTable == inventory)
+
+  moveFromTable = nil
+  moveFromSlot = nil
+
+  PICKUP_SLOT.visibility = Visibility.FORCE_OFF
+
+  throttleInventory()
+end
+
 function onBindingPressed(thisPlayer, keyCode)
 	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
 
@@ -380,8 +399,13 @@ function onBindingPressed(thisPlayer, keyCode)
   if keyCode == "ability_primary" then
     -- drop item on the ground
     if moveFromTable and moveFromSlot then
-      Utils.throttleToServer("DropItem", moveFromSlot, moveFromTable == inventory)
-      throttleInventory()
+      -- dropItem()
+      moveFromTable = nil
+      moveFromSlot = nil
+
+      PICKUP_SLOT.visibility = Visibility.FORCE_OFF
+
+      redrawInventory()
     end
   end
 end

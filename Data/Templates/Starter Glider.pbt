@@ -49,6 +49,10 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:Description"
+            String: "Double-jump to deploy the glider at the cost of Stamina."
+          }
+          Overrides {
             Name: "cs:DeploySFX:tooltip"
             String: "The sound effect that will play once when the Glider is deployed."
           }

@@ -27,6 +27,12 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:IconBackground"
+            AssetReference {
+              Id: 1820389262061706020
+            }
+          }
+          Overrides {
             Name: "cs:ItemLevel"
             Int: 1
           }
@@ -238,6 +244,7 @@ Assets {
           }
         }
         ParentId: 7736638895574569630
+        ChildIds: 13550369496048799551
         ChildIds: 2806803512475034727
         WantsNetworking: true
         Collidable_v2 {
@@ -253,6 +260,42 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 13550369496048799551
+        Name: "Ranged Weapon Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7653355958368296281
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 363298956242194552
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -346,6 +389,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Equip_Book_013"
+      }
+    }
+    Assets {
+      Id: 1820389262061706020
+      Name: "Fantasy Ability Purple 004"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Ability_Purple_004"
       }
     }
     Assets {

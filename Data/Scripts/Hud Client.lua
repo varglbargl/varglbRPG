@@ -8,13 +8,16 @@ local HEALTH_NUMBERS = script:GetCustomProperty("HealthNumbers"):WaitForObject()
 local STAMINA_NUMBERS = script:GetCustomProperty("StaminaNumbers"):WaitForObject()
 local LEVEL_NUMBER = script:GetCustomProperty("LevelNumber"):WaitForObject()
 local PRIMARY_ICON = script:GetCustomProperty("PrimaryIcon"):WaitForObject()
+local PRIMARY_ICON_BG = script:GetCustomProperty("PrimaryIconBg"):WaitForObject()
 local PRIMARY_COOLDOWN = script:GetCustomProperty("PrimaryCooldown"):WaitForObject()
 local SECONDARY_ICON = script:GetCustomProperty("SecondaryIcon"):WaitForObject()
+local SECONDARY_ICON_BG = script:GetCustomProperty("SecondaryIconBg"):WaitForObject()
 local SECONDARY_COOLDOWN = script:GetCustomProperty("SecondaryCooldown"):WaitForObject()
 local CURSOR = script:GetCustomProperty("Cursor"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local barWidth = HEALTH_BAR.width
+local defaultBG = PRIMARY_ICON_BG:GetImage()
 
 local primaryAbilities = {}
 local secondaryAbilities = {}
@@ -204,6 +207,12 @@ function redrawHUD(gear)
     PRIMARY_ICON:SetImage(gear.primary.icon)
     PRIMARY_ICON.parent.visibility = Visibility.INHERIT
 
+    if gear.primary.iconBg then
+      PRIMARY_ICON_BG:SetImage(gear.primary.iconBg)
+    else
+      PRIMARY_ICON_BG:SetImage(defaultBG)
+    end
+
     initCooldownOverlay(gear.primary)
   else
     PRIMARY_ICON.parent.visibility = Visibility.FORCE_OFF
@@ -212,6 +221,12 @@ function redrawHUD(gear)
   if gear and gear.secondary then
     SECONDARY_ICON:SetImage(gear.secondary.icon)
     SECONDARY_ICON.parent.visibility = Visibility.INHERIT
+
+    if gear.secondary.iconBg then
+      SECONDARY_ICON_BG:SetImage(gear.secondary.iconBg)
+    else
+      SECONDARY_ICON_BG:SetImage(defaultBG)
+    end
 
     initCooldownOverlay(gear.secondary)
   else

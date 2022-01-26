@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18154999017159648286
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
   Id: 18133699642558591580
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -527,15 +536,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_kelp_bush_02"
-  }
-}
-Assets {
-  Id: 17598001875443373071
-  Name: "Crosshair 018"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Crosshair_018"
   }
 }
 Assets {
@@ -1346,15 +1346,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_003"
-  }
-}
-Assets {
-  Id: 15623445257236215190
-  Name: "BG Highlighted 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundHighlighted_019"
   }
 }
 Assets {
@@ -6062,6 +6053,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_002"
+  }
+}
+Assets {
+  Id: 6678434831570979721
+  Name: "Crosshair 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_004"
   }
 }
 Assets {

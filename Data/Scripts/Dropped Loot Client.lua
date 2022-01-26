@@ -1,11 +1,18 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 local Loot = require(script:GetCustomProperty("Loot"))
 
+local PICKUP_SFX = script:GetCustomProperty("PickupSFX")
+local UNIQUE_DROP_VFX = script:GetCustomProperty("UniqueDropVFX")
+local EPIC_DROP_VFX = script:GetCustomProperty("EpicDropVFX")
+local RARE_DROP_VFX = script:GetCustomProperty("RareDropVFX")
+local COMMON_DROP_VFX = script:GetCustomProperty("CommonDropVFX")
+
 local SERVER = script:GetCustomProperty("DroppedLootServer"):WaitForObject()
 local PICKUP_TRIGGER = script:GetCustomProperty("PickupTrigger"):WaitForObject()
-local PICKUP_SFX = script:GetCustomProperty("PickupSFX")
 local RING_MODEL = script:GetCustomProperty("RingModel")
 local OUTLINE = script:GetCustomProperty("Outline"):WaitForObject()
+local TRACER = script:GetCustomProperty("Tracer"):WaitForObject()
+local LIGHT = script:GetCustomProperty("Light"):WaitForObject()
 
 local droppedLoot = SERVER:GetCustomProperty("DroppedLoot")
 local lootPosition = PICKUP_TRIGGER:GetWorldPosition()
@@ -18,16 +25,29 @@ function onCustomPropertyChanged(object, propName)
     showItem()
   elseif propName == "DroppedRarity" then
     local rarity = SERVER:GetCustomProperty("DroppedRarity")
+    local color = nil
+    local vfx = nil
 
     if rarity == 0 then
-      OUTLINE:SetSmartProperty("Color A", Utils.color.common:GetDesaturated(-5))
+      color = Utils.color.common
+      vfx = COMMON_DROP_VFX
     elseif rarity == 1 then
-      OUTLINE:SetSmartProperty("Color A", Utils.color.rare:GetDesaturated(-5))
+      color = Utils.color.rare
+      vfx = RARE_DROP_VFX
     elseif rarity == 2 then
-      OUTLINE:SetSmartProperty("Color A", Utils.color.epic:GetDesaturated(-5))
+      color = Utils.color.epic
+      vfx = EPIC_DROP_VFX
     elseif rarity == 3 then
-      OUTLINE:SetSmartProperty("Color A", Utils.color.unique:GetDesaturated(-5))
+      color = Utils.color.unique
+      vfx = UNIQUE_DROP_VFX
     end
+
+    OUTLINE:SetSmartProperty("Color A", color)
+    TRACER:SetSmartProperty("Color B", color * rarity)
+    TRACER:SetScale(Vector3.ONE * (1.5 + rarity / 2))
+    LIGHT:SetColor(color)
+    LIGHT.intensity = rarity
+    World.SpawnAsset(vfx, {position = lootPosition})
   end
 end
 
@@ -37,6 +57,8 @@ function showItem()
 
   if thisItem.itemType == "Ring" then
     spawnedItem = World.SpawnAsset(RING_MODEL, {parent = script.parent})
+  elseif thisItem.itemType == "Glider" then
+    spawnedItem = World.SpawnAsset(droppedLoot, {parent = script.parent, rotation = Rotation.New(-25, 25, 25), position = Vector3.New(10, 0, 0), scale = Vector3.ONE * 0.5})
   else
     spawnedItem = World.SpawnAsset(droppedLoot, {parent = script.parent, rotation = Rotation.New(-25, 25, 25), position = Vector3.New(10, 0, 0)})
   end
@@ -64,7 +86,7 @@ function getYeLoot(thisTrigger, other)
   end
 
   pickupEvent:Disconnect()
-  Utils.playSoundEffect(PICKUP_SFX, {position = lootPosition})
+  Utils.playSoundEffect(PICKUP_SFX, {position = lootPosition, pitch = 300, volume = 0.6})
 end
 
 if PICKUP_TRIGGER.isInteractable then

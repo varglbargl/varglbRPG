@@ -27,6 +27,12 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:IconBackground"
+            AssetReference {
+              Id: 6359818232240340574
+            }
+          }
+          Overrides {
             Name: "cs:ItemLevel"
             Int: 26
           }
@@ -242,6 +248,7 @@ Assets {
           }
         }
         ParentId: 9693666416420425052
+        ChildIds: 8852701809113511225
         ChildIds: 8779487569528178172
         ChildIds: 11054229940983735039
         ChildIds: 11257958475618148072
@@ -272,6 +279,42 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 8852701809113511225
+        Name: "Ranged Weapon Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9795026391010869915
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 363298956242194552
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1448,6 +1491,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Equip_Scroll_006"
+      }
+    }
+    Assets {
+      Id: 6359818232240340574
+      Name: "Japanese Ability Fire Ball"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "IllustratedIcons_Japan_Abilities_FireBall"
       }
     }
     Assets {

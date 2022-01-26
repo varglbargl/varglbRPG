@@ -23,16 +23,16 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Utils:category"
-        String: "APIs"
-      }
-      Overrides {
         Name: "cs:Wildermagic:category"
         String: "APIs"
       }
       Overrides {
         Name: "cs:Impact:category"
         String: "VFX"
+      }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
       }
     }
   }
