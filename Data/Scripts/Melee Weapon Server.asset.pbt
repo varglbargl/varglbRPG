@@ -17,11 +17,6 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Hitbox"
-        ObjectReference {
-        }
-      }
-      Overrides {
         Name: "cs:Wildermagic:category"
         String: "APIs"
       }

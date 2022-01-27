@@ -15,13 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2173019041091157074
-        ChildIds: 3229119823077251311
-        ChildIds: 5338623925772185455
-        ChildIds: 13143806195220504081
-        ChildIds: 11401565574937666638
-        ChildIds: 2990420957127948074
-        ChildIds: 14206372994455408336
+        ParentId: 4781671109827199097
+        ChildIds: 9584799108331260758
         ChildIds: 18436402114251063694
         ChildIds: 6552927795440487353
         ChildIds: 2926436614806587103
@@ -49,23 +44,21 @@ Assets {
         }
       }
       Objects {
-        Id: 3229119823077251311
-        Name: "Ring - Quarter"
+        Id: 9584799108331260758
+        Name: "Clay Form 14"
         Transform {
           Location {
-            X: 4.61035156
-            Y: -0.559570312
-            Z: 3.81091309
+            X: -1.39016783
+            Y: 4.20063429e-07
+            Z: 6.70840836
           }
           Rotation {
-            Pitch: 26.3920403
-            Yaw: 73.9338303
-            Roll: 47.0747185
+            Pitch: 39.2431526
           }
           Scale {
-            X: 0.459243953
-            Y: 0.459243953
-            Z: 0.459243953
+            X: 0.503679216
+            Y: 0.374181837
+            Z: 0.250240117
           }
         }
         ParentId: 3428235202430745803
@@ -77,14 +70,10 @@ Assets {
             }
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.441660017
-              G: 0.526527882
+              R: 0.274522
+              G: 0.392817348
               B: 0.866000056
               A: 1
             }
@@ -104,382 +93,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16104667655440633833
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 5338623925772185455
-        Name: "Ring - Quarter"
-        Transform {
-          Location {
-            X: -1.61035156
-            Y: -0.00732421875
-            Z: 11.7449951
-          }
-          Rotation {
-            Pitch: -42.2085571
-            Yaw: 142.714554
-            Roll: 5.20185852
-          }
-          Scale {
-            X: 0.459243953
-            Y: 0.459243953
-            Z: 0.459243953
-          }
-        }
-        ParentId: 3428235202430745803
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9837031551250158292
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.441660017
-              G: 0.526527882
-              B: 0.866000056
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16104667655440633833
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 13143806195220504081
-        Name: "Ring - Quarter"
-        Transform {
-          Location {
-            X: 3.41601562
-            Y: -0.95703125
-            Z: 3.03967285
-          }
-          Rotation {
-            Pitch: -2.2064209
-            Yaw: -120.741287
-            Roll: -14.4831848
-          }
-          Scale {
-            X: 0.459243953
-            Y: 0.459243953
-            Z: 0.459243953
-          }
-        }
-        ParentId: 3428235202430745803
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9837031551250158292
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.441660017
-              G: 0.526527882
-              B: 0.866000056
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16104667655440633833
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 11401565574937666638
-        Name: "Ring - Quarter"
-        Transform {
-          Location {
-            X: -1.27929688
-            Y: -1.42919922
-            Z: 11.9656982
-          }
-          Rotation {
-            Pitch: 15.4157085
-            Yaw: -27.8699341
-            Roll: -29.3950806
-          }
-          Scale {
-            X: 0.459243953
-            Y: 0.459243953
-            Z: 0.459243953
-          }
-        }
-        ParentId: 3428235202430745803
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9837031551250158292
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.441660017
-              G: 0.526527882
-              B: 0.866000056
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16104667655440633833
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 2990420957127948074
-        Name: "Pipe - Half Thick"
-        Transform {
-          Location {
-            X: 2.74316406
-            Y: -0.749023438
-            Z: 5.38635254
-          }
-          Rotation {
-            Pitch: -8.59741211
-            Yaw: 103.080353
-            Roll: 40.761116
-          }
-          Scale {
-            X: 0.396017015
-            Y: 0.396010578
-            Z: 0.0147998109
-          }
-        }
-        ParentId: 3428235202430745803
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9837031551250158292
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.441660017
-              G: 0.526527882
-              B: 0.866000056
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4709690006431586345
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 14206372994455408336
-        Name: "Pipe - Half Thick"
-        Transform {
-          Location {
-            X: 2.74316406
-            Y: -0.749023438
-            Z: 5.38635254
-          }
-          Rotation {
-            Pitch: 8.59739113
-            Yaw: -76.9196777
-            Roll: -23.3052979
-          }
-          Scale {
-            X: 0.396017015
-            Y: 0.396010578
-            Z: 0.0147998109
-          }
-        }
-        ParentId: 3428235202430745803
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9837031551250158292
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.441660017
-              G: 0.526527882
-              B: 0.866000056
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4709690006431586345
+            Id: 10118084408177162879
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -503,19 +117,19 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: 0.666992188
+            X: -1.89257812
             Y: -0.733886719
-            Z: 8.59362793
+            Z: 10.4980469
           }
           Rotation {
-            Pitch: -31.5030518
-            Yaw: -161.602982
-            Roll: -10.0979919
+            Pitch: -38.4261475
+            Yaw: -159.910324
+            Roll: -13.0455017
           }
           Scale {
-            X: 0.258912772
-            Y: 0.258912772
-            Z: 0.172608495
+            X: 0.240901902
+            Y: 0.240901962
+            Z: 0.160601333
           }
         }
         ParentId: 3428235202430745803
@@ -533,8 +147,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.441660017
-              G: 0.526527882
+              R: 0.274522
+              G: 0.392817348
               B: 0.866000056
               A: 1
             }
@@ -578,19 +192,19 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: -5.1484375
+            X: -8.41796875
             Y: -1.16650391
-            Z: 14.5113525
+            Z: 15.6274414
           }
           Rotation {
-            Pitch: -47.6134033
-            Yaw: -157.384598
-            Roll: -12.8120422
+            Pitch: -54.2900696
+            Yaw: -153.632828
+            Roll: -17.6353455
           }
           Scale {
-            X: 0.242655769
-            Y: 0.227459475
-            Z: 0.310483515
+            X: 0.225775823
+            Y: 0.211636737
+            Z: 0.288885295
           }
         }
         ParentId: 3428235202430745803
@@ -608,8 +222,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.441660017
-              G: 0.526527882
+              R: 0.274522
+              G: 0.392817348
               B: 0.866000056
               A: 1
             }
@@ -653,19 +267,19 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: -10.4492188
-            Y: -2.18261719
-            Z: 15.876709
+            X: -13.515625
+            Y: -2.15917969
+            Z: 16.0776367
           }
           Rotation {
-            Pitch: -79.5122681
-            Yaw: -104.870544
-            Roll: -62.947937
+            Pitch: -78.8763733
+            Yaw: -65.7814
+            Roll: -102.685883
           }
           Scale {
-            X: 0.194295704
-            Y: 0.235339865
-            Z: 0.213566735
+            X: 0.180781782
+            Y: 0.1917236
+            Z: 0.277237415
           }
         }
         ParentId: 3428235202430745803
@@ -683,8 +297,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.441660017
-              G: 0.526527882
+              R: 0.274522
+              G: 0.392817348
               B: 0.866000056
               A: 1
             }
@@ -728,19 +342,19 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: -13.4238281
-            Y: -3.00683594
-            Z: 15.0229492
+            X: -17.1259766
+            Y: -3.04394531
+            Z: 13.9223633
           }
           Rotation {
-            Pitch: -65.8240356
-            Yaw: -6.60107422
-            Roll: -158.591156
+            Pitch: -58.5301819
+            Yaw: -5.17431641
+            Roll: -160.201691
           }
           Scale {
-            X: 0.158598527
-            Y: 0.189177766
-            Z: 0.189197481
+            X: 0.147562593
+            Y: 0.157837152
+            Z: 0.176038221
           }
         }
         ParentId: 3428235202430745803
@@ -758,8 +372,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.441660017
-              G: 0.526527882
+              R: 0.274522
+              G: 0.392817348
               B: 0.866000056
               A: 1
             }
@@ -803,19 +417,19 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: -15.4589844
-            Y: -3.92871094
-            Z: 13.3374023
+            X: -19.1103516
+            Y: -3.859375
+            Z: 12.5849609
           }
           Rotation {
-            Pitch: -79.3200684
-            Yaw: -113.627808
-            Roll: -53.7703247
+            Pitch: -70.75354
+            Yaw: -31.0076904
+            Roll: -138.193573
           }
           Scale {
-            X: 0.11659538
-            Y: 0.116596974
-            Z: 0.165802583
+            X: 0.108486943
+            Y: 0.109491877
+            Z: 0.154257938
           }
         }
         ParentId: 3428235202430745803
@@ -833,8 +447,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.441660017
-              G: 0.526527882
+              R: 0.274522
+              G: 0.392817348
               B: 0.866000056
               A: 1
             }
@@ -878,19 +492,19 @@ Assets {
         Name: "Horn"
         Transform {
           Location {
-            X: -17.484375
-            Y: -4.05957031
-            Z: 14.1035156
+            X: -21.0351562
+            Y: -4.09667969
+            Z: 12.4936523
           }
           Rotation {
-            Pitch: -14.4089355
-            Yaw: -83.9256
-            Roll: 86.0803146
+            Pitch: -13.5163574
+            Yaw: -82.1132202
+            Roll: 78.5811462
           }
           Scale {
-            X: 0.201609656
-            Y: 0.201609403
-            Z: 0.131576419
+            X: 0.187585041
+            Y: 0.187584803
+            Z: 0.122423522
           }
         }
         ParentId: 3428235202430745803
@@ -908,8 +522,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.441660017
-              G: 0.526527882
+              R: 0.274522
+              G: 0.392817348
               B: 0.866000056
               A: 1
             }
@@ -953,19 +567,19 @@ Assets {
         Name: "Urban Pipe Wrap 01"
         Transform {
           Location {
-            X: 1.12988281
-            Y: -0.825195312
-            Z: 7.31005859
+            X: -1.23632812
+            Y: -0.811035156
+            Z: 9.31982422
           }
           Rotation {
-            Pitch: -34.0319214
-            Yaw: -161.059479
-            Roll: -10.3922424
+            Pitch: -40.927063
+            Yaw: -159.143234
+            Roll: -13.5357666
           }
           Scale {
-            X: 0.951750159
-            Y: 0.90648371
-            Z: 0.48303178
+            X: 0.88554287
+            Y: 0.843426287
+            Z: 0.449430525
           }
         }
         ParentId: 3428235202430745803
@@ -1024,12 +638,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16104667655440633833
-      Name: "Ring - Quarter"
+      Id: 10118084408177162879
+      Name: "Clay Form 14"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_quarter_torus_002"
+        AssetId: "sm_prim_org_clayform_014_ref"
       }
     }
     Assets {
@@ -1039,15 +653,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_basic_pbr_material_001"
-      }
-    }
-    Assets {
-      Id: 4709690006431586345
-      Name: "Pipe - Half Thick"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_half-pipe_003"
       }
     }
     Assets {

@@ -22,7 +22,7 @@ function onPlayerDamaged(player, damage)
 end
 
 function onPlayerDied(player)
-  Task.Wait(0.5)
+  Task.Wait(1)
 
   if not Object.IsValid(player) then return end
 
@@ -36,7 +36,7 @@ function onPlayerJoined(player)
   player:SetResource("Experience", 0)
   player:SetResource("Gold", 0)
 
-  local class = 1
+  local class = 3
 
   player:SetResource("Class", class)
 
@@ -76,7 +76,7 @@ function onPlayerJoined(player)
   damagedEvents[player] = player.damagedEvent:Connect(onPlayerDamaged)
 
   -- handler params: Player_player, Damage_damage
-  damagedEvents[player] = player.diedEvent:Connect(onPlayerDied)
+  diedEvents[player] = player.diedEvent:Connect(onPlayerDied)
 
   -- DEBUG!!
 
@@ -118,35 +118,31 @@ end
 
 function onPlayerLeft(player)
   damagedEvents[player]:Disconnect()
+  diedEvents[player]:Disconnect()
 end
 
 function onPlayerGainedXP(player, amount)
+  if not Object.IsValid(player) then return end
+
   local currentXP = player:GetResource("Experience")
   local currentLevel = player:GetResource("Level")
 
   if currentLevel == maxLevel then return end
 
   if currentXP + amount >= Utils.experienceToNextLevel(currentLevel) then
+
+    local levelsGained = 0
     local vfx = nil
 
     if LEVEL_UP_VFX then
       vfx = World.SpawnAsset(LEVEL_UP_VFX, {position = player:GetWorldPosition(), rotation = player:GetWorldRotation(), scale = Vector3.ONE * 0.01})
 
-      if Object.IsValid(vfx) then
+      local NAME_TEXT = vfx:GetCustomProperty("NameText"):WaitForObject()
+      local SHADOW_TEXT = vfx:GetCustomProperty("ShadowText"):WaitForObject()
 
-        local NAME_TEXT = vfx:GetCustomProperty("NameText"):WaitForObject()
-        local SHADOW_TEXT = vfx:GetCustomProperty("ShadowText"):WaitForObject()
-
-        if Object.IsValid(player) then
-          NAME_TEXT.text = player.name
-          SHADOW_TEXT.text = player.name
-        else
-          vfx:Destroy()
-        end
-      end
+      NAME_TEXT.text = player.name
+      SHADOW_TEXT.text = player.name
     end
-
-    local levelsGained = 0
 
     while currentXP + amount >= Utils.experienceToNextLevel(currentLevel + levelsGained) do
       currentXP = currentXP - Utils.experienceToNextLevel(currentLevel + levelsGained)
@@ -167,7 +163,7 @@ function onPlayerGainedXP(player, amount)
 
     applyStatsWithGear(player)
 
-    if vfx then
+    if Object.IsValid(vfx) then
       vfx:ScaleTo(Vector3.ONE, 0.2)
 
       Task.Wait(7)

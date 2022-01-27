@@ -50,7 +50,6 @@ Assets {
             Z: 202.076263
           }
           Rotation {
-            Yaw: -4.26886743e-07
             Roll: 1.59027725e-15
           }
           Scale {
@@ -78,6 +77,15 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 0.33
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1.01
+              G: 1.01
+              B: 1.01
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -221,7 +229,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.204640418
+            Float: 0.198425174
           }
         }
         Collidable_v2 {
@@ -366,6 +374,10 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
             Float: 0.125
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.15
           }
         }
         Collidable_v2 {

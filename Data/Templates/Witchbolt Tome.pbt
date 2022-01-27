@@ -48,6 +48,10 @@ Assets {
             Name: "cs:MaxDamage"
             Int: 11
           }
+          Overrides {
+            Name: "cs:IsMagic"
+            Bool: true
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -91,31 +95,27 @@ Assets {
         ParentId: 7736638895574569630
         UnregisteredParameters {
           Overrides {
-            Name: "cs:IsSpell"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:Projectile"
             AssetReference {
-              Id: 6772948314950040734
+              Id: 4300020375618610701
             }
           }
           Overrides {
             Name: "cs:Trail"
             AssetReference {
-              Id: 1641624343886632927
+              Id: 2435552773657097689
             }
           }
           Overrides {
             Name: "cs:Impact"
             AssetReference {
-              Id: 1064589050751091743
+              Id: 15064358748470972744
             }
           }
           Overrides {
             Name: "cs:MuzzleFlash"
             AssetReference {
-              Id: 6157955510408814690
+              Id: 15684172335197207637
             }
           }
         }
@@ -157,10 +157,6 @@ Assets {
         }
         ParentId: 7736638895574569630
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:IsMagic"
-            Bool: true
-          }
         }
         WantsNetworking: true
         Collidable_v2 {

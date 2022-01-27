@@ -17,6 +17,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Auras"
+        AssetReference {
+          Id: 2171517573579017799
+        }
+      }
+      Overrides {
         Name: "cs:SpawnVFX"
         AssetReference {
           Id: 4048767687044730201
@@ -30,6 +36,18 @@ Assets {
       Overrides {
         Name: "cs:Wander"
         Bool: true
+      }
+      Overrides {
+        Name: "cs:Loot:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Auras:category"
+        String: "APIs"
       }
     }
   }

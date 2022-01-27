@@ -1,3 +1,5 @@
+local Utils = require(script:GetCustomProperty("Utils"))
+
 local PICKUP_TRIGGER = script:GetCustomProperty("PickupTrigger"):WaitForObject()
 
 PICKUP_TRIGGER.collision = Collision.FORCE_OFF
@@ -9,6 +11,10 @@ function getYeLoot(thisTrigger, other)
   if not Object.IsValid(other) or not other:IsA("Player") then return end
 
   if other.serverUserData["Inventory"].full then return end
+
+  if lootDrop.rarity >= 3 then
+    Utils.throttleMessage(other.name.." just looted the legendary ["..lootDrop.name.."]!")
+  end
 
   Events.Broadcast("AddToInventory", other, lootDrop)
   pickupEvent:Disconnect()

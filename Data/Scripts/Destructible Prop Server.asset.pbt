@@ -17,6 +17,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:SpawnVFX"
+        AssetReference {
+          Id: 4048767687044730201
+        }
+      }
+      Overrides {
         Name: "cs:LootDropChance"
         Float: 0.75
       }
@@ -39,6 +45,10 @@ Assets {
       Overrides {
         Name: "cs:LootDropRarity:category"
         String: "Optional"
+      }
+      Overrides {
+        Name: "cs:SpawnVFX:category"
+        String: "Required"
       }
     }
   }

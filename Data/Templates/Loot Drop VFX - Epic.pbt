@@ -161,7 +161,7 @@ Assets {
           }
           AutoPlay: true
           Pitch: 720
-          Volume: 0.5
+          Volume: 0.4
           Falloff: 3000
           Radius: 1000
           FadeOutTime: 0.5

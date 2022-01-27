@@ -62,11 +62,11 @@ Assets {
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 0.4
+            Float: 0.75
           }
           Overrides {
             Name: "bp:Life"
-            Float: 0.22
+            Float: 0.5
           }
           Overrides {
             Name: "bp:Emissive Boost"

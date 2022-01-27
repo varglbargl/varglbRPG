@@ -147,7 +147,7 @@ function Utils.rollDamage(min, max)
     return Utils.rollDamage(min.minDamage, min.maxDamage)
   end
 
-  return Damage.New(math.random(math.ceil(min), math.ceil(max)))
+  return Damage.New(math.random(math.floor(min + 0.5), math.floor(max + 0.5)))
 end
 
 function Utils.getWeaponSpeed(weapon)

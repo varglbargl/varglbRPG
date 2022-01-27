@@ -1111,7 +1111,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -1169,6 +1169,26 @@ Assets {
           }
         }
         ParentId: 594963982957250202
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 18440814011778038326
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.125
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1324,7 +1344,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
+            Float: 0.125
           }
         }
         Collidable_v2 {
@@ -1403,7 +1423,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
+            Float: 0.125
           }
         }
         Collidable_v2 {
@@ -1485,7 +1505,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
+            Float: 0.125
           }
         }
         Collidable_v2 {
@@ -1564,7 +1584,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
+            Float: 0.125
           }
         }
         Collidable_v2 {
@@ -1960,6 +1980,7 @@ Assets {
         Name: "Explosion Kit Rock Burst VFX"
         Transform {
           Location {
+            Z: 10
           }
           Rotation {
           }

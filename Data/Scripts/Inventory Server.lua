@@ -84,9 +84,10 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
 
   -- print("I very much want to unequip "..item.name..".")
 
-  for i, gear in ipairs(player:GetEquipment()) do
+  for _, gear in ipairs(player:GetEquipment()) do
     if gear.id == item.equipmentId then
 
+      gear:Unequip()
       gear:Destroy()
       item.equipmentId = nil
 
@@ -117,7 +118,7 @@ function equipToPlayer(player, gearSlot, inventorySlot)
 
     Utils.updatePrivateNetworkedData(player, "Inventory")
 
-    local equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000})
+    local equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
 
     item.equipmentId = equipment.id
 
@@ -163,6 +164,7 @@ function dropItem(player, slot, fromInventory)
 
     for i, gear in ipairs(player:GetEquipment()) do
       if gear.id == item.equipmentId then
+        gear:Unequip()
         gear:Destroy()
         item.equipmentId = nil
       end

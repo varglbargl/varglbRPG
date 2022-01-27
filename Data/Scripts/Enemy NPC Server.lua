@@ -1,5 +1,6 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 local Loot = require(script:GetCustomProperty("Loot"))
+local Auras = require(script:GetCustomProperty("Auras"))
 
 local enemy = script.parent
 
@@ -25,7 +26,7 @@ local moveSpeed = 1
 
 local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition(), 50)
 local spawnRotation = enemy:GetWorldRotation()
-local spawnScale = HITBOX:GetWorldScale()
+local spawnScale = enemy:GetWorldScale()
 
 local damagedEvent = nil
 local diedEvent = nil
@@ -41,21 +42,20 @@ if WANDER then
   enemy:SetRotation(Rotation.New(0, 0, math.random(360)))
 end
 
-local defaultScale = enemy:GetWorldScale()
-
 enemy:SetWorldScale(Vector3.ONE * 0.2)
-enemy:ScaleTo(defaultScale, 0.2)
+enemy:ScaleTo(spawnScale, 0.2)
 
-function areTherePlayersNearby()
+function areTherePlayersNearby(checkTooClose)
   local players = Game.GetPlayers()
 
   for _, player in ipairs(players) do
     if Object.IsValid(player) then
       local distance = (player:GetWorldPosition() - spawnPoint).size
 
-      if distance < 7500 and distance > 250 then
-        -- return "i hate players"
-        return true
+      if distance < 7500 then
+        if (checkTooClose and distance > 250) or not checkTooClose then
+          return true
+        end
       end
     end
   end
@@ -116,7 +116,7 @@ function fight()
           enemy:LookAtContinuous(fightTarget, true, 500)
           enemy:MoveTo(toVector, distanceToPlayer / 800 / moveSpeed)
 
-          Task.Wait(distanceToPlayer / 800 / moveSpeed - 0.5)
+          Task.Wait(distanceToPlayer / 800 / moveSpeed - 0.2)
         else
           -- print("Bweemp bwomp! I can't build there!")
         end
@@ -174,31 +174,33 @@ function stopFighting()
 end
 
 function attack(target)
-  if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(target) then return end
+  if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(target) or stunned then return end
 
   local damage = Utils.rollDamage(stats)
-  local reflectedDamage = 0
+  local reflectedDamage = Damage.New(0)
   local targetClass = target:GetResource("Class")
 
   damage.reason = DamageReason.COMBAT
 
   if targetClass == 1 then
-    reflectedDamage = Damage.New(math.min(target.hitPoints, math.max(1, math.floor(damage.amount/10 + math.random()))))
+    reflectedDamage.amount = math.max(1, math.floor(damage.amount/10 + math.random()))
     reflectedDamage.sourcePlayer = target
     reflectedDamage.reason = DamageReason.COMBAT
 
     damage.amount = damage.amount - reflectedDamage.amount
 
     enemy:ApplyDamage(reflectedDamage)
+
   elseif targetClass == 3 then
     if target:GetResource("Orbs") > 0 then
       target:RemoveResource("Orbs", 1)
-      damage.amount = math.ceil(damage.amount * 0.75)
+      damage.amount = math.floor(damage.amount * 0.75 + 0.5)
     end
   end
 
   Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamage.amount, not enemy.isDead)
   target:ApplyDamage(damage)
+
   Task.Wait(1.5)
 end
 
@@ -223,22 +225,22 @@ function die(thisEnemy, damage)
   end
 
   for otherPlayer in pairs(attackers) do
-  --   local playerLevel = otherPlayer:GetResource("Level")
-  --   local xpAmount = nil
+    -- local playerLevel = otherPlayer:GetResource("Level")
+    -- local xpAmount = nil
 
-  --   if playerLevel >= stats.level + 5 then
-  --     -- you are higher level by a lot
-  --     -- make number smaller
-  --     local difference = playerLevel - stats.level + 4
+    -- if playerLevel >= stats.level + 5 then
+    --   -- you are higher level by a lot
+    --   -- make number smaller
+    --   local difference = playerLevel - stats.level + 4
 
-  --     xpAmount = math.ceil(stats.xpValue / difference)
-  --   elseif stats.level >= playerLevel + 5 then
-  --     -- the enemy is higher level by a lot
-  --     -- make number larger
-  --     local difference = playerLevel - stats.level + 4
+    --   xpAmount = math.ceil(stats.xpValue / difference)
+    -- elseif stats.level >= playerLevel + 5 then
+    --   -- the enemy is higher level by a lot
+    --   -- make number larger
+    --   local difference = playerLevel - stats.level + 4
 
-  --     xpAmount = math.ceil(stats.xpValue + stats.xpValue * difference / 10)
-  --   else
+    --   xpAmount = math.ceil(stats.xpValue + stats.xpValue * difference / 10)
+    -- else
     xpAmount = stats.xpValue
     -- end
 
@@ -284,7 +286,7 @@ end
 function attemptRespawn()
   Task.Wait(math.random(5, 10))
 
-  if areTherePlayersNearby() then
+  if areTherePlayersNearby(true) then
     if SPAWN_VFX then
       World.SpawnAsset(SPAWN_VFX, {position = spawnPoint, scale = spawnScale})
     end
@@ -319,6 +321,7 @@ function onStunned(player)
   enemy:StopRotate()
 
   stunned = true
+  Auras.apply(enemy, "Stun")
 
   if stunTask then stunTask:Cancel() end
 
@@ -333,6 +336,7 @@ function onTaunted(player)
   if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
 
   fightTarget = player
+  Auras.apply(enemy, "Taunt")
 end
 
 local slowTask = nil
@@ -341,6 +345,7 @@ function onSlowed(player)
   if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
 
   moveSpeed = 0.75
+  Auras.apply(enemy, "Slow")
 
   if slowTask then slowTask:Cancel() end
 
@@ -396,7 +401,7 @@ function onDamaged(thisEnemy, damage)
 end
 
 function wanderLoop()
-  if areTherePlayersNearby() == false then
+  if not areTherePlayersNearby() then
     despawn()
     return
   end

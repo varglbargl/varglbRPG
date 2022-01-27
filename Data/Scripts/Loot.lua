@@ -24,7 +24,7 @@ local statBalance = {
 }
 
 local lootRarity = {
-  74, 20, 5, 1
+  74, 20, 5, 1, 0.1
 }
 
 function readLootTable(thisLootTable, itemType)
@@ -44,8 +44,7 @@ function readLootTable(thisLootTable, itemType)
       maxDamage = spawnedItem:GetCustomProperty("MaxDamage"),
       speed = Utils.getWeaponSpeed(spawnedItem),
       splash = spawnedItem:GetCustomProperty("SplashRadius"),
-      -- health = spawnedItem:GetCustomProperty("Health"),
-      -- stamina = spawnedItem:GetCustomProperty("Stamina"),
+      statusEffects = {},
       grit = spawnedItem:GetCustomProperty("Grit"),
       wit = spawnedItem:GetCustomProperty("Wit"),
       spit = spawnedItem:GetCustomProperty("Spit"),
@@ -55,20 +54,26 @@ function readLootTable(thisLootTable, itemType)
       enchant = ""
     }
 
-    if lootItem.minDamage then
-      lootItem.minDamage = math.floor(lootItem.minDamage * Utils.magicNumber(lootItem.itemLevel) + 0.5)
-
-      if lootItem.splash then
-        lootItem.minDamage = math.floor(lootItem.minDamage / (0.75 + lootItem.splash / 4) + 0.5)
-      end
+    if spawnedItem:GetCustomProperty("StatusEffects") then
+      lootItem.statusEffects = {CoreString.Split(CoreString.Trim(string.lower(spawnedItem:GetCustomProperty("StatusEffects"))), ",")}
     end
 
-    if lootItem.maxDamage then
-      lootItem.maxDamage = math.floor(lootItem.maxDamage * Utils.magicNumber(lootItem.itemLevel) + 0.5)
+    if lootItem.minDamage and lootItem.maxDamage then
+      lootItem.minDamage = lootItem.minDamage * Utils.magicNumber(lootItem.itemLevel)
+      lootItem.maxDamage = lootItem.maxDamage * Utils.magicNumber(lootItem.itemLevel)
 
       if lootItem.splash then
-        lootItem.maxDamage = math.floor(lootItem.maxDamage / (0.75 + lootItem.splash / 4) + 0.5)
+        lootItem.minDamage = lootItem.minDamage / (0.75 + lootItem.splash / 4)
+        lootItem.maxDamage = lootItem.maxDamage / (0.75 + lootItem.splash / 4)
       end
+
+      if #lootItem.statusEffects >= 1 then
+        lootItem.minDamage = lootItem.minDamage / (1 + #lootItem.statusEffects / 2)
+        lootItem.maxDamage = lootItem.maxDamage / (1 + #lootItem.statusEffects / 2)
+      end
+
+      lootItem.minDamage = math.floor(lootItem.minDamage + 0.5)
+      lootItem.maxDamage = math.floor(lootItem.maxDamage + 0.5)
     end
 
     table.insert(lootTable, lootItem)
@@ -87,7 +92,7 @@ readLootTable(Gliders, "Glider")
 
 local superlatives = {
   g = {"Executioner's", "Blacksmith's", "Big Jim's", "Powerfully", "Aggressively", "Hella", "Unintentionally", "Bumblingly", "Brazenly", "Overpoweringly"},
-  w = {"Necromancer's", "Philosopher's", "Alchemist's", "Impossibly", "Confusingly", "Inexplicably", "Mysteriously", "Puzzlingly", "Ambiguously", "Paradoxically", "Figuratively"},
+  w = {"Necromancer's", "Philosopher's", "Alchemist's", "Impossibly", "Inexplicably", "Mysteriously", "Puzzlingly", "Ambiguously", "Paradoxically", "Figuratively"},
   s = {"Thief's", "Gambler's", "Bard's", "The Prince's Missing", "Deceptively", "Suspiciously", "Conspicuously", "Counterintuitively", "Vaguely", "Dangerously"},
   h = {"Therapist's", "Medic's", "Securely", "Safely", "Pleasantly", "Just A Big", "Wonderfully", "Mavelously", "Admirably", "Melody's"},
   a = {"Champion's", "Impressively", "Surprisingly", "Surpassingly", "Flawlessly", "Garishly", "Excellently", "Elegantly", "Fashionably", "Tastefully", "Classically"}
@@ -96,7 +101,7 @@ local superlatives = {
 local prefixes = {
   g = {"Imposing", "Buff", "Spicy", "Angry", "Rough", "Intense", "Strong", "Loud", "Flavor Blasted", "Rad", "Burning", "Oafish", "Vulgar", "Bloody", "Coarse", "Rough", "Dumb", "Hardcore", "Hellacious", "Bulky"},
   w = {"Strange", "Illusory", "Amorphous", "Ancient", "Ensorceled", "Cursed", "Blessed", "Mysterious", "Obscure", "Otherworldly", "Circuitous", "Possessed", "Spooky", "Baleful", "Sinister", "Demifungal", "Twitching"},
-  s = {"Stolen", "Quick", "Fancy", "Intricate", "Ticking", "Booby Trapped", "Spring-Loaded", "Engineered", "Distracting", "Baroque", "Slippery", "Concealed", "Tactical", "Collapsible", "Shady", "Iffy", "Inconspicuous", "Sketcky", "Dastardly"},
+  s = {"Quick", "Fancy", "Intricate", "Ticking", "Booby Trapped", "Spring-Loaded", "Engineered", "Distracting", "Baroque", "Slippery", "Concealed", "Tactical", "Collapsible", "Shady", "Iffy", "Inconspicuous", "Sketcky", "Dastardly"},
   h = {"Thick", "Padded", "Comfortable", "Ergonomic", "Warm", "Helpful", "Calming", "Snug", "Weighted", "Plush", "Soothing", "Welcoming", "Wholesome", "Edible", "Sanitary", "Scented", "Inflatable", "Bouncy"},
   a = {"Sleek", "Expensive", "Reversible", "Stylish", "Balanced", "Refined", "Compact", "Useful", "Light", "Bejeweled", "Designed", "Resplendent", "Bespoke", "Elite", "Filigreed", "Ornate"}
 }
@@ -109,7 +114,15 @@ local suffixes = {
   a = {"Ease", "the Fox", "the Eagle", "the Lion and the Unicorn", "the Swordfish", "the Stallion", "the Crown", "the Empire", "the Hummingbird", "Craftsmanship", "the Show", "the Big Game", "the Master", "Go Fast", "the Professional", "Attractiveness", "Gettin' It Done", "Bookin' It", "Leaving", "Running Away", "Sprinting and Gliding Slightly Better", "the Queen", "the King", "Royalty", "Grace", "Honor", "Nobility", "the Aristocracy", "the Royal Guard", "the Queen's Court"}
 }
 
-local uniqueNames = {"The Paid Vacation", "Bungo's Delite", "Herald of the Primatriarch", "Dunston's Checksum", "Gavel of the Infinite", "Eye of the Wicked Lord"}
+local uniqueNames = {
+  ring   = {"The Paid Vacation", "Bingo's Paradise", "The Death Loop", "The Mobius Double-Reacharound", "Ring'); DROP TABLE Equipment;--"},
+  melee  = {"Herald of the Primatriarch", "Gavel of the Infinite", "The Bite of '87", "The Terrible Secret of Space"},
+  spell  = {"The Eye of the Wicked Lord", "Paradox Engine", "Anathema Device", "Dark Ontolomancy, Vol. 2", "The Dance that Ends the Universe"},
+  ranged = {"Heartpiercer Spyglass", "Seeker Missile", "B.F.G.", "The Shamethrower"},
+  shield = {"Ummovable Object", "Aegis of the Metatron", "Impassable Expanse of Space", "Invisible Boundary Line"},
+  potion = {"Pills and Good Advice", "Swampwater Soda", "Phial of Immortality"},
+  glider = {"Wings of Time", "Eject Button", "Scrungo's Great Escape"}
+}
 
 function assignStat(item, letter)
   local magicNumber = Utils.magicNumber(item.itemLevel)
@@ -137,7 +150,7 @@ function assignStat(item, letter)
 end
 
 function Loot.enchantItem(item, rarity)
-  if not rarity or rarity == 0 then return item end
+  if not rarity or rarity <= 0 then return item end
 
   local dupe = {}
 
@@ -250,9 +263,12 @@ function Loot.getRandom(level, rarity)
   rarity = rarity or 0
 
   local rollTable = {}
-  local roll = math.random(1, 100)
+  local roll = math.random() * 100
 
-  if roll <= lootRarity[4] then
+  if roll <= lootRarity[5] then
+    -- rarity = math.max(rarity, 4)
+    rarity = math.max(rarity, 3)
+  elseif roll <= lootRarity[4] then
     rarity = math.max(rarity, 3)
   elseif roll <= lootRarity[3] then
     rarity = math.max(rarity, 2)
@@ -263,8 +279,8 @@ function Loot.getRandom(level, rarity)
   end
 
   if level then
-    for i, item in ipairs(lootTable) do
-      if item.itemLevel >= level - 5 and item.itemLevel <= level + 1 then
+    for _, item in ipairs(lootTable) do
+      if item.itemLevel >= level - 3 and item.itemLevel <= level + 2 then
         table.insert(rollTable, item)
       end
     end
@@ -324,7 +340,8 @@ function Loot.giveRandomToPlayer(player, level, rarity)
 end
 
 function Loot.dropItem(position, item)
-  local droppedLoot = World.SpawnAsset(LOOT_DROP, {position = Utils.groundBelowPoint(position)})
+  local where = Utils.groundBelowPoint(position) or position
+  local droppedLoot = World.SpawnAsset(LOOT_DROP, {position = where})
 
   if droppedLoot.lifeSpan == 0 then
     droppedLoot.lifeSpan = 30
@@ -343,7 +360,7 @@ function Loot.dropGold(position, amount)
   local droppedGold = World.SpawnAsset(GOLD_DROP, {position = Utils.groundBelowPoint(position)})
 
   if droppedGold.lifeSpan == 0 then
-    droppedGold.lifeSpan = 30
+    droppedGold.lifeSpan = 15
   end
 
   droppedGold.serverUserData["GoldAmount"] = amount

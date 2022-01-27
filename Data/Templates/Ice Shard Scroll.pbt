@@ -52,6 +52,10 @@ Assets {
             Name: "cs:StatusEffects"
             String: "slow"
           }
+          Overrides {
+            Name: "cs:IsMagic"
+            Bool: true
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -94,10 +98,6 @@ Assets {
         }
         ParentId: 4787474700494429112
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:IsSpell"
-            Bool: true
-          }
           Overrides {
             Name: "cs:Projectile"
             AssetReference {
@@ -161,10 +161,6 @@ Assets {
         }
         ParentId: 4787474700494429112
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:IsMagic"
-            Bool: true
-          }
         }
         WantsNetworking: true
         Collidable_v2 {

@@ -57,7 +57,7 @@ function onEnemyDamaged(thisEnemy, damage)
 
     if damage.sourcePlayer == clientPlayer then
       if damage.amount >= 1 then
-        if damage.sourceAbility and not damage.sourceAbility:GetCustomProperty("IsMagic") then
+        if damage.sourceAbility and not damage.sourceAbility.parent:GetCustomProperty("IsMagic") then
           Utils.showFlyupText(damage.amount, enemy:GetWorldPosition(), Utils.color.attack)
         else
           Utils.showFlyupText(damage.amount, enemy:GetWorldPosition(), Utils.color.magic)

@@ -16,16 +16,17 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 13663571821938042653
-        ChildIds: 9525405004107818711
+        ChildIds: 1809548476577773549
+        ChildIds: 797000039496733260
         ChildIds: 10200076450029904907
         ChildIds: 2935765524253008386
-        ChildIds: 8670368880150767432
         ChildIds: 1669687400170584145
         ChildIds: 14233190861402635258
+        ChildIds: 14297923777006015905
         ChildIds: 6795348395984397200
         ChildIds: 12315991593992178395
-        Lifespan: 5
+        ChildIds: 2771547666749785765
+        Lifespan: 8
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -46,8 +47,8 @@ Assets {
         }
       }
       Objects {
-        Id: 13663571821938042653
-        Name: "Collect Coin Glockenspiel 01 SFX"
+        Id: 1809548476577773549
+        Name: "Cinematic Boomy Impacts and Hits Set 01 SFX"
         Transform {
           Location {
           }
@@ -60,6 +61,14 @@ Assets {
           }
         }
         ParentId: 11412637465600748338
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:esfx_cinematic_boomy_impacts_01:12"
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -72,25 +81,28 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        AudioInstance {
-          AudioAsset {
-            Id: 6236002837892636507
+        Blueprint {
+          BlueprintAsset {
+            Id: 11051655103617783880
           }
-          AutoPlay: true
-          Pitch: 500
-          Volume: 1
-          Falloff: 3000
-          Radius: 1000
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
+          TeamSettings {
+          }
+          AudioBP {
+            AutoPlay: true
+            Volume: 0.5
+            Falloff: 9000
+            Radius: 1000
+            IsSpatializationEnabled: true
+            IsAttenuationEnabled: true
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
-        Id: 9525405004107818711
-        Name: "Collect Coin Star Ping 02 SFX"
+        Id: 797000039496733260
+        Name: "Sci-fi Impact Synth Bit Glitch 01 SFX"
         Transform {
           Location {
           }
@@ -117,10 +129,11 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 2482530034872436497
+            Id: 5464750781225225792
           }
           AutoPlay: true
-          Volume: 0.6
+          Pitch: -500
+          Volume: 0.9
           Falloff: 3000
           Radius: 1000
           IsSpatializationEnabled: true
@@ -162,8 +175,8 @@ Assets {
             Id: 5421168088659338929
           }
           AutoPlay: true
-          Pitch: 920
-          Volume: 0.6
+          Pitch: 1120
+          Volume: 0.7
           Falloff: 3000
           Radius: 1000
           IsSpatializationEnabled: true
@@ -216,55 +229,12 @@ Assets {
           }
           AudioBP {
             AutoPlay: true
-            Pitch: 1200
-            Volume: 0.6
-            Falloff: 3000
+            Volume: 0.7
+            Falloff: 5000
             Radius: 1000
             IsSpatializationEnabled: true
             IsAttenuationEnabled: true
           }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 8670368880150767432
-        Name: "Gunshot Low Punch Sweetener 01 SFX"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11412637465600748338
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 14373942091691950006
-          }
-          AutoPlay: true
-          Volume: 1
-          Falloff: 3000
-          Radius: 1000
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -302,9 +272,9 @@ Assets {
             Id: 16675948403622117176
           }
           AutoPlay: true
-          Pitch: 1200
-          Volume: 0.5
-          Falloff: 3000
+          Pitch: 300
+          Volume: 1
+          Falloff: 4000
           Radius: 1000
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
@@ -345,11 +315,52 @@ Assets {
             Id: 6296526599974950236
           }
           AutoPlay: true
-          Pitch: 300
           Volume: 1
           Falloff: 3000
           Radius: 1000
           StartTime: 0.25
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14297923777006015905
+        Name: "Meta Shwing Pickup 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11412637465600748338
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 16589244863383253083
+          }
+          AutoPlay: true
+          Volume: 2
+          Falloff: 4000
+          Radius: -1
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -493,23 +504,133 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
-    }
-    Assets {
-      Id: 6236002837892636507
-      Name: "Collect Coin Glockenspiel 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_collect_coin_glockenspiel_01_Cue_ref"
+      Objects {
+        Id: 2771547666749785765
+        Name: "Level Up VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        ParentId: 11412637465600748338
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Ground Element Color"
+            Color {
+              R: 1
+              G: 0.100000024
+              A: 3
+            }
+          }
+          Overrides {
+            Name: "bp:Spiral Color"
+            Color {
+              R: 1
+              G: 0.100000024
+              A: 3
+            }
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.25
+              G: 0.075
+              A: 3
+            }
+          }
+          Overrides {
+            Name: "bp:Enable Beam"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Enable Base Rays"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Ground Burst Lines"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Outer Particle Swirls"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Inner Spirals"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Enable Rings"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Enable Ground Flare"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Ground Hot Spot"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Upward Velocity"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 7130178060381049973
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     Assets {
-      Id: 2482530034872436497
-      Name: "Collect Coin Star Ping 02 SFX"
+      Id: 11051655103617783880
+      Name: "Cinematic Boomy Impacts and Hits Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_cinematic_boomy_impacts_01_ref"
+      }
+    }
+    Assets {
+      Id: 5464750781225225792
+      Name: "Sci-fi Impact Synth Bit Glitch 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_collect_coin_star_ping_02_Cue_ref"
+        AssetId: "sfx_scifi_impact_synth_bit_glitch_01_Cue_ref"
       }
     }
     Assets {
@@ -531,15 +652,6 @@ Assets {
       }
     }
     Assets {
-      Id: 14373942091691950006
-      Name: "Gunshot Low Punch Sweetener 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_gunsweetener_lowpunch_01_Cue_ref"
-      }
-    }
-    Assets {
       Id: 16675948403622117176
       Name: "Designer Sub Bass Drop 01 SFX"
       PlatformAssetType: 7
@@ -558,6 +670,15 @@ Assets {
       }
     }
     Assets {
+      Id: 16589244863383253083
+      Name: "Meta Shwing Pickup 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_meta_swhing_pickup_01_Cue_ref"
+      }
+    }
+    Assets {
       Id: 15597120689437733195
       Name: "Plasma Muzzle Flash VFX"
       PlatformAssetType: 8
@@ -573,6 +694,15 @@ Assets {
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_mil_explokit_afterglow"
+      }
+    }
+    Assets {
+      Id: 7130178060381049973
+      Name: "Level Up VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_Level_Up"
       }
     }
     PrimaryAssetId {

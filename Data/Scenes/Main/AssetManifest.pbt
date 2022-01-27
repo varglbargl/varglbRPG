@@ -1430,6 +1430,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15376535743134527095
+  Name: "Teardrop 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_teardrop_001_ref"
+  }
+}
+Assets {
   Id: 15376374145827134769
   Name: "Metal Steel Brushed"
   PlatformAssetType: 2
@@ -2690,12 +2699,39 @@ Assets {
   }
 }
 Assets {
+  Id: 13125941995488115797
+  Name: "Energy Tube Glow"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "Energy_Tube_Glow"
+  }
+}
+Assets {
+  Id: 13125578781670757134
+  Name: "Car Paint Advanced 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_car-paint_advanced_001_uv_ref"
+  }
+}
+Assets {
   Id: 13124120606090784252
   Name: "Tree Sakura Hero 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_sakura_hero_01_ref"
+  }
+}
+Assets {
+  Id: 13113099281079441385
+  Name: "Cone - Soft 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_cylinder_soft_001_ref"
   }
 }
 Assets {
@@ -3074,6 +3110,15 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "CabinBold_ref"
+  }
+}
+Assets {
+  Id: 12514700371097505949
+  Name: "Japanese Sitting Pillow Basket 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_pillow_sitting_basket_001_ref"
   }
 }
 Assets {
@@ -3857,6 +3902,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_heart_polished_001"
+  }
+}
+Assets {
+  Id: 11051933370459483383
+  Name: "Urban Vehicle Car - Rim 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_veh_urb_car_acc_rim_001_ref"
   }
 }
 Assets {
@@ -4814,6 +4868,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9054059155801013894
+  Name: "Frame Large Corner - Neon"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_Neon6_Corner"
+  }
+}
+Assets {
   Id: 9030273007990279489
   Name: "Energy Distortion Line"
   PlatformAssetType: 2
@@ -5306,6 +5369,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_door_001"
+  }
+}
+Assets {
+  Id: 8166209416587075806
+  Name: "Star - Faceted 6-Pointed"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_star_faceted_6pointed_001"
   }
 }
 Assets {
@@ -5819,6 +5891,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_SciFi_Ability_Green_011"
+  }
+}
+Assets {
+  Id: 7205421252339660736
+  Name: "Knit Sweater 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fabric_sweater_holiday_001_uv_ref"
   }
 }
 Assets {
@@ -8492,6 +8573,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_roof_square_shingles_001_uv"
+  }
+}
+Assets {
+  Id: 2092458977450702071
+  Name: "Bark Bamboo Dead 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_jpn_bamboo_bark_dead_001_uv_ref"
   }
 }
 Assets {

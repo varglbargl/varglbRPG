@@ -17,10 +17,6 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:IsSpell"
-        Bool: false
-      }
-      Overrides {
         Name: "cs:Projectile"
         AssetReference {
           Id: 17931710397840415144
@@ -51,14 +47,6 @@ Assets {
       Overrides {
         Name: "cs:Utils:category"
         String: "APIs"
-      }
-      Overrides {
-        Name: "cs:IsSpell:category"
-        String: "Optional"
-      }
-      Overrides {
-        Name: "cs:IsSpell:tooltip"
-        String: "If checked, the weapon will use Wit instead of Spit in its damage calculation."
       }
       Overrides {
         Name: "cs:Projectile:category"

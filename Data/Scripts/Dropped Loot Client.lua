@@ -42,11 +42,11 @@ function onCustomPropertyChanged(object, propName)
       vfx = UNIQUE_DROP_VFX
     end
 
-    OUTLINE:SetSmartProperty("Color A", color)
-    TRACER:SetSmartProperty("Color B", color * rarity)
+    OUTLINE:SetSmartProperty("Color A", color:GetDesaturated(-1))
+    TRACER:SetSmartProperty("Color B", color * (rarity + 1))
     TRACER:SetScale(Vector3.ONE * (1.5 + rarity / 2))
     LIGHT:SetColor(color)
-    LIGHT.intensity = rarity
+    LIGHT.intensity = rarity + 1
     World.SpawnAsset(vfx, {position = lootPosition})
   end
 end

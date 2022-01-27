@@ -188,7 +188,6 @@ Assets {
             TeamInt: 1
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -383,9 +382,9 @@ Assets {
           AudioBP {
             AutoPlay: true
             Repeat: true
-            Volume: 0.2
+            Volume: 0.1
             Falloff: 1000
-            Radius: 500
+            Radius: 50
             IsSpatializationEnabled: true
             IsAttenuationEnabled: true
           }

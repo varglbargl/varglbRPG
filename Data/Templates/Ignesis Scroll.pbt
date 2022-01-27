@@ -52,6 +52,10 @@ Assets {
             Name: "cs:SplashRadius"
             Float: 2
           }
+          Overrides {
+            Name: "cs:IsMagic"
+            Bool: true
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -94,10 +98,6 @@ Assets {
         }
         ParentId: 9693666416420425052
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:IsSpell"
-            Bool: true
-          }
           Overrides {
             Name: "cs:Projectile"
             AssetReference {
@@ -161,10 +161,6 @@ Assets {
         }
         ParentId: 9693666416420425052
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:IsMagic"
-            Bool: true
-          }
         }
         WantsNetworking: true
         Collidable_v2 {

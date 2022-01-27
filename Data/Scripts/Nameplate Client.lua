@@ -76,7 +76,7 @@ function Tick()
   local cameraPivotPosition = clientPlayer:GetWorldPosition() - lookForward + lookRotation * cameraOffset + Vector3.UP * 74
   local targetPosition = cameraPivotPosition + lookForward * 5000
   -- local hitResults = World.SpherecastAll(cameraPivotPosition, targetPosition, 100, {ignorePlayers = true})
-  local hitResult = World.Spherecast(cameraPivotPosition, targetPosition, 100, {ignorePlayers = true})
+  local hitResult = World.Spherecast(cameraPivotPosition, targetPosition, 50, {ignorePlayers = true})
 
   -- for _, hitResult in ipairs(hitResults) do
     if hitResult and hitResult.other and hitResult.other.clientUserData["Enemy"] then

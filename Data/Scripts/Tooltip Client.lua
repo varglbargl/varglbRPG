@@ -85,7 +85,11 @@ function showItemTooltip(item, button)
   end
 
   if item.minDamage and item.maxDamage then
-    DAMAGE.text = Utils.formatInt(item.minDamage).." - "..Utils.formatInt(item.maxDamage).." Damage"
+    if item.minDamage == item.maxDamage then
+      DAMAGE.text = Utils.formatInt(item.minDamage).." Damage"
+    else
+      DAMAGE.text = Utils.formatInt(item.minDamage).." - "..Utils.formatInt(item.maxDamage).." Damage"
+    end
 
     DAMAGE.y = contentHeight
     contentHeight = contentHeight + DAMAGE:ComputeApproximateSize().y + 2

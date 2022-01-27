@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 15962505114319533395
+        ChildIds: 3128484391996282200
         ChildIds: 17868867493792811897
         ChildIds: 7109948812332489522
         UnregisteredParameters {
@@ -46,6 +46,10 @@ Assets {
             Name: "cs:StatusEffects"
             String: "stun, taunt"
           }
+          Overrides {
+            Name: "cs:SplashRadius"
+            Float: 1.5
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -70,8 +74,8 @@ Assets {
         }
       }
       Objects {
-        Id: 15962505114319533395
-        Name: "Shield Bash Server"
+        Id: 3128484391996282200
+        Name: "Melee Weapon Server"
         Transform {
           Location {
           }
@@ -99,7 +103,7 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 6238396409796008566
+            Id: 16304300347039127812
           }
         }
         NetworkRelevanceDistance {

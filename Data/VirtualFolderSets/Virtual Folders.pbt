@@ -113,5 +113,10 @@ Assets {
       VirtualFolderPath: "APIs"
       PlatformAssetType: 3
     }
+    Folders {
+      VirtualFolderPath: "Effects"
+      VirtualFolderPath: "Auras"
+      PlatformAssetType: 5
+    }
   }
 }

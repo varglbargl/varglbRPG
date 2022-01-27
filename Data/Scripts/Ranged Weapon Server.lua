@@ -4,15 +4,15 @@ local Wildermagic = require(script:GetCustomProperty("Wildermagic"))
 local weapon = script.parent
 
 local ITEM_LEVEL = weapon:GetCustomProperty("ItemLevel")
-local STANCE = weapon:GetCustomProperty("AnimationStance")
-local MIN_DAMAGE = weapon:GetCustomProperty("MinDamage") or 5
-local MAX_DAMAGE = weapon:GetCustomProperty("MaxDamage") or 10
+local MIN_DAMAGE = weapon:GetCustomProperty("MinDamage")
+local MAX_DAMAGE = weapon:GetCustomProperty("MaxDamage")
 local SPLASH_RADIUS = weapon:GetCustomProperty("SplashRadius") or 1
+local STANCE = weapon:GetCustomProperty("AnimationStance")
 
-local IS_SPELL = script:GetCustomProperty("IsSpell")
+local IS_MAGIC = weapon:GetCustomProperty("IsMagic")
 local damageStat = "Spit"
 
-if IS_SPELL then
+if IS_MAGIC then
   damageStat = "Wit"
 end
 
@@ -23,14 +23,22 @@ local MUZZLE_FLASH = script:GetCustomProperty("MuzzleFlash")
 
 local lastUsedAbility = nil
 local rarity = 0
+local ownerClass = 0
 
 local equipEvent = nil
 local unequipEvent = nil
 local executeEvents = {}
 local interruptedEvents = {}
 
+local statusEffects = {}
+
+if STATUS_EFFECTS then
+  statusEffects = {CoreString.Split(CoreString.Trim(string.lower(STATUS_EFFECTS)), ",")}
+end
+
 function rollDamage()
-  local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) / (0.75 + SPLASH_RADIUS / 4) * (1 + rarity / 10) + weapon.owner:GetResource(damageStat) / 5 + math.random()))
+  local damage = Damage.New(math.floor(math.random(MIN_DAMAGE, MAX_DAMAGE) * Utils.magicNumber(ITEM_LEVEL) / (0.75 + SPLASH_RADIUS / 4) * (1 + rarity / 10) / (1 + #statusEffects / 2) + weapon.owner:GetResource(damageStat) / 5 + math.random()))
+
   damage.sourcePlayer = weapon.owner
   damage.sourceAbility = lastUsedAbility
   damage.reason = DamageReason.COMBAT
@@ -51,17 +59,13 @@ function fireProjectile(target, directHit)
     local travelTime = distance / 5000
     local trail = nil
 
-    local projectile = World.SpawnAsset(PROJECTILE, {position = script:GetWorldPosition()})
-
-    projectile:LookAt(target)
+    local projectile = World.SpawnAsset(PROJECTILE, {position = script:GetWorldPosition(), rotation = attackRotation, lifeSpan = travelTime})
     projectile:MoveTo(target, travelTime)
-    projectile.lifeSpan = travelTime
 
     if TRAIL then
-      trail = World.SpawnAsset(TRAIL, {position = projectile:GetWorldPosition()})
+      trail = World.SpawnAsset(TRAIL, {position = projectile:GetWorldPosition(), lifeSpan = travelTime + 2})
 
       trail:MoveTo(target, travelTime)
-      trail.lifeSpan = travelTime + 2
     end
 
     Task.Wait(travelTime)
@@ -71,8 +75,8 @@ function fireProjectile(target, directHit)
     World.SpawnAsset(IMPACT_VFX, {position = target, rotation = attackRotation, scale = Vector3.ONE * SPLASH_RADIUS})
   end
 
-  local wild = weapon.owner:GetResource("Class") == 4
-  local orbliterate = IS_SPELL and weapon.owner:GetResource("Class") == 3
+  local wild = ownerClass == 4
+  local orbliterate = ownerClass == 3
   local hitObjects = World.FindObjectsOverlappingSphere(target, 100 * SPLASH_RADIUS, {ignorePlayers = true})
   local hitEnemies = {}
 
@@ -95,7 +99,7 @@ function fireProjectile(target, directHit)
       wild = false
     end
 
-    if orbliterate and weapon.owner:GetResource("Orbs") < 5 then
+    if IS_MAGIC and orbliterate and weapon.owner:GetResource("Orbs") < 5 then
       weapon.owner:AddResource("Orbs", 1)
       orbliterate = false
     end
@@ -109,7 +113,7 @@ end
 function onAbilityExecute(thisAbility)
   local attackRotation = weapon.owner:GetLookWorldRotation()
   local attackDirection = script:GetWorldPosition() + attackRotation * Vector3.FORWARD * 2500
-  local possibleTarget = World.Spherecast(weapon.owner:GetWorldPosition() + attackRotation * Vector3.New(0, 60, 75), attackDirection, 25, {ignorePlayers = true})
+  local possibleTarget = World.Spherecast(weapon.owner:GetWorldPosition() + attackRotation * Vector3.New(0, 60, 75), attackDirection, 50, {ignorePlayers = true})
   local target = nil
   local directHit = nil
 
@@ -142,7 +146,13 @@ function onEquipped(thisEquipment, player)
     Events.Broadcast("UpdateIdleStance", player, STANCE)
   end
 
-  rarity = player.serverUserData["Gear"].secondary.rarity
+  if thisEquipment.socket == "left_prop" then
+    rarity = player.serverUserData["Gear"].primary.rarity
+  elseif thisEquipment.socket == "right_prop" then
+    rarity = player.serverUserData["Gear"].secondary.rarity
+  end
+
+  ownerClass = player:GetResource("Class")
 
   equipEvent:Disconnect()
 end
