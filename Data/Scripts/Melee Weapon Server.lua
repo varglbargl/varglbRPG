@@ -29,7 +29,7 @@ local destroyEvent = nil
 
 local statusEffects = {}
 
-if STATUS_EFFECTS then
+if STATUS_EFFECTS and STATUS_EFFECTS ~= "" then
   statusEffects = {CoreString.Split(CoreString.Trim(string.lower(STATUS_EFFECTS)), ",")}
 end
 
@@ -78,11 +78,12 @@ function onAbilityExecute(thisAbility)
         local orbs = weapon.owner:GetResource("Orbs")
 
         if orbliterate and orbs >= 1 then
-          local orbDamage = Damage.New(math.floor(orbs * magicNumber + weapon.owner:GetResource("Wit") / 10 + math.random()))
+          local orbDamage = Damage.New(math.floor(orbs * magicNumber + weapon.owner:GetResource("Wit") / 7.5 + math.random()))
           orbDamage.sourcePlayer = weapon.owner
           orbDamage.reason = DamageReason.COMBAT
 
           enemy:ApplyDamage(orbDamage)
+
           weapon.owner:SetResource("Orbs", 0)
           orbliterate = false
         end

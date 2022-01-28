@@ -386,6 +386,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17726129575911109900
+  Name: "Fantasy Anvil 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_anvil_001_ref"
+  }
+}
+Assets {
   Id: 17724651308382855416
   Name: "Fantasy Castle Wall 02"
   PlatformAssetType: 1
@@ -563,6 +572,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_star_faceted_5pointed_001"
+  }
+}
+Assets {
+  Id: 17515417499009133547
+  Name: "Craftsman Wall 02 Doorway"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_002_doorway"
   }
 }
 Assets {
@@ -986,15 +1004,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dmg_floor_001_co_01_ref"
-  }
-}
-Assets {
-  Id: 16382980407385291817
-  Name: "Guardrail - Curve 45\302\260 - 16m Radius"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_guardrail_001_curve45_r16m_ref"
   }
 }
 Assets {
@@ -2321,6 +2330,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13872799461499289494
+  Name: "Grass Clumps"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_002_uv"
+  }
+}
+Assets {
   Id: 13870574964351997793
   Name: "Urban Damaged Floor 01 - Corner Outer 02"
   PlatformAssetType: 1
@@ -2633,6 +2651,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bucket_001"
+  }
+}
+Assets {
+  Id: 13199623797307849835
+  Name: "Craftsman Part - Inside Center Trim 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_part_intTrim_001_mid"
   }
 }
 Assets {
@@ -4031,12 +4058,30 @@ Assets {
   }
 }
 Assets {
+  Id: 10839704727209945933
+  Name: "Humanoid 2 Roscoe"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_head_military_001_ref"
+  }
+}
+Assets {
   Id: 10835155324150586940
   Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 10820732830742521348
+  Name: "Humanoid 2 Peasant Shirt"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_upper_fantasy_000_ref_temp"
   }
 }
 Assets {
@@ -4145,6 +4190,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_stairs_001_L"
+  }
+}
+Assets {
+  Id: 10563764944718322677
+  Name: "Office Carpet Square 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_urb_office_carpet_005_uv_ref"
   }
 }
 Assets {
@@ -6677,6 +6731,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5624663566761091354
+  Name: "Craftsman Roof 01 Beam"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_beam"
+  }
+}
+Assets {
   Id: 5621267384408881863
   Name: "Japanese Temple Wall Interior 01 - Doorway 01 Half"
   PlatformAssetType: 1
@@ -6998,6 +7061,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_elven_symbols_001"
+  }
+}
+Assets {
+  Id: 5021256190100316401
+  Name: "Pipe - 8-Sided Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_eightsided_001"
   }
 }
 Assets {
@@ -8000,6 +8072,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3292691325544603716
+  Name: "Pyramid - 4-Sided Truncated Hollow Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_4_sided_truncated_hollow_thick_001"
+  }
+}
+Assets {
   Id: 3289067955697531283
   Name: "Cube - Rounded"
   PlatformAssetType: 1
@@ -8783,6 +8864,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1787674624044339170
+  Name: "Text 02: ,"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_062"
+  }
+}
+Assets {
   Id: 1737305543685255753
   Name: "Modern Weapon - Body 04"
   PlatformAssetType: 1
@@ -8927,6 +9017,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1479783486283655500
+  Name: "Humanoid 2 Xavier Hair"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_hair_basic_006_ref"
+  }
+}
+Assets {
   Id: 1479263073181491044
   Name: "Text 01: H"
   PlatformAssetType: 1
@@ -8996,6 +9095,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_redwood_001"
+  }
+}
+Assets {
+  Id: 1368567543967842606
+  Name: "Guardrail - Curve 45\302\260 - 12m Radius"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_guardrail_001_curve45_r12m_ref"
   }
 }
 Assets {
@@ -9158,6 +9266,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Frame_001"
+  }
+}
+Assets {
+  Id: 1098685666080314142
+  Name: "Diamond - 8-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_8_sided_001"
   }
 }
 Assets {
@@ -9554,6 +9671,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_sakura_hero_02_bare_ref"
+  }
+}
+Assets {
+  Id: 217122125141067973
+  Name: "Text 06: J"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F8_Text_009"
   }
 }
 Assets {

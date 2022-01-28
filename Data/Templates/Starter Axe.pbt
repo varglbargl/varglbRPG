@@ -44,6 +44,10 @@ Assets {
             Name: "cs:AnimationStance"
             String: "1hand_melee_stance"
           }
+          Overrides {
+            Name: "cs:StatusEffects"
+            String: ""
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

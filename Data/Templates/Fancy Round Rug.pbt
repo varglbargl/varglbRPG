@@ -43,7 +43,7 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            Z: 0.199707031
+            Z: 0.03
           }
           Rotation {
             Yaw: -3.78833
@@ -121,7 +121,7 @@ Assets {
         Name: "Plane Ring - One Sided"
         Transform {
           Location {
-            Z: 0.100097656
+            Z: 0.02
           }
           Rotation {
           }
@@ -198,6 +198,7 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
+            Z: 0.01
           }
           Rotation {
           }

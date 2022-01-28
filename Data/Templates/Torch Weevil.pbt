@@ -10,9 +10,9 @@ Assets {
         Name: "Torch Weevil"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 4781671109827199097
@@ -315,9 +315,9 @@ Assets {
           Overrides {
             Name: "ma:Font_Bulbs:color"
             Color {
-              R: 10
-              G: 2.91299939
-              B: 2.53999949
+              R: 35
+              G: 10.1954975
+              B: 8.88999844
               A: 1
             }
           }

@@ -54,7 +54,7 @@ function readLootTable(thisLootTable, itemType)
       enchant = ""
     }
 
-    if spawnedItem:GetCustomProperty("StatusEffects") then
+    if spawnedItem:GetCustomProperty("StatusEffects") and spawnedItem:GetCustomProperty("StatusEffects") ~= "" then
       lootItem.statusEffects = {CoreString.Split(CoreString.Trim(string.lower(spawnedItem:GetCustomProperty("StatusEffects"))), ",")}
     end
 

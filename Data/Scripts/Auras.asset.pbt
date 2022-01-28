@@ -22,6 +22,12 @@ Assets {
           Id: 4335694265688445318
         }
       }
+      Overrides {
+        Name: "cs:Knockback"
+        AssetReference {
+          Id: 4953237436396896936
+        }
+      }
     }
   }
   SerializationVersion: 104

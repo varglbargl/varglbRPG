@@ -356,11 +356,49 @@ function onSlowed(player)
   end)
 end
 
+local skidTask = nil
+
+function onKnockback(player)
+  if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
+
+  stunned = true
+  Auras.apply(enemy, "Knockback", 1)
+
+  local fromVector = enemy:GetWorldPosition()
+  local toDirection = (fromVector - Utils.groundBelowPoint(player:GetWorldPosition())):GetNormalized()
+  local toVector = Utils.groundBelowPoint(fromVector + toDirection * 800)
+
+  if not toVector then
+    local hitResult = World.Spherecast(HITBOX:GetWorldPosition(), fromVector + toDirection * 800, 50 * spawnScale.size, {ignorePlayers = true})
+
+    if hitResult then
+      toVector = Utils.groundBelowPoint(hitResult:GetShapePosition())
+    end
+  end
+
+  if not toVector then
+    toVector = fromVector + toDirection * 800
+  end
+
+  local distance = (fromVector - toVector).size
+
+  enemy:StopRotate()
+  enemy:MoveTo(toVector, distance / 800)
+
+  if skidTask then skidTask:Cancel() end
+
+  skidTask = Task.Spawn(function()
+    Task.Wait(distance / 600)
+
+    stunned = false
+  end)
+end
+
 local statusEffects = {
   stun = onStunned,
   taunt = onTaunted,
   slow = onSlowed,
-  -- knockback = onKnockback,
+  knockback = onKnockback,
   -- burn = onBurned,
   -- weaken = onWeakened,
   -- polymorph = onPolymorphed
@@ -372,7 +410,7 @@ function onDamaged(thisEnemy, damage)
   if damage.sourceAbility and Object.IsValid(damage.sourceAbility.parent) then
     local effects = damage.sourceAbility.parent:GetCustomProperty("StatusEffects")
 
-    if effects then
+    if effects and effects ~= "" then
       effects = {CoreString.Split(string.lower(effects), ",")}
 
       for _, effect in ipairs(effects) do
@@ -392,11 +430,11 @@ function onDamaged(thisEnemy, damage)
   if damage.sourcePlayer then
     fightLocation = damage.sourcePlayer:GetWorldPosition()
 
-    if fightTarget then
-      attackers[damage.sourcePlayer] = true
-    else
-      startFighting(damage.sourcePlayer)
+    if not attackers[damage.sourcePlayer] then
+      -- First attack against this enemy by this player
     end
+
+    startFighting(damage.sourcePlayer)
   end
 end
 
