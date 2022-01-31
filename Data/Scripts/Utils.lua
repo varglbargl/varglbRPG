@@ -135,6 +135,8 @@ function Utils.getNPCStatsByLevel(level)
 
   stats.xpValue = math.floor(5 * multiplier) + math.random(0, stats.level)
 
+  stats.stunned = false
+
   return stats
 end
 

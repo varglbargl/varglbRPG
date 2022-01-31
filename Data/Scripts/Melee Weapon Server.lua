@@ -78,7 +78,7 @@ function onAbilityExecute(thisAbility)
         local orbs = weapon.owner:GetResource("Orbs")
 
         if orbliterate and orbs >= 1 then
-          local orbDamage = Damage.New(math.floor(orbs * magicNumber + weapon.owner:GetResource("Wit") / 7.5 + math.random()))
+          local orbDamage = Damage.New(math.floor(orbs * magicNumber + orbs * weapon.owner:GetResource("Wit") / 8.5 + math.random()))
           orbDamage.sourcePlayer = weapon.owner
           orbDamage.reason = DamageReason.COMBAT
 

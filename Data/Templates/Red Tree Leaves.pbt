@@ -223,5 +223,5 @@ Assets {
     }
   }
   SerializationVersion: 104
-  VirtualFolderPath: "Props"
+  VirtualFolderPath: "Tilesets"
 }

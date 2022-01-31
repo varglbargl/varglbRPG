@@ -7,7 +7,7 @@ Assets {
       RootId: 14005946595262354558
       Objects {
         Id: 14005946595262354558
-        Name: "Royal Guard 02"
+        Name: "Royal Guard 01"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4691554929457797093
+        ParentId: 7270633480876919108
         ChildIds: 8639071953604105084
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"

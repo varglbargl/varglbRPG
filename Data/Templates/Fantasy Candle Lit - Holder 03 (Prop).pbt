@@ -49,6 +49,22 @@ Assets {
           }
         }
         ParentId: 15839256792845667919
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 17713444884118919250
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 0.5
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -412,6 +428,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_fantasy_candle_holder_floor_003"
+      }
+    }
+    Assets {
+      Id: 17713444884118919250
+      Name: "Metal Old Beaten Gold 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_gold_002"
       }
     }
     Assets {

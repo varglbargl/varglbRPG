@@ -10,9 +10,9 @@ Assets {
         Name: "Birdhouse"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.30000007
+            Y: 1.30000007
+            Z: 1.30000007
           }
         }
         ParentId: 4781671109827199097
@@ -1437,7 +1437,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 10757226958576794300
+              Id: 9636406107902119141
             }
           }
           Overrides {
@@ -1446,7 +1446,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 1
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1456,6 +1456,10 @@ Assets {
               B: 2.67
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -1661,7 +1665,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 4050437425243511619
+              Id: 9636406107902119141
             }
           }
         }
@@ -1715,7 +1719,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 4050437425243511619
+              Id: 9636406107902119141
             }
           }
         }
@@ -1770,7 +1774,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 4050437425243511619
+              Id: 9636406107902119141
             }
           }
         }
@@ -1824,7 +1828,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 4050437425243511619
+              Id: 9636406107902119141
             }
           }
         }
@@ -2000,21 +2004,21 @@ Assets {
       }
     }
     Assets {
-      Id: 4050437425243511619
-      Name: "Wood Raw"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_001_uv"
-      }
-    }
-    Assets {
       Id: 461796175785413307
       Name: "Craftsman Porch Fence Post 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_urb_sub_craftsman_porch_001_post"
+      }
+    }
+    Assets {
+      Id: 4050437425243511619
+      Name: "Wood Raw"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_raw_001_uv"
       }
     }
     PrimaryAssetId {

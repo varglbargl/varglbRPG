@@ -118,5 +118,9 @@ Assets {
       VirtualFolderPath: "Auras"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Utilities"
+      PlatformAssetType: 3
+    }
   }
 }

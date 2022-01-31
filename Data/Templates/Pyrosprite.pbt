@@ -216,10 +216,8 @@ Assets {
         }
         ParentId: 15013125014285076587
         ChildIds: 3810707152439941841
-        ChildIds: 8437071907676576254
         ChildIds: 13390154060185515382
         ChildIds: 9571594831139579309
-        ChildIds: 1494482017119174380
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -286,51 +284,6 @@ Assets {
         Script {
           ScriptAsset {
             Id: 12794025021009957930
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 8437071907676576254
-        Name: "AttachAnimatedModel"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15089466173944845956
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Model"
-            ObjectReference {
-              SubObjectId: 9571594831139579309
-            }
-          }
-          Overrides {
-            Name: "cs:LogSockets"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 13924186888309160458
           }
         }
         NetworkRelevanceDistance {
@@ -411,6 +364,7 @@ Assets {
           }
         }
         ParentId: 15089466173944845956
+        ChildIds: 6497086462748566379
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -466,13 +420,49 @@ Assets {
         }
       }
       Objects {
+        Id: 6497086462748566379
+        Name: "Attach To Animated Mesh"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9571594831139579309
+        ChildIds: 1494482017119174380
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14822898899899907295
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 1494482017119174380
         Name: "Head"
         Transform {
           Location {
-            X: -2.19433594
-            Y: 1.75976562
-            Z: 85.1015625
+            X: 26.2529297
+            Z: 12.5180664
           }
           Rotation {
             Pitch: -31.1474304
@@ -483,7 +473,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15089466173944845956
+        ParentId: 6497086462748566379
         ChildIds: 2015788379081974266
         ChildIds: 5078290776169132191
         ChildIds: 12046130561887249457

@@ -21,7 +21,6 @@ local fightLocation = nil
 local attackers = {}
 local myTemplateId = script:FindTemplateRoot().sourceTemplateId
 
-local stunned = false
 local moveSpeed = 1
 
 local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition(), 50)
@@ -94,7 +93,7 @@ function fight()
       return
     end
 
-    if not stunned then
+    if not stats.stunned then
       -- print("Imma getcha, "..fightTarget.name.."! Imma getcha good!")
       local distanceToPlayer = (fightTarget:GetWorldPosition() - fromVector).size
 
@@ -174,7 +173,7 @@ function stopFighting()
 end
 
 function attack(target)
-  if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(target) or stunned then return end
+  if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(target) or stats.stunned then return end
 
   local damage = Utils.rollDamage(stats)
   local reflectedDamage = Damage.New(0)
@@ -320,7 +319,7 @@ function onStunned(player)
   enemy:StopMove()
   enemy:StopRotate()
 
-  stunned = true
+  stats.stunned = true
   Auras.apply(enemy, "Stun")
 
   if stunTask then stunTask:Cancel() end
@@ -328,7 +327,7 @@ function onStunned(player)
   stunTask = Task.Spawn(function()
     Task.Wait(2)
 
-    stunned = false
+    stats.stunned = false
   end)
 end
 
@@ -361,7 +360,7 @@ local skidTask = nil
 function onKnockback(player)
   if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
 
-  stunned = true
+  stats.stunned = true
   Auras.apply(enemy, "Knockback", 1)
 
   local fromVector = enemy:GetWorldPosition()
@@ -390,7 +389,7 @@ function onKnockback(player)
   skidTask = Task.Spawn(function()
     Task.Wait(distance / 600)
 
-    stunned = false
+    stats.stunned = false
   end)
 end
 

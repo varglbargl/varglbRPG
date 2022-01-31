@@ -188,6 +188,8 @@ Assets {
         Name: "Letters"
         Transform {
           Location {
+            X: -0.00100986194
+            Y: -1.52533686
           }
           Rotation {
           }

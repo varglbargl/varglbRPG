@@ -8,7 +8,7 @@ Assets {
     ParameterOverrides {
       Overrides {
         Name: "Scale"
-        Float: 1.2
+        Float: 0.8
       }
     }
     Assets {

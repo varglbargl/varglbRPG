@@ -7,7 +7,7 @@ Assets {
       RootId: 3830945135034208465
       Objects {
         Id: 3830945135034208465
-        Name: "Royal Guard 01"
+        Name: "Royal Guard 02"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4691554929457797093
+        ParentId: 7270633480876919108
         ChildIds: 14372389616985081345
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -296,13 +296,12 @@ Assets {
         Name: "head"
         Transform {
           Location {
-            X: -3.80371094
-            Y: 0.0625
-            Z: 82.1540527
+            X: -3.17597
+            Y: 0.0620250702
+            Z: 82.5771484
           }
           Rotation {
-            Pitch: -9.93500137
-            Yaw: 0.000120403849
+            Pitch: 2.09954548
           }
           Scale {
             X: 1
@@ -335,14 +334,12 @@ Assets {
         Name: "Mecha - Armor - Helm 01 - Fin 01"
         Transform {
           Location {
-            X: -0.983269811
-            Y: 0.0351495519
-            Z: 24.0942574
+            X: 3.18299961
+            Y: 0.056683749
+            Z: 23.6854229
           }
           Rotation {
-            Pitch: -2.82885742
-            Yaw: -0.000122070312
-            Roll: -3.05175781e-05
+            Pitch: -15.2447205
           }
           Scale {
             X: 0.306668907
@@ -427,14 +424,12 @@ Assets {
         Name: "Mecha - Armor - Helm 01"
         Transform {
           Location {
-            X: -0.378567189
-            Y: 0.189449936
-            Z: 10.9402981
+            X: 0.958560348
+            Y: 0.190835446
+            Z: 10.7066889
           }
           Rotation {
-            Pitch: 9.93500137
-            Yaw: -0.000122236903
-            Roll: -2.1089636e-05
+            Pitch: -2.48095703
           }
           Scale {
             X: 0.3

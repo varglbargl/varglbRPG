@@ -16,9 +16,9 @@ Assets {
           }
         }
         ParentId: 3652361587053159857
-        ChildIds: 14048762216965321666
         ChildIds: 8536240258143393076
         ChildIds: 17884708591250252108
+        ChildIds: 14048762216965321666
         UnregisteredParameters {
           Overrides {
             Name: "cs:Level"
@@ -100,6 +100,105 @@ Assets {
             DestroyOnDeathNetworkedTemplateId {
               Id: 841534158063459245
             }
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 8536240258143393076
+        Name: "Enemy NPC Server"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4107092059373001370
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Wander"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Hitbox"
+            ObjectReference {
+              SubObjectId: 17884708591250252108
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 13057360465055397463
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 17884708591250252108
+        Name: "Hitbox"
+        Transform {
+          Location {
+            Z: 100
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4107092059373001370
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5944393796542654307
+          }
+          Teams {
+            TeamInt: 1
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
           }
         }
         NetworkRelevanceDistance {
@@ -1592,104 +1691,14 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
-      Objects {
-        Id: 8536240258143393076
-        Name: "Enemy NPC Server"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4107092059373001370
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Wander"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:Hitbox"
-            ObjectReference {
-              SubObjectId: 17884708591250252108
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 13057360465055397463
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 17884708591250252108
-        Name: "Hitbox"
-        Transform {
-          Location {
-            Z: 100
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4107092059373001370
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5944393796542654307
-          }
-          Teams {
-            TeamInt: 1
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
+    }
+    Assets {
+      Id: 5944393796542654307
+      Name: "Capsule"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_capsule_001"
       }
     }
     Assets {
@@ -1735,15 +1744,6 @@ Assets {
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
         AssetId: "dcl_basicShapes"
-      }
-    }
-    Assets {
-      Id: 5944393796542654307
-      Name: "Capsule"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_capsule_001"
       }
     }
     PrimaryAssetId {

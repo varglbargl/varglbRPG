@@ -7,7 +7,7 @@ Assets {
       RootId: 3703753476620589350
       Objects {
         Id: 3703753476620589350
-        Name: "Chandelier - Lit (Prop)"
+        Name: "Fantasy Candle Lit - Chandelier 01 (Prop)"
         Transform {
           Scale {
             X: 1
@@ -126,7 +126,7 @@ Assets {
           AudioBP {
             AutoPlay: true
             Repeat: true
-            Volume: 0.5
+            Volume: 0.3
             Falloff: 700
             Radius: 200
             EnableOcclusion: true

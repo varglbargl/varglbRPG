@@ -23,7 +23,7 @@ Assets {
       }
       Overrides {
         Name: "material1side_scale"
-        Float: 0.6
+        Float: 0.4
       }
       Overrides {
         Name: "cmpc:Material1_Sides"
@@ -63,7 +63,7 @@ Assets {
       }
       Overrides {
         Name: "material2side_scale"
-        Float: 0.4
+        Float: 0.2
       }
       Overrides {
         Name: "cmpc:Material2"
