@@ -980,6 +980,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16462694806188520793
+  Name: "Craftsman Wall 01 Garage Single"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_001_garage_single_ref"
+  }
+}
+Assets {
   Id: 16442067914662662686
   Name: "Main Street Foundation 01"
   PlatformAssetType: 1
@@ -4190,6 +4199,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 10829100160968692145
+  Name: "Fantasy Dish Set - Plate 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_dish_set_plate_001_ref"
   }
 }
 Assets {
