@@ -7,4 +7,5 @@ Assets {
     }
   }
   SerializationVersion: 104
+  VirtualFolderPath: "Dialogue"
 }
