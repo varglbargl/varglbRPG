@@ -178,20 +178,33 @@ local animationStances = {
   -- "zombie_unarmed_walk_forward"
 }
 
+local chirpTask = nil
+
+function chirpLoop()
+  if speaker and speaker.chirp then
+    speaker.chirp:Play()
+
+    Task.Wait(0.075)
+
+    chirpLoop()
+  else
+    return
+  end
+end
+
 function writeOutText(text)
+  chirpTask = Task.Spawn(chirpLoop)
+
   for i = 1, #text do
     local c = text:sub(i,i)
     -- do something with c
 
     DIALOGUE.text = DIALOGUE.text..c
 
-    if speaker and speaker.chirp then
-      speaker.chirp:Play()
-    end
-
-    Task.Wait(0.05)
+    Task.Wait()
   end
 
+  chirpTask:Cancel()
 end
 
 function speakLine(lines, num)
@@ -216,15 +229,35 @@ function speakLine(lines, num)
     end
 
     NAME.text = speaker.name
+
+    if line.animation and speaker.meshes then
+      local anim = animations[string.lower(line.animation)]
+
+      if anim then
+        for _, smesh in ipairs(speaker.meshes) do
+          if Object.IsValid(smesh) then
+            smesh:StopAnimations()
+            smesh:PlayAnimation(anim)
+          end
+        end
+      end
+    end
+
   elseif speaker.type == "string" then
     NAME.text = speaker
+  end
+
+  if line.italic then
+    DIALOGUE:SetFont(FONT_ITALIC)
+  else
+    DIALOGUE:SetFont(FONT_DEFAULT)
   end
 
   DIALOG.visibility = Visibility.INHERIT
 
   writeOutText(line[1])
 
-  Task.Wait(1)
+  Task.Wait(2)
 
   if line.gotoPage then
     speakLine(lines, line.gotoPage)
