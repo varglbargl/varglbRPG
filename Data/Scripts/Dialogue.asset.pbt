@@ -11,6 +11,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Characters"
+        AssetReference {
+          Id: 10458439823634106421
+        }
+      }
+      Overrides {
         Name: "cs:FontDefault"
         AssetReference {
           Id: 12536183462758892499
@@ -98,6 +104,10 @@ Assets {
         Name: "cs:Dialogue:category"
         String: "UI"
       }
+      Overrides {
+        Name: "cs:Characters:category"
+        String: "APIs"
+      }
     }
     Assets {
       Id: 12536183462758892499
@@ -118,6 +128,6 @@ Assets {
       }
     }
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   VirtualFolderPath: "APIs"
 }

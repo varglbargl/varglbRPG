@@ -2,7 +2,7 @@ Assets {
   Id: 9212887553138457237
   Name: "Spatula Grate"
   PlatformAssetType: 13
-  SerializationVersion: 104
+  SerializationVersion: 105
   CustomMaterialAsset {
     BaseMaterialId: 12345152287625559020
     ParameterOverrides {

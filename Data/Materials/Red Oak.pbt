@@ -2,7 +2,7 @@ Assets {
   Id: 2747788483144430206
   Name: "Red Oak"
   PlatformAssetType: 13
-  SerializationVersion: 104
+  SerializationVersion: 105
   CustomMaterialAsset {
     BaseMaterialId: 3919408111692781527
     ParameterOverrides {

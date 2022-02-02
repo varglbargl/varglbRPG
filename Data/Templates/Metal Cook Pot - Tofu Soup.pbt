@@ -2310,10 +2310,9 @@ Assets {
           }
         }
         ParentId: 1875500005295179745
-        ChildIds: 8500558930302540807
-        ChildIds: 13041299531239548864
         ChildIds: 14226875131743034884
         ChildIds: 16331671819310152388
+        ChildIds: 9750704595693660175
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2325,131 +2324,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 8500558930302540807
-        Name: "Cylinder - Chamfered Small Polished"
-        Transform {
-          Location {
-            X: 20.959753
-            Z: 2.58867598
-          }
-          Rotation {
-            Pitch: 87.4998474
-          }
-          Scale {
-            X: 0.0400000028
-            Y: 0.0800000057
-            Z: 0.320000023
-          }
-        }
-        ParentId: 12434656149109859225
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 4050437425243511619
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18302070369115552264
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 13041299531239548864
-        Name: "Pipe - Half"
-        Transform {
-          Location {
-            X: 36.8224411
-            Z: 1.12245178
-          }
-          Rotation {
-            Yaw: 89.9999924
-            Roll: -2.5
-          }
-          Scale {
-            X: 0.0677663311
-            Y: 0.0700149
-            Z: 0.0139381811
-          }
-        }
-        ParentId: 12434656149109859225
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15830158872210521569
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11732115454970956095
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2487,7 +2361,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1.5
+            Float: 1.25
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -2581,6 +2455,76 @@ Assets {
           InteractWithTriggers: true
           StaticMesh {
             Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 9750704595693660175
+        Name: "Urban Utensil Handle 03"
+        Transform {
+          Location {
+            X: 22.2639122
+            Y: -0.00122764986
+            Z: 2.51611495
+          }
+          Rotation {
+            Yaw: 90
+            Roll: -3.18380737
+          }
+          Scale {
+            X: 1.4554702
+            Y: 1.87864101
+            Z: 0.938715518
+          }
+        }
+        ParentId: 12434656149109859225
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4050437425243511619
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18029972556125765050
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
             }
             BoundsScale: 1
           }
@@ -2708,30 +2652,12 @@ Assets {
       }
     }
     Assets {
-      Id: 18302070369115552264
-      Name: "Cylinder - Chamfered Small Polished"
+      Id: 12095835209017042614
+      Name: "Cube"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_hq_003"
-      }
-    }
-    Assets {
-      Id: 4050437425243511619
-      Name: "Wood Raw"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_001_uv"
-      }
-    }
-    Assets {
-      Id: 11732115454970956095
-      Name: "Pipe - Half"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_half-pipe_001"
+        AssetId: "sm_cube_002"
       }
     }
     Assets {
@@ -2744,15 +2670,6 @@ Assets {
       }
     }
     Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
       Id: 11285278799348334020
       Name: "Sphere - Half Thin"
       PlatformAssetType: 1
@@ -2761,11 +2678,29 @@ Assets {
         AssetId: "sm_hemisphere_002"
       }
     }
+    Assets {
+      Id: 18029972556125765050
+      Name: "Urban Utensil Handle 03"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_handle_uten_003_ref"
+      }
+    }
+    Assets {
+      Id: 4050437425243511619
+      Name: "Wood Raw"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_raw_001_uv"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   VirtualFolderPath: "Props"
 }

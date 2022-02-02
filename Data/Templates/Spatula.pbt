@@ -15,12 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 10374394321599722499
-        ChildIds: 10087859433579199963
-        ChildIds: 14766316016598828894
-        ChildIds: 8502932864781254785
-        ChildIds: 4739123065944880272
+        ParentId: 18037324666348523329
+        ChildIds: 6271369427387602600
+        ChildIds: 2948699066538597433
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38,20 +35,88 @@ Assets {
         }
       }
       Objects {
-        Id: 10374394321599722499
-        Name: "Cylinder - Chamfered Small Polished"
+        Id: 6271369427387602600
+        Name: "Urban Utensil Spatula 01"
         Transform {
           Location {
-            X: 20.959753
-            Z: 2.58867598
+            X: 25.2360802
+            Y: 0.00219202042
+            Z: 2.15810585
           }
           Rotation {
-            Pitch: 87.4998474
+            Yaw: 90
+            Roll: -3.74282837
           }
           Scale {
-            X: 0.0400000028
-            Y: 0.0800000057
-            Z: 0.320000023
+            X: 1.21462
+            Y: 1.55416346
+            Z: 0.73404932
+          }
+        }
+        ParentId: 2145570900647122059
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 16497610927948824042
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16115905030413172164
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 2188660548820142668
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 2948699066538597433
+        Name: "Urban Utensil Handle 03"
+        Transform {
+          Location {
+            X: 23.2590752
+            Y: 0.00130987167
+            Z: 2.28735352
+          }
+          Rotation {
+            Yaw: 90.0000153
+            Roll: -3.74282837
+          }
+          Scale {
+            X: 1.4
+            Y: 1.7
+            Z: 1
           }
         }
         ParentId: 2145570900647122059
@@ -59,7 +124,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4050437425243511619
+              Id: 12446131267530965574
             }
           }
           Overrides {
@@ -68,70 +133,20 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18302070369115552264
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 10087859433579199963
-        Name: "Pipe - Half"
-        Transform {
-          Location {
-            X: 36.8224411
-            Z: 1.12245178
-          }
-          Rotation {
-            Yaw: 89.9999924
-            Roll: -2.5
-          }
-          Scale {
-            X: 0.0677663311
-            Y: 0.0700149
-            Z: 0.0139381811
-          }
-        }
-        ParentId: 2145570900647122059
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15830158872210521569
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Float: 24
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 24
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.6
+              G: 0.24
+              B: 0.24
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -141,214 +156,23 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11732115454970956095
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 14766316016598828894
-        Name: "Cube"
-        Transform {
-          Location {
-            X: -34.5317192
-            Y: 0.00771484384
-            Z: 3.77560949
-          }
-          Rotation {
-            Pitch: 9.91295338
-            Yaw: -179.999969
-            Roll: 9.07332e-07
-          }
-          Scale {
-            X: 0.371988297
-            Y: 0.2
-            Z: 0.00506132701
-          }
-        }
-        ParentId: 2145570900647122059
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9212887553138457237
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.15
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.15
-          }
-        }
-        Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         CoreMesh {
           MeshAsset {
-            Id: 12095835209017042614
+            Id: 18029972556125765050
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 8502932864781254785
-        Name: "Prism - 6-Sided Half"
-        Transform {
-          Location {
-            X: -16.2521
-            Y: 0.00771484384
-            Z: 0.513938189
-          }
-          Rotation {
-            Pitch: 32.164814
-          }
-          Scale {
-            X: 0.160000071
-            Y: 0.2
-            Z: 0.00506131
-          }
-        }
-        ParentId: 2145570900647122059
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15830158872210521569
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4004888632411082600
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 4739123065944880272
-        Name: "Prism - 6-Sided Half"
-        Transform {
-          Location {
-            X: -10.5695162
-            Y: 0.00771484384
-            Z: 4.00320292
-          }
-          Rotation {
-            Pitch: -2.5
-          }
-          Scale {
-            X: 0.422082096
-            Y: 0.100717783
-            Z: 0.0082049435
-          }
-        }
-        ParentId: 2145570900647122059
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15830158872210521569
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.391410291
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4004888632411082600
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
+              Mass: 100
+              LinearDamping: 0.01
             }
             BoundsScale: 1
           }
@@ -359,34 +183,25 @@ Assets {
       }
     }
     Assets {
-      Id: 18302070369115552264
-      Name: "Cylinder - Chamfered Small Polished"
+      Id: 2188660548820142668
+      Name: "Urban Utensil Spatula 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_hq_003"
+        AssetId: "sm_prop_urb_spatula_001_ref"
       }
     }
     Assets {
-      Id: 4050437425243511619
-      Name: "Wood Raw"
+      Id: 16497610927948824042
+      Name: "Invisible"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_001_uv"
+        AssetId: "mi_invisible_001"
       }
     }
     Assets {
-      Id: 11732115454970956095
-      Name: "Pipe - Half"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_half-pipe_001"
-      }
-    }
-    Assets {
-      Id: 15830158872210521569
+      Id: 16115905030413172164
       Name: "Metal Basic 01"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -395,21 +210,21 @@ Assets {
       }
     }
     Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
+      Id: 18029972556125765050
+      Name: "Urban Utensil Handle 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
+        AssetId: "sm_prop_urb_handle_uten_003_ref"
       }
     }
     Assets {
-      Id: 4004888632411082600
-      Name: "Prism - 6-Sided Half"
-      PlatformAssetType: 1
+      Id: 12446131267530965574
+      Name: "Wood Raw"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_half_hexagon_001"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_raw_001_uv"
       }
     }
     PrimaryAssetId {
@@ -420,7 +235,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

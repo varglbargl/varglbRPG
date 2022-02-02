@@ -4563,6 +4563,6 @@ Assets {
       AssetId: "Main_Street_Building_-_Ground_Level_Template"
     }
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   VirtualFolderPath: "Tilesets"
 }

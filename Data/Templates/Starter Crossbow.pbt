@@ -1553,7 +1553,7 @@ Assets {
       AssetId: "Basic_Pistol"
     }
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Ranged Weapons"
 }

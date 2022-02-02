@@ -959,7 +959,7 @@ Assets {
   Marketplace {
     Description: "Just a prop, but a nice and useful one for storefronts or homes. A thing I made a while ago and realized I may as well share.\r\n\r\nNo easter eggs in this one. Yet ~ <3"
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

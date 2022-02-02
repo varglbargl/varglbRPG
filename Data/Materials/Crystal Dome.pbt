@@ -2,7 +2,7 @@ Assets {
   Id: 15467932640263561599
   Name: "Crystal Dome"
   PlatformAssetType: 13
-  SerializationVersion: 104
+  SerializationVersion: 105
   CustomMaterialAsset {
     BaseMaterialId: 9916622414094758774
     ParameterOverrides {

@@ -17,7 +17,6 @@ Assets {
         }
         ParentId: 11732069531768207653
         ChildIds: 2590859323006021916
-        ChildIds: 815194725221206475
         ChildIds: 17632788304192959954
         ChildIds: 17722805916182324804
         Collidable_v2 {
@@ -41,16 +40,18 @@ Assets {
         Name: "Cylinder - Chamfered Small Polished"
         Transform {
           Location {
-            X: 20.959753
-            Z: 2.58867598
+            X: 22.2639122
+            Y: -0.00122764986
+            Z: 2.51611495
           }
           Rotation {
-            Pitch: 87.4998474
+            Yaw: 90
+            Roll: -3.18380737
           }
           Scale {
-            X: 0.0400000028
-            Y: 0.0800000057
-            Z: 0.320000023
+            X: 1.4554702
+            Y: 1.87864101
+            Z: 0.938715518
           }
         }
         ParentId: 15923383185901083846
@@ -67,70 +68,20 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18302070369115552264
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 815194725221206475
-        Name: "Pipe - Half"
-        Transform {
-          Location {
-            X: 36.8224411
-            Z: 1.12245178
-          }
-          Rotation {
-            Yaw: 89.9999924
-            Roll: -2.5
-          }
-          Scale {
-            X: 0.0677663311
-            Y: 0.0700149
-            Z: 0.0139381811
-          }
-        }
-        ParentId: 15923383185901083846
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15830158872210521569
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Float: 24
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 24
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.6
+              G: 0.24
+              B: 0.24
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -140,11 +91,11 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
-            Id: 11732115454970956095
+            Id: 18029972556125765050
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -193,7 +144,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1.5
+            Float: 1
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -207,7 +158,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -274,7 +225,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -297,12 +248,12 @@ Assets {
       }
     }
     Assets {
-      Id: 18302070369115552264
-      Name: "Cylinder - Chamfered Small Polished"
+      Id: 18029972556125765050
+      Name: "Urban Utensil Handle 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_hq_003"
+        AssetId: "sm_prop_urb_handle_uten_003_ref"
       }
     }
     Assets {
@@ -315,12 +266,12 @@ Assets {
       }
     }
     Assets {
-      Id: 11732115454970956095
-      Name: "Pipe - Half"
+      Id: 12095835209017042614
+      Name: "Cube"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_half-pipe_001"
+        AssetId: "sm_cube_002"
       }
     }
     Assets {
@@ -330,15 +281,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_metal_basic_001"
-      }
-    }
-    Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
       }
     }
     Assets {
@@ -355,6 +297,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   VirtualFolderPath: "Props"
 }

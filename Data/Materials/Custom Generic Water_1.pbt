@@ -2,7 +2,7 @@ Assets {
   Id: 12245757814498781350
   Name: "Sea Water"
   PlatformAssetType: 13
-  SerializationVersion: 104
+  SerializationVersion: 105
   CustomMaterialAsset {
     BaseMaterialId: 11034279480632751641
     ParameterOverrides {

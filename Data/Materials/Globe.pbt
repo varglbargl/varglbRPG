@@ -2,7 +2,7 @@ Assets {
   Id: 15352601680655854561
   Name: "Globe"
   PlatformAssetType: 13
-  SerializationVersion: 104
+  SerializationVersion: 105
   CustomMaterialAsset {
     BaseMaterialId: 8593158635874405760
     ParameterOverrides {

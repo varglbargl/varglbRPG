@@ -893,21 +893,42 @@ Assets {
         Name: "Chain Tile 01"
         Transform {
           Location {
-            X: -0.0937634706
-            Y: -57.9387703
-            Z: 40
+            X: -0.00114160776
+            Y: -16.0850334
+            Z: 40.9975586
           }
           Rotation {
-            Pitch: -45
-            Roll: 90
+            Yaw: 90
+            Roll: -90
           }
           Scale {
-            X: 0.47242415
-            Y: 0.47242415
-            Z: 0.283454508
+            X: 0.8
+            Y: 0.075
+            Z: 1.00001657
           }
         }
         ParentId: 8647340358063346402
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.2
+              G: 0.17
+              B: 0.175
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13256250359315102556
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 8
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -922,7 +943,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 6975747460865280430
+            Id: 12152694598132833191
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2429,12 +2450,21 @@ Assets {
       }
     }
     Assets {
-      Id: 6975747460865280430
-      Name: "Chain Tile 01"
+      Id: 12152694598132833191
+      Name: "Plane 1m - Two Sided"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_chain_001"
+        AssetId: "sm_plane_1m_002"
+      }
+    }
+    Assets {
+      Id: 13256250359315102556
+      Name: "Metal Chains 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_chains_001_ref"
       }
     }
     Assets {
@@ -2496,7 +2526,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

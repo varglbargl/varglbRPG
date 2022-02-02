@@ -714,6 +714,6 @@ Assets {
       AssetId: "Main_Street_Exterior_Stairs_-_Short_Template"
     }
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   VirtualFolderPath: "Tilesets"
 }

@@ -11,7 +11,7 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Script"
+        Name: "cs:Lines"
         AssetReference {
           Id: 841534158063459245
         }
@@ -27,5 +27,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
 }

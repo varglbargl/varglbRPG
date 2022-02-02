@@ -50,14 +50,13 @@ Assets {
             Z: -16
           }
           Rotation {
-            Pitch: 1.36603776e-05
+            Pitch: 90
             Yaw: 89.9999466
-            Roll: 89.9999466
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 1338509687435281294
@@ -95,7 +94,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -122,14 +121,13 @@ Assets {
             Z: -16
           }
           Rotation {
-            Pitch: 1.36603776e-05
+            Pitch: 90
             Yaw: 89.9999237
-            Roll: 89.9999313
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 1338509687435281294
@@ -167,7 +165,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -440,14 +438,13 @@ Assets {
             Z: -9.78491211
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: -5.3126405e-05
-            Roll: 89.9998932
+            Pitch: 90
+            Yaw: -6.10351562e-05
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 8480442302454441231
@@ -485,7 +482,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -513,14 +510,13 @@ Assets {
             Z: -9.78491211
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: -6.52005838e-05
-            Roll: 89.9999084
+            Pitch: 90
+            Yaw: -6.10351562e-05
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 8480442302454441231
@@ -558,7 +554,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1284,14 +1280,13 @@ Assets {
             Z: -10.7851562
           }
           Rotation {
-            Pitch: -6.83018879e-06
+            Pitch: 90
             Yaw: 89.9999924
-            Roll: 89.9999847
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 1426273513544342108
@@ -1329,7 +1324,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1357,14 +1352,13 @@ Assets {
             Z: -40.7851562
           }
           Rotation {
-            Pitch: 6.83018879e-06
+            Pitch: 90
             Yaw: 90
-            Roll: 89.9999466
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 1426273513544342108
@@ -1402,7 +1396,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1430,14 +1424,13 @@ Assets {
             Z: -25.7851562
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: -1.93186934e-05
-            Roll: 89.9999542
+            Pitch: 90
+            Yaw: -3.05175781e-05
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 1426273513544342108
@@ -1475,7 +1468,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1503,14 +1496,13 @@ Assets {
             Z: -10.7851562
           }
           Rotation {
-            Pitch: 6.83018879e-06
+            Pitch: 90
             Yaw: 90
-            Roll: 89.9999466
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 1426273513544342108
@@ -1548,7 +1540,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1576,14 +1568,13 @@ Assets {
             Z: -40.7851562
           }
           Rotation {
-            Pitch: 6.83018879e-06
+            Pitch: 90
             Yaw: 90.0000076
-            Roll: 89.9999237
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 1426273513544342108
@@ -1621,7 +1612,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1649,14 +1640,13 @@ Assets {
             Z: -25.7851562
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: -5.07115619e-05
-            Roll: 89.999939
+            Pitch: 90
+            Yaw: -6.10351562e-05
           }
           Scale {
-            X: 0.167627722
-            Y: 0.251441568
-            Z: 0.251441568
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 1426273513544342108
@@ -1694,7 +1684,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17664213489481746652
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1984,12 +1974,12 @@ Assets {
       }
     }
     Assets {
-      Id: 10126871160743796714
-      Name: "Ring - Beveled Thick"
+      Id: 17664213489481746652
+      Name: "Fantasy Chain Link 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ring_faceted_003"
+        AssetId: "sm_fantasy_chain_link_001_ref"
       }
     }
     Assets {
@@ -2060,6 +2050,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 104
+  SerializationVersion: 105
   VirtualFolderPath: "Props"
 }
