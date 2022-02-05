@@ -183,7 +183,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 12
+          Intensity: 5
           Color {
             R: 1
             G: 0.726868153
@@ -197,11 +197,12 @@ Assets {
             UseTemperature: true
             Temperature: 2600
             LocalLight {
-              AttenuationRadius: 2000
+              AttenuationRadius: 1500
               PointLight {
                 SourceRadius: 9.23469257
                 SoftSourceRadius: 100
                 FallOffExponent: 8
+                UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 5000

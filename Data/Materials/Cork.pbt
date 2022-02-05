@@ -41,11 +41,24 @@ Assets {
       }
       Overrides {
         Name: "gradient_shift"
-        Float: 0.506450534
+        Float: 0.2
       }
       Overrides {
         Name: "gradient_worldspace"
-        Bool: false
+        Bool: true
+      }
+      Overrides {
+        Name: "color"
+        Color {
+          R: 0.4
+          G: 0.172
+          B: 0.0400000103
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "fresnel_brightness"
+        Float: 0
       }
     }
     Assets {

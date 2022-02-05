@@ -26,6 +26,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     Assets {
@@ -69,11 +72,41 @@ Assets {
             ChildIds: 17931328730701739325
             ChildIds: 8892375430619777693
             ChildIds: 14574264702367874476
-            ChildIds: 14488054401435031319
-            ChildIds: 8775460326623282472
-            ChildIds: 5907217815723281703
-            ChildIds: 17532067800372507872
-            ChildIds: 5023341039351380021
+            ChildIds: 998052408271813828
+            ChildIds: 1701814901706943946
+            ChildIds: 2878882593906654597
+            ChildIds: 12073144354099766081
+            ChildIds: 15250106700632886684
+            ChildIds: 18217068210370055427
+            ChildIds: 6512796007837206358
+            ChildIds: 14022986824795403422
+            ChildIds: 14883709991286246745
+            ChildIds: 7350088901886033519
+            ChildIds: 8214893102039445312
+            ChildIds: 6176669138764123094
+            ChildIds: 4259513679173622021
+            ChildIds: 15641292405940886700
+            ChildIds: 17940984315719875854
+            ChildIds: 629301880927683363
+            ChildIds: 2548722461807137892
+            ChildIds: 7557753244510590181
+            ChildIds: 2369823986170059916
+            ChildIds: 12215330883921604635
+            ChildIds: 15860511369655763615
+            ChildIds: 14548563646032356436
+            ChildIds: 3149682581639805429
+            ChildIds: 12096339904390567564
+            ChildIds: 6802490176849518789
+            ChildIds: 303719697197269568
+            ChildIds: 16396338059070402238
+            ChildIds: 9806608613373625127
+            ChildIds: 1084222615674720427
+            ChildIds: 13912321562316141363
+            ChildIds: 8522200838541264929
+            ChildIds: 13795355204088867862
+            ChildIds: 14869514329605950034
+            ChildIds: 15654676454082497790
+            ChildIds: 607366426316522722
             ChildIds: 4070589582191420103
             ChildIds: 13039212289806757519
             ChildIds: 10198211784184953394
@@ -102,6 +135,9 @@ Assets {
             }
             Folder {
               IsGroup: true
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -198,6 +234,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 18370457066682207406
@@ -273,6 +312,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 7788101548804080161
@@ -339,6 +381,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 8745098379047939193
@@ -404,6 +449,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -484,6 +532,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 2808392012859539158
@@ -563,6 +614,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 15718887431483460304
@@ -570,7 +624,7 @@ Assets {
             Transform {
               Location {
                 X: -1.51318359
-                Y: -2.50976563
+                Y: -2.50976562
                 Z: 12.3549805
               }
               Rotation {
@@ -633,6 +687,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -705,6 +762,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 3809461448940627104
@@ -775,6 +835,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -847,6 +910,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 7960405588085070190
@@ -854,7 +920,7 @@ Assets {
             Transform {
               Location {
                 X: -3.89648438
-                Y: -7.61914063
+                Y: -7.61914062
                 Z: 11.7084961
               }
               Rotation {
@@ -918,6 +984,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 3133275920690472271
@@ -926,7 +995,7 @@ Assets {
               Location {
                 X: -3.73095703
                 Y: -8.93261719
-                Z: 11.6601563
+                Z: 11.6601562
               }
               Rotation {
                 Pitch: 6.55726147
@@ -989,13 +1058,16 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 13632857426988192777
             Name: "Star - Rounded"
             Transform {
               Location {
-                X: -1.84570313
+                X: -1.84570312
                 Y: -23.1210938
                 Z: 5.74560547
               }
@@ -1054,6 +1126,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -1120,6 +1195,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -1191,6 +1269,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 12622094302217317311
@@ -1260,6 +1341,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -1331,6 +1415,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 10668666640676290889
@@ -1401,6 +1488,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 9434422323283951012
@@ -1467,6 +1557,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 11442727602483523995
@@ -1530,6 +1623,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -1596,6 +1692,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -1667,6 +1766,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 14574264702367874476
@@ -1733,50 +1835,8 @@ Assets {
                 BoundsScale: 1
               }
             }
-          }
-          Objects {
-            Id: 14488054401435031319
-            Name: "NewFolder"
-            Transform {
-              Location {
-                X: -10.2285156
-                Y: -19.8359375
-                Z: 2.8203125
-              }
-              Rotation {
-                Pitch: 51.4056244
-                Yaw: -85.6897888
-                Roll: -5.34054565
-              }
-              Scale {
-                X: 0.848210514
-                Y: 0.848210514
-                Z: 0.848210514
-              }
-            }
-            ParentId: 8530648511293812918
-            ChildIds: 998052408271813828
-            ChildIds: 1701814901706943946
-            ChildIds: 2878882593906654597
-            ChildIds: 12073144354099766081
-            ChildIds: 15250106700632886684
-            ChildIds: 18217068210370055427
-            ChildIds: 6512796007837206358
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            Folder {
-              IsFilePartition: true
-              FilePartitionName: "NewFolder_4"
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -1784,22 +1844,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 2.6580193
-                Y: -1.00524473
-                Z: 1.31384277
+                X: -11.1328135
+                Y: -20.5064201
+                Z: 5.2249589
               }
               Rotation {
-                Pitch: -0.00277988683
-                Yaw: -114.649963
-                Roll: 3.47214482e-05
+                Pitch: -22.257925
+                Yaw: 172.209076
+                Roll: -47.8494606
               }
               Scale {
-                X: 0.0363146178
-                Y: 0.0183711853
-                Z: 0.0566050932
+                X: 0.0308024436
+                Y: 0.0155826341
+                Z: 0.0480130427
               }
             }
-            ParentId: 14488054401435031319
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -1847,6 +1907,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -1854,21 +1917,22 @@ Assets {
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47373009
-                Y: -0.31583178
-                Z: -0.626508296
+                X: -10.3543539
+                Y: -21.0616646
+                Z: 3.4514513
               }
               Rotation {
-                Yaw: -1.7075472e-06
-                Roll: 5.1226416e-06
+                Pitch: 51.4056168
+                Yaw: -85.6897888
+                Roll: -5.3405447
               }
               Scale {
-                X: 0.0943959653
-                Y: 0.0943976
-                Z: 0.0424555056
+                X: 0.0800676644
+                Y: 0.0800690427
+                Z: 0.0360112116
               }
             }
-            ParentId: 14488054401435031319
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -1925,6 +1989,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -1932,22 +1999,22 @@ Assets {
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47382283
-                Y: -0.314782083
-                Z: -0.469685346
+                X: -10.3738852
+                Y: -20.9584293
+                Z: 3.53445911
               }
               Rotation {
-                Pitch: -2.73207552e-05
-                Yaw: -7.17170042e-05
-                Roll: 0.000100745296
+                Pitch: 51.4055862
+                Yaw: -85.6898956
+                Roll: -5.34053469
               }
               Scale {
-                X: 0.0951407254
-                Y: 0.095145762
-                Z: 0.0408589952
+                X: 0.0806993768
+                Y: 0.0807036459
+                Z: 0.034657035
               }
             }
-            ParentId: 14488054401435031319
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2004,6 +2071,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2011,22 +2081,22 @@ Assets {
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -1.05233026
-                Y: 0.0542025566
-                Z: 1.31795764
+                X: -10.3934164
+                Y: -18.4137859
+                Z: 2.81947565
               }
               Rotation {
-                Pitch: -2.04905664e-05
-                Yaw: 1.36603776e-05
-                Roll: 1.70754504e-06
+                Pitch: 51.4056
+                Yaw: -85.6897736
+                Roll: -5.34053659
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 14488054401435031319
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2075,6 +2145,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2082,22 +2155,22 @@ Assets {
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -0.336591303
-                Y: -2.0299654
-                Z: 1.31825614
+                X: -12.1121664
+                Y: -19.051342
+                Z: 3.19161582
               }
               Rotation {
-                Pitch: 0.00153679249
-                Yaw: 46.5323296
-                Roll: 4.23914425e-05
+                Pitch: 35.4393044
+                Yaw: -23.1996555
+                Roll: 40.3315048
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 14488054401435031319
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2146,6 +2219,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2153,22 +2229,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 2.06694269
-                Y: 1.33102679
-                Z: 1.31383419
+                X: -9.19922
+                Y: -19.9023457
+                Z: 4.94803333
               }
               Rotation {
-                Pitch: -0.00293015107
-                Yaw: -109.736038
-                Roll: 0.000105040315
+                Pitch: -18.5790081
+                Yaw: 175.686
+                Roll: -49.0631332
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 14488054401435031319
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2216,6 +2292,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2223,22 +2302,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 0.535866
-                Y: 1.32378864
-                Z: 1.31883395
+                X: -9.2689743
+                Y: -19.0917988
+                Z: 3.93554735
               }
               Rotation {
-                Pitch: -0.00129090564
-                Yaw: -75.7055511
-                Roll: -0.00137608068
+                Pitch: 7.85690975
+                Yaw: -162.589325
+                Roll: -51.1734543
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 14488054401435031319
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2287,50 +2366,8 @@ Assets {
                 BoundsScale: 1
               }
             }
-          }
-          Objects {
-            Id: 8775460326623282472
-            Name: "NewFolder"
-            Transform {
-              Location {
-                X: -10.7470703
-                Y: -16.2314453
-                Z: 4.85595703
-              }
-              Rotation {
-                Pitch: -49.3168945
-                Yaw: 123.925385
-                Roll: -17.6756592
-              }
-              Scale {
-                X: 0.848210514
-                Y: 0.848210514
-                Z: 0.848210514
-              }
-            }
-            ParentId: 8530648511293812918
-            ChildIds: 14022986824795403422
-            ChildIds: 14883709991286246745
-            ChildIds: 7350088901886033519
-            ChildIds: 8214893102039445312
-            ChildIds: 6176669138764123094
-            ChildIds: 4259513679173622021
-            ChildIds: 15641292405940886700
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            Folder {
-              IsFilePartition: true
-              FilePartitionName: "NewFolder_3"
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2338,22 +2375,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 2.6580193
-                Y: -1.00524473
-                Z: 1.31384277
+                X: -10.9542427
+                Y: -13.864399
+                Z: 3.66978288
               }
               Rotation {
-                Pitch: -0.00277988683
-                Yaw: -114.649963
-                Roll: 3.47214482e-05
+                Pitch: 7.83707476
+                Yaw: 4.8658061
+                Roll: 51.1736603
               }
               Scale {
-                X: 0.0363146178
-                Y: 0.0183711853
-                Z: 0.0566050932
+                X: 0.0308024436
+                Y: 0.0155826341
+                Z: 0.0480130427
               }
             }
-            ParentId: 8775460326623282472
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2401,6 +2438,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2408,21 +2448,22 @@ Assets {
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47373009
-                Y: -0.31583178
-                Z: -0.626508296
+                X: -10.8761177
+                Y: -15.8733273
+                Z: 3.5250423
               }
               Rotation {
-                Yaw: -1.7075472e-06
-                Roll: 5.1226416e-06
+                Pitch: -49.3168869
+                Yaw: 123.925385
+                Roll: -17.675663
               }
               Scale {
-                X: 0.0943959653
-                Y: 0.0943976
-                Z: 0.0424555056
+                X: 0.0800676644
+                Y: 0.0800690427
+                Z: 0.0360112116
               }
             }
-            ParentId: 8775460326623282472
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2479,6 +2520,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2486,22 +2530,22 @@ Assets {
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47382283
-                Y: -0.314782083
-                Z: -0.469685346
+                X: -10.895649
+                Y: -15.7714863
+                Z: 3.6077013
               }
               Rotation {
-                Pitch: -2.73207552e-05
-                Yaw: -7.17170042e-05
-                Roll: 0.000100745296
+                Pitch: -49.3169327
+                Yaw: 123.925308
+                Roll: -17.6755
               }
               Scale {
-                X: 0.0951407254
-                Y: 0.095145762
-                Z: 0.0408589952
+                X: 0.0806993768
+                Y: 0.0807036459
+                Z: 0.034657035
               }
             }
-            ParentId: 8775460326623282472
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2558,6 +2602,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2565,22 +2612,22 @@ Assets {
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -1.05233026
-                Y: 0.0542025566
-                Z: 1.31795764
+                X: -10.6333714
+                Y: -15.8705378
+                Z: 6.2363987
               }
               Rotation {
-                Pitch: -2.04905664e-05
-                Yaw: 1.36603776e-05
-                Roll: 1.70754504e-06
+                Pitch: -49.3169022
+                Yaw: 123.925415
+                Roll: -17.6756916
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 8775460326623282472
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2629,6 +2676,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2636,22 +2686,22 @@ Assets {
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -0.336591303
-                Y: -2.0299654
-                Z: 1.31825614
+                X: -9.2299118
+                Y: -14.9400129
+                Z: 5.42620039
               }
               Rotation {
-                Pitch: 0.00153679249
-                Yaw: 46.5323296
-                Roll: 4.23914425e-05
+                Pitch: -22.2112141
+                Yaw: 172.249237
+                Roll: -47.8639297
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 8775460326623282472
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2700,6 +2750,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2707,22 +2760,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 2.06694269
-                Y: 1.33102679
-                Z: 1.31383419
+                X: -12.5920773
+                Y: -14.8116646
+                Z: 4.44196463
               }
               Rotation {
-                Pitch: -0.00293015107
-                Yaw: -109.736038
-                Roll: 0.000105040315
+                Pitch: 3.99931455
+                Yaw: 7.95175171
+                Roll: 51.4924202
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 8775460326623282472
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2770,6 +2823,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2777,22 +2833,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 0.535866
-                Y: 1.32378864
-                Z: 1.31883395
+                X: -12.1149569
+                Y: -15.5078144
+                Z: 5.42829323
               }
               Rotation {
-                Pitch: -0.00129090564
-                Yaw: -75.7055511
-                Roll: -0.00137608068
+                Pitch: -22.2747555
+                Yaw: 30.0721798
+                Roll: 47.8406258
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 8775460326623282472
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2841,50 +2897,8 @@ Assets {
                 BoundsScale: 1
               }
             }
-          }
-          Objects {
-            Id: 5907217815723281703
-            Name: "NewFolder"
-            Transform {
-              Location {
-                X: -12.5141602
-                Y: -9.79882813
-                Z: 3.1484375
-              }
-              Rotation {
-                Pitch: 10.5750923
-                Yaw: 2.62185
-                Roll: 50.817543
-              }
-              Scale {
-                X: 0.848210514
-                Y: 0.848210514
-                Z: 0.848210514
-              }
-            }
-            ParentId: 8530648511293812918
-            ChildIds: 17940984315719875854
-            ChildIds: 629301880927683363
-            ChildIds: 2548722461807137892
-            ChildIds: 7557753244510590181
-            ChildIds: 2369823986170059916
-            ChildIds: 12215330883921604635
-            ChildIds: 15860511369655763615
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            Folder {
-              IsFilePartition: true
-              FilePartitionName: "NewFolder_2"
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2892,22 +2906,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 2.6580193
-                Y: -1.00524473
-                Z: 1.31384277
+                X: -10.5664072
+                Y: -9.38476658
+                Z: 4.90408802
               }
               Rotation {
-                Pitch: -0.00277988683
-                Yaw: -114.649963
-                Roll: 3.47214482e-05
+                Pitch: 38.0219154
+                Yaw: -130.578903
+                Roll: -37.9626312
               }
               Scale {
-                X: 0.0363146178
-                Y: 0.0183711853
-                Z: 0.0566050932
+                X: 0.0308024436
+                Y: 0.0155826341
+                Z: 0.0480130427
               }
             }
-            ParentId: 5907217815723281703
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -2955,6 +2969,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -2962,21 +2979,22 @@ Assets {
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47373009
-                Y: -0.31583178
-                Z: -0.626508296
+                X: -11.2360506
+                Y: -10.3222666
+                Z: 3.25195336
               }
               Rotation {
-                Yaw: -1.7075472e-06
-                Roll: 5.1226416e-06
+                Pitch: 10.5750923
+                Yaw: 2.62184882
+                Roll: 50.8175697
               }
               Scale {
-                X: 0.0943959653
-                Y: 0.0943976
-                Z: 0.0424555056
+                X: 0.0800676644
+                Y: 0.0800690427
+                Z: 0.0360112116
               }
             }
-            ParentId: 5907217815723281703
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3033,6 +3051,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -3040,22 +3061,22 @@ Assets {
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47382283
-                Y: -0.314782083
-                Z: -0.469685346
+                X: -11.2555819
+                Y: -10.2190304
+                Z: 3.333915
               }
               Rotation {
-                Pitch: -2.73207552e-05
-                Yaw: -7.17170042e-05
-                Roll: 0.000100745296
+                Pitch: 10.5751333
+                Yaw: 2.62178254
+                Roll: 50.8176537
               }
               Scale {
-                X: 0.0951407254
-                Y: 0.095145762
-                Z: 0.0408589952
+                X: 0.0806993768
+                Y: 0.0807036459
+                Z: 0.034657035
               }
             }
-            ParentId: 5907217815723281703
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3112,6 +3133,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -3119,22 +3143,22 @@ Assets {
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -1.05233026
-                Y: 0.0542025566
-                Z: 1.31795764
+                X: -13.5546894
+                Y: -8.9508934
+                Z: 3.64397359
               }
               Rotation {
-                Pitch: -2.04905664e-05
-                Yaw: 1.36603776e-05
-                Roll: 1.70754504e-06
+                Pitch: 10.5750656
+                Yaw: 2.62184286
+                Roll: 50.8175621
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 5907217815723281703
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3183,6 +3207,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -3190,22 +3217,22 @@ Assets {
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -0.336591303
-                Y: -2.0299654
-                Z: 1.31825614
+                X: -13.1584835
+                Y: -10.0502243
+                Z: 5.10253954
               }
               Rotation {
-                Pitch: 0.00153679249
-                Yaw: 46.5323296
-                Roll: 4.23914425e-05
+                Pitch: -25.2608452
+                Yaw: 33.0885811
+                Roll: 46.6272087
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 5907217815723281703
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3254,6 +3281,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -3261,22 +3291,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 2.06694269
-                Y: 1.33102679
-                Z: 1.31383419
+                X: -10.8342648
+                Y: -8.14313698
+                Z: 3.30182791
               }
               Rotation {
-                Pitch: -0.00293015107
-                Yaw: -109.736038
-                Roll: 0.000105040315
+                Pitch: 40.9353714
+                Yaw: -125.449898
+                Roll: -34.6990166
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 5907217815723281703
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3324,6 +3354,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -3331,22 +3364,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 0.535866
-                Y: 1.32378864
-                Z: 1.31883395
+                X: -12.109376
+                Y: -8.20312595
+                Z: 3.07094073
               }
               Rotation {
-                Pitch: -0.00129090564
-                Yaw: -75.7055511
-                Roll: -0.00137608068
+                Pitch: 51.5988045
+                Yaw: -77.6591797
+                Roll: 0.948075354
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 5907217815723281703
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3395,50 +3428,8 @@ Assets {
                 BoundsScale: 1
               }
             }
-          }
-          Objects {
-            Id: 17532067800372507872
-            Name: "NewFolder"
-            Transform {
-              Location {
-                X: -9.83740234
-                Y: -4.21484375
-                Z: 3.39453125
-              }
-              Rotation {
-                Pitch: 16.2486095
-                Yaw: -155.511383
-                Roll: -49.6885681
-              }
-              Scale {
-                X: 0.848210514
-                Y: 0.848210514
-                Z: 0.848210514
-              }
-            }
-            ParentId: 8530648511293812918
-            ChildIds: 14548563646032356436
-            ChildIds: 3149682581639805429
-            ChildIds: 12096339904390567564
-            ChildIds: 6802490176849518789
-            ChildIds: 303719697197269568
-            ChildIds: 16396338059070402238
-            ChildIds: 9806608613373625127
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            Folder {
-              IsFilePartition: true
-              FilePartitionName: "NewFolder_1"
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -3446,22 +3437,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 2.6580193
-                Y: -1.00524473
-                Z: 1.31384277
+                X: -12.3716536
+                Y: -3.82812548
+                Z: 4.09354115
               }
               Rotation {
-                Pitch: -0.00277988683
-                Yaw: -114.649963
-                Roll: 3.47214482e-05
+                Pitch: -51.4530678
+                Yaw: 95.1375732
+                Roll: 4.69664097
               }
               Scale {
-                X: 0.0363146178
-                Y: 0.0183711853
-                Z: 0.0566050932
+                X: 0.0308024436
+                Y: 0.0155826341
+                Z: 0.0480130427
               }
             }
-            ParentId: 17532067800372507872
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3509,6 +3500,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -3516,21 +3510,22 @@ Assets {
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47373009
-                Y: -0.31583178
-                Z: -0.626508296
+                X: -10.973774
+                Y: -4.98604965
+                Z: 3.21812248
               }
               Rotation {
-                Yaw: -1.7075472e-06
-                Roll: 5.1226416e-06
+                Pitch: 16.2486095
+                Yaw: -155.511398
+                Roll: -49.6885643
               }
               Scale {
-                X: 0.0943959653
-                Y: 0.0943976
-                Z: 0.0424555056
+                X: 0.0800676644
+                Y: 0.0800690427
+                Z: 0.0360112116
               }
             }
-            ParentId: 17532067800372507872
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3588,28 +3583,31 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 12096339904390567564
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47382283
-                Y: -0.314782083
-                Z: -0.469685346
+                X: -10.9933052
+                Y: -4.8842082
+                Z: 3.3014791
               }
               Rotation {
-                Pitch: -2.73207552e-05
-                Yaw: -7.17170042e-05
-                Roll: 0.000100745296
+                Pitch: 16.2485332
+                Yaw: -155.511414
+                Roll: -49.6884727
               }
               Scale {
-                X: 0.0951407254
-                Y: 0.095145762
-                Z: 0.0408589952
+                X: 0.0806993768
+                Y: 0.0807036459
+                Z: 0.034657035
               }
             }
-            ParentId: 17532067800372507872
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3667,28 +3665,31 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 6802490176849518789
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -1.05233026
-                Y: 0.0542025566
-                Z: 1.31795764
+                X: -9.20759
+                Y: -3.02315879
+                Z: 3.87276816
               }
               Rotation {
-                Pitch: -2.04905664e-05
-                Yaw: 1.36603776e-05
-                Roll: 1.70754504e-06
+                Pitch: 16.2486019
+                Yaw: -155.511383
+                Roll: -49.6885643
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 17532067800372507872
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3737,6 +3738,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -3744,22 +3748,22 @@ Assets {
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -0.336591303
-                Y: -2.0299654
-                Z: 1.31825614
+                X: -10.5552464
+                Y: -2.38002253
+                Z: 2.74867487
               }
               Rotation {
-                Pitch: 0.00153679249
-                Yaw: 46.5323296
-                Roll: 4.23914425e-05
+                Pitch: 46.371151
+                Yaw: -112.631859
+                Roll: -25.823597
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 17532067800372507872
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3809,28 +3813,31 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 16396338059070402238
             Name: "Cube"
             Transform {
               Location {
-                X: 2.06694269
-                Y: 1.33102679
-                Z: 1.31383419
+                X: -11.015626
+                Y: -4.62053633
+                Z: 5.40387917
               }
               Rotation {
-                Pitch: -0.00293015107
-                Yaw: -109.736038
-                Roll: 0.000105040315
+                Pitch: -51.590992
+                Yaw: 103.035805
+                Roll: -1.48993182
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 17532067800372507872
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3878,6 +3885,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -3885,22 +3895,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 0.535866
-                Y: 1.32378864
-                Z: 1.31883395
+                X: -9.8856039
+                Y: -4.09737778
+                Z: 5.03871441
               }
               Rotation {
-                Pitch: -0.00129090564
-                Yaw: -75.7055511
-                Roll: -0.00137608068
+                Pitch: -39.8174629
+                Yaw: 149.78479
+                Roll: -36.0407
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 17532067800372507872
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -3949,50 +3959,8 @@ Assets {
                 BoundsScale: 1
               }
             }
-          }
-          Objects {
-            Id: 5023341039351380021
-            Name: "NewFolder"
-            Transform {
-              Location {
-                X: -11.0961914
-                Y: 1.53320313
-                Z: 3.01806641
-              }
-              Rotation {
-                Pitch: 51.405632
-                Yaw: -85.6897888
-                Roll: -5.34054565
-              }
-              Scale {
-                X: 0.848210514
-                Y: 0.848210514
-                Z: 0.848210514
-              }
-            }
-            ParentId: 8530648511293812918
-            ChildIds: 1084222615674720427
-            ChildIds: 13912321562316141363
-            ChildIds: 8522200838541264929
-            ChildIds: 13795355204088867862
-            ChildIds: 14869514329605950034
-            ChildIds: 15654676454082497790
-            ChildIds: 607366426316522722
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            Folder {
-              IsFilePartition: true
-              FilePartitionName: "NewFolder"
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -4000,22 +3968,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 2.6580193
-                Y: -1.00524473
-                Z: 1.31384277
+                X: -12.0005589
+                Y: 0.862165272
+                Z: 5.4227128
               }
               Rotation {
-                Pitch: -0.00277988683
-                Yaw: -114.649963
-                Roll: 3.47214482e-05
+                Pitch: -22.2579327
+                Yaw: 172.209076
+                Roll: -47.849472
               }
               Scale {
-                X: 0.0363146178
-                Y: 0.0183711853
-                Z: 0.0566050932
+                X: 0.0308024436
+                Y: 0.0155826341
+                Z: 0.0480130427
               }
             }
-            ParentId: 5023341039351380021
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -4064,27 +4032,31 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 13912321562316141363
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47373009
-                Y: -0.31583178
-                Z: -0.626508296
+                X: -11.2220993
+                Y: 0.306919664
+                Z: 3.64920521
               }
               Rotation {
-                Yaw: -1.7075472e-06
-                Roll: 5.1226416e-06
+                Pitch: 51.4056282
+                Yaw: -85.6898
+                Roll: -5.34054613
               }
               Scale {
-                X: 0.0943959653
-                Y: 0.0943976
-                Z: 0.0424555056
+                X: 0.0800676644
+                Y: 0.0800690427
+                Z: 0.0360112116
               }
             }
-            ParentId: 5023341039351380021
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -4142,28 +4114,31 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 8522200838541264929
             Name: "Pipe - Thick"
             Transform {
               Location {
-                X: 1.47382283
-                Y: -0.314782083
-                Z: -0.469685346
+                X: -11.2416306
+                Y: 0.41015628
+                Z: 3.73221302
               }
               Rotation {
-                Pitch: -2.73207552e-05
-                Yaw: -7.17170042e-05
-                Roll: 0.000100745296
+                Pitch: 51.4055939
+                Yaw: -85.6899
+                Roll: -5.34053659
               }
               Scale {
-                X: 0.0951407254
-                Y: 0.095145762
-                Z: 0.0408589952
+                X: 0.0806993768
+                Y: 0.0807036459
+                Z: 0.034657035
               }
             }
-            ParentId: 5023341039351380021
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -4221,28 +4196,31 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 13795355204088867862
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -1.05233026
-                Y: 0.0542025566
-                Z: 1.31795764
+                X: -11.2611618
+                Y: 2.95479941
+                Z: 3.0172298
               }
               Rotation {
-                Pitch: -2.04905664e-05
-                Yaw: 1.36603776e-05
-                Roll: 1.70754504e-06
+                Pitch: 51.4056129
+                Yaw: -85.6897812
+                Roll: -5.34054
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 5023341039351380021
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -4291,6 +4269,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -4298,22 +4279,22 @@ Assets {
             Name: "Prism - 6-Sided Half"
             Transform {
               Location {
-                X: -0.336591303
-                Y: -2.0299654
-                Z: 1.31825614
+                X: -12.9799118
+                Y: 2.31724358
+                Z: 3.38936973
               }
               Rotation {
-                Pitch: 0.00153679249
-                Yaw: 46.5323296
-                Roll: 4.23914425e-05
+                Pitch: 35.439312
+                Yaw: -23.1996555
+                Roll: 40.3315163
               }
               Scale {
-                X: 0.0471719541
-                Y: 0.0193160288
-                Z: 0.0400985703
+                X: 0.0400117524
+                Y: 0.0163840614
+                Z: 0.0340120345
               }
             }
-            ParentId: 5023341039351380021
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -4363,28 +4344,31 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 15654676454082497790
             Name: "Cube"
             Transform {
               Location {
-                X: 2.06694269
-                Y: 1.33102679
-                Z: 1.31383419
+                X: -10.0669651
+                Y: 1.46623898
+                Z: 5.14578724
               }
               Rotation {
-                Pitch: -0.00293015107
-                Yaw: -109.736038
-                Roll: 0.000105040315
+                Pitch: -18.5790081
+                Yaw: 175.686
+                Roll: -49.0631409
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 5023341039351380021
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -4432,6 +4416,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -4439,22 +4426,22 @@ Assets {
             Name: "Cube"
             Transform {
               Location {
-                X: 0.535866
-                Y: 1.32378864
-                Z: 1.31883395
+                X: -10.1367197
+                Y: 2.27678585
+                Z: 4.13330126
               }
               Rotation {
-                Pitch: -0.00129090564
-                Yaw: -75.7055511
-                Roll: -0.00137608068
+                Pitch: 7.85690975
+                Yaw: -162.589325
+                Roll: -51.1734657
               }
               Scale {
-                X: 0.0159940422
-                Y: 0.00927588716
-                Z: 0.0566092208
+                X: 0.013566317
+                Y: 0.00786790624
+                Z: 0.0480165444
               }
             }
-            ParentId: 5023341039351380021
+            ParentId: 8530648511293812918
             UnregisteredParameters {
               Overrides {
                 Name: "ma:Shared_BaseMaterial:id"
@@ -4502,6 +4489,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -4577,6 +4567,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 13039212289806757519
@@ -4651,6 +4644,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 10198211784184953394
@@ -4717,6 +4713,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 1830836894497830427
@@ -4782,6 +4781,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -4853,13 +4855,16 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 17858060116085722760
             Name: "Star - Rounded"
             Transform {
               Location {
-                X: 9.27539063
+                X: 9.27539062
                 Y: 5.37011719
                 Z: 6.60644531
               }
@@ -4918,6 +4923,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -4998,6 +5006,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 14305710444391476695
@@ -5076,6 +5087,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -5156,6 +5170,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 8159104535586768144
@@ -5221,6 +5238,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -5301,6 +5321,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 15939210897668742946
@@ -5379,6 +5402,9 @@ Assets {
                 }
                 BoundsScale: 1
               }
+            }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
             }
           }
           Objects {
@@ -5459,6 +5485,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
           Objects {
             Id: 16308259352182106940
@@ -5538,6 +5567,9 @@ Assets {
                 BoundsScale: 1
               }
             }
+            NetworkRelevanceDistance {
+              Value: "mc:eproxyrelevance:critical"
+            }
           }
         }
         PrimaryAssetId {
@@ -5546,6 +5578,7 @@ Assets {
         }
       }
       DirectlyPublished: true
+      VirtualFolderPath: "Props"
     }
     Assets {
       Id: 12446131267530965574
@@ -5821,8 +5854,8 @@ Assets {
     Id: "03c0f30f5bb24d91a6275bcce5508001"
     OwnerAccountId: "21c0b4284eff4bb091ce80a75c984fd4"
     OwnerName: "varglbargl"
-    Description: "It\'s a bento box! It\'s cute!"
+    Description: "It\'s a bento box! It\'s cute!\r\n\r\nBoba not included, but is also on the CC."
   }
-  SerializationVersion: 92
+  SerializationVersion: 105
 }
 IncludesAllDependencies: true

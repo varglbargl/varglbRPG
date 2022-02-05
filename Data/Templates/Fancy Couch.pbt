@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10045885269598533116
+        ParentId: 1648375269741250625
         ChildIds: 5211063050946554210
         ChildIds: 16590157316552120873
         ChildIds: 11778061669484007760
@@ -26,13 +26,11 @@ Assets {
         ChildIds: 12255124285881589706
         ChildIds: 9920644407174562324
         ChildIds: 2369723980816229710
-        ChildIds: 6438964387252216019
         ChildIds: 17910376142205400524
         ChildIds: 7101743784015963915
         ChildIds: 16055173936621233146
         ChildIds: 17751838686868666515
         ChildIds: 1677613166287096287
-        ChildIds: 9742309051124878437
         ChildIds: 16323755739567517296
         ChildIds: 14459965479939588744
         ChildIds: 654826323810049586
@@ -1423,113 +1421,6 @@ Assets {
         }
       }
       Objects {
-        Id: 6438964387252216019
-        Name: "Japanese Epic Chest Lid 01"
-        Transform {
-          Location {
-            X: -1
-            Y: 65.0914307
-            Z: 129.112
-          }
-          Rotation {
-            Yaw: -179.999985
-            Roll: -12.7369995
-          }
-          Scale {
-            X: 0.8
-            Y: 0.144325897
-            Z: 0.699999809
-          }
-        }
-        ParentId: 6048689032506712493
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 9636406107902119141
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9636406107902119141
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:id"
-            AssetReference {
-              Id: 9636406107902119141
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.3
-              B: 0.25
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.5
-              G: 0.3
-              B: 0.25
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:color"
-            Color {
-              R: 0.5
-              G: 0.3
-              B: 0.25
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10209027400893092048
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 17910376142205400524
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
@@ -1865,104 +1756,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 14706812211894318190
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 9742309051124878437
-        Name: "Japanese Stone Lantern Roof Medium 01"
-        Transform {
-          Location {
-            X: -1
-            Y: 62.0107422
-            Z: 148.088272
-          }
-          Rotation {
-            Yaw: -179.999969
-            Roll: -12.73703
-          }
-          Scale {
-            X: 0.800000191
-            Y: 0.144325987
-            Z: 0.458281398
-          }
-        }
-        ParentId: 6048689032506712493
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 9636406107902119141
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9636406107902119141
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:id"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.3
-              B: 0.25
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.5
-              G: 0.3
-              B: 0.25
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14875586818065257626
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2711,15 +2504,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_metal_gold_001"
-      }
-    }
-    Assets {
-      Id: 14875586818065257626
-      Name: "Japanese Stone Lantern Roof Medium 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_jpn_lantern_stone_medium_roof_001_ref"
       }
     }
     Assets {

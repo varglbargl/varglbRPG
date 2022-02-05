@@ -53,6 +53,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Options"
+        ObjectReference {
+          SelfId: 15785996325459992518
+        }
+      }
+      Overrides {
         Name: "cs:Dialog:isrep"
         Bool: false
       }
@@ -107,6 +113,10 @@ Assets {
       Overrides {
         Name: "cs:Characters:category"
         String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Options:category"
+        String: "UI"
       }
     }
     Assets {

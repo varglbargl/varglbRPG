@@ -1,6 +1,6 @@
 Assets {
   Id: 16942072427917773766
-  Name: "Horigated Corruzontal"
+  Name: "Horigated Corruzontal Metal"
   PlatformAssetType: 13
   SerializationVersion: 105
   CustomMaterialAsset {

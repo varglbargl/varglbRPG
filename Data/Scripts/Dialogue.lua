@@ -1,6 +1,6 @@
+local Utils = require(script:GetCustomProperty("Utils"))
 local Characters = require(script:GetCustomProperty("Characters"))
 
--- Custom
 local FONT_DEFAULT = script:GetCustomProperty("FontDefault")
 local FONT_ITALIC = script:GetCustomProperty("FontItalic")
 
@@ -8,11 +8,44 @@ local DIALOG = script:GetCustomProperty("Dialog"):WaitForObject()
 local NAME = script:GetCustomProperty("Name"):WaitForObject()
 local PORTRAIT = script:GetCustomProperty("Portrait"):WaitForObject()
 local DIALOGUE = script:GetCustomProperty("Dialogue"):WaitForObject()
+local OPTIONS = script:GetCustomProperty("Options"):WaitForObject()
 
 local Dialogue = {}
 
+local options = OPTIONS:GetChildren()
+local optionOneDescription = options[1]:FindChildByName("Description")
+local optionOneSelector = options[1]:FindChildByName("Selector")
+local optionTwoDescription = options[2]:FindChildByName("Description")
+local optionTwoSelector = options[2]:FindChildByName("Selector")
+
+local clientPlayer = Game.GetLocalPlayer()
 local portraitSize = 184
 local speaker = nil
+local skip = false
+local skipEvent = nil
+local selection = 1
+
+options[1].hoveredEvent:Connect(function()
+  selection = 1
+  optionOneSelector.visibility = Visibility.INHERIT
+  optionTwoSelector.visibility = Visibility.FORCE_OFF
+end)
+
+options[2].hoveredEvent:Connect(function()
+  selection = 2
+  optionOneSelector.visibility = Visibility.FORCE_OFF
+  optionTwoSelector.visibility = Visibility.INHERIT
+end)
+
+options[1].clickedEvent:Connect(function()
+  selection = 1
+  skip = true
+end)
+
+options[2].clickedEvent:Connect(function()
+  selection = 2
+  skip = true
+end)
 
 DIALOG.visibility = Visibility.FORCE_OFF
 
@@ -71,26 +104,26 @@ local animations = {
   eat = "unarmed_eat",
   shame = "unarmed_facepalm",
   flex = "unarmed_flex",
-  -- "unarmed_get_item",
+  take = "unarmed_get_item",
   give = "unarmed_give_item",
   -- "unarmed_kungfu_pose",
   laugh = "unarmed_laugh",
-  -- "unarmed_listen_casual",
+  listen = "unarmed_listen_casual",
   -- "unarmed_listen_talk_casual",
   love = "unarmed_love",
   cast = "unarmed_magic_bolt",
   -- "unarmed_magic_up",
-  -- "unarmed_meditate",
+  meditate = "unarmed_meditate",
   no = "unarmed_no",
   -- "unarmed_pickup",
   -- "unarmed_pickup_middle",
-  -- "unarmed_point_forward",
+  point = "unarmed_point_forward",
   -- "unarmed_punch_left",
   -- "unarmed_punch_right",
   -- "unarmed_react_damage",
   -- "unarmed_ready_to_rumble",
-  -- "unarmed_salute",
-  -- "unarmed_scared",
+  salute = "unarmed_salute",
+  scared = "unarmed_scared",
   -- "unarmed_shiver",
   shout = "unarmed_shout",
   shrug = "unarmed_shrug",
@@ -112,7 +145,7 @@ local animations = {
   -- "unarmed_throw",
   -- "unarmed_thumbs_down",
   -- "unarmed_thumbs_up",
-  -- "unarmed_use",
+  use = "unarmed_use",
   -- "unarmed_use_bandage",
   wave = "unarmed_wave",
   yes = "unarmed_yes",
@@ -178,33 +211,57 @@ local animationStances = {
   -- "zombie_unarmed_walk_forward"
 }
 
-local chirpTask = nil
-
-function chirpLoop()
-  if speaker and speaker.chirp then
-    speaker.chirp:Play()
-
-    Task.Wait(0.075)
-
-    chirpLoop()
-  else
-    return
-  end
-end
-
 function writeOutText(text)
-  chirpTask = Task.Spawn(chirpLoop)
+  skip = false
 
-  for i = 1, #text do
-    local c = text:sub(i,i)
-    -- do something with c
+  local chirpSFX = nil
+
+  if speaker and speaker.chirp then
+    chirpSFX = Utils.playSoundEffect(speaker.chirp, {parent = speaker.npc, pitch = speaker.pitch, loop = true, stopTime = 0.075})
+  end
+
+  local previousText = DIALOGUE.text
+  local words = {CoreString.Split(text, " ")}
+
+  for i, word in ipairs(words) do
+    DIALOGUE.text = DIALOGUE.text..word
+
+    if DIALOGUE:ComputeApproximateSize().x > 612 then
+      words[i] = "\n"..word
+      DIALOGUE.text = previousText..word.." "
+    else
+      DIALOGUE.text = DIALOGUE.text.." "
+    end
+
+    -- Todo: Handle vertical overflow.
+    -- Task.Wait(0.25)
+  end
+
+  local formattedText = CoreString.Join(" ", table.unpack(words))
+
+  DIALOGUE.text = previousText
+
+  Task.Wait()
+
+  skipEvent = clientPlayer.bindingPressedEvent:Connect(onBindingPressed)
+
+  for i = 1, #formattedText do
+    if skip then
+      DIALOGUE.text = previousText..formattedText
+      skip = false
+      break
+    end
+
+    local c = string.sub(formattedText, i, i)
 
     DIALOGUE.text = DIALOGUE.text..c
 
     Task.Wait()
   end
 
-  chirpTask:Cancel()
+  if Object.IsValid(chirpSFX) then
+    chirpSFX:Destroy()
+  end
 end
 
 function speakLine(lines, num)
@@ -242,9 +299,6 @@ function speakLine(lines, num)
         end
       end
     end
-
-  elseif speaker.type == "string" then
-    NAME.text = speaker
   end
 
   if line.italic then
@@ -254,15 +308,54 @@ function speakLine(lines, num)
   end
 
   DIALOG.visibility = Visibility.INHERIT
+  Events.Broadcast("ShowCursor")
 
-  writeOutText(line[1])
+  if line[1] then
+    writeOutText(line[1])
+  end
 
-  Task.Wait(2)
+  if line.options then
+    Task.Wait(0.25)
 
-  if line.gotoPage then
-    speakLine(lines, line.gotoPage)
+    selection = 1
+
+    optionOneDescription.text = "1. "..line.options[1][1]
+    optionOneSelector.visibility = Visibility.INHERIT
+
+    optionTwoDescription.text = "2. "..line.options[2][1]
+    optionTwoSelector.visibility = Visibility.FORCE_OFF
+
+    OPTIONS.visibility = Visibility.INHERIT
+  end
+
+  while not skip do
+    Task.Wait()
+  end
+
+  skipEvent:Disconnect()
+
+  if line.stop then
+    return
+  elseif line.options then
+    OPTIONS.visibility = Visibility.FORCE_OFF
+
+    if line.options[selection].gotoPage then
+      speakLine(lines, line.options[selection].gotoPage)
+    end
+  elseif line.gotoPage then
+    gotoPage(lines, line.gotoPage)
   elseif lines[num + 1] then
     speakLine(lines, num + 1)
+  end
+end
+
+function gotoPage(lines, page)
+  if page.type == "number" then
+    speakLine(lines, page)
+  elseif page.type == "table" then
+    speakLine(lines, page[math.random(1, #page)])
+  elseif page.type == "function" then
+    gotoPage(page())
   end
 end
 
@@ -270,6 +363,15 @@ function Dialogue.speak(lines)
   speakLine(lines, 1)
 
   DIALOG.visibility = Visibility.FORCE_OFF
+
+  Events.Broadcast("HideCursor")
+end
+
+function onBindingPressed(player, keyCode)
+  if DIALOG.visibility == Visibility.FORCE_OFF then return end
+  if keyCode == "ability_primary" or keyCode == "ability_extra_33" then
+    skip = true
+  end
 end
 
 return Dialogue

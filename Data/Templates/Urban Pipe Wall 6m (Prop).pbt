@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 11732069531768207653
         ChildIds: 9663416472571504333
         ChildIds: 7393698135674195821
         ChildIds: 5046226942022723436
@@ -68,7 +68,6 @@ Assets {
         ChildIds: 14129617347846064504
         ChildIds: 14744487037666697570
         ChildIds: 16014926437692654003
-        ChildIds: 16647181448822248493
         ChildIds: 775147565841496479
         ChildIds: 4810655922645034617
         ChildIds: 3961025873020228830
@@ -830,13 +829,12 @@ Assets {
         Name: "Urban Pipe Clamp 01"
         Transform {
           Location {
-            X: -225
+            X: -224.999786
+            Y: -0.000366210938
             Z: 245
           }
           Rotation {
             Pitch: 90
-            Yaw: 180
-            Roll: 89.9999237
           }
           Scale {
             X: 1
@@ -2205,14 +2203,14 @@ Assets {
         Name: "Urban Pipe Valve 02"
         Transform {
           Location {
-            X: -225
-            Y: -35
+            X: -259.999146
+            Y: -0.000713348389
             Z: 245
           }
           Rotation {
             Pitch: -45
-            Yaw: 1.20741815e-05
-            Roll: -90.0000305
+            Yaw: -90
+            Roll: -90
           }
           Scale {
             X: 1
@@ -2538,50 +2536,6 @@ Assets {
         }
       }
       Objects {
-        Id: 16647181448822248493
-        Name: "Steam Pressure Release Loop 01 SFX"
-        Transform {
-          Location {
-            X: -155
-            Y: 20
-            Z: 300
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11018132758564424934
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 212008041644924062
-          }
-          AutoPlay: true
-          Repeat: true
-          Volume: 0.15
-          Falloff: 1500
-          Radius: 350
-          EnableOcclusion: true
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 775147565841496479
         Name: "Steam Volume VFX"
         Transform {
@@ -2840,7 +2794,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -2850,7 +2804,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -3022,15 +2975,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_urb_pipes_acc_flange_002_ref"
-      }
-    }
-    Assets {
-      Id: 212008041644924062
-      Name: "Steam Pressure Release Loop 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_steam_pressure_release_looped_01_Cue_ref"
       }
     }
     Assets {

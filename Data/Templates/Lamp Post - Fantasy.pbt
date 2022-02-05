@@ -7,7 +7,7 @@ Assets {
       RootId: 14382270725480533756
       Objects {
         Id: 14382270725480533756
-        Name: "Fantasy Lamp Post"
+        Name: "Lamp Post - Fantasy"
         Transform {
           Scale {
             X: 1
@@ -146,30 +146,30 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 10
+          Intensity: 2
           Color {
             R: 1
             G: 0.726868153
             B: 0.477918148
             A: 1
           }
-          CastShadows: true
           VolumetricIntensity: 5
           TeamSettings {
           }
           Light {
             UseTemperature: true
-            Temperature: 2600
+            Temperature: 3600
             LocalLight {
-              AttenuationRadius: 3000
+              AttenuationRadius: 3500
               PointLight {
                 SourceRadius: 9.23469257
                 SoftSourceRadius: 100
                 FallOffExponent: 8
+                UseFallOffExponent: true
               }
             }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
+            MaxDrawDistance: 10000
+            MaxDistanceFadeRange: 5000
           }
         }
         NetworkRelevanceDistance {

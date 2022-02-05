@@ -8,6 +8,10 @@ Assets {
         Name: "cs:AnimationStance"
         String: "unarmed_idle_relaxed"
       }
+      Overrides {
+        Name: "cs:LoopingAnimation"
+        String: ""
+      }
     }
   }
   SerializationVersion: 105

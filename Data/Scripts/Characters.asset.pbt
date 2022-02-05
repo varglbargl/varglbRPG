@@ -5,21 +5,9 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:Utils"
-        AssetReference {
-          Id: 8431391566871556229
-        }
-      }
-      Overrides {
-        Name: "cs:DefaultCharcter"
-        ObjectReference {
-          SelfId: 15576571906910875927
-        }
-      }
-      Overrides {
         Name: "cs:DefaultChirp"
         AssetReference {
-          Id: 10313086704693453888
+          Id: 15283395832651252099
         }
       }
       Overrides {
@@ -32,17 +20,31 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Utils:category"
-        String: "APIs"
+        Name: "cs:Cerise"
+        ObjectReference {
+          SelfId: 6727516201330864954
+        }
+      }
+      Overrides {
+        Name: "cs:DefaultChirp:category"
+        String: "Chirps"
+      }
+      Overrides {
+        Name: "cs:TutorialGuardF:category"
+        String: "NPCs"
+      }
+      Overrides {
+        Name: "cs:Cerise:category"
+        String: "NPCs"
       }
     }
     Assets {
-      Id: 10313086704693453888
-      Name: "Down Click 01 SFX"
+      Id: 15283395832651252099
+      Name: "Sci-fi UI Confirmation Tones Unlock Access 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_ui_down_click_01_Cue_ref"
+        AssetId: "sfx_scifi_ui_confirmation_tones_unlock_access_01_Cue_ref"
       }
     }
   }

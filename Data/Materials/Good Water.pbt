@@ -23,6 +23,29 @@ Assets {
         Name: "normal amount"
         Float: 5
       }
+      Overrides {
+        Name: "opacity"
+        Float: 0.8
+      }
+      Overrides {
+        Name: "wind direction"
+        Vector {
+          X: 0.5
+          Z: 0.2
+        }
+      }
+      Overrides {
+        Name: "opacity distance"
+        Float: 500
+      }
+      Overrides {
+        Name: "shallow color"
+        Color {
+          G: 0.05
+          B: 0.04
+          A: 1
+        }
+      }
     }
     Assets {
       Id: 11034279480632751641

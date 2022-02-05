@@ -22,6 +22,14 @@ Assets {
           Id: 16019871605902900811
         }
       }
+      Overrides {
+        Name: "cs:Loot:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
+      }
     }
     Assets {
       Id: 16019871605902900811

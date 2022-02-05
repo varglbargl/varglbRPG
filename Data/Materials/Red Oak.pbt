@@ -1,6 +1,6 @@
 Assets {
   Id: 2747788483144430206
-  Name: "Red Oak"
+  Name: "Red Oak Leaves"
   PlatformAssetType: 13
   SerializationVersion: 105
   CustomMaterialAsset {

@@ -5,7 +5,27 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:Zones"
+        Name: "cs:ZoneDisplay"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:ZoneName"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:ZoneSubtitle"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:DaySounds"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:NightSounds"
         ObjectReference {
         }
       }

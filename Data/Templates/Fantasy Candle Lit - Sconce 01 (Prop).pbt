@@ -10,9 +10,9 @@ Assets {
         Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
         Transform {
           Scale {
-            X: 1.39999986
-            Y: 1.39999986
-            Z: 1.39999986
+            X: 1.4
+            Y: 1.4
+            Z: 1.4
           }
         }
         ParentId: 4781671109827199097
@@ -92,7 +92,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -102,7 +102,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -140,7 +139,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 1.25
+          Intensity: 3
           Color {
             R: 1
             G: 0.726868153
@@ -184,6 +183,14 @@ Assets {
           }
         }
         ParentId: 4079025086750496989
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16354317593366277883
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -191,7 +198,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -201,7 +208,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
+          DisableCastShadows: true
           StaticMesh {
             Physics {
             }
@@ -229,6 +236,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_fantasy_sconce_001"
+      }
+    }
+    Assets {
+      Id: 16354317593366277883
+      Name: "Metal Old Beaten Gold 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_gold_002"
       }
     }
     PrimaryAssetId {

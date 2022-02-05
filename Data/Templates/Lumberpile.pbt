@@ -33,16 +33,18 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 1.38867188
-            Y: 61.671875
+            X: 4.5868988
+            Y: 63.5828781
+            Z: -1.84667969
           }
           Rotation {
-            Roll: 95.362915
+            Pitch: -30.7728271
+            Yaw: 90
           }
           Scale {
-            X: 0.225996226
-            Y: 1
-            Z: 1
+            X: 1.07493222
+            Y: 1.07493138
+            Z: 1.07493222
           }
         }
         ParentId: 3168130689968459764
@@ -55,14 +57,27 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.5
-              G: 0.5
-              B: 0.5
+              R: 0.9
+              G: 0.9
+              B: 0.9
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 1
+              G: 0.6625
+              B: 0.25
               A: 1
             }
           }
@@ -81,7 +96,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12844865120941685994
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -105,17 +120,19 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -6.9453125
-            Y: -5.39453125
-            Z: 1.67919922
+            X: 6.186728
+            Y: -1.73403478
+            Z: 0.329545796
           }
           Rotation {
-            Yaw: 2.86888456
+            Pitch: -27.4932251
+            Yaw: 90.0000076
+            Roll: 180
           }
           Scale {
-            X: 0.252651393
-            Y: 1.11794519
-            Z: 1.11794519
+            X: 1.07493222
+            Y: 1.20171463
+            Z: 1.07493222
           }
         }
         ParentId: 3168130689968459764
@@ -128,14 +145,27 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.5
-              G: 0.5
-              B: 0.5
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.95
+              G: 0.65075
+              B: 0.285
               A: 1
             }
           }
@@ -154,7 +184,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12844865120941685994
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -178,17 +208,18 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 1.38867188
-            Y: -61.6757812
+            X: 1.38815308
+            Y: -61.6747208
             Z: 0.7578125
           }
           Rotation {
-            Roll: 92.6681595
+            Pitch: 154.380585
+            Yaw: -90
           }
           Scale {
-            X: 0.225996226
-            Y: 1
-            Z: 1
+            X: 1.07493222
+            Y: 1.07493138
+            Z: 1.07493222
           }
         }
         ParentId: 3168130689968459764
@@ -201,14 +232,27 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 3
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.5
-              G: 0.5
-              B: 0.5
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.9
+              G: 0.576
+              B: 0.179999977
               A: 1
             }
           }
@@ -227,7 +271,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12844865120941685994
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -251,17 +295,18 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 1.38867188
-            Y: -30.9277344
-            Z: 39.4086914
+            X: 3.59326935
+            Y: -33.1146774
+            Z: 43.940918
           }
           Rotation {
-            Roll: -124.436836
+            Pitch: 116.741
+            Yaw: 90
           }
           Scale {
-            X: 0.236081436
-            Y: 1.0446254
-            Z: 1.0446254
+            X: 1.07493222
+            Y: 1.12290049
+            Z: 1.07493222
           }
         }
         ParentId: 3168130689968459764
@@ -274,14 +319,27 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.5
-              G: 0.5
-              B: 0.5
+              R: 0.9
+              G: 0.9
+              B: 0.9
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.95
+              G: 0.65075
+              B: 0.285
               A: 1
             }
           }
@@ -300,7 +358,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12844865120941685994
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -324,17 +382,18 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 1.38867188
-            Y: 32.8144531
+            X: 1.38951111
+            Y: 32.8132
             Z: 39.2780762
           }
           Rotation {
-            Roll: -96.5230637
+            Pitch: -111.399597
+            Yaw: -90
           }
           Scale {
-            X: 0.215884089
-            Y: 0.95525527
-            Z: 0.95525527
+            X: 1.07493222
+            Y: 1.02683401
+            Z: 1.07493222
           }
         }
         ParentId: 3168130689968459764
@@ -347,14 +406,27 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 3
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.5
-              G: 0.5
-              B: 0.5
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.9
+              G: 0.576
+              B: 0.179999977
               A: 1
             }
           }
@@ -373,7 +445,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12844865120941685994
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -397,17 +469,17 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 1.38867188
-            Y: 3.5078125
+            X: 1.38886976
+            Y: 3.5080812
             Z: 82.4213867
           }
           Rotation {
-            Roll: 2.36877704
+            Yaw: -90
           }
           Scale {
-            X: 0.23661828
-            Y: 1.18700647
-            Z: 1.18700647
+            X: 1.07493222
+            Y: 1.27595067
+            Z: 1.07493222
           }
         }
         ParentId: 3168130689968459764
@@ -420,14 +492,27 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
+            Float: 3
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.5
-              G: 0.5
-              B: 0.5
+              R: 0.8
+              G: 0.8
+              B: 0.8
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 1
+              G: 0.6625
+              B: 0.25
               A: 1
             }
           }
@@ -446,7 +531,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12844865120941685994
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -467,12 +552,12 @@ Assets {
       }
     }
     Assets {
-      Id: 12844865120941685994
-      Name: "Large Round Wood Beam 8m"
+      Id: 871942256260178295
+      Name: "Nature Log 04"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_large_beam_round_6m"
+        AssetId: "sm_prop_nat_log_004_ref"
       }
     }
     Assets {

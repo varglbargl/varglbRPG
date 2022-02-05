@@ -1,9 +1,16 @@
+local debug = false
+
 -- 0 is sunrise, 90 is midday, 180 is sunset, 270 is midnight
 -- local propStartingDegrees = script:GetCustomProperty("StartingDegrees")
 local propStartingDegrees = math.random(30, 150)
 -- how fast it takes for the sun to travel around the globe.
 -- 2 minute day/night cycle = 120 seconds = 360 degrees/120 seconds = 3
 local propDegreesPerSecond = script:GetCustomProperty("DegreesPerSecond")
+
+if debug then
+  propDegreesPerSecond = 5
+end
+
 local propSun = script:GetCustomProperty("Sun"):WaitForObject()
 local propSky = script:GetCustomProperty("Sky"):WaitForObject()
 local propLight = script:GetCustomProperty("Light"):WaitForObject()

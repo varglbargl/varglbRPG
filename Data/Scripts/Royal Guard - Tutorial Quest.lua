@@ -1,8 +1,8 @@
 return {
   -- 1
-  {"Alright, you're here. Were you issued your weapons?", focus = true, animation = "Wave", speaker = "Tutorial Guard F", options = {
-    {"Yes. (Skip Inventory Tutorial)", gotoPage = 2},
+  {"Alright, you're here. Have you been issued your weapons?", focus = true, animation = "Wave", speaker = "Tutorial Guard F", options = {
     {"How should I know??", gotoPage = 3},
+    {"Yes. (Skip Inventory Tutorial)", gotoPage = 2}
   }},
   -- 2
   {"Good. Let's get started.", animation = "Talk", gotoPage = 6},
