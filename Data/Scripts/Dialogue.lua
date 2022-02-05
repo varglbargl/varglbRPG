@@ -217,7 +217,7 @@ function writeOutText(text)
   local chirpSFX = nil
 
   if speaker and speaker.chirp then
-    chirpSFX = Utils.playSoundEffect(speaker.chirp, {parent = speaker.npc, pitch = speaker.pitch, loop = true, stopTime = 0.075})
+    chirpSFX = Utils.playSoundEffect(speaker.chirp, {parent = speaker.npc, pitch = speaker.pitch, loop = true, stopTime = 0.065, fadeOutTime = 0.01})
   end
 
   local previousText = DIALOGUE.text
@@ -266,6 +266,10 @@ end
 
 function speakLine(lines, num)
   local line = lines[num]
+
+  if line.before then
+    line.before()
+  end
 
   if line.speaker then
     speaker = Characters[line.speaker]
@@ -334,6 +338,10 @@ function speakLine(lines, num)
 
   skipEvent:Disconnect()
 
+  if line.after then
+    line.after()
+  end
+
   if line.stop then
     return
   elseif line.options then
@@ -350,11 +358,11 @@ function speakLine(lines, num)
 end
 
 function gotoPage(lines, page)
-  if page.type == "number" then
+  if type(page) == "number" then
     speakLine(lines, page)
-  elseif page.type == "table" then
+  elseif type(page) == "table" then
     speakLine(lines, page[math.random(1, #page)])
-  elseif page.type == "function" then
+  elseif type(page) == "function" then
     gotoPage(page())
   end
 end

@@ -15,23 +15,15 @@ Assets {
             Z: 0.837264597
           }
         }
-        ParentId: 9411117654816017424
+        ParentId: 2225213237850149919
         ChildIds: 13140956968209389135
         ChildIds: 7271104112952913898
         ChildIds: 14661902590964584335
-        ChildIds: 2480549440887264798
-        ChildIds: 9037830159870823899
-        ChildIds: 6906843738971207777
-        ChildIds: 8248519183402508302
-        ChildIds: 15077258532522248704
-        ChildIds: 8769363327234992930
-        ChildIds: 12774288338925987407
-        ChildIds: 17672924159613904812
-        ChildIds: 2138873497822285629
         ChildIds: 3377985695365846978
         ChildIds: 11578721906912851671
         ChildIds: 12760620197095292154
-        ChildIds: 12468218532157962480
+        ChildIds: 6630863697799179319
+        ChildIds: 7820532875741704203
         Folder {
           IsGroup: true
         }
@@ -63,7 +55,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14212988502358508072
+              Id: 18440814011778038326
             }
           }
           Overrides {
@@ -74,6 +66,18 @@ Assets {
               B: 0.375
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
           }
         }
         Collidable_v2 {
@@ -132,7 +136,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14212988502358508072
+              Id: 18440814011778038326
             }
           }
           Overrides {
@@ -143,6 +147,18 @@ Assets {
               B: 0.375
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
           }
         }
         Collidable_v2 {
@@ -203,7 +219,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14212988502358508072
+              Id: 18440814011778038326
             }
           }
           Overrides {
@@ -214,6 +230,18 @@ Assets {
               B: 0.375
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4
           }
         }
         Collidable_v2 {
@@ -231,643 +259,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 9479604368258872123
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 2480549440887264798
-        Name: "Ring - Quarter Beveled "
-        Transform {
-          Location {
-            X: -18.9255409
-            Y: 7.62939453e-06
-            Z: 98.8200302
-          }
-          Rotation {
-            Pitch: -45
-            Yaw: 4.82967243e-06
-            Roll: 89.9999542
-          }
-          Scale {
-            X: 0.384242982
-            Y: 0.384234041
-            Z: 0.33265
-          }
-        }
-        ParentId: 8242680475371615642
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.4375
-              B: 0.375
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9479604368258872123
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 9037830159870823899
-        Name: "Ring - Quarter Beveled "
-        Transform {
-          Location {
-            X: -18.9255409
-            Y: 7.62939453e-06
-            Z: 98.8200302
-          }
-          Rotation {
-            Pitch: 15.0000162
-            Yaw: 7.95502456e-06
-            Roll: 89.9999924
-          }
-          Scale {
-            X: 0.384242982
-            Y: 0.384234041
-            Z: 0.33265
-          }
-        }
-        ParentId: 8242680475371615642
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.4375
-              B: 0.375
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9479604368258872123
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 6906843738971207777
-        Name: "Ring - Quarter Beveled "
-        Transform {
-          Location {
-            X: -37.4255295
-            Y: 9.53674316e-06
-            Z: 109.761421
-          }
-          Rotation {
-            Pitch: -74.9998169
-            Yaw: 179.999969
-            Roll: -89.9998779
-          }
-          Scale {
-            X: 0.384242028
-            Y: 0.38423273
-            Z: 0.332648784
-          }
-        }
-        ParentId: 8242680475371615642
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.4375
-              B: 0.375
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9479604368258872123
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 8248519183402508302
-        Name: "Ring - Quarter Beveled "
-        Transform {
-          Location {
-            X: -37.4255295
-            Y: 9.53674316e-06
-            Z: 109.761421
-          }
-          Rotation {
-            Pitch: -15.0000305
-            Yaw: -179.999985
-            Roll: -89.9999695
-          }
-          Scale {
-            X: 0.384242028
-            Y: 0.38423273
-            Z: 0.332648784
-          }
-        }
-        ParentId: 8242680475371615642
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.4375
-              B: 0.375
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9479604368258872123
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 15077258532522248704
-        Name: "Ring - Quarter Beveled "
-        Transform {
-          Location {
-            X: -18.8376732
-            Y: 1.14440918e-05
-            Z: 120.479195
-          }
-          Rotation {
-            Pitch: 45.6633263
-            Yaw: 179.999985
-            Roll: -89.9999695
-          }
-          Scale {
-            X: 0.384243637
-            Y: 0.384234697
-            Z: 0.33265
-          }
-        }
-        ParentId: 8242680475371615642
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.4375
-              B: 0.375
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9479604368258872123
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 8769363327234992930
-        Name: "Ring - Quarter Beveled "
-        Transform {
-          Location {
-            X: -18.8376732
-            Y: 1.14440918e-05
-            Z: 120.479195
-          }
-          Rotation {
-            Pitch: 74.3364868
-            Yaw: 6.32454794e-06
-            Roll: 89.9999237
-          }
-          Scale {
-            X: 0.384243637
-            Y: 0.384234697
-            Z: 0.33265
-          }
-        }
-        ParentId: 8242680475371615642
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.4375
-              B: 0.375
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9479604368258872123
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 12774288338925987407
-        Name: "Diamond - Polished"
-        Transform {
-          Location {
-            X: -8.75945663
-            Y: -1.73409376e-08
-            Z: 109.600288
-          }
-          Rotation {
-            Pitch: -90
-            Roll: 90.0000076
-          }
-          Scale {
-            X: 0.0985069498
-            Y: 0.109604031
-            Z: 0.0807107687
-          }
-        }
-        ParentId: 8242680475371615642
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.4375
-              B: 0.375
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14049784323644711005
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 17672924159613904812
-        Name: "Diamond - Polished"
-        Transform {
-          Location {
-            X: -33.3471527
-            Y: 1.16703122e-05
-            Z: 124.100502
-          }
-          Rotation {
-            Pitch: 33.7499237
-            Roll: 89.9999619
-          }
-          Scale {
-            X: 0.0985069871
-            Y: 0.109604031
-            Z: 0.0807108283
-          }
-        }
-        ParentId: 8242680475371615642
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.4375
-              B: 0.375
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14049784323644711005
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 2138873497822285629
-        Name: "Diamond - Polished"
-        Transform {
-          Location {
-            X: -33.5338058
-            Y: 9.36634387e-06
-            Z: 95.3873215
-          }
-          Rotation {
-            Pitch: 30.5699177
-            Yaw: -179.999985
-            Roll: -89.999939
-          }
-          Scale {
-            X: 0.0985065773
-            Y: 0.109604031
-            Z: 0.080710493
-          }
-        }
-        ParentId: 8242680475371615642
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.5
-              G: 0.4375
-              B: 0.375
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14049784323644711005
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1090,7 +481,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14212988502358508072
+              Id: 18440814011778038326
             }
           }
           Overrides {
@@ -1101,6 +492,18 @@ Assets {
               B: 0.375
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.25
           }
         }
         Collidable_v2 {
@@ -1137,23 +540,22 @@ Assets {
         }
       }
       Objects {
-        Id: 12468218532157962480
-        Name: "Ring - Quarter Beveled "
+        Id: 6630863697799179319
+        Name: "Manticore Logo"
         Transform {
           Location {
-            X: -24.9782829
-            Y: 1.14440918e-05
-            Z: 109.541695
+            X: -24.8250923
+            Y: -2.41517973
+            Z: 109.458031
           }
           Rotation {
-            Pitch: 14.9999895
-            Yaw: 7.07113168e-06
-            Roll: 89.9998779
+            Yaw: 180
+            Roll: 89.9999771
           }
           Scale {
-            X: 0.262081921
-            Y: 0.262075931
-            Z: 0.33265
+            X: -0.0841865614
+            Y: 0.0841853693
+            Z: 0.0592335053
           }
         }
         ParentId: 8242680475371615642
@@ -1188,7 +590,77 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10126871160743796714
+            Id: 17035938977884836872
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 7820532875741704203
+        Name: "Manticore Logo"
+        Transform {
+          Location {
+            X: -24.8752937
+            Y: 2.49724936
+            Z: 109.485306
+          }
+          Rotation {
+            Yaw: 180
+            Roll: 89.9999771
+          }
+          Scale {
+            X: -0.0841865614
+            Y: 0.0841853693
+            Z: 0.0592335053
+          }
+        }
+        ParentId: 8242680475371615642
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.5
+              G: 0.4375
+              B: 0.375
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17035938977884836872
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1218,12 +690,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14212988502358508072
-      Name: "Metal Basic Steel"
+      Id: 18440814011778038326
+      Name: "Metal Iron 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "steel_001"
+        AssetId: "mi_metal_iron_001"
       }
     }
     Assets {
@@ -1242,15 +714,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_quarter_ring_faceted_thick_001_ref"
-      }
-    }
-    Assets {
-      Id: 14049784323644711005
-      Name: "Diamond - Polished"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_diamond_hq_001"
       }
     }
     Assets {
@@ -1281,12 +744,21 @@ Assets {
       }
     }
     Assets {
-      Id: 10126871160743796714
-      Name: "Ring - Beveled Thick"
+      Id: 17035938977884836872
+      Name: "Manticore Logo"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ring_faceted_003"
+        AssetId: "sm_logo_manticore_01"
+      }
+    }
+    Assets {
+      Id: 14212988502358508072
+      Name: "Metal Basic Steel"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "steel_001"
       }
     }
     PrimaryAssetId {

@@ -213,17 +213,30 @@ Assets {
         Name: "Clover Patch 02"
         Transform {
           Location {
-            Z: 2.08935547
+            X: 9.34635544
+            Y: -5.5716691
+            Z: 2.53282499
           }
           Rotation {
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.32074261
+            Y: 1.32074261
+            Z: 1
           }
         }
         ParentId: 14783371578983202918
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Leaves:color"
+            Color {
+              R: 0.0577535629
+              G: 0.141
+              B: 0.00225599622
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

@@ -2420,6 +2420,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14126395608775047313
+  Name: "Nature - Stick 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_nat_stick_003_ref"
+  }
+}
+Assets {
   Id: 14103151946260239802
   Name: "Text 02: F"
   PlatformAssetType: 1

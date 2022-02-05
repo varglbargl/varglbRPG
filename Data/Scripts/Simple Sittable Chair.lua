@@ -1,16 +1,16 @@
 local SITTING_STANCE = script:GetCustomProperty("SittingStance")
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 
-local sitTransform = Transform.New(TRIGGER:GetWorldRotation(), script:GetWorldPosition(), Vector3.ONE)
+local sitTransform = Transform.New(TRIGGER:GetWorldRotation() * Rotation.New(0, 0, 1), script:GetWorldPosition(), Vector3.ONE)
 local sittingPlayer = nil
 local previousStance = nil
 
 function standUp()
 	while Object.IsValid(sittingPlayer) and not sittingPlayer.isAccelerating and not sittingPlayer.isJumping do
-    Task.Wait(0.2)
+    Task.Wait(0.1)
 	end
 
-  TRIGGER.collision = Collision.INHERIT
+  TRIGGER.isInteractable = true
 
   if not Object.IsValid(sittingPlayer) then return end
 
@@ -29,7 +29,7 @@ function sitDown(thisTrigger, other)
     other:SetWorldTransform(sitTransform)
     other.animationStance = SITTING_STANCE
     sittingPlayer = other
-    TRIGGER.collision = Collision.FORCE_OFF
+    TRIGGER.isInteractable = false
 
     Task.Spawn(standUp)
 	end

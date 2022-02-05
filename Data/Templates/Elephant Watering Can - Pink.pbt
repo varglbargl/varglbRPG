@@ -10,9 +10,9 @@ Assets {
         Name: "Elephant Watering Can - Pink"
         Transform {
           Scale {
-            X: 0.21782577
-            Y: 0.21782577
-            Z: 0.21782577
+            X: 0.25
+            Y: 0.25
+            Z: 0.25
           }
         }
         ParentId: 4781671109827199097
