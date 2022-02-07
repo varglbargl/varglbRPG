@@ -20,12 +20,12 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:DaySounds"
+        Name: "cs:OutsideDaySounds"
         ObjectReference {
         }
       }
       Overrides {
-        Name: "cs:NightSounds"
+        Name: "cs:OutsideNightSounds"
         ObjectReference {
         }
       }

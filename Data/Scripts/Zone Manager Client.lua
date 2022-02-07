@@ -2,9 +2,6 @@ local ZONE_DISPLAY = script:GetCustomProperty("ZoneDisplay"):WaitForObject()
 local ZONE_NAME = script:GetCustomProperty("ZoneName"):WaitForObject()
 local ZONE_SUBTITLE = script:GetCustomProperty("ZoneSubtitle"):WaitForObject()
 
-local DAY_SOUNDS = script:GetCustomProperty("DaySounds"):WaitForObject()
-local NIGHT_SOUNDS = script:GetCustomProperty("NightSounds"):WaitForObject()
-
 local clientPlayer = Game.GetLocalPlayer()
 local currentZone = nil
 local currentSounds = nil
@@ -12,6 +9,7 @@ local isNight = false
 local fadeTask = nil
 
 ZONE_DISPLAY.opacity = 0
+ZONE_DISPLAY.visibility = Visibility.INHERIT
 
 function fadeOpacity(what, to, secs)
   local startTime = time()
@@ -42,21 +40,9 @@ function playZoneSounds(zone)
   local theseSounds = nil
   local isInside = zone:GetCustomProperty("IsInside")
 
-  if currentSounds then
-    if currentZone and zone == currentZone.parent and currentZone:GetCustomProperty("IsInside") then
-      for _, currentSound in ipairs(currentSounds) do
-        currentSound.volume = currentSound.volume * 2
-        currentSound.pitch = currentSound.pitch + 200
-      end
-    else
-      for _, currentSound in ipairs(currentSounds) do
-        if isInside then
-          currentSound.volume = currentSound.volume / 2
-          currentSound.pitch = currentSound.pitch - 200
-        else
-          currentSound:FadeOut(5)
-        end
-      end
+  if currentSounds and isInside then
+    for _, currentSound in ipairs(currentSounds) do
+      currentSound:FadeOut(5)
     end
   end
 
@@ -73,6 +59,16 @@ function playZoneSounds(zone)
   end
 
   currentSounds = theseSounds
+end
+
+function leaveZone(zone)
+  if currentZone ~= zone then return end
+
+  local parentTrigger = zone.parent:FindChildByType("Trigger")
+
+  if Object.IsValid(parentTrigger) and parentTrigger:IsOverlapping(clientPlayer) then
+    enterZone(zone.parent)
+  end
 end
 
 function enterZone(zone)
@@ -111,5 +107,6 @@ function onSunset()
 end
 
 Events.Connect("EnterZone", enterZone)
+Events.Connect("LeaveZone", leaveZone)
 Events.Connect("Sunrise", onSunrise)
 Events.Connect("Sunset", onSunset)

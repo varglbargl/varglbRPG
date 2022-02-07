@@ -1,6 +1,6 @@
 Assets {
   Id: 10655457373320104322
-  Name: "Golden Leaves"
+  Name: "Golden Oak Leaves"
   PlatformAssetType: 13
   SerializationVersion: 105
   CustomMaterialAsset {

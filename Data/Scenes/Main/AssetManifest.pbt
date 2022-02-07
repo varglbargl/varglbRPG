@@ -701,12 +701,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17353995675412175805
+  Name: "Ring - Twisted 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_prim_torus_twisted_001_ref"
+  }
+}
+Assets {
   Id: 17333732756739782194
   Name: "Humanoid 1 Street Wear"
   PlatformAssetType: 26
   PrimaryAsset {
     AssetType: "SkinnedMeshAssetRef"
     AssetId: "npc_human_gal_lower_casual_001_ref"
+  }
+}
+Assets {
+  Id: 17306327638333894682
+  Name: "Mushroom Gills 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_nat_mushroom_gills_001_uv_ref"
   }
 }
 Assets {
@@ -782,6 +800,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17143699732689332035
+  Name: "Text 03: A"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_000"
+  }
+}
+Assets {
   Id: 17124929283863282225
   Name: "Pipe - Half Thin"
   PlatformAssetType: 1
@@ -851,6 +878,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_bannister_001_straight"
+  }
+}
+Assets {
+  Id: 16941847534135603404
+  Name: "Decal Multiple Skid Marks 001"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_urb_veh_skidmarks_001_ref"
   }
 }
 Assets {
@@ -1079,6 +1115,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16462694806188520793
+  Name: "Craftsman Wall 01 Garage Single"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_001_garage_single_ref"
+  }
+}
+Assets {
   Id: 16442067914662662686
   Name: "Main Street Foundation 01"
   PlatformAssetType: 1
@@ -1286,6 +1331,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16151423255848370668
+  Name: "Animated Digital Racing Screen"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_clear-coat_001_chevron_uv1"
+  }
+}
+Assets {
   Id: 16146848316910488454
   Name: "Table Tile Left"
   PlatformAssetType: 1
@@ -1385,6 +1439,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15968726064865124087
+  Name: "Concrete Sidewalk"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_sidewalk_001"
+  }
+}
+Assets {
   Id: 15947809471842740053
   Name: "Carpet Tile 01"
   PlatformAssetType: 1
@@ -1472,6 +1535,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_water_jet"
+  }
+}
+Assets {
+  Id: 15758224655015026770
+  Name: "Japanese Temple Roof 01 - Cap 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_001_cap_01_ref"
   }
 }
 Assets {
@@ -1607,6 +1679,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_gen_bottle_009_ref"
+  }
+}
+Assets {
+  Id: 15454926723077274654
+  Name: "Japanese Bamboo Hat - Tassel 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_hat_tassel_01_ref"
   }
 }
 Assets {
@@ -1751,6 +1832,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_jpn_katana_handle_001"
+  }
+}
+Assets {
+  Id: 15269942661234643228
+  Name: "Mushroom Stalk 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_nat_mushroom_stalk_001_uv_ref"
+  }
+}
+Assets {
+  Id: 15250213001501499729
+  Name: "Japanese Stone Lantern Pedestal Medium 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_lantern_stone_medium_pedestal_001_ref"
   }
 }
 Assets {
@@ -2942,6 +3041,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13277743392560329054
+  Name: "Trim Crenellated 4m 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trim_crenellated_6m_001"
+  }
+}
+Assets {
   Id: 13274836654542401903
   Name: "Decal Numbers and Symbols 01"
   PlatformAssetType: 14
@@ -3662,15 +3770,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12250214963521432676
-  Name: "Impact Metal 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_gun_impact_metal_02_Cue_ref"
-  }
-}
-Assets {
   Id: 12186752314349070725
   Name: "Brick Red Old 01"
   PlatformAssetType: 2
@@ -3965,6 +4064,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_part_window_001_ref"
+  }
+}
+Assets {
+  Id: 11717567651834423338
+  Name: "Decal Single Skid Marks 001"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_urb_veh_skidmarks_002_ref"
   }
 }
 Assets {
@@ -4823,6 +4931,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10327419216529242419
+  Name: "Clay Form 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_org_clayform_002_ref"
+  }
+}
+Assets {
   Id: 10320781780204545180
   Name: "Prism - 8-Sided Half"
   PlatformAssetType: 1
@@ -4892,6 +5009,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mat_advanced_9slice_wooden_crates_001_ref"
+  }
+}
+Assets {
+  Id: 10178901436659951944
+  Name: "Nature - Mushroom 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_nat_fun_mushroom_004_ref"
   }
 }
 Assets {
@@ -6713,6 +6839,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7131970830679182793
+  Name: "Craftsman Garage Door 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_door_garage_001"
+  }
+}
+Assets {
   Id: 7130178060381049973
   Name: "Level Up VFX"
   PlatformAssetType: 8
@@ -6764,6 +6899,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_liana-vine_end_001_uv"
+  }
+}
+Assets {
+  Id: 7047250348589382256
+  Name: "Text 03: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_014"
+  }
+}
+Assets {
+  Id: 7038196093562734776
+  Name: "Humanoid 1 Aparna Hair"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_hair_basic_008_ref"
   }
 }
 Assets {
@@ -6992,6 +7145,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6598959798128923726
+  Name: "Humanoid 1 Racer Jumpsuit Pants"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_lower_sport_003_ref"
+  }
+}
+Assets {
   Id: 6580181581630899162
   Name: "\"Quirky Space Sprinkles\" Music Construction Kit (Sections) 01"
   PlatformAssetType: 10
@@ -7088,6 +7250,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_jpn_wallpaper_stars_001_uv_ref"
+  }
+}
+Assets {
+  Id: 6408452873094249530
+  Name: "Urban Paint Brush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_brush_paint_001_ref"
   }
 }
 Assets {
@@ -7196,6 +7367,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_gen_bottle_003_ref"
+  }
+}
+Assets {
+  Id: 6222915651354331398
+  Name: "Japanese Temple Foundation 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_foundation_002_ref"
   }
 }
 Assets {
@@ -7565,6 +7745,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_floor_grate_firesc_1x4_001_ref"
+  }
+}
+Assets {
+  Id: 5592636417019039571
+  Name: "Helix -  0.25 Pointed Tapered"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_horn_helix_25cm_tapered_001_ref"
   }
 }
 Assets {
@@ -8522,6 +8711,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4082751686869355961
+  Name: "Mushroom Cap 01 (Fly Agaric)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_nat_mushroom_cap_001_uv_ref"
+  }
+}
+Assets {
   Id: 4081365065502342237
   Name: "Japanese Temple Pillar 01 - Mid 01"
   PlatformAssetType: 1
@@ -8648,6 +8846,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3922255354415767037
+  Name: "Animated Neon Sign - Moon"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_moon"
+  }
+}
+Assets {
   Id: 3886006432789247671
   Name: "Kelp Bush 01"
   PlatformAssetType: 1
@@ -8744,6 +8951,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_ambience_underwaterbubbles_designed_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 3759384834183283747
+  Name: "Urban - Stone Pickaxe 01 - Handle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_pickaxe_stone_001_handle_001_ref"
   }
 }
 Assets {
@@ -8861,6 +9077,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_grip_sword_001"
+  }
+}
+Assets {
+  Id: 3647549854884264149
+  Name: "Metal Corrugated 03"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_mil_metal_corrugated_metal_003_uv_ref"
   }
 }
 Assets {
@@ -9242,6 +9467,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3056474082376748903
+  Name: "Humanoid 1 Tennis Top"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_upper_sport_002_ref"
+  }
+}
+Assets {
   Id: 3033392269738934740
   Name: "Craftsman Wall 03 Triangle Top"
   PlatformAssetType: 1
@@ -9302,6 +9536,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_jpn_mecha_frame_thruster_001_ref"
+  }
+}
+Assets {
+  Id: 2862949331580361889
+  Name: "Helix -  0.5 Pointed Tapered"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_horn_helix_50cm_tapered_001_ref"
   }
 }
 Assets {
@@ -10151,6 +10394,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1434882058420998874
+  Name: "Nature - Mushroom Stem 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_nat_fun_mushroom_stem_005_ref"
+  }
+}
+Assets {
   Id: 1423268074024780909
   Name: "Candle 03"
   PlatformAssetType: 1
@@ -10259,6 +10511,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1266850908282187990
+  Name: "Urban Paint Brush 06"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_brush_paint_006_ref"
+  }
+}
+Assets {
   Id: 1259913732062384470
   Name: "Pipe - Large"
   PlatformAssetType: 1
@@ -10301,6 +10562,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_sand_waves_001_uv_ref"
+  }
+}
+Assets {
+  Id: 1196756028961954887
+  Name: "Nature - Mushroom 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_nat_fun_mushroom_001_ref"
   }
 }
 Assets {
@@ -10457,6 +10727,15 @@ Assets {
   }
 }
 Assets {
+  Id: 856848378188591429
+  Name: "Japanese Umbrella Handle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_umbrella_handle_001_ref"
+  }
+}
+Assets {
   Id: 850898772872643367
   Name: "Ambience Nature Wind and Trees Set 01 SFX"
   PlatformAssetType: 10
@@ -10535,6 +10814,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Jewelry_016"
+  }
+}
+Assets {
+  Id: 746100978138659337
+  Name: "Animated Neon Sign "
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_NeonSign_All"
   }
 }
 Assets {
@@ -10976,6 +11264,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_floor_dark_001_uv"
+  }
+}
+Assets {
+  Id: 56823891778999080
+  Name: "Animated Neon Sign - Witch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_witch"
   }
 }
 Assets {
