@@ -274,6 +274,11 @@ function resourceTicker(player)
   resourceTicker(player)
 end
 
+function onClientLoaded(player)
+  Utils.updatePrivateNetworkedData(player, "Gear")
+  Utils.updatePrivateNetworkedData(player, "Inventory")
+end
+
 -- on player joined/left functions need to be defined before calling event:Connect()
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
@@ -286,3 +291,5 @@ Events.Connect("PlayerGainedGold", onPlayerGainedGold)
 
 -- handler params: Player_player
 Events.Connect("EquipmentChanged", applyStatsWithGear)
+
+Events.ConnectForPlayer("ClientLoaded", onClientLoaded)

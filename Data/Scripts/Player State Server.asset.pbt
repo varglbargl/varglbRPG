@@ -4,6 +4,12 @@ Assets {
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
+      Overrides {
+        Name: "cs:Quests"
+        AssetReference {
+          Id: 10326722661705201608
+        }
+      }
     }
   }
   SerializationVersion: 105

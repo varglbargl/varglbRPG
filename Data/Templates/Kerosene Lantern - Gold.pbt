@@ -364,22 +364,21 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Light {
-          Intensity: 6
+          Intensity: 2
           Color {
             R: 1
             G: 0.840000033
             B: 0.8
             A: 1
           }
-          CastShadows: true
           VolumetricIntensity: 5
           TeamSettings {
           }
           Light {
             UseTemperature: true
-            Temperature: 5000
+            Temperature: 4000
             LocalLight {
-              AttenuationRadius: 1500
+              AttenuationRadius: 800
               PointLight {
                 SourceRadius: 20
                 SoftSourceRadius: 20

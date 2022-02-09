@@ -136,8 +136,9 @@ function equipToPlayer(player, gearSlot, inventorySlot)
     equipment:Equip(player)
 
     -- print("EqID = "..equipment.id)
-    Events.Broadcast("EquipmentChanged", player)
     player.serverUserData["Inventory"].full = false
+    Utils.updatePrivateNetworkedData(player, "Inventory")
+    Events.Broadcast("EquipmentChanged", player)
   end
 end
 

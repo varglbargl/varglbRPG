@@ -18,7 +18,6 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 13885516238737886174
         ChildIds: 451039346264792405
-        ChildIds: 5069885985980504085
         ChildIds: 9037410899194904369
         ChildIds: 18236888912080084673
         UnregisteredParameters {
@@ -235,50 +234,6 @@ Assets {
         }
       }
       Objects {
-        Id: 5069885985980504085
-        Name: "Hitbox"
-        Transform {
-          Location {
-            X: 3.97949219
-            Y: -1.67578125
-            Z: 36.2617188
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13347244771432002935
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 9037410899194904369
         Name: "Melee Weapon Server"
         Transform {
@@ -294,12 +249,6 @@ Assets {
         }
         ParentId: 13347244771432002935
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Hitbox"
-            ObjectReference {
-              SubObjectId: 5069885985980504085
-            }
-          }
         }
         WantsNetworking: true
         Collidable_v2 {

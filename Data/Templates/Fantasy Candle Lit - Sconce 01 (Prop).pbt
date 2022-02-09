@@ -139,7 +139,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 3
+          Intensity: 2
           Color {
             R: 1
             G: 0.726868153
@@ -158,6 +158,7 @@ Assets {
                 SourceRadius: 9.23469257
                 SoftSourceRadius: 100
                 FallOffExponent: 8
+                UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 5000

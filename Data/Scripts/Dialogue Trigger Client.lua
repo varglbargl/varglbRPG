@@ -11,7 +11,16 @@ function onInteracted()
   Dialogue.speak(LINES)
   timesInteracted = timesInteracted + 1
 
-  TRIGGER.isInteractable = true
+  local endInteractionEvent = nil
+
+  endInteractionEvent = Events.Connect("ScreenClosed", function(screenName)
+    if screenName == "Dialogue" then
+      TRIGGER.isInteractable = true
+      endInteractionEvent:Disconnect()
+    end
+  end)
+
 end
 
+-- handler params: Trigger_trigger, Player_player
 TRIGGER.interactedEvent:Connect(onInteracted)

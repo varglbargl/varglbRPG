@@ -1,6 +1,6 @@
 Assets {
   Id: 5236367522982724656
-  Name: "Road Markings - Danger"
+  Name: "Painted Lines - Danger"
   PlatformAssetType: 13
   SerializationVersion: 105
   CustomMaterialAsset {

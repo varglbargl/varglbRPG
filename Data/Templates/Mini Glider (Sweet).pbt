@@ -2658,4 +2658,6 @@ Assets {
   }
   SerializationVersion: 105
   DirectlyPublished: true
+  VirtualFolderPath: "Gear"
+  VirtualFolderPath: "Gliders"
 }

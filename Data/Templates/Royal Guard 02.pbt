@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7270633480876919108
+        ParentId: 4781671109827199097
         ChildIds: 14372389616985081345
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -255,7 +255,7 @@ Assets {
           }
         }
         ParentId: 14372389616985081345
-        ChildIds: 13486725748130782425
+        ChildIds: 377578104553730272
         ChildIds: 4291699403549237153
         ChildIds: 1917157625790896687
         ChildIds: 12999425608896649207
@@ -292,16 +292,17 @@ Assets {
         }
       }
       Objects {
-        Id: 13486725748130782425
+        Id: 377578104553730272
         Name: "head"
         Transform {
           Location {
-            X: -3.17597
-            Y: 0.0620250702
-            Z: 82.5771484
+            X: -3.14255953
+            Y: 0.0625505447
+            Z: 84.0180664
           }
           Rotation {
-            Pitch: 2.09954548
+            Pitch: -9.93499756
+            Yaw: 0.000120403849
           }
           Scale {
             X: 1
@@ -310,8 +311,8 @@ Assets {
           }
         }
         ParentId: 13043437336499227027
-        ChildIds: 16034897680370075187
-        ChildIds: 18029426343549265837
+        ChildIds: 16652402701485557344
+        ChildIds: 6713306091161877951
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -330,16 +331,16 @@ Assets {
         }
       }
       Objects {
-        Id: 16034897680370075187
+        Id: 16652402701485557344
         Name: "Mecha - Armor - Helm 01 - Fin 01"
         Transform {
           Location {
-            X: 3.18299961
-            Y: 0.056683749
-            Z: 23.6854229
+            X: -0.45102036
+            Y: 0.0552749932
+            Z: 22.7905617
           }
           Rotation {
-            Pitch: -15.2447205
+            Pitch: -0.439544678
           }
           Scale {
             X: 0.306668907
@@ -347,7 +348,7 @@ Assets {
             Z: 0.345022917
           }
         }
-        ParentId: 13486725748130782425
+        ParentId: 377578104553730272
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -420,16 +421,16 @@ Assets {
         }
       }
       Objects {
-        Id: 18029426343549265837
+        Id: 6713306091161877951
         Name: "Mecha - Armor - Helm 01"
         Transform {
           Location {
-            X: 0.958560348
-            Y: 0.190835446
-            Z: 10.7066889
+            X: 0.71542871
+            Y: 0.191016912
+            Z: 9.67278194
           }
           Rotation {
-            Pitch: -2.48095703
+            Pitch: 12.3240376
           }
           Scale {
             X: 0.3
@@ -437,7 +438,7 @@ Assets {
             Z: 0.3
           }
         }
-        ParentId: 13486725748130782425
+        ParentId: 377578104553730272
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail3:id"

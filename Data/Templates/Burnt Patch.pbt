@@ -117,6 +117,12 @@ Assets {
         }
         ParentId: 1821968558241518504
         UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Grass:id"
+            AssetReference {
+              Id: 4771343974045745572
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

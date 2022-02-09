@@ -271,8 +271,8 @@ Assets {
         Name: "head"
         Transform {
           Location {
-            X: -3.14118385
-            Y: 0.0625
+            X: -3.1410737
+            Y: 0.0634068102
             Z: 82.0175781
           }
           Rotation {
@@ -310,14 +310,12 @@ Assets {
         Name: "Mecha - Armor - Helm 01 - Fin 01"
         Transform {
           Location {
-            X: -1.8519907
-            Y: -4.27676559e-06
-            Z: 22.3691921
+            X: -0.70723331
+            Y: 0.268009543
+            Z: 23.4575291
           }
           Rotation {
-            Pitch: -2.82885742
-            Yaw: -0.000122070312
-            Roll: -3.05175781e-05
+            Pitch: -7.01339722
           }
           Scale {
             X: 0.31116426
@@ -402,14 +400,12 @@ Assets {
         Name: "Mecha - Armor - Helm 01"
         Transform {
           Location {
-            X: -1.25493693
-            Y: -6.91588184e-07
-            Z: 9.07211685
+            X: -1.07432628
+            Y: 0.0102362633
+            Z: 10.1526852
           }
           Rotation {
-            Pitch: 9.93500137
-            Yaw: -0.000122070312
-            Roll: -3.05175781e-05
+            Pitch: 5.75039721
           }
           Scale {
             X: 0.304397613
@@ -1518,6 +1514,51 @@ Assets {
             Name: "ma:Shared_Detail1:smart"
             Bool: false
           }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 18440814011778038326
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 18440814011778038326
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.5
+              G: 0.5
+              B: 0.5
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2521,6 +2562,51 @@ Assets {
             Name: "ma:Shared_Detail1:smart"
             Bool: false
           }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 18440814011778038326
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 18440814011778038326
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.5
+              G: 0.5
+              B: 0.5
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2600,14 +2686,14 @@ Assets {
         Name: "Fantasy Pommel 04"
         Transform {
           Location {
-            X: 24.3818436
-            Y: 14.3261414
-            Z: -8.43069649
+            X: 24.3829
+            Y: 14.3275127
+            Z: -8.43069553
           }
           Rotation {
-            Pitch: -4.85015869
-            Yaw: -98.7177734
-            Roll: -140.153458
+            Pitch: 34.4391212
+            Yaw: 50.6503487
+            Roll: -50.7269592
           }
           Scale {
             X: 1
@@ -4428,14 +4514,14 @@ Assets {
         Name: "left_knee"
         Transform {
           Location {
-            X: -1.51171875
-            Y: -16.8808594
-            Z: -48.3017578
+            X: -0.872172356
+            Y: -18.0731468
+            Z: -42.4543457
           }
           Rotation {
-            Pitch: -3.90987325
-            Yaw: -3.62918377
-            Roll: 4.28336239
+            Pitch: -7.83526611
+            Yaw: -0.187469482
+            Roll: 8.31352615
           }
           Scale {
             X: 1
@@ -4467,14 +4553,14 @@ Assets {
         Name: "Shield 03"
         Transform {
           Location {
-            X: 10.1953125
-            Y: 0.166015625
-            Z: 5.06408691
+            X: 8.80273438
+            Y: -0.5
+            Z: 1.14013863
           }
           Rotation {
-            Pitch: -6.82492065
-            Yaw: 92.2629547
-            Roll: -7.81591797
+            Pitch: -0.438751221
+            Yaw: 84.2717133
+            Roll: -15.9926453
           }
           Scale {
             X: 0.268992424
@@ -4502,6 +4588,51 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:smart"
             Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 18440814011778038326
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 18440814011778038326
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.5
+              G: 0.5
+              B: 0.5
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -4541,19 +4672,19 @@ Assets {
         Name: "right_knee"
         Transform {
           Location {
-            X: -1.51171875
-            Y: 16.8808594
-            Z: -48.3017578
+            X: -0.726208329
+            Y: 17.9179516
+            Z: -42.6608887
           }
           Rotation {
-            Pitch: -3.90996885
-            Yaw: 3.6291163
-            Roll: -4.2834897
+            Pitch: -6.41400146
+            Yaw: 3.4817555
+            Roll: -7.5569458
           }
           Scale {
             X: 1
-            Y: 1
-            Z: 1
+            Y: 1.00000012
+            Z: 1.00000012
           }
         }
         ParentId: 418609965197095525
@@ -4580,14 +4711,14 @@ Assets {
         Name: "Shield 03"
         Transform {
           Location {
-            X: 9.58007812
-            Y: -0.359375
-            Z: 5.34619141
+            X: 9.05273438
+            Y: -0.41015625
+            Z: 1.06347656
           }
           Rotation {
-            Pitch: 3.94094372
-            Yaw: 88.6864395
-            Roll: -7.72686768
+            Pitch: 3.94093704
+            Yaw: 88.6863861
+            Roll: -13.7456055
           }
           Scale {
             X: 0.268992424
@@ -4615,6 +4746,51 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:smart"
             Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 18440814011778038326
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 18440814011778038326
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.5
+              G: 0.5
+              B: 0.5
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -4792,6 +4968,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_shield_003"
+      }
+    }
+    Assets {
+      Id: 18440814011778038326
+      Name: "Metal Iron 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_001"
       }
     }
     Assets {

@@ -256,8 +256,8 @@ function closeCharacterScreen()
   Utils.playSoundEffect(OPEN_CLOSE_SFX)
 
   CHARACTER_SCREEN.visibility = Visibility.FORCE_OFF
-  Events.Broadcast("HideCursor")
   Events.Broadcast("HideTooltip")
+  Events.Broadcast("ScreenClosed", "Character")
 
   isOpen = false
 
@@ -277,9 +277,17 @@ function openCharacterScreen()
   redrawInventory()
 
   CHARACTER_SCREEN.visibility = Visibility.INHERIT
-  Events.Broadcast("ShowCursor")
+  Events.Broadcast("ScreenOpened", "Character")
 
   isOpen = true
+end
+
+function toggleCharacterScreen()
+  if isOpen then
+    closeCharacterScreen()
+  else
+    openCharacterScreen()
+  end
 end
 
 function pickUpItem()
@@ -389,11 +397,7 @@ function onBindingPressed(thisPlayer, keyCode)
 	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
 
   if keyCode == "ability_extra_27" then
-    if isOpen then
-      closeCharacterScreen()
-    else
-      openCharacterScreen()
-    end
+    toggleCharacterScreen()
   end
 
   if keyCode == "ability_primary" then
@@ -460,7 +464,10 @@ Game.playerJoinedEvent:Connect(initCharacterScreen)
 -- handler params: Player_player, string_resourceName, integer_newTotal
 clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
 
-Events.Connect("CloseUI", closeCharacterScreen)
+Events.Connect("CloseAllScreens", closeCharacterScreen)
+Events.Connect("ToggleCharacterScreen", toggleCharacterScreen)
 
 -- handler params: Player_player, string_key
 clientPlayer.privateNetworkedDataChangedEvent:Connect(onPrivateNetworkedDataChanged)
+
+throttleInventory()

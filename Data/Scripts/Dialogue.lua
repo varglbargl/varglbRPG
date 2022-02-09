@@ -211,10 +211,10 @@ local animationStances = {
   -- "zombie_unarmed_walk_forward"
 }
 
+local chirpSFX = nil
+
 function writeOutText(text)
   skip = false
-
-  local chirpSFX = nil
 
   if speaker and speaker.chirp then
     chirpSFX = Utils.playSoundEffect(speaker.chirp, {parent = speaker.npc, pitch = speaker.pitch, loop = true, stopTime = 0.065, fadeOutTime = 0.01})
@@ -312,7 +312,6 @@ function speakLine(lines, num)
   end
 
   DIALOG.visibility = Visibility.INHERIT
-  Events.Broadcast("ShowCursor")
 
   if line[1] then
     writeOutText(line[1])
@@ -342,37 +341,68 @@ function speakLine(lines, num)
     line.after()
   end
 
-  if line.stop then
-    return
+  if line.stop or line.acceptQuest then
+    return line.acceptQuest
+
   elseif line.options then
     OPTIONS.visibility = Visibility.FORCE_OFF
 
     if line.options[selection].gotoPage then
-      speakLine(lines, line.options[selection].gotoPage)
+      return speakLine(lines, line.options[selection].gotoPage)
     end
+
   elseif line.gotoPage then
-    gotoPage(lines, line.gotoPage)
+    return gotoPage(lines, line.gotoPage)
+
   elseif lines[num + 1] then
-    speakLine(lines, num + 1)
+    return speakLine(lines, num + 1)
   end
 end
 
 function gotoPage(lines, page)
   if type(page) == "number" then
-    speakLine(lines, page)
+    return speakLine(lines, page)
   elseif type(page) == "table" then
-    speakLine(lines, page[math.random(1, #page)])
+    return speakLine(lines, page[math.random(1, #page)])
   elseif type(page) == "function" then
-    gotoPage(page())
+    return gotoPage(page())
   end
 end
 
-function Dialogue.speak(lines)
-  speakLine(lines, 1)
+local dialogueTask = nil
 
+function Dialogue.speak(lines)
+  dialogueTask = Task.Spawn(function()
+    Utils.throttleToServer("StartDialogue")
+    Events.Broadcast("ScreenOpened", "Dialogue")
+
+    local acceptQuest = speakLine(lines, 1)
+
+    DIALOG.visibility = Visibility.FORCE_OFF
+
+    Utils.throttleToServer("EndDialogue", acceptQuest)
+    Events.Broadcast("ScreenClosed", "Dialogue")
+  end)
+end
+
+function abortDialogue()
+  if skipEvent then
+    skipEvent:Disconnect()
+  end
+
+  if dialogueTask then
+    dialogueTask:Cancel()
+  end
+
+  if Object.IsValid(chirpSFX) then
+    chirpSFX:Destroy()
+  end
+
+  skip = false
   DIALOG.visibility = Visibility.FORCE_OFF
 
-  Events.Broadcast("HideCursor")
+  Events.Broadcast("ScreenClosed", "Dialogue")
+  Utils.throttleToServer("EndDialogue")
 end
 
 function onBindingPressed(player, keyCode)
@@ -381,5 +411,7 @@ function onBindingPressed(player, keyCode)
     skip = true
   end
 end
+
+Events.Connect("CloseAllScreens", abortDialogue)
 
 return Dialogue

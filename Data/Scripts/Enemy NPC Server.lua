@@ -245,6 +245,7 @@ function die(thisEnemy, damage)
 
     totalAttackers = totalAttackers + 1
     Events.Broadcast("PlayerGainedXP", otherPlayer, xpAmount)
+    Events.Broadcast("PlayerKilledEnemy", otherPlayer, enemy.name)
   end
 
   attackers = {}

@@ -19,5 +19,5 @@ return {
   -- 8
   {"Which is 10, by the way.", inline = true},
   -- 9
-  {"Kill 10 pyrosprites.", inline = true}
+  {"Kill 10 pyrosprites.", inline = true, acceptQuest = 1}
 }
