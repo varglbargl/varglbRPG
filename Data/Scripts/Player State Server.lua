@@ -16,13 +16,22 @@ function playerDied(player, damage)
   player:Spawn({spawnKey = "Graveyard"})
 end
 
-function onClientLoaded(player)
+function onEnterWorld(player, class)
+  if not Object.IsValid(player) then return end
+  -- print(player.name..": I'm jacking on...")
+
+  Events.Broadcast("InitResources", player, class)
+
   Task.Wait()
+  if not Object.IsValid(player) then return end
 
   Utils.updatePrivateNetworkedData(player, "Gear")
   Utils.updatePrivateNetworkedData(player, "Inventory")
   Utils.updatePrivateNetworkedData(player, "QuestLog")
   Utils.updatePrivateNetworkedData(player, "AvailableQuests")
+
+  Task.Wait()
+  if not Object.IsValid(player) then return end
 
   player:Spawn({spawnKey = "Default"})
 end
@@ -73,6 +82,6 @@ end
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
 
-Events.ConnectForPlayer("ClientLoaded", onClientLoaded)
+Events.ConnectForPlayer("EnterWorld", onEnterWorld)
 Events.ConnectForPlayer("StartDialogue", onDialogueStarted)
 Events.ConnectForPlayer("EndDialogue", onDialogueEnded)

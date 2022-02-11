@@ -8,6 +8,10 @@ Assets {
         Name: "cs:Label"
         String: ""
       }
+      Overrides {
+        Name: "cs:Label:ml"
+        Bool: true
+      }
     }
   }
   SerializationVersion: 105

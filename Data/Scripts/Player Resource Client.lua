@@ -94,7 +94,3 @@ clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
 
 -- handler params: Player_player, Damage_damage
 clientPlayer.damagedEvent:Connect(onDamaged)
-
-Task.Wait(1)
-
-Utils.throttleToServer("ClientLoaded")

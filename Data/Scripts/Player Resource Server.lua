@@ -31,12 +31,10 @@ function onPlayerDied(player)
   end
 end
 
-function onPlayerJoined(player)
+function initResources(player, class)
   local yourLevel = player:SetResource("Level", 1)
   player:SetResource("Experience", 0)
   player:SetResource("Gold", 0)
-
-  local class = 3
 
   player:SetResource("Class", class)
 
@@ -54,7 +52,7 @@ function onPlayerJoined(player)
   -- health and melee damage
   local yourGrit = player:SetResource("Grit", math.floor(classStats.grit * magicNumber))
 
-  -- healing power and spell damage
+  -- spell power and magic find
   player:SetResource("Wit", math.floor(classStats.wit * magicNumber))
 
   -- stamina and ranged damage
@@ -71,12 +69,6 @@ function onPlayerJoined(player)
   player.serverUserData["RecentlyDamaged"] = Task.Spawn(function()
     Task.Wait(1)
   end)
-
-  -- handler params: Player_player, Damage_damage
-  damagedEvents[player] = player.damagedEvent:Connect(onPlayerDamaged)
-
-  -- handler params: Player_player, Damage_damage
-  diedEvents[player] = player.diedEvent:Connect(onPlayerDied)
 
   --[[ DEBUG!!
 
@@ -114,6 +106,14 @@ function onPlayerJoined(player)
       Events.Broadcast("AddToInventory", player, item)
     end
   end
+end
+
+function onPlayerJoined(player)
+  -- handler params: Player_player, Damage_damage
+  damagedEvents[player] = player.damagedEvent:Connect(onPlayerDamaged)
+
+  -- handler params: Player_player, Damage_damage
+  diedEvents[player] = player.diedEvent:Connect(onPlayerDied)
 end
 
 function onPlayerLeft(player)
@@ -191,7 +191,7 @@ function applyStatsWithGear(player)
   if not playerGear then return end
 
   local magicNumber = Utils.magicNumber(player:GetResource("Level"))
-  local classStats = player.serverUserData["ClassStats"]
+  local classStats = Utils.classStats(player:GetResource("Class"))
 
   local baseStats = {
     grit = math.floor(classStats.grit * magicNumber),
@@ -277,6 +277,8 @@ end
 -- handler params: Player_player
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
+
+Events.Connect("InitResources", initResources)
 
 -- handler params: Player_player, integer_amount
 Events.Connect("PlayerGainedXP", onPlayerGainedXP)

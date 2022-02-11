@@ -14,9 +14,13 @@ local EXPLORER_BUTTON = script:GetCustomProperty("ExplorerButton"):WaitForObject
 local PLAY_BUTTON = script:GetCustomProperty("PlayButton"):WaitForObject()
 local CLASS_NAME = script:GetCustomProperty("ClassName"):WaitForObject()
 local CLASS_DESCRIPTION = script:GetCustomProperty("ClassDescription"):WaitForObject()
+local GRITSTAR = script:GetCustomProperty("Gritstar"):WaitForObject()
+local WITSTAR = script:GetCustomProperty("Witstar"):WaitForObject()
+local SPITSTAR = script:GetCustomProperty("Spitstar"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local selectedClass = nil
+local stars = {[5] = "★", [10] = "★★", [15] = "★★★"}
 
 CLASS_PICKER_UI.visibility = Visibility.INHERIT
 GAME_UI.visibility = Visibility.FORCE_OFF
@@ -27,7 +31,15 @@ local classButtons = {AVENGER_BUTTON, PARAGON_BUTTON, ORBLITERATOR_BUTTON, WILDE
 
 for i, btn in ipairs(classButtons) do
   btn.clickedEvent:Connect(function()
+    selectedClass = i
 
+    local stats = Utils.classStats(i)
+    CLASS_DESCRIPTION.text = stats.special
+    CLASS_NAME.text = stats.name
+
+    GRITSTAR.text = stars[stats.grit]
+    WITSTAR.text = stars[stats.wit]
+    SPITSTAR.text = stars[stats.spit]
   end)
 end
 
@@ -38,7 +50,23 @@ function onPlayerSpawned(thisPlayer)
   GAME_UI.visibility = Visibility.INHERIT
 
   MUSIC:Stop()
+  clientPlayer:ClearOverrideCamera()
+
+  Events.Broadcast("HideCursor")
+  Events.Broadcast("HideTooltip")
+end
+
+function onPlayClicked()
+  if not selectedClass then return end
+
+  Utils.throttleToServer("EnterWorld", selectedClass)
 end
 
 -- handler params: Player_player, PlayerStart_playerStart, string_spawnKey
 clientPlayer.spawnedEvent:Connect(onPlayerSpawned)
+
+PLAY_BUTTON.clickedEvent:Connect(onPlayClicked)
+
+Task.Wait(0.1)
+
+Events.Broadcast("ShowCursor")
