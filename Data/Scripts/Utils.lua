@@ -5,21 +5,29 @@ local Utils = {}
 -- MY COLORS
 
 Utils.color = {
-  xp       = Color.New(0.4, 0.2, 0.95),
-  hurt     = Color.New(1, 0.1, 0.05),
-  heal     = Color.New(0.1, 1, 0.5),
-  attack   = Color.New(1, 0.95, 0.8),
-  magic    = Color.New(1, 0.95, 0.1),
-  gold     = Color.New(1, 0.7, 0.3),
+  xp           = Color.New(0.4, 0.2, 0.95),
+  hurt         = Color.New(1, 0.1, 0.05),
+  heal         = Color.New(0.1, 1, 0.5),
+  attack       = Color.New(1, 0.95, 0.8),
+  magic        = Color.New(1, 0.95, 0.1),
+  gold         = Color.New(1, 0.7, 0.3),
 
-  grit     = Color.New(1, 0.4, 0.55),
-  wit      = Color.New(0.45, 0.85, 1),
-  spit     = Color.New(0.85, 1, 0.5),
+  grit         = Color.New(1, 0.4, 0.55),
+  wit          = Color.New(0.45, 0.85, 1),
+  spit         = Color.New(0.85, 1, 0.5),
 
-  common   = Color.New(1, 0.9, 0.7),
-  rare     = Color.New(0.35, 1, 0.5),
-  epic     = Color.New(0.7, 0.45, 1),
-  unique   = Color.New(1, 0.38, 0.3)
+  common       = Color.New(1, 0.9, 0.7),
+  rare         = Color.New(0.35, 1, 0.5),
+  epic         = Color.New(0.7, 0.45, 1),
+  unique       = Color.New(1, 0.38, 0.3),
+
+  avenger      = Color.New(0.3, 0.01, 0),
+  paragon      = Color.New(0.9, 0.1, 0.12),
+  orbliterator = Color.New(0.2, 0, 1),
+  wilderwitch  = Color.New(0, 0.5, 0.25),
+  ranger       = Color.New(0.125, 0.25, 0),
+  harrier      = Color.New(0.5, 0.25, 0),
+  explorer     = Color.New(0.75, 0.15, 0)
 }
 
 -- GAME INFO
@@ -87,7 +95,7 @@ local classes = {
     grit = 10,
     wit  = 5,
     spit = 15,
-    special = "Sprinting or gliding into a fight makes your first melee attack deal tripple.",
+    special = "???",
     starterGear = {
       "Starter Axe",
       "Starter Crossbow"
@@ -188,7 +196,12 @@ end
 function Utils.updatePrivateNetworkedData(player, key)
   if not Object.IsValid(player) or Environment.IsClient() then return end
 
-  player:SetPrivateNetworkedData(key, compressItems(player.serverUserData[key]))
+  if key == "Inventory" or key == "Gear" then
+    player:SetPrivateNetworkedData(key, compressItems(player.serverUserData[key]))
+  else
+
+    player:SetPrivateNetworkedData(key, player.serverUserData[key])
+  end
 end
 
 function Utils.throttleToServer(evtName, ...)
@@ -328,7 +341,7 @@ function Utils.playSoundEffect(audio, params)
     sfx:SetWorldPosition(params.position)
     sfx.radius = params.radius or 500
     sfx.radius = sfx.radius * sfx.volume
-    sfx.falloff = params.falloff or 5000
+    sfx.falloff = params.falloff or 4000
     sfx.falloff = sfx.falloff * sfx.volume
   else
     sfx.isAttenuationEnabled = params.isAttenuationEnabled or params.attenuation or false

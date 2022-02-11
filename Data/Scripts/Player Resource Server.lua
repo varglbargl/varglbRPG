@@ -78,12 +78,12 @@ function onPlayerJoined(player)
   -- handler params: Player_player, Damage_damage
   diedEvents[player] = player.diedEvent:Connect(onPlayerDied)
 
-  -- DEBUG!!
+  --[[ DEBUG!!
 
   if Environment.IsPreview() then
     -- handler params: Player_player, string_keyCode
     player.bindingPressedEvent:Connect(function(thisPlayer, keyCode)
-      if keyCode == "ability_extra_38" and player:GetResource("Level") < maxLevel then
+      if keyCode == "ability_extra_39" and player:GetResource("Level") < maxLevel then
         if player:IsBindingPressed("ability_feet") then
           player:SetResource("Level", maxLevel - 1)
         end
@@ -101,7 +101,7 @@ function onPlayerJoined(player)
         end
       end
     end)
-  end
+  end ]]--
 
   Task.Spawn(function() resourceTicker(player) end)
 
@@ -274,12 +274,7 @@ function resourceTicker(player)
   resourceTicker(player)
 end
 
-function onClientLoaded(player)
-  Utils.updatePrivateNetworkedData(player, "Gear")
-  Utils.updatePrivateNetworkedData(player, "Inventory")
-end
-
--- on player joined/left functions need to be defined before calling event:Connect()
+-- handler params: Player_player
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
 
@@ -291,5 +286,3 @@ Events.Connect("PlayerGainedGold", onPlayerGainedGold)
 
 -- handler params: Player_player
 Events.Connect("EquipmentChanged", applyStatsWithGear)
-
-Events.ConnectForPlayer("ClientLoaded", onClientLoaded)

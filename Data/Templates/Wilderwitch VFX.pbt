@@ -75,15 +75,15 @@ Assets {
             Name: "bp:Color"
             Color {
               G: 1
-              B: 0.183333397
+              B: 0.500000477
               A: 1
             }
           }
           Overrides {
             Name: "bp:Arc Color"
             Color {
-              R: 0.133333087
               G: 1
+              B: 0.75
               A: 1
             }
           }
@@ -231,14 +231,14 @@ Assets {
             Name: "bp:Color"
             Color {
               G: 1
-              B: 0.716666698
+              B: 0.75
             }
           }
           Overrides {
             Name: "bp:Stroke Color"
             Color {
-              R: 0.399999619
               G: 1
+              B: 0.500000477
               A: 1
             }
           }

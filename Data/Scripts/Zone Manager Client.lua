@@ -1,6 +1,7 @@
 local ZONE_DISPLAY = script:GetCustomProperty("ZoneDisplay"):WaitForObject()
 local ZONE_NAME = script:GetCustomProperty("ZoneName"):WaitForObject()
 local ZONE_SUBTITLE = script:GetCustomProperty("ZoneSubtitle"):WaitForObject()
+local ADVENTURE_LOG_ZONE_NAME = script:GetCustomProperty("AdventureLogZoneName"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local currentZone = nil
@@ -72,6 +73,9 @@ function leaveZone(zone)
 end
 
 function enterZone(zone)
+  local title = zone.name
+  local subtitle = zone:GetCustomProperty("ZoneSubtitle")
+
   if zone:GetCustomProperty("AnnounceName") then
 
     if fadeTask then
@@ -79,8 +83,8 @@ function enterZone(zone)
       fadeOpacity(ZONE_DISPLAY, 0, 1)
     end
 
-    ZONE_NAME.text = zone.name
-    ZONE_SUBTITLE.text = zone:GetCustomProperty("ZoneSubtitle")
+    ZONE_NAME.text = title
+    ZONE_SUBTITLE.text = subtitle
 
     fadeTask = Task.Spawn(function()
       fadeOpacity(ZONE_DISPLAY, 1, 1)
@@ -92,6 +96,8 @@ function enterZone(zone)
       fadeTask = nil
     end)
   end
+
+  ADVENTURE_LOG_ZONE_NAME.text = title..", "..subtitle
 
   playZoneSounds(zone)
 

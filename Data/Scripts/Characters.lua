@@ -2,7 +2,8 @@
 local DEFAULT_CHIRP = script:GetCustomProperty("DefaultChirp")
 
 -- NPCs
-local TUTORIAL_GUARD_F = script:GetCustomProperty("TutorialGuardF"):WaitForObject()
+local ROYAL_GUARD_COMMANDER = script:GetCustomProperty("RoyalGuardCommander"):WaitForObject()
+local ROYAL_GUARD_COMMISARRY = script:GetCustomProperty("RoyalGuardCommisarry"):WaitForObject()
 local CERISE = script:GetCustomProperty("Cerise"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
@@ -12,6 +13,7 @@ local mt = {}
 mt.__index = {
   name = "Mysterious Presence",
   chirp = DEFAULT_CHIRP,
+  portrait = 2,
   pitch = 0
 }
 
@@ -26,25 +28,33 @@ function Char.New(chr)
 end
 
 local Characters = {
-  player = Char.New({
-    name = clientPlayer.name
-  }),
-  ["Tutorial Guard F"] = Char.New({
-    name = "Royal Guard Boss",
-    npc = TUTORIAL_GUARD_F,
+  Char.New({
+    name = "Royal Guard Commander",
+    npc = ROYAL_GUARD_COMMANDER,
     pitch = 400,
     portrait = 8
   }),
-  ["Tutorial Guard M"] = Char.New({
-    name = "Royal Guard Lackey",
+  Char.New({
+    name = "Royal Guard Commisarry",
+    npc = ROYAL_GUARD_COMMISARRY,
     portrait = 9
   }),
-  ["Cerise"] = Char.New({
+  Char.New({
     name = "Cerise Nilsdottir",
     npc = CERISE,
     pitch = 250,
     portrait = 10
   })
 }
+
+local nameLookupTable = {}
+
+for _, char in ipairs(Characters) do
+  nameLookupTable[char.name] = char
+end
+
+function Characters.findByName(charName)
+  return nameLookupTable[charName]
+end
 
 return Characters

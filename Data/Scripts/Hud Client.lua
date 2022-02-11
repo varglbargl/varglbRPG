@@ -13,11 +13,21 @@ local PRIMARY_COOLDOWN = script:GetCustomProperty("PrimaryCooldown"):WaitForObje
 local SECONDARY_ICON = script:GetCustomProperty("SecondaryIcon"):WaitForObject()
 local SECONDARY_ICON_BG = script:GetCustomProperty("SecondaryIconBg"):WaitForObject()
 local SECONDARY_COOLDOWN = script:GetCustomProperty("SecondaryCooldown"):WaitForObject()
+local CLASS_ICON = script:GetCustomProperty("ClassIcon"):WaitForObject()
 local CURSOR = script:GetCustomProperty("Cursor"):WaitForObject()
+
+local AVENGER_ICON = script:GetCustomProperty("AvengerIcon")
+local PARAGON_ICON = script:GetCustomProperty("ParagonIcon")
+local ORBLIDERATOR_ICON = script:GetCustomProperty("OrblideratorIcon")
+local WILDERWITCH_SYMBOL = script:GetCustomProperty("WilderwitchSymbol")
+local RANGER_ICON = script:GetCustomProperty("RangerIcon")
+local HARRIER_ICON = script:GetCustomProperty("HarrierIcon")
+local EXPLORER_ICON = script:GetCustomProperty("ExplorerIcon")
 
 local clientPlayer = Game.GetLocalPlayer()
 local barWidth = HEALTH_BAR.width
 local defaultBG = PRIMARY_ICON_BG:GetImage()
+local classIcons = {AVENGER_ICON, PARAGON_ICON, ORBLIDERATOR_ICON, WILDERWITCH_SYMBOL, RANGER_ICON, HARRIER_ICON, EXPLORER_ICON}
 
 local primaryAbilities = {}
 local secondaryAbilities = {}
@@ -233,26 +243,34 @@ function redrawHUD(gear)
     SECONDARY_ICON.parent.visibility = Visibility.FORCE_OFF
   end
 
+  CLASS_ICON:SetImage(classIcons[clientPlayer:GetResource("Class")])
+
   updateHitPoints()
 end
 
 function onBindingPressed(thisPlayer, keyCode)
+  if thisPlayer ~= clientPlayer then return end
 	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
+
   if keyCode == "ability_secondary" or keyCode == "ability_primary" then
     CURSOR.rotationAngle = -9
   end
 
+  if not clientPlayer.isSpawned then return end
+
   if keyCode == "ability_extra_19" then
     if CURSOR.visibility == Visibility.FORCE_OFF then
-      showCursor()
+      Events.Broadcast("ShowCursor")
     else
-      hideCursor()
+      Events.Broadcast("HideCursor")
     end
   end
 end
 
 function onBindingReleased(thisPlayer, keyCode)
+  if thisPlayer ~= clientPlayer then return end
 	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
+
   if keyCode == "ability_secondary" or keyCode == "ability_primary" then
     CURSOR.rotationAngle = 0
   end
@@ -279,5 +297,3 @@ Events.Connect("ShowCursor", showCursor)
 Events.Connect("HideCursor", hideCursor)
 Events.Connect("FlyupText", Utils.showFlyupText)
 Events.Connect("RedrawHUD", redrawHUD)
-
-redrawHUD()

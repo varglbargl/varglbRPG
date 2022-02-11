@@ -1,3 +1,4 @@
+local Utils = require(script:GetCustomProperty("Utils"))
 local Quests = require(script:GetCustomProperty("Quests"))
 
 local diedEvents = {}
@@ -15,6 +16,17 @@ function playerDied(player, damage)
   player:Spawn({spawnKey = "Graveyard"})
 end
 
+function onClientLoaded(player)
+  Task.Wait()
+
+  Utils.updatePrivateNetworkedData(player, "Gear")
+  Utils.updatePrivateNetworkedData(player, "Inventory")
+  Utils.updatePrivateNetworkedData(player, "QuestLog")
+  Utils.updatePrivateNetworkedData(player, "AvailableQuests")
+
+  player:Spawn({spawnKey = "Default"})
+end
+
 function onDialogueStarted(player)
   if not Object.IsValid(player) then return end
 
@@ -25,9 +37,13 @@ function onDialogueStarted(player)
   end
 end
 
-function onDialogueEnded(player, questID)
-  if questID then
-    Quests.accept(player, Quests.findByID(questID))
+function onDialogueEnded(player, acceptedQuestID, completedQuestID)
+  if acceptedQuestID then
+    Quests.accept(player, Quests.findByID(acceptedQuestID))
+  end
+
+  if completedQuestID then
+    Quests.complete(player, Quests.findByID(completedQuestID))
   end
 
   player.isMovementEnabled = true
@@ -57,5 +73,6 @@ end
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
 
+Events.ConnectForPlayer("ClientLoaded", onClientLoaded)
 Events.ConnectForPlayer("StartDialogue", onDialogueStarted)
 Events.ConnectForPlayer("EndDialogue", onDialogueEnded)

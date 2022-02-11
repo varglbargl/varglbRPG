@@ -11,12 +11,18 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:TutorialGuardF"
+        Name: "cs:RoyalGuardCommander"
         ObjectReference {
           SelfId: 3633059425835173781
           SubObjectId: 14005946595262354558
           InstanceId: 5583922492054185588
           TemplateId: 3255625945243835462
+        }
+      }
+      Overrides {
+        Name: "cs:RoyalGuardCommisarry"
+        ObjectReference {
+          SelfId: 9349709992221140735
         }
       }
       Overrides {
@@ -30,11 +36,15 @@ Assets {
         String: "Chirps"
       }
       Overrides {
-        Name: "cs:TutorialGuardF:category"
+        Name: "cs:RoyalGuardCommander:category"
         String: "NPCs"
       }
       Overrides {
         Name: "cs:Cerise:category"
+        String: "NPCs"
+      }
+      Overrides {
+        Name: "cs:RoyalGuardCommisarry:category"
         String: "NPCs"
       }
     }

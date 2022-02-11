@@ -11,7 +11,7 @@ local HITBOX = script:GetCustomProperty("Hitbox"):WaitForObject()
 HITBOX.team = 1
 HITBOX.isTeamCollisionEnabled = false
 
-local stats = Utils.getNPCStatsByLevel(math.max(1, LEVEL + math.random(-1, 1) + math.random(-1, 1)))
+local stats = Utils.getNPCStatsByLevel(math.max(1, LEVEL + math.random(-1, 1)))
 enemy:SetCustomProperty("Level", stats.level)
 enemy.maxHitPoints = stats.maxHitPoints
 enemy.hitPoints = stats.maxHitPoints

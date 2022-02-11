@@ -29,6 +29,12 @@ Assets {
         ObjectReference {
         }
       }
+      Overrides {
+        Name: "cs:AdventureLogZoneName"
+        ObjectReference {
+          SelfId: 11792932753669746081
+        }
+      }
     }
   }
   SerializationVersion: 105

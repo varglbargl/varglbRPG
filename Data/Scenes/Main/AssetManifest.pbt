@@ -305,6 +305,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17923113184447423096
+  Name: "Tiled Parchment 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_TiledBG_050"
+  }
+}
+Assets {
   Id: 17914158856327214616
   Name: "Decal Stains Top 01"
   PlatformAssetType: 14
@@ -845,6 +854,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17044755260064219011
+  Name: "Mecha - Armor - Helm 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_veh_jpn_mecha_armor_helm_002_ref"
+  }
+}
+Assets {
   Id: 17035938977884836872
   Name: "Manticore Logo"
   PlatformAssetType: 1
@@ -1016,6 +1034,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16655230531013896977
+  Name: "Japanese Frame 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Japan_Frame_005"
+  }
+}
+Assets {
   Id: 16641482966765740644
   Name: "Urban Bottle Juice 01"
   PlatformAssetType: 1
@@ -1121,6 +1148,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_wall_001_garage_single_ref"
+  }
+}
+Assets {
+  Id: 16443964380187797192
+  Name: "Snake"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Snake"
   }
 }
 Assets {
@@ -1691,6 +1727,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15455932825128854077
+  Name: "Frame Beveled 011"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_028"
+  }
+}
+Assets {
   Id: 15454926723077274654
   Name: "Japanese Bamboo Hat - Tassel 01"
   PlatformAssetType: 1
@@ -1985,6 +2030,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fog_volume_vfx"
+  }
+}
+Assets {
+  Id: 15042601144786818910
+  Name: "Shield 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_shield_004"
   }
 }
 Assets {
@@ -4652,6 +4706,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10966882499655054639
+  Name: "Emblem 1"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Japan_Icon_014"
+  }
+}
+Assets {
   Id: 10946983691052253828
   Name: "Japanese Temple Roof 01 - Eaves 02 Half"
   PlatformAssetType: 1
@@ -5000,6 +5063,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_nat_stick_001_ref"
+  }
+}
+Assets {
+  Id: 10277272220964042399
+  Name: "Tiled Generic 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_TiledBG_027"
+  }
+}
+Assets {
+  Id: 10272898153912977476
+  Name: "Frame Outlined Thick 011"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameFlat_028"
   }
 }
 Assets {
@@ -5354,6 +5435,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9636939589151992785
+  Name: "Tiled Moss 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_TiledBG_048"
+  }
+}
+Assets {
   Id: 9628084751446405602
   Name: "Rubber Basic 01"
   PlatformAssetType: 2
@@ -5369,6 +5459,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_chainsaw_gas_engine_loop_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 9574499134491263019
+  Name: "BG Flat 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_23"
   }
 }
 Assets {
@@ -5966,6 +6065,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8599228434207437692
+  Name: "Gradient Corners"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Gradient_Corners"
+  }
+}
+Assets {
   Id: 8588053707005770663
   Name: "Bricks Stone Block 01"
   PlatformAssetType: 2
@@ -6422,6 +6530,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_jpn_tea_set_whisk_bowl_001_ref"
+  }
+}
+Assets {
+  Id: 7844837304244399601
+  Name: "Humanoid 1 Viper Armor"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_upper_scifi_001_ref"
   }
 }
 Assets {
@@ -7172,6 +7289,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6648649099365236499
+  Name: "Bow"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Bow"
+  }
+}
+Assets {
   Id: 6643758699994281865
   Name: "Ring 01"
   PlatformAssetType: 1
@@ -7478,6 +7604,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6078259628298305548
+  Name: "Icon Fist"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Fist"
+  }
+}
+Assets {
   Id: 6026149651369455339
   Name: "Urban Damaged Floor 01 - 4m Straight 02"
   PlatformAssetType: 1
@@ -7622,6 +7757,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5823734949236378354
+  Name: "Navigation"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Navigation"
+  }
+}
+Assets {
   Id: 5799255185158970982
   Name: "Craftsman Wall 02 Half"
   PlatformAssetType: 1
@@ -7712,6 +7856,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5732981777264124146
+  Name: "BG Flat 011"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_28"
+  }
+}
+Assets {
   Id: 5727167564609836815
   Name: "Humanoid 2 Peasant Pants"
   PlatformAssetType: 26
@@ -7736,6 +7889,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_jpn_wallpaper_flowers_001_uv_ref"
+  }
+}
+Assets {
+  Id: 5675753350387488757
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
   }
 }
 Assets {
@@ -9287,6 +9449,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3463536234595374768
+  Name: "BG Gradient 011"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_028"
+  }
+}
+Assets {
   Id: 3456686779070553167
   Name: "Main Street Window 02"
   PlatformAssetType: 1
@@ -9680,6 +9851,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_st_post_lights_traffic_002"
+  }
+}
+Assets {
+  Id: 2736355639111929687
+  Name: "Icon Random"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Random"
   }
 }
 Assets {
@@ -10931,6 +11111,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Jewelry_016"
+  }
+}
+Assets {
+  Id: 761205666767720547
+  Name: "Gradient 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Gradient_Corners1"
   }
 }
 Assets {

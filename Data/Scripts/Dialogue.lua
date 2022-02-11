@@ -234,7 +234,6 @@ function writeOutText(text)
     end
 
     -- Todo: Handle vertical overflow.
-    -- Task.Wait(0.25)
   end
 
   local formattedText = CoreString.Join(" ", table.unpack(words))
@@ -272,7 +271,7 @@ function speakLine(lines, num)
   end
 
   if line.speaker then
-    speaker = Characters[line.speaker]
+    speaker = Characters.findByName(line.speaker)
   end
 
   if line.append then
@@ -289,16 +288,25 @@ function speakLine(lines, num)
       PORTRAIT.y = math.floor(speaker.portrait / 6) * -portraitSize
     end
 
-    NAME.text = speaker.name
+    if line.speakerName then
+      NAME.text = line.speakerName
+    else
+      NAME.text = speaker.name
+    end
 
-    if line.animation and speaker.meshes then
+    -- if line.focus and speaker.npc then
+    --   speaker.npc:LookAt(clientPlayer)
+    -- end
+
+    if line.animation and speaker.npc then
+      local meshes = speaker.npc:FindDescendantsByType("AnimatedMesh")
       local anim = animations[string.lower(line.animation)]
 
       if anim then
-        for _, smesh in ipairs(speaker.meshes) do
-          if Object.IsValid(smesh) then
-            smesh:StopAnimations()
-            smesh:PlayAnimation(anim)
+        for _, mesh in ipairs(meshes) do
+          if Object.IsValid(mesh) then
+            mesh:StopAnimations()
+            mesh:PlayAnimation(anim)
           end
         end
       end
@@ -312,6 +320,7 @@ function speakLine(lines, num)
   end
 
   DIALOG.visibility = Visibility.INHERIT
+  DIALOG:ReorderAfterSiblings()
 
   if line[1] then
     writeOutText(line[1])
@@ -341,8 +350,8 @@ function speakLine(lines, num)
     line.after()
   end
 
-  if line.stop or line.acceptQuest then
-    return line.acceptQuest
+  if line.stop or line.acceptQuest or line.completeQuest then
+    return line.acceptQuest, line.completeQuest
 
   elseif line.options then
     OPTIONS.visibility = Visibility.FORCE_OFF
@@ -376,11 +385,20 @@ function Dialogue.speak(lines)
     Utils.throttleToServer("StartDialogue")
     Events.Broadcast("ScreenOpened", "Dialogue")
 
-    local acceptQuest = speakLine(lines, 1)
+    local acceptedQuestID, completedQuestID = speakLine(lines, 1)
 
     DIALOG.visibility = Visibility.FORCE_OFF
 
-    Utils.throttleToServer("EndDialogue", acceptQuest)
+    Utils.throttleToServer("EndDialogue", acceptedQuestID, completedQuestID)
+
+    if acceptedQuestID then
+      Events.Broadcast("QuestAccepted", acceptedQuestID)
+    end
+
+    if completedQuestID then
+      Events.Broadcast("QuestCompleted", completedQuestID)
+    end
+
     Events.Broadcast("ScreenClosed", "Dialogue")
   end)
 end

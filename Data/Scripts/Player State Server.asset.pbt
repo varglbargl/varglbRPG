@@ -5,6 +5,12 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:Utils"
+        AssetReference {
+          Id: 8431391566871556229
+        }
+      }
+      Overrides {
         Name: "cs:Quests"
         AssetReference {
           Id: 10326722661705201608
