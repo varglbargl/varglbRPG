@@ -162,7 +162,7 @@ Assets {
         Name: "Point Light"
         Transform {
           Location {
-            Z: 20
+            Z: -120
           }
           Rotation {
           }
@@ -497,7 +497,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -569,7 +568,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -629,7 +627,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -678,7 +675,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -900,7 +896,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -970,7 +965,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100

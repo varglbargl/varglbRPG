@@ -425,7 +425,7 @@ function onPrivateNetworkedDataChanged(player, key)
     throttleInventory()
 
   elseif key == "Gear" then
-    for name, _ in pairs(gearSlots) do
+    for name in pairs(gearSlots) do
       if data[name] then
         local item = Loot.findItemByTemplateId(data[name].templateId)
 

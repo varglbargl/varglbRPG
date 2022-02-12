@@ -5,7 +5,7 @@ local FAERIE_CIRCLE = script:GetCustomProperty("FaerieCircle")
 
 local Wildermagic = {}
 
-local chance = 10
+local chance = 0.1
 
 local function pointAtDistance(where, distance)
   local there = where + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * distance
@@ -68,7 +68,7 @@ Wildermagic.spells = {
 }
 
 function Wildermagic.roll(player)
-  if math.random(1, chance) == 1 then
+  if math.random() < chance then
     return Wildermagic.cast(player)
   end
 end

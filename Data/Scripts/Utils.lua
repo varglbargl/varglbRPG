@@ -181,7 +181,7 @@ end
 
 -- NETWORKED DATA
 
-local function compressItems(items)
+function Utils.compressItems(items)
   local results = {}
 
   for slot, item in pairs(items) do
@@ -197,7 +197,7 @@ function Utils.updatePrivateNetworkedData(player, key)
   if not Object.IsValid(player) or Environment.IsClient() then return end
 
   if key == "Inventory" or key == "Gear" then
-    player:SetPrivateNetworkedData(key, compressItems(player.serverUserData[key]))
+    player:SetPrivateNetworkedData(key, Utils.compressItems(player.serverUserData[key]))
   else
 
     player:SetPrivateNetworkedData(key, player.serverUserData[key])
@@ -236,7 +236,7 @@ function Utils.throttleMessage(message)
 
   if result == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
     Task.Wait(0.1)
-    Utils.throttleToPlayer(message)
+    Utils.throttleMessage(message)
   end
 end
 

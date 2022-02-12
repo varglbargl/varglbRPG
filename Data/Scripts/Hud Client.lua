@@ -32,8 +32,6 @@ local classIcons = {AVENGER_ICON, PARAGON_ICON, ORBLIDERATOR_ICON, WILDERWITCH_S
 local primaryAbilities = {}
 local secondaryAbilities = {}
 
-CURSOR.visibility = Visibility.FORCE_OFF
-
 local cursorTask = nil
 
 function onResourceChanged(player, resourceName, newTotal)
@@ -68,7 +66,7 @@ function cursorLoop()
 end
 
 function showCursor()
-  CURSOR.visibility = Visibility.INHERIT
+  CURSOR.visibility = Visibility.FORCE_ON
   UI.SetCanCursorInteractWithUI(true)
 
   if cursorTask then cursorTask:Cancel() end

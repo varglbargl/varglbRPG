@@ -4,6 +4,7 @@ local CLASS_PICKER_UI = script:GetCustomProperty("ClassPickerUI"):WaitForObject(
 local GAME_UI = script:GetCustomProperty("GameUI"):WaitForObject()
 local MUSIC = script:GetCustomProperty("Music"):WaitForObject()
 local CAMERA = script:GetCustomProperty("Camera"):WaitForObject()
+
 local AVENGER_BUTTON = script:GetCustomProperty("AvengerButton"):WaitForObject()
 local PARAGON_BUTTON = script:GetCustomProperty("ParagonButton"):WaitForObject()
 local ORBLITERATOR_BUTTON = script:GetCustomProperty("OrbliteratorButton"):WaitForObject()
@@ -12,6 +13,7 @@ local RANGER_BUTTON = script:GetCustomProperty("RangerButton"):WaitForObject()
 local HARRIER_BUTTON = script:GetCustomProperty("HarrierButton"):WaitForObject()
 local EXPLORER_BUTTON = script:GetCustomProperty("ExplorerButton"):WaitForObject()
 local PLAY_BUTTON = script:GetCustomProperty("PlayButton"):WaitForObject()
+
 local CLASS_NAME = script:GetCustomProperty("ClassName"):WaitForObject()
 local CLASS_DESCRIPTION = script:GetCustomProperty("ClassDescription"):WaitForObject()
 local GRITSTAR = script:GetCustomProperty("Gritstar"):WaitForObject()
@@ -20,7 +22,7 @@ local SPITSTAR = script:GetCustomProperty("Spitstar"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local selectedClass = nil
-local stars = {[5] = "★", [10] = "★★", [15] = "★★★"}
+local stars = {[5] = "★", [10] = "★★", [15] = "★★★", [20] = "★★★★"}
 
 CLASS_PICKER_UI.visibility = Visibility.INHERIT
 GAME_UI.visibility = Visibility.FORCE_OFF
@@ -59,7 +61,7 @@ end
 function onPlayClicked()
   if not selectedClass then return end
 
-  Utils.throttleToServer("EnterWorld", selectedClass)
+  Utils.throttleToServer("PickClass", selectedClass)
 end
 
 -- handler params: Player_player, PlayerStart_playerStart, string_spawnKey

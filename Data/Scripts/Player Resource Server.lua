@@ -1,5 +1,5 @@
 local Utils = require(script:GetCustomProperty("Utils"))
-local Loot = require(script:GetCustomProperty("Loot"))
+local Vault = require(script:GetCustomProperty("Vault"))
 local Wildermagic = require(script:GetCustomProperty("Wildermagic"))
 
 local LEVEL_UP_VFX = script:GetCustomProperty("LevelUpVFX")
@@ -32,11 +32,25 @@ function onPlayerDied(player)
 end
 
 function initResources(player, class)
-  local yourLevel = player:SetResource("Level", 1)
-  player:SetResource("Experience", 0)
-  player:SetResource("Gold", 0)
+  if not Object.IsValid(player) then return end
+
+  local yourLevel = nil
 
   player:SetResource("Class", class)
+
+  if Vault.hasSave(player) then
+    local save = Vault.getSave(player)
+
+    yourLevel = save.lvls[class] or 1
+    player:SetResource("Level", yourLevel)
+    player:SetResource("Experience", save.xps[class] or 0)
+    player:SetResource("Gold", save.gp)
+  else
+    yourLevel = 1
+    player:SetResource("Level", yourLevel)
+    player:SetResource("Experience", 0)
+    player:SetResource("Gold", 0)
+  end
 
   if class == 3 then
     player:SetResource("Orbs", 0)
@@ -47,7 +61,7 @@ function initResources(player, class)
 
   Utils.throttleMessage(player.name.." (Level "..yourLevel.." "..classStats.name..") has joined the game!")
 
-  local magicNumber = Utils.magicNumber(1)
+  local magicNumber = Utils.magicNumber(yourLevel)
 
   -- health and melee damage
   local yourGrit = player:SetResource("Grit", math.floor(classStats.grit * magicNumber))
@@ -97,15 +111,7 @@ function initResources(player, class)
 
   Task.Spawn(function() resourceTicker(player) end)
 
-  Task.Wait()
-
-  for _, itemName in ipairs(classStats.starterGear) do
-    local item = Loot.findItemByName(itemName)
-
-    if item then
-      Events.Broadcast("AddToInventory", player, item)
-    end
-  end
+  Events.Broadcast("InitInventory", player)
 end
 
 function onPlayerJoined(player)
@@ -156,8 +162,6 @@ function onPlayerGainedXP(player, amount)
       player:SetResource("Experience", currentXP)
       player:AddResource("Experience", amount)
     end
-
-    Utils.throttleMessage("DING! "..player.name.." is now Level "..player:GetResource("Level") + levelsGained.."!")
 
     player:AddResource("Level", levelsGained)
 
@@ -278,8 +282,6 @@ end
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
 
-Events.Connect("InitResources", initResources)
-
 -- handler params: Player_player, integer_amount
 Events.Connect("PlayerGainedXP", onPlayerGainedXP)
 
@@ -288,3 +290,5 @@ Events.Connect("PlayerGainedGold", onPlayerGainedGold)
 
 -- handler params: Player_player
 Events.Connect("EquipmentChanged", applyStatsWithGear)
+
+Events.ConnectForPlayer("PickClass", initResources)

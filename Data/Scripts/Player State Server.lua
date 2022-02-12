@@ -1,4 +1,5 @@
 local Utils = require(script:GetCustomProperty("Utils"))
+local Vault = require(script:GetCustomProperty("Vault"))
 local Quests = require(script:GetCustomProperty("Quests"))
 
 local diedEvents = {}
@@ -16,12 +17,7 @@ function playerDied(player, damage)
   player:Spawn({spawnKey = "Graveyard"})
 end
 
-function onEnterWorld(player, class)
-  if not Object.IsValid(player) then return end
-  -- print(player.name..": I'm jacking on...")
-
-  Events.Broadcast("InitResources", player, class)
-
+function onEnterWorld(player)
   Task.Wait()
   if not Object.IsValid(player) then return end
 
@@ -30,10 +26,13 @@ function onEnterWorld(player, class)
   Utils.updatePrivateNetworkedData(player, "QuestLog")
   Utils.updatePrivateNetworkedData(player, "AvailableQuests")
 
-  Task.Wait()
-  if not Object.IsValid(player) then return end
+  if Vault.hasSave(player) then
+    local save = Vault.getSave(player)
 
-  player:Spawn({spawnKey = "Default"})
+    player:Spawn({position = Vector3.New(save.loc), rotation = Rotation.New(0, 0, save.loc.w)})
+  else
+    player:Spawn({spawnKey = "Default"})
+  end
 end
 
 function onDialogueStarted(player)
@@ -82,6 +81,6 @@ end
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
 
-Events.ConnectForPlayer("EnterWorld", onEnterWorld)
+Events.Connect("EnterWorld", onEnterWorld)
 Events.ConnectForPlayer("StartDialogue", onDialogueStarted)
 Events.ConnectForPlayer("EndDialogue", onDialogueEnded)

@@ -46,14 +46,6 @@ function onResourceChanged(player, name, newTotal)
     end
 
     myExerience = newTotal
-  elseif player == clientPlayer and name == "Level" then
-
-
-    if myLevel ~= "nothin" then
-      Chat.LocalMessage("Grit:"..player:GetResource("Grit").."  Wit:"..player:GetResource("Wit").."  Spit:"..player:GetResource("Spit").."")
-    end
-
-    myLevel = newTotal
   elseif name == "Gold" then
 
     if myGold ~= "nothin" then
@@ -68,7 +60,11 @@ function onResourceChanged(player, name, newTotal)
     myGold = newTotal
   elseif player == clientPlayer and name == "Level" then
     if myLevel ~= "nothin" then
-      Chat.LocalMessage("Grit:"..player:GetResource("Grit").."  Wit:"..player:GetResource("Wit").."  Spit:"..player:GetResource("Spit").."")
+      local magicNumber = Utils.magicNumber(newTotal)
+      local classStats = Utils.classStats(player:GetResource("Class"))
+
+      Chat.LocalMessage("DING! Welcome to Level "..newTotal.."!")
+      Chat.LocalMessage("Grit:"..math.floor(classStats.grit * magicNumber).."  Wit:"..math.floor(classStats.wit * magicNumber).."  Spit:"..math.floor(classStats.spit * magicNumber).."")
     end
 
     myLevel = newTotal

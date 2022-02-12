@@ -1,4 +1,5 @@
 local Utils = require(script:GetCustomProperty("Utils"))
+local Vault = require(script:GetCustomProperty("Vault"))
 local Loot = require(script:GetCustomProperty("Loot"))
 
 function onPlayerJoined(player)
@@ -22,6 +23,54 @@ function onPlayerJoined(player)
   player.serverUserData["Inventory"] = {
     full = false
   }
+
+  if Vault.hasSave(player) then
+    local saveData = Vault.getSave(player)
+    local inventorySlotsOpen = 48
+
+    for slot = 1, 48 do
+      if saveData.inv[slot] then
+        local item = Loot.findItemByTemplateId(saveData.inv[slot].templateId)
+
+        player.serverUserData["Inventory"][slot] = Loot.decodeEnchant(item, saveData.inv[slot].enchant)
+
+        inventorySlotsOpen = inventorySlotsOpen - 1
+      end
+    end
+
+    if inventorySlotsOpen == 0 then
+      player.serverUserData["Inventory"].full = true
+    end
+
+    for slot in pairs(saveData.gear) do
+      if saveData.gear[slot] then
+        local item = Loot.findItemByTemplateId(saveData.gear[slot].templateId)
+        local enchantedItem = Loot.decodeEnchant(item, saveData.gear[slot].enchant)
+
+        player.serverUserData["Gear"][slot] = enchantedItem
+      else
+        player.serverUserData["Gear"][slot] = nil
+      end
+    end
+  end
+end
+
+function initInventory(player)
+  Task.Wait()
+  if not Object.IsValid(player) then return end
+
+  if Vault.hasSave(player) then
+    for _, item in pairs(player.serverUserData["Gear"]) do
+      local equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
+
+      item.equipmentId = equipment.id
+      equipment:Equip(player)
+    end
+  else
+    Loot.giveStarterGear(player)
+  end
+
+  Events.Broadcast("EquipmentChanged", player)
 
   -- DEBUG!!
 
@@ -181,6 +230,7 @@ Game.playerJoinedEvent:Connect(onPlayerJoined)
 
 Events.Connect("AddToInventory", addToInventory)
 
+Events.Connect("InitInventory", initInventory)
 Events.ConnectForPlayer("EquipToPlayer", equipToPlayer)
 Events.ConnectForPlayer("UnequipFromPlayer", unequipFromPlayer)
 Events.ConnectForPlayer("SwapInventorySlots", swapInventorySlots)

@@ -13,7 +13,7 @@ local GOLD_DROP = script:GetCustomProperty("GoldDrop")
 
 local Loot = {}
 
-local lootTable = {}
+local dropTable = {}
 
 local statBalance = {
   grit = 0.31,
@@ -76,7 +76,7 @@ function readLootTable(thisLootTable, itemType)
       lootItem.maxDamage = math.floor(lootItem.maxDamage + 0.5)
     end
 
-    table.insert(lootTable, lootItem)
+    table.insert(dropTable, lootItem)
 
     spawnedItem:Destroy()
   end
@@ -279,7 +279,7 @@ function Loot.getRandom(level, rarity)
   end
 
   if level then
-    for _, item in ipairs(lootTable) do
+    for _, item in ipairs(dropTable) do
       if item.itemLevel >= level - 3 and item.itemLevel <= level + 2 then
         table.insert(rollTable, item)
       end
@@ -291,7 +291,7 @@ function Loot.getRandom(level, rarity)
 
     result = rollTable[math.random(1, #rollTable)]
   else
-    result = lootTable[math.random(1, #lootTable)]
+    result = dropTable[math.random(1, #dropTable)]
   end
 
   assert(result, "Loot.getRandom really should be able to find at least one item. Something's up...")
@@ -310,24 +310,39 @@ function Loot.getRandom(level, rarity)
 end
 
 function Loot.findItemByTemplateId(templateId)
-  for _, item in ipairs(lootTable) do
+  for _, item in ipairs(dropTable) do
     if item.templateId == templateId or item.sourceTemplate == templateId then
       return item
     end
   end
 end
 
-function Loot.findItemByName(name)
-  for _, item in ipairs(lootTable) do
-    if item.name == name then
+function Loot.findItemByName(itemName)
+  for _, item in ipairs(dropTable) do
+    if item.name == itemName then
       return item
     end
   end
+
+  error("Unknown item name: \""..itemName.."\"")
 end
 
 function Loot.giveToPlayer(player, item)
   if Environment.IsServer() then
     Events.Broadcast("AddToInventory", player, item)
+  end
+end
+
+function Loot.giveStarterGear(player)
+  local class = player:GetResource("Class")
+  local classStats = Utils.classStats(class)
+
+  for _, itemName in ipairs(classStats.starterGear) do
+    local item = Loot.findItemByName(itemName)
+
+    if item then
+      Events.Broadcast("AddToInventory", player, item)
+    end
   end
 end
 

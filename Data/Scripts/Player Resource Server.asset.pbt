@@ -11,6 +11,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Vault"
+        AssetReference {
+          Id: 18367983713543881223
+        }
+      }
+      Overrides {
         Name: "cs:Loot"
         AssetReference {
           Id: 10149346056993589588
@@ -38,6 +44,10 @@ Assets {
       }
       Overrides {
         Name: "cs:Wildermagic:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Vault:category"
         String: "APIs"
       }
     }

@@ -3,11 +3,18 @@ local CHARACTER = script:GetCustomProperty("Character"):WaitForObject()
 local ADVENTURE = script:GetCustomProperty("Adventure"):WaitForObject()
 local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
 local SHOP = script:GetCustomProperty("Shop"):WaitForObject()
+local CLOCK = script:GetCustomProperty("Clock"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local openScreens = {}
 
 MENU.opacity = 0.4
+
+function Tick()
+  CLOCK.text = os.date("%I:%M%p")
+
+  Task.Wait(1)
+end
 
 function onCharacterButtonClicked()
   Events.Broadcast("ToggleCharacterScreen")
