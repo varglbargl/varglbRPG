@@ -10,12 +10,12 @@ Assets {
         Name: "Mailbox - Fantasy"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.75
+            Y: 0.75
+            Z: 0.75
           }
         }
-        ParentId: 4959840978651587588
+        ParentId: 1518488037551780942
         ChildIds: 4711102746359103678
         ChildIds: 12261870876898737825
         Collidable_v2 {
@@ -54,6 +54,7 @@ Assets {
         ParentId: 6023251769419546868
         ChildIds: 14821878272290867113
         ChildIds: 2750704356803005157
+        ChildIds: 8571024650576879473
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -77,17 +78,17 @@ Assets {
         Name: "Lock"
         Transform {
           Location {
-            X: 7.62939453e-06
-            Y: -47
-            Z: 136.01416
+            X: 0.000375111907
+            Y: -47.0011292
+            Z: 134.12175
           }
           Rotation {
             Yaw: 90
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.4138639
+            Y: 1.4138639
+            Z: 1.4138639
           }
         }
         ParentId: 4711102746359103678
@@ -569,18 +570,18 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: 52.0009766
-            Y: -0.017578125
-            Z: -21.4897461
+            X: 54.1240234
+            Y: -0.0078125
+            Z: -21.4899902
           }
           Rotation {
-            Yaw: -89.9999542
+            Yaw: -89.999939
             Roll: -90
           }
           Scale {
-            X: 0.499932557
+            X: 0.499932617
             Y: -0.162996098
-            Z: 0.025
+            Z: 0.0250000022
           }
         }
         ParentId: 2750704356803005157
@@ -650,8 +651,8 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: 52.0703087
-            Y: 20.0000114
+            X: 54.1943932
+            Y: 20.0005398
             Z: -35.203125
           }
           Rotation {
@@ -659,9 +660,9 @@ Assets {
             Roll: -179.999939
           }
           Scale {
-            X: 0.365564853
-            Y: 0.352101624
-            Z: 0.025
+            X: 0.365564913
+            Y: 0.352101654
+            Z: 0.0250000022
           }
         }
         ParentId: 2750704356803005157
@@ -731,18 +732,18 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: 52.0703125
-            Y: 1.14440918e-05
+            X: 54.1934662
+            Y: 0.00194422412
             Z: -47.4052734
           }
           Rotation {
-            Yaw: -89.9999924
-            Roll: -89.9999847
+            Yaw: -90
+            Roll: -90
           }
           Scale {
             X: 0.603350163
             Y: 0.210022986
-            Z: 0.025
+            Z: 0.0250000022
           }
         }
         ParentId: 2750704356803005157
@@ -812,19 +813,19 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: 52.0703163
-            Y: -19.9999886
+            X: 54.1945152
+            Y: -19.9983521
             Z: -35.203125
           }
           Rotation {
             Pitch: 90
-            Yaw: -13.2626839
-            Roll: -13.2627563
+            Yaw: -179.999969
+            Roll: 179.999969
           }
           Scale {
-            X: 0.365564853
-            Y: 0.352101624
-            Z: 0.025
+            X: 0.365564913
+            Y: 0.352101654
+            Z: 0.0250000022
           }
         }
         ParentId: 2750704356803005157
@@ -894,17 +895,17 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: 50.3906326
-            Y: -24.9999905
-            Z: -17.6040039
+            X: 52.514122
+            Y: -25.0010986
+            Z: -17.6038418
           }
           Rotation {
             Pitch: 90
             Roll: 179.999939
           }
           Scale {
-            X: 0.1
-            Y: 0.1
+            X: 0.100000009
+            Y: 0.100000009
             Z: 0.16
           }
         }
@@ -954,17 +955,17 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: 50.3906174
-            Y: 25.0000076
-            Z: -17.6040039
+            X: 52.512352
+            Y: 25.0006256
+            Z: -17.6038418
           }
           Rotation {
             Pitch: 90
             Roll: 179.999939
           }
           Scale {
-            X: 0.1
-            Y: 0.1
+            X: 0.100000009
+            Y: 0.100000009
             Z: 0.16
           }
         }
@@ -1014,8 +1015,8 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: 50.5585861
-            Y: 20.5214958
+            X: 52.6817131
+            Y: 20.5224209
             Z: -13.1201172
           }
           Rotation {
@@ -1024,8 +1025,8 @@ Assets {
             Roll: -179.999969
           }
           Scale {
-            X: 0.1
-            Y: 0.1
+            X: 0.100000009
+            Y: 0.100000009
             Z: 0.16
           }
         }
@@ -1075,8 +1076,8 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: 50.3906288
-            Y: -20.6660061
+            X: 52.5142441
+            Y: -20.6653061
             Z: -13.2880859
           }
           Rotation {
@@ -1085,8 +1086,8 @@ Assets {
             Roll: 179.999985
           }
           Scale {
-            X: 0.1
-            Y: 0.1
+            X: 0.100000009
+            Y: 0.100000009
             Z: 0.16
           }
         }
@@ -1136,8 +1137,8 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: 49.5917931
-            Y: 18.0918083
+            X: 51.7134209
+            Y: 18.091774
             Z: -10.6337891
           }
           Rotation {
@@ -1146,7 +1147,7 @@ Assets {
             Roll: 84.440155
           }
           Scale {
-            X: 0.0541383363
+            X: 0.0541383438
             Y: 0.0589545965
             Z: 0.0453647189
           }
@@ -1209,17 +1210,17 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: 51.6445274
-            Y: 18.0703201
+            X: 53.7682877
+            Y: 18.0721664
             Z: -10.6806641
           }
           Rotation {
             Pitch: 44.6616592
-            Yaw: -70.5642548
+            Yaw: -70.56427
             Roll: 96.200386
           }
           Scale {
-            X: 0.0541383363
+            X: 0.0541383438
             Y: 0.0589545965
             Z: 0.0453647189
           }
@@ -1282,18 +1283,18 @@ Assets {
         Name: "Frame Medium Corner - Neon"
         Transform {
           Location {
-            X: 70.78125
-            Y: -11.8105316
+            X: 72.9054871
+            Y: -11.8101301
             Z: -16.1894531
           }
           Rotation {
-            Pitch: -44.9999809
+            Pitch: -44.9999695
             Yaw: 90.0000076
           }
           Scale {
-            X: 0.664376318
-            Y: 0.664376318
-            Z: 0.664376318
+            X: 0.664376378
+            Y: 0.664376378
+            Z: 0.664376378
           }
         }
         ParentId: 2750704356803005157
@@ -1354,17 +1355,17 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: 51.4775391
-            Y: -18.2148438
-            Z: -10.8491211
+            X: 53.5996094
+            Y: -18.2109375
+            Z: -10.8493652
           }
           Rotation {
             Pitch: 44.661644
             Yaw: 70.5642929
-            Roll: -96.200386
+            Roll: -96.2003784
           }
           Scale {
-            X: 0.0541383363
+            X: 0.0541383438
             Y: -0.0589545965
             Z: 0.0453647189
           }
@@ -1427,9 +1428,9 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: 49.4248047
-            Y: -18.2363281
-            Z: -10.8022461
+            X: 51.5449219
+            Y: -18.234375
+            Z: -10.8024902
           }
           Rotation {
             Pitch: 44.728344
@@ -1437,7 +1438,7 @@ Assets {
             Roll: -84.4401245
           }
           Scale {
-            X: 0.0541383363
+            X: 0.0541383438
             Y: -0.0589545965
             Z: 0.0453647189
           }
@@ -1500,18 +1501,17 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: -52.1904297
-            Z: -21.4897461
+            X: -54.5751953
+            Z: -21.4899902
           }
           Rotation {
-            Pitch: -1.36603776e-05
             Yaw: 89.9999466
-            Roll: -89.9999771
+            Roll: -89.9999695
           }
           Scale {
-            X: 0.499932557
+            X: 0.499932617
             Y: -0.162996098
-            Z: 0.025
+            Z: 0.0250000022
           }
         }
         ParentId: 2750704356803005157
@@ -1581,8 +1581,8 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: -52.1914
-            Y: -20.0000114
+            X: -54.576561
+            Y: -20.0014782
             Z: -35.203125
           }
           Rotation {
@@ -1590,9 +1590,9 @@ Assets {
             Roll: 4.82967334e-06
           }
           Scale {
-            X: 0.365564853
-            Y: 0.352101624
-            Z: 0.025
+            X: 0.365564913
+            Y: 0.352101654
+            Z: 0.0250000022
           }
         }
         ParentId: 2750704356803005157
@@ -1662,19 +1662,18 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: -52.1914024
-            Y: -1.14440918e-05
+            X: -54.5776062
+            Y: -0.00118382776
             Z: -47.4052734
           }
           Rotation {
-            Pitch: -6.83018879e-06
             Yaw: 89.9999313
-            Roll: -89.9999847
+            Roll: -90
           }
           Scale {
             X: 0.603350163
             Y: 0.210022986
-            Z: 0.025
+            Z: 0.0250000022
           }
         }
         ParentId: 2750704356803005157
@@ -1744,8 +1743,8 @@ Assets {
         Name: "Prism - 3-Sided"
         Transform {
           Location {
-            X: -52.1914101
-            Y: 19.9999886
+            X: -54.576683
+            Y: 19.9974136
             Z: -35.203125
           }
           Rotation {
@@ -1753,9 +1752,9 @@ Assets {
             Roll: 179.999985
           }
           Scale {
-            X: 0.365564853
-            Y: 0.352101624
-            Z: 0.025
+            X: 0.365564913
+            Y: 0.352101654
+            Z: 0.0250000022
           }
         }
         ParentId: 2750704356803005157
@@ -1825,16 +1824,16 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: -50.3906326
-            Y: 24.9999905
-            Z: -17.6040039
+            X: -52.7762527
+            Y: 24.9999237
+            Z: -17.6038418
           }
           Rotation {
             Pitch: 90
           }
           Scale {
-            X: 0.1
-            Y: 0.1
+            X: 0.100000009
+            Y: 0.100000009
             Z: 0.16
           }
         }
@@ -1884,16 +1883,16 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: -50.3906174
-            Y: -25.0000076
-            Z: -17.6040039
+            X: -52.7764511
+            Y: -25.0001049
+            Z: -17.6038418
           }
           Rotation {
             Pitch: 90
           }
           Scale {
-            X: 0.1
-            Y: 0.1
+            X: 0.100000009
+            Y: 0.100000009
             Z: 0.16
           }
         }
@@ -1943,8 +1942,8 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: -50.5585861
-            Y: -20.5214958
+            X: -52.94384
+            Y: -20.5235977
             Z: -13.1201172
           }
           Rotation {
@@ -1953,8 +1952,8 @@ Assets {
             Roll: -179.999969
           }
           Scale {
-            X: 0.1
-            Y: 0.1
+            X: 0.100000009
+            Y: 0.100000009
             Z: 0.16
           }
         }
@@ -2004,18 +2003,18 @@ Assets {
         Name: "Ring - Beveled Thick"
         Transform {
           Location {
-            X: -50.3906288
-            Y: 20.6660061
+            X: -52.7763672
+            Y: 20.6641293
             Z: -13.2880859
           }
           Rotation {
             Pitch: 44.9999771
-            Yaw: -89.9999542
+            Yaw: -89.999939
             Roll: 179.999985
           }
           Scale {
-            X: 0.1
-            Y: 0.1
+            X: 0.100000009
+            Y: 0.100000009
             Z: 0.16
           }
         }
@@ -2065,8 +2064,8 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: -49.5917931
-            Y: -18.0918083
+            X: -51.9772453
+            Y: -18.0949249
             Z: -10.6337891
           }
           Rotation {
@@ -2075,7 +2074,7 @@ Assets {
             Roll: 84.440155
           }
           Scale {
-            X: 0.0541383363
+            X: 0.0541383438
             Y: 0.0589545965
             Z: 0.0453647189
           }
@@ -2138,8 +2137,8 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: -51.6445274
-            Y: -18.0703201
+            X: -54.0287132
+            Y: -18.0713692
             Z: -10.6806641
           }
           Rotation {
@@ -2148,7 +2147,7 @@ Assets {
             Roll: 96.2003937
           }
           Scale {
-            X: 0.0541383363
+            X: 0.0541383438
             Y: 0.0589545965
             Z: 0.0453647189
           }
@@ -2211,19 +2210,18 @@ Assets {
         Name: "Frame Medium Corner - Neon"
         Transform {
           Location {
-            X: -70.78125
-            Y: 11.8105316
+            X: -73.1676178
+            Y: 11.8089523
             Z: -16.1894531
           }
           Rotation {
-            Pitch: -44.9999771
-            Yaw: -89.9999924
-            Roll: -2.41483576e-06
+            Pitch: -44.9999695
+            Yaw: -90
           }
           Scale {
-            X: 0.664376318
-            Y: 0.664376318
-            Z: 0.664376318
+            X: 0.664376378
+            Y: 0.664376378
+            Z: 0.664376378
           }
         }
         ParentId: 2750704356803005157
@@ -2284,17 +2282,17 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: -51.4755859
-            Y: 18.2148438
-            Z: -10.8491211
+            X: -53.8632812
+            Y: 18.2265625
+            Z: -10.8493652
           }
           Rotation {
             Pitch: 44.661644
-            Yaw: -109.435661
-            Roll: -96.2003
+            Yaw: -109.435669
+            Roll: -96.2003174
           }
           Scale {
-            X: 0.0541383363
+            X: 0.0541383438
             Y: -0.0589545965
             Z: 0.0453647189
           }
@@ -2357,17 +2355,17 @@ Assets {
         Name: "Ring - Extra Thick"
         Transform {
           Location {
-            X: -49.4228516
-            Y: 18.2363281
-            Z: -10.8022461
+            X: -51.8125
+            Y: 18.234375
+            Z: -10.8024902
           }
           Rotation {
             Pitch: 44.7283363
-            Yaw: -77.627243
-            Roll: -84.4401
+            Yaw: -77.6272583
+            Roll: -84.440094
           }
           Scale {
-            X: 0.0541383363
+            X: 0.0541383438
             Y: -0.0589545965
             Z: 0.0453647189
           }
@@ -2420,6 +2418,662 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 8571024650576879473
+        Name: "Quill"
+        Transform {
+          Location {
+            X: -6.68627453
+            Y: -36.876442
+            Z: 210.820312
+          }
+          Rotation {
+            Pitch: -19.0241699
+            Yaw: 99.8317184
+            Roll: 59.0472565
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4711102746359103678
+        ChildIds: 173032357007262979
+        ChildIds: 18244621118490931513
+        ChildIds: 1253052003812370550
+        ChildIds: 14173136030440019435
+        ChildIds: 16241397632819896019
+        ChildIds: 3999988059287681164
+        ChildIds: 5227446017225279214
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 173032357007262979
+        Name: "Simple Swing Parent"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8571024650576879473
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Wavelength"
+            Float: 1.5
+          }
+          Overrides {
+            Name: "cs:MinAmplitude"
+            Float: 3
+          }
+          Overrides {
+            Name: "cs:MaxAmplitude"
+            Float: 12
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 4774256623264947271
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 18244621118490931513
+        Name: "UI Container"
+        Transform {
+          Location {
+            X: 1.7487793
+            Y: -24.1425781
+            Z: -7.2109375
+          }
+          Rotation {
+            Pitch: 8.73443222
+            Yaw: -169.065033
+            Roll: 29.4300613
+          }
+          Scale {
+            X: -0.0382910371
+            Y: 0.0382910371
+            Z: 0.0382910371
+          }
+        }
+        ParentId: 8571024650576879473
+        ChildIds: 8740336184478633219
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Canvas {
+            ContentType {
+              Value: "mc:ecanvascontenttype:dynamic"
+            }
+            Opacity: 1
+            CanvasWorldSize {
+              X: 1055.85217
+              Y: 443.108521
+            }
+            CanvasWorldCylinderArcAngle: 47.8670082
+            TwoSided: true
+            CastsShadow: true
+            RedrawTime: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 8740336184478633219
+        Name: "UI Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18244621118490931513
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 780
+          Height: 780
+          UIY: -23.0769444
+          RotationAngle: 324.786
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 16778242158514968268
+            }
+            Color {
+              R: 0.192
+              G: 0.0130559923
+              B: 0.0130559923
+              A: 1
+            }
+            TeamSettings {
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+            ScreenshotIndex: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 1253052003812370550
+        Name: "Office Pen 03"
+        Transform {
+          Location {
+            X: -1.47271156
+            Y: -7.1077404
+            Z: 0.00956010818
+          }
+          Rotation {
+            Pitch: -33.9239502
+            Yaw: 173.275757
+            Roll: 179.995193
+          }
+          Scale {
+            X: 0.69
+            Y: 0.320450515
+            Z: 0.689796865
+          }
+        }
+        ParentId: 8571024650576879473
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1168742253621117265
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 18
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.25
+              B: 0.00416660309
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 17713444884118919250
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 16
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 8
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14436815055517145805
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14173136030440019435
+        Name: "Basic Bean Thin Long"
+        Transform {
+          Location {
+            X: -2.01831055
+            Y: -18.9160156
+            Z: -1.72265625
+          }
+          Rotation {
+            Pitch: 21.9795208
+            Yaw: -8.19641113
+            Roll: 158.906616
+          }
+          Scale {
+            X: -0.0899826437
+            Y: 0.210294127
+            Z: 0.0628868416
+          }
+        }
+        ParentId: 8571024650576879473
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.344
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16115905030413172164
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6033165249964280276
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 16241397632819896019
+        Name: "Kunai Blade"
+        Transform {
+          Location {
+            X: -1.08731794
+            Y: -3.39618969
+            Z: 0.0386927128
+          }
+          Rotation {
+            Pitch: -36.7017212
+            Yaw: 171.225876
+            Roll: -91.7249146
+          }
+          Scale {
+            X: 0.386
+            Y: 0.443923742
+            Z: 0.208814666
+          }
+        }
+        ParentId: 8571024650576879473
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17713444884118919250
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 17713444884118919250
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 6
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 4
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 6
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17581722089548443612
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 3999988059287681164
+        Name: "Frame Small 45 Degree Corner Wide - Bulb"
+        Transform {
+          Location {
+            X: 0.39710629
+            Y: 0.925683618
+            Z: 0.744236231
+          }
+          Rotation {
+            Pitch: 73
+            Yaw: 102.804016
+            Roll: 119.954414
+          }
+          Scale {
+            X: 0.0415220782
+            Y: 0.0472479612
+            Z: 0.0454686694
+          }
+        }
+        ParentId: 8571024650576879473
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17713444884118919250
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Bulbs:id"
+            AssetReference {
+              Id: 17713444884118919250
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4576989693798119659
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 5227446017225279214
+        Name: "Callout Sparkle"
+        Transform {
+          Location {
+            X: -0.211914062
+            Y: 2.85546875
+            Z: -0.45703125
+          }
+          Rotation {
+            Pitch: -9.66745
+            Yaw: 22.0557137
+            Roll: -87.62146
+          }
+          Scale {
+            X: -0.0252397545
+            Y: 0.0252397545
+            Z: 0.0252397545
+          }
+        }
+        ParentId: 8571024650576879473
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.1
+          }
+          Overrides {
+            Name: "bp:Curl Speed"
+            Vector {
+              Z: 2
+            }
+          }
+          Overrides {
+            Name: "bp:Curl Offset"
+            Vector {
+              X: 2
+            }
+          }
+          Overrides {
+            Name: "bp:Curl Variance"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 4
+          }
+          Overrides {
+            Name: "bp:Initial Velocity"
+            Vector {
+            }
+          }
+          Overrides {
+            Name: "bp:Wind Speed"
+            Vector {
+            }
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 0.2
+          }
+          Overrides {
+            Name: "bp:Local Space"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 0.3
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5675675085224857253
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2486,7 +3140,8 @@ Assets {
         Name: "Fantasy Castle Wall Foundation 01 - Pillar 01"
         Transform {
           Location {
-            X: -53.5
+            X: -56.6404266
+            Y: 0.00120925903
             Z: 167.039062
           }
           Rotation {
@@ -2554,7 +3209,8 @@ Assets {
         Name: "Fantasy Castle Wall Foundation 01 - Pillar 01"
         Transform {
           Location {
-            X: 53.5
+            X: 56.1879234
+            Y: -3.05175781e-05
             Z: 167.039062
           }
           Rotation {
@@ -2631,8 +3287,8 @@ Assets {
             Yaw: 89.9999619
           }
           Scale {
-            X: 0.27861324
-            Y: 0.509921908
+            X: 0.278635353
+            Y: 0.561748
             Z: 1.1
           }
         }
@@ -2713,14 +3369,15 @@ Assets {
         Name: "Stovetop Hood"
         Transform {
           Location {
-            Z: -3
+            X: 0.0009765625
+            Z: -3.00048828
           }
           Rotation {
             Yaw: 89.9999542
           }
           Scale {
-            X: 0.27861324
-            Y: -0.509921908
+            X: 0.278635353
+            Y: -0.561748
             Z: 1.1
           }
         }
@@ -2801,16 +3458,16 @@ Assets {
         Name: "Cabinet Door"
         Transform {
           Location {
-            X: -0.177734375
-            Y: -34.3837891
+            X: -0.17686972
+            Y: -34.3837585
             Z: 107.163086
           }
           Rotation {
             Yaw: -179.999954
           }
           Scale {
-            X: 0.786805332
-            Y: 0.875238419
+            X: 0.871230304
+            Y: 0.875249267
             Z: 0.617940307
           }
         }
@@ -3026,16 +3683,16 @@ Assets {
         Name: "Cabinet Door"
         Transform {
           Location {
-            X: -0.177734375
-            Y: -34.3837891
-            Z: 124.307129
+            X: -0.17578125
+            Y: -34.3828125
+            Z: 124.306641
           }
           Rotation {
             Yaw: -179.999954
           }
           Scale {
-            X: -0.786805332
-            Y: 0.875238419
+            X: -0.871230304
+            Y: 0.875249267
             Z: 0.617940307
           }
         }
@@ -3396,16 +4053,17 @@ Assets {
         Name: "Fantasy Book Open 01"
         Transform {
           Location {
-            Y: -35.5014648
-            Z: 184.150879
+            X: 0.0013974508
+            Y: -34.2245216
+            Z: 185.430023
           }
           Rotation {
             Roll: -45
           }
           Scale {
-            X: 0.900000036
-            Y: 0.900000036
-            Z: 0.7
+            X: 1
+            Y: 1
+            Z: 0.75
           }
         }
         ParentId: 12261870876898737825
@@ -5083,6 +5741,87 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_Neon3_Corner"
+      }
+    }
+    Assets {
+      Id: 16778242158514968268
+      Name: "Fantasy Spell Ingredient 009"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Ingredient_009"
+      }
+    }
+    Assets {
+      Id: 14436815055517145805
+      Name: "Office Pen 03"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_off_desktop_pen_04_ref"
+      }
+    }
+    Assets {
+      Id: 1168742253621117265
+      Name: "Rubber Dot Panels 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_scf_rubber_panels_001_uv"
+      }
+    }
+    Assets {
+      Id: 17713444884118919250
+      Name: "Metal Old Beaten Gold 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_gold_002"
+      }
+    }
+    Assets {
+      Id: 6033165249964280276
+      Name: "Basic Bean Thin Long"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prim_bean_thin_long_001_ref"
+      }
+    }
+    Assets {
+      Id: 16115905030413172164
+      Name: "Metal Basic 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_basic_001"
+      }
+    }
+    Assets {
+      Id: 17581722089548443612
+      Name: "Kunai Blade"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_jpn_kunai_blade_001"
+      }
+    }
+    Assets {
+      Id: 4576989693798119659
+      Name: "Frame Small 45 Degree Corner Wide - Bulb"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_3bulb_45degreeCorner_wide"
+      }
+    }
+    Assets {
+      Id: 5675675085224857253
+      Name: "Callout Sparkle"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_sparkles_volume_vfx"
       }
     }
     Assets {

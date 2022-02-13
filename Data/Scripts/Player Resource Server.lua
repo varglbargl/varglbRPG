@@ -78,8 +78,6 @@ function initResources(player, class)
   local maxStam = player:SetResource("MaxStamina", math.floor(35 + yourSpit / 12 + yourLevel / 2))
   player:SetResource("Stamina", maxStam)
 
-  player:SetResource("StoryProgress", 0)
-
   player.serverUserData["RecentlyDamaged"] = Task.Spawn(function()
     Task.Wait(1)
   end)

@@ -75,15 +75,15 @@ Assets {
         Name: "Candle Flame VFX"
         Transform {
           Location {
-            X: 40.2679
-            Y: 13.7185364
-            Z: 3.99986649
+            X: 40.2675781
+            Y: 13.71875
+            Z: 5
           }
           Rotation {
           }
           Scale {
-            X: 3
-            Y: 3
+            X: 2
+            Y: 2
             Z: 3
           }
         }
@@ -142,7 +142,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 1
+          Intensity: 2
           Color {
             R: 1
             G: 0.726868153
@@ -154,7 +154,7 @@ Assets {
           }
           Light {
             UseTemperature: true
-            Temperature: 2000
+            Temperature: 3000
             LocalLight {
               AttenuationRadius: 1000
               PointLight {
@@ -177,16 +177,16 @@ Assets {
         Name: "Candle Flame VFX"
         Transform {
           Location {
-            X: -41.0584564
-            Y: 14.3816833
-            Z: 3.74564362
+            X: -41.0585938
+            Y: 14.3828125
+            Z: 4
           }
           Rotation {
             Yaw: 44.8072968
           }
           Scale {
-            X: 3
-            Y: 3
+            X: 2
+            Y: 2
             Z: 3
           }
         }

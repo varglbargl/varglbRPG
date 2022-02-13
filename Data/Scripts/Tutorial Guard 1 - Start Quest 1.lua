@@ -19,5 +19,7 @@ return {
   -- 8
   {"Which is 10, by the way.", inline = true},
   -- 9
-  {"Kill 10 pyrosprites. Talk to the Commissary out in the field when you're done.", inline = true, acceptQuest = 1}
+  {"Kill 10 pyrosprites.", inline = true},
+  -- 10
+  {"Talk to the Commissarry out in the field when you're done.", append = true, acceptQuest = 1}
 }

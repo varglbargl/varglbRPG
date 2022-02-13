@@ -7,10 +7,6 @@ Assets {
     BaseMaterialId: 7210998986192987884
     ParameterOverrides {
       Overrides {
-        Name: "u_tiles"
-        Float: 2
-      }
-      Overrides {
         Name: "v_tiles"
         Float: 1
       }
@@ -20,7 +16,7 @@ Assets {
       }
       Overrides {
         Name: "damage_amount"
-        Float: 0.360512435
+        Float: 0.3
       }
       Overrides {
         Name: "roughness_multiplier"

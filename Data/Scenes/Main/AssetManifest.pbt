@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18411045162701228757
+  Name: "Wedge Convex - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_curved_convex_lg_001_ref"
+  }
+}
+Assets {
   Id: 18393437648231545508
   Name: "Urban Pipe Flange 01"
   PlatformAssetType: 1
@@ -113,6 +122,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_064"
+  }
+}
+Assets {
+  Id: 18203793883226836462
+  Name: "Urban Pipe Cap 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_pipes_acc_cap_001_ref"
   }
 }
 Assets {
@@ -275,6 +293,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wallpaper_fleurdelis_001_uv"
+  }
+}
+Assets {
+  Id: 17957118368943777641
+  Name: "Electric Surface"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_electrical_surface"
   }
 }
 Assets {
@@ -620,6 +647,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17581722089548443612
+  Name: "Kunai Blade"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_kunai_blade_001"
+  }
+}
+Assets {
   Id: 17569828963249235845
   Name: "Military Tank Historic Gear 01"
   PlatformAssetType: 1
@@ -959,6 +995,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_signbracket_round_001"
+  }
+}
+Assets {
+  Id: 16847584703734374253
+  Name: "Fantasy Castle Accessory Tower 01 - 12m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_acc_tower_001_12m"
+  }
+}
+Assets {
+  Id: 16823719499815718957
+  Name: "Fantasy Scroll 009"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Scroll_009"
   }
 }
 Assets {
@@ -1538,6 +1592,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15864537660089476386
+  Name: "Urban Damaged Rebar - Twisted Ends 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dest_rebar_003_ref"
+  }
+}
+Assets {
   Id: 15855459209962464402
   Name: "Urban Cup Juice Glass 01"
   PlatformAssetType: 1
@@ -1889,6 +1952,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15273416505610419964
+  Name: "Pipe - 45-Degree Long Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_curve45_005"
+  }
+}
+Assets {
   Id: 15269942661234643228
   Name: "Mushroom Stalk 01"
   PlatformAssetType: 2
@@ -2051,6 +2123,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14989849578789165716
+  Name: "Text 03: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_002"
+  }
+}
+Assets {
   Id: 14964967653464214432
   Name: "Decal Dirt Patch"
   PlatformAssetType: 14
@@ -2084,6 +2165,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_009"
+  }
+}
+Assets {
+  Id: 14906215094832826940
+  Name: "Marble Tiles Octagon Dot 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_marble_tiles_004_uv"
   }
 }
 Assets {
@@ -2183,6 +2273,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_soil_cracks_002"
+  }
+}
+Assets {
+  Id: 14753883978105432404
+  Name: "Pipe - Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter-pipe_002"
   }
 }
 Assets {
@@ -2303,6 +2402,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14592129416264196521
+  Name: "Square Column Topper 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_top_001"
+  }
+}
+Assets {
   Id: 14568202142325336728
   Name: "Sci-fi Gear Small 02"
   PlatformAssetType: 1
@@ -2411,6 +2519,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14384953621685186280
+  Name: "Whitebox Roof 01 Peak"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_roof_001_peak"
+  }
+}
+Assets {
   Id: 14360998166931460595
   Name: "Decal Spray Manticore 01"
   PlatformAssetType: 14
@@ -2453,6 +2570,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gravel_uncombed_001_uv_ref"
+  }
+}
+Assets {
+  Id: 14306160699733692858
+  Name: "Wedge Concave - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_curved_concave_lg_001_ref"
   }
 }
 Assets {
@@ -2591,6 +2717,24 @@ Assets {
   }
 }
 Assets {
+  Id: 14126234311846436490
+  Name: "Text 03: N"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_013"
+  }
+}
+Assets {
+  Id: 14114028965572804280
+  Name: "Gel Transparent No Spec"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_gel_nospec"
+  }
+}
+Assets {
   Id: 14103151946260239802
   Name: "Text 02: F"
   PlatformAssetType: 1
@@ -2678,6 +2822,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_sconce_001"
+  }
+}
+Assets {
+  Id: 13968277510180046425
+  Name: "Text 03: B"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_001"
   }
 }
 Assets {
@@ -2960,6 +3113,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13528925897984792083
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_4m"
+  }
+}
+Assets {
   Id: 13492321430178660931
   Name: "Sign Font 4 Hiragana: \343\202\234"
   PlatformAssetType: 1
@@ -3014,6 +3176,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13409317731589494114
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_lg"
+  }
+}
+Assets {
   Id: 13406387269294768400
   Name: "Mechanical Gears Squeaky 01 SFX"
   PlatformAssetType: 7
@@ -3065,6 +3236,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_couch_001"
+  }
+}
+Assets {
+  Id: 13311002747367836968
+  Name: "Text 03: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_018"
   }
 }
 Assets {
@@ -3344,6 +3524,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_001"
+  }
+}
+Assets {
+  Id: 12935729832526157312
+  Name: "Text 03: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_015"
   }
 }
 Assets {
@@ -3644,6 +3833,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12614998261616815328
+  Name: "Lightning VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_lightning"
+  }
+}
+Assets {
   Id: 12610149741243116648
   Name: "Urban Pipe Wrap 01"
   PlatformAssetType: 1
@@ -3785,6 +3983,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 12398432744558783965
+  Name: "Survival Letter 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Letter_001"
   }
 }
 Assets {
@@ -4118,6 +4325,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_wall_001_half_01_ref"
+  }
+}
+Assets {
+  Id: 11761871474221141479
+  Name: "Fantasy Castle Door 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_door_002"
   }
 }
 Assets {
@@ -4490,6 +4706,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11331788259819721745
+  Name: "Text 03: I"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_008"
+  }
+}
+Assets {
   Id: 11296147333297412169
   Name: "Stone Block Long"
   PlatformAssetType: 1
@@ -4571,6 +4796,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11181803205415589453
+  Name: "Text 03: L"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_011"
+  }
+}
+Assets {
   Id: 11180821767795272231
   Name: "Main Street Wall 01 - Half Window 01"
   PlatformAssetType: 1
@@ -4643,12 +4877,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11093792655205350563
+  Name: "Text 03: U"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_020"
+  }
+}
+Assets {
   Id: 11079179292347378394
   Name: "Heart - Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_heart_polished_001"
+  }
+}
+Assets {
+  Id: 11065996078471494903
+  Name: "Fantasy Letter 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Letter_001"
   }
 }
 Assets {
@@ -4895,6 +5147,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10710666038900677129
+  Name: "Fantasy Castle Trim - Battlement Corner 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_battlement_001_corner_01"
+  }
+}
+Assets {
   Id: 10662362392661442599
   Name: "Clover Patch 02"
   PlatformAssetType: 1
@@ -5063,6 +5324,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_nat_stick_001_ref"
+  }
+}
+Assets {
+  Id: 10278801252313196242
+  Name: "Fantasy Map 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Map_001"
   }
 }
 Assets {
@@ -5351,6 +5621,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_mil_corrugated_sheet_05_ref"
+  }
+}
+Assets {
+  Id: 9766458297516144745
+  Name: "Text 03: Y"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_024"
   }
 }
 Assets {
@@ -5972,6 +6251,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ring_faceted_001"
+  }
+}
+Assets {
+  Id: 8782047178714846734
+  Name: "Text 03: A"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_000"
   }
 }
 Assets {
@@ -6902,6 +7190,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7331044825408867756
+  Name: "Text 03: T"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_019"
+  }
+}
+Assets {
   Id: 7330805437951419401
   Name: "Street Light Pole 01"
   PlatformAssetType: 1
@@ -7028,6 +7325,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7125632330786398501
+  Name: "Swirling Trash Volume"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_falling_trash_volume_vfx"
+  }
+}
+Assets {
   Id: 7100154911750546343
   Name: "Humanoid 1 Cassidy Hair"
   PlatformAssetType: 26
@@ -7070,6 +7376,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_liana-vine_end_001_uv"
+  }
+}
+Assets {
+  Id: 7047250348589382256
+  Name: "Text 03: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_014"
   }
 }
 Assets {
@@ -7316,6 +7631,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6626345653419486677
+  Name: "Kunai Handle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_kunai_handle_001"
+  }
+}
+Assets {
   Id: 6609170247112378593
   Name: "Basic Pepper 01"
   PlatformAssetType: 1
@@ -7349,6 +7673,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_arched_001"
+  }
+}
+Assets {
+  Id: 6507936026144450687
+  Name: "Cylinder Chamfered Small - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_lg_rnd_001_ref"
   }
 }
 Assets {
@@ -7460,6 +7793,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6349210722306164864
+  Name: "Paper Burst VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_paper_burst"
+  }
+}
+Assets {
   Id: 6340633355072909413
   Name: "Ember Volume VFX"
   PlatformAssetType: 8
@@ -7520,6 +7862,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ivy_generic_003"
+  }
+}
+Assets {
+  Id: 6239925005696557282
+  Name: "Helix - Double 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_helix_double_001_ref"
   }
 }
 Assets {
@@ -7811,6 +8162,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5770722494384530191
+  Name: "Urban Damaged Rebar - Lattice 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mlt_rebar_001_ref"
+  }
+}
+Assets {
   Id: 5768666289788807117
   Name: "Gear - generic large five-spoked"
   PlatformAssetType: 1
@@ -7979,6 +8339,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_stairs_001"
+  }
+}
+Assets {
+  Id: 5547429124916428066
+  Name: "Survival Letter 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Letter_002"
   }
 }
 Assets {
@@ -8783,6 +9152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4342756216088781504
+  Name: "Fantasy Sword Blade 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_sword_002"
+  }
+}
+Assets {
   Id: 4338592646651934955
   Name: "Food Watermelon 01"
   PlatformAssetType: 2
@@ -8906,6 +9284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 4144428354458030884
+  Name: "Text 03: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_004"
   }
 }
 Assets {
@@ -9557,6 +9944,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3267405804825309696
+  Name: "Marble Tiles Rectangle 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_marble_tiles_003_uv"
+  }
+}
+Assets {
   Id: 3264446479341465724
   Name: "Roof Kawara 02"
   PlatformAssetType: 2
@@ -9800,6 +10196,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2873598925796447064
+  Name: "Fantasy Castle Floor 01 - 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_001_8m"
+  }
+}
+Assets {
   Id: 2862949331580361889
   Name: "Helix -  0.5 Pointed Tapered"
   PlatformAssetType: 1
@@ -9944,6 +10349,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2604133255106912125
+  Name: "Square Column Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_bottom_002"
+  }
+}
+Assets {
   Id: 2582620441980557288
   Name: "Fern 04"
   PlatformAssetType: 1
@@ -9977,6 +10391,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_shield_003"
+  }
+}
+Assets {
+  Id: 2559023754315626279
+  Name: "Japanese Temple Roof Spire 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_roof_spire_001_ref"
   }
 }
 Assets {
@@ -11123,6 +11546,15 @@ Assets {
   }
 }
 Assets {
+  Id: 758882503704066571
+  Name: "Fantasy Book Pile 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_book_pile_003_ref"
+  }
+}
+Assets {
   Id: 746100978138659337
   Name: "Animated Neon Sign "
   PlatformAssetType: 2
@@ -11147,6 +11579,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_wall_001_ref"
+  }
+}
+Assets {
+  Id: 710702439240067910
+  Name: "Text 03: M"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_012"
   }
 }
 Assets {
@@ -11330,6 +11771,15 @@ Assets {
   }
 }
 Assets {
+  Id: 432908280156878383
+  Name: "Fantasy Book Pile 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_book_pile_004_ref"
+  }
+}
+Assets {
   Id: 424268824470884812
   Name: "Text 05: V"
   PlatformAssetType: 1
@@ -11507,6 +11957,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_wall_int_001_door_01_wide_ref"
+  }
+}
+Assets {
+  Id: 128915504836861065
+  Name: "Text 03: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_017"
   }
 }
 Assets {

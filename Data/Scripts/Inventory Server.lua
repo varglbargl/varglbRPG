@@ -71,6 +71,7 @@ function initInventory(player)
   end
 
   Events.Broadcast("EquipmentChanged", player)
+  Events.Broadcast("EnterWorld", player)
 
   -- DEBUG!!
 
