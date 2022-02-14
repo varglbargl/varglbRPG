@@ -917,6 +917,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16984396610066357219
+  Name: "Urban Skylight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_skylight_001"
+  }
+}
+Assets {
   Id: 16956732760613111471
   Name: "Fantasy Castle Bannister 01 - Straight"
   PlatformAssetType: 1
@@ -1319,6 +1328,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_dish_set_chalice_001_ref"
+  }
+}
+Assets {
+  Id: 16312551826436656774
+  Name: "Guardrail - Curve 90\302\260 - 04m Radius"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_guardrail_001_curve90_r4m_ref"
   }
 }
 Assets {
@@ -2300,6 +2318,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_painted_white_001_uv"
+  }
+}
+Assets {
+  Id: 14749259093596140499
+  Name: "Urban Skylight Glass"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_skylight_glass_001"
   }
 }
 Assets {
@@ -5678,6 +5705,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9675776263369201294
+  Name: "Fantasy Pommel 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_pommel_003"
+  }
+}
+Assets {
   Id: 9662723091772095612
   Name: "Fantasy Castle Door 01"
   PlatformAssetType: 1
@@ -7658,6 +7694,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6591153063953060799
+  Name: "Horn Curved Double - Horizontal"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_horn_h_curved_double_001_ref"
+  }
+}
+Assets {
   Id: 6580181581630899162
   Name: "\"Quirky Space Sprinkles\" Music Construction Kit (Sections) 01"
   PlatformAssetType: 10
@@ -7763,6 +7808,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_brush_paint_001_ref"
+  }
+}
+Assets {
+  Id: 6392620657559934757
+  Name: "Guardrail 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_guardrail_001_4m_ref"
   }
 }
 Assets {
@@ -8693,6 +8747,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5036660505826216707
+  Name: "Pipe - 6-Sided Thin - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_sixsided_thin_001_ref"
+  }
+}
+Assets {
   Id: 5015035857367362998
   Name: "Rock Pile 002"
   PlatformAssetType: 1
@@ -8879,6 +8942,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_scf_insulation_panels_003_uv"
+  }
+}
+Assets {
+  Id: 4635713261114659639
+  Name: "Metal Door Hatch Slide 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_metal_door_hatch_slide_02a_Cue_ref"
   }
 }
 Assets {
@@ -9788,6 +9860,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_birch_002"
+  }
+}
+Assets {
+  Id: 3534649288519064314
+  Name: "Ring - Quarter Beveled Thin - Large "
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_ring_faceted_thin_lg_001_ref"
   }
 }
 Assets {
@@ -11681,6 +11762,15 @@ Assets {
   }
 }
 Assets {
+  Id: 568031628701959224
+  Name: "Pipe - 6-Sided - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_sixsided_001_ref"
+  }
+}
+Assets {
   Id: 559960959604540199
   Name: "Car Paint 01"
   PlatformAssetType: 2
@@ -11831,6 +11921,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_threesided_truncated_001"
+  }
+}
+Assets {
+  Id: 342424507106793774
+  Name: "Guardrail 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_guardrail_001_8m_ref"
   }
 }
 Assets {

@@ -16,8 +16,6 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 5268378683909117966
-        ChildIds: 12223482432692256525
         ChildIds: 12463226552153965338
         ChildIds: 10698398635422499106
         ChildIds: 4287706561839041646
@@ -31,6 +29,9 @@ Assets {
         ChildIds: 11422893905227011293
         ChildIds: 2375946896988961785
         ChildIds: 7548426460119299445
+        ChildIds: 12965700219664044133
+        ChildIds: 9081247381521406085
+        ChildIds: 2537885291342954325
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -45,136 +46,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 5268378683909117966
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: 29.1181641
-          }
-          Rotation {
-            Pitch: 90
-          }
-          Scale {
-            X: 0.200000018
-            Y: 0.2
-            Z: 0.49416
-          }
-        }
-        ParentId: 7762582345867277099
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14063351771684305097
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 2364051318523908784
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 12223482432692256525
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: -29.1191406
-          }
-          Rotation {
-            Pitch: -90
-          }
-          Scale {
-            X: 0.200000018
-            Y: 0.2
-            Z: 0.49416
-          }
-        }
-        ParentId: 7762582345867277099
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14063351771684305097
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 2364051318523908784
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -233,21 +104,22 @@ Assets {
       }
       Objects {
         Id: 10698398635422499106
-        Name: "Cylinder - Rounded"
+        Name: "Candle 03"
         Transform {
           Location {
-            X: -1.11914062
-            Y: -2.88769531
-            Z: 2.61743164
+            X: -0.98046875
+            Y: -7.3203125
+            Z: 6.34570312
           }
           Rotation {
-            Yaw: -179.999969
-            Roll: 44.9999733
+            Pitch: 14.9480667
+            Yaw: 15.4840555
+            Roll: 137.043304
           }
           Scale {
-            X: 0.0936666951
-            Y: 0.0936666
-            Z: 0.132232159
+            X: 0.527684808
+            Y: 0.527691483
+            Z: 0.949463189
           }
         }
         ParentId: 7762582345867277099
@@ -280,7 +152,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14706812211894318190
+            Id: 1423268074024780909
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -303,9 +175,9 @@ Assets {
         Name: "Manticore Logo"
         Transform {
           Location {
-            X: -1.11914062
-            Y: -7.58203125
-            Z: 7.31201172
+            X: -1.1171875
+            Y: -7.35742188
+            Z: 7.08740234
           }
           Rotation {
             Yaw: -179.999985
@@ -665,7 +537,7 @@ Assets {
       }
       Objects {
         Id: 6916716211354932252
-        Name: "Cone - Truncated Hollow Wide"
+        Name: "Cone - Hollow"
         Transform {
           Location {
             X: 32.1888
@@ -743,8 +615,8 @@ Assets {
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: -30.8232422
-            Y: -0.0720214844
+            X: -30.8242188
+            Y: -0.072265625
             Z: -0.264892578
           }
           Rotation {
@@ -753,9 +625,9 @@ Assets {
             Roll: -43.4178467
           }
           Scale {
-            X: -0.138044983
-            Y: 0.138030365
-            Z: 0.115444362
+            X: -0.138214439
+            Y: 0.138190106
+            Z: 0.0881372243
           }
         }
         ParentId: 7762582345867277099
@@ -818,8 +690,8 @@ Assets {
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: -30.0673828
-            Y: -0.0854492188
+            X: -30.0664062
+            Y: -0.0849609375
           }
           Rotation {
             Pitch: 54.0237122
@@ -827,9 +699,9 @@ Assets {
             Roll: -105.963425
           }
           Scale {
-            X: -0.193765506
-            Y: 0.193746582
-            Z: 0.117222
+            X: -0.188515514
+            Y: 0.188497066
+            Z: 0.114045888
           }
         }
         ParentId: 7762582345867277099
@@ -902,9 +774,9 @@ Assets {
             Roll: -115.433228
           }
           Scale {
-            X: -0.104896322
-            Y: 0.104885221
-            Z: 0.0877227113
+            X: -0.115919739
+            Y: 0.115907513
+            Z: 0.0969413668
           }
         }
         ParentId: 7762582345867277099
@@ -967,18 +839,18 @@ Assets {
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: -30.0673828
-            Y: -0.0854492188
+            X: -30.0664062
+            Y: -0.0849609375
           }
           Rotation {
-            Pitch: 133.445023
-            Yaw: 101.49408
-            Roll: -84.2641296
+            Pitch: 46.5549583
+            Yaw: -78.5059204
+            Roll: 95.7358627
           }
           Scale {
-            X: -0.165827543
-            Y: 0.165811405
-            Z: 0.100320406
+            X: -0.160092339
+            Y: 0.160076708
+            Z: 0.0968507826
           }
         }
         ParentId: 7762582345867277099
@@ -1038,7 +910,7 @@ Assets {
       }
       Objects {
         Id: 7548426460119299445
-        Name: "Cone - Truncated Hollow Wide"
+        Name: "Cone - Hollow"
         Transform {
           Location {
             X: -32.1875
@@ -1051,9 +923,9 @@ Assets {
             Roll: -71.6520386
           }
           Scale {
-            X: -0.0801495
-            Y: 0.0801375732
-            Z: 0.283932656
+            X: -0.083254762
+            Y: 0.0832268447
+            Z: 0.333718032
           }
         }
         ParentId: 7762582345867277099
@@ -1111,23 +983,182 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
-    }
-    Assets {
-      Id: 2364051318523908784
-      Name: "Cone - Truncated Hollow Wide Thick"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cone_truncated_hollow_005"
+      Objects {
+        Id: 12965700219664044133
+        Name: "Gift Ribbon 02"
+        Transform {
+          Location {
+            X: 0.27734375
+            Y: -9.70019531
+            Z: 1.63085938
+          }
+          Rotation {
+            Pitch: -51.315918
+            Yaw: -68.6045532
+            Roll: -12.4625549
+          }
+          Scale {
+            X: 0.145301819
+            Y: 0.233955696
+            Z: 0.152896851
+          }
+        }
+        ParentId: 7762582345867277099
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9900571876693079540
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
-    }
-    Assets {
-      Id: 14063351771684305097
-      Name: "Parchment 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_fan_parchment_001_uv"
+      Objects {
+        Id: 9081247381521406085
+        Name: "Gift Ribbon 01"
+        Transform {
+          Location {
+            X: -1.31640625
+            Y: -7.81933594
+            Z: 4.05688477
+          }
+          Rotation {
+            Pitch: -37.46521
+            Yaw: -120.786987
+            Roll: 27.3984165
+          }
+          Scale {
+            X: 0.243283
+            Y: 0.233882681
+            Z: 0.175391242
+          }
+        }
+        ParentId: 7762582345867277099
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15956781559798650897
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 2537885291342954325
+        Name: "Cylinder Waisted"
+        Transform {
+          Location {
+            Z: 0.000244140625
+          }
+          Rotation {
+            Pitch: -117.78064
+            Yaw: -89.9988098
+            Roll: 90
+          }
+          Scale {
+            X: 0.196420908
+            Y: 0.196411714
+            Z: 0.580288231
+          }
+        }
+        ParentId: 7762582345867277099
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14063351771684305097
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.25
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18260297357775006360
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     Assets {
@@ -1140,12 +1171,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14706812211894318190
-      Name: "Cylinder - Rounded"
+      Id: 1423268074024780909
+      Name: "Candle 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_rounded_002"
+        AssetId: "sm_prop_fantasy_candle_002"
       }
     }
     Assets {
@@ -1176,6 +1207,15 @@ Assets {
       }
     }
     Assets {
+      Id: 14063351771684305097
+      Name: "Parchment 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_fan_parchment_001_uv"
+      }
+    }
+    Assets {
       Id: 1915461248412394696
       Name: "Invisible"
       PlatformAssetType: 2
@@ -1200,6 +1240,33 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cone-hollow_001"
+      }
+    }
+    Assets {
+      Id: 9900571876693079540
+      Name: "Gift Ribbon 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_gen_ribbon_gift_002_ref"
+      }
+    }
+    Assets {
+      Id: 15956781559798650897
+      Name: "Gift Ribbon 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_gen_ribbon_gift_001_ref"
+      }
+    }
+    Assets {
+      Id: 18260297357775006360
+      Name: "Cylinder Waisted"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prim_cylinder_waisted_001_ref"
       }
     }
     PrimaryAssetId {

@@ -7,7 +7,7 @@ Assets {
       RootId: 13541292713881649846
       Objects {
         Id: 13541292713881649846
-        Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
+        Name: "Indoor Wall Sconce - Fancy"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6730020118492398320
+        ParentId: 4781671109827199097
         ChildIds: 7136287503230283704
         ChildIds: 14300209175874161436
         ChildIds: 11588876891386466396
@@ -41,9 +41,6 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
-            X: 7.62939453e-06
-            Y: 33.8146973
-            Z: 43.9746323
           }
           Rotation {
           }
@@ -78,11 +75,11 @@ Assets {
         Transform {
           Location {
             X: -41.0585938
-            Y: 14.3828125
-            Z: 4
+            Y: 48.1972656
+            Z: 47.9746094
           }
           Rotation {
-            Yaw: 44.8072968
+            Yaw: 44.8072815
           }
           Scale {
             X: 2
@@ -123,9 +120,9 @@ Assets {
         Name: "Candle Flame VFX"
         Transform {
           Location {
-            X: 40.2675781
-            Y: 13.71875
-            Z: 5
+            X: 40.265625
+            Y: 47.5332031
+            Z: 48.9746094
           }
           Rotation {
           }
@@ -168,8 +165,8 @@ Assets {
         Name: "Point Light"
         Transform {
           Location {
-            Y: 15.0006094
-            Z: 3
+            Y: 50
+            Z: 50
           }
           Rotation {
           }
@@ -190,7 +187,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 2
+          Intensity: 3
           Color {
             R: 1
             G: 0.726868153
@@ -247,14 +244,17 @@ Assets {
             Bool: true
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 17713444884118919250
-            }
-          }
-          Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.4
+              G: 0.207999989
+              B: 0.16
+              A: 1
+            }
           }
         }
         Collidable_v2 {
