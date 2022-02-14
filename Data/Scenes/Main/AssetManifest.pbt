@@ -5012,6 +5012,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10908045253042022101
+  Name: "Craftsman Roof 02 Arch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_002_arch"
+  }
+}
+Assets {
   Id: 10906249897613043233
   Name: "Wedge - Convex Polished"
   PlatformAssetType: 1
@@ -5603,6 +5612,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Moon"
+  }
+}
+Assets {
+  Id: 9860297392280680728
+  Name: "Trim Crenellated 8m 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trim_crenellated_6m_002"
   }
 }
 Assets {
@@ -6431,6 +6449,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_reinforced_150cm_001"
+  }
+}
+Assets {
+  Id: 8548364689825372074
+  Name: "Plane Hexagon - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_hexagon_001"
   }
 }
 Assets {
@@ -9707,6 +9734,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dmg_floor_001_8m_str_01_ref"
+  }
+}
+Assets {
+  Id: 3733180363529356452
+  Name: "Fantasy Castle Pillar Wall 01 Arch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_wall_001_arch_01"
   }
 }
 Assets {

@@ -1,302 +1,34 @@
 Entries {
   Key {
-    StringVar: "gear"
+    StringVar: "xps"
   }
   SimpleValue {
     Table {
       Entries {
         Key {
-          StringVar: "f7"
+          IntVar: 1
         }
         SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "s04g31w09"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "9A9DF36420DB2BB2"
-              }
-            }
-          }
+          IntVar: 6
         }
       }
       Entries {
         Key {
-          StringVar: "f8"
+          IntVar: 3
         }
         SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "g07s24w07"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "B01C819EC49B7319"
-              }
-            }
-          }
+          IntVar: 0
         }
       }
       Entries {
         Key {
-          StringVar: "secondary"
+          IntVar: 4
         }
         SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "s04w10w05"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "22F3CB0EBB9F5E1E"
-              }
-            }
-          }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "f6"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "w09"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "9A9DF36420DB2BB2"
-              }
-            }
-          }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "f5"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "w10"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "2266994F7AE42530"
-              }
-            }
-          }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "f4"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "w17"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "2266994F7AE42530"
-              }
-            }
-          }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "primary"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "w12w14s05"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "A19CF6663013190E"
-              }
-            }
-          }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "f1"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "g08s07"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "B01C819EC49B7319"
-              }
-            }
-          }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "f2"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "w01"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "B01C819EC49B7319"
-              }
-            }
-          }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "f3"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "s17"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "2266994F7AE42530"
-              }
-            }
-          }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "glider"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                StringVar: "enchant"
-              }
-              SimpleValue {
-                StringVar: "w01g03"
-              }
-            }
-            Entries {
-              Key {
-                StringVar: "templateId"
-              }
-              SimpleValue {
-                StringVar: "B8422247EA13AE71"
-              }
-            }
-          }
+          IntVar: 0
         }
       }
     }
-  }
-}
-Entries {
-  Key {
-    StringVar: "qLog"
-  }
-  SimpleValue {
-    Table {
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "gp"
-  }
-  SimpleValue {
-    IntVar: 0
   }
 }
 Entries {
@@ -305,47 +37,6 @@ Entries {
   }
   SimpleValue {
     StringVar: "11110010010000000110010000101010100000010"
-  }
-}
-Entries {
-  Key {
-    StringVar: "lvls"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          IntVar: 1
-        }
-        SimpleValue {
-          IntVar: 1
-        }
-      }
-      Entries {
-        Key {
-          IntVar: 3
-        }
-        SimpleValue {
-          IntVar: 1
-        }
-      }
-      Entries {
-        Key {
-          IntVar: 4
-        }
-        SimpleValue {
-          IntVar: 1
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "saveVersion"
-  }
-  SimpleValue {
-    IntVar: 1
   }
 }
 Entries {
@@ -1334,20 +1025,23 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "loc"
+    StringVar: "saveVersion"
   }
   SimpleValue {
-    Vector4 {
-      X: 40334.6797
-      Y: -13989.0225
-      Z: -2332.29785
-      W: -54.5405464
-    }
+    IntVar: 1
   }
 }
 Entries {
   Key {
-    StringVar: "xps"
+    StringVar: "gp"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "lvls"
   }
   SimpleValue {
     Table {
@@ -1356,7 +1050,7 @@ Entries {
           IntVar: 1
         }
         SimpleValue {
-          IntVar: 6
+          IntVar: 1
         }
       }
       Entries {
@@ -1364,7 +1058,7 @@ Entries {
           IntVar: 3
         }
         SimpleValue {
-          IntVar: 0
+          IntVar: 1
         }
       }
       Entries {
@@ -1372,9 +1066,315 @@ Entries {
           IntVar: 4
         }
         SimpleValue {
-          IntVar: 0
+          IntVar: 1
         }
       }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "gear"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "glider"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "w01g03"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "B8422247EA13AE71"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "f8"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "g07s24w07"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "B01C819EC49B7319"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "f7"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "s04g31w09"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "9A9DF36420DB2BB2"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "primary"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "w12w14s05"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "A19CF6663013190E"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "f5"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "w10"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "2266994F7AE42530"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "f2"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "w01"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "B01C819EC49B7319"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "f1"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "g08s07"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "B01C819EC49B7319"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "f3"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "s17"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "2266994F7AE42530"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "f4"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "w17"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "2266994F7AE42530"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "secondary"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "s04w10w05"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "22F3CB0EBB9F5E1E"
+              }
+            }
+          }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "f6"
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "enchant"
+              }
+              SimpleValue {
+                StringVar: "w09"
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "templateId"
+              }
+              SimpleValue {
+                StringVar: "9A9DF36420DB2BB2"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "loc"
+  }
+  SimpleValue {
+    Vector4 {
+      X: 41969.793
+      Y: -15000.3613
+      Z: -1733.0144
+      W: 152.285172
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "qLog"
+  }
+  SimpleValue {
+    Table {
     }
   }
 }

@@ -10,7 +10,7 @@ Assets {
         Name: "Indoor Wall Sconce - Fancy"
         Transform {
           Scale {
-            X: 1
+            X: -1
             Y: 1
             Z: 1
           }
@@ -209,8 +209,8 @@ Assets {
                 UseFallOffExponent: true
               }
             }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
+            MaxDrawDistance: 6500
+            MaxDistanceFadeRange: 1500
           }
         }
         NetworkRelevanceDistance {
