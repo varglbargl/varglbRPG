@@ -14844,6 +14844,7 @@ Assets {
       AssetId: "Main_Street_Building_02_Template"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
+  VirtualFolderPath: "Props"
   VirtualFolderPath: "Tilesets"
 }

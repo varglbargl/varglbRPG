@@ -1,43 +1,34 @@
 Assets {
-  Id: 13376143235675928886
-  Name: "Wooden Retaining Wall (Small)"
+  Id: 6105540880987235193
+  Name: "Ceiling Fan Lamp"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 2123190639582474161
+      RootId: 11635338251233262539
       Objects {
-        Id: 2123190639582474161
-        Name: "Wooden Retaining Wall (Small)"
+        Id: 11635338251233262539
+        Name: "Ceiling Fan Lamp"
         Transform {
           Scale {
-            X: 0.87904793
-            Y: 0.87904793
-            Z: 0.87904793
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 10556523551069437569
-        ChildIds: 8368675986786247606
-        ChildIds: 18338144505522702229
-        ChildIds: 2211740605276857780
-        ChildIds: 5697632405992156014
-        ChildIds: 3506666399236096469
-        ChildIds: 2238975545543536295
-        ChildIds: 13892414234167592877
-        ChildIds: 12436751490734152276
-        ChildIds: 18442867593307293437
-        ChildIds: 9208512273073530711
-        ChildIds: 13634202276598703492
-        ChildIds: 8296355480676876250
-        ChildIds: 767669828905821233
-        ChildIds: 13592428479604620902
-        ChildIds: 18220022780666105934
-        ChildIds: 17693827126402969142
-        ChildIds: 10446278269086435048
-        ChildIds: 9407804433019460621
-        ChildIds: 2865867407182683115
-        ChildIds: 3711069365505178181
-        ChildIds: 13331986347065781348
-        ChildIds: 1367894155412658588
+        ParentId: 4781671109827199097
+        ChildIds: 12095996647217826944
+        ChildIds: 3744561925528287865
+        ChildIds: 4954562841355223674
+        ChildIds: 10872374027519532286
+        ChildIds: 2670922456247971324
+        ChildIds: 1223193972540142866
+        ChildIds: 18137619976566864783
+        ChildIds: 7612951395057826789
+        ChildIds: 6884080724464798271
+        ChildIds: 14865475990360444777
+        ChildIds: 6852148850044682903
+        ChildIds: 4282818115072499296
+        ChildIds: 1410044204307933638
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -58,51 +49,204 @@ Assets {
         }
       }
       Objects {
-        Id: 8368675986786247606
-        Name: "Cone - Truncated Wide"
+        Id: 12095996647217826944
+        Name: "ClientContext"
         Transform {
           Location {
-            X: 135.696045
-            Y: -36.4160156
-            Z: 58.7507324
           }
           Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051252
-            Roll: -9.1307621
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: 5.64408684
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
+        ChildIds: 12617382975217801145
+        ChildIds: 14116325505573487929
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 12617382975217801145
+        Name: "Group"
+        Transform {
+          Location {
+            Z: -146
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12095996647217826944
+        ChildIds: 10594304794983211145
+        ChildIds: 7700160578087336263
+        ChildIds: 13174007823754863035
+        ChildIds: 15473279688865142402
+        ChildIds: 8190914347235348511
+        ChildIds: 3084025455760335476
+        ChildIds: 9796061552785341462
+        ChildIds: 7163526269201784751
+        ChildIds: 14271688534065339524
+        ChildIds: 5995187954765293841
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 10594304794983211145
+        Name: "Simple Rotate Parent"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12617382975217801145
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Speed"
+            Vector {
+              Z: -1
+            }
+          }
+          Overrides {
+            Name: "cs:IsLocal"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5358125184516124331
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 7700160578087336263
+        Name: "Japanese - Stand Katana - Back 01"
+        Transform {
+          Location {
+            X: -30.171875
+            Y: -73.5087891
+            Z: -15.0160522
+          }
+          Rotation {
+            Pitch: 7.22279501
+            Yaw: 90.1371613
+            Roll: -83.1918
+          }
+          Scale {
+            X: 1.70000017
+            Y: 0.3
+            Z: 1.2
+          }
+        }
+        ParentId: 12617382975217801145
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12446131267530965574
+              Id: 16497610927948824042
             }
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 9636406107902119141
+            }
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Name: "ma:Shared_Detail2:utile"
+            Float: 8
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 8
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 3566171127505639708
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 16
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
             Color {
-              R: 0.66
-              G: 0.466455
-              B: 0.40194
+              R: 0.338000029
+              G: 0.118475899
+              B: 0.031687282
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.681000054
+              G: 0.618177831
+              B: 0.589065075
               A: 1
             }
           }
@@ -121,7 +265,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 7948167637451889616
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -140,37 +284,137 @@ Assets {
         }
       }
       Objects {
-        Id: 18338144505522702229
-        Name: "Decal Wood Ends Variations"
+        Id: 13174007823754863035
+        Name: "Frame Small Straight - Neon 1 Sided Ending"
         Transform {
           Location {
-            X: 132.9104
-            Y: -80.8398438
-            Z: 337.425293
+            X: -5.15234375
+            Y: -14.7060547
+            Z: -24.671875
           }
           Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051252
-            Roll: -9.1307621
+            Pitch: 5.83348656
+            Yaw: -90.8499756
+            Roll: -98.5310669
           }
           Scale {
-            X: 0.913404346
-            Y: 0.913404346
-            Z: 0.0284019187
+            X: 1.08912098
+            Y: 1.00000179
+            Z: 1
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 12617382975217801145
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
+            Name: "ma:Font_Neon:id"
+            AssetReference {
+              Id: 5931631907172490823
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7591680237985143139
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 15473279688865142402
+        Name: "Japanese - Stand Katana - Back 01"
+        Transform {
+          Location {
+            X: -73.1757812
+            Y: 30.4023438
+            Z: -16.1547852
+          }
+          Rotation {
+            Pitch: 8.48652363
+            Yaw: 0.0234145578
+            Roll: -84.1015625
+          }
+          Scale {
+            X: 1.70000017
+            Y: 0.3
+            Z: 1.2
+          }
+        }
+        ParentId: 12617382975217801145
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16497610927948824042
+            }
           }
           Overrides {
-            Name: "bp:Color"
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 9636406107902119141
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 3566171127505639708
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 16
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
             Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
+              R: 0.338000029
+              G: 0.118475899
+              B: 0.031687282
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.681000054
+              G: 0.618177831
+              B: 0.589065075
               A: 1
             }
           }
@@ -187,69 +431,549 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
+        CoreMesh {
+          MeshAsset {
+            Id: 7948167637451889616
           }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 8190914347235348511
+        Name: "Urban Pipe Cap 03"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: 1.08277619
+            Roll: 0.179713547
+          }
+          Scale {
+            X: 0.815887392
+            Y: 0.815887392
+            Z: 0.718151927
+          }
+        }
+        ParentId: 12617382975217801145
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12632251234297570874
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 3084025455760335476
+        Name: "Frame Small Straight - Neon 1 Sided Ending"
+        Transform {
+          Location {
+            X: 15.0898438
+            Y: -5.69433594
+            Z: -24.3175049
+          }
+          Rotation {
+            Pitch: 6.75377274
+            Yaw: -0.722686768
+            Roll: -97.2736206
+          }
+          Scale {
+            X: 1.08912098
+            Y: 1.00000179
+            Z: 1
+          }
+        }
+        ParentId: 12617382975217801145
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font_Neon:id"
+            AssetReference {
+              Id: 5931631907172490823
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7591680237985143139
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 9796061552785341462
+        Name: "Frame Small Straight - Neon 1 Sided Ending"
+        Transform {
+          Location {
+            X: 6.08203125
+            Y: 14.5527344
+            Z: -24.5515137
+          }
+          Rotation {
+            Pitch: 5.50206518
+            Yaw: 89.3652954
+            Roll: -96.3503418
+          }
+          Scale {
+            X: 1.08912098
+            Y: 1.00000179
+            Z: 1
+          }
+        }
+        ParentId: 12617382975217801145
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font_Neon:id"
+            AssetReference {
+              Id: 5931631907172490823
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7591680237985143139
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 7163526269201784751
+        Name: "Japanese - Stand Katana - Back 01"
+        Transform {
+          Location {
+            X: 73.734375
+            Y: -30.4951172
+            Z: -13.1871948
+          }
+          Rotation {
+            Pitch: 6.32097101
+            Yaw: 179.9767
+            Roll: -84.4640198
+          }
+          Scale {
+            X: 1.70000017
+            Y: 0.3
+            Z: 1.2
+          }
+        }
+        ParentId: 12617382975217801145
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16497610927948824042
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 9636406107902119141
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 3566171127505639708
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 16
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.338000029
+              G: 0.118475899
+              B: 0.031687282
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.681000054
+              G: 0.618177831
+              B: 0.589065075
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7948167637451889616
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14271688534065339524
+        Name: "Frame Small Straight - Neon 1 Sided Ending"
+        Transform {
+          Location {
+            X: -14.1640625
+            Y: 5.54003906
+            Z: -24.9057617
+          }
+          Rotation {
+            Pitch: 4.58373976
+            Yaw: 179.244293
+            Roll: -97.6066589
+          }
+          Scale {
+            X: 1.08912098
+            Y: 1.00000179
+            Z: 1
+          }
+        }
+        ParentId: 12617382975217801145
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font_Neon:id"
+            AssetReference {
+              Id: 5931631907172490823
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7591680237985143139
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 5995187954765293841
+        Name: "Japanese - Stand Katana - Back 01"
+        Transform {
+          Location {
+            X: 30.7265625
+            Y: 73.4169922
+            Z: -14.3259888
+          }
+          Rotation {
+            Pitch: 7.58213091
+            Yaw: -90.1440125
+            Roll: -85.3756104
+          }
+          Scale {
+            X: 1.70000017
+            Y: 0.3
+            Z: 1.2
+          }
+        }
+        ParentId: 12617382975217801145
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16497610927948824042
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 9636406107902119141
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 3566171127505639708
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 16
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.338000029
+              G: 0.118475899
+              B: 0.031687282
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.681000054
+              G: 0.618177831
+              B: 0.589065075
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7948167637451889616
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14116325505573487929
+        Name: "Point Light"
+        Transform {
+          Location {
+            Z: -181.837708
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12095996647217826944
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 1
+          Color {
+            R: 1
+            G: 0.726868153
+            B: 0.477918148
+            A: 1
+          }
+          CastShadows: true
+          VolumetricIntensity: 5
           TeamSettings {
           }
-          DecalBP {
+          Light {
+            UseTemperature: true
+            Temperature: 3000
+            LocalLight {
+              AttenuationRadius: 1250
+              PointLight {
+                SourceRadius: 50
+                SoftSourceRadius: 100
+                FallOffExponent: 8
+              }
+            }
+            MaxDrawDistance: 6500
+            MaxDistanceFadeRange: 1500
           }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
-        Id: 2211740605276857780
-        Name: "Cone - Truncated Wide"
+        Id: 3744561925528287865
+        Name: "Urban Office Ceiling Lamp - Mount 01"
         Transform {
           Location {
-            X: 223.516479
-            Y: -108.253906
-            Z: 359.766968
+            Z: -8
           }
           Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051233
-            Roll: -9.13075829
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: -7.74460411
+            X: 1.5
+            Y: 1.5
+            Z: 1.5
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 12446131267530965574
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.791
-              G: 0.559039235
-              B: 0.481719
-              A: 1
+              Id: 5931631907172490823
             }
           }
         }
@@ -267,7 +991,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 4165763635383205223
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -286,115 +1010,28 @@ Assets {
         }
       }
       Objects {
-        Id: 5697632405992156014
-        Name: "Decal Wood Ends Variations"
+        Id: 4954562841355223674
+        Name: "Fantasy Chain - Straight 2m 02"
         Transform {
           Location {
-            X: 224.811752
-            Y: -107.913712
-            Z: 359.355743
+            Z: -26
           }
           Rotation {
-            Pitch: -1.54443359
-            Yaw: -13.8051147
-            Roll: -9.13076782
           }
           Scale {
-            X: 1.13786066
-            Y: 1.13786066
-            Z: 0.0353812873
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
         UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 3506666399236096469
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: 135.835083
-            Y: -59.75
-            Z: 214.959229
-          }
-          Rotation {
-            Pitch: -1.5444423
-            Yaw: -13.8051548
-            Roll: -9.13076115
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15614674765095447048
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.709000051
-              G: 0.709000051
-              B: 0.709000051
+              R: 0.1
+              G: 0.1
+              B: 0.1
               A: 1
             }
           }
@@ -413,7 +1050,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12153393220106925973
+            Id: 828211681903408677
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -432,51 +1069,146 @@ Assets {
         }
       }
       Objects {
-        Id: 2238975545543536295
-        Name: "Cone - Truncated Wide"
+        Id: 10872374027519532286
+        Name: "Urban Pipe Flange 01"
         Transform {
           Location {
-            X: 223.620682
-            Y: -86.7058411
-            Z: 222.467041
+            Z: -139
           }
           Rotation {
-            Pitch: -1.54443359
-            Yaw: -13.8051453
-            Roll: -9.13076782
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15614674765095447048
+              Id: 5931631907172490823
             }
           }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18393437648231545508
           }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
           }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 2670922456247971324
+        Name: "Urban Pipe Cap 03"
+        Transform {
+          Location {
+            Z: -158.436829
+          }
+          Rotation {
+            Pitch: 1.08277619
+            Roll: 0.179713532
+          }
+          Scale {
+            X: 0.283460081
+            Y: 0.283491135
+            Z: 0.264954358
+          }
+        }
+        ParentId: 11635338251233262539
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12632251234297570874
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 1223193972540142866
+        Name: "Japanese Paper Lantern Simple 02"
+        Transform {
+          Location {
+            X: 0.13671875
+            Y: -0.135742188
+            Z: -167.336731
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: -14.0362635
+            Roll: 30.963707
+          }
+          Scale {
+            X: 0.13093777
+            Y: 0.13093777
+            Z: 0.13093777
+          }
+        }
+        ParentId: 11635338251233262539
+        UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5931631907172490823
+            }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.709000051
-              G: 0.709000051
-              B: 0.709000051
+              R: 5
+              G: 4.10000038
+              B: 3.50000024
               A: 1
             }
           }
@@ -495,12 +1227,13 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12153393220106925973
+            Id: 5220410744672452215
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -514,52 +1247,119 @@ Assets {
         }
       }
       Objects {
-        Id: 13892414234167592877
-        Name: "Cone - Truncated Wide"
+        Id: 18137619976566864783
+        Name: "Japanese Stone Lantern Roof Small 01"
         Transform {
           Location {
-            X: 135.974
-            Y: -57.8964844
-            Z: 203.562256
+            Z: -155.48468
           }
           Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051863
-            Roll: -9.13076
+            Yaw: 44.9999924
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.220000014
+            Y: 0.220000014
+            Z: 0.440000027
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 15614674765095447048
+              Id: 5931631907172490823
             }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.709000051
-              G: 0.709000051
-              B: 0.709000051
+              R: 0.0423499867
+              G: 0.231
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6388784083017065946
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11049358012930972197
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 7612951395057826789
+        Name: "Clay Form 14"
+        Transform {
+          Location {
+            X: -13.1992188
+            Z: -163.815125
+          }
+          Rotation {
+            Yaw: 90
+            Roll: -119.651482
+          }
+          Scale {
+            X: 0.262109518
+            Y: 0.219994366
+            Z: 0.278247446
+          }
+        }
+        ParentId: 11635338251233262539
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5931631907172490823
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.0423499867
+              G: 0.231
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6388784083017065946
             }
           }
         }
@@ -577,12 +1377,13 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12153393220106925973
+            Id: 10118084408177162879
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -596,52 +1397,44 @@ Assets {
         }
       }
       Objects {
-        Id: 12436751490734152276
-        Name: "Cone - Truncated Wide"
+        Id: 6884080724464798271
+        Name: "Clay Form 14"
         Transform {
           Location {
-            X: 223.759079
-            Y: -84.8519669
-            Z: 211.070099
+            Y: -13.2001953
+            Z: -163.815125
           }
           Rotation {
-            Pitch: -1.54443359
-            Yaw: -13.8051758
-            Roll: -9.13076782
+            Pitch: 6.83018879e-06
+            Yaw: -179.999954
+            Roll: -119.651497
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.262109518
+            Y: 0.219994366
+            Z: 0.278247446
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 15614674765095447048
+              Id: 5931631907172490823
             }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.709000051
-              G: 0.709000051
-              B: 0.709000051
+              R: 0.0423499867
+              G: 0.231
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6388784083017065946
             }
           }
         }
@@ -659,12 +1452,13 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12153393220106925973
+            Id: 10118084408177162879
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -678,52 +1472,43 @@ Assets {
         }
       }
       Objects {
-        Id: 18442867593307293437
-        Name: "Cone - Truncated Wide"
+        Id: 14865475990360444777
+        Name: "Clay Form 14"
         Transform {
           Location {
-            X: -36.9178467
-            Y: 17.7148438
-            Z: 40.8408203
+            X: 13.1992188
+            Z: -163.815125
           }
           Rotation {
-            Pitch: -2.51580453
-            Yaw: -27.5551796
-            Roll: -3.77935863
+            Yaw: -89.999939
+            Roll: -119.651451
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: 5.64408684
+            X: 0.262109518
+            Y: 0.219994366
+            Z: 0.278247446
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 12446131267530965574
+              Id: 5931631907172490823
             }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.66
-              G: 0.466455
-              B: 0.40194
+              R: 0.0423499867
+              G: 0.231
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6388784083017065946
             }
           }
         }
@@ -741,12 +1526,13 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 10118084408177162879
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -760,116 +1546,44 @@ Assets {
         }
       }
       Objects {
-        Id: 9208512273073530711
-        Name: "Decal Wood Ends Variations"
+        Id: 6852148850044682903
+        Name: "Clay Form 14"
         Transform {
           Location {
-            X: -33.7672119
-            Y: -3.79492188
-            Z: 322.208984
+            Y: 13.2001953
+            Z: -163.815125
           }
           Rotation {
-            Pitch: -2.51580453
-            Yaw: -27.5551796
-            Roll: -3.77935863
+            Pitch: 6.83018879e-06
+            Yaw: 1.7165338e-06
+            Roll: -119.651497
           }
           Scale {
-            X: 0.913404346
-            Y: 0.913404346
-            Z: 0.0284019187
+            X: 0.262109518
+            Y: 0.219994366
+            Z: 0.278247446
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 13634202276598703492
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: 49.1474609
-            Y: -50.0605469
-            Z: 343.302612
-          }
-          Rotation {
-            Pitch: -2.51580453
-            Yaw: -27.5551834
-            Roll: -3.77935863
-          }
-          Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: -7.74460411
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 12446131267530965574
+              Id: 5931631907172490823
             }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.791
-              G: 0.559039235
-              B: 0.481719
+              R: 0.0423499867
+              G: 0.231
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6388784083017065946
             }
           }
         }
@@ -887,12 +1601,13 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 10118084408177162879
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -906,116 +1621,44 @@ Assets {
         }
       }
       Objects {
-        Id: 8296355480676876250
-        Name: "Decal Wood Ends Variations"
+        Id: 4282818115072499296
+        Name: "Frame Small 45 Degree Corner Sharp - Neon"
         Transform {
           Location {
-            X: 49.6325531
-            Y: -48.8402252
-            Z: 342.917053
+            X: -9.265625
+            Y: -14.3408203
+            Z: -174.082092
           }
           Rotation {
-            Pitch: -2.51580811
-            Yaw: -27.5551758
-            Roll: -3.77935791
+            Yaw: -44.9999962
           }
           Scale {
-            X: 1.13788962
-            Y: 1.13788962
-            Z: 0.0353821963
+            X: 0.55
+            Y: 0.55
+            Z: 0.55
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 767669828905821233
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: -35.1502686
-            Y: 2.98632812
-            Z: 206.734131
-          }
-          Rotation {
-            Pitch: -2.5157907
-            Yaw: -27.5551682
-            Roll: -3.77935863
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 15614674765095447048
+              Id: 5931631907172490823
             }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.709000051
-              G: 0.709000051
-              B: 0.709000051
+              R: 1
+              G: 0.820000052
+              B: 0.700000048
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Neon:id"
+            AssetReference {
+              Id: 5931631907172490823
             }
           }
         }
@@ -1033,12 +1676,13 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12153393220106925973
+            Id: 6117463310004548829
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -1052,52 +1696,44 @@ Assets {
         }
       }
       Objects {
-        Id: 13592428479604620902
-        Name: "Cone - Truncated Wide"
+        Id: 1410044204307933638
+        Name: "Frame Small 45 Degree Corner Sharp - Neon"
         Transform {
           Location {
-            X: 48.1203613
-            Y: -38.4179688
-            Z: 175.13208
+            X: 9.296875
+            Y: 14.1357422
+            Z: -174.167542
           }
           Rotation {
-            Pitch: -2.5157907
-            Yaw: -27.5551682
-            Roll: -3.77935815
+            Yaw: 135
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.55
+            Y: 0.55
+            Z: 0.55
           }
         }
-        ParentId: 2123190639582474161
+        ParentId: 11635338251233262539
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 15614674765095447048
+              Id: 5931631907172490823
             }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.709000051
-              G: 0.709000051
-              B: 0.709000051
+              R: 1
+              G: 0.820000052
+              B: 0.700000048
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Neon:id"
+            AssetReference {
+              Id: 5931631907172490823
             }
           }
         }
@@ -1115,12 +1751,13 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12153393220106925973
+            Id: 6117463310004548829
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -1131,656 +1768,115 @@ Assets {
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 18220022780666105934
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: 48.0269775
-            Y: -37.5371094
-            Z: 163.970459
-          }
-          Rotation {
-            Pitch: -2.51578403
-            Yaw: -27.555151
-            Roll: -3.77935863
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15614674765095447048
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.709000051
-              G: 0.709000051
-              B: 0.709000051
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12153393220106925973
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 17693827126402969142
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: 368.947144
-            Y: -157.310547
-            Z: -7.46850586
-          }
-          Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911758
-            Roll: 5.17951679
-          }
-          Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: 5.64408684
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.66
-              G: 0.466455
-              B: 0.40194
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4914027778279010537
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 10446278269086435048
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 391.346802
-            Y: -203.492188
-            Z: 270.031372
-          }
-          Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911758
-            Roll: 5.17951679
-          }
-          Scale {
-            X: 0.913404346
-            Y: 0.913404346
-            Z: 0.0284019187
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 9407804433019460621
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: 316.307
-            Y: -156.152344
-            Z: 309.88208
-          }
-          Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911774
-            Roll: 5.17951727
-          }
-          Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: -7.74460411
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.791
-              G: 0.559039235
-              B: 0.481719
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4914027778279010537
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 2865867407182683115
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 314.967896
-            Y: -155.90625
-            Z: 309.550781
-          }
-          Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911758
-            Roll: 5.17951679
-          }
-          Scale {
-            X: 1.1039871
-            Y: 1.1039871
-            Z: 0.0343280025
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 3711069365505178181
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: 306.872681
-            Y: -134.531418
-            Z: 181.570206
-          }
-          Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911728
-            Roll: 5.17952
-          }
-          Scale {
-            X: 1.04397213
-            Y: 1.04397213
-            Z: 1.04397213
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15614674765095447048
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.709000051
-              G: 0.709000051
-              B: 0.709000051
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12153393220106925973
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 13331986347065781348
-        Name: "Cone - Truncated Wide"
-        Transform {
-          Location {
-            X: 382.796265
-            Y: -183.494141
-            Z: 151.494873
-          }
-          Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911728
-            Roll: 5.17952108
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15614674765095447048
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.709000051
-              G: 0.709000051
-              B: 0.709000051
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12153393220106925973
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 1367894155412658588
-        Name: "Decal Stains Top 01"
-        Transform {
-          Location {
-            X: 156.268799
-            Y: -92.7647476
-            Z: 269.048767
-          }
-          Rotation {
-            Pitch: -4.39196777
-            Yaw: -21.3508911
-            Roll: -89.6442261
-          }
-          Scale {
-            X: 0.497077346
-            Y: 0.912325382
-            Z: 0.394838274
-          }
-        }
-        ParentId: 2123190639582474161
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.0310000014
-              G: 0.020435201
-              B: 0.013392
-              A: 0.691000044
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 17914158856327214616
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
         }
       }
     }
     Assets {
-      Id: 4914027778279010537
-      Name: "Cone - Truncated Wide"
+      Id: 7948167637451889616
+      Name: "Japanese - Stand Katana - Back 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cone_truncated_003"
+        AssetId: "sm_prop_jpn_stand_katana_back_001_ref"
       }
     }
     Assets {
-      Id: 12446131267530965574
-      Name: "Wood Raw"
+      Id: 16497610927948824042
+      Name: "Invisible"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_001_uv"
+        AssetId: "mi_invisible_001"
       }
     }
     Assets {
-      Id: 13649979035082162066
-      Name: "Decal Wood Ends Variations"
-      PlatformAssetType: 14
+      Id: 3566171127505639708
+      Name: "Wicker Basket 03"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "bp_wood_rings_001"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_fan_wicker_003_uv_ref"
       }
     }
     Assets {
-      Id: 12153393220106925973
-      Name: "Ring"
+      Id: 7591680237985143139
+      Name: "Frame Small Straight - Neon 1 Sided Ending"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_torus_004"
+        AssetId: "sm_Neon1_Ender_1s"
       }
     }
     Assets {
-      Id: 15614674765095447048
-      Name: "Rope"
-      PlatformAssetType: 2
+      Id: 12632251234297570874
+      Name: "Urban Pipe Cap 03"
+      PlatformAssetType: 1
       PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_rope_001"
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_acc_cap_003_ref"
       }
     }
     Assets {
-      Id: 17914158856327214616
-      Name: "Decal Stains Top 01"
-      PlatformAssetType: 14
+      Id: 4165763635383205223
+      Name: "Urban Office Ceiling Lamp - Mount 01"
+      PlatformAssetType: 1
       PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "bp_decal_stain_top_001"
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_off_lamp_ceiling_mount_001_ref"
+      }
+    }
+    Assets {
+      Id: 828211681903408677
+      Name: "Fantasy Chain - Straight 2m 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_fan_chain_strt_2m_002_ref"
+      }
+    }
+    Assets {
+      Id: 18393437648231545508
+      Name: "Urban Pipe Flange 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_acc_flange_001_ref"
+      }
+    }
+    Assets {
+      Id: 5220410744672452215
+      Name: "Japanese Paper Lantern Simple 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_jpn_lantern_paper_simple_002_ref"
+      }
+    }
+    Assets {
+      Id: 11049358012930972197
+      Name: "Japanese Stone Lantern Roof Small 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_jpn_lantern_stone_small_roof_001_ref"
+      }
+    }
+    Assets {
+      Id: 10118084408177162879
+      Name: "Clay Form 14"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prim_org_clayform_014_ref"
+      }
+    }
+    Assets {
+      Id: 6117463310004548829
+      Name: "Frame Small 45 Degree Corner Sharp - Neon"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_Neon_45dCorner_sharp"
       }
     }
     PrimaryAssetId {
@@ -1788,6 +1884,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
-  VirtualFolderPath: "Props"
+  SerializationVersion: 107
 }

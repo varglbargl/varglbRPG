@@ -15,39 +15,29 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10556523551069437569
+        ParentId: 4781671109827199097
         ChildIds: 16117343052927802236
-        ChildIds: 18332416981239448560
         ChildIds: 296144624009825845
-        ChildIds: 3832882908417670322
         ChildIds: 18049253209894945342
         ChildIds: 4039599886687516736
         ChildIds: 5412514399967496743
         ChildIds: 2726246099865398775
         ChildIds: 839342314855964900
-        ChildIds: 8419013182961391174
         ChildIds: 6497656946887765738
-        ChildIds: 3049220229804945483
         ChildIds: 14484401570669068712
         ChildIds: 4192170006536981406
         ChildIds: 11219191792505516203
         ChildIds: 2548093006580557676
-        ChildIds: 3948383119973295761
         ChildIds: 17781694161875324302
-        ChildIds: 16950567384040730457
         ChildIds: 2826408802595447848
         ChildIds: 8061392634917248213
         ChildIds: 4323656849598121425
         ChildIds: 8447517299927379300
-        ChildIds: 6244260101139633519
         ChildIds: 4305858820640955984
-        ChildIds: 14777165870979714244
         ChildIds: 1585062721940573587
         ChildIds: 9729422642690193606
         ChildIds: 14814924225778582263
-        ChildIds: 2742275145169529632
         ChildIds: 7158814964970101120
-        ChildIds: 2754081393305680897
         ChildIds: 5022327696870976752
         ChildIds: 16812604147835484323
         ChildIds: 5093903821119668239
@@ -72,39 +62,33 @@ Assets {
       }
       Objects {
         Id: 16117343052927802236
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: 135.696045
-            Y: -36.4160156
-            Z: 58.7507324
+            X: 135.695312
+            Y: -61.8847656
+            Z: 179.987793
           }
           Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051252
-            Roll: -9.1307621
+            Pitch: 4.82265282
+            Yaw: -147.587402
+            Roll: 87.3648529
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: 5.64408684
+            X: 1.87024975
+            Y: -1.59545851
+            Z: 1.87019575
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -134,7 +118,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -153,104 +137,34 @@ Assets {
         }
       }
       Objects {
-        Id: 18332416981239448560
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 132.9104
-            Y: -80.8398438
-            Z: 337.425293
-          }
-          Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051252
-            Roll: -9.1307621
-          }
-          Scale {
-            X: 0.913404346
-            Y: 0.913404346
-            Z: 0.0284019187
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 296144624009825845
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: 223.516479
-            Y: -108.253906
-            Z: 359.766968
+            X: 220.421875
+            Y: -87.3457
+            Z: 179.987793
           }
           Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051233
-            Roll: -9.13075829
+            Pitch: -1.54443359
+            Yaw: -13.8051147
+            Roll: 90
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: -7.74460411
+            X: 1.94460535
+            Y: 1.82351601
+            Z: 1.94460475
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -280,7 +194,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -299,82 +213,18 @@ Assets {
         }
       }
       Objects {
-        Id: 3832882908417670322
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 223.916504
-            Y: -108.046875
-            Z: 359.239258
-          }
-          Rotation {
-            Pitch: -1.54443359
-            Yaw: -13.8051147
-            Roll: -9.13076782
-          }
-          Scale {
-            X: 1.13301
-            Y: 1.13302588
-            Z: 0.0505854115
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 18049253209894945342
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: 135.835083
-            Y: -59.75
-            Z: 214.959229
+            X: 138.621094
+            Y: -56.1210938
+            Z: 212.494507
           }
           Rotation {
-            Pitch: -1.5444423
-            Yaw: -13.8051548
-            Roll: -9.13076115
+            Pitch: -2.79177856
+            Yaw: -13.9068298
+            Roll: -2.34976196
           }
           Scale {
             X: 1
@@ -446,7 +296,7 @@ Assets {
       }
       Objects {
         Id: 4039599886687516736
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
             X: 223.620682
@@ -528,17 +378,17 @@ Assets {
       }
       Objects {
         Id: 5412514399967496743
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: 135.974
-            Y: -57.8964844
-            Z: 203.562256
+            X: 137.416016
+            Y: -55.2441406
+            Z: 198.92749
           }
           Rotation {
-            Pitch: -1.5444355
-            Yaw: -13.8051863
-            Roll: -9.13076
+            Pitch: -8.443573
+            Yaw: -13.6730347
+            Roll: -2.37271118
           }
           Scale {
             X: 1
@@ -610,7 +460,7 @@ Assets {
       }
       Objects {
         Id: 2726246099865398775
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
             X: 223.759079
@@ -692,39 +542,33 @@ Assets {
       }
       Objects {
         Id: 839342314855964900
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: -36.9178467
-            Y: 17.7148438
-            Z: 40.8408203
+            X: -31.2011719
+            Y: 1.328125
+            Z: 179.939453
           }
           Rotation {
-            Pitch: -2.51580453
-            Yaw: -27.5551796
-            Roll: -3.77935863
+            Pitch: -0.451446533
+            Yaw: -27.2504883
+            Roll: 98.3813095
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: 5.64408684
+            X: 1.8498987
+            Y: -1.98911119
+            Z: 1.84993792
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -754,7 +598,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -773,104 +617,34 @@ Assets {
         }
       }
       Objects {
-        Id: 8419013182961391174
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -32.9007568
-            Y: -4.359375
-            Z: 322.043579
-          }
-          Rotation {
-            Pitch: -2.51580811
-            Yaw: -27.5551758
-            Roll: -3.77935791
-          }
-          Scale {
-            X: 0.937417328
-            Y: 0.937430322
-            Z: 0.0418528
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 6497656946887765738
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: 49.1474609
-            Y: -50.0605469
-            Z: 343.302612
+            X: 45.9355469
+            Y: -40.2460938
+            Z: 179.987793
           }
           Rotation {
-            Pitch: -2.51580453
-            Yaw: -27.5551834
-            Roll: -3.77935863
+            Pitch: -2.50241089
+            Yaw: 21.8054047
+            Roll: 90.2592545
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: -7.74460411
+            X: 1.94461536
+            Y: 1.5586462
+            Z: 1.94459641
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -900,7 +674,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -919,87 +693,23 @@ Assets {
         }
       }
       Objects {
-        Id: 3049220229804945483
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 49.019043
-            Y: -49.4296875
-            Z: 342.762573
-          }
-          Rotation {
-            Pitch: -2.51580811
-            Yaw: -27.5551758
-            Roll: -3.77935791
-          }
-          Scale {
-            X: 1.13301
-            Y: 1.13302588
-            Z: 0.0505854115
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 14484401570669068712
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: -35.1502686
-            Y: 2.98632812
-            Z: 206.734131
+            X: -28.3105469
+            Y: 5.73242188
+            Z: 206.240234
           }
           Rotation {
-            Pitch: -2.5157907
-            Yaw: -27.5551682
-            Roll: -3.77935863
+            Pitch: -0.451416016
+            Yaw: -27.2503662
+            Roll: 4.60194111
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.968827784
+            Y: 0.968827784
+            Z: 0.968827903
           }
         }
         ParentId: 16676229800660727712
@@ -1066,22 +776,22 @@ Assets {
       }
       Objects {
         Id: 4192170006536981406
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: 48.1203613
-            Y: -38.4179688
-            Z: 175.13208
+            X: 45.609375
+            Y: -40.25
+            Z: 177.492798
           }
           Rotation {
-            Pitch: -2.5157907
-            Yaw: -27.5551682
-            Roll: -3.77935815
+            Pitch: -7.77197266
+            Yaw: -26.9952393
+            Roll: -4.58868408
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.00326216
+            Y: 1.00002396
+            Z: 0.999994814
           }
         }
         ParentId: 16676229800660727712
@@ -1148,22 +858,22 @@ Assets {
       }
       Objects {
         Id: 11219191792505516203
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: 48.0269775
-            Y: -37.5371094
-            Z: 163.970459
+            X: 44.9355469
+            Y: -39.1679688
+            Z: 162.505
           }
           Rotation {
-            Pitch: -2.51578403
-            Yaw: -27.555151
-            Roll: -3.77935863
+            Pitch: 1.10957098
+            Yaw: -27.7944336
+            Roll: -3.77642822
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.00326216
+            Y: 1.00002396
+            Z: 0.999994814
           }
         }
         ParentId: 16676229800660727712
@@ -1230,39 +940,33 @@ Assets {
       }
       Objects {
         Id: 2548093006580557676
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: -141.813232
-            Y: 38.1777344
-            Z: 53.8293457
+            X: -115.679688
+            Y: 25.2988281
+            Z: 179.264893
           }
           Rotation {
-            Pitch: 7.49834538
-            Yaw: 150.642624
-            Roll: 2.77344179
+            Pitch: 1.50037396
+            Yaw: 151.076355
+            Roll: 93.2188721
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: 5.64408684
+            X: 1.91753769
+            Y: 1.79813373
+            Z: 1.91753733
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -1292,7 +996,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1311,104 +1015,34 @@ Assets {
         }
       }
       Objects {
-        Id: 3948383119973295761
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -117.051025
-            Y: 7.94726562
-            Z: 333.290405
-          }
-          Rotation {
-            Pitch: 7.49834538
-            Yaw: 150.642624
-            Roll: 2.77344179
-          }
-          Scale {
-            X: 0.955223918
-            Y: 0.955237329
-            Z: 0.0426478274
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 17781694161875324302
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: -204.618896
-            Y: 51.3046875
-            Z: 371.169922
+            X: -190.144531
+            Y: 71.0234375
+            Z: 185.345947
           }
           Rotation {
-            Pitch: 4.2759304
-            Yaw: 150.828903
-            Roll: 4.58831263
+            Pitch: 2.11514544
+            Yaw: 90.4347687
+            Roll: 88.1960068
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: -7.74460411
+            X: 1.87673008
+            Y: -2.033
+            Z: 1.8767029
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -1438,7 +1072,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1457,82 +1091,18 @@ Assets {
         }
       }
       Objects {
-        Id: 16950567384040730457
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -203.395142
-            Y: 49.5078125
-            Z: 370.706909
-          }
-          Rotation {
-            Pitch: 3.47119761
-            Yaw: 150.859299
-            Roll: 5.03830051
-          }
-          Scale {
-            X: 1.16480362
-            Y: 1.16478
-            Z: 0.0708418861
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 2826408802595447848
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: -207.633545
-            Y: 68.2128906
-            Z: 228.115479
+            X: -188.84375
+            Y: 66.6875
+            Z: 233.542847
           }
           Rotation {
-            Pitch: 4.27595758
-            Yaw: 150.828918
-            Roll: 4.58831739
+            Pitch: 2.61332583
+            Yaw: 150.815155
+            Roll: 5.53499651
           }
           Scale {
             X: 1.02818882
@@ -1604,17 +1174,17 @@ Assets {
       }
       Objects {
         Id: 8061392634917248213
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: -125.933594
-            Y: 21.9707031
-            Z: 220.979248
+            X: -114.431641
+            Y: 22.8242188
+            Z: 220.480835
           }
           Rotation {
-            Pitch: 7.49834538
-            Yaw: 150.642624
-            Roll: 2.77344203
+            Pitch: 3.58569884
+            Yaw: 150.547791
+            Roll: 4.83178663
           }
           Scale {
             X: 1
@@ -1686,17 +1256,17 @@ Assets {
       }
       Objects {
         Id: 4323656849598121425
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: -207.99292
-            Y: 69.6855469
-            Z: 214.318604
+            X: -188.740234
+            Y: 68.1660156
+            Z: 219.741943
           }
           Rotation {
-            Pitch: 4.27595758
-            Yaw: 150.828918
-            Roll: 4.58831739
+            Pitch: 2.61332583
+            Yaw: 150.815155
+            Roll: 5.53499651
           }
           Scale {
             X: 1.02818882
@@ -1768,39 +1338,33 @@ Assets {
       }
       Objects {
         Id: 8447517299927379300
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: -373.886963
-            Y: 136.244141
-            Z: 18.8867188
+            X: -360.109375
+            Y: 127.59375
+            Z: 181.680054
           }
           Rotation {
-            Pitch: 1.56418836
-            Yaw: -20.5800304
-            Roll: -4.82333755
+            Pitch: 2.56164861
+            Yaw: -27.6125488
+            Roll: 101.554298
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: 5.64408684
+            X: 1.82475388
+            Y: -1.711
+            Z: 1.82475364
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -1830,7 +1394,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1849,104 +1413,34 @@ Assets {
         }
       }
       Objects {
-        Id: 6244260101139633519
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -387.846069
-            Y: 116.955078
-            Z: 299.915649
-          }
-          Rotation {
-            Pitch: 1.56418836
-            Yaw: -20.5800171
-            Roll: -4.82333374
-          }
-          Scale {
-            X: 0.937417328
-            Y: 0.937430322
-            Z: 0.0418528
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 4305858820640955984
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: -302.583618
-            Y: 81.8476562
-            Z: 327.821411
+            X: -276.945312
+            Y: 96.4707
+            Z: 189.410522
           }
           Rotation {
-            Pitch: 1.56418836
-            Yaw: -20.5800266
-            Roll: -4.82333708
+            Pitch: 1.12455642
+            Yaw: -20.6573181
+            Roll: 93.583374
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: -7.74460411
+            X: 2.00545311
+            Y: 1.88057458
+            Z: 2.00545287
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -1976,7 +1470,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1995,82 +1489,18 @@ Assets {
         }
       }
       Objects {
-        Id: 14777165870979714244
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -301.942139
-            Y: 82.0175781
-            Z: 327.216919
-          }
-          Rotation {
-            Pitch: 1.56418836
-            Yaw: -20.5800171
-            Roll: -4.82333374
-          }
-          Scale {
-            X: 1.13301
-            Y: 1.13302588
-            Z: 0.0505854115
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 1585062721940573587
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: -386.087402
-            Y: 122.6875
-            Z: 207.693604
+            X: -357.291016
+            Y: 133.896484
+            Z: 208.547241
           }
           Rotation {
-            Pitch: 1.56418836
-            Yaw: -20.5800171
-            Roll: -4.82333374
+            Pitch: 2.56165552
+            Yaw: -27.6125488
+            Roll: 6.73082161
           }
           Scale {
             X: 0.975677073
@@ -2142,17 +1572,17 @@ Assets {
       }
       Objects {
         Id: 9729422642690193606
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: -294.913208
-            Y: 89.8638077
-            Z: 188.779419
+            X: -275.667969
+            Y: 96.2714844
+            Z: 198.193237
           }
           Rotation {
-            Pitch: 1.56418836
-            Yaw: -20.5800171
-            Roll: -4.82333374
+            Pitch: 1.12454963
+            Yaw: -20.6572876
+            Roll: -1.23995972
           }
           Scale {
             X: 1.04833436
@@ -2224,39 +1654,33 @@ Assets {
       }
       Objects {
         Id: 14814924225778582263
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: 368.947144
-            Y: -157.310547
-            Z: -7.46850586
+            X: 375.861328
+            Y: -176.441406
+            Z: 158.581421
           }
           Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911758
-            Roll: 5.17951679
+            Pitch: 12.3106165
+            Yaw: -171.20314
+            Roll: 88.0236053
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: 5.64408684
+            X: 1.82378292
+            Y: 1.31751776
+            Z: 1.82374406
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -2286,7 +1710,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2305,104 +1729,34 @@ Assets {
         }
       }
       Objects {
-        Id: 2742275145169529632
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 392.213135
-            Y: -204.056641
-            Z: 269.865967
-          }
-          Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911758
-            Roll: 5.17951679
-          }
-          Scale {
-            X: 0.937417328
-            Y: 0.937430322
-            Z: 0.0418528
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 7158814964970101120
-        Name: "Cone - Truncated Wide"
+        Name: "Nature Log 04"
         Transform {
           Location {
-            X: 316.307
-            Y: -156.152344
-            Z: 309.88208
+            X: 299.935547
+            Y: -132.517578
+            Z: 182.813721
           }
           Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911774
-            Roll: 5.17951727
+            Pitch: 6.82126856
+            Yaw: 147.116684
+            Roll: 91.4821091
           }
           Scale {
-            X: 0.979873776
-            Y: 0.979873776
-            Z: -7.74460411
+            X: 2.09840798
+            Y: -1.47228944
+            Z: 2.09838486
           }
         }
         ParentId: 16676229800660727712
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12446131267530965574
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -2432,7 +1786,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4914027778279010537
+            Id: 871942256260178295
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2451,77 +1805,13 @@ Assets {
         }
       }
       Objects {
-        Id: 2754081393305680897
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 315.834229
-            Y: -156.470703
-            Z: 309.385376
-          }
-          Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911758
-            Roll: 5.17951679
-          }
-          Scale {
-            X: 1.13301
-            Y: 1.13302588
-            Z: 0.0505854115
-          }
-        }
-        ParentId: 16676229800660727712
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.655000031
-              G: 0.41658
-              B: 0.41658
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13649979035082162066
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 5022327696870976752
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: 306.580811
-            Y: -131.484375
-            Z: 182.094971
+            X: 299.863281
+            Y: -131.966797
+            Z: 187.867432
           }
           Rotation {
             Pitch: 9.08314
@@ -2598,17 +1888,17 @@ Assets {
       }
       Objects {
         Id: 16812604147835484323
-        Name: "Cone - Truncated Wide"
+        Name: "Ring"
         Transform {
           Location {
-            X: 382.796265
-            Y: -183.494141
-            Z: 151.494873
+            X: 378.013672
+            Y: -175.068359
+            Z: 166.131348
           }
           Rotation {
-            Pitch: 9.08314
-            Yaw: 146.911728
-            Roll: 5.17952108
+            Pitch: 12.3105412
+            Yaw: -171.203232
+            Roll: 3.20806575
           }
           Scale {
             X: 1
@@ -2741,30 +2031,12 @@ Assets {
       }
     }
     Assets {
-      Id: 4914027778279010537
-      Name: "Cone - Truncated Wide"
+      Id: 871942256260178295
+      Name: "Nature Log 04"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cone_truncated_003"
-      }
-    }
-    Assets {
-      Id: 12446131267530965574
-      Name: "Wood Raw"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_001_uv"
-      }
-    }
-    Assets {
-      Id: 13649979035082162066
-      Name: "Decal Wood Ends Variations"
-      PlatformAssetType: 14
-      PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "bp_wood_rings_001"
+        AssetId: "sm_prop_nat_log_004_ref"
       }
     }
     Assets {
@@ -2799,6 +2071,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

@@ -253,6 +253,6 @@ Assets {
       AssetId: "Urban_Pipe_Ground_Attachment_-_01__Prop_"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

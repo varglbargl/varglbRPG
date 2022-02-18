@@ -244,6 +244,6 @@ Assets {
       AssetId: "Fantasy_Bookshelf_-_Tall_Template"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

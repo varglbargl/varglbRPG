@@ -1,6 +1,6 @@
 Assets {
   Id: 8186312603774588587
-  Name: "Wooden Text Sign"
+  Name: "Wooden Text Signpost Sign"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -487,6 +487,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

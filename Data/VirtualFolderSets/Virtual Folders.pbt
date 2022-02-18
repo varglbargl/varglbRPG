@@ -2,14 +2,10 @@ Assets {
   Id: 5056165458151714023
   Name: "Virtual Folders"
   PlatformAssetType: 30
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderSetAsset {
     Folders {
       VirtualFolderPath: "Props"
-      PlatformAssetType: 5
-    }
-    Folders {
-      VirtualFolderPath: "Tilesets"
       PlatformAssetType: 5
     }
     Folders {
@@ -121,6 +117,16 @@ Assets {
     Folders {
       VirtualFolderPath: "Dialogue"
       PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "Props"
+      VirtualFolderPath: "Tilesets"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Props"
+      VirtualFolderPath: "Costume Pieces"
+      PlatformAssetType: 5
     }
   }
 }

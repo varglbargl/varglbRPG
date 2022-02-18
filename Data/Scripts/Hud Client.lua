@@ -106,7 +106,7 @@ function updateAbilitiesWithBinding(binding)
     while #primaryAbilities == 0 do
       abilities = clientPlayer:GetAbilities()
       for _, abil in ipairs(abilities) do
-        if abil.actionBinding == binding then
+        if abil.actionName == binding then
           table.insert(primaryAbilities, abil)
         end
       end
@@ -119,7 +119,7 @@ function updateAbilitiesWithBinding(binding)
     while #secondaryAbilities == 0 do
       abilities = clientPlayer:GetAbilities()
       for _, abil in ipairs(abilities) do
-        if abil.actionBinding == binding then
+        if abil.actionName == binding then
           table.insert(secondaryAbilities, abil)
         end
       end

@@ -15,30 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6730020118492398320
+        ParentId: 13634279106722673612
         ChildIds: 11883971466666416656
-        ChildIds: 11540295904478608855
-        ChildIds: 9510386142907772740
-        ChildIds: 1003620914502811454
-        ChildIds: 4001658494817008068
-        ChildIds: 6080421614287121226
-        ChildIds: 5327093602855875646
-        ChildIds: 9127289305794341247
-        ChildIds: 5211500648429237174
-        ChildIds: 16514610226537964349
-        ChildIds: 2721673990420021864
-        ChildIds: 15419607048806240640
-        ChildIds: 7329106515489962432
-        ChildIds: 9833760752894424820
-        ChildIds: 10662065772992150582
-        ChildIds: 15524846002890144189
-        ChildIds: 12750986020621847563
-        ChildIds: 17715575012335335472
-        ChildIds: 6252963401606176679
-        ChildIds: 4316892961453798423
-        ChildIds: 15169043121452208278
-        ChildIds: 10461983038871782956
-        ChildIds: 585801028086605523
+        ChildIds: 17124862337554896255
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -137,12 +116,11 @@ Assets {
             UseTemperature: true
             Temperature: 3000
             LocalLight {
-              AttenuationRadius: 800
+              AttenuationRadius: 900
               PointLight {
-                SourceRadius: 20
-                SoftSourceRadius: 50
+                SourceRadius: 8
+                SoftSourceRadius: 36
                 FallOffExponent: 8
-                UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 5000
@@ -154,20 +132,18 @@ Assets {
         }
       }
       Objects {
-        Id: 11540295904478608855
-        Name: "Lamp"
+        Id: 17124862337554896255
+        Name: "MergedModel"
         Transform {
           Location {
-            X: -0.7811957
-            Y: 0.133417904
-            Z: 150
+            X: -19
           }
           Rotation {
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 15657773728829086264
@@ -177,7 +153,34 @@ Assets {
         ChildIds: 17678747275566751739
         ChildIds: 8378621207536058446
         ChildIds: 6204265507305728719
-        ChildIds: 11942409087604024555
+        ChildIds: 7844292612311986695
+        ChildIds: 9547820499965721449
+        ChildIds: 12718671924921666836
+        ChildIds: 5051339696690870468
+        ChildIds: 8548731823985323504
+        ChildIds: 17061622948745167097
+        ChildIds: 6408635755473735389
+        ChildIds: 9510386142907772740
+        ChildIds: 1003620914502811454
+        ChildIds: 4001658494817008068
+        ChildIds: 6080421614287121226
+        ChildIds: 5327093602855875646
+        ChildIds: 9127289305794341247
+        ChildIds: 5211500648429237174
+        ChildIds: 16514610226537964349
+        ChildIds: 2721673990420021864
+        ChildIds: 15419607048806240640
+        ChildIds: 7329106515489962432
+        ChildIds: 9833760752894424820
+        ChildIds: 10662065772992150582
+        ChildIds: 15524846002890144189
+        ChildIds: 12750986020621847563
+        ChildIds: 17715575012335335472
+        ChildIds: 6252963401606176679
+        ChildIds: 4316892961453798423
+        ChildIds: 15169043121452208278
+        ChildIds: 10461983038871782956
+        ChildIds: 585801028086605523
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -191,7 +194,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
-          IsGroup: true
+          Model {
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -202,19 +206,20 @@ Assets {
         Name: "Fantasy Staff Guard 01"
         Transform {
           Location {
-            X: -0.0035193935
-            Y: 0.00169489207
+            X: 18.2108192
+            Y: 0.137471199
+            Z: 150
           }
           Rotation {
-            Yaw: 90
+            Yaw: 90.0000076
           }
           Scale {
-            X: 0.900000036
-            Y: 0.900000036
-            Z: 0.900000036
+            X: 1.08
+            Y: 1.08
+            Z: 1.08
           }
         }
-        ParentId: 11540295904478608855
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -295,20 +300,20 @@ Assets {
         Name: "Frame Medium Corner - Neon 1 Sided Ending"
         Transform {
           Location {
-            X: 12.0685987
-            Y: 5.80308151
-            Z: -2.00585938
+            X: 32.6972771
+            Y: 7.09896088
+            Z: 147.593018
           }
           Rotation {
-            Yaw: 90
+            Yaw: 90.0000076
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.4
+            X: 0.480000019
+            Y: 0.480000019
+            Z: 0.480000019
           }
         }
-        ParentId: 11540295904478608855
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -404,20 +409,20 @@ Assets {
         Name: "Frame Medium Corner - Neon 1 Sided Ending"
         Transform {
           Location {
-            X: 12.0703125
-            Y: -5.8046875
-            Z: -1.96826172
+            X: 32.6992188
+            Y: -6.828125
+            Z: 147.638428
           }
           Rotation {
-            Yaw: -90
+            Yaw: -90.0000076
           }
           Scale {
-            X: 0.4
-            Y: -0.4
-            Z: 0.4
+            X: 0.480000019
+            Y: -0.480000019
+            Z: 0.480000019
           }
         }
-        ParentId: 11540295904478608855
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -513,22 +518,22 @@ Assets {
         Name: "Frame Small Inside Corner - Neon"
         Transform {
           Location {
-            X: 21.6487274
-            Y: 6.70000792
-            Z: 7.99438477
+            X: 44.1935196
+            Y: 8.17544556
+            Z: 159.593262
           }
           Rotation {
             Pitch: -90
-            Yaw: 153.434967
-            Roll: -63.4349976
+            Yaw: -7.12502289
+            Roll: 97.1249924
           }
           Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.4
+            X: 0.480000019
+            Y: 0.480000019
+            Z: 0.480000019
           }
         }
-        ParentId: 11540295904478608855
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -624,21 +629,22 @@ Assets {
         Name: "Frame Small Inside Corner - Neon"
         Transform {
           Location {
-            X: 21.6660156
-            Y: -6.703125
-            Z: 8.03222656
+            X: 44.2167969
+            Y: -7.90625
+            Z: 159.638916
           }
           Rotation {
             Pitch: -90
-            Yaw: -90
+            Yaw: -4.76364374
+            Roll: -85.2363281
           }
           Scale {
-            X: 0.4
-            Y: -0.4
-            Z: 0.4
+            X: 0.480000019
+            Y: -0.480000019
+            Z: 0.480000019
           }
         }
-        ParentId: 11540295904478608855
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -734,21 +740,21 @@ Assets {
         Name: "Japanese Paper Lantern Simple 02"
         Transform {
           Location {
-            X: 9.66631317
-            Y: 0.00455361605
-            Z: 12.8911133
+            X: 29.7068062
+            Y: 0.142097473
+            Z: 165.605957
           }
           Rotation {
-            Yaw: 180
-            Roll: 90
+            Yaw: -179.999985
+            Roll: 90.0000076
           }
           Scale {
-            X: 0.129361793
-            Y: 0.129361793
-            Z: 0.129361793
+            X: 0.155234158
+            Y: 0.155234158
+            Z: 0.155234158
           }
         }
-        ParentId: 11540295904478608855
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -803,71 +809,26 @@ Assets {
         }
       }
       Objects {
-        Id: 11942409087604024555
-        Name: "Group"
-        Transform {
-          Location {
-            X: 9.51172543
-            Y: 0.139698982
-            Z: 12.9941807
-          }
-          Rotation {
-            Pitch: -12
-          }
-          Scale {
-            X: 0.828293085
-            Y: 0.828293085
-            Z: 0.828293085
-          }
-        }
-        ParentId: 11540295904478608855
-        ChildIds: 7844292612311986695
-        ChildIds: 9547820499965721449
-        ChildIds: 12718671924921666836
-        ChildIds: 5051339696690870468
-        ChildIds: 8548731823985323504
-        ChildIds: 17061622948745167097
-        ChildIds: 6408635755473735389
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsGroup: true
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 7844292612311986695
         Name: "Urban Pipe Cap 03"
         Transform {
           Location {
-            X: -0.0126547879
-            Y: -13.8837843
-            Z: -0.000265595358
+            X: 29.616127
+            Y: -13.4963989
+            Z: 165.595459
           }
           Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 7.24450547e-06
-            Roll: -89.999939
+            Pitch: -12
+            Yaw: 6.54635551e-06
+            Roll: -89.9999619
           }
           Scale {
-            X: 0.120322175
-            Y: 0.120318085
-            Z: 0.156500936
+            X: 0.11959444
+            Y: 0.119590372
+            Z: 0.155554384
           }
         }
-        ParentId: 11942409087604024555
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -913,21 +874,22 @@ Assets {
         Name: "Urban Pipe Cap 03"
         Transform {
           Location {
-            X: 0.02734375
-            Y: 13.8886719
+            X: 29.6503906
+            Y: 14.109375
+            Z: 165.587891
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 4.32255147e-05
-            Roll: 89.9999466
+            Pitch: -11.9999924
+            Yaw: 3.44774744e-05
+            Roll: 89.999939
           }
           Scale {
-            X: 0.120322175
-            Y: -0.120318085
-            Z: 0.156500936
+            X: 0.11959444
+            Y: -0.119590372
+            Z: 0.155554384
           }
         }
-        ParentId: 11942409087604024555
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -973,21 +935,22 @@ Assets {
         Name: "Pipe - Half Thin"
         Transform {
           Location {
-            X: -0.176794037
-            Y: -10.016468
-            Z: -2.46300507
+            X: 29.1439266
+            Y: -9.57937241
+            Z: 163.719238
           }
           Rotation {
-            Yaw: 7.24450729e-06
-            Roll: 89.9999542
+            Pitch: -12
+            Yaw: 1.00377456e-05
+            Roll: 89.9999695
           }
           Scale {
-            X: 0.200000018
-            Y: 0.200000018
-            Z: 0.200000018
+            X: 0.198790371
+            Y: 0.198790371
+            Z: 0.198790371
           }
         }
-        ParentId: 11942409087604024555
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -998,7 +961,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5439646266583319854
+              Id: 6388784083017065946
             }
           }
           Overrides {
@@ -1039,9 +1002,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 15
-              G: 11.625
-              B: 7.5
+              R: 0.0423499867
+              G: 0.231
               A: 1
             }
           }
@@ -1083,22 +1045,22 @@ Assets {
         Name: "Sphere - Half Quarter Thin"
         Transform {
           Location {
-            X: -0.176794037
-            Y: -10.016468
-            Z: -2.46300507
+            X: 29.1439266
+            Y: -9.57937241
+            Z: 163.719238
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 90.0000534
-            Roll: 89.9999695
+            Pitch: 2.04905664e-05
+            Yaw: 90.0000916
+            Roll: 77.9999542
           }
           Scale {
-            X: 0.100000009
-            Y: 0.200000018
-            Z: 0.200000018
+            X: 0.0993951857
+            Y: 0.198790371
+            Z: 0.198790371
           }
         }
-        ParentId: 11942409087604024555
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -1109,7 +1071,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5439646266583319854
+              Id: 6388784083017065946
             }
           }
           Overrides {
@@ -1150,9 +1112,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 15
-              G: 11.625
-              B: 7.5
+              R: 0.0423499867
+              G: 0.231
               A: 1
             }
           }
@@ -1194,22 +1155,22 @@ Assets {
         Name: "Sphere - Half Quarter Thin"
         Transform {
           Location {
-            X: -0.236328125
-            Y: -10.0097656
-            Z: -2.4609375
+            X: 29.1445312
+            Y: -9.57421875
+            Z: 163.723877
           }
           Rotation {
             Pitch: 3.4150944e-05
-            Yaw: 89.9999466
-            Roll: 89.9999695
+            Yaw: 89.9999237
+            Roll: 77.9999237
           }
           Scale {
-            X: 0.100000009
-            Y: 0.200000018
-            Z: -0.200000018
+            X: 0.0993951857
+            Y: 0.198790371
+            Z: -0.198790371
           }
         }
-        ParentId: 11942409087604024555
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -1220,7 +1181,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5439646266583319854
+              Id: 6388784083017065946
             }
           }
           Overrides {
@@ -1261,9 +1222,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 15
-              G: 11.625
-              B: 7.5
+              R: 0.0423499867
+              G: 0.231
               A: 1
             }
           }
@@ -1305,22 +1265,22 @@ Assets {
         Name: "Sphere - Half Quarter Thin"
         Transform {
           Location {
-            X: -0.248046875
-            Y: 9.9921875
-            Z: -2.44824219
+            X: 29.1582031
+            Y: 10.296875
+            Z: 163.720947
           }
           Rotation {
-            Pitch: -5.46415104e-05
+            Pitch: -6.83018879e-05
             Yaw: -89.9999466
-            Roll: 89.999939
+            Roll: 101.999962
           }
           Scale {
-            X: 0.100000009
-            Y: 0.200000018
-            Z: -0.200000018
+            X: 0.0993951857
+            Y: 0.198790371
+            Z: -0.198790371
           }
         }
-        ParentId: 11942409087604024555
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -1331,7 +1291,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5439646266583319854
+              Id: 6388784083017065946
             }
           }
           Overrides {
@@ -1372,9 +1332,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 15
-              G: 11.625
-              B: 7.5
+              R: 0.0423499867
+              G: 0.231
               A: 1
             }
           }
@@ -1416,22 +1375,22 @@ Assets {
         Name: "Sphere - Half Quarter Thin"
         Transform {
           Location {
-            X: -0.16127874
-            Y: 9.9781847
-            Z: -2.46330166
+            X: 29.1416435
+            Y: 10.2940903
+            Z: 163.719482
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: -90.0000305
-            Roll: 89.9999466
+            Pitch: 2.04905664e-05
+            Yaw: -90.0000381
+            Roll: 102.000008
           }
           Scale {
-            X: 0.100000009
-            Y: 0.200000018
-            Z: 0.200000018
+            X: 0.0993951857
+            Y: 0.198790371
+            Z: 0.198790371
           }
         }
-        ParentId: 11942409087604024555
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -1442,7 +1401,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5439646266583319854
+              Id: 6388784083017065946
             }
           }
           Overrides {
@@ -1483,9 +1442,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 15
-              G: 11.625
-              B: 7.5
+              R: 0.0423499867
+              G: 0.231
               A: 1
             }
           }
@@ -1527,11 +1485,11 @@ Assets {
         Name: "Craftsman Desk 01"
         Transform {
           Location {
-            X: 0.000670433044
-            Y: -104.971359
+            X: 18.999733
+            Y: -104.970711
           }
           Rotation {
-            Yaw: -90.0000076
+            Yaw: -90.0000229
           }
           Scale {
             X: 1
@@ -1539,7 +1497,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -1601,11 +1559,11 @@ Assets {
         Name: "Craftsman Desk 01"
         Transform {
           Location {
-            X: 0.00284910202
-            Y: 104.97
+            X: 19.0019035
+            Y: 104.970345
           }
           Rotation {
-            Yaw: -90.0000458
+            Yaw: -90.0000534
           }
           Scale {
             X: 1
@@ -1613,7 +1571,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -1675,12 +1633,12 @@ Assets {
         Name: "Urban - Bathtub Leg 01"
         Transform {
           Location {
-            X: 0.526240349
-            Y: -217.999634
+            X: 19.5253143
+            Y: -217.999023
             Z: 122.573975
           }
           Rotation {
-            Yaw: -90
+            Yaw: -90.0000153
           }
           Scale {
             X: 0.75
@@ -1688,7 +1646,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -1763,7 +1721,8 @@ Assets {
         Name: "Craftsman Desk 01"
         Transform {
           Location {
-            X: 0.091279909
+            X: 19.0903339
+            Y: 0.00114440918
           }
           Rotation {
             Yaw: -90.0000763
@@ -1774,7 +1733,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1840,8 +1799,8 @@ Assets {
         Name: "Craftsman Porch Fence Post 01"
         Transform {
           Location {
-            X: -57.0295753
-            Y: -218
+            X: -38.0305252
+            Y: -217.999664
             Z: 108
           }
           Rotation {
@@ -1853,7 +1812,7 @@ Assets {
             Z: 0.234
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -1940,8 +1899,8 @@ Assets {
         Name: "Craftsman Porch Fence Post 01"
         Transform {
           Location {
-            X: -57
-            Y: 0.000585317612
+            X: -38.0012054
+            Y: 0.00124549866
             Z: 108
           }
           Rotation {
@@ -1953,7 +1912,7 @@ Assets {
             Z: 0.234
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2040,12 +1999,12 @@ Assets {
         Name: "Urban - Bathtub Leg 01"
         Transform {
           Location {
-            X: 0.525172234
-            Y: 0.136207
+            X: 19.5242271
+            Y: 0.136871338
             Z: 122.573975
           }
           Rotation {
-            Yaw: -90.0000305
+            Yaw: -90.0000458
           }
           Scale {
             X: 0.75
@@ -2053,7 +2012,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2128,12 +2087,12 @@ Assets {
         Name: "Urban - Bathtub Leg 01"
         Transform {
           Location {
-            X: 0.523328781
-            Y: 218.000366
+            X: 19.5223694
+            Y: 218.001053
             Z: 122.574463
           }
           Rotation {
-            Yaw: -90.0000305
+            Yaw: -90.0000458
           }
           Scale {
             X: 0.75
@@ -2141,7 +2100,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2216,12 +2175,12 @@ Assets {
         Name: "Craftsman Porch Fence Post 01"
         Transform {
           Location {
-            X: -57.0281219
-            Y: 218
+            X: -38.0290833
+            Y: 218.000427
             Z: 108
           }
           Rotation {
-            Yaw: 90.0000076
+            Yaw: 90.0000153
           }
           Scale {
             X: 0.15
@@ -2229,7 +2188,7 @@ Assets {
             Z: 0.234
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2316,8 +2275,8 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -28.70294
-            Y: 218.000793
+            X: -9.7039032
+            Y: 218.001495
             Z: 122.736084
           }
           Rotation {
@@ -2328,7 +2287,7 @@ Assets {
             Z: 0.38
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2407,12 +2366,12 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -30.4550476
-            Y: 218.071762
+            X: -11.4560089
+            Y: 218.072464
             Z: 140
           }
           Rotation {
-            Yaw: -3.05175781e-05
+            Yaw: -2.9028306e-05
           }
           Scale {
             X: 0.6
@@ -2420,7 +2379,7 @@ Assets {
             Z: 0.035
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2490,12 +2449,12 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -57.0004311
-            Y: 0.189271927
+            X: -38.0013885
+            Y: 0.189933777
             Z: 122.736084
           }
           Rotation {
-            Yaw: -90
+            Yaw: -90.0000153
           }
           Scale {
             X: 4.4
@@ -2503,7 +2462,7 @@ Assets {
             Z: 0.38
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2582,12 +2541,12 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -57.0004311
-            Y: 0.189271927
+            X: -38.0013885
+            Y: 0.189933777
             Z: 140
           }
           Rotation {
-            Yaw: -90
+            Yaw: -90.0000153
           }
           Scale {
             X: 4.4
@@ -2595,7 +2554,7 @@ Assets {
             Z: 0.035
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2665,12 +2624,12 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -28.7044029
-            Y: -217.999268
+            X: -9.70533752
+            Y: -217.998627
             Z: 122.736084
           }
           Rotation {
-            Yaw: -3.05175781e-05
+            Yaw: -2.9028306e-05
           }
           Scale {
             X: 0.6
@@ -2678,7 +2637,7 @@ Assets {
             Z: 0.38
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2757,12 +2716,12 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -30.4529896
-            Y: -217.929977
+            X: -11.4539337
+            Y: -217.929382
             Z: 140
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.14717064e-05
           }
           Scale {
             X: 0.6
@@ -2770,7 +2729,7 @@ Assets {
             Z: 0.035
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2840,12 +2799,12 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -28.706068
-            Y: 0.000294804573
+            X: -9.70701694
+            Y: 0.000956535339
             Z: 122.736084
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.14717064e-05
           }
           Scale {
             X: 0.6
@@ -2853,7 +2812,7 @@ Assets {
             Z: 0.38
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -2932,12 +2891,12 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -30.4542313
-            Y: 0.0704437494
+            X: -11.4551773
+            Y: 0.071105957
             Z: 140
           }
           Rotation {
-            Yaw: -9.15527344e-05
+            Yaw: -9.22075633e-05
           }
           Scale {
             X: 0.6
@@ -2945,7 +2904,7 @@ Assets {
             Z: 0.035
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -3015,11 +2974,11 @@ Assets {
         Name: "Craftsman Dining Chair"
         Transform {
           Location {
-            X: 86.5540695
-            Y: -105.572029
+            X: 105.553131
+            Y: -105.571381
           }
           Rotation {
-            Yaw: 90
+            Yaw: 90.0000076
           }
           Scale {
             X: 1
@@ -3027,7 +2986,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3086,11 +3045,11 @@ Assets {
         Name: "Craftsman Dining Chair"
         Transform {
           Location {
-            X: 86.5540314
-            Y: 102.428772
+            X: 105.553085
+            Y: 102.429489
           }
           Rotation {
-            Yaw: 90.0000076
+            Yaw: 90.0000153
           }
           Scale {
             X: 1
@@ -3098,7 +3057,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3157,12 +3116,12 @@ Assets {
         Name: "Craftsman Porch Fence Post 01"
         Transform {
           Location {
-            X: -57.0295753
-            Y: -218.000305
+            X: -38.0305252
+            Y: -217.999664
             Z: 129.095459
           }
           Rotation {
-            Yaw: 90.0000076
+            Yaw: 90.0000153
           }
           Scale {
             X: 0.161342904
@@ -3170,7 +3129,7 @@ Assets {
             Z: 0.186164945
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -3261,12 +3220,12 @@ Assets {
         Name: "Craftsman Porch Fence Post 01"
         Transform {
           Location {
-            X: -57.0281219
-            Y: 217.999756
+            X: -38.0290833
+            Y: 218.000427
             Z: 129.095459
           }
           Rotation {
-            Yaw: 90.0000076
+            Yaw: 90.0000153
           }
           Scale {
             X: 0.186164945
@@ -3274,7 +3233,7 @@ Assets {
             Z: 0.186164945
           }
         }
-        ParentId: 15657773728829086264
+        ParentId: 17124862337554896255
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Top:id"
@@ -3434,15 +3393,6 @@ Assets {
       }
     }
     Assets {
-      Id: 5439646266583319854
-      Name: "Frosted Glass No Distortion"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxma_frosted_glass_nodistortion"
-      }
-    }
-    Assets {
       Id: 13466839838272838405
       Name: "Sphere - Half Quarter Thin"
       PlatformAssetType: 1
@@ -3537,6 +3487,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

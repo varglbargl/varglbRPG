@@ -113,7 +113,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 10
+          Intensity: 2
           Color {
             R: 1
             G: 0.726868153
@@ -127,11 +127,12 @@ Assets {
             UseTemperature: true
             Temperature: 2000
             LocalLight {
-              AttenuationRadius: 700
+              AttenuationRadius: 1500
               PointLight {
                 SourceRadius: 136.057541
                 SoftSourceRadius: 350
                 FallOffExponent: 8
+                UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 5000
@@ -1190,6 +1191,6 @@ Assets {
       AssetId: "tm_fan_chandelier_001_lit_01"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

@@ -10,12 +10,12 @@ Assets {
         Name: "Entire Library"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: -0.900000036
+            Y: -0.900000036
+            Z: 0.900000036
           }
         }
-        ParentId: 14632293959615735544
+        ParentId: 7357619171522336400
         ChildIds: 4712595482695897760
         ChildIds: 17785558215133807862
         ChildIds: 18221801405830561251
@@ -5231,6 +5231,7 @@ Assets {
         ChildIds: 17561070970091753338
         ChildIds: 15730887719678724000
         ChildIds: 8455284659014641424
+        ChildIds: 13338391276727760817
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -6011,9 +6012,9 @@ Assets {
         Name: "Fantasy Book Collection 02"
         Transform {
           Location {
-            X: 542
-            Y: 3
-            Z: 282
+            X: 542.007812
+            Y: 3.00390625
+            Z: 281.44458
           }
           Rotation {
             Yaw: -179.999954
@@ -6064,7 +6065,7 @@ Assets {
           Location {
             X: 541
             Y: -2
-            Z: 213
+            Z: 212.444824
           }
           Rotation {
             Yaw: -179.999954
@@ -15509,6 +15510,68 @@ Assets {
         }
       }
       Objects {
+        Id: 13338391276727760817
+        Name: "Fantasy Book 02"
+        Transform {
+          Location {
+            X: 557.773438
+            Y: 0.8359375
+            Z: 519.692627
+          }
+          Rotation {
+            Pitch: -0.134307861
+            Yaw: 84.0566177
+            Roll: -1.28396606
+          }
+          Scale {
+            X: 1.04912889
+            Y: 1.04912889
+            Z: 1.04912889
+          }
+        }
+        ParentId: 9897872668336145266
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.797000051
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11878445138592912783
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 5815122560875307287
         Name: "World Text"
         Transform {
@@ -16162,6 +16225,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

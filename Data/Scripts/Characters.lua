@@ -44,6 +44,18 @@ local Characters = {
     npc = CERISE,
     pitch = 250,
     portrait = 10
+  }),
+  Char.New({
+    name = "Talia Coruscade",
+    npc = CERISE,
+    pitch = 200,
+    portrait = 10
+  }),
+  Char.New({
+    name = "Dr. Janiel Dackson",
+    npc = CERISE,
+    pitch = -100,
+    portrait = 10
   })
 }
 

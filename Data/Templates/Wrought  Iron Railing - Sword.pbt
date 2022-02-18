@@ -1,12 +1,12 @@
 Assets {
-  Id: 12187943887117724278
+  Id: 3853714531676787496
   Name: "Wrought  Iron Railing - Sword"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 17679428649913821633
+      RootId: 1032565482608756412
       Objects {
-        Id: 17679428649913821633
+        Id: 1032565482608756412
         Name: "Wrought  Iron Railing - Sword"
         Transform {
           Scale {
@@ -15,8 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2892916660634851846
-        ChildIds: 15566867122541119605
+        ParentId: 11943276226702143867
+        ChildIds: 2523429014933530376
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -37,7 +37,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15566867122541119605
+        Id: 2523429014933530376
         Name: "MergedModel"
         Transform {
           Location {
@@ -50,21 +50,21 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17679428649913821633
-        ChildIds: 17456496337886308863
-        ChildIds: 1023794383115678827
-        ChildIds: 7003451897529425772
-        ChildIds: 14215173205545925285
-        ChildIds: 13799057562703131156
-        ChildIds: 18118825273807010700
-        ChildIds: 3374615842005295635
-        ChildIds: 11362472113839561634
-        ChildIds: 1247505232451485385
-        ChildIds: 3027640665354051906
-        ChildIds: 2077355315831274094
-        ChildIds: 3202252140760222842
-        ChildIds: 14456592977641387586
-        ChildIds: 11449094172357415553
+        ParentId: 1032565482608756412
+        ChildIds: 670038625074628226
+        ChildIds: 17670055567317916438
+        ChildIds: 11113995608267255825
+        ChildIds: 4488939619977827800
+        ChildIds: 4939749245068893545
+        ChildIds: 35859389875311857
+        ChildIds: 15409225831391825262
+        ChildIds: 7395480503735022815
+        ChildIds: 16887826921972666804
+        ChildIds: 15062796235787669055
+        ChildIds: 16706566662851646739
+        ChildIds: 15527625506110104327
+        ChildIds: 3723835610628823359
+        ChildIds: 7345019180541312508
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -86,7 +86,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17456496337886308863
+        Id: 670038625074628226
         Name: "Guardrail 8m"
         Transform {
           Location {
@@ -103,7 +103,7 @@ Assets {
             Z: 0.250145286
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -175,7 +175,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1023794383115678827
+        Id: 17670055567317916438
         Name: "Japanese Temple Railing 01 - Straight 01"
         Transform {
           Location {
@@ -194,7 +194,7 @@ Assets {
             Z: 0.225130796
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -268,7 +268,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7003451897529425772
+        Id: 11113995608267255825
         Name: "Japanese Temple Railing 01 - Straight 01"
         Transform {
           Location {
@@ -287,7 +287,7 @@ Assets {
             Z: 0.225130796
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -361,7 +361,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14215173205545925285
+        Id: 4488939619977827800
         Name: "Japanese Temple Railing 01 - Straight 01"
         Transform {
           Location {
@@ -379,7 +379,7 @@ Assets {
             Z: 0.193862602
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -453,7 +453,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13799057562703131156
+        Id: 4939749245068893545
         Name: "Japanese Temple Railing 01 - Straight 01"
         Transform {
           Location {
@@ -470,7 +470,7 @@ Assets {
             Z: 0.231384441
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -544,7 +544,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18118825273807010700
+        Id: 35859389875311857
         Name: "Japanese Stone Lantern Pedestal Medium 01"
         Transform {
           Location {
@@ -561,7 +561,7 @@ Assets {
             Z: 0.271501958
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -635,7 +635,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3374615842005295635
+        Id: 15409225831391825262
         Name: "Japanese Stone Lantern Pedestal Medium 01"
         Transform {
           Location {
@@ -652,7 +652,7 @@ Assets {
             Z: 0.271501958
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -726,7 +726,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11362472113839561634
+        Id: 7395480503735022815
         Name: "Japanese Stone Lantern Pedestal Medium 01"
         Transform {
           Location {
@@ -744,7 +744,7 @@ Assets {
             Z: 0.251752049
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -818,7 +818,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1247505232451485385
+        Id: 16887826921972666804
         Name: "Japanese Stone Lantern Pedestal Medium 01"
         Transform {
           Location {
@@ -836,7 +836,7 @@ Assets {
             Z: 0.251752049
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -910,7 +910,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3027640665354051906
+        Id: 15062796235787669055
         Name: "Fantasy Sword Blade 02"
         Transform {
           Location {
@@ -928,7 +928,7 @@ Assets {
             Z: 0.530752778
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -999,7 +999,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2077355315831274094
+        Id: 16706566662851646739
         Name: "Japanese - Stand Katana - Holder 01"
         Transform {
           Location {
@@ -1017,7 +1017,7 @@ Assets {
             Z: 0.792198539
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1082,7 +1082,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3202252140760222842
+        Id: 15527625506110104327
         Name: "Japanese - Stand Katana - Holder 01"
         Transform {
           Location {
@@ -1100,7 +1100,7 @@ Assets {
             Z: 0.792198539
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1165,7 +1165,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14456592977641387586
+        Id: 3723835610628823359
         Name: "Fantasy Sword Guard 01"
         Transform {
           Location {
@@ -1183,7 +1183,7 @@ Assets {
             Z: 0.646135509
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1263,7 +1263,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11449094172357415553
+        Id: 7345019180541312508
         Name: "Fantasy Sword Grip 01"
         Transform {
           Location {
@@ -1281,7 +1281,7 @@ Assets {
             Z: 0.678875804
           }
         }
-        ParentId: 15566867122541119605
+        ParentId: 2523429014933530376
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1447,6 +1447,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
+  VirtualFolderPath: "Props"
   VirtualFolderPath: "Tilesets"
 }

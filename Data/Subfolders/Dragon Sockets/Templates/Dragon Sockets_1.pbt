@@ -2059,6 +2059,6 @@ Assets {
   Marketplace {
     Description: "Dragon model with all the sockets added as child folders for easy character creation based on the animated dragon model"
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   DirectlyPublished: true
 }

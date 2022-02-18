@@ -315,9 +315,9 @@ Assets {
           Overrides {
             Name: "ma:Font_Bulbs:color"
             Color {
-              R: 35
-              G: 10.1954975
-              B: 8.88999844
+              R: 100
+              G: 28.7500019
+              B: 25
               A: 1
             }
           }
@@ -1337,6 +1337,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

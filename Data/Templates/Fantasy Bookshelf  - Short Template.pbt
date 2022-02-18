@@ -199,6 +199,6 @@ Assets {
       AssetId: "Fantasy_Bookshelf__-_Short_Template"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

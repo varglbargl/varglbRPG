@@ -2,7 +2,7 @@ Assets {
   Id: 1131419603259922736
   Name: "Emisive Interior Color"
   PlatformAssetType: 13
-  SerializationVersion: 105
+  SerializationVersion: 107
   CustomMaterialAsset {
     BaseMaterialId: 217647286274484754
     ParameterOverrides {

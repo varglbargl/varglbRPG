@@ -362,7 +362,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

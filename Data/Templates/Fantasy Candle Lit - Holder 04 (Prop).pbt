@@ -234,6 +234,6 @@ Assets {
       AssetId: "tm_fan_candle_holder_004_lit_01"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

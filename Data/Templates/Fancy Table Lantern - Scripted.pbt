@@ -119,9 +119,10 @@ Assets {
             LocalLight {
               AttenuationRadius: 1000
               PointLight {
-                SourceRadius: 10
-                SoftSourceRadius: 100
+                SourceRadius: 20
+                SoftSourceRadius: 500
                 FallOffExponent: 8
+                UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 5000
@@ -239,15 +240,15 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5439646266583319854
+              Id: 16630259605395466384
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 0.775
-              B: 0.5
+              R: 15
+              G: 11.625
+              B: 7.5
               A: 1
             }
           }
@@ -311,7 +312,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14861107584052384565
+              Id: 3813821897000935437
             }
           }
           Overrides {
@@ -330,6 +331,15 @@ Assets {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
               Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
             }
           }
         }
@@ -386,12 +396,12 @@ Assets {
       }
     }
     Assets {
-      Id: 5439646266583319854
-      Name: "Frosted Glass No Distortion"
+      Id: 16630259605395466384
+      Name: "Frosted Glass"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxma_frosted_glass_nodistortion"
+        AssetId: "fxma_frosted_glass"
       }
     }
     Assets {
@@ -413,12 +423,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14861107584052384565
-      Name: "Shoji Screen 01"
+      Id: 3813821897000935437
+      Name: "Parallax Paper Lantern 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_jpn_wood_shoji_screen_001_uv"
+        AssetId: "mi_jpn_paper_lantern_001_uv"
       }
     }
     Assets {
@@ -435,5 +445,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
 }

@@ -1,6 +1,6 @@
 Assets {
   Id: 8167785097888771530
-  Name: "Glasses Costume"
+  Name: "Milhouse Glasses"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -763,5 +763,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
+  VirtualFolderPath: "Props"
+  VirtualFolderPath: "Costume Pieces"
 }

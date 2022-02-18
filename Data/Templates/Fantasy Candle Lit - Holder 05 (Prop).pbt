@@ -181,7 +181,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 1
+          Intensity: 2
           Color {
             R: 1
             G: 0.726868153
@@ -200,6 +200,7 @@ Assets {
                 SourceRadius: 9.23469257
                 SoftSourceRadius: 100
                 FallOffExponent: 8
+                UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 5000
@@ -234,6 +235,6 @@ Assets {
       AssetId: "tm_fan_candle_holder_005_lit_01"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

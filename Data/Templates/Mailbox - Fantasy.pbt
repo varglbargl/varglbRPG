@@ -4655,7 +4655,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              A: 0.5
+              G: 4.99999619
+              B: 5
+              A: 0.1
             }
           }
         }
@@ -4720,7 +4722,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              A: 0.5
+              G: 4.99999619
+              B: 5
+              A: 0.1
             }
           }
         }
@@ -4828,19 +4832,19 @@ Assets {
         Name: "Urban Pipe Clamp 04"
         Transform {
           Location {
-            X: 3.81469727e-06
-            Y: -20.2480469
-            Z: 50
+            X: -0.00139300036
+            Y: -20.2492657
+            Z: 67.0003281
           }
           Rotation {
             Pitch: -90
-            Yaw: -16.6992588
-            Roll: 106.699265
+            Yaw: 180
+            Roll: -89.9999695
           }
           Scale {
-            X: 0.503012478
-            Y: 0.503012478
-            Z: 0.503012478
+            X: 0.503012538
+            Y: 0.503012538
+            Z: 0.503012538
           }
         }
         ParentId: 2577532398728144815
@@ -5185,7 +5189,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              A: 0.5
+              G: 4.99999619
+              B: 5
+              A: 0.1
             }
           }
         }
@@ -5251,7 +5257,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              A: 0.5
+              G: 4.99999619
+              B: 5
+              A: 0.1
             }
           }
         }
@@ -6036,7 +6044,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   DirectlyPublished: true
   VirtualFolderPath: "Props"
 }

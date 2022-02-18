@@ -183,7 +183,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Light {
-          Intensity: 5
+          Intensity: 4
           Color {
             R: 1
             G: 0.726868153
@@ -198,16 +198,16 @@ Assets {
             UseTemperature: true
             Temperature: 2600
             LocalLight {
-              AttenuationRadius: 1500
+              AttenuationRadius: 1250
               PointLight {
-                SourceRadius: 9.23469257
+                SourceRadius: 10
                 SoftSourceRadius: 100
                 FallOffExponent: 8
                 UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
+            MaxDistanceFadeRange: 1500
           }
         }
         NetworkRelevanceDistance {
@@ -1152,6 +1152,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 105
+  SerializationVersion: 107
   VirtualFolderPath: "Props"
 }

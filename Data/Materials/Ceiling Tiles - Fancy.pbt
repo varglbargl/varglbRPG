@@ -2,7 +2,7 @@ Assets {
   Id: 5508689182103031879
   Name: "Ceiling Tiles - Fancy"
   PlatformAssetType: 13
-  SerializationVersion: 105
+  SerializationVersion: 107
   CustomMaterialAsset {
     BaseMaterialId: 16166074710663780543
     ParameterOverrides {
