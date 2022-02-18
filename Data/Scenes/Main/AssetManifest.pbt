@@ -1178,6 +1178,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16626931919023374994
+  Name: "Stair Bannister - Mid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_bannister_001_stair_mid_ref"
+  }
+}
+Assets {
   Id: 16578018352763240949
   Name: "Bone Human Skull 01"
   PlatformAssetType: 1
@@ -2987,6 +2996,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13895290989889815401
+  Name: "Stair Bannister - Bottom"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_bannister_001_stair_bottom_ref"
+  }
+}
+Assets {
   Id: 13894290607303059573
   Name: "Brick Multicolor 01"
   PlatformAssetType: 2
@@ -3056,6 +3074,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dmg_floor_001_co_02_ref"
+  }
+}
+Assets {
+  Id: 13868889675930197036
+  Name: "Fantasy Castle Floor 02 - Corner 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_002_4m_corner_001"
   }
 }
 Assets {
@@ -3137,6 +3164,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_floor_001_8x8_ref"
+  }
+}
+Assets {
+  Id: 13734388303926040827
+  Name: "Fantasy Castle Bannister 01 - Post"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_bannister_001_post"
   }
 }
 Assets {
@@ -5651,6 +5687,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10223008057381932438
+  Name: "Fantasy Castle Floor 01 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_001_4m"
+  }
+}
+Assets {
   Id: 10211762008731431648
   Name: "Main Street Trim 04"
   PlatformAssetType: 1
@@ -5936,6 +5981,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_cabinet_topper_001"
+  }
+}
+Assets {
+  Id: 9743932193643228051
+  Name: "Waterfall Base Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_waterfall_base_volume"
   }
 }
 Assets {
@@ -7241,6 +7295,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_leafy_groundcover_001"
+  }
+}
+Assets {
+  Id: 7774023327160425419
+  Name: "Fantasy Castle Stairs 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001"
   }
 }
 Assets {
@@ -8663,6 +8726,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_coral_tube_small_01"
+  }
+}
+Assets {
+  Id: 5690610490455183775
+  Name: "Stair Bannister - Top"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_bannister_001_stair_top_ref"
   }
 }
 Assets {
