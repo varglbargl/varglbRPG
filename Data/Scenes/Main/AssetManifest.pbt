@@ -431,6 +431,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17808138744964761806
+  Name: "Japanese Stone Lantern Pedestal Large 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_lantern_stone_large_pedestal_001_ref"
+  }
+}
+Assets {
   Id: 17804872816677549927
   Name: "Main Street Floor 01 - 4m x 4m"
   PlatformAssetType: 1
@@ -1139,6 +1148,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_jpn_mecha_frame_forearm_001_ref"
+  }
+}
+Assets {
+  Id: 16715553036026151007
+  Name: "Japanese Temple Railing Stringer 01 - Bridge 01 End"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_railing_stringer_bridge_end_001_ref"
   }
 }
 Assets {
