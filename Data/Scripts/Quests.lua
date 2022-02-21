@@ -65,45 +65,11 @@ function Quests.findByName(questName)
   return nameLookupTable[questName]
 end
 
-function Quests.accept(player, quest)
-  if Environment.IsServer() then
-    quest.begin(player, quest)
-    Utils.updatePrivateNetworkedData(player, "QuestLog")
-  end
-end
-
-function Quests.complete(player, quest)
-  local level = quest.level or player:GetResource("Level")
-
-  Events.Broadcast("PlayerGainedXP", player, math.floor(Utils.magicNumber(level) * 25))
-  player:GrantRewardPoints(100, "Quest Complete!")
-  player.serverUserData["QuestLog"][quest.id] = nil
-
-  Utils.throttleToPlayer(player, "QuestCompleted", quest.id)
-end
-
 for i, quest in ipairs(questList) do
   quest.id = i
 
   idLookupTable[quest.id] = quest
   nameLookupTable[quest.name] = quest
-end
-
-if Environment.IsServer() then
-  local function onPlayerJoined(player)
-    player.serverUserData["QuestLog"] = {}
-
-    player.serverUserData["AvailableQuests"] = {}
-
-    --placeholder:
-
-    for i, quest in ipairs(questList) do
-      player.serverUserData["AvailableQuests"][i] = quest.id
-    end
-  end
-
-  -- handler params: Player_player
-  Game.playerJoinedEvent:Connect(onPlayerJoined)
 end
 
 return Quests

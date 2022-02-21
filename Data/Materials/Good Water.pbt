@@ -24,10 +24,6 @@ Assets {
         Float: 5
       }
       Overrides {
-        Name: "opacity"
-        Float: 0.8
-      }
-      Overrides {
         Name: "wind direction"
         Vector {
           X: 0.5
@@ -37,6 +33,22 @@ Assets {
       Overrides {
         Name: "opacity distance"
         Float: 500
+      }
+      Overrides {
+        Name: "opacity"
+        Float: 0.6
+      }
+      Overrides {
+        Name: "material_scale"
+        Float: 0.5
+      }
+      Overrides {
+        Name: "normal foam brightness"
+        Float: 0
+      }
+      Overrides {
+        Name: "edge foam brightness"
+        Float: 0.5
       }
       Overrides {
         Name: "shallow color"

@@ -15,65 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 7773366101011859001
-        ChildIds: 3488943757642356168
-        ChildIds: 2561485538055586732
-        ChildIds: 3463624689007853364
-        ChildIds: 12127591218637182734
-        ChildIds: 12876396097145661123
-        ChildIds: 13429490387658988791
-        ChildIds: 10609151025197593025
-        ChildIds: 13004101977886131753
-        ChildIds: 923084452403801732
-        ChildIds: 10990658929617503198
-        ChildIds: 9513874494813824696
-        ChildIds: 13865869823098773678
-        ChildIds: 12917332416641516856
-        ChildIds: 17100110158798719029
-        ChildIds: 6456942124136309508
-        ChildIds: 5957319417997949603
-        ChildIds: 5584839966527946233
-        ChildIds: 10880625286287872284
-        ChildIds: 17700103182298719164
-        ChildIds: 15849580882948187705
-        ChildIds: 8067652786799295380
-        ChildIds: 13681482839403112811
-        ChildIds: 569795134423788551
-        ChildIds: 7450421805443087906
-        ChildIds: 10057446057724628703
-        ChildIds: 16900038181483388688
-        ChildIds: 2396095077566384674
-        ChildIds: 6318408871573512167
-        ChildIds: 18176068685387920994
-        ChildIds: 18421941211652501802
-        ChildIds: 18332614896493827064
-        ChildIds: 15460511832514310080
-        ChildIds: 9258455038166207323
-        ChildIds: 14898396547193176047
-        ChildIds: 6528244528764622389
-        ChildIds: 11211002086657023550
-        ChildIds: 14040189917024462755
-        ChildIds: 4241178378756252645
-        ChildIds: 2236215120899486041
-        ChildIds: 17478010661079652072
-        ChildIds: 15078854472069651568
-        ChildIds: 10795973533884124649
-        ChildIds: 4580684778585626741
-        ChildIds: 480374203995811201
-        ChildIds: 17057560327433786399
-        ChildIds: 14891988218897597213
-        ChildIds: 17098948721170768406
-        ChildIds: 7661530013090755294
-        ChildIds: 10927610845375535943
-        ChildIds: 14485274579122520232
-        ChildIds: 13773192662671052223
-        ChildIds: 17416937637091228504
-        ChildIds: 13057678890836564644
-        ChildIds: 1724102209821562749
-        ChildIds: 13295179849987343795
-        ChildIds: 2175046347702365682
-        ChildIds: 9751835944598852147
+        ParentId: 3052448283032191004
+        ChildIds: 3451279978237390436
+        ChildIds: 14938215010809369892
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -94,15 +38,107 @@ Assets {
         }
       }
       Objects {
+        Id: 3451279978237390436
+        Name: "MergedModel"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2595237326998622652
+        ChildIds: 7773366101011859001
+        ChildIds: 3488943757642356168
+        ChildIds: 2561485538055586732
+        ChildIds: 3463624689007853364
+        ChildIds: 12127591218637182734
+        ChildIds: 12876396097145661123
+        ChildIds: 13429490387658988791
+        ChildIds: 10609151025197593025
+        ChildIds: 13004101977886131753
+        ChildIds: 923084452403801732
+        ChildIds: 10990658929617503198
+        ChildIds: 9513874494813824696
+        ChildIds: 13865869823098773678
+        ChildIds: 12917332416641516856
+        ChildIds: 6456942124136309508
+        ChildIds: 5957319417997949603
+        ChildIds: 5584839966527946233
+        ChildIds: 10880625286287872284
+        ChildIds: 17700103182298719164
+        ChildIds: 15849580882948187705
+        ChildIds: 8067652786799295380
+        ChildIds: 13681482839403112811
+        ChildIds: 569795134423788551
+        ChildIds: 10057446057724628703
+        ChildIds: 16900038181483388688
+        ChildIds: 2396095077566384674
+        ChildIds: 6318408871573512167
+        ChildIds: 18176068685387920994
+        ChildIds: 18421941211652501802
+        ChildIds: 18332614896493827064
+        ChildIds: 15460511832514310080
+        ChildIds: 9258455038166207323
+        ChildIds: 15078854472069651568
+        ChildIds: 480374203995811201
+        ChildIds: 6528244528764622389
+        ChildIds: 11211002086657023550
+        ChildIds: 14040189917024462755
+        ChildIds: 4241178378756252645
+        ChildIds: 2236215120899486041
+        ChildIds: 17478010661079652072
+        ChildIds: 10795973533884124649
+        ChildIds: 4580684778585626741
+        ChildIds: 17057560327433786399
+        ChildIds: 14891988218897597213
+        ChildIds: 17098948721170768406
+        ChildIds: 7661530013090755294
+        ChildIds: 14485274579122520232
+        ChildIds: 13773192662671052223
+        ChildIds: 17416937637091228504
+        ChildIds: 1724102209821562749
+        ChildIds: 13295179849987343795
+        ChildIds: 2175046347702365682
+        ChildIds: 9751835944598852147
+        ChildIds: 5969513202242594205
+        ChildIds: 15468970902457031621
+        ChildIds: 1501120804067820631
+        ChildIds: 7165120754766404919
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          Model {
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 7773366101011859001
         Name: "Japanese Temple Roof 01 - Eaves 01"
         Transform {
           Location {
-            X: 756.052368
-            Y: -947.476624
+            X: 756.046875
+            Y: -947.480469
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 0.837822
@@ -110,7 +146,7 @@ Assets {
             Z: 1.1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -207,12 +243,12 @@ Assets {
         Name: "Japanese Temple Roof 01 "
         Transform {
           Location {
-            X: 724.295349
-            Y: -802.885559
+            X: 724.292969
+            Y: -802.890625
             Z: 89.0722656
           }
           Rotation {
-            Yaw: -179.999985
+            Yaw: -179.999969
           }
           Scale {
             X: 2
@@ -220,7 +256,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_Roof:id"
@@ -278,8 +314,8 @@ Assets {
         Name: "Japanese Temple Roof 01 - Wall 01"
         Transform {
           Location {
-            X: 729.478943
-            Y: 793.864075
+            X: 729.472656
+            Y: 793.859375
             Z: 74.1481934
           }
           Rotation {
@@ -290,7 +326,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallInner:id"
@@ -368,11 +404,11 @@ Assets {
         Name: "Japanese Temple Roof 01 - Corner Out 01 Cap"
         Transform {
           Location {
-            X: 756.049561
-            Y: 948.008789
+            X: 756.046875
+            Y: 948.005859
           }
           Rotation {
-            Yaw: -89.9999924
+            Yaw: -90
           }
           Scale {
             X: 0.837822
@@ -380,7 +416,7 @@ Assets {
             Z: 1.1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -477,8 +513,8 @@ Assets {
         Name: "Japanese Temple Roof 01 "
         Transform {
           Location {
-            X: -875.628662
-            Y: 796.366821
+            X: -875.632812
+            Y: 796.363281
             Z: 89.0722656
           }
           Rotation {
@@ -489,7 +525,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_Roof:id"
@@ -547,8 +583,8 @@ Assets {
         Name: "Japanese Temple Roof 01 "
         Transform {
           Location {
-            X: -875.628662
-            Y: 796.366821
+            X: -875.632812
+            Y: 796.363281
             Z: 92.779541
           }
           Rotation {
@@ -559,7 +595,7 @@ Assets {
             Z: 0.95
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_Roof:id"
@@ -645,12 +681,12 @@ Assets {
         Name: "Japanese Temple Roof 01 "
         Transform {
           Location {
-            X: 724.283752
-            Y: -802.950256
+            X: 724.28125
+            Y: -802.953125
             Z: 92.7937
           }
           Rotation {
-            Yaw: -179.999985
+            Yaw: -179.999969
           }
           Scale {
             X: 1.99998677
@@ -658,7 +694,7 @@ Assets {
             Z: 0.95
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_Roof:id"
@@ -744,8 +780,7 @@ Assets {
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: -1024.61584
-            Y: -1.48057842
+            X: -1024.61621
             Z: 781.581299
           }
           Rotation {
@@ -756,7 +791,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -811,12 +846,12 @@ Assets {
         Name: "Japanese Temple Roof 01 - Wall 01"
         Transform {
           Location {
-            X: 729.134583
-            Y: -805.879517
+            X: 729.128906
+            Y: -805.884766
             Z: 74.1481934
           }
           Rotation {
-            Yaw: -179.999985
+            Yaw: -179.999969
           }
           Scale {
             X: 0.9
@@ -824,7 +859,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallInner:id"
@@ -902,11 +937,11 @@ Assets {
         Name: "Japanese Temple Roof 01 - Eaves 01"
         Transform {
           Location {
-            X: -895.802734
-            Y: -946.926758
+            X: -895.808594
+            Y: -946.939453
           }
           Rotation {
-            Yaw: -89.9999847
+            Yaw: -89.9999695
           }
           Scale {
             X: -0.837822
@@ -914,7 +949,7 @@ Assets {
             Z: 1.1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -1011,11 +1046,11 @@ Assets {
         Name: "Japanese Temple Roof 01 - Corner Out 01 Cap"
         Transform {
           Location {
-            X: -895.830078
-            Y: 948.573242
+            X: -895.832031
+            Y: 948.566406
           }
           Rotation {
-            Yaw: 89.9999466
+            Yaw: 89.999939
           }
           Scale {
             X: -0.837822
@@ -1023,7 +1058,7 @@ Assets {
             Z: 1.1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -1120,12 +1155,12 @@ Assets {
         Name: "Japanese Temple Roof 01 - Wall 01"
         Transform {
           Location {
-            X: -869.249
-            Y: 794.415039
+            X: -869.25
+            Y: 794.40625
             Z: 74.1481934
           }
           Rotation {
-            Yaw: -3.14947574e-05
+            Yaw: -3.05175781e-05
           }
           Scale {
             X: -0.9
@@ -1133,7 +1168,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallInner:id"
@@ -1211,8 +1246,8 @@ Assets {
         Name: "Japanese Temple Roof 01 - Wall 01"
         Transform {
           Location {
-            X: -868.907227
-            Y: -805.389648
+            X: -868.910156
+            Y: -805.390625
             Z: 74.1481934
           }
           Rotation {
@@ -1224,7 +1259,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallInner:id"
@@ -1302,12 +1337,12 @@ Assets {
         Name: "Castle Part - Window 01"
         Transform {
           Location {
-            X: 333.575195
-            Y: 671.112305
+            X: 333.574219
+            Y: 671.099609
             Z: 105
           }
           Rotation {
-            Yaw: -179.999985
+            Yaw: -179.999969
           }
           Scale {
             X: 1
@@ -1315,7 +1350,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:color"
@@ -1378,85 +1413,17 @@ Assets {
         }
       }
       Objects {
-        Id: 17100110158798719029
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: 333.575195
-            Y: 671.112305
-            Z: 379.833
-          }
-          Rotation {
-            Yaw: -179.999985
-            Roll: -89.9999924
-          }
-          Scale {
-            X: 1.69999993
-            Y: -2.69999981
-            Z: 1
-          }
-        }
-        ParentId: 2595237326998622652
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5439646266583319854
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16048367406070731799
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 6456942124136309508
         Name: "Craftsman Roof 01 Cap"
         Transform {
           Location {
-            X: 331.604492
-            Y: 705.233398
+            X: 331.601562
+            Y: 705.230469
             Z: 671.355957
           }
           Rotation {
-            Pitch: -3.30544257
+            Pitch: -3.30545044
             Yaw: -90
-            Roll: -2.13799083e-07
           }
           Scale {
             X: 0.891982555
@@ -1464,7 +1431,7 @@ Assets {
             Z: 0.894765437
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1502,13 +1469,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 212.819153
-            Y: 441.329651
+            X: 212.816406
+            Y: 441.328125
             Z: 200.666382
           }
           Rotation {
-            Yaw: -89.9999924
-            Roll: -2.14550734
+            Yaw: -90
+            Roll: -2.14550781
           }
           Scale {
             X: 0.593731463
@@ -1516,7 +1483,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -1621,13 +1588,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 212.819199
-            Y: 669.908936
+            X: 212.816406
+            Y: 669.904297
             Z: 200.666382
           }
           Rotation {
-            Yaw: -89.9999924
-            Roll: -2.14550734
+            Yaw: -90
+            Roll: -2.14550781
           }
           Scale {
             X: 0.593731463
@@ -1635,7 +1602,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -1740,13 +1707,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 457.242157
-            Y: 441.332336
+            X: 457.242188
+            Y: 441.330078
             Z: 200.824707
           }
           Rotation {
-            Yaw: -89.9999924
-            Roll: 2.95362
+            Yaw: -90
+            Roll: 2.95362091
           }
           Scale {
             X: 0.593731463
@@ -1754,7 +1721,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -1859,13 +1826,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 457.239777
-            Y: 669.910278
+            X: 457.238281
+            Y: 669.90625
             Z: 200.824707
           }
           Rotation {
-            Yaw: -89.9999924
-            Roll: 2.95361924
+            Yaw: -90
+            Roll: 2.95362
           }
           Scale {
             X: 0.593731463
@@ -1873,7 +1840,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -1978,13 +1945,13 @@ Assets {
         Name: "Pyramid - 4-Sided Truncated Hollow Thin"
         Transform {
           Location {
-            X: 333.158203
-            Y: 651.542
+            X: 333.15625
+            Y: 651.53125
             Z: 366.42041
           }
           Rotation {
             Yaw: -179.999985
-            Roll: -90.0000076
+            Roll: -90
           }
           Scale {
             X: 2.55449605
@@ -1992,7 +1959,7 @@ Assets {
             Z: -4.11054516
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2060,13 +2027,13 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 333.811249
-            Y: 452.156281
+            X: 333.808594
+            Y: 452.152344
             Z: 364.756592
           }
           Rotation {
             Yaw: -179.999985
-            Roll: -89.9999847
+            Roll: -89.999939
           }
           Scale {
             X: 1.16641819
@@ -2074,7 +2041,7 @@ Assets {
             Z: 1.16641843
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2142,12 +2109,12 @@ Assets {
         Name: "Fantasy Castle Accessory Roof Window 01 "
         Transform {
           Location {
-            X: 333.615234
-            Y: 375.598633
+            X: 333.617188
+            Y: 375.585938
             Z: 105
           }
           Rotation {
-            Yaw: -179.999985
+            Yaw: -179.999969
           }
           Scale {
             X: 1.0000217
@@ -2155,7 +2122,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -2278,8 +2245,8 @@ Assets {
         Name: "Castle Part - Window 01"
         Transform {
           Location {
-            X: -505.513672
-            Y: 671.166
+            X: -505.519531
+            Y: 671.154297
             Z: 105
           }
           Rotation {
@@ -2291,7 +2258,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:color"
@@ -2354,86 +2321,17 @@ Assets {
         }
       }
       Objects {
-        Id: 7450421805443087906
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: -505.513672
-            Y: 671.166
-            Z: 379.833
-          }
-          Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: -179.999954
-            Roll: -90.0000076
-          }
-          Scale {
-            X: 1.69999993
-            Y: -2.69999981
-            Z: 1
-          }
-        }
-        ParentId: 2595237326998622652
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5439646266583319854
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16048367406070731799
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 10057446057724628703
         Name: "Craftsman Roof 01 Cap"
         Transform {
           Location {
-            X: -507.479492
-            Y: 705.280273
+            X: -507.480469
+            Y: 705.275391
             Z: 671.355957
           }
           Rotation {
-            Pitch: -3.30544257
+            Pitch: -3.30545044
             Yaw: -89.9999695
-            Roll: -4.27598167e-07
           }
           Scale {
             X: 0.891982555
@@ -2441,7 +2339,7 @@ Assets {
             Z: 0.894765437
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2479,12 +2377,12 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: -626.17
-            Y: 441.28125
+            X: -626.171875
+            Y: 441.277344
             Z: 200.666382
           }
           Rotation {
-            Yaw: -89.9999542
+            Yaw: -89.9999695
             Roll: -2.14550781
           }
           Scale {
@@ -2493,7 +2391,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -2598,12 +2496,12 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: -626.169922
-            Y: 669.860535
+            X: -626.171875
+            Y: 669.857422
             Z: 200.666382
           }
           Rotation {
-            Yaw: -89.9999542
+            Yaw: -89.9999695
             Roll: -2.14550781
           }
           Scale {
@@ -2612,7 +2510,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -2717,13 +2615,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: -381.747
-            Y: 441.283936
+            X: -381.75
+            Y: 441.279297
             Z: 200.824707
           }
           Rotation {
-            Yaw: -89.9999466
-            Roll: 2.95362
+            Yaw: -89.999939
+            Roll: 2.95362139
           }
           Scale {
             X: 0.593731463
@@ -2731,7 +2629,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -2836,13 +2734,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: -381.74939
-            Y: 669.861816
+            X: -381.753906
+            Y: 669.859375
             Z: 200.824707
           }
           Rotation {
-            Yaw: -89.9999466
-            Roll: 2.95361972
+            Yaw: -89.999939
+            Roll: 2.95362091
           }
           Scale {
             X: 0.593731463
@@ -2850,7 +2748,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -2955,13 +2853,13 @@ Assets {
         Name: "Pyramid - 4-Sided Truncated Hollow Thin"
         Transform {
           Location {
-            X: -505.897461
-            Y: 651.585938
+            X: -505.902344
+            Y: 651.584
             Z: 366.42041
           }
           Rotation {
             Yaw: -179.999954
-            Roll: -89.9999924
+            Roll: -90
           }
           Scale {
             X: 2.55449605
@@ -2969,7 +2867,7 @@ Assets {
             Z: -4.11054516
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3037,13 +2935,13 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: -505.177887
-            Y: 452.107849
+            X: -505.179688
+            Y: 452.103516
             Z: 364.756592
           }
           Rotation {
             Yaw: -179.999954
-            Roll: -89.9999466
+            Roll: -89.999939
           }
           Scale {
             X: 1.16641819
@@ -3051,7 +2949,7 @@ Assets {
             Z: 1.16641843
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3119,8 +3017,8 @@ Assets {
         Name: "Fantasy Castle Accessory Roof Window 01 "
         Transform {
           Location {
-            X: -505.46582
-            Y: 375.660156
+            X: -505.46875
+            Y: 375.646484
             Z: 105
           }
           Rotation {
@@ -3132,7 +3030,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -3255,11 +3153,12 @@ Assets {
         Name: "Castle Part - Window 01"
         Transform {
           Location {
-            X: 339.65332
-            Y: -674.860352
+            X: 339.648438
+            Y: -674.871094
             Z: 105
           }
           Rotation {
+            Yaw: 1.7075472e-06
           }
           Scale {
             X: 1
@@ -3267,7 +3166,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:color"
@@ -3330,37 +3229,132 @@ Assets {
         }
       }
       Objects {
-        Id: 14898396547193176047
+        Id: 15078854472069651568
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 339.65332
-            Y: -674.860352
-            Z: 379.833
+            X: 339.492188
+            Y: -456.025391
+            Z: 364.756592
           }
           Rotation {
-            Yaw: -5.63256719e-07
-            Roll: -89.9999924
+            Roll: -89.9999695
           }
           Scale {
-            X: 1.69999993
-            Y: -2.69999981
-            Z: 1
+            X: 1.16641819
+            Y: 1.55263901
+            Z: 1.16641843
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5439646266583319854
+              Id: 18033297229984528543
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
+              R: 0.35
+              G: 0.35
+              B: 0.35
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 480374203995811201
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -499.5
+            Y: -456.074219
+            Z: 364.756592
+          }
+          Rotation {
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 1.16641819
+            Y: 1.55263901
+            Z: 1.16641843
+          }
+        }
+        ParentId: 3451279978237390436
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 18033297229984528543
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.35
+              G: 0.35
+              B: 0.35
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -3401,14 +3395,14 @@ Assets {
         Name: "Craftsman Roof 01 Cap"
         Transform {
           Location {
-            X: 341.632812
-            Y: -708.975586
+            X: 341.628906
+            Y: -708.976562
             Z: 671.355957
           }
           Rotation {
-            Pitch: -3.30544257
+            Pitch: -3.30545044
             Yaw: 90
-            Roll: 2.13799083e-07
+            Roll: 7.48296827e-07
           }
           Scale {
             X: 0.891982555
@@ -3416,7 +3410,7 @@ Assets {
             Z: 0.894765437
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3454,13 +3448,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 460.487213
-            Y: -445.193024
+            X: 460.484375
+            Y: -445.195312
             Z: 200.666382
           }
           Rotation {
             Yaw: 90
-            Roll: -2.14550757
+            Roll: -2.14550781
           }
           Scale {
             X: 0.593731463
@@ -3468,7 +3462,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -3573,8 +3567,8 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 460.486389
-            Y: -673.775146
+            X: 460.484375
+            Y: -673.779297
             Z: 200.666382
           }
           Rotation {
@@ -3587,7 +3581,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -3692,8 +3686,8 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 216.063446
-            Y: -445.198547
+            X: 216.058594
+            Y: -445.201172
             Z: 200.824707
           }
           Rotation {
@@ -3706,7 +3700,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -3811,13 +3805,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: 216.066055
-            Y: -673.775513
+            X: 216.0625
+            Y: -673.777344
             Z: 200.824707
           }
           Rotation {
-            Yaw: 89.9999847
-            Roll: 2.95362282
+            Yaw: 89.9999619
+            Roll: 2.95362353
           }
           Scale {
             X: 0.593731463
@@ -3825,7 +3819,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -3930,14 +3924,13 @@ Assets {
         Name: "Pyramid - 4-Sided Truncated Hollow Thin"
         Transform {
           Location {
-            X: 340.013672
-            Y: -655.290039
+            X: 340.011719
+            Y: -655.302734
             Z: 366.42041
           }
           Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 6.62800176e-07
-            Roll: -89.9999847
+            Yaw: 5.80736184e-07
+            Roll: -89.9999695
           }
           Scale {
             X: 2.55449605
@@ -3945,7 +3938,7 @@ Assets {
             Z: -4.11054516
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4009,97 +4002,16 @@ Assets {
         }
       }
       Objects {
-        Id: 15078854472069651568
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: 339.492737
-            Y: -456.021027
-            Z: 364.756592
-          }
-          Rotation {
-            Roll: -89.9999924
-          }
-          Scale {
-            X: 1.16641819
-            Y: 1.55263901
-            Z: 1.16641843
-          }
-        }
-        ParentId: 2595237326998622652
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18033297229984528543
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.35
-              G: 0.35
-              B: 0.35
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16048367406070731799
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 10795973533884124649
         Name: "Fantasy Castle Accessory Roof Window 01 "
         Transform {
           Location {
-            X: 339.617188
-            Y: -379.347656
+            X: 339.613281
+            Y: -379.361328
             Z: 105
           }
           Rotation {
-            Yaw: -5.94434312e-07
+            Yaw: 1.53196777e-06
           }
           Scale {
             X: 1.0000217
@@ -4107,7 +4019,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -4230,14 +4142,13 @@ Assets {
         Name: "Pyramid - 4-Sided Truncated Hollow Thin"
         Transform {
           Location {
-            X: -499.02832
-            Y: -655.25293
+            X: -499.03125
+            Y: -655.265625
             Z: 366.42041
           }
           Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 6.62800176e-07
-            Roll: -89.9999847
+            Yaw: 5.80736184e-07
+            Roll: -89.9999695
           }
           Scale {
             X: 2.55449605
@@ -4245,7 +4156,7 @@ Assets {
             Z: -4.11054516
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4309,98 +4220,17 @@ Assets {
         }
       }
       Objects {
-        Id: 480374203995811201
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: -499.495087
-            Y: -456.071838
-            Z: 364.756592
-          }
-          Rotation {
-            Roll: -89.9999924
-          }
-          Scale {
-            X: 1.16641819
-            Y: 1.55263901
-            Z: 1.16641843
-          }
-        }
-        ParentId: 2595237326998622652
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18033297229984528543
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.35
-              G: 0.35
-              B: 0.35
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16048367406070731799
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 17057560327433786399
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: -378.502716
-            Y: -445.244263
+            X: -378.507812
+            Y: -445.25
             Z: 200.666382
           }
           Rotation {
             Yaw: 90
-            Roll: -2.14550757
+            Roll: -2.14550781
           }
           Scale {
             X: 0.593731463
@@ -4408,7 +4238,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -4513,12 +4343,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: -378.502502
-            Y: -673.822693
+            X: -378.503906
+            Y: -673.826172
             Z: 200.666382
           }
           Rotation {
             Pitch: -2.14550781
+            Roll: 1.334723e-08
           }
           Scale {
             X: 0.593731463
@@ -4526,7 +4357,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -4631,13 +4462,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: -622.92572
-            Y: -445.246948
+            X: -622.929688
+            Y: -445.25
             Z: 200.824707
           }
           Rotation {
-            Yaw: 89.9999847
-            Roll: 2.95362282
+            Yaw: 89.9999619
+            Roll: 2.95362353
           }
           Scale {
             X: 0.593731463
@@ -4645,7 +4476,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -4750,13 +4581,13 @@ Assets {
         Name: "Craftsman Stairs 01 Pillar"
         Transform {
           Location {
-            X: -622.92334
-            Y: -673.82489
+            X: -622.925781
+            Y: -673.828125
             Z: 200.824707
           }
           Rotation {
-            Yaw: 89.9999847
-            Roll: 2.95362282
+            Yaw: 89.9999619
+            Roll: 2.95362353
           }
           Scale {
             X: 0.593731463
@@ -4764,7 +4595,7 @@ Assets {
             Z: 0.593731463
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -4865,85 +4696,18 @@ Assets {
         }
       }
       Objects {
-        Id: 10927610845375535943
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: -499.453125
-            Y: -674.813477
-            Z: 379.833
-          }
-          Rotation {
-            Yaw: -5.63256719e-07
-            Roll: -89.9999924
-          }
-          Scale {
-            X: 1.69999993
-            Y: -2.69999981
-            Z: 1
-          }
-        }
-        ParentId: 2595237326998622652
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5439646266583319854
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16048367406070731799
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 14485274579122520232
         Name: "Craftsman Roof 01 Cap"
         Transform {
           Location {
-            X: -497.473633
-            Y: -708.90918
+            X: -497.476562
+            Y: -708.910156
             Z: 671.355957
           }
           Rotation {
-            Pitch: -3.30544257
+            Pitch: -3.30545044
             Yaw: 90
-            Roll: 2.13799083e-07
+            Roll: 7.48296827e-07
           }
           Scale {
             X: 0.891982555
@@ -4951,7 +4715,7 @@ Assets {
             Z: 0.894765437
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -4989,11 +4753,12 @@ Assets {
         Name: "Castle Part - Window 01"
         Transform {
           Location {
-            X: -499.449219
-            Y: -674.831055
+            X: -499.453125
+            Y: -674.84375
             Z: 105
           }
           Rotation {
+            Yaw: 1.7075472e-06
           }
           Scale {
             X: 1
@@ -5001,7 +4766,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:color"
@@ -5068,12 +4833,12 @@ Assets {
         Name: "Fantasy Castle Accessory Roof Window 01 "
         Transform {
           Location {
-            X: -499.491211
-            Y: -379.303711
+            X: -499.496094
+            Y: -379.306641
             Z: 105
           }
           Rotation {
-            Yaw: -5.94434312e-07
+            Yaw: 1.53196777e-06
           }
           Scale {
             X: 1.0000217
@@ -5081,7 +4846,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_WallOuter:id"
@@ -5200,85 +4965,18 @@ Assets {
         }
       }
       Objects {
-        Id: 13057678890836564644
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 758.020813
-            Y: -3.89701223
-            Z: 406.110107
-          }
-          Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -90.2223358
-            Roll: 89.9999924
-          }
-          Scale {
-            X: 2.89652061
-            Y: 2.89652634
-            Z: 2.59000278
-          }
-        }
-        ParentId: 2595237326998622652
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5439646266583319854
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11523500606677996145
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 1724102209821562749
         Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: 744.662354
-            Y: 129.012222
+            X: 744.657104
+            Y: 129.006
             Z: 392.109863
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -90.2223358
-            Roll: 89.9999924
+            Yaw: -90.2222824
+            Roll: 89.9999695
           }
           Scale {
             X: 0.881549537
@@ -5286,7 +4984,7 @@ Assets {
             Z: 0.750725567
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -5345,14 +5043,14 @@ Assets {
         Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: 745.69928
-            Y: -15.8605938
+            X: 745.695801
+            Y: -15.8643389
             Z: 284.824707
           }
           Rotation {
             Pitch: 90
-            Yaw: -3.99971962
-            Roll: 176.223114
+            Yaw: -90
+            Roll: 90.2228394
           }
           Scale {
             X: 0.881549537
@@ -5360,7 +5058,7 @@ Assets {
             Z: 0.90087074
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -5419,14 +5117,14 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 740.986206
-            Y: -2.18152332
+            X: 740.980835
+            Y: -2.18621469
             Z: 407.340576
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -90.2223358
-            Roll: 89.9999924
+            Yaw: -90.2222824
+            Roll: 89.9999695
           }
           Scale {
             X: 2.89652038
@@ -5434,7 +5132,7 @@ Assets {
             Z: 0.287778139
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5493,14 +5191,14 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 735.929321
-            Y: -2.16408873
+            X: 735.926392
+            Y: -2.16930842
             Z: 407.340576
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -90.2223358
-            Roll: 89.9999924
+            Yaw: -90.2222824
+            Roll: 89.9999695
           }
           Scale {
             X: 3.37927365
@@ -5508,7 +5206,7 @@ Assets {
             Z: 0.431667268
           }
         }
-        ParentId: 2595237326998622652
+        ParentId: 3451279978237390436
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5545,6 +5243,742 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 11165579009940906264
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 5969513202242594205
+        Name: "Wood 2x4 4m"
+        Transform {
+          Location {
+            X: -882.222961
+            Y: -128.984207
+            Z: 392.109863
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: 89.7777481
+            Roll: 89.9999695
+          }
+          Scale {
+            X: 0.881549537
+            Y: 0.755615532
+            Z: 0.750725567
+          }
+        }
+        ParentId: 3451279978237390436
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.1
+              G: 0.065
+              B: 0.05
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12446131267530965574
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17699724119997623437
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 15468970902457031621
+        Name: "Wood 2x4 4m"
+        Transform {
+          Location {
+            X: -883.261963
+            Y: 15.8900251
+            Z: 284.824707
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: 6.64707041
+            Roll: 6.86986828
+          }
+          Scale {
+            X: 0.881549537
+            Y: 0.755615532
+            Z: 0.90087074
+          }
+        }
+        ParentId: 3451279978237390436
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.1
+              G: 0.065
+              B: 0.05
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12446131267530965574
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17699724119997623437
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 1501120804067820631
+        Name: "Pipe"
+        Transform {
+          Location {
+            X: -878.547058
+            Y: 2.21190834
+            Z: 407.340576
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: 89.7777481
+            Roll: 89.9999695
+          }
+          Scale {
+            X: 2.89652038
+            Y: 2.8965261
+            Z: 0.287778139
+          }
+        }
+        ParentId: 3451279978237390436
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9636406107902119141
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.1
+              G: 0.065
+              B: 0.05
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11165579009940906264
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 7165120754766404919
+        Name: "Pipe"
+        Transform {
+          Location {
+            X: -873.492615
+            Y: 2.19499826
+            Z: 407.340576
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: 89.7777481
+            Roll: 89.9999695
+          }
+          Scale {
+            X: 3.37927365
+            Y: 3.37928033
+            Z: 0.431667268
+          }
+        }
+        ParentId: 3451279978237390436
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9636406107902119141
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.1
+              G: 0.065
+              B: 0.05
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11165579009940906264
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14938215010809369892
+        Name: "Group"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2595237326998622652
+        ChildIds: 7450421805443087906
+        ChildIds: 14898396547193176047
+        ChildIds: 10927610845375535943
+        ChildIds: 2841452463256278661
+        ChildIds: 13057678890836564644
+        ChildIds: 13003488450540022256
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 7450421805443087906
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -505.519531
+            Y: 671.166
+            Z: 379.833
+          }
+          Rotation {
+            Yaw: -179.999954
+            Roll: -90
+          }
+          Scale {
+            X: 1.69999993
+            Y: -2.69999981
+            Z: 1
+          }
+        }
+        ParentId: 14938215010809369892
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5439646266583319854
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14898396547193176047
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: 339.648438
+            Y: -674.859375
+            Z: 379.833
+          }
+          Rotation {
+            Yaw: 1.72006239e-07
+            Roll: -90
+          }
+          Scale {
+            X: 1.69999993
+            Y: -2.69999981
+            Z: 1
+          }
+        }
+        ParentId: 14938215010809369892
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5439646266583319854
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 10927610845375535943
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -499.457031
+            Y: -674.816406
+            Z: 379.833
+          }
+          Rotation {
+            Yaw: 1.72006239e-07
+            Roll: -90
+          }
+          Scale {
+            X: 1.69999993
+            Y: -2.69999981
+            Z: 1
+          }
+        }
+        ParentId: 14938215010809369892
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5439646266583319854
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 2841452463256278661
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: 333.574219
+            Y: 671.091797
+            Z: 379.833
+          }
+          Rotation {
+            Yaw: -179.999985
+            Roll: -90
+          }
+          Scale {
+            X: 1.69999993
+            Y: -2.69999981
+            Z: 1
+          }
+        }
+        ParentId: 14938215010809369892
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5439646266583319854
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 13057678890836564644
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: 758.015625
+            Y: -3.89648438
+            Z: 406.110107
+          }
+          Rotation {
+            Yaw: -90.22229
+            Roll: 89.9999695
+          }
+          Scale {
+            X: 2.89652061
+            Y: 2.89652634
+            Z: 2.59000278
+          }
+        }
+        ParentId: 14938215010809369892
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5439646266583319854
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11523500606677996145
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 13003488450540022256
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: -896.765625
+            Y: -4.23046875
+            Z: 406.110229
+          }
+          Rotation {
+            Yaw: 90.22229
+            Roll: 89.9999542
+          }
+          Scale {
+            X: -2.89652061
+            Y: 2.89652634
+            Z: 2.59000278
+          }
+        }
+        ParentId: 14938215010809369892
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5439646266583319854
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11523500606677996145
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -5663,24 +6097,6 @@ Assets {
       }
     }
     Assets {
-      Id: 16048367406070731799
-      Name: "Plane 1m - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_1m_001"
-      }
-    }
-    Assets {
-      Id: 5439646266583319854
-      Name: "Frosted Glass No Distortion"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxma_frosted_glass_nodistortion"
-      }
-    }
-    Assets {
       Id: 9229199904602472614
       Name: "Craftsman Roof 01 Cap"
       PlatformAssetType: 1
@@ -5717,21 +6133,21 @@ Assets {
       }
     }
     Assets {
+      Id: 16048367406070731799
+      Name: "Plane 1m - One Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_1m_001"
+      }
+    }
+    Assets {
       Id: 3484570183640108553
       Name: "Fantasy Castle Accessory Roof Window 01 "
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ts_fan_cas_acc_roof_win_001"
-      }
-    }
-    Assets {
-      Id: 11523500606677996145
-      Name: "Plane Circle - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_circle_001"
       }
     }
     Assets {
@@ -5750,6 +6166,24 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_pipe_001"
+      }
+    }
+    Assets {
+      Id: 5439646266583319854
+      Name: "Frosted Glass No Distortion"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_frosted_glass_nodistortion"
+      }
+    }
+    Assets {
+      Id: 11523500606677996145
+      Name: "Plane Circle - One Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_circle_001"
       }
     }
     PrimaryAssetId {

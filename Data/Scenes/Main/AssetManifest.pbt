@@ -6164,6 +6164,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9508860841499029333
+  Name: "Craftsman Wall Interior 01 Cap"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_int_001_cap"
+  }
+}
+Assets {
   Id: 9504253698970184112
   Name: "Pipe - 4-Sided Thin"
   PlatformAssetType: 1
@@ -7802,6 +7811,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7099335272202139790
+  Name: "Whitebox Wall Cube 01 - 300cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_wall_cube_001_half_01_ref"
+  }
+}
+Assets {
   Id: 7094461530674167630
   Name: "Bamboo Blind Horizontal 02"
   PlatformAssetType: 2
@@ -7988,6 +8006,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Coins_008"
+  }
+}
+Assets {
+  Id: 6853329184269177122
+  Name: "Roof Round Shingles"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_round_shingles_001_uv"
   }
 }
 Assets {
@@ -8276,6 +8303,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_lake_ref"
+  }
+}
+Assets {
+  Id: 6367802017808961600
+  Name: "Fantasy Castle Trim - Parapet 01 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_parapet_001_4m"
   }
 }
 Assets {
@@ -9338,6 +9374,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_railing_001_ref"
+  }
+}
+Assets {
+  Id: 4826781221347310367
+  Name: "Nature Log 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_nat_log_003_ref"
   }
 }
 Assets {
