@@ -240,20 +240,41 @@ function Utils.throttleMessage(message)
   end
 end
 
--- GENERAL UTILITY
+-- UI UTILITY
 
-function Utils.formatInt(amount)
-  local formatted = math.floor(amount + 0.5)
-  local k = nil
+local fadeTasks = {}
 
-  while true do
-    formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
-    if k == 0 then
-      break
-    end
+function Utils.fadeOpacity(what, to, secs)
+  if not Environment.IsClient() or not Object.IsValid(what) then return end
+
+  local startTime = time()
+  local progress = 0
+  local from = ZONE_DISPLAY.opacity
+  local difference = to - from
+
+  if fadeTasks[what] then
+    fadeTasks[what]:Cancel()
+    fadeTasks[what] = nil
   end
 
-  return formatted
+  secs = secs * math.abs(difference)
+
+  local function fadeLoop()
+    progress = (time() - startTime) / secs
+
+    what.opacity = CoreMath.Clamp(from + difference * progress)
+
+    if progress >= 1 then
+      fadeTasks[what] = nil
+      return
+    end
+
+    Task.Wait()
+
+    fadeLoop()
+  end
+
+  fadeTasks[what] = Task.Spawn(fadeLoop)
 end
 
 function Utils.showFlyupText(text, pos, color)
@@ -273,6 +294,22 @@ function Utils.showFlyupText(text, pos, color)
   end
 
   UI.ShowFlyUpText(text, pos + Vector3.New(math.random(-60, 60), math.random(-60, 60), math.random(50, 100)), {font = FLY_UP_FONT, isBig = true, duration = 2, color = color})
+end
+
+-- GENERAL UTILITY
+
+function Utils.formatInt(amount)
+  local formatted = math.floor(amount + 0.5)
+  local k = nil
+
+  while true do
+    formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+    if k == 0 then
+      break
+    end
+  end
+
+  return formatted
 end
 
 function Utils.groundBelowPoint(vec3, sphercastRadius)
@@ -348,6 +385,9 @@ function Utils.playSoundEffect(audio, params)
     sfx.isSpatializationEnabled = params.isSpatializationEnabled or params.spatialization or false
   end
 
+  if params.type then
+    sfx:SetSmartProperty("Type", params.type)
+  end
 
   if params.isAutoPlayEnabled ~= false and params.autoPlay ~= false then
     sfx:Play()

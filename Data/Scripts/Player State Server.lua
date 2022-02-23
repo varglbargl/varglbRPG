@@ -45,19 +45,20 @@ function onDialogueStarted(player)
   end
 end
 
-function onDialogueEnded(player, acceptedQuestID, completedQuestID)
-  if acceptedQuestID then
-    Quests.accept(player, Quests.findByID(acceptedQuestID))
-  end
-
-  if completedQuestID then
-    Quests.complete(player, Quests.findByID(completedQuestID))
-  end
+function onDialogueEnded(player, acceptedQuestID, turnedInQuestID)
 
   player.isMovementEnabled = true
 
   for _, ability in ipairs(player:GetAbilities()) do
     ability.isEnabled = true
+  end
+
+  if acceptedQuestID then
+    Events.Broadcast("AcceptQuest", player, acceptedQuestID)
+  end
+
+  if turnedInQuestID then
+    Events.Broadcast("TurnInQuest", player, turnedInQuestID)
   end
 end
 

@@ -899,14 +899,14 @@ Assets {
         Name: "Nature - Stick 04"
         Transform {
           Location {
-            X: 35.6697083
-            Y: 166.17099
-            Z: 224.478516
+            X: 35.2865601
+            Y: 168.4104
+            Z: 223.512939
           }
           Rotation {
-            Pitch: -34.3798523
-            Yaw: -5.69850254
-            Roll: -151.807785
+            Pitch: -34.3717651
+            Yaw: -7.16626
+            Roll: -151.721085
           }
           Scale {
             X: 2.96169496
@@ -1189,11 +1189,19 @@ Assets {
           }
         }
         ParentId: 17391879745836962101
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16497610927948824042
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1240,11 +1248,19 @@ Assets {
           }
         }
         ParentId: 17391879745836962101
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16497610927948824042
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1277,14 +1293,14 @@ Assets {
         Name: "Nature Log 03"
         Transform {
           Location {
-            X: 194.888168
-            Y: -7.89714813
-            Z: 14.0927734
+            X: 194.887589
+            Y: -7.89768219
+            Z: 14.0928345
           }
           Rotation {
-            Pitch: 77.9640274
-            Yaw: 0.0247358941
-            Roll: 3.9420948
+            Pitch: 84.5273132
+            Yaw: 4.7773428
+            Roll: 8.64753151
           }
           Scale {
             X: 1.90603912
@@ -1298,8 +1314,8 @@ Assets {
             Name: "ma:Shared_Detail1:color"
             Color {
               R: 0.96875
-              G: 0.53355664
-              B: 0.282875
+              G: 0.482538223
+              B: 0.202468738
               A: 1
             }
           }
@@ -1380,6 +1396,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_wedge_001"
+      }
+    }
+    Assets {
+      Id: 16497610927948824042
+      Name: "Invisible"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_invisible_001"
       }
     }
     Assets {

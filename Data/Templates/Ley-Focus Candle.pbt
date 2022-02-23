@@ -18,7 +18,6 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 2204387260997719776
         ChildIds: 4699586191989827218
-        ChildIds: 5382254612463120082
         ChildIds: 15100440942555409131
         ChildIds: 11001781108132678699
         UnregisteredParameters {
@@ -142,8 +141,9 @@ Assets {
           Animation: "dual_melee_left_hand_slash_left"
           CanBePrevented: true
           KeyBinding_v2 {
-            Value: "mc:egameaction:primaryaction"
+            Value: "mc:egameaction:invalid"
           }
+          KeyBinding_v3: "Primary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -227,52 +227,9 @@ Assets {
           Animation: "dual_melee_left_hand_slash_right"
           CanBePrevented: true
           KeyBinding_v2 {
-            Value: "mc:egameaction:primaryaction"
+            Value: "mc:egameaction:invalid"
           }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 5382254612463120082
-        Name: "Hitbox"
-        Transform {
-          Location {
-            X: 3.25878906
-            Y: -2.29882812
-            Z: 33.5444336
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6242471526288658875
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
-          }
+          KeyBinding_v3: "Primary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -294,12 +251,6 @@ Assets {
         }
         ParentId: 6242471526288658875
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Hitbox"
-            ObjectReference {
-              SubObjectId: 5382254612463120082
-            }
-          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -604,17 +555,18 @@ Assets {
           Location {
             X: -0.255859375
             Y: 0.6484375
-            Z: 40.6855469
+            Z: 41.453125
           }
           Rotation {
           }
           Scale {
-            X: 0.896087408
-            Y: 0.896087408
-            Z: 1.19478297
+            X: 1
+            Y: 1
+            Z: 2
           }
         }
         ParentId: 11001781108132678699
+        ChildIds: 17862226924211642885
         UnregisteredParameters {
           Overrides {
             Name: "ma:Flame_A:id"
@@ -671,6 +623,42 @@ Assets {
               LinearDamping: 0.01
             }
             BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 17862226924211642885
+        Name: "Simple Keep Upright"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8509548296118714564
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 13901690737120962492
           }
         }
         NetworkRelevanceDistance {

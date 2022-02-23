@@ -125,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18243333251623460988
+  Name: "Candle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_candle_003"
+  }
+}
+Assets {
   Id: 18238332311706380213
   Name: "Pipe - 90-Degree Short Thick"
   PlatformAssetType: 1
@@ -755,6 +764,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17504252732549512311
+  Name: "Metal Grates 04"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_speaker_mesh_001_uv_ref"
+  }
+}
+Assets {
   Id: 17502512456991497692
   Name: "Teko Bold"
   PlatformAssetType: 28
@@ -1193,15 +1211,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_frosted_glass"
-  }
-}
-Assets {
-  Id: 16626931919023374994
-  Name: "Stair Bannister - Mid"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_bannister_001_stair_mid_ref"
   }
 }
 Assets {
@@ -1994,6 +2003,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urban_destruction_debris_plank_02_ref"
+  }
+}
+Assets {
+  Id: 15340021074622401975
+  Name: "Craftsman Desk Chair - Seat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_craftsman_desk_chair_seat_001_ref"
   }
 }
 Assets {
@@ -3014,15 +3032,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13895290989889815401
-  Name: "Stair Bannister - Bottom"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_bannister_001_stair_bottom_ref"
-  }
-}
-Assets {
   Id: 13894290607303059573
   Name: "Brick Multicolor 01"
   PlatformAssetType: 2
@@ -3092,15 +3101,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dmg_floor_001_co_02_ref"
-  }
-}
-Assets {
-  Id: 13868889675930197036
-  Name: "Fantasy Castle Floor 02 - Corner 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_floor_002_4m_corner_001"
   }
 }
 Assets {
@@ -3344,6 +3344,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_004"
+  }
+}
+Assets {
+  Id: 13435803920615663988
+  Name: "Basic Avocado"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_org_avocado_001_ref"
   }
 }
 Assets {
@@ -5111,6 +5120,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11176301897437240753
+  Name: "Craftsman Bathroom Mirror 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_bathroom_mirror_001_ref"
+  }
+}
+Assets {
   Id: 11165579009940906264
   Name: "Pipe"
   PlatformAssetType: 1
@@ -5705,15 +5723,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10223008057381932438
-  Name: "Fantasy Castle Floor 01 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_floor_001_4m"
-  }
-}
-Assets {
   Id: 10211762008731431648
   Name: "Main Street Trim 04"
   PlatformAssetType: 1
@@ -6143,6 +6152,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_23"
+  }
+}
+Assets {
+  Id: 9567558757386997629
+  Name: "Urban - Modern Hammer 01 - Handle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_hammer_mod_001_handle_001_ref"
   }
 }
 Assets {
@@ -7325,15 +7343,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7774023327160425419
-  Name: "Fantasy Castle Stairs 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_stairs_001"
-  }
-}
-Assets {
   Id: 7763088253104705548
   Name: "Fantasy Staff Guard 01"
   PlatformAssetType: 1
@@ -7511,6 +7520,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half-pipe_001"
+  }
+}
+Assets {
+  Id: 7510308194949652875
+  Name: "Nature - Stick 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_nat_stick_005_ref"
   }
 }
 Assets {
@@ -8783,15 +8801,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5690610490455183775
-  Name: "Stair Bannister - Top"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_bannister_001_stair_top_ref"
-  }
-}
-Assets {
   Id: 5686330327956273281
   Name: "Wallpaper Japanese Flowers 01"
   PlatformAssetType: 2
@@ -9230,15 +9239,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_mil_fence_bracket_end_01"
-  }
-}
-Assets {
-  Id: 5055817927095532638
-  Name: "Urban Dishware Bowl 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_plate_005_ref"
   }
 }
 Assets {
@@ -9764,15 +9764,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4338592646651934955
-  Name: "Food Watermelon 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_watermelon_001_uv1"
-  }
-}
-Assets {
   Id: 4327688584017164110
   Name: "Ceramic Tiles Square 01"
   PlatformAssetType: 2
@@ -10079,6 +10070,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3951935700937658506
+  Name: "Cube - Inverted"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_inverted_001_ref"
+  }
+}
+Assets {
   Id: 3951634741642929759
   Name: "Decal Bullet Damage Wood"
   PlatformAssetType: 14
@@ -10193,6 +10193,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urban_destruction_debris_plank_04_ref"
+  }
+}
+Assets {
+  Id: 3789231654876228599
+  Name: "Icon Achievement"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Medal"
   }
 }
 Assets {
@@ -10508,6 +10517,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_acc_roof_win_001"
+  }
+}
+Assets {
+  Id: 3476473845553106489
+  Name: "Craftsman Wall 01 Window 2x"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_001_window2x"
   }
 }
 Assets {
@@ -11429,6 +11447,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1965006874885449622
+  Name: "Sci-fi Chair Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_chair_001_base_ref"
+  }
+}
+Assets {
   Id: 1952643684241081677
   Name: "Bottle 03"
   PlatformAssetType: 1
@@ -12149,30 +12176,12 @@ Assets {
   }
 }
 Assets {
-  Id: 959379209747151579
-  Name: "Food Cheese 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_cheese_001_uv"
-  }
-}
-Assets {
   Id: 930929452044001105
   Name: "Survival Note 002"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Survival_Equip_Note_002"
-  }
-}
-Assets {
-  Id: 876185080463839966
-  Name: "Craftsman Bed Frame 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_bed_001"
   }
 }
 Assets {
@@ -12686,6 +12695,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_steam_pressure_release_looped_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 211612766060996493
+  Name: "Craftsman Desk Chair - Arm 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_craftsman_desk_chair_arms_001_ref"
   }
 }
 Assets {

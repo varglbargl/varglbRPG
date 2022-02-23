@@ -71,7 +71,7 @@ function initInventory(player)
   end
 
   Events.Broadcast("EquipmentChanged", player)
-  Events.Broadcast("EnterWorld", player)
+  Events.Broadcast("InitQuests", player)
 
   -- DEBUG!!
 
@@ -138,7 +138,8 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
     if gear.id == item.equipmentId then
 
       gear:Unequip()
-      gear:Destroy()
+      if Object.IsValid(gear) then gear:Destroy() end
+
       item.equipmentId = nil
 
       Task.Wait()
@@ -147,14 +148,12 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
       -- print("I would like to add "..item.name.." to my inventory")
 
       addToInventory(player, item, inventorySlot)
+
+      Utils.updatePrivateNetworkedData(player, "Gear")
+      Events.Broadcast("EquipmentChanged", player)
       break
     end
   end
-
-  Utils.updatePrivateNetworkedData(player, "Gear")
-  Events.Broadcast("EquipmentChanged", player)
-
-  return item
 end
 
 function equipToPlayer(player, gearSlot, inventorySlot)
@@ -189,17 +188,23 @@ function equipToPlayer(player, gearSlot, inventorySlot)
     player.serverUserData["Inventory"].full = false
     Utils.updatePrivateNetworkedData(player, "Inventory")
     Events.Broadcast("EquipmentChanged", player)
+
+    Vault.save(player)
   end
 end
 
 function swapInventorySlots(player, slotA, slotB)
   player.serverUserData["Inventory"][slotA], player.serverUserData["Inventory"][slotB] = player.serverUserData["Inventory"][slotB], player.serverUserData["Inventory"][slotA]
   Utils.updatePrivateNetworkedData(player, "Inventory")
+
+  Vault.save(player)
 end
 
 function swapGearSlots(player, slotA, slotB)
   player.serverUserData["Gear"][slotA], player.serverUserData["Gear"][slotB] = player.serverUserData["Gear"][slotB], player.serverUserData["Gear"][slotA]
   Utils.updatePrivateNetworkedData(player, "Gear")
+
+  Vault.save(player)
 end
 
 function dropItem(player, slot, fromInventory)
@@ -222,6 +227,8 @@ function dropItem(player, slot, fromInventory)
     end
 
     Utils.updatePrivateNetworkedData(player, "Gear")
+
+    Vault.save(player)
   end
 
   Loot.dropItem(player:GetWorldPosition() + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * math.random(50, 100), item)

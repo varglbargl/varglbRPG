@@ -229,6 +229,5 @@ Assets {
     }
   }
   SerializationVersion: 107
-  VirtualFolderPath: "Effects"
-  VirtualFolderPath: "Other VFX"
+  VirtualFolderPath: "Game Components"
 }

@@ -20,8 +20,13 @@ local function createSaveData(player)
   local gear = Utils.compressItems(player.serverUserData["Gear"])
   local inventory = Utils.compressItems(player.serverUserData["Inventory"])
   local questLog = player.serverUserData["QuestLog"]
-  -- local questProgress = player.serverUserData["QuestProgress"]
-  local questProgress = "11110010010000000110010000101010100000010"
+  local questProgress = player.serverUserData["QuestProgress"]
+
+  if #questProgress > 0 then
+    questProgress = CoreString.Join("", table.unpack(questProgress))
+  else
+    questProgress = ""
+  end
 
   local position = player:GetWorldPosition()
   local rotation = player:GetWorldRotation()
@@ -39,26 +44,34 @@ function onPlayerJoined(player)
 end
 
 function onPlayerLeft(player)
-  Vault.setSave(player)
+  if player.isSpawned then
+    Vault.save(player)
+  end
 
   playerData[player] = nil
 end
 
-function Vault.setSave(player)
+function Vault.save(player)
   local save = createSaveData(player)
   local response, errMessage = Storage.SetPlayerData(player, save)
 
+  playerData[player] = save
+
   if response == StorageResultCode.SUCCESS then
-    print("Success!")
-    print(Storage.SizeOfData(save).."/32768 bytes used")
+    playerData[player] = save
+    print("Sucessfully saved: "..Utils.formatInt(Storage.SizeOfData(save)).." / 32,768 bytes used")
 
     return response
   else
-    error("Vault.setSave error: "..errMessage)
+    error("Vault.save error: "..errMessage)
   end
 end
 
 function Vault.getSave(player)
+  if not playerData[player] then
+    playerData[player] = Storage.GetPlayerData(player)
+  end
+
   return playerData[player]
 end
 

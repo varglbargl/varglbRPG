@@ -135,6 +135,7 @@ function onPlayerGainedXP(player, amount)
 
   if currentXP + amount >= Utils.experienceToNextLevel(currentLevel) then
 
+    -- LEVEL UP!
     local levelsGained = 0
     local vfx = nil
 
@@ -178,13 +179,19 @@ function onPlayerGainedXP(player, amount)
 
       vfx:Destroy()
     end
+
+    Events.Broadcast("RefreshAvailableQuests", player)
   else
     player:AddResource("Experience", amount)
   end
+
+  Vault.save(player)
 end
 
 function onPlayerGainedGold(player, amount)
   player:AddResource("Gold", amount)
+
+  Vault.save(player)
 end
 
 function applyStatsWithGear(player)

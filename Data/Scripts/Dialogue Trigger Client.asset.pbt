@@ -11,46 +11,9 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:DefaultLines"
+        Name: "cs:Lines"
         AssetReference {
           Id: 841534158063459245
-        }
-      }
-      Overrides {
-        Name: "cs:StartQuestLines"
-        AssetReference {
-          Id: 841534158063459245
-        }
-      }
-      Overrides {
-        Name: "cs:StartQuestID"
-        Int: 0
-      }
-      Overrides {
-        Name: "cs:FinishQuestLines"
-        AssetReference {
-          Id: 841534158063459245
-        }
-      }
-      Overrides {
-        Name: "cs:FinishQuestID"
-        Int: 0
-      }
-      Overrides {
-        Name: "cs:Trigger"
-        ObjectReference {
-        }
-      }
-      Overrides {
-        Name: "cs:StartQuestMarker"
-        AssetReference {
-          Id: 11227460491944720837
-        }
-      }
-      Overrides {
-        Name: "cs:FinishQuestMarker"
-        AssetReference {
-          Id: 17665233909459939922
         }
       }
       Overrides {

@@ -61,8 +61,8 @@ function redrawQuestLog()
     else
       nextStep.text = quest.finished
       steppyUwU.text = quest.finished
-      progress.text = "Done!"
-      proggersUwU.text = "Done!"
+      progress.text = ""
+      proggersUwU.text = ""
     end
 
     listing.visibility = Visibility.INHERIT

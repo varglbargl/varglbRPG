@@ -18,7 +18,6 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 16111219183229024074
         ChildIds: 6459099347835659764
-        ChildIds: 3207674107457141827
         ChildIds: 6802870398667194594
         ChildIds: 2188943672979447243
         UnregisteredParameters {
@@ -150,8 +149,9 @@ Assets {
           Animation: "dual_melee_left_hand_slash_left"
           CanBePrevented: true
           KeyBinding_v2 {
-            Value: "mc:egameaction:primaryaction"
+            Value: "mc:egameaction:invalid"
           }
+          KeyBinding_v3: "Primary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -235,55 +235,9 @@ Assets {
           Animation: "dual_melee_left_hand_slash_right"
           CanBePrevented: true
           KeyBinding_v2 {
-            Value: "mc:egameaction:primaryaction"
+            Value: "mc:egameaction:invalid"
           }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 3207674107457141827
-        Name: "Hitbox"
-        Transform {
-          Location {
-            X: 3.97951365
-            Y: -1.67582703
-            Z: 36.2614822
-          }
-          Rotation {
-            Pitch: -11.5082397
-            Yaw: -14.2721252
-            Roll: 0.952681899
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11755668592685172298
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
-          }
+          KeyBinding_v3: "Primary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -305,12 +259,6 @@ Assets {
         }
         ParentId: 11755668592685172298
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Hitbox"
-            ObjectReference {
-              SubObjectId: 3207674107457141827
-            }
-          }
         }
         WantsNetworking: true
         Collidable_v2 {

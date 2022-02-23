@@ -135,13 +135,13 @@ local animations = {
   -- "unarmed_sleep_side_cycle",
   -- "unarmed_sleep_side_end",
   -- "unarmed_stinky",
-  -- "unarmed_stomp",
+  stomp = "unarmed_stomp",
   -- "unarmed_stun_dizzy",
   -- "unarmed_stun_electric",
   talk = "unarmed_talk_casual",
   -- "unarmed_talk_listen_casual",
   -- "unarmed_talk_to_the_hand",
-  -- "unarmed_tantrum",
+  pout = "unarmed_tantrum",
   -- "unarmed_throw",
   -- "unarmed_thumbs_down",
   -- "unarmed_thumbs_up",
@@ -380,7 +380,9 @@ end
 
 local dialogueTask = nil
 
-function Dialogue.speak(lines)
+function Dialogue.speak(character, lines)
+  speaker = character
+
   dialogueTask = Task.Spawn(function()
     Utils.throttleToServer("StartDialogue")
     Events.Broadcast("ScreenOpened", "Dialogue")

@@ -98,33 +98,33 @@ function checkAbilitiesChanged(oldAbils, newAbils)
 end
 
 function updateAbilitiesWithBinding(binding)
-  local abilities = nil
+  local abilities = clientPlayer:GetAbilities()
 
-  if binding == "ability_primary" then
+  if binding == "Primary Ability" then
     primaryAbilities = {}
 
-    while #primaryAbilities == 0 do
-      abilities = clientPlayer:GetAbilities()
-      for _, abil in ipairs(abilities) do
-        if abil.actionName == binding then
-          table.insert(primaryAbilities, abil)
-        end
+    for _, abil in ipairs(abilities) do
+      if abil.actionName == binding then
+        table.insert(primaryAbilities, abil)
       end
-
-      Task.Wait()
     end
-  elseif binding == "ability_secondary" then
+
+    if #primaryAbilities == 0 then
+      Task.Wait()
+      updateAbilitiesWithBinding(binding)
+    end
+  elseif binding == "Secondary Ability" then
     secondaryAbilities = {}
 
-    while #secondaryAbilities == 0 do
-      abilities = clientPlayer:GetAbilities()
-      for _, abil in ipairs(abilities) do
-        if abil.actionName == binding then
-          table.insert(secondaryAbilities, abil)
-        end
+    for _, abil in ipairs(abilities) do
+      if abil.actionName == binding then
+        table.insert(secondaryAbilities, abil)
       end
+    end
 
+    if #secondaryAbilities == 0 then
       Task.Wait()
+      updateAbilitiesWithBinding(binding)
     end
   end
 end
@@ -133,14 +133,13 @@ local primaryTickTask = nil
 local secondaryTickTask = nil
 
 function initCooldownOverlay(item)
-
   local castEvents = {}
   local unequippedEvent = nil
   local thisOverlay = nil
   local equipment = nil
 
   if item.socket == "left_prop" then
-    updateAbilitiesWithBinding("ability_primary")
+    updateAbilitiesWithBinding("Primary Ability")
     equipment = primaryAbilities[1].parent
 
     thisOverlay = PRIMARY_COOLDOWN
@@ -156,7 +155,7 @@ function initCooldownOverlay(item)
     end
 
   elseif item.socket == "right_prop" then
-    updateAbilitiesWithBinding("ability_secondary")
+    updateAbilitiesWithBinding("Secondary Ability")
     equipment = secondaryAbilities[1].parent
 
     thisOverlay = SECONDARY_COOLDOWN
@@ -170,7 +169,6 @@ function initCooldownOverlay(item)
         end)
       end))
     end
-
   end
 
   unequippedEvent = equipment.unequippedEvent:Connect(function()
@@ -211,6 +209,8 @@ function tickCooldownOverlay(thisOverlay, duration)
 end
 
 function redrawHUD(gear)
+  -- if not clientPlayer.isSpawned then return end
+
   if gear and gear.primary then
     PRIMARY_ICON:SetImage(gear.primary.icon)
     PRIMARY_ICON.parent.visibility = Visibility.INHERIT

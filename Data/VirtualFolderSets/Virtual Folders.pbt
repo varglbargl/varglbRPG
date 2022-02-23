@@ -128,5 +128,15 @@ Assets {
       VirtualFolderPath: "Costume Pieces"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Props"
+      VirtualFolderPath: "Interior"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Props"
+      VirtualFolderPath: "Exterior"
+      PlatformAssetType: 5
+    }
   }
 }

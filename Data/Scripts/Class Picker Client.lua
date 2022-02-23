@@ -61,6 +61,8 @@ end
 function onPlayClicked()
   if not selectedClass then return end
 
+  PLAY_BUTTON.visibility = Visibility.FORCE_OFF
+
   Utils.throttleToServer("PickClass", selectedClass)
 end
 

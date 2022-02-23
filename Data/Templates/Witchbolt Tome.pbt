@@ -143,7 +143,7 @@ Assets {
       }
       Objects {
         Id: 14528632395527442022
-        Name: "Ability"
+        Name: "Trace"
         Transform {
           Location {
           }
@@ -218,8 +218,9 @@ Assets {
           Animation: "unarmed_magic_bolt"
           CanBePrevented: true
           KeyBinding_v2 {
-            Value: "mc:egameaction:secondaryaction"
+            Value: "mc:egameaction:invalid"
           }
+          KeyBinding_v3: "Secondary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"

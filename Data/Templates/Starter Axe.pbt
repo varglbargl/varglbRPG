@@ -146,8 +146,9 @@ Assets {
           Animation: "dual_melee_left_hand_slash_left"
           CanBePrevented: true
           KeyBinding_v2 {
-            Value: "mc:egameaction:primaryaction"
+            Value: "mc:egameaction:invalid"
           }
+          KeyBinding_v3: "Primary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -231,8 +232,9 @@ Assets {
           Animation: "dual_melee_left_hand_slash_right"
           CanBePrevented: true
           KeyBinding_v2 {
-            Value: "mc:egameaction:primaryaction"
+            Value: "mc:egameaction:invalid"
           }
+          KeyBinding_v3: "Primary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"

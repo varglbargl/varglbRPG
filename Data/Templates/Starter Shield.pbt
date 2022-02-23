@@ -187,8 +187,9 @@ Assets {
           Animation: "2hand_sword_slash_left"
           CanBePrevented: true
           KeyBinding_v2 {
-            Value: "mc:egameaction:secondaryaction"
+            Value: "mc:egameaction:invalid"
           }
+          KeyBinding_v3: "Secondary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"

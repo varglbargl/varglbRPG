@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 212141657848875106
+        ParentId: 11732069531768207653
         ChildIds: 11263421237260008036
         ChildIds: 5653215721245015140
         Collidable_v2 {
@@ -151,7 +151,6 @@ Assets {
         }
         ParentId: 4678525103136293903
         ChildIds: 14257446278637756896
-        ChildIds: 3053355764467144424
         ChildIds: 9431291437550684740
         ChildIds: 72029625143751672
         ChildIds: 1529674124654819955
@@ -197,20 +196,16 @@ Assets {
       }
       Objects {
         Id: 14257446278637756896
-        Name: "Cone - Truncated Hollow Thin"
+        Name: "Urban Dishware Bowl 01"
         Transform {
           Location {
-            X: 0.295898438
-            Y: 0.66796875
-            Z: 16.0258789
           }
           Rotation {
-            Yaw: 68.7873764
           }
           Scale {
-            X: 0.522190452
-            Y: 0.522190452
-            Z: -0.275860608
+            X: 1.37382817
+            Y: 1.37382817
+            Z: 1.01391268
           }
         }
         ParentId: 5653215721245015140
@@ -240,70 +235,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14935391098747384483
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 3053355764467144424
-        Name: "Cylinder - Polished"
-        Transform {
-          Location {
-            X: 0.295898438
-            Y: 0.668945312
-            Z: 0.997558594
-          }
-          Rotation {
-            Yaw: 68.7873764
-          }
-          Scale {
-            X: 0.25502643
-            Y: 0.25502643
-            Z: 0.0262957979
-          }
-        }
-        ParentId: 5653215721245015140
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 17660357240134045843
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12905923173550510229
+            Id: 5055817927095532638
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -407,8 +339,8 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -10.1738281
-            Y: -10.7167969
+            X: -9.37597561
+            Y: -9.96972752
             Z: 10.9013672
           }
           Rotation {
@@ -2185,21 +2117,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14935391098747384483
-      Name: "Cone - Truncated Hollow Thin"
+      Id: 5055817927095532638
+      Name: "Urban Dishware Bowl 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cone_truncated_hollow_003"
-      }
-    }
-    Assets {
-      Id: 12905923173550510229
-      Name: "Cylinder - Polished"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_hq_test_001"
+        AssetId: "sm_prop_urb_plate_005_ref"
       }
     }
     Assets {

@@ -7,7 +7,7 @@ Assets {
       RootId: 11749674218327366263
       Objects {
         Id: 11749674218327366263
-        Name: "Street Lamp 01"
+        Name: "Street Lamp Post - Scripted"
         Transform {
           Scale {
             X: 1
@@ -190,7 +190,6 @@ Assets {
             B: 0.477918148
             A: 1
           }
-          CastShadows: true
           VolumetricIntensity: 5
           TeamSettings {
           }
@@ -198,7 +197,7 @@ Assets {
             UseTemperature: true
             Temperature: 2600
             LocalLight {
-              AttenuationRadius: 1250
+              AttenuationRadius: 2000
               PointLight {
                 SourceRadius: 10
                 SoftSourceRadius: 100
@@ -291,6 +290,7 @@ Assets {
         }
         Folder {
           Model {
+            AggressiveMerge: true
           }
         }
         NetworkRelevanceDistance {
@@ -442,7 +442,7 @@ Assets {
             Z: 455.000977
           }
           Rotation {
-            Yaw: -89.9999924
+            Yaw: -90
           }
           Scale {
             X: 2.79999971
@@ -744,7 +744,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -814,7 +813,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -835,7 +833,7 @@ Assets {
             Z: 540
           }
           Rotation {
-            Yaw: -112.499901
+            Yaw: -112.499908
           }
           Scale {
             X: 1
@@ -1034,7 +1032,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100

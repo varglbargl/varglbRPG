@@ -15,7 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3855702338875834365
+        ParentId: 4781671109827199097
+        ChildIds: 13025544489281495681
+        ChildIds: 3970557346866890717
         ChildIds: 5333309976524365778
         UnregisteredParameters {
           Overrides {
@@ -29,8 +31,52 @@ Assets {
             Float: 60
           }
           Overrides {
-            Name: "cs:Health"
-            Int: 20
+            Name: "cs:MinDamage"
+            Int: 7
+          }
+          Overrides {
+            Name: "cs:MaxDamage"
+            Int: 8
+          }
+          Overrides {
+            Name: "cs:StatusEffects"
+            String: "stun, taunt"
+          }
+          Overrides {
+            Name: "cs:SplashRadius"
+            Float: 1.5
+          }
+          Overrides {
+            Name: "cs:MinDamage:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:MinDamage:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:MaxDamage:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:MaxDamage:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:StatusEffects:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:StatusEffects:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:SplashRadius:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:SplashRadius:ml"
+            Bool: false
           }
         }
         WantsNetworking: true
@@ -50,6 +96,128 @@ Assets {
           SocketName: "right_prop"
           PickupTrigger {
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 13025544489281495681
+        Name: "Melee Weapon Server"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7565694535029660177
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16304300347039127812
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 3970557346866890717
+        Name: "Bash"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7565694535029660177
+        UnregisteredParameters {
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Ability {
+          IsEnabled: true
+          CastPhaseSettings {
+            Duration: 0.15
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:aim"
+            }
+          }
+          ExecutePhaseSettings {
+            Duration: 0.15
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:aim"
+            }
+          }
+          RecoveryPhaseSettings {
+            Duration: 0.5
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:none"
+            }
+          }
+          CooldownPhaseSettings {
+            Duration: 4.2
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:none"
+            }
+          }
+          Animation: "2hand_sword_slash_left"
+          CanBePrevented: true
+          KeyBinding_v2 {
+            Value: "mc:egameaction:invalid"
+          }
+          KeyBinding_v3: "Secondary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
