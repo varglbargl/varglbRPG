@@ -590,6 +590,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Shared_Detail1:smart"
+      Bool: false
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -713,6 +717,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Shared_Detail1:smart"
+      Bool: false
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -835,6 +843,10 @@ Objects {
         B: 0.025
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:smart"
+      Bool: false
     }
   }
   Collidable_v2 {

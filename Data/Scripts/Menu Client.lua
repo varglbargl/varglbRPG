@@ -72,28 +72,28 @@ function setScreenOpened(screenName, isOpen)
   end
 end
 
-function onBindingPressed(thisPlayer, keyCode)
+function onBindingPressed(thisPlayer, actionName)
   if thisPlayer ~= clientPlayer then return end
-	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
+	-- print("player " .. thisPlayer.name .. " pressed binding: " .. actionName)
 
-  if keyCode == "ability_extra_27" then
+  if actionName == "Character Screen" then
     Events.Broadcast("ToggleCharacterScreen")
   end
 
-  if keyCode == "ability_extra_38" then
-    Events.Broadcast("ToggleMiniQuestLog")
+  if actionName == "Adventure Screen" then
+    Events.Broadcast("ToggleAdventureScreen")
   end
 
-  if keyCode == "ability_extra_45" then
-    Events.Broadcast("ToggleAdventureScreen")
+  if actionName == "Mini Quest Log" then
+    Events.Broadcast("ToggleMiniQuestLog")
   end
 end
 
 CHARACTER.clickedEvent:Connect(onCharacterButtonClicked)
 ADVENTURE.clickedEvent:Connect(onAdventureButtonClicked)
 
--- handler params: Player_player, string_keyCode
-clientPlayer.bindingPressedEvent:Connect(onBindingPressed)
+-- handler params: Player_player, string_action, value_value
+Input.actionPressedEvent:Connect(onBindingPressed)
 
 -- handler params: Player_player, table_parameters
 Input.escapeHook:Connect(onEscape)

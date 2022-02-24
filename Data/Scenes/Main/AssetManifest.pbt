@@ -422,6 +422,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17842338059271739515
+  Name: "Mecha - Armor - Shoulder Thruster 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_veh_jpn_mecha_armor_shldr_thruster_002_ref"
+  }
+}
+Assets {
   Id: 17828624153613250487
   Name: "Text 05: N"
   PlatformAssetType: 1
@@ -626,15 +635,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_chain_link_001_ref"
-  }
-}
-Assets {
-  Id: 17656973355077355730
-  Name: "Humanoid 2 Ramesh Hair"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_hair_basic_008_ref"
   }
 }
 Assets {
@@ -899,6 +899,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17262603909637086033
+  Name: "Falling Dust VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_falling_dust"
+  }
+}
+Assets {
   Id: 17245318809946547268
   Name: "Decal Family Crest 01"
   PlatformAssetType: 14
@@ -986,6 +995,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_nat_stick_002_ref"
+  }
+}
+Assets {
+  Id: 17000462329980312403
+  Name: "Metal Grates 06"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_speaker_mesh_003_uv_ref"
   }
 }
 Assets {
@@ -1214,12 +1232,30 @@ Assets {
   }
 }
 Assets {
+  Id: 16594247010174124467
+  Name: "Mecha - Armor - Waist 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_veh_jpn_mecha_armor_waist_001_ref"
+  }
+}
+Assets {
   Id: 16578018352763240949
   Name: "Bone Human Skull 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_skull_01_ref"
+  }
+}
+Assets {
+  Id: 16563273304261149177
+  Name: "Mecha - Frame - Hinge 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_veh_jpn_mecha_frame_hinge_001_ref"
   }
 }
 Assets {
@@ -1844,6 +1880,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15624676060717398659
+  Name: "Basic Pepper 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_org_pepper_002_ref"
+  }
+}
+Assets {
   Id: 15614794363849386760
   Name: "Urban Door Steel 02"
   PlatformAssetType: 1
@@ -2291,6 +2336,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_hollow_003"
+  }
+}
+Assets {
+  Id: 14919452214331030571
+  Name: "Pyramid - 3-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_threesided_hq_001"
   }
 }
 Assets {
@@ -4238,6 +4292,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12395923366060108233
+  Name: "Creature Bird Crow Low Caw 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_bird_crow_low_caw_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 12375281943250166889
   Name: "Urban Fence Cable Clamp"
   PlatformAssetType: 1
@@ -4865,6 +4928,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_roof_001"
+  }
+}
+Assets {
+  Id: 11457258101121331737
+  Name: "Mechanical Steam Gear Grinding Metal Engine Loop 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_Mechanical_Steam_Gear_Grinding_Metal_Engine_Loop_02_Cue_ref"
   }
 }
 Assets {
@@ -5516,6 +5588,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10569919592395594706
+  Name: "Urban Vehicle Car - Tire 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_veh_urb_car_acc_tire_001_ref"
+  }
+}
+Assets {
   Id: 10567192068688216948
   Name: "Craftsman Stairs 01 L"
   PlatformAssetType: 1
@@ -5648,6 +5729,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prim_org_clayform_002_ref"
+  }
+}
+Assets {
+  Id: 10300501020110052339
+  Name: "Urban - Bathtub Handle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_bathtub_handle_001_ref"
   }
 }
 Assets {
@@ -7442,6 +7532,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7596859718816926562
+  Name: "Mecha - Frame - Neck 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_veh_jpn_mecha_frame_neck_001_ref"
+  }
+}
+Assets {
   Id: 7591680237985143139
   Name: "Frame Small Straight - Neon 1 Sided Ending"
   PlatformAssetType: 1
@@ -7493,6 +7592,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_ice_opaque"
+  }
+}
+Assets {
+  Id: 7548556405676596943
+  Name: "Fox Mob"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_fox_default_basic_001_ref"
   }
 }
 Assets {
@@ -10025,6 +10133,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3997644731675180303
+  Name: "Fantasy Chain - Straight 2m 06"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_chain_strt_2m_006_ref"
+  }
+}
+Assets {
   Id: 3991273143568110843
   Name: "Nature Beach Large Waves Loop 01 SFX"
   PlatformAssetType: 7
@@ -10175,6 +10292,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_carpet_tile_002"
+  }
+}
+Assets {
+  Id: 3808654946727621928
+  Name: "Military Tank Modern U Bracket 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_mil_tank_mod_ubracket_001_ref"
   }
 }
 Assets {
@@ -10580,6 +10706,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_ambience_suburbs_crickets_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 3377459926086255037
+  Name: "Desk Lamp Hinge"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_lamp_desktop_hinge_001"
   }
 }
 Assets {
@@ -11042,15 +11177,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2609515233163365639
-  Name: "Corner - Smoothed - 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_corner_smooth_001_ref"
-  }
-}
-Assets {
   Id: 2604175958234429493
   Name: "Text 04: V"
   PlatformAssetType: 1
@@ -11300,15 +11426,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_carbon-fiber_001"
-  }
-}
-Assets {
-  Id: 2228991188125009809
-  Name: "Humanoid 2 Minh"
-  PlatformAssetType: 26
-  PrimaryAsset {
-    AssetType: "SkinnedMeshAssetRef"
-    AssetId: "npc_human_guy_head_basic_002_ref"
   }
 }
 Assets {
@@ -12185,6 +12302,15 @@ Assets {
   }
 }
 Assets {
+  Id: 904946288750405449
+  Name: "Thorn - Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tooth_001"
+  }
+}
+Assets {
   Id: 871942256260178295
   Name: "Nature Log 04"
   PlatformAssetType: 1
@@ -12362,6 +12488,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_012"
+  }
+}
+Assets {
+  Id: 703476702547312321
+  Name: "Fantasy Chain - Straight 4m 06"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_chain_strt_4m_006_ref"
   }
 }
 Assets {
@@ -12677,6 +12812,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_fivesided_hq_001"
+  }
+}
+Assets {
+  Id: 228918927577628118
+  Name: "Tech Panel 04"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_sf_gen_tech-panel_004_uv"
   }
 }
 Assets {

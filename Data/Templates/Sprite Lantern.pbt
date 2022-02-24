@@ -72,6 +72,7 @@ Assets {
         ParentId: 2014862613104300196
         ChildIds: 10409408107680282901
         ChildIds: 16137542462964853624
+        ChildIds: 4688323104637272237
         ChildIds: 475828383709240005
         ChildIds: 8782072587186426623
         ChildIds: 5028001387311042722
@@ -225,6 +226,67 @@ Assets {
         }
       }
       Objects {
+        Id: 4688323104637272237
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: 0.000742647273
+            Y: -0.00180642516
+            Z: 35.9560547
+          }
+          Rotation {
+            Yaw: 2.73207534e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9705993271348120636
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Light {
+          Intensity: 3
+          Color {
+            R: 1
+            G: 0.487600029
+            B: 0.145999968
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 2500
+            LocalLight {
+              AttenuationRadius: 2500
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 8000
+            MaxDistanceFadeRange: 2000
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 475828383709240005
         Name: "Point Light"
         Transform {
@@ -236,9 +298,9 @@ Assets {
             Yaw: 1.70754683e-05
           }
           Scale {
-            X: 1.58108974
-            Y: 1.58108974
-            Z: 1.58108974
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 9705993271348120636
@@ -269,10 +331,10 @@ Assets {
           Light {
             Temperature: 2500
             LocalLight {
-              AttenuationRadius: 2000
+              AttenuationRadius: 1500
               PointLight {
-                SourceRadius: 20
-                SoftSourceRadius: 20
+                SourceRadius: 150
+                SoftSourceRadius: 150
                 FallOffExponent: 8
                 UseFallOffExponent: true
               }

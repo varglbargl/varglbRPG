@@ -12,7 +12,7 @@ local RUN_ANIM = script:GetCustomProperty("RunAnimation")
 local ATTACK_ANIM = script:GetCustomProperty("AttackAnimation")
 local DIE_ANIM = script:GetCustomProperty("DieAnimation")
 
-if IDLE_ANIM ~= "" then MESH.animationStance = IDLE_ANIM end
+if IDLE_ANIM == "" then IDLE_ANIM = MESH.animationStance end
 
 local DAMAGED_VFX = enemy:GetCustomProperty("DamagedVFX")
 local DEATH_VFX = enemy:GetCustomProperty("DeathVFX")
