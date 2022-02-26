@@ -13,6 +13,7 @@ local FINISH_QUEST_MARKER = script:GetCustomProperty("FinishQuestMarker")
 local QUEST_DISPLAY = script:GetCustomProperty("QuestDisplay"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
+local previousLines = nil
 local updateAvailableEvent = nil
 local completedEvent = nil
 local fadeTask = nil
@@ -29,7 +30,12 @@ function onAvailableQuestsUpdated(availableQuestIDs)
 
   for _, id in ipairs(availableQuestIDs) do
     if id == QUEST_ID then
+      if startNPC.clientUserData["Lines"] then
+        previousLines = startNPC.clientUserData["Lines"]
+      end
+
       startNPC.clientUserData["Lines"] = START_LINES
+      dialogueTrigger.collision = Collision.FORCE_ON
       questMarker = World.SpawnAsset(START_QUEST_MARKER, {parent = dialogueTrigger})
       break
     end
@@ -49,7 +55,12 @@ function onAvailableQuestsUpdated(availableQuestIDs)
 
     acceptedEvent:Disconnect()
 
-    startNPC.clientUserData["Lines"] = nil
+    if previousLines then
+      startNPC.clientUserData["Lines"] = previousLines
+      previousLines = nil
+    else
+      startNPC.clientUserData["Lines"] = nil
+    end
 
     if Object.IsValid(questMarker) then questMarker:Destroy() end
 
@@ -83,9 +94,10 @@ function onQuestCompleted(questID)
 
   completedEvent:Disconnect()
   TURN_IN_NPC.clientUserData["Lines"] = TURN_IN_LINES
+  dialogueTrigger.collision = Collision.FORCE_ON
 
   if clientPlayer.isSpawned then
-    Utils.playSoundEffect(ACCEPT_SFX, {volume = 0.5, type = "Combo 10"})
+    Utils.playSoundEffect(ACCEPT_SFX, {volume = 0.5, type = 8})
   end
 
   local turnedInEvent = nil
@@ -93,7 +105,13 @@ function onQuestCompleted(questID)
   turnedInEvent = Events.Connect("QuestTurnedIn", function(thisQuestID)
     if thisQuestID ~= questID then return end
     turnedInEvent:Disconnect()
-    TURN_IN_NPC.clientUserData["Lines"] = nil
+
+    if previousLines then
+      TURN_IN_NPC.clientUserData["Lines"] = previousLines
+      previousLines = nil
+    else
+      TURN_IN_NPC.clientUserData["Lines"] = nil
+    end
 
     if Object.IsValid(questMarker) then questMarker:Destroy() end
 

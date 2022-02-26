@@ -8,4 +8,5 @@ Assets {
   }
   SerializationVersion: 107
   VirtualFolderPath: "Dialogue"
+  VirtualFolderPath: "Quests Lines"
 }

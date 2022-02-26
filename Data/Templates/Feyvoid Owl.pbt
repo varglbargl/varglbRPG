@@ -160,14 +160,16 @@ Assets {
         Name: "Hitbox"
         Transform {
           Location {
-            Z: 100
+            X: -11.5351562
+            Z: 183.560547
           }
           Rotation {
+            Pitch: 10.8302822
           }
           Scale {
             X: 1.50000012
-            Y: 1.50000012
-            Z: 1.50000012
+            Y: 2.13945246
+            Z: 1.23359871
           }
         }
         ParentId: 7775399261789943580
@@ -364,7 +366,7 @@ Assets {
         Transform {
           Location {
             X: -20
-            Z: 125
+            Z: 150
           }
           Rotation {
           }
@@ -973,7 +975,7 @@ Assets {
             Z: 14.2040901
           }
           Rotation {
-            Pitch: -25.8575439
+            Pitch: -19.5743103
           }
           Scale {
             X: 0.292551
@@ -1028,17 +1030,17 @@ Assets {
         Name: "Cone - Truncated Wide"
         Transform {
           Location {
-            X: -5.98352718
-            Y: -3.12584518e-08
-            Z: 3.98048782
+            X: -8.97166443
+            Y: 5.87907323e-08
+            Z: -7.48647976
           }
           Rotation {
             Pitch: -14.6083374
           }
           Scale {
-            X: 0.292955101
+            X: 0.292932123
             Y: 0.318037778
-            Z: 0.275626212
+            Z: 0.541587353
           }
         }
         ParentId: 7392811820771533808
@@ -1088,14 +1090,14 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 11.1253777
+            X: 10.9166117
             Y: -8.42773438
-            Z: 15.3936338
+            Z: 16.7616425
           }
           Rotation {
-            Pitch: -11.2883911
-            Yaw: -33.6463928
-            Roll: 18.2058601
+            Pitch: -6.04025269
+            Yaw: -33.1191406
+            Roll: 14.7100925
           }
           Scale {
             X: 0.0207986832
@@ -1153,13 +1155,13 @@ Assets {
         Name: "Horn"
         Transform {
           Location {
-            X: 12.3403273
-            Y: -9.56247845e-08
-            Z: 12.1769705
+            X: 12.4766989
+            Y: -1.07566116e-07
+            Z: 13.6975937
           }
           Rotation {
             Yaw: -90
-            Roll: 104.692329
+            Roll: 98.4092407
           }
           Scale {
             X: 0.0984832942
@@ -1214,14 +1216,14 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 11.4085064
+            X: 11.2266006
             Y: 8.1015625
-            Z: 15.1543465
+            Z: 16.5557804
           }
           Rotation {
-            Pitch: -4.17456055
-            Yaw: 28.626255
-            Roll: 162.066879
+            Pitch: 1.34379864
+            Yaw: 28.5518379
+            Roll: 165.07312
           }
           Scale {
             X: 0.020657694
@@ -1279,18 +1281,17 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 10.0542669
-            Y: -6.79327883e-08
-            Z: 8.65064
+            X: 10.5947762
+            Z: 9.94396782
           }
           Rotation {
             Yaw: -90
-            Roll: 97.9594116
+            Roll: 91.6762238
           }
           Scale {
-            X: 0.0543107539
-            Y: 0.0657463297
-            Z: 0.0655945688
+            X: 0.0500899404
+            Y: 0.0799392685
+            Z: 0.0822224692
           }
         }
         ParentId: 7392811820771533808
@@ -1340,14 +1341,14 @@ Assets {
         Name: "Bone Human Skull 01"
         Transform {
           Location {
-            X: -2.52416158
-            Y: 0.00976555049
-            Z: 9.45969868
+            X: -1.99961364
+            Y: 0.00976555143
+            Z: 9.37046909
           }
           Rotation {
-            Pitch: -0.0697631836
-            Yaw: -90.205658
-            Roll: 6.41676426
+            Pitch: -0.0918273926
+            Yaw: -90.1967773
+            Roll: 0.133651316
           }
           Scale {
             X: 1.27314579
@@ -1402,14 +1403,14 @@ Assets {
         Name: "Clay Form 02"
         Transform {
           Location {
-            X: 3.49770474
+            X: 2.70793
             Y: -13.4140625
-            Z: 21.1233788
+            Z: 21.6221638
           }
           Rotation {
-            Pitch: 37.7228661
-            Yaw: -18.4368896
-            Roll: -52.8103027
+            Pitch: 43.6530762
+            Yaw: -20.2270508
+            Roll: -55.5522766
           }
           Scale {
             X: 0.149328545
@@ -1464,14 +1465,14 @@ Assets {
         Name: "Clay Form 02"
         Transform {
           Location {
-            X: 7.20907164
+            X: 6.38562489
             Y: -9.48828125
-            Z: 21.2411289
+            Z: 22.1463757
           }
           Rotation {
-            Pitch: 37.4952965
-            Yaw: 1.44977987
-            Roll: -29.4570618
+            Pitch: 43.7762337
+            Yaw: 1.59308648
+            Roll: -29.2373352
           }
           Scale {
             X: 0.128229037
@@ -1526,14 +1527,14 @@ Assets {
         Name: "Clay Form 02"
         Transform {
           Location {
-            X: 8.63733864
+            X: 7.82035
             Y: -6.34765625
-            Z: 21.0948162
+            Z: 22.1566124
           }
           Rotation {
-            Pitch: 25.6748714
-            Yaw: -6.11050415
-            Roll: -30.5949707
+            Pitch: 31.9201641
+            Yaw: -6.48995972
+            Roll: -31.3814697
           }
           Scale {
             X: 0.108080134
@@ -1588,14 +1589,14 @@ Assets {
         Name: "Clay Form 02"
         Transform {
           Location {
-            X: 8.81864834
+            X: 8.05338478
             Y: -4.73632812
-            Z: 20.6260986
+            Z: 21.711174
           }
           Rotation {
-            Pitch: 30.9333172
-            Yaw: 10.0893612
-            Roll: -14.4920959
+            Pitch: 37.1120567
+            Yaw: 10.8614559
+            Roll: -13.1145935
           }
           Scale {
             X: 0.0964000449
@@ -1650,14 +1651,14 @@ Assets {
         Name: "Clay Form 02"
         Transform {
           Location {
-            X: 3.49770474
+            X: 2.70800781
             Y: 13.4140625
-            Z: 21.1233788
+            Z: 21.6225586
           }
           Rotation {
-            Pitch: 37.7228508
-            Yaw: 18.4369259
-            Roll: 52.8103676
+            Pitch: 43.6530533
+            Yaw: 20.227087
+            Roll: 55.5522652
           }
           Scale {
             X: 0.149328545
@@ -1712,14 +1713,14 @@ Assets {
         Name: "Clay Form 02"
         Transform {
           Location {
-            X: 7.20800781
+            X: 6.38476562
             Y: 9.48828125
-            Z: 21.2412109
+            Z: 22.1484375
           }
           Rotation {
-            Pitch: 37.495285
-            Yaw: -1.44976807
-            Roll: 29.4570637
+            Pitch: 43.7761879
+            Yaw: -1.59310913
+            Roll: 29.2373333
           }
           Scale {
             X: 0.128229037
@@ -1774,14 +1775,14 @@ Assets {
         Name: "Clay Form 02"
         Transform {
           Location {
-            X: 8.63733864
+            X: 7.81640625
             Y: 6.34765625
-            Z: 21.0948162
+            Z: 22.1547852
           }
           Rotation {
-            Pitch: 25.6748714
-            Yaw: 6.11050749
-            Roll: 30.5949802
+            Pitch: 31.9201431
+            Yaw: 6.48994
+            Roll: 31.3814697
           }
           Scale {
             X: 0.108080134
@@ -1836,14 +1837,14 @@ Assets {
         Name: "Clay Form 02"
         Transform {
           Location {
-            X: 8.81864834
+            X: 8.05078125
             Y: 4.73632812
-            Z: 20.6260986
+            Z: 21.7128906
           }
           Rotation {
-            Pitch: 30.9332905
-            Yaw: -10.0894165
-            Roll: 14.4921465
+            Pitch: 37.1120033
+            Yaw: -10.8614807
+            Roll: 13.1146517
           }
           Scale {
             X: 0.0964000449

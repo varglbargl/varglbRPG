@@ -1,13 +1,20 @@
 local Dialogue = require(script:GetCustomProperty("Dialogue"))
 
-local LINES = require(script:GetCustomProperty("Lines"))
+local LINES = script:GetCustomProperty("Lines")
 
 local trigger = script.parent
+
+if LINES then
+  LINES = require(LINES)
+  trigger.collision = Collision.FORCE_ON
+end
+
 local npc = trigger.parent
 local clientPlayer = Game.GetLocalPlayer()
 
-trigger.collision = Collision.FORCE_ON
-trigger.interactionLabel = "Talk to "..npc.name
+if trigger.interactionLabel == "" then
+  trigger.interactionLabel = "Talk to "..npc.name
+end
 
 function onInteracted(_, player)
   if player ~= clientPlayer then return end
@@ -28,7 +35,9 @@ function onInteracted(_, player)
       Task.Wait(1)
 
       if Object.IsValid(trigger) then
-        trigger.isInteractable = true
+        if LINES or npc.clientUserData["Lines"] then
+          trigger.isInteractable = true
+        end
       end
     end
   end)

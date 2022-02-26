@@ -40,7 +40,7 @@ Assets {
       Overrides {
         Name: "cs:AcceptSFX"
         AssetReference {
-          Id: 8074905351349832942
+          Id: 11130109947025433005
         }
       }
       Overrides {
@@ -97,12 +97,12 @@ Assets {
       }
     }
     Assets {
-      Id: 8074905351349832942
-      Name: "Combo Achievement Warm Synth Stingers Set 01 SFX"
+      Id: 11130109947025433005
+      Name: "Combo Achievement Kalimba 7ths Shine Stingers Set 01 SFX"
       PlatformAssetType: 10
       PrimaryAsset {
         AssetType: "AudioBlueprintAssetRef"
-        AssetId: "abp_stinger_combo_achievement_warm_synth_01_ref"
+        AssetId: "abp_stinger_combo_achievement_kalimba_7ths_shine_01_ref"
       }
     }
     Assets {

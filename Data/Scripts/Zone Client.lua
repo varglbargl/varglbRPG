@@ -1,19 +1,16 @@
-local DAY_SOUNDS = script:GetCustomProperty("DaySounds"):WaitForObject()
-local NIGHT_SOUNDS = script:GetCustomProperty("NightSounds"):WaitForObject()
+local DAY_MUSIC = script:GetCustomProperty("DayMusic")
+local NIGHT_MUSIC = script:GetCustomProperty("NightMusic")
 
 local trigger = script:FindChildByType("Trigger")
 local clientPlayer = Game.GetLocalPlayer()
 
-if DAY_SOUNDS then
-  for _, sound in ipairs(DAY_SOUNDS:GetChildren()) do
-    sound:Stop()
-  end
+local music = nil
+trigger.collision = Collision.FORCE_ON
+
+if DAY_MUSIC then
 end
 
-if NIGHT_SOUNDS then
-  for _, sound in ipairs(NIGHT_SOUNDS:GetChildren()) do
-    sound:Stop()
-  end
+if NIGHT_MUSIC then
 end
 
 function enterZone(thisTrigger, other)

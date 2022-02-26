@@ -305,6 +305,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17995136770421989355
+  Name: "Pirata One"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "PirataOneRegular_ref"
+  }
+}
+Assets {
   Id: 17984110408163466439
   Name: "Tree Sakura Hero 02"
   PlatformAssetType: 1
@@ -320,6 +329,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wallpaper_fleurdelis_001_uv"
+  }
+}
+Assets {
+  Id: 17965956542906644685
+  Name: "Humanoid 2 Ramesh Hair"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_hair_basic_008_ref"
   }
 }
 Assets {
@@ -413,21 +431,21 @@ Assets {
   }
 }
 Assets {
+  Id: 17855808560429011838
+  Name: "Plane Trapezoid - One Sided Right"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_trapezoid_002"
+  }
+}
+Assets {
   Id: 17850784779650210910
   Name: "Military Sandbag 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_mil_sandbag_001"
-  }
-}
-Assets {
-  Id: 17842338059271739515
-  Name: "Mecha - Armor - Shoulder Thruster 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_veh_jpn_mecha_armor_shldr_thruster_002_ref"
   }
 }
 Assets {
@@ -491,6 +509,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_063"
+  }
+}
+Assets {
+  Id: 17759912012917331770
+  Name: "Girder Medium 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_girder_medium_4m_1-5m_001"
   }
 }
 Assets {
@@ -581,6 +608,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_two-by-four_3m"
+  }
+}
+Assets {
+  Id: 17699158704715816241
+  Name: "Humanoid 2 Military Fatigues"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_upper_military_000_ref"
   }
 }
 Assets {
@@ -881,6 +917,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17280976981586363031
+  Name: "Corrugated Sheet Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_corrugated_sheet_02_ref"
+  }
+}
+Assets {
   Id: 17271993896608767277
   Name: "Text 06: H"
   PlatformAssetType: 1
@@ -998,21 +1043,21 @@ Assets {
   }
 }
 Assets {
-  Id: 17000462329980312403
-  Name: "Metal Grates 06"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_speaker_mesh_003_uv_ref"
-  }
-}
-Assets {
   Id: 16984396610066357219
   Name: "Urban Skylight"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_skylight_001"
+  }
+}
+Assets {
+  Id: 16980551904894184864
+  Name: "Large Girder 8m x 6m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wall_girder_large_8m_001"
   }
 }
 Assets {
@@ -1229,15 +1274,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_frosted_glass"
-  }
-}
-Assets {
-  Id: 16594247010174124467
-  Name: "Mecha - Armor - Waist 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_veh_jpn_mecha_armor_waist_001_ref"
   }
 }
 Assets {
@@ -1682,6 +1718,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15999283019477080424
+  Name: "Waterfall 90 Inner Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "longexposure_waterfall_90ic_2"
+  }
+}
+Assets {
   Id: 15976510215711345958
   Name: "Craftsman Nightstand Drawer"
   PlatformAssetType: 1
@@ -1877,15 +1922,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_003"
-  }
-}
-Assets {
-  Id: 15624676060717398659
-  Name: "Basic Pepper 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prim_org_pepper_002_ref"
   }
 }
 Assets {
@@ -2273,6 +2309,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_jpn_tea_set_kettle_001_ref"
+  }
+}
+Assets {
+  Id: 15071122712750674004
+  Name: "Urban Damaged Rebar - Twisted Ends 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dest_rebar_004_ref"
   }
 }
 Assets {
@@ -2780,12 +2825,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14307818101647843922
+  Name: "Urban Damaged Rebar - Single 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dest_rebar_005_ref"
+  }
+}
+Assets {
   Id: 14306160699733692858
   Name: "Wedge Concave - Large"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_wedge_curved_concave_lg_001_ref"
+  }
+}
+Assets {
+  Id: 14269207893972646726
+  Name: "Fantasy Castle Floor 01 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_001_4m"
   }
 }
 Assets {
@@ -3281,6 +3344,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_062"
+  }
+}
+Assets {
+  Id: 13668720775929090807
+  Name: "Traffic Signal 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_st_post_lights_traffic_001"
   }
 }
 Assets {
@@ -4931,15 +5003,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11457258101121331737
-  Name: "Mechanical Steam Gear Grinding Metal Engine Loop 02 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_Mechanical_Steam_Gear_Grinding_Metal_Engine_Loop_02_Cue_ref"
-  }
-}
-Assets {
   Id: 11452126672691922020
   Name: "Craftsman Dining Chair"
   PlatformAssetType: 1
@@ -4964,6 +5027,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_door_002_ref"
+  }
+}
+Assets {
+  Id: 11433393720937894921
+  Name: "Fantasy Ability Purple 010"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Purple_010"
   }
 }
 Assets {
@@ -5588,15 +5660,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10569919592395594706
-  Name: "Urban Vehicle Car - Tire 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_veh_urb_car_acc_tire_001_ref"
-  }
-}
-Assets {
   Id: 10567192068688216948
   Name: "Craftsman Stairs 01 L"
   PlatformAssetType: 1
@@ -5732,12 +5795,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10300501020110052339
-  Name: "Urban - Bathtub Handle 01"
+  Id: 10311558411047723412
+  Name: "Modern Damaged Stairs Post 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_bathtub_handle_001_ref"
+    AssetId: "sm_ts_mod_stairs_post_001_damaged_01_ref"
   }
 }
 Assets {
@@ -6215,6 +6278,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_scf_rubber_panels_004_uv"
+  }
+}
+Assets {
+  Id: 9602407118877151701
+  Name: "Humanoid 2 Vark"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_head_casual_004_ref"
   }
 }
 Assets {
@@ -6818,6 +6890,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_painted_new_001_uv"
+  }
+}
+Assets {
+  Id: 8697567018166440949
+  Name: "Office Carpet Rectangle 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_office_carpet_003_uv_ref"
   }
 }
 Assets {
@@ -7532,15 +7613,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7596859718816926562
-  Name: "Mecha - Frame - Neck 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_veh_jpn_mecha_frame_neck_001_ref"
-  }
-}
-Assets {
   Id: 7591680237985143139
   Name: "Frame Small Straight - Neon 1 Sided Ending"
   PlatformAssetType: 1
@@ -7592,15 +7664,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_ice_opaque"
-  }
-}
-Assets {
-  Id: 7548556405676596943
-  Name: "Fox Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_fox_default_basic_001_ref"
   }
 }
 Assets {
@@ -7961,6 +8024,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_veh_jpn_mecha_frame_shldr_joint_001_ref"
+  }
+}
+Assets {
+  Id: 7077067895509399041
+  Name: "Urban - Modern Hammer 01 - Head 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_hammer_mod_001_head_001_ref"
   }
 }
 Assets {
@@ -11357,6 +11429,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2370966373290323076
+  Name: "Urban Damaged Rebar - Lattice 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mlt_rebar_001_ref"
+  }
+}
+Assets {
   Id: 2367204253233266792
   Name: "Text 02: A"
   PlatformAssetType: 1
@@ -11498,6 +11579,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_jpn_bamboo_bark_dead_001_uv_ref"
+  }
+}
+Assets {
+  Id: 2088251636449389036
+  Name: "Modern Stairs Post 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_mod_stairs_post_001_ref"
   }
 }
 Assets {
@@ -11735,15 +11825,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1787674624044339170
-  Name: "Text 02: ,"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_062"
-  }
-}
-Assets {
   Id: 1774237287827482588
   Name: "Humanoid 2 Zack"
   PlatformAssetType: 26
@@ -11894,6 +11975,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half_lense_001"
+  }
+}
+Assets {
+  Id: 1548300572921578218
+  Name: "Front Desk"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_desk_front_001"
   }
 }
 Assets {
@@ -12074,6 +12164,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_ivy_002"
+  }
+}
+Assets {
+  Id: 1287203782625704153
+  Name: "Concrete Rough"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_rough_001"
   }
 }
 Assets {
@@ -12299,15 +12398,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Survival_Equip_Note_002"
-  }
-}
-Assets {
-  Id: 904946288750405449
-  Name: "Thorn - Wide"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tooth_001"
   }
 }
 Assets {
@@ -12812,15 +12902,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_fivesided_hq_001"
-  }
-}
-Assets {
-  Id: 228918927577628118
-  Name: "Tech Panel 04"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_sf_gen_tech-panel_004_uv"
   }
 }
 Assets {

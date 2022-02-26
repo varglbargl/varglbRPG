@@ -22,7 +22,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:Level"
-            Int: 5
+            Int: 3
           }
           Overrides {
             Name: "cs:DamagedVFX"
@@ -192,7 +192,6 @@ Assets {
             TeamInt: 1
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -315,7 +314,7 @@ Assets {
         Name: "Lumber Jackal"
         Transform {
           Location {
-            Z: 102.315918
+            Z: 105
           }
           Rotation {
           }
@@ -508,7 +507,7 @@ Assets {
               PlaybackRate: 1
             }
             SkinnedMeshes {
-              Id: 10839704727209945933
+              Id: 2402679573931241348
             }
             SkinnedMeshes {
               Id: 3547143880782407744
@@ -1492,6 +1491,7 @@ Assets {
           }
         }
         ParentId: 3455530441477453204
+        ChildIds: 17944021504626305961
         ChildIds: 4684441337751371007
         ChildIds: 6035721778167931209
         ChildIds: 11481813174025134863
@@ -1502,12 +1502,12 @@ Assets {
         ChildIds: 7220395865940280887
         ChildIds: 13268893196545149840
         ChildIds: 6618648841030610190
-        ChildIds: 3756167231649487833
-        ChildIds: 17944021504626305961
         ChildIds: 5495956481821198976
         ChildIds: 15148694483568040555
         ChildIds: 7552306538070754649
         ChildIds: 17199360924974410717
+        ChildIds: 3756167231649487833
+        ChildIds: 14771770212486549518
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -1520,6 +1520,70 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 17944021504626305961
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: -26.050848
+            Y: -21.8153973
+            Z: -30.465786
+          }
+          Rotation {
+            Pitch: -6.10351562e-05
+            Yaw: -6.10351562e-05
+            Roll: 9.40425862e-11
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14388200292231026780
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Light {
+          Intensity: 5
+          Color {
+            R: 0.843000054
+            G: 0.619
+            B: 0.462
+            A: 1
+          }
+          CastShadows: true
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 500
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2122,19 +2186,19 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -27.6006184
-            Y: -14.6923485
-            Z: -10.8813114
+            X: -27.6953449
+            Y: -14.0351219
+            Z: -10.8537235
           }
           Rotation {
-            Pitch: -74.7131653
-            Yaw: -160.657349
-            Roll: -10.1008606
+            Pitch: -74.7594
+            Yaw: 179.457535
+            Roll: 9.09619904
           }
           Scale {
-            X: 0.575006
-            Y: 0.525720596
-            Z: 0.312483042
+            X: 0.554886222
+            Y: 0.525719
+            Z: 0.312488139
           }
         }
         ParentId: 14388200292231026780
@@ -2170,177 +2234,6 @@ Assets {
               LinearDamping: 0.01
             }
             BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 3756167231649487833
-        Name: "Urban Pipe Clamp 02"
-        Transform {
-          Location {
-            X: -25.9482841
-            Y: -22.0497723
-            Z: -11.2421532
-          }
-          Rotation {
-            Pitch: -1.41842651
-            Yaw: 0.636537731
-            Roll: -176.980362
-          }
-          Scale {
-            X: 0.336738765
-            Y: 0.336738765
-            Z: 0.336738765
-          }
-        }
-        ParentId: 14388200292231026780
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3722419759708884904
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 8919871824294249785
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 5
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 5
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:color"
-            Color {
-              R: 10
-              G: 7.66900063
-              B: 2.23
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 6
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 0.366666675
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:id"
-            AssetReference {
-              Id: 8919871824294249785
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17363957958025163872
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableCastShadows: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 17944021504626305961
-        Name: "Point Light"
-        Transform {
-          Location {
-            X: -27.9746704
-            Y: -22.9696922
-            Z: -24.4247684
-          }
-          Rotation {
-            Pitch: -6.10351562e-05
-            Yaw: -6.10351562e-05
-            Roll: 9.40425862e-11
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14388200292231026780
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Light {
-          Intensity: 5
-          Color {
-            R: 0.843000054
-            G: 0.619
-            B: 0.462
-            A: 1
-          }
-          CastShadows: true
-          VolumetricIntensity: 5
-          TeamSettings {
-          }
-          Light {
-            Temperature: 6500
-            LocalLight {
-              AttenuationRadius: 500
-              PointLight {
-                SourceRadius: 20
-                SoftSourceRadius: 20
-                FallOffExponent: 8
-                UseFallOffExponent: true
-              }
-            }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
           }
         }
         NetworkRelevanceDistance {
@@ -2633,6 +2526,217 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
+      Objects {
+        Id: 3756167231649487833
+        Name: "Urban Interior - Oil Lantern 02 - Base 01"
+        Transform {
+          Location {
+            X: -25.4121933
+            Y: -21.5009441
+            Z: -43.8754539
+          }
+          Rotation {
+            Yaw: 152.275391
+          }
+          Scale {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        ParentId: 14388200292231026780
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3722419759708884904
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 7035286367024276026
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.75
+              G: 0.384375036
+              B: 0.1875
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 8
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 1
+              G: 0.366666675
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 8919871824294249785
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1227539998602669490
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14771770212486549518
+        Name: "Urban Interior - Oil Lantern 02 - Base 01"
+        Transform {
+          Location {
+            X: -24.52738
+            Y: -19.9882507
+            Z: -8.85030937
+          }
+          Rotation {
+            Pitch: 0.242089212
+            Yaw: 152.260529
+            Roll: -12.3904724
+          }
+          Scale {
+            X: 0.509609
+            Y: 0.420331687
+            Z: 0.365257502
+          }
+        }
+        ParentId: 14388200292231026780
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3722419759708884904
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 7035286367024276026
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 1
+              G: 0.366666675
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 6
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 6
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 1
+              G: 0.366666675
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 8919871824294249785
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 2706761020859682454
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
     }
     Assets {
       Id: 5944393796542654307
@@ -2653,12 +2757,12 @@ Assets {
       }
     }
     Assets {
-      Id: 10839704727209945933
-      Name: "Humanoid 2 Roscoe"
+      Id: 2402679573931241348
+      Name: "Humanoid 2 Xavier"
       PlatformAssetType: 26
       PrimaryAsset {
         AssetType: "SkinnedMeshAssetRef"
-        AssetId: "npc_human_guy_head_military_001_ref"
+        AssetId: "npc_human_guy_head_basic_006_ref"
       }
     }
     Assets {
@@ -2851,33 +2955,6 @@ Assets {
       }
     }
     Assets {
-      Id: 17363957958025163872
-      Name: "Urban Pipe Clamp 02"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urb_pipes_acc_clamp_002_ref"
-      }
-    }
-    Assets {
-      Id: 3722419759708884904
-      Name: "Metal Iron Rusted 02"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_iron_003"
-      }
-    }
-    Assets {
-      Id: 8919871824294249785
-      Name: "Emissive Glow Transparent"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_emissive_001"
-      }
-    }
-    Assets {
       Id: 1789240714334077639
       Name: "Wooden Barrel"
       PlatformAssetType: 1
@@ -2911,6 +2988,51 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ring_faceted_003"
+      }
+    }
+    Assets {
+      Id: 1227539998602669490
+      Name: "Urban Interior - Oil Lantern 02 - Base 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_lantern_oil_base_002_ref"
+      }
+    }
+    Assets {
+      Id: 3722419759708884904
+      Name: "Metal Iron Rusted 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_003"
+      }
+    }
+    Assets {
+      Id: 7035286367024276026
+      Name: "Metal Iron Rusted 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_003"
+      }
+    }
+    Assets {
+      Id: 8919871824294249785
+      Name: "Emissive Glow Transparent"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_basic_emissive_001"
+      }
+    }
+    Assets {
+      Id: 2706761020859682454
+      Name: "Urban Interior - Oil Lantern 02 - Handle 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_lantern_oil_handle_002_ref"
       }
     }
     PrimaryAssetId {

@@ -15,7 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2387234837285085974
+        ParentId: 4781671109827199097
+        ChildIds: 10567578769515347192
         ChildIds: 13953497315292625011
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -30,6 +31,107 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 10567578769515347192
+        Name: "Callout Sparkle"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1.5
+          }
+        }
+        ParentId: 4080158336536521140
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Wind Speed"
+            Vector {
+            }
+          }
+          Overrides {
+            Name: "bp:Curl Variance"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Curl Speed"
+            Vector {
+              Z: 1.25
+            }
+          }
+          Overrides {
+            Name: "bp:Volume Type"
+            Enum {
+              Value: "mc:evfxvolumetype:2"
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 1.5
+          }
+          Overrides {
+            Name: "bp:Particle Rotation Rate High"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Particle Rotation Rate Low"
+            Float: -1
+          }
+          Overrides {
+            Name: "bp:Initial Velocity"
+            Vector {
+              Z: 10
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 0.700000048
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5675675085224857253
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -77,8 +179,8 @@ Assets {
         Name: "Text 03: ?"
         Transform {
           Location {
-            X: -1.97547817
-            Y: 11.0117979
+            X: -1.97460938
+            Y: 11.0117188
           }
           Rotation {
             Yaw: -90
@@ -86,7 +188,7 @@ Assets {
           Scale {
             X: 0.4
             Y: 0.2
-            Z: 0.4
+            Z: 0.5
           }
         }
         ParentId: 13953497315292625011
@@ -203,6 +305,15 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
+      }
+    }
+    Assets {
+      Id: 5675675085224857253
+      Name: "Callout Sparkle"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_sparkles_volume_vfx"
       }
     }
     Assets {

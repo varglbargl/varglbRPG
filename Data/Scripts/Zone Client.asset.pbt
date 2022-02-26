@@ -17,13 +17,15 @@ Assets {
         String: ""
       }
       Overrides {
-        Name: "cs:DaySounds"
-        ObjectReference {
+        Name: "cs:DayMusic"
+        AssetReference {
+          Id: 841534158063459245
         }
       }
       Overrides {
-        Name: "cs:NightSounds"
-        ObjectReference {
+        Name: "cs:NightMusic"
+        AssetReference {
+          Id: 841534158063459245
         }
       }
     }

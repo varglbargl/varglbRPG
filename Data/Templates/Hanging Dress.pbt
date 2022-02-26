@@ -384,14 +384,14 @@ Assets {
         Name: "Arch Fancy 3m"
         Transform {
           Location {
-            X: 10.6240234
-            Y: -2.03710938
+            X: 10.6210938
+            Y: -2.03125
             Z: 67.4494629
           }
           Rotation {
-            Pitch: -16.3468952
-            Yaw: -1.64907849
-            Roll: 0.42485714
+            Pitch: -16.3468933
+            Yaw: -0.855651855
+            Roll: 0.424857676
           }
           Scale {
             X: -0.090018183
@@ -475,14 +475,14 @@ Assets {
         Name: "Arch Fancy 3m"
         Transform {
           Location {
-            X: -10.1962938
-            Y: -1.08947182
-            Z: 67.2301865
+            X: -10.2076197
+            Y: -1.37640095
+            Z: 67.2302246
           }
           Rotation {
-            Pitch: 14.5253325
-            Yaw: -1.63458312
-            Roll: -0.449523956
+            Pitch: 14.5253181
+            Yaw: -0.841186523
+            Roll: -0.449523926
           }
           Scale {
             X: 0.0830313936
@@ -566,16 +566,16 @@ Assets {
         Name: "Barrier Triangle Base"
         Transform {
           Location {
-            X: 1.30172956
-            Y: 1.0036
-            Z: 81.1572876
+            X: 1.30107474
+            Y: 1.00310326
+            Z: 81.1572266
           }
           Rotation {
             Yaw: 89.9999771
           }
           Scale {
-            X: 0.172472373
-            Y: 0.52021122
+            X: 0.108153835
+            Y: 0.520213
             Z: 0.0911436528
           }
         }
@@ -795,4 +795,5 @@ Assets {
   }
   SerializationVersion: 107
   VirtualFolderPath: "Props"
+  VirtualFolderPath: "Interior"
 }

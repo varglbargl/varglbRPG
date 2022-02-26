@@ -246,4 +246,5 @@ Assets {
   }
   SerializationVersion: 107
   VirtualFolderPath: "Props"
+  VirtualFolderPath: "Interior"
 }

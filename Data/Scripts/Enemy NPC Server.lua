@@ -461,7 +461,7 @@ function wanderLoop()
     end
 
     if toVector then
-      enemy:LookAt(toVector)
+      enemy:RotateTo(Rotation.New(toVector - fromVector, Vector3.UP), 0.2)
       enemy:MoveTo(toVector, 5)
     end
 

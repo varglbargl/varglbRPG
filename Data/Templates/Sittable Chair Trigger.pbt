@@ -7,7 +7,7 @@ Assets {
       RootId: 16223222015253590822
       Objects {
         Id: 16223222015253590822
-        Name: "Chair Sit"
+        Name: "Sittable Chair Trigger"
         Transform {
           Scale {
             X: 1
@@ -82,7 +82,7 @@ Assets {
           }
         }
         NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
+          Value: "mc:eproxyrelevance:medium"
         }
       }
       Objects {

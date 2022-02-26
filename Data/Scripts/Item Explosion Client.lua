@@ -6,11 +6,16 @@ local MIN_VEL = VFX:GetCustomProperty("MinVelocity")
 local MAX_VEL = VFX:GetCustomProperty("MaxVelocity")
 local PSM = VFX:GetCustomProperty("ParticleScaleMultiplier")
 local LOCAL_SPACE = VFX:GetCustomProperty("LocalSpace")
+local ISD = VFX:GetCustomProperty("InitialStartDelay")
 
 local DPS = script:GetCustomProperty("DefaultParticleScale")
 local STAGGER = script:GetCustomProperty("StaggerDelay")
 
 local team = os.time()
+
+if ISD > 0 then
+  Task.Wait(ISD)
+end
 
 for i = 1, DESNITY do
   local randomRot = Rotation.New(math.random(0, 359), math.random(0, 359), math.random(0, 359))

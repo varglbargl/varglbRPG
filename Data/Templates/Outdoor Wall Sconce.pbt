@@ -15,7 +15,7 @@ Assets {
             Z: 1.49999988
           }
         }
-        ParentId: 4428153584774754848
+        ParentId: 4781671109827199097
         ChildIds: 8037983019012694993
         ChildIds: 15150341566492360420
         ChildIds: 595635352019824823
@@ -53,8 +53,7 @@ Assets {
           }
         }
         ParentId: 14145969833135642741
-        ChildIds: 3948260042093658338
-        ChildIds: 4890085210661139531
+        ChildIds: 11456785410174858806
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -71,23 +70,60 @@ Assets {
         }
       }
       Objects {
-        Id: 3948260042093658338
-        Name: "Candle Flame VFX"
+        Id: 11456785410174858806
+        Name: "Group"
         Transform {
           Location {
-            X: 0.681997299
-            Y: -0.217575967
-            Z: 3.28059912
           }
           Rotation {
           }
           Scale {
-            X: 2
-            Y: 2
-            Z: 2.99999976
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 8037983019012694993
+        ChildIds: 3948260042093658338
+        ChildIds: 4890085210661139531
+        ChildIds: 14411489996683597448
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 3948260042093658338
+        Name: "Candle Flame VFX"
+        Transform {
+          Location {
+            X: 0.68359375
+            Y: -0.21484375
+            Z: 3.28063965
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.99999976
+            Y: 1.99999976
+            Z: 2.99999976
+          }
+        }
+        ParentId: 11456785410174858806
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -122,19 +158,19 @@ Assets {
         Name: "Point Light"
         Transform {
           Location {
-            X: 0.234445468
-            Y: 0.000947803434
-            Z: -2.61971092
+            X: 0.234375
+            Y: 0.001953125
+            Z: -2.61975098
           }
           Rotation {
           }
           Scale {
-            X: 0.999999702
-            Y: 0.999999702
-            Z: 0.999999702
+            X: 0.999999642
+            Y: 0.999999642
+            Z: 0.999999642
           }
         }
-        ParentId: 8037983019012694993
+        ParentId: 11456785410174858806
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -170,6 +206,42 @@ Assets {
             }
             MaxDrawDistance: 5000
             MaxDistanceFadeRange: 1000
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14411489996683597448
+        Name: "Visible at Night"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.666666746
+            Y: 0.666666746
+            Z: 0.666666746
+          }
+        }
+        ParentId: 11456785410174858806
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 15755298952276024893
           }
         }
         NetworkRelevanceDistance {
@@ -331,4 +403,6 @@ Assets {
     }
   }
   SerializationVersion: 107
+  VirtualFolderPath: "Props"
+  VirtualFolderPath: "Exterior"
 }

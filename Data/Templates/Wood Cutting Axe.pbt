@@ -768,4 +768,5 @@ Assets {
   }
   SerializationVersion: 107
   VirtualFolderPath: "Props"
+  VirtualFolderPath: "Costume Pieces"
 }

@@ -138,5 +138,15 @@ Assets {
       VirtualFolderPath: "Exterior"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Dialogue"
+      VirtualFolderPath: "Quests Lines"
+      PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "Dialogue"
+      VirtualFolderPath: "Character Lines"
+      PlatformAssetType: 3
+    }
   }
 }

@@ -160,15 +160,17 @@ Assets {
         Name: "Hitbox"
         Transform {
           Location {
-            X: 10
-            Z: 170
+            X: -21.8710938
+            Z: 41.7563477
           }
           Rotation {
+            Yaw: -90
+            Roll: 6.07173252
           }
           Scale {
-            X: 2.5
-            Y: 0.900000036
-            Z: 2.4
+            X: 0.9514063
+            Y: 2.3
+            Z: 3.4
           }
         }
         ParentId: 5985706313626933109
@@ -187,7 +189,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12095835209017042614
+            Id: 1794493300960258535
           }
           Teams {
             TeamInt: 1
@@ -463,7 +465,7 @@ Assets {
         Transform {
           Location {
             X: -6.58203125
-            Z: 376.550903
+            Z: 335.008301
           }
           Rotation {
           }
@@ -546,14 +548,14 @@ Assets {
         Name: "Fox Mob"
         Transform {
           Location {
-            Z: 210
+            Z: 188.008301
           }
           Rotation {
           }
           Scale {
-            X: 2.79999971
-            Y: 2.79999971
-            Z: 2.79999971
+            X: 2.5
+            Y: 2.5
+            Z: 2.5
           }
         }
         ParentId: 15709085053828719964
@@ -3948,12 +3950,12 @@ Assets {
       }
     }
     Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
+      Id: 1794493300960258535
+      Name: "Wedge - Convex"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
+        AssetId: "sm_wedge_curved_convex_001"
       }
     }
     Assets {

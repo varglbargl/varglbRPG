@@ -11,8 +11,25 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Object"
+        ObjectReference {
+        }
+      }
+      Overrides {
         Name: "cs:IsLocal"
         Bool: false
+      }
+      Overrides {
+        Name: "cs:Object:category"
+        String: "Optional"
+      }
+      Overrides {
+        Name: "cs:Speed:category"
+        String: "Required"
+      }
+      Overrides {
+        Name: "cs:IsLocal:category"
+        String: "Optional"
       }
     }
   }
