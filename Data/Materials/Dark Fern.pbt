@@ -9,29 +9,49 @@ Assets {
       Overrides {
         Name: "color"
         Color {
-          R: 0.0677666515
-          G: 0.15200001
-          B: 0.0189999919
+          R: 0.132858321
+          G: 0.214000016
+          B: 0.026749976
           A: 1
         }
       }
       Overrides {
         Name: "color_accent"
         Color {
-          R: 0.0709855556
-          G: 0.224
-          B: 0.0244159941
+          R: 0.0389333181
+          G: 0.146000013
           A: 1
         }
       }
       Overrides {
         Name: "sss"
         Color {
-          R: 0.0203990098
-          G: 0.489583
-          B: 0.0751372
           A: 1
         }
+      }
+      Overrides {
+        Name: "emissive_boost"
+        Float: 0
+      }
+      Overrides {
+        Name: "wind_weight"
+        Float: 0.75
+      }
+      Overrides {
+        Name: "wind_speed"
+        Float: 0.3
+      }
+      Overrides {
+        Name: "dist_radius"
+        Float: 1.3
+      }
+      Overrides {
+        Name: "dist_rotation"
+        Float: 0.1
+      }
+      Overrides {
+        Name: "wind_intensity"
+        Float: 0.1
       }
     }
     Assets {

@@ -26,18 +26,6 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:StartLines"
-        AssetReference {
-          Id: 841534158063459245
-        }
-      }
-      Overrides {
-        Name: "cs:TurnInLines"
-        AssetReference {
-          Id: 841534158063459245
-        }
-      }
-      Overrides {
         Name: "cs:AcceptSFX"
         AssetReference {
           Id: 11130109947025433005

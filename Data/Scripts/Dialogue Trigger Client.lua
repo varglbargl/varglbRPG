@@ -17,14 +17,20 @@ if trigger.interactionLabel == "" then
 end
 
 function onInteracted(_, player)
-  if player ~= clientPlayer then return end
+  if not Object.IsValid(player) or player ~= clientPlayer then return end
 
   local character = npc.clientUserData["Character"]
   local currentLines = npc.clientUserData["Lines"] or LINES
+  local quest = npc.clientUserData["Quest"]
+  local questID = nil
+
+  if quest then
+    questID = quest.id
+  end
 
   trigger.isInteractable = false
 
-  Dialogue.speak(character, currentLines)
+  Dialogue.speak(character, currentLines, questID)
 
   local endInteractionEvent = nil
 

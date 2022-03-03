@@ -2,13 +2,24 @@ local GLIDE_ABILITY = script:GetCustomProperty("GlideAbility"):WaitForObject()
 
 local glider = script.parent
 
+local equipEvent = nil
+local unequipEvent = nil
+local destroyEvent = nil
+local jumpEvent = nil
+
+local defaultJumpCount = nil
+local defaultFlip = nil
+
 function onEquipped(thisEquipment, player)
   glider.visibility = Visibility.FORCE_OFF
   glider:SetScale(Vector3.ONE * 0.1)
+  defaultJumpCount = player.shouldFlipOnMultiJump
+  defaultFlip = player.maxJumpCount
   player.shouldFlipOnMultiJump = true
   player.maxJumpCount = 2
 
-  player.bindingPressedEvent:Connect(onBindingPressed)
+  -- jumpEvent = Input.actionPressedEvent:Connect(onActionPressed)
+  jumpEvent = player.bindingPressedEvent:Connect(onActionPressed)
 end
 
 function checkLanded(player, defaultGravity, defaultJumpVel, defaultStance)
@@ -47,14 +58,15 @@ function checkLanded(player, defaultGravity, defaultJumpVel, defaultStance)
 
   if player.serverUserData["Gliding"] or not Object.IsValid(player) or not Object.IsValid(glider) then return end
 
-  Events.Broadcast("GliderPackedUp", player)
+  Events.Broadcast("GliderPackedUp", player, glider)
 
   glider.visibility = Visibility.FORCE_OFF
 end
 
-function onBindingPressed(player, keyCode)
-  if not Object.IsValid(glider) then return end
+function onActionPressed(player, keyCode)
+  if not Object.IsValid(glider) or not Object.IsValid(player) or player ~= glider.owner then return end
 
+  -- if player.isJumping and keyCode == "Jump" then
   if player.isJumping and keyCode == "ability_extra_17" then
     if player.serverUserData["Gliding"] then
       player.serverUserData["Gliding"] = false
@@ -79,7 +91,7 @@ function onBindingPressed(player, keyCode)
 
       GLIDE_ABILITY:Activate()
 
-      Events.Broadcast("GliderDeployed", player)
+      Events.Broadcast("GliderDeployed", player, glider)
 
       glider.visibility = Visibility.INHERIT
       glider:StopScale()
@@ -91,11 +103,26 @@ function onBindingPressed(player, keyCode)
 end
 
 function onUnequipped(thisEquipment, player)
-  player.serverUserData["Gliding"] = false
-  thisEquipment:Destroy()
+  if Object.IsValid(player) then player.serverUserData["Gliding"] = false end
+  if Object.IsValid(thisEquipment) then thisEquipment:Destroy() end
+  if jumpEvent then jumpEvent:Disconnect() end
+
+  player.shouldFlipOnMultiJump = defaultJumpCount
+  player.maxJumpCount = defaultFlip
 end
 
-glider.unequippedEvent:Connect(onUnequipped)
+function onDestroyed(thisObject)
+  if Object.IsValid(glider.owner) then glider.owner.serverUserData["Gliding"] = false end
+  if equipEvent then equipEvent:Disconnect() end
+  if unequipEvent then unequipEvent:Disconnect() end
+  if destroyEvent then destroyEvent:Disconnect() end
+end
 
 -- handler params: Equipment_equipment, Player_player
-glider.equippedEvent:Connect(onEquipped)
+equipEvent = glider.equippedEvent:Connect(onEquipped)
+
+-- handler params: Equipment_equipment, Player_player
+unequipEvent = glider.unequippedEvent:Connect(onUnequipped)
+
+-- handler params: CoreObject_coreObject
+destroyEvent = glider.destroyEvent:Connect(onDestroyed)

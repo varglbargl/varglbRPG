@@ -3,6 +3,7 @@ local Characters = require(script:GetCustomProperty("Characters"))
 
 local FONT_DEFAULT = script:GetCustomProperty("FontDefault")
 local FONT_ITALIC = script:GetCustomProperty("FontItalic")
+local DEFAULT_CHIRP = script:GetCustomProperty("DefaultChirp")
 
 local DIALOG = script:GetCustomProperty("Dialog"):WaitForObject()
 local NAME = script:GetCustomProperty("Name"):WaitForObject()
@@ -19,11 +20,14 @@ local optionTwoDescription = options[2]:FindChildByName("Description")
 local optionTwoSelector = options[2]:FindChildByName("Selector")
 
 local clientPlayer = Game.GetLocalPlayer()
-local portraitSize = 184
 local speaker = nil
 local skip = false
 local skipEvent = nil
 local selection = 1
+
+local portraitSize = 184
+local dialogWidth = 870
+local dialogueWidth = 675
 
 options[1].hoveredEvent:Connect(function()
   selection = 1
@@ -218,6 +222,8 @@ function writeOutText(text)
 
   if speaker and speaker.chirp then
     chirpSFX = Utils.playSoundEffect(speaker.chirp, {parent = speaker.npc, pitch = speaker.pitch, loop = true, stopTime = 0.065, fadeOutTime = 0.01})
+  else
+    chirpSFX = Utils.playSoundEffect(DEFAULT_CHIRP, {loop = true, stopTime = 0.065, fadeOutTime = 0.01})
   end
 
   local previousText = DIALOGUE.text
@@ -286,6 +292,9 @@ function speakLine(lines, num)
     if speaker.portrait then
       PORTRAIT.x = speaker.portrait % 6 * -portraitSize
       PORTRAIT.y = math.floor(speaker.portrait / 6) * -portraitSize
+      DIALOG.width = dialogWidth
+    else
+      DIALOG.width = dialogueWidth
     end
 
     if line.speakerName then
@@ -311,6 +320,10 @@ function speakLine(lines, num)
         end
       end
     end
+
+    DIALOG.width = dialogWidth
+  else
+    DIALOG.width = dialogueWidth
   end
 
   if line.italic then
@@ -380,25 +393,23 @@ end
 
 local dialogueTask = nil
 
-function Dialogue.speak(character, lines)
+function Dialogue.speak(character, lines, questID)
   speaker = character
 
   dialogueTask = Task.Spawn(function()
     Utils.throttleToServer("StartDialogue")
     Events.Broadcast("ScreenOpened", "Dialogue")
 
-    local acceptedQuestID, completedQuestID = speakLine(lines, 1)
+    local acceptQuest, completeQuest = speakLine(lines, 1)
 
     DIALOG.visibility = Visibility.FORCE_OFF
 
-    Utils.throttleToServer("EndDialogue", acceptedQuestID, completedQuestID)
-
-    if acceptedQuestID then
-      Events.Broadcast("QuestAccepted", acceptedQuestID)
-    end
-
-    if completedQuestID then
-      Events.Broadcast("QuestCompleted", completedQuestID)
+    if acceptQuest then
+      Utils.throttleToServer("EndDialogue", questID)
+      Events.Broadcast("QuestAccepted", questID)
+    else
+      Utils.throttleToServer("EndDialogue", nil, questID)
+      Events.Broadcast("QuestCompleted", questID)
     end
 
     Events.Broadcast("ScreenClosed", "Dialogue")

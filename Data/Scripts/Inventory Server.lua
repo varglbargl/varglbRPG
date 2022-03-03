@@ -61,10 +61,13 @@ function initInventory(player)
 
   if Vault.hasSave(player) then
     for _, item in pairs(player.serverUserData["Gear"]) do
-      local equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
 
-      item.equipmentId = equipment.id
-      equipment:Equip(player)
+      if item.itemType ~= "Ring" then
+        local equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
+
+        item.equipmentId = equipment.id
+        equipment:Equip(player)
+      end
     end
   else
     Loot.giveStarterGear(player)
@@ -127,33 +130,39 @@ end
 function unequipFromPlayer(player, gearSlot, inventorySlot)
   if not Object.IsValid(player) then return end
 
-  local item = player.serverUserData["Gear"][gearSlot]
+  local uItem = player.serverUserData["Gear"][gearSlot]
+  local eItem = player.serverUserData["Inventory"][inventorySlot]
+
+  if not uItem then return end
+  if eItem and uItem.socket ~= eItem.socket then return end
+
   player.serverUserData["Gear"][gearSlot] = nil
 
-  if not item then return end
-
-  -- print("I very much want to unequip "..item.name..".")
+  -- print("I very much want to unequip "..uItem.name..".")
 
   for _, gear in ipairs(player:GetEquipment()) do
-    if gear.id == item.equipmentId then
+    if gear.id == uItem.equipmentId then
 
-      gear:Unequip()
+      if Object.IsValid(gear) then gear:Unequip() end
       if Object.IsValid(gear) then gear:Destroy() end
 
-      item.equipmentId = nil
-
-      Task.Wait()
-      if not Object.IsValid(player) then return end
-
-      -- print("I would like to add "..item.name.." to my inventory")
-
-      addToInventory(player, item, inventorySlot)
-
-      Utils.updatePrivateNetworkedData(player, "Gear")
-      Events.Broadcast("EquipmentChanged", player)
+      -- print("I would like to add "..uItem.name.." to my inventory")
       break
     end
   end
+
+  if eItem then
+    equipToPlayer(player, gearSlot, inventorySlot)
+  end
+
+  Task.Wait()
+  if not Object.IsValid(player) then return end
+
+  addToInventory(player, uItem, inventorySlot)
+  Utils.updatePrivateNetworkedData(player, "Gear")
+  Events.Broadcast("EquipmentChanged", player)
+
+  Vault.save(player)
 end
 
 function equipToPlayer(player, gearSlot, inventorySlot)
@@ -173,7 +182,9 @@ function equipToPlayer(player, gearSlot, inventorySlot)
 
     -- print("EqID = "..equipment.id)
 
-    unequipFromPlayer(player, gearSlot, inventorySlot)
+    if player.serverUserData["Gear"][gearSlot] then
+      unequipFromPlayer(player, gearSlot, inventorySlot)
+    end
 
     player.serverUserData["Gear"][gearSlot] = item
     Utils.updatePrivateNetworkedData(player, "Gear")
@@ -218,10 +229,10 @@ function dropItem(player, slot, fromInventory)
     item = player.serverUserData["Gear"][slot]
     player.serverUserData["Gear"][slot] = nil
 
-    for i, gear in ipairs(player:GetEquipment()) do
+    for _, gear in ipairs(player:GetEquipment()) do
       if gear.id == item.equipmentId then
-        gear:Unequip()
-        gear:Destroy()
+        if Object.IsValid(gear) then gear:Unequip() end
+        if Object.IsValid(gear) then gear:Destroy() end
         item.equipmentId = nil
       end
     end

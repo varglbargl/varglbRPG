@@ -9,8 +9,8 @@ Assets {
       Overrides {
         Name: "color_roots"
         Color {
-          R: 0.133997187
-          G: 0.152926
+          R: 0.152926
+          G: 0.119800605
           B: 0.0109599959
           A: 1
         }
@@ -26,6 +26,15 @@ Assets {
       Overrides {
         Name: "wind_speed"
         Float: 0
+      }
+      Overrides {
+        Name: "color"
+        Color {
+          R: 0.244792
+          G: 0.230483159
+          B: 0.0301590022
+          A: 1
+        }
       }
     }
     Assets {

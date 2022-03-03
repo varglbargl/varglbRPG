@@ -232,24 +232,33 @@ function redrawInventory()
   end
 end
 
+local throttleTask = nil
+
 function throttleInventory()
-  for _, slot in ipairs(inventorySlots) do
-    slot:FindChildByType("UIButton").isInteractable = false
+  if throttleTask then
+    throttleTask:Cancel()
+    throttleTask = nil
   end
 
-  for _, slot in pairs(gearSlots) do
-    slot:FindChildByType("UIButton").isInteractable = false
-  end
+  throttleTask = Task.Spawn(function()
+    for _, slot in ipairs(inventorySlots) do
+      slot:FindChildByType("UIButton").isInteractable = false
+    end
 
-  Task.Wait(0.25)
+    for _, slot in pairs(gearSlots) do
+      slot:FindChildByType("UIButton").isInteractable = false
+    end
 
-  for _, slot in ipairs(inventorySlots) do
-    slot:FindChildByType("UIButton").isInteractable = true
-  end
+    Task.Wait(0.25)
 
-  for _, slot in pairs(gearSlots) do
-    slot:FindChildByType("UIButton").isInteractable = true
-  end
+    for _, slot in ipairs(inventorySlots) do
+      slot:FindChildByType("UIButton").isInteractable = true
+    end
+
+    for _, slot in pairs(gearSlots) do
+      slot:FindChildByType("UIButton").isInteractable = true
+    end
+  end)
 end
 
 function closeCharacterScreen()
@@ -299,10 +308,14 @@ function pickUpItem()
 
   if moveFromTable and moveFromSlot then
 
-    if moveFromTable == inventory and hoveredTable == gear and not hoveredTable[hoveredSlot] then
-      equipItem(moveFromSlot, hoveredSlot)
-    elseif moveFromTable == gear and hoveredTable == inventory and not hoveredTable[hoveredSlot] then
-      unequipItem(moveFromSlot, hoveredSlot)
+    if moveFromTable == inventory and hoveredTable == gear then
+      if not hoveredTable[hoveredSlot] or hoveredTable[hoveredSlot].socket == moveFromTable[moveFromSlot].socket then
+        equipItem(moveFromSlot, hoveredSlot)
+      end
+    elseif moveFromTable == gear and hoveredTable == inventory then
+      if not hoveredTable[hoveredSlot] or hoveredTable[hoveredSlot].socket == moveFromTable[moveFromSlot].socket then
+        unequipItem(moveFromSlot, hoveredSlot)
+      end
     elseif moveFromTable == inventory and hoveredTable == inventory and moveFromSlot ~= hoveredSlot then
       swapInventorySlots(hoveredSlot, moveFromSlot)
     elseif moveFromTable == gear and hoveredTable == gear and string.sub(moveFromSlot, 1, 1) == "f" and string.sub(hoveredSlot, 1, 1) == "f" then

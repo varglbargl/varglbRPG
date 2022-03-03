@@ -7,14 +7,6 @@ DebuggerSettings {
       LineNumber: 278
     }
   }
-  ScriptSettings {
-    Script {
-      Id: 8104595816417835115
-    }
-    Breakpoints {
-      LineNumber: 15
-    }
-  }
 }
 ObjectSettings {
   ObjectStates {
@@ -97287,7 +97279,6 @@ ObjectSettings {
   ObjectStates {
     key: 11379229803072627216
     value {
-      IsHidden: true
     }
   }
   ObjectStates {

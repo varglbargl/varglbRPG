@@ -72,7 +72,26 @@ local questList = {
     description = "You've been ordered you to curb a fire elemental infestation in the Erin Oaks. These trees are very important to the people of Amalawari, and something needs to be done before the whole grove is destroyed. Help curb the Pyrosprite population and talk to the Royal Guard Commissary a little way down the road when you've finished.",
     begin = function(player, quest)
       xEventsForPlayer(10, "PlayerKilledEnemy", "Pyrosprite", player, quest)
-    end
+    end,
+
+    acceptLines = {
+      {"Alright, you're here. Have you been issued your weapons?", focus = true, animation = "Wave", options = {
+        {"How should I know??", gotoPage = 3},
+        {"Yes. (Skip Inventory Tutorial)", gotoPage = 2}
+      }},
+      {"Good. Let's get started.", animation = "Talk", gotoPage = 6},
+      {"Well open your inventory and check.", animation = "Talk"},
+      {"You can open your inventory by pressing [I] or by enabling your cursor with [Tab] and clicking the Chest icon in the lower left corner.", italic = true},
+      {"Got it all sorted out?", animation = "Talk"},
+      {"You're here to help clear out some of these pyrosprites before they burn this whole grove down.", append = true},
+      {"So get to it. Come back to me when you've cleared your quota."},
+      {"Which is 10, by the way.", inline = true},
+      {"Kill 10 pyrosprites.", inline = true},
+      {"Talk to the Commissary out in the field when you're done.", append = true, acceptQuest = true}
+    },
+    turnInLines = {
+      {"Cool. Grats.", focus = true, animation = "Yes", completeQuest = true}
+    }
   },
   {
     id = 2,
@@ -86,7 +105,21 @@ local questList = {
     end,
     requirements = function(player)
       return requireQuestProgression(player, 1)
-    end
+    end,
+
+    acceptLines = {
+      {"Those Heated Emberlings look suspicious to you?", focus = true, options = {
+        {"Not really...", gotoPage = 2},
+        {"Yes, sir!", gotoPage = 3}
+      }},
+      {"Ha! You're new here right?", animation = "Laugh"},
+      {"Go see what you can \"tactically ascertain\" from one of their lot.", inline = true, animation = "Point"},
+      {"You know...", inline = true},
+      {"with violence.", inline = true, acceptQuest = true}
+    },
+    turnInLines = {
+      {"Hmm... somethin's got these fire guys all worked up. Looks like we're gonna have to compromise some more of 'em to a permanent end.", animation = "Listen", focus = true, completeQuest = true}
+    }
   },
   {
     id = 3,
@@ -94,13 +127,22 @@ local questList = {
     name = "Fighting Fire With VIOLENCE",
     inProgress = "Subdue 9 Heated Emberlings",
     finished = "Continue investigating...",
-    description = "You've got to figure out what's causing these fire elementals to act so recklessly. But the elementals themselves are still the immediate threat. Your orders are to get the Heated Emberlings under control by whatever means necessary. You can find the source of this problem once that's out of the way.",
+    description = "You've got to figure out what's causing these fire elementals to act so recklessly. But the elementals themselves are still the immediate threat. Your orders are to get the Heated Emberlings under control by whatever means necessary. Kill 9 Heated Emberlings. You can investigate the cause of this problem once that's out of the way.",
     begin = function(player, quest)
       xEventsForPlayer(9, "PlayerKilledEnemy", "Heated Emberling", player, quest)
     end,
     requirements = function(player)
       return requireQuestProgression(player, 2)
-    end
+    end,
+
+    acceptLines = {
+      {"We've got to figure out what's causing these fire elementals to act so recklessly. and by we I mean you.", animation = "Talk"},
+      {"But the elementals themselves are the more immediate threat. Get these Heated Emberlings under control by whatever means necessary. You've already got a head start with that one you took care of."},
+      {"You can investigate the cause of this problem once that's out of the way.", append = true, acceptQuest = true}
+    },
+    turnInLines = {
+      {"Cool. Grats.", completeQuest = true}
+    }
   },
   {
     id = 4,
@@ -108,21 +150,37 @@ local questList = {
     name = "The Real Threat",
     inProgress = "Thwart 5 Lumber Jackals",
     finished = "Continue investigating...",
-    description = "You were sent here to secure the grove and that's what you're going to do. You thought the fire elementals were the problem, but it looks like they were just a symptom. It seems pretty obvious who the real threat is here. Time to secure the area.",
+    description = "You were sent here to secure the grove and that's what you're going to do. You thought the fire elementals were the problem, but it seems pretty obvious who the real threat is now. You should interrogate some of those Lumber Jackals. With your fists!.",
     begin = function(player, quest)
       xEventsForPlayer(5, "PlayerKilledEnemy", "Lumber Jackal", player, quest)
-    end
+    end,
+
+    acceptLines = {
+      {"We've got to figure out what's causing these fire elementals to act so recklessly. and by we I mean you.", italic = true},
+      {"But the elementals themselves are the more immediate threat. Get these Heated Emberlings under control by whatever means necessary.", italic = true},
+      {"You can investigate the cause of this problem once that's out of the way.", italic = true, append = true, acceptQuest = true}
+    },
+    turnInLines = {
+      {"Cool. Grats.", completeQuest = true}
+    }
   },
   {
     id = 5,
     level = 1,
     name = "Digging for Truth",
     inProgress = "Investigate the Cave",
-    finished = "Talk to that caged elemental",
+    finished = "Examine the caged elementals",
     description = "These poor babies! Oh, this has GOT to be highly illegal in some way. Animal Cruelty or... something. You've got to get to the bottom of this operation. And probably this cave, too.",
     begin = function(player, quest)
       xEventsForPlayer(5, "PlayerEnteredZone", "Detention Chamber", player, quest)
-    end
+    end,
+
+    acceptLines = {
+      {"These poor babies! Oh, this has GOT to be highly illegal in some way. Animal Cruelty or... something. You've got to get to the bottom of this operation. And probably this cave, too.", italic = true, acceptQuest = true}
+    },
+    turnInLines = {
+      {"Cool. Grats.", completeQuest = true}
+    }
   },
   {
     id = 6,
@@ -130,13 +188,22 @@ local questList = {
     name = "OPERATION JACKAL SHACKLE",
     inProgress = "Foil 10 Jackal Lackeys",
     finished = "Continue your investigation...",
-    description = "Wow these guys are engaging in some truly shady activity down here! Looks like you've stumbled into a real villainous operation. It's a good thing you're here to put a stop to it!",
+    description = "Wow these guys are engaging in some truly shady activity down here! Looks like you've stumbled into some organized villainy. It's a good thing you're here to put a stop to it! Go thwart some of those Jackal Lackeys and see if you cn get to the bottom of this (literally).",
     begin = function(player, quest)
       xEventsForPlayer(10, "PlayerKilledEnemy", "Jackal Lackey", player, quest)
     end,
     requirements = function(player)
       return requireQuestProgression(player, 5)
-    end
+    end,
+
+    acceptLines = {
+      {"We've got to figure out what's causing these fire elementals to act so recklessly. and by we I mean you.", animation = "Talk"},
+      {"But the elementals themselves are the more immediate threat. Get these Heated Emberlings under control by whatever means necessary. You've already got a head start with that one you took care of."},
+      {"You can investigate the cause of this problem once that's out of the way.", append = true, acceptQuest = true}
+    },
+    turnInLines = {
+      {"Cool. Grats.", completeQuest = true}
+    }
   },
   {
     id = 7,
@@ -150,7 +217,16 @@ local questList = {
     end,
     requirements = function(player)
       return requireQuestProgression(player, 6)
-    end
+    end,
+
+    acceptLines = {
+      {"We've got to figure out what's causing these fire elementals to act so recklessly. and by we I mean you.", animation = "Talk"},
+      {"But the elementals themselves are the more immediate threat. Get these Heated Emberlings under control by whatever means necessary. You've already got a head start with that one you took care of."},
+      {"You can investigate the cause of this problem once that's out of the way.", append = true, acceptQuest = true}
+    },
+    turnInLines = {
+      {"Cool. Grats.", focus = true, animation = "Listen", completeQuest = true}
+    }
   },
   {
     id = 8,
@@ -167,7 +243,30 @@ local questList = {
     end,
     onTurnIn = function(player)
       Events.Broadcast("TeleportPlayerToQuestArea", "Outside the Erin Oaks", player)
-    end
+    end,
+
+    acceptLines = {
+      {"You have saved me, water child. You have saved us all.", animation = "Talk"},
+      {""},
+      {"", append = true, acceptQuest = true}
+    },
+    turnInLines = {
+      {"You tell the Commissary about what your investigation turned up. About why the fire elementals have been acting strange and how you foiled an entire organized crime lair and SAVED A PRINCESS AND--", italic = true, focus = true, animation = "Listen"},
+      {"Stop. Hold on. Organized crime? The logging camp? Yeah, we're not here to stop the logging, we're here to protect it.", animation = "Shame", options = {
+        {"But they're doing crime stuff! Villain stuff!", gotoPage = 3},
+        {"But they're the cause of all of this!", gotoPage = 3}
+      }},
+      {"Wow.", animation = "Laugh"},
+      {"Welcome to the Royal Guard, kid. You exist to protect the assets of the Queen. The good news is you're an asset of the Queen too now. Get it?", animation = "Talk", inline = true, {
+        {"No.", gotoPage = 5},
+        {"Uh... ... No.", gotoPage = 5}
+      }},
+      {"It means you get protection. The last guy who blew off some steam on a bunch of laborers like that got a month of paid leave as punishment."},
+      {"So relax. Just exterminate the rest of these fire elementals like you were sent here to do.", {
+        {"What?? No! I quit!"},
+        {"Oh uh... Sure. Let me just go and uh do that. Over here."}
+      }}
+    }
   }
 }
 

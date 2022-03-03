@@ -1916,6 +1916,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15635259203874200634
+  Name: "Nature - Stick 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_nat_stick_004_ref"
+  }
+}
+Assets {
   Id: 15631990094379346463
   Name: "Cone - Truncated Wide"
   PlatformAssetType: 1
@@ -5615,6 +5624,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10722097477585734556
+  Name: "Humanoid 1 Sonia Hair"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_hair_sport_001_ref"
+  }
+}
+Assets {
   Id: 10718538370904281203
   Name: "Fantasy Clay Pot Debris 01"
   PlatformAssetType: 1
@@ -8864,6 +8882,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5820149790517043729
+  Name: "Humanoid 1 Capri Pants"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_lower_clothing_003_ref"
+  }
+}
+Assets {
   Id: 5799255185158970982
   Name: "Craftsman Wall 02 Half"
   PlatformAssetType: 1
@@ -11591,6 +11618,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2051605569991079204
+  Name: "Humanoid 1 Sierra"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_head_scifi_002_ref"
+  }
+}
+Assets {
   Id: 2046248182654598336
   Name: "Wallpaper Geometric 01"
   PlatformAssetType: 2
@@ -12290,6 +12326,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_bottom_001"
+  }
+}
+Assets {
+  Id: 1159931700766683242
+  Name: "Japanese Temple Wall Large 02 Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_jpn_tem_wall_lrg_002_corner_ref"
   }
 }
 Assets {

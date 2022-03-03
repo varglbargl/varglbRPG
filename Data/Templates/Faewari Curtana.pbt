@@ -29,15 +29,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ItemLevel"
-            Float: 30
+            Float: 45
           }
           Overrides {
             Name: "cs:MinDamage"
-            Int: 5
+            Int: 4
           }
           Overrides {
             Name: "cs:MaxDamage"
-            Int: 10
+            Int: 11
           }
           Overrides {
             Name: "cs:AnimationStance"
@@ -378,9 +378,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:color"
             Color {
-              R: 1
-              G: 0.285999954
-              B: 0.32169944
+              R: 2
+              G: 0.571999907
+              B: 0.643398881
               A: 1
             }
           }
@@ -402,9 +402,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.338564932
-              G: 0.352738917
-              B: 0.364000022
+              R: 0.465061694
+              G: 0.484531462
+              B: 0.5
               A: 1
             }
           }
@@ -487,8 +487,8 @@ Assets {
             Name: "ma:Shared_Trim:color"
             Color {
               R: 0.130208
-              G: 0.045481652
-              B: 0.0360676087
+              G: 0.0407746248
+              B: 0.0360676
               A: 1
             }
           }
@@ -539,7 +539,6 @@ Assets {
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            X: -0.51953125
             Z: 8.58056641
           }
           Rotation {
@@ -608,7 +607,6 @@ Assets {
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            X: -0.51953125
             Z: 8.58056641
           }
           Rotation {
@@ -953,7 +951,6 @@ Assets {
         Name: "Diamond - Polished"
         Transform {
           Location {
-            X: 0.04296875
             Z: 36.3452148
           }
           Rotation {
@@ -1102,12 +1099,12 @@ Assets {
         Name: "Diamond - Polished"
         Transform {
           Location {
-            X: 14.2246094
-            Z: 11.8823242
+            X: 14
+            Z: 12.4562988
           }
           Rotation {
             Pitch: 62.3071327
-            Yaw: -2.20455822e-05
+            Yaw: -3.05175781e-05
             Roll: 89.9999695
           }
           Scale {
@@ -1183,11 +1180,11 @@ Assets {
         Name: "Diamond - Polished"
         Transform {
           Location {
-            X: -15.0068359
-            Z: 12.0249023
+            X: -14
+            Z: 12.598877
           }
           Rotation {
-            Pitch: -57.6928368
+            Pitch: -57.6928406
             Yaw: 3.19491346e-06
             Roll: 89.9999619
           }
@@ -1264,7 +1261,6 @@ Assets {
         Name: "Diamond - Polished"
         Transform {
           Location {
-            X: 0.04296875
             Z: 20.2773438
           }
           Rotation {

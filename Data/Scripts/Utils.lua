@@ -128,36 +128,8 @@ function Utils.magicNumber(x)
   end
 end
 
-function Utils.getNPCStatsByLevel(level)
-  local stats = {}
-
-  stats.level = level
-
-  local multiplier = Utils.magicNumber(stats.level)
-
-  stats.maxHitPoints = math.floor(55 * multiplier)
-  stats.hitPoints = stats.maxHitPoints
-
-  stats.minDamage = math.floor(7.5 * multiplier)
-  stats.maxDamage = math.floor(10 * multiplier)
-
-  stats.xpValue = math.floor(5 * multiplier) + math.random(0, stats.level)
-
-  stats.stunned = false
-
-  return stats
-end
-
 function Utils.experienceToNextLevel(level)
   return math.ceil(Utils.magicNumber(level) * 75 ^ 1.02 / 5) * 5
-end
-
-function Utils.rollDamage(min, max)
-  if type(min) == "table" then
-    return Utils.rollDamage(min.minDamage, min.maxDamage)
-  end
-
-  return Damage.New(math.random(math.floor(min + 0.5), math.floor(max + 0.5)))
 end
 
 function Utils.getWeaponSpeed(weapon)
@@ -249,7 +221,7 @@ function Utils.fadeOpacity(what, to, secs)
 
   local startTime = time()
   local progress = 0
-  local from = ZONE_DISPLAY.opacity
+  local from = what.opacity
   local difference = to - from
 
   if fadeTasks[what] then

@@ -1,3 +1,4 @@
+local AI = require(script:GetCustomProperty("AI"))
 local Loot = require(script:GetCustomProperty("Loot"))
 
 local LOOT_DROP_CHANCE = script:GetCustomProperty("LootDropChance")
@@ -5,7 +6,9 @@ local LOOT_DROP_RARITY = script:GetCustomProperty("LootDropRarity")
 
 local SPAWN_VFX = script:GetCustomProperty("SpawnVFX")
 
+---@type DamageableObject
 local prop = script.parent
+
 local diedEvent = nil
 local destroyedEvent = nil
 
@@ -18,28 +21,10 @@ prop:ScaleTo(spawnScale, 0.2)
 
 prop:SetWorldRotation(Rotation.New(0, 0, math.random(0, 360)))
 
-function areTherePlayersNearby(checkTooClose)
-  local players = Game.GetPlayers()
-
-  for _, player in ipairs(players) do
-    if Object.IsValid(player) then
-      local distance = (player:GetWorldPosition() - spawnPoint).size
-
-      if distance < 7500 then
-        if (checkTooClose and distance > 250) or not checkTooClose then
-          return true
-        end
-      end
-    end
-  end
-
-  return false
-end
-
 function onPropDied(thisObject, damage)
   if math.random() <= LOOT_DROP_CHANCE then
     Loot.dropRandomItem(spawnPoint, damage.sourcePlayer:GetResource("Level"), LOOT_DROP_RARITY)
-  elseif math.random() < 0.5 then
+  elseif math.random() < 0.6 then
     Loot.dropRandomGold(spawnPoint, damage.sourcePlayer:GetResource("Level"))
   end
 
@@ -59,7 +44,7 @@ function despawn()
 end
 
 function despawnTicker()
-  while areTherePlayersNearby() do
+  while AI.areTherePlayersNearby(spawnPoint) do
     Task.Wait(math.random() * 5 + 5)
 
     if not Object.IsValid(prop) then return end
@@ -69,7 +54,7 @@ function despawnTicker()
 end
 
 function respawnTimer()
-  while not areTherePlayersNearby(true) do
+  while not AI.areTherePlayersNearby(spawnPoint, 200 * spawnScale.size) do
     Task.Wait(math.random() * 5 + 5)
   end
 

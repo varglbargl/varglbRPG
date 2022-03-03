@@ -5,6 +5,12 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:AI"
+        AssetReference {
+          Id: 13292383041542961338
+        }
+      }
+      Overrides {
         Name: "cs:Loot"
         AssetReference {
           Id: 10149346056993589588
@@ -49,6 +55,10 @@ Assets {
       Overrides {
         Name: "cs:SpawnVFX:category"
         String: "Required"
+      }
+      Overrides {
+        Name: "cs:AI:category"
+        String: "APIs"
       }
     }
   }

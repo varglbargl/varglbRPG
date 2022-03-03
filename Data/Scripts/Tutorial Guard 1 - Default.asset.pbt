@@ -8,5 +8,4 @@ Assets {
   }
   SerializationVersion: 107
   VirtualFolderPath: "Dialogue"
-  VirtualFolderPath: "Character Lines"
 }

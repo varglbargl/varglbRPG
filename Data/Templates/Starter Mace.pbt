@@ -671,7 +671,7 @@ Assets {
         Name: "Diamond - Polished"
         Transform {
           Location {
-            Z: 32.7719727
+            Z: 33.8862305
           }
           Rotation {
           }

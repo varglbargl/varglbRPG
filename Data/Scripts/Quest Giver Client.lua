@@ -3,8 +3,6 @@ local Quests = require(script:GetCustomProperty("Quests"))
 
 local QUEST_ID = script:GetCustomProperty("QuestID")
 local TURN_IN_NPC = script:GetCustomProperty("TurnInNPC"):WaitForObject()
-local START_LINES = require(script:GetCustomProperty("StartLines"))
-local TURN_IN_LINES = require(script:GetCustomProperty("TurnInLines"))
 
 local ACCEPT_SFX = script:GetCustomProperty("AcceptSFX")
 local TURN_IN_SFX = script:GetCustomProperty("TurnInSFX")
@@ -14,6 +12,7 @@ local QUEST_DISPLAY = script:GetCustomProperty("QuestDisplay"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local previousLines = nil
+local previousQuest = nil
 local updateAvailableEvent = nil
 local completedEvent = nil
 local fadeTask = nil
@@ -32,9 +31,11 @@ function onAvailableQuestsUpdated(availableQuestIDs)
     if id == QUEST_ID then
       if startNPC.clientUserData["Lines"] then
         previousLines = startNPC.clientUserData["Lines"]
+        previousQuest = startNPC.clientUserData["Quest"]
       end
 
-      startNPC.clientUserData["Lines"] = START_LINES
+      startNPC.clientUserData["Lines"] = quest.acceptLines
+      startNPC.clientUserData["Quest"] = quest
       dialogueTrigger.collision = Collision.FORCE_ON
       questMarker = World.SpawnAsset(START_QUEST_MARKER, {parent = dialogueTrigger})
       break
@@ -57,32 +58,37 @@ function onAvailableQuestsUpdated(availableQuestIDs)
 
     if previousLines then
       startNPC.clientUserData["Lines"] = previousLines
+      startNPC.clientUserData["Quest"] = previousQuest
       previousLines = nil
+      previousQuest = nil
     else
       startNPC.clientUserData["Lines"] = nil
+      startNPC.clientUserData["Quest"] = nil
     end
 
-    if Object.IsValid(questMarker) then questMarker:Destroy() end
+    if Object.IsValid(questMarker) then
+      questMarker:Destroy()
+    end
 
     if fadeTask then
       fadeTask:Cancel()
-      Utils.fadeOpacity(ZONE_DISPLAY, 0, 1)
+      Utils.fadeOpacity(QUEST_DISPLAY, 0, 1)
     end
 
     questNameDisplay.text = quest.name
     questDescriptionDisplay.text = quest.inProgress
 
     fadeTask = Task.Spawn(function()
-      Utils.fadeOpacity(ZONE_DISPLAY, 1, 1)
+      Utils.fadeOpacity(QUEST_DISPLAY, 1, 1)
 
       Task.Wait(2)
 
-      Utils.fadeOpacity(ZONE_DISPLAY, 0, 1)
+      Utils.fadeOpacity(QUEST_DISPLAY, 0, 1)
 
       fadeTask = nil
     end)
 
-    Utils.playSoundEffect(ACCEPT_SFX, {volume = 0.5})
+    Utils.playSoundEffect(ACCEPT_SFX, {volume = 0.4, pitch = -1200})
   end)
 end
 
@@ -93,11 +99,12 @@ function onQuestCompleted(questID)
   local questMarker = World.SpawnAsset(FINISH_QUEST_MARKER, {parent = dialogueTrigger})
 
   completedEvent:Disconnect()
-  TURN_IN_NPC.clientUserData["Lines"] = TURN_IN_LINES
+  TURN_IN_NPC.clientUserData["Lines"] = quest.turnInLines
+  TURN_IN_NPC.clientUserData["Quest"] = quest
   dialogueTrigger.collision = Collision.FORCE_ON
 
   if clientPlayer.isSpawned then
-    Utils.playSoundEffect(ACCEPT_SFX, {volume = 0.5, type = 8})
+    Utils.playSoundEffect(ACCEPT_SFX, {volume = 0.4})
   end
 
   local turnedInEvent = nil
@@ -108,9 +115,12 @@ function onQuestCompleted(questID)
 
     if previousLines then
       TURN_IN_NPC.clientUserData["Lines"] = previousLines
+      TURN_IN_NPC.clientUserData["Quest"] = previousQuest
       previousLines = nil
+      previousQuest = nil
     else
       TURN_IN_NPC.clientUserData["Lines"] = nil
+      TURN_IN_NPC.clientUserData["Quest"] = nil
     end
 
     if Object.IsValid(questMarker) then questMarker:Destroy() end

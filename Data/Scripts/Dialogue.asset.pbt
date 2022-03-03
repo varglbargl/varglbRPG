@@ -29,6 +29,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:DefaultChirp"
+        AssetReference {
+          Id: 3671487299588212706
+        }
+      }
+      Overrides {
         Name: "cs:Dialog"
         ObjectReference {
           SelfId: 12882592939235325893
@@ -135,6 +141,15 @@ Assets {
       PrimaryAsset {
         AssetType: "FontAssetRef"
         AssetId: "CabinBoldItalic_ref"
+      }
+    }
+    Assets {
+      Id: 3671487299588212706
+      Name: "UI Pop Single 03 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_ui_pop_single_03_Cue_ref"
       }
     }
   }

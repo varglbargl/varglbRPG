@@ -29,15 +29,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ItemLevel"
-            Float: 50
+            Float: 56
           }
           Overrides {
             Name: "cs:MinDamage"
-            Int: 5
+            Int: 4
           }
           Overrides {
             Name: "cs:MaxDamage"
-            Int: 10
+            Int: 11
           }
           Overrides {
             Name: "cs:AnimationStance"
@@ -1572,7 +1572,7 @@ Assets {
           }
           Scale {
             X: 1.66482079
-            Y: 1.5
+            Y: 1.23906243
             Z: 2.3909359
           }
         }

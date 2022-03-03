@@ -30,7 +30,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ItemLevel"
-            Float: 15
+            Float: 36
           }
           Overrides {
             Name: "cs:MinDamage"

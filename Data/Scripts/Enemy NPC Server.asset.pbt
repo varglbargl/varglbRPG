@@ -11,15 +11,15 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Loot"
+        Name: "cs:AI"
         AssetReference {
-          Id: 10149346056993589588
+          Id: 13292383041542961338
         }
       }
       Overrides {
-        Name: "cs:Auras"
+        Name: "cs:Loot"
         AssetReference {
-          Id: 2171517573579017799
+          Id: 10149346056993589588
         }
       }
       Overrides {
@@ -46,7 +46,7 @@ Assets {
         String: "APIs"
       }
       Overrides {
-        Name: "cs:Auras:category"
+        Name: "cs:AI:category"
         String: "APIs"
       }
     }

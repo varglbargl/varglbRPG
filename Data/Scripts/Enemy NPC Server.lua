@@ -1,7 +1,8 @@
 local Utils = require(script:GetCustomProperty("Utils"))
+local AI = require(script:GetCustomProperty("AI"))
 local Loot = require(script:GetCustomProperty("Loot"))
-local Auras = require(script:GetCustomProperty("Auras"))
 
+---@type DamageableObject
 local enemy = script.parent
 
 local LEVEL = enemy:GetCustomProperty("Level")
@@ -11,7 +12,9 @@ local HITBOX = script:GetCustomProperty("Hitbox"):WaitForObject()
 HITBOX.team = 1
 HITBOX.isTeamCollisionEnabled = false
 
-local stats = Utils.getNPCStatsByLevel(math.max(1, LEVEL + math.random(-1, 1)))
+local stats = AI.getNPCStatsByLevel(math.max(1, LEVEL + math.random(-1, 1)))
+
+enemy.serverUserData["Stats"] = stats
 enemy:SetCustomProperty("Level", stats.level)
 enemy.maxHitPoints = stats.maxHitPoints
 enemy.hitPoints = stats.maxHitPoints
@@ -21,8 +24,6 @@ local fightLocation = nil
 local attackers = {}
 local myTemplateId = script:FindTemplateRoot().sourceTemplateId
 
-local moveSpeed = 1
-
 local spawnPoint = Utils.groundBelowPoint(enemy:GetWorldPosition(), 50)
 local spawnRotation = enemy:GetWorldRotation()
 local spawnScale = enemy:GetWorldScale()
@@ -31,36 +32,20 @@ local damagedEvent = nil
 local diedEvent = nil
 local playerHealedEvent = nil
 
-if not spawnPoint then
-  spawnPoint = enemy:GetWorldPosition()
-else
+if spawnPoint then
   enemy:SetWorldPosition(spawnPoint)
+else
+  spawnPoint = enemy:GetWorldPosition()
 end
 
 if WANDER then
   enemy:SetRotation(Rotation.New(0, 0, math.random(360)))
 end
 
+enemy.serverUserData["Stats"] = stats
+
 enemy:SetWorldScale(Vector3.ONE * 0.2)
 enemy:ScaleTo(spawnScale, 0.2)
-
-function areTherePlayersNearby(checkTooClose)
-  local players = Game.GetPlayers()
-
-  for _, player in ipairs(players) do
-    if Object.IsValid(player) then
-      local distance = (player:GetWorldPosition() - spawnPoint).size
-
-      if distance < 7500 then
-        if (checkTooClose and distance > 250) or not checkTooClose then
-          return true
-        end
-      end
-    end
-  end
-
-  return false
-end
 
 function startFighting(player)
   -- print("Oh ho ho you are so going down, "..player.name.."!")
@@ -103,7 +88,7 @@ function fight()
 
         if toVector then
           enemy:LookAtContinuous(fightTarget, true, 500)
-          enemy:MoveTo(toVector, 0.5 / moveSpeed)
+          enemy:MoveTo(toVector, 0.5 / stats.moveMultiplier)
         else
           -- print("Bweemp bwomp! I can't build there!")
         end
@@ -113,9 +98,9 @@ function fight()
 
         if toVector then
           enemy:LookAtContinuous(fightTarget, true, 500)
-          enemy:MoveTo(toVector, distanceToPlayer / 800 / moveSpeed)
+          enemy:MoveTo(toVector, distanceToPlayer / stats.moveSpeed / stats.moveMultiplier)
 
-          Task.Wait(distanceToPlayer / 800 / moveSpeed - 0.2)
+          Task.Wait(distanceToPlayer / stats.moveSpeed / stats.moveMultiplier - 0.2)
         else
           -- print("Bweemp bwomp! I can't build there!")
         end
@@ -175,7 +160,7 @@ end
 function attack(target)
   if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(target) or stats.stunned then return end
 
-  local damage = Utils.rollDamage(stats)
+  local damage = AI.rollDamage(stats)
   local reflectedDamage = Damage.New(0)
   local targetClass = target:GetResource("Class")
 
@@ -286,7 +271,7 @@ end
 function attemptRespawn()
   Task.Wait(math.random(5, 10))
 
-  if areTherePlayersNearby(true) then
+  if AI.areTherePlayersNearby(spawnPoint, 250) then
     if SPAWN_VFX then
       World.SpawnAsset(SPAWN_VFX, {position = spawnPoint, scale = spawnScale})
     end
@@ -312,100 +297,9 @@ function onPlayerHealed(player, amount, healer)
   end
 end
 
-local stunTask = nil
-
-function onStunned(player)
-  if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
-
-  enemy:StopMove()
-  enemy:StopRotate()
-
-  stats.stunned = true
-  Auras.apply(enemy, "Stun")
-
-  if stunTask then stunTask:Cancel() end
-
-  stunTask = Task.Spawn(function()
-    Task.Wait(2)
-
-    stats.stunned = false
-  end)
-end
-
-function onTaunted(player)
-  if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
-
-  fightTarget = player
-  Auras.apply(enemy, "Taunt")
-end
-
-local slowTask = nil
-
-function onSlowed(player)
-  if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
-
-  moveSpeed = 0.75
-  Auras.apply(enemy, "Slow")
-
-  if slowTask then slowTask:Cancel() end
-
-  slowTask = Task.Spawn(function()
-    Task.Wait(2)
-
-    moveSpeed = 1
-  end)
-end
-
-local skidTask = nil
-
-function onKnockback(player)
-  if not Object.IsValid(enemy) or not Object.IsValid(player) or enemy.isDead then return end
-
-  stats.stunned = true
-  Auras.apply(enemy, "Knockback", 1)
-
-  local fromVector = enemy:GetWorldPosition()
-  local toDirection = (fromVector - Utils.groundBelowPoint(player:GetWorldPosition())):GetNormalized()
-  local toVector = Utils.groundBelowPoint(fromVector + toDirection * 800)
-
-  if not toVector then
-    local hitResult = World.Spherecast(HITBOX:GetWorldPosition(), fromVector + toDirection * 800, 50 * spawnScale.size, {ignorePlayers = true})
-
-    if hitResult then
-      toVector = Utils.groundBelowPoint(hitResult:GetShapePosition())
-    end
-  end
-
-  if not toVector then
-    toVector = fromVector + toDirection * 800
-  end
-
-  local distance = (fromVector - toVector).size
-
-  enemy:StopRotate()
-  enemy:MoveTo(toVector, distance / 800)
-
-  if skidTask then skidTask:Cancel() end
-
-  skidTask = Task.Spawn(function()
-    Task.Wait(distance / 600)
-
-    stats.stunned = false
-  end)
-end
-
-local statusEffects = {
-  stun = onStunned,
-  taunt = onTaunted,
-  slow = onSlowed,
-  knockback = onKnockback,
-  -- burn = onBurned,
-  -- weaken = onWeakened,
-  -- polymorph = onPolymorphed
-}
-
 function onDamaged(thisEnemy, damage)
   if not Object.IsValid(enemy) or enemy ~= thisEnemy or enemy.isDead then return end
+
 
   if damage.sourceAbility and Object.IsValid(damage.sourceAbility.parent) then
     local effects = damage.sourceAbility.parent:GetCustomProperty("StatusEffects")
@@ -414,13 +308,7 @@ function onDamaged(thisEnemy, damage)
       effects = {CoreString.Split(string.lower(effects), ",")}
 
       for _, effect in ipairs(effects) do
-        local callback = statusEffects[CoreString.Trim(effect)]
-
-        if callback then
-          Task.Spawn(function() callback(damage.sourcePlayer) end)
-        else
-          warn("Unknown status effect: \""..CoreString.Trim(effect).."\".")
-        end
+        AI.applyStatusEffect(effect, enemy, damage.sourcePlayer)
       end
     end
   end
@@ -439,7 +327,7 @@ function onDamaged(thisEnemy, damage)
 end
 
 function wanderLoop()
-  if not areTherePlayersNearby() then
+  if not AI.areTherePlayersNearby(spawnPoint) then
     despawn()
     return
   end
