@@ -138,7 +138,7 @@ function initCooldownOverlay(item)
   local thisOverlay = nil
   local equipment = nil
 
-  if item.socket == "left_prop" then
+  if item.socket == "right_prop" then
     updateAbilitiesWithBinding("Primary Ability")
     equipment = primaryAbilities[1].parent
 
@@ -154,7 +154,7 @@ function initCooldownOverlay(item)
       end))
     end
 
-  elseif item.socket == "right_prop" then
+  elseif item.socket == "left_prop" then
     updateAbilitiesWithBinding("Secondary Ability")
     equipment = secondaryAbilities[1].parent
 

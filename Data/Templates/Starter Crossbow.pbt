@@ -176,7 +176,7 @@ Assets {
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.2
+            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -187,7 +187,7 @@ Assets {
             }
           }
           RecoveryPhaseSettings {
-            Duration: 0.1
+            Duration: 0.2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -206,7 +206,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "1hand_pistol_shoot"
+          Animation: "unarmed_punch_right"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
@@ -232,7 +232,9 @@ Assets {
           }
         }
         ParentId: 8803041335972847287
+        ChildIds: 7991436953134518017
         ChildIds: 1759817999168023617
+        ChildIds: 3337476761520793608
         ChildIds: 8397896403013515296
         WantsNetworking: true
         Collidable_v2 {
@@ -248,6 +250,68 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 7991436953134518017
+        Name: "Custom Player Animation Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1535635915468763124
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:UseAbilityPhaseTiming"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:AttachToSocket"
+            String: "head"
+          }
+          Overrides {
+            Name: "cs:Mirror"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Ability"
+            ObjectReference {
+              SubObjectId: 5047134629311476418
+            }
+          }
+          Overrides {
+            Name: "cs:Keyframes"
+            ObjectReference {
+              SubObjectId: 3337476761520793608
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 3909627259704200461
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -284,6 +348,417 @@ Assets {
           ScriptAsset {
             Id: 363298956242194552
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 3337476761520793608
+        Name: "Keyframes"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1535635915468763124
+        ChildIds: 215369691349690717
+        ChildIds: 6300451213414185469
+        ChildIds: 2538376710893634466
+        ChildIds: 13846240805658307304
+        ChildIds: 14565416006080380281
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 215369691349690717
+        Name: "Cast"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3337476761520793608
+        ChildIds: 9870024768144181408
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 9870024768144181408
+        Name: "Right Hand"
+        Transform {
+          Location {
+            X: 66.3918457
+            Y: -10
+            Z: -15
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 215369691349690717
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: -20
+            Z: -15
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.1
+          BlendOutTime: 0.1
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 6300451213414185469
+        Name: "Execute"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3337476761520793608
+        ChildIds: 11243672427378583135
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 11243672427378583135
+        Name: "Right Hand"
+        Transform {
+          Location {
+            X: 63.1782227
+            Y: -20.8047485
+            Z: -6.02062225
+          }
+          Rotation {
+            Pitch: 12.5949774
+            Yaw: -9.98599243
+            Roll: -38.1199951
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6300451213414185469
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -20
+            Y: -20
+            Z: -15
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.1
+          BlendOutTime: 0.1
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 2538376710893634466
+        Name: "Recovery"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3337476761520793608
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 13846240805658307304
+        Name: "Cooldown"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3337476761520793608
+        ChildIds: 5004093047672699316
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 5004093047672699316
+        Name: "Right Hand"
+        Transform {
+          Location {
+            X: 25.5456543
+            Y: -34.1329956
+            Z: -6.29532623
+          }
+          Rotation {
+            Pitch: 70.1877747
+            Yaw: 166.215759
+            Roll: 179
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13846240805658307304
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -15
+            Y: -20
+            Z: 5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+          BlendInTime: 0.1
+          BlendOutTime: 0.1
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14565416006080380281
+        Name: "Ready"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3337476761520793608
+        ChildIds: 16475536664805481889
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 16475536664805481889
+        Name: "Right Hand"
+        Transform {
+          Location {
+            X: 61.8455811
+            Y: -45.3862
+            Z: -14.8612595
+          }
+          Rotation {
+            Pitch: 45.3444
+            Yaw: 2.32712913
+            Roll: -8.69058228
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14565416006080380281
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        IKAnchor {
+          AimOffset {
+            X: -15
+            Y: -20
+            Z: 5
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendInTime: 0.1
+          BlendOutTime: 0.1
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"

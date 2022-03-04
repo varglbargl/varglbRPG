@@ -1340,6 +1340,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16494513751997592387
+  Name: "Fantasy Sword 015"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Sword_015"
+  }
+}
+Assets {
   Id: 16484616357286133047
   Name: "Fantasy Jewelry 007"
   PlatformAssetType: 9
@@ -7568,6 +7577,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7694512108856178286
+  Name: "Fantasy Sword 008"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Sword_008"
+  }
+}
+Assets {
   Id: 7677420729863359021
   Name: "Urban Bottle Heritage 01"
   PlatformAssetType: 1
@@ -9680,6 +9698,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_scf_insulation_panels_003_uv"
+  }
+}
+Assets {
+  Id: 4646351791375817252
+  Name: "Fantasy Sword 018"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Sword_018"
   }
 }
 Assets {

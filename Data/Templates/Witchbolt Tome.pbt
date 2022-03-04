@@ -67,7 +67,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "right_prop"
+          SocketName: "left_prop"
           PickupTrigger {
           }
         }

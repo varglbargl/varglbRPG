@@ -65,7 +65,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "right_prop"
+          SocketName: "left_prop"
           PickupTrigger {
           }
         }
@@ -184,7 +184,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "2hand_sword_slash_left"
+          Animation: "1hand_melee_shield_bash"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
@@ -200,8 +200,14 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
+            X: -11.2167969
+            Y: 1.66625977
+            Z: 0.796386719
           }
           Rotation {
+            Pitch: 0.0628582239
+            Yaw: -158.154617
+            Roll: 16.8478031
           }
           Scale {
             X: 1

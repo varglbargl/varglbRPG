@@ -1,11 +1,12 @@
--- VARGLBARGL'S SUPER AMAZING CUSTOM PLAYER ANIMATION SUPER CLIENT
+-- VARGLBARGL'S CUSTOM PLAYER ANIMATION CLIENT
 -- This one's a REAL mess so, sorry, no comments explaining what every part does.
--- You'll have to settle for the very detailed custom property tooltips.
+-- I wrote it all in one day in some kind of fugue state and didn't test it once till it was done.
+-- And then it worked?? I couldn't begin to tell you how or why. Maybe it's magic?? idk!!
 
 local KEYFRAMES = script:GetCustomProperty("Keyframes"):WaitForObject()
 local ANIMATION_DURATION = script:GetCustomProperty("AnimationDuration")
 
-local ATTACH_TO_PLAYER = script:GetCustomProperty("AttachToPlayer")
+local ATTACH_TO_SOCKET = script:GetCustomProperty("AttachToSocket")
 local STOP_EVENT = script:GetCustomProperty("StopEvent")
 local LOOP = script:GetCustomProperty("Loop")
 local INITIAL_START_DELAY = script:GetCustomProperty("InitialStartDelay")
@@ -14,6 +15,8 @@ local ACTION_BINDING = script:GetCustomProperty("ActionBinding")
 local ABILITY = script:GetCustomProperty("Ability"):WaitForObject()
 local USE_ABILITY_PHASE_TIMING = script:GetCustomProperty("UseAbilityPhaseTiming")
 local ACTIVATION_TRIGGER = script:GetCustomProperty("ActivationTrigger"):WaitForObject()
+local MIRROR = script:GetCustomProperty("Mirror")
+local RANDOMLY_MIRROR = script:GetCustomProperty("RandomlyMirror")
 
 local keyframes = KEYFRAMES:GetChildren()
 local frameTiming = {}
@@ -21,6 +24,7 @@ local anchors = {}
 local tweenCurves = {}
 local isPlaying = false
 local shouldStop = false
+local shouldMirror = false
 
 local stopEvent = nil
 local inputEvent = nil
@@ -53,6 +57,7 @@ function initTimingData()
 end
 
 function initFrameData()
+  -- god what a fucking mess holy shit
   local frameData = {
     [IKAnchorType.LEFT_HAND] = {px = {}, py = {}, pz = {}, rx = {}, ry = {}, rz = {}, rw = {}, ox = {}, oy = {}, oz = {}, w = {}},
     [IKAnchorType.RIGHT_HAND] = {px = {}, py = {}, pz = {}, rx = {}, ry = {}, rz = {}, rw = {}, ox = {}, oy = {}, oz = {}, w = {}},
@@ -61,29 +66,59 @@ function initFrameData()
     [IKAnchorType.PELVIS] = {px = {}, py = {}, pz = {}, rx = {}, ry = {}, rz = {}, rw = {}, w = {}}
   }
 
+  if shouldMirror then
+    KEYFRAMES:SetScale(Vector3.New(1, -1, 1))
+  end
+
   for fNum, keyframe in ipairs(keyframes) do
     for _, child in ipairs(keyframe:GetChildren()) do
       if child:IsA("IKAnchor") then
-        child.name = "Anchor"..child.anchorType
-        table.insert(frameData[child.anchorType].px, CurveKey.New(frameTiming[fNum], child:GetPosition().x, {interpolation = CurveInterpolation.CUBIC}))
-        table.insert(frameData[child.anchorType].py, CurveKey.New(frameTiming[fNum], child:GetPosition().y, {interpolation = CurveInterpolation.CUBIC}))
-        table.insert(frameData[child.anchorType].pz, CurveKey.New(frameTiming[fNum], child:GetPosition().z, {interpolation = CurveInterpolation.CUBIC}))
-        table.insert(frameData[child.anchorType].rx, CurveKey.New(frameTiming[fNum], child:GetTransform():GetQuaternion().x, {interpolation = CurveInterpolation.CUBIC}))
-        table.insert(frameData[child.anchorType].ry, CurveKey.New(frameTiming[fNum], child:GetTransform():GetQuaternion().y, {interpolation = CurveInterpolation.CUBIC}))
-        table.insert(frameData[child.anchorType].rz, CurveKey.New(frameTiming[fNum], child:GetTransform():GetQuaternion().z, {interpolation = CurveInterpolation.CUBIC}))
-        table.insert(frameData[child.anchorType].rw, CurveKey.New(frameTiming[fNum], child:GetTransform():GetQuaternion().w, {interpolation = CurveInterpolation.CUBIC}))
+        local anchorType = nil
 
-        if child.anchorType ~= IKAnchorType.PELVIS then
-          table.insert(frameData[child.anchorType].ox, CurveKey.New(frameTiming[fNum], child:GetAimOffset().x, {interpolation = CurveInterpolation.CUBIC}))
-          table.insert(frameData[child.anchorType].oy, CurveKey.New(frameTiming[fNum], child:GetAimOffset().y, {interpolation = CurveInterpolation.CUBIC}))
-          table.insert(frameData[child.anchorType].oz, CurveKey.New(frameTiming[fNum], child:GetAimOffset().z, {interpolation = CurveInterpolation.CUBIC}))
+        -- why the fuck does this work it's so dumb lmao
+        if shouldMirror then
+          if child.anchorType == IKAnchorType.LEFT_HAND then
+            anchorType = IKAnchorType.RIGHT_HAND
+          elseif child.anchorType == IKAnchorType.RIGHT_HAND then
+            anchorType = IKAnchorType.LEFT_HAND
+          elseif child.anchorType == IKAnchorType.LEFT_FOOT then
+            anchorType = IKAnchorType.RIGHT_FOOT
+          elseif child.anchorType == IKAnchorType.RIGHT_FOOT then
+            anchorType = IKAnchorType.LEFT_FOOT
+          else
+            anchorType = child.anchorType
+          end
+        else
+          anchorType = child.anchorType
         end
 
-        table.insert(frameData[child.anchorType].w, CurveKey.New(frameTiming[fNum], child.weight, {interpolation = CurveInterpolation.CUBIC}))
+        -- i don't know why i need to ignore the mirror when naming them
+        -- i did it by mistake and it turns out it's the only reason it works, fixing it breaks everything
+        child.name = "Anchor"..child.anchorType
+
+        -- look at these eleven fucking curves per animation
+        -- i hate them all
+        table.insert(frameData[anchorType].px, CurveKey.New(frameTiming[fNum], child:GetPosition().x, {interpolation = CurveInterpolation.CUBIC}))
+        table.insert(frameData[anchorType].py, CurveKey.New(frameTiming[fNum], child:GetPosition().y, {interpolation = CurveInterpolation.CUBIC}))
+        table.insert(frameData[anchorType].pz, CurveKey.New(frameTiming[fNum], child:GetPosition().z, {interpolation = CurveInterpolation.CUBIC}))
+        table.insert(frameData[anchorType].rx, CurveKey.New(frameTiming[fNum], child:GetTransform():GetQuaternion().x, {interpolation = CurveInterpolation.CUBIC}))
+        table.insert(frameData[anchorType].ry, CurveKey.New(frameTiming[fNum], child:GetTransform():GetQuaternion().y, {interpolation = CurveInterpolation.CUBIC}))
+        table.insert(frameData[anchorType].rz, CurveKey.New(frameTiming[fNum], child:GetTransform():GetQuaternion().z, {interpolation = CurveInterpolation.CUBIC}))
+        table.insert(frameData[anchorType].rw, CurveKey.New(frameTiming[fNum], child:GetTransform():GetQuaternion().w, {interpolation = CurveInterpolation.CUBIC}))
+
+        if anchorType ~= IKAnchorType.PELVIS then
+          table.insert(frameData[anchorType].ox, CurveKey.New(frameTiming[fNum], child:GetAimOffset().x, {interpolation = CurveInterpolation.CUBIC}))
+          table.insert(frameData[anchorType].oy, CurveKey.New(frameTiming[fNum], child:GetAimOffset().y, {interpolation = CurveInterpolation.CUBIC}))
+          table.insert(frameData[anchorType].oz, CurveKey.New(frameTiming[fNum], child:GetAimOffset().z, {interpolation = CurveInterpolation.CUBIC}))
+        end
+
+        table.insert(frameData[anchorType].w, CurveKey.New(frameTiming[fNum], child.weight, {interpolation = CurveInterpolation.CUBIC}))
       end
     end
   end
 
+  -- i make this whole huge array just to use it once immediately and forget about it
+  -- i feel like there's a way to skip the whole function before this point but i don't know how
   for anchorType, data in pairs(frameData) do
     if not tweenCurves[anchorType] then
       tweenCurves[anchorType] = {}
@@ -129,7 +164,8 @@ function initEvents()
     end
   end
 
-  -- always remember to clean up your event listeners when you're done uwu
+  -- always remember to clean up your event listeners when you're done
+  -- no matter how much of a mess the rest of the code is
   function onDestroyed()
     shouldStop = true
 
@@ -149,8 +185,8 @@ function play(player)
 
   shouldStop = false
 
-  if ATTACH_TO_PLAYER then
-    KEYFRAMES:AttachToPlayer("root")
+  if ATTACH_TO_SOCKET and ATTACH_TO_SOCKET ~= "" then
+    KEYFRAMES:AttachToPlayer(player, ATTACH_TO_SOCKET)
   end
 
   if INITIAL_START_DELAY > 0 then
@@ -166,7 +202,7 @@ function play(player)
     local now = time()
 
     for anchorType, curve in pairs(tweenCurves) do
-      if not anchors[anchorType] and keyframes[currentFrame]:FindChildByName("Anchor"..anchorType) then
+      if keyframes[currentFrame] and not anchors[anchorType] and keyframes[currentFrame]:FindChildByName("Anchor"..anchorType) then
         anchors[anchorType] = keyframes[currentFrame]:FindChildByName("Anchor"..anchorType)
         anchors[anchorType].blendInTime = (frameTiming[currentFrame + 1] or ANIMATION_DURATION) - frameTiming[currentFrame]
         anchors[anchorType]:Activate(player)
@@ -220,12 +256,18 @@ function play(player)
   if LOOP and not shouldStop then
     play(player)
   else
-    if ATTACH_TO_PLAYER then
+    if ATTACH_TO_SOCKET and ATTACH_TO_SOCKET ~= "" then
       KEYFRAMES:Detach()
     end
 
     anchors = {}
   end
+end
+
+if RANDOMLY_MIRROR and math.random() < 0.5 then
+  shouldMirror = not MIRROR
+else
+  shouldMirror = MIRROR
 end
 
 initTimingData()

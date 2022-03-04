@@ -28,8 +28,14 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:IconBG"
+            AssetReference {
+              Id: 15278661990571093700
+            }
+          }
+          Overrides {
             Name: "cs:ItemLevel"
-            Float: 56
+            Float: 60
           }
           Overrides {
             Name: "cs:MinDamage"
@@ -58,7 +64,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "left_prop"
+          SocketName: "right_prop"
           PickupTrigger {
           }
         }
@@ -138,7 +144,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "dual_melee_left_hand_slash_left"
+          Animation: "1hand_melee_slash_right"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
@@ -224,7 +230,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "dual_melee_left_hand_slash_right"
+          Animation: "dual_melee_right_hand_slash_left"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
@@ -1743,6 +1749,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Weapon_Sword_016"
+      }
+    }
+    Assets {
+      Id: 15278661990571093700
+      Name: "Fantasy Ability Green 024"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Ability_Green_024"
       }
     }
     Assets {

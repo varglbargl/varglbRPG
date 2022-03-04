@@ -66,7 +66,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "left_prop"
+          SocketName: "right_prop"
           PickupTrigger {
           }
         }
@@ -146,7 +146,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "dual_melee_left_hand_slash_left"
+          Animation: "1hand_melee_slash_right"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
@@ -232,7 +232,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "dual_melee_left_hand_slash_right"
+          Animation: "dual_melee_right_hand_slash_left"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
@@ -298,6 +298,7 @@ Assets {
         }
         ParentId: 11755668592685172298
         ChildIds: 9055886291365695405
+        ChildIds: 5269215179326425143
         ChildIds: 1027744396515336848
         ChildIds: 18255501889147482273
         ChildIds: 10354753635577308560
@@ -336,6 +337,14 @@ Assets {
           }
         }
         ParentId: 2188943672979447243
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SwooshSFX"
+            AssetReference {
+              Id: 8057694211030177837
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -352,6 +361,61 @@ Assets {
           ScriptAsset {
             Id: 1573193169450523257
           }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 5269215179326425143
+        Name: "Rainbow Trail VFX"
+        Transform {
+          Location {
+            Z: 30
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2188943672979447243
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 1879022035935010891
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -395,9 +459,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 18
-              G: 0.878400922
-              B: 0.288000584
+              R: 0.750000179
+              G: 15
+              B: 9.3000021
               A: 1
             }
           }
@@ -464,8 +528,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              G: 4.19999599
-              B: 18
+              R: 6.43227768
+              G: 3.04499912
+              B: 15
               A: 1
             }
           }
@@ -545,7 +610,8 @@ Assets {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 18
-              G: 6.00000095
+              G: 5.4
+              B: 8.75999737
               A: 1
             }
           }
@@ -614,9 +680,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 18
-              G: 0.878400922
-              B: 0.288000584
+              R: 0.750000179
+              G: 15
+              B: 9.3000021
               A: 1
             }
           }
@@ -669,6 +735,24 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Survival_Weapon_Pistol_002"
+      }
+    }
+    Assets {
+      Id: 8057694211030177837
+      Name: "Sparkle Shimmer Star 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_sparkle_shimmer_star_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1879022035935010891
+      Name: "Rainbow Trail VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_rainbow_trail"
       }
     }
     Assets {

@@ -66,7 +66,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "left_prop"
+          SocketName: "right_prop"
           PickupTrigger {
           }
         }
@@ -146,7 +146,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "dual_melee_left_hand_slash_left"
+          Animation: "1hand_melee_slash_right"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
@@ -232,7 +232,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "dual_melee_left_hand_slash_right"
+          Animation: "dual_melee_right_hand_slash_left"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"

@@ -69,7 +69,7 @@ Assets {
             Bool: true
           }
           Overrides {
-            Name: "cs:EaseOutIKWeight"
+            Name: "cs:RandomlyMirror"
             Bool: true
           }
         }

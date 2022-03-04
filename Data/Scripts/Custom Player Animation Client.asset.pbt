@@ -14,8 +14,8 @@ Assets {
         Float: 2
       }
       Overrides {
-        Name: "cs:AttachToPlayer"
-        Bool: false
+        Name: "cs:AttachToSocket"
+        String: ""
       }
       Overrides {
         Name: "cs:StopEvent"
@@ -52,11 +52,11 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:EaseInIKWeight"
+        Name: "cs:Mirror"
         Bool: false
       }
       Overrides {
-        Name: "cs:EaseOutIKWeight"
+        Name: "cs:RandomlyMirror"
         Bool: false
       }
       Overrides {
@@ -121,7 +121,7 @@ Assets {
       }
       Overrides {
         Name: "cs:ActivationTrigger:tooltip"
-        String: "If a trigger is provided, this animation will play on any player that activates that trigger. Works with both overlap triggers and interactable triggers."
+        String: "If a trigger is provided, this animation will play on any player that activates that trigger. Works with both overlap triggers and interactable triggers. Only one player can have an existing animation played on them at a time. To play the animation on multiple people at once, spawn it at their location with AutoPlayOnNearestPlayer enabled."
       }
       Overrides {
         Name: "cs:InitialStartDelay:category"
@@ -140,19 +140,23 @@ Assets {
         String: "If a string event name is provided, the animation will stop when that event is fired in the client context."
       }
       Overrides {
-        Name: "cs:AttachToPlayer:category"
+        Name: "cs:Mirror:tooltip"
+        String: "If enabled, this will mirror the animation along the Y axis and swap left/right hand/foot anchors. Useful for reusing the same keyframes for left/right hand attack animations, for example."
+      }
+      Overrides {
+        Name: "cs:Mirror:category"
         String: "Optional"
       }
       Overrides {
-        Name: "cs:AttachToPlayer:tooltip"
-        String: "If enabled, the animation will attach to the player\'s root socket on being played."
-      }
-      Overrides {
-        Name: "cs:EaseInIKWeight:category"
+        Name: "cs:RandomlyMirror:category"
         String: "Optional"
       }
       Overrides {
-        Name: "cs:EaseOutIKWeight:category"
+        Name: "cs:RandomlyMirror:tooltip"
+        String: "If enabled, this will cause the animation to randomly mirror along the Y axis. Useful for adding variety to repetetively used animations."
+      }
+      Overrides {
+        Name: "cs:AttachToSocket:category"
         String: "Optional"
       }
     }

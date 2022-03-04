@@ -146,9 +146,9 @@ function onEquipped(thisEquipment, player)
     Events.Broadcast("UpdateIdleStance", player, STANCE)
   end
 
-  if thisEquipment.socket == "left_prop" then
+  if thisEquipment.socket == "right_prop" then
     rarity = player.serverUserData["Gear"].primary.rarity
-  elseif thisEquipment.socket == "right_prop" then
+  elseif thisEquipment.socket == "left_prop" then
     rarity = player.serverUserData["Gear"].secondary.rarity
   end
 
