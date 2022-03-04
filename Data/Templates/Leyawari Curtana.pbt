@@ -28,7 +28,7 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:IconBG"
+            Name: "cs:IconBackground"
             AssetReference {
               Id: 15278661990571093700
             }

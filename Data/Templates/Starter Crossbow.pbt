@@ -73,7 +73,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "right_prop"
+          SocketName: "left_prop"
           PickupTrigger {
             SelfId: 841534158063459245
           }
@@ -206,7 +206,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "unarmed_punch_right"
+          Animation: "unarmed_punch_left"
           CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"

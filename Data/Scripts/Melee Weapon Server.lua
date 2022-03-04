@@ -89,7 +89,24 @@ function onAbilityExecute(thisAbility)
         end
       end
 
-      enemy:ApplyDamage(rollDamage())
+      local damage = rollDamage()
+
+      enemy:ApplyDamage(damage)
+
+      if ownerClass == 2 then
+        local healing = Damage.New(math.floor(magicNumber / -8 - weapon.owner:GetResource("Wit") / (math.random() * 3 + 6)))
+        healing.reason = DamageReason.FRIENDLY_FIRE
+        healing.sourcePlayer = weapon.owner
+        healing.sourceAbility = lastUsedAbility
+
+        weapon.owner:ApplyDamage(healing)
+
+        local nearbyAllies = Game.FindPlayersInSphere(enemy:GetWorldPosition(), 2000, {ignorePlayers = weapon.owner, ignoreDead = true, ignoreDespawned = true})
+
+        if #nearbyAllies ~= 0 then
+          nearbyAllies[math.random(1, #nearbyAllies)]:ApplyDamage(healing)
+        end
+      end
     end
 
     Task.Wait(0.1)

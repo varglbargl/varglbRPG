@@ -24,7 +24,7 @@ Assets {
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 7665835651728264347
+              Id: 7694512108856178286
             }
           }
           Overrides {
@@ -1222,12 +1222,12 @@ Assets {
       }
     }
     Assets {
-      Id: 7665835651728264347
-      Name: "Fantasy Sword 016"
+      Id: 7694512108856178286
+      Name: "Fantasy Sword 008"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Sword_016"
+        AssetId: "UI_Fantasy_Weapon_Sword_008"
       }
     }
     Assets {
