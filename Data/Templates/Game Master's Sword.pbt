@@ -28,6 +28,12 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:IconBackground"
+            AssetReference {
+              Id: 14922163399478107188
+            }
+          }
+          Overrides {
             Name: "cs:ItemLevel"
             Float: 69
           }
@@ -298,7 +304,7 @@ Assets {
         }
         ParentId: 11755668592685172298
         ChildIds: 9055886291365695405
-        ChildIds: 5269215179326425143
+        ChildIds: 143240775751329469
         ChildIds: 1027744396515336848
         ChildIds: 18255501889147482273
         ChildIds: 10354753635577308560
@@ -367,11 +373,11 @@ Assets {
         }
       }
       Objects {
-        Id: 5269215179326425143
-        Name: "Rainbow Trail VFX"
+        Id: 143240775751329469
+        Name: "Magic Projectile VFX"
         Transform {
           Location {
-            Z: 30
+            Z: 50
           }
           Rotation {
           }
@@ -384,12 +390,44 @@ Assets {
         ParentId: 2188943672979447243
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Particle Scale Multiplier"
+            Name: "bp:Enable Center Trail"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Main Trail"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Density"
             Float: 3
           }
           Overrides {
+            Name: "bp:Color"
+            Color {
+              G: 0.999999762
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Secondary Color"
+            Color {
+              R: 0.750000477
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Secondary Emissive Boost"
+            Float: 5
+          }
+          Overrides {
             Name: "bp:Emissive Boost"
-            Float: 1
+            Float: 5
           }
         }
         Collidable_v2 {
@@ -406,7 +444,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 1879022035935010891
+            Id: 7454530554397847005
           }
           TeamSettings {
           }
@@ -738,6 +776,15 @@ Assets {
       }
     }
     Assets {
+      Id: 14922163399478107188
+      Name: "Japanese Ability Blossom"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "IllustratedIcons_Japan_Abilities_Blossom"
+      }
+    }
+    Assets {
       Id: 8057694211030177837
       Name: "Sparkle Shimmer Star 01 SFX"
       PlatformAssetType: 7
@@ -747,12 +794,12 @@ Assets {
       }
     }
     Assets {
-      Id: 1879022035935010891
-      Name: "Rainbow Trail VFX"
+      Id: 7454530554397847005
+      Name: "Magic Projectile VFX"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_rainbow_trail"
+        AssetId: "fxbp_magic_projectile"
       }
     }
     Assets {

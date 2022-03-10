@@ -1,5 +1,6 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 
+---@type DamageableObject
 local enemy = script.parent.parent
 enemy:FindChildByType("CoreMesh").clientUserData["Enemy"] = enemy
 
@@ -20,6 +21,7 @@ local ATTACK_VFX = enemy:GetCustomProperty("AttackVFX")
 
 local lastKnownPosition = MESH:GetWorldPosition()
 local clientPlayer = Game.GetLocalPlayer()
+local defaultPlaybackRate = MESH.animationStancePlaybackRate
 
 local damagedEvent = nil
 local diedEvent = nil
@@ -30,13 +32,17 @@ function movingAnimationCheckLoop()
   if (WALK_ANIM == "" and RUN_ANIM == "") or not Object.IsValid(enemy) or enemy.isDead then return end
 
   local currentPosition = MESH:GetWorldPosition()
+  local speed = (currentPosition - lastKnownPosition).size
 
-  if RUN_ANIM ~= "" and (currentPosition - lastKnownPosition).size > 20 * MESH:GetWorldScale().size then
+  if RUN_ANIM ~= "" and speed > 20 * MESH:GetWorldScale().size then
     MESH.animationStance = RUN_ANIM
-  elseif WALK_ANIM ~= "" and (currentPosition - lastKnownPosition).size > 1 then
+    MESH.animationStancePlaybackRate = defaultPlaybackRate * (speed / 18)
+  elseif WALK_ANIM ~= "" and speed > 1 then
     MESH.animationStance = WALK_ANIM
+    MESH.animationStancePlaybackRate = defaultPlaybackRate * (speed / 18)
   else
     MESH.animationStance = IDLE_ANIM
+    MESH.animationStancePlaybackRate = defaultPlaybackRate
   end
 
   lastKnownPosition = currentPosition
@@ -84,7 +90,7 @@ function onEnemyDied(thisEnemy)
   if DIE_ANIM ~= "" then MESH:PlayAnimation(DIE_ANIM, {shouldLoop = true}) end
 
   if DEATH_VFX then
-    local vfx = World.SpawnAsset(DEATH_VFX, {position = script:GetWorldPosition()})
+    local vfx = World.SpawnAsset(DEATH_VFX, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
     if vfx.lifeSpan == 0 then vfx.lifeSpan = 5 end
   end
 end

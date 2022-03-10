@@ -138,5 +138,9 @@ Assets {
       VirtualFolderPath: "Exterior"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Player Animations"
+      PlatformAssetType: 5
+    }
   }
 }

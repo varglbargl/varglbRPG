@@ -5,6 +5,7 @@ local ENEMY_SPAWNS = script:GetCustomProperty("EnemySpawns"):WaitForObject()
 local DESTRUCTIBLE_SPAWNS = script:GetCustomProperty("DestructibleSpawns"):WaitForObject()
 
 local spawnLocations = {}
+local spawnChunks = 1
 
 function insertSpawnPoint(spawnPoint)
   local spawnData = {
@@ -24,20 +25,26 @@ end
 --   insertSpawnPoint(dSpawn)
 -- end
 
-function checkSpawnLoop()
-  for i, spawn in ipairs(spawnLocations) do
+spawnChunks = math.ceil(#spawnLocations / 50)
 
+function checkSpawnLoop()
+  if #Game.GetPlayers() == 0 then
+    Task.Wait(3)
+    checkSpawnLoop()
+    return
+  end
+
+  for i, spawn in ipairs(spawnLocations) do
     if math.random() < spawn.chance and AI.areTherePlayersNearby(spawn.where, 250) then
       World.SpawnAsset(spawn.what, {position = spawn.where})
       table.remove(spawnLocations, i)
+      spawnChunks = math.ceil(#spawnLocations / 50)
 
-      Task.Wait()
+      Task.Wait(0.1)
+    elseif i % spawnChunks == 0 then
+      Task.Wait(0.1)
     end
-
-    Task.Wait()
   end
-
-  Task.Wait(5)
 
   checkSpawnLoop()
 end

@@ -101,30 +101,30 @@ end
 
 function addToInventory(player, item, inventorySlot)
   if not Object.IsValid(player) then return end
+  local inventoryFull = true
 
   if inventorySlot then
     player.serverUserData["Inventory"][inventorySlot] = item
   else
-    local inventoryFull = true
-
     for i = 1, 48 do
       if not player.serverUserData["Inventory"][i] then
         player.serverUserData["Inventory"][i] = item
         break
       end
     end
-
-    for i = 1, 48 do
-      if not player.serverUserData["Inventory"][i] then
-        inventoryFull = false
-        break
-      end
-    end
-
-    player.serverUserData["Inventory"].full = inventoryFull
   end
 
+  for i = 1, 48 do
+    if not player.serverUserData["Inventory"][i] then
+      inventoryFull = false
+      break
+    end
+  end
+
+  player.serverUserData["Inventory"].full = inventoryFull
+
   Utils.updatePrivateNetworkedData(player, "Inventory")
+  Vault.save(player)
 end
 
 function unequipFromPlayer(player, gearSlot, inventorySlot)
@@ -158,11 +158,9 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
   Task.Wait()
   if not Object.IsValid(player) then return end
 
-  addToInventory(player, uItem, inventorySlot)
   Utils.updatePrivateNetworkedData(player, "Gear")
   Events.Broadcast("EquipmentChanged", player)
-
-  Vault.save(player)
+  addToInventory(player, uItem, inventorySlot)
 end
 
 function equipToPlayer(player, gearSlot, inventorySlot)
@@ -174,29 +172,24 @@ function equipToPlayer(player, gearSlot, inventorySlot)
   if item then
     player.serverUserData["Inventory"][inventorySlot] = nil
 
-    Utils.updatePrivateNetworkedData(player, "Inventory")
-
     local equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
 
     item.equipmentId = equipment.id
 
-    -- print("EqID = "..equipment.id)
-
     if player.serverUserData["Gear"][gearSlot] then
       unequipFromPlayer(player, gearSlot, inventorySlot)
+    else
+      player.serverUserData["Inventory"].full = false
     end
 
     player.serverUserData["Gear"][gearSlot] = item
     Utils.updatePrivateNetworkedData(player, "Gear")
 
     Task.Wait()
-
     if not Object.IsValid(player) then return end
 
     equipment:Equip(player)
 
-    -- print("EqID = "..equipment.id)
-    player.serverUserData["Inventory"].full = false
     Utils.updatePrivateNetworkedData(player, "Inventory")
     Events.Broadcast("EquipmentChanged", player)
 

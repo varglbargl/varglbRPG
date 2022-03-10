@@ -47,7 +47,12 @@ Assets {
         Bool: false
       }
       Overrides {
-        Name: "cs:ActivationTrigger"
+        Name: "cs:PlayTrigger"
+        ObjectReference {
+        }
+      }
+      Overrides {
+        Name: "cs:StopTrigger"
         ObjectReference {
         }
       }
@@ -58,6 +63,10 @@ Assets {
       Overrides {
         Name: "cs:RandomlyMirror"
         Bool: false
+      }
+      Overrides {
+        Name: "cs:CacheKey"
+        String: ""
       }
       Overrides {
         Name: "cs:AnimationDuration:tooltip"
@@ -116,11 +125,11 @@ Assets {
         String: "If enabled, the animation will play on the nearest player to the script when it is spawned (or when a new player joins if it\'s already spawned in the heirarchy.) This is useful for allowing you to play an animation on a player by spawning a template containing the script an keyframes at a player\'s location."
       }
       Overrides {
-        Name: "cs:ActivationTrigger:category"
+        Name: "cs:PlayTrigger:category"
         String: "Optional"
       }
       Overrides {
-        Name: "cs:ActivationTrigger:tooltip"
+        Name: "cs:PlayTrigger:tooltip"
         String: "If a trigger is provided, this animation will play on any player that activates that trigger. Works with both overlap triggers and interactable triggers. Only one player can have an existing animation played on them at a time. To play the animation on multiple people at once, spawn it at their location with AutoPlayOnNearestPlayer enabled."
       }
       Overrides {
@@ -137,11 +146,11 @@ Assets {
       }
       Overrides {
         Name: "cs:StopEvent:tooltip"
-        String: "If a string event name is provided, the animation will stop when that event is fired in the client context."
+        String: "If a string event name is provided, the animation will stop when that event is broadcast in client context. You can optionally pass a player into the first argument of the event to stop the animation for that player only. Otherwise, all instances of the animation with the same StopEvent string will be stopped."
       }
       Overrides {
         Name: "cs:Mirror:tooltip"
-        String: "If enabled, this will mirror the animation along the Y axis and swap left/right hand/foot anchors. Useful for reusing the same keyframes for left/right hand attack animations, for example."
+        String: "If enabled, this will mirror the animation along the Y axis and swap left/right hand/foot anchors. Useful for reusing the same keyframes for left/right hand attack animations, for example. WARNING: In order to correctly mirror a right anchor onto a left one, or the other way around, there must be one of each in the keyframe."
       }
       Overrides {
         Name: "cs:Mirror:category"
@@ -153,11 +162,39 @@ Assets {
       }
       Overrides {
         Name: "cs:RandomlyMirror:tooltip"
-        String: "If enabled, this will cause the animation to randomly mirror along the Y axis. Useful for adding variety to repetetively used animations."
+        String: "If enabled, this will cause the animation to randomly mirror along the Y axis. Useful for adding variety to repetetively used animations. WARNING: In order to correctly mirror a right anchor onto a left one, or the other way around, there must be one of each in the keyframe. Also, for the time being, the random determination of whether to mirror the animation is done once on script spawn. I\'m definitely planning on changing that!"
       }
       Overrides {
         Name: "cs:AttachToSocket:category"
         String: "Optional"
+      }
+      Overrides {
+        Name: "cs:CacheKey:category"
+        String: "Optional"
+      }
+      Overrides {
+        Name: "cs:CacheKey:subcategory"
+        String: "Advanced"
+      }
+      Overrides {
+        Name: "cs:CacheKey:tooltip"
+        String: "If a string is provided, all the curves and frame timing for your animation will be cached upon being played for the first time in a table using the provided string as their key so they don\'t have to recalculate every time you replay the same animation. If RandomlyMirror is enabled, both versions of the animation will need to be cached seperately."
+      }
+      Overrides {
+        Name: "cs:Mirror:subcategory"
+        String: "Advanced"
+      }
+      Overrides {
+        Name: "cs:RandomlyMirror:subcategory"
+        String: "Advanced"
+      }
+      Overrides {
+        Name: "cs:StopTrigger:category"
+        String: "Optional"
+      }
+      Overrides {
+        Name: "cs:StopTrigger:tooltip"
+        String: "If a trigger is provided, this animation will stop when any player activates that trigger. Works with both overlap triggers and interactable triggers. If the same trigger is provided to StopTrigger and PlayTrigger, the animation will stop either when the player leaves the trigger or, if it\'s interactible, when they interact with it again."
       }
     }
   }

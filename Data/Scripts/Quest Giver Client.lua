@@ -22,12 +22,12 @@ local quest = Quests.findByID(QUEST_ID)
 QUEST_DISPLAY.opacity = 0
 QUEST_DISPLAY.visibility = Visibility.INHERIT
 
-function onAvailableQuestsUpdated(availableQuestIDs)
+function onAvailableQuestsUpdated(questIDs)
   local questMarker = nil
   local startNPC = script.parent
   local dialogueTrigger = startNPC:FindDescendantByType("Trigger")
 
-  for _, id in ipairs(availableQuestIDs) do
+  for _, id in ipairs(questIDs) do
     if id == QUEST_ID then
       if startNPC.clientUserData["Lines"] then
         previousLines = startNPC.clientUserData["Lines"]
@@ -61,6 +61,7 @@ function onAvailableQuestsUpdated(availableQuestIDs)
       startNPC.clientUserData["Quest"] = previousQuest
       previousLines = nil
       previousQuest = nil
+      dialogueTrigger.collision = Collision.FORCE_ON
     else
       startNPC.clientUserData["Lines"] = nil
       startNPC.clientUserData["Quest"] = nil
@@ -99,6 +100,11 @@ function onQuestCompleted(questID)
   local questMarker = World.SpawnAsset(FINISH_QUEST_MARKER, {parent = dialogueTrigger})
 
   completedEvent:Disconnect()
+  if TURN_IN_NPC.clientUserData["Lines"] then
+    previousLines = TURN_IN_NPC.clientUserData["Lines"]
+    previousQuest = TURN_IN_NPC.clientUserData["Quest"]
+  end
+
   TURN_IN_NPC.clientUserData["Lines"] = quest.turnInLines
   TURN_IN_NPC.clientUserData["Quest"] = quest
   dialogueTrigger.collision = Collision.FORCE_ON
@@ -118,6 +124,7 @@ function onQuestCompleted(questID)
       TURN_IN_NPC.clientUserData["Quest"] = previousQuest
       previousLines = nil
       previousQuest = nil
+      dialogueTrigger.collision = Collision.FORCE_ON
     else
       TURN_IN_NPC.clientUserData["Lines"] = nil
       TURN_IN_NPC.clientUserData["Quest"] = nil
@@ -129,5 +136,8 @@ function onQuestCompleted(questID)
   end)
 end
 
+-- handler params: array_QuestIDs
 updateAvailableEvent = Events.Connect("UpdateAvailableQuests", onAvailableQuestsUpdated)
+
+-- handler params: number_questID
 completedEvent = Events.Connect("QuestCompleted", onQuestCompleted)

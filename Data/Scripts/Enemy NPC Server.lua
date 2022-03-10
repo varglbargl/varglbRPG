@@ -255,7 +255,7 @@ function die(thisEnemy, damage)
 
     enemy:MoveTo(enemy:GetWorldPosition() - Vector3.UP * 500, 5)
 
-    Task.Wait(60 / #Game.GetPlayers() * totalAttackers)
+    Task.Wait(120 / totalAttackers)
 
     attemptRespawn()
   end)

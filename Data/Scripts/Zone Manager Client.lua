@@ -1,3 +1,5 @@
+local Utils = require(script:GetCustomProperty("Utils"))
+
 local ZONE_DISPLAY = script:GetCustomProperty("ZoneDisplay"):WaitForObject()
 local ZONE_NAME = script:GetCustomProperty("ZoneName"):WaitForObject()
 local ZONE_SUBTITLE = script:GetCustomProperty("ZoneSubtitle"):WaitForObject()

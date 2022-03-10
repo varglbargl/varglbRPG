@@ -11,8 +11,6 @@ local ISD = VFX:GetCustomProperty("InitialStartDelay")
 local DPS = script:GetCustomProperty("DefaultParticleScale")
 local STAGGER = script:GetCustomProperty("StaggerDelay")
 
-local team = os.time()
-
 if ISD > 0 then
   Task.Wait(ISD)
 end
@@ -20,20 +18,11 @@ end
 for i = 1, DESNITY do
   local randomRot = Rotation.New(math.random(0, 359), math.random(0, 359), math.random(0, 359))
 
-  local item = World.SpawnAsset(ITEM, {position = VFX:GetWorldPosition() + (Vector3.UP * PSM * 10), rotation = randomRot, scale = DPS * PSM})
-
-  assert(item:IsA("CoreMesh"), "The item input into ")
+  local item = World.SpawnAsset(ITEM, {position = VFX:GetWorldPosition() + (Vector3.UP * PSM * 10), rotation = randomRot, scale = DPS * PSM, lifeSpan = LIFE * math.random(90, 100) / 100, team = 1, cameraCollision = Collision.FORCE_OFF})
 
   item.isTeamCollisionEnabled = false
-  item.team = 3
-
-  item.cameraCollision = Collision.FORCE_OFF
-  item.lifeSpan = LIFE * math.random(90, 100) / 100
 
   item.isSimulatingDebrisPhysics = true
-
-  item.isTeamCollisionEnabled = false
-  item.team = 3
 
   local randomVel = Vector3.New(math.random(MIN_VEL.x, MAX_VEL.x), math.random(MIN_VEL.y, MAX_VEL.y), math.random(MIN_VEL.z, MAX_VEL.z))
 

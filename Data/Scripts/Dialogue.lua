@@ -217,10 +217,10 @@ local animationStances = {
 
 local chirpSFX = nil
 
-function writeOutText(text)
+function writeOutText(text, italic)
   skip = false
 
-  if speaker and speaker.chirp then
+  if not italic and speaker and speaker.chirp then
     chirpSFX = Utils.playSoundEffect(speaker.chirp, {parent = speaker.npc, pitch = speaker.pitch, loop = true, stopTime = 0.065, fadeOutTime = 0.01})
   else
     chirpSFX = Utils.playSoundEffect(DEFAULT_CHIRP, {loop = true, stopTime = 0.065, fadeOutTime = 0.01})
@@ -234,7 +234,7 @@ function writeOutText(text)
 
     if DIALOGUE:ComputeApproximateSize().x > 612 then
       words[i] = "\n"..word
-      DIALOGUE.text = previousText..word.." "
+      DIALOGUE.text = word.." "
     else
       DIALOGUE.text = DIALOGUE.text.." "
     end
@@ -336,7 +336,7 @@ function speakLine(lines, num)
   DIALOG:ReorderAfterSiblings()
 
   if line[1] then
-    writeOutText(line[1])
+    writeOutText(line[1], line.italic)
   end
 
   if line.options then

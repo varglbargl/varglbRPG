@@ -33,8 +33,7 @@ else
   startRotation = script.parent:GetWorldRotation()
 end
 
-
-function swingLoop(dt)
+function Tick()
   if not Object.IsValid(script.parent) then return end
   local curveValue = Rotation.New(curve:GetValue(time() + START_TIME) * ramplitude:GetValue(time() + START_TIME), 0, 0)
 
@@ -43,10 +42,6 @@ function swingLoop(dt)
   else
     script.parent:SetWorldRotation(startRotation + curveValue * MIN_AMPLITUDE)
   end
-
-  swingLoop(Task.Wait())
 end
-
-swingLoop(Task.Wait())
 
 -- you know, i don't think this is actually all that simple in hindsight

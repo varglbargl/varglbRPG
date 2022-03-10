@@ -3,6 +3,8 @@ local Dialogue = require(script:GetCustomProperty("Dialogue"))
 local LINES = script:GetCustomProperty("Lines")
 
 local trigger = script.parent
+trigger.isInteractable = true
+trigger.collision = Collision.FORCE_OFF
 
 if LINES then
   LINES = require(LINES)
@@ -28,7 +30,7 @@ function onInteracted(_, player)
     questID = quest.id
   end
 
-  trigger.isInteractable = false
+  trigger.collision = Collision.FORCE_OFF
 
   Dialogue.speak(character, currentLines, questID)
 
@@ -42,12 +44,23 @@ function onInteracted(_, player)
 
       if Object.IsValid(trigger) then
         if LINES or npc.clientUserData["Lines"] then
-          trigger.isInteractable = true
+          trigger.collision = Collision.FORCE_ON
         end
       end
     end
   end)
 end
 
+function onAvailableQuestsUpdated()
+  Task.Wait(0.5)
+
+  if npc.clientUserData["Lines"] or LINES then
+    trigger.collision = Collision.FORCE_ON
+  end
+end
+
 -- handler params: Trigger_trigger, Player_player
 trigger.interactedEvent:Connect(onInteracted)
+
+-- handler params: array_QuestIDs
+Events.Connect("UpdateAvailableQuests", onAvailableQuestsUpdated)

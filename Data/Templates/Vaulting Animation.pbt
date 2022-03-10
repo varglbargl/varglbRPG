@@ -42,9 +42,10 @@ Assets {
         Name: "Custom Player Animation Client"
         Transform {
           Location {
+            X: -10
+            Z: -50
           }
           Rotation {
-            Yaw: 89.9999542
           }
           Scale {
             X: 1
@@ -69,8 +70,16 @@ Assets {
             Bool: true
           }
           Overrides {
+            Name: "cs:Mirror"
+            Bool: false
+          }
+          Overrides {
             Name: "cs:RandomlyMirror"
             Bool: true
+          }
+          Overrides {
+            Name: "cs:CacheKey"
+            String: "Ledge Vaulting"
           }
         }
         Collidable_v2 {
@@ -148,6 +157,7 @@ Assets {
           }
         }
         ParentId: 7790741895855837336
+        ChildIds: 14363746766099177123
         ChildIds: 1620880322088220180
         ChildIds: 1986037429246000600
         ChildIds: 9316327572509874373
@@ -165,6 +175,52 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14363746766099177123
+        Name: "Leather Tap Grab Catch 01 SFX"
+        Transform {
+          Location {
+            X: 10
+            Y: 25
+            Z: 10
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8663334787608744588
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 7697723051674885387
+          }
+          Pitch: -900
+          Volume: 0.1
+          Falloff: 2000
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -325,6 +381,7 @@ Assets {
           }
         }
         ParentId: 7790741895855837336
+        ChildIds: 17552549077645779412
         ChildIds: 14563532132601162176
         ChildIds: 353877971414189834
         ChildIds: 1328072844205029566
@@ -344,6 +401,52 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 17552549077645779412
+        Name: "Leather Gear Clothing Whoosh 01 SFX"
+        Transform {
+          Location {
+            X: -25
+            Y: -25
+            Z: 25
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3079467259825823791
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 5945023083814662512
+          }
+          Pitch: -1200
+          Volume: 0.1
+          Falloff: 1600
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1409,10 +1512,29 @@ Assets {
         }
       }
     }
+    Assets {
+      Id: 7697723051674885387
+      Name: "Leather Tap Grab Catch 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_leather_tap_grab_catch_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 5945023083814662512
+      Name: "Leather Gear Clothing Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_leather_clothing_whoosh_01a_Cue_ref"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
   SerializationVersion: 107
+  VirtualFolderPath: "Player Animations"
 }
