@@ -36,10 +36,10 @@ function movingAnimationCheckLoop()
 
   if RUN_ANIM ~= "" and speed > 20 * MESH:GetWorldScale().size then
     MESH.animationStance = RUN_ANIM
-    MESH.animationStancePlaybackRate = defaultPlaybackRate * (speed / 18)
+    MESH.animationStancePlaybackRate = defaultPlaybackRate * (speed / 75)
   elseif WALK_ANIM ~= "" and speed > 1 then
     MESH.animationStance = WALK_ANIM
-    MESH.animationStancePlaybackRate = defaultPlaybackRate * (speed / 18)
+    MESH.animationStancePlaybackRate = defaultPlaybackRate * (speed / 20)
   else
     MESH.animationStance = IDLE_ANIM
     MESH.animationStancePlaybackRate = defaultPlaybackRate

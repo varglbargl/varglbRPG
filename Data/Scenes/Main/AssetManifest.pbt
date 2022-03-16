@@ -1124,15 +1124,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16910278292812118833
-  Name: "Sun Light"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_SunLight"
-  }
-}
-Assets {
   Id: 16890205056291965690
   Name: "Sign Bracket - Round"
   PlatformAssetType: 1
@@ -3248,15 +3239,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13842706157245717437
-  Name: "Tonemapping Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_tonemapping"
-  }
-}
-Assets {
   Id: 13840443032411406179
   Name: "Large Wood Beam 8m"
   PlatformAssetType: 1
@@ -4418,15 +4400,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12344193518355455075
-  Name: "Star Dome"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_StarDome"
-  }
-}
-Assets {
   Id: 12336055700043431724
   Name: "Main Street Wall 02 - Corner Trim 02"
   PlatformAssetType: 1
@@ -4955,15 +4928,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_circle_001"
-  }
-}
-Assets {
-  Id: 11515840070784317904
-  Name: "Skylight"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Skylight"
   }
 }
 Assets {
@@ -6092,15 +6056,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9890142656855450774
-  Name: "Moon"
-  PlatformAssetType: 19
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Moon"
-  }
-}
-Assets {
   Id: 9860297392280680728
   Name: "Trim Crenellated 8m 02"
   PlatformAssetType: 1
@@ -6704,6 +6659,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9036576423943044924
+  Name: "Fantasy Castle Floor 02 - Corner 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_002_4m_corner_001"
+  }
+}
+Assets {
   Id: 9030273007990279489
   Name: "Energy Distortion Line"
   PlatformAssetType: 2
@@ -7244,15 +7208,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8258029249780464074
-  Name: "AutoExposure Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_auto_exposure"
-  }
-}
-Assets {
   Id: 8234710182260926314
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -7448,15 +7403,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_st_post_lights_pole_002"
-  }
-}
-Assets {
-  Id: 7887238662729938253
-  Name: "Sky Dome"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Sky"
   }
 }
 Assets {
@@ -11339,6 +11285,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2541326204287827421
+  Name: "Ambience Suburbs Frogs 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_suburbs_frogs_01_Cue_ref"
+  }
+}
+Assets {
   Id: 2502011191961427546
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -11534,15 +11489,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_carbon-fiber_001"
-  }
-}
-Assets {
-  Id: 2224571462023946700
-  Name: "Environment Fog Default VFX"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_env_fog_default"
   }
 }
 Assets {

@@ -16,33 +16,9 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 8567805271040705626
-        ChildIds: 12688856670922363601
         ChildIds: 14645393006396141749
         ChildIds: 5423398119783076165
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 16494513751997592387
-            }
-          }
-          Overrides {
-            Name: "cs:ItemLevel"
-            Float: 32
-          }
-          Overrides {
-            Name: "cs:MinDamage"
-            Int: 4
-          }
-          Overrides {
-            Name: "cs:MaxDamage"
-            Int: 11
-          }
-          Overrides {
-            Name: "cs:AnimationStance"
-            String: "1hand_melee_stance"
-          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -58,178 +34,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "right_prop"
+          SocketName: "1-hand"
           PickupTrigger {
           }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 8567805271040705626
-        Name: "Ability"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1112185060550703859
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Ability {
-          IsEnabled: true
-          CastPhaseSettings {
-            Duration: 0.25
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          ExecutePhaseSettings {
-            Duration: 0.2
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          RecoveryPhaseSettings {
-            Duration: 0.2
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          CooldownPhaseSettings {
-            Duration: 0.75
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          Animation: "1hand_melee_slash_right"
-          CanBePrevented: true
-          KeyBinding_v2 {
-            Value: "mc:egameaction:invalid"
-          }
-          KeyBinding_v3: "Primary Ability"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 12688856670922363601
-        Name: "Ability"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -8.75117894e-06
-            Roll: -3.8419812e-06
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1112185060550703859
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Ability {
-          IsEnabled: true
-          CastPhaseSettings {
-            Duration: 0.25
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          ExecutePhaseSettings {
-            Duration: 0.2
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          RecoveryPhaseSettings {
-            Duration: 0.2
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          CooldownPhaseSettings {
-            Duration: 0.75
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          Animation: "dual_melee_right_hand_slash_left"
-          CanBePrevented: true
-          KeyBinding_v2 {
-            Value: "mc:egameaction:invalid"
-          }
-          KeyBinding_v3: "Primary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1292,15 +1099,6 @@ Assets {
       }
     }
     Assets {
-      Id: 16494513751997592387
-      Name: "Fantasy Sword 015"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Sword_015"
-      }
-    }
-    Assets {
       Id: 14294883140120200377
       Name: "Fantasy Sword Blade 01"
       PlatformAssetType: 1
@@ -1368,7 +1166,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Melee Weapons"
 }

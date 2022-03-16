@@ -17,7 +17,6 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 15763544103961848997
-        ChildIds: 2628079196153024932
         ChildIds: 9795026391010869915
         UnregisteredParameters {
           Overrides {
@@ -71,7 +70,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "left_prop"
+          SocketName: "1-hand"
           PickupTrigger {
           }
         }
@@ -140,91 +139,6 @@ Assets {
           ScriptAsset {
             Id: 17091320215828890348
           }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 2628079196153024932
-        Name: "Trace"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9693666416420425052
-        UnregisteredParameters {
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Ability {
-          IsEnabled: true
-          CastPhaseSettings {
-            Duration: 0.25
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          ExecutePhaseSettings {
-            Duration: 0.2
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          RecoveryPhaseSettings {
-            Duration: 0.2
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          CooldownPhaseSettings {
-            Duration: 0.5
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          Animation: "unarmed_magic_bolt"
-          CanBePrevented: true
-          KeyBinding_v2 {
-            Value: "mc:egameaction:invalid"
-          }
-          KeyBinding_v3: "Secondary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -322,14 +236,14 @@ Assets {
         Name: "Cone - Truncated Wide"
         Transform {
           Location {
-            X: -1.29882812
-            Y: -0.376953125
-            Z: -7.85205078
+            X: 0.00149536133
+            Y: -0.0009765625
+            Z: -7.98284531
           }
           Rotation {
-            Pitch: 0.324474961
-            Yaw: -10.6452579
-            Roll: 6.86447954
+            Pitch: -0.00183732074
+            Yaw: 60.2791214
+            Roll: 0.00104484567
           }
           Scale {
             X: 0.092681542
@@ -391,14 +305,14 @@ Assets {
         Name: "Cone - Truncated Wide"
         Transform {
           Location {
-            X: -0.8515625
-            Y: 2.82226562
-            Z: 18.9414062
+            X: 0.000610351562
+            Y: 0.000900268555
+            Z: 19.0046196
           }
           Rotation {
-            Pitch: -0.324454457
-            Yaw: 169.354736
-            Roll: 173.135513
+            Pitch: 0.00185781135
+            Yaw: -119.720764
+            Roll: 179.998978
           }
           Scale {
             X: 0.092681542
@@ -460,14 +374,11 @@ Assets {
         Name: "Urban Pipe Wrap 01"
         Transform {
           Location {
-            X: -0.998046875
-            Y: 1.77929688
             Z: 10.2001953
           }
           Rotation {
-            Pitch: 6.11962366
-            Yaw: -70.7764053
-            Roll: -176.869431
+            Yaw: -1.51944942e-05
+            Roll: -179.999969
           }
           Scale {
             X: 0.289539963
@@ -537,14 +448,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: -1.20703125
-            Y: -0.50390625
-            Z: -8.63427734
+            X: 0.0673522949
+            Y: 0.0871887207
+            Z: -8.77298355
           }
           Rotation {
-            Pitch: -17.8477345
-            Yaw: 151.927048
-            Roll: -4.10379
+            Pitch: -15.3718662
+            Yaw: -139.043854
+            Roll: 2.58587265
           }
           Scale {
             X: 0.061312329
@@ -612,14 +523,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: -1.31835938
-            Y: -0.42578125
-            Z: -8.2890625
+            X: -0.00564575195
+            Y: -0.0114746094
+            Z: -8.42282867
           }
           Rotation {
-            Pitch: -17.1545715
-            Yaw: 38.5395393
-            Roll: 6.0744853
+            Pitch: -12.119091
+            Yaw: 110.706589
+            Roll: 1.24061
           }
           Scale {
             X: 0.0904793143
@@ -687,14 +598,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide"
         Transform {
           Location {
-            X: -1.33886719
-            Y: -0.48046875
-            Z: -8.63476562
+            X: 0.00212860107
+            Y: -0.0297546387
+            Z: -8.77286339
           }
           Rotation {
-            Pitch: -17.4752369
-            Yaw: 15.6923809
-            Roll: 2.96625543
+            Pitch: -14.6194868
+            Yaw: 88.4364624
+            Roll: -3.53786778
           }
           Scale {
             X: 0.0513999611
@@ -762,14 +673,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: -1.31835938
-            Y: -0.42578125
-            Z: -8.2890625
+            X: -0.00564575195
+            Y: -0.0114746094
+            Z: -8.42282867
           }
           Rotation {
-            Pitch: -2.62731409
-            Yaw: -57.9083748
-            Roll: 1.79496849
+            Pitch: -7.87565184
+            Yaw: 13.4438858
+            Roll: -2.66017532
           }
           Scale {
             X: 0.0768457577
@@ -837,14 +748,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide"
         Transform {
           Location {
-            X: -1.13085938
-            Y: -0.43359375
-            Z: -9.28125
+            X: -0.0426940918
+            Y: 0.217010498
+            Z: -9.40571594
           }
           Rotation {
-            Pitch: -4.1673646
-            Yaw: 179.522415
-            Roll: 1.15108562
+            Pitch: -5.02768135
+            Yaw: -110.082573
+            Roll: 7.99029303
           }
           Scale {
             X: 0.0370113216
@@ -912,14 +823,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: -0.965820312
-            Y: 2.90625
-            Z: 19.7290039
+            X: -0.0316772461
+            Y: -0.122665405
+            Z: 19.7946281
           }
           Rotation {
-            Pitch: -17.3970032
-            Yaw: 155.915
-            Roll: 175.740845
+            Pitch: -15.3723307
+            Yaw: -135.074493
+            Roll: -177.414352
           }
           Scale {
             X: -0.0639711
@@ -987,14 +898,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: -0.8515625
-            Y: 2.8359375
-            Z: 19.3823242
+            X: 0.0347900391
+            Y: -0.0186309814
+            Z: 19.4439926
           }
           Rotation {
-            Pitch: -15.6294594
-            Yaw: 22.010252
-            Roll: -172.672409
+            Pitch: -12.120389
+            Yaw: 94.4155884
+            Roll: -178.75882
           }
           Scale {
             X: -0.089792423
@@ -1062,14 +973,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide"
         Transform {
           Location {
-            X: -0.83203125
-            Y: 2.890625
-            Z: 19.7290039
+            X: 0.0267944336
+            Y: -0.00132751465
+            Z: 19.7949905
           }
           Rotation {
-            Pitch: -17.9041042
-            Yaw: 19.6988316
-            Roll: -177.249313
+            Pitch: -14.6202583
+            Yaw: 92.4059448
+            Roll: 176.462128
           }
           Scale {
             X: -0.0486097597
@@ -1137,14 +1048,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: -0.8515625
-            Y: 2.8359375
-            Z: 19.3823242
+            X: 0.0347900391
+            Y: -0.0186309814
+            Z: 19.4439926
           }
           Rotation {
-            Pitch: -2.9457922
-            Yaw: -53.9848785
-            Roll: -177.851868
+            Pitch: -7.87652588
+            Yaw: 17.4130802
+            Roll: 177.339676
           }
           Scale {
             X: -0.0768457577
@@ -1212,14 +1123,14 @@ Assets {
         Name: "Cone - Truncated Hollow Wide"
         Transform {
           Location {
-            X: -0.836914062
-            Y: 2.97265625
-            Z: 20.3554688
+            X: 0.0149536133
+            Y: -0.0134277344
+            Z: 20.4265938
           }
           Rotation {
-            Pitch: 3.39801216
-            Yaw: 179.97966
-            Roll: 179.230789
+            Pitch: 2.42998981
+            Yaw: -108.729881
+            Roll: -173.957672
           }
           Scale {
             X: -0.0371418931
@@ -1287,12 +1198,14 @@ Assets {
         Name: "Candle 03"
         Transform {
           Location {
-            X: -0.514648438
-            Y: -3.421875
-            Z: 5.91650391
+            X: 4.58476257
+            Y: -0.99206543
+            Z: 5.33896542
           }
           Rotation {
-            Roll: 96.0165482
+            Pitch: 0.946466088
+            Yaw: 70.8874283
+            Roll: 89.2106
           }
           Scale {
             X: 0.347857356
@@ -1353,12 +1266,14 @@ Assets {
         Name: "Star - Faceted 5-Pointed"
         Transform {
           Location {
-            X: -0.514648438
-            Y: -3.56640625
-            Z: 5.91650391
+            X: 4.72045898
+            Y: -1.03878784
+            Z: 5.32184029
           }
           Rotation {
-            Roll: 96.0165405
+            Pitch: 0.946459234
+            Yaw: 70.8874435
+            Roll: 89.2105789
           }
           Scale {
             X: 0.0555662327
@@ -1419,12 +1334,14 @@ Assets {
         Name: "Star - Faceted 5-Pointed"
         Transform {
           Location {
-            X: -0.514648438
-            Y: -3.57421875
-            Z: 5.91650391
+            X: 4.72779846
+            Y: -1.0413208
+            Z: 5.32091475
           }
           Rotation {
-            Roll: 95.2748
+            Pitch: 0.946466088
+            Yaw: 70.8874435
+            Roll: 88.468811
           }
           Scale {
             X: 0.0587830283
@@ -1612,7 +1529,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Spells"
 }

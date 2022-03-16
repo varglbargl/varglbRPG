@@ -335,29 +335,51 @@ function pickUpItem()
 end
 
 function equipItem(inventorySlot, gearSlot)
+  print(inventory[inventorySlot].name, tostring(inventory[inventorySlot].id))
+
   local equippedSlot = nil
 
-  if inventory[inventorySlot].socket == "right_prop" then
+  if inventory[inventorySlot].socket == "1-hand" then
+    if gearSlot == "primary" then
+      equippedSlot = "primary"
+
+    elseif gearSlot == "secondary" then
+      equippedSlot = "secondary"
+
+    elseif not gearSlot then
+      if not gear.primary then
+        equippedSlot = "primary"
+      elseif not gear.secondary then
+        equippedSlot = "secondary"
+      else
+        equippedSlot = "primary"
+      end
+
+    else
+      return
+    end
+
+  elseif inventory[inventorySlot].socket == "main-hand" then
     if gearSlot and gearSlot ~= "primary" then return end
 
     equippedSlot = "primary"
 
-  elseif inventory[inventorySlot].socket == "left_prop" then
+  elseif inventory[inventorySlot].socket == "off-hand" then
     if gearSlot and gearSlot ~= "secondary" then return end
 
     equippedSlot = "secondary"
 
-  elseif inventory[inventorySlot].socket == "upper_spine" then
+  elseif inventory[inventorySlot].socket == "glider" then
     if gearSlot and gearSlot ~= "glider" then return end
 
     equippedSlot = "glider"
 
-  elseif inventory[inventorySlot].socket == "pelvis" then
+  elseif inventory[inventorySlot].socket == "potion" then
     if gearSlot and gearSlot ~= "potion" then return end
 
     equippedSlot = "potion"
 
-  elseif inventory[inventorySlot].socket == "left_wrist" then
+  elseif inventory[inventorySlot].socket == "finger" then
     if gearSlot then
       if string.sub(gearSlot, 1, 1) == "f" then
         equippedSlot = gearSlot
@@ -418,7 +440,7 @@ function onPrivateNetworkedDataChanged(player, key)
 
     for slot = 1, 48 do
       if data[slot] then
-        local item = Loot.findItemByTemplateId(data[slot].templateId)
+        local item = Loot.findItemById(data[slot].id)
 
         inventory[slot] = Loot.decodeEnchant(item, data[slot].enchant)
 
@@ -438,13 +460,13 @@ function onPrivateNetworkedDataChanged(player, key)
     throttleInventory()
 
   elseif key == "Gear" then
-    for name in pairs(gearSlots) do
-      if data[name] then
-        local item = Loot.findItemByTemplateId(data[name].templateId)
+    for slot in pairs(gearSlots) do
+      if data[slot] then
+        local item = Loot.findItemById(data[slot].id)
 
-        gear[name] = Loot.decodeEnchant(item, data[name].enchant)
+        gear[slot] = Loot.decodeEnchant(item, data[slot].enchant)
       else
-        gear[name] = nil
+        gear[slot] = nil
       end
     end
 

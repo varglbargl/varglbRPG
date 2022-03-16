@@ -2,7 +2,7 @@ Assets {
   Id: 11118458858404568811
   Name: "Good Water"
   PlatformAssetType: 13
-  SerializationVersion: 107
+  SerializationVersion: 108
   CustomMaterialAsset {
     BaseMaterialId: 11034279480632751641
     ParameterOverrides {

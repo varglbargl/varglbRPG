@@ -2,7 +2,7 @@ Assets {
   Id: 13881875038498407850
   Name: "Terrain Material"
   PlatformAssetType: 13
-  SerializationVersion: 107
+  SerializationVersion: 108
   CustomMaterialAsset {
     BaseMaterialId: 17122166212709184250
     ParameterOverrides {
@@ -55,9 +55,9 @@ Assets {
       Overrides {
         Name: "cmpc:Material2_Sides"
         Color {
-          R: 1.5
-          G: 1.31820011
-          B: 1.0455
+          R: 1.25
+          G: 1.05000007
+          B: 0.75
           A: 1
         }
       }
@@ -127,6 +127,26 @@ Assets {
       Overrides {
         Name: "material2_scale"
         Float: 1.3
+      }
+      Overrides {
+        Name: "roughness_multiplier_m1top"
+        Float: 1
+      }
+      Overrides {
+        Name: "roughness_multiplier_m1sides"
+        Float: 1
+      }
+      Overrides {
+        Name: "roughness_multiplier_m2sides"
+        Float: 0.75
+      }
+      Overrides {
+        Name: "b_invert_metallic_m2sides"
+        Bool: false
+      }
+      Overrides {
+        Name: "material1_genmask"
+        Float: 0.5
       }
     }
     Assets {

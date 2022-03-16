@@ -17,41 +17,8 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 3970936808937075559
-        ChildIds: 14528632395527442022
         ChildIds: 7653355958368296281
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 4119595512698560111
-            }
-          }
-          Overrides {
-            Name: "cs:IconBackground"
-            AssetReference {
-              Id: 1820389262061706020
-            }
-          }
-          Overrides {
-            Name: "cs:ItemLevel"
-            Int: 1
-          }
-          Overrides {
-            Name: "cs:Description"
-            String: "Launches a bolt of magical energy at an enemy."
-          }
-          Overrides {
-            Name: "cs:MinDamage"
-            Int: 4
-          }
-          Overrides {
-            Name: "cs:MaxDamage"
-            Int: 11
-          }
-          Overrides {
-            Name: "cs:IsMagic"
-            Bool: true
-          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -67,7 +34,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "left_prop"
+          SocketName: "1-hand"
           PickupTrigger {
           }
         }
@@ -136,91 +103,6 @@ Assets {
           ScriptAsset {
             Id: 17091320215828890348
           }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 14528632395527442022
-        Name: "Trace"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7736638895574569630
-        UnregisteredParameters {
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Ability {
-          IsEnabled: true
-          CastPhaseSettings {
-            Duration: 0.25
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          ExecutePhaseSettings {
-            Duration: 0.2
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          RecoveryPhaseSettings {
-            Duration: 0.2
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          CooldownPhaseSettings {
-            Duration: 0.5
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          Animation: "unarmed_magic_bolt"
-          CanBePrevented: true
-          KeyBinding_v2 {
-            Value: "mc:egameaction:invalid"
-          }
-          KeyBinding_v3: "Secondary Ability"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -303,14 +185,10 @@ Assets {
         Name: "Fantasy Book 02"
         Transform {
           Location {
-            X: 7.65536976
-            Y: -1.28770065
+            X: 7.65537262
             Z: 4.94221783
           }
           Rotation {
-            Pitch: 6.44517803
-            Yaw: -11.48349
-            Roll: 15.3958464
           }
           Scale {
             X: 0.614877582
@@ -380,24 +258,6 @@ Assets {
       }
     }
     Assets {
-      Id: 4119595512698560111
-      Name: "Fantasy Book 013"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Book_013"
-      }
-    }
-    Assets {
-      Id: 1820389262061706020
-      Name: "Fantasy Ability Purple 004"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ability_Purple_004"
-      }
-    }
-    Assets {
       Id: 11878445138592912783
       Name: "Fantasy Book 02"
       PlatformAssetType: 1
@@ -411,7 +271,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Spells"
 }

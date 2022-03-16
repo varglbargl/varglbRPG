@@ -2,7 +2,7 @@ Assets {
   Id: 11257127658328776418
   Name: "Porcelain"
   PlatformAssetType: 13
-  SerializationVersion: 107
+  SerializationVersion: 108
   CustomMaterialAsset {
     BaseMaterialId: 9837031551250158292
     ParameterOverrides {

@@ -3,7 +3,9 @@ local LABEL = script:GetCustomProperty("Label")
 local button = script.parent
 
 button.hoveredEvent:Connect(function()
-  Events.Broadcast("ShowTooltip", LABEL, button)
+  if UI.CanCursorInteractWithUI() then
+    Events.Broadcast("ShowTooltip", LABEL, button)
+  end
 end)
 
 button.unhoveredEvent:Connect(function()

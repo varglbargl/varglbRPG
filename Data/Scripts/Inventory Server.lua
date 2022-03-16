@@ -2,6 +2,45 @@ local Utils = require(script:GetCustomProperty("Utils"))
 local Vault = require(script:GetCustomProperty("Vault"))
 local Loot = require(script:GetCustomProperty("Loot"))
 
+-- Abilities
+local PRIMARY_BOLT_1 = script:GetCustomProperty("PrimaryBolt_1")
+local PRIMARY_SHOOT_1 = script:GetCustomProperty("PrimaryShoot_1")
+local PRIMARY_SLASH_1_1 = script:GetCustomProperty("PrimarySlash1_1")
+local PRIMARY_SLASH_2_1 = script:GetCustomProperty("PrimarySlash2_1")
+local SECONDARY_BOLT_1 = script:GetCustomProperty("SecondaryBolt_1")
+local SECONDARY_SHOOT_1 = script:GetCustomProperty("SecondaryShoot_1")
+local SECONDARY_SLASH_1_1 = script:GetCustomProperty("SecondarySlash1_1")
+local SECONDARY_SLASH_2_1 = script:GetCustomProperty("SecondarySlash2_1")
+local SECONDARY_BASH_1 = script:GetCustomProperty("SecondaryBash_1")
+
+local abilityAnimations = {
+  primary = {
+    bolt = {
+      x1 = {PRIMARY_BOLT_1}
+    },
+    shoot = {
+      x1 = {PRIMARY_SHOOT_1}
+    },
+    slash = {
+      x1 = {PRIMARY_SLASH_1_1, PRIMARY_SLASH_2_1}
+    }
+  },
+  secondary = {
+    bolt = {
+      x1 = {SECONDARY_BOLT_1}
+    },
+    shoot = {
+      x1 = {SECONDARY_SHOOT_1}
+    },
+    slash = {
+      x1 = {SECONDARY_SLASH_1_1, SECONDARY_SLASH_2_1}
+    },
+    bash = {
+      x1 = {SECONDARY_BASH_1}
+    }
+  }
+}
+
 function onPlayerJoined(player)
   player.serverUserData["Gear"] = {
     primary = nil,
@@ -30,7 +69,7 @@ function onPlayerJoined(player)
 
     for slot = 1, 48 do
       if saveData.inv[slot] then
-        local item = Loot.findItemByTemplateId(saveData.inv[slot].templateId)
+        local item = Loot.findItemById(saveData.inv[slot].id)
 
         player.serverUserData["Inventory"][slot] = Loot.decodeEnchant(item, saveData.inv[slot].enchant)
 
@@ -44,7 +83,7 @@ function onPlayerJoined(player)
 
     for slot in pairs(saveData.gear) do
       if saveData.gear[slot] then
-        local item = Loot.findItemByTemplateId(saveData.gear[slot].templateId)
+        local item = Loot.findItemById(saveData.gear[slot].id)
         local enchantedItem = Loot.decodeEnchant(item, saveData.gear[slot].enchant)
 
         player.serverUserData["Gear"][slot] = enchantedItem
@@ -60,12 +99,30 @@ function initInventory(player)
   if not Object.IsValid(player) then return end
 
   if Vault.hasSave(player) then
-    for _, item in pairs(player.serverUserData["Gear"]) do
+    for slot, item in pairs(player.serverUserData["Gear"]) do
 
-      if item.itemType ~= "Ring" then
+      if item.templateId then
         local equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
 
         item.equipmentId = equipment.id
+
+        if item.socket == "main-hand" then
+          equipment.socket = "right_prop"
+
+        elseif item.socket == "off-hand" then
+          equipment.socket = "left_prop"
+
+        elseif item.socket == "1-hand" then
+          if slot == "primary" then
+            equipment.socket = "right_prop"
+
+          elseif slot == "secondary" then
+            equipment.socket = "left_prop"
+          end
+        end
+
+        addAbilities(equipment, item, slot)
+
         equipment:Equip(player)
       end
     end
@@ -96,6 +153,20 @@ function initInventory(player)
         end
       end
     end)
+  end
+end
+
+function addAbilities(equipment, item, slot)
+  local abilities = {}
+
+  if item.animation and item.animation ~= "" then
+    abilities = abilityAnimations[slot][string.lower(item.animation)]["x"..Utils.formatInt(item.speed)]
+  end
+
+  for _, ability in ipairs(abilities) do
+    local thisAbility = World.SpawnAsset(ability, {parent = equipment})
+
+    equipment:AddAbility(thisAbility)
   end
 end
 
@@ -169,12 +240,34 @@ function equipToPlayer(player, gearSlot, inventorySlot)
 
   local item = player.serverUserData["Inventory"][inventorySlot]
 
+  print("Equipping "..item.name.." to "..player.name.."...")
+
   if item then
     player.serverUserData["Inventory"][inventorySlot] = nil
+    local equipment = nil
 
-    local equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
+    if item.templateId then
+      equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
 
-    item.equipmentId = equipment.id
+      item.equipmentId = equipment.id
+
+      if item.socket == "main-hand" then
+        equipment.socket = "right_prop"
+
+      elseif item.socket == "off-hand" then
+        equipment.socket = "left_prop"
+
+      elseif item.socket == "1-hand" then
+        if gearSlot == "primary" then
+          equipment.socket = "right_prop"
+
+        elseif gearSlot == "secondary" then
+          equipment.socket = "left_prop"
+        end
+      end
+
+      addAbilities(equipment, item, gearSlot)
+    end
 
     if player.serverUserData["Gear"][gearSlot] then
       unequipFromPlayer(player, gearSlot, inventorySlot)
@@ -188,7 +281,9 @@ function equipToPlayer(player, gearSlot, inventorySlot)
     Task.Wait()
     if not Object.IsValid(player) then return end
 
-    equipment:Equip(player)
+    if Object.IsValid(equipment) then
+      equipment:Equip(player)
+    end
 
     Utils.updatePrivateNetworkedData(player, "Inventory")
     Events.Broadcast("EquipmentChanged", player)
@@ -241,8 +336,8 @@ end
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 
 Events.Connect("AddToInventory", addToInventory)
-
 Events.Connect("InitInventory", initInventory)
+
 Events.ConnectForPlayer("EquipToPlayer", equipToPlayer)
 Events.ConnectForPlayer("UnequipFromPlayer", unequipFromPlayer)
 Events.ConnectForPlayer("SwapInventorySlots", swapInventorySlots)

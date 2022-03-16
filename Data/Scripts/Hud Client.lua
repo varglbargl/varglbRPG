@@ -132,13 +132,13 @@ end
 local primaryTickTask = nil
 local secondaryTickTask = nil
 
-function initCooldownOverlay(item)
+function initCooldownOverlay(item, socket)
   local castEvents = {}
   local unequippedEvent = nil
   local thisOverlay = nil
   local equipment = nil
 
-  if item.socket == "right_prop" then
+  if socket == "primary" then
     updateAbilitiesWithBinding("Primary Ability")
     equipment = primaryAbilities[1].parent
 
@@ -149,12 +149,12 @@ function initCooldownOverlay(item)
         if primaryTickTask then primaryTickTask:Cancel() end
 
         primaryTickTask = Task.Spawn(function()
-          tickCooldownOverlay(PRIMARY_COOLDOWN, item.speed)
+          tickCooldownOverlay(PRIMARY_COOLDOWN, Utils.getWeaponSpeed(equipment))
         end)
       end))
     end
 
-  elseif item.socket == "left_prop" then
+  elseif socket == "secondary" then
     updateAbilitiesWithBinding("Secondary Ability")
     equipment = secondaryAbilities[1].parent
 
@@ -165,7 +165,7 @@ function initCooldownOverlay(item)
         if secondaryTickTask then secondaryTickTask:Cancel() end
 
         secondaryTickTask = Task.Spawn(function()
-          tickCooldownOverlay(SECONDARY_COOLDOWN, item.speed)
+          tickCooldownOverlay(SECONDARY_COOLDOWN, Utils.getWeaponSpeed(equipment))
         end)
       end))
     end
@@ -221,7 +221,7 @@ function redrawHUD(gear)
       PRIMARY_ICON_BG:SetImage(defaultBG)
     end
 
-    initCooldownOverlay(gear.primary)
+    initCooldownOverlay(gear.primary, "primary")
   else
     PRIMARY_ICON.parent.visibility = Visibility.FORCE_OFF
   end
@@ -236,7 +236,7 @@ function redrawHUD(gear)
       SECONDARY_ICON_BG:SetImage(defaultBG)
     end
 
-    initCooldownOverlay(gear.secondary)
+    initCooldownOverlay(gear.secondary, "secondary")
   else
     SECONDARY_ICON.parent.visibility = Visibility.FORCE_OFF
   end

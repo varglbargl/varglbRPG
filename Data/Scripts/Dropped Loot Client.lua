@@ -52,7 +52,7 @@ function onCustomPropertyChanged(object, propName)
 end
 
 function showItem()
-  local thisItem = Loot.findItemByTemplateId(droppedLoot)
+  local thisItem = Loot.findItemById(droppedLoot.id)
   local spawnedItem = nil
 
   if thisItem.itemType == "Ring" then

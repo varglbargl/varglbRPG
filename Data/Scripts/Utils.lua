@@ -54,7 +54,8 @@ local classes = {
     special = "Your melee attacks also heal you AND a nearby ally in need.",
     starterGear = {
       "Starter Mace",
-      "Restoration Scroll"
+      "Starter Shield", -- temporary
+      -- "Restoration Scroll"
     }
   },
   {
@@ -84,7 +85,7 @@ local classes = {
     grit = 5,
     wit  = 10,
     spit = 15,
-    special = "Your first ranged attack against an enemy slows them and your first melee attack knocks them away.",
+    special = "Your first attack against an enemy slows them.",
     starterGear = {
       "Starter Axe",
       "Starter Crossbow"
@@ -158,7 +159,7 @@ function Utils.compressItems(items)
 
   for slot, item in pairs(items) do
     if slot ~= "full" and item then
-      results[slot] = {templateId = item.templateId, enchant = item.enchant}
+      results[slot] = {id = item.id, enchant = item.enchant}
     end
   end
 
@@ -289,9 +290,9 @@ function Utils.groundBelowPoint(vec3, sphercastRadius)
   local hitResults = nil
 
   if sphercastRadius then
-    hitResults = World.SpherecastAll(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, sphercastRadius, {ignorePlayers = true})
+    hitResults = World.SpherecastAll(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 500, sphercastRadius, {ignorePlayers = true})
   else
-    hitResults = World.RaycastAll(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 10000, {ignorePlayers = true})
+    hitResults = World.RaycastAll(vec3 + Vector3.UP * 200, vec3 - Vector3.UP * 500, {ignorePlayers = true})
   end
 
   for _, hR in ipairs(hitResults) do

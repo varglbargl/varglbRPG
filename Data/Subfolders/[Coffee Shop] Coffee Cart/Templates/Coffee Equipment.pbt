@@ -1195,5 +1195,5 @@ Assets {
   Marketplace {
     Description: "- All the templates you need to build the coffee cart\r\n"
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 11254702904028799324
   Name: "Menu Background"
   PlatformAssetType: 13
-  SerializationVersion: 107
+  SerializationVersion: 108
   CustomMaterialAsset {
     BaseMaterialId: 17738734797160346039
     ParameterOverrides {

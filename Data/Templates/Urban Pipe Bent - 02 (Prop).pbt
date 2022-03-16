@@ -355,7 +355,7 @@ Assets {
       AssetId: "Urban_Pipe_Bent_-_02__Prop_"
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Exterior"
 }

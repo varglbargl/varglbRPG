@@ -17,39 +17,8 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 3128484391996282200
-        ChildIds: 17868867493792811897
         ChildIds: 7109948812332489522
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 16268917374562647466
-            }
-          }
-          Overrides {
-            Name: "cs:ItemLevel"
-            Float: 1
-          }
-          Overrides {
-            Name: "cs:Description"
-            String: "Shield bash enemies to stun them and taunt them into attacking you."
-          }
-          Overrides {
-            Name: "cs:MinDamage"
-            Int: 7
-          }
-          Overrides {
-            Name: "cs:MaxDamage"
-            Int: 8
-          }
-          Overrides {
-            Name: "cs:StatusEffects"
-            String: "stun, taunt"
-          }
-          Overrides {
-            Name: "cs:SplashRadius"
-            Float: 1.5
-          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -65,7 +34,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "left_prop"
+          SocketName: "off-hand"
           PickupTrigger {
           }
         }
@@ -111,91 +80,6 @@ Assets {
         }
       }
       Objects {
-        Id: 17868867493792811897
-        Name: "Bash"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2953111769030281295
-        UnregisteredParameters {
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Ability {
-          IsEnabled: true
-          CastPhaseSettings {
-            Duration: 0.15
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          ExecutePhaseSettings {
-            Duration: 0.15
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          RecoveryPhaseSettings {
-            Duration: 0.5
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          CooldownPhaseSettings {
-            Duration: 4.2
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          Animation: "1hand_melee_shield_bash"
-          CanBePrevented: true
-          KeyBinding_v2 {
-            Value: "mc:egameaction:invalid"
-          }
-          KeyBinding_v3: "Secondary Ability"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 7109948812332489522
         Name: "ClientContext"
         Transform {
@@ -216,6 +100,7 @@ Assets {
           }
         }
         ParentId: 2953111769030281295
+        ChildIds: 445370478456030139
         ChildIds: 14113812151261388006
         ChildIds: 13697571006398886507
         ChildIds: 18424297432265564880
@@ -240,6 +125,50 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 445370478456030139
+        Name: "Melee Weapon Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7109948812332489522
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SwooshSFX"
+            AssetReference {
+              Id: 12941926364162601142
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 1573193169450523257
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1069,12 +998,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16268917374562647466
-      Name: "Fantasy Shield 001"
-      PlatformAssetType: 9
+      Id: 12941926364162601142
+      Name: "Metal Gear Clothing Heavy Light Movement 01 SFX"
+      PlatformAssetType: 7
       PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Shield_001"
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_metal_gear_clothing_heavy_light_movement_01a_Cue_ref"
       }
     }
     Assets {
@@ -1127,7 +1056,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderPath: "Gear"
   VirtualFolderPath: "Shields"
 }

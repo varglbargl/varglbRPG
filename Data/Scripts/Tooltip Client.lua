@@ -75,7 +75,7 @@ function showItemTooltip(item, button)
 
   contentHeight = contentHeight + NAME:ComputeApproximateSize().y + 10
 
-  if item.description then
+  if item.description and item.description ~= "" then
     DESCRIPTION.text = item.description
     DESCRIPTION.y = contentHeight
 
@@ -115,7 +115,7 @@ function showItemTooltip(item, button)
     RARITY.text = "Cosmic"
   end
 
-  TYPE.text = item.itemType
+  TYPE.text = item.socket.." "..item.itemType
   PRICE.text = Utils.formatInt(math.floor(item.itemLevel/2 * (item.rarity+1) + 5))
 
   local itemStats = 0
@@ -149,7 +149,7 @@ function showItemTooltip(item, button)
   STATS_PANEL.height = math.max(120, STATS.height)
   contentHeight = contentHeight + STATS_PANEL.height + 10
 
-  if item.flavorText then
+  if item.flavorText and item.flavorText ~= "" then
     FLAVOR_TEXT.text = item.flavorText
 
     FLAVOR_TEXT.y = contentHeight

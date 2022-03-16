@@ -24,11 +24,11 @@ Assets {
           }
           Overrides {
             Name: "cs:abilityBindingKey"
-            String: "ability_extra_12"
+            String: "Sprint"
           }
           Overrides {
             Name: "cs:sprintMaxWalkSpeed"
-            Float: 2300
+            Float: 1000
           }
           Overrides {
             Name: "cs:sprintMaxAcceleration"
@@ -36,7 +36,7 @@ Assets {
           }
           Overrides {
             Name: "cs:sprintMaxSwimSpeed"
-            Float: 1500
+            Float: 800
           }
           Overrides {
             Name: "cs:isCrouchSpeedEnabled"
@@ -185,6 +185,6 @@ Assets {
   Marketplace {
     Description: "Features:\r\n- Customize sprint speed, crouch (both regular and sprint), and more\r\n- Easily set the sprint key to whatever ability binding you want (defaults to shift)\r\n- 0 broadcast are used + 0 Tick functions = less lag and problems with going over the broadcast limit\r\n- Works out of the box. No ReadMe needed as everything you\'d need to change is in the \"Sprint\" groups properties panel.\r\n"
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   DirectlyPublished: true
 }

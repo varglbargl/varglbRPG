@@ -28,11 +28,17 @@ local function createSaveData(player)
     questProgress = ""
   end
 
-  local position = player:GetWorldPosition()
-  local rotation = player:GetWorldRotation()
-  local location = Vector4.New(position, rotation.z)
+  local scene = Game.GetCurrentSceneName()
+  local location = nil
 
-  return {lvls = levels, xps = experiences, gp = gold, gear = gear, inv = inventory, qLog = questLog, qProg = questProgress, loc = location, saveVersion = currentSaveVersion}
+  if player.isSpawned then
+    local position = player:GetWorldPosition()
+    local rotation = player:GetWorldRotation()
+
+    location = Vector4.New(position, rotation.z)
+  end
+
+  return {lvls = levels, xps = experiences, gp = gold, gear = gear, inv = inventory, qLog = questLog, qProg = questProgress, scene = scene, loc = location, saveVersion = currentSaveVersion}
 end
 
 function onPlayerJoined(player)

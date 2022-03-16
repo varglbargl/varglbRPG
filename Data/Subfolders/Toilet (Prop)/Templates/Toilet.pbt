@@ -777,6 +777,6 @@ Assets {
   Marketplace {
     Description: "Toilet prop. Non working. Please dont use. Lid is down for the ladies :)"
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   DirectlyPublished: true
 }

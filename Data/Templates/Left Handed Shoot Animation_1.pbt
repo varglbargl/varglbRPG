@@ -15,9 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4889273729981912883
         ChildIds: 17846659007762349635
-        ChildIds: 6865247524667853147
+        ChildIds: 12283462467719039857
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -53,18 +53,18 @@ Assets {
         ParentId: 12105701577244802012
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Keyframes"
-            ObjectReference {
-              SubObjectId: 6865247524667853147
-            }
-          }
-          Overrides {
             Name: "cs:UseAbilityPhaseTiming"
             Bool: true
           }
           Overrides {
             Name: "cs:AttachToSocket"
             String: "head"
+          }
+          Overrides {
+            Name: "cs:Keyframes"
+            ObjectReference {
+              SubObjectId: 12283462467719039857
+            }
           }
         }
         Collidable_v2 {
@@ -89,7 +89,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6865247524667853147
+        Id: 12283462467719039857
         Name: "Keyframes"
         Transform {
           Location {
@@ -103,11 +103,11 @@ Assets {
           }
         }
         ParentId: 12105701577244802012
-        ChildIds: 33620498992999997
-        ChildIds: 17730836859799719704
-        ChildIds: 1131850259548333600
-        ChildIds: 14685861940177511786
-        ChildIds: 9005949828499734730
+        ChildIds: 11253975021710219490
+        ChildIds: 14665739397192944891
+        ChildIds: 3507678039299378147
+        ChildIds: 18325688549876618527
+        ChildIds: 864383808645838832
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -128,7 +128,7 @@ Assets {
         }
       }
       Objects {
-        Id: 33620498992999997
+        Id: 11253975021710219490
         Name: "Cast"
         Transform {
           Location {
@@ -141,8 +141,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6865247524667853147
-        ChildIds: 971348340848120910
+        ParentId: 12283462467719039857
+        ChildIds: 4815322089977748751
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -163,8 +163,8 @@ Assets {
         }
       }
       Objects {
-        Id: 971348340848120910
-        Name: "Left Hand"
+        Id: 4815322089977748751
+        Name: "Right Hand"
         Transform {
           Location {
             X: 66.3918457
@@ -172,8 +172,6 @@ Assets {
             Z: -15
           }
           Rotation {
-            Pitch: 7.51320767e-05
-            Yaw: 7.17169532e-05
           }
           Scale {
             X: 1
@@ -181,7 +179,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 33620498992999997
+        ParentId: 11253975021710219490
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -212,7 +210,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17730836859799719704
+        Id: 14665739397192944891
         Name: "Execute"
         Transform {
           Location {
@@ -225,8 +223,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6865247524667853147
-        ChildIds: 1654402571850621330
+        ParentId: 12283462467719039857
+        ChildIds: 9168623576198270195
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -247,18 +245,18 @@ Assets {
         }
       }
       Objects {
-        Id: 1654402571850621330
-        Name: "Left Hand"
+        Id: 9168623576198270195
+        Name: "Right Hand"
         Transform {
           Location {
-            X: 64.5075073
-            Y: -11.670517
-            Z: -12.3493958
+            X: 63.1782227
+            Y: -20.8047485
+            Z: -6.02062225
           }
           Rotation {
-            Pitch: 14.8422327
-            Yaw: -16.4057312
-            Roll: -2.50140381
+            Pitch: 12.5949774
+            Yaw: -9.98599243
+            Roll: -38.1199951
           }
           Scale {
             X: 1
@@ -266,7 +264,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17730836859799719704
+        ParentId: 14665739397192944891
+        UnregisteredParameters {
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -297,7 +297,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1131850259548333600
+        Id: 3507678039299378147
         Name: "Recovery"
         Transform {
           Location {
@@ -310,8 +310,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6865247524667853147
-        ChildIds: 17383480421036930280
+        ParentId: 12283462467719039857
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -332,57 +331,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17383480421036930280
-        Name: "Left Hand"
-        Transform {
-          Location {
-            X: 45
-            Y: -14.9972229
-            Z: 6.9730835
-          }
-          Rotation {
-            Pitch: 38.8324
-            Yaw: -29.0441589
-            Roll: -4.32415771
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1131850259548333600
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:alwaysvisible"
-        }
-        IKAnchor {
-          AimOffset {
-            X: -15
-            Y: -20
-            Z: -5
-          }
-          IKAnchorType {
-            Value: "mc:eikanchortype:lefthand"
-          }
-          BlendWeight: 1
-          BlendInTime: 0.1
-          BlendOutTime: 0.1
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 14685861940177511786
+        Id: 18325688549876618527
         Name: "Cooldown"
         Transform {
           Location {
@@ -395,8 +344,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6865247524667853147
-        ChildIds: 12415806526103596794
+        ParentId: 12283462467719039857
+        ChildIds: 8277054056524670778
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -417,17 +366,18 @@ Assets {
         }
       }
       Objects {
-        Id: 12415806526103596794
-        Name: "Left Hand"
+        Id: 8277054056524670778
+        Name: "Right Hand"
         Transform {
           Location {
-            X: 16.062561
-            Y: -34.1334839
+            X: 25.5456543
+            Y: -34.1329956
+            Z: -6.29532623
           }
           Rotation {
-            Pitch: 64.431221
-            Yaw: -139.70137
-            Roll: -147.289246
+            Pitch: 70.1877747
+            Yaw: 166.215759
+            Roll: 179
           }
           Scale {
             X: 1
@@ -435,7 +385,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14685861940177511786
+        ParentId: 18325688549876618527
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -466,7 +416,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9005949828499734730
+        Id: 864383808645838832
         Name: "Ready"
         Transform {
           Location {
@@ -479,8 +429,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6865247524667853147
-        ChildIds: 3249421158183747588
+        ParentId: 12283462467719039857
+        ChildIds: 18098012686452140552
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -501,18 +451,18 @@ Assets {
         }
       }
       Objects {
-        Id: 3249421158183747588
-        Name: "Left Hand"
+        Id: 18098012686452140552
+        Name: "Right Hand"
         Transform {
           Location {
-            X: 26.3162231
-            Y: -34.1334839
-            Z: -18.2208939
+            X: 61.8455811
+            Y: -45.3862
+            Z: -14.8612595
           }
           Rotation {
-            Pitch: 47.3764725
-            Yaw: -24.3439636
-            Roll: -23.1175537
+            Pitch: 45.3444
+            Yaw: 2.32712913
+            Roll: -8.69058228
           }
           Scale {
             X: 1
@@ -520,7 +470,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9005949828499734730
+        ParentId: 864383808645838832
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -535,14 +485,13 @@ Assets {
         }
         IKAnchor {
           AimOffset {
-            X: -20
-            Y: -15
-            Z: -15
+            X: -15
+            Y: -20
+            Z: 5
           }
           IKAnchorType {
             Value: "mc:eikanchortype:lefthand"
           }
-          BlendWeight: 1
           BlendInTime: 0.1
           BlendOutTime: 0.1
         }
@@ -556,5 +505,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
+  VirtualFolderPath: "Animations"
+  VirtualFolderPath: "Custom Animations"
 }

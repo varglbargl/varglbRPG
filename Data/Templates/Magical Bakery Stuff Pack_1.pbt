@@ -90,5 +90,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "Welcome to Libby\'s Loafery! We specialize in magically enhanced baked goods! What can we bake for you today? ~ <3"
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
 }

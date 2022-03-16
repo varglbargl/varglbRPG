@@ -1,8 +1,8 @@
 Assets {
-  Id: 5056165458151714023
+  Id: 11237267171393895703
   Name: "Virtual Folders"
   PlatformAssetType: 30
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderSetAsset {
     Folders {
       VirtualFolderPath: "Props"
@@ -32,10 +32,6 @@ Assets {
       PlatformAssetType: 5
     }
     Folders {
-      VirtualFolderPath: "Enemies"
-      PlatformAssetType: 5
-    }
-    Folders {
       VirtualFolderPath: "UI"
       PlatformAssetType: 5
     }
@@ -52,10 +48,6 @@ Assets {
       VirtualFolderPath: "Gear"
       VirtualFolderPath: "Spells"
       PlatformAssetType: 5
-    }
-    Folders {
-      VirtualFolderPath: "Item Tables"
-      PlatformAssetType: 3
     }
     Folders {
       VirtualFolderPath: "Effects"
@@ -140,6 +132,33 @@ Assets {
     }
     Folders {
       VirtualFolderPath: "Player Animations"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Rope Segments"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "NPCs"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "NPCs"
+      VirtualFolderPath: "Enemies"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Animations"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Animations"
+      VirtualFolderPath: "Abilities"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Animations"
+      VirtualFolderPath: "Custom Animations"
       PlatformAssetType: 5
     }
   }

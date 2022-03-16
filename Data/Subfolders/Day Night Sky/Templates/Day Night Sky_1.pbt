@@ -15,12 +15,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11421575165578890577
+        ParentId: 17968468082622747934
         ChildIds: 2687820722041061846
         ChildIds: 14418522060832084786
         ChildIds: 15823941823731023788
         ChildIds: 10050366097919261465
         ChildIds: 5850246755653294951
+        ChildIds: 10801547968605976531
         ChildIds: 1395820369303713959
         ChildIds: 18275274607650207761
         ChildIds: 2687679590216837220
@@ -59,11 +60,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:StartingDegrees"
-            Float: 35
+            Float: 135
           }
           Overrides {
             Name: "cs:DegreesPerSecond"
-            Float: 0.4
+            Float: 0.25
           }
           Overrides {
             Name: "cs:Sun"
@@ -517,6 +518,107 @@ Assets {
         }
       }
       Objects {
+        Id: 10801547968605976531
+        Name: "Moon"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: -51
+            Yaw: -55
+            Roll: 30
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15353451395209644350
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Brightness"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Use Sun Direction for Light Direction"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Dark Side Lights Appearance"
+            Enum {
+              Value: "mc:edarksidelights:4"
+            }
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.800000072
+              G: 0.75
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Light Direction"
+            Vector {
+              X: 50
+              Y: 100
+            }
+          }
+          Overrides {
+            Name: "bp:Scale"
+            Float: 1.5
+          }
+          Overrides {
+            Name: "bp:Moon Appearance"
+            Enum {
+              Value: "mc:emoonappearance:0"
+            }
+          }
+          Overrides {
+            Name: "bp:Moon Rotation"
+            Vector {
+              X: 1
+              Y: 1
+              Z: 4
+            }
+          }
+          Overrides {
+            Name: "bp:Dark Side Lights Tint"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Information"
+            String: "See tool-tip for information. Okay."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9890142656855450774
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
         Id: 1395820369303713959
         Name: "AutoExposure Post Process"
         Transform {
@@ -543,6 +645,14 @@ Assets {
           Overrides {
             Name: "bp:Max Brightness"
             Float: 1
+          }
+          Overrides {
+            Name: "bp:Low Percent"
+            Float: 50
+          }
+          Overrides {
+            Name: "bp:High Percent"
+            Float: 100
           }
         }
         Collidable_v2 {
@@ -760,6 +870,15 @@ Assets {
       }
     }
     Assets {
+      Id: 9890142656855450774
+      Name: "Moon"
+      PlatformAssetType: 19
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "CORESKY_Moon"
+      }
+    }
+    Assets {
       Id: 8258029249780464074
       Name: "AutoExposure Post Process"
       PlatformAssetType: 20
@@ -794,6 +913,6 @@ Assets {
   Marketplace {
     Description: "A sky that cycles day and night at an user defined time and speed. Place in scene and delete any other skies. Select SkyLogic script in the hierarchy to configure.\r\n\r\nStartingDegrees:\r\nWhat angle to start the day at.\r\n0 is sunrise, 90 is midday, 180 is sunset, 270 is midnight\r\n\r\nDegreesPerSecond:\r\nHow fast the sun moves through the day\r\n2 minute day/night cycle = 120 seconds = 360 degrees/120 seconds = 3 degrees per second"
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   DirectlyPublished: true
 }

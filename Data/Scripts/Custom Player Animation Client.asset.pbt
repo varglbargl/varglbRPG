@@ -18,6 +18,10 @@ Assets {
         String: ""
       }
       Overrides {
+        Name: "cs:PlayEvent"
+        String: ""
+      }
+      Overrides {
         Name: "cs:StopEvent"
         String: ""
       }
@@ -69,16 +73,20 @@ Assets {
         String: ""
       }
       Overrides {
+        Name: "cs:NetworkAnimation"
+        Bool: false
+      }
+      Overrides {
         Name: "cs:AnimationDuration:tooltip"
         String: "The total duration of the animation. The blend time between keyframes will be equal to AnimationDuration divided by number of children in the supplied Keyframes folder."
       }
       Overrides {
         Name: "cs:Loop:tooltip"
-        String: "If enabled, the animation will repeat forever. Useful for making a custom animation stance, for example."
+        String: "If enabled, the animation will repeat forever. Useful for making a custom animation stance, for example. WARNING: If a looping animation is already playing when a player joins your game, that payer will not be able to see that animation unless NetworkAnimation is enabled, and information about playing animations is handled from server scripts. See the included Drum Kit example, and the readme, for more information about how to do this."
       }
       Overrides {
         Name: "cs:Keyframes:tooltip"
-        String: "A folder of subfolders. Each subfolder will be used as a keyframe and should contain IK Anchors for the pose the player should take in that keyframe. The animation will begin by using the built-in IK Anchor blending for the first keyframe and then interpolate positions using in-out easing between frames. If a keyframe doesn\'t contain an IK Anchor type present in the previous keyframe then the previous keyframe\'s position information will be repeated for that part."
+        String: "A folder of subfolders, each used as a keyframe in your animation containing IK Anchor corresponding to the pose the player should take in that keyframe. Playing the animation will attach the first instance of each type of IK Anchor in the provided keyframes to a specified player and smoothly blend their positions, rotations, aim offsets, and anchor weights between those of corresponding IK Anchors in any following frames in order."
       }
       Overrides {
         Name: "cs:Keyframes:category"
@@ -102,7 +110,7 @@ Assets {
       }
       Overrides {
         Name: "cs:ActionBinding:tooltip"
-        String: "The name of the action from your game\'s binding set that activates this animation."
+        String: "The name of the action from your game\'s binding set that activates this animation. WARNING: In multiplayer games, players other than the one pressing the ability binding will only be able to see animations triggered this way if Networking is enabled for that binding in your game\'s Bindings Manager."
       }
       Overrides {
         Name: "cs:UseAbilityPhaseTiming:category"
@@ -122,7 +130,7 @@ Assets {
       }
       Overrides {
         Name: "cs:AutoPlayOnNearestPlayer:tooltip"
-        String: "If enabled, the animation will play on the nearest player to the script when it is spawned (or when a new player joins if it\'s already spawned in the heirarchy.) This is useful for allowing you to play an animation on a player by spawning a template containing the script an keyframes at a player\'s location."
+        String: "If enabled, the animation will play on the nearest player to the script when it is spawned (or when a new player joins if it\'s already spawned in the heirarchy.) This is useful for allowing you to play an animation on a player by spawning a template containing this script and some keyframes at a player\'s location."
       }
       Overrides {
         Name: "cs:PlayTrigger:category"
@@ -150,7 +158,7 @@ Assets {
       }
       Overrides {
         Name: "cs:Mirror:tooltip"
-        String: "If enabled, this will mirror the animation along the Y axis and swap left/right hand/foot anchors. Useful for reusing the same keyframes for left/right hand attack animations, for example. WARNING: In order to correctly mirror a right anchor onto a left one, or the other way around, there must be one of each in the keyframe."
+        String: "If enabled, this will mirror the animation along the Y axis and swap left/right hand/foot anchors. Useful for reusing the same keyframes for left/right hand attack animations, for example. WARNING: In order to correctly mirror a right anchor onto a left one, or the other way around, there must be one of each in AT LEAST the first keyframe in which either appears in the animation."
       }
       Overrides {
         Name: "cs:Mirror:category"
@@ -162,7 +170,7 @@ Assets {
       }
       Overrides {
         Name: "cs:RandomlyMirror:tooltip"
-        String: "If enabled, this will cause the animation to randomly mirror along the Y axis. Useful for adding variety to repetetively used animations. WARNING: In order to correctly mirror a right anchor onto a left one, or the other way around, there must be one of each in the keyframe. Also, for the time being, the random determination of whether to mirror the animation is done once on script spawn. I\'m definitely planning on changing that!"
+        String: "If enabled, this will cause the animation to randomly mirror along the Y axis. Useful for adding variety to repetetively used animations. WARNING: In order to correctly mirror a right anchor onto a left one, or the other way around, there must be one of each in the keyframe."
       }
       Overrides {
         Name: "cs:AttachToSocket:category"
@@ -178,7 +186,7 @@ Assets {
       }
       Overrides {
         Name: "cs:CacheKey:tooltip"
-        String: "If a string is provided, all the curves and frame timing for your animation will be cached upon being played for the first time in a table using the provided string as their key so they don\'t have to recalculate every time you replay the same animation. If RandomlyMirror is enabled, both versions of the animation will need to be cached seperately."
+        String: "If a string is provided, all the curves and frame timing for your animation will be cached upon being played for the first time in a table using the provided string as their key so they don\'t have to recalculate every time you replay the same animation."
       }
       Overrides {
         Name: "cs:Mirror:subcategory"
@@ -196,7 +204,32 @@ Assets {
         Name: "cs:StopTrigger:tooltip"
         String: "If a trigger is provided, this animation will stop when any player activates that trigger. Works with both overlap triggers and interactable triggers. If the same trigger is provided to StopTrigger and PlayTrigger, the animation will stop either when the player leaves the trigger or, if it\'s interactible, when they interact with it again."
       }
+      Overrides {
+        Name: "cs:PlayEvent:category"
+        String: "Optional"
+      }
+      Overrides {
+        Name: "cs:PlayEvent:tooltip"
+        String: "If a string event name is provided, the animation will play when that event is broadcast in client context. The first argument of the event must be the player you wish to play the animation on. You can also pass in an optional second argument that\'s an integer of which keyframe the animation should start on."
+      }
+      Overrides {
+        Name: "cs:NetworkAnimation:category"
+        String: "Optional"
+      }
+      Overrides {
+        Name: "cs:NetworkAnimation:subcategory"
+        String: "Advanced"
+      }
+      Overrides {
+        Name: "cs:NetworkAnimation:tooltip"
+        String: "If enabled, the animation will broadcast networked events to the server when it is loaded, played, and stopped. These events are \"NetworkedCustomAnimationLoaded\", \"NetworkedCustomAnimationPlayed\", and \"NetworkedCustomAnimationStopped\" and each include  parameters for either the player who loaded the animation or the player being animated,  and the PlayEvent string for the animation, if any, and the CacheKey name for the animation,  if any. See the readme for more info. WARNING: This can be A LOT of networked broadcasts."
+      }
+      Overrides {
+        Name: "cs:AttachToSocket:tooltip"
+        String: "The name of the socket on a player to attach the animation to when animating a player. For abilities that have a facing mode set to \"Aim\", it\'s recommended to use the \"head\" socket as that is automatically rotated towards their aim direction rather than their movement direction."
+      }
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
+  DirectlyPublished: true
 }

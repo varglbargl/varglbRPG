@@ -966,7 +966,7 @@ Assets {
       AssetId: "Main_Street_Building_-_Roof_Template"
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Tilesets"
 }

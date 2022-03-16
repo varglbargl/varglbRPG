@@ -28,6 +28,7 @@ CLASS_PICKER_UI.visibility = Visibility.INHERIT
 GAME_UI.visibility = Visibility.FORCE_OFF
 clientPlayer:SetOverrideCamera(CAMERA)
 MUSIC:Play()
+MUSIC.fadeOutTime = 5
 
 local classButtons = {AVENGER_BUTTON, PARAGON_BUTTON, ORBLITERATOR_BUTTON, WILDERWITCH_BUTTON, RANGER_BUTTON, HARRIER_BUTTON, EXPLORER_BUTTON}
 
@@ -46,6 +47,7 @@ for i, btn in ipairs(classButtons) do
 end
 
 function onPlayerSpawned(thisPlayer)
+  print(thisPlayer.name.." has spawned...")
   if thisPlayer ~= clientPlayer then return end
 
   CLASS_PICKER_UI.visibility = Visibility.FORCE_OFF

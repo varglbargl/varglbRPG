@@ -277,7 +277,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderPath: "Effects"
   VirtualFolderPath: "Projectiles"
 }

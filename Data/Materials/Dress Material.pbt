@@ -2,7 +2,7 @@ Assets {
   Id: 7274492163688005214
   Name: "Dress Material"
   PlatformAssetType: 13
-  SerializationVersion: 107
+  SerializationVersion: 108
   CustomMaterialAsset {
     BaseMaterialId: 15904884078352401867
     ParameterOverrides {

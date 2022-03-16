@@ -11,45 +11,33 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Melee"
+        Name: "cs:MeleeWeapons"
         AssetReference {
-          Id: 11913309828716895881
+          Id: 321538351412176530
         }
       }
       Overrides {
-        Name: "cs:Ranged"
+        Name: "cs:RangedWeapons"
         AssetReference {
-          Id: 17063846590340772639
+          Id: 10573983449610745407
         }
       }
       Overrides {
         Name: "cs:Spells"
         AssetReference {
-          Id: 11109401477760354859
+          Id: 17176805115267919038
         }
       }
       Overrides {
         Name: "cs:Shields"
         AssetReference {
-          Id: 10016492838028097323
+          Id: 5384759696610371662
         }
       }
       Overrides {
         Name: "cs:Rings"
         AssetReference {
-          Id: 7107110231298021753
-        }
-      }
-      Overrides {
-        Name: "cs:Potions"
-        AssetReference {
-          Id: 595108104446859637
-        }
-      }
-      Overrides {
-        Name: "cs:Gliders"
-        AssetReference {
-          Id: 16298573218166523060
+          Id: 12958250142094275150
         }
       }
       Overrides {
@@ -65,7 +53,7 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Potions:category"
+        Name: "cs:MeleeWeapons:category"
         String: "LootTables"
       }
       Overrides {
@@ -73,31 +61,23 @@ Assets {
         String: "APIs"
       }
       Overrides {
+        Name: "cs:Shields:category"
+        String: "LootTables"
+      }
+      Overrides {
         Name: "cs:Rings:category"
         String: "LootTables"
       }
       Overrides {
-        Name: "cs:Melee:category"
-        String: "LootTables"
-      }
-      Overrides {
-        Name: "cs:Ranged:category"
+        Name: "cs:RangedWeapons:category"
         String: "LootTables"
       }
       Overrides {
         Name: "cs:Spells:category"
         String: "LootTables"
       }
-      Overrides {
-        Name: "cs:Shields:category"
-        String: "LootTables"
-      }
-      Overrides {
-        Name: "cs:Gliders:category"
-        String: "LootTables"
-      }
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderPath: "APIs"
 }

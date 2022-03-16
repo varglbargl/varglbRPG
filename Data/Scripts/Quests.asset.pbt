@@ -16,6 +16,6 @@ Assets {
       }
     }
   }
-  SerializationVersion: 107
+  SerializationVersion: 108
   VirtualFolderPath: "APIs"
 }

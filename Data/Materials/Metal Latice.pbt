@@ -2,7 +2,7 @@ Assets {
   Id: 16742548301170229150
   Name: "Metal Latice"
   PlatformAssetType: 13
-  SerializationVersion: 107
+  SerializationVersion: 108
   CustomMaterialAsset {
     BaseMaterialId: 14312636503747086744
     ParameterOverrides {

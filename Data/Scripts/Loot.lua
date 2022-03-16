@@ -1,19 +1,21 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 
-local Melee = require(script:GetCustomProperty("Melee"))
-local Ranged = require(script:GetCustomProperty("Ranged"))
-local Spells = require(script:GetCustomProperty("Spells"))
-local Shields = require(script:GetCustomProperty("Shields"))
-local Rings = require(script:GetCustomProperty("Rings"))
-local Potions = require(script:GetCustomProperty("Potions"))
-local Gliders = require(script:GetCustomProperty("Gliders"))
+-- LootTables
+local MELEE_WEAPONS = require(script:GetCustomProperty("MeleeWeapons"))
+local RANGED_WEAPONS = require(script:GetCustomProperty("RangedWeapons"))
+local SPELLS = require(script:GetCustomProperty("Spells"))
+local SHIELDS = require(script:GetCustomProperty("Shields"))
+local RINGS = require(script:GetCustomProperty("Rings"))
 
 local LOOT_DROP = script:GetCustomProperty("LootDrop")
 local GOLD_DROP = script:GetCustomProperty("GoldDrop")
 
 local Loot = {}
 
-local dropTable = {}
+local itemTable = {}
+local worldDropTable = {}
+local idLookupTable = {}
+local nameLookupTable = {}
 
 local statBalance = {
   grit = 0.31,
@@ -27,68 +29,81 @@ local lootRarity = {
   74, 20, 5, 1, 0.1
 }
 
-function readLootTable(thisLootTable, itemType)
-  for _, item in pairs(thisLootTable) do
-    local spawnedItem = World.SpawnAsset(item, {position = Vector3.UP * -10000})
+function readLootTable(thisLootTable, itemType, damageStat)
+  for i, item in pairs(thisLootTable) do
+
+    if item["TemplateId"] and item["TemplateId"] ~= "" then
+      item["TemplateId"] = CoreString.Split(item["TemplateId"], ":")
+    end
 
     local lootItem = {
-      name = spawnedItem.name,
-      templateId = spawnedItem.sourceTemplateId,
-      sourceTemplate = item,
-      socket = spawnedItem.socket,
+      name = item["Name"],
+      id = item["TemplateId"] or ("Ring_"..i),
+      templateId = item["TemplateId"],
       itemType = itemType,
-      itemLevel = spawnedItem:GetCustomProperty("ItemLevel"),
-      icon = spawnedItem:GetCustomProperty("Icon"),
-      iconBg = spawnedItem:GetCustomProperty("IconBackground"),
-      minDamage = spawnedItem:GetCustomProperty("MinDamage"),
-      maxDamage = spawnedItem:GetCustomProperty("MaxDamage"),
-      speed = Utils.getWeaponSpeed(spawnedItem),
-      splash = spawnedItem:GetCustomProperty("SplashRadius"),
-      statusEffects = {},
-      grit = spawnedItem:GetCustomProperty("Grit"),
-      wit = spawnedItem:GetCustomProperty("Wit"),
-      spit = spawnedItem:GetCustomProperty("Spit"),
-      description = spawnedItem:GetCustomProperty("Description"),
-      flavorText = spawnedItem:GetCustomProperty("FlavorText"),
+      itemLevel = item["ItemLevel"],
+      icon = item["Icon"],
+      iconBg = item["IconBackground"],
+      maxDamage = item["MaxDamage"],
+      socket = item["Socket"],
+      damageStat = damageStat,
+      speed = item["Speed"],
+      splash = item["SplashRadius"],
+      statusEffects = {
+        stun = item["Stun"],
+        slow = item["Slow"],
+        knockback = item["Knockback"],
+        taunt = item["Taunt"]
+      },
+      animation = item["AttackAnimation"],
+      description = item["Description"],
+      flavorText = item["FlavorText"],
+      minRarity = item["MinRarity"],
       rarity = 0,
       enchant = ""
     }
 
-    if spawnedItem:GetCustomProperty("StatusEffects") and spawnedItem:GetCustomProperty("StatusEffects") ~= "" then
-      lootItem.statusEffects = {CoreString.Split(CoreString.Trim(string.lower(spawnedItem:GetCustomProperty("StatusEffects"))), ",")}
-    end
-
-    if lootItem.minDamage and lootItem.maxDamage then
-      lootItem.minDamage = lootItem.minDamage * Utils.magicNumber(lootItem.itemLevel)
+    if lootItem.maxDamage then
       lootItem.maxDamage = lootItem.maxDamage * Utils.magicNumber(lootItem.itemLevel)
+      lootItem.minDamage = (15 - lootItem.maxDamage) * Utils.magicNumber(lootItem.itemLevel)
 
       if lootItem.splash then
-        lootItem.minDamage = lootItem.minDamage / (0.75 + lootItem.splash / 4)
         lootItem.maxDamage = lootItem.maxDamage / (0.75 + lootItem.splash / 4)
+        lootItem.minDamage = lootItem.minDamage / (0.75 + lootItem.splash / 4)
       end
 
-      if #lootItem.statusEffects >= 1 then
-        lootItem.minDamage = lootItem.minDamage / (1 + #lootItem.statusEffects / 2)
-        lootItem.maxDamage = lootItem.maxDamage / (1 + #lootItem.statusEffects / 2)
+      local satusEffects = 0
+
+      for _, status in pairs(lootItem.statusEffects) do
+        if status then
+          satusEffects = satusEffects + 1
+        end
       end
 
-      lootItem.minDamage = math.floor(lootItem.minDamage + 0.5)
+      if satusEffects >= 1 then
+        lootItem.maxDamage = lootItem.maxDamage / (1 + satusEffects / 2)
+        lootItem.minDamage = lootItem.minDamage / (1 + satusEffects / 2)
+      end
+
       lootItem.maxDamage = math.floor(lootItem.maxDamage + 0.5)
+      lootItem.minDamage = math.floor(lootItem.minDamage + 0.5)
     end
 
-    table.insert(dropTable, lootItem)
+    table.insert(itemTable, lootItem)
+    idLookupTable[lootItem.id] = lootItem
+    nameLookupTable[lootItem.name] = lootItem
 
-    spawnedItem:Destroy()
+    if item["WorldDrop"] then
+      table.insert(worldDropTable, lootItem)
+    end
   end
 end
 
-readLootTable(Rings, "Ring")
-readLootTable(Melee, "Melee")
-readLootTable(Ranged, "Ranged")
-readLootTable(Spells, "Spell")
-readLootTable(Shields, "Shield")
-readLootTable(Potions, "Potion")
-readLootTable(Gliders, "Glider")
+readLootTable(MELEE_WEAPONS, "Melee", "Grit")
+readLootTable(RANGED_WEAPONS, "Ranged", "Spit")
+readLootTable(SPELLS, "Ranged", "Wit")
+readLootTable(SHIELDS, "Shield", "Grit")
+readLootTable(RINGS, "Ring")
 
 local superlatives = {
   g = {"Executioner's", "Blacksmith's", "Big Jim's", "Powerfully", "Aggressively", "Hella", "Unintentionally", "Bumblingly", "Brazenly", "Overpoweringly"},
@@ -259,7 +274,7 @@ function Loot.decodeEnchant(item, code)
   return dupe
 end
 
-function Loot.getRandom(level, rarity)
+function Loot.getWorldDrop(level, rarity)
   rarity = rarity or 0
 
   local rollTable = {}
@@ -279,25 +294,25 @@ function Loot.getRandom(level, rarity)
   end
 
   if level then
-    for _, item in ipairs(dropTable) do
+    for _, item in ipairs(worldDropTable) do
       if item.itemLevel >= level - 3 and item.itemLevel <= level + 2 then
         table.insert(rollTable, item)
       end
     end
 
     if #rollTable == 0 then
-      return Loot.getRandom(level - 1, rarity)
+      return Loot.getWorldDrop(level - 1, rarity)
     end
 
     result = rollTable[math.random(1, #rollTable)]
   else
-    result = dropTable[math.random(1, #dropTable)]
+    result = worldDropTable[math.random(1, #worldDropTable)]
   end
 
-  assert(result, "Loot.getRandom really should be able to find at least one item. Something's up...")
+  assert(result, "Loot.getWorldDrop really should be able to find at least one item. Something's up...")
 
-  if result.itemType == "Ring" then
-    rarity = math.max(rarity, 1)
+  if result.minRarity then
+    rarity = math.max(rarity, result.minRarity)
   end
 
   local dupe = {}
@@ -309,22 +324,20 @@ function Loot.getRandom(level, rarity)
   return Loot.enchantItem(dupe, rarity)
 end
 
-function Loot.findItemByTemplateId(templateId)
-  for _, item in ipairs(dropTable) do
-    if item.templateId == templateId or item.sourceTemplate == templateId then
-      return item
-    end
+function Loot.findItemById(id)
+  if idLookupTable[id] then
+    return idLookupTable[id]
+  else
+    error("Unknown item id: \""..id.."\"")
   end
 end
 
 function Loot.findItemByName(itemName)
-  for _, item in ipairs(dropTable) do
-    if item.name == itemName then
-      return item
-    end
+  if nameLookupTable[itemName] then
+    return nameLookupTable[itemName]
+  else
+    error("Unknown item name: \""..itemName.."\"")
   end
-
-  error("Unknown item name: \""..itemName.."\"")
 end
 
 function Loot.giveToPlayer(player, item)
@@ -351,7 +364,7 @@ function Loot.giveRandomToPlayer(player, level, rarity)
 
   level = level or player:GetResource("Level")
 
-  Loot.giveToPlayer(player, Loot.getRandom(level, rarity))
+  Loot.giveToPlayer(player, Loot.getWorldDrop(level, rarity))
 end
 
 function Loot.dropItem(position, item)
@@ -366,7 +379,7 @@ function Loot.dropItem(position, item)
 end
 
 function Loot.dropRandomItem(position, level, rarity)
-  local item = Loot.getRandom(level, rarity)
+  local item = Loot.getWorldDrop(level, rarity)
 
   Loot.dropItem(position + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * math.random(50, 100), item)
 end

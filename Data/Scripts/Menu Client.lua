@@ -55,15 +55,28 @@ function setScreenOpened(screenName, isOpen)
   openScreens[screenName] = isOpen
 
   if isOpen then
-
-    if screenName == "Character" and openScreens["Adventure"] then
-      Events.Broadcast("ToggleAdventureScreen")
-    elseif screenName == "Adventure" and openScreens["Character"] then
-      Events.Broadcast("ToggleCharacterScreen")
+    if screenName == "Character" then
+      if openScreens["Adventure"] then
+        Events.Broadcast("ToggleAdventureScreen")
+      end
+    elseif screenName == "Adventure" then
+      if openScreens["Character"] then
+        Events.Broadcast("ToggleCharacterScreen")
+      end
+    elseif screenName == "Shop" then
+      if not openScreens["Character"] then
+        Events.Broadcast("ToggleCharacterScreen")
+      end
     end
 
     Events.Broadcast("ShowCursor")
   else
+    if screenName == "Character" then
+      if openScreens["Shop"] then
+        Events.Broadcast("ToggleShopScreen")
+      end
+    end
+
     for _, screen in pairs(openScreens) do
       if screen == true then return end
     end

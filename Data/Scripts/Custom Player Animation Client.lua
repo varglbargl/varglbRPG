@@ -4,6 +4,7 @@ local KEYFRAMES = script:GetCustomProperty("Keyframes"):WaitForObject()
 local ANIMATION_DURATION = script:GetCustomProperty("AnimationDuration")
 
 local ATTACH_TO_SOCKET = script:GetCustomProperty("AttachToSocket")
+local PLAY_EVENT = script:GetCustomProperty("PlayEvent")
 local STOP_EVENT = script:GetCustomProperty("StopEvent")
 local LOOP = script:GetCustomProperty("Loop")
 local INITIAL_START_DELAY = script:GetCustomProperty("InitialStartDelay")
@@ -16,17 +17,18 @@ local STOP_TRIGGER = script:GetCustomProperty("StopTrigger"):WaitForObject()
 local MIRROR = script:GetCustomProperty("Mirror")
 local RANDOMLY_MIRROR = script:GetCustomProperty("RandomlyMirror")
 local CACHE_KEY = script:GetCustomProperty("CacheKey")
+local NETWORK_ANIMATION = script:GetCustomProperty("NetworkAnimation")
 
 local keyframes = KEYFRAMES:GetChildren()
 local frameTiming = {}
 local anchors = {}
 local tweenCurves = {}
 
-local isPlayingForPlayer = nil
+local playerBeingAnimated = nil
+local currentFrame = nil
 local shouldStop = false
-local shouldMirror = false
 
-function initTimingData()
+function initFrameTiming()
   -- all we need to do to make sure to make sure everything in the loop ends exactly where it began
   if LOOP then
     table.insert(keyframes, keyframes[1])
@@ -51,7 +53,8 @@ function initTimingData()
   end
 end
 
-function initFrameData()
+-- This function converts the positions, rotations, aim offsets, and weights of all the IK Anchors in your keyframes into
+function initTweenCurves()
   -- We use SimpleCurves to smooth out the animation and SimpleCurves can only use numbers as values.
   -- So for Rotations and Vector3s, we gotta split them into 3 curves for the x, y, and z.
   local frameData = {
@@ -105,8 +108,6 @@ function initFrameData()
     for _, child in ipairs(keyframe:GetChildren()) do
       if child:IsA("IKAnchor") then
 
-        child.name = "Anchor"..child.anchorType
-
         local thisOffset = chaseInvisibleBoundaryLines(child.anchorType, child:GetRotation())
 
         table.insert(frameData[child.anchorType].posX, CurveKey.New(frameTiming[fNum], child:GetPosition().x + keyframe:GetPosition().x, {interpolation = CurveInterpolation.CUBIC}))
@@ -123,6 +124,14 @@ function initFrameData()
         end
 
         table.insert(frameData[child.anchorType].wt, CurveKey.New(frameTiming[fNum], child.weight, {interpolation = CurveInterpolation.CUBIC}))
+
+        -- We automatically destroy the IK Anchor once we have its keyframe data unless it's the one we're going to activate and animate.
+        -- I've been told having too many IK Anchors in a scene can be a little laggy and we don't need them anymore.
+        if Object.IsValid(anchors[child.anchorType]) and anchors[child.anchorType] ~= child then
+          child:Destroy()
+        else
+          anchors[child.anchorType] = child
+        end
       end
     end
   end
@@ -136,23 +145,23 @@ function initFrameData()
       tweenCurves[anchorType][axis] = SimpleCurve.New(curveKeys, {preExtrapolation = CurveExtrapolation.CONSTANT, postExtrapolation = CurveExtrapolation.CONSTANT})
     end
   end
-
-  -- In order to mirror which hands and feet are animated, all we gotta do is swap the curves we made for the left/right hands/feet.
-  -- Lua makes swapping values in place super simple.
-  if shouldMirror then
-    tweenCurves[IKAnchorType.LEFT_HAND], tweenCurves[IKAnchorType.RIGHT_HAND] = tweenCurves[IKAnchorType.RIGHT_HAND], tweenCurves[IKAnchorType.LEFT_HAND]
-    tweenCurves[IKAnchorType.LEFT_FOOT], tweenCurves[IKAnchorType.RIGHT_FOOT] = tweenCurves[IKAnchorType.RIGHT_FOOT], tweenCurves[IKAnchorType.LEFT_FOOT]
-  end
 end
 
 -- This function handles connecting and disconnecting all the events for the animation
 function initEvents()
+  local playEvent = nil
   local stopEvent = nil
   local inputEvent = nil
   local castEvent = nil
   local playTriggerEvent = nil
   local stopTriggerEvent = nil
   local destroyEvent = nil
+
+  if PLAY_EVENT and PLAY_EVENT ~= "" then
+    playEvent = Events.Connect(PLAY_EVENT, function(player, startFrame)
+      play(player, startFrame)
+    end)
+  end
 
   if STOP_EVENT and STOP_EVENT ~= "" then
     stopEvent = Events.Connect(STOP_EVENT, stop)
@@ -175,16 +184,16 @@ function initEvents()
   end
 
   if PLAY_TRIGGER or STOP_TRIGGER then
-    local function onTriggerActivated(thisTrigger, player)
-      if not Object.IsValid(isPlayingForPlayer) then
+    local function onTriggerActivated(thisTrigger, other)
+      if not Object.IsValid(playerBeingAnimated) and Object.IsValid(other) and other:IsA("Player") then
         Task.Wait()
-        play(player)
+        play(other)
       end
     end
 
-    local function onTriggerDeactivated(thisTrigger, player)
-      if Object.IsValid(isPlayingForPlayer) then
-        stop(player)
+    local function onTriggerDeactivated(thisTrigger, other)
+      if Object.IsValid(playerBeingAnimated) then
+        stop(other)
       end
     end
 
@@ -214,11 +223,20 @@ function initEvents()
     end
   end
 
+  if NETWORK_ANIMATION then
+    if Environment.IsClient() then
+      Events.BroadcastToServer("NetworkedCustomAnimationLoaded", Game.GetLocalPlayer(), PLAY_EVENT, CACHE_KEY)
+    else
+      Events.BroadcastToServer("NetworkedCustomAnimationLoaded", nil, PLAY_EVENT, CACHE_KEY)
+    end
+  end
+
   -- always remember to clean up your event listeners when you're done
   -- no matter how much of a mess the rest of the code is
-  function onDestroyed()
+  local function onDestroyed()
     shouldStop = true
 
+    if playEvent then playEvent:Disconnect() end
     if stopEvent then stopEvent:Disconnect() end
     if inputEvent then inputEvent:Disconnect() end
     if castEvent then castEvent:Disconnect() end
@@ -231,24 +249,50 @@ function initEvents()
   destroyEvent = script.destroyEvent:Connect(onDestroyed)
 end
 
--- This function plays the actual animation
-function play(player)
-  if Object.IsValid(isPlayingForPlayer) or not Object.IsValid(player) then return end
+function initAnchors()
+  for _, keyframe in ipairs(keyframes) do
+    for _, child in ipairs(keyframe:GetChildren()) do
+      if child:IsA("IKAnchor") then
+        if Object.IsValid(anchors[child.anchorType]) and anchors[child.anchorType] ~= child then
+          child:Destroy()
+        else
+          anchors[child.anchorType] = child
+        end
+      end
+    end
+  end
+end
 
+-- This function plays the actual animation
+function play(player, startFrame)
+  if Object.IsValid(playerBeingAnimated) or not Object.IsValid(player) or not player:IsA("Player") then return end
+
+  local startTime = time()
+  local mirrored = false
+
+  -- We start on frame 0 even though there isn't a frame 0 just because we only check for audio and vfx to play when advancing to a new frame.
+  -- So if there's any audio or vfx in keyframe 1, this will catch them and then proceed as normal.
+  currentFrame = startFrame or 0
+  playerBeingAnimated = player
   shouldStop = false
 
   if ATTACH_TO_SOCKET and ATTACH_TO_SOCKET ~= "" then
     KEYFRAMES:AttachToPlayer(player, ATTACH_TO_SOCKET)
   end
 
+  if MIRROR or RANDOMLY_MIRROR and math.random() < 0.5 then
+    -- In order to mirror which hands and feet get animated, all we gotta do is swap the curves we made for the left/right hands/feet.
+    -- Lua makes swapping values in place super simple.
+    tweenCurves[IKAnchorType.LEFT_HAND], tweenCurves[IKAnchorType.RIGHT_HAND] = tweenCurves[IKAnchorType.RIGHT_HAND], tweenCurves[IKAnchorType.LEFT_HAND]
+    tweenCurves[IKAnchorType.LEFT_FOOT], tweenCurves[IKAnchorType.RIGHT_FOOT] = tweenCurves[IKAnchorType.RIGHT_FOOT], tweenCurves[IKAnchorType.LEFT_FOOT]
+    KEYFRAMES:SetScale(Vector3.New(1, -1, 1))
+    mirrored = true
+  end
+
+  -- It's INITIAL start delay, so we don't wait between every loop or anything, just one time right here before playing.
   if INITIAL_START_DELAY > 0 then
     Task.Wait(INITIAL_START_DELAY)
   end
-
-  -- We start on frame 0 even though there isn't a frame 0 just because we only check for audio and vfx to play when advancing to a new frame
-  -- So if there's any audio or vfx in keyframe 1, this will catch them and then proceed as normal.
-  local currentFrame = 0
-  local startTime = time()
 
   -- I'm a big fan of making locally scoped recursive functions because they let you make variables outside
   -- that every loop has access to without polluting the root scope with variables nothing else cares about.
@@ -259,18 +303,13 @@ function play(player)
     local now = time()
 
     for anchorType, curve in pairs(tweenCurves) do
-      if keyframes[currentFrame] and not anchors[anchorType] then
-        anchors[anchorType] = keyframes[currentFrame]:FindChildByName("Anchor"..anchorType)
-
-        if anchors[anchorType] then
-          anchors[anchorType].blendInTime = (frameTiming[currentFrame + 1] or ANIMATION_DURATION) - frameTiming[currentFrame]
-          anchors[anchorType]:Activate(player)
-        end
+      if keyframes[currentFrame] and Object.IsValid(anchors[anchorType]) and not Object.IsValid(anchors[anchorType].target) then
+        anchors[anchorType]:Activate(player)
       end
 
-      -- Why use MoveTo and RotateTo instead of just setting position and rotation?
-      -- Because THEORETICALLY this script could work in default context with a bunch of Networked IK Anchors.
-      -- I, varglbargl, would humbly urge against it... but you could and this would help smooth it there.
+      -- We use MoveTo and RotateTo instead of just setting position and rotation to help smooth out missed keyframes due to any possible lag.
+      -- Also because THEORETICALLY this script could work in default context with a bunch of Networked IK Anchors...
+      -- I, varglbargl, would humbly urge against it... but you could and this would help smooth things out there. If you must.
       if anchors[anchorType] then
         anchors[anchorType]:MoveTo(Vector3.New(
           curve.posX:GetValue(now - startTime),
@@ -318,9 +357,9 @@ function play(player)
         startTime = time()
       else
         for _, anchor in pairs(anchors) do
-          if frameTiming[currentFrame - 1] then
+          if frameTiming[currentFrame] and frameTiming[currentFrame - 1] then
             anchor.blendOutTime = frameTiming[currentFrame] - frameTiming[currentFrame - 1]
-          elseif frameTiming[currentFrame + 1] then
+          elseif frameTiming[currentFrame] and frameTiming[currentFrame + 1] then
             anchor.blendOutTime = frameTiming[currentFrame + 1] - frameTiming[currentFrame]
           else
             anchor.blendOutTime = ANIMATION_DURATION / 2
@@ -336,56 +375,64 @@ function play(player)
     tickTween()
   end
 
-  isPlayingForPlayer = player
+  if Environment.IsClient() and playerBeingAnimated == Game.GetLocalPlayer() then
+    Events.BroadcastToServer("NetworkedCustomAnimationPlayed", playerBeingAnimated, PLAY_EVENT, CACHE_KEY)
+  else
+    Events.Broadcast("NetworkedCustomAnimationPlayed", playerBeingAnimated, PLAY_EVENT, CACHE_KEY)
+  end
+
   tickTween()
-  isPlayingForPlayer = nil
+
+  if Environment.IsClient() and playerBeingAnimated == Game.GetLocalPlayer() then
+    Events.BroadcastToServer("NetworkedCustomAnimationStopped", playerBeingAnimated, PLAY_EVENT, CACHE_KEY)
+  else
+    Events.Broadcast("NetworkedCustomAnimationStopped", playerBeingAnimated, PLAY_EVENT, CACHE_KEY)
+  end
+
+  currentFrame = nil
+  playerBeingAnimated = nil
+
+  if mirrored then
+    -- Lua is a "pass by reference" language which means if we got the tweenCurve table from the cache, we didn't just mirror OUR tweenCurves, we mirrored THE tweenCurves.
+    -- It literally IS that table, our tweenCurves variable just "references" it. That's why, if we're caching, then we need to swap the values back when we're done mirroring them.
+    if CACHE_KEY then
+      tweenCurves[IKAnchorType.LEFT_HAND], tweenCurves[IKAnchorType.RIGHT_HAND] = tweenCurves[IKAnchorType.RIGHT_HAND], tweenCurves[IKAnchorType.LEFT_HAND]
+      tweenCurves[IKAnchorType.LEFT_FOOT], tweenCurves[IKAnchorType.RIGHT_FOOT] = tweenCurves[IKAnchorType.RIGHT_FOOT], tweenCurves[IKAnchorType.LEFT_FOOT]
+    end
+
+    -- And also flip the KEYFRAMES back to normal, of course
+    KEYFRAMES:SetScale(Vector3.New(1, 1, 1))
+  end
 
   if ATTACH_TO_SOCKET and ATTACH_TO_SOCKET ~= "" and not ABILITY or (ABILITY and ABILITY.owner ~= player) then
     KEYFRAMES:Detach()
   end
-
-  anchors = {}
 end
 
 function stop(player)
-  if player and isPlayingForPlayer ~= player then return end
+  if Object.IsValid(player) and playerBeingAnimated ~= player then return end
 
   shouldStop = true -- lol that's it, that's all you gotta do
-end
-
-if RANDOMLY_MIRROR and math.random() < 0.5 then
-  shouldMirror = not MIRROR
-else
-  shouldMirror = MIRROR
-end
-
-if shouldMirror then
-  KEYFRAMES:SetScale(Vector3.New(1, -1, 1))
 end
 
 -- Caching! Always a good idea for something this complicated and reusable. Well... ususally a good idea.
 if CACHE_KEY and CACHE_KEY ~= "" then
   _G.varglbargl_CustomPlayerAnimationCache = _G.varglbargl_CustomPlayerAnimationCache or {}
-  _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY] = _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY] or {}
 
-  if _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY][shouldMirror] then
+  if _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY] then
     frameTiming = _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY].frameTiming
-    tweenCurves = _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY][shouldMirror].tweenCurves
-
-    -- the one part of initFrameData we still need:
-    for _, anchor in ipairs(KEYFRAMES:FindDescendantsByType("IKAnchor")) do
-      anchor.name = "Anchor"..anchor.anchorType
-    end
+    tweenCurves = _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY].tweenCurves
+    initAnchors()
   else
-    initTimingData()
-    initFrameData()
-    _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY][shouldMirror] = {}
+    initFrameTiming()
+    initTweenCurves()
+    _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY] = {}
     _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY].frameTiming = frameTiming
-    _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY][shouldMirror].tweenCurves = tweenCurves
+    _G.varglbargl_CustomPlayerAnimationCache[CACHE_KEY].tweenCurves = tweenCurves
   end
 else
-  initTimingData()
-  initFrameData()
+  initFrameTiming()
+  initTweenCurves()
 end
 
 initEvents()
