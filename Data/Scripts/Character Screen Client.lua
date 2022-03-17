@@ -466,6 +466,8 @@ function onPrivateNetworkedDataChanged(player, key)
 
     Events.Broadcast("RedrawHUD", gear)
 
+    clientPlayer.clientUserData["Gear"] = gear
+
     redrawInventory()
     throttleInventory()
   end

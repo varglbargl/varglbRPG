@@ -70,11 +70,13 @@ function fireProjectile(targetPos, directHit)
   end
 end
 
+local startTime = time()
+
 function onAbilityExecute(thisAbility)
   local abilityTarget = thisAbility:GetTargetData()
   local attackDirection = abilityTarget:GetAimDirection()
   local cameraPos = abilityTarget:GetAimPosition()
-  local possibleTarget = World.Spherecast(cameraPos, cameraPos + attackDirection * range, 50, {ignorePlayers = true})
+  local possibleTarget = World.Spherecast(cameraPos + attackDirection * 75, cameraPos + attackDirection * range, 25, {ignorePlayers = true})
   local targetPos = nil
   local directHit = nil
 
@@ -83,10 +85,10 @@ function onAbilityExecute(thisAbility)
   if possibleTarget and possibleTarget.other then
     local enemy = possibleTarget.other.parent
 
+    abilityTarget.hitObject = possibleTarget.other
     abilityTarget:SetHitResult(possibleTarget)
 
     if enemy and enemy:IsA("DamageableObject") then
-      abilityTarget.hitObject = enemy
       targetPos = possibleTarget.other:GetWorldPosition()
       directHit = enemy
     else
@@ -95,8 +97,12 @@ function onAbilityExecute(thisAbility)
   else
     abilityTarget.hitObject = nil
     targetPos = cameraPos + attackDirection * range
-    abilityTarget:SetHitPosition(targetPos)
   end
+
+  abilityTarget:SetHitPosition(targetPos)
+
+  -- this is how i tell if the AbilityTarget has been updated or not...
+  abilityTarget.spreadHalfAngle = 420
 
   thisAbility:SetTargetData(abilityTarget)
   fireProjectile(targetPos, directHit)

@@ -7,7 +7,7 @@ Assets {
       RootId: 1651665211300075886
       Objects {
         Id: 1651665211300075886
-        Name: "Fireball Impact VFX"
+        Name: "Magic Impact - Fire"
         Transform {
           Scale {
             X: 1
@@ -132,7 +132,8 @@ Assets {
           }
           AudioBP {
             AutoPlay: true
-            Volume: 1
+            Pitch: -300
+            Volume: 0.6
             Falloff: 3000
             Radius: 1000
             IsSpatializationEnabled: true
@@ -244,11 +245,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
-            Float: 0.25
+            Float: 0.35
           }
           Overrides {
             Name: "bp:Particle Scale"
-            Float: 0.25
+            Float: 0.35
           }
           Overrides {
             Name: "bp:Emissive Boost"
@@ -365,11 +366,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale"
-            Float: 0.5
+            Float: 0.25
           }
           Overrides {
             Name: "bp:Life"
-            Float: 0.5
+            Float: 0.65
           }
         }
         Collidable_v2 {

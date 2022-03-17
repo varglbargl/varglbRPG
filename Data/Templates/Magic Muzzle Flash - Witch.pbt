@@ -73,7 +73,7 @@ Assets {
           }
           AutoPlay: true
           Pitch: 300
-          Volume: 0.5
+          Volume: 0.25
           Falloff: 3000
           Radius: 1000
           IsSpatializationEnabled: true

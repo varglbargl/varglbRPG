@@ -5,6 +5,8 @@ local TRAIL = script:GetCustomProperty("Trail")
 local IMPACT_VFX = script:GetCustomProperty("Impact")
 local MUZZLE_FLASH = script:GetCustomProperty("MuzzleFlash")
 
+local clientPlayer = Game.GetLocalPlayer()
+local item = nil
 local range = 2500
 
 local equipEvent = nil
@@ -13,20 +15,32 @@ local destroyEvent = nil
 local executeEvents = {}
 
 function onAbilityExecute(thisAbility)
+  local waitTime = 0
   local targetData = thisAbility:GetTargetData()
+
+  while targetData.spreadHalfAngle ~= 420 and waitTime < 3 do
+    waitTime = waitTime + Task.Wait()
+
+    targetData = thisAbility:GetTargetData()
+  end
+
+  if waitTime >= 3 then
+    warn("Timed out waiting for ability hit target...")
+    return
+  end
+
   local attackRotation = Rotation.New(targetData:GetAimDirection(), Vector3.UP)
   local muzzlePos = script:GetWorldPosition()
-  local target = targetData:GetHitResult()
-  local targetPos = target:GetImpactPosition()
+  local targetPos = targetData:GetHitPosition()
 
   if MUZZLE_FLASH then
     World.SpawnAsset(MUZZLE_FLASH, {position = muzzlePos, rotation = attackRotation})
   end
 
   local distance = (muzzlePos - targetPos).size
+  local travelTime = distance / range / 2 - waitTime
 
   if distance > 100 and PROJECTILE then
-    local travelTime = distance / range / 2
 
     local projectile = World.SpawnAsset(PROJECTILE, {position = muzzlePos, rotation = attackRotation, lifeSpan = travelTime})
     projectile:MoveTo(targetPos, travelTime)
@@ -39,9 +53,9 @@ function onAbilityExecute(thisAbility)
     Task.Wait(travelTime)
   end
 
-  if IMPACT_VFX and targetData.hitObject then
-    -- World.SpawnAsset(IMPACT_VFX, {position = targetPos, rotation = attackRotation, scale = Vector3.ONE * item.splash})
-    World.SpawnAsset(IMPACT_VFX, {position = targetPos, rotation = attackRotation})
+  if IMPACT_VFX then
+    World.SpawnAsset(IMPACT_VFX, {position = targetPos, rotation = attackRotation, scale = Vector3.ONE * item.splash})
+    -- World.SpawnAsset(IMPACT_VFX, {position = targetPos, rotation = attackRotation})
   end
 end
 
@@ -54,6 +68,23 @@ function onEquipped()
 
   -- handler params: Equipment_equipment, Player_player
   unequipEvent = weapon.unequippedEvent:Connect(onUnquipped)
+
+  local socket = weapon:GetAttachedToSocketName()
+  local slot = nil
+
+  if socket == "right_prop" then
+    slot = "primary"
+  elseif socket == "left_prop" then
+    slot = "secondary"
+  end
+
+  item = clientPlayer.clientUserData["Gear"][slot]
+
+  while not item do
+    Task.Wait()
+
+    item = clientPlayer.clientUserData["Gear"][slot]
+  end
 end
 
 function onUnquipped()
