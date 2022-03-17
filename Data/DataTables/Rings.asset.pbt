@@ -158,12 +158,12 @@ Assets {
       }
     }
     Assets {
-      Id: 1820444660886533781
+      Id: 16232506840694449029
       Name: "Survival Food Donut 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Survival_Food_005"
+        AssetId: "UI_Survival_Food_004"
       }
     }
     Assets {
@@ -335,6 +335,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Survival_Equip_Spring_001"
+      }
+    }
+    Assets {
+      Id: 1820444660886533781
+      Name: "Survival Food Donut 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Survival_Food_005"
       }
     }
     Assets {

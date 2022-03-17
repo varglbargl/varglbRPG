@@ -27,8 +27,8 @@ while not lootDrop do
   lootDrop = script.parent.serverUserData["DroppedLoot"]
 end
 
-script:SetCustomProperty("DroppedLoot", lootDrop.sourceTemplate)
-script:SetCustomProperty("DroppedRarity", lootDrop.rarity)
+script:SetCustomProperty("DroppedLoot", lootDrop.id)
+script:SetCustomProperty("DroppedEnchant", lootDrop.enchant)
 
 if PICKUP_TRIGGER.isInteractable then
   PICKUP_TRIGGER.interactionLabel = lootDrop.name

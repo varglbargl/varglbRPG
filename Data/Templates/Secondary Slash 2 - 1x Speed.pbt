@@ -32,7 +32,7 @@ Assets {
         Ability {
           IsEnabled: true
           CastPhaseSettings {
-            Duration: 0.25
+            Duration: 0.2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -42,7 +42,7 @@ Assets {
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.25
+            Duration: 0.2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -53,7 +53,7 @@ Assets {
             }
           }
           RecoveryPhaseSettings {
-            Duration: 0.25
+            Duration: 0.2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -62,7 +62,7 @@ Assets {
             }
           }
           CooldownPhaseSettings {
-            Duration: 0.74
+            Duration: 0.55
             CanMove: true
             CanJump: true
             CanRotate: true

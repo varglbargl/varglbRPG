@@ -61,18 +61,6 @@ Assets {
         }
         ParentId: 8803041335972847287
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Projectile"
-            AssetReference {
-              Id: 17931710397840415144
-            }
-          }
-          Overrides {
-            Name: "cs:Impact"
-            AssetReference {
-              Id: 12639137286179406530
-            }
-          }
         }
         WantsNetworking: true
         Collidable_v2 {

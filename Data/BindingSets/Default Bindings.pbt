@@ -38,7 +38,7 @@ Assets {
             Value: "mc:ebindingkeyboard:leftclick"
           }
           KeyboardSecondary {
-            Value: "mc:ebindingkeyboard:none"
+            Value: "mc:ebindingkeyboard:one"
           }
           Controller {
             Value: "mc:ebindinggamepad:lefttrigger"
@@ -62,7 +62,7 @@ Assets {
             Value: "mc:ebindingkeyboard:rightclick"
           }
           KeyboardSecondary {
-            Value: "mc:ebindingkeyboard:none"
+            Value: "mc:ebindingkeyboard:two"
           }
           Controller {
             Value: "mc:ebindinggamepad:righttrigger"

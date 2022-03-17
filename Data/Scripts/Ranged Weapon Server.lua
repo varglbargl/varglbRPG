@@ -5,20 +5,16 @@ local Wildermagic = require(script:GetCustomProperty("Wildermagic"))
 local weapon = script.parent
 local item = nil
 
-local PROJECTILE = script:GetCustomProperty("Projectile")
-local TRAIL = script:GetCustomProperty("Trail")
-local IMPACT_VFX = script:GetCustomProperty("Impact")
-local MUZZLE_FLASH = script:GetCustomProperty("MuzzleFlash")
-
 local lastUsedAbility = nil
 local magicNumber = 0
 local ownerClass = 0
+local range = 2500
 
 local equipEvent = nil
 local unequipEvent = nil
 local executeEvents = {}
+local cooldownEvents = {}
 local readyEvents = {}
-local interruptedEvents = {}
 
 local statusEffects = {}
 
@@ -32,38 +28,16 @@ function rollDamage()
   return damage
 end
 
-function fireProjectile(target, directHit)
-  local attackRotation = Rotation.New(target - script:GetWorldPosition(), Vector3.UP)
+function fireProjectile(targetPos, directHit)
+  local distance = (script:GetWorldPosition() - targetPos).size
 
-  if MUZZLE_FLASH then
-    World.SpawnAsset(MUZZLE_FLASH, {position = script:GetWorldPosition(), rotation = attackRotation})
-  end
-
-  local distance = (script:GetWorldPosition() - target).size
-
-  if distance > 100 and PROJECTILE then
-    local travelTime = distance / 5000
-    local trail = nil
-
-    local projectile = World.SpawnAsset(PROJECTILE, {position = script:GetWorldPosition(), rotation = attackRotation, lifeSpan = travelTime})
-    projectile:MoveTo(target, travelTime)
-
-    if TRAIL then
-      trail = World.SpawnAsset(TRAIL, {position = projectile:GetWorldPosition(), lifeSpan = travelTime + 2})
-
-      trail:MoveTo(target, travelTime)
-    end
-
-    Task.Wait(travelTime)
-  end
-
-  if IMPACT_VFX then
-    World.SpawnAsset(IMPACT_VFX, {position = target, rotation = attackRotation, scale = Vector3.ONE * item.splash})
+  if distance > 100 then
+    Task.Wait(distance / range / 2)
   end
 
   local wild = ownerClass == 4
   local orbliterate = ownerClass == 3
-  local hitObjects = World.FindObjectsOverlappingSphere(target, 100 * item.splash, {ignorePlayers = true})
+  local hitObjects = World.FindObjectsOverlappingSphere(targetPos, 100 * item.splash, {ignorePlayers = true})
   local hitEnemies = {}
 
   if directHit then
@@ -97,10 +71,11 @@ function fireProjectile(target, directHit)
 end
 
 function onAbilityExecute(thisAbility)
-  local attackRotation = weapon.owner:GetLookWorldRotation()
-  local attackDirection = script:GetWorldPosition() + attackRotation * Vector3.FORWARD * 2500
-  local possibleTarget = World.Spherecast(weapon.owner:GetWorldPosition() + attackRotation * Vector3.New(0, 60, 75), attackDirection, 50, {ignorePlayers = true})
-  local target = nil
+  local abilityTarget = thisAbility:GetTargetData()
+  local attackDirection = abilityTarget:GetAimDirection()
+  local cameraPos = abilityTarget:GetAimPosition()
+  local possibleTarget = World.Spherecast(cameraPos, cameraPos + attackDirection * range, 50, {ignorePlayers = true})
+  local targetPos = nil
   local directHit = nil
 
   lastUsedAbility = thisAbility
@@ -108,17 +83,42 @@ function onAbilityExecute(thisAbility)
   if possibleTarget and possibleTarget.other then
     local enemy = possibleTarget.other.parent
 
+    abilityTarget:SetHitResult(possibleTarget)
+
     if enemy and enemy:IsA("DamageableObject") then
-      target = possibleTarget.other:GetWorldPosition()
+      abilityTarget.hitObject = enemy
+      targetPos = possibleTarget.other:GetWorldPosition()
       directHit = enemy
     else
-      target = possibleTarget:GetImpactPosition()
+      targetPos = possibleTarget:GetImpactPosition()
     end
   else
-    target = attackDirection
+    abilityTarget.hitObject = nil
+    targetPos = cameraPos + attackDirection * range
+    abilityTarget:SetHitPosition(targetPos)
   end
 
-  fireProjectile(target, directHit)
+  thisAbility:SetTargetData(abilityTarget)
+  fireProjectile(targetPos, directHit)
+end
+
+function onAbilityCooldown(thisAbility)
+  if Object.IsValid(thisAbility) and Object.IsValid(thisAbility.owner) and thisAbility.owner.serverUserData["DualWeilding"] and Input.IsActionHeld(thisAbility.owner, thisAbility.actionName) then
+    local otherWeapon = nil
+
+    if item == thisAbility.owner.serverUserData["DualWeilding"].primary then
+      otherWeapon = thisAbility.owner.serverUserData["DualWeilding"].secondary
+    elseif item == thisAbility.owner.serverUserData["DualWeilding"].secondary then
+      otherWeapon = thisAbility.owner.serverUserData["DualWeilding"].primary
+    end
+
+    for _, abil in ipairs(otherWeapon.abilities) do
+      if abil:GetCurrentPhase() == AbilityPhase.READY then
+        abil:Activate()
+        break
+      end
+    end
+  end
 end
 
 function onAbilityReady(thisAbility)
@@ -162,6 +162,10 @@ function onUnequipped(thisEquipment, player)
     eEvt:Disconnect()
   end
 
+  for _, cEvt in ipairs(cooldownEvents) do
+    cEvt:Disconnect()
+  end
+
   for _, rEvt in ipairs(readyEvents) do
     rEvt:Disconnect()
   end
@@ -174,6 +178,10 @@ function onDestroyed()
 
   for _, eEvt in ipairs(executeEvents) do
     eEvt:Disconnect()
+  end
+
+  for _, cEvt in ipairs(cooldownEvents) do
+    cEvt:Disconnect()
   end
 
   for _, rEvt in ipairs(readyEvents) do
@@ -202,6 +210,9 @@ if Object.IsValid(weapon) then
   for _, abil in ipairs(weapon:GetAbilities()) do
     -- handler params: Ability_ability
     table.insert(executeEvents, abil.executeEvent:Connect(onAbilityExecute))
+
+    -- handler params: Ability_ability
+    table.insert(cooldownEvents, abil.cooldownEvent:Connect(onAbilityCooldown))
 
     -- handler params: Ability_ability
     table.insert(readyEvents, abil.readyEvent:Connect(onAbilityReady))

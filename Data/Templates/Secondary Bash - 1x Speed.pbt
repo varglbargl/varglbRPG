@@ -34,12 +34,11 @@ Assets {
         Ability {
           IsEnabled: true
           CastPhaseSettings {
-            Duration: 0.15
+            Duration: 0.35
             CanMove: true
             CanJump: true
             CanRotate: true
             PreventOtherAbilities: true
-            IsTargetDataUpdated: true
             Facing_V2 {
               Value: "mc:eabilitysetfacing:aim"
             }
@@ -56,18 +55,16 @@ Assets {
             }
           }
           RecoveryPhaseSettings {
-            Duration: 0.5
+            Duration: 0.25
             CanMove: true
             CanJump: true
             CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
             Facing_V2 {
               Value: "mc:eabilitysetfacing:none"
             }
           }
           CooldownPhaseSettings {
-            Duration: 4.2
+            Duration: 4.25
             CanMove: true
             CanJump: true
             CanRotate: true

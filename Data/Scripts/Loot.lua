@@ -32,10 +32,6 @@ local lootRarity = {
 function readLootTable(thisLootTable, itemType, damageStat)
   for i, item in pairs(thisLootTable) do
 
-    if item["TemplateId"] and item["TemplateId"] ~= "" then
-      item["TemplateId"] = CoreString.Split(item["TemplateId"], ":")
-    end
-
     local lootItem = {
       name = item["Name"],
       id = item["TemplateId"] or ("Ring_"..i),
@@ -63,13 +59,15 @@ function readLootTable(thisLootTable, itemType, damageStat)
       enchant = ""
     }
 
+    lootItem.id = CoreString.Split(lootItem.id, ":")
+
     if lootItem.maxDamage then
-      lootItem.maxDamage = lootItem.maxDamage * Utils.magicNumber(lootItem.itemLevel)
       lootItem.minDamage = (15 - lootItem.maxDamage) * Utils.magicNumber(lootItem.itemLevel)
+      lootItem.maxDamage = lootItem.maxDamage * Utils.magicNumber(lootItem.itemLevel)
 
       if lootItem.splash then
-        lootItem.maxDamage = lootItem.maxDamage / (0.75 + lootItem.splash / 4)
         lootItem.minDamage = lootItem.minDamage / (0.75 + lootItem.splash / 4)
+        lootItem.maxDamage = lootItem.maxDamage / (0.75 + lootItem.splash / 4)
       end
 
       local satusEffects = 0
@@ -81,12 +79,12 @@ function readLootTable(thisLootTable, itemType, damageStat)
       end
 
       if satusEffects >= 1 then
-        lootItem.maxDamage = lootItem.maxDamage / (1 + satusEffects / 2)
         lootItem.minDamage = lootItem.minDamage / (1 + satusEffects / 2)
+        lootItem.maxDamage = lootItem.maxDamage / (1 + satusEffects / 2)
       end
 
-      lootItem.maxDamage = math.floor(lootItem.maxDamage + 0.5)
       lootItem.minDamage = math.floor(lootItem.minDamage + 0.5)
+      lootItem.maxDamage = math.floor(lootItem.maxDamage + 0.5)
     end
 
     table.insert(itemTable, lootItem)
@@ -130,7 +128,7 @@ local suffixes = {
 }
 
 local uniqueNames = {
-  ring   = {"The Paid Vacation", "Bingo's Paradise", "The Death Loop", "The Mobius Double-Reacharound", "Ring'); DROP TABLE Equipment;--"},
+  ring   = {"The Paid Vacation", "Bingo's Paradise", "The Death Loop", "The Mobius Double-Reacharound", "Real Ring'); DROP TABLE Equipment;--"},
   melee  = {"Herald of the Primatriarch", "Gavel of the Infinite", "The Bite of '87", "The Terrible Secret of Space"},
   spell  = {"The Eye of the Wicked Lord", "Paradox Engine", "Anathema Device", "Dark Ontolomancy, Vol. 2", "The Dance that Ends the Universe"},
   ranged = {"Heartpiercer Spyglass", "Seeker Missile", "B.F.G.", "The Shamethrower"},
@@ -239,7 +237,7 @@ function Loot.decodeEnchant(item, code)
   if code == "" then return item end
 
   local dupe = {}
-  local rarity = #code/3
+  local rarity = #code / 3
 
   for i, v in pairs(item) do
     dupe[i] = v

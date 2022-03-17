@@ -309,13 +309,9 @@ function pickUpItem()
   if moveFromTable and moveFromSlot then
 
     if moveFromTable == inventory and hoveredTable == gear then
-      if not hoveredTable[hoveredSlot] or hoveredTable[hoveredSlot].socket == moveFromTable[moveFromSlot].socket then
-        equipItem(moveFromSlot, hoveredSlot)
-      end
+      equipItem(moveFromSlot, hoveredSlot)
     elseif moveFromTable == gear and hoveredTable == inventory then
-      if not hoveredTable[hoveredSlot] or hoveredTable[hoveredSlot].socket == moveFromTable[moveFromSlot].socket then
-        unequipItem(moveFromSlot, hoveredSlot)
-      end
+      unequipItem(moveFromSlot, hoveredSlot)
     elseif moveFromTable == inventory and hoveredTable == inventory and moveFromSlot ~= hoveredSlot then
       swapInventorySlots(hoveredSlot, moveFromSlot)
     elseif moveFromTable == gear and hoveredTable == gear and string.sub(moveFromSlot, 1, 1) == "f" and string.sub(hoveredSlot, 1, 1) == "f" then
@@ -335,8 +331,6 @@ function pickUpItem()
 end
 
 function equipItem(inventorySlot, gearSlot)
-  print(inventory[inventorySlot].name, tostring(inventory[inventorySlot].id))
-
   local equippedSlot = nil
 
   if inventory[inventorySlot].socket == "1-hand" then

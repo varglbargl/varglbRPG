@@ -5,15 +5,28 @@ local SWOOSH_SFX = script:GetCustomProperty("SwooshSFX")
 local weapon = script:FindAncestorByType("Equipment")
 
 local castEvents = {}
+local interruptedEvents = {}
 local destroyEvent = nil
 
+local currentSfx = nil
+
 function onAbilityCast(thisAbility)
-  Utils.playSoundEffect(SWOOSH_SFX, {position = weapon:GetWorldPosition(), volume = 0.35, pitch = (thisAbility.castPhaseSettings.duration - 0.25) * -8000})
+  if Object.IsValid(currentSfx) then currentSfx:Destroy() end
+
+  currentSfx = Utils.playSoundEffect(SWOOSH_SFX, {position = weapon:GetWorldPosition(), volume = 0.35, pitch = (thisAbility.castPhaseSettings.duration - 0.25) * -8000})
+end
+
+function onAbilityInterrupted()
+  if Object.IsValid(currentSfx) then currentSfx:Destroy() end
 end
 
 function onWeaponDestroyed()
-  for _, evt in ipairs(castEvents) do
-    evt:Disconnect()
+  for _, cEvt in ipairs(castEvents) do
+    cEvt:Disconnect()
+  end
+
+  for _, iEvt in ipairs(interruptedEvents) do
+    iEvt:Disconnect()
   end
 
   destroyEvent:Disconnect()
@@ -24,10 +37,13 @@ while Object.IsValid(weapon) and #weapon:GetAbilities() < 2 do
 end
 
 if Object.IsValid(weapon) then
-  for i, abil in ipairs(weapon:GetAbilities()) do
-    hasAbilities = i
+  for _, abil in ipairs(weapon:GetAbilities()) do
+
     -- handler params: Ability_ability
     table.insert(castEvents, abil.castEvent:Connect(onAbilityCast))
+
+    -- handler params: Ability_ability
+    table.insert(interruptedEvents, abil.interruptedEvent:Connect(onAbilityInterrupted))
   end
 
   -- handler params: CoreObject_coreObject

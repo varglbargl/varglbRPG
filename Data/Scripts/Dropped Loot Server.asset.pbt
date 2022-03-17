@@ -12,25 +12,23 @@ Assets {
       }
       Overrides {
         Name: "cs:DroppedLoot"
-        AssetReference {
-          Id: 841534158063459245
-        }
+        String: "none"
       }
       Overrides {
-        Name: "cs:DroppedRarity"
-        Int: -1
+        Name: "cs:DroppedEnchant"
+        String: "none"
+      }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
       }
       Overrides {
         Name: "cs:DroppedLoot:isrep"
         Bool: true
       }
       Overrides {
-        Name: "cs:DroppedRarity:isrep"
+        Name: "cs:DroppedEnchant:isrep"
         Bool: true
-      }
-      Overrides {
-        Name: "cs:Utils:category"
-        String: "APIs"
       }
     }
   }

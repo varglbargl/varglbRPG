@@ -46,7 +46,6 @@ Assets {
             Y: 3.32528316e-06
           }
           Rotation {
-            Yaw: -179.999985
           }
           Scale {
             X: 1
@@ -83,7 +82,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 0.75
+            Float: 0.5
           }
         }
         Collidable_v2 {
@@ -160,7 +159,7 @@ Assets {
           }
           Rotation {
             Pitch: 90
-            Roll: 179.999969
+            Roll: 180
           }
           Scale {
             X: 1.97498894

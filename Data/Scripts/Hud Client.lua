@@ -32,6 +32,12 @@ local classIcons = {AVENGER_ICON, PARAGON_ICON, ORBLIDERATOR_ICON, WILDERWITCH_S
 local primaryAbilities = {}
 local secondaryAbilities = {}
 
+local primaryInterruptEvents = {}
+local secondaryInterruptEvents = {}
+
+local primaryTickTask = nil
+local secondaryTickTask = nil
+
 local cursorTask = nil
 
 function onResourceChanged(player, resourceName, newTotal)
@@ -97,15 +103,36 @@ function checkAbilitiesChanged(oldAbils, newAbils)
   return (matches ~= #oldAbils)
 end
 
+function onAbilityInterrupted(thisAbility)
+  if thisAbility.actionName == "Primary Ability" then
+    if primaryTickTask then primaryTickTask:Cancel() end
+    PRIMARY_COOLDOWN.visibility = Visibility.FORCE_OFF
+    PRIMARY_COOLDOWN.width = 0
+  elseif thisAbility.actionName == "Secondary Ability" then
+    if secondaryTickTask then secondaryTickTask:Cancel() end
+    SECONDARY_COOLDOWN.visibility = Visibility.FORCE_OFF
+    SECONDARY_COOLDOWN.width = 0
+  end
+end
+
 function updateAbilitiesWithBinding(binding)
   local abilities = clientPlayer:GetAbilities()
 
   if binding == "Primary Ability" then
     primaryAbilities = {}
 
+    for _, iEvt in ipairs(primaryInterruptEvents) do
+      iEvt:Disconnect()
+    end
+
+    primaryInterruptEvents = {}
+
     for _, abil in ipairs(abilities) do
       if abil.actionName == binding then
         table.insert(primaryAbilities, abil)
+
+        -- handler params: Ability_ability
+        table.insert(primaryInterruptEvents, abil.interruptedEvent:Connect(onAbilityInterrupted))
       end
     end
 
@@ -116,9 +143,18 @@ function updateAbilitiesWithBinding(binding)
   elseif binding == "Secondary Ability" then
     secondaryAbilities = {}
 
+    for _, iEvt in ipairs(secondaryInterruptEvents) do
+      iEvt:Disconnect()
+    end
+
+    secondaryInterruptEvents = {}
+
     for _, abil in ipairs(abilities) do
       if abil.actionName == binding then
         table.insert(secondaryAbilities, abil)
+
+        -- handler params: Ability_ability
+        table.insert(secondaryInterruptEvents, abil.interruptedEvent:Connect(onAbilityInterrupted))
       end
     end
 
@@ -128,9 +164,6 @@ function updateAbilitiesWithBinding(binding)
     end
   end
 end
-
-local primaryTickTask = nil
-local secondaryTickTask = nil
 
 function initCooldownOverlay(item, socket)
   local castEvents = {}
@@ -180,8 +213,11 @@ function initCooldownOverlay(item, socket)
 
     unequippedEvent:Disconnect()
 
-    if primaryTickTask then primaryTickTask:Cancel() end
-    if secondaryTickTask then secondaryTickTask:Cancel() end
+    if socket == "primary" then
+      if primaryTickTask then primaryTickTask:Cancel() end
+    elseif socket == "secondary" then
+      if secondaryTickTask then secondaryTickTask:Cancel() end
+    end
 
     thisOverlay.visibility = Visibility.FORCE_OFF
   end)
@@ -254,16 +290,6 @@ function onBindingPressed(thisPlayer, keyCode)
   if keyCode == "ability_secondary" or keyCode == "ability_primary" then
     CURSOR.rotationAngle = -9
   end
-
-  if not clientPlayer.isSpawned then return end
-
-  if keyCode == "ability_extra_19" then
-    if CURSOR.visibility == Visibility.FORCE_OFF then
-      Events.Broadcast("ShowCursor")
-    else
-      Events.Broadcast("HideCursor")
-    end
-  end
 end
 
 function onBindingReleased(thisPlayer, keyCode)
@@ -272,6 +298,18 @@ function onBindingReleased(thisPlayer, keyCode)
 
   if keyCode == "ability_secondary" or keyCode == "ability_primary" then
     CURSOR.rotationAngle = 0
+  end
+end
+
+function onActionPressed(player, actionName)
+  if player ~= clientPlayer or not clientPlayer.isSpawned then return end
+
+  if actionName == "Show/Hide Cursor" then
+    if CURSOR.visibility == Visibility.FORCE_OFF then
+      Events.Broadcast("ShowCursor")
+    else
+      Events.Broadcast("HideCursor")
+    end
   end
 end
 
@@ -291,6 +329,9 @@ clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
 
 -- handler params: Player_player, Damage_damage
 clientPlayer.damagedEvent:Connect(updateHitPoints)
+
+-- handler params: Player_player, string_action, value_value
+Input.actionPressedEvent:Connect(onActionPressed)
 
 Events.Connect("ShowCursor", showCursor)
 Events.Connect("HideCursor", hideCursor)

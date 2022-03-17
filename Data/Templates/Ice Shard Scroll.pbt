@@ -19,42 +19,6 @@ Assets {
         ChildIds: 2176662724239768129
         ChildIds: 4834817042131178623
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 10722553388658907912
-            }
-          }
-          Overrides {
-            Name: "cs:IconBackground"
-            AssetReference {
-              Id: 15179006868839576007
-            }
-          }
-          Overrides {
-            Name: "cs:ItemLevel"
-            Int: 5
-          }
-          Overrides {
-            Name: "cs:Description"
-            String: "Launches a jagged ice crystal that slows enemies on impact."
-          }
-          Overrides {
-            Name: "cs:MinDamage"
-            Int: 6
-          }
-          Overrides {
-            Name: "cs:MaxDamage"
-            Int: 9
-          }
-          Overrides {
-            Name: "cs:StatusEffects"
-            String: "slow"
-          }
-          Overrides {
-            Name: "cs:IsMagic"
-            Bool: true
-          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -97,30 +61,6 @@ Assets {
         }
         ParentId: 4787474700494429112
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Projectile"
-            AssetReference {
-              Id: 9192428193089503810
-            }
-          }
-          Overrides {
-            Name: "cs:Trail"
-            AssetReference {
-              Id: 3979431443557315095
-            }
-          }
-          Overrides {
-            Name: "cs:Impact"
-            AssetReference {
-              Id: 13114771614795888659
-            }
-          }
-          Overrides {
-            Name: "cs:MuzzleFlash"
-            AssetReference {
-              Id: 3483853737220249599
-            }
-          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -209,6 +149,96 @@ Assets {
           }
         }
         ParentId: 4834817042131178623
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Projectile"
+            AssetReference {
+              Id: 9192428193089503810
+            }
+          }
+          Overrides {
+            Name: "cs:Projectile:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Projectile:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Projectile:category"
+            String: "Optional"
+          }
+          Overrides {
+            Name: "cs:Projectile:subcategory"
+            String: "VFX"
+          }
+          Overrides {
+            Name: "cs:Trail"
+            AssetReference {
+              Id: 3979431443557315095
+            }
+          }
+          Overrides {
+            Name: "cs:Trail:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Trail:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Trail:category"
+            String: "Optional"
+          }
+          Overrides {
+            Name: "cs:Trail:subcategory"
+            String: "VFX"
+          }
+          Overrides {
+            Name: "cs:Impact"
+            AssetReference {
+              Id: 13114771614795888659
+            }
+          }
+          Overrides {
+            Name: "cs:Impact:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Impact:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Impact:category"
+            String: "Optional"
+          }
+          Overrides {
+            Name: "cs:Impact:subcategory"
+            String: "VFX"
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash"
+            AssetReference {
+              Id: 3483853737220249599
+            }
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash:category"
+            String: "Optional"
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash:subcategory"
+            String: "VFX"
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1438,24 +1468,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-      }
-    }
-    Assets {
-      Id: 10722553388658907912
-      Name: "Fantasy Scroll 003"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Scroll_003"
-      }
-    }
-    Assets {
-      Id: 15179006868839576007
-      Name: "Fantasy Ability Blue 021"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ability_Blue_021"
       }
     }
     Assets {

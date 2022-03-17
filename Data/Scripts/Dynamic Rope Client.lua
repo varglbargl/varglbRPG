@@ -27,7 +27,7 @@ local ROPE_SEGMENT_SPACING = script:GetCustomProperty("RopeSegmentSpacing")
 local GRAVITY = script:GetCustomProperty("Gravity")
 local SPEED = script:GetCustomProperty("Speed")
 
-local CONSTRAINT_ITERATIONS = 5
+local CONSTRAINT_ITERATIONS = 8
 
 local rope = {}
 local gravityVector = Vector3.UP * -GRAVITY

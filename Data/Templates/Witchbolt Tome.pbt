@@ -61,30 +61,6 @@ Assets {
         }
         ParentId: 7736638895574569630
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Projectile"
-            AssetReference {
-              Id: 4300020375618610701
-            }
-          }
-          Overrides {
-            Name: "cs:Trail"
-            AssetReference {
-              Id: 2435552773657097689
-            }
-          }
-          Overrides {
-            Name: "cs:Impact"
-            AssetReference {
-              Id: 15064358748470972744
-            }
-          }
-          Overrides {
-            Name: "cs:MuzzleFlash"
-            AssetReference {
-              Id: 15684172335197207637
-            }
-          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -159,6 +135,96 @@ Assets {
           }
         }
         ParentId: 7653355958368296281
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Projectile"
+            AssetReference {
+              Id: 4300020375618610701
+            }
+          }
+          Overrides {
+            Name: "cs:Projectile:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Projectile:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Projectile:category"
+            String: "Optional"
+          }
+          Overrides {
+            Name: "cs:Projectile:subcategory"
+            String: "VFX"
+          }
+          Overrides {
+            Name: "cs:Trail"
+            AssetReference {
+              Id: 2435552773657097689
+            }
+          }
+          Overrides {
+            Name: "cs:Trail:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Trail:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Trail:category"
+            String: "Optional"
+          }
+          Overrides {
+            Name: "cs:Trail:subcategory"
+            String: "VFX"
+          }
+          Overrides {
+            Name: "cs:Impact"
+            AssetReference {
+              Id: 15064358748470972744
+            }
+          }
+          Overrides {
+            Name: "cs:Impact:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Impact:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:Impact:category"
+            String: "Optional"
+          }
+          Overrides {
+            Name: "cs:Impact:subcategory"
+            String: "VFX"
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash"
+            AssetReference {
+              Id: 15684172335197207637
+            }
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash:isrep"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash:ml"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash:category"
+            String: "Optional"
+          }
+          Overrides {
+            Name: "cs:MuzzleFlash:subcategory"
+            String: "VFX"
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

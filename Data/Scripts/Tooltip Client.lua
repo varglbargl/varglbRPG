@@ -14,37 +14,49 @@ local FLAVOR_TEXT = script:GetCustomProperty("FlavorText"):WaitForObject()
 local LABEL_TOOLTIP = script:GetCustomProperty("LabelTooltip"):WaitForObject()
 local LABEL = script:GetCustomProperty("Label"):WaitForObject()
 
+local clientPlayer = Game.GetLocalPlayer()
 local currentTooltip = nil
 local currentButton = nil
-local followCursorTask = nil
+local tooltipPositionTask = nil
 
 ITEM_TOOLTIP.visibility = Visibility.FORCE_OFF
 LABEL_TOOLTIP.visibility = Visibility.FORCE_OFF
 
-function followCursorLoop(tooltip)
-  local cursorPos = UI.GetCursorPosition()
+function tooltipFollowLoop(tooltip, worldPosition)
+  local screenPos = nil
 
-  tooltip.x = math.max(40, cursorPos.x - tooltip.width)
-  tooltip.y = math.max(40, cursorPos.y - tooltip.height + 50)
+  if worldPosition then
+    screenPos = UI.GetScreenPosition(worldPosition)
+  else
+    screenPos = UI.GetCursorPosition()
+  end
+
+  tooltip.x = math.max(40, screenPos.x - tooltip.width)
+  tooltip.y = math.max(40, screenPos.y - tooltip.height + 50)
 
   function easeLoop()
-    cursorPos = UI.GetCursorPosition()
+    if worldPosition then
+      screenPos = UI.GetScreenPosition(worldPosition)
+    else
+      screenPos = UI.GetCursorPosition()
+    end
 
-    cursorPos.x = math.max(20, cursorPos.x - tooltip.width)
-    cursorPos.y = math.max(20, cursorPos.y - tooltip.height)
+    screenPos.x = math.max(20, screenPos.x - tooltip.width)
+    screenPos.y = math.max(20, screenPos.y - tooltip.height)
 
-    tooltip.x = math.ceil(tooltip.x + (cursorPos.x - tooltip.x) * 0.15)
-    tooltip.y = math.ceil(tooltip.y + (cursorPos.y - tooltip.y) * 0.15)
+    tooltip.x = math.ceil(tooltip.x + (screenPos.x - tooltip.x) * 0.15)
+    tooltip.y = math.ceil(tooltip.y + (screenPos.y - tooltip.y) * 0.15)
 
     Task.Wait()
     easeLoop()
   end
 
-  easeLoop()
+  if tooltipPositionTask then tooltipPositionTask:Cancel() end
+  tooltipPositionTask = Task.Spawn(easeLoop)
 end
 
 function showLabelTooltip(string, button)
-  if currentToolip then hideTooltip() end
+  if currentTooltip then hideTooltip() end
 
   LABEL.text = string
 
@@ -53,8 +65,7 @@ function showLabelTooltip(string, button)
   LABEL_TOOLTIP.width = labelSize.x + 48
   LABEL_TOOLTIP.height = labelSize.y + 28
 
-  if followCursorTask then followCursorTask:Cancel() end
-  followCursorTask = Task.Spawn(function() followCursorLoop(LABEL_TOOLTIP) end)
+  tooltipFollowLoop(LABEL_TOOLTIP)
 
   currentButton = button
 
@@ -66,8 +77,8 @@ function showLabelTooltip(string, button)
   end
 end
 
-function showItemTooltip(item, button)
-  if currentToolip or not item then return hideTooltip() end
+function showItemTooltip(item, button, worldPosition)
+  if currentTooltip or not item then return hideTooltip() end
 
   local contentHeight = 18
 
@@ -160,8 +171,7 @@ function showItemTooltip(item, button)
 
   ITEM_TOOLTIP.height = contentHeight + 8
 
-  if followCursorTask then followCursorTask:Cancel() end
-  followCursorTask = Task.Spawn(function() followCursorLoop(ITEM_TOOLTIP) end)
+  tooltipFollowLoop(ITEM_TOOLTIP, worldPosition)
 
   currentButton = button
 
@@ -173,6 +183,18 @@ function showItemTooltip(item, button)
   end
 end
 
+function showDroppedItemTooltip(player, trigger)
+  local item = trigger.clientUserData["Item"]
+
+  if not item then return end
+
+  showItemTooltip(item, nil, trigger:GetWorldPosition())
+end
+
+function hideDroppedItemTooltip()
+  hideTooltip()
+end
+
 function hideTooltip(button)
   if not currentTooltip then return end
   if button and button ~= currentButton then return end
@@ -181,11 +203,11 @@ function hideTooltip(button)
   currentTooltip = nil
   currentButton = nil
 
-  if followCursorTask then followCursorTask:Cancel() end
+  if tooltipPositionTask then tooltipPositionTask:Cancel() end
 end
 
 function showTooltip(content, button)
-  if currentToolip then hideTooltip() end
+  if currentTooltip then hideTooltip() end
 
   if type(content) == "table" and content.itemLevel then
     showItemTooltip(content, button)
@@ -196,3 +218,9 @@ end
 
 Events.Connect("ShowTooltip", showTooltip)
 Events.Connect("HideTooltip", hideTooltip)
+
+-- handler params: Player_player, Trigger_trigger
+clientPlayer.interactableFocusedEvent:Connect(showDroppedItemTooltip)
+
+-- handler params: Player_player, Trigger_trigger
+clientPlayer.interactableUnfocusedEvent:Connect(hideDroppedItemTooltip)
