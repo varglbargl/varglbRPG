@@ -103,24 +103,17 @@ function onAbilityCooldown(thisAbility)
   if Object.IsValid(thisAbility) and Object.IsValid(thisAbility.owner) and Input.IsActionHeld(thisAbility.owner, thisAbility.actionName) then
     if thisAbility.owner.serverUserData["DualWeilding"] then
       Task.Wait()
-      local otherWeapon = nil
       local otherAbility = nil
 
-      if item == thisAbility.owner.serverUserData["DualWeilding"].primary then
-        otherWeapon = thisAbility.owner.serverUserData["DualWeilding"].secondary
-      elseif item == thisAbility.owner.serverUserData["DualWeilding"].secondary then
-        otherWeapon = thisAbility.owner.serverUserData["DualWeilding"].primary
+      if thisAbility == thisAbility.owner.serverUserData["DualWeilding"].primary then
+        otherAbility = thisAbility.owner.serverUserData["DualWeilding"].secondary
+      elseif thisAbility == thisAbility.owner.serverUserData["DualWeilding"].secondary then
+        otherAbility = thisAbility.owner.serverUserData["DualWeilding"].primary
       end
 
-      for _, abil in ipairs(otherWeapon.abilities) do
-        if abil:GetCurrentPhase() == AbilityPhase.READY then
-          otherAbility = abil
-        elseif abil:GetCurrentPhase().preventsOtherAbilities then
-          return
-        end
+      if otherAbility:GetCurrentPhase() == AbilityPhase.READY then
+        otherAbility:Activate()
       end
-
-      otherAbility:Activate()
     else
       for _, abil in ipairs(abilities) do
         if abil:GetCurrentPhase() == AbilityPhase.READY then

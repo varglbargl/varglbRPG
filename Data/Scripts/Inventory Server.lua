@@ -62,16 +62,23 @@ function onPlayerJoined(player)
   player.serverUserData["Inventory"] = {
     full = false
   }
+end
+
+function initInventory(player)
+  Task.Wait()
+  if not Object.IsValid(player) then return end
 
   if Vault.hasSave(player) then
     local saveData = Vault.getSave(player)
+    local class = player:GetResource("Class")
+    local classGear = saveData.gear[class]
     local inventorySlotsOpen = 48
 
     for slot = 1, 48 do
       if saveData.inv[slot] then
         local item = Loot.findItemById(saveData.inv[slot].id)
 
-        player.serverUserData["Inventory"][slot] = Loot.decodeEnchant(item, saveData.inv[slot].enchant)
+        player.serverUserData["Inventory"][slot] = Loot.decodeEnchant(item, saveData.inv[slot].enc)
 
         inventorySlotsOpen = inventorySlotsOpen - 1
       end
@@ -81,50 +88,42 @@ function onPlayerJoined(player)
       player.serverUserData["Inventory"].full = true
     end
 
-    for slot in pairs(saveData.gear) do
-      if saveData.gear[slot] then
-        local item = Loot.findItemById(saveData.gear[slot].id)
-        local enchantedItem = Loot.decodeEnchant(item, saveData.gear[slot].enchant)
+    if classGear then
+      for slot in pairs(classGear) do
+        if classGear[slot] then
+          local item = Loot.findItemById(classGear[slot].id)
+          local enchantedItem = Loot.decodeEnchant(item, classGear[slot].enc)
 
-        player.serverUserData["Gear"][slot] = enchantedItem
-      else
-        player.serverUserData["Gear"][slot] = nil
-      end
-    end
-  end
-end
+          player.serverUserData["Gear"][slot] = enchantedItem
 
-function initInventory(player)
-  Task.Wait()
-  if not Object.IsValid(player) then return end
+          if enchantedItem.templateId then
+            local equipment = World.SpawnAsset(enchantedItem.templateId, {position = Vector3.UP * -10000, name = item.name})
 
-  if Vault.hasSave(player) then
-    for slot, item in pairs(player.serverUserData["Gear"]) do
+            enchantedItem.equipmentId = equipment.id
 
-      if item.templateId then
-        local equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
+            if enchantedItem.socket == "main-hand" then
+              equipment.socket = "right_prop"
 
-        item.equipmentId = equipment.id
+            elseif enchantedItem.socket == "off-hand" then
+              equipment.socket = "left_prop"
 
-        if item.socket == "main-hand" then
-          equipment.socket = "right_prop"
+            elseif enchantedItem.socket == "1-hand" then
+              if slot == "primary" then
+                equipment.socket = "right_prop"
 
-        elseif item.socket == "off-hand" then
-          equipment.socket = "left_prop"
+              elseif slot == "secondary" then
+                equipment.socket = "left_prop"
+              end
+            end
 
-        elseif item.socket == "1-hand" then
-          if slot == "primary" then
-            equipment.socket = "right_prop"
+            addAbilities(equipment, enchantedItem, slot)
+            checkDualWeilding(player)
 
-          elseif slot == "secondary" then
-            equipment.socket = "left_prop"
+            equipment:Equip(player)
           end
+        else
+          player.serverUserData["Gear"][slot] = nil
         end
-
-        addAbilities(equipment, item, slot)
-        checkDualWeilding(player)
-
-        equipment:Equip(player)
       end
     end
   else
@@ -181,8 +180,8 @@ function checkDualWeilding(player)
 
   if primaryGear and secondaryGear and primaryGear.animation == secondaryGear.animation then
     player.serverUserData["DualWeilding"] = {
-      primary = primaryGear,
-      secondary = secondaryGear
+      primary = primaryGear.abilities[1],
+      secondary = secondaryGear.abilities[1]
     }
   else
     player.serverUserData["DualWeilding"] = nil
@@ -214,7 +213,7 @@ function addToInventory(player, item, inventorySlot)
   player.serverUserData["Inventory"].full = inventoryFull
 
   Utils.updatePrivateNetworkedData(player, "Inventory")
-  Vault.save(player)
+  Vault.throttleSave(player)
 end
 
 function unequipFromPlayer(player, gearSlot, inventorySlot)
@@ -310,7 +309,7 @@ function equipToPlayer(player, gearSlot, inventorySlot)
     Utils.updatePrivateNetworkedData(player, "Inventory")
     Events.Broadcast("EquipmentChanged", player)
 
-    Vault.save(player)
+    Vault.throttleSave(player)
   end
 end
 
@@ -318,14 +317,14 @@ function swapInventorySlots(player, slotA, slotB)
   player.serverUserData["Inventory"][slotA], player.serverUserData["Inventory"][slotB] = player.serverUserData["Inventory"][slotB], player.serverUserData["Inventory"][slotA]
   Utils.updatePrivateNetworkedData(player, "Inventory")
 
-  Vault.save(player)
+  Vault.throttleSave(player)
 end
 
 function swapGearSlots(player, slotA, slotB)
   player.serverUserData["Gear"][slotA], player.serverUserData["Gear"][slotB] = player.serverUserData["Gear"][slotB], player.serverUserData["Gear"][slotA]
   Utils.updatePrivateNetworkedData(player, "Gear")
 
-  Vault.save(player)
+  Vault.throttleSave(player)
 end
 
 function dropItem(player, slot, fromInventory)
@@ -349,7 +348,7 @@ function dropItem(player, slot, fromInventory)
 
     Utils.updatePrivateNetworkedData(player, "Gear")
 
-    Vault.save(player)
+    Vault.throttleSave(player)
   end
 
   Loot.dropItem(player:GetWorldPosition() + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * math.random(50, 100), item)

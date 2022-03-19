@@ -436,7 +436,7 @@ function onPrivateNetworkedDataChanged(player, key)
       if data[slot] then
         local item = Loot.findItemById(data[slot].id)
 
-        inventory[slot] = Loot.decodeEnchant(item, data[slot].enchant)
+        inventory[slot] = Loot.decodeEnchant(item, data[slot].enc)
 
         inventorySlotsOpen = inventorySlotsOpen - 1
       else
@@ -458,7 +458,7 @@ function onPrivateNetworkedDataChanged(player, key)
       if data[slot] then
         local item = Loot.findItemById(data[slot].id)
 
-        gear[slot] = Loot.decodeEnchant(item, data[slot].enchant)
+        gear[slot] = Loot.decodeEnchant(item, data[slot].enc)
       else
         gear[slot] = nil
       end
@@ -486,3 +486,7 @@ Events.Connect("ToggleCharacterScreen", toggleCharacterScreen)
 clientPlayer.privateNetworkedDataChangedEvent:Connect(onPrivateNetworkedDataChanged)
 
 throttleInventory()
+
+Task.Wait(0.1)
+
+Events.Broadcast("ScriptLoaded")

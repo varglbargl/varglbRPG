@@ -1,7 +1,5 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 
-local CLASS_PICKER_UI = script:GetCustomProperty("ClassPickerUI"):WaitForObject()
-local GAME_UI = script:GetCustomProperty("GameUI"):WaitForObject()
 local MUSIC = script:GetCustomProperty("Music"):WaitForObject()
 local CAMERA = script:GetCustomProperty("Camera"):WaitForObject()
 
@@ -20,15 +18,14 @@ local GRITSTAR = script:GetCustomProperty("Gritstar"):WaitForObject()
 local WITSTAR = script:GetCustomProperty("Witstar"):WaitForObject()
 local SPITSTAR = script:GetCustomProperty("Spitstar"):WaitForObject()
 
+local ENTER_WORLD_SFX = script:GetCustomProperty("EnterWorldSFX")
+
 local clientPlayer = Game.GetLocalPlayer()
 local selectedClass = nil
+local levels = {}
 local stars = {[5] = "★", [10] = "★★", [15] = "★★★", [20] = "★★★★"}
 
-CLASS_PICKER_UI.visibility = Visibility.INHERIT
-GAME_UI.visibility = Visibility.FORCE_OFF
 clientPlayer:SetOverrideCamera(CAMERA)
-MUSIC:Play()
-MUSIC.fadeOutTime = 5
 
 local classButtons = {AVENGER_BUTTON, PARAGON_BUTTON, ORBLITERATOR_BUTTON, WILDERWITCH_BUTTON, RANGER_BUTTON, HARRIER_BUTTON, EXPLORER_BUTTON}
 
@@ -46,33 +43,36 @@ for i, btn in ipairs(classButtons) do
   end)
 end
 
-function onPlayerSpawned(thisPlayer)
-  print(thisPlayer.name.." has spawned...")
-  if thisPlayer ~= clientPlayer then return end
+function onPrivateNetworkedDataChanged(player, key)
+  if player ~= clientPlayer then return end
 
-  CLASS_PICKER_UI.visibility = Visibility.FORCE_OFF
-  GAME_UI.visibility = Visibility.INHERIT
+  if key == "Levels" then
+    levels = clientPlayer:GetPrivateNetworkedData("Levels")
 
-  MUSIC:Stop()
-  clientPlayer:ClearOverrideCamera()
-
-  Events.Broadcast("HideCursor")
-  Events.Broadcast("HideTooltip")
+    Events.Broadcast("FadeFromBlack")
+  end
 end
 
 function onPlayClicked()
   if not selectedClass then return end
 
-  PLAY_BUTTON.visibility = Visibility.FORCE_OFF
+  PLAY_BUTTON.isInteractable = false
+  MUSIC:Stop()
 
+  Utils.playSoundEffect(ENTER_WORLD_SFX, {volume = 0.5})
+
+  Events.Broadcast("HideCursor")
+  Events.Broadcast("HideTooltip")
+  Events.Broadcast("FadeToBlack", 2)
   Utils.throttleToServer("PickClass", selectedClass)
 end
 
--- handler params: Player_player, PlayerStart_playerStart, string_spawnKey
-clientPlayer.spawnedEvent:Connect(onPlayerSpawned)
+-- handler params: Player_player, string_key
+clientPlayer.privateNetworkedDataChangedEvent:Connect(onPrivateNetworkedDataChanged)
 
 PLAY_BUTTON.clickedEvent:Connect(onPlayClicked)
 
 Task.Wait(0.1)
 
 Events.Broadcast("ShowCursor")
+Utils.throttleToServer("ClientLoaded")

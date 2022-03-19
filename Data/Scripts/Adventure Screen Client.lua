@@ -140,3 +140,7 @@ Events.Connect("ToggleMiniQuestLog", toggleMiniQuestLog)
 
 -- handler params: Player_player, string_key
 clientPlayer.privateNetworkedDataChangedEvent:Connect(onPrivateNetworkedDataChanged)
+
+Task.Wait(0.1)
+
+Events.Broadcast("ScriptLoaded")

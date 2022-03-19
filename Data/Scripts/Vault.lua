@@ -3,21 +3,24 @@ local Utils = require(script:GetCustomProperty("Utils"))
 local Vault = {}
 
 local playerData = {}
+local savingInProgress = {}
 local currentSaveVersion = 1
 
 local function createSaveData(player)
   local class = player:GetResource("Class")
   local levels = playerData[player].lvls or {}
   local experiences = playerData[player].xps or {}
+  local gear = playerData[player].gear
 
   if class ~= 0 then
     levels[class] = player:GetResource("Level")
     experiences[class] = player:GetResource("Experience")
+
+    gear[class] = Utils.compressItems(player.serverUserData["Gear"])
   end
 
   local gold = player:GetResource("Gold")
 
-  local gear = Utils.compressItems(player.serverUserData["Gear"])
   local inventory = Utils.compressItems(player.serverUserData["Inventory"])
   local questLog = player.serverUserData["QuestLog"]
   local questProgress = player.serverUserData["QuestProgress"]
@@ -28,20 +31,42 @@ local function createSaveData(player)
     questProgress = ""
   end
 
-  local scene = Game.GetCurrentSceneName()
-  local location = nil
+  local scene = playerData[player].scene
+  local location = playerData[player].loc
 
-  if player.isSpawned then
+  if Game.GetCurrentSceneName() ~= "Start" then
     local position = player:GetWorldPosition()
     local rotation = player:GetWorldRotation()
 
     location = Vector4.New(position, rotation.z)
+    scene = Game.GetCurrentSceneName()
   end
 
-  return {lvls = levels, xps = experiences, gp = gold, gear = gear, inv = inventory, qLog = questLog, qProg = questProgress, scene = scene, loc = location, saveVersion = currentSaveVersion}
+  return {class = class, lvls = levels, xps = experiences, gp = gold, gear = gear, inv = inventory, qLog = questLog, qProg = questProgress, scene = scene, loc = location, saveVersion = currentSaveVersion}
 end
 
-function onPlayerJoined(player)
+function Vault.createNewPlayerSave(player, class)
+  if type(class) ~= "number" then
+    error("Invalid arguments passed into Vault.createNewPlayerSave(Player_player, integer_class). Expected integer, got "..type(class)..".")
+  end
+
+  playerData[player] = {
+    class = math.floor(class),
+    lvls =  {0, 0, 0, 0, 0, 0, 0},
+    xps = {0, 0, 0, 0, 0, 0, 0},
+    gp = 0,
+    gear = {},
+    inv = {},
+    qLog = {},
+    qProg = {},
+    scene = "Amalawari",
+    saveVersion = currentSaveVersion
+  }
+
+  Vault.save(player)
+end
+
+local function onPlayerJoined(player)
   local saveData = Storage.GetPlayerData(player)
 
   -- check and update save versions, once those are a thing
@@ -49,7 +74,7 @@ function onPlayerJoined(player)
   playerData[player] = saveData
 end
 
-function onPlayerLeft(player)
+local function onPlayerLeft(player)
   if player.isSpawned then
     Vault.save(player)
   end
@@ -57,6 +82,23 @@ function onPlayerLeft(player)
   playerData[player] = nil
 end
 
+-- I actually don't know if updating Storage causes any lag but just in case...
+function Vault.throttleSave(player)
+  if savingInProgress[player] then
+    return
+  else
+    savingInProgress[player] = Task.Spawn(function()
+      Task.Wait(#Game.GetPlayers() + 4)
+
+      if not Object.IsValid(player) then return end
+
+      Vault.save(player)
+      savingInProgress[player] = nil
+    end)
+  end
+end
+
+-- Compresses and sets Player Storage
 function Vault.save(player)
   local save = createSaveData(player)
   local response, errMessage = Storage.SetPlayerData(player, save)
@@ -93,6 +135,14 @@ end
 
 function Vault.resetSave(player)
   Storage.SetPlayerData(player, {})
+end
+
+function Vault.setPlayerDataKey(player, key, data)
+
+  if playerData[player][key] then
+
+    playerData[player][key] = data
+  end
 end
 
 -- on player joined/left functions need to be defined before calling event:Connect()

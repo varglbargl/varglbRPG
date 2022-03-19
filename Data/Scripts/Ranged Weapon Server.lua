@@ -9,6 +9,7 @@ local lastUsedAbility = nil
 local magicNumber = 0
 local ownerClass = 0
 local range = 2500
+local dualWieldAbility = nil
 
 local equipEvent = nil
 local unequipEvent = nil
@@ -70,8 +71,6 @@ function fireProjectile(targetPos, directHit)
   end
 end
 
-local startTime = time()
-
 function onAbilityExecute(thisAbility)
   local abilityTarget = thisAbility:GetTargetData()
   local attackDirection = abilityTarget:GetAimDirection()
@@ -109,26 +108,28 @@ function onAbilityExecute(thisAbility)
 end
 
 function onAbilityCooldown(thisAbility)
-  if Object.IsValid(thisAbility) and Object.IsValid(thisAbility.owner) and thisAbility.owner.serverUserData["DualWeilding"] and Input.IsActionHeld(thisAbility.owner, thisAbility.actionName) then
-    local otherWeapon = nil
+  if Object.IsValid(thisAbility) and Object.IsValid(thisAbility.owner) and thisAbility.owner.serverUserData["DualWeilding"] and thisAbility.owner.serverUserData["DualWeilding"] and Input.IsActionHeld(thisAbility.owner, thisAbility.actionName) then
+    dualWieldAbility = nil
 
-    if item == thisAbility.owner.serverUserData["DualWeilding"].primary then
-      otherWeapon = thisAbility.owner.serverUserData["DualWeilding"].secondary
-    elseif item == thisAbility.owner.serverUserData["DualWeilding"].secondary then
-      otherWeapon = thisAbility.owner.serverUserData["DualWeilding"].primary
+    if thisAbility == thisAbility.owner.serverUserData["DualWeilding"].primary then
+      dualWieldAbility = thisAbility.owner.serverUserData["DualWeilding"].secondary
+    elseif thisAbility == thisAbility.owner.serverUserData["DualWeilding"].secondary then
+      dualWieldAbility = thisAbility.owner.serverUserData["DualWeilding"].primary
     end
 
-    for _, abil in ipairs(otherWeapon.abilities) do
-      if abil:GetCurrentPhase() == AbilityPhase.READY then
-        abil:Activate()
-        break
-      end
+    if Object.IsValid(dualWieldAbility) and dualWieldAbility:GetCurrentPhase() == AbilityPhase.READY then
+      dualWieldAbility:Activate()
     end
   end
 end
 
 function onAbilityReady(thisAbility)
   if Object.IsValid(thisAbility) and Object.IsValid(thisAbility.owner) and Input.IsActionHeld(thisAbility.owner, thisAbility.actionName) then
+    while dualWieldAbility:GetCurrentPhase() == AbilityPhase.CAST or dualWieldAbility:GetCurrentPhase() == AbilityPhase.EXECUTE do
+      print("Dual wield ability will be interrupted..")
+      Task.Wait()
+    end
+
     thisAbility:Activate()
   end
 end

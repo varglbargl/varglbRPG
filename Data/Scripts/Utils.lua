@@ -159,7 +159,7 @@ function Utils.compressItems(items)
 
   for slot, item in pairs(items) do
     if slot ~= "full" and item then
-      results[slot] = {id = item.id, enchant = item.enchant}
+      results[slot] = {id = item.id, enc = item.enchant}
     end
   end
 

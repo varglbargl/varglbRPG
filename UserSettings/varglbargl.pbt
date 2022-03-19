@@ -58679,7 +58679,6 @@ ObjectSettings {
   ObjectStates {
     key: 6712190362637520320
     value {
-      IsHidden: true
     }
   }
   ObjectStates {
@@ -75954,7 +75953,6 @@ ObjectSettings {
   ObjectStates {
     key: 8673482604125906198
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -78932,7 +78930,6 @@ ObjectSettings {
   ObjectStates {
     key: 9027547997285418474
     value {
-      IsHidden: true
     }
   }
   ObjectStates {
@@ -95669,7 +95666,6 @@ ObjectSettings {
   ObjectStates {
     key: 10936605722855375845
     value {
-      IsLocked: true
       IsHidden: true
     }
   }
@@ -122417,7 +122413,6 @@ ObjectSettings {
   ObjectStates {
     key: 14007565897514202874
     value {
-      IsLocked: true
       IsHidden: true
     }
   }
@@ -152421,7 +152416,6 @@ ObjectSettings {
   ObjectStates {
     key: 17448533869679119906
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -159062,6 +159056,7 @@ ObjectSettings {
   ObjectStates {
     key: 18222754127832001769
     value {
+      IsHidden: true
     }
   }
   ObjectStates {
@@ -160885,4 +160880,4 @@ ObjectSettings {
     }
   }
 }
-LastSavedScene: "Da Grid Zone"
+LastSavedScene: "Start"

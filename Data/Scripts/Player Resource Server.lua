@@ -31,17 +31,19 @@ function onPlayerDied(player)
   end
 end
 
-function initResources(player, class)
+function initResources(player)
   if not Object.IsValid(player) then return end
 
   local yourLevel = nil
-
-  player:SetResource("Class", class)
+  local class = nil
 
   if Vault.hasSave(player) then
     local save = Vault.getSave(player)
 
+    class = save.class
+
     yourLevel = save.lvls[class] or 1
+    player:SetResource("Class", class)
     player:SetResource("Level", yourLevel)
     player:SetResource("Experience", save.xps[class] or 0)
     player:SetResource("Gold", save.gp)
@@ -296,4 +298,4 @@ Events.Connect("PlayerGainedGold", onPlayerGainedGold)
 -- handler params: Player_player
 Events.Connect("EquipmentChanged", applyStatsWithGear)
 
-Events.ConnectForPlayer("PickClass", initResources)
+Events.ConnectForPlayer("ClientLoaded", initResources)

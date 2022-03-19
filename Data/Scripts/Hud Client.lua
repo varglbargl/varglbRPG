@@ -14,7 +14,6 @@ local SECONDARY_ICON = script:GetCustomProperty("SecondaryIcon"):WaitForObject()
 local SECONDARY_ICON_BG = script:GetCustomProperty("SecondaryIconBg"):WaitForObject()
 local SECONDARY_COOLDOWN = script:GetCustomProperty("SecondaryCooldown"):WaitForObject()
 local CLASS_ICON = script:GetCustomProperty("ClassIcon"):WaitForObject()
-local CURSOR = script:GetCustomProperty("Cursor"):WaitForObject()
 
 local AVENGER_ICON = script:GetCustomProperty("AvengerIcon")
 local PARAGON_ICON = script:GetCustomProperty("ParagonIcon")
@@ -38,8 +37,6 @@ local secondaryInterruptEvents = {}
 local primaryTickTask = nil
 local secondaryTickTask = nil
 
-local cursorTask = nil
-
 function onResourceChanged(player, resourceName, newTotal)
   if resourceName == "Stamina" then
     local maxStam = player:GetResource("MaxStamina")
@@ -61,32 +58,6 @@ function onResourceChanged(player, resourceName, newTotal)
 	end
 end
 
-function cursorLoop()
-  local cursorPos = UI.GetCursorPosition()
-
-  CURSOR.x = cursorPos.x
-  CURSOR.y = cursorPos.y
-
-  Task.Wait()
-  cursorLoop()
-end
-
-function showCursor()
-  CURSOR.visibility = Visibility.FORCE_ON
-  UI.SetCanCursorInteractWithUI(true)
-
-  if cursorTask then cursorTask:Cancel() end
-  cursorTask = Task.Spawn(cursorLoop)
-end
-
-function hideCursor()
-  CURSOR.visibility = Visibility.FORCE_OFF
-  UI.SetCanCursorInteractWithUI(false)
-  Events.Broadcast("HideTooltip")
-
-  if cursorTask then cursorTask:Cancel() end
-end
-
 function checkAbilitiesChanged(oldAbils, newAbils)
   if #oldAbils ~= #newAbils then return true end
 
@@ -104,6 +75,8 @@ function checkAbilitiesChanged(oldAbils, newAbils)
 end
 
 function onAbilityInterrupted(thisAbility)
+  print(thisAbility.actionName.." interrupted!")
+
   if thisAbility.actionName == "Primary Ability" then
     if primaryTickTask then primaryTickTask:Cancel() end
     PRIMARY_COOLDOWN.visibility = Visibility.FORCE_OFF
@@ -283,46 +256,10 @@ function redrawHUD(gear)
   updateHitPoints()
 end
 
-function onBindingPressed(thisPlayer, keyCode)
-  if thisPlayer ~= clientPlayer then return end
-	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
-
-  if keyCode == "ability_secondary" or keyCode == "ability_primary" then
-    CURSOR.rotationAngle = -9
-  end
-end
-
-function onBindingReleased(thisPlayer, keyCode)
-  if thisPlayer ~= clientPlayer then return end
-	-- print("player " .. thisPlayer.name .. " pressed binding: " .. keyCode)
-
-  if keyCode == "ability_secondary" or keyCode == "ability_primary" then
-    CURSOR.rotationAngle = 0
-  end
-end
-
-function onActionPressed(player, actionName)
-  if player ~= clientPlayer or not clientPlayer.isSpawned then return end
-
-  if actionName == "Show/Hide Cursor" then
-    if CURSOR.visibility == Visibility.FORCE_OFF then
-      Events.Broadcast("ShowCursor")
-    else
-      Events.Broadcast("HideCursor")
-    end
-  end
-end
-
 function updateHitPoints()
   HEALTH_BAR.width = math.floor(clientPlayer.hitPoints / clientPlayer.maxHitPoints * barWidth + 0.5)
   HEALTH_NUMBERS.text = Utils.formatInt(clientPlayer.hitPoints).." / "..Utils.formatInt(clientPlayer.maxHitPoints)
 end
-
--- handler params: Player_player, string_keyCode
-clientPlayer.bindingPressedEvent:Connect(onBindingPressed)
-
--- handler params: Player_player, string_keyCode
-clientPlayer.bindingReleasedEvent:Connect(onBindingReleased)
 
 -- handler params: Player_player, string_resourceName, integer_newTotal
 clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
@@ -330,10 +267,9 @@ clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
 -- handler params: Player_player, Damage_damage
 clientPlayer.damagedEvent:Connect(updateHitPoints)
 
--- handler params: Player_player, string_action, value_value
-Input.actionPressedEvent:Connect(onActionPressed)
-
-Events.Connect("ShowCursor", showCursor)
-Events.Connect("HideCursor", hideCursor)
 Events.Connect("FlyupText", Utils.showFlyupText)
 Events.Connect("RedrawHUD", redrawHUD)
+
+Task.Wait(0.1)
+
+Events.Broadcast("ScriptLoaded")
