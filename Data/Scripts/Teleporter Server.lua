@@ -8,6 +8,8 @@ function teleport(thisTrigger, other)
   local telePos = DESTINATION:GetWorldPosition()
   local teleRot = DESTINATION:GetWorldRotation() * Rotation.New(0, 0, 1)
 
+  print("WOW!")
+
   other:SetWorldPosition(telePos)
   other:SetWorldRotation(teleRot)
 end
@@ -18,4 +20,10 @@ if trigger.isInteractable then
 else
   -- handler params: Trigger_trigger, Object_other
   trigger.beginOverlapEvent:Connect(teleport)
+
+  Task.Wait(1)
+
+  for _, other in ipairs(trigger:GetOverlappingObjects()) do
+    teleport(trigger, other)
+  end
 end

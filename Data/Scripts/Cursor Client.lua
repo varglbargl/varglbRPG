@@ -36,10 +36,6 @@ function onActionPressed(player, actionName)
     CURSOR.rotationAngle = -9
   end
 
-  if actionName == "Primary Ability" or actionName == "Secondary Ability" then
-    CURSOR.rotationAngle = 0
-  end
-
   if not clientPlayer.isSpawned then return end
 
   if actionName == "Show/Hide Cursor" then
@@ -51,8 +47,19 @@ function onActionPressed(player, actionName)
   end
 end
 
+function onActionReleased(player, actionName)
+  if player ~= clientPlayer then return end
+
+  if actionName == "Primary Ability" or actionName == "Secondary Ability" then
+    CURSOR.rotationAngle = 0
+  end
+end
+
 -- handler params: Player_player, string_action, value_value
 Input.actionPressedEvent:Connect(onActionPressed)
+
+-- handler params: Player_player, string_action, value_value
+Input.actionReleasedEvent:Connect(onActionReleased)
 
 Events.Connect("ShowCursor", showCursor)
 Events.Connect("HideCursor", hideCursor)

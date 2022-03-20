@@ -1,35 +1,18 @@
 local MENU = script:GetCustomProperty("Menu"):WaitForObject()
-local CHARACTER = script:GetCustomProperty("Character"):WaitForObject()
-local ADVENTURE = script:GetCustomProperty("Adventure"):WaitForObject()
-local SETTINGS = script:GetCustomProperty("Settings"):WaitForObject()
-local SHOP = script:GetCustomProperty("Shop"):WaitForObject()
 local CLOCK = script:GetCustomProperty("Clock"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local openScreens = {}
 
+-- Settings
+local timeFormat = "%I:%M%p"
+
 MENU.opacity = 0.4
 
 function Tick()
-  CLOCK.text = os.date("%I:%M%p")
+  CLOCK.text = os.date(timeFormat)
 
   Task.Wait(1)
-end
-
-function onCharacterButtonClicked()
-  Events.Broadcast("ToggleCharacterScreen")
-
-  if openScreens["Adventure"] then
-    Events.Broadcast("ToggleAdventureScreen")
-  end
-end
-
-function onAdventureButtonClicked()
-  Events.Broadcast("ToggleAdventureScreen")
-
-  if openScreens["Character"] then
-    Events.Broadcast("ToggleCharacterScreen")
-  end
 end
 
 function onEscape(thisPlayer, params)
@@ -101,9 +84,6 @@ function onBindingPressed(thisPlayer, actionName)
     Events.Broadcast("ToggleMiniQuestLog")
   end
 end
-
-CHARACTER.clickedEvent:Connect(onCharacterButtonClicked)
-ADVENTURE.clickedEvent:Connect(onAdventureButtonClicked)
 
 -- handler params: Player_player, string_action, value_value
 Input.actionPressedEvent:Connect(onBindingPressed)

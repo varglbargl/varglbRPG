@@ -8,7 +8,6 @@ local ADVENTURE_SCREEN = script:GetCustomProperty("AdventureScreen"):WaitForObje
 local QUEST_LOG = script:GetCustomProperty("QuestLog"):WaitForObject()
 local MINI_QUEST_LOG = script:GetCustomProperty("MiniQuestLog"):WaitForObject()
 local MINI_DISPLAY = script:GetCustomProperty("MiniDisplay"):WaitForObject()
-local MINI_CLOSE = script:GetCustomProperty("MiniClose"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
 local isOpen = false
@@ -17,6 +16,7 @@ local miniOpen = false
 local questLog = {}
 local questListings = {}
 local miniListings = MINI_QUEST_LOG:FindDescendantsByName("Listing")
+local miniClose = MINI_QUEST_LOG:FindDescendantsByType("UIButton")
 
 ADVENTURE_SCREEN.visibility = Visibility.FORCE_OFF
 MINI_DISPLAY.visibility = Visibility.FORCE_OFF
@@ -121,18 +121,15 @@ function toggleMiniQuestLog()
   Utils.playSoundEffect(OPEN_CLOSE_SFX, {pitch = 900, volume = 0.3})
 
   if miniOpen then
-    MINI_CLOSE.text = "+"
+    miniClose.text = "+"
     MINI_DISPLAY.visibility = Visibility.FORCE_OFF
     miniOpen = false
   else
-    MINI_CLOSE.text = "-"
+    miniClose.text = "-"
     MINI_DISPLAY.visibility = Visibility.INHERIT
     miniOpen = true
   end
 end
-
--- handler params: UIButton_button
-MINI_CLOSE.clickedEvent:Connect(toggleMiniQuestLog)
 
 Events.Connect("CloseAllScreens", closeAdventureScreen)
 Events.Connect("ToggleAdventureScreen", toggleAdventureScreen)

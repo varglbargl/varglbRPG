@@ -8,6 +8,19 @@ local maxLevel = 60
 local damagedEvents = {}
 local diedEvents = {}
 
+function throttleHPRegen(player, secs)
+  if player.serverUserData["RecentlyDamaged"] then
+    player.serverUserData["RecentlyDamaged"]:Cancel()
+  end
+
+  player.serverUserData["RecentlyDamaged"] = Task.Spawn(function()
+    Task.Wait(secs)
+    if not Object.IsValid(player) then return end
+
+    player.serverUserData["RecentlyDamaged"] = nil
+  end)
+end
+
 function onPlayerDamaged(player, damage)
   if damage.amount <= 0 then return end
 
@@ -16,9 +29,9 @@ function onPlayerDamaged(player, damage)
     player.animationStance = player.serverUserData["IdleAnimation"]
   end
 
-  player.serverUserData["RecentlyDamaged"] = Task.Spawn(function()
-    Task.Wait(5)
-  end)
+  player:SetResource("HitPoints", player.hitPoints)
+
+  throttleHPRegen(player, 5)
 end
 
 function onPlayerDied(player)
@@ -48,10 +61,8 @@ function initResources(player)
     player:SetResource("Experience", save.xps[class] or 0)
     player:SetResource("Gold", save.gp)
   else
-    yourLevel = 1
-    player:SetResource("Level", yourLevel)
-    player:SetResource("Experience", 0)
-    player:SetResource("Gold", 0)
+    player:TransferToScene("Start")
+    return
   end
 
   if class == 3 then
@@ -77,12 +88,11 @@ function initResources(player)
   player.maxHitPoints = math.floor(35 + yourGrit * 2)
   player.hitPoints = player.maxHitPoints
 
+  player:SetResource("HitPoints", player.hitPoints)
+  player:SetResource("MaxHitPoints", player.maxHitPoints)
+
   local maxStam = player:SetResource("MaxStamina", math.floor(35 + yourSpit / 12 + yourLevel / 2))
   player:SetResource("Stamina", maxStam)
-
-  player.serverUserData["RecentlyDamaged"] = Task.Spawn(function()
-    Task.Wait(1)
-  end)
 
   --[[ DEBUG!!
 
@@ -107,7 +117,9 @@ function initResources(player)
         end
       end
     end)
-  end ]]--
+  end
+
+  DEBUG!! ]]--
 
   Task.Spawn(function() resourceTicker(player) end)
 
@@ -253,11 +265,13 @@ function applyStatsWithGear(player)
 
   local newGrit = player:SetResource("Grit", baseStats.grit + bonusStats.grit)
   player:SetResource("Wit", baseStats.wit + bonusStats.wit)
-  player:SetResource("Spit", baseStats.spit + bonusStats.spit)
+  local newSpit = player:SetResource("Spit", baseStats.spit + bonusStats.spit)
 
   player.maxHitPoints = math.floor(35 + newGrit * 2) + bonusStats.health
+  player:SetResource("MaxHitPoints", player.maxHitPoints)
+  player:SetResource("HitPoints", player.hitPoints)
 
-  local maxStamina = math.floor(45 + (baseStats.spit + bonusStats.spit) / 12 + player:GetResource("Level") / 2) + bonusStats.stamina
+  local maxStamina = math.floor(45 + newSpit / 12 + player:GetResource("Level") / 2) + bonusStats.stamina
   player:SetResource("MaxStamina", maxStamina)
   player:SetResource("Stamina", math.min(maxStamina, player:GetResource("Stamina")))
 end
@@ -265,12 +279,12 @@ end
 function resourceTicker(player)
   if not Object.IsValid(player) then return end
 
-  if player.hitPoints < player.maxHitPoints and player.serverUserData["RecentlyDamaged"] and player.serverUserData["RecentlyDamaged"]:GetStatus() == TaskStatus.UNINITIALIZED then
-    local regen = Damage.New(-math.floor(player:GetResource("Grit") / 5 + 1.5))
+  if player.hitPoints < player.maxHitPoints and not player.serverUserData["RecentlyDamaged"] then
+    local regen = Damage.New(-math.floor(player.maxHitPoints / 20))
     player:ApplyDamage(regen)
   end
 
-  if player.serverUserData["Gliding"] or (player.isAccelerating and player:IsBindingPressed("ability_feet") and not player.isSwimming) then
+  if player.serverUserData["Gliding"] or (player.isAccelerating and Input.IsActionHeld(player, "Sprint") and not player.isSwimming) then
     player:RemoveResource("Stamina", 5)
 
     if player:GetResource("Stamina") == 0 or player.isSwimming then

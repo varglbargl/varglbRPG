@@ -5,7 +5,7 @@ local FAERIE_CIRCLE = script:GetCustomProperty("FaerieCircle")
 
 local Wildermagic = {}
 
-local chance = 0.1
+local chance = 0.12
 
 local function pointAtDistance(where, distance)
   local there = where + Rotation.New(0, 0, math.random(1, 360)) * Vector3.FORWARD * distance
@@ -32,16 +32,6 @@ Wildermagic.spells = {
     return "Faeries"
   end,
 
-  -- Pain
-  function(player)
-    local damage = Utils.rollDamage(1, player.maxHitPoints / 10)
-    damage.reason = DamageReason.COMBAT
-
-    player:ApplyDamage(damage)
-
-    return "Pain"
-  end,
-
   -- Riches
   function(player)
 
@@ -52,7 +42,7 @@ Wildermagic.spells = {
   -- Travels
   function(player)
 
-    player:AddImpulse(Vector3.UP * 120000)
+    player:AddImpulse(Vector3.UP * math.random(50000, 150000))
     return "Travels"
   end,
 

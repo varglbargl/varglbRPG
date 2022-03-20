@@ -44,39 +44,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16655230531013896977
-  Name: "Japanese Frame 005"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Japan_Frame_005"
-  }
-}
-Assets {
   Id: 16484616357286133047
   Name: "Fantasy Jewelry 007"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Jewelry_007"
-  }
-}
-Assets {
-  Id: 16443964380187797192
-  Name: "Snake"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Icon_Snake"
-  }
-}
-Assets {
-  Id: 15455932825128854077
-  Name: "Frame Beveled 011"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid8px_028"
   }
 }
 Assets {
@@ -224,15 +197,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10966882499655054639
-  Name: "Emblem 1"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Japan_Icon_014"
-  }
-}
-Assets {
   Id: 10803708440821044197
   Name: "Fantasy Ability Purple 012"
   PlatformAssetType: 9
@@ -251,30 +215,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10277272220964042399
-  Name: "Tiled Generic 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_TiledBG_027"
-  }
-}
-Assets {
   Id: 10272898153912977476
   Name: "Frame Outlined Thick 011"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameFlat_028"
-  }
-}
-Assets {
-  Id: 9636939589151992785
-  Name: "Tiled Moss 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_TiledBG_048"
   }
 }
 Assets {
@@ -377,30 +323,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6648649099365236499
-  Name: "Bow"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Icon_Bow"
-  }
-}
-Assets {
   Id: 6451587298495240638
   Name: "Survival Food Bottle 006"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Survival_Food_012"
-  }
-}
-Assets {
-  Id: 6078259628298305548
-  Name: "Icon Fist"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Fist"
   }
 }
 Assets {
@@ -554,24 +482,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_ambience_rural_designed_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 3463536234595374768
-  Name: "BG Gradient 011"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_028"
-  }
-}
-Assets {
-  Id: 2736355639111929687
-  Name: "Icon Random"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Random"
   }
 }
 Assets {

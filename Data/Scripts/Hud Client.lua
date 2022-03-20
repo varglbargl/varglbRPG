@@ -46,7 +46,13 @@ function onResourceChanged(player, resourceName, newTotal)
     STAMINA_NUMBERS.text = Utils.formatInt(newTotal).." / "..Utils.formatInt(maxStam)
 	elseif resourceName == "Experience" then
     local myLevel = player:GetResource("Level")
-    if not myLevel then return end
+    local waitTime = 0
+
+    while myLevel == 0 do
+      waitTime = waitTime + Task.Wait(0.1)
+
+      if waitTime > 5 then return end
+    end
 
     local nextLevel = Utils.experienceToNextLevel(myLevel)
 		XP_BAR.width = math.floor(newTotal / nextLevel * barWidth + 0.5)
@@ -54,6 +60,8 @@ function onResourceChanged(player, resourceName, newTotal)
     XP_NUMBERS.text = Utils.formatInt(newTotal).." / "..Utils.formatInt(nextLevel)
 	elseif resourceName == "Level" then
     LEVEL_NUMBER.text = Utils.formatInt(newTotal)
+    updateHitPoints()
+  elseif resourceName == "HitPoints" or resourceName == "MaxHitPoints" then
     updateHitPoints()
 	end
 end
@@ -75,7 +83,7 @@ function checkAbilitiesChanged(oldAbils, newAbils)
 end
 
 function onAbilityInterrupted(thisAbility)
-  print(thisAbility.actionName.." interrupted!")
+  if thisAbility:GetCurrentPhase() ~= AbilityPhase.CAST and thisAbility:GetCurrentPhase() ~= AbilityPhase.EXECUTE then return end
 
   if thisAbility.actionName == "Primary Ability" then
     if primaryTickTask then primaryTickTask:Cancel() end
@@ -263,9 +271,6 @@ end
 
 -- handler params: Player_player, string_resourceName, integer_newTotal
 clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
-
--- handler params: Player_player, Damage_damage
-clientPlayer.damagedEvent:Connect(updateHitPoints)
 
 Events.Connect("FlyupText", Utils.showFlyupText)
 Events.Connect("RedrawHUD", redrawHUD)

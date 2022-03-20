@@ -40,14 +40,13 @@ Objects {
   Name: "Tree"
   Transform {
     Location {
-      Z: -303.483612
     }
     Rotation {
     }
     Scale {
-      X: 0.276148707
-      Y: 0.276148707
-      Z: 0.276148707
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 4781671109827199097
@@ -66,13 +65,13 @@ Objects {
   ChildIds: 13413197550039570008
   ChildIds: 10678820357594032206
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -89,14 +88,14 @@ Objects {
   Name: "Lens - Half"
   Transform {
     Location {
-      Z: -505.905762
+      Z: -443.188843
     }
     Rotation {
     }
     Scale {
-      X: 72.6321564
-      Y: 72.6321564
-      Z: 26.0412655
+      X: 20.0572758
+      Y: 20.0572758
+      Z: 7.19126177
     }
   }
   ParentId: 15318112048879438860
@@ -154,14 +153,14 @@ Objects {
   Name: "2D Basic Shapes Decal"
   Transform {
     Location {
-      Z: -303.490021
+      Z: -387.292
     }
     Rotation {
     }
     Scale {
-      X: 58.9408073
-      Y: 58.9408073
-      Z: 5.48027468
+      X: 16.2764282
+      Y: 16.2764282
+      Z: 1.51337075
     }
   }
   ParentId: 15318112048879438860
@@ -214,16 +213,17 @@ Objects {
   Name: "Big Tree"
   Transform {
     Location {
-      X: 31.703125
-      Y: -269.316406
+      X: 8.75477695
+      Y: -74.371376
+      Z: -303.483612
     }
     Rotation {
-      Yaw: 25.7147865
+      Yaw: 25.7147636
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.276148707
+      Y: 0.276148707
+      Z: 0.276148707
     }
   }
   ParentId: 15318112048879438860
@@ -9244,17 +9244,17 @@ Objects {
   Name: "Bugs"
   Transform {
     Location {
-      X: 188.460938
-      Y: -59.8085938
-      Z: 36.3994141
+      X: 52.0432434
+      Y: -16.5160656
+      Z: -293.431946
     }
     Rotation {
-      Yaw: 25.7147865
+      Yaw: 25.7147636
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.276148707
+      Y: 0.276148707
+      Z: 0.276148707
     }
   }
   ParentId: 15318112048879438860
@@ -35487,19 +35487,19 @@ Objects {
   Name: "Rock Flat 02"
   Transform {
     Location {
-      X: 704.699219
-      Y: 429.642578
-      Z: 187.27832
+      X: 194.601776
+      Y: 118.645241
+      Z: -251.766937
     }
     Rotation {
-      Pitch: -69.9447861
-      Yaw: -169.854965
-      Roll: 20.0990257
+      Pitch: -69.9447937
+      Yaw: -169.85495
+      Roll: 20.0990295
     }
     Scale {
-      X: 2.5159781
-      Y: 0.991548538
-      Z: 2.20112467
+      X: 0.694784105
+      Y: 0.273814857
+      Z: 0.607837737
     }
   }
   ParentId: 15318112048879438860
@@ -35548,19 +35548,19 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: 61.7109375
-      Y: 1028.69531
-      Z: 187.27832
+      X: 17.0413952
+      Y: 284.072876
+      Z: -251.766937
     }
     Rotation {
       Pitch: -74.0556641
-      Yaw: -66.6490936
-      Roll: -31.1601067
+      Yaw: -66.6491699
+      Roll: -31.1601257
     }
     Scale {
-      X: 2.29040885
-      Y: 1.20418048
-      Z: 1.9172008
+      X: 0.632493436
+      Y: 0.332532883
+      Z: 0.529432535
     }
   }
   ParentId: 15318112048879438860
@@ -35609,19 +35609,19 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: 1212.67188
-      Y: 1035.47852
-      Z: 187.27832
+      X: 334.877777
+      Y: 285.946045
+      Z: -251.766937
     }
     Rotation {
-      Pitch: -51.7590065
-      Yaw: -122.320595
-      Roll: -21.5427647
+      Pitch: -51.7590027
+      Yaw: -122.320618
+      Roll: -21.5427246
     }
     Scale {
-      X: 3.51495767
-      Y: 2.19051838
-      Z: 2.94223022
+      X: 0.970651031
+      Y: 0.604908824
+      Z: 0.812493086
     }
   }
   ParentId: 15318112048879438860
@@ -35670,19 +35670,19 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: -1617.90234
-      Y: 653.433594
-      Z: 121.312988
+      X: -446.781647
+      Y: 180.444839
+      Z: -269.983185
     }
     Rotation {
       Pitch: -34.5727539
-      Yaw: -12.0514812
-      Roll: -73.6841583
+      Yaw: -12.0515137
+      Roll: -73.6841431
     }
     Scale {
-      X: 2.84523416
-      Y: 1.40467548
-      Z: 3.20174265
+      X: 0.785707712
+      Y: 0.387899309
+      Z: 0.884157121
     }
   }
   ParentId: 15318112048879438860
@@ -35731,19 +35731,19 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: -692.410156
-      Y: -624.722656
-      Z: 336.978516
+      X: -191.208176
+      Y: -172.516357
+      Z: -210.427429
     }
     Rotation {
-      Pitch: -66.7535553
-      Yaw: 52.3313675
-      Roll: -120.463081
+      Pitch: -66.75354
+      Yaw: 52.3313904
+      Roll: -120.463074
     }
     Scale {
-      X: 2.13514662
-      Y: 1.14648294
-      Z: 1.58175313
+      X: 0.589617968
+      Y: 0.316599786
+      Z: 0.436799079
     }
   }
   ParentId: 15318112048879438860
@@ -35792,19 +35792,19 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: -1254.89844
-      Y: -449.15625
-      Z: 336.978516
+      X: -346.538574
+      Y: -124.03392
+      Z: -210.427429
     }
     Rotation {
-      Pitch: -50.8331795
-      Yaw: 6.61601877
+      Pitch: -50.8331909
+      Yaw: 6.61602259
       Roll: -169.511795
     }
     Scale {
-      X: 2.44240785
-      Y: 1.40465665
-      Z: 3.20176363
+      X: 0.674467742
+      Y: 0.387894124
+      Z: 0.884162903
     }
   }
   ParentId: 15318112048879438860
@@ -35853,19 +35853,19 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: -693.398438
-      Y: 820.845703
-      Z: 336.978516
+      X: -191.481079
+      Y: 226.675476
+      Z: -210.427429
     }
     Rotation {
-      Pitch: -60.629467
-      Yaw: -44.8516426
-      Roll: 1.24883807
+      Pitch: -60.6294556
+      Yaw: -44.8516235
+      Roll: 1.24884152
     }
     Scale {
-      X: 3.45869493
-      Y: 1.98913515
-      Z: 4.53401899
+      X: 0.955114126
+      Y: 0.549297094
+      Z: 1.25206351
     }
   }
   ParentId: 15318112048879438860
@@ -35914,19 +35914,19 @@ Objects {
   Name: "Rock Flat 02"
   Transform {
     Location {
-      X: 11.9492188
-      Y: -1800.85742
-      Z: 285.630371
+      X: 3.2997613
+      Y: -497.304443
+      Z: -224.607147
     }
     Rotation {
       Pitch: -52.4793091
-      Yaw: 85.6529922
-      Roll: 73.5464325
+      Yaw: 85.6529846
+      Roll: 73.5464096
     }
     Scale {
-      X: 4.03482914
-      Y: 2.32047606
-      Z: 4.20860291
+      X: 1.11421287
+      Y: 0.640796483
+      Z: 1.16220021
     }
   }
   ParentId: 15318112048879438860
@@ -35975,19 +35975,19 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: 1069.06641
-      Y: -841.886719
-      Z: 141.38916
+      X: 295.221313
+      Y: -232.485931
+      Z: -264.439178
     }
     Rotation {
       Pitch: 23.3128071
       Yaw: 174.686
-      Roll: 33.3413391
+      Roll: 33.3413658
     }
     Scale {
-      X: 4.55840111
-      Y: 4.55840063
-      Z: 20.5412025
+      X: 1.25879657
+      Y: 1.25879645
+      Z: 5.6724267
     }
   }
   ParentId: 15318112048879438860
@@ -36036,19 +36036,19 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: 978.300781
-      Y: 77.6621094
-      Z: 187.27832
+      X: 270.156494
+      Y: 21.446291
+      Z: -251.766937
     }
     Rotation {
-      Pitch: -50.0478821
-      Yaw: -167.599411
-      Roll: -99.9190292
+      Pitch: -50.0478516
+      Yaw: -167.599365
+      Roll: -99.9190369
     }
     Scale {
-      X: 3.57231569
-      Y: 1.50916767
-      Z: 1.71415567
+      X: 0.986490369
+      Y: 0.416754693
+      Z: 0.47336188
     }
   }
   ParentId: 15318112048879438860
@@ -36114,6 +36114,7 @@ Objects {
   ChildIds: 10475168176091243171
   ChildIds: 4622246504958195141
   ChildIds: 2248108103292797375
+  ChildIds: 2439252887629164736
   ChildIds: 14281710747326614056
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36180,6 +36181,42 @@ Objects {
   }
 }
 Objects {
+  Id: 2439252887629164736
+  Name: "Inventory Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15674090404703776058
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17143608265961447241
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
   Id: 2248108103292797375
   Name: "Class Picker Server"
   Transform {
@@ -36194,6 +36231,8 @@ Objects {
     }
   }
   ParentId: 15674090404703776058
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -39085,10 +39124,10 @@ Objects {
   ChildIds: 18204253629051106818
   ChildIds: 2604664961227461367
   ChildIds: 6444022564052826625
+  ChildIds: 2419149343337658235
   ChildIds: 18269773188061671757
   ChildIds: 10813526197158598396
   ChildIds: 13664948813906028669
-  ChildIds: 2419149343337658235
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -39117,88 +39156,6 @@ Objects {
       SelfAnchor {
         Anchor {
           Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 2419149343337658235
-  Name: "Class Name"
-  Transform {
-    Location {
-      X: -3424.99438
-      Y: -2045.00073
-      Z: 250
-    }
-    Rotation {
-      Yaw: 4.09811255e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16055991377237855065
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "Level 1"
-      Color {
-        R: 0.9
-        G: 0.809999943
-        B: 0.719999909
-        A: 1
-      }
-      Size: 28
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      Font {
-        Id: 12536183462758892499
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-        Y: 2
-      }
-      OutlineColor {
-        A: 1
-      }
-      OutlineSize: 2
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomcenter"
         }
       }
       TargetAnchor {
@@ -40429,6 +40386,88 @@ Objects {
       SelfAnchor {
         Anchor {
           Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2419149343337658235
+  Name: "Class Level"
+  Transform {
+    Location {
+      X: -3424.99438
+      Y: -2045.00073
+      Z: 250
+    }
+    Rotation {
+      Yaw: 4.09811255e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16055991377237855065
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Level 1"
+      Color {
+        R: 0.9
+        G: 0.809999943
+        B: 0.719999909
+        A: 1
+      }
+      Size: 28
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      Font {
+        Id: 12536183462758892499
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 2
+      }
+      OutlineColor {
+        A: 1
+      }
+      OutlineSize: 2
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
         }
       }
       TargetAnchor {
@@ -42166,6 +42205,7 @@ Objects {
   ChildIds: 12464252016449020762
   ChildIds: 238361046668594939
   ChildIds: 15533029074833966788
+  ChildIds: 549057345442900489
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -42200,6 +42240,184 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:middleright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 549057345442900489
+  Name: "Reset Save"
+  Transform {
+    Location {
+      X: -54592.1797
+      Y: 13077.9316
+      Z: -855
+    }
+    Rotation {
+      Yaw: 134.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 203900486587211360
+  ChildIds: 14109930615329739181
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 250
+    Height: 75
+    UIY: 25
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        A: 0.1
+      }
+      HoveredColor {
+        R: 1
+        A: 1
+      }
+      PressedColor {
+        R: 0.25
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        A: 1
+      }
+      Brush {
+        Id: 3463536234595374768
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+      Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 14109930615329739181
+  Name: "UI Text Box"
+  Transform {
+    Location {
+      X: 1.41421366
+      Y: 2.82842731
+      Z: -3
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 549057345442900489
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -40
+    Height: -20
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "RESET SAVE"
+      Color {
+        A: 1
+      }
+      Size: 48
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      Font {
+        Id: 4489225536320255161
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      ScaleToFit: true
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -46568,6 +46786,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ClassLevel"
+      ObjectReference {
+        SelfId: 2419149343337658235
+      }
+    }
+    Overrides {
       Name: "cs:ClassDescription"
       ObjectReference {
         SelfId: 18269773188061671757
@@ -46596,6 +46820,16 @@ Objects {
       AssetReference {
         Id: 11130109947025433005
       }
+    }
+    Overrides {
+      Name: "cs:ResetSave"
+      ObjectReference {
+        SelfId: 549057345442900489
+      }
+    }
+    Overrides {
+      Name: "cs:ResetSave:subcategory"
+      String: "DangerZone"
     }
   }
   Collidable_v2 {
@@ -46705,14 +46939,12 @@ Objects {
   Name: "Class Select Menu Camera"
   Transform {
     Location {
-      X: 1500
-      Y: 2
-      Z: 700
+      X: 1350
+      Z: 650
     }
     Rotation {
-      Pitch: -17
+      Pitch: -12
       Yaw: 180
-      Roll: 3.08026245e-07
     }
     Scale {
       X: 1

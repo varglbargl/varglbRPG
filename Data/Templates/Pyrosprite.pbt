@@ -458,7 +458,7 @@ Assets {
       }
       Objects {
         Id: 1494482017119174380
-        Name: "Head"
+        Name: "head"
         Transform {
           Location {
             X: 26.2529297
@@ -538,8 +538,8 @@ Assets {
             LocalLight {
               AttenuationRadius: 400
               PointLight {
-                SourceRadius: 20
-                SoftSourceRadius: 20
+                SourceRadius: 5
+                SoftSourceRadius: 15
                 FallOffExponent: 8
                 UseFallOffExponent: true
               }
@@ -758,7 +758,7 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: 32.5565338
+            Pitch: 32.557
           }
           Scale {
             X: 1

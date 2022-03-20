@@ -40,3 +40,4 @@ luac.out
 *.hex
 
 Data/Scripts/.vscode/settings.json
+Temp/Storage/

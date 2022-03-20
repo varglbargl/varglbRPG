@@ -339,13 +339,15 @@ function Loot.findItemByName(itemName)
 end
 
 function Loot.giveToPlayer(player, item)
-  if Environment.IsServer() then
-    Events.Broadcast("AddToInventory", player, item)
-  end
+  if not Object.IsValid(player) then return end
+
+  Events.Broadcast("AddToInventory", player, item)
 end
 
-function Loot.giveStarterGear(player)
-  local class = player:GetResource("Class")
+function Loot.giveStarterGear(player, class)
+  if not Object.IsValid(player) then return end
+
+  class = class or player:GetResource("Class")
   local classStats = Utils.classStats(class)
 
   for _, itemName in ipairs(classStats.starterGear) do

@@ -47,9 +47,6 @@ Assets {
         Name: "Ranged Weapon Server"
         Transform {
           Location {
-            X: -1
-            Y: 1
-            Z: 5
           }
           Rotation {
           }

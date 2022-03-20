@@ -1,4 +1,5 @@
 local Utils = require(script:GetCustomProperty("Utils"))
+local Combat = require(script:GetCustomProperty("Combat"))
 
 local NPC_NAMEPLATE = script:GetCustomProperty("NPCNameplate")
 local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
@@ -70,38 +71,36 @@ function updateNameplates()
 end
 
 function Tick()
-  local lookRotation = clientPlayer:GetLookWorldRotation()
-  local cameraOffset = clientPlayer:GetDefaultCamera():GetPositionOffset()
-  local lookForward = lookRotation * Vector3.FORWARD
-  local cameraPivotPosition = clientPlayer:GetWorldPosition() - lookForward + lookRotation * cameraOffset + Vector3.UP * 74
-  local targetPosition = cameraPivotPosition + lookForward * 5000
-  -- local hitResults = World.SpherecastAll(cameraPivotPosition, targetPosition, 100, {ignorePlayers = true})
-  local hitResult = World.Spherecast(cameraPivotPosition, targetPosition, 50, {ignorePlayers = true})
+  local playerPos = clientPlayer:GetWorldPosition() + Vector3.UP * 75
+  local abilityTarget = Combat.getRangedAbilityTarget(playerPos, clientPlayer:GetLookWorldRotation() * Vector3.FORWARD)
+  local targetObj = abilityTarget.hitObject
 
-  -- for _, hitResult in ipairs(hitResults) do
-    if hitResult and hitResult.other and hitResult.other.clientUserData["Enemy"] then
-      local target = hitResult.other.clientUserData["Enemy"]
+  if targetObj then
+    local enemy = targetObj:FindAncestorByType("DamageableObject")
 
+    if Object.IsValid(enemy) then
       CROSSHAIR:SetColor(Color.RED)
 
-      if targetData[target] then
-        targetData[target].lastSeen = math.max(time(), targetData[target].lastSeen)
+      if targetData[enemy] then
+        targetData[enemy].lastSeen = math.max(time(), targetData[enemy].lastSeen)
       else
-        initNameplate(target, hitResult.other)
+        initNameplate(enemy, targetObj)
       end
     else
       CROSSHAIR:SetColor(halfWhite)
     end
-  -- end
+  else
+    CROSSHAIR:SetColor(halfWhite)
+  end
 
   updateNameplates()
 end
 
-function showNameplate(target)
+function showNameplate(target, hitbox)
   if targetData[target] then
     targetData[target].lastSeen = math.max(time() + 3, targetData[target].lastSeen)
   else
-    initNameplate(target, target:FindChildByType("CoreMesh"))
+    initNameplate(target, hitbox or target:FindChildByType("CoreMesh"))
   end
 end
 

@@ -117,7 +117,7 @@ function initInventory(player)
             end
 
             addAbilities(equipment, enchantedItem, slot)
-            checkDualWeilding(player)
+            checkDualWielding(player)
 
             equipment:Equip(player)
           end
@@ -174,17 +174,17 @@ function addAbilities(equipment, item, slot)
   item.abilities = addedAbilities
 end
 
-function checkDualWeilding(player)
+function checkDualWielding(player)
   local primaryGear = player.serverUserData["Gear"].primary
   local secondaryGear = player.serverUserData["Gear"].secondary
 
   if primaryGear and secondaryGear and primaryGear.animation == secondaryGear.animation then
-    player.serverUserData["DualWeilding"] = {
+    player.serverUserData["DualWielding"] = {
       primary = primaryGear.abilities[1],
       secondary = secondaryGear.abilities[1]
     }
   else
-    player.serverUserData["DualWeilding"] = nil
+    player.serverUserData["DualWielding"] = nil
   end
 end
 
@@ -222,61 +222,55 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
   local uItem = player.serverUserData["Gear"][gearSlot]
   local eItem = player.serverUserData["Inventory"][inventorySlot]
 
+  if uItem and eItem then
+    return equipToPlayer(player, gearSlot, inventorySlot)
+  end
+
   if not uItem then return end
-  if eItem and uItem.socket ~= eItem.socket then return end
+
+  print("I very much want to unequip "..uItem.name..".")
 
   player.serverUserData["Gear"][gearSlot] = nil
 
-  -- print("I very much want to unequip "..uItem.name..".")
+  Utils.updatePrivateNetworkedData(player, "Gear")
+  Events.Broadcast("EquipmentChanged", player)
 
-  for _, gear in ipairs(player:GetEquipment()) do
-    if gear.id == uItem.equipmentId then
+  for _, eqp in ipairs(player:GetEquipment()) do
+    if eqp.id == uItem.equipmentId then
+      if Object.IsValid(eqp) then eqp:Unequip() end
+      if Object.IsValid(eqp) then eqp:Destroy() end
 
-      if Object.IsValid(gear) then gear:Unequip() end
-      if Object.IsValid(gear) then gear:Destroy() end
-
-      -- print("I would like to add "..uItem.name.." to my inventory")
+      checkDualWielding(player)
+      addToInventory(player, uItem, inventorySlot)
       break
     end
   end
-
-  if eItem then
-    equipToPlayer(player, gearSlot, inventorySlot)
-  end
-
-  Task.Wait()
-  if not Object.IsValid(player) then return end
-
-  checkDualWeilding(player)
-
-  Utils.updatePrivateNetworkedData(player, "Gear")
-  Events.Broadcast("EquipmentChanged", player)
-  addToInventory(player, uItem, inventorySlot)
 end
 
 function equipToPlayer(player, gearSlot, inventorySlot)
   if not Object.IsValid(player) then return end
 
-  local item = player.serverUserData["Inventory"][inventorySlot]
+  local eItem = player.serverUserData["Inventory"][inventorySlot]
+  local uItem = player.serverUserData["Gear"][gearSlot]
 
   -- print("Equipping "..item.name.." to "..player.name.."...")
 
-  if item then
+  if eItem then
     player.serverUserData["Inventory"][inventorySlot] = nil
     local equipment = nil
 
-    if item.templateId then
-      equipment = World.SpawnAsset(item.templateId, {position = Vector3.UP * -10000, name = item.name})
+    if eItem.templateId then
+      equipment = World.SpawnAsset(eItem.templateId, {position = Vector3.UP * -10000, name = eItem.name})
 
-      item.equipmentId = equipment.id
+      eItem.equipmentId = equipment.id
 
-      if item.socket == "main-hand" then
+      if eItem.socket == "main-hand" then
         equipment.socket = "right_prop"
 
-      elseif item.socket == "off-hand" then
+      elseif eItem.socket == "off-hand" then
         equipment.socket = "left_prop"
 
-      elseif item.socket == "1-hand" then
+      elseif eItem.socket == "1-hand" then
         if gearSlot == "primary" then
           equipment.socket = "right_prop"
 
@@ -285,16 +279,17 @@ function equipToPlayer(player, gearSlot, inventorySlot)
         end
       end
 
-      addAbilities(equipment, item, gearSlot)
+      addAbilities(equipment, eItem, gearSlot)
     end
 
-    if player.serverUserData["Gear"][gearSlot] then
+    if uItem then
       unequipFromPlayer(player, gearSlot, inventorySlot)
+      addToInventory(player, uItem, inventorySlot)
     else
       player.serverUserData["Inventory"].full = false
     end
 
-    player.serverUserData["Gear"][gearSlot] = item
+    player.serverUserData["Gear"][gearSlot] = eItem
     Utils.updatePrivateNetworkedData(player, "Gear")
 
     Task.Wait()
@@ -304,7 +299,7 @@ function equipToPlayer(player, gearSlot, inventorySlot)
       equipment:Equip(player)
     end
 
-    checkDualWeilding(player)
+    checkDualWielding(player)
 
     Utils.updatePrivateNetworkedData(player, "Inventory")
     Events.Broadcast("EquipmentChanged", player)

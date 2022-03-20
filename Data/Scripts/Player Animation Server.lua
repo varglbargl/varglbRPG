@@ -1,4 +1,10 @@
+local animationEvents = {}
+
 function updateIdle(player, stance)
+  if player.animationStance == player.serverUserData["IdleAnimation"] then
+    player.animationStance = stance
+  end
+
   player.serverUserData["IdleAnimation"] = stance
 end
 
@@ -33,18 +39,30 @@ function onPlayerJoined(player)
 
   player.serverUserData["IdleAnimation"] = "unarmed_stance"
 
-  -- handler params: Player_player, Damage_damage
-  player.damagedEvent:Connect(hurtAnimation)
+  animationEvents[player] = {}
 
   -- handler params: Player_player, Damage_damage
-  player.diedEvent:Connect(deathAnimation)
+  animationEvents[player]["damaged"] = player.damagedEvent:Connect(hurtAnimation)
+
+  -- handler params: Player_player, Damage_damage
+  animationEvents[player]["died"] = player.diedEvent:Connect(deathAnimation)
 
   -- handler params: Player_player
-  player.spawnedEvent:Connect(spawnAnimation)
+  animationEvents[player]["spawned"] = player.spawnedEvent:Connect(spawnAnimation)
 end
 
+function onPlayerLeft(player)
+  for _, evt in pairs(animationEvents[player]) do
+    evt:Disconnect()
+  end
 
--- on player joined/left functions need to be defined before calling event:Connect()
+  animationEvents[player] = nil
+end
+
+-- handler params: Player_player
 Game.playerJoinedEvent:Connect(onPlayerJoined)
+
+-- handler params: Player_player
+Game.playerLeftEvent:Connect(onPlayerLeft)
 
 Events.Connect("UpdateIdleStance", updateIdle)

@@ -6,6 +6,7 @@ local scriptsToExpect = 4
 
 function waitForSpawn()
   while not clientPlayer.isSpawned do
+    print("Waiting... waiting... waiiiiiiiiitiiiiiiiiii-i-i-ing")
     Task.Wait(0.1)
   end
 
@@ -17,6 +18,7 @@ function onScriptLoaded()
 
   if scriptsLoaded >= scriptsToExpect then
     Utils.throttleToServer("ClientLoaded")
+    waitForSpawn()
   end
 end
 

@@ -1,3 +1,5 @@
+local Combat = require(script:GetCustomProperty("Combat"))
+
 local weapon = script:FindAncestorByType("Equipment")
 
 local PROJECTILE = script:GetCustomProperty("Projectile")
@@ -14,35 +16,26 @@ local unequipEvent = nil
 local destroyEvent = nil
 local executeEvents = {}
 
-function onAbilityExecute(thisAbility)
-  local waitTime = 0
-  local targetData = thisAbility:GetTargetData()
-
-  while targetData.spreadHalfAngle ~= 420 and waitTime < 3 do
-    waitTime = waitTime + Task.Wait()
-
-    targetData = thisAbility:GetTargetData()
-  end
-
-  if waitTime >= 3 then
-    warn("Timed out waiting for ability hit target...")
-    return
-  end
-
-  local attackRotation = Rotation.New(targetData:GetAimDirection(), Vector3.UP)
+function onAbilityExecute(ability)
+  local weaponPos = ability:GetWorldPosition()
   local muzzlePos = script:GetWorldPosition()
-  local targetPos = targetData:GetHitPosition()
+  local aimDirection = ability:GetTargetData():GetAimDirection()
+  local aimRotation = Rotation.New(aimDirection, Vector3.UP)
+  local abilityTarget = Combat.getRangedAbilityTarget(weaponPos, aimDirection)
+  local targetPos = abilityTarget:GetHitPosition()
+
+  ability:SetTargetData(abilityTarget)
 
   if MUZZLE_FLASH then
-    World.SpawnAsset(MUZZLE_FLASH, {position = muzzlePos, rotation = attackRotation})
+    World.SpawnAsset(MUZZLE_FLASH, {position = muzzlePos, rotation = aimRotation})
   end
 
-  local distance = (muzzlePos - targetPos).size
-  local travelTime = distance / range / 2 - waitTime
+  local distance = (weaponPos - targetPos).size
+  local travelTime = distance / range / 2
 
   if distance > 100 and PROJECTILE then
 
-    local projectile = World.SpawnAsset(PROJECTILE, {position = muzzlePos, rotation = attackRotation, lifeSpan = travelTime})
+    local projectile = World.SpawnAsset(PROJECTILE, {position = muzzlePos, rotation = aimRotation, lifeSpan = travelTime})
     projectile:MoveTo(targetPos, travelTime)
 
     if TRAIL then
@@ -54,14 +47,11 @@ function onAbilityExecute(thisAbility)
   end
 
   if IMPACT_VFX then
-    World.SpawnAsset(IMPACT_VFX, {position = targetPos, rotation = attackRotation, scale = Vector3.ONE * item.splash})
-    -- World.SpawnAsset(IMPACT_VFX, {position = targetPos, rotation = attackRotation})
+    World.SpawnAsset(IMPACT_VFX, {position = targetPos, rotation = aimRotation, scale = Vector3.ONE * item.splash})
   end
 end
 
 function onEquipped()
-  Task.Wait(0.25)
-
   Events.Broadcast("EnableCrosshair")
 
   if equipEvent then equipEvent:Disconnect() end
@@ -81,7 +71,7 @@ function onEquipped()
   item = clientPlayer.clientUserData["Gear"][slot]
 
   while not item do
-    Task.Wait()
+    Task.Wait(0.1)
 
     item = clientPlayer.clientUserData["Gear"][slot]
   end
@@ -119,7 +109,7 @@ if Object.IsValid(weapon) then
 end
 
 if weapon.owner then
-  onEquipped()
+  onEquipped(weapon)
 else
   -- handler params: Equipment_equipment, Player_player
   equipEvent = weapon.equippedEvent:Connect(onEquipped)

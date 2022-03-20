@@ -21,6 +21,9 @@ local inventory = {}
 local inventorySlots = INVENTORY_SLOTS:GetChildren()
 local inventorySlotsOpen = 48
 
+-- Settings
+local doubleClickSpeed = 0.25
+
 local gearSlots = {
   primary = GEAR_SLOTS:FindChildByName("Primary"),
   secondary = GEAR_SLOTS:FindChildByName("Secondary"),
@@ -69,6 +72,9 @@ local moveFromSlot = nil
 
 CHARACTER_SCREEN.visibility = Visibility.FORCE_OFF
 
+clientPlayer.clientUserData["Gear"] = gear
+clientPlayer.clientUserData["Inventory"] = inventory
+
 function initCharacterScreen()
   for i, slot in ipairs(inventorySlots) do
     local button = slot:FindChildByType("UIButton")
@@ -92,8 +98,11 @@ function initCharacterScreen()
     end)
 
     button.clickedEvent:Connect(function()
+      print("Clicked Inventory slot "..i.." at "..tostring(os.date("%X")))
       -- double-click
-      if moveFromSlot and moveFromSlot == hoveredSlot and moveFromTable == hoveredTable and inventory[hoveredSlot] and time() - lastClicked < 0.3 then
+      if moveFromSlot and moveFromSlot == hoveredSlot and moveFromTable == hoveredTable and inventory[hoveredSlot] and time() - lastClicked < doubleClickSpeed then
+
+        print("Double clicked")
 
         -- equip or use item
         equipItem(hoveredSlot)
@@ -132,7 +141,7 @@ function initCharacterScreen()
 
     button.clickedEvent:Connect(function()
       -- double-click
-      if moveFromSlot and moveFromSlot == hoveredSlot and moveFromTable == hoveredTable and gear[hoveredSlot] and time() - lastClicked < 0.3 then
+      if moveFromSlot and moveFromSlot == hoveredSlot and moveFromTable == hoveredTable and gear[hoveredSlot] and time() - lastClicked < doubleClickSpeed then
 
         -- equip or use item
         unequipItem(hoveredSlot)
@@ -473,8 +482,7 @@ function onPrivateNetworkedDataChanged(player, key)
   end
 end
 
--- handler params: Player_player
-Game.playerJoinedEvent:Connect(initCharacterScreen)
+initCharacterScreen()
 
 -- handler params: Player_player, string_resourceName, integer_newTotal
 clientPlayer.resourceChangedEvent:Connect(onResourceChanged)

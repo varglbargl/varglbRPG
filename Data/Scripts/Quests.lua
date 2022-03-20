@@ -83,7 +83,7 @@ local questList = {
       {"Well open your inventory and check.", animation = "Talk"},
       {"You can open your inventory by pressing [I] or by enabling your cursor with [Tab] and clicking the Chest icon in the lower left corner.", italic = true},
       {"Got it all sorted out?", animation = "Talk"},
-      {"You're here to help secure this area of threats to the Queen's property. Something's got the fire elementals native here riled up and if we don't do something they could burn the whole grove down.", append = true},
+      {"You're here to help secure this area of threats to the Queen's property. Something's got the fire elementals native here riled up and if we don't do something they could burn the whole grove down."},
       {"You can start by culling their population a little. Come back to me when you've cleared your quota."},
       {"Which is 10, by the way.", inline = true},
       {"Kill 10 pyrosprites.", inline = true},

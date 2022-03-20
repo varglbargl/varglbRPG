@@ -16,14 +16,22 @@ local function createSaveData(player)
     levels[class] = player:GetResource("Level")
     experiences[class] = player:GetResource("Experience")
 
-    gear[class] = Utils.compressItems(player.serverUserData["Gear"])
+    gear[class] = Utils.compressItems(player.serverUserData["Gear"] or playerData[player].gear)
   end
 
-  local gold = player:GetResource("Gold")
+  local gold = playerData[player].gp
 
-  local inventory = Utils.compressItems(player.serverUserData["Inventory"])
-  local questLog = player.serverUserData["QuestLog"]
-  local questProgress = player.serverUserData["QuestProgress"]
+  if player:GetResource("Gold") > 0 then
+    gold = player:GetResource("Gold")
+  end
+
+  local inventory = playerData[player].inv
+  local questLog = player.serverUserData["QuestLog"] or playerData[player].qLog or {}
+  local questProgress = player.serverUserData["QuestProgress"] or playerData[player].qProg or {}
+
+  if player.serverUserData["Inventory"] then
+    inventory = Utils.compressItems(player.serverUserData["Inventory"])
+  end
 
   if #questProgress > 0 then
     questProgress = CoreString.Join("", table.unpack(questProgress))
@@ -31,8 +39,8 @@ local function createSaveData(player)
     questProgress = ""
   end
 
-  local scene = playerData[player].scene
   local location = playerData[player].loc
+  local scene = nil
 
   if Game.GetCurrentSceneName() ~= "Start" then
     local position = player:GetWorldPosition()
@@ -46,13 +54,16 @@ local function createSaveData(player)
 end
 
 function Vault.createNewPlayerSave(player, class)
-  if type(class) ~= "number" then
-    error("Invalid arguments passed into Vault.createNewPlayerSave(Player_player, integer_class). Expected integer, got "..type(class)..".")
+  if type(class) ~= "number" or class < 1 then
+    class = 1
   end
+
+  player:SetResource("Class", math.floor(class))
+  player:SetResource("Level", 1)
 
   playerData[player] = {
     class = math.floor(class),
-    lvls =  {0, 0, 0, 0, 0, 0, 0},
+    lvls =  {1, 1, 1, 1, 1, 1, 1},
     xps = {0, 0, 0, 0, 0, 0, 0},
     gp = 0,
     gear = {},
@@ -63,7 +74,7 @@ function Vault.createNewPlayerSave(player, class)
     saveVersion = currentSaveVersion
   }
 
-  Vault.save(player)
+  Storage.SetPlayerData(player, playerData[player])
 end
 
 local function onPlayerJoined(player)

@@ -5,24 +5,10 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:Utils"
+        Name: "cs:Combat"
         AssetReference {
-          Id: 8431391566871556229
+          Id: 10587303242724524946
         }
-      }
-      Overrides {
-        Name: "cs:Wildermagic"
-        AssetReference {
-          Id: 3407783204308324765
-        }
-      }
-      Overrides {
-        Name: "cs:Wildermagic:category"
-        String: "APIs"
-      }
-      Overrides {
-        Name: "cs:Utils:category"
-        String: "APIs"
       }
     }
   }

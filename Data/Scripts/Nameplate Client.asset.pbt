@@ -11,6 +11,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Combat"
+        AssetReference {
+          Id: 10587303242724524946
+        }
+      }
+      Overrides {
         Name: "cs:NPCNameplate"
         AssetReference {
           Id: 8347186325812695650
@@ -23,6 +29,10 @@ Assets {
       }
       Overrides {
         Name: "cs:Utils:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Combat:category"
         String: "APIs"
       }
     }

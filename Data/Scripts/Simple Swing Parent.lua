@@ -4,6 +4,8 @@ local MAX_AMPLITUDE = script:GetCustomProperty("MaxAmplitude")
 local START_TIME = script:GetCustomProperty("StartTime")
 local IS_LOCAL = script:GetCustomProperty("IsLocal")
 
+local tickTime = WAVELENGTH / 10
+
 if MIN_AMPLITUDE == 0 then
   MIN_AMPLITUDE = 0.001
 end
@@ -33,15 +35,14 @@ else
   startRotation = script.parent:GetWorldRotation()
 end
 
-function Tick()
+function Tick(dt)
   if not Object.IsValid(script.parent) then return end
+
   local curveValue = Rotation.New(curve:GetValue(time() + START_TIME) * ramplitude:GetValue(time() + START_TIME), 0, 0)
 
-  if IS_LOCAL then
-    script.parent:SetRotation(startRotation + curveValue * MIN_AMPLITUDE)
-  else
-    script.parent:SetWorldRotation(startRotation + curveValue * MIN_AMPLITUDE)
-  end
+  script.parent:RotateTo(startRotation + curveValue * MIN_AMPLITUDE, tickTime * 1.1 + dt, IS_LOCAL)
+
+  Task.Wait(tickTime)
 end
 
 -- you know, i don't think this is actually all that simple in hindsight

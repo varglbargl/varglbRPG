@@ -5,6 +5,12 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:Combat"
+        AssetReference {
+          Id: 10587303242724524946
+        }
+      }
+      Overrides {
         Name: "cs:Projectile"
         AssetReference {
           Id: 17931710397840415144
@@ -91,6 +97,10 @@ Assets {
       Overrides {
         Name: "cs:MuzzleFlash:subcategory"
         String: "VFX"
+      }
+      Overrides {
+        Name: "cs:Combat:category"
+        String: "APIs"
       }
     }
   }

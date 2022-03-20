@@ -2591,15 +2591,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14669025476999387874
-  Name: "Icon Settings"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Settings"
-  }
-}
-Assets {
   Id: 14653277913595422359
   Name: "Roof Metal 01"
   PlatformAssetType: 2
@@ -3821,15 +3812,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_snow_volume"
-  }
-}
-Assets {
-  Id: 12968767803658668413
-  Name: "Market"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Icon_Market"
   }
 }
 Assets {
@@ -7286,15 +7268,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_birch_003"
-  }
-}
-Assets {
-  Id: 7959531961343117325
-  Name: "Icon Treasure Map"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_MapTraesure"
   }
 }
 Assets {
