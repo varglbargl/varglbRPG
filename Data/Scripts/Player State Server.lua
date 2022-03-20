@@ -30,14 +30,14 @@ function onEnterWorld(player)
     local save = Vault.getSave(player)
 
     if save.loc then
-      print("Spawning player at SAVED location...")
+      -- print("Spawning player at SAVED location...")
       player:Spawn({position = Vector3.New(save.loc), rotation = Rotation.New(0, 0, save.loc.w)})
     else
-      print("Spawning player at DEFAULT location...")
+      -- print("Spawning player at DEFAULT location...")
       player:Spawn({spawnKey = "Default"})
     end
   else
-    print("Spawning player at DEFAULT location...")
+    -- print("Spawning player at DEFAULT location...")
     player:Spawn({spawnKey = "Default"})
   end
 end

@@ -1,3 +1,4 @@
+---@type Trigger
 local trigger = script.parent
 
 local DESTINATION = script:GetCustomProperty("Destination"):WaitForObject()
@@ -20,8 +21,6 @@ if trigger.isInteractable then
 else
   -- handler params: Trigger_trigger, Object_other
   trigger.beginOverlapEvent:Connect(teleport)
-
-  Task.Wait(1)
 
   for _, other in ipairs(trigger:GetOverlappingObjects()) do
     teleport(trigger, other)

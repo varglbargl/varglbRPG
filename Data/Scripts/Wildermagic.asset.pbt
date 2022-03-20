@@ -11,6 +11,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Loot"
+        AssetReference {
+          Id: 10149346056993589588
+        }
+      }
+      Overrides {
         Name: "cs:VFX"
         AssetReference {
           Id: 11318202528108589468
@@ -21,6 +27,14 @@ Assets {
         AssetReference {
           Id: 4711112791077632593
         }
+      }
+      Overrides {
+        Name: "cs:Loot:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Utils:category"
+        String: "APIs"
       }
     }
   }

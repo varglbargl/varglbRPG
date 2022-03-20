@@ -94,6 +94,8 @@ function initInventory(player)
           local item = Loot.findItemById(classGear[slot].id)
           local enchantedItem = Loot.decodeEnchant(item, classGear[slot].enc)
 
+          print(enchantedItem.name, slot)
+
           player.serverUserData["Gear"][slot] = enchantedItem
 
           if enchantedItem.templateId then
@@ -228,7 +230,7 @@ function unequipFromPlayer(player, gearSlot, inventorySlot)
 
   if not uItem then return end
 
-  print("I very much want to unequip "..uItem.name..".")
+  -- print("I very much want to unequip "..uItem.name..".")
 
   player.serverUserData["Gear"][gearSlot] = nil
 

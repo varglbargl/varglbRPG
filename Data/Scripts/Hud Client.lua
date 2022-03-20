@@ -258,8 +258,8 @@ function redrawHUD(gear)
     SECONDARY_ICON.parent.visibility = Visibility.FORCE_OFF
   end
 
-  local class = clientPlayer:GetResource("Class")
-  CLASS_ICON:SetImage(classIcons[class])
+  local classIcon = classIcons[clientPlayer:GetResource("Class")]
+  CLASS_ICON:SetImage(classIcon)
 
   updateHitPoints()
 end

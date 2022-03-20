@@ -241,7 +241,7 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
-      Z: -300000
+      Z: -250000
     }
     Rotation {
     }
@@ -283,14 +283,14 @@ Objects {
   Name: "Teleporter Server"
   Transform {
     Location {
-      Z: 60.025
+      Z: 50.02
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.000124999991
+      Y: 0.000124999991
+      Z: 0.000200000009
     }
   }
   ParentId: 18098851392041174986

@@ -16,6 +16,7 @@ function onResourceChanged(player, name, newTotal)
   if name == "Class" then
     if newTotal == 3 then
       local orbs = World.SpawnAsset(ORBLITERATOR_ORBS, {position = player:GetWorldPosition()})
+
       player.clientUserData["Orbs"] = orbs:FindDescendantsByName("Orb")
 
       orbs:AttachToPlayer(player, "root")
@@ -50,6 +51,7 @@ function onResourceChanged(player, name, newTotal)
 
     if myGold ~= "nothin" then
       local difference = newTotal - myGold
+
       if difference > 0 then
         Utils.showFlyupText("+"..Utils.formatInt(difference).."gp", clientPlayer:GetWorldPosition(), Utils.color.gold)
       elseif difference < 0 then
@@ -58,7 +60,7 @@ function onResourceChanged(player, name, newTotal)
     end
 
     myGold = newTotal
-  elseif player == clientPlayer and name == "Level" then
+  elseif name == "Level" then
     if myLevel ~= "nothin" then
       local magicNumber = Utils.magicNumber(newTotal)
       local classStats = Utils.classStats(player:GetResource("Class"))
@@ -68,28 +70,23 @@ function onResourceChanged(player, name, newTotal)
     end
 
     myLevel = newTotal
-  end
-end
 
-function onDamaged(player, damage)
-  if myHitPoints ~= "nothin" then
-    if damage.amount < 0 and damage.reason == DamageReason.FRIENDLY_FIRE and myHitPoints < clientPlayer.maxHitPoints then
-      if not clientPlayer.isDead then
-        Utils.showFlyupText("+"..Utils.formatInt(math.abs(damage.amount)), clientPlayer:GetWorldPosition(), Utils.color.heal)
+  elseif name == "HitPoints" then
+    if myHitPoints ~= "nothin" then
+      local difference = newTotal - myHitPoints
+
+      if difference < 0 then
+        Utils.showFlyupText(Utils.formatInt(math.abs(difference)), clientPlayer:GetWorldPosition(), Utils.color.hurt)
       end
-    elseif damage.amount > 0 and damage.reason == DamageReason.COMBAT then
-      Utils.showFlyupText(Utils.formatInt(math.abs(damage.amount)), clientPlayer:GetWorldPosition(), Utils.color.hurt)
-    end
-  end
 
-  myHitPoints = clientPlayer.hitPoints
+    end
+
+    myHitPoints = clientPlayer.hitPoints
+  end
 end
 
 -- handler params: Player_player, string_resourceName, integer_newTotal
 clientPlayer.resourceChangedEvent:Connect(onResourceChanged)
-
--- handler params: Player_player, Damage_damage
-clientPlayer.damagedEvent:Connect(onDamaged)
 
 Task.Wait(0.1)
 

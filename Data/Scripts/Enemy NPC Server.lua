@@ -168,17 +168,19 @@ function attack(target)
   if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(target) or stats.stunned then return end
 
   local damage = AI.rollDamage(stats)
-  local reflectedDamage = Damage.New(0)
+  local reflectedDamageAmount = nil
   local targetClass = target:GetResource("Class")
 
   damage.reason = DamageReason.COMBAT
 
   if targetClass == 1 then
-    reflectedDamage.amount = math.max(1, math.floor(damage.amount/10 + math.random()))
+    local reflectedDamage = Damage.New(math.max(1, math.floor(damage.amount/10 + math.random())))
     reflectedDamage.sourcePlayer = target
     reflectedDamage.reason = DamageReason.COMBAT
 
     damage.amount = damage.amount - reflectedDamage.amount
+
+    reflectedDamageAmount = reflectedDamage.amount
 
     enemy:ApplyDamage(reflectedDamage)
 
@@ -189,7 +191,7 @@ function attack(target)
     end
   end
 
-  Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamage.amount, not enemy.isDead)
+  Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamageAmount, not enemy.isDead)
   target:ApplyDamage(damage)
 
   Task.Wait(1.5)

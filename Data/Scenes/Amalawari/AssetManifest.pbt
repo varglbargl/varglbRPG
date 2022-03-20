@@ -854,6 +854,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17424304999265903872
+  Name: "Icon Present"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Present"
+  }
+}
+Assets {
   Id: 17412017405944415257
   Name: "Flower Bellflower 02"
   PlatformAssetType: 1
@@ -1994,6 +2003,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_window_02_ref"
+  }
+}
+Assets {
+  Id: 15403424463798974795
+  Name: "Icon Gear"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Gear"
   }
 }
 Assets {
@@ -3812,6 +3830,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_snow_volume"
+  }
+}
+Assets {
+  Id: 12968767803658668413
+  Name: "Market"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Market"
   }
 }
 Assets {
@@ -7271,6 +7298,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7959531961343117325
+  Name: "Icon Treasure Map"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_MapTraesure"
+  }
+}
+Assets {
   Id: 7948167637451889616
   Name: "Japanese - Stand Katana - Back 01"
   PlatformAssetType: 1
@@ -8798,15 +8834,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_jpn_tem_foundation_stair_trim_001_ref"
-  }
-}
-Assets {
-  Id: 5744205443850783890
-  Name: "Chest"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Icon_Chest"
   }
 }
 Assets {
@@ -11705,6 +11732,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_body_004"
+  }
+}
+Assets {
+  Id: 1724337779282405668
+  Name: "BG Highlighted 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_019"
   }
 }
 Assets {

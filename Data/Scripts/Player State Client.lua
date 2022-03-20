@@ -5,8 +5,8 @@ local scriptsLoaded = 0
 local scriptsToExpect = 4
 
 function waitForSpawn()
-  while not clientPlayer.isSpawned do
-    print("Waiting... waiting... waiiiiiiiiitiiiiiiiiii-i-i-ing")
+  while not clientPlayer.isSpawned or not clientPlayer.isGrounded do
+    -- print("Waiting... waiting... waiiiiiiiiitiiiiiiiiii-i-i-ing")
     Task.Wait(0.1)
   end
 

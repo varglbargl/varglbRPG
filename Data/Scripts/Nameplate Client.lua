@@ -13,6 +13,10 @@ local barWidth = 237
 local halfWhite = Color.New(1, 1, 1, 0.25)
 
 function initNameplate(target, hitbox)
+  local targetLevel = target:GetCustomProperty("Level")
+
+  if not targetLevel then return end
+
   local nameplate = World.SpawnAsset(NPC_NAMEPLATE, {parent = UI_CONTAINER})
 
   local name = nameplate:FindChildByName("Name")
@@ -20,7 +24,6 @@ function initNameplate(target, hitbox)
   local difficulty = nameplate:FindDescendantByName("Difficulty")
 
   local playerLevel = clientPlayer:GetResource("Level")
-  local targetLevel = target:GetCustomProperty("Level")
 
   if targetLevel > playerLevel + 3 then
     difficulty:FindDescendantByName("Hard").visibility = Visibility.INHERIT

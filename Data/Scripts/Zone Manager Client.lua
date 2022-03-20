@@ -44,10 +44,21 @@ end
 function leaveZone(zone)
   if currentZone ~= zone then return end
 
-  local parentTrigger = zone.parent:FindChildByType("Trigger")
+  local siblingTriggers = zone:GetCildren()
 
-  if Object.IsValid(parentTrigger) and parentTrigger:IsOverlapping(clientPlayer) then
-    enterZone(zone.parent)
+  for _, trig in ipairs(siblingTriggers) do
+    if Object.IsValid(trig) and trig:IsA("Trigger") and trig:IsOverlapping(clientPlayer) then
+      return
+    end
+  end
+
+  local parentTriggers = zone.parent:GetChildren()
+
+  for _, trig in ipairs(parentTriggers) do
+    if Object.IsValid(trig) and trig:IsA("Trigger") and trig:IsOverlapping(clientPlayer) then
+      enterZone(zone.parent)
+      return
+    end
   end
 end
 

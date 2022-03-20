@@ -25,18 +25,22 @@ local lastKnownHP = enemy.maxHitPoints
 local defaultPlaybackRate = MESH.animationStancePlaybackRate
 
 local attackEvent = nil
+local damagedEvent = nil
+local diedEvent = nil
 local destroyEvent = nil
 
 function Tick()
   if not Object.IsValid(enemy) then return end
 
-  local damage =  lastKnownHP - enemy.hitPoints
+  local damage = lastKnownHP - enemy.hitPoints
 
-  if enemy.isDead then
-    onEnemyDied(enemy, damage)
-    return
-  elseif damage >= 1 then
-    onEnemyDamaged(enemy, damage)
+  if damage >= 1 then
+    if enemy.isDead then
+      playDeathAnimation()
+      Task.Wait(10)
+    else
+      playDamagedAnimation()
+    end
   end
 
   local currentPosition = MESH:GetWorldPosition()
@@ -59,14 +63,7 @@ function Tick()
   Task.Wait(0.1)
 end
 
-function onEnemyDamaged(thisEnemy, damage)
-  if not Object.IsValid(enemy) or thisEnemy ~= enemy then return end
-  if not enemy.isDead and READY_ANIM ~= "" then MESH.animationStance = READY_ANIM end
-
-  Utils.showFlyupText(damage, enemy:GetWorldPosition(), Utils.color.attack)
-
-  Events.Broadcast("ShowNameplate", enemy, hitbox)
-
+function playDamagedAnimation()
   MESH:PlayAnimation("unarmed_react_damage")
 
   if DAMAGED_VFX then
@@ -75,26 +72,51 @@ function onEnemyDamaged(thisEnemy, damage)
   end
 end
 
-function onEnemyDied(thisEnemy, damage)
-  if not Object.IsValid(enemy) or thisEnemy ~= enemy then return end
-
-  Utils.showFlyupText(damage, enemy:GetWorldPosition(), Utils.color.attack)
-
+function playDeathAnimation()
   if DIE_ANIM ~= "" then MESH:PlayAnimation(DIE_ANIM, {shouldLoop = true}) end
 
   if DEATH_VFX then
     local vfx = World.SpawnAsset(DEATH_VFX, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
     if vfx.lifeSpan == 0 then vfx.lifeSpan = 5 end
   end
-
-  script:Destroy()
 end
 
-function onEnemyAttack(attackedPlayer, id)
-  if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(attackedPlayer) then return end
+function onEnemyDamaged(thisEnemy, damageAmount, magicDamageAmount)
+  if not Object.IsValid(enemy) or thisEnemy ~= enemy then return end
+  if not enemy.isDead and READY_ANIM ~= "" then MESH.animationStance = READY_ANIM end
 
-  if id == enemy.id then
+  if damageAmount then
+    Utils.showFlyupText(damageAmount, enemy:GetWorldPosition(), Utils.color.attack)
+  end
+
+  if magicDamageAmount then
+    Utils.showFlyupText(magicDamageAmount, enemy:GetWorldPosition(), Utils.color.magic)
+  end
+
+  Events.Broadcast("ShowNameplate", enemy, hitbox)
+end
+
+function onEnemyDied(thisEnemy, damageAmount, magicDamageAmount)
+  if not Object.IsValid(enemy) or thisEnemy ~= enemy then return end
+
+  if magicDamageAmount then
+    Utils.showFlyupText(magicDamageAmount, enemy:GetWorldPosition(), Utils.color.magic)
+  end
+
+  if damageAmount then
+    Utils.showFlyupText(damageAmount, enemy:GetWorldPosition(), Utils.color.attack)
+  end
+end
+
+function onEnemyAttack(attackedPlayer, enemyId, reflectedDamage, shouldDie)
+  if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(attackedPlayer) or attackedPlayer ~= clientPlayer then return end
+
+  if enemyId == enemy.id then
     if not enemy.isDead and ATTACK_ANIM ~= "" then MESH:PlayAnimation(ATTACK_ANIM) end
+
+    if reflectedDamage then
+      Utils.showFlyupText(reflectedDamage, enemy:GetWorldPosition(), Utils.color.magic)
+    end
 
     if ATTACK_VFX then
       local vfx = World.SpawnAsset(ATTACK_VFX, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
@@ -107,13 +129,21 @@ function onEnemyAttack(attackedPlayer, id)
   end
 end
 
-function onEnemyDestroyed(thisEnemy)
-  attackEvent:Disconnect()
-  destroyEvent:Disconnect()
+function onDestroyed()
+  if attackEvent then attackEvent:Disconnect() end
+  if damagedEvent then damagedEvent:Disconnect() end
+  if diedEvent then diedEvent:Disconnect() end
+  if destroyEvent then destroyEvent:Disconnect() end
 end
 
--- handler params: Player_attackedPlayer, String_id, Integer_reflectedDamage, Bool_survived
+-- handler params: Player_attackedPlayer, String_enemyId, Integer_reflectedDamage, Boolean_shouldDie
 attackEvent = Events.Connect("eAtt", onEnemyAttack)
 
+-- handler params: String_enemyId, Integer_damageAmount, Integer_magicDamageAmount
+damagedEvent = Events.Connect("eHit", onEnemyDamaged)
+
+-- handler params: String_enemyId, Integer_damageAmount, Integer_magicDamageAmount
+diedEvent = Events.Connect("eDie", onEnemyDied)
+
 -- handler params: CoreObject_coreObject
-destroyEvent = enemy.destroyEvent:Connect(onEnemyDestroyed)
+destroyEvent = enemy.destroyEvent:Connect(onDestroyed)

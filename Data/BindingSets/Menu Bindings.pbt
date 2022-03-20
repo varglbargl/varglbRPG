@@ -83,7 +83,7 @@ Assets {
       BasicBindingData {
         BasicInputs {
           KeyboardPrimary {
-            Value: "mc:ebindingkeyboard:n"
+            Value: "mc:ebindingkeyboard:l"
           }
           KeyboardSecondary {
             Value: "mc:ebindingkeyboard:f3"
@@ -93,8 +93,8 @@ Assets {
           }
         }
       }
-      Action: "Settings Screen"
-      Description: "Toggles the Settings Screen open or closed to view and change various gameplay and accessibiity settings."
+      Action: "Mini Quest Log"
+      Description: "Toggles the Mini Quest Log open or closed to keep track of simple quest progress in real-time."
       CoreBehavior {
         Value: "mc:ecorebehavior:none"
       }
@@ -107,7 +107,7 @@ Assets {
       BasicBindingData {
         BasicInputs {
           KeyboardPrimary {
-            Value: "mc:ebindingkeyboard:l"
+            Value: "mc:ebindingkeyboard:t"
           }
           KeyboardSecondary {
             Value: "mc:ebindingkeyboard:f5"
@@ -117,8 +117,8 @@ Assets {
           }
         }
       }
-      Action: "Mini Quest Log"
-      Description: "Toggles the Mini Quest Log open or closed to keep track of simple quest progress in real-time."
+      Action: "Settings Screen"
+      Description: "Toggles the Settings Screen open or closed to view and change various gameplay and accessibiity settings."
       CoreBehavior {
         Value: "mc:ecorebehavior:none"
       }

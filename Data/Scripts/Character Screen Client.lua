@@ -98,11 +98,8 @@ function initCharacterScreen()
     end)
 
     button.clickedEvent:Connect(function()
-      print("Clicked Inventory slot "..i.." at "..tostring(os.date("%X")))
       -- double-click
       if moveFromSlot and moveFromSlot == hoveredSlot and moveFromTable == hoveredTable and inventory[hoveredSlot] and time() - lastClicked < doubleClickSpeed then
-
-        print("Double clicked")
 
         -- equip or use item
         equipItem(hoveredSlot)

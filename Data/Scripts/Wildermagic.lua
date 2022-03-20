@@ -1,4 +1,5 @@
 local Utils = require(script:GetCustomProperty("Utils"))
+local Loot = require(script:GetCustomProperty("Loot"))
 
 local VFX = script:GetCustomProperty("VFX")
 local FAERIE_CIRCLE = script:GetCustomProperty("FaerieCircle")
@@ -22,7 +23,7 @@ local function spawnAtDistance(what, where, distance)
   return World.SpawnAsset(what, {position = pointAtDistance(where, distance), rotation = Rotation.New(0, 0, math.random(1, 360))})
 end
 
-Wildermagic.spells = {
+Wildermagic.effects = {
   -- Faeries
   function(player)
     local faerieCircle = spawnAtDistance(FAERIE_CIRCLE, player:GetWorldPosition(), 200)
@@ -35,7 +36,8 @@ Wildermagic.spells = {
   -- Riches
   function(player)
 
-    player:AddResource("Gold", math.random(1, player:GetResource("Level")))
+    -- player:AddResource("Gold", math.random(1, player:GetResource("Level")))
+    Loot.dropGold(pointAtDistance(player:GetWorldPosition(), 200), math.random(1, math.floor(Utils.magicNumber(player:GetResource("Level")))))
     return "Riches"
   end,
 
@@ -66,13 +68,13 @@ end
 function Wildermagic.cast(player)
   World.SpawnAsset(VFX, {position = player:GetWorldPosition()})
 
-  local spell = Wildermagic.spells[math.random(1, #Wildermagic.spells)]
+  local effect = Wildermagic.effects[math.random(1, #Wildermagic.effects)]
 
-  local spellName = spell(player)
+  local effectName = effect(player)
 
-  -- print("Wilderwitch "..spellName.."!")
+  -- print("Wilderwitch "..effectName.."!")
 
-  return spellName
+  return effectName
 end
 
 return Wildermagic
