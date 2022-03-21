@@ -40,8 +40,6 @@ end
 function Tick(dt)
   if not Object.IsValid(script.parent) then return end
 
-  print("Tick")
-
   if (swingerPos - clientPlayer:GetWorldPosition()).size < 8000 then
     local curveValue = Rotation.New(curve:GetValue(time() + START_TIME) * ramplitude:GetValue(time() + START_TIME), 0, 0)
 

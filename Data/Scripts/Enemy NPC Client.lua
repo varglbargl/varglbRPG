@@ -108,15 +108,11 @@ function onEnemyDied(thisEnemy, damageAmount, magicDamageAmount)
   end
 end
 
-function onEnemyAttack(attackedPlayer, enemyId, reflectedDamage, shouldDie)
+function onEnemyAttack(attackedPlayer, thisEnemy, reflectedDamage, shouldDie)
   if not Object.IsValid(enemy) or enemy.isDead or not Object.IsValid(attackedPlayer) or attackedPlayer ~= clientPlayer then return end
 
-  if enemyId == enemy.id then
+  if thisEnemy == enemy then
     if not enemy.isDead and ATTACK_ANIM ~= "" then MESH:PlayAnimation(ATTACK_ANIM) end
-
-    if reflectedDamage then
-      Utils.showFlyupText(reflectedDamage, enemy:GetWorldPosition(), Utils.color.magic)
-    end
 
     if ATTACK_VFX then
       local vfx = World.SpawnAsset(ATTACK_VFX, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
@@ -124,6 +120,10 @@ function onEnemyAttack(attackedPlayer, enemyId, reflectedDamage, shouldDie)
     end
 
     if attackedPlayer == clientPlayer then
+      if reflectedDamage then
+        Utils.showFlyupText(reflectedDamage, enemy:GetWorldPosition(), Utils.color.magic)
+      end
+
       Events.Broadcast("ShowNameplate", enemy, hitbox)
     end
   end

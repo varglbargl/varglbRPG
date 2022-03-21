@@ -11,15 +11,7 @@ local defaultRange = 2500
 local autoAim = 1
 
 function Combat.rollDamage(player, item)
-  local statusEffects = {}
-
-  for status, has in pairs(item.statusEffects) do
-    if has then
-      table.insert(statusEffects, tostring(status))
-    end
-  end
-
-  local damage = Damage.New(math.floor(math.random(item.minDamage, item.maxDamage) / (0.75 + item.splash / 4) * (1 + item.rarity / 10) / (1 + #statusEffects / 2) + player:GetResource(item.damageStat) / 5 + math.random()))
+  local damage = Damage.New(math.floor(math.random(item.minDamage, item.maxDamage) / (0.75 + item.splash / 4) * (1 + item.rarity / 10) + player:GetResource(item.damageStat) / 5 + math.random()))
 
   damage.sourcePlayer = player
   damage.sourceAbility = lastUsedAbilities[player]
@@ -89,7 +81,7 @@ function Combat.meleeAttack(ability, item)
     enemy:ApplyDamage(damage)
 
     -- print(ability.owner.name.." did "..damage.amount.." damage to "..enemy.name.."!")
-    Utils.throttleToPlayer(ability.owner, "eHit", enemy.id, damage.amount, orbDamage)
+    Utils.throttleToPlayer(ability.owner, "eHit", enemy, damage.amount, orbDamage)
 
     if ownerClass == 2 then
       local healing = Damage.New(math.floor(magicNumber / -8 - ability.owner:GetResource("Wit") / (math.random() * 3 + 6)))
@@ -176,8 +168,8 @@ function Combat.rangedAttack(ability, item)
   local hitObjects = World.FindObjectsOverlappingSphere(targetPos, 100 * item.splash, {ignorePlayers = true})
   local hitEnemies = {}
 
-  if Object.IsValid(targetObj) and targetObj:IsA("DamageableObject") then
-    hitEnemies[targetObj] = true
+  if Object.IsValid(targetObj) then
+    table.insert(hitObjects, targetObj)
   end
 
   for _, obj in ipairs(hitObjects) do
@@ -205,9 +197,9 @@ function Combat.rangedAttack(ability, item)
     enemy:ApplyDamage(damage)
 
     if item.damageStat == "Wit" then
-      Utils.throttleToPlayer(ability.owner, "eHit", enemy.id, nil, damage.amount)
+      Utils.throttleToPlayer(ability.owner, "eHit", enemy, nil, damage.amount)
     else
-      Utils.throttleToPlayer(ability.owner, "eHit", enemy.id, damage.amount)
+      Utils.throttleToPlayer(ability.owner, "eHit", enemy, damage.amount)
     end
 
     Task.Wait()
@@ -257,52 +249,20 @@ function Combat.initWeapon(weapon, attackCallback)
     if ability.owner.serverUserData["DualWielding"] and Object.IsValid(dualWieldAbility) then
       waitForAbilityReallyReady(dualWieldAbility)
       dualWieldAbility:Activate()
-      print("Dual-Wield ability auto-activated!")
+      -- print("Dual-Wield ability auto-activated!")
     elseif #abilities > 1 then
       if lastUsedAbilities[ability.owner] == abilities[1] then
         waitForAbilityReallyReady(abilities[2])
         abilities[2]:Activate()
-        print("Second ability auto-activated!")
+        -- print("Second ability auto-activated!")
       end
     end
-
-    -- if ability.owner.serverUserData["DualWielding"] and Input.IsActionHeld(ability.owner, "Primary Ability") and Input.IsActionHeld(ability.owner, "Secondary Ability") then return end
-
-    -- if ability.owner.serverUserData["DualWielding"] and not dualWieldAbility then
-    --   updateDualWielding()
-    -- end
-
-    -- if Object.IsValid(ability) and Object.IsValid(ability.owner) and Input.IsActionHeld(ability.owner, ability.actionName) then
-    --   if Object.IsValid(dualWieldAbility) then
-
-    --     if dualWieldAbility:GetCurrentPhase() ~= AbilityPhase.READY then
-    --       print("gimme "..dualWieldAbility:GetPhaseTimeRemaining().." bits...")
-    --       Task.Wait(dualWieldAbility:GetPhaseTimeRemaining())
-    --     end
-
-    --     print("Second Dual-Wield ability auto-activated!")
-    --     dualWieldAbility:Activate()
-    --   elseif #abilities > 1 then
-    --     for _, abil in ipairs(abilities) do
-    --       if abil ~= lastUsedAbilities[ability.owner] then
-    --         if abil:GetCurrentPhase() ~= AbilityPhase.READY then
-    --           -- print("gimme "..abil:GetPhaseTimeRemaining().." bits...")
-    --           Task.Wait(abil:GetPhaseTimeRemaining())
-    --         end
-
-    --         print("Non-Dual-Wield ability auto-activated!")
-    --         abil:Activate()
-    --         break
-    --       end
-    --     end
-    --   end
-    -- end
   end
 
   local function onAbilityReady(ability)
     if Object.IsValid(ability) and Object.IsValid(ability.owner) and Input.IsActionHeld(ability.owner, ability.actionName) then
       waitForAbilityReallyReady(ability)
-      print("First ability auto-activated!")
+      -- print("First ability auto-activated!")
       ability:Activate()
     end
   end
@@ -318,13 +278,15 @@ function Combat.initWeapon(weapon, attackCallback)
 
     updateDualWielding()
 
+    weapon.serverUserData["StatusEffects"] = item.statusEffects
+
     if equipEvent then equipEvent:Disconnect() end
 
     Task.Spawn(function()
       if not Object.IsValid(weapon) or not Object.IsValid(weapon.owner) then return end
 
       updateDualWielding()
-    end, 1)
+    end, 2)
   end
 
   local function onUnequipped(_, player)
@@ -365,7 +327,7 @@ function Combat.initWeapon(weapon, attackCallback)
     end
   end
 
-  while Object.IsValid(weapon) and #weapon:GetAbilities() < 1 do
+  while Object.IsValid(weapon) and #weapon:GetAbilities() == 0 do
     -- print("Waiting for abilities...")
     Task.Wait(0.1)
   end

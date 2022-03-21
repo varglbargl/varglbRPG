@@ -99,7 +99,7 @@ function Vault.throttleSave(player)
     return
   else
     savingInProgress[player] = Task.Spawn(function()
-      Task.Wait(#Game.GetPlayers() + 3)
+      Task.Wait(#Game.GetPlayers() + 4)
 
       if not Object.IsValid(player) then return end
 
@@ -111,6 +111,11 @@ end
 
 -- Compresses and sets Player Storage
 function Vault.save(player)
+  if savingInProgress[player] then
+    savingInProgress[player]:Cancel()
+    savingInProgress[player] = nil
+  end
+
   local save = createSaveData(player)
   local response, errMessage = Storage.SetPlayerData(player, save)
 

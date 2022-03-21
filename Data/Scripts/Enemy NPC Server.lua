@@ -191,7 +191,7 @@ function attack(target)
     end
   end
 
-  Utils.throttleToAllPlayers("eAtt", target, enemy.id, reflectedDamageAmount, not enemy.isDead)
+  Utils.throttleToAllPlayers("eAtt", target, enemy, reflectedDamageAmount, not enemy.isDead)
   target:ApplyDamage(damage)
 
   Task.Wait(1.5)
@@ -314,14 +314,11 @@ end
 function onDamaged(thisEnemy, damage)
   if not Object.IsValid(enemy) or enemy ~= thisEnemy or enemy.isDead then return end
 
-
   if damage.sourceAbility and Object.IsValid(damage.sourceAbility.parent) then
-    local effects = damage.sourceAbility.parent:GetCustomProperty("StatusEffects")
+    local effects = damage.sourceAbility.parent.serverUserData["StatusEffects"]
 
-    if effects and effects ~= "" then
-      effects = {CoreString.Split(string.lower(effects), ",")}
-
-      for _, effect in ipairs(effects) do
+    for effect, does in pairs(effects) do
+      if does then
         AI.applyStatusEffect(effect, enemy, damage.sourcePlayer)
       end
     end

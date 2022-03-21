@@ -36,7 +36,11 @@ function getYeGold(thisTrigger, other)
   if not Object.IsValid(other) or not other:IsA("Player") then return end
 
   pickupEvent:Disconnect()
-  Utils.playSoundEffect(PICKUP_SFX, {position = lootPosition})
+  if other == Game.GetLocalPlayer() then
+    Utils.playSoundEffect(PICKUP_SFX, {position = lootPosition, volume = 0.75})
+  else
+    Utils.playSoundEffect(PICKUP_SFX, {position = lootPosition, pitch = -100, volume = 0.35})
+  end
 end
 
 pickupEvent = PICKUP_TRIGGER.beginOverlapEvent:Connect(getYeGold)

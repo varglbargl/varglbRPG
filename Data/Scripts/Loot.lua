@@ -70,17 +70,17 @@ function readLootTable(thisLootTable, itemType, damageStat)
         lootItem.maxDamage = lootItem.maxDamage / (0.75 + lootItem.splash / 4)
       end
 
-      local satusEffects = 0
+      local satusCount = 0
 
       for _, status in pairs(lootItem.statusEffects) do
         if status then
-          satusEffects = satusEffects + 1
+          satusCount = satusCount + 1
         end
       end
 
-      if satusEffects >= 1 then
-        lootItem.minDamage = lootItem.minDamage / (1 + satusEffects / 2)
-        lootItem.maxDamage = lootItem.maxDamage / (1 + satusEffects / 2)
+      if satusCount >= 1 then
+        lootItem.minDamage = lootItem.minDamage / (1 + satusCount / 2)
+        lootItem.maxDamage = lootItem.maxDamage / (1 + satusCount / 2)
       end
 
       lootItem.minDamage = math.floor(lootItem.minDamage + 0.5)
