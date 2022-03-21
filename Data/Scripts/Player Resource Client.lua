@@ -75,7 +75,7 @@ function onResourceChanged(player, name, newTotal)
     if myHitPoints ~= "nothin" then
       local difference = newTotal - myHitPoints
 
-      if difference < 0 then
+      if difference < 0 and newTotal ~= clientPlayer.maxHitPoints then
         Utils.showFlyupText(Utils.formatInt(math.abs(difference)), clientPlayer:GetWorldPosition(), Utils.color.hurt)
       end
 

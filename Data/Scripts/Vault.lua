@@ -99,7 +99,7 @@ function Vault.throttleSave(player)
     return
   else
     savingInProgress[player] = Task.Spawn(function()
-      Task.Wait(#Game.GetPlayers() + 4)
+      Task.Wait(#Game.GetPlayers() + 3)
 
       if not Object.IsValid(player) then return end
 

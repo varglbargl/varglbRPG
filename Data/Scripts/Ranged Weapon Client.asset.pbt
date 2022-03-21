@@ -5,6 +5,12 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:Loot"
+        AssetReference {
+          Id: 10149346056993589588
+        }
+      }
+      Overrides {
         Name: "cs:Combat"
         AssetReference {
           Id: 10587303242724524946
@@ -100,6 +106,10 @@ Assets {
       }
       Overrides {
         Name: "cs:Combat:category"
+        String: "APIs"
+      }
+      Overrides {
+        Name: "cs:Loot:category"
         String: "APIs"
       }
     }

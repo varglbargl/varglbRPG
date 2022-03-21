@@ -13,8 +13,6 @@ local autoAim = 1
 function Combat.rollDamage(player, item)
   local statusEffects = {}
 
-  -- print(item.name)
-
   for status, has in pairs(item.statusEffects) do
     if has then
       table.insert(statusEffects, tostring(status))
@@ -224,7 +222,7 @@ function Combat.initWeapon(weapon, attackCallback)
   local unequipEvent = nil
   local executeEvents = {}
   local cooldownEvents = {}
-  local readyEvents = {}
+  local readyEvent = {}
   local destroyEvent = nil
   local updateGearEvent = nil
   local item = nil
@@ -243,49 +241,69 @@ function Combat.initWeapon(weapon, attackCallback)
     end
   end
 
-  local function onAbilityCooldown(ability)
-    if ability.owner.serverUserData["DualWielding"] and not dualWieldAbility then
-      updateDualWielding()
-    end
+  local function waitForAbilityReallyReady(ability)
+    if ability:GetCurrentPhase() ~= AbilityPhase.READY then
+      local timeTillReady = ability:GetPhaseTimeRemaining()
 
-    if Object.IsValid(ability) and Object.IsValid(ability.owner) and Input.IsActionHeld(ability.owner, ability.actionName) or
-      (ability.owner.serverUserData["DualWielding"] and (Input.IsActionHeld(ability.owner, "Primary Ability") or Input.IsActionHeld(ability.owner, "Secondary Ability"))) then
-      if Object.IsValid(dualWieldAbility) then
-
-        if dualWieldAbility:GetCurrentPhase() ~= AbilityPhase.READY then
-          print("gimme "..dualWieldAbility:GetPhaseTimeRemaining().." bits...")
-          Task.Wait(dualWieldAbility:GetPhaseTimeRemaining())
-        end
-
-        print("Second Dual-Wield ability auto-activated!")
-        dualWieldAbility:Activate()
-      elseif #abilities > 1 then
-        for _, abil in ipairs(abilities) do
-          if abil ~= lastUsedAbilities[ability.owner] then
-            if abil:GetCurrentPhase() ~= AbilityPhase.READY then
-              print("gimme "..abil:GetPhaseTimeRemaining().." bits...")
-              Task.Wait(abil:GetPhaseTimeRemaining())
-            end
-
-            abil:Activate()
-            print("Non-Dual-Wield ability auto-activated!")
-            break
-          end
-        end
-      end
+      -- print("gimme precisely "..math.floor(timeTillReady * 100) / 100 .." bits...")
+      Task.Wait(timeTillReady)
     end
   end
 
-  local function onAbilityReady(ability)
-    if ability:GetCurrentPhase() ~= AbilityPhase.READY then
-      print("gimme "..ability:GetPhaseTimeRemaining().." bits...")
-      Task.Wait(ability:GetPhaseTimeRemaining())
+  local function onAbilityCooldown(ability)
+    if not Object.IsValid(ability) or not Object.IsValid(ability.owner) then return end
+    if not Input.IsActionHeld(ability.owner, ability.actionName) then return end
+
+    if ability.owner.serverUserData["DualWielding"] and Object.IsValid(dualWieldAbility) then
+      waitForAbilityReallyReady(dualWieldAbility)
+      dualWieldAbility:Activate()
+      print("Dual-Wield ability auto-activated!")
+    elseif #abilities > 1 then
+      if lastUsedAbilities[ability.owner] == abilities[1] then
+        waitForAbilityReallyReady(abilities[2])
+        abilities[2]:Activate()
+        print("Second ability auto-activated!")
+      end
     end
 
+    -- if ability.owner.serverUserData["DualWielding"] and Input.IsActionHeld(ability.owner, "Primary Ability") and Input.IsActionHeld(ability.owner, "Secondary Ability") then return end
+
+    -- if ability.owner.serverUserData["DualWielding"] and not dualWieldAbility then
+    --   updateDualWielding()
+    -- end
+
+    -- if Object.IsValid(ability) and Object.IsValid(ability.owner) and Input.IsActionHeld(ability.owner, ability.actionName) then
+    --   if Object.IsValid(dualWieldAbility) then
+
+    --     if dualWieldAbility:GetCurrentPhase() ~= AbilityPhase.READY then
+    --       print("gimme "..dualWieldAbility:GetPhaseTimeRemaining().." bits...")
+    --       Task.Wait(dualWieldAbility:GetPhaseTimeRemaining())
+    --     end
+
+    --     print("Second Dual-Wield ability auto-activated!")
+    --     dualWieldAbility:Activate()
+    --   elseif #abilities > 1 then
+    --     for _, abil in ipairs(abilities) do
+    --       if abil ~= lastUsedAbilities[ability.owner] then
+    --         if abil:GetCurrentPhase() ~= AbilityPhase.READY then
+    --           -- print("gimme "..abil:GetPhaseTimeRemaining().." bits...")
+    --           Task.Wait(abil:GetPhaseTimeRemaining())
+    --         end
+
+    --         print("Non-Dual-Wield ability auto-activated!")
+    --         abil:Activate()
+    --         break
+    --       end
+    --     end
+    --   end
+    -- end
+  end
+
+  local function onAbilityReady(ability)
     if Object.IsValid(ability) and Object.IsValid(ability.owner) and Input.IsActionHeld(ability.owner, ability.actionName) then
-      -- print("First Dual-Wield ability activated!")
-      ability:Activate()
+      waitForAbilityReallyReady(ability)
       print("First ability auto-activated!")
+      ability:Activate()
     end
   end
 
@@ -316,6 +334,7 @@ function Combat.initWeapon(weapon, attackCallback)
 
     if unequipEvent then unequipEvent:Disconnect() end
     if updateGearEvent then updateGearEvent:Disconnect() end
+    if readyEvent then readyEvent:Disconnect() end
 
     for _, eEvt in ipairs(executeEvents) do
       eEvt:Disconnect()
@@ -323,10 +342,6 @@ function Combat.initWeapon(weapon, attackCallback)
 
     for _, cEvt in ipairs(cooldownEvents) do
       cEvt:Disconnect()
-    end
-
-    for _, rEvt in ipairs(readyEvents) do
-      rEvt:Disconnect()
     end
 
     Task.Wait(0.5)
@@ -339,6 +354,7 @@ function Combat.initWeapon(weapon, attackCallback)
     if destroyEvent then destroyEvent:Disconnect() end
     if unequipEvent then unequipEvent:Disconnect() end
     if updateGearEvent then updateGearEvent:Disconnect() end
+    if readyEvent then readyEvent:Disconnect() end
 
     for _, eEvt in ipairs(executeEvents) do
       eEvt:Disconnect()
@@ -347,14 +363,10 @@ function Combat.initWeapon(weapon, attackCallback)
     for _, cEvt in ipairs(cooldownEvents) do
       cEvt:Disconnect()
     end
-
-    for _, rEvt in ipairs(readyEvents) do
-      rEvt:Disconnect()
-    end
   end
 
   while Object.IsValid(weapon) and #weapon:GetAbilities() < 1 do
-    print("Waiting for abilities...")
+    -- print("Waiting for abilities...")
     Task.Wait(0.1)
   end
 
@@ -374,15 +386,12 @@ function Combat.initWeapon(weapon, attackCallback)
 
     abilities = weapon:GetAbilities()
 
+    -- handler params: Ability_ability
+    readyEvent = abilities[1].readyEvent:Connect(onAbilityReady)
+
     for _, abil in ipairs(abilities) do
       -- handler params: Ability_ability
       table.insert(executeEvents, abil.executeEvent:Connect(attackCallback, item))
-
-      if #abilities == 1 then
-        print("I think "..weapon.name.." is a ranged weapon...")
-        -- handler params: Ability_ability
-        table.insert(readyEvents, abil.readyEvent:Connect(onAbilityReady))
-      end
 
       -- handler params: Ability_ability
       table.insert(cooldownEvents, abil.cooldownEvent:Connect(onAbilityCooldown))

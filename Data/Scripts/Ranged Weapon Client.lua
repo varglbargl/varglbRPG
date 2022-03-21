@@ -1,3 +1,4 @@
+local Loot = require(script:GetCustomProperty("Loot"))
 local Combat = require(script:GetCustomProperty("Combat"))
 
 local weapon = script:FindAncestorByType("Equipment")
@@ -8,7 +9,7 @@ local IMPACT_VFX = script:GetCustomProperty("Impact")
 local MUZZLE_FLASH = script:GetCustomProperty("MuzzleFlash")
 
 local clientPlayer = Game.GetLocalPlayer()
-local item = nil
+local item = Loot.findItemById(weapon.sourceTemplateId)
 local range = 2500
 
 local equipEvent = nil
@@ -51,34 +52,21 @@ function onAbilityExecute(ability)
   end
 end
 
-function onEquipped()
-  Events.Broadcast("EnableCrosshair")
+function onEquipped(_, player)
+  if player == clientPlayer then
+    Events.Broadcast("EnableCrosshair")
+  end
 
   if equipEvent then equipEvent:Disconnect() end
 
   -- handler params: Equipment_equipment, Player_player
   unequipEvent = weapon.unequippedEvent:Connect(onUnquipped)
-
-  local socket = weapon:GetAttachedToSocketName()
-  local slot = nil
-
-  if socket == "right_prop" then
-    slot = "primary"
-  elseif socket == "left_prop" then
-    slot = "secondary"
-  end
-
-  item = clientPlayer.clientUserData["Gear"][slot]
-
-  while not item do
-    Task.Wait(0.1)
-
-    item = clientPlayer.clientUserData["Gear"][slot]
-  end
 end
 
-function onUnquipped()
-  Events.Broadcast("DisableCrosshair")
+function onUnquipped(_, player)
+  if player == clientPlayer then
+    Events.Broadcast("DisableCrosshair")
+  end
 
   if unequipEvent then unequipEvent:Disconnect() end
 end
@@ -109,7 +97,7 @@ if Object.IsValid(weapon) then
 end
 
 if weapon.owner then
-  onEquipped(weapon)
+  onEquipped(weapon, weapon.owner)
 else
   -- handler params: Equipment_equipment, Player_player
   equipEvent = weapon.equippedEvent:Connect(onEquipped)

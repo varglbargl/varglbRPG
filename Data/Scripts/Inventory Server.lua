@@ -94,8 +94,6 @@ function initInventory(player)
           local item = Loot.findItemById(classGear[slot].id)
           local enchantedItem = Loot.decodeEnchant(item, classGear[slot].enc)
 
-          print(enchantedItem.name, slot)
-
           player.serverUserData["Gear"][slot] = enchantedItem
 
           if enchantedItem.templateId then
@@ -103,19 +101,11 @@ function initInventory(player)
 
             enchantedItem.equipmentId = equipment.id
 
-            if enchantedItem.socket == "main-hand" then
+            if slot == "primary" then
               equipment.socket = "right_prop"
 
-            elseif enchantedItem.socket == "off-hand" then
+            elseif slot == "secondary" then
               equipment.socket = "left_prop"
-
-            elseif enchantedItem.socket == "1-hand" then
-              if slot == "primary" then
-                equipment.socket = "right_prop"
-
-              elseif slot == "secondary" then
-                equipment.socket = "left_prop"
-              end
             end
 
             addAbilities(equipment, enchantedItem, slot)
@@ -160,20 +150,21 @@ end
 
 function addAbilities(equipment, item, slot)
   local abilityTemplates = nil
-  local addedAbilities = {}
+
+  -- print("Adding abilities to the "..slot.." ("..equipment.socket..") "..equipment.name.." ("..equipment.id..")")
 
   if item.animation and item.animation ~= "" then
     abilityTemplates = abilityAnimations[slot][string.lower(item.animation)]["x"..Utils.formatInt(item.speed)]
   end
 
-  for i, ability in ipairs(abilityTemplates) do
+  for _, ability in ipairs(abilityTemplates) do
     local thisAbility = World.SpawnAsset(ability, {parent = equipment})
+    thisAbility:ReorderAfterSiblings()
 
     equipment:AddAbility(thisAbility)
-    addedAbilities[i] = thisAbility
   end
 
-  item.abilities = addedAbilities
+  item.abilities = equipment:GetAbilities()
 end
 
 function checkDualWielding(player)
@@ -185,6 +176,8 @@ function checkDualWielding(player)
       primary = primaryGear.abilities[1],
       secondary = secondaryGear.abilities[1]
     }
+
+    -- print("Assigned DialWielding: primary = "..primaryGear.abilities[1].id..", secondary = "..secondaryGear.abilities[1].id)
   else
     player.serverUserData["DualWielding"] = nil
   end
@@ -266,19 +259,14 @@ function equipToPlayer(player, gearSlot, inventorySlot)
 
       eItem.equipmentId = equipment.id
 
-      if eItem.socket == "main-hand" then
+      if gearSlot == "primary" then
         equipment.socket = "right_prop"
 
-      elseif eItem.socket == "off-hand" then
+      elseif gearSlot == "secondary" then
         equipment.socket = "left_prop"
 
-      elseif eItem.socket == "1-hand" then
-        if gearSlot == "primary" then
-          equipment.socket = "right_prop"
-
-        elseif gearSlot == "secondary" then
-          equipment.socket = "left_prop"
-        end
+      else
+        error("I'm out of options here!!")
       end
 
       addAbilities(equipment, eItem, gearSlot)

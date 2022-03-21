@@ -61,25 +61,9 @@ function onResourceChanged(player, resourceName, newTotal)
 	elseif resourceName == "Level" then
     LEVEL_NUMBER.text = Utils.formatInt(newTotal)
     updateHitPoints()
-  elseif resourceName == "HitPoints" or resourceName == "MaxHitPoints" then
+  elseif resourceName == "HitPoints" then
     updateHitPoints()
 	end
-end
-
-function checkAbilitiesChanged(oldAbils, newAbils)
-  if #oldAbils ~= #newAbils then return true end
-
-  local matches = 0
-
-  for _, oAbil in ipairs(oldAbils) do
-    for _, nAbil in ipairs(newAbils) do
-      if oAbil == nAbil then
-        matches = matches + 1
-      end
-    end
-  end
-
-  return (matches ~= #oldAbils)
 end
 
 function onAbilityInterrupted(thisAbility)

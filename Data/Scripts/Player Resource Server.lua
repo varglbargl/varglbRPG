@@ -22,14 +22,14 @@ function throttleHPRegen(player, secs)
 end
 
 function onPlayerDamaged(player, damage)
+  player:SetResource("HitPoints", player.hitPoints)
+
   if damage.amount <= 0 then return end
 
   if player.serverUserData["Gliding"] then
     player.serverUserData["Gliding"] = false
     player.animationStance = player.serverUserData["IdleAnimation"]
   end
-
-  player:SetResource("HitPoints", player.hitPoints)
 
   throttleHPRegen(player, 5)
 end
@@ -89,7 +89,6 @@ function initResources(player)
   player.hitPoints = player.maxHitPoints
 
   player:SetResource("HitPoints", player.hitPoints)
-  player:SetResource("MaxHitPoints", player.maxHitPoints)
 
   local maxStam = player:SetResource("MaxStamina", math.floor(35 + yourSpit / 12 + yourLevel / 2))
   player:SetResource("Stamina", maxStam)
@@ -199,13 +198,13 @@ function onPlayerGainedXP(player, amount)
     player:AddResource("Experience", amount)
   end
 
-  Vault.save(player)
+  Vault.throttleSave(player)
 end
 
 function onPlayerGainedGold(player, amount)
   player:AddResource("Gold", amount)
 
-  Vault.save(player)
+  Vault.throttleSave(player)
 end
 
 function applyStatsWithGear(player)
@@ -268,7 +267,7 @@ function applyStatsWithGear(player)
   local newSpit = player:SetResource("Spit", baseStats.spit + bonusStats.spit)
 
   player.maxHitPoints = math.floor(35 + newGrit * 2) + bonusStats.health
-  player:SetResource("MaxHitPoints", player.maxHitPoints)
+  player.hitPoints = math.min(player.hitPoints, player.maxHitPoints)
   player:SetResource("HitPoints", player.hitPoints)
 
   local maxStamina = math.floor(45 + newSpit / 12 + player:GetResource("Level") / 2) + bonusStats.stamina
@@ -280,7 +279,8 @@ function resourceTicker(player)
   if not Object.IsValid(player) then return end
 
   if player.hitPoints < player.maxHitPoints and not player.serverUserData["RecentlyDamaged"] then
-    local regen = Damage.New(-math.floor(player.maxHitPoints / 20))
+    local regen = Damage.New(math.floor(player.maxHitPoints / -20))
+
     player:ApplyDamage(regen)
   end
 
@@ -289,6 +289,7 @@ function resourceTicker(player)
 
     if player:GetResource("Stamina") == 0 or player.isSwimming then
       player.serverUserData["Gliding"] = false
+
       Events.Broadcast("ForceStopSprint", player)
     end
   else

@@ -234,14 +234,14 @@ function Loot.enchantItem(item, rarity)
 end
 
 function Loot.decodeEnchant(item, code)
-  if code == "" then return item end
-
   local dupe = {}
   local rarity = #code / 3
 
   for i, v in pairs(item) do
     dupe[i] = v
   end
+
+  if code == "" then return dupe end
 
   dupe.enchant = code
   dupe.rarity = rarity
