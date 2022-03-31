@@ -2,7 +2,7 @@ Assets {
   Id: 4654522402111330560
   Name: "Castle-Office Tower"
   PlatformAssetType: 13
-  SerializationVersion: 108
+  SerializationVersion: 110
   CustomMaterialAsset {
     BaseMaterialId: 17264102318703626408
     ParameterOverrides {

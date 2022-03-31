@@ -35,6 +35,19 @@ Assets {
   }
 }
 Assets {
+  Id: 17866950122077035835
+  Name: "Save"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "724433ab385d4189bda5c546d11c9da9"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 17695103376294106055
   Name: "Fantasy Jewelry 014"
   PlatformAssetType: 9
@@ -239,6 +252,19 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Jewelry_015"
+  }
+}
+Assets {
+  Id: 8807568877460749627
+  Name: "Settings"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "9b5ce9d162df44b6ba49bfd10e396342"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {

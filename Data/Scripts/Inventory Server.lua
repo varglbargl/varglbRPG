@@ -172,6 +172,7 @@ function checkDualWielding(player)
   local secondaryGear = player.serverUserData["Gear"].secondary
 
   if primaryGear and secondaryGear and primaryGear.animation == secondaryGear.animation then
+  -- if primaryGear and secondaryGear and primaryGear.socket == secondaryGear.socket then
     player.serverUserData["DualWielding"] = {
       primary = primaryGear.abilities[1],
       secondary = secondaryGear.abilities[1]

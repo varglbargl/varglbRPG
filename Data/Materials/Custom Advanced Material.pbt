@@ -2,7 +2,7 @@ Assets {
   Id: 10183274436792533095
   Name: "Fuzzy Surface"
   PlatformAssetType: 13
-  SerializationVersion: 108
+  SerializationVersion: 110
   CustomMaterialAsset {
     BaseMaterialId: 6298880568795808979
     ParameterOverrides {

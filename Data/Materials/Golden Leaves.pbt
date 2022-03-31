@@ -2,7 +2,7 @@ Assets {
   Id: 10655457373320104322
   Name: "Golden Oak Leaves"
   PlatformAssetType: 13
-  SerializationVersion: 108
+  SerializationVersion: 110
   CustomMaterialAsset {
     BaseMaterialId: 17514540148930253626
     ParameterOverrides {

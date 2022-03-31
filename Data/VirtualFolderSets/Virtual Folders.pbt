@@ -2,7 +2,7 @@ Assets {
   Id: 11237267171393895703
   Name: "Virtual Folders"
   PlatformAssetType: 30
-  SerializationVersion: 108
+  SerializationVersion: 110
   VirtualFolderSetAsset {
     Folders {
       VirtualFolderPath: "Props"
@@ -159,6 +159,20 @@ Assets {
     Folders {
       VirtualFolderPath: "Animations"
       VirtualFolderPath: "Custom Animations"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "PPPP"
+      PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "PPPP"
+      VirtualFolderPath: "Utilities"
+      PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "Effects"
+      VirtualFolderPath: "Environment VFX"
       PlatformAssetType: 5
     }
   }

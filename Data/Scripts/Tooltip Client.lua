@@ -28,7 +28,7 @@ function tooltipFollowLoop(tooltip, worldPosition)
   if worldPosition then
     screenPos = UI.GetScreenPosition(worldPosition)
   else
-    screenPos = UI.GetCursorPosition()
+    screenPos = Input.GetCursorPosition()
   end
 
   tooltip.x = math.max(40, screenPos.x - tooltip.width)
@@ -38,7 +38,7 @@ function tooltipFollowLoop(tooltip, worldPosition)
     if worldPosition then
       screenPos = UI.GetScreenPosition(worldPosition)
     else
-      screenPos = UI.GetCursorPosition()
+      screenPos = Input.GetCursorPosition()
     end
 
     screenPos.x = math.max(20, screenPos.x - tooltip.width)

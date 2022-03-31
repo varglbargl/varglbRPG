@@ -108,6 +108,9 @@ Assets {
             BoundsScale: 1
           }
         }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
@@ -164,6 +167,8 @@ Assets {
             MaxDrawDistance: 5000
             MaxDistanceFadeRange: 1000
           }
+          ShadowBias: 0.4
+          ShadowSlopeBias: 0.6
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -216,6 +221,9 @@ Assets {
             BoundsScale: 1
           }
         }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
@@ -253,7 +261,7 @@ Assets {
       AssetId: "tm_fan_candle_sconce_001_lit_01"
     }
   }
-  SerializationVersion: 108
+  SerializationVersion: 110
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Interior"
 }

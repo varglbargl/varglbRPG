@@ -320,8 +320,10 @@ function pickUpItem()
       unequipItem(moveFromSlot, hoveredSlot)
     elseif moveFromTable == inventory and hoveredTable == inventory and moveFromSlot ~= hoveredSlot then
       swapInventorySlots(hoveredSlot, moveFromSlot)
-    elseif moveFromTable == gear and hoveredTable == gear and string.sub(moveFromSlot, 1, 1) == "f" and string.sub(hoveredSlot, 1, 1) == "f" then
-      swapGearSlots(hoveredSlot, moveFromSlot)
+    elseif moveFromTable == gear and hoveredTable == gear then
+      if moveFromTable[moveFromSlot].socket == hoveredTable[hoveredSlot].socket then
+        swapGearSlots(hoveredSlot, moveFromSlot)
+      end
     end
 
     moveFromTable = nil
@@ -399,7 +401,12 @@ function equipItem(inventorySlot, gearSlot)
   end
 
   if equippedSlot then
+    if inventory[inventorySlot].equipSfx then
+      Utils.playSoundEffect(inventory[inventorySlot].equipSfx, {volume = 0.6, stopTime = 0.3, fadeOutTime = 0.3})
+    end
+
     Utils.throttleToServer("EquipToPlayer", equippedSlot, inventorySlot)
+
 
     hoveredSlot = nil
 

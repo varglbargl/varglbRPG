@@ -2,7 +2,7 @@ Assets {
   Id: 2446110292771221927
   Name: "Ceramic Countertop"
   PlatformAssetType: 13
-  SerializationVersion: 108
+  SerializationVersion: 110
   CustomMaterialAsset {
     BaseMaterialId: 1809636398899887863
     ParameterOverrides {

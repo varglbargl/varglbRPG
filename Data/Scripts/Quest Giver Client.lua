@@ -11,6 +11,7 @@ local FINISH_QUEST_MARKER = script:GetCustomProperty("FinishQuestMarker")
 local QUEST_DISPLAY = script:GetCustomProperty("QuestDisplay"):WaitForObject()
 
 local clientPlayer = Game.GetLocalPlayer()
+local startNPC = script.parent
 local previousLines = nil
 local previousQuest = nil
 local updateAvailableEvent = nil
@@ -24,7 +25,6 @@ QUEST_DISPLAY.visibility = Visibility.INHERIT
 
 function onAvailableQuestsUpdated(questIDs)
   local questMarker = nil
-  local startNPC = script.parent
   local dialogueTrigger = startNPC:FindDescendantByType("Trigger")
 
   for _, id in ipairs(questIDs) do

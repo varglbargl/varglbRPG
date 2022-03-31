@@ -4,6 +4,7 @@ local Wildermagic = require(script:GetCustomProperty("Wildermagic"))
 local Combat = {}
 
 local lastUsedAbilities = {}
+local isAutoAttacking = {}
 
 local defaultRange = 2500
 
@@ -243,8 +244,18 @@ function Combat.initWeapon(weapon, attackCallback)
   end
 
   local function onAbilityCooldown(ability)
-    if not Object.IsValid(ability) or not Object.IsValid(ability.owner) then return end
-    if not Input.IsActionHeld(ability.owner, ability.actionName) then return end
+    if not Object.IsValid(ability) or not Object.IsValid(ability.owner) or ability.owner.isDead then return end
+    if not Input.IsActionHeld(ability.owner, ability.actionName) then
+      if isAutoAttacking[ability.owner] == ability.actionName then
+        isAutoAttacking[ability.owner] = nil
+      end
+
+      return
+    end
+
+    if isAutoAttacking[ability.owner] and isAutoAttacking[ability.owner] ~= ability.actionName then return end
+
+    isAutoAttacking[ability.owner] = ability.actionName
 
     if ability.owner.serverUserData["DualWielding"] and Object.IsValid(dualWieldAbility) then
       waitForAbilityReallyReady(dualWieldAbility)
@@ -260,11 +271,22 @@ function Combat.initWeapon(weapon, attackCallback)
   end
 
   local function onAbilityReady(ability)
-    if Object.IsValid(ability) and Object.IsValid(ability.owner) and Input.IsActionHeld(ability.owner, ability.actionName) then
-      waitForAbilityReallyReady(ability)
-      -- print("First ability auto-activated!")
-      ability:Activate()
+    if not Object.IsValid(ability) or not Object.IsValid(ability.owner) or ability.owner.isDead then return end
+    if not Input.IsActionHeld(ability.owner, ability.actionName) then
+      if isAutoAttacking[ability.owner] == ability.actionName then
+        isAutoAttacking[ability.owner] = nil
+      end
+
+      return
     end
+
+    if isAutoAttacking[ability.owner] and isAutoAttacking[ability.owner] ~= ability.actionName then return end
+
+    isAutoAttacking[ability.owner] = ability.actionName
+
+    waitForAbilityReallyReady(ability)
+    -- print("First ability auto-activated!")
+    ability:Activate()
   end
 
   local function onEquipped(_, player)

@@ -2,7 +2,7 @@ Assets {
   Id: 14001612711992027613
   Name: "Leather"
   PlatformAssetType: 13
-  SerializationVersion: 108
+  SerializationVersion: 110
   CustomMaterialAsset {
     BaseMaterialId: 16382665311434918253
     ParameterOverrides {

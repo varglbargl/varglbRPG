@@ -8,8 +8,8 @@ Tags: "Multiplayer"
 Tags: "Fantasy"
 Tags: "OpenWorld"
 Tags: "Adventure"
-ScreenshotPaths: "C:\\Users\\Eric\\Pictures\\GfS\\Core\\varglbRPG\\librarby.PNG"
-ReleaseNotes: "game does not work"
+ScreenshotPaths: "C:\\Users\\Eric\\Pictures\\GfS\\Core\\varglbRPG\\Campfire Sprite.PNG"
+ReleaseNotes: "game MIGHT work"
 OwnerId: "21c0b4284eff4bb091ce80a75c984fd4"
 SerializationVersion: 3
 ContainsRewardPointEvents: true

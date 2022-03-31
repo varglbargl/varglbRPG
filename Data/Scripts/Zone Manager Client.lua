@@ -44,14 +44,6 @@ end
 function leaveZone(zone)
   if currentZone ~= zone then return end
 
-  local siblingTriggers = zone:GetCildren()
-
-  for _, trig in ipairs(siblingTriggers) do
-    if Object.IsValid(trig) and trig:IsA("Trigger") and trig:IsOverlapping(clientPlayer) then
-      return
-    end
-  end
-
   local parentTriggers = zone.parent:GetChildren()
 
   for _, trig in ipairs(parentTriggers) do
@@ -68,23 +60,16 @@ function enterZone(zone)
 
   if zone:GetCustomProperty("AnnounceName") then
 
-    if fadeTask then
-      fadeTask:Cancel()
-      Utils.fadeOpacity(ZONE_DISPLAY, 0, 1)
-    end
+    Task.Wait(Utils.fadeOpacity(ZONE_DISPLAY, 0, 1))
 
     ZONE_NAME.text = title
     ZONE_SUBTITLE.text = subtitle
 
-    fadeTask = Task.Spawn(function()
-      Utils.fadeOpacity(ZONE_DISPLAY, 1, 1)
+    Utils.fadeOpacity(ZONE_DISPLAY, 1, 1)
 
-      Task.Wait(2)
+    Task.Wait(2)
 
-      Utils.fadeOpacity(ZONE_DISPLAY, 0, 1)
-
-      fadeTask = nil
-    end)
+    Utils.fadeOpacity(ZONE_DISPLAY, 0, 1)
   end
 
   ADVENTURE_LOG_ZONE_NAME.text = title..", "..subtitle

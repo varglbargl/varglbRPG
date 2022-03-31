@@ -135,7 +135,10 @@ end
 
 function onPlayerLeft(player)
   damagedEvents[player]:Disconnect()
+  damagedEvents[player] = nil
+
   diedEvents[player]:Disconnect()
+  diedEvents[player] = nil
 end
 
 function onPlayerGainedXP(player, amount)

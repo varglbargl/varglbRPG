@@ -86,6 +86,9 @@ Assets {
             BoundsScale: 1
           }
         }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
@@ -106,15 +109,10 @@ Assets {
           }
         }
         ParentId: 15150143337005922378
-        ChildIds: 11109921383225847799
-        ChildIds: 7247528279656234804
-        ChildIds: 5564611535135948679
         ChildIds: 15057629502648964084
         ChildIds: 2868967381438230538
         ChildIds: 2567058155484138152
         ChildIds: 3409322984177232160
-        ChildIds: 15325232214000138127
-        ChildIds: 5513417614251839280
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -125,133 +123,6 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 11109921383225847799
-        Name: "Animation - Wing Flap"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10736186029381582192
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14845539423045758677
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 7247528279656234804
-        Name: "Animation - Leg Move"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10736186029381582192
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 15739977563864071398
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 5564611535135948679
-        Name: "Stinger"
-        Transform {
-          Location {
-            X: -5.51920557
-            Y: -539.098267
-            Z: -150.222366
-          }
-          Rotation {
-            Roll: -142.005219
-          }
-          Scale {
-            X: 0.952614
-            Y: 0.952606261
-            Z: 1.12263823
-          }
-        }
-        ParentId: 10736186029381582192
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18133699642558591580
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11940814192530419230
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -355,12 +226,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -419,12 +292,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -483,12 +358,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -551,12 +428,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -619,12 +498,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -689,12 +570,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -759,12 +642,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -829,12 +714,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -899,12 +786,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -934,6 +823,7 @@ Assets {
         ChildIds: 7617937140613302880
         ChildIds: 6658747365096474214
         ChildIds: 7021163067666535655
+        ChildIds: 5564611535135948679
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -997,12 +887,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1058,12 +950,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1116,12 +1010,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1181,12 +1077,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1249,12 +1147,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1310,12 +1210,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1378,12 +1280,77 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 5564611535135948679
+        Name: "Stinger"
+        Transform {
+          Location {
+            X: -1.69595599
+            Y: -177.146637
+            Z: -45.0690193
+          }
+          Rotation {
+            Roll: -142.005219
+          }
+          Scale {
+            X: 0.285784245
+            Y: 0.28578192
+            Z: 0.336791515
+          }
+        }
+        ParentId: 2868967381438230538
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 18133699642558591580
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11940814192530419230
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1394,19 +1361,22 @@ Assets {
         Name: "Wings"
         Transform {
           Location {
-            Z: 200.000015
+            Y: 4.57638836
+            Z: 234.287521
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.999999642
+            Y: 0.999999642
+            Z: 0.999999642
           }
         }
         ParentId: 10736186029381582192
         ChildIds: 13246071942459380538
         ChildIds: 9524076004663627725
+        ChildIds: 10672213301356786219
+        ChildIds: 16583671102697443994
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1448,16 +1418,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12487925550818364065
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
+              Id: 648813129920043009
             }
           }
           Overrides {
@@ -1484,18 +1445,20 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 1050562759207971480
+            Id: 3066013267284902859
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1526,16 +1489,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12487925550818364065
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
+              Id: 648813129920043009
             }
           }
           Overrides {
@@ -1562,18 +1516,162 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 1050562759207971480
+            Id: 3066013267284902859
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 10672213301356786219
+        Name: "Prism - 3-Sided Convex"
+        Transform {
+          Location {
+            X: 217.513123
+            Y: -204.45694
+            Z: 122.738098
+          }
+          Rotation {
+            Pitch: -142.503662
+            Yaw: -171.828812
+            Roll: 33.0562134
+          }
+          Scale {
+            X: 3.113
+            Y: 8.45
+            Z: 0.0841845199
+          }
+        }
+        ParentId: 2567058155484138152
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 648813129920043009
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3066013267284902859
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 16583671102697443994
+        Name: "Prism - 3-Sided Convex"
+        Transform {
+          Location {
+            X: -206.475937
+            Y: -202.168747
+            Z: 127.415443
+          }
+          Rotation {
+            Pitch: 37.4962578
+            Yaw: -8.17120361
+            Roll: -146.943665
+          }
+          Scale {
+            X: 3.11332154
+            Y: 8.45
+            Z: 0.0841845199
+          }
+        }
+        ParentId: 2567058155484138152
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 648813129920043009
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3066013267284902859
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1604,6 +1702,18 @@ Assets {
         ChildIds: 8582972687049812162
         ChildIds: 839148010060958333
         ChildIds: 12918045132458197985
+        ChildIds: 6902662599779254215
+        ChildIds: 5890378400939994708
+        ChildIds: 12835681763368769947
+        ChildIds: 7864487564896627661
+        ChildIds: 11107486325506559905
+        ChildIds: 15571248655605506258
+        ChildIds: 5842755909847712981
+        ChildIds: 9440196399255468685
+        ChildIds: 3360628069500475277
+        ChildIds: 9400383052909993294
+        ChildIds: 2924342544334310977
+        ChildIds: 5259088660067348224
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1679,12 +1789,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1749,12 +1861,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1819,12 +1933,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1889,12 +2005,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1959,12 +2077,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2029,53 +2149,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
         }
-        NetworkRelevanceDistance {
+        Relevance {
           Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 15325232214000138127
-        Name: "Legs"
-        Transform {
-          Location {
-            X: -0.000813802064
-            Y: 48.5888672
-            Z: -18.9211521
-          }
-          Rotation {
-            Roll: -16.6389923
-          }
-          Scale {
-            X: 2.65
-            Y: 2.65
-            Z: 2.65
-          }
-        }
-        ParentId: 10736186029381582192
-        ChildIds: 6902662599779254215
-        ChildIds: 5890378400939994708
-        ChildIds: 12835681763368769947
-        ChildIds: 7864487564896627661
-        ChildIds: 11107486325506559905
-        ChildIds: 15571248655605506258
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2086,22 +2167,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -56.0747261
-            Y: -3.43145466
-            Z: -77.1142502
+            X: -56.0397873
+            Y: -34.846302
+            Z: -77.0676422
           }
           Rotation {
-            Pitch: -0.000177584909
-            Yaw: 90.0003357
-            Roll: 21.8342571
+            Pitch: -0.00017075472
+            Yaw: 90.0003281
+            Roll: 21.8342438
           }
           Scale {
-            X: 0.27000007
-            Y: 0.27000007
-            Z: 1.53000033
+            X: 0.269831896
+            Y: 0.269831896
+            Z: 1.52904737
           }
         }
-        ParentId: 15325232214000138127
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2140,12 +2221,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2156,22 +2239,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -94.372139
-            Y: -3.46011972
-            Z: -119.250259
+            X: -94.3133316
+            Y: -34.8749466
+            Z: -119.177406
           }
           Rotation {
-            Pitch: -0.000129773587
-            Yaw: 90.0002365
-            Roll: -38.1655884
+            Pitch: -0.000136603776
+            Yaw: 90.0002289
+            Roll: -38.1655655
           }
           Scale {
-            X: 0.216000065
-            Y: 0.216000065
-            Z: 1.12736869
+            X: 0.215865538
+            Y: 0.215865538
+            Z: 1.12666643
           }
         }
-        ParentId: 15325232214000138127
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2210,12 +2293,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2226,22 +2311,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: -83.5025864
-            Y: -3.44857693
-            Z: -9.94287395
+            X: -83.4505463
+            Y: -34.8634148
+            Z: -9.93811226
           }
           Rotation {
             Pitch: -7.51320767e-05
             Yaw: 90.0001602
-            Roll: -83.1655197
+            Roll: -83.1655
           }
           Scale {
-            X: 0.270000041
-            Y: 0.270000041
-            Z: 1.17000008
+            X: 0.269831866
+            Y: 0.269831866
+            Z: 1.16927123
           }
         }
-        ParentId: 15325232214000138127
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2280,12 +2365,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2296,22 +2383,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: 61.9666367
-            Y: -1.53684449
-            Z: -74.4997406
+            X: 61.9280243
+            Y: -32.9528732
+            Z: -74.4547577
           }
           Rotation {
             Pitch: -0.000266377348
-            Yaw: -89.9993591
-            Roll: 17.4226646
+            Yaw: -89.9993668
+            Roll: 17.422678
           }
           Scale {
-            X: 0.27000007
-            Y: 0.27000007
-            Z: 1.53000033
+            X: 0.269831896
+            Y: 0.269831896
+            Z: 1.52904737
           }
         }
-        ParentId: 15325232214000138127
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2350,12 +2437,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2366,22 +2455,22 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: 103.311592
-            Y: -1.50061369
-            Z: -113.58046
+            X: 103.247215
+            Y: -32.9166603
+            Z: -113.511116
           }
           Rotation {
-            Pitch: -0.00022539623
-            Yaw: -89.9994354
-            Roll: -42.57724
+            Pitch: -0.000218566041
+            Yaw: -89.9994278
+            Roll: -42.5772514
           }
           Scale {
-            X: 0.216000065
-            Y: 0.216000065
-            Z: 1.12736869
+            X: 0.215865538
+            Y: 0.215865538
+            Z: 1.12666643
           }
         }
-        ParentId: 15325232214000138127
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2420,12 +2509,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2436,9 +2527,9 @@ Assets {
         Name: "Pyramid - 3-Sided Truncated"
         Transform {
           Location {
-            X: 84.1120911
-            Y: -1.50976968
-            Z: -5.40663052
+            X: 84.0596771
+            Y: -32.9258156
+            Z: -5.40469694
           }
           Rotation {
             Pitch: -0.000184415097
@@ -2446,12 +2537,12 @@ Assets {
             Roll: -87.5771255
           }
           Scale {
-            X: 0.270000041
-            Y: 0.270000041
-            Z: 1.17000008
+            X: 0.269831866
+            Y: 0.269831866
+            Z: 1.16927123
           }
         }
-        ParentId: 15325232214000138127
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2490,53 +2581,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
         }
-        NetworkRelevanceDistance {
+        Relevance {
           Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 5513417614251839280
-        Name: "Legs"
-        Transform {
-          Location {
-            X: -0.000813802064
-            Y: -15.2848301
-            Z: -38.0095406
-          }
-          Rotation {
-            Roll: -16.6389923
-          }
-          Scale {
-            X: 2.65165257
-            Y: 2.65165257
-            Z: 2.65165257
-          }
-        }
-        ParentId: 10736186029381582192
-        ChildIds: 5842755909847712981
-        ChildIds: 9440196399255468685
-        ChildIds: 3360628069500475277
-        ChildIds: 9400383052909993294
-        ChildIds: 2924342544334310977
-        ChildIds: 5259088660067348224
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2548,13 +2600,13 @@ Assets {
         Transform {
           Location {
             X: -45.6846085
-            Y: -44.8033638
-            Z: -66.9530106
+            Y: -101.382385
+            Z: -66.9444351
           }
           Rotation {
-            Pitch: -17.3362484
-            Yaw: 132.204
-            Roll: 10.6888571
+            Pitch: -17.3362427
+            Yaw: 132.20401
+            Roll: 10.6888752
           }
           Scale {
             X: 0.2700001
@@ -2562,7 +2614,7 @@ Assets {
             Z: 1.53000045
           }
         }
-        ParentId: 5513417614251839280
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2601,12 +2653,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2618,21 +2672,21 @@ Assets {
         Transform {
           Location {
             X: -72.6892853
-            Y: -82.989418
-            Z: -99.3545914
+            Y: -139.568451
+            Z: -99.3460312
           }
           Rotation {
             Pitch: -17.3362274
-            Yaw: 132.203873
+            Yaw: 132.203888
             Roll: -49.3110085
           }
           Scale {
-            X: 0.216000095
-            Y: 0.216000095
-            Z: 1.12736881
+            X: 0.21600011
+            Y: 0.21600011
+            Z: 1.12736893
           }
         }
-        ParentId: 5513417614251839280
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2671,12 +2725,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2688,21 +2744,21 @@ Assets {
         Transform {
           Location {
             X: -70.2527771
-            Y: -38.4229774
-            Z: 1.01950932
+            Y: -95.0020065
+            Z: 1.02807868
           }
           Rotation {
-            Pitch: -17.3361931
-            Yaw: 132.203796
+            Pitch: -17.3362
+            Yaw: 132.203812
             Roll: -94.3109
           }
           Scale {
-            X: 0.270000041
-            Y: 0.270000041
+            X: 0.27000007
+            Y: 0.27000007
             Z: 1.17000008
           }
         }
-        ParentId: 5513417614251839280
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2741,12 +2797,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2758,13 +2816,13 @@ Assets {
         Transform {
           Location {
             X: 41.928318
-            Y: -42.8780861
-            Z: -69.1972198
+            Y: -99.4571075
+            Z: -69.188652
           }
           Rotation {
             Pitch: 18.3550262
             Yaw: -126.185333
-            Roll: 15.7914734
+            Roll: 15.7914906
           }
           Scale {
             X: 0.2700001
@@ -2772,7 +2830,7 @@ Assets {
             Z: 1.53000045
           }
         }
-        ParentId: 5513417614251839280
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2811,12 +2869,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2828,21 +2888,21 @@ Assets {
         Transform {
           Location {
             X: 69.2375641
-            Y: -77.5719223
-            Z: -105.158981
+            Y: -134.15094
+            Z: -105.150406
           }
           Rotation {
             Pitch: 18.3550606
-            Yaw: -126.185432
-            Roll: -44.2084312
+            Yaw: -126.18544
+            Roll: -44.2084084
           }
           Scale {
-            X: 0.216000095
-            Y: 0.216000095
-            Z: 1.12736881
+            X: 0.21600011
+            Y: 0.21600011
+            Z: 1.12736893
           }
         }
-        ParentId: 5513417614251839280
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2881,12 +2941,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2898,21 +2960,21 @@ Assets {
         Transform {
           Location {
             X: 71.2679901
-            Y: -37.0986557
-            Z: -3.05831122
+            Y: -93.6776886
+            Z: -3.04974
           }
           Rotation {
             Pitch: 18.3551
-            Yaw: -126.185524
+            Yaw: -126.185501
             Roll: -89.2083893
           }
           Scale {
-            X: 0.270000041
-            Y: 0.270000041
+            X: 0.27000007
+            Y: 0.27000007
             Z: 1.17000008
           }
         }
-        ParentId: 5513417614251839280
+        ParentId: 3409322984177232160
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2951,12 +3013,14 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
             BoundsScale: 1
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2970,24 +3034,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_truncated_teardrop_001"
-      }
-    }
-    Assets {
-      Id: 11940814192530419230
-      Name: "Cone"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cone_001"
-      }
-    }
-    Assets {
-      Id: 18133699642558591580
-      Name: "Plastic Shiny"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "plastic_shiny_001"
       }
     }
     Assets {
@@ -3063,21 +3109,30 @@ Assets {
       }
     }
     Assets {
-      Id: 1050562759207971480
-      Name: "Prism - 3-Sided Convex"
+      Id: 11940814192530419230
+      Name: "Cone"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prism_triangle_convex_001"
+        AssetId: "sm_cone_001"
       }
     }
     Assets {
-      Id: 12487925550818364065
-      Name: "Solar Panel 003"
+      Id: 18133699642558591580
+      Name: "Plastic Shiny"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_scf_solar_panel_003_uv_ref"
+        AssetId: "plastic_shiny_001"
+      }
+    }
+    Assets {
+      Id: 3066013267284902859
+      Name: "Plane Triangle - One Sided Convex"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_triangle_003"
       }
     }
     PrimaryAssetId {
@@ -3088,7 +3143,7 @@ Assets {
   Marketplace {
     Description: "30 cute, cool, and useful everyday props and scenery themed after a backyard and garden!\r\n\r\nLoads of stuff to help build your garden, park, playground, or pretty much any outdoor area~!\r\n\r\nNEW: 3 new items added and more on the way!"
   }
-  SerializationVersion: 108
+  SerializationVersion: 110
   DirectlyPublished: true
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Exterior"

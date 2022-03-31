@@ -19,6 +19,9 @@ Objects {
   ChildIds: 15674090404703776058
   ChildIds: 9566215625065667962
   ChildIds: 7384129576469687885
+  ChildIds: 10247742859376114603
+  ChildIds: 601044940053424078
+  ChildIds: 13048010404965053345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +37,108 @@ Objects {
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 13048010404965053345
+  Name: "Destructible Barrel"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11517650826688979796
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Destructible Barrel"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 650
+            Y: 170
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5794091055725121046
+    }
+  }
+}
+Objects {
+  Id: 601044940053424078
+  Name: "Destructible Barrel"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11517650826688979796
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Destructible Barrel"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 790
+            Y: -40
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5794091055725121046
+    }
+  }
+}
+Objects {
+  Id: 10247742859376114603
+  Name: "Destructible Barrel"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11517650826688979796
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Destructible Barrel"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 450
+            Y: -190
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5794091055725121046
+    }
   }
 }
 Objects {
@@ -138,6 +243,9 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -756,11 +864,19 @@ Objects {
         }
       }
       RelevanceSettings {
+        key: "mesh"
+        value {
+          LowDistance: 4500
+          MediumDistance: 7000
+          HighDistance: 9000
+        }
+      }
+      RelevanceSettings {
         key: "vfx"
         value {
           LowDistance: 4500
-          MediumDistance: 8000
-          HighDistance: 15000
+          MediumDistance: 7000
+          HighDistance: 9000
         }
       }
       EnableInGameSocialUI: true

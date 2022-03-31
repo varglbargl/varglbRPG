@@ -54,6 +54,7 @@ function readLootTable(thisLootTable, itemType, damageStat)
       animation = item["AttackAnimation"],
       description = item["Description"],
       flavorText = item["FlavorText"],
+      equipSfx = item["EquipSfx"],
       minRarity = item["MinRarity"],
       rarity = 0,
       enchant = ""

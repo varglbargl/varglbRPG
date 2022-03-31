@@ -12,29 +12,29 @@ Assets {
       }
       Overrides {
         Name: "cs:IdleAnimation"
-        String: ""
+        String: "unarmed_idle_relaxed"
       }
       Overrides {
         Name: "cs:ReadyAnimation"
-        String: ""
+        String: "unarmed_idle_ready"
       }
       Overrides {
         Name: "cs:WalkAnimation"
-        String: ""
+        String: "unarmed_walk_forward"
       }
       Overrides {
         Name: "cs:RunAnimation"
-        String: ""
+        String: "unarmed_run_forward"
       }
       Overrides {
         Name: "cs:AttackAnimation"
-        String: ""
+        String: "unarmed_bite"
       }
       Overrides {
         Name: "cs:DieAnimation"
-        String: ""
+        String: "unarmed_death_impact"
       }
     }
   }
-  SerializationVersion: 108
+  SerializationVersion: 110
 }

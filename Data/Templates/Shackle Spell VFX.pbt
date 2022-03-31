@@ -200,9 +200,9 @@ Assets {
           }
           AutoPlay: true
           Pitch: -300
-          Volume: 0.5
-          Falloff: -1
-          Radius: -1
+          Volume: 0.4
+          Falloff: 5000
+          Radius: 500
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -243,9 +243,9 @@ Assets {
           }
           AutoPlay: true
           Pitch: -1000
-          Volume: 0.25
-          Falloff: 2000
-          Radius: 1000
+          Volume: 0.4
+          Falloff: 5000
+          Radius: 500
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -287,8 +287,8 @@ Assets {
           AutoPlay: true
           Pitch: 300
           Volume: 1
-          Falloff: 2000
-          Radius: 1000
+          Falloff: 5000
+          Radius: 500
           FadeInTime: 0.5
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
@@ -339,7 +339,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 108
+  SerializationVersion: 110
   VirtualFolderPath: "Effects"
   VirtualFolderPath: "Other VFX"
 }

@@ -4,7 +4,7 @@ local clientPlayer = Game.GetLocalPlayer()
 local cursorTask = nil
 
 function cursorLoop()
-  local cursorPos = UI.GetCursorPosition()
+  local cursorPos = Input.GetCursorPosition()
 
   CURSOR.x = cursorPos.x
   CURSOR.y = cursorPos.y

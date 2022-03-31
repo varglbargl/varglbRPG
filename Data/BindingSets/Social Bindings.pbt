@@ -2,7 +2,7 @@ Assets {
   Id: 1111937000302231274
   Name: "Social Bindings"
   PlatformAssetType: 29
-  SerializationVersion: 108
+  SerializationVersion: 110
   BindingSetAsset {
     Bindings {
       BindingType {

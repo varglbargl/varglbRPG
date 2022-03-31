@@ -413,6 +413,19 @@ Assets {
   }
 }
 Assets {
+  Id: 17866950122077035835
+  Name: "Save"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "724433ab385d4189bda5c546d11c9da9"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 17860513488428189516
   Name: "Japanese Temple Door Shoji 01"
   PlatformAssetType: 1
@@ -851,15 +864,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_rust_diamond-plate_002"
-  }
-}
-Assets {
-  Id: 17424304999265903872
-  Name: "Icon Present"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Present"
   }
 }
 Assets {
@@ -1755,7 +1759,7 @@ Assets {
 }
 Assets {
   Id: 15911016222893037156
-  Name: "Rusty Riveted Metal"
+  Name: "Metal Rusty Riveted"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
@@ -2606,6 +2610,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_color_grading"
+  }
+}
+Assets {
+  Id: 14669025476999387874
+  Name: "Icon Settings"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Settings"
   }
 }
 Assets {
@@ -6782,6 +6795,19 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_scf_details_001_ref"
+  }
+}
+Assets {
+  Id: 8807568877460749627
+  Name: "Settings"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "9b5ce9d162df44b6ba49bfd10e396342"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {

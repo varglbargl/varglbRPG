@@ -2,7 +2,7 @@ Assets {
   Id: 5384759696610371662
   Name: "Shields"
   PlatformAssetType: 31
-  SerializationVersion: 108
+  SerializationVersion: 110
   DataTableAsset {
     Assets {
       Id: 16268917374562647466
@@ -20,6 +20,24 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Survival_Equip_Plant_001"
+      }
+    }
+    Assets {
+      Id: 17000364962202341790
+      Name: "Wood Shield Hit Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_wood_shield_hit_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 5142538908946234900
+      Name: "Funny Cartoon Clown Car Horn Honk Double 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_funny_cartoon_clown_car_horn_honk_double_01_Cue_ref"
       }
     }
   }

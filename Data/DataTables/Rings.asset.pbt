@@ -2,7 +2,7 @@ Assets {
   Id: 12958250142094275150
   Name: "Rings"
   PlatformAssetType: 31
-  SerializationVersion: 108
+  SerializationVersion: 110
   DataTableAsset {
     Assets {
       Id: 8154916375119294641
@@ -587,6 +587,528 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_SciFi_Ability_Purple_016"
+      }
+    }
+    Assets {
+      Id: 14460779988063667300
+      Name: "Balloon Rubber Squeak Short 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_ballon_rub_rubber_squeak_short_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 3603627927221899507
+      Name: "Metal Hammer Anvil Forge Impact 03 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_metal_hammer_anvil_forge_04a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 2647140043437809475
+      Name: "Whip Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_whip_whoosh_1_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 5140663444453323759
+      Name: "Gear Equipment Cloth Military Quick Grab Movement 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_gear_equipment_cloth_military_quick_grab_movement_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 14380252410016477740
+      Name: "Impact Projectile Wood Heavy 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_projectile_impact_wood_heavy_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 7267035884251277827
+      Name: "Collect Coin Star Ping 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_collect_coin_star_ping_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 7697723051674885387
+      Name: "Leather Tap Grab Catch 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_leather_tap_grab_catch_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1025302186102674371
+      Name: "Metal Stone Hammer Anvil Forge Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_metal_hammer_anvil_forge_02a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1014843631224850613
+      Name: "Metal Hammer Anvil Forge Impact 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_metal_hammer_anvil_forge_03_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 13135210677248922978
+      Name: "Gore Flesh Tap Hit 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_gore_flesh_tap_hit_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 15967257769842566789
+      Name: "Cloth Fabric Flap Rustle 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_cloth_fabric_flap_rustle_02a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 2482530034872436497
+      Name: "Collect Coin Star Ping 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_collect_coin_star_ping_02_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 10846663469984961992
+      Name: "Steam Mechanical Gear Lock Load Mechanism Heavy 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_steam_mechanical_gear_lock_load_mechanism_heavy_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 17110569234275754959
+      Name: "Creature Beast Roar 04 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_creature_beast_roar_04_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 12706012441318034466
+      Name: "Xylophone Sampled Instrument 01"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_sampled_xylophone_ref"
+      }
+    }
+    Assets {
+      Id: 12241463933090595010
+      Name: "Shine Star Shimmer 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_shine_star_shimmer_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 11063495202193283365
+      Name: "Pom Pom Shake Single 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_pom_pom_shake_single_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 12941926364162601142
+      Name: "Metal Gear Clothing Heavy Light Movement 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_metal_gear_clothing_heavy_light_movement_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 7738144753138344221
+      Name: "Cash Register Bell Ding 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_cash_register_bell_ding_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1185119892967937691
+      Name: "Food Eat Bite Crunchy 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_food_eat_bite_crunchy_02a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 13907814531256778101
+      Name: "Claw Swipe Sharp 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_claw_swipe_sharp_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1525341704701040522
+      Name: "Magic Frost Ice Freeze Spell Cast 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_frost_ice_freeze_spell_cast_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 5059348852730394186
+      Name: "Harpsichord Sampled Instrument 01"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_sampled_harpsichord_ref"
+      }
+    }
+    Assets {
+      Id: 1011564140390294198
+      Name: "Domestic Windchimes Drop Place Down 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_windchimes_place_down_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 16786565957515303135
+      Name: "Magic Poof Sparkle 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_poof_sparkle_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 9577132763265118171
+      Name: "Magic Dark Ghostly Voices Spell Cast 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_dark_ghostly_voices_spell_cast_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 15417629502012407939
+      Name: "Footstep Gear Light Armor Heavy Movement 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_footsteps_light_armor_heavy_movement_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 5065330313304191937
+      Name: "Sword & Blade - Slices, Cuts and Stabs Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_sword_slices_cuts_stabs_flesh_body_ref"
+      }
+    }
+    Assets {
+      Id: 13741818008879324790
+      Name: "Magic Sparkle Dust Item 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_sparkle_dust_item_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 2088866403109883098
+      Name: "Spider Shaker Scuttle Multiple 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_spider_shaker_scuttle_multiple_01b_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 15359159458840791158
+      Name: "Cartoon Twang Spring Bounce Jump 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_cartoon_twang_spring_bounce_jump_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 13464486465399840016
+      Name: "Sharp Bite Impact Swipe 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_sharp_bite_impact_swipe_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 12070653136178683896
+      Name: "Metal Thud Rattle Hit Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_impact_metal_thud_rattle_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 12473178658076825271
+      Name: "Sci-fi UI Buzzer Warble Error Denied 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_scifi_ui_buzzer_warble_error_denied_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 6193093804835756005
+      Name: "Wet Paint Roller Squishy Goop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_wet_paint_roller_squishy_goop_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4083926331614674574
+      Name: "Shuriken Ninja Star Light Metal Armor Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_shuriken_ninja_star_light_metal_armor_impact_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4186430560185678093
+      Name: "Bullet Shell Casing Drop Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_bullet_shell_casings_drop_ref"
+      }
+    }
+    Assets {
+      Id: 3936067310151399770
+      Name: "Metal Barrel Hollow Thud Hit 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_metal_barrel_hollow_thud_hit_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 18256142733914160931
+      Name: "Magic Designed Corrosive Curse 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_designed_corosive_curse_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1415660388734945298
+      Name: "Creature Beast Reptile High Growl 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_creature_beast_reptile_high_growl_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 5012303189432691832
+      Name: "Heavy Mechanical Door Airlock Pneumatic 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_heavy_mechanical_door_airlock_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 13396031252183746718
+      Name: "Magic Designed Time Flutter 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_designed_time_flutter_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 16456797859193051488
+      Name: "Cinematic Synth Growl Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_designer_cinematic_synth_growl_impact_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4450964549890752997
+      Name: "Dark Cave Monster Horror Distant Growl 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_dark_cave_monster_horror_distant_growl_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 7287081520181993714
+      Name: "Magic Designed Cyclone Rift 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_designed_cyclone_rift_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 9517518412245604689
+      Name: "Magic Fireball Small Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_fireball_small_impact_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1702710367079494637
+      Name: "Magic Designed Water Rage 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_designed_water_rage_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 674104427143328263
+      Name: "Magic Designed Hopeful Drops 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_designed_hopeful_drops_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 13890466788424054147
+      Name: "Magic Designed Seismic Blasts 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_designed_siesmic_blasts_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 15872682704612558427
+      Name: "Magic Dark Breath Synth Spell Cast 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_dark_breath_synth_spell_cast_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 15088634009454278236
+      Name: "Combo Achievement Warm Synth Stingers Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "abp_stinger_combo_achievement_warm_synth_01_ref"
+      }
+    }
+    Assets {
+      Id: 9169661603089833217
+      Name: "Magic Designed Teleportation Small Gone 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_designed_teleportation_small_gone_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 10848243245173882815
+      Name: "Horror Waterphone Music Stingers Set 01"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "abp_horrorWaterphone_stingers_ref"
+      }
+    }
+    Assets {
+      Id: 10383240944296150812
+      Name: "Sci-fi Mech Robotic Gear Mechanism Movement Randomized 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_scifi_mech_robotic_gear_mechanism_movement_randomized_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 6224827038153001875
+      Name: "Magic Designed Primal Surge 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_designed_primal_surge_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 13576654539924533523
+      Name: "Sci-fi Cinematic Time Warp Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_designer_cinematic_scifi_timewarp_impact_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 15832589545297504940
+      Name: "Cartoon Bounce Jump Boing 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_cartoon_bounce_jump_boing_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 16973542910847476401
+      Name: "Horror Prepared Piano Music Stingers Set 01"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "abp_horrorPreparedPiano_stingers_ref"
       }
     }
   }

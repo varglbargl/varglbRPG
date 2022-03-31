@@ -20,6 +20,7 @@ Assets {
         ChildIds: 9095690193787262675
         ChildIds: 2163805908101015229
         ChildIds: 14414281646467858179
+        ChildIds: 10466031862666973923
         Lifespan: 2
         WantsNetworking: true
         Collidable_v2 {
@@ -301,6 +302,81 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
+      Objects {
+        Id: 10466031862666973923
+        Name: "Basic Explosion VFX"
+        Transform {
+          Location {
+            X: 15
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4287991496949830372
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Enable Light"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Enable Flash"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Fire"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Ring"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Smoke"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Sparks"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Light Brightness Multiplier"
+            Float: 0.01
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 14410488623088137387
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
     }
     Assets {
       Id: 13365856519447971114
@@ -338,12 +414,21 @@ Assets {
         AssetId: "fxbp_cast_circle_generic"
       }
     }
+    Assets {
+      Id: 14410488623088137387
+      Name: "Basic Explosion VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_explosion"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 108
+  SerializationVersion: 110
   VirtualFolderPath: "Effects"
   VirtualFolderPath: "Muzzle Flashes"
 }

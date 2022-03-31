@@ -1,8 +1,8 @@
 local debug = false
 
 -- 0 is sunrise, 90 is midday, 180 is sunset, 270 is midnight
--- local propStartingDegrees = script:GetCustomProperty("StartingDegrees")
-local propStartingDegrees = math.random(30, 150)
+local propStartingDegrees = script:GetCustomProperty("StartingDegrees")
+-- local propStartingDegrees = math.random(30, 150)
 -- how fast it takes for the sun to travel around the globe.
 -- 2 minute day/night cycle = 120 seconds = 360 degrees/120 seconds = 3
 local propDegreesPerSecond = script:GetCustomProperty("DegreesPerSecond")
@@ -16,9 +16,8 @@ local propSky = script:GetCustomProperty("Sky"):WaitForObject()
 local propLight = script:GetCustomProperty("Light"):WaitForObject()
 local propStars = script:GetCustomProperty("Stars"):WaitForObject()
 
-local sunriseSunColor = Color.New(227/255, 76/255, 0, 1) -- E34C00FF
-local middaySunColor = Color.New(1, 1, 240/255, 1) -- FFFFF0FF
-local nightSunColor = Color.New(174/255, 205/255, 1, 1) -- AECDFFFF
+local sunriseSunColor = Color.New(0.9, 0.3, 0, 1) -- E34C00FF
+local middaySunColor = Color.New(1, 1, 0.7, 1) -- FFFFF0FF
 
 local dayLight = Color.New(1, 0.9, 0.7, 1)
 local nightLight = Color.New(0.78, 0.8, 1, 1)
@@ -42,8 +41,8 @@ local sunRiseColors = {
 	-- Color.New(197/255, 64/255, 31/255, 1), -- C5401FFF
 	-- Color.New(1, 240/255, 130/255, 1), -- FFF082FF
 	-- Color.New(30/255, 55/255, 126/255, 153/255), -- 1E377E99
-  Color.FromStandardHex("FF00C4FF"),
   Color.FromStandardHex("FFAA00FF"),
+  Color.FromStandardHex("FF00C4FF"),
   Color.FromStandardHex("98A7F576"),
 	-- cloud, cloud rim, cloud ambient
 	Color.New(143/255, 25/255, 0, 1), -- 8F1900FF
@@ -79,6 +78,9 @@ local nightCloudSettings = {40,0.25,1,1}
 local degrees = propStartingDegrees -- degrees in the sky from the horizon
 local isNight = false
 
+propSun:SetWorldRotation(Quaternion.New(Vector3.New(0,1,0), degrees):GetRotation())
+propSun:RotateContinuous(Vector3.New(0, propDegreesPerSecond / 60, 0))
+
 function Tick(deltaTime)
 	-- Check if network enabled
 	if (_G.ServerTime) then
@@ -86,7 +88,7 @@ function Tick(deltaTime)
 		local fullRotations = math.floor(degrees / 360)
 		degrees = degrees - (fullRotations * 360)
 	else
-		degrees = degrees + (deltaTime * propDegreesPerSecond)
+		degrees = degrees + (0.25 + deltaTime) * propDegreesPerSecond
 		if (degrees > 360) then
 			degrees = degrees - 360
 		elseif (degrees < 0) then
@@ -101,10 +103,10 @@ function Tick(deltaTime)
 
 	local nextQuadrant = (quadrant + 1) % 4
 	-- Save time of day for other scripts
-	_G.DayNightCycle = daynightCycle
+	-- _G.DayNightCycle = daynightCycle
 
-	local quat = Quaternion.New(Vector3.New(0,1,0), degrees)
-	propSun:SetWorldRotation(quat:GetRotation())
+	-- local quat = Quaternion.New(Vector3.New(0,1,0), degrees)
+	-- propSun:SetWorldRotation(quat:GetRotation())
 	propSun:SetSmartProperty("Light Color", Color.Lerp(sunriseSunColor, middaySunColor, cycle))
 	propSun:SetSmartProperty("Intensity", math.min(1.75 - daynightCycle * 3))
 
@@ -153,4 +155,7 @@ function Tick(deltaTime)
 	local easedNight = daynightCycle ^ 5
 	propLight:SetSmartProperty("Tint Color", Color.Lerp(dayLight, nightLight, easedNight))
 	propStars:SetSmartProperty("Star Visibility", easedNight)
+--
+
+  Task.Wait(0.25)
 end

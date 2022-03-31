@@ -116,7 +116,7 @@ local questList = {
     finished = "Examine the caged elementals",
     description = "These poor babies! Oh, this has GOT to be highly illegal in some way. Animal Cruelty or... something. You've got to get to the bottom of this operation. And probably this cave, too.",
     begin = function(player, quest)
-      xEventsForPlayer(1, "PlayerEnteredZone", "Lumber Jackal Cave Jail", player, quest)
+      xEventsForPlayer(1, "PlayerEnteredQuestArea", "Lumber Jackal Cave Jail", player, quest)
     end,
 
     acceptLines = {
@@ -244,8 +244,8 @@ local questList = {
     end,
 
     onClientAccept = function()
-      Events.Broadcast("HideQuestObject", "Caged Pyrope")
-      Events.Broadcast("UnhideQuestObject", "Escape Pyrope")
+      Events.Broadcast("EnableQuestObject", "Caged Pyrope")
+      Events.Broadcast("DisableQuestObject", "Escape Pyrope")
     end,
 
     acceptLines = {
@@ -336,7 +336,7 @@ function Quests.getEligible(player)
   local playerLevel = player:GetResource("Level")
 
   for _, quest in ipairs(questList) do
-    if playerLevel <= quest.level + 5 and (quest.requirements == nil or (quest.requirements and quest.requirements(player))) then
+    if playerLevel >= quest.level - 5 and (quest.requirements == nil or (quest.requirements and quest.requirements(player))) then
       table.insert(results, quest.id)
     end
   end

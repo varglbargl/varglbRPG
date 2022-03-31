@@ -55,7 +55,7 @@ Assets {
             }
           }
           RecoveryPhaseSettings {
-            Duration: 0.25
+            Duration: 0.55
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -89,7 +89,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 108
+  SerializationVersion: 110
   VirtualFolderPath: "Animations"
   VirtualFolderPath: "Abilities"
 }

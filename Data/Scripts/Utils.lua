@@ -248,6 +248,8 @@ function Utils.fadeOpacity(what, to, secs)
   end
 
   fadeTasks[what] = Task.Spawn(fadeLoop)
+
+  return secs
 end
 
 function Utils.showFlyupText(text, pos, color)

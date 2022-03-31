@@ -60,11 +60,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:StartingDegrees"
-            Float: 135
+            Float: 150
           }
           Overrides {
             Name: "cs:DegreesPerSecond"
-            Float: 0.25
+            Float: 0.2
           }
           Overrides {
             Name: "cs:Sun"
@@ -227,6 +227,14 @@ Assets {
           Overrides {
             Name: "bp:High Cloud Opacity"
             Float: 0.01
+          }
+          Overrides {
+            Name: "bp:Horizon Falloff"
+            Float: 4
+          }
+          Overrides {
+            Name: "bp:Haze Falloff"
+            Float: 12
           }
         }
         Collidable_v2 {
@@ -913,6 +921,6 @@ Assets {
   Marketplace {
     Description: "A sky that cycles day and night at an user defined time and speed. Place in scene and delete any other skies. Select SkyLogic script in the hierarchy to configure.\r\n\r\nStartingDegrees:\r\nWhat angle to start the day at.\r\n0 is sunrise, 90 is midday, 180 is sunset, 270 is midnight\r\n\r\nDegreesPerSecond:\r\nHow fast the sun moves through the day\r\n2 minute day/night cycle = 120 seconds = 360 degrees/120 seconds = 3 degrees per second"
   }
-  SerializationVersion: 108
+  SerializationVersion: 110
   DirectlyPublished: true
 }

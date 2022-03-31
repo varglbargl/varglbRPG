@@ -31,6 +31,7 @@ function onClassPicked(player, class)
   if Vault.hasSave(player) then
     local save = Vault.getSave(player)
 
+    player.setResource("Class", class)
     destinationScene = save.scene
   else
     Vault.createNewPlayerSave(player, class)

@@ -2,7 +2,7 @@ Assets {
   Id: 7339882940741111706
   Name: "River Rapids"
   PlatformAssetType: 13
-  SerializationVersion: 108
+  SerializationVersion: 110
   CustomMaterialAsset {
     BaseMaterialId: 4408785177802923695
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 16356494275646482228
   Name: "Feyfolken Eyes"
   PlatformAssetType: 13
-  SerializationVersion: 108
+  SerializationVersion: 110
   CustomMaterialAsset {
     BaseMaterialId: 877770982782391200
     ParameterOverrides {

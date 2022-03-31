@@ -2,7 +2,7 @@ Assets {
   Id: 10573983449610745407
   Name: "Ranged Weapons"
   PlatformAssetType: 31
-  SerializationVersion: 108
+  SerializationVersion: 110
   DataTableAsset {
     Assets {
       Id: 7422537912561032669
@@ -56,6 +56,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Ability_Green_001"
+      }
+    }
+    Assets {
+      Id: 4937821169989733914
+      Name: "Steam Mechanical Gear Lock Load Mechanism Medium 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_steam_mechanical_gear_lock_load_mechanism_medium_01_Cue_ref"
       }
     }
   }

@@ -2,7 +2,7 @@ Assets {
   Id: 321538351412176530
   Name: "Melee Weapons"
   PlatformAssetType: 31
-  SerializationVersion: 108
+  SerializationVersion: 110
   DataTableAsset {
     Assets {
       Id: 15082939208544770580
@@ -191,6 +191,69 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "IllustratedIcons_Japan_Abilities_Blossom"
+      }
+    }
+    Assets {
+      Id: 1014843631224850613
+      Name: "Metal Hammer Anvil Forge Impact 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_metal_hammer_anvil_forge_03_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 13450432219044533640
+      Name: "Impact Metal 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_gun_impact_metal_03_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 9081611899194130826
+      Name: "Sword Parry Swipe Metal 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_sword_parry_swipe_metal_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 14474697200221405911
+      Name: "Fire Match Ignite Swipe 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_fire_match_ignite_swipe_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 6756894960779589108
+      Name: "Large Wooden Door Metal Lock Chain Open Close 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_large_wooden_door_metal_lock_chain_open_close_02_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4598717847163411553
+      Name: "Funny Cartoon Clown Car Horn Honk Double 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_funny_cartoon_clown_car_horn_honk_double_02a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 16768047921249570981
+      Name: "Gun Weapon Reload Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_reloads_ref"
       }
     }
   }
