@@ -1,38 +1,49 @@
-local SITTING_STANCE = script:GetCustomProperty("SittingStance")
-local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
+local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
+local SIT_TRIGGER = script:GetCustomProperty("SitTrigger"):WaitForObject()
 
-local sitTransform = Transform.New(TRIGGER:GetWorldRotation() * Rotation.New(0, 0, 1), script:GetWorldPosition(), Vector3.ONE)
-local sittingPlayer = nil
-local previousStance = nil
+local SITTING_STANCE = COMPONENT_ROOT:GetCustomProperty("SittingStance") or "unarmed_sit_chair_upright"
+local SIT_OFFSET = COMPONENT_ROOT:GetCustomProperty("SitOffset") or Vector3.ZERO
 
-function standUp()
-	while Object.IsValid(sittingPlayer) and not sittingPlayer.isAccelerating and not sittingPlayer.isJumping do
+local defaultTriggerPos = SIT_TRIGGER:GetPosition()
+
+function standUp(player, standingStance)
+  while Object.IsValid(player) and not player.isAccelerating and player.animationStance == SITTING_STANCE and not player.isJumping and not player:GetActiveAbility() do
     Task.Wait(0.1)
 	end
 
-  TRIGGER.isInteractable = true
+  SIT_TRIGGER:SetPosition(defaultTriggerPos)
+  SIT_TRIGGER.collision = Collision.INHERIT
 
-  if not Object.IsValid(sittingPlayer) then return end
+  if not Object.IsValid(player) then return end
 
-  sittingPlayer.animationStance = previousStance
-  sittingPlayer = nil
+  player.animationStance = standingStance
+  player = nil
 end
 
-function sitDown(thisTrigger, other)
-	if other:IsA("Player") and not Object.IsValid(sittingPlayer) and not other.serverUserData["Gliding"] then
-    previousStance = other.serverUserData["IdleAnimation"] or other.animationStance
+function sitDown(_, player)
+  local standingStance = player.animationStance
 
-    if previousStance == "" then
-      previousStance = "unarmed_idle_relaxed_look_around"
-    end
+  if standingStance == "" then
+    standingStance = "unarmed_stance"
+  end
 
-    other:SetWorldTransform(sitTransform)
-    other.animationStance = SITTING_STANCE
-    sittingPlayer = other
-    TRIGGER.isInteractable = false
+  SIT_TRIGGER.collision = Collision.FORCE_OFF
+  SIT_TRIGGER:SetWorldTransform(player:GetWorldTransform())
+  player.animationStance = SITTING_STANCE
+  player:SetMounted(false)
 
-    Task.Spawn(standUp)
-	end
+  Task.Wait(0.1)
+
+  if Object.IsValid(player) then
+    player:AttachToCoreObject(SIT_TRIGGER)
+    SIT_TRIGGER:MoveTo(SIT_OFFSET, 0.35, true)
+    SIT_TRIGGER:RotateTo(Rotation.ZERO, 0.35, true)
+
+    Task.Wait(0.4)
+    player:Detach()
+  end
+
+  Task.Spawn(function() standUp(player, standingStance) end)
 end
 
-TRIGGER.interactedEvent:Connect(sitDown)
+SIT_TRIGGER.interactedEvent:Connect(sitDown)

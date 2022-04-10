@@ -5,11 +5,12 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:SittingStance"
-        String: "unarmed_sit_chair_upright"
+        Name: "cs:ComponentRoot"
+        ObjectReference {
+        }
       }
       Overrides {
-        Name: "cs:Trigger"
+        Name: "cs:SitTrigger"
         ObjectReference {
         }
       }

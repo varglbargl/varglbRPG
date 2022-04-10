@@ -421,6 +421,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5184565267583987492
+  Name: "Park Bench"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_park_bench_001"
+  }
+}
+Assets {
   Id: 5105295625770175633
   Name: "Fantasy Jewelry 012"
   PlatformAssetType: 9

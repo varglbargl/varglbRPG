@@ -15,11 +15,22 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15569149822969819110
+        ParentId: 18067252979175263329
         ChildIds: 5279262640078314684
-        ChildIds: 16618223390395670821
-        ChildIds: 16817052527058497004
-        ChildIds: 7527693431307760501
+        ChildIds: 1096674730514529606
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SittingStance"
+            String: "unarmed_sit_chair_upright"
+          }
+          Overrides {
+            Name: "cs:SitOffset"
+            Vector {
+              X: 50
+              Z: 45
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -44,16 +55,15 @@ Assets {
         Name: "Trigger"
         Transform {
           Location {
-            X: -0.611328125
-            Y: 0.498535156
-            Z: 110
+            X: -15
+            Z: 35
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 16223222015253590822
@@ -86,13 +96,10 @@ Assets {
         }
       }
       Objects {
-        Id: 16618223390395670821
-        Name: "Simple Sittable Chair"
+        Id: 1096674730514529606
+        Name: "ServerContext"
         Transform {
           Location {
-            X: 50
-            Y: 0.000942230225
-            Z: 75
           }
           Rotation {
           }
@@ -103,16 +110,54 @@ Assets {
           }
         }
         ParentId: 16223222015253590822
+        ChildIds: 16618223390395670821
+        ChildIds: 18362862709697281532
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: Server
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 16618223390395670821
+        Name: "Simple Sittable Chair"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1096674730514529606
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Trigger"
+            Name: "cs:ComponentRoot"
             ObjectReference {
-              SubObjectId: 5279262640078314684
+              SubObjectId: 16223222015253590822
             }
           }
           Overrides {
-            Name: "cs:SittingStance"
-            String: "unarmed_sit_chair_upright"
+            Name: "cs:SitTrigger"
+            ObjectReference {
+              SubObjectId: 5279262640078314684
+            }
           }
         }
         Collidable_v2 {
@@ -137,117 +182,23 @@ Assets {
         }
       }
       Objects {
-        Id: 16817052527058497004
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: 49.3886719
-            Y: 0.498046875
-          }
-          Rotation {
-            Pitch: -20
-          }
-          Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 16223222015253590822
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16048367406070731799
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 7527693431307760501
-        Name: "ClientContext"
-        Transform {
-          Location {
-            X: -0.611328125
-            Y: 0.498046815
-            Z: 110
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16223222015253590822
-        ChildIds: 18362862709697281532
-        ChildIds: 7920218888925828369
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 18362862709697281532
         Name: "Craftsman Dining Chair"
         Transform {
           Location {
-            X: -47.766716
-            Y: -0.670688629
-            Z: -110
+            X: -10
+            Z: -25
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.900000036
+            Y: 0.900000036
+            Z: 0.900000036
           }
         }
-        ParentId: 7527693431307760501
+        ParentId: 1096674730514529606
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -256,15 +207,34 @@ Assets {
             }
           }
           Overrides {
+            Name: "ma:Prop_Cushion:id"
+            AssetReference {
+              Id: 10793320870014566179
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 16497610927948824042
+            }
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 1
-              G: 0.3
-              A: 1
+              G: 0.400000036
+              A: 0.25
+            }
+          }
+          Overrides {
+            Name: "ma:Prop_Cushion:color"
+            Color {
+              R: 1
+              G: 0.400000036
+              A: 0.25
             }
           }
         }
-        Lifespan: 0.001
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -279,86 +249,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 11452126672691922020
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 7920218888925828369
-        Name: "Military Sandbag 02"
-        Transform {
-          Location {
-            X: 45.3673782
-            Y: -0.911136627
-            Z: -130.816895
-          }
-          Rotation {
-            Yaw: -4.18780518
-          }
-          Scale {
-            X: 0.459666342
-            Y: 0.946180046
-            Z: 0.348138213
-          }
-        }
-        ParentId: 7527693431307760501
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10793320870014566179
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.333
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 0.3
-              A: 1
-            }
-          }
-        }
-        Lifespan: 0.001
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5906076877227777947
+            Id: 15340021074622401975
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -381,21 +272,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16048367406070731799
-      Name: "Plane 1m - One Sided"
+      Id: 15340021074622401975
+      Name: "Craftsman Desk Chair - Seat 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_1m_001"
-      }
-    }
-    Assets {
-      Id: 11452126672691922020
-      Name: "Craftsman Dining Chair"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_urb_chair_dining_001"
+        AssetId: "sm_prop_urb_craftsman_desk_chair_seat_001_ref"
       }
     }
     Assets {
@@ -408,12 +290,12 @@ Assets {
       }
     }
     Assets {
-      Id: 5906076877227777947
-      Name: "Military Sandbag 02"
-      PlatformAssetType: 1
+      Id: 16497610927948824042
+      Name: "Invisible"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_mil_sandbag_002"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_invisible_001"
       }
     }
     PrimaryAssetId {
