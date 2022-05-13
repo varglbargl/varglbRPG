@@ -33,7 +33,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 110
-  VirtualFolderPath: "PPPP"
-  VirtualFolderPath: "Utilities"
+  SerializationVersion: 115
 }

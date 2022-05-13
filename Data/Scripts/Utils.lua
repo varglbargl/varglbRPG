@@ -311,6 +311,53 @@ function Utils.groundBelowPoint(vec3, sphercastRadius)
   end
 end
 
+-- Player freezer! Works on both client and server!
+local playerFreezer = nil
+
+local function actionHookFreezer(player, actionList)
+  if not Object.IsValid(player) then return end
+
+  for index in ipairs(actionList) do
+    if actionList[index].action ~= "Look" then
+      actionList[index] = nil
+    end
+  end
+end
+
+function Utils.freezePlayer(player)
+  if not Object.IsValid(player) then return end
+
+  if Environment.IsClient() and player == Game.GetLocalPlayer() then
+    player:SetLookWorldRotation(player:GetLookWorldRotation())
+
+    -- handler params: Player_player, table_actionList
+    playerFreezer = Input.actionHook:Connect(actionHookFreezer)
+  elseif Environment.IsServer() then
+    player.isMovementEnabled = false
+
+    for _, ability in ipairs(player:GetAbilities()) do
+      ability.isEnabled = false
+    end
+  end
+end
+
+function Utils.unfreezePlayer(player)
+  if not Object.IsValid(player) then return end
+
+  if Environment.IsClient() and player == Game.GetLocalPlayer() then
+    if playerFreezer then
+      playerFreezer:Disconnect()
+      playerFreezer = nil
+    end
+  elseif Environment.IsServer() then
+    player.isMovementEnabled = true
+
+    for _, ability in ipairs(player:GetAbilities()) do
+      ability.isEnabled = true
+    end
+  end
+end
+
 function Utils.hasUniformScale(obj)
   if Object.IsValid(obj) and obj:GetScale().x * Vector3.ONE == obj:GetScale() then
     return true

@@ -1,8 +1,10 @@
 local Dialogue = require(script:GetCustomProperty("Dialogue"))
+print("Hello.")
 
 local LINES = script:GetCustomProperty("Lines")
 
 local trigger = script.parent
+
 trigger.isInteractable = true
 trigger.collision = Collision.FORCE_OFF
 

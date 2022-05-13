@@ -42,33 +42,6 @@ function onEnterWorld(player)
   end
 end
 
-function onDialogueStarted(player)
-  if not Object.IsValid(player) then return end
-
-  player.isMovementEnabled = false
-
-  for _, ability in ipairs(player:GetAbilities()) do
-    ability.isEnabled = false
-  end
-end
-
-function onDialogueEnded(player, acceptedQuestID, turnedInQuestID)
-
-  player.isMovementEnabled = true
-
-  for _, ability in ipairs(player:GetAbilities()) do
-    ability.isEnabled = true
-  end
-
-  if acceptedQuestID then
-    Events.Broadcast("AcceptQuest", player, acceptedQuestID)
-  end
-
-  if turnedInQuestID then
-    Events.Broadcast("TurnInQuest", player, turnedInQuestID)
-  end
-end
-
 function onPlayerJoined(player)
 	-- print("Assigning states to " .. player.name)
   player.team = 1
@@ -90,5 +63,3 @@ Game.playerJoinedEvent:Connect(onPlayerJoined)
 Game.playerLeftEvent:Connect(onPlayerLeft)
 
 Events.Connect("EnterWorld", onEnterWorld)
-Events.ConnectForPlayer("StartDialogue", onDialogueStarted)
-Events.ConnectForPlayer("EndDialogue", onDialogueEnded)

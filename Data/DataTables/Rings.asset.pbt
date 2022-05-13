@@ -2,7 +2,7 @@ Assets {
   Id: 12958250142094275150
   Name: "Rings"
   PlatformAssetType: 31
-  SerializationVersion: 110
+  SerializationVersion: 115
   DataTableAsset {
     Assets {
       Id: 8154916375119294641

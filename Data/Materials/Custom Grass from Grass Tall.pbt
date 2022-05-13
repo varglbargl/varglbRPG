@@ -2,7 +2,7 @@ Assets {
   Id: 12701167935731672791
   Name: "Motionless Grass"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 4597241309777090389
     ParameterOverrides {

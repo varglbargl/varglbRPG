@@ -1002,15 +1002,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17072601727332030346
-  Name: "Toilet Flush 03 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_toilet_flush_03_Cue_ref"
-  }
-}
-Assets {
   Id: 17046685336850726887
   Name: "Porcelain Vase 02"
   PlatformAssetType: 1
@@ -1215,15 +1206,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_stairs_001_banister"
-  }
-}
-Assets {
-  Id: 16722432384677264940
-  Name: "Urban Bottle Water Jug 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_gen_bottle_010_ref"
   }
 }
 Assets {
@@ -4522,7 +4504,7 @@ Assets {
 }
 Assets {
   Id: 12003103614293459744
-  Name: "Nature Log 03"
+  Name: "Nature Log 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -5961,6 +5943,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10064969595013025438
+  Name: "Urban Paint Brush Roller 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_brush_roller_001_roller_001_ref"
+  }
+}
+Assets {
   Id: 10036552586788556878
   Name: "Castle Part - Window 01"
   PlatformAssetType: 1
@@ -6678,6 +6669,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_clay_pot_002_ref"
+  }
+}
+Assets {
+  Id: 8966003296723090829
+  Name: "Fantasy Scroll Sealed 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_scroll_003_ref"
   }
 }
 Assets {
@@ -8674,6 +8674,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6006175308929009543
+  Name: "Gear - generic small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_gear_small_001_thin-hole"
+  }
+}
+Assets {
   Id: 5969167468642531609
   Name: "Decal Military Symbols 02"
   PlatformAssetType: 14
@@ -9067,6 +9076,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_water"
+  }
+}
+Assets {
+  Id: 5494321602644929382
+  Name: "Gift Bow 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_gen_bow_gift_004_ref"
   }
 }
 Assets {
@@ -9511,6 +9529,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4777374447061721580
+  Name: "Urban Outdoor Stove 01 - Handle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_out_stove_001_handle_001_ref"
+  }
+}
+Assets {
   Id: 4767843787663997598
   Name: "Sign Font 1 Bulbs: 0"
   PlatformAssetType: 1
@@ -9826,6 +9853,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4458575348012256063
+  Name: "Pyramid - 5-Sided Truncated Hollow Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_5_sided_truncated_hollow_thick_001"
+  }
+}
+Assets {
   Id: 4426211141347700791
   Name: "Pipe - 45-Degree Short Thick"
   PlatformAssetType: 1
@@ -9877,15 +9913,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_ceramic_tile_square_001"
-  }
-}
-Assets {
-  Id: 4301114406942520222
-  Name: "Urban Cup Plastic 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_cup_001_ref"
   }
 }
 Assets {
@@ -10222,15 +10249,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3922255354415767037
-  Name: "Animated Neon Sign - Moon"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "fxsm_neonSign_moon"
-  }
-}
-Assets {
   Id: 3886006432789247671
   Name: "Kelp Bush 01"
   PlatformAssetType: 1
@@ -10336,6 +10354,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_off_desktop_book_collection_002_ref"
+  }
+}
+Assets {
+  Id: 3764505622239849556
+  Name: "Gem - Round Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_round_polished_001"
   }
 }
 Assets {
@@ -10939,6 +10966,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_pillar_001_base"
+  }
+}
+Assets {
+  Id: 3078057058296453435
+  Name: "Prism - 5-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_pentagon_001"
   }
 }
 Assets {
@@ -11752,6 +11788,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1748553123394744625
+  Name: "Pyramid - 4-Sided Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_truncated_001"
+  }
+}
+Assets {
   Id: 1737305543685255753
   Name: "Modern Weapon - Body 04"
   PlatformAssetType: 1
@@ -12274,6 +12319,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1089808616938680895
+  Name: "Pyramid - 7-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_7_sided_001"
+  }
+}
+Assets {
   Id: 1073706528785212426
   Name: "Tree Redwood Medium"
   PlatformAssetType: 1
@@ -12460,6 +12514,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Jewelry_016"
+  }
+}
+Assets {
+  Id: 768312969697189840
+  Name: "Urban Interior Stove 01 - Handle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_int_stove_001_handle_001_ref"
   }
 }
 Assets {
@@ -13009,15 +13072,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_floor_dark_001_uv"
-  }
-}
-Assets {
-  Id: 56823891778999080
-  Name: "Animated Neon Sign - Witch"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "fxsm_neonSign_witch"
   }
 }
 Assets {

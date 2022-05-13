@@ -2,7 +2,7 @@ Assets {
   Id: 5236367522982724656
   Name: "Painted Lines - Danger"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 12329124394862776191
     ParameterOverrides {

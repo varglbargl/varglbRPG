@@ -337,6 +337,12 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -402,6 +408,12 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -5581,7 +5593,7 @@ Assets {
   Marketplace {
     Description: "yall mind if i uwu in here?\r\n\r\nUpdate: Wands are now fully usable weapons against evil!"
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   DirectlyPublished: true
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Costume Pieces"

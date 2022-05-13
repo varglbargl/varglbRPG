@@ -2,7 +2,7 @@ Assets {
   Id: 16032339624099133115
   Name: "Pipe-Wrappable Carpet"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 659628615446075165
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 6388784083017065946
   Name: "Black Marble"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 15745211306479370650
     ParameterOverrides {

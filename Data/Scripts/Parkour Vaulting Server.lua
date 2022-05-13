@@ -36,7 +36,7 @@ function grabLedge(player, dt)
       if sphereNormal.size > 0 and sphereNormal:GetNormalized()..Vector3.UP > 0.75 then
 
         -- Boosts the player up by, theoretically, just enough to get them from their height to the top of the ledge. Since they are already holding a direction key, they should make their way onto it.
-        -- A lot of the numbers in this script are just kinda vibes-based so definitely feel free to tweak any of and see if it feels better or worse.
+        -- A lot of the numbers in this script are just kinda vibes-based so definitely feel free to tweak any of them and see if it feels better or worse.
         player:SetVelocity(Vector3.UP * (825 + (surfacePos.z - playerPos.z) * 1.1))
         -- I went ahead and made this script compatible with my mini gliders on the CC, as a treat uwu
         player.serverUserData["Gliding"] = false

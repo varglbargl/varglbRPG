@@ -2,7 +2,7 @@ Assets {
   Id: 14392703331176615767
   Name: "Fruit - Yoshi Story"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 3731111686961666871
     ParameterOverrides {

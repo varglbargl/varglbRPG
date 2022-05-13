@@ -11,6 +11,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:Enchants"
+        AssetReference {
+          Id: 12740983235578368219
+        }
+      }
+      Overrides {
         Name: "cs:MeleeWeapons"
         AssetReference {
           Id: 321538351412176530
@@ -76,8 +82,12 @@ Assets {
         Name: "cs:Spells:category"
         String: "LootTables"
       }
+      Overrides {
+        Name: "cs:Enchants:category"
+        String: "Enchants"
+      }
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "APIs"
 }

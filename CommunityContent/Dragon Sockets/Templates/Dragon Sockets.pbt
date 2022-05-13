@@ -83,6 +83,12 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -2125,6 +2131,6 @@ Assets {
   Marketplace {
     Description: "Dragon model with all the sockets added as child folders for easy character creation based on the animated dragon model"
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   DirectlyPublished: true
 }

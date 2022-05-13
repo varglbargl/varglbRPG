@@ -564,7 +564,7 @@ Assets {
   Marketplace {
     Description: "Bell"
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Interior"
 }

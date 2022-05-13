@@ -2,7 +2,7 @@ Assets {
   Id: 13282186358575820536
   Name: "Soup"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 704821432358640513
     ParameterOverrides {

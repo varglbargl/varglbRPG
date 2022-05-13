@@ -143,6 +143,12 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1225,5 +1231,5 @@ Assets {
   Marketplace {
     Description: "- All the templates you need to build the coffee cart\r\n"
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
 }

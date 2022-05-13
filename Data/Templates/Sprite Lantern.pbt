@@ -16,26 +16,10 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 17110946729190512234
         ChildIds: 9705993271348120636
-        ChildIds: 8550248553267368114
-        ChildIds: 1317619932093879735
-        ChildIds: 11998158468412986306
-        ChildIds: 7393776195295706682
-        ChildIds: 15531630330052064304
-        ChildIds: 11631945703159583419
-        ChildIds: 6502018292754810116
-        ChildIds: 8218439032709042120
-        ChildIds: 16569729667322136507
-        ChildIds: 12591242088016673080
-        ChildIds: 18220457319153768648
-        ChildIds: 5355472932183288732
-        ChildIds: 6505951145636869185
-        ChildIds: 4515834055664286550
-        ChildIds: 6233880362587569973
-        ChildIds: 14259020332939014610
-        ChildIds: 1522696032064692719
-        ChildIds: 55430155327116683
-        ChildIds: 2390929951837151827
+        ChildIds: 1965586397143831484
+        ChildIds: 16247190139370082672
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -50,6 +34,94 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 17110946729190512234
+        Name: "Collision"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2014862613104300196
+        ChildIds: 2829858135189535512
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: RuntimeStatic
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 2829858135189535512
+        Name: "Modern Weapon Ammo - Bullet 02"
+        Transform {
+          Location {
+            X: -0.84989506
+            Y: -0.11121355
+            Z: 44.4985809
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
+          }
+        }
+        ParentId: 17110946729190512234
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3078057058296453435
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -73,11 +145,29 @@ Assets {
         ChildIds: 10409408107680282901
         ChildIds: 16137542462964853624
         ChildIds: 4688323104637272237
-        ChildIds: 475828383709240005
         ChildIds: 8782072587186426623
         ChildIds: 5028001387311042722
         ChildIds: 4171752140108835049
         ChildIds: 3667513003491845282
+        ChildIds: 8550248553267368114
+        ChildIds: 1317619932093879735
+        ChildIds: 11998158468412986306
+        ChildIds: 7393776195295706682
+        ChildIds: 15531630330052064304
+        ChildIds: 11631945703159583419
+        ChildIds: 6502018292754810116
+        ChildIds: 8218439032709042120
+        ChildIds: 16569729667322136507
+        ChildIds: 12591242088016673080
+        ChildIds: 18220457319153768648
+        ChildIds: 5355472932183288732
+        ChildIds: 6505951145636869185
+        ChildIds: 4515834055664286550
+        ChildIds: 6233880362587569973
+        ChildIds: 14259020332939014610
+        ChildIds: 1522696032064692719
+        ChildIds: 55430155327116683
+        ChildIds: 2390929951837151827
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -85,12 +175,18 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -260,7 +356,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Light {
-          Intensity: 3
+          Intensity: 5
           Color {
             R: 1
             G: 0.487600029
@@ -283,69 +379,6 @@ Assets {
             }
             MaxDrawDistance: 8000
             MaxDistanceFadeRange: 2000
-          }
-          ShadowBias: 0.4
-          ShadowSlopeBias: 0.6
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 475828383709240005
-        Name: "Point Light"
-        Transform {
-          Location {
-            Y: -0.001953125
-            Z: 35.9560547
-          }
-          Rotation {
-            Yaw: 1.70754683e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9705993271348120636
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Light {
-          Intensity: 10
-          Color {
-            R: 1
-            G: 0.487600029
-            B: 0.145999968
-            A: 1
-          }
-          CastShadows: true
-          VolumetricIntensity: 5
-          TeamSettings {
-          }
-          Light {
-            Temperature: 2500
-            LocalLight {
-              AttenuationRadius: 1500
-              PointLight {
-                SourceRadius: 150
-                SoftSourceRadius: 150
-                FallOffExponent: 8
-                UseFallOffExponent: true
-              }
-            }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
           }
           ShadowBias: 0.4
           ShadowSlopeBias: 0.6
@@ -718,7 +751,8 @@ Assets {
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            Y: 0.001953125
+            X: 0.00390625
+            Y: 0.00390625
             Z: 56.6220703
           }
           Rotation {
@@ -732,7 +766,7 @@ Assets {
             Z: -0.682729423
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -798,8 +832,7 @@ Assets {
             Z: 56.6198959
           }
           Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 89.9999619
+            Yaw: 89.9999466
             Roll: 89.9999466
           }
           Scale {
@@ -808,7 +841,7 @@ Assets {
             Z: 0.682729423
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -874,7 +907,7 @@ Assets {
             Z: 56.620636
           }
           Rotation {
-            Yaw: 45.0000038
+            Yaw: 44.9999924
             Roll: -179.999954
           }
           Scale {
@@ -883,7 +916,7 @@ Assets {
             Z: 0.438141555
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -949,7 +982,7 @@ Assets {
             Z: 56.6211166
           }
           Rotation {
-            Yaw: 44.9999733
+            Yaw: 44.9999619
             Roll: -179.999954
           }
           Scale {
@@ -958,7 +991,7 @@ Assets {
             Z: 0.438141555
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1019,13 +1052,13 @@ Assets {
         Name: "Urban Pipe Flange 01"
         Transform {
           Location {
-            X: 0.01171875
+            X: 0.015625
             Y: -0.001953125
             Z: 16.1074219
           }
           Rotation {
-            Yaw: 2.51352344e-06
-            Roll: 1.67870485e-06
+            Yaw: 8.83537632e-06
+            Roll: 1.7280953e-06
           }
           Scale {
             X: 1.35047865
@@ -1033,7 +1066,7 @@ Assets {
             Z: -0.801662266
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1103,13 +1136,14 @@ Assets {
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            Y: 0.001953125
+            X: 0.00390625
+            Y: 0.00390625
             Z: 56.6220703
           }
           Rotation {
             Pitch: 90
-            Yaw: -8.13011169
-            Roll: 36.8693504
+            Yaw: -30.2564411
+            Roll: 14.7429676
           }
           Scale {
             X: -0.512047112
@@ -1117,7 +1151,7 @@ Assets {
             Z: -0.682729423
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1183,7 +1217,7 @@ Assets {
             Z: 56.6198959
           }
           Rotation {
-            Yaw: 44.9999695
+            Yaw: 44.9999619
             Roll: 89.9999466
           }
           Scale {
@@ -1192,7 +1226,7 @@ Assets {
             Z: 0.682729423
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1258,7 +1292,7 @@ Assets {
             Z: 56.6199684
           }
           Rotation {
-            Yaw: 1.53679248e-05
+            Yaw: 1.36603767e-05
             Roll: -179.999954
           }
           Scale {
@@ -1267,7 +1301,7 @@ Assets {
             Z: 0.438141555
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1333,7 +1367,7 @@ Assets {
             Z: 56.6216316
           }
           Rotation {
-            Yaw: 1.53679248e-05
+            Yaw: 1.36603767e-05
             Roll: -179.999954
           }
           Scale {
@@ -1342,7 +1376,7 @@ Assets {
             Z: 0.438141555
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1403,13 +1437,14 @@ Assets {
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            Y: 0.001953125
+            X: 0.00390625
+            Y: 0.00390625
             Z: 56.6220703
           }
           Rotation {
             Pitch: 90
-            Yaw: -22.6198463
-            Roll: 67.3796844
+            Yaw: 18.4349556
+            Roll: 108.434479
           }
           Scale {
             X: -0.512047112
@@ -1417,7 +1452,7 @@ Assets {
             Z: -0.682729423
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1493,7 +1528,7 @@ Assets {
             Z: 0.682729423
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1559,7 +1594,7 @@ Assets {
             Z: 56.6200333
           }
           Rotation {
-            Yaw: 45.0000038
+            Yaw: 44.9999924
             Roll: -179.999954
           }
           Scale {
@@ -1568,7 +1603,7 @@ Assets {
             Z: 0.438141555
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1634,7 +1669,7 @@ Assets {
             Z: 56.6196289
           }
           Rotation {
-            Yaw: 44.9999733
+            Yaw: 44.9999619
             Roll: -179.999954
           }
           Scale {
@@ -1643,7 +1678,7 @@ Assets {
             Z: 0.438141555
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1704,13 +1739,14 @@ Assets {
         Name: "Ring - Quarter Beveled "
         Transform {
           Location {
-            Y: 0.001953125
+            X: 0.00390625
+            Y: 0.00390625
             Z: 56.6220703
           }
           Rotation {
             Pitch: 90
-            Yaw: -90
-            Roll: 45.0004578
+            Yaw: 18.4349556
+            Roll: 153.43544
           }
           Scale {
             X: -0.512047112
@@ -1718,7 +1754,7 @@ Assets {
             Z: -0.682729423
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1786,7 +1822,7 @@ Assets {
           Rotation {
             Pitch: 6.83018879e-06
             Yaw: -45.0000038
-            Roll: 89.999939
+            Roll: 89.9999313
           }
           Scale {
             X: 0.682729423
@@ -1794,7 +1830,7 @@ Assets {
             Z: 0.682729423
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1860,7 +1896,7 @@ Assets {
             Z: 56.6209946
           }
           Rotation {
-            Yaw: 1.53679248e-05
+            Yaw: 1.36603767e-05
             Roll: -179.999954
           }
           Scale {
@@ -1869,7 +1905,7 @@ Assets {
             Z: 0.432451665
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1935,7 +1971,7 @@ Assets {
             Z: 56.6206779
           }
           Rotation {
-            Yaw: 1.53679248e-05
+            Yaw: 1.36603767e-05
             Roll: -179.999954
           }
           Scale {
@@ -1944,7 +1980,7 @@ Assets {
             Z: 0.432451665
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2010,9 +2046,9 @@ Assets {
             Z: 95.2379684
           }
           Rotation {
-            Pitch: -59.6198692
-            Yaw: 2.71593326e-05
-            Roll: 4.11892e-06
+            Pitch: -59.6198578
+            Yaw: 2.33904884e-05
+            Roll: 7.26220287e-06
           }
           Scale {
             X: 0.281521887
@@ -2020,7 +2056,7 @@ Assets {
             Z: 0.33447057
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2087,7 +2123,7 @@ Assets {
           }
           Rotation {
             Yaw: 1.7075472e-05
-            Roll: 6.67010625e-09
+            Roll: 1.33402125e-08
           }
           Scale {
             X: 0.74276334
@@ -2095,7 +2131,7 @@ Assets {
             Z: 0.607715428
           }
         }
-        ParentId: 2014862613104300196
+        ParentId: 9705993271348120636
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2159,6 +2195,225 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
+      }
+      Objects {
+        Id: 1965586397143831484
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2014862613104300196
+        ChildIds: 2859012946475955827
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:high"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 2859012946475955827
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: -0.000598907471
+            Y: -0.002232939
+            Z: 35.9558716
+          }
+          Rotation {
+            Yaw: 3.24433968e-05
+            Roll: 3.73525893e-07
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1965586397143831484
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Light {
+          Intensity: 10
+          Color {
+            R: 1
+            G: 0.487600029
+            B: 0.145999968
+            A: 1
+          }
+          CastShadows: true
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 2500
+            LocalLight {
+              AttenuationRadius: 1500
+              PointLight {
+                SourceRadius: 150
+                SoftSourceRadius: 150
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
+          ShadowBias: 0.4
+          ShadowSlopeBias: 0.6
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 16247190139370082672
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: -6.83018879e-06
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2014862613104300196
+        ChildIds: 17740634491180752450
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:medium"
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 17740634491180752450
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: -0.000598907471
+            Y: -0.002232939
+            Z: 35.9558716
+          }
+          Rotation {
+            Yaw: 3.24433968e-05
+            Roll: 3.73525893e-07
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16247190139370082672
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Light {
+          Intensity: 10
+          Color {
+            R: 1
+            G: 0.487600029
+            B: 0.145999968
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 2500
+            LocalLight {
+              AttenuationRadius: 1000
+              PointLight {
+                SourceRadius: 150
+                SoftSourceRadius: 150
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 3000
+            MaxDistanceFadeRange: 1000
+          }
+          ShadowBias: 0.4
+          ShadowSlopeBias: 0.6
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+    }
+    Assets {
+      Id: 3078057058296453435
+      Name: "Prism - 5-Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prism_pentagon_001"
       }
     }
     Assets {
@@ -2274,7 +2529,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Interior"
 }

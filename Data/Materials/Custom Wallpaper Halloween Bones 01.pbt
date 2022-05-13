@@ -2,7 +2,7 @@ Assets {
   Id: 7485751445475204179
   Name: "Spooky Blacklight Wallpaper"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 3325895487339306939
     ParameterOverrides {

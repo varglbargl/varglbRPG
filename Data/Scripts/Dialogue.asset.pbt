@@ -37,31 +37,31 @@ Assets {
       Overrides {
         Name: "cs:Dialog"
         ObjectReference {
-          SelfId: 12882592939235325893
+          SelfId: 11819900091779081276
         }
       }
       Overrides {
         Name: "cs:Name"
         ObjectReference {
-          SelfId: 14467559413973461676
+          SelfId: 4631335356290688464
         }
       }
       Overrides {
         Name: "cs:Portrait"
         ObjectReference {
-          SelfId: 15428454614239524483
+          SelfId: 8237111278597462282
         }
       }
       Overrides {
         Name: "cs:Dialogue"
         ObjectReference {
-          SelfId: 6654879788874175273
+          SelfId: 7050068404171430993
         }
       }
       Overrides {
         Name: "cs:Options"
         ObjectReference {
-          SelfId: 15785996325459992518
+          SelfId: 12604957260562331822
         }
       }
       Overrides {
@@ -153,6 +153,6 @@ Assets {
       }
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "APIs"
 }

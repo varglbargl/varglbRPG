@@ -183,6 +183,12 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -3798,7 +3804,7 @@ Assets {
   Marketplace {
     Description: "It\'s a bird! Drag it into your project and it\'ll peck at the ground, hop in place, look side to side, and chirp all on its own!\r\n\r\n!!! ~ NO SCRIPTING REQUIRED ~ !!!\r\n\r\nFEATURES:\r\n\r\n - Four (4) animations that can be toggled on or off individually\r\n - Natural feeling randomized animation timing\r\n - Chirp animation can play (almost) any audio object\r\n - Easily editable into crows, chickens, or whatever!\r\n\r\nPLANNED FEATURES:\r\n\r\n - More animations like wing flapping\r\n - Maybe a version that follows players around\r\n - Maybe a version the flies away when you get too close like real birds\r\n\r\nBUG FIXES:\r\n\r\n - Fixed the heirarchy to use groups in place of folders\r\n - Chirp now works correctly with a much wider variety of audio objects\r\n - Fixed bug where everything was just totally broken!"
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   DirectlyPublished: true
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Exterior"

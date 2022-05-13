@@ -2,7 +2,7 @@ Assets {
   Id: 10573983449610745407
   Name: "Ranged Weapons"
   PlatformAssetType: 31
-  SerializationVersion: 110
+  SerializationVersion: 115
   DataTableAsset {
     Assets {
       Id: 7422537912561032669

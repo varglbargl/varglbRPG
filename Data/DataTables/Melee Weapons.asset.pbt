@@ -2,7 +2,7 @@ Assets {
   Id: 321538351412176530
   Name: "Melee Weapons"
   PlatformAssetType: 31
-  SerializationVersion: 110
+  SerializationVersion: 115
   DataTableAsset {
     Assets {
       Id: 15082939208544770580

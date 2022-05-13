@@ -39,5 +39,5 @@ Assets {
   Marketplace {
     Description: "its pointy"
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
 }

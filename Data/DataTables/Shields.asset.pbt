@@ -2,7 +2,7 @@ Assets {
   Id: 5384759696610371662
   Name: "Shields"
   PlatformAssetType: 31
-  SerializationVersion: 110
+  SerializationVersion: 115
   DataTableAsset {
     Assets {
       Id: 16268917374562647466

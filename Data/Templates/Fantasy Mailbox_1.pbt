@@ -42,5 +42,5 @@ Assets {
     OwnerName: "varglbargl"
     Description: "Simple little magical mailbox prop. The signs on the side are animated and sway slightly ~ <3"
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
 }

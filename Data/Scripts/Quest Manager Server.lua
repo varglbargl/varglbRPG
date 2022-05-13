@@ -112,7 +112,8 @@ end
 -- handler params: Player_player
 Game.playerJoinedEvent:Connect(onPlayerJoined)
 
-Events.Connect("AcceptQuest", acceptQuest)
-Events.Connect("TurnInQuest", turnInQuest)
 Events.Connect("InitQuests", initQuests)
 Events.Connect("RefreshAvailableQuests", refreshAvailableQuests)
+
+Events.ConnectForPlayer("AcceptQuest", acceptQuest)
+Events.ConnectForPlayer("TurnInQuest", turnInQuest)

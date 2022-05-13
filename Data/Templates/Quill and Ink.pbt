@@ -346,6 +346,7 @@ Assets {
             TwoSided: true
             CastsShadow: true
             RedrawTime: 1
+            UseSafeZoneAdjustment: true
           }
           AnchorLayout {
             SelfAnchor {
@@ -506,7 +507,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Interior"
 }

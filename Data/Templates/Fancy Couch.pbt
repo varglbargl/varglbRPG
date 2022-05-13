@@ -15,30 +15,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1648375269741250625
-        ChildIds: 5211063050946554210
-        ChildIds: 16590157316552120873
+        ParentId: 4781671109827199097
+        ChildIds: 10556998012943009269
+        ChildIds: 16511475471841291084
         ChildIds: 11778061669484007760
-        ChildIds: 2428128936952134360
-        ChildIds: 2084537596936793500
-        ChildIds: 13517886746786816001
-        ChildIds: 5603363881303583650
-        ChildIds: 12255124285881589706
-        ChildIds: 9920644407174562324
-        ChildIds: 2369723980816229710
-        ChildIds: 17910376142205400524
-        ChildIds: 7101743784015963915
-        ChildIds: 16055173936621233146
-        ChildIds: 17751838686868666515
-        ChildIds: 1677613166287096287
-        ChildIds: 16323755739567517296
-        ChildIds: 14459965479939588744
-        ChildIds: 654826323810049586
-        ChildIds: 6535466444317481876
-        ChildIds: 5549466661316834568
-        ChildIds: 13886186742477098193
-        ChildIds: 2601754408059157696
-        ChildIds: 9794972809028364994
+        ChildIds: 8037765681356396167
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -59,16 +40,15 @@ Assets {
         }
       }
       Objects {
-        Id: 5211063050946554210
+        Id: 10556998012943009269
         Name: "Sittable Chair Trigger"
         Transform {
           Location {
-            X: 73.999939
-            Y: -32.0001221
-            Z: 5
+            X: 35.0000076
+            Y: -60.2245483
+            Z: 66
           }
           Rotation {
-            Yaw: -89.9999924
           }
           Scale {
             X: 1
@@ -77,10 +57,21 @@ Assets {
           }
         }
         ParentId: 6048689032506712493
-        ChildIds: 7903969620943261542
-        ChildIds: 4152499698113900565
-        ChildIds: 11843524139107010178
-        ChildIds: 6026527031153430893
+        ChildIds: 9316351093586449292
+        ChildIds: 3184660033001234866
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SittingStance"
+            String: "unarmed_sit_chair_upright"
+          }
+          Overrides {
+            Name: "cs:SitOffset"
+            Vector {
+              X: 50
+              Z: 45
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -96,28 +87,34 @@ Assets {
         Folder {
           IsGroup: true
         }
+        InstanceHistory {
+          SelfId: 9017159788449677971
+          SubobjectId: 16223222015253590822
+          InstanceId: 9945761851915048314
+          TemplateId: 7123922115875722576
+          WasRoot: true
+        }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
-        Id: 7903969620943261542
+        Id: 9316351093586449292
         Name: "Trigger"
         Transform {
           Location {
-            X: -0.611328125
-            Y: 0.498535156
-            Z: 110
+            X: -15
+            Z: 35
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
-        ParentId: 5211063050946554210
+        ParentId: 10556998012943009269
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -142,18 +139,21 @@ Assets {
             Value: "mc:etriggershape:box"
           }
         }
+        InstanceHistory {
+          SelfId: 15367583870813580553
+          SubobjectId: 5279262640078314684
+          InstanceId: 9945761851915048314
+          TemplateId: 7123922115875722576
+        }
         NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
+          Value: "mc:eproxyrelevance:medium"
         }
       }
       Objects {
-        Id: 4152499698113900565
-        Name: "Simple Sittable Chair"
+        Id: 3184660033001234866
+        Name: "ServerContext"
         Transform {
           Location {
-            X: 50
-            Y: 0.000942230225
-            Z: 75
           }
           Rotation {
           }
@@ -163,17 +163,61 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5211063050946554210
+        ParentId: 10556998012943009269
+        ChildIds: 6469804096069297682
+        ChildIds: 11932698422364587377
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: Server
+        }
+        InstanceHistory {
+          SelfId: 10610268112218574067
+          SubobjectId: 1096674730514529606
+          InstanceId: 9945761851915048314
+          TemplateId: 7123922115875722576
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 6469804096069297682
+        Name: "Simple Sittable Chair"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3184660033001234866
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Trigger"
+            Name: "cs:ComponentRoot"
             ObjectReference {
-              SubObjectId: 7903969620943261542
+              SubObjectId: 10556998012943009269
             }
           }
           Overrides {
-            Name: "cs:SittingStance"
-            String: "unarmed_sit_chair_upright"
+            Name: "cs:SitTrigger"
+            ObjectReference {
+              SubObjectId: 9316351093586449292
+            }
           }
         }
         Collidable_v2 {
@@ -193,122 +237,34 @@ Assets {
             Id: 9804945165610059894
           }
         }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 11843524139107010178
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: 49.3886719
-            Y: 0.498046875
-          }
-          Rotation {
-            Pitch: -20
-          }
-          Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 5211063050946554210
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16048367406070731799
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
+        InstanceHistory {
+          SelfId: 8834056250294096016
+          SubobjectId: 16618223390395670821
+          InstanceId: 9945761851915048314
+          TemplateId: 7123922115875722576
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
-        Id: 6026527031153430893
-        Name: "ClientContext"
-        Transform {
-          Location {
-            X: -0.611328125
-            Y: 0.498046815
-            Z: 110
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5211063050946554210
-        ChildIds: 1298095869203187938
-        ChildIds: 6787094449161638248
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 1298095869203187938
+        Id: 11932698422364587377
         Name: "Craftsman Dining Chair"
         Transform {
           Location {
-            X: -47.766716
-            Y: -0.670688629
-            Z: -110
+            X: -10
+            Z: -25
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.900000036
+            Y: 0.900000036
+            Z: 0.900000036
           }
         }
-        ParentId: 6026527031153430893
+        ParentId: 3184660033001234866
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -317,15 +273,34 @@ Assets {
             }
           }
           Overrides {
+            Name: "ma:Prop_Cushion:id"
+            AssetReference {
+              Id: 10793320870014566179
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 16497610927948824042
+            }
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 1
-              G: 0.3
-              A: 1
+              G: 0.400000036
+              A: 0.25
+            }
+          }
+          Overrides {
+            Name: "ma:Prop_Cushion:color"
+            Color {
+              R: 1
+              G: 0.400000036
+              A: 0.25
             }
           }
         }
-        Lifespan: 0.001
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -340,7 +315,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 11452126672691922020
+            Id: 15340021074622401975
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -354,84 +329,11 @@ Assets {
             BoundsScale: 1
           }
         }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 6787094449161638248
-        Name: "Military Sandbag 02"
-        Transform {
-          Location {
-            X: 45.3673782
-            Y: -0.911136627
-            Z: -130.816895
-          }
-          Rotation {
-            Yaw: -4.18780518
-          }
-          Scale {
-            X: 0.459666342
-            Y: 0.946180046
-            Z: 0.348138213
-          }
-        }
-        ParentId: 6026527031153430893
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10793320870014566179
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.333
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 0.3
-              A: 1
-            }
-          }
-        }
-        Lifespan: 0.001
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5906076877227777947
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
+        InstanceHistory {
+          SelfId: 7121012494449216585
+          SubobjectId: 18362862709697281532
+          InstanceId: 9945761851915048314
+          TemplateId: 7123922115875722576
         }
         Relevance {
           Value: "mc:eproxyrelevance:critical"
@@ -441,16 +343,15 @@ Assets {
         }
       }
       Objects {
-        Id: 16590157316552120873
+        Id: 16511475471841291084
         Name: "Sittable Chair Trigger"
         Transform {
           Location {
-            X: -69.0000305
-            Y: -32.0001221
-            Z: 5
+            X: 35.0000305
+            Y: 59.7808838
+            Z: 66
           }
           Rotation {
-            Yaw: -89.9999924
           }
           Scale {
             X: 1
@@ -459,10 +360,21 @@ Assets {
           }
         }
         ParentId: 6048689032506712493
-        ChildIds: 2127434335619467174
-        ChildIds: 16291503174346855988
-        ChildIds: 6490482510768414381
-        ChildIds: 15926672191136397606
+        ChildIds: 3237870799435324888
+        ChildIds: 5440553736911818043
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SittingStance"
+            String: "unarmed_sit_chair_upright"
+          }
+          Overrides {
+            Name: "cs:SitOffset"
+            Vector {
+              X: 50
+              Z: 45
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -478,28 +390,34 @@ Assets {
         Folder {
           IsGroup: true
         }
+        InstanceHistory {
+          SelfId: 16940581316760360998
+          SubobjectId: 16223222015253590822
+          InstanceId: 2982063551188663940
+          TemplateId: 7123922115875722576
+          WasRoot: true
+        }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
-        Id: 2127434335619467174
+        Id: 3237870799435324888
         Name: "Trigger"
         Transform {
           Location {
-            X: -0.611328125
-            Y: 0.498535156
-            Z: 110
+            X: -15
+            Z: 35
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
-        ParentId: 16590157316552120873
+        ParentId: 16511475471841291084
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -524,18 +442,21 @@ Assets {
             Value: "mc:etriggershape:box"
           }
         }
+        InstanceHistory {
+          SelfId: 4863548821960505276
+          SubobjectId: 5279262640078314684
+          InstanceId: 2982063551188663940
+          TemplateId: 7123922115875722576
+        }
         NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
+          Value: "mc:eproxyrelevance:medium"
         }
       }
       Objects {
-        Id: 16291503174346855988
-        Name: "Simple Sittable Chair"
+        Id: 5440553736911818043
+        Name: "ServerContext"
         Transform {
           Location {
-            X: 50
-            Y: 0.000942230225
-            Z: 75
           }
           Rotation {
           }
@@ -545,17 +466,61 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16590157316552120873
+        ParentId: 16511475471841291084
+        ChildIds: 188822609453753503
+        ChildIds: 7558980570390454556
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: Server
+        }
+        InstanceHistory {
+          SelfId: 361789212843136582
+          SubobjectId: 1096674730514529606
+          InstanceId: 2982063551188663940
+          TemplateId: 7123922115875722576
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 188822609453753503
+        Name: "Simple Sittable Chair"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5440553736911818043
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Trigger"
+            Name: "cs:ComponentRoot"
             ObjectReference {
-              SubObjectId: 2127434335619467174
+              SubObjectId: 16511475471841291084
             }
           }
           Overrides {
-            Name: "cs:SittingStance"
-            String: "unarmed_sit_chair_upright"
+            Name: "cs:SitTrigger"
+            ObjectReference {
+              SubObjectId: 3237870799435324888
+            }
           }
         }
         Collidable_v2 {
@@ -575,122 +540,34 @@ Assets {
             Id: 9804945165610059894
           }
         }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 6490482510768414381
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: 49.3886719
-            Y: 0.498046875
-          }
-          Rotation {
-            Pitch: -20
-          }
-          Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 16590157316552120873
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16048367406070731799
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
+        InstanceHistory {
+          SelfId: 17051389757658843685
+          SubobjectId: 16618223390395670821
+          InstanceId: 2982063551188663940
+          TemplateId: 7123922115875722576
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
-        Id: 15926672191136397606
-        Name: "ClientContext"
-        Transform {
-          Location {
-            X: -0.611328125
-            Y: 0.498046815
-            Z: 110
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16590157316552120873
-        ChildIds: 9792570833144642134
-        ChildIds: 9279623445764152028
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 9792570833144642134
+        Id: 7558980570390454556
         Name: "Craftsman Dining Chair"
         Transform {
           Location {
-            X: -47.766716
-            Y: -0.670688629
-            Z: -110
+            X: -10
+            Z: -25
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.900000036
+            Y: 0.900000036
+            Z: 0.900000036
           }
         }
-        ParentId: 15926672191136397606
+        ParentId: 5440553736911818043
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -699,15 +576,34 @@ Assets {
             }
           }
           Overrides {
+            Name: "ma:Prop_Cushion:id"
+            AssetReference {
+              Id: 10793320870014566179
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 16497610927948824042
+            }
+          }
+          Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 1
-              G: 0.3
-              A: 1
+              G: 0.400000036
+              A: 0.25
+            }
+          }
+          Overrides {
+            Name: "ma:Prop_Cushion:color"
+            Color {
+              R: 1
+              G: 0.400000036
+              A: 0.25
             }
           }
         }
-        Lifespan: 0.001
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -722,7 +618,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 11452126672691922020
+            Id: 15340021074622401975
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -736,84 +632,11 @@ Assets {
             BoundsScale: 1
           }
         }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 9279623445764152028
-        Name: "Military Sandbag 02"
-        Transform {
-          Location {
-            X: 45.3673782
-            Y: -0.911136627
-            Z: -130.816895
-          }
-          Rotation {
-            Yaw: -4.18780518
-          }
-          Scale {
-            X: 0.459666342
-            Y: 0.946180046
-            Z: 0.348138213
-          }
-        }
-        ParentId: 15926672191136397606
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10793320870014566179
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.333
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 0.3
-              A: 1
-            }
-          }
-        }
-        Lifespan: 0.001
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5906076877227777947
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
+        InstanceHistory {
+          SelfId: 17647496823031961340
+          SubobjectId: 18362862709697281532
+          InstanceId: 2982063551188663940
+          TemplateId: 7123922115875722576
         }
         Relevance {
           Value: "mc:eproxyrelevance:critical"
@@ -829,7 +652,7 @@ Assets {
           Location {
           }
           Rotation {
-            Yaw: -179.999985
+            Yaw: -89.999939
           }
           Scale {
             X: 0.8
@@ -903,6 +726,69 @@ Assets {
         }
       }
       Objects {
+        Id: 8037765681356396167
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: 90
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6048689032506712493
+        ChildIds: 2428128936952134360
+        ChildIds: 2084537596936793500
+        ChildIds: 13517886746786816001
+        ChildIds: 5603363881303583650
+        ChildIds: 12255124285881589706
+        ChildIds: 9920644407174562324
+        ChildIds: 2369723980816229710
+        ChildIds: 17910376142205400524
+        ChildIds: 7101743784015963915
+        ChildIds: 16055173936621233146
+        ChildIds: 17751838686868666515
+        ChildIds: 1677613166287096287
+        ChildIds: 16323755739567517296
+        ChildIds: 14459965479939588744
+        ChildIds: 654826323810049586
+        ChildIds: 6535466444317481876
+        ChildIds: 5549466661316834568
+        ChildIds: 13886186742477098193
+        ChildIds: 2601754408059157696
+        ChildIds: 9794972809028364994
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          DetailRelevance {
+            Value: "mc:edetaillevel:low"
+          }
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 2428128936952134360
         Name: "Ring - Extra Thick"
         Transform {
@@ -921,7 +807,7 @@ Assets {
             Z: 0.6
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -987,9 +873,8 @@ Assets {
             Z: 69.0000076
           }
           Rotation {
-            Pitch: -1.36603776e-05
-            Yaw: 180
-            Roll: 89.9999771
+            Yaw: -179.999969
+            Roll: 89.9999466
           }
           Scale {
             X: 0.4
@@ -997,7 +882,7 @@ Assets {
             Z: 1.1
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1072,7 +957,7 @@ Assets {
             Z: 1.1
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1138,7 +1023,7 @@ Assets {
             Z: 69.0000076
           }
           Rotation {
-            Roll: -89.9999924
+            Roll: -90
           }
           Scale {
             X: 0.4
@@ -1146,7 +1031,7 @@ Assets {
             Z: 0.6
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1213,8 +1098,7 @@ Assets {
           }
           Rotation {
             Pitch: 90
-            Yaw: -44.9999962
-            Roll: -135.000031
+            Roll: -90
           }
           Scale {
             X: 0.4
@@ -1222,7 +1106,7 @@ Assets {
             Z: 1.1
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1288,7 +1172,7 @@ Assets {
             Z: 69.0000076
           }
           Rotation {
-            Roll: -89.9999924
+            Roll: -90
           }
           Scale {
             X: 0.4
@@ -1296,7 +1180,7 @@ Assets {
             Z: 1.1
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1362,7 +1246,7 @@ Assets {
             Z: 113.494186
           }
           Rotation {
-            Roll: 12.7369318
+            Roll: 12.736969
           }
           Scale {
             X: 1
@@ -1370,7 +1254,7 @@ Assets {
             Z: 0.899999917
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -1471,7 +1355,7 @@ Assets {
             Z: 15.9549942
           }
           Rotation {
-            Roll: 11.5426054
+            Roll: 11.5426407
           }
           Scale {
             X: 2.1245141
@@ -1479,7 +1363,7 @@ Assets {
             Z: 1.02336574
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1551,7 +1435,7 @@ Assets {
             Z: 0.7
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1617,7 +1501,7 @@ Assets {
             Z: 69
           }
           Rotation {
-            Roll: -89.9999924
+            Roll: -90
           }
           Scale {
             X: 0.4
@@ -1625,7 +1509,7 @@ Assets {
             Z: 0.7
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1691,7 +1575,7 @@ Assets {
             Z: 69.0000076
           }
           Rotation {
-            Roll: -89.9999924
+            Roll: -90
           }
           Scale {
             X: 0.147853479
@@ -1699,7 +1583,7 @@ Assets {
             Z: 0.98966825
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1774,7 +1658,7 @@ Assets {
             Z: 0.98966825
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1848,7 +1732,7 @@ Assets {
             Z: 0.49999997
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1931,7 +1815,7 @@ Assets {
             Z: 0.49999997
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2012,7 +1896,7 @@ Assets {
             Z: 0.6
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2115,7 +1999,7 @@ Assets {
             X: -58
           }
           Rotation {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
           Scale {
             X: 0.747422278
@@ -2123,7 +2007,7 @@ Assets {
             Z: 0.6
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2228,7 +2112,7 @@ Assets {
             Z: 75.6727142
           }
           Rotation {
-            Roll: 101.542664
+            Roll: 101.542694
           }
           Scale {
             X: 0.262703836
@@ -2236,7 +2120,7 @@ Assets {
             Z: 0.0999997854
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2290,7 +2174,7 @@ Assets {
             Z: 75.6727142
           }
           Rotation {
-            Roll: 101.542679
+            Roll: 101.542717
           }
           Scale {
             X: 0.262703836
@@ -2298,7 +2182,7 @@ Assets {
             Z: 0.0999997854
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2352,7 +2236,7 @@ Assets {
             Z: 75.6727142
           }
           Rotation {
-            Roll: 101.542694
+            Roll: 101.54274
           }
           Scale {
             X: 0.288833678
@@ -2360,7 +2244,7 @@ Assets {
             Z: 0.10994608
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2414,7 +2298,7 @@ Assets {
             Z: 75.6727142
           }
           Rotation {
-            Roll: 101.542679
+            Roll: 101.542717
           }
           Scale {
             X: 0.288833678
@@ -2422,7 +2306,7 @@ Assets {
             Z: 0.10994608
           }
         }
-        ParentId: 6048689032506712493
+        ParentId: 8037765681356396167
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -2468,21 +2352,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16048367406070731799
-      Name: "Plane 1m - One Sided"
+      Id: 15340021074622401975
+      Name: "Craftsman Desk Chair - Seat 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_1m_001"
-      }
-    }
-    Assets {
-      Id: 11452126672691922020
-      Name: "Craftsman Dining Chair"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_urb_chair_dining_001"
+        AssetId: "sm_prop_urb_craftsman_desk_chair_seat_001_ref"
       }
     }
     Assets {
@@ -2495,12 +2370,12 @@ Assets {
       }
     }
     Assets {
-      Id: 5906076877227777947
-      Name: "Military Sandbag 02"
-      PlatformAssetType: 1
+      Id: 16497610927948824042
+      Name: "Invisible"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_mil_sandbag_002"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_invisible_001"
       }
     }
     Assets {
@@ -2607,7 +2482,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Interior"
 }

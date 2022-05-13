@@ -15,8 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 4086342804112373897
+        ParentId: 7235191325712305601
+        ChildIds: 8555253501772296901
+        ChildIds: 3551807120875379451
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -37,8 +38,61 @@ Assets {
         }
       }
       Objects {
-        Id: 4086342804112373897
-        Name: "MergedModel"
+        Id: 8555253501772296901
+        Name: "Collision"
+        Transform {
+          Location {
+            X: 346.908813
+            Y: -0.000828743
+            Z: -37.6232834
+          }
+          Rotation {
+          }
+          Scale {
+            X: 7.26218748
+            Y: 0.483991235
+            Z: 1.84761274
+          }
+        }
+        ParentId: 2939161460839085074
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17609149353171719671
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 3551807120875379451
+        Name: "ClientContext"
         Transform {
           Location {
           }
@@ -94,19 +148,26 @@ Assets {
         ChildIds: 14744886268070284169
         ChildIds: 13810125040365394740
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Folder {
-          Model {
+        NetworkContext {
+          DetailRelevance {
+            Value: "mc:edetaillevel:low"
+          }
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
           }
         }
         NetworkRelevanceDistance {
@@ -118,9 +179,9 @@ Assets {
         Name: "Stone Block BIg"
         Transform {
           Location {
-            X: 338.326111
-            Y: 0.00350952148
-            Z: 52.6779785
+            X: 338.326508
+            Y: 0.00329113
+            Z: 52.677948
           }
           Rotation {
           }
@@ -130,7 +191,7 @@ Assets {
             Z: 1.44630682
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -200,14 +261,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 707.900085
-            Y: 9.22372437
-            Z: 86.5076523
+            X: 707.899902
+            Y: 9.22389221
+            Z: 86.5077133
           }
           Rotation {
-            Pitch: -73.379364
-            Yaw: -154.249542
-            Roll: 158.113876
+            Pitch: -73.3793259
+            Yaw: -154.249557
+            Roll: 158.113892
           }
           Scale {
             X: 0.103829429
@@ -215,7 +276,7 @@ Assets {
             Z: 0.216977373
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -273,14 +334,14 @@ Assets {
         Name: "Rock Block 01"
         Transform {
           Location {
-            X: 119.784653
-            Y: 1.20353699
+            X: 119.784851
+            Y: 1.20344019
             Z: 130.138367
           }
           Rotation {
-            Pitch: -0.0445806421
-            Yaw: -90.1650925
-            Roll: 69.8373
+            Pitch: -0.0445669815
+            Yaw: -90.1650696
+            Roll: 69.8373108
           }
           Scale {
             X: 0.346904486
@@ -288,7 +349,7 @@ Assets {
             Z: 0.37486732
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -346,14 +407,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 515.84082
+            X: 515.837891
             Y: -22.9833984
-            Z: 59.8728027
+            Z: 59.8726807
           }
           Rotation {
             Pitch: -38.3244
-            Yaw: -177.93811
-            Roll: -91.2860718
+            Yaw: -177.938065
+            Roll: -91.2860641
           }
           Scale {
             X: 0.129228294
@@ -361,7 +422,7 @@ Assets {
             Z: 0.0588330925
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -419,14 +480,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 657.318848
-            Y: -8.79467773
-            Z: -25.04739
+            X: 657.319336
+            Y: -8.79494858
+            Z: -25.047369
           }
           Rotation {
-            Pitch: -15.075552
+            Pitch: -15.0755377
             Yaw: -178.463593
-            Roll: -91.0446167
+            Roll: -91.0446091
           }
           Scale {
             X: 0.454367608
@@ -434,7 +495,7 @@ Assets {
             Z: 0.196236119
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -492,9 +553,9 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 245.651978
-            Y: -17.0620728
-            Z: 11.014245
+            X: 245.65213
+            Y: -17.0621185
+            Z: 11.014225
           }
           Rotation {
             Pitch: -15.3945007
@@ -507,7 +568,7 @@ Assets {
             Z: 0.11812564
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -565,14 +626,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 107.259071
-            Y: -20.8617706
-            Z: 0.843258381
+            X: 107.258347
+            Y: -20.8613319
+            Z: 0.843263388
           }
           Rotation {
             Pitch: 10.0058641
-            Yaw: 1.78499901
-            Roll: -98.765564
+            Yaw: 1.78500211
+            Roll: -98.7656174
           }
           Scale {
             X: 0.464798212
@@ -580,7 +641,7 @@ Assets {
             Z: 0.0919184908
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -638,14 +699,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 488.449951
-            Y: -17.6026611
-            Z: -26.4104
+            X: 488.450745
+            Y: -17.6030102
+            Z: -26.4103851
           }
           Rotation {
             Pitch: -40.3411865
             Yaw: -171.419083
-            Roll: 86.4878
+            Roll: 86.4878159
           }
           Scale {
             X: 0.365183592
@@ -653,7 +714,7 @@ Assets {
             Z: 0.170657828
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -712,13 +773,13 @@ Assets {
         Transform {
           Location {
             X: 65.2480469
-            Y: -9.77246094
-            Z: 96.9567871
+            Y: -9.77441406
+            Z: 96.956543
           }
           Rotation {
-            Pitch: 6.70590687
-            Yaw: 89.4670715
-            Roll: -86.7789307
+            Pitch: 6.70589972
+            Yaw: 89.4670868
+            Roll: -86.7789383
           }
           Scale {
             X: -0.0504471958
@@ -726,7 +787,7 @@ Assets {
             Z: 0.339030087
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -784,13 +845,13 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 227.161133
-            Y: -16.2324219
-            Z: 96.5784912
+            X: 227.160156
+            Y: -16.2353516
+            Z: 96.5783691
           }
           Rotation {
-            Pitch: 18.0025749
-            Yaw: -37.3565445
+            Pitch: 18.0025463
+            Yaw: -37.3564796
             Roll: -133.785751
           }
           Scale {
@@ -799,7 +860,7 @@ Assets {
             Z: 0.24190703
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -857,14 +918,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 363.213074
-            Y: -22.5705872
-            Z: 53.5623589
+            X: 363.212799
+            Y: -22.570406
+            Z: 53.5624123
           }
           Rotation {
             Pitch: 4.36030388
-            Yaw: 86.5457077
-            Roll: -66.8607254
+            Yaw: 86.5457153
+            Roll: -66.8607941
           }
           Scale {
             X: 0.0391485468
@@ -872,7 +933,7 @@ Assets {
             Z: 0.162664
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -930,14 +991,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 569.704529
-            Y: -23.0219421
-            Z: 47.4070358
+            X: 569.70459
+            Y: -23.0221024
+            Z: 47.407
           }
           Rotation {
-            Pitch: -81.1010056
-            Yaw: 7.43186855
-            Roll: 172.339752
+            Pitch: -81.1007156
+            Yaw: 7.43185663
+            Roll: 172.339676
           }
           Scale {
             X: 0.124346152
@@ -945,7 +1006,7 @@ Assets {
             Z: 0.183537051
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1003,14 +1064,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: -0.584239483
-            Y: -10.8591738
-            Z: 88.5561523
+            X: -0.584297
+            Y: -10.8591833
+            Z: 88.5561371
           }
           Rotation {
-            Pitch: -29.6010132
-            Yaw: 0.037503805
-            Roll: 90.4571304
+            Pitch: -29.6009789
+            Yaw: 0.03749495
+            Roll: 90.4570847
           }
           Scale {
             X: 0.284873515
@@ -1018,7 +1079,7 @@ Assets {
             Z: 0.193852797
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1076,14 +1137,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 45.3981094
-            Y: 1.4181385
-            Z: 125.967613
+            X: 45.3987541
+            Y: 1.41776085
+            Z: 125.967567
           }
           Rotation {
-            Pitch: -10.3618679
-            Yaw: -88.32621
-            Roll: 79.8406372
+            Pitch: -10.3618536
+            Yaw: -88.3261871
+            Roll: 79.8405609
           }
           Scale {
             X: 0.352644354
@@ -1091,7 +1152,7 @@ Assets {
             Z: 0.485332638
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1149,14 +1210,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 181.565567
-            Y: -10.7178345
-            Z: 128.356964
+            X: 181.565323
+            Y: -10.7177315
+            Z: 128.35701
           }
           Rotation {
-            Pitch: -18.59762
-            Yaw: -64.4274597
-            Roll: -84.5516
+            Pitch: -18.5976143
+            Yaw: -64.4275
+            Roll: -84.5515671
           }
           Scale {
             X: 0.243505552
@@ -1164,7 +1225,7 @@ Assets {
             Z: 0.335128546
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1222,14 +1283,14 @@ Assets {
         Name: "Stone Block Big Broken"
         Transform {
           Location {
-            X: 251.895538
-            Y: 0.0331573486
-            Z: 125.7043
+            X: 251.895691
+            Y: 0.0329875946
+            Z: 125.704247
           }
           Rotation {
-            Pitch: -82.630806
-            Yaw: -80.3626633
-            Roll: -96.5834274
+            Pitch: -82.6309433
+            Yaw: -80.3626251
+            Roll: -96.5836487
           }
           Scale {
             X: 0.322546542
@@ -1237,7 +1298,7 @@ Assets {
             Z: 0.717609346
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1295,14 +1356,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 329.161896
-            Y: -13.6006775
+            X: 329.16217
+            Y: -13.6009169
             Z: 129.253479
           }
           Rotation {
-            Pitch: 21.2540989
-            Yaw: -96.0040054
-            Roll: 86.0587082
+            Pitch: 21.2540932
+            Yaw: -96.0040131
+            Roll: 86.0587158
           }
           Scale {
             X: 0.144961402
@@ -1310,7 +1371,7 @@ Assets {
             Z: 0.364979744
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1368,14 +1429,14 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: 320.063751
-            Y: 10.8628082
-            Z: 127.709091
+            X: 320.063324
+            Y: 10.8629255
+            Z: 127.709129
           }
           Rotation {
             Pitch: 3.42529178
             Yaw: -178.295227
-            Roll: 10.3033094
+            Roll: 10.30336
           }
           Scale {
             X: 0.180538535
@@ -1383,7 +1444,7 @@ Assets {
             Z: 0.24411355
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1441,14 +1502,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 402.939789
-            Y: -10.0530396
-            Z: 128.992477
+            X: 402.939941
+            Y: -10.0531263
+            Z: 128.992416
           }
           Rotation {
-            Pitch: -56.8548775
-            Yaw: 160.981674
-            Roll: 18.3398876
+            Pitch: -56.8548317
+            Yaw: 160.981628
+            Roll: 18.3399067
           }
           Scale {
             X: 0.0935133621
@@ -1456,7 +1517,7 @@ Assets {
             Z: 0.306872427
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1514,14 +1575,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 387.133667
-            Y: 12.5282593
-            Z: 121.04184
+            X: 387.133118
+            Y: 12.5285044
+            Z: 121.041817
           }
           Rotation {
-            Pitch: -12.8393545
-            Yaw: 94.2116776
-            Roll: -85.1361389
+            Pitch: -12.8393345
+            Yaw: 94.2117
+            Roll: -85.1361
           }
           Scale {
             X: 0.14080742
@@ -1529,7 +1590,7 @@ Assets {
             Z: 0.192825511
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1587,14 +1648,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 426.14389
-            Y: 8.32852173
+            X: 426.144684
+            Y: 8.32808113
             Z: 129.570511
           }
           Rotation {
-            Pitch: -20.0360661
+            Pitch: -20.0360584
             Yaw: 80.2014
-            Roll: -35.4487534
+            Roll: -35.4487839
           }
           Scale {
             X: 0.141732931
@@ -1602,7 +1663,7 @@ Assets {
             Z: 0.0802427456
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1660,14 +1721,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 462.68042
-            Y: 2.16009521
-            Z: 133.432892
+            X: 462.680542
+            Y: 2.16008186
+            Z: 133.432877
           }
           Rotation {
-            Pitch: -9.5407629
-            Yaw: 87.329834
-            Roll: 34.8507
+            Pitch: -9.54075623
+            Yaw: 87.3297806
+            Roll: 34.8507233
           }
           Scale {
             X: 0.169808894
@@ -1675,7 +1736,7 @@ Assets {
             Z: 0.130856514
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1733,14 +1794,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 506.960022
-            Y: -12.8546448
+            X: 506.96051
+            Y: -12.8547802
             Z: 136.406128
           }
           Rotation {
-            Pitch: -30.1331406
-            Yaw: -54.7017708
-            Roll: -117.180061
+            Pitch: -30.1331272
+            Yaw: -54.701725
+            Roll: -117.18
           }
           Scale {
             X: 0.243512511
@@ -1748,7 +1809,7 @@ Assets {
             Z: 0.335136831
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1806,9 +1867,9 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: 539.001892
-            Y: 14.6116333
-            Z: 126.107056
+            X: 539.002625
+            Y: 14.6113758
+            Z: 126.10704
           }
           Rotation {
             Pitch: 1.12968588
@@ -1821,7 +1882,7 @@ Assets {
             Z: 0.188564315
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1879,14 +1940,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 554.172852
-            Y: -9.33621216
-            Z: 130.131546
+            X: 554.172363
+            Y: -9.33611107
+            Z: 130.131516
           }
           Rotation {
-            Pitch: 67.1237183
-            Yaw: -49.9397316
-            Roll: -51.6995926
+            Pitch: 67.1236267
+            Yaw: -49.9397354
+            Roll: -51.6996117
           }
           Scale {
             X: 0.189950049
@@ -1894,7 +1955,7 @@ Assets {
             Z: 0.304818481
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1952,14 +2013,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 602.716675
-            Y: 16.0831604
-            Z: 130.131699
+            X: 602.717102
+            Y: 16.0829659
+            Z: 130.131729
           }
           Rotation {
-            Pitch: -79.1458435
-            Yaw: 6.02206707
-            Roll: 11.9536304
+            Pitch: -79.1457
+            Yaw: 6.02208424
+            Roll: 11.9536505
           }
           Scale {
             X: 0.22118
@@ -1967,7 +2028,7 @@ Assets {
             Z: 0.304822654
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2026,11 +2087,11 @@ Assets {
         Transform {
           Location {
             X: 623.738281
-            Y: -8.86621094
-            Z: 126.345581
+            Y: -8.86816406
+            Z: 126.345459
           }
           Rotation {
-            Pitch: -10.4333801
+            Pitch: -10.4333725
             Yaw: 177.591568
             Roll: -170.14151
           }
@@ -2040,7 +2101,7 @@ Assets {
             Z: 0.942909241
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2098,14 +2159,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 704.840881
-            Y: -7.23480225
-            Z: 125.694031
+            X: 704.840454
+            Y: -7.23462677
+            Z: 125.694
           }
           Rotation {
             Pitch: -12.8393545
-            Yaw: 94.2116699
-            Roll: -85.1361465
+            Yaw: 94.2116394
+            Roll: -85.1361
           }
           Scale {
             X: 0.14080742
@@ -2113,7 +2174,7 @@ Assets {
             Z: 0.192825511
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2171,14 +2232,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 681.139648
-            Y: 16.9794922
-            Z: 129.414185
+            X: 681.136719
+            Y: 16.9765625
+            Z: 129.41394
           }
           Rotation {
-            Pitch: -43.622982
-            Yaw: -115.48494
-            Roll: 109.824608
+            Pitch: -43.6229591
+            Yaw: -115.484795
+            Roll: 109.824501
           }
           Scale {
             X: 0.101218633
@@ -2186,7 +2247,7 @@ Assets {
             Z: -0.233870149
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2244,14 +2305,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 171.331909
-            Y: 18.9424133
-            Z: 125.029213
+            X: 171.331299
+            Y: 18.942791
+            Z: 125.029167
           }
           Rotation {
             Pitch: 8.02141476
             Yaw: -94.2168274
-            Roll: -100.105873
+            Roll: -100.105911
           }
           Scale {
             X: 0.129266962
@@ -2259,7 +2320,7 @@ Assets {
             Z: 0.335132807
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2317,14 +2378,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 271.476562
-            Y: 21.1064453
-            Z: 55.7664795
+            X: 271.474609
+            Y: 21.1035156
+            Z: 55.7662354
           }
           Rotation {
-            Pitch: 77.4114075
-            Yaw: 16.8938484
-            Roll: -73.014
+            Pitch: 77.4113235
+            Yaw: 16.893877
+            Roll: -73.0138321
           }
           Scale {
             X: 0.082505025
@@ -2332,7 +2393,7 @@ Assets {
             Z: 0.0561278276
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2390,14 +2451,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 56.9626617
-            Y: 12.7554321
-            Z: -28.054966
+            X: 56.9618492
+            Y: 12.7557755
+            Z: -28.0549469
           }
           Rotation {
             Pitch: -15.7483454
-            Yaw: 1.54886007
-            Roll: -91.0480347
+            Yaw: 1.54885733
+            Roll: -91.0480042
           }
           Scale {
             X: 0.401109755
@@ -2405,7 +2466,7 @@ Assets {
             Z: 0.196249
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2463,13 +2524,13 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 510.253326
-            Y: 24.8755493
-            Z: 40.9304428
+            X: 510.252808
+            Y: 24.8758583
+            Z: 40.9304771
           }
           Rotation {
             Pitch: 0.567943871
-            Yaw: -89.3204041
+            Yaw: -89.3204346
             Roll: -171.885315
           }
           Scale {
@@ -2478,7 +2539,7 @@ Assets {
             Z: 0.201839313
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2536,14 +2597,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 434.742462
-            Y: 21.0110779
-            Z: -18.4162426
+            X: 434.742767
+            Y: 21.0108986
+            Z: -18.4162312
           }
           Rotation {
             Pitch: -1.23842931
             Yaw: -173.753235
-            Roll: -87.3231812
+            Roll: -87.3231049
           }
           Scale {
             X: 0.365177542
@@ -2551,7 +2612,7 @@ Assets {
             Z: 0.170672745
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2609,14 +2670,14 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 62.102356
-            Y: 26.1002712
-            Z: 52.154007
+            X: 62.1028976
+            Y: 26.0999756
+            Z: 52.1540489
           }
           Rotation {
-            Pitch: -78.3014297
-            Yaw: 179.142532
-            Roll: -86.1601105
+            Pitch: -78.3013458
+            Yaw: 179.142471
+            Roll: -86.1599731
           }
           Scale {
             X: 0.254073232
@@ -2624,7 +2685,7 @@ Assets {
             Z: 0.0892202631
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2682,14 +2743,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 703.332031
-            Y: 15.4589844
-            Z: 54.2553711
+            X: 703.330078
+            Y: 15.4570312
+            Z: 54.255249
           }
           Rotation {
-            Pitch: 3.4007647
-            Yaw: -90.7190399
-            Roll: -90.6501312
+            Pitch: 3.40080571
+            Yaw: -90.718956
+            Roll: -90.6500549
           }
           Scale {
             X: -0.0484857783
@@ -2697,7 +2758,7 @@ Assets {
             Z: 0.221903712
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2755,14 +2816,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 572.387695
-            Y: 18.2001953
-            Z: 98.9901123
+            X: 572.386719
+            Y: 18.1992188
+            Z: 98.9899902
           }
           Rotation {
-            Pitch: 8.36486435
+            Pitch: 8.36485672
             Yaw: 144.265137
-            Roll: -124.836754
+            Roll: -124.836807
           }
           Scale {
             X: -0.100142375
@@ -2770,7 +2831,7 @@ Assets {
             Z: 0.235662445
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2828,14 +2889,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 200.011505
-            Y: 27.7041702
-            Z: 94.4431381
+            X: 200.012177
+            Y: 27.7037964
+            Z: 94.4430771
           }
           Rotation {
-            Pitch: -0.0829799622
-            Yaw: -99.9144745
-            Roll: -59.1862144
+            Pitch: -0.0829867944
+            Yaw: -99.9145432
+            Roll: -59.1861687
           }
           Scale {
             X: 0.044574108
@@ -2843,7 +2904,7 @@ Assets {
             Z: 0.180774316
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2901,14 +2962,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 416.441467
-            Y: 21.5574951
-            Z: 15.7193909
+            X: 416.441711
+            Y: 21.557476
+            Z: 15.7193451
           }
           Rotation {
-            Pitch: -86.7529602
-            Yaw: -152.855576
-            Roll: 149.863586
+            Pitch: -86.7526
+            Yaw: -152.855606
+            Roll: 149.863464
           }
           Scale {
             X: 0.120660417
@@ -2916,7 +2977,7 @@ Assets {
             Z: 0.315261364
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2974,13 +3035,13 @@ Assets {
         Name: "Stone Block Standard Broken"
         Transform {
           Location {
-            X: 688.165833
-            Y: 4.20916748
-            Z: 9.61291885
+            X: 688.166382
+            Y: 4.2090435
+            Z: 9.61293888
           }
           Rotation {
             Pitch: -2.17546988
-            Yaw: 175.334824
+            Yaw: 175.334793
             Roll: 2.31437302
           }
           Scale {
@@ -2989,7 +3050,7 @@ Assets {
             Z: 1.20644236
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -3041,14 +3102,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 702.829102
-            Y: -8.96777344
-            Z: 52.5377197
+            X: 702.828125
+            Y: -8.96972656
+            Z: 52.5374756
           }
           Rotation {
-            Pitch: -2.72861266
-            Yaw: 85.5784683
-            Roll: 99.8074265
+            Pitch: -2.72860575
+            Yaw: 85.5784454
+            Roll: 99.8074188
           }
           Scale {
             X: -0.046642676
@@ -3056,7 +3117,7 @@ Assets {
             Z: 0.192909166
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -3114,14 +3175,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 697.084595
-            Y: -10.1440735
-            Z: 87.9174194
+            X: 697.083923
+            Y: -10.1437836
+            Z: 87.91745
           }
           Rotation {
-            Pitch: 68.7097626
-            Yaw: 7.63693476
-            Roll: 94.303421
+            Pitch: 68.7097244
+            Yaw: 7.63699102
+            Roll: 94.3034286
           }
           Scale {
             X: 0.263392657
@@ -3129,7 +3190,7 @@ Assets {
             Z: 0.131942421
           }
         }
-        ParentId: 4086342804112373897
+        ParentId: 3551807120875379451
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -3181,6 +3242,15 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
+      }
+    }
+    Assets {
+      Id: 17609149353171719671
+      Name: "Cube - Bottom-Aligned"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_001"
       }
     }
     Assets {
@@ -3269,7 +3339,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Tilesets"
 }

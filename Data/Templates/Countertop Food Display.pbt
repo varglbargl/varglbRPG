@@ -15,21 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 8658853192657606194
+        ParentId: 18037324666348523329
         ChildIds: 14834377649678877820
-        ChildIds: 106943477121182206
-        ChildIds: 12131748928807193011
-        ChildIds: 17726605189739394179
-        ChildIds: 11997156650609537473
-        ChildIds: 15810848339563461952
-        ChildIds: 14525480613778454311
-        ChildIds: 15787130392352426682
-        ChildIds: 2486880735596734430
-        ChildIds: 15963337859593687077
-        ChildIds: 264500769588831119
-        ChildIds: 12525958856009726352
-        ChildIds: 13534239986485032121
+        ChildIds: 11474857509880529250
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -44,68 +32,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 8658853192657606194
-        Name: "Pipe - Quarter Thin"
-        Transform {
-          Location {
-            X: 89.2207
-            Y: -10.2553711
-          }
-          Rotation {
-            Pitch: -90
-            Roll: -179.999985
-          }
-          Scale {
-            X: 0.167120263
-            Y: 0.167120263
-            Z: 0.00859601703
-          }
-        }
-        ParentId: 14525957537960729771
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 17241186771114119414
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7148346957896105275
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -183,17 +109,133 @@ Assets {
         }
       }
       Objects {
+        Id: 11474857509880529250
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14525957537960729771
+        ChildIds: 13534239986485032121
+        ChildIds: 106943477121182206
+        ChildIds: 12131748928807193011
+        ChildIds: 17726605189739394179
+        ChildIds: 11997156650609537473
+        ChildIds: 15810848339563461952
+        ChildIds: 14525480613778454311
+        ChildIds: 15787130392352426682
+        ChildIds: 2486880735596734430
+        ChildIds: 15963337859593687077
+        ChildIds: 264500769588831119
+        ChildIds: 12525958856009726352
+        ChildIds: 8658853192657606194
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          DetailRelevance {
+            Value: "mc:edetaillevel:low"
+          }
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 13534239986485032121
+        Name: "Container - Hex- Rounded"
+        Transform {
+          Location {
+            X: -9.87430668
+            Y: 29.0141563
+            Z: 38.5703125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.175132275
+            Y: 0.122855939
+            Z: 0.0679886043
+          }
+        }
+        ParentId: 11474857509880529250
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17241186771114119414
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4567162305515687077
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 106943477121182206
         Name: "Pipe - Quarter Thin"
         Transform {
           Location {
-            X: -98.7177734
-            Y: -10.2553711
+            X: -98.7173
+            Y: -10.2554436
           }
           Rotation {
             Pitch: -90
-            Yaw: -4.55345935e-06
-            Roll: -179.999969
+            Yaw: -13.2626925
+            Roll: -166.737259
           }
           Scale {
             X: 0.167120263
@@ -201,7 +243,7 @@ Assets {
             Z: 0.00859601703
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -250,8 +292,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: -9.17285156
-            Y: -10.2553711
+            X: -9.17272377
+            Y: -10.2544775
             Z: 79.2009277
           }
           Rotation {
@@ -262,7 +304,7 @@ Assets {
             Z: 0.0861238837
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -311,8 +353,8 @@ Assets {
         Name: "Container - Hex- Rounded"
         Transform {
           Location {
-            X: -9.875
-            Y: 35.2426758
+            X: -9.87425423
+            Y: 35.2422333
           }
           Rotation {
           }
@@ -322,7 +364,7 @@ Assets {
             Z: 0.0959409401
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -371,8 +413,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 84.8691406
-            Y: -10.2553711
+            X: 84.868927
+            Y: -10.2558594
             Z: 39.8325195
           }
           Rotation {
@@ -383,7 +425,7 @@ Assets {
             Z: 0.886454344
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -432,8 +474,8 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: -103.487305
-            Y: -10.2553711
+            X: -103.487022
+            Y: -10.2555256
             Z: 39.8325195
           }
           Rotation {
@@ -444,7 +486,7 @@ Assets {
             Z: 0.886454344
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -493,8 +535,8 @@ Assets {
         Name: "Office Cubicle Cabinet Door 01"
         Transform {
           Location {
-            X: 82.8271484
-            Y: -13.2553711
+            X: 9.33608532
+            Y: -13.2550945
             Z: 9.11621094
           }
           Rotation {
@@ -506,7 +548,7 @@ Assets {
             Z: 0.851757824
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -571,12 +613,12 @@ Assets {
         Name: "Office Cubicle Cabinet Door 01"
         Transform {
           Location {
-            X: -4.52539062
-            Y: -11.2553711
+            X: -4.52467537
+            Y: -11.2551289
             Z: 9.11621094
           }
           Rotation {
-            Yaw: -179.999969
+            Yaw: -179.999954
           }
           Scale {
             X: 0.666718483
@@ -584,7 +626,7 @@ Assets {
             Z: 0.851757824
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -658,8 +700,8 @@ Assets {
         Name: "Cube - Chamfered Large Polished"
         Transform {
           Location {
-            X: 4.82324219
-            Y: -15.4101562
+            X: -68.6685333
+            Y: -14.4106054
             Z: 66.7473145
           }
           Rotation {
@@ -670,7 +712,7 @@ Assets {
             Z: 0.0631517097
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -719,8 +761,8 @@ Assets {
         Name: "Cube - Chamfered Large Polished"
         Transform {
           Location {
-            X: 4.82324219
-            Y: -15.4101562
+            X: -68.6685333
+            Y: -14.4106054
             Z: 19.7451172
           }
           Rotation {
@@ -731,7 +773,7 @@ Assets {
             Z: 0.0631517097
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -780,12 +822,12 @@ Assets {
         Name: "Carpet Tile 02"
         Transform {
           Location {
-            X: -10.8701172
-            Y: 27.6826172
-            Z: 2.96044922
+            X: -10.8710938
+            Y: 27.6845703
+            Z: 2.96020508
           }
           Rotation {
-            Yaw: 89.9999924
+            Yaw: 89.9999619
           }
           Scale {
             X: 0.100820243
@@ -793,7 +835,7 @@ Assets {
             Z: 0.114750959
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -859,9 +901,9 @@ Assets {
         Name: "Carpet Tile 02"
         Transform {
           Location {
-            X: -10.8701172
-            Y: 22.9243164
-            Z: 41.5307617
+            X: -10.8710938
+            Y: 22.9257812
+            Z: 41.5305176
           }
           Rotation {
             Yaw: 89.9999847
@@ -872,7 +914,7 @@ Assets {
             Z: 0.0813183412
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -934,23 +976,25 @@ Assets {
         }
       }
       Objects {
-        Id: 13534239986485032121
-        Name: "Container - Hex- Rounded"
+        Id: 8658853192657606194
+        Name: "Pipe - Quarter Thin"
         Transform {
           Location {
-            X: -9.875
-            Y: 29.0141602
-            Z: 38.5703125
+            X: 89.2217407
+            Y: -10.2551613
           }
           Rotation {
+            Pitch: -90
+            Yaw: -4.55345935e-06
+            Roll: -179.999985
           }
           Scale {
-            X: 0.175132275
-            Y: 0.122855939
-            Z: 0.0679886043
+            X: 0.167120263
+            Y: 0.167120263
+            Z: 0.00859601703
           }
         }
-        ParentId: 14525957537960729771
+        ParentId: 11474857509880529250
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -973,7 +1017,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4567162305515687077
+            Id: 7148346957896105275
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -996,24 +1040,6 @@ Assets {
       }
     }
     Assets {
-      Id: 7148346957896105275
-      Name: "Pipe - Quarter Thin - Large"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_quarter-pipe_lg_thin_001_ref"
-      }
-    }
-    Assets {
-      Id: 17241186771114119414
-      Name: "Metal Gold 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_gold_001"
-      }
-    }
-    Assets {
       Id: 10906249897613043233
       Name: "Wedge - Convex Polished"
       PlatformAssetType: 1
@@ -1032,21 +1058,39 @@ Assets {
       }
     }
     Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
       Id: 4567162305515687077
       Name: "Container - Hex- Rounded"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_container_hex_rnd_001_ref"
+      }
+    }
+    Assets {
+      Id: 17241186771114119414
+      Name: "Metal Gold 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_gold_001"
+      }
+    }
+    Assets {
+      Id: 7148346957896105275
+      Name: "Pipe - Quarter Thin - Large"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_quarter-pipe_lg_thin_001_ref"
+      }
+    }
+    Assets {
+      Id: 12095835209017042614
+      Name: "Cube"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_002"
       }
     }
     Assets {
@@ -1108,7 +1152,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   DirectlyPublished: true
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Interior"

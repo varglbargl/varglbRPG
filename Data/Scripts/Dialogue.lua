@@ -25,7 +25,6 @@ local skip = false
 local skipEvent = nil
 local selection = 1
 
-local portraitSize = 184
 local dialogWidth = 870
 local dialogueWidth = 675
 
@@ -205,7 +204,7 @@ local animationStances = {
   -- "unarmed_idle_ready",
   -- "unarmed_idle_relaxed",
   run = "unarmed_run_forward",
-  -- "unarmed_shiver",
+  shiver = "unarmed_shiver",
   -- "unarmed_swim_forward",
   -- "unarmed_swim_idle",
   walk = "unarmed_walk_forward",
@@ -290,8 +289,7 @@ function speakLine(lines, num)
 
   if speaker then
     if speaker.portrait then
-      PORTRAIT.x = speaker.portrait % 6 * -portraitSize
-      PORTRAIT.y = math.floor(speaker.portrait / 6) * -portraitSize
+      PORTRAIT:SetImage(speaker.portrait)
       DIALOG.width = dialogWidth
     else
       DIALOG.width = dialogueWidth
@@ -397,21 +395,22 @@ function Dialogue.speak(character, lines, questID)
   speaker = character
 
   dialogueTask = Task.Spawn(function()
-    Utils.throttleToServer("StartDialogue")
+    Utils.freezePlayer(clientPlayer)
     Events.Broadcast("ScreenOpened", "Dialogue")
 
-    local acceptQuest, completeQuest = speakLine(lines, 1)
+    local acceptQuest, turnInQuest = speakLine(lines, 1)
 
     DIALOG.visibility = Visibility.FORCE_OFF
 
     if acceptQuest then
-      Utils.throttleToServer("EndDialogue", questID)
+      Utils.throttleToServer("AcceptQuest", questID)
       Events.Broadcast("QuestAccepted", questID)
-    else
-      Utils.throttleToServer("EndDialogue", nil, questID)
-      Events.Broadcast("QuestCompleted", questID)
+    elseif turnInQuest then
+      Utils.throttleToServer("TurnInQuest", questID)
+      Events.Broadcast("QuestTurnedIn", questID)
     end
 
+    Utils.unfreezePlayer(clientPlayer)
     Events.Broadcast("ScreenClosed", "Dialogue")
   end)
 end

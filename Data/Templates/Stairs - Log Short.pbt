@@ -1424,7 +1424,7 @@ Assets {
     }
     Assets {
       Id: 12003103614293459744
-      Name: "Nature Log 03"
+      Name: "Nature Log 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1481,7 +1481,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Tilesets"
 }

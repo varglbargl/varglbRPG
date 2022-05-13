@@ -2,7 +2,7 @@ Assets {
   Id: 15260622148558377912
   Name: "Truffula Topiary"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 6057563325876200665
     ParameterOverrides {

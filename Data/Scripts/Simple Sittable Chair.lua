@@ -2,7 +2,7 @@ local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local SIT_TRIGGER = script:GetCustomProperty("SitTrigger"):WaitForObject()
 
 local SITTING_STANCE = COMPONENT_ROOT:GetCustomProperty("SittingStance") or "unarmed_sit_chair_upright"
-local SIT_OFFSET = COMPONENT_ROOT:GetCustomProperty("SitOffset") or Vector3.ZERO
+local SIT_OFFSET = COMPONENT_ROOT:GetCustomProperty("SitOffset")
 
 local defaultTriggerPos = SIT_TRIGGER:GetPosition()
 

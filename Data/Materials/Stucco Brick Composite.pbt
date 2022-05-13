@@ -2,7 +2,7 @@ Assets {
   Id: 881075618061211006
   Name: "Mossy Stone Brick"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 5422669278562031784
     ParameterOverrides {

@@ -4,9 +4,9 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 10662123091833134112
+      RootId: 5574156164658131736
       Objects {
-        Id: 10662123091833134112
+        Id: 5574156164658131736
         Name: "Fancy Round Rug"
         Transform {
           Scale {
@@ -15,24 +15,32 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 5034407419620821498
         ChildIds: 18075585618403252449
         ChildIds: 15484954944915437816
         ChildIds: 13462335097919974532
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Folder {
-          IsGroup: true
+        NetworkContext {
+          DetailRelevance {
+            Value: "mc:edetaillevel:low"
+          }
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -43,18 +51,17 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            Z: 0.03
+            Z: 0.0300292969
           }
           Rotation {
-            Yaw: -3.78833
           }
           Scale {
             X: 2.23235607
-            Y: 2.23235607
+            Y: 3.23900533
             Z: 2.23235607
           }
         }
-        ParentId: 10662123091833134112
+        ParentId: 5574156164658131736
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -124,17 +131,17 @@ Assets {
         Name: "Plane Ring - One Sided"
         Transform {
           Location {
-            Z: 0.02
+            Z: 0.0200195312
           }
           Rotation {
           }
           Scale {
             X: 2.67307329
-            Y: 2.67307329
+            Y: 3.8784585
             Z: 2.67307329
           }
         }
-        ParentId: 10662123091833134112
+        ParentId: 5574156164658131736
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -204,17 +211,17 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            Z: 0.01
+            Z: 0.0100097656
           }
           Rotation {
           }
           Scale {
             X: 2.92898035
-            Y: 2.92898035
+            Y: 4.24976349
             Z: 2.92898035
           }
         }
-        ParentId: 10662123091833134112
+        ParentId: 5574156164658131736
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -339,7 +346,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Interior"
 }

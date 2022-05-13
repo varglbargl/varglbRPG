@@ -2,7 +2,7 @@ Assets {
   Id: 648813129920043009
   Name: "Buzzy Bug Wing"
   PlatformAssetType: 13
-  SerializationVersion: 110
+  SerializationVersion: 115
   CustomMaterialAsset {
     BaseMaterialId: 1738562647932095302
     ParameterOverrides {

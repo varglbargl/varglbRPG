@@ -2,7 +2,7 @@ Assets {
   Id: 17176805115267919038
   Name: "Spells"
   PlatformAssetType: 31
-  SerializationVersion: 110
+  SerializationVersion: 115
   DataTableAsset {
     Assets {
       Id: 4119595512698560111

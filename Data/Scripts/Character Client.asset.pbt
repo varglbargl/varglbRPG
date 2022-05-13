@@ -22,7 +22,9 @@ Assets {
       }
       Overrides {
         Name: "cs:Portrait"
-        Int: 0
+        AssetReference {
+          Id: 10006873135858307486
+        }
       }
       Overrides {
         Name: "cs:Characters:category"
@@ -39,5 +41,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
 }

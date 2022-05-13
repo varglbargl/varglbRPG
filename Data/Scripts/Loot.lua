@@ -1,6 +1,8 @@
 local Utils = require(script:GetCustomProperty("Utils"))
 
--- LootTables
+local ENCHANTS = require(script:GetCustomProperty("Enchants"))
+
+-- Loot Tables
 local MELEE_WEAPONS = require(script:GetCustomProperty("MeleeWeapons"))
 local RANGED_WEAPONS = require(script:GetCustomProperty("RangedWeapons"))
 local SPELLS = require(script:GetCustomProperty("Spells"))

@@ -36540,6 +36540,7 @@ Objects {
       IsMountEnabled: true
       MaxHitpoints: 100
       PlayerMasterVolumeMultiplier: 1
+      ComplexCollision: true
     }
   }
   NetworkRelevanceDistance {
@@ -36748,6 +36749,12 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -36802,6 +36809,7 @@ Objects {
         Y: 1024
       }
       RedrawTime: 30
+      UseSafeZoneAdjustment: true
     }
     AnchorLayout {
       SelfAnchor {
@@ -36939,6 +36947,7 @@ Objects {
         Y: 1024
       }
       RedrawTime: 30
+      UseSafeZoneAdjustment: true
     }
     AnchorLayout {
       SelfAnchor {
@@ -39194,6 +39203,7 @@ Objects {
         Y: 1024
       }
       RedrawTime: 30
+      UseSafeZoneAdjustment: true
     }
     AnchorLayout {
       SelfAnchor {
@@ -39736,6 +39746,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -39979,6 +39990,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -40220,6 +40232,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -41090,6 +41103,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -42394,6 +42408,7 @@ Objects {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -42961,6 +42976,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -43528,6 +43544,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -44095,6 +44112,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -44576,6 +44594,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -45060,6 +45079,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -45545,6 +45565,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -46026,6 +46047,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
+    IsHittable: true
     Button {
       FontColor {
         A: 1
@@ -47182,6 +47204,12 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"

@@ -10,12 +10,125 @@ Assets {
         Name: "Prop - Wood Cutting Axe"
         Transform {
           Scale {
-            X: 0.837264597
-            Y: 0.837264597
-            Z: 0.837264597
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 2225213237850149919
+        ParentId: 2825423526175501914
+        ChildIds: 11800713587503433863
+        ChildIds: 8127557794876711066
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 11800713587503433863
+        Name: "Collision"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8242680475371615642
+        ChildIds: 12075093535630431064
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: RuntimeStatic
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 12075093535630431064
+        Name: "Prism - 3-Sided"
+        Transform {
+          Location {
+            X: -5.7276535
+            Y: -0.00770568848
+            Z: 106.229767
+          }
+          Rotation {
+            Yaw: 90.0000076
+          }
+          Scale {
+            X: 0.090585
+            Y: 0.543634236
+            Z: 1.3154453
+          }
+        }
+        ParentId: 11800713587503433863
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 8131060779119224479
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 8127557794876711066
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8242680475371615642
         ChildIds: 13140956968209389135
         ChildIds: 7271104112952913898
         ChildIds: 14661902590964584335
@@ -24,8 +137,25 @@ Assets {
         ChildIds: 12760620197095292154
         ChildIds: 6630863697799179319
         ChildIds: 7820532875741704203
-        Folder {
-          IsGroup: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -36,21 +166,22 @@ Assets {
         Name: "Prism - 3-Sided Convex"
         Transform {
           Location {
-            X: -21.3035278
-            Y: 3.81469727e-06
-            Z: 109.9244
+            X: -17.8318386
+            Y: 0.000137329102
+            Z: 92.0365
           }
           Rotation {
             Pitch: -90
-            Roll: 90.0000076
+            Yaw: -153.434952
+            Roll: -116.565063
           }
           Scale {
-            X: 0.420231432
-            Y: 0.538375497
-            Z: 0.049478028
+            X: 0.351844937
+            Y: 0.450762808
+            Z: 0.0414262
           }
         }
-        ParentId: 8242680475371615642
+        ParentId: 8127557794876711066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -121,20 +252,21 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: 0.0839691162
-            Y: 0.000648498535
-            Z: 109.840721
+            X: 0.0704669952
+            Y: -0.000123977661
+            Z: 91.9666519
           }
           Rotation {
-            Yaw: 89.9999542
+            Yaw: 89.9999924
+            Roll: 9.62161835e-07
           }
           Scale {
-            X: 0.0927892402
-            Y: 0.158051789
-            Z: 0.21733427
+            X: 0.0776891485
+            Y: 0.132331163
+            Z: 0.181966305
           }
         }
-        ParentId: 8242680475371615642
+        ParentId: 8127557794876711066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -205,22 +337,22 @@ Assets {
         Name: "Ring - Quarter Beveled Thick"
         Transform {
           Location {
-            X: -15.4871969
-            Y: 3.81469727e-06
-            Z: 109.9244
+            X: -12.9644184
+            Y: -0.00089263916
+            Z: 92.0349579
           }
           Rotation {
-            Pitch: 44.9999695
-            Yaw: 2.41483531e-06
-            Roll: 89.9999924
+            Pitch: 44.9999733
+            Yaw: 9.65934123e-06
+            Roll: 90.0000153
           }
           Scale {
-            X: 0.660647392
-            Y: 0.660879433
-            Z: 0.247389704
+            X: 0.553136647
+            Y: 0.553331
+            Z: 0.207130656
           }
         }
-        ParentId: 8242680475371615642
+        ParentId: 8127557794876711066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -291,21 +423,22 @@ Assets {
         Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            X: 0.4384799
-            Y: -9.53674316e-07
-            Z: -32.0374603
+            X: 0.366775513
+            Y: 0.000330448151
+            Z: -26.8230381
           }
           Rotation {
+            Pitch: -6.83018879e-06
             Yaw: 89.9999771
-            Roll: -3.05175781e-05
+            Roll: -2.91525466e-05
           }
           Scale {
-            X: 1.4938674
-            Y: 2.6142745
-            Z: 1.91920638
+            X: 1.25076234
+            Y: 2.18883944
+            Z: 1.60688353
           }
         }
-        ParentId: 8242680475371615642
+        ParentId: 8127557794876711066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -380,22 +513,22 @@ Assets {
         Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            X: 0.427184284
-            Y: -0.0599149
-            Z: 125.495872
+            X: 0.357421875
+            Y: -0.044921875
+            Z: 105.071289
           }
           Rotation {
             Pitch: 1.36603776e-05
-            Yaw: 89.9999771
-            Roll: -6.10351562e-05
+            Yaw: 89.9999542
+            Roll: -6.05945679e-05
           }
           Scale {
-            X: 1
-            Y: 1.75
-            Z: -1
+            X: 0.837264597
+            Y: 1.46521318
+            Z: -0.837264597
           }
         }
-        ParentId: 8242680475371615642
+        ParentId: 8127557794876711066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -476,22 +609,22 @@ Assets {
         Name: "Prism - 3-Sided Convex"
         Transform {
           Location {
-            X: 7.65171194
-            Y: 0.000244538765
-            Z: 109.923424
+            X: 6.40609
+            Y: -0.000225067139
+            Z: 92.036644
           }
           Rotation {
             Pitch: -90
-            Yaw: -90
-            Roll: 179.999985
+            Yaw: 180
+            Roll: -90.000061
           }
           Scale {
-            X: 0.16973567
-            Y: 0.182574496
-            Z: 0.0428156219
+            X: 0.142113686
+            Y: 0.15286316
+            Z: 0.0358480029
           }
         }
-        ParentId: 8242680475371615642
+        ParentId: 8127557794876711066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -562,21 +695,22 @@ Assets {
         Name: "Manticore Logo"
         Transform {
           Location {
-            X: -24.8250923
-            Y: -2.41517973
-            Z: 109.458031
+            X: -20.7832031
+            Y: -2.015625
+            Z: 91.644043
           }
           Rotation {
-            Yaw: 180
-            Roll: 89.9999771
+            Pitch: -2.73207552e-05
+            Yaw: -179.999954
+            Roll: 89.999939
           }
           Scale {
-            X: -0.0841865614
-            Y: 0.0841853693
-            Z: 0.0592335053
+            X: -0.0704864264
+            Y: 0.070485428
+            Z: 0.0495941155
           }
         }
-        ParentId: 8242680475371615642
+        ParentId: 8127557794876711066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -635,21 +769,22 @@ Assets {
         Name: "Manticore Logo"
         Transform {
           Location {
-            X: -24.8752937
-            Y: 2.49724936
-            Z: 109.485306
+            X: -20.8242188
+            Y: 2.09570312
+            Z: 91.6660156
           }
           Rotation {
-            Yaw: 180
-            Roll: 89.9999771
+            Pitch: -2.73207552e-05
+            Yaw: -179.999954
+            Roll: 89.999939
           }
           Scale {
-            X: -0.0841865614
-            Y: 0.0841853693
-            Z: 0.0592335053
+            X: -0.0704864264
+            Y: 0.070485428
+            Z: 0.0495941155
           }
         }
-        ParentId: 8242680475371615642
+        ParentId: 8127557794876711066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -702,6 +837,15 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
+      }
+    }
+    Assets {
+      Id: 8131060779119224479
+      Name: "Prism - 3-Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prism_001"
       }
     }
     Assets {
@@ -790,7 +934,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 110
+  SerializationVersion: 115
   VirtualFolderPath: "Props"
   VirtualFolderPath: "Costume Pieces"
 }
